@@ -20,6 +20,17 @@ dataset "Reading Comp" [45, 55, 65, 72, 78]
 
 ### Set 1: Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-synonyms-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 Choose the word CLOSEST in meaning to the given word.
 
 | Q No | Word | Options | Answer |
@@ -53,6 +64,17 @@ Choose the word CLOSEST in meaning to the given word.
 </details>
 
 ### Set 2: Antonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Antonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Antonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-antonyms-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Antonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 Choose the word OPPOSITE in meaning to the given word.
 
@@ -88,6 +110,17 @@ Choose the word OPPOSITE in meaning to the given word.
 
 ### Set 3: Synonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Synonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Synonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-synonyms-advanced-target-1-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Synonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 1. PERILOUS — (A) Safe (B) Dangerous (C) Secure (D) Protected
 2. PRUDENT — (A) Foolish (B) Reckless (C) Cautious (D) Hasty
 3. RELUCTANT — (A) Eager (B) Willing (C) Hesitant (D) Enthusiastic
@@ -118,6 +151,17 @@ Choose the word OPPOSITE in meaning to the given word.
 
 ### Set 4: Antonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 4: Antonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 4: Antonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-antonyms-advanced-target-1-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 4: Antonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 1. AFFLUENT — (A) Wealthy (B) Poor (C) Rich (D) Prosperous
 2. BOISTEROUS — (A) Loud (B) Calm (C) Rowdy (D) Noisy
 3. COPIOUS — (A) Plentiful (B) Sparse (C) Abundant (D) Ample
@@ -147,6 +191,17 @@ Choose the word OPPOSITE in meaning to the given word.
 </details>
 
 ### Set 5: Mixed Syn/Ant | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Mixed Syn/Ant | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Mixed Syn/Ant | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-mixed-syn-ant-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Mixed Syn/Ant | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 Indicate S for Synonym or A for Antonym relationship.
 
@@ -180,6 +235,17 @@ Indicate S for Synonym or A for Antonym relationship.
 
 ### Set 6: Contextual Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Contextual Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Contextual Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-contextual-synonyms-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Contextual Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 Choose the word closest in meaning to the word in context.
 
 1. The **arduous** journey left them exhausted. → (A) Easy (B) Difficult (C) Short (D) Enjoyable
@@ -212,6 +278,17 @@ Choose the word closest in meaning to the word in context.
 
 ### Set 7-10: Speed Syn/Ant Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-handwritten.svg" alt="Handwritten: Set 7-10: Speed Syn/Ant Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-diagram.svg" alt="Diagram: Set 7-10: Speed Syn/Ant Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-7-10-speed-syn-ant-sets-sticky.svg" alt="Sticky Note: Set 7-10: Speed Syn/Ant Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -228,6 +305,17 @@ Choose the word closest in meaning to the word in context.
 ## Sentence Completion Drills
 
 ### Set 1: Single Blank | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 1: Single Blank | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 1: Single Blank | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-single-blank-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 1: Single Blank | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
 
 Choose the word that BEST fits the blank.
 
@@ -275,6 +363,17 @@ Choose the word that BEST fits the blank.
 
 ### Set 2: Double Blanks | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Double Blanks | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Double Blanks | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-double-blanks-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Double Blanks | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 Choose the pair that BEST fits both blanks.
 
 1. The ________ of the material was ________ to the project's success.
@@ -321,6 +420,17 @@ Choose the pair that BEST fits both blanks.
 
 ### Set 3: Context-Based | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Context-Based | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Context-Based | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-context-based-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Context-Based | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 1. The diplomat's speech was ________, carefully avoiding any ________ statements.
    - (A) Aggressive...controversial
    - (B) Diplomatic...offensive
@@ -365,6 +475,17 @@ Choose the pair that BEST fits both blanks.
 
 ### Set 4-10: Sentence Completion Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Sentence Completion Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Sentence Completion Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-sentence-completion-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Sentence Completion Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -384,6 +505,17 @@ Choose the pair that BEST fits both blanks.
 ## Error Spotting Drills
 
 ### Set 1: Grammar Errors | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 1: Grammar Errors | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 1: Grammar Errors | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-grammar-errors-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 1: Grammar Errors | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
 
 Identify the part with an error (A, B, C, D). If no error, mark E.
 
@@ -411,6 +543,17 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 
 ### Set 2: Word Usage | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Word Usage | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Word Usage | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-word-usage-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Word Usage | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 1. (A) The effect / (B) of the storm / (C) was / (D) devastating. / (E) No error
 
 2. (A) He is / (B) more taller / (C) than / (D) his brother. / (E) No error
@@ -435,6 +578,17 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 
 ### Set 3: Preposition/Conjunction | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Preposition/Conjunction | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Preposition/Conjunction | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-preposition-conjunction-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Preposition/Conjunction | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 1. (A) He insisted / (B) on going / (C) to the party / (D) despite of the rain. / (E) No error
 2. (A) She is good / (B) in playing / (C) the piano / (D) since childhood. / (E) No error
 3. (A) The book / (B) is divided / (C) in five / (D) chapters. / (E) No error
@@ -455,6 +609,17 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 
 ### Set 4-10: Error Spotting Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Error Spotting Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Error Spotting Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-error-spotting-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Error Spotting Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -474,6 +639,17 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 ## Para Jumbles Drills
 
 ### Set 1: Basic Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 1: Basic Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 1: Basic Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-jumbles-target-3-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 1: Basic Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
 
 Arrange the sentences in logical order.
 
@@ -537,6 +713,17 @@ Arrange the sentences in logical order.
 
 ### Set 2: Advanced Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 2: Advanced Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 2: Advanced Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-advanced-jumbles-target-3-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 2: Advanced Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
+
 1. **A:** These tiny particles are called atoms.
    **B:** Everything in the universe is made of matter.
    **C:** Atoms combine to form molecules.
@@ -596,6 +783,17 @@ Arrange the sentences in logical order.
 
 ### Set 3-10: Para Jumbles Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-handwritten.svg" alt="Handwritten: Set 3-10: Para Jumbles Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-diagram.svg" alt="Diagram: Set 3-10: Para Jumbles Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-10-para-jumbles-speed-sets-sticky.svg" alt="Sticky Note: Set 3-10: Para Jumbles Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -616,6 +814,17 @@ Arrange the sentences in logical order.
 ## Cloze Test Drills
 
 ### Set 1: Basic Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 1: Basic Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 1: Basic Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-basic-cloze-target-3-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 1: Basic Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
 
 **Read the passage and fill in the blanks.**
 
@@ -641,6 +850,17 @@ The (1) ______ of technology has changed our lives in many ways. We can now (2) 
 
 ### Set 2: Medium Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Medium Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Medium Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-medium-cloze-target-3-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Medium Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 Education is the (1) ______ to a better future. It (2) ______ individuals with knowledge and skills. (3) ______, not everyone has equal access to quality education. This (4) ______ must be addressed through policy changes. (5) ______ education for all should be our collective goal.
 
 1. (A) Barrier (B) Key (C) Obstacle (D) Problem
@@ -662,6 +882,17 @@ Education is the (1) ______ to a better future. It (2) ______ individuals with k
 </details>
 
 ### Set 3: Advanced Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Advanced Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Advanced Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-advanced-cloze-target-3-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Advanced Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
 
 The (1) ______ of climate change is undeniable. Rising global temperatures have led to (2) ______ weather events. (3) ______, many species face extinction due to habitat loss. To (4) ______ this crisis, nations must work together to (5) ______ carbon emissions.
 
@@ -685,6 +916,17 @@ The (1) ______ of climate change is undeniable. Rising global temperatures have 
 
 ### Set 4-10: Cloze Test Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Cloze Test Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Cloze Test Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-10-cloze-test-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Cloze Test Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -704,6 +946,17 @@ The (1) ______ of climate change is undeniable. Rising global temperatures have 
 ## Reading Comprehension Drills
 
 ### Set 1: Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 1: Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 1: Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-1-science-passage-target-5-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 1: Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
 
 **Read the passage and answer the questions.**
 
@@ -753,6 +1006,17 @@ Photosynthesis is the process by which plants convert sunlight into chemical ene
 
 ### Set 2: Social Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 2: Social Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 2: Social Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-2-social-science-passage-target-5-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 2: Social Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
+
 Globalization has profoundly impacted economies worldwide. It refers to the increasing interconnectedness of nations through trade, investment, and technology. While globalization has led to economic growth and reduced poverty in many developing countries, critics argue that it has also widened income inequality. Multinational corporations often relocate production to countries with lower labor costs, which can lead to job losses in developed nations. Additionally, cultural homogenization threatens local traditions and identities. Proponents counter that globalization promotes cultural exchange and technological diffusion. The COVID-19 pandemic tested the resilience of global supply chains, leading to renewed discussions about self-reliance and localization.
 
 1. What does the passage define as globalization?
@@ -798,6 +1062,17 @@ Globalization has profoundly impacted economies worldwide. It refers to the incr
 </details>
 
 ### Set 3: Economics Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 3: Economics Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 3: Economics Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-3-economics-passage-target-5-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 3: Economics Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
 
 Inflation is a sustained increase in the general price level of goods and services. When inflation is high, the purchasing power of money decreases—meaning each unit of currency buys fewer goods. Central banks typically target an inflation rate of around 2% to maintain price stability. Moderate inflation is considered healthy for an economy because it encourages spending and investment. However, hyperinflation—extremely rapid inflation—can devastate an economy. During hyperinflation, people rush to spend money before it loses value, which can create a vicious cycle of rising prices. Deflation, the opposite of inflation, occurs when prices fall. While falling prices might sound beneficial, deflation can lead to reduced consumer spending as people wait for prices to drop further, causing economic slowdown.
 
@@ -845,6 +1120,17 @@ Inflation is a sustained increase in the general price level of goods and servic
 
 ### Set 4: Philosophy Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 4: Philosophy Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 4: Philosophy Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-4-philosophy-passage-target-5-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 4: Philosophy Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
+
 Critical thinking is the ability to analyze information objectively and make reasoned judgments. It involves evaluating sources, identifying biases, questioning assumptions, and drawing logical conclusions. In an age of information overload, critical thinking has become increasingly important. With the rise of social media and fake news, people are constantly exposed to misleading information. Those who lack critical thinking skills are more susceptible to misinformation and manipulation. Educational systems worldwide are now emphasizing the teaching of critical thinking from an early age. However, critical thinking is not just an academic skill—it is essential for democratic participation. An informed citizenry that can evaluate political claims and make evidence-based decisions is fundamental to a healthy democracy.
 
 1. What is the primary focus of critical thinking?
@@ -890,6 +1176,17 @@ Critical thinking is the ability to analyze information objectively and make rea
 </details>
 
 ### Set 5: Technology Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 5: Technology Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-diagram.svg" alt="Diagram: Set 5: Technology Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-5-technology-passage-target-5-min-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 5: Technology Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%" width="30%">
+</a>
+
 
 Artificial Intelligence (AI) has made remarkable strides in recent years. From self-driving cars to medical diagnosis, AI systems are increasingly capable of performing tasks that once required human intelligence. Machine learning, a subset of AI, enables computers to learn from data without being explicitly programmed. Deep learning, a further subset, uses neural networks with multiple layers to process complex patterns. Despite these advances, AI still faces significant challenges. Ethical concerns about privacy, bias in algorithms, and job displacement remain unresolved. Many experts argue that the development of artificial general intelligence—AI that can match human cognitive abilities—is still decades away. Nevertheless, the transformative potential of AI across industries is undeniable.
 
@@ -937,6 +1234,17 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 
 ### Set 6-10: RC Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-handwritten.svg" alt="Handwritten: Set 6-10: RC Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-diagram.svg" alt="Diagram: Set 6-10: RC Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/set-6-10-rc-speed-sets-sticky.svg" alt="Sticky Note: Set 6-10: RC Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -955,6 +1263,17 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 
 ### Verbal Ability Drills Summary
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-handwritten.svg" alt="Handwritten: Verbal Ability Drills Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-diagram.svg" alt="Diagram: Verbal Ability Drills Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/verbal-ability-drills-summary-sticky.svg" alt="Sticky Note: Verbal Ability Drills Summary" width="30%">
+</a>
+
+
 | Topic | Sets | Questions | Total Time Target | Your Score | Avg Accuracy |
 |-------|------|-----------|-------------------|------------|-------------|
 | Synonyms/Antonyms | 10 | 100 | 10 min | /100 | % |
@@ -967,6 +1286,17 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 
 ### Weekly Score Tracker
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-handwritten.svg" alt="Handwritten: Weekly Score Tracker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-diagram.svg" alt="Diagram: Weekly Score Tracker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/weekly-score-tracker-sticky.svg" alt="Sticky Note: Weekly Score Tracker" width="30%">
+</a>
+
+
 | Week | Syn/Ant | Sent Comp | Error Spot | Para Jum | Cloze | RC | Overall |
 |------|---------|-----------|------------|----------|-------|-----|---------|
 | Wk 1 | /40 | /10 | /10 | /10 | /10 | /10 | /90 |
@@ -975,6 +1305,17 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 | **Total** | **/100** | **/50** | **/50** | **/50** | **/50** | **/50** | **/350** |
 
 ### Milestones
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-handwritten.svg" alt="Handwritten: Milestones" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-diagram.svg" alt="Diagram: Milestones" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/milestones-sticky.svg" alt="Sticky Note: Milestones" width="30%">
+</a>
+
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -1002,6 +1343,17 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 
 ### Final Performance Dashboard
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-handwritten.svg" alt="Handwritten: Final Performance Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-diagram.svg" alt="Diagram: Final Performance Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-performance-dashboard-sticky.svg" alt="Sticky Note: Final Performance Dashboard" width="30%">
+</a>
+
+
 ```mermaid
 lineChart
 title Overall Speed Drill Performance
@@ -1016,6 +1368,17 @@ dataset "Composite" [52, 64, 73, 82]
 
 ### Complete Course Summary
 
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-handwritten.svg" alt="Handwritten: Complete Course Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-diagram.svg" alt="Diagram: Complete Course Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/complete-course-summary-sticky.svg" alt="Sticky Note: Complete Course Summary" width="30%">
+</a>
+
+
 Congratulations! You've completed all five modules of the Speed & Accuracy Drills course. Here's what you've accomplished:
 
 | Module | Topic | Total Sets | Total Questions |
@@ -1028,6 +1391,17 @@ Congratulations! You've completed all five modules of the Speed & Accuracy Drill
 | **Total** | **All Domains** | **255** | **1600+** |
 
 ### Final Exam Readiness Checklist
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-handwritten.svg" alt="Handwritten: Final Exam Readiness Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-diagram.svg" alt="Diagram: Final Exam Readiness Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/final-exam-readiness-checklist-sticky.svg" alt="Sticky Note: Final Exam Readiness Checklist" width="30%">
+</a>
+
 
 - [ ] Accuracy ≥ 80% in all quant topics
 - [ ] Accuracy ≥ 75% in all reasoning topics
@@ -1042,6 +1416,17 @@ Congratulations! You've completed all five modules of the Speed & Accuracy Drill
 - [ ] Can maintain accuracy for 60+ minute sessions
 
 ### Next Steps
+
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/05-verbal-ability-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
+</a>
+
 
 After mastering these drills, you're ready for full-length mock tests and actual competitive exams. Continue practicing with:
 

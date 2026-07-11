@@ -46,6 +46,17 @@ flowchart LR
 
 ### 4.1 Overview of SQL
 
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-handwritten.svg" alt="Handwritten: 4.1 Overview of SQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-diagram.svg" alt="Diagram: 4.1 Overview of SQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-1-overview-of-sql-sticky.svg" alt="Sticky Note: 4.1 Overview of SQL" width="30%">
+</a>
+
+
 SQL (Structured Query Language) is the standard language for relational database management. It was developed at IBM in the 1970s (originally SEQUEL) and standardized by ANSI (1986) and ISO (1987). Every major relational DBMS (PostgreSQL, MySQL, Oracle, SQL Server, SQLite) supports SQL, though each has proprietary extensions.
 
 SQL is a **declarative language** -- you specify WHAT you want, not HOW to get it. The DBMS query optimizer determines the execution plan.
@@ -99,6 +110,17 @@ When you ask a librarian "find me all books published after 2020 by author 'Tolk
 
 ### 4.2 Data Types
 
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-handwritten.svg" alt="Handwritten: 4.2 Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-diagram.svg" alt="Diagram: 4.2 Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-2-data-types-sticky.svg" alt="Sticky Note: 4.2 Data Types" width="30%">
+</a>
+
+
 Choosing the right data type is critical: it affects storage size, query performance, and data integrity.
 
 | Type | Description | Storage | Example | Library Analogy |
@@ -142,6 +164,17 @@ Choosing the right data type is critical: it affects storage size, query perform
 
 
 ### 4.3 Data Definition Language (DDL)
+
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-handwritten.svg" alt="Handwritten: 4.3 Data Definition Language (DDL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-diagram.svg" alt="Diagram: 4.3 Data Definition Language (DDL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-3-data-definition-language-ddl-sticky.svg" alt="Sticky Note: 4.3 Data Definition Language (DDL)" width="30%">
+</a>
+
 
 DDL commands define and modify the structure (schema) of database objects. They are **auto-committed** in most DBMS -- there is no rolling back a DDL statement.
 
@@ -533,6 +566,17 @@ TRUNCATE TABLE temporary_borrowing_records;
 
 ### 4.4 Constraints
 
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-handwritten.svg" alt="Handwritten: 4.4 Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-diagram.svg" alt="Diagram: 4.4 Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-4-constraints-sticky.svg" alt="Sticky Note: 4.4 Constraints" width="30%">
+</a>
+
+
 Constraints enforce rules on the data in a table. They are the database's way of saying "only valid data is allowed here" -- preventing invalid data at the database level rather than trusting application code.
 
 **Real-World Analogy:** Library rules enforced by the librarian:
@@ -816,6 +860,17 @@ CREATE TABLE loans (
 
 
 ### 4.5 Data Manipulation Language (DML)
+
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-handwritten.svg" alt="Handwritten: 4.5 Data Manipulation Language (DML)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-diagram.svg" alt="Diagram: 4.5 Data Manipulation Language (DML)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-5-data-manipulation-language-dml-sticky.svg" alt="Sticky Note: 4.5 Data Manipulation Language (DML)" width="30%">
+</a>
+
 
 DML commands manipulate the data inside tables. Unlike DDL, DML operations can be **rolled back** when wrapped in a transaction (TCL).
 
@@ -1678,6 +1733,17 @@ def delete_old_members(conn: sqlite3.Connection, cutoff_year: int) -> int:
 
 ### 4.6 Data Control Language (DCL)
 
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-handwritten.svg" alt="Handwritten: 4.6 Data Control Language (DCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-diagram.svg" alt="Diagram: 4.6 Data Control Language (DCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-6-data-control-language-dcl-sticky.svg" alt="Sticky Note: 4.6 Data Control Language (DCL)" width="30%">
+</a>
+
+
 Controls user access to database objects.
 
 **Real-World Analogy:** The head librarian decides who can:
@@ -1733,6 +1799,17 @@ SELECT * FROM information_schema.table_privileges WHERE table_name = 'books';
 | Permission check at query time | O(log p) | p = number of privileges; cached |
 
 ### 4.7 Transaction Control Language (TCL)
+
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-handwritten.svg" alt="Handwritten: 4.7 Transaction Control Language (TCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-diagram.svg" alt="Diagram: 4.7 Transaction Control Language (TCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/04-sql-basics/4-7-transaction-control-language-tcl-sticky.svg" alt="Sticky Note: 4.7 Transaction Control Language (TCL)" width="30%">
+</a>
+
 
 Manages transactions -- groups of SQL statements that execute as an atomic unit (all succeed or all fail).
 

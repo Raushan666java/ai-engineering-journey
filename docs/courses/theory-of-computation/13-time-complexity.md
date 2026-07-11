@@ -55,6 +55,17 @@ flowchart LR
 
 ### 12.1 Time Complexity
 
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" alt="Handwritten: 12.1 Time Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" alt="Diagram: 12.1 Time Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" alt="Sticky Note: 12.1 Time Complexity" width="30%">
+</a>
+
+
 The **time complexity** of a Turing machine M is the function t: â„• → â„• where t(n) is the maximum number of steps M takes on any input of length n.
 
 For a **multitape TM**, the time complexity is defined similarly, but one step may involve all heads simultaneously.
@@ -64,6 +75,17 @@ For a **multitape TM**, the time complexity is defined similarly, but one step m
 Common complexity classes: O(1), O(log n), O(n), O(n log n), O(nÂ²), O(2â¿), O(n!).
 
 ### 12.2 The Time Hierarchy Theorem
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" alt="Handwritten: 12.2 The Time Hierarchy Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" alt="Diagram: 12.2 The Time Hierarchy Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" alt="Sticky Note: 12.2 The Time Hierarchy Theorem" width="30%">
+</a>
+
 
 The **time hierarchy theorem** shows that more time gives more computational power. For time-constructible functions f(n) and g(n) with f(n) log f(n) = o(g(n)):
 
@@ -79,6 +101,17 @@ The **time hierarchy theorem** shows that more time gives more computational pow
 **Corollary:** P ? EXP (since n? vs 2n satisfies the hierarchy condition).
 
 ### 12.3 The Class P
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" alt="Handwritten: 12.3 The Class P" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" alt="Diagram: 12.3 The Class P" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" alt="Sticky Note: 12.3 The Class P" width="30%">
+</a>
+
 
 **P = âˆª_{k â‰¥ 0} TIME(náµ)**
 
@@ -99,6 +132,17 @@ P is the class of languages decidable in **polynomial time** on a deterministic 
 - DFA equivalence.
 
 ### 12.4 The Class NP
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" alt="Handwritten: 12.4 The Class NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" alt="Diagram: 12.4 The Class NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" alt="Sticky Note: 12.4 The Class NP" width="30%">
+</a>
+
 
 **NP = âˆª_{k â‰¥ 0} NTIME(náµ)**
 
@@ -126,6 +170,17 @@ Most researchers believe P â‰  NP.
 
 ### 12.5 Polynomial-Time Reductions
 
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 12.5 Polynomial-Time Reductions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" alt="Diagram: 12.5 Polynomial-Time Reductions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 12.5 Polynomial-Time Reductions" width="30%">
+</a>
+
+
 A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if there exists a function f computable in polynomial time such that w âˆˆ A iff f(w) âˆˆ B.
 
 **Properties:**
@@ -135,6 +190,17 @@ A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if th
 
 ### 12.6 NP-Completeness
 
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" alt="Handwritten: 12.6 NP-Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" alt="Diagram: 12.6 NP-Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" alt="Sticky Note: 12.6 NP-Completeness" width="30%">
+</a>
+
+
 A language B is **NP-complete** if:
 1. B âˆˆ NP.
 2. For every A âˆˆ NP, A â‰¤_P B (B is NP-hard).
@@ -142,6 +208,17 @@ A language B is **NP-complete** if:
 **Significance:** If any NP-complete problem is in P, then P = NP. If any NP-complete problem is not in P, then no NP-complete problem is in P.
 
 ### 12.7 Cook-Levin Theorem
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" alt="Handwritten: 12.7 Cook-Levin Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" alt="Diagram: 12.7 Cook-Levin Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" alt="Sticky Note: 12.7 Cook-Levin Theorem" width="30%">
+</a>
+
 
 **Theorem (Cook 1971, Levin 1973):** SAT is NP-complete.
 
@@ -185,6 +262,17 @@ flowchart LR
 
 ### 12.7 Proving NP-Completeness
 
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" alt="Handwritten: 12.7 Proving NP-Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" alt="Diagram: 12.7 Proving NP-Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" alt="Sticky Note: 12.7 Proving NP-Completeness" width="30%">
+</a>
+
+
 To prove a problem B is NP-complete:
 1. **Show B âˆˆ NP:** Give a polynomial-time verifier.
 2. **Show B is NP-hard:** Choose a known NP-complete problem A and show A â‰¤_P B.
@@ -201,6 +289,17 @@ To prove a problem B is NP-complete:
 - **GRAPH-COLORING (3-COLOR):** Is G 3-colorable?
 
 ### 12.9 The Polynomial Hierarchy
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" alt="Handwritten: 12.9 The Polynomial Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" alt="Diagram: 12.9 The Polynomial Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" alt="Sticky Note: 12.9 The Polynomial Hierarchy" width="30%">
+</a>
+
 
 The **polynomial hierarchy** extends the idea of P and NP with oracles:
 
@@ -220,6 +319,17 @@ The **polynomial hierarchy** extends the idea of P and NP with oracles:
 If P = NP, the entire polynomial hierarchy collapses to P at the first level. This is why resolving P vs NP is so important: it determines the structure of all complexity classes.
 
 ### 12.10 Beyond NP
+
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" alt="Handwritten: 12.10 Beyond NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" alt="Diagram: 12.10 Beyond NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" alt="Sticky Note: 12.10 Beyond NP" width="30%">
+</a>
+
 
 **NP-hard:** Problems to which every NP problem reduces (but may not be in NP). Includes:
 - The halting problem (much harder than NP).

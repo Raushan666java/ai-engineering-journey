@@ -14,6 +14,17 @@
 
 ### 1.1 What Is a DBMS?
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" alt="Handwritten: 1.1 What Is a DBMS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" alt="Diagram: 1.1 What Is a DBMS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" alt="Sticky Note: 1.1 What Is a DBMS?" width="30%">
+</a>
+
+
 **Real-World Analogy: The Library Catalog**
 
 Imagine a public library with 100,000 books but no catalog system. To find a specific book, a visitor must walk every aisle scanning shelves. If a book is moved, returned late, or misplaced, it becomes effectively lost. Now imagine the same library with a digital catalog â†’ you search by title, author, or ISBN, see the exact shelf location, check availability, and even reserve it online. The catalog does not replace the books; it manages the metadata about the books and provides efficient access.
@@ -387,6 +398,17 @@ if __name__ == "__main__":
 
 ### 1.2 File System vs. DBMS
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" alt="Handwritten: 1.2 File System vs. DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" alt="Diagram: 1.2 File System vs. DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" alt="Sticky Note: 1.2 File System vs. DBMS" width="30%">
+</a>
+
+
 **Real-World Analogy: Filing Cabinets vs. Library**
 
 A **file system** is like a room full of filing cabinets. Each department has its own cabinet with its own folders. The sales department's cabinet has customer folders, the billing department has its own customer folders, and support has yet another set. When a customer changes their address, three different people must pull three different folders and make the same change. One person might forget, or use a different format, and now the data is inconsistent. There is no central index telling you which cabinet has which information. If someone is using a folder, the next person has to wait â†’ or worse, both make changes simultaneously and one overwrites the other.
@@ -754,6 +776,17 @@ if __name__ == "__main__":
 
 ---
 ### 1.3 Three-Schema Architecture
+
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" alt="Handwritten: 1.3 Three-Schema Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" alt="Diagram: 1.3 Three-Schema Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" alt="Sticky Note: 1.3 Three-Schema Architecture" width="30%">
+</a>
+
 
 **Real-World Analogy: Building Blueprint**
 
@@ -1212,6 +1245,17 @@ if __name__ == "__main__":
 
 ### 1.4 Data Independence
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" alt="Handwritten: 1.4 Data Independence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" alt="Diagram: 1.4 Data Independence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" alt="Sticky Note: 1.4 Data Independence" width="30%">
+</a>
+
+
 **Real-World Analogy: The Restaurant Kitchen**
 
 In a restaurant:
@@ -1491,6 +1535,17 @@ if __name__ == "__main__":
 ---
 
 ### 1.5 DBMS Languages (DDL / DML / DCL / TCL)
+
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" alt="Handwritten: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" alt="Diagram: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" alt="Sticky Note: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+</a>
+
 
 **Real-World Analogy: Restaurant Operations**
 
@@ -1831,6 +1886,17 @@ if __name__ == "__main__":
 ---
 ### 1.6 DBMS Users
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" alt="Handwritten: 1.6 DBMS Users" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" alt="Diagram: 1.6 DBMS Users" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" alt="Sticky Note: 1.6 DBMS Users" width="30%">
+</a>
+
+
 **Real-World Analogy: The Hospital**
 
 - **Database Administrator (DBA)** = The hospital administrator â†’ manages the entire facility, hires staff, sets policies, ensures compliance with regulations.
@@ -1866,6 +1932,17 @@ if __name__ == "__main__":
 ---
 
 ### 1.7 Data Models
+
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" alt="Handwritten: 1.7 Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" alt="Diagram: 1.7 Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" alt="Sticky Note: 1.7 Data Models" width="30%">
+</a>
+
 
 **Real-World Analogy: Maps of the Same City**
 
@@ -2225,6 +2302,17 @@ if __name__ == "__main__":
 
 ### 1.8 DBMS Architecture Components
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" alt="Handwritten: 1.8 DBMS Architecture Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" alt="Diagram: 1.8 DBMS Architecture Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" alt="Sticky Note: 1.8 DBMS Architecture Components" width="30%">
+</a>
+
+
 **DBMS Module Interaction Diagram (Text)**
 
 ```
@@ -2262,6 +2350,17 @@ User Query (SQL)
 
 ### 1.9 Database System Architecture Types
 
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" alt="Handwritten: 1.9 Database System Architecture Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" alt="Diagram: 1.9 Database System Architecture Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" alt="Sticky Note: 1.9 Database System Architecture Types" width="30%">
+</a>
+
+
 | Architecture | Description | Pros | Cons | Use Case |
 |-------------|-------------|------|------|----------|
 | **Centralized** | Single server, single database | Simple, low cost | Single point of failure, limited scale | Small business, personal apps |
@@ -2274,6 +2373,17 @@ User Query (SQL)
 ---
 
 ### 1.10 Applications in Real Systems
+
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 1.10 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" alt="Diagram: 1.10 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 1.10 Applications in Real Systems" width="30%">
+</a>
+
 
 | DBMS | Type | Language | Key Feature | Best For | Example Users |
 |------|------|----------|-------------|----------|---------------|
@@ -2299,6 +2409,17 @@ User Query (SQL)
 ---
 
 ### 1.11 Interview Corner
+
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" alt="Handwritten: 1.11 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" alt="Diagram: 1.11 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" alt="Sticky Note: 1.11 Interview Corner" width="30%">
+</a>
+
 
 **Q1: What is the difference between DBMS and RDBMS?**
 

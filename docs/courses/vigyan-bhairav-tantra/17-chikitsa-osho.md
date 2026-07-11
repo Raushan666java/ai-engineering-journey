@@ -41,6 +41,17 @@
 
 ### १.१ रोग की जड़
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: १.१ रोग की जड़" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: १.१ रोग की जड़" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: १.१ रोग की जड़" width="30%">
+</a>
+
+
 > *"पश्चिमी चिकित्सा लक्षणों का इलाज करती है। तंत्र चिकित्सा जड़ का इलाज करती है। और जड़ है — अचेतनता। तुम्हारा शरीर बीमार नहीं है — तुम्हारी जागरूकता बीमार है। जब जागरूकता ठीक होती है, शरीर अपने आप ठीक हो जाता है।"*
 
 ```mermaid
@@ -75,6 +86,17 @@ flowchart TD
 
 ### १.2 चेतना के तीन स्तरों पर चिकित्सा
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+</a>
+
+
 | स्तर | रोग का रूप | ओशो की चिकित्सा |
 |------|-------------|-----------------|
 | शारीरिक | दर्द, रोग, शारीरिक असंतुलन | शरीर को जागरूकता से देखना — संवेदनाओं का साक्षी |
@@ -90,11 +112,33 @@ flowchart TD
 
 ### २.1 एनकाउंटर ग्रुप्स का जन्म
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+</a>
+
+
 ओशो ने पश्चिमी मनोचिकित्सा और पूर्वी ध्यान का एक अनूठा संश्लेषण किया। उनके एनकाउंटर ग्रुप्स में लोग एक सप्ताह तक साथ रहते थे — बिना किसी सामाजिक मुखौटे के।
 
 > *"पश्चिम ने मन को समझा — लेकिन आत्मा को खो दिया। पूर्व ने आत्मा को समझा — लेकिन मन को नज़रअंदाज़ किया। मैं दोनों को जोड़ता हूँ। पहले मन को साफ़ करो — फिर ध्यान में बैठो। पहले कैथार्सिस — फिर मौन। दमित भावनाओं को बाहर निकालो — फिर साक्षी बनो।"*
 
 ### २.2 समूह चिकित्सा की ओशो की विधि
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -121,6 +165,17 @@ flowchart LR
 
 ### २.3 ओशो के प्रमुख चिकित्सा समूह
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" alt="Handwritten: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" alt="Diagram: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" alt="Sticky Note: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+</a>
+
+
 | समूह | उद्देश्य | ओशो का कथन |
 |------|----------|-------------|
 | एनकाउंटर | मुखौटे तोड़ना | "अपना असली चेहरा दिखाओ — भले ही वह बदसूरत हो" |
@@ -135,6 +190,17 @@ flowchart LR
 
 ### ३.1 अवसाद — उदासी का तंत्र
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+</a>
+
+
 > *"अवसाद कोई बीमारी नहीं है — यह एक संदेश है। तुम्हारा अस्तित्व तुमसे कह रहा है कि तुम गलत जी रहे हो। अवसाद को दबाओ मत — उसे सुनो। वह तुम्हें कुछ बताना चाहता है।"*
 
 **ओशो का उपचार**:
@@ -145,6 +211,17 @@ flowchart LR
 5. फिर मौन में बैठो — जो बचा, वही तुम हो
 
 ### ३.2 चिंता — बेचैनी का तंत्र
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+</a>
+
 
 > *"चिंता भविष्य में रहती है। जितना तुम भविष्य में रहोगे, उतनी चिंता बढ़ेगी। वर्तमान में आओ — चिंता गायब हो जाएगी। चिंता का एकमात्र इलाज है — वर्तमान क्षण में जीना।"*
 
@@ -163,6 +240,17 @@ flowchart TD
 
 ### ३.3 PTSD और आघात
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" alt="Handwritten: ३.3 PTSD और आघात" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" alt="Diagram: ३.3 PTSD और आघात" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" alt="Sticky Note: ३.3 PTSD और आघात" width="30%">
+</a>
+
+
 > *"आघात कोई घटना नहीं है — वह तुम्हारे शरीर में जमा हुआ एक अनुभव है। उसे बाहर निकालने की ज़रूरत है — और वह कैथार्सिस से निकलता है, दवा से नहीं।"*
 
 **ओशो की आघात चिकित्सा**:
@@ -177,6 +265,17 @@ flowchart TD
 ## ४. साइकोसोमैटिक बीमारियाँ — ओशो का निदान
 
 ### ४.1 मन और शरीर का जुड़ाव
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ४.1 मन और शरीर का जुड़ाव" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ४.1 मन और शरीर का जुड़ाव" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ४.1 मन और शरीर का जुड़ाव" width="30%">
+</a>
+
 
 > *"हर बीमारी के दो हिस्से हैं — एक शारीरिक, एक मानसिक। शारीरिक हिस्से का इलाज डॉक्टर कर सकता है। मानसिक हिस्से का इलाज — सिर्फ तुम कर सकते हो। और वह इलाज है — जागरूकता।"*
 
@@ -205,6 +304,17 @@ flowchart LR
 
 ### ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+</a>
+
+
 | लक्षण | मानसिक कारण (ओशो के अनुसार) | तंत्र चिकित्सा |
 |-------|------------------------------|----------------|
 | सिरदर्द | बहुत ज़्यादा सोचना, नियंत्रण की आदत | श्वास ध्यान — विचारों को छोड़ना |
@@ -221,6 +331,17 @@ flowchart LR
 ## ५. समग्र चिकित्सा — ओशो का पूरा प्रोग्राम
 
 ### ५.1 चार स्तरों की चिकित्सा
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ५.1 चार स्तरों की चिकित्सा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ५.1 चार स्तरों की चिकित्सा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ५.1 चार स्तरों की चिकित्सा" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -255,6 +376,17 @@ flowchart TD
 ```
 
 ### ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+</a>
+
 
 1. **शरीर को प्रेम करो** — उसे दवाओं से मत मारो, समझो
 2. **भावनाओं को दबाओ मत** — उन्हें व्यक्त करो, फिर छोड़ दो
@@ -819,18 +951,73 @@ export {
 ## ७. ओशो के चिकित्सा के पाँच सूत्र
 
 ### सूत्र १: जागरूकता ही चिकित्सा है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+</a>
+
 > *"कोई दवा तुम्हें ठीक नहीं कर सकती — सिर्फ जागरूकता। दवा लक्षण दबाती है, जागरूकता जड़ मिटाती है।"*
 
 ### सूत्र २: शरीर को सुनो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र २: शरीर को सुनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र २: शरीर को सुनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र २: शरीर को सुनो" width="30%">
+</a>
+
 > *"शरीर तुम्हारा दुश्मन नहीं है — वह तुम्हारा मित्र है। वह तुमसे हर पल बात कर रहा है। सुनो उसे। वह जो कह रहा है, वही तुम्हारी चिकित्सा है।"*
 
 ### सूत्र ३: दबाओ मत, छोड़ो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+</a>
+
 > *"हर बीमारी के पीछे कोई दबी हुई भावना है। उसे दबाओ मत — उसे बाहर आने दो। रोओ, चिल्लाओ, हँसो, नाचो — जो भी हो, उसे होने दो। यही कैथार्सिस है। यही चिकित्सा है।"*
 
 ### सूत्र ४: बीमारी को गले लगाओ
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+</a>
+
 > *"बीमारी से लड़ो मत — उसे गले लगाओ। वह तुम्हारी दुश्मन नहीं है — वह एक संदेशवाहक है। उसने तुम्हें जगाने की कोशिश की है। उसे धन्यवाद दो — और सुनो वह क्या कह रही है।"*
 
 ### सूत्र ५: हँसो — यह सबसे अच्छी दवा है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+</a>
+
 > *"हँसी कोई दवा नहीं है — हँसी तो स्वास्थ्य ही है। जब तुम सच में हँसते हो, तो तुम कुछ पल के लिए पूरे होते हो। वही पूर्णता — वही स्वास्थ्य है।"*
 
 ---
@@ -838,15 +1025,59 @@ export {
 ## ८. व्यावहारिक अभ्यास (Practical Exercises)
 
 ### अभ्यास १: शरीर स्कैन
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: शरीर स्कैन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास १: शरीर स्कैन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: शरीर स्कैन" width="30%">
+</a>
+
 लेट जाओ। सिर से पैर तक — हर अंग को देखो। कहाँ तनाव है? कहाँ दर्द है? बस देखो — बिना बदलने की कोशिश के। १० मिनट।
 
 ### अभ्यास २: कैथार्सिस
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: कैथार्सिस" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास २: कैथार्सिस" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: कैथार्सिस" width="30%">
+</a>
+
 एक कमरे में अकेले। तकिया लो। उस पर अपना सारा गुस्सा निकालो — मारो, चिल्लाओ, रोओ। फिर थक जाओ — और मौन में बैठो। २० मिनट।
 
 ### अभ्यास ३: हँसी ध्यान
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: हँसी ध्यान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ३: हँसी ध्यान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: हँसी ध्यान" width="30%">
+</a>
+
 सुबह उठते ही — बिना किसी कारण के — ५ मिनट हँसो। पहले जबरदस्ती, फिर असली। देखो — क्या बदलता है।
 
 ### अभ्यास ४: कोडिंग
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
+</a>
+
 `OshoTherapist` में एक नई मेथड जोड़ो जो तुम्हारे सप्ताह भर के लक्षणों को ट्रैक करे और बताए कि कौन सी भावना सबसे ज़्यादा दबी हुई है।
 
 ---

@@ -17,6 +17,17 @@ Teaching is the master key to learning. Every time you explain a concept to some
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Protégé Effect | Teaching forces active recall and gap detection | Teach one concept daily to solidify learning |
@@ -40,6 +51,17 @@ flowchart LR
 ---
 
 ### Q1: Why does teaching accelerate your own learning more than studying?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" alt="Handwritten: Why does teaching accelerate your own learning more than studying?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" alt="Diagram: Why does teaching accelerate your own learning more than studying?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" alt="Sticky Note: Why does teaching accelerate your own learning more than studying?" width="30%">
+</a>
+
 
 **Answer:** The **protégé effect** is a psychological phenomenon where teaching someone else — or even expecting to teach — improves your own learning more than studying for yourself. Multiple studies show that students who study material expecting to teach it recall more and understand it more deeply than those studying for a test.
 
@@ -117,6 +139,17 @@ class ProtegeEffectSimulator {
 ---
 
 ### Q2: How do you apply the Feynman technique at scale?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" alt="Handwritten: How do you apply the Feynman technique at scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" alt="Diagram: How do you apply the Feynman technique at scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" alt="Sticky Note: How do you apply the Feynman technique at scale?" width="30%">
+</a>
+
 
 **Answer:** The Feynman technique has four steps, but you can scale it across different audiences and topics. The key insight is that you need to explain at three levels of abstraction.
 
@@ -222,6 +255,17 @@ class FeynmanTechnique {
 
 ### Q3: How does rubber duck debugging work as a teaching tool?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How does rubber duck debugging work as a teaching tool?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" alt="Diagram: How does rubber duck debugging work as a teaching tool?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How does rubber duck debugging work as a teaching tool?" width="30%">
+</a>
+
+
 **Answer:** Rubber duck debugging is the practice of explaining your code line-by-line to an inanimate object (traditionally a rubber duck). The act of verbalizing forces you to slow down, articulate assumptions, and often spot the bug yourself before the duck "responds."
 
 ```typescript
@@ -321,6 +365,17 @@ class RubberDuckSession {
 ---
 
 ### Q4: How can pair programming accelerate learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" alt="Handwritten: How can pair programming accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" alt="Diagram: How can pair programming accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" alt="Sticky Note: How can pair programming accelerate learning?" width="30%">
+</a>
+
 
 **Answer:** Pair programming creates a continuous teaching loop. Two roles rotate: the **driver** writes code, the **navigator** reviews each line in real time. The navigator is effectively teaching the driver by catching mistakes and suggesting approaches, while the driver teaches the navigator by explaining their reasoning.
 
@@ -426,6 +481,17 @@ Retention rates after 1 week:
 ---
 
 ### Q5: How does building in public accelerate learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does building in public accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does building in public accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does building in public accelerate learning?" width="30%">
+</a>
+
 
 **Answer:** Building in public — sharing your learning journey through blog posts, social media, open-source contributions, or documentation — creates a powerful learning flywheel. The public commitment forces deeper understanding, and the feedback loop compounds your learning.
 
@@ -547,6 +613,17 @@ Learning is not linear — each post compounds on previous ones.`;
 
 ### Q6: How can code review function as a teaching tool?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How can code review function as a teaching tool?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" alt="Diagram: How can code review function as a teaching tool?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How can code review function as a teaching tool?" width="30%">
+</a>
+
+
 **Answer:** Code review is one of the most underrated teaching opportunities in software engineering. Both the author and the reviewer learn: the author receives targeted feedback on their blind spots, and the reviewer must understand the code deeply enough to evaluate it.
 
 ```typescript
@@ -640,6 +717,17 @@ class CodeReviewAsTeaching {
 ---
 
 ### Q7: How do study groups accelerate learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" alt="Handwritten: How do study groups accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" alt="Diagram: How do study groups accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" alt="Sticky Note: How do study groups accelerate learning?" width="30%">
+</a>
+
 
 **Answer:** Study groups create a structured teaching environment where each member teaches the others. The person explaining learns the most, but even listeners benefit from hearing multiple explanations of the same concept.
 
@@ -749,6 +837,17 @@ Rotate teaching responsibilities every cycle.`;
 ---
 
 ### Q8: How do you write effective technical explanations?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" alt="Handwritten: How do you write effective technical explanations?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" alt="Diagram: How do you write effective technical explanations?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" alt="Sticky Note: How do you write effective technical explanations?" width="30%">
+</a>
+
 
 **Answer:** Technical writing is a superpower for learning. The act of writing forces you to organize thoughts sequentially, fill logical gaps, and articulate assumptions. The best technical explanations follow the BLUF framework: Bottom Line Up Front.
 
@@ -861,6 +960,17 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
 
 ### Q9: How can mentoring accelerate your learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" alt="Handwritten: How can mentoring accelerate your learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" alt="Diagram: How can mentoring accelerate your learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" alt="Sticky Note: How can mentoring accelerate your learning?" width="30%">
+</a>
+
+
 **Answer:** Mentoring is a force multiplier for learning. The mentor solidifies their knowledge by teaching, and the mentee gains from structured guidance. But the mentor often learns MORE than the mentee.
 
 ```typescript
@@ -951,6 +1061,17 @@ After each mentoring session, the mentor should ask:
 ---
 
 ### Q10: How do you handle questions you can't answer while teaching?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" alt="Handwritten: How do you handle questions you can't answer while teaching?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" alt="Diagram: How do you handle questions you can't answer while teaching?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" alt="Sticky Note: How do you handle questions you can't answer while teaching?" width="30%">
+</a>
+
 
 **Answer:** The moment you can't answer a question is the single best learning opportunity in any teaching session. It reveals a gap in your understanding that you didn't know existed.
 
@@ -1070,6 +1191,17 @@ Thank you for asking — this helped me discover a gap in my understanding of ${
 
 ### Q11: How do you create effective learning materials for others?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" alt="Handwritten: How do you create effective learning materials for others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" alt="Diagram: How do you create effective learning materials for others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" alt="Sticky Note: How do you create effective learning materials for others?" width="30%">
+</a>
+
+
 **Answer:** Creating learning materials — cheat sheets, reference guides, flashcards, practice problems — is one of the highest-leverage learning activities because you must organize knowledge for transfer. The act of creating the material teaches you more than consuming it.
 
 ```typescript
@@ -1144,6 +1276,17 @@ Purpose: Personal reference — created from memory as a learning exercise
 ---
 
 ### Q12: How do you teach across different skill levels?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" alt="Handwritten: How do you teach across different skill levels?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" alt="Diagram: How do you teach across different skill levels?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" alt="Sticky Note: How do you teach across different skill levels?" width="30%">
+</a>
+
 
 **Answer:** Teaching effectively requires adapting your explanation to the listener's current mental model. The same concept needs different framing for beginners, intermediates, and experts.
 
@@ -1242,6 +1385,17 @@ class AdaptiveTeacher {
 
 ### Q13: How do you build a sustainable teaching practice?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" alt="Handwritten: How do you build a sustainable teaching practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" alt="Diagram: How do you build a sustainable teaching practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" alt="Sticky Note: How do you build a sustainable teaching practice?" width="30%">
+</a>
+
+
 **Answer:** A sustainable teaching practice doesn't require being a professor or writing a book. It's a small, consistent habit integrated into your weekly routine. The key is starting small and letting the practice grow organically.
 
 ```typescript
@@ -1331,6 +1485,17 @@ answer, and how confident you feel explaining each topic.`;
 ---
 
 ### Self-Assessment Quiz
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+</a>
+
 
 **1. Why does the protégé effect improve learning more than self-study?**
 a) Teaching takes more time, so you study longer

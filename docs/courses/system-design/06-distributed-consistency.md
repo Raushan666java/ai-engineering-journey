@@ -39,6 +39,17 @@ flowchart LR
 
 ### The CAP Theorem
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" alt="Handwritten: The CAP Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" alt="Diagram: The CAP Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" alt="Sticky Note: The CAP Theorem" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -84,6 +95,17 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 ### PACELC Extension
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" alt="Handwritten: PACELC Extension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" alt="Diagram: PACELC Extension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" alt="Sticky Note: PACELC Extension" width="30%">
+</a>
+
+
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
@@ -103,6 +125,17 @@ PACELC Trade-off Space:
 This captures the real design space: even when no partition exists, systems choose between low latency (eventual consistency) and strong consistency (higher latency due to coordination).
 
 ### Consistency Models
+
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" alt="Handwritten: Consistency Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" alt="Diagram: Consistency Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" alt="Sticky Note: Consistency Models" width="30%">
+</a>
+
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -174,6 +207,17 @@ Eventual consistency is the weakest model. It provides the best availability and
 
 ### Quorum Systems
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" alt="Handwritten: Quorum Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" alt="Diagram: Quorum Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" alt="Sticky Note: Quorum Systems" width="30%">
+</a>
+
+
 A quorum is the minimum number of nodes that must participate in a read or write operation for it to be valid. In a system with `N` replicas, a read quorum `R` and write quorum `W` satisfy:
 
 **`W + R > N`**
@@ -229,6 +273,17 @@ Hinted handoff improves availability — writes succeed even when some replicas 
 
 ### Gossip Protocol
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" alt="Handwritten: Gossip Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" alt="Diagram: Gossip Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" alt="Sticky Note: Gossip Protocol" width="30%">
+</a>
+
+
 Gossip protocols (also called epidemic protocols) disseminate information through a system in a manner analogous to the spread of an infection.
 
 #### Infection-Style Gossip
@@ -269,6 +324,17 @@ Node A ? ping ? Node B (random target)
 SWIM converges membership information in `O(log N)` rounds and detects failures with high probability within a configurable timeout period.
 
 ### CRDTs (Conflict-Free Replicated Data Types)
+
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" alt="Handwritten: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" alt="Diagram: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" alt="Sticky Note: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+</a>
+
 
 CRDTs are data structures that can be replicated across multiple nodes and updated concurrently without coordination, yet still converge to the same state. Two flavors exist: **operation-based (CvRDT)** and **state-based (CmRDT)**.
 
@@ -363,6 +429,17 @@ Two concurrent `add("x")` operations produce the same result as one `add("x")` �
 
 ### Logical Clocks
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" alt="Handwritten: Logical Clocks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" alt="Diagram: Logical Clocks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" alt="Sticky Note: Logical Clocks" width="30%">
+</a>
+
+
 Physical clocks are unreliable in distributed systems — clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
 
 #### Lamport Clocks
@@ -407,6 +484,17 @@ Process P1:        Process P2:
 
 ### Merkle Trees for Anti-Entropy
 
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" alt="Handwritten: Merkle Trees for Anti-Entropy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" alt="Diagram: Merkle Trees for Anti-Entropy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" alt="Sticky Note: Merkle Trees for Anti-Entropy" width="30%">
+</a>
+
+
 A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and internal nodes contain hashes of their children. The root hash summarizes the entire data set.
 
 ```
@@ -429,6 +517,17 @@ A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and 
 **Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable — a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
 
 ### Distributed Snapshots (Chandy-Lamport Algorithm)
+
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" alt="Handwritten: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" alt="Diagram: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" alt="Sticky Note: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+</a>
+
 
 The Chandy-Lamport algorithm captures a consistent global snapshot of a distributed system without halting computation. A *consistent cut* includes all events that happened-before the snapshot, but no events that depend on events after the snapshot.
 

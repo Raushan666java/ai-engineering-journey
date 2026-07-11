@@ -16,6 +16,17 @@ Representational State Transfer (REST) is an architectural style for designing n
 
 ### 15.1.1 REST Architectural Constraints (Six Constraints)
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-handwritten.svg" alt="Handwritten: 15.1.1 REST Architectural Constraints (Six Constraints)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-diagram.svg" alt="Diagram: 15.1.1 REST Architectural Constraints (Six Constraints)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-1-rest-architectural-constraints-six-constraints-sticky.svg" alt="Sticky Note: 15.1.1 REST Architectural Constraints (Six Constraints)" width="30%">
+</a>
+
+
 REST defines six architectural constraints. A system satisfying all six is "RESTful."
 
 **Real-World Analogy: Library Catalog System**
@@ -121,6 +132,17 @@ FUNCTION handleRequest(request):
 
 ### 15.1.2 Resource Modeling & URL Design
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-handwritten.svg" alt="Handwritten: 15.1.2 Resource Modeling & URL Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-diagram.svg" alt="Diagram: 15.1.2 Resource Modeling & URL Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-2-resource-modeling-url-design-sticky.svg" alt="Sticky Note: 15.1.2 Resource Modeling & URL Design" width="30%">
+</a>
+
+
 Resources are nouns representing entities. URL design maps the domain model to a navigable hierarchy.
 
 **Real-World Analogy: Library Bookshelf Layout**
@@ -187,6 +209,17 @@ FUNCTION routeRequest(method, uri, body):
 | Singular (`/user`) | Shorter | Inconsistent with collection semantics |
 
 ### 15.1.3 HTTP Methods Deep Dive
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-handwritten.svg" alt="Handwritten: 15.1.3 HTTP Methods Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-diagram.svg" alt="Diagram: 15.1.3 HTTP Methods Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-3-http-methods-deep-dive-sticky.svg" alt="Sticky Note: 15.1.3 HTTP Methods Deep Dive" width="30%">
+</a>
+
 
 HTTP methods (verbs) define the operation to perform on a resource.
 
@@ -325,6 +358,17 @@ HTTP/1.1 204 No Content
 
 ### 15.1.4 HTTP Status Code Families
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-handwritten.svg" alt="Handwritten: 15.1.4 HTTP Status Code Families" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-diagram.svg" alt="Diagram: 15.1.4 HTTP Status Code Families" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-4-http-status-code-families-sticky.svg" alt="Sticky Note: 15.1.4 HTTP Status Code Families" width="30%">
+</a>
+
+
 HTTP status codes are three-digit integers grouped into five families. The first digit indicates the response class.
 
 **Real-World Analogy: Library Transaction Status**
@@ -371,6 +415,17 @@ HTTP status codes are three-digit integers grouped into five families. The first
 | 503 | Service Unavailable | Temporary overload/maintenance | Retry-After header |
 
 ### 15.1.5 CRUD with HTTP Mapping
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-handwritten.svg" alt="Handwritten: 15.1.5 CRUD with HTTP Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-diagram.svg" alt="Diagram: 15.1.5 CRUD with HTTP Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-5-crud-with-http-mapping-sticky.svg" alt="Sticky Note: 15.1.5 CRUD with HTTP Mapping" width="30%">
+</a>
+
 
 CRUD (Create, Read, Update, Delete) maps naturally to HTTP methods.
 
@@ -445,6 +500,17 @@ FUNCTION deleteUser(userId):
 
 ### 15.1.6 Statelessness
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-handwritten.svg" alt="Handwritten: 15.1.6 Statelessness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-diagram.svg" alt="Diagram: 15.1.6 Statelessness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-6-statelessness-sticky.svg" alt="Sticky Note: 15.1.6 Statelessness" width="30%">
+</a>
+
+
 Statelessness means each request from client to server must contain all information needed to understand and process the request. The server does not store any session context between requests.
 
 **Real-World Analogy: Library Checkout vs. Restaurant**
@@ -490,6 +556,17 @@ Disadvantages:
 ```
 
 ### 15.1.7 HATEOAS
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-handwritten.svg" alt="Handwritten: 15.1.7 HATEOAS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-diagram.svg" alt="Diagram: 15.1.7 HATEOAS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-7-hateoas-sticky.svg" alt="Sticky Note: 15.1.7 HATEOAS" width="30%">
+</a>
+
 
 Hypermedia as the Engine of Application State (HATEOAS) means API responses contain links to navigate related resources, making the API self-discoverable.
 
@@ -579,6 +656,17 @@ FUNCTION generateLinks(resource, userRole):
 | Version mismatch | Links point to different API version | Base URLs respect version prefix |
 
 ### 15.1.8 Caching (ETag, Cache-Control)
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-handwritten.svg" alt="Handwritten: 15.1.8 Caching (ETag, Cache-Control)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-diagram.svg" alt="Diagram: 15.1.8 Caching (ETag, Cache-Control)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-8-caching-etag-cache-control-sticky.svg" alt="Sticky Note: 15.1.8 Caching (ETag, Cache-Control)" width="30%">
+</a>
+
 
 Caching reduces server load and improves response time by reusing previous responses.
 
@@ -868,6 +956,17 @@ print(f"Second call - from_cache: {r2['from_cache']}")  # True (fresh hit)
 | Cache stampede | N clients miss cache simultaneously, hammering DB | Lock/mutex on cache miss (dogpile effect prevention) |
 
 ### 15.1.9 Rate Limiting
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-handwritten.svg" alt="Handwritten: 15.1.9 Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-diagram.svg" alt="Diagram: 15.1.9 Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-9-rate-limiting-sticky.svg" alt="Sticky Note: 15.1.9 Rate Limiting" width="30%">
+</a>
+
 
 Rate limiting controls how many requests a client can make within a time window, preventing abuse and ensuring fair usage.
 
@@ -1267,6 +1366,17 @@ for (let i = 0; i < 15; i++) {
 
 ### 15.1.10 API Versioning
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-handwritten.svg" alt="Handwritten: 15.1.10 API Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-diagram.svg" alt="Diagram: 15.1.10 API Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-10-api-versioning-sticky.svg" alt="Sticky Note: 15.1.10 API Versioning" width="30%">
+</a>
+
+
 APIs evolve. Versioning lets you introduce breaking changes without disrupting existing clients.
 
 **Real-World Analogy: Library Edition Numbers**
@@ -1333,6 +1443,17 @@ FUNCTION routeByVersion(uri):
 | Default version | What if client omits version? | Route to latest stable; add warning header |
 
 ### 15.1.11 OpenAPI / Swagger
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-handwritten.svg" alt="Handwritten: 15.1.11 OpenAPI / Swagger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-diagram.svg" alt="Diagram: 15.1.11 OpenAPI / Swagger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-11-openapi-swagger-sticky.svg" alt="Sticky Note: 15.1.11 OpenAPI / Swagger" width="30%">
+</a>
+
 
 OpenAPI (formerly Swagger) is a specification for describing REST APIs using a standard YAML or JSON format. It provides a machine-readable contract that enables code generation, documentation, and testing.
 
@@ -1443,6 +1564,17 @@ components:
 | Redoc | Beautiful API documentation from OpenAPI |
 
 ### 15.1.12 REST API Implementation
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-handwritten.svg" alt="Handwritten: 15.1.12 REST API Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-diagram.svg" alt="Diagram: 15.1.12 REST API Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-12-rest-api-implementation-sticky.svg" alt="Sticky Note: 15.1.12 REST API Implementation" width="30%">
+</a>
+
 
 **Python Implementation: REST Server with FastAPI-Style Pattern**
 
@@ -1860,6 +1992,17 @@ int main() {
 
 ### 15.1.13 REST vs SOAP vs GraphQL vs gRPC Comparison
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-handwritten.svg" alt="Handwritten: 15.1.13 REST vs SOAP vs GraphQL vs gRPC Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-diagram.svg" alt="Diagram: 15.1.13 REST vs SOAP vs GraphQL vs gRPC Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-13-rest-vs-soap-vs-graphql-vs-grpc-comparison-sticky.svg" alt="Sticky Note: 15.1.13 REST vs SOAP vs GraphQL vs gRPC Comparison" width="30%">
+</a>
+
+
 **Real-World Analogy: Ordering at Different Restaurants**
 
 | Paradigm | Restaurant Analogy |
@@ -1967,6 +2110,17 @@ graph TB
 
 ### 15.1.14 Interview Corner
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-handwritten.svg" alt="Handwritten: 15.1.14 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-diagram.svg" alt="Diagram: 15.1.14 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-14-interview-corner-sticky.svg" alt="Sticky Note: 15.1.14 Interview Corner" width="30%">
+</a>
+
+
 **Q1: What is the difference between PUT and PATCH?**
 
 PUT replaces the entire resource. PATCH applies a partial update. PUT is idempotent; PATCH is not necessarily idempotent (depends on the patch format). PUT sends the full resource representation; PATCH sends only the changes.
@@ -2018,6 +2172,17 @@ Statelessness refers to the server not storing client session state. Application
 Most public APIs operate at Level 2. Achieving Level 3 is rare but is "true REST" per Fielding's definition.
 
 ### 15.1.15 Applications in Real Systems
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-handwritten.svg" alt="Handwritten: 15.1.15 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-diagram.svg" alt="Diagram: 15.1.15 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-1-15-applications-in-real-systems-sticky.svg" alt="Sticky Note: 15.1.15 Applications in Real Systems" width="30%">
+</a>
+
 
 **GitHub REST API** (`https://api.github.com`)
 
@@ -2593,6 +2758,17 @@ gRPC uses Protocol Buffers for interface definition and HTTP/2 for transport. It
 
 ### 15.3.1 Protocol Buffers Definition
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-handwritten.svg" alt="Handwritten: 15.3.1 Protocol Buffers Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-diagram.svg" alt="Diagram: 15.3.1 Protocol Buffers Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-3-1-protocol-buffers-definition-sticky.svg" alt="Sticky Note: 15.3.1 Protocol Buffers Definition" width="30%">
+</a>
+
+
 ```protobuf
 service UserService {
   rpc GetUser (GetUserRequest) returns (User);
@@ -2615,6 +2791,17 @@ GraphQL (Facebook, 2015) is a query language and server runtime for APIs. Client
 
 ### 15.4.1 Query Structure
 
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-handwritten.svg" alt="Handwritten: 15.4.1 Query Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-diagram.svg" alt="Diagram: 15.4.1 Query Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-1-query-structure-sticky.svg" alt="Sticky Note: 15.4.1 Query Structure" width="30%">
+</a>
+
+
 ```graphql
 {
   user(id: 123) {
@@ -2633,6 +2820,17 @@ GraphQL (Facebook, 2015) is a query language and server runtime for APIs. Client
 ```
 
 ### 15.4.2 Schema Definition
+
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-handwritten.svg" alt="Handwritten: 15.4.2 Schema Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-diagram.svg" alt="Diagram: 15.4.2 Schema Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/15-web-apis/15-4-2-schema-definition-sticky.svg" alt="Sticky Note: 15.4.2 Schema Definition" width="30%">
+</a>
+
 
 ```graphql
 type User {

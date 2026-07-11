@@ -128,6 +128,17 @@ flowchart LR
 
 ### 34.1 Real Estate Data Models
 
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" alt="Handwritten: 34.1 Real Estate Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" alt="Diagram: 34.1 Real Estate Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" alt="Sticky Note: 34.1 Real Estate Data Models" width="30%">
+</a>
+
+
 Every real estate platform begins with a solid data foundation. The core domain includes properties (the physical assets), listings (how properties are marketed), agents (the professionals), clients (buyers, sellers, renters), showings (property tours), and offers (purchase or lease proposals). These models establish the relationships that all AI agents will query, analyze, and augment.
 
 #### Migrations
@@ -725,6 +736,17 @@ class MaintenanceRequest extends Model
 
 ### 34.2 Property Listing Agents
 
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" alt="Handwritten: 34.2 Property Listing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" alt="Diagram: 34.2 Property Listing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" alt="Sticky Note: 34.2 Property Listing Agents" width="30%">
+</a>
+
+
 A PropertyListingAgent transforms raw property data into compelling, search-optimized listings. It generates human-readable descriptions that highlight a property's best features, extracts structured amenity tags for MLS compliance, and suggests pricing strategies based on comparable listings.
 
 ```php
@@ -1060,6 +1082,17 @@ class PropertyListingAgent
 ---
 
 ### 34.3 Valuation Prediction Agents
+
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" alt="Handwritten: 34.3 Valuation Prediction Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" alt="Diagram: 34.3 Valuation Prediction Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" alt="Sticky Note: 34.3 Valuation Prediction Agents" width="30%">
+</a>
+
 
 A ValuationAgent estimates property market value by analyzing comparable sales, local market trends, and property-specific characteristics. It draws on recent closed transactions, active listings, and statistical models to produce a confidence-weighted price range.
 
@@ -1427,6 +1460,17 @@ class ValuationAgent
 
 ### 34.4 Tour Scheduling Automation
 
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" alt="Handwritten: 34.4 Tour Scheduling Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" alt="Diagram: 34.4 Tour Scheduling Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" alt="Sticky Note: 34.4 Tour Scheduling Automation" width="30%">
+</a>
+
+
 The TourSchedulingAgent automates property showing coordination. It checks agent availability, confirms client appointments, schedules open houses, and sends reminder notifications to all parties, reducing the administrative burden on agents.
 
 ```php
@@ -1768,6 +1812,17 @@ class TourSchedulingAgent
 ---
 
 ### 34.5 Document Processing Agents
+
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" alt="Handwritten: 34.5 Document Processing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" alt="Diagram: 34.5 Document Processing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" alt="Sticky Note: 34.5 Document Processing Agents" width="30%">
+</a>
+
 
 The DocumentProcessingAgent extracts structured information from real estate documents using OCR and AI-powered text analysis. It handles lease agreements, property deeds, inspection reports, title documents, and disclosure forms, populating database fields and flagging anomalies for review.
 
@@ -2151,6 +2206,17 @@ class DocumentProcessingAgent
 ---
 
 ### 34.6 Lead Qualification Agents
+
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" alt="Handwritten: 34.6 Lead Qualification Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" alt="Diagram: 34.6 Lead Qualification Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" alt="Sticky Note: 34.6 Lead Qualification Agents" width="30%">
+</a>
+
 
 The LeadQualificationAgent scores inbound buyer and renter leads against active inventory. It analyzes budget constraints, location preferences, property requirements, and behavioral signals to assign a qualification score and recommend the best property matches.
 
@@ -2551,6 +2617,17 @@ class LeadQualificationAgent
 
 ### 34.7 Market Analysis Agents
 
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" alt="Handwritten: 34.7 Market Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" alt="Diagram: 34.7 Market Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" alt="Sticky Note: 34.7 Market Analysis Agents" width="30%">
+</a>
+
+
 The MarketAnalysisAgent ingests listing and transaction data to produce neighborhood-level market intelligence. It tracks price trends, inventory velocity, seasonality, and supply-demand dynamics, generating reports that agents can share with clients during listing presentations.
 
 ```php
@@ -2876,6 +2953,17 @@ class MarketAnalysisAgent
 ---
 
 ### 34.8 Rental Management Agents
+
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" alt="Handwritten: 34.8 Rental Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" alt="Diagram: 34.8 Rental Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" alt="Sticky Note: 34.8 Rental Management Agents" width="30%">
+</a>
+
 
 The RentalManagementAgent automates the landlord-tenant lifecycle. It tracks monthly rent payments, flags overdue accounts, coordinates maintenance requests from report through resolution, and manages lease renewals with automated reminders and proposal generation.
 
@@ -3216,6 +3304,17 @@ class RentalManagementAgent
 ---
 
 ### 34.9 CRM for Real Estate Agents
+
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" alt="Handwritten: 34.9 CRM for Real Estate Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" alt="Diagram: 34.9 CRM for Real Estate Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" alt="Sticky Note: 34.9 CRM for Real Estate Agents" width="30%">
+</a>
+
 
 The RealEstateCrmAgent tracks every client touchpoint → calls, emails, showings, offers, and closing milestones → and uses AI to recommend the next best action. It surfaces follow-up reminders, identifies at-risk relationships, and suggests strategic touches that keep agents top-of-mind.
 

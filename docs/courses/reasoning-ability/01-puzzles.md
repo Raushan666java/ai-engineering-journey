@@ -18,6 +18,17 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Puzzles in IBPS SO IT Officer Prelims
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+</a>
+
+
 The Reasoning Ability section of IBPS SO IT Officer Prelims consists of 25 questions to be solved within a shared time limit of 40 minutes (together with Quantitative Aptitude). Puzzles alone account for approximately 10–15 questions, making them the single most important topic. A typical IBPS SO exam paper includes:
 - One floor-based puzzle carrying 4–5 questions
 - One box or stack puzzle carrying 4–5 questions
@@ -50,6 +61,17 @@ flowchart LR
 
 ### 2. Types of Constraints
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" alt="Handwritten: 2. Types of Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" alt="Diagram: 2. Types of Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" alt="Sticky Note: 2. Types of Constraints" width="30%">
+</a>
+
+
 Understanding the types of constraints is the first step toward systematic puzzle solving.
 
 | Type | Description | Example |
@@ -71,6 +93,17 @@ Understanding the types of constraints is the first step toward systematic puzzl
 - `A - B - C` → A, B, C in that order
 
 ### 3. Floor-Based Puzzles
+
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" alt="Handwritten: 3. Floor-Based Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" alt="Diagram: 3. Floor-Based Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" alt="Sticky Note: 3. Floor-Based Puzzles" width="30%">
+</a>
+
 
 Floor-based puzzles involve persons living on different floors of a building (typically 6, 8, or 10 floors). The building may be numbered with floor 1 as the ground floor or the top floor — this must be carefully noted from the question statement.
 
@@ -111,6 +144,17 @@ Floor 1 | _____ | _____ | _____
 
 ### 4. Box-Based Puzzles
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" alt="Handwritten: 4. Box-Based Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" alt="Diagram: 4. Box-Based Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" alt="Sticky Note: 4. Box-Based Puzzles" width="30%">
+</a>
+
+
 Boxes are stacked vertically (usually 6 or 8 boxes). The topmost box occupies position 1 and the bottommost occupies position N, or vice versa — this must be clarified from the question. Attributes may include color, weight, material, contents, owner, brand, etc.
 
 **Common Framework (Topmost = Position 1):**
@@ -141,6 +185,17 @@ Boxes may have distinct weights, with constraints based on weight comparison:
 When both position and weight are involved, maintain two separate representations — one for position and one for weight — and update both as you solve.
 
 ### 5. Scheduling Puzzles
+
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" alt="Handwritten: 5. Scheduling Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" alt="Diagram: 5. Scheduling Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" alt="Sticky Note: 5. Scheduling Puzzles" width="30%">
+</a>
+
 
 Scheduling puzzles involve assigning activities, persons, or events to specific time slots — typically days of the week (Monday to Sunday), months (January to December), or specific dates in a month.
 
@@ -187,6 +242,17 @@ December  | _____
 
 ### 6. Comparison and Ordering Puzzles
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" alt="Handwritten: 6. Comparison and Ordering Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" alt="Diagram: 6. Comparison and Ordering Puzzles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" alt="Sticky Note: 6. Comparison and Ordering Puzzles" width="30%">
+</a>
+
+
 These involve arranging items or persons based on comparative data such as height, weight, age, marks, or rank in a class.
 
 **Common Phrases:**
@@ -217,6 +283,17 @@ flowchart TD
 ```
 
 ### 7. Advanced Puzzle-Solving Techniques
+
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" alt="Handwritten: 7. Advanced Puzzle-Solving Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" alt="Diagram: 7. Advanced Puzzle-Solving Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" alt="Sticky Note: 7. Advanced Puzzle-Solving Techniques" width="30%">
+</a>
+
 
 **Grid Method (Matrix Approach):**
 Create a grid with all entities as rows and all attributes as columns. Mark ✓ for confirmed positions, ✗ for impossibilities, and keep the rest blank until filled.
@@ -260,6 +337,17 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 
 ### 8. Common Traps and Pitfalls
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 8. Common Traps and Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 8. Common Traps and Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 8. Common Traps and Pitfalls" width="30%">
+</a>
+
+
 | Trap | Explanation | How to Avoid |
 |------|-------------|--------------|
 | Misinterpreting floor numbering | Floor 1 as ground vs. top changes the meaning of "above" and "below" | Read the first line carefully and mark it |
@@ -274,6 +362,17 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 
 ### 9. Time Management Strategy for Puzzle Questions
 
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" alt="Handwritten: 9. Time Management Strategy for Puzzle Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" alt="Diagram: 9. Time Management Strategy for Puzzle Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" alt="Sticky Note: 9. Time Management Strategy for Puzzle Questions" width="30%">
+</a>
+
+
 | Puzzle Type | Target Time | Max Time Before Moving On |
 |-------------|-------------|--------------------------|
 | Floor-based (1 attribute) | 3 minutes | 5 minutes |
@@ -287,6 +386,17 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 **Important:** If a puzzle takes more than the maximum time, mark the related 4–5 questions for review and move to the next section. Leaving 5 questions from one puzzle is equivalent to leaving 5 questions from different topics — do not waste disproportionate time on a single puzzle. There will be 25 questions in total, so every mark counts.
 
 ### 10. Practice Strategy for IBPS SO IT Officer Prelims
+
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+</a>
+
 
 - Attempt at least 50 floor-based puzzles, 30 box-based puzzles, and 30 scheduling puzzles before the exam
 - Start with single-attribute puzzles and gradually move to multi-attribute ones

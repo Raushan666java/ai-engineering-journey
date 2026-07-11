@@ -49,6 +49,17 @@ flowchart LR
 
 ### 3.1 Predicates
 
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" alt="Handwritten: 3.1 Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" alt="Diagram: 3.1 Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" alt="Sticky Note: 3.1 Predicates" width="30%">
+</a>
+
+
 A **predicate** $P(x)$ is a statement whose truth depends on the value of the variable $x$. The domain of $x$ is the set of values it may take. Once $x$ is assigned a specific value, $P(x)$ becomes a proposition.
 
 Example: $P(x)$ = "$x$ is prime". When $x = 2$, $P(2)$ is true; when $x = 4$, $P(4)$ is false.
@@ -61,6 +72,17 @@ A predicate can have multiple variables: $Q(x, y)$ = "$x$ loves $y$". The truth 
 > **One-Sentence Takeaway:** A predicate is like a function that returns a truth value ? it only becomes a proposition when its variable is bound to a specific value.
 
 ### 3.2 Quantifiers
+
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" alt="Handwritten: 3.2 Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" alt="Diagram: 3.2 Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" alt="Sticky Note: 3.2 Quantifiers" width="30%">
+</a>
+
 
 **Universal quantifier:** $\forall x\; P(x)$ means "$P(x)$ is true for all $x$ in the domain."
 
@@ -89,6 +111,17 @@ flowchart LR
 
 ### 3.3 Translation between English and Logic
 
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" alt="Handwritten: 3.3 Translation between English and Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" alt="Diagram: 3.3 Translation between English and Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" alt="Sticky Note: 3.3 Translation between English and Logic" width="30%">
+</a>
+
+
 English often uses implicit quantifiers. Careful translation requires identifying the domain and quantifier type.
 
 - "All cats are mammals": $\forall x\;(\text{Cat}(x) \rightarrow \text{Mammal}(x))$
@@ -106,6 +139,17 @@ Note the pattern: "all" uses $\rightarrow$; "some" uses $\land$.
 > **One-Sentence Takeaway:** Translate "all A are B" as $\forall x (A(x) \rightarrow B(x))$ and "some A are B" as $\exists x (A(x) \land B(x))$ ? mixing these up is the most common quantifier mistake.
 
 ### 3.4 Negating Quantified Statements
+
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" alt="Handwritten: 3.4 Negating Quantified Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" alt="Diagram: 3.4 Negating Quantified Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" alt="Sticky Note: 3.4 Negating Quantified Statements" width="30%">
+</a>
+
 
 **Theorem 3.1 (Quantifier Negation).**
 $$\neg \forall x\; P(x) \equiv \exists x\; \neg P(x)$$
@@ -132,6 +176,17 @@ console.log(negateExistential(nums, x => x > 10)); // true (no element > 10)
 > **One-Sentence Takeaway:** Negating a quantified statement flips every $\forall$ to $\exists$ and vice versa, then pushes the negation past all quantifiers.
 
 ### 3.5 Nested Quantifiers
+
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.5 Nested Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" alt="Diagram: 3.5 Nested Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.5 Nested Quantifiers" width="30%">
+</a>
+
 
 When quantifiers appear within each other, order matters.
 
@@ -168,6 +223,17 @@ console.log(checkExistsForall(nums)); // false (no single element > all others i
 
 ### 3.6 Negating Nested Quantifiers
 
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.6 Negating Nested Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" alt="Diagram: 3.6 Negating Nested Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.6 Negating Nested Quantifiers" width="30%">
+</a>
+
+
 Apply quantifier negation rules sequentially, from left to right:
 
 $$\neg \forall x\; \exists y\; P(x,y) \equiv \exists x\; \neg \exists y\; P(x,y) \equiv \exists x\; \forall y\; \neg P(x,y)$$
@@ -183,6 +249,17 @@ $$\neg \forall x\; \exists y\; \forall z\; P(x,y,z) \equiv \exists x\; \forall y
 > **One-Sentence Takeaway:** Negating nested quantifiers is mechanical ? flip each quantifier and push the negation through, working left to right.
 
 ### 3.7 Uniqueness Quantifier
+
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" alt="Handwritten: 3.7 Uniqueness Quantifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" alt="Diagram: 3.7 Uniqueness Quantifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" alt="Sticky Note: 3.7 Uniqueness Quantifier" width="30%">
+</a>
+
 
 The **uniqueness quantifier** $\exists!x\; P(x)$ means "there exists exactly one $x$ such that $P(x)$." It can be expressed using $\forall$ and $\exists$:
 
@@ -204,6 +281,17 @@ console.log(existsUnique([1, 2, 3, 4, 5], x => x === 3));      // true
 
 ### 3.8 Validity of Arguments with Quantifiers
 
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" alt="Handwritten: 3.8 Validity of Arguments with Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" alt="Diagram: 3.8 Validity of Arguments with Quantifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" alt="Sticky Note: 3.8 Validity of Arguments with Quantifiers" width="30%">
+</a>
+
+
 An argument form with quantifiers is **valid** iff whenever all premises are true, the conclusion is also true. Inference rules for quantifiers include:
 
 - **Universal instantiation:** $\forall x\; P(x) \implies P(c)$ for any particular $c$
@@ -221,6 +309,17 @@ Therefore: Socrates is mortal. $M(s)$
 > **One-Sentence Takeaway:** Universal instantiation (from "all" to "any particular") and existential generalization (from "a specific example" to "some") are the workhorse inference rules for quantified arguments.
 
 ### 3.9 Prenex Normal Form
+
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" alt="Handwritten: 3.9 Prenex Normal Form" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" alt="Diagram: 3.9 Prenex Normal Form" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" alt="Sticky Note: 3.9 Prenex Normal Form" width="30%">
+</a>
+
 
 A formula is in **prenex normal form** if all quantifiers appear at the front (prefix) followed by a quantifier-free matrix (body).
 

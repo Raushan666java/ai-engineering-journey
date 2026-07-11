@@ -54,6 +54,17 @@ flowchart LR
 
 ### Phase 1: Problem Scope and Requirements
 
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-handwritten.svg" alt="Handwritten: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-diagram.svg" alt="Diagram: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-1-problem-scope-and-requirements-sticky.svg" alt="Sticky Note: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -80,6 +91,17 @@ The functional requirements span four major user flows. For riders: request a ri
 
 ### Phase 2: Pre-Uber Architecture — The Monolith Era
 
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-handwritten.svg" alt="Handwritten: Phase 2: Pre-Uber Architecture — The Monolith Era" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-diagram.svg" alt="Diagram: Phase 2: Pre-Uber Architecture — The Monolith Era" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-2-pre-uber-architecture-the-monolith-era-sticky.svg" alt="Sticky Note: Phase 2: Pre-Uber Architecture — The Monolith Era" width="30%">
+</a>
+
+
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
@@ -91,6 +113,17 @@ As Uber expanded from San Francisco to Paris, London, Shanghai, and São Paulo, 
 The spatial queries were the first bottleneck. Finding nearby drivers required a MySQL query like `SELECT * FROM drivers WHERE lat BETWEEN ? AND ? AND lng BETWEEN ? AND ? AND status = 'available'`. This bounding-box scan worked for 1,000 drivers but failed at 100,000. The response time for a dispatch query grew from 50 milliseconds to several seconds. Uber's engineers realized they needed a fundamentally different approach to spatial indexing.
 
 ### Phase 3: Post-Uber Architecture — Microservices, S2, and Kafka
+
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-handwritten.svg" alt="Handwritten: Phase 3: Post-Uber Architecture — Microservices, S2, and Kafka" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-diagram.svg" alt="Diagram: Phase 3: Post-Uber Architecture — Microservices, S2, and Kafka" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-3-post-uber-architecture-microservices-s2-and-kafka-sticky.svg" alt="Sticky Note: Phase 3: Post-Uber Architecture — Microservices, S2, and Kafka" width="30%">
+</a>
+
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -251,6 +284,17 @@ The raw location stream, trip records, and driver-rider interactions all flow to
 - Business intelligence: dashboards for city operations teams
 
 ### Phase 4: Data Storage, Sharding, and Infrastructure
+
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-handwritten.svg" alt="Handwritten: Phase 4: Data Storage, Sharding, and Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-diagram.svg" alt="Diagram: Phase 4: Data Storage, Sharding, and Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/phase-4-data-storage-sharding-and-infrastructure-sticky.svg" alt="Sticky Note: Phase 4: Data Storage, Sharding, and Infrastructure" width="30%">
+</a>
+
 
 **Kafka Event Backbone**
 
@@ -419,6 +463,17 @@ graph TB
 
 ### Mermaid: Uber Architecture Evolution
 
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-handwritten.svg" alt="Handwritten: Mermaid: Uber Architecture Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-diagram.svg" alt="Diagram: Mermaid: Uber Architecture Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/mermaid-uber-architecture-evolution-sticky.svg" alt="Sticky Note: Mermaid: Uber Architecture Evolution" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     M[Monolith: Python + MySQL] --> S[Service Split: Trip, Payment, Dispatch]
@@ -522,6 +577,17 @@ class RideMatcher {
 
 
 ### Implementation: Uber Architecture Case Study
+
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-handwritten.svg" alt="Handwritten: Implementation: Uber Architecture Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-diagram.svg" alt="Diagram: Implementation: Uber Architecture Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/21-case-study-uber/implementation-uber-architecture-case-study-sticky.svg" alt="Sticky Note: Implementation: Uber Architecture Case Study" width="30%">
+</a>
+
 
 ```typescript
 class UberArchitecture {

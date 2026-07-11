@@ -18,6 +18,17 @@ After completing this chapter, the student will be able to:
 
 ### What are Formal Methods?
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-handwritten.svg" alt="Handwritten: What are Formal Methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-diagram.svg" alt="Diagram: What are Formal Methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/what-are-formal-methods-sticky.svg" alt="Sticky Note: What are Formal Methods?" width="30%">
+</a>
+
+
 Formal methods are mathematically based techniques for the specification, development, and verification of software systems. They provide a rigorous foundation for demonstrating that a system meets its requirements.
 
 ```mermaid
@@ -55,6 +66,17 @@ graph TD
 
 ### Formal vs Informal Methods
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-handwritten.svg" alt="Handwritten: Formal vs Informal Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-diagram.svg" alt="Diagram: Formal vs Informal Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/formal-vs-informal-methods-sticky.svg" alt="Sticky Note: Formal vs Informal Methods" width="30%">
+</a>
+
+
 | Aspect | Formal Methods | Informal/Traditional Methods |
 |--------|---------------|------------------------------|
 | **Specification** | Precise mathematical notation | Natural language, diagrams |
@@ -68,6 +90,17 @@ graph TD
 | **Standards** | DO-178C (aviation), IEC 61508 (industrial) | ISO 9001, CMMI |
 
 ### Propositional and Predicate Logic
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-handwritten.svg" alt="Handwritten: Propositional and Predicate Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-diagram.svg" alt="Diagram: Propositional and Predicate Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/propositional-and-predicate-logic-sticky.svg" alt="Sticky Note: Propositional and Predicate Logic" width="30%">
+</a>
+
 
 #### Propositional Logic
 
@@ -96,6 +129,17 @@ Predicate logic extends propositional logic with quantifiers:
 ```
 
 ### Finite State Machines (FSMs)
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-handwritten.svg" alt="Handwritten: Finite State Machines (FSMs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-diagram.svg" alt="Diagram: Finite State Machines (FSMs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/finite-state-machines-fsms-sticky.svg" alt="Sticky Note: Finite State Machines (FSMs)" width="30%">
+</a>
+
 
 An FSM is defined by a 5-tuple `(S, Σ, δ, s₀, F)`:
 
@@ -141,6 +185,17 @@ graph TD
 
 ### Temporal Logic
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-handwritten.svg" alt="Handwritten: Temporal Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-diagram.svg" alt="Diagram: Temporal Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/temporal-logic-sticky.svg" alt="Sticky Note: Temporal Logic" width="30%">
+</a>
+
+
 Temporal logic extends predicate logic with operators for reasoning about time.
 
 | Operator | LTL | CTL | Meaning |
@@ -154,6 +209,17 @@ Temporal logic extends predicate logic with operators for reasoning about time.
 **Liveness Property:** "Something good eventually happens" — e.g., `F (request_satisfied)`
 
 ### Hoare Logic and Weakest Preconditions
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-handwritten.svg" alt="Handwritten: Hoare Logic and Weakest Preconditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-diagram.svg" alt="Diagram: Hoare Logic and Weakest Preconditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/hoare-logic-and-weakest-preconditions-sticky.svg" alt="Sticky Note: Hoare Logic and Weakest Preconditions" width="30%">
+</a>
+
 
 **Hoare Triple:** `{P} C {Q}`
 
@@ -189,6 +255,17 @@ wp(y := x + 1, y > 0) = (x + 1 > 0) = (x > -1)
 
 ### Invariants
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-handwritten.svg" alt="Handwritten: Invariants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-diagram.svg" alt="Diagram: Invariants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/invariants-sticky.svg" alt="Sticky Note: Invariants" width="30%">
+</a>
+
+
 An **invariant** is a predicate that holds at specific points in program execution:
 
 - **Loop invariants:** Hold before and after each loop iteration
@@ -205,6 +282,17 @@ An **invariant** is a predicate that holds at specific points in program executi
 ```
 
 ### The Z Notation
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-handwritten.svg" alt="Handwritten: The Z Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-diagram.svg" alt="Diagram: The Z Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/the-z-notation-sticky.svg" alt="Sticky Note: The Z Notation" width="30%">
+</a>
+
 
 Z (pronounced "Zed") is a formal specification language based on set theory and first-order predicate logic.
 
@@ -264,6 +352,17 @@ Z schemas can be combined using operators:
 
 ### B-Method
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-handwritten.svg" alt="Handwritten: B-Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-diagram.svg" alt="Diagram: B-Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/b-method-sticky.svg" alt="Sticky Note: B-Method" width="30%">
+</a>
+
+
 The B-Method is a formal method for specifying, designing, and coding software systems using abstract machines.
 
 #### Abstract Machine Structure
@@ -310,6 +409,17 @@ INVARIANT
 
 ### Alloy
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-handwritten.svg" alt="Handwritten: Alloy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-diagram.svg" alt="Diagram: Alloy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/alloy-sticky.svg" alt="Sticky Note: Alloy" width="30%">
+</a>
+
+
 Alloy is a lightweight formal method based on relational logic. It is particularly suited for early-stage modelling and automated analysis.
 
 **Key Concepts:**
@@ -347,6 +457,17 @@ check NoDuplicateBorrow for 5
 
 ### TLA+ (Temporal Logic of Actions)
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-handwritten.svg" alt="Handwritten: TLA+ (Temporal Logic of Actions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-diagram.svg" alt="Diagram: TLA+ (Temporal Logic of Actions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/tla-temporal-logic-of-actions-sticky.svg" alt="Sticky Note: TLA+ (Temporal Logic of Actions)" width="30%">
+</a>
+
+
 TLA+, created by Leslie Lamport, is used for specifying and verifying concurrent and distributed systems.
 
 **Key Concepts:**
@@ -379,6 +500,17 @@ MinuteInvariant ≜ minute ∈ {0..59}
 **Model checking in TLA+:** TLC (the TLA+ model checker) can check invariants by exploring all reachable states. For the SimpleClock, it would verify that `HourInvariant` and `MinuteInvariant` hold in all states.
 
 ### Model Checking
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-handwritten.svg" alt="Handwritten: Model Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-diagram.svg" alt="Diagram: Model Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/model-checking-sticky.svg" alt="Sticky Note: Model Checking" width="30%">
+</a>
+
 
 Model checking is an automated technique for verifying finite-state systems against temporal logic properties.
 
@@ -470,6 +602,17 @@ The number of states grows exponentially with system components. Mitigation stra
 
 ### Theorem Proving
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-handwritten.svg" alt="Handwritten: Theorem Proving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-diagram.svg" alt="Diagram: Theorem Proving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/theorem-proving-sticky.svg" alt="Sticky Note: Theorem Proving" width="30%">
+</a>
+
+
 Theorem proving uses deductive reasoning to prove properties about programs. Unlike model checking, it can handle infinite state spaces but requires human guidance.
 
 | Tool | Logic | Use Case | Strengths | Notable Projects |
@@ -503,6 +646,17 @@ done
 
 ### Applications of Formal Methods
 
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-handwritten.svg" alt="Handwritten: Applications of Formal Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-diagram.svg" alt="Diagram: Applications of Formal Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/applications-of-formal-methods-sticky.svg" alt="Sticky Note: Applications of Formal Methods" width="30%">
+</a>
+
+
 #### Aviation (DO-178C Level A)
 - Airbus A380: Formal methods used for flight control software verification
 - Boeing 787: Model-based development of systems
@@ -523,6 +677,17 @@ done
 - ISO 26262: Formal methods recommended for ASIL D
 
 ### Case Studies
+
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-handwritten.svg" alt="Handwritten: Case Studies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-diagram.svg" alt="Diagram: Case Studies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/14-formal-methods/case-studies-sticky.svg" alt="Sticky Note: Case Studies" width="30%">
+</a>
+
 
 #### Therac-25 Radiation Overdose (1985-1987)
 

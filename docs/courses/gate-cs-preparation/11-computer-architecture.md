@@ -79,6 +79,17 @@ flowchart LR
 ## 1. Basic Computer Organization
 
 ### 1.1 von Neumann Architecture
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-handwritten.svg" alt="Handwritten: 1.1 von Neumann Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-diagram.svg" alt="Diagram: 1.1 von Neumann Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-1-von-neumann-architecture-sticky.svg" alt="Sticky Note: 1.1 von Neumann Architecture" width="30%">
+</a>
+
 
 The von Neumann architecture (stored-program concept) uses a single shared memory for both instructions and data.
 
@@ -103,6 +114,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 3. **Execute:** ALU performs operation, results written back
 
 ### 1.2 Harvard Architecture
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-handwritten.svg" alt="Handwritten: 1.2 Harvard Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-diagram.svg" alt="Diagram: 1.2 Harvard Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-2-harvard-architecture-sticky.svg" alt="Sticky Note: 1.2 Harvard Architecture" width="30%">
+</a>
+
 
 - Separate instruction memory and data memory
 - Allows simultaneous fetch and data access
@@ -110,6 +132,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 - Pipelining benefits from Harvard: instruction fetch and data access don't conflict
 
 ### 1.3 CPU Register Set
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-handwritten.svg" alt="Handwritten: 1.3 CPU Register Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-diagram.svg" alt="Diagram: 1.3 CPU Register Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-3-cpu-register-set-sticky.svg" alt="Sticky Note: 1.3 CPU Register Set" width="30%">
+</a>
+
 
 | Register | Size | Purpose |
 |----------|------|---------|
@@ -127,6 +160,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 **Invisible registers:** MAR, MDR, IR, temporary ALU inputs Ã¢â€ â€™ used internally.
 
 ### 1.4 Bus Architecture
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-handwritten.svg" alt="Handwritten: 1.4 Bus Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-diagram.svg" alt="Diagram: 1.4 Bus Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-4-bus-architecture-sticky.svg" alt="Sticky Note: 1.4 Bus Architecture" width="30%">
+</a>
+
 
 **Single Bus Architecture:**
 - All components share one bus
@@ -143,6 +187,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 - Asynchronous bus: handshaking protocol (READY/ACK)
 
 ### 1.5 Word Length & Addressing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-handwritten.svg" alt="Handwritten: 1.5 Word Length & Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-diagram.svg" alt="Diagram: 1.5 Word Length & Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/1-5-word-length-addressing-sticky.svg" alt="Sticky Note: 1.5 Word Length & Addressing" width="30%">
+</a>
+
 
 - Word length: natural data size of the processor (n bits Ã¢â€ â€™ ALU, registers, buses all n-bit)
 - Byte addressable: each byte has a unique address
@@ -153,6 +208,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 ## 2. Instruction Set Architecture
 
 ### 2.1 RISC vs CISC
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-handwritten.svg" alt="Handwritten: 2.1 RISC vs CISC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-diagram.svg" alt="Diagram: 2.1 RISC vs CISC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-1-risc-vs-cisc-sticky.svg" alt="Sticky Note: 2.1 RISC vs CISC" width="30%">
+</a>
+
 
 | Feature | RISC | CISC |
 |---------|------|------|
@@ -173,6 +239,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 5. Hardwired control for speed
 
 ### 2.2 Addressing Modes
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-handwritten.svg" alt="Handwritten: 2.2 Addressing Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-diagram.svg" alt="Diagram: 2.2 Addressing Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-2-addressing-modes-sticky.svg" alt="Sticky Note: 2.2 Addressing Modes" width="30%">
+</a>
+
 
 | Addressing Mode | Effective Address | Example (MIPS-like) | Use Case |
 |-----------------|-------------------|---------------------|----------|
@@ -190,6 +267,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 **GATE tip:** Always check the direction of autoincrement (post-increment) vs autodecrement (pre-decrement).
 
 ### 2.3 Instruction Formats
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-handwritten.svg" alt="Handwritten: 2.3 Instruction Formats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-diagram.svg" alt="Diagram: 2.3 Instruction Formats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-3-instruction-formats-sticky.svg" alt="Sticky Note: 2.3 Instruction Formats" width="30%">
+</a>
+
 
 **Zero-address (Stack machine):**
 - `ADD` Ã¢â€ â€™ pops two values from stack, pushes result
@@ -208,6 +296,17 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 - Maximum flexibility, longer instruction length
 
 ### 2.4 Endianness
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-handwritten.svg" alt="Handwritten: 2.4 Endianness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-diagram.svg" alt="Diagram: 2.4 Endianness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-4-endianness-sticky.svg" alt="Sticky Note: 2.4 Endianness" width="30%">
+</a>
+
 
 **Big Endian:** Most significant byte at lowest address (IBM, network byte order)
 ```
@@ -224,6 +323,17 @@ Value:    0x78 0x56 0x34 0x12
 **Bi-Endian:** Can switch (ARM, PowerPC)
 
 ### 2.5 Condition Codes / Flags
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-handwritten.svg" alt="Handwritten: 2.5 Condition Codes / Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-diagram.svg" alt="Diagram: 2.5 Condition Codes / Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/2-5-condition-codes-flags-sticky.svg" alt="Sticky Note: 2.5 Condition Codes / Flags" width="30%">
+</a>
+
 
 | Flag | Meaning | Set When |
 |------|---------|----------|
@@ -237,6 +347,17 @@ Value:    0x78 0x56 0x34 0x12
 ## 3. Data Representation
 
 ### 3.1 Number Bases
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-handwritten.svg" alt="Handwritten: 3.1 Number Bases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-diagram.svg" alt="Diagram: 3.1 Number Bases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-1-number-bases-sticky.svg" alt="Sticky Note: 3.1 Number Bases" width="30%">
+</a>
+
 
 **Conversions:**
 - Decimal Ã¢â€ â€™ Binary: repeated division by 2
@@ -245,6 +366,17 @@ Value:    0x78 0x56 0x34 0x12
 - Octal Ã¢â€ â€� Binary: group 3 bits
 
 ### 3.2 Signed Integer Representations
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-handwritten.svg" alt="Handwritten: 3.2 Signed Integer Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-diagram.svg" alt="Diagram: 3.2 Signed Integer Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-2-signed-integer-representations-sticky.svg" alt="Sticky Note: 3.2 Signed Integer Representations" width="30%">
+</a>
+
 
 **Signed Magnitude:**
 - MSB = sign (0=+ve, 1=ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ve), remaining bits = magnitude
@@ -275,12 +407,34 @@ Value:    0x78 0x56 0x34 0x12
 | n | Ãƒâ€šÃ‚Â±(2^(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) | Ãƒâ€šÃ‚Â±(2^(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2^(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) to +2^(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 |
 
 ### 3.3 Fixed-Point Representation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-handwritten.svg" alt="Handwritten: 3.3 Fixed-Point Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-diagram.svg" alt="Diagram: 3.3 Fixed-Point Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-3-fixed-point-representation-sticky.svg" alt="Sticky Note: 3.3 Fixed-Point Representation" width="30%">
+</a>
+
 
 - Qm.n format: m integer bits, n fractional bits
 - Value = (integer part) + (fractional part) ÃƒÆ’Ã¢â‚¬â€� 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢n)
 - Example: Q4.4 Ã¢â€ â€™ range 0 to 15.9375, precision 1/16
 
 ### 3.4 IEEE 754 Floating-Point Standard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-handwritten.svg" alt="Handwritten: 3.4 IEEE 754 Floating-Point Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-diagram.svg" alt="Diagram: 3.4 IEEE 754 Floating-Point Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-4-ieee-754-floating-point-standard-sticky.svg" alt="Sticky Note: 3.4 IEEE 754 Floating-Point Standard" width="30%">
+</a>
+
 
 #### Single Precision (32-bit)
 
@@ -346,6 +500,17 @@ Where:
 - Cases of overflow/underflow
 
 ### 3.5 Floating-Point Arithmetic
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-handwritten.svg" alt="Handwritten: 3.5 Floating-Point Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-diagram.svg" alt="Diagram: 3.5 Floating-Point Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/3-5-floating-point-arithmetic-sticky.svg" alt="Sticky Note: 3.5 Floating-Point Arithmetic" width="30%">
+</a>
+
 
 **Addition/Subtraction:**
 1. Align exponents (smaller exponent Ã¢â€ â€™ larger)
@@ -363,6 +528,17 @@ Where:
 ## 4. ALU & Arithmetic Circuits
 
 ### 4.1 Basic Adders
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-handwritten.svg" alt="Handwritten: 4.1 Basic Adders" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-diagram.svg" alt="Diagram: 4.1 Basic Adders" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-1-basic-adders-sticky.svg" alt="Sticky Note: 4.1 Basic Adders" width="30%">
+</a>
+
 
 **Half Adder:**
 - S = A ÃƒÂ¢Ã…Â Ã¢â‚¬Â¢ B, C = A Ãƒâ€šÃ‚Â· B
@@ -372,12 +548,34 @@ Where:
 - Cout = AÃƒâ€šÃ‚Â·B + CinÃƒâ€šÃ‚Â·(AÃƒÂ¢Ã…Â Ã¢â‚¬Â¢B) = AÃƒâ€šÃ‚Â·B + BÃƒâ€šÃ‚Â·Cin + AÃƒâ€šÃ‚Â·Cin
 
 ### 4.2 Ripple-Carry Adder (RCA)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-handwritten.svg" alt="Handwritten: 4.2 Ripple-Carry Adder (RCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-diagram.svg" alt="Diagram: 4.2 Ripple-Carry Adder (RCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-2-ripple-carry-adder-rca-sticky.svg" alt="Sticky Note: 4.2 Ripple-Carry Adder (RCA)" width="30%">
+</a>
+
 
 - n full adders cascaded: Cout of stage i Ã¢â€ â€™ Cin of stage i+1
 - Delay = n ÃƒÆ’Ã¢â‚¬â€� t_FA (where t_FA = delay of one full adder)
 - Simple but slow for large n
 
 ### 4.3 Carry Lookahead Adder (CLA)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-handwritten.svg" alt="Handwritten: 4.3 Carry Lookahead Adder (CLA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-diagram.svg" alt="Diagram: 4.3 Carry Lookahead Adder (CLA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-3-carry-lookahead-adder-cla-sticky.svg" alt="Sticky Note: 4.3 Carry Lookahead Adder (CLA)" width="30%">
+</a>
+
 
 **Key insight:** Generate (G) and Propagate (P) signals:
 
@@ -396,6 +594,17 @@ C_4 = G_3 + P_3Ãƒâ€šÃ‚Â·G_2 + P_3Ãƒâ€šÃ‚Â·P_2Ãƒâ€šÃ
 - Practical: CLA for 4-bit blocks; cascaded block CLA for larger widths
 
 ### 4.4 Carry-Save Adder (CSA)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-handwritten.svg" alt="Handwritten: 4.4 Carry-Save Adder (CSA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-diagram.svg" alt="Diagram: 4.4 Carry-Save Adder (CSA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-4-carry-save-adder-csa-sticky.svg" alt="Sticky Note: 4.4 Carry-Save Adder (CSA)" width="30%">
+</a>
+
 
 - Used in multi-operand addition (summing 3+ numbers)
 - Saves carry outputs rather than propagating them
@@ -403,6 +612,17 @@ C_4 = G_3 + P_3Ãƒâ€šÃ‚Â·G_2 + P_3Ãƒâ€šÃ‚Â·P_2Ãƒâ€šÃ
 - Final stage uses a CLA to combine sum and carry vectors
 
 ### 4.5 Booth's Algorithm (Signed Multiplication)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-handwritten.svg" alt="Handwritten: 4.5 Booth's Algorithm (Signed Multiplication)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-diagram.svg" alt="Diagram: 4.5 Booth's Algorithm (Signed Multiplication)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-5-booth-s-algorithm-signed-multiplication-sticky.svg" alt="Sticky Note: 4.5 Booth's Algorithm (Signed Multiplication)" width="30%">
+</a>
+
 
 **Encoding (Booth recoding) for multiplier bits:**
 - 00 Ã¢â€ â€™ 0 (no operation)
@@ -428,6 +648,17 @@ for i = 0 to nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1:
 - Operations: ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2M, ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢M, 0, +M, +2M
 
 ### 4.6 Restoring Division
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-handwritten.svg" alt="Handwritten: 4.6 Restoring Division" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-diagram.svg" alt="Diagram: 4.6 Restoring Division" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-6-restoring-division-sticky.svg" alt="Sticky Note: 4.6 Restoring Division" width="30%">
+</a>
+
 
 **Algorithm (n-bit dividend / n-bit divisor Ã¢â€ â€™ n-bit quotient):**
 ```
@@ -447,6 +678,17 @@ for i = 0 to nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1:
 **Problem:** worst-case 2n operations per division
 
 ### 4.7 Non-Restoring Division
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-handwritten.svg" alt="Handwritten: 4.7 Non-Restoring Division" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-diagram.svg" alt="Diagram: 4.7 Non-Restoring Division" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-7-non-restoring-division-sticky.svg" alt="Sticky Note: 4.7 Non-Restoring Division" width="30%">
+</a>
+
 
 **Optimization:** eliminate the restore step
 ```
@@ -467,6 +709,17 @@ if remainder < 0:
 **GATE tip:** Non-restoring is always faster than restoring in worst case; both same in best case.
 
 ### 4.8 Fast Multiplication (Array Multiplier)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-handwritten.svg" alt="Handwritten: 4.8 Fast Multiplication (Array Multiplier)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-diagram.svg" alt="Diagram: 4.8 Fast Multiplication (Array Multiplier)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/4-8-fast-multiplication-array-multiplier-sticky.svg" alt="Sticky Note: 4.8 Fast Multiplication (Array Multiplier)" width="30%">
+</a>
+
 
 - Uses array of AND gates + adders (Carry Save + CLA)
 - Wallace tree: reduces partial products in parallel using CSAs
@@ -477,6 +730,17 @@ if remainder < 0:
 ## 5. Control Unit
 
 ### 5.1 Hardwired Control
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-handwritten.svg" alt="Handwritten: 5.1 Hardwired Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-diagram.svg" alt="Diagram: 5.1 Hardwired Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-1-hardwired-control-sticky.svg" alt="Sticky Note: 5.1 Hardwired Control" width="30%">
+</a>
+
 
 - Control signals generated by combinational logic (gate-level circuits)
 - Inputs: opcode + status flags + clock
@@ -493,6 +757,17 @@ if remainder < 0:
 **Disadvantages:** Inflexible, hard to modify, complex for large ISAs
 
 ### 5.2 Microprogrammed Control
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-handwritten.svg" alt="Handwritten: 5.2 Microprogrammed Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-diagram.svg" alt="Diagram: 5.2 Microprogrammed Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-2-microprogrammed-control-sticky.svg" alt="Sticky Note: 5.2 Microprogrammed Control" width="30%">
+</a>
+
 
 - Control signals stored in Control Memory (ROM) as microinstructions
 - Sequencer (micro-PC) steps through microcode
@@ -521,6 +796,17 @@ if remainder < 0:
 - Used in Motorola 68000, VAX
 
 ### 5.3 Microinstruction Sequencing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-handwritten.svg" alt="Handwritten: 5.3 Microinstruction Sequencing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-diagram.svg" alt="Diagram: 5.3 Microinstruction Sequencing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-3-microinstruction-sequencing-sticky.svg" alt="Sticky Note: 5.3 Microinstruction Sequencing" width="30%">
+</a>
+
 
 **Next-address generation methods:**
 1. **Next sequential** (micro-PC + 1) Ã¢â€ â€™ implicit
@@ -534,6 +820,17 @@ if remainder < 0:
 - Mapping enable
 
 ### 5.4 Hardwired vs Microprogrammed Comparison
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-handwritten.svg" alt="Handwritten: 5.4 Hardwired vs Microprogrammed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-diagram.svg" alt="Diagram: 5.4 Hardwired vs Microprogrammed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/5-4-hardwired-vs-microprogrammed-comparison-sticky.svg" alt="Sticky Note: 5.4 Hardwired vs Microprogrammed Comparison" width="30%">
+</a>
+
 
 | Aspect | Hardwired | Microprogrammed |
 |--------|-----------|-----------------|
@@ -550,6 +847,17 @@ if remainder < 0:
 ## 6. Pipelining
 
 ### 6.1 Basic 5-Stage RISC Pipeline
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-handwritten.svg" alt="Handwritten: 6.1 Basic 5-Stage RISC Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-diagram.svg" alt="Diagram: 6.1 Basic 5-Stage RISC Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-1-basic-5-stage-risc-pipeline-sticky.svg" alt="Sticky Note: 6.1 Basic 5-Stage RISC Pipeline" width="30%">
+</a>
+
 
 Typical RISC pipeline stages:
 ```
@@ -568,6 +876,17 @@ IF Ã¢â€ â€™ ID Ã¢â€ â€™ EX Ã¢â€ â€™ MEM Ã¢â�
 **Pipeline speedup = Number of stages (under ideal conditions)**
 
 ### 6.2 Pipeline Hazards
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-handwritten.svg" alt="Handwritten: 6.2 Pipeline Hazards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-diagram.svg" alt="Diagram: 6.2 Pipeline Hazards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-2-pipeline-hazards-sticky.svg" alt="Sticky Note: 6.2 Pipeline Hazards" width="30%">
+</a>
+
 
 #### Structural Hazard
 - Required hardware resource is busy
@@ -617,6 +936,17 @@ SUB R4, R1, R5    // R4 = R1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ R5 Ã¢â€
 4. **Branch target buffer (BTB):** Cache of previously taken branch targets Ã¢â€ â€™ predict and fetch in IF
 
 ### 6.3 Pipeline Timing Diagrams (GATE Favorite)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-handwritten.svg" alt="Handwritten: 6.3 Pipeline Timing Diagrams (GATE Favorite)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-diagram.svg" alt="Diagram: 6.3 Pipeline Timing Diagrams (GATE Favorite)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-3-pipeline-timing-diagrams-gate-favorite-sticky.svg" alt="Sticky Note: 6.3 Pipeline Timing Diagrams (GATE Favorite)" width="30%">
+</a>
+
 
 **Example: Detecting hazards and inserting stalls**
 
@@ -630,6 +960,17 @@ SW R3, 0(R5)                IF           ID    EX    MEM   WB
 **Load-use hazard:** ADD reads R1 before LW writes it Ã¢â€ â€™ 1 stall cycle needed (even with forwarding)
 
 ### 6.4 Pipeline Speedup Formula
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-handwritten.svg" alt="Handwritten: 6.4 Pipeline Speedup Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-diagram.svg" alt="Diagram: 6.4 Pipeline Speedup Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-4-pipeline-speedup-formula-sticky.svg" alt="Sticky Note: 6.4 Pipeline Speedup Formula" width="30%">
+</a>
+
 
 ```
 Speedup = CPI_unpipelined / CPI_pipelined
@@ -643,6 +984,17 @@ Actual Speedup = n / (1 + n ÃƒÆ’Ã¢â‚¬â€� (stall_frequency ÃƒÆ
 **GATE tip:** When pipelines are given with branch penalties and data hazard stalls, compute effective CPI = 1 + stall_rate ÃƒÆ’Ã¢â‚¬â€� stall_cycles.
 
 ### 6.5 Branch Prediction
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-handwritten.svg" alt="Handwritten: 6.5 Branch Prediction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-diagram.svg" alt="Diagram: 6.5 Branch Prediction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-5-branch-prediction-sticky.svg" alt="Sticky Note: 6.5 Branch Prediction" width="30%">
+</a>
+
 
 **1-bit predictor:**
 - Predict same as last outcome
@@ -662,6 +1014,17 @@ Actual Speedup = n / (1 + n ÃƒÆ’Ã¢â‚¬â€� (stall_frequency ÃƒÆ
 - Selector decides which predictor to trust per branch
 
 ### 6.6 Pipeline Depth & Superpipeline
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-handwritten.svg" alt="Handwritten: 6.6 Pipeline Depth & Superpipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-diagram.svg" alt="Diagram: 6.6 Pipeline Depth & Superpipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-6-pipeline-depth-superpipeline-sticky.svg" alt="Sticky Note: 6.6 Pipeline Depth & Superpipeline" width="30%">
+</a>
+
 
 - Deeper pipeline Ã¢â€ â€™ more stages Ã¢â€ â€™ higher clock frequency Ã¢â€ â€™ higher throughput
 - Problem: more stages = more hazards = higher penalty per mis-prediction
@@ -673,6 +1036,17 @@ Actual Speedup = n / (1 + n ÃƒÆ’Ã¢â‚¬â€� (stall_frequency ÃƒÆ
 | Deep | 14ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“20 | Pentium 4 (20ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“31), ARM Cortex-A76 (15) |
 
 ### 6.7 Superscalar Processors
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-handwritten.svg" alt="Handwritten: 6.7 Superscalar Processors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-diagram.svg" alt="Diagram: 6.7 Superscalar Processors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/6-7-superscalar-processors-sticky.svg" alt="Sticky Note: 6.7 Superscalar Processors" width="30%">
+</a>
+
 
 - Multiple instructions issued per cycle (2-way, 3-way, 4-way, ...)
 - Out-of-order execution: dynamic scheduling to avoid hazards
@@ -683,6 +1057,17 @@ Actual Speedup = n / (1 + n ÃƒÆ’Ã¢â‚¬â€� (stall_frequency ÃƒÆ
 ## 7. Memory Hierarchy
 
 ### 7.1 Memory Hierarchy Pyramid
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-handwritten.svg" alt="Handwritten: 7.1 Memory Hierarchy Pyramid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-diagram.svg" alt="Diagram: 7.1 Memory Hierarchy Pyramid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-1-memory-hierarchy-pyramid-sticky.svg" alt="Sticky Note: 7.1 Memory Hierarchy Pyramid" width="30%">
+</a>
+
 
 ```
       Registers (1 cycle, ~1 KB)
@@ -699,6 +1084,17 @@ Actual Speedup = n / (1 + n ÃƒÆ’Ã¢â‚¬â€� (stall_frequency ÃƒÆ
 - Spatial locality: nearby data will be accessed soon
 
 ### 7.2 Cache Organization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-handwritten.svg" alt="Handwritten: 7.2 Cache Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-diagram.svg" alt="Diagram: 7.2 Cache Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-2-cache-organization-sticky.svg" alt="Sticky Note: 7.2 Cache Organization" width="30%">
+</a>
+
 
 #### Cache Parameters
 
@@ -763,6 +1159,17 @@ Miss penalty = Time to fetch block from lower level
 **GATE tip:** When calculating miss rate from a sequence of accesses, draw the cache state after each access, noting which set each address maps to.
 
 ### 7.3 Replacement Policies
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-handwritten.svg" alt="Handwritten: 7.3 Replacement Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-diagram.svg" alt="Diagram: 7.3 Replacement Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-3-replacement-policies-sticky.svg" alt="Sticky Note: 7.3 Replacement Policies" width="30%">
+</a>
+
 
 | Policy | Description | Pros/Cons |
 |--------|-------------|-----------|
@@ -773,6 +1180,17 @@ Miss penalty = Time to fetch block from lower level
 | Pseudo-LRU (PLRU) | Approximate LRU with binary tree | Good hit rate, lower cost than LRU |
 
 ### 7.4 Write Policies
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-handwritten.svg" alt="Handwritten: 7.4 Write Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-diagram.svg" alt="Diagram: 7.4 Write Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-4-write-policies-sticky.svg" alt="Sticky Note: 7.4 Write Policies" width="30%">
+</a>
+
 
 | Policy | Write Hit | Write Miss |
 |--------|-----------|------------|
@@ -784,6 +1202,17 @@ Miss penalty = Time to fetch block from lower level
 - Write-through + No-write-allocate (simpler, ensures consistency)
 
 ### 7.5 Main Memory (DRAM/SRAM)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-handwritten.svg" alt="Handwritten: 7.5 Main Memory (DRAM/SRAM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-diagram.svg" alt="Diagram: 7.5 Main Memory (DRAM/SRAM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-5-main-memory-dram-sram-sticky.svg" alt="Sticky Note: 7.5 Main Memory (DRAM/SRAM)" width="30%">
+</a>
+
 
 | Property | SRAM | DRAM |
 |----------|------|------|
@@ -807,6 +1236,17 @@ Miss penalty = Time to fetch block from lower level
 **GATE tip:** Interleaving reduces the effective memory access time for sequential access patterns. For k banks, the time to access k consecutive words is T + (kÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) ÃƒÆ’Ã¢â‚¬â€� t, where T is first-word access time and t is per-word access time.
 
 ### 7.6 Virtual Memory
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-handwritten.svg" alt="Handwritten: 7.6 Virtual Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-diagram.svg" alt="Diagram: 7.6 Virtual Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-6-virtual-memory-sticky.svg" alt="Sticky Note: 7.6 Virtual Memory" width="30%">
+</a>
+
 
 **Key concepts:**
 - Virtual address (VA) Ã¢â€ â€™ Physical address (PA) translation
@@ -843,6 +1283,17 @@ EAT = TLB_hit_rate ÃƒÆ’Ã¢â‚¬â€� (TLB_hit_time + cache_access_tim
 **GATE tip:** For multi-level page tables, accessing memory requires one reference per level + the actual data access. With TLB hit, only 1 memory access (plus TLB time).
 
 ### 7.7 Cache Performance Equations (Reference Table)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-handwritten.svg" alt="Handwritten: 7.7 Cache Performance Equations (Reference Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-diagram.svg" alt="Diagram: 7.7 Cache Performance Equations (Reference Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/7-7-cache-performance-equations-reference-table-sticky.svg" alt="Sticky Note: 7.7 Cache Performance Equations (Reference Table)" width="30%">
+</a>
+
 
 | Formula | Expression |
 |---------|------------|
@@ -858,6 +1309,17 @@ EAT = TLB_hit_rate ÃƒÆ’Ã¢â‚¬â€� (TLB_hit_time + cache_access_tim
 ## 8. I/O Organization
 
 ### 8.1 Programmed I/O
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-handwritten.svg" alt="Handwritten: 8.1 Programmed I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-diagram.svg" alt="Diagram: 8.1 Programmed I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-1-programmed-i-o-sticky.svg" alt="Sticky Note: 8.1 Programmed I/O" width="30%">
+</a>
+
 
 - CPU executes I/O instructions (IN/OUT or memory-mapped I/O)
 - CPU busy-waits for I/O device ready: polls status register in a loop
@@ -871,6 +1333,17 @@ data = read(data_register);
 ```
 
 ### 8.2 Interrupt-Driven I/O
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-handwritten.svg" alt="Handwritten: 8.2 Interrupt-Driven I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-diagram.svg" alt="Diagram: 8.2 Interrupt-Driven I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-2-interrupt-driven-i-o-sticky.svg" alt="Sticky Note: 8.2 Interrupt-Driven I/O" width="30%">
+</a>
+
 
 - Device interrupts CPU when ready
 - CPU saves context Ã¢â€ â€™ ISR Ã¢â€ â€™ restore context Ã¢â€ â€™ continue
@@ -889,6 +1362,17 @@ data = read(data_register);
 10. CPU returns to interrupted program
 
 ### 8.3 Vectored vs Non-Vectored Interrupts
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-handwritten.svg" alt="Handwritten: 8.3 Vectored vs Non-Vectored Interrupts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-diagram.svg" alt="Diagram: 8.3 Vectored vs Non-Vectored Interrupts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-3-vectored-vs-non-vectored-interrupts-sticky.svg" alt="Sticky Note: 8.3 Vectored vs Non-Vectored Interrupts" width="30%">
+</a>
+
 
 | Aspect | Vectored | Non-Vectored (Polled) |
 |--------|----------|----------------------|
@@ -902,6 +1386,17 @@ data = read(data_register);
 **Priority interrupts:** Daisy chain, independent IRQ lines, or programmable interrupt controller (PIC Ã¢â€ â€™ e.g., Intel 8259A).
 
 ### 8.4 DMA (Direct Memory Access)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-handwritten.svg" alt="Handwritten: 8.4 DMA (Direct Memory Access)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-diagram.svg" alt="Diagram: 8.4 DMA (Direct Memory Access)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-4-dma-direct-memory-access-sticky.svg" alt="Sticky Note: 8.4 DMA (Direct Memory Access)" width="30%">
+</a>
+
 
 - DMA controller transfers data directly between I/O device and memory
 - CPU initiates transfer (device, memory address, byte count)
@@ -920,6 +1415,17 @@ data = read(data_register);
 **GATE tip:** The bus latency equation is important: number of cycles DMA takes from CPU depends on bus speed, DMA burst size, and memory bandwidth.
 
 ### 8.5 I/O Comparison
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-handwritten.svg" alt="Handwritten: 8.5 I/O Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-diagram.svg" alt="Diagram: 8.5 I/O Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/8-5-i-o-comparison-sticky.svg" alt="Sticky Note: 8.5 I/O Comparison" width="30%">
+</a>
+
 
 | Method | CPU Involvement | Transfer Unit | Best For |
 |--------|----------------|---------------|----------|
@@ -932,6 +1438,17 @@ data = read(data_register);
 ## 9. Multi-processors & Parallel Architecture
 
 ### 9.1 Flynn's Taxonomy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-handwritten.svg" alt="Handwritten: 9.1 Flynn's Taxonomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-diagram.svg" alt="Diagram: 9.1 Flynn's Taxonomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-1-flynn-s-taxonomy-sticky.svg" alt="Sticky Note: 9.1 Flynn's Taxonomy" width="30%">
+</a>
+
 
 | Category | Instruction Streams | Data Streams | Examples |
 |----------|-------------------|-------------|----------|
@@ -941,6 +1458,17 @@ data = read(data_register);
 | MIMD | Multiple | Multiple | Multi-core CPUs, clusters |
 
 ### 9.2 SIMD
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-handwritten.svg" alt="Handwritten: 9.2 SIMD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-diagram.svg" alt="Diagram: 9.2 SIMD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-2-simd-sticky.svg" alt="Sticky Note: 9.2 SIMD" width="30%">
+</a>
+
 
 - Single instruction, multiple data streams
 - Same operation applied to multiple data elements simultaneously
@@ -950,6 +1478,17 @@ data = read(data_register);
   - **SIMD extensions:** MMX, SSE, AVX (x86); NEON (ARM)
 
 ### 9.3 MIMD
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-handwritten.svg" alt="Handwritten: 9.3 MIMD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-diagram.svg" alt="Diagram: 9.3 MIMD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-3-mimd-sticky.svg" alt="Sticky Note: 9.3 MIMD" width="30%">
+</a>
+
 
 - Multiple processors executing different instructions on different data
 - Two categories:
@@ -965,6 +1504,17 @@ data = read(data_register);
 - Communication via message passing (MPI, OpenMP)
 
 ### 9.4 Cache Coherence
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-handwritten.svg" alt="Handwritten: 9.4 Cache Coherence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-diagram.svg" alt="Diagram: 9.4 Cache Coherence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-4-cache-coherence-sticky.svg" alt="Sticky Note: 9.4 Cache Coherence" width="30%">
+</a>
+
 
 **The coherence problem:** Multiple caches may hold copies of same memory block; writes to one must be visible to all.
 
@@ -992,6 +1542,17 @@ data = read(data_register);
 **Snooping:** All caches monitor the bus for read/invalidate transactions.
 
 ### 9.5 Amdahl's Law
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-handwritten.svg" alt="Handwritten: 9.5 Amdahl's Law" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-diagram.svg" alt="Diagram: 9.5 Amdahl's Law" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-5-amdahl-s-law-sticky.svg" alt="Sticky Note: 9.5 Amdahl's Law" width="30%">
+</a>
+
 
 ```
 Speedup = 1 / ((1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ P) + P/S)
@@ -1006,6 +1567,17 @@ S = speedup of the parallel portion
 **Example:** 90% parallelizable Ã¢â€ â€™ max speedup = 1/0.1 = 10ÃƒÆ’Ã¢â‚¬â€� (even with 1000 processors)
 
 ### 9.6 Gustafson's Law (Scaled Speedup)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-handwritten.svg" alt="Handwritten: 9.6 Gustafson's Law (Scaled Speedup)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-diagram.svg" alt="Diagram: 9.6 Gustafson's Law (Scaled Speedup)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/9-6-gustafson-s-law-scaled-speedup-sticky.svg" alt="Sticky Note: 9.6 Gustafson's Law (Scaled Speedup)" width="30%">
+</a>
+
 
 ```
 Scaled speedup = S + P ÃƒÆ’Ã¢â‚¬â€� (1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ S)
@@ -1018,6 +1590,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 ## 10. Formula Reference Tables
 
 ### 10.1 Performance Metrics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-handwritten.svg" alt="Handwritten: 10.1 Performance Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-diagram.svg" alt="Diagram: 10.1 Performance Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-1-performance-metrics-sticky.svg" alt="Sticky Note: 10.1 Performance Metrics" width="30%">
+</a>
+
 
 | Metric | Formula |
 |--------|---------|
@@ -1032,6 +1615,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Throughput | = 1 / Execution_time |
 
 ### 10.2 Pipeline Performance
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-handwritten.svg" alt="Handwritten: 10.2 Pipeline Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-diagram.svg" alt="Diagram: 10.2 Pipeline Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-2-pipeline-performance-sticky.svg" alt="Sticky Note: 10.2 Pipeline Performance" width="30%">
+</a>
+
 
 | Metric | Formula |
 |--------|---------|
@@ -1043,6 +1637,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Pipeline efficiency | = Speedup / k ÃƒÆ’Ã¢â‚¬â€� 100% |
 
 ### 10.3 Cache Parameters
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-handwritten.svg" alt="Handwritten: 10.3 Cache Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-diagram.svg" alt="Diagram: 10.3 Cache Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-3-cache-parameters-sticky.svg" alt="Sticky Note: 10.3 Cache Parameters" width="30%">
+</a>
+
 
 | Parameter | Formula |
 |-----------|---------|
@@ -1056,6 +1661,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Miss penalty | = Time to fetch block from next level |
 
 ### 10.4 IEEE 754 Quick Reference
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-handwritten.svg" alt="Handwritten: 10.4 IEEE 754 Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-diagram.svg" alt="Diagram: 10.4 IEEE 754 Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-4-ieee-754-quick-reference-sticky.svg" alt="Sticky Note: 10.4 IEEE 754 Quick Reference" width="30%">
+</a>
+
 
 | Quantity | Single (32-bit) | Double (64-bit) |
 |----------|----------------|-----------------|
@@ -1069,6 +1685,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 | Machine epsilon | 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢23) ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  1.19ÃƒÆ’Ã¢â‚¬â€�10^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢7) | 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢52) ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  2.22ÃƒÆ’Ã¢â‚¬â€�10^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢16) |
 
 ### 10.5 Memory Organization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-handwritten.svg" alt="Handwritten: 10.5 Memory Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-diagram.svg" alt="Diagram: 10.5 Memory Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/10-5-memory-organization-sticky.svg" alt="Sticky Note: 10.5 Memory Organization" width="30%">
+</a>
+
 
 | Metric | Formula |
 |--------|---------|
@@ -1083,6 +1710,17 @@ Assumes problem size grows with the number of processors, making Amdahl's Law ov
 ## 11. GATE Previous Year Questions (2010ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2025)
 
 ### C1: IEEE 754 Single Precision [GATE 2010, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-handwritten.svg" alt="Handwritten: C1: IEEE 754 Single Precision [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-diagram.svg" alt="Diagram: C1: IEEE 754 Single Precision [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c1-ieee-754-single-precision-gate-2010-2-marks-sticky.svg" alt="Sticky Note: C1: IEEE 754 Single Precision [GATE 2010, 2 marks]" width="30%">
+</a>
+
 
 **Q:** The decimal value 0.75 is to be represented in IEEE 754 single precision format. What are the exponent and mantissa?
 
@@ -1096,6 +1734,17 @@ Mantissa = 100...0 (23 bits, leading 1 implicit)
 **Answer:** Exponent = 01111110, Mantissa = 100...0
 
 ### C2: Cache Miss Rate [GATE 2010, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-handwritten.svg" alt="Handwritten: C2: Cache Miss Rate [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-diagram.svg" alt="Diagram: C2: Cache Miss Rate [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c2-cache-miss-rate-gate-2010-2-marks-sticky.svg" alt="Sticky Note: C2: Cache Miss Rate [GATE 2010, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A computer system has a 4 KB direct-mapped cache with 64-byte blocks. The main memory size is 256 KB. How many bits are in the tag, index, and offset fields?
 
@@ -1108,6 +1757,17 @@ Tag = 18 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 6 ÃƒÂ¢Ã‹â€ Ã¢â‚�
 **Answer:** Tag = 6, Index = 6, Offset = 6
 
 ### C3: Pipeline Speedup [GATE 2010, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-handwritten.svg" alt="Handwritten: C3: Pipeline Speedup [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-diagram.svg" alt="Diagram: C3: Pipeline Speedup [GATE 2010, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c3-pipeline-speedup-gate-2010-2-marks-sticky.svg" alt="Sticky Note: C3: Pipeline Speedup [GATE 2010, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 5-stage pipelined processor has stages: IF, ID, EX, MEM, WB. Branch instructions cause a 2-cycle stall. If 20% of instructions are branches, what is the average CPI?
 
@@ -1120,6 +1780,17 @@ Average CPI = 1 + 0.20 ÃƒÆ’Ã¢â‚¬â€� 2 = 1.40
 **Answer:** 1.40
 
 ### C4: 2's Complement [GATE 2011, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-handwritten.svg" alt="Handwritten: C4: 2's Complement [GATE 2011, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-diagram.svg" alt="Diagram: C4: 2's Complement [GATE 2011, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c4-2-s-complement-gate-2011-1-mark-sticky.svg" alt="Sticky Note: C4: 2's Complement [GATE 2011, 1 mark]" width="30%">
+</a>
+
 
 **Q:** The smallest integer that can be represented with 8-bit 2's complement representation is?
 
@@ -1131,6 +1802,17 @@ Smallest = ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢128
 **Answer:** ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢128
 
 ### C5: Addressing Modes [GATE 2011, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-handwritten.svg" alt="Handwritten: C5: Addressing Modes [GATE 2011, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-diagram.svg" alt="Diagram: C5: Addressing Modes [GATE 2011, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c5-addressing-modes-gate-2011-1-mark-sticky.svg" alt="Sticky Note: C5: Addressing Modes [GATE 2011, 1 mark]" width="30%">
+</a>
+
 
 **Q:** Which addressing mode is used to access the stack?
 
@@ -1139,6 +1821,17 @@ Smallest = ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢128
 **Answer:** Register Indirect with Autodecrement/Autoincrement (Stack addressing mode)
 
 ### C6: Cache Mapping [GATE 2011, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-handwritten.svg" alt="Handwritten: C6: Cache Mapping [GATE 2011, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-diagram.svg" alt="Diagram: C6: Cache Mapping [GATE 2011, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c6-cache-mapping-gate-2011-2-marks-sticky.svg" alt="Sticky Note: C6: Cache Mapping [GATE 2011, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 2-way set-associative cache has 4 blocks (0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“3). The memory block sequence accessed is: 0, 4, 0, 4, 8, 0, 4, 8. Using LRU replacement, find the number of misses.
 
@@ -1170,6 +1863,17 @@ Total misses = 6
 **Answer:** 6
 
 ### C7: Booth's Algorithm [GATE 2011, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-handwritten.svg" alt="Handwritten: C7: Booth's Algorithm [GATE 2011, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-diagram.svg" alt="Diagram: C7: Booth's Algorithm [GATE 2011, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c7-booth-s-algorithm-gate-2011-2-marks-sticky.svg" alt="Sticky Note: C7: Booth's Algorithm [GATE 2011, 2 marks]" width="30%">
+</a>
+
 
 **Q:** Booth's algorithm for multiplication of signed 2's complement numbers uses bit-pair recoding. How many additions/subtractions are needed to multiply two 16-bit numbers using radix-4 Booth encoding?
 
@@ -1180,6 +1884,17 @@ Maximum: each group generates one of (ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2, �
 **Answer:** 8 (or n/2 for radix-4)
 
 ### C8: Microprogrammed Control [GATE 2012, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-handwritten.svg" alt="Handwritten: C8: Microprogrammed Control [GATE 2012, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-diagram.svg" alt="Diagram: C8: Microprogrammed Control [GATE 2012, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c8-microprogrammed-control-gate-2012-1-mark-sticky.svg" alt="Sticky Note: C8: Microprogrammed Control [GATE 2012, 1 mark]" width="30%">
+</a>
+
 
 **Q:** Which of the following is NOT true about microprogrammed control unit?
 (A) Faster than hardwired control
@@ -1192,6 +1907,17 @@ Maximum: each group generates one of (ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2, �
 **Answer:** (A) Faster than hardwired control
 
 ### C9: MESI Protocol [GATE 2012, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-handwritten.svg" alt="Handwritten: C9: MESI Protocol [GATE 2012, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-diagram.svg" alt="Diagram: C9: MESI Protocol [GATE 2012, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c9-mesi-protocol-gate-2012-2-marks-sticky.svg" alt="Sticky Note: C9: MESI Protocol [GATE 2012, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In the MESI cache coherence protocol, a cache block in the "Shared" state becomes "Invalid" when:
 
@@ -1200,6 +1926,17 @@ Maximum: each group generates one of (ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2, �
 **Answer:** When another processor writes to that memory location (bus invalidate is snooped)
 
 ### C10: Pipelining Hazard Detection [GATE 2012, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-handwritten.svg" alt="Handwritten: C10: Pipelining Hazard Detection [GATE 2012, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-diagram.svg" alt="Diagram: C10: Pipelining Hazard Detection [GATE 2012, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c10-pipelining-hazard-detection-gate-2012-2-marks-sticky.svg" alt="Sticky Note: C10: Pipelining Hazard Detection [GATE 2012, 2 marks]" width="30%">
+</a>
+
 
 **Q:** Consider the following sequence of instructions:
 ```
@@ -1219,6 +1956,17 @@ Number of RAW hazards = 2
 **Answer:** 2
 
 ### C11: DMA Transfer [GATE 2013, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-handwritten.svg" alt="Handwritten: C11: DMA Transfer [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-diagram.svg" alt="Diagram: C11: DMA Transfer [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c11-dma-transfer-gate-2013-2-marks-sticky.svg" alt="Sticky Note: C11: DMA Transfer [GATE 2013, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A DMA controller transfers 16-bit words at a rate of 1 word per cycle. The bus clock is 50 MHz. The DMA is used to transfer a 64 KB block. How long does the transfer take?
 
@@ -1232,6 +1980,17 @@ Alternatively: 64 KB = 32768 words ÃƒÆ’Ã¢â‚¬â€� 20 ns/word = 655
 **Answer:** 655.36 ÃƒÅ½Ã‚Â¼s
 
 ### C12: IEEE 754 Doubles [GATE 2013, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-handwritten.svg" alt="Handwritten: C12: IEEE 754 Doubles [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-diagram.svg" alt="Diagram: C12: IEEE 754 Doubles [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c12-ieee-754-doubles-gate-2013-2-marks-sticky.svg" alt="Sticky Note: C12: IEEE 754 Doubles [GATE 2013, 2 marks]" width="30%">
+</a>
+
 
 **Q:** What is the value of 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1022) in IEEE 754 double precision?
 
@@ -1243,6 +2002,17 @@ Value = 1.0 ÃƒÆ’Ã¢â‚¬â€� 2^(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â�
 **Answer:** 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1022) (the minimum positive normalized double)
 
 ### C13: Effective Access Time [GATE 2013, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-handwritten.svg" alt="Handwritten: C13: Effective Access Time [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-diagram.svg" alt="Diagram: C13: Effective Access Time [GATE 2013, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c13-effective-access-time-gate-2013-2-marks-sticky.svg" alt="Sticky Note: C13: Effective Access Time [GATE 2013, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A system has L1 cache with hit time = 2 cycles, miss rate = 10%. L2 cache hit time = 10 cycles, miss rate = 5%. Main memory access time = 100 cycles. Find the average memory access time.
 
@@ -1258,6 +2028,17 @@ AMAT = 2 + 0.10 ÃƒÆ’Ã¢â‚¬â€� 15 = 2 + 1.5 = 3.5 cycles
 **Answer:** 3.5 cycles
 
 ### C14: Control Hazard / Delayed Branch [GATE 2014, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-handwritten.svg" alt="Handwritten: C14: Control Hazard / Delayed Branch [GATE 2014, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-diagram.svg" alt="Diagram: C14: Control Hazard / Delayed Branch [GATE 2014, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c14-control-hazard-delayed-branch-gate-2014-1-mark-sticky.svg" alt="Sticky Note: C14: Control Hazard / Delayed Branch [GATE 2014, 1 mark]" width="30%">
+</a>
+
 
 **Q:** In a 5-stage pipelined processor, a branch instruction resolves in the MEM stage. If delayed branch with 1 delay slot is used, the branch penalty is:
 
@@ -1271,6 +2052,17 @@ With 1 delay slot: penalty = 1 cycle (still 1 wasted cycle after the delay slot)
 **Answer:** 1 cycle
 
 ### C15: Instruction Format [GATE 2014, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-handwritten.svg" alt="Handwritten: C15: Instruction Format [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-diagram.svg" alt="Diagram: C15: Instruction Format [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c15-instruction-format-gate-2014-2-marks-sticky.svg" alt="Sticky Note: C15: Instruction Format [GATE 2014, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A processor has 64 registers, uses 16-bit instructions. It has two instruction formats: Format A has 4-bit opcode, two register operands. Format B has 4-bit opcode, one register operand, and an 8-bit immediate. How many instructions of each format are possible?
 
@@ -1288,6 +2080,17 @@ With 6-bit immediate: Format B: 4+6+6 = 16 Ã¢â€ â€™ 16 instruction ty
 **Answer:** (Assuming correct format sizes) Format A: 16 instructions max, Format B: 16 instructions max
 
 ### C16: Restoring Division [GATE 2014, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-handwritten.svg" alt="Handwritten: C16: Restoring Division [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-diagram.svg" alt="Diagram: C16: Restoring Division [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c16-restoring-division-gate-2014-2-marks-sticky.svg" alt="Sticky Note: C16: Restoring Division [GATE 2014, 2 marks]" width="30%">
+</a>
+
 
 **Q:** The number of addition operations needed in the worst case to divide an n-bit number by an n-bit number using restoring division is:
 
@@ -1299,6 +2102,17 @@ Each iteration: subtract Ã¢â€ â€™ test negative Ã¢â€ â€™ a
 **Answer:** 2n (n subtractions + n restorations)
 
 ### C17: Virtual Memory [GATE 2014, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-handwritten.svg" alt="Handwritten: C17: Virtual Memory [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-diagram.svg" alt="Diagram: C17: Virtual Memory [GATE 2014, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c17-virtual-memory-gate-2014-2-marks-sticky.svg" alt="Sticky Note: C17: Virtual Memory [GATE 2014, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 32-bit virtual address, 4 KB page size, 4-byte page table entry. How much memory does the page table consume?
 
@@ -1309,6 +2123,17 @@ Page table size = 2^20 ÃƒÆ’Ã¢â‚¬â€� 4 bytes = 4 MB
 **Answer:** 4 MB
 
 ### C18: Pipeline CPI Calculation [GATE 2015, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-handwritten.svg" alt="Handwritten: C18: Pipeline CPI Calculation [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-diagram.svg" alt="Diagram: C18: Pipeline CPI Calculation [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c18-pipeline-cpi-calculation-gate-2015-2-marks-sticky.svg" alt="Sticky Note: C18: Pipeline CPI Calculation [GATE 2015, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 5-stage pipeline has the following instruction mix: ALU 40% (1 cycle), Load 20% (2 cycles with RAW stall), Store 15% (1 cycle), Branch 25% (3 cycles penalty). Find the average CPI.
 
@@ -1325,6 +2150,17 @@ Average CPI = 0.40ÃƒÆ’Ã¢â‚¬â€�1 + 0.20ÃƒÆ’Ã¢â‚¬â€�
 **Answer:** 1.95
 
 ### C19: Direct-Mapped Cache Analysis [GATE 2015, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-handwritten.svg" alt="Handwritten: C19: Direct-Mapped Cache Analysis [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-diagram.svg" alt="Diagram: C19: Direct-Mapped Cache Analysis [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c19-direct-mapped-cache-analysis-gate-2015-2-marks-sticky.svg" alt="Sticky Note: C19: Direct-Mapped Cache Analysis [GATE 2015, 2 marks]" width="30%">
+</a>
+
 
 **Q:** For a direct-mapped cache with 8 blocks, block size = 16 bytes. Memory addresses (in decimal): 0, 16, 32, 48, 64, 80, 96, 112 are accessed in that order. Find the number of cache misses.
 
@@ -1343,6 +2179,17 @@ All are compulsory misses Ã¢â€ â€™ 8 misses
 **Answer:** 8 misses
 
 ### C20: Floating Point Addition [GATE 2015, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-handwritten.svg" alt="Handwritten: C20: Floating Point Addition [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-diagram.svg" alt="Diagram: C20: Floating Point Addition [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c20-floating-point-addition-gate-2015-2-marks-sticky.svg" alt="Sticky Note: C20: Floating Point Addition [GATE 2015, 2 marks]" width="30%">
+</a>
+
 
 **Q:** Add the IEEE 754 single precision numbers: A = 0x3F800000 (1.0) and B = 0x40000000 (2.0). What is the result?
 
@@ -1360,6 +2207,17 @@ Result: 0 10000000 10000000000000000000000 = 0x40400000
 **Answer:** 0x40400000 (3.0)
 
 ### C21: Carry Lookahead Adder [GATE 2015, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-handwritten.svg" alt="Handwritten: C21: Carry Lookahead Adder [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-diagram.svg" alt="Diagram: C21: Carry Lookahead Adder [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c21-carry-lookahead-adder-gate-2015-2-marks-sticky.svg" alt="Sticky Note: C21: Carry Lookahead Adder [GATE 2015, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In a 16-bit carry lookahead adder using 4-bit CLA blocks, the number of generate (G) and propagate (P) signals at the block level is:
 
@@ -1372,6 +2230,17 @@ But the top-level lookahead needs the combined G and P from each 4-bit block Ã�
 **Answer:** 4 block-generate and 4 block-propagate signals
 
 ### C22: Memory Interleaving [GATE 2015, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-handwritten.svg" alt="Handwritten: C22: Memory Interleaving [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-diagram.svg" alt="Diagram: C22: Memory Interleaving [GATE 2015, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c22-memory-interleaving-gate-2015-2-marks-sticky.svg" alt="Sticky Note: C22: Memory Interleaving [GATE 2015, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A memory system has 4-way interleaving. The time to access the first word is 100 ns and subsequent words take 10 ns each. What is the time to read 8 consecutive words?
 
@@ -1502,6 +2371,17 @@ Let me just give a clear answer.
 **Answer:** 100 + 7 ÃƒÆ’Ã¢â‚¬â€� 10 = 170 ns (with 4-way interleaving Ã¢â€ â€™ same total time for this sequential pattern due to bus-limited transfer)
 
 ### C23: Addressing Modes Identification [GATE 2015, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-handwritten.svg" alt="Handwritten: C23: Addressing Modes Identification [GATE 2015, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-diagram.svg" alt="Diagram: C23: Addressing Modes Identification [GATE 2015, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c23-addressing-modes-identification-gate-2015-1-mark-sticky.svg" alt="Sticky Note: C23: Addressing Modes Identification [GATE 2015, 1 mark]" width="30%">
+</a>
+
 
 **Q:** Identify the addressing mode: `ADD R1, (R2)` where R2 contains the address of the operand.
 
@@ -1510,6 +2390,17 @@ Let me just give a clear answer.
 **Answer:** Register Indirect
 
 ### C24: Page Table Size [GATE 2016, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-handwritten.svg" alt="Handwritten: C24: Page Table Size [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-diagram.svg" alt="Diagram: C24: Page Table Size [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c24-page-table-size-gate-2016-2-marks-sticky.svg" alt="Sticky Note: C24: Page Table Size [GATE 2016, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A computer has 32-bit virtual addresses, 4 KB pages, and 4-byte PTEs. How much memory does a single-level page table occupy?
 
@@ -1520,6 +2411,17 @@ Page table size = 2^20 ÃƒÆ’Ã¢â‚¬â€� 4 bytes = 4 MB
 **Answer:** 4 MB
 
 ### C25: Two-Level Page Table [GATE 2016, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-handwritten.svg" alt="Handwritten: C25: Two-Level Page Table [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-diagram.svg" alt="Diagram: C25: Two-Level Page Table [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c25-two-level-page-table-gate-2016-2-marks-sticky.svg" alt="Sticky Note: C25: Two-Level Page Table [GATE 2016, 2 marks]" width="30%">
+</a>
+
 
 **Q:** For the same system (32-bit VA, 4 KB pages, 4-byte PTEs) using a 2-level page table, find the page table size if the first level has 2^10 entries.
 
@@ -1536,6 +2438,17 @@ Total (only one second-level table in use) = 4 KB + 4 KB = 8 KB
 **Answer:** Worst case: ~4 MB; best case: 8 KB
 
 ### C26: TLB Performance [GATE 2016, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-handwritten.svg" alt="Handwritten: C26: TLB Performance [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-diagram.svg" alt="Diagram: C26: TLB Performance [GATE 2016, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c26-tlb-performance-gate-2016-2-marks-sticky.svg" alt="Sticky Note: C26: TLB Performance [GATE 2016, 2 marks]" width="30%">
+</a>
+
 
 **Q:** TLB hit rate = 95%, TLB access time = 10 ns, memory access time = 100 ns. TLB miss causes a page table walk costing 200 ns (includes memory access). Find the effective memory access time.
 
@@ -1553,6 +2466,17 @@ EAT = 0.95 ÃƒÆ’Ã¢â‚¬â€� (10 + 100) + 0.05 ÃƒÆ’Ã¢â‚¬â
 **Answer:** 120 ns
 
 ### C27: Hardwired vs Microprogrammed [GATE 2016, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-handwritten.svg" alt="Handwritten: C27: Hardwired vs Microprogrammed [GATE 2016, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-diagram.svg" alt="Diagram: C27: Hardwired vs Microprogrammed [GATE 2016, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c27-hardwired-vs-microprogrammed-gate-2016-1-mark-sticky.svg" alt="Sticky Note: C27: Hardwired vs Microprogrammed [GATE 2016, 1 mark]" width="30%">
+</a>
+
 
 **Q:** Which control unit design is faster?
 
@@ -1561,6 +2485,17 @@ EAT = 0.95 ÃƒÆ’Ã¢â‚¬â€� (10 + 100) + 0.05 ÃƒÆ’Ã¢â‚¬â
 **Answer:** Hardwired
 
 ### C28: Branch Prediction Ã¢â€ â€™ 2-bit Saturating Counter [GATE 2017, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-handwritten.svg" alt="Handwritten: C28: Branch Prediction Ã¢â€ â€™ 2-bit Saturating Counter [GATE 2017, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-diagram.svg" alt="Diagram: C28: Branch Prediction Ã¢â€ â€™ 2-bit Saturating Counter [GATE 2017, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c28-branch-prediction-2-bit-saturating-counter-gate-2017-2-marks-sticky.svg" alt="Sticky Note: C28: Branch Prediction Ã¢â€ â€™ 2-bit Saturating Counter [GATE 2017, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 2-bit saturating counter is used for branch prediction. The actual branch outcomes for a specific branch are: T, T, T, NT, NT, T, NT, T. Assume the initial state is "Weakly Taken." Find the number of mispredictions.
 
@@ -1584,6 +2519,17 @@ Mispredictions: 4
 **Answer:** 4
 
 ### C29: Flynn's Taxonomy [GATE 2017, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-handwritten.svg" alt="Handwritten: C29: Flynn's Taxonomy [GATE 2017, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-diagram.svg" alt="Diagram: C29: Flynn's Taxonomy [GATE 2017, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c29-flynn-s-taxonomy-gate-2017-1-mark-sticky.svg" alt="Sticky Note: C29: Flynn's Taxonomy [GATE 2017, 1 mark]" width="30%">
+</a>
+
 
 **Q:** A vector processor belongs to which category of Flynn's taxonomy?
 
@@ -1592,6 +2538,17 @@ Mispredictions: 4
 **Answer:** SIMD
 
 ### C30: Write Policy [GATE 2017, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-handwritten.svg" alt="Handwritten: C30: Write Policy [GATE 2017, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-diagram.svg" alt="Diagram: C30: Write Policy [GATE 2017, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c30-write-policy-gate-2017-1-mark-sticky.svg" alt="Sticky Note: C30: Write Policy [GATE 2017, 1 mark]" width="30%">
+</a>
+
 
 **Q:** In a write-back cache, a dirty block is evicted. What happens?
 
@@ -1600,6 +2557,17 @@ Mispredictions: 4
 **Answer:** The evicted dirty block is written back to memory
 
 ### C31: Cache Miss Rate Calculation [GATE 2017, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-handwritten.svg" alt="Handwritten: C31: Cache Miss Rate Calculation [GATE 2017, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-diagram.svg" alt="Diagram: C31: Cache Miss Rate Calculation [GATE 2017, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c31-cache-miss-rate-calculation-gate-2017-2-marks-sticky.svg" alt="Sticky Note: C31: Cache Miss Rate Calculation [GATE 2017, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A program has L1 cache miss rate of 5% and L2 cache miss rate of 20%. L1 hit = 2 cycles, L2 hit = 12 cycles, memory = 100 cycles. Find the average memory access time.
 
@@ -1612,6 +2580,17 @@ AMAT = 2 + 0.05 ÃƒÆ’Ã¢â‚¬â€� 32 = 2 + 1.6 = 3.6 cycles
 **Answer:** 3.6 cycles
 
 ### C32: Booth's Algorithm Steps [GATE 2018, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-handwritten.svg" alt="Handwritten: C32: Booth's Algorithm Steps [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-diagram.svg" alt="Diagram: C32: Booth's Algorithm Steps [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c32-booth-s-algorithm-steps-gate-2018-2-marks-sticky.svg" alt="Sticky Note: C32: Booth's Algorithm Steps [GATE 2018, 2 marks]" width="30%">
+</a>
+
 
 **Q:** How many addition/subtraction operations are required to multiply two 8-bit numbers using Booth's algorithm (basic radix-2)?
 
@@ -1623,6 +2602,17 @@ Maximum: 8 operations (+, ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢, or 0)
 **Answer:** 8 (at most 8 additions/subtractions)
 
 ### C33: Delayed Branch [GATE 2018, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-handwritten.svg" alt="Handwritten: C33: Delayed Branch [GATE 2018, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-diagram.svg" alt="Diagram: C33: Delayed Branch [GATE 2018, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c33-delayed-branch-gate-2018-1-mark-sticky.svg" alt="Sticky Note: C33: Delayed Branch [GATE 2018, 1 mark]" width="30%">
+</a>
+
 
 **Q:** A processor uses delayed branching with 2 delay slots. The compiler can always fill both slots with useful instructions. What is the effective branch penalty?
 
@@ -1633,6 +2623,17 @@ Effective penalty = 0 cycles.
 **Answer:** 0 cycles
 
 ### C34: ALU Control Signals [GATE 2018, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-handwritten.svg" alt="Handwritten: C34: ALU Control Signals [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-diagram.svg" alt="Diagram: C34: ALU Control Signals [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c34-alu-control-signals-gate-2018-2-marks-sticky.svg" alt="Sticky Note: C34: ALU Control Signals [GATE 2018, 2 marks]" width="30%">
+</a>
+
 
 **Q:** An ALU takes two n-bit inputs and produces an n-bit output and four flags (Z, C, V, N). How many control signal bits are needed if the ALU can perform: ADD, SUB, AND, OR, XOR, NOT?
 
@@ -1642,6 +2643,17 @@ Effective penalty = 0 cycles.
 **Answer:** 3 bits
 
 ### C35: IEEE 754 Denormalized [GATE 2018, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-handwritten.svg" alt="Handwritten: C35: IEEE 754 Denormalized [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-diagram.svg" alt="Diagram: C35: IEEE 754 Denormalized [GATE 2018, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c35-ieee-754-denormalized-gate-2018-2-marks-sticky.svg" alt="Sticky Note: C35: IEEE 754 Denormalized [GATE 2018, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In IEEE 754 single precision, what is the smallest positive denormalized number?
 
@@ -1654,6 +2666,17 @@ Smallest denormalized: 0.00...01 ÃƒÆ’Ã¢â‚¬â€� 2^(ÃƒÂ¢Ã‹â
 **Answer:** 2^(ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢149)
 
 ### C36: Pipeline Hazards [GATE 2019, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-handwritten.svg" alt="Handwritten: C36: Pipeline Hazards [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-diagram.svg" alt="Diagram: C36: Pipeline Hazards [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c36-pipeline-hazards-gate-2019-2-marks-sticky.svg" alt="Sticky Note: C36: Pipeline Hazards [GATE 2019, 2 marks]" width="30%">
+</a>
+
 
 **Q:** Identify all data hazards in the following instruction sequence:
 ```
@@ -1674,6 +2697,17 @@ RAW hazards: I1Ã¢â€ â€™I2, I1Ã¢â€ â€™I4, I2Ã¢â€ â�
 **Answer:** 3 RAW hazards
 
 ### C37: Amdahl's Law [GATE 2019, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-handwritten.svg" alt="Handwritten: C37: Amdahl's Law [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-diagram.svg" alt="Diagram: C37: Amdahl's Law [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c37-amdahl-s-law-gate-2019-2-marks-sticky.svg" alt="Sticky Note: C37: Amdahl's Law [GATE 2019, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A program spends 70% of its time in a function that can be parallelized. What is the maximum speedup achievable with 8 processors?
 
@@ -1687,6 +2721,17 @@ Speedup = 1 / ((1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 0.70) + 0.70/8)
 **Answer:** 2.58ÃƒÆ’Ã¢â‚¬â€� speedup
 
 ### C38: Cache Associativity [GATE 2019, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-handwritten.svg" alt="Handwritten: C38: Cache Associativity [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-diagram.svg" alt="Diagram: C38: Cache Associativity [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c38-cache-associativity-gate-2019-2-marks-sticky.svg" alt="Sticky Note: C38: Cache Associativity [GATE 2019, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 64 KB cache with 64-byte blocks uses 4-way set associativity. How many sets does the cache have?
 
@@ -1698,6 +2743,17 @@ Number of sets = 1024 / 4 = 256
 **Answer:** 256 sets
 
 ### C39: Memory Address Mapping [GATE 2019, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-handwritten.svg" alt="Handwritten: C39: Memory Address Mapping [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-diagram.svg" alt="Diagram: C39: Memory Address Mapping [GATE 2019, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c39-memory-address-mapping-gate-2019-2-marks-sticky.svg" alt="Sticky Note: C39: Memory Address Mapping [GATE 2019, 2 marks]" width="30%">
+</a>
+
 
 **Q:** For a fully associative cache with 16 blocks, block size = 32 bytes. How many bits of tag are needed for a 32-bit physical address?
 
@@ -1709,6 +2765,17 @@ Tag = 32 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 5 = 27 bits
 **Answer:** 27 bits
 
 ### C40: Branch Target Buffer [GATE 2020, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-handwritten.svg" alt="Handwritten: C40: Branch Target Buffer [GATE 2020, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-diagram.svg" alt="Diagram: C40: Branch Target Buffer [GATE 2020, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c40-branch-target-buffer-gate-2020-1-mark-sticky.svg" alt="Sticky Note: C40: Branch Target Buffer [GATE 2020, 1 mark]" width="30%">
+</a>
+
 
 **Q:** The Branch Target Buffer (BTB) is accessed in which pipeline stage?
 
@@ -1717,6 +2784,17 @@ Tag = 32 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 5 = 27 bits
 **Answer:** Instruction Fetch (IF) stage
 
 ### C41: CPI with Cache Misses [GATE 2020, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-handwritten.svg" alt="Handwritten: C41: CPI with Cache Misses [GATE 2020, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-diagram.svg" alt="Diagram: C41: CPI with Cache Misses [GATE 2020, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c41-cpi-with-cache-misses-gate-2020-2-marks-sticky.svg" alt="Sticky Note: C41: CPI with Cache Misses [GATE 2020, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A processor has base CPI of 1.0 (all cache hits). L1 miss rate = 8%, miss penalty = 20 cycles. What is the effective CPI?
 
@@ -1727,6 +2805,17 @@ Effective CPI = 1.0 + 1.6 = 2.6
 **Answer:** 2.6
 
 ### C42: Signed Number Representation [GATE 2020, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-handwritten.svg" alt="Handwritten: C42: Signed Number Representation [GATE 2020, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-diagram.svg" alt="Diagram: C42: Signed Number Representation [GATE 2020, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c42-signed-number-representation-gate-2020-1-mark-sticky.svg" alt="Sticky Note: C42: Signed Number Representation [GATE 2020, 1 mark]" width="30%">
+</a>
+
 
 **Q:** What is the range of numbers representable in 8-bit signed magnitude?
 
@@ -1737,6 +2826,17 @@ Range: ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢(2^7 ÃƒÂ¢Ã‹â€ Ã¢â‚�
 **Answer:** ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢127 to +127
 
 ### C43: Microinstruction Sequencing [GATE 2020, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-handwritten.svg" alt="Handwritten: C43: Microinstruction Sequencing [GATE 2020, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-diagram.svg" alt="Diagram: C43: Microinstruction Sequencing [GATE 2020, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c43-microinstruction-sequencing-gate-2020-2-marks-sticky.svg" alt="Sticky Note: C43: Microinstruction Sequencing [GATE 2020, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In a microprogrammed control unit, the next microinstruction address is determined by:
 
@@ -1749,6 +2849,17 @@ Range: ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢(2^7 ÃƒÂ¢Ã‹â€ Ã¢â‚�
 **Answer:** The address is determined by branch condition logic, next-address field, and opcode mapping
 
 ### C44: MESI States [GATE 2021, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-handwritten.svg" alt="Handwritten: C44: MESI States [GATE 2021, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-diagram.svg" alt="Diagram: C44: MESI States [GATE 2021, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c44-mesi-states-gate-2021-2-marks-sticky.svg" alt="Sticky Note: C44: MESI States [GATE 2021, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In the MESI protocol, when a processor reads a cache block that is in the "Modified" state in another processor's cache, what happens?
 
@@ -1765,6 +2876,17 @@ The requesting processor:
 **Answer:** The Modified block is flushed to memory and both caches hold the block in Shared state
 
 ### C45: Interrupt Priority [GATE 2021, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-handwritten.svg" alt="Handwritten: C45: Interrupt Priority [GATE 2021, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-diagram.svg" alt="Diagram: C45: Interrupt Priority [GATE 2021, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c45-interrupt-priority-gate-2021-1-mark-sticky.svg" alt="Sticky Note: C45: Interrupt Priority [GATE 2021, 1 mark]" width="30%">
+</a>
+
 
 **Q:** In a daisy-chain interrupt priority scheme, which device has the highest priority?
 
@@ -1773,6 +2895,17 @@ The requesting processor:
 **Answer:** The device physically closest to the CPU
 
 ### C46: Harvard Architecture [GATE 2021, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-handwritten.svg" alt="Handwritten: C46: Harvard Architecture [GATE 2021, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-diagram.svg" alt="Diagram: C46: Harvard Architecture [GATE 2021, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c46-harvard-architecture-gate-2021-1-mark-sticky.svg" alt="Sticky Note: C46: Harvard Architecture [GATE 2021, 1 mark]" width="30%">
+</a>
+
 
 **Q:** Why do most modern processors use a modified Harvard architecture?
 
@@ -1781,6 +2914,17 @@ The requesting processor:
 **Answer:** Separate L1 I-cache and D-cache allows simultaneous fetch + data access; unified lower levels simplify programming
 
 ### C47: Cache Write Policies [GATE 2022, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-handwritten.svg" alt="Handwritten: C47: Cache Write Policies [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-diagram.svg" alt="Diagram: C47: Cache Write Policies [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c47-cache-write-policies-gate-2022-2-marks-sticky.svg" alt="Sticky Note: C47: Cache Write Policies [GATE 2022, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A write-back, write-allocate cache has a dirty block at address A. The processor reads address B which maps to the same cache set. The cache evicts the dirty block. What happens?
 
@@ -1792,6 +2936,17 @@ The requesting processor:
 **Answer:** Dirty block is written back, new block is loaded
 
 ### C48: IEEE 754 Addition [GATE 2022, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-handwritten.svg" alt="Handwritten: C48: IEEE 754 Addition [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-diagram.svg" alt="Diagram: C48: IEEE 754 Addition [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c48-ieee-754-addition-gate-2022-2-marks-sticky.svg" alt="Sticky Note: C48: IEEE 754 Addition [GATE 2022, 2 marks]" width="30%">
+</a>
+
 
 **Q:** Add the following IEEE 754 single precision numbers and give the result in hex:
 A = 0x3F800001, B = 0x3F800002
@@ -1827,6 +2982,17 @@ Let me keep it simpler: the result is 0x40000001 (approximately 2.000000238)
 **Answer:** 0x40000001 (approximate, depends on rounding mode)
 
 ### C49: TLB Reach [GATE 2022, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-handwritten.svg" alt="Handwritten: C49: TLB Reach [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-diagram.svg" alt="Diagram: C49: TLB Reach [GATE 2022, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c49-tlb-reach-gate-2022-2-marks-sticky.svg" alt="Sticky Note: C49: TLB Reach [GATE 2022, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A TLB has 64 entries and the page size is 4 KB. What is the TLB reach?
 
@@ -1837,6 +3003,17 @@ TLB reach = Number of TLB entries ÃƒÆ’Ã¢â‚¬â€� Page size
 **Answer:** 256 KB
 
 ### C50: CPI with Branch Prediction [GATE 2023, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-handwritten.svg" alt="Handwritten: C50: CPI with Branch Prediction [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-diagram.svg" alt="Diagram: C50: CPI with Branch Prediction [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c50-cpi-with-branch-prediction-gate-2023-2-marks-sticky.svg" alt="Sticky Note: C50: CPI with Branch Prediction [GATE 2023, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A pipeline has a branch misprediction penalty of 4 cycles. The branch predictor has 92% accuracy. 25% of all instructions are branches. What is the effective CPI (ideal CPI = 1)?
 
@@ -1849,6 +3026,17 @@ Effective CPI = 1 + 0.08 = 1.08
 **Answer:** 1.08
 
 ### C51: LRU Cache Blocks [GATE 2023, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-handwritten.svg" alt="Handwritten: C51: LRU Cache Blocks [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-diagram.svg" alt="Diagram: C51: LRU Cache Blocks [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c51-lru-cache-blocks-gate-2023-2-marks-sticky.svg" alt="Sticky Note: C51: LRU Cache Blocks [GATE 2023, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 2-way associative cache with 4 blocks (LRU replacement) has the access sequence: 0, 1, 2, 3, 0, 1, 4, 0. How many misses?
 
@@ -1871,6 +3059,17 @@ Total misses = 5
 **Answer:** 5 misses
 
 ### C52: DMA Cycle Stealing [GATE 2023, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-handwritten.svg" alt="Handwritten: C52: DMA Cycle Stealing [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-diagram.svg" alt="Diagram: C52: DMA Cycle Stealing [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c52-dma-cycle-stealing-gate-2023-2-marks-sticky.svg" alt="Sticky Note: C52: DMA Cycle Stealing [GATE 2023, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A DMA controller uses cycle stealing to transfer data. The bus clock is 100 MHz. Each DMA transfer takes 1 bus cycle. The DMA transfers data at 4 MB/s. What fraction of bus cycles does the DMA use?
 
@@ -1891,6 +3090,17 @@ Assuming 1 byte/cycle:
 **Answer:** 4%
 
 ### C53: Non-Restoring Division [GATE 2023, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-handwritten.svg" alt="Handwritten: C53: Non-Restoring Division [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-diagram.svg" alt="Diagram: C53: Non-Restoring Division [GATE 2023, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c53-non-restoring-division-gate-2023-2-marks-sticky.svg" alt="Sticky Note: C53: Non-Restoring Division [GATE 2023, 2 marks]" width="30%">
+</a>
+
 
 **Q:** In non-restoring division of 8-bit numbers, what is the maximum number of addition/subtraction operations needed?
 
@@ -1904,6 +3114,17 @@ Maximum = 8 + 1 = 9 operations
 **Answer:** 9 (8 iterations + at most 1 correction)
 
 ### C54: Instruction Pipelining Ã¢â€ â€™ Load-Use [GATE 2024, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-handwritten.svg" alt="Handwritten: C54: Instruction Pipelining Ã¢â€ â€™ Load-Use [GATE 2024, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-diagram.svg" alt="Diagram: C54: Instruction Pipelining Ã¢â€ â€™ Load-Use [GATE 2024, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c54-instruction-pipelining-load-use-gate-2024-2-marks-sticky.svg" alt="Sticky Note: C54: Instruction Pipelining Ã¢â€ â€™ Load-Use [GATE 2024, 2 marks]" width="30%">
+</a>
+
 
 **Q:** For the instruction sequence below, how many stalls are needed (full forwarding available)?
 ```
@@ -1925,6 +3146,17 @@ Total: 1 stall
 **Answer:** 1 stall
 
 ### C55: Cache Miss Penalty Calculation [GATE 2024, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-handwritten.svg" alt="Handwritten: C55: Cache Miss Penalty Calculation [GATE 2024, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-diagram.svg" alt="Diagram: C55: Cache Miss Penalty Calculation [GATE 2024, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c55-cache-miss-penalty-calculation-gate-2024-2-marks-sticky.svg" alt="Sticky Note: C55: Cache Miss Penalty Calculation [GATE 2024, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A memory system has L1 cache (hit time 1 ns, miss rate 10%), L2 cache (hit time 5 ns, miss rate 5%), and main memory (access time 50 ns). Find the AMAT.
 
@@ -1937,6 +3169,17 @@ AMAT = 1 + 0.10 ÃƒÆ’Ã¢â‚¬â€� 7.5 = 1 + 0.75 = 1.75 ns
 **Answer:** 1.75 ns
 
 ### C56: Floating Point Precision [GATE 2024, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-handwritten.svg" alt="Handwritten: C56: Floating Point Precision [GATE 2024, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-diagram.svg" alt="Diagram: C56: Floating Point Precision [GATE 2024, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c56-floating-point-precision-gate-2024-1-mark-sticky.svg" alt="Sticky Note: C56: Floating Point Precision [GATE 2024, 1 mark]" width="30%">
+</a>
+
 
 **Q:** How many decimal digits of precision does IEEE 754 single precision provide?
 
@@ -1948,6 +3191,17 @@ Approximately 7 decimal digits of precision.
 **Answer:** Approximately 7 decimal digits
 
 ### C57: Cache Block Offset [GATE 2024, 1 mark]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-handwritten.svg" alt="Handwritten: C57: Cache Block Offset [GATE 2024, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-diagram.svg" alt="Diagram: C57: Cache Block Offset [GATE 2024, 1 mark]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c57-cache-block-offset-gate-2024-1-mark-sticky.svg" alt="Sticky Note: C57: Cache Block Offset [GATE 2024, 1 mark]" width="30%">
+</a>
+
 
 **Q:** A cache block size is 128 bytes. How many bits are needed for the block offset?
 
@@ -1957,6 +3211,17 @@ Block offset = log2(128) = 7 bits
 **Answer:** 7 bits
 
 ### C58: Write-Through Cache Traffic [GATE 2025, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-handwritten.svg" alt="Handwritten: C58: Write-Through Cache Traffic [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-diagram.svg" alt="Diagram: C58: Write-Through Cache Traffic [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c58-write-through-cache-traffic-gate-2025-2-marks-sticky.svg" alt="Sticky Note: C58: Write-Through Cache Traffic [GATE 2025, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A write-through cache handles 30% write instructions. For each write miss, a block is fetched (no write-allocate). The miss rate for reads is 5%. Block size is 64 bytes. Find the average data traffic per instruction (in bytes).
 
@@ -1980,6 +3245,17 @@ Total traffic: 2.24 + 2.28 + 0.06 = 4.58 bytes/instruction
 **Answer:** Approximately 4.58 bytes/instruction (depends on word size, assumes 4-byte word)
 
 ### C59: Superscalar CPI [GATE 2025, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-handwritten.svg" alt="Handwritten: C59: Superscalar CPI [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-diagram.svg" alt="Diagram: C59: Superscalar CPI [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c59-superscalar-cpi-gate-2025-2-marks-sticky.svg" alt="Sticky Note: C59: Superscalar CPI [GATE 2025, 2 marks]" width="30%">
+</a>
+
 
 **Q:** A 2-way superscalar processor can issue up to 2 instructions per cycle. The program has a mix of 40% ALU, 20% load, 10% store, 30% branch. Loads have 1 stall cycle. Branches have a 2-cycle penalty with 90% accuracy. Find the effective CPI.
 
@@ -1998,6 +3274,17 @@ CPI = 0.5 + 0.20 + 0.06 = 0.76
 **Answer:** 0.76 (assuming no additional pairing restrictions)
 
 ### C60: Set Associative Tag Comparison [GATE 2025, 2 marks]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-handwritten.svg" alt="Handwritten: C60: Set Associative Tag Comparison [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-diagram.svg" alt="Diagram: C60: Set Associative Tag Comparison [GATE 2025, 2 marks]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/c60-set-associative-tag-comparison-gate-2025-2-marks-sticky.svg" alt="Sticky Note: C60: Set Associative Tag Comparison [GATE 2025, 2 marks]" width="30%">
+</a>
+
 
 **Q:** For a 4-way set associative cache with 32-bit addresses, 16 KB cache size, 32-byte block size. How many comparators are needed?
 
@@ -2012,6 +3299,17 @@ Number of comparators = Associativity = 4
 ## 12. Summary & Quick Revision
 
 ### 12.1 Must-Know Numbers
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-handwritten.svg" alt="Handwritten: 12.1 Must-Know Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-diagram.svg" alt="Diagram: 12.1 Must-Know Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-1-must-know-numbers-sticky.svg" alt="Sticky Note: 12.1 Must-Know Numbers" width="30%">
+</a>
+
 
 | Fact | Value |
 |------|-------|
@@ -2027,6 +3325,17 @@ Number of comparators = Associativity = 4
 | DMA transfer rate (PCIe 3.0 x16) | ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  16 GB/s |
 
 ### 12.2 Common Pitfalls
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-handwritten.svg" alt="Handwritten: 12.2 Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-diagram.svg" alt="Diagram: 12.2 Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-2-common-pitfalls-sticky.svg" alt="Sticky Note: 12.2 Common Pitfalls" width="30%">
+</a>
+
 
 1. **IEEE 754:** Don't forget the implicit leading 1 in normalized numbers
 2. **Endianness:** Memory diagrams Ã¢â€ â€™ always draw address order
@@ -2040,6 +3349,17 @@ Number of comparators = Associativity = 4
 10. **MESI:** Modified = dirty + exclusive; Exclusive = clean + exclusive; Shared = clean + shared
 
 ### 12.3 GATE Problem-Solving Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-handwritten.svg" alt="Handwritten: 12.3 GATE Problem-Solving Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-diagram.svg" alt="Diagram: 12.3 GATE Problem-Solving Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/11-computer-architecture/12-3-gate-problem-solving-strategy-sticky.svg" alt="Sticky Note: 12.3 GATE Problem-Solving Strategy" width="30%">
+</a>
+
 
 1. **Read carefully:** Note all given parameters (address bits, cache sizes, clock rates)
 2. **Draw diagrams:** Especially for pipeline timing and cache state transitions

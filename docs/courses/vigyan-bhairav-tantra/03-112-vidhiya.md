@@ -26,12 +26,34 @@
 
 ### पारंपरिक वर्गीकरण
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: पारंपरिक वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: पारंपरिक वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: पारंपरिक वर्गीकरण" width="30%">
+</a>
+
+
 पारंपरिक कश्मीर शैव में ११२ तकनीकों को तीन उपायों में बाँटा गया है:
 - **आणव उपाय** — क्रिया-प्रधान तकनीकें (मंत्र, श्वास, शरीर)
 - **शाक्त उपाय** — ऊर्जा-प्रधान तकनीकें (प्राण, भावना, चक्र)
 - **शांभव उपाय** — चैतन्य-प्रधान तकनीकें (ज्ञान, समाधि, उन्मनी)
 
 ### ओशो का वर्गीकरण: ५ श्रेणियाँ
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+</a>
+
 
 ओशो ने इस पारंपरिक वर्गीकरण को अपने ढंग से पुनर्व्याख्यायित किया। उन्होंने तकनीकों को उनकी प्रकृति और साधक पर उनके प्रभाव के अनुसार ५ श्रेणियों में बाँटा:
 
@@ -118,10 +140,32 @@ flowchart TB
 
 ### ओशो का परिचय
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "श्वास — यह सबसे सरल और सबसे गहन तकनीक है। श्वास हमेशा चल रही है — चाहे तुम जागो या सोओ। यह एक सतत प्रक्रिया है। और यही इसकी खूबसूरती है — तुम्हें कुछ अलग करने की ज़रूरत नहीं, बस जो पहले से हो रहा है, उसे देखो।"
 
 ### मुख्य तकनीकें (ओशो के अनुसार)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+
 
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
@@ -142,10 +186,32 @@ flowchart TB
 
 ### ओशो का परिचय
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "शरीर कोई बाधा नहीं है — शरीर एक सीढ़ी है। तुम शरीर का उपयोग करके शरीर से परे जा सकते हो। यह विरोधाभास नहीं है — यह तंत्र का विज्ञान है। शरीर के प्रति जागरूक होकर, तुम शरीर से मुक्त हो जाते हो।"
 
 ### मुख्य तकनीकें (ओशो के अनुसार)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+</a>
+
 
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
@@ -167,10 +233,32 @@ flowchart TB
 
 ### ओशो का परिचय
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "हमारी इन्द्रियाँ ही हमारी जेल हैं — और हमारी इन्द्रियाँ ही हमारी मुक्ति का द्वार भी हो सकती हैं। यह इस पर निर्भर करता है कि हम उनका उपयोग कैसे करते हैं। अगर हम इन्द्रियों में खो जाते हैं, तो वे जेल हैं। अगर हम इन्द्रियों के प्रति जागरूक हैं, तो वे द्वार हैं।"
 
 ### दृष्टि तकनीकें (विधि ३३-४२)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+</a>
+
 
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
@@ -183,6 +271,17 @@ flowchart TB
 
 ### श्रवण तकनीकें (विधि ४३-५४)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+</a>
+
+
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
 | ४३ | सभी ध्वनियों का ध्यान | जो कुछ सुनो, उसे बस सुनो — बिना नाम दिए | सरल |
@@ -194,6 +293,17 @@ flowchart TB
 
 ### स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "खाना खाते समय — केवल स्वाद को देखो। मन को मत जाने दो — 'अच्छा है', 'बुरा है' — ये सब मत सोचो। बस स्वाद को देखो। और जब तुम पूरी तरह स्वाद में डूब जाते हो — तब स्वाद गायब हो जाता है, और कुछ और रह जाता है — एक शुद्ध संवेदना। वही ध्यान है।"
 
@@ -203,10 +313,32 @@ flowchart TB
 
 ### ओशो का परिचय
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "मन सबसे बड़ी बाधा है — और सबसे बड़ी सीढ़ी भी। यह इस पर निर्भर करता है कि तुम मन को कैसे उपयोग करते हो। अगर मन तुम्हारा मालिक है — तो बाधा है। अगर तुम मन के मालिक हो — तो सीढ़ी है।"
 
 ### मन तकनीकें (विधि ६५-७८)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मन तकनीकें (विधि ६५-७८)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मन तकनीकें (विधि ६५-७८)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मन तकनीकें (विधि ६५-७८)" width="30%">
+</a>
+
 
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
@@ -219,6 +351,17 @@ flowchart TB
 | ७१-७८ | अन्य मानसिक विधियाँ | स्मृति, समय, दिशा, गणित | विविध |
 
 ### भावना तकनीकें (विधि ७९-८९)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: भावना तकनीकें (विधि ७९-८९)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: भावना तकनीकें (विधि ७९-८९)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: भावना तकनीकें (विधि ७९-८९)" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "भावनाएँ ऊर्जा हैं। क्रोध भी ऊर्जा है, प्रेम भी ऊर्जा है, दुख भी ऊर्जा है। इन्हें दबाओ मत — इन्हें देखो। और देखते-देखते — ये बदल जाती हैं। क्रोध करुणा बन जाता है। दुख गहराई बन जाता है। भय साहस बन जाता है।"
@@ -238,10 +381,32 @@ flowchart TB
 
 ### ओशो का परिचय
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "ये अंतिम २३ तकनीकें सबसे गहरी हैं। ये उनके लिए हैं जिन्होंने पहली चार श्रेणियों में से कोई तकनीक पकड़ ली है — और अब उसे छोड़ने का साहस है। याद रखो — तकनीक भी एक बंधन बन सकती है। अंततः तकनीक को भी छोड़ना पड़ता है। और ये विधियाँ तकनीक छोड़ने की तकनीकें हैं।"
 
 ### चैतन्य तकनीकें (विधि ९०-९७)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+</a>
+
 
 | क्रमांक | नाम (ओशो द्वारा) | सार | कठिनाई |
 |--------|------------------|------|--------|
@@ -253,10 +418,32 @@ flowchart TB
 
 ### शून्य तकनीकें (विधि ९८-१०५)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "शून्य से मत डरो — शून्य ही सब कुछ है। यह खालीपन नहीं है, यह परिपूर्णता है। जब सब कुछ गिर जाता है — शरीर, मन, भावनाएँ, अहंकार — तब जो बचता है, वह शून्य है। और वही परमात्मा है।"
 
 ### उन्मनी/सहज तकनीकें (विधि १०६-११२)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "उन्मनी का अर्थ है — मन के पार। यह सबसे अंतिम अवस्था है। यहाँ कोई तकनीक नहीं, कोई प्रयास नहीं, कोई कर्ता नहीं। केवल होना है। और यही अंतिम विधि है — विधि ११२ — जहाँ मैं तुमसे कहता हूँ — अब कुछ मत करो। बस हो। पूरे हो।"
@@ -266,6 +453,17 @@ flowchart TB
 ## ओशो के अनुसार तकनीक की कठिनाई और उपयुक्तता
 
 ### ओशो का मनोवैज्ञानिक वर्गीकरण
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -285,6 +483,17 @@ flowchart LR
 ```
 
 ### ओशो की सलाह: कैसे चुनें तकनीक
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "कैसे चुनें? बहुत सरल है। किसी भी तकनीक को पढ़ो। अगर वह तुम्हें खींचती है — अगर उसे पढ़ते ही तुम्हारे भीतर कुछ कहता है — 'हाँ, यह मेरे लिए है' — तो वह तुम्हारी तकनीक है। अगर कोई तकनीक तुम्हें उबाऊ लगती है, अगर वह तुम्हें कठिन लगती है — तो छोड़ दो। कोई दूसरी लो। ११२ में से कोई न कोई तुम्हारे लिए ज़रूर है।"
@@ -755,15 +964,48 @@ run112TechniqueBrowser();
 
 ### विधि १: सबसे सरल — श्वास का साक्षी
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "यह सबसे सरल तकनीक है — इतनी सरल कि तुम इस पर विश्वास नहीं करोगे। लेकिन यह सबसे गहरी भी है। बस श्वास को देखो। जब वह अंदर जाती है — देखो। जब बाहर आती है — देखो। कुछ मत करो। यह बहुत सरल लगता है — लेकिन इसे करना बहुत कठिन है। मन हर बार तुम्हें खींच ले जाएगा। तुम भूल जाओगे। फिर याद करो। फिर देखो। यही अभ्यास है।"
 
 ### विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "नाद ब्रह्म — ध्वनि ही ईश्वर है। यह मेरी पसंदीदा तकनीकों में से एक है। किसी भी ध्वनि को सुनो — पक्षियों की चहचहाहट, हवा की सरसराहट, कार का शोर — और उसमें इतना डूब जाओ कि तुम और ध्वनि एक हो जाओ। जब सुनने वाला और सुनाई देने वाली ध्वनि एक हो जाते हैं — वही ध्यान है।"
 
 ### विधि ११२: अंतिम विधि — सब कुछ छोड़ देना
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "यह अंतिम विधि है — और यह कोई विधि नहीं है। यह सब विधियों का अंत है। यह वह जगह है जहाँ तकनीक भी गिर जाती है — केवल तुम रह जाते हो, शुद्ध, निर्द्वंद्व, मुक्त। जब मैं कहता हूँ — कुछ मत करो — तो मैं सच कह रहा हूँ। कुछ भी मत करो। बस हो। यही परम है।"
@@ -786,6 +1028,17 @@ run112TechniqueBrowser();
 ## प्रश्नोत्तरी (Quiz)
 
 ### प्रश्न १
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+</a>
+
 ओशो ने ११२ तकनीकों को कितनी श्रेणियों में बाँटा?
 
 a) ३ (पारंपरिक उपाय)
@@ -799,6 +1052,17 @@ b) ५ — श्वास, शारीरिक, इन्द्रिय, म
 </details>
 
 ### प्रश्न २
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+</a>
+
 ओशो के अनुसार कौन सी तकनीक सबसे सरल है?
 
 a) विधि ४२ — नाद ब्रह्म
@@ -812,6 +1076,17 @@ b) विधि १ — सिर्फ श्वास को देखना�
 </details>
 
 ### प्रश्न ३
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+</a>
+
 श्रेणी ३ (इन्द्रिय तकनीकें) में कितनी तकनीकें हैं?
 
 a) १५
@@ -825,6 +1100,17 @@ c) ३२ — विधि ३३ से ६४ तक — दृष्टि (�
 </details>
 
 ### प्रश्न ४
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+</a>
+
 ओशो के अनुसार, सबसे कठिन तकनीक कौन सी है?
 
 a) विधि १
@@ -838,6 +1124,17 @@ c) विधि ११२ — अंतिम विधि। "सबसे क�
 </details>
 
 ### प्रश्न ५
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+</a>
+
 ओशो तकनीक चुनने की क्या सलाह देते हैं?
 
 a) सबसे कठिन तकनीक चुनो
@@ -851,6 +1148,17 @@ b) "कोई भी तकनीक पढ़ो — अगर वह तुम
 </details>
 
 ### प्रश्न ६
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+</a>
+
 श्रेणी ५ (परम तकनीकें) किनके लिए हैं?
 
 a) शुरुआती लोगों के लिए
@@ -864,6 +1172,17 @@ b) उनके लिए जो पिछली श्रेणियों स
 </details>
 
 ### प्रश्न ७
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+</a>
+
 "नाद ब्रह्म" किस श्रेणी की तकनीक है?
 
 a) श्वास
@@ -877,6 +1196,17 @@ b) इन्द्रिय श्रेणी — श्रवण तकनी�
 </details>
 
 ### प्रश्न ८
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+</a>
+
 ओशो के अनुसार, तकनीकों की यात्रा किस दिशा में है?
 
 a) ऊपर से नीचे
@@ -894,6 +1224,17 @@ b) स्थूल से सूक्ष्म — श्वास (स्थ�
 ## अभ्यास (Exercises)
 
 ### अभ्यास १: अपनी तकनीक खोजें
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+</a>
+
 
 **निर्देश:** `TechniqueLibrary_112` का उपयोग करके अपने लिए उपयुक्त तकनीकें खोजें:
 
@@ -917,6 +1258,17 @@ forMe.forEach(t => {
 ```
 
 ### अभ्यास २: सप्ताह का अभ्यास शेड्यूल
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+</a>
+
 
 **निर्देश:** एक सप्ताह के लिए हर दिन अलग-अलग श्रेणियों से तकनीकें चुनें:
 
@@ -946,6 +1298,17 @@ console.log(tracker.getOshoEncouragement());
 
 ### अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+</a>
+
+
 **निर्देश:** ७ दिन तक हर दिन एक तकनीक का अभ्यास करें और डायरी भरें:
 
 | दिन | तकनीक | समय | अनुभव (१-५) | क्या हुआ? | ओशो का वचन |
@@ -959,6 +1322,17 @@ console.log(tracker.getOshoEncouragement());
 | ७ | | | | | |
 
 ### अभ्यास ४: अपना खुद का वर्गीकरण
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+</a>
+
 
 **निर्देश:** ओशो के ५-भागीय वर्गीकरण को समझने के बाद, अपना खुद का वर्गीकरण बनाएँ:
 

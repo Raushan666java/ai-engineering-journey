@@ -10,12 +10,34 @@ A **subquery** (inner query / nested query) is a query embedded inside another q
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **Scalar Subquery** = Asking "What's the average salary in this company?" before deciding your salary negotiation. One number.
 > **Row Subquery** = Asking "What's the full profile of the top performer?" â†’ one complete row.
 > **Table Subquery** = Asking "Which departments have above-average headcount?" â†’ a whole result set.
 > **Correlated Subquery** = Asking "For each employee, how does their salary compare to THEIR department's average?" â†’ the question changes per employee.
 
 ### 6.1.1 Scalar Subquery
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" alt="Handwritten: 6.1.1 Scalar Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" alt="Diagram: 6.1.1 Scalar Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" alt="Sticky Note: 6.1.1 Scalar Subquery" width="30%">
+</a>
+
 
 Returns exactly **one column and one row** (single value). Used anywhere a single value is allowed: SELECT, WHERE, HAVING, SET.
 
@@ -184,6 +206,17 @@ for e in above_avg:
 
 ### 6.1.2 Row Subquery
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" alt="Handwritten: 6.1.2 Row Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" alt="Diagram: 6.1.2 Row Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" alt="Sticky Note: 6.1.2 Row Subquery" width="30%">
+</a>
+
+
 Returns a **single row** with multiple columns. Used with row constructors `(col1, col2) = (subquery)`.
 
 **Steps:**
@@ -276,6 +309,17 @@ for e in employees:
 ---
 
 ### 6.1.3 Table Subquery
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" alt="Handwritten: 6.1.3 Table Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" alt="Diagram: 6.1.3 Table Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" alt="Sticky Note: 6.1.3 Table Subquery" width="30%">
+</a>
+
 
 Returns **multiple rows and columns**. Used in FROM clause (derived table) or IN / EXISTS / JOIN.
 
@@ -401,6 +445,17 @@ for e in employees:
 ---
 
 ### 6.1.4 Correlated Subquery
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" alt="Handwritten: 6.1.4 Correlated Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" alt="Diagram: 6.1.4 Correlated Subquery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" alt="Sticky Note: 6.1.4 Correlated Subquery" width="30%">
+</a>
+
 
 References columns from the **outer query**. Executed **once per outer row** â†’ the inner query depends on the current outer row's value.
 
@@ -551,6 +606,17 @@ for e in above_dept_avg(employees):
 
 ### 6.1.5 EXISTS / NOT EXISTS
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" alt="Handwritten: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" alt="Diagram: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" alt="Sticky Note: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+</a>
+
+
 EXISTS returns TRUE if the subquery returns **at least one row**. NOT EXISTS returns TRUE if the subquery returns **zero rows**.
 
 **Real-World Analogy:** "Does at least one student have a perfect score?" â†’ you stop checking as soon as you find one.
@@ -651,6 +717,17 @@ for d in ["Engineering","Sales","Marketing"]:
 
 ### 6.1.6 ANY / ALL
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" alt="Handwritten: 6.1.6 ANY / ALL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" alt="Diagram: 6.1.6 ANY / ALL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" alt="Sticky Note: 6.1.6 ANY / ALL" width="30%">
+</a>
+
+
 Used with comparison operators: `= ANY` (same as IN), `> ANY` (greater than at least one), `> ALL` (greater than all).
 
 **Real-World Analogy:** "ANY = beat at least one person in the race" vs "ALL = beat everyone in the race."
@@ -740,6 +817,17 @@ for name, sal in employees:
 
 ### 6.1.7 Subquery Types Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" alt="Handwritten: 6.1.7 Subquery Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" alt="Diagram: 6.1.7 Subquery Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" alt="Sticky Note: 6.1.7 Subquery Types Comparison" width="30%">
+</a>
+
+
 | Property | Scalar | Row | Table | Correlated |
 |----------|--------|-----|-------|------------|
 | **Returns** | Single value | Single row | Multiple rows/cols | Depends on context |
@@ -762,10 +850,32 @@ A CTE (`WITH` clause) defines a **temporary named result set** that exists only 
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **CTE** = A sticky note you write an intermediate calculation on, then use to build your final answer. You throw the sticky note away after you're done.
 > **Recursive CTE** = Russian nesting dolls â†’ opening each doll reveals a smaller doll inside, until you reach the smallest one (anchor), then you close them back up (recursion unwind).
 
 ### 6.2.1 Basic CTE
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" alt="Handwritten: 6.2.1 Basic CTE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" alt="Diagram: 6.2.1 Basic CTE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" alt="Sticky Note: 6.2.1 Basic CTE" width="30%">
+</a>
+
 
 **Steps:**
 1. Define the CTE using `WITH cte_name AS (subquery)`.
@@ -786,6 +896,17 @@ ORDER BY avg_salary DESC;
 ```
 
 ### 6.2.2 Multiple CTEs
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" alt="Handwritten: 6.2.2 Multiple CTEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" alt="Diagram: 6.2.2 Multiple CTEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" alt="Sticky Note: 6.2.2 Multiple CTEs" width="30%">
+</a>
+
 
 ```sql
 WITH
@@ -813,6 +934,17 @@ WHERE rank <= 2;
 | Main query | WHERE rank &lt;= 2 | Eng: (83500,2,1), Sales: (78000,2,2) |
 
 ### 6.2.3 Recursive CTEs
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" alt="Handwritten: 6.2.3 Recursive CTEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" alt="Diagram: 6.2.3 Recursive CTEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" alt="Sticky Note: 6.2.3 Recursive CTEs" width="30%">
+</a>
+
 
 A recursive CTE references **itself**. It has two parts:
 1. **Anchor member:** The base result set (non-recursive initial query).
@@ -1006,6 +1138,17 @@ for node in recursive_cte_simulation(employees):
 
 ### 6.2.4 CTE vs Subquery vs Temp Table
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" alt="Handwritten: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" alt="Diagram: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" alt="Sticky Note: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+</a>
+
+
 | Aspect | CTE | Subquery | Temp Table |
 |--------|-----|----------|------------|
 | **Scope** | Single query only | Single query only | Session-wide |
@@ -1026,9 +1169,31 @@ Window functions perform calculations across a set of rows **related to the curr
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **Window function** = Standing in a line and asking: "What's my height rank? How tall is the person before me? What's the average height of everyone in my row?" The line stays intact, and each person gets their answer alongside their own data.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```sql
 function_name() OVER (
@@ -1043,6 +1208,17 @@ function_name() OVER (
 **Frame Clause:** `ROWS | RANGE BETWEEN start AND end` where start/end are UNBOUNDED PRECEDING, n PRECEDING, CURRENT ROW, n FOLLOWING, UNBOUNDED FOLLOWING.
 
 ### 6.3.1 ROW_NUMBER
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" alt="Handwritten: 6.3.1 ROW_NUMBER" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" alt="Diagram: 6.3.1 ROW_NUMBER" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" alt="Sticky Note: 6.3.1 ROW_NUMBER" width="30%">
+</a>
+
 
 Assigns a **unique sequential integer** to each row within a partition, starting at 1.
 
@@ -1104,6 +1280,17 @@ Actually, let me re-sort properly:
 
 ### 6.3.2 RANK / DENSE_RANK
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" alt="Handwritten: 6.3.2 RANK / DENSE_RANK" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" alt="Diagram: 6.3.2 RANK / DENSE_RANK" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" alt="Sticky Note: 6.3.2 RANK / DENSE_RANK" width="30%">
+</a>
+
+
 **RANK:** Same value for ties, **skips** numbers after ties (1,1,3,4).
 **DENSE_RANK:** Same value for ties, **no skipping** (1,1,2,3).
 
@@ -1141,6 +1328,17 @@ With tied values:
 
 ### 6.3.3 NTILE
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" alt="Handwritten: 6.3.3 NTILE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" alt="Diagram: 6.3.3 NTILE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" alt="Sticky Note: 6.3.3 NTILE" width="30%">
+</a>
+
+
 Divides rows into **N approximately equal buckets**.
 
 **Steps:**
@@ -1172,6 +1370,17 @@ WHERE quartile = 1;
 - Buckets: [1: rows 1-3], [2: rows 4-6], [3: rows 7-8], [4: rows 9-10]
 
 ### 6.3.4 LAG / LEAD
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" alt="Handwritten: 6.3.4 LAG / LEAD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" alt="Diagram: 6.3.4 LAG / LEAD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" alt="Sticky Note: 6.3.4 LAG / LEAD" width="30%">
+</a>
+
 
 **LAG(col, n, default):** Access the value from **n rows before** the current row.
 **LEAD(col, n, default):** Access the value from **n rows after** the current row.
@@ -1208,6 +1417,17 @@ ORDER BY emp_name, sale_date;
 
 ### 6.3.5 FIRST_VALUE / LAST_VALUE
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" alt="Handwritten: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" alt="Diagram: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" alt="Sticky Note: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+</a>
+
+
 **FIRST_VALUE(col):** First value in the window frame.
 **LAST_VALUE(col):** Last value in the window frame (frame-sensitive â†’ needs RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to get true last value of partition).
 
@@ -1229,6 +1449,17 @@ FROM sales;
 ```
 
 ### 6.3.6 Aggregate Window Functions (SUM/AVG OVER)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" alt="Handwritten: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" alt="Diagram: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" alt="Sticky Note: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+</a>
+
 
 Standard aggregates (SUM, AVG, COUNT, MIN, MAX) used with OVER compute **cumulative** or **moving** aggregations.
 
@@ -1265,6 +1496,17 @@ FROM sales;
 
 ### 6.3.7 Window Functions Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" alt="Handwritten: 6.3.7 Window Functions Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" alt="Diagram: 6.3.7 Window Functions Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" alt="Sticky Note: 6.3.7 Window Functions Comparison" width="30%">
+</a>
+
+
 | Function | Purpose | Handles Ties | Skips Numbers | Requires ORDER BY |
 |----------|---------|-------------|---------------|-------------------|
 | **ROW_NUMBER** | Unique sequential number | N/A (unique) | N/A | Usually |
@@ -1278,6 +1520,17 @@ FROM sales;
 | **SUM/AVG OVER** | Cumulative/moving aggregate | N/A | N/A | For running totals |
 
 ### C++ Implementation (Window Function Simulator)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: C++ Implementation (Window Function Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" alt="Diagram: C++ Implementation (Window Function Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: C++ Implementation (Window Function Simulator)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1338,6 +1591,17 @@ public:
 
 ### Python Implementation (Window Function Simulator)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Window Function Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" alt="Diagram: Python Implementation (Window Function Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Window Function Simulator)" width="30%">
+</a>
+
+
 ```python
 from dataclasses import dataclass
 from itertools import groupby
@@ -1385,6 +1649,17 @@ for item, rank in simulate_row_number(sales, "dept", "amount"):
 
 ### Complexity Analysis of Window Functions
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" alt="Handwritten: Complexity Analysis of Window Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" alt="Diagram: Complexity Analysis of Window Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" alt="Sticky Note: Complexity Analysis of Window Functions" width="30%">
+</a>
+
+
 | Function | Time Complexity | Space Complexity | WHY |
 |----------|---------------|-----------------|-----|
 | **ROW_NUMBER** | O(n log n) | O(n) | Sorting within each partition dominates |
@@ -1397,6 +1672,17 @@ for item, rank in simulate_row_number(sales, "dept", "amount"):
 | **SUM/AVG OVER** | O(n) | O(n) | Cumulative scan |
 
 ### Window Functions â†’ Edge Cases
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" alt="Handwritten: Window Functions â†’ Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" alt="Diagram: Window Functions â†’ Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" alt="Sticky Note: Window Functions â†’ Edge Cases" width="30%">
+</a>
+
 
 - **Empty partition:** Returns no rows.
 - **NULLs in ORDER BY:** Default behavior depends on DBMS (NULLS FIRST/LAST in PostgreSQL, NULLS FIRST in MySQL).
@@ -1412,10 +1698,32 @@ Transforms rows into columns (PIVOT) and columns into rows (UNPIVOT). SQL Server
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **PIVOT** = Turning a shopping list (item, store, price) into a price comparison table where stores are columns: you can see all prices at once.
 > **UNPIVOT** = Taking that price comparison table and turning it back into a list format.
 
 ### 6.4.1 PIVOT (SQL Server)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.1 PIVOT (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" alt="Diagram: 6.4.1 PIVOT (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.1 PIVOT (SQL Server)" width="30%">
+</a>
+
 
 ```sql
 -- Sample data: monthly sales by product category
@@ -1446,6 +1754,17 @@ PIVOT (
 
 ### 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" alt="Handwritten: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" alt="Diagram: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" alt="Sticky Note: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+</a>
+
+
 ```sql
 SELECT
     category,
@@ -1457,6 +1776,17 @@ GROUP BY category;
 ```
 
 ### 6.4.3 PIVOT using crosstab (PostgreSQL)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" alt="Handwritten: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" alt="Diagram: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" alt="Sticky Note: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+</a>
+
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS tablefunc;
@@ -1472,6 +1802,17 @@ FROM crosstab(
 ```
 
 ### 6.4.4 UNPIVOT (SQL Server)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" alt="Diagram: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+</a>
+
 
 ```sql
 -- Sample data: pivoted format
@@ -1502,6 +1843,17 @@ UNPIVOT (
 ```
 
 ### 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" alt="Handwritten: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" alt="Diagram: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" alt="Sticky Note: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+</a>
+
 
 ```sql
 SELECT product, 'Q1' AS quarter, q1 AS sales FROM quarterly_sales
@@ -1536,9 +1888,31 @@ MERGE (aka UPSERT) performs INSERT, UPDATE, or DELETE based on whether a matchin
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > = Updating your address book: if the contact already exists, update their info. If not, add a new entry. One operation, not two.
 
 ### SQL (SQL Server / PostgreSQL)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" alt="Handwritten: SQL (SQL Server / PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" alt="Diagram: SQL (SQL Server / PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" alt="Sticky Note: SQL (SQL Server / PostgreSQL)" width="30%">
+</a>
+
 
 ```sql
 -- Target table: product_inventory (current stock)
@@ -1565,6 +1939,17 @@ OUTPUT $action, inserted.product_id, deleted.quantity, inserted.quantity;
 
 ### PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" alt="Handwritten: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" alt="Diagram: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" alt="Sticky Note: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+</a>
+
+
 ```sql
 INSERT INTO product_inventory (product_id, product_name, quantity)
 VALUES (101, 'Widget', 50)
@@ -1581,6 +1966,17 @@ ON CONFLICT (emp_id) DO NOTHING;
 
 ### MySQL INSERT ... ON DUPLICATE KEY UPDATE
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" alt="Handwritten: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" alt="Diagram: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" alt="Sticky Note: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+</a>
+
+
 ```sql
 INSERT INTO product_inventory (product_id, product_name, quantity)
 VALUES (101, 'Widget', 50)
@@ -1590,6 +1986,17 @@ ON DUPLICATE KEY UPDATE
 ```
 
 ### Steps for MERGE Execution:
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" alt="Handwritten: Steps for MERGE Execution:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" alt="Diagram: Steps for MERGE Execution:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" alt="Sticky Note: Steps for MERGE Execution:" width="30%">
+</a>
+
 
 1. **Join phase:** Source and target are joined on the match condition.
 2. **Matched rows:** For rows that exist in both, execute WHEN MATCHED actions.
@@ -1607,6 +2014,17 @@ ON DUPLICATE KEY UPDATE
 **Complexity:** O(n + m) where n = source rows, m = target rows for the join. A hash join on the match column is O(n + m). The MERGE is a single pass; no separate SELECT + UPDATE + INSERT needed.
 
 ### Edge Cases:
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" alt="Diagram: Edge Cases:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases:" width="30%">
+</a>
+
 - **Multiple matches:** If source has multiple rows matching one target row, the MERGE fails with a "multiple rows in source match same target row" error.
 - **Concurrent MERGE:** Race conditions â†’ two concurrent MERGE statements can produce unexpected results. Use SERIALIZABLE isolation or application-level locking.
 - **Trigger firing:** MERGE fires INSERT, UPDATE, and DELETE triggers on the target table.
@@ -1619,9 +2037,31 @@ Dynamic SQL constructs and executes SQL statements **at runtime** using string b
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > = Writing a fill-in-the-blank form where you decide which blanks to fill based on user input. "SELECT * FROM [you_pick_the_table] WHERE [you_pick_the_column] = [you_pick_the_value]."
 
 ### SQL Server (sp_executesql)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" alt="Handwritten: SQL Server (sp_executesql)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" alt="Diagram: SQL Server (sp_executesql)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" alt="Sticky Note: SQL Server (sp_executesql)" width="30%">
+</a>
+
 
 ```sql
 CREATE PROCEDURE search_employees
@@ -1643,6 +2083,17 @@ END;
 
 ### PostgreSQL (EXECUTE)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" alt="Handwritten: PostgreSQL (EXECUTE)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" alt="Diagram: PostgreSQL (EXECUTE)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" alt="Sticky Note: PostgreSQL (EXECUTE)" width="30%">
+</a>
+
+
 ```sql
 CREATE OR REPLACE FUNCTION search_table(
     table_name TEXT,
@@ -1660,6 +2111,17 @@ $$ LANGUAGE plpgsql;
 
 ### Security: Always Use QUOTENAME / format with %I
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" alt="Handwritten: Security: Always Use QUOTENAME / format with %I" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" alt="Diagram: Security: Always Use QUOTENAME / format with %I" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" alt="Sticky Note: Security: Always Use QUOTENAME / format with %I" width="30%">
+</a>
+
+
 ```sql
 -- VULNERABLE (SQL injection):
 SET @sql = 'SELECT * FROM ' + @table_name + ' WHERE id = ' + @id;
@@ -1672,6 +2134,17 @@ EXECUTE format('SELECT * FROM %I WHERE id = %L', table_name, id);
 ```
 
 ### Python Implementation (Dynamic SQL Builder):
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" alt="Handwritten: Python Implementation (Dynamic SQL Builder):" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" alt="Diagram: Python Implementation (Dynamic SQL Builder):" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" alt="Sticky Note: Python Implementation (Dynamic SQL Builder):" width="30%">
+</a>
+
 
 ```python
 import sqlite3
@@ -1726,9 +2199,31 @@ A **stored procedure** is a pre-compiled collection of SQL statements stored on 
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > = A saved recipe in the restaurant kitchen. Instead of telling the chef the steps each time ("chop onions, sautÃƒÂ©, add tomatoes, simmer"), you just say "make marinara sauce." The recipe is pre-written, pre-practiced, and ready to execute.
 
 ### SQL Server Example
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" alt="Handwritten: SQL Server Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" alt="Diagram: SQL Server Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" alt="Sticky Note: SQL Server Example" width="30%">
+</a>
+
 
 ```sql
 CREATE PROCEDURE sp_GetDepartmentSummary
@@ -1768,6 +2263,17 @@ PRINT 'Total salary: ' + CAST(@result AS VARCHAR);
 
 ### MySQL Example
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" alt="Handwritten: MySQL Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" alt="Diagram: MySQL Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" alt="Sticky Note: MySQL Example" width="30%">
+</a>
+
+
 ```sql
 DELIMITER //
 
@@ -1800,6 +2306,17 @@ SELECT @total;
 
 ### PostgreSQL Example (plpgsql)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" alt="Handwritten: PostgreSQL Example (plpgsql)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" alt="Diagram: PostgreSQL Example (plpgsql)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" alt="Sticky Note: PostgreSQL Example (plpgsql)" width="30%">
+</a>
+
+
 ```sql
 CREATE OR REPLACE FUNCTION get_department_summary(
     dept_id INT,
@@ -1822,6 +2339,17 @@ $$ LANGUAGE plpgsql;
 ```
 
 ### C++ Implementation (Stored Procedure Executor)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: C++ Implementation (Stored Procedure Executor)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: C++ Implementation (Stored Procedure Executor)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: C++ Implementation (Stored Procedure Executor)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1888,6 +2416,17 @@ int main() {
 
 ### Python Implementation (Stored Procedure Executor)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: Python Implementation (Stored Procedure Executor)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: Python Implementation (Stored Procedure Executor)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: Python Implementation (Stored Procedure Executor)" width="30%">
+</a>
+
+
 ```python
 from typing import Any, Callable
 import sqlite3
@@ -1933,6 +2472,17 @@ for row in results:
 
 ### Complexity & Benefits
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" alt="Handwritten: Complexity & Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" alt="Diagram: Complexity & Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" alt="Sticky Note: Complexity & Benefits" width="30%">
+</a>
+
+
 | Aspect | Details |
 |--------|---------|
 | **Compilation** | Compiled once, executed many times â†’ plan reuse |
@@ -1957,9 +2507,31 @@ Functions return a **single value** (scalar) or a **table** (table-valued). Unli
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > = A calculator button. You input numbers, get a result. It doesn't change anything outside the calculator. Pressing "sqrt(25)" always returns 5, no side effects.
 
 ### Scalar Function (SQL Server)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" alt="Handwritten: Scalar Function (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" alt="Diagram: Scalar Function (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" alt="Sticky Note: Scalar Function (SQL Server)" width="30%">
+</a>
+
 
 ```sql
 CREATE FUNCTION dbo.CalculateBonus(
@@ -1987,6 +2559,17 @@ FROM employees;
 
 ### Table-Valued Function (SQL Server)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" alt="Handwritten: Table-Valued Function (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" alt="Diagram: Table-Valued Function (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" alt="Sticky Note: Table-Valued Function (SQL Server)" width="30%">
+</a>
+
+
 ```sql
 CREATE FUNCTION GetEmployeesByDepartment(@dept_id INT)
 RETURNS TABLE
@@ -2002,6 +2585,17 @@ SELECT * FROM GetEmployeesByDepartment(3) WHERE salary > 50000;
 ```
 
 ### PostgreSQL Function
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" alt="Handwritten: PostgreSQL Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" alt="Diagram: PostgreSQL Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" alt="Sticky Note: PostgreSQL Function" width="30%">
+</a>
+
 
 ```sql
 CREATE OR REPLACE FUNCTION calculate_bonus(
@@ -2023,12 +2617,34 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 
 ### Deterministic vs Non-Deterministic
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" alt="Handwritten: Deterministic vs Non-Deterministic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" alt="Diagram: Deterministic vs Non-Deterministic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" alt="Sticky Note: Deterministic vs Non-Deterministic" width="30%">
+</a>
+
+
 | Function Type | Examples | Caching |
 |--------------|----------|---------|
 | **DETERMINISTIC** | `ABS()`, `UPPER()`, `CalculateBonus(salary, rating)` | Can be indexed, precomputed |
 | **NOT DETERMINISTIC** | `GETDATE()`, `RAND()`, `NEWID()` | Cannot be indexed, computed each time |
 
 ### Complexity
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
 
 | Function Type | Execution Pattern | Performance |
 |--------------|------------------|-------------|
@@ -2037,6 +2653,17 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 | **Table-valued (multi-stmt)** | Materialized â†’ temp table | Slower â†’ always materializes |
 
 ### Python Implementation (UDF Simulator)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" alt="Handwritten: Python Implementation (UDF Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" alt="Diagram: Python Implementation (UDF Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" alt="Sticky Note: Python Implementation (UDF Simulator)" width="30%">
+</a>
+
 
 ```python
 from typing import Callable, Any
@@ -2075,9 +2702,31 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > = A motion-sensor light. You don't flip a switch â†’ the light automatically turns on when someone enters the room (event), checks the time (condition), and turns on (action). All happens without human intervention.
 
 ### Types of Triggers
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" alt="Handwritten: Types of Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" alt="Diagram: Types of Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" alt="Sticky Note: Types of Triggers" width="30%">
+</a>
+
 
 | Type | Timing | Use Case |
 |------|--------|----------|
@@ -2087,6 +2736,17 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 | **DDL Trigger** | Schema changes | Prevent DROP TABLE, audit schema changes |
 
 ### BEFORE Trigger (MySQL)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" alt="Handwritten: BEFORE Trigger (MySQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" alt="Diagram: BEFORE Trigger (MySQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" alt="Sticky Note: BEFORE Trigger (MySQL)" width="30%">
+</a>
+
 
 ```sql
 DELIMITER //
@@ -2108,6 +2768,17 @@ DELIMITER ;
 ```
 
 ### AFTER Trigger (SQL Server)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" alt="Handwritten: AFTER Trigger (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" alt="Diagram: AFTER Trigger (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" alt="Sticky Note: AFTER Trigger (SQL Server)" width="30%">
+</a>
+
 
 ```sql
 CREATE TRIGGER trg_EmployeeAudit
@@ -2137,6 +2808,17 @@ END;
 
 ### INSTEAD OF Trigger (SQL Server â†’ for Views)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" alt="Handwritten: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" alt="Diagram: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" alt="Sticky Note: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+</a>
+
+
 ```sql
 CREATE VIEW emp_view AS
 SELECT emp_id, name, salary, department_id FROM employees;
@@ -2161,6 +2843,17 @@ INSERT INTO emp_view(emp_id, name, salary, department_id) VALUES (100, 'John', -
 
 ### Trigger Execution Order (SQL Server)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" alt="Handwritten: Trigger Execution Order (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" alt="Diagram: Trigger Execution Order (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" alt="Sticky Note: Trigger Execution Order (SQL Server)" width="30%">
+</a>
+
+
 ```
 BEFORE triggers (not in SQL Server â†’ check constraints fire first)
 â†’ INSTEAD OF trigger (replaces the operation entirely)
@@ -2170,6 +2863,17 @@ BEFORE triggers (not in SQL Server â†’ check constraints fire first)
 ```
 
 ### C++ Implementation (Trigger Engine)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" alt="Handwritten: C++ Implementation (Trigger Engine)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" alt="Diagram: C++ Implementation (Trigger Engine)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" alt="Sticky Note: C++ Implementation (Trigger Engine)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2251,6 +2955,17 @@ int main() {
 
 ### Python Implementation (Trigger Simulator)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Trigger Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" alt="Diagram: Python Implementation (Trigger Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Trigger Simulator)" width="30%">
+</a>
+
+
 ```python
 from enum import Enum
 from typing import Callable
@@ -2309,6 +3024,17 @@ engine.fire(TriggerEvent.UPDATE, TriggerTiming.BEFORE, old_emp, new_emp)
 
 ### Trigger Complexity & Considerations
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" alt="Handwritten: Trigger Complexity & Considerations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" alt="Diagram: Trigger Complexity & Considerations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" alt="Sticky Note: Trigger Complexity & Considerations" width="30%">
+</a>
+
+
 | Aspect | Details |
 |--------|---------|
 | **Time complexity** | O(t) where t = operations within the trigger body. Triggers add overhead to every DML operation |
@@ -2325,10 +3051,32 @@ A **view** is a saved query definition that behaves like a virtual table. An **i
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **Regular view** = A saved search filter on a dating app. You define "age 25-35, non-smoker" once, and it always shows current results.
 > **Indexed view** = A printed photo album. It's fast to browse but you need to take new photos when people change.
 
 ### Creating Views
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" alt="Handwritten: Creating Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" alt="Diagram: Creating Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" alt="Sticky Note: Creating Views" width="30%">
+</a>
+
 
 ```sql
 CREATE VIEW sales_summary AS
@@ -2350,6 +3098,17 @@ SELECT * FROM sales_summary WHERE total_revenue > 10000 ORDER BY total_revenue D
 
 ### View Security (Column-Level Masking)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" alt="Handwritten: View Security (Column-Level Masking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" alt="Diagram: View Security (Column-Level Masking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" alt="Sticky Note: View Security (Column-Level Masking)" width="30%">
+</a>
+
+
 ```sql
 CREATE VIEW employee_public AS
 SELECT emp_id, name, department_id
@@ -2362,6 +3121,17 @@ SELECT * FROM employees;
 ```
 
 ### Indexed Views (SQL Server)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" alt="Handwritten: Indexed Views (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" alt="Diagram: Indexed Views (SQL Server)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" alt="Sticky Note: Indexed Views (SQL Server)" width="30%">
+</a>
+
 
 ```sql
 -- Must be created WITH SCHEMABINDING
@@ -2382,6 +3152,17 @@ ON dbo.monthly_sales(product_id);
 ```
 
 ### Materialized Views (PostgreSQL)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" alt="Handwritten: Materialized Views (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" alt="Diagram: Materialized Views (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" alt="Sticky Note: Materialized Views (PostgreSQL)" width="30%">
+</a>
+
 
 ```sql
 CREATE MATERIALIZED VIEW monthly_sales_mv AS
@@ -2405,6 +3186,17 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY monthly_sales_mv;
 
 ### Updatable Views
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" alt="Handwritten: Updatable Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" alt="Diagram: Updatable Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" alt="Sticky Note: Updatable Views" width="30%">
+</a>
+
+
 Simple views can support INSERT/UPDATE/DELETE if they:
 1. Reference only one base table.
 2. Do not use GROUP BY, DISTINCT, aggregate functions.
@@ -2425,6 +3217,17 @@ DELETE FROM engineering_dept WHERE emp_id = 101;
 ```
 
 ### C++ Implementation (View Materialization)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" alt="Handwritten: C++ Implementation (View Materialization)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" alt="Diagram: C++ Implementation (View Materialization)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" alt="Sticky Note: C++ Implementation (View Materialization)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2502,6 +3305,17 @@ int main() {
 
 ### Python Implementation (View Abstraction)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" alt="Handwritten: Python Implementation (View Abstraction)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" alt="Diagram: Python Implementation (View Abstraction)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" alt="Sticky Note: Python Implementation (View Abstraction)" width="30%">
+</a>
+
+
 ```python
 from dataclasses import dataclass, field
 from typing import Callable
@@ -2552,6 +3366,17 @@ for r in completed_view.get_data():
 
 ### View Complexity
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" alt="Handwritten: View Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" alt="Diagram: View Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" alt="Sticky Note: View Complexity" width="30%">
+</a>
+
+
 | Aspect | Regular View | Indexed/Materialized View |
 |--------|-------------|---------------------------|
 | **Storage** | None (query definition only) | Disk space for result set |
@@ -2569,10 +3394,32 @@ Temporary tables store intermediate results for the **duration of a session** or
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 > **Temp Table** = A whiteboard in a meeting room. You write intermediate results, erase when the meeting ends. Anyone in the meeting can see and modify it.
 > **Table Variable** = A personal notepad. You scribble intermediate notes for yourself, and it's thrown away when you leave the room.
 
 ### 6.11.1 Local Temporary Tables (#temp)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+</a>
+
 
 ```sql
 -- Create local temp table (single # â†’ visible only to current session)
@@ -2605,6 +3452,17 @@ DROP TABLE IF EXISTS #dept_summary;
 
 ### 6.11.2 Global Temporary Tables (##temp)
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+</a>
+
+
 ```sql
 -- Global temp table (## â†’ visible to ALL sessions)
 CREATE TABLE ##global_temp_errors (
@@ -2624,6 +3482,17 @@ SELECT * FROM ##global_temp_errors;
 ```
 
 ### 6.11.3 Table Variables
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" alt="Handwritten: 6.11.3 Table Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" alt="Diagram: 6.11.3 Table Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" alt="Sticky Note: 6.11.3 Table Variables" width="30%">
+</a>
+
 
 ```sql
 -- Declare a table variable (scoped to batch/procedure)
@@ -2650,6 +3519,17 @@ SELECT * FROM @ProductSales ORDER BY total_revenue DESC;
 
 ### 6.11.4 Temp Table vs Table Variable Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" alt="Handwritten: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" alt="Diagram: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" alt="Sticky Note: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+</a>
+
+
 | Aspect | Temp Table (#) | Table Variable (@) |
 |--------|---------------|-------------------|
 | **Scope** | Current session | Current batch/procedure |
@@ -2663,6 +3543,17 @@ SELECT * FROM @ProductSales ORDER BY total_revenue DESC;
 | **Performance** | Better for large data (stats help optimizer) | Better for small data (less overhead, mostly in memory) |
 
 ### C++ Implementation (Temp Table Simulation)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" alt="Handwritten: C++ Implementation (Temp Table Simulation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" alt="Diagram: C++ Implementation (Temp Table Simulation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" alt="Sticky Note: C++ Implementation (Temp Table Simulation)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2746,6 +3637,17 @@ int main() {
 ```
 
 ### Python Implementation (Temp Table Simulator)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Temp Table Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" alt="Diagram: Python Implementation (Temp Table Simulator)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Temp Table Simulator)" width="30%">
+</a>
+
 
 ```python
 from dataclasses import dataclass, field
@@ -2841,6 +3743,17 @@ mgr.clear_session()
 
 ### Q1: What is the maximum recursion depth for CTEs?
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" alt="Handwritten: What is the maximum recursion depth for CTEs?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" alt="Diagram: What is the maximum recursion depth for CTEs?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" alt="Sticky Note: What is the maximum recursion depth for CTEs?" width="30%">
+</a>
+
+
 Most DBMS enforce a default limit to prevent infinite recursion:
 - **SQL Server:** Default 100, max 32767 (`OPTION (MAXRECURSION 32767)`). Use `MAXRECURSION 0` for unlimited (dangerous).
 - **PostgreSQL:** Default 100 (set by `max_recursive_iterations` GUC). No hard limit, but stack overflow may occur around 1000+ iterations.
@@ -2851,12 +3764,34 @@ Most DBMS enforce a default limit to prevent infinite recursion:
 
 ### Q2: Correlated vs Non-correlated subquery â†’ performance difference?
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" alt="Handwritten: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" alt="Diagram: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" alt="Sticky Note: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+</a>
+
+
 **Non-correlated:** Inner query runs **once**. Example: `WHERE salary > (SELECT AVG(salary) FROM employees)` â†’ AVG is computed once.
 **Correlated:** Inner query runs **once per outer row**. Example: `WHERE salary > (SELECT AVG(e2.salary) FROM employees e2 WHERE e2.dept_id = e1.dept_id)` â†’ AVG computed per department.
 
 **Interview answer:** "Non-correlated subqueries execute once and are generally faster. Correlated subqueries execute for each outer row and can be O(nÃ‚Â²). The optimizer may rewrite correlated subqueries to joins or apply caching (subquery decorrelation). Always check the execution plan. When possible, rewrite correlated subqueries to window functions or JOINs with GROUP BY."
 
 ### Q3: Can you create an index on a view?
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" alt="Handwritten: Can you create an index on a view?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" alt="Diagram: Can you create an index on a view?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" alt="Sticky Note: Can you create an index on a view?" width="30%">
+</a>
+
 
 **Regular view:** No â†’ it's just a stored query; there's nothing to index.
 **Indexed view (SQL Server) / Materialized view (PostgreSQL/Oracle):** Yes â†’ creates a physical copy with a clustered index.
@@ -2872,6 +3807,17 @@ Requirements for indexed views in SQL Server:
 **Interview answer:** "You cannot index a regular view. For materialized views, you create a unique clustered index which physically stores the view's result set. This dramatically speeds up queries against the view but adds overhead to base table modifications."
 
 ### Q4: Trigger vs CHECK constraint â†’ which to use for validation?
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" alt="Handwritten: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" alt="Diagram: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" alt="Sticky Note: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+</a>
+
 
 **CHECK constraint:** Simple, declarative, fast. Best for: column-level validation, domain integrity.
 **Trigger:** Complex, procedural, flexible. Best for: cross-table validation, business rules, audit logging.
@@ -2894,6 +3840,17 @@ END;
 
 ### Q5: What happens with NULLs in window function ORDER BY?
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" alt="Handwritten: What happens with NULLs in window function ORDER BY?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" alt="Diagram: What happens with NULLs in window function ORDER BY?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" alt="Sticky Note: What happens with NULLs in window function ORDER BY?" width="30%">
+</a>
+
+
 - **PostgreSQL:** NULLS LAST by default (ASC), NULLS FIRST by default (DESC).
 - **SQL Server:** NULLS FIRST (ASC), NULLS LAST (DESC).
 - **MySQL:** NULLS FIRST by default.
@@ -2902,6 +3859,17 @@ END;
 **Interview answer:** "NULL handling in window functions follows the database's NULL sort order. This affects ROW_NUMBER assignment â†’ if you're ranking salaries and some are NULL, they'll appear at the start or end depending on the DBMS. Use ORDER BY with NULLS LAST/NULLS FIRST for explicit control."
 
 ### Q6: Why would a MERGE statement fail with "multiple rows in source match same target"?
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" alt="Handwritten: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" alt="Diagram: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" alt="Sticky Note: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+</a>
+
 
 MERGE requires a 1:1 or 0:1 relationship between source and target on the join condition. If the source has duplicates on the join key, the DBMS cannot determine which source row to use for the UPDATE.
 
@@ -2921,6 +3889,17 @@ WHEN MATCHED THEN UPDATE SET quantity = quantity + source.qty;
 
 ### Q7: Can a CTE be used in multiple queries?
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" alt="Handwritten: Can a CTE be used in multiple queries?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" alt="Diagram: Can a CTE be used in multiple queries?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" alt="Sticky Note: Can a CTE be used in multiple queries?" width="30%">
+</a>
+
+
 No â†’ a CTE is scoped to the **single** statement that follows the WITH clause. For multiple queries, use a temp table or a view.
 
 ```sql
@@ -2932,6 +3911,17 @@ SELECT * FROM cte;          -- First query uses CTE
 ```
 
 ### Q8: Dynamic SQL â†’ why is QUOTENAME important?
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" alt="Handwritten: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" alt="Diagram: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" alt="Sticky Note: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+</a>
+
 
 Without QUOTENAME, a malicious user can perform SQL injection:
 
@@ -2951,6 +3941,17 @@ SET @sql = 'SELECT * FROM ' + QUOTENAME(@table_name);
 ## 6.15 Applications in Real Systems
 
 ### PostgreSQL Window Functions
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" alt="Handwritten: PostgreSQL Window Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" alt="Diagram: PostgreSQL Window Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" alt="Sticky Note: PostgreSQL Window Functions" width="30%">
+</a>
+
 
 PostgreSQL's window function support is the gold standard â†’ it supports ALL standard SQL:2003 window functions plus extensions.
 
@@ -2988,6 +3989,17 @@ WINDOW w AS (PARTITION BY symbol, DATE_TRUNC('month', trade_date)
 ```
 
 ### SQL Server Stored Procedures in Production
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" alt="Handwritten: SQL Server Stored Procedures in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" alt="Diagram: SQL Server Stored Procedures in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" alt="Sticky Note: SQL Server Stored Procedures in Production" width="30%">
+</a>
+
 
 SQL Server stored procedures are the backbone of enterprise applications for encapsulating business logic.
 
@@ -3036,6 +4048,17 @@ END;
 
 ### MySQL Triggers for Data Sync
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" alt="Handwritten: MySQL Triggers for Data Sync" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" alt="Diagram: MySQL Triggers for Data Sync" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" alt="Sticky Note: MySQL Triggers for Data Sync" width="30%">
+</a>
+
+
 MySQL triggers are commonly used for denormalization, audit trails, and cross-table synchronization.
 
 **Real Use Case: Materialized Aggregate Cache**
@@ -3074,6 +4097,17 @@ DELIMITER ;
 ```
 
 ### Dynamic SQL in Search Applications
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" alt="Handwritten: Dynamic SQL in Search Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" alt="Diagram: Dynamic SQL in Search Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" alt="Sticky Note: Dynamic SQL in Search Applications" width="30%">
+</a>
+
 
 **Real Use Case: Dynamic Filter Builder**
 ```sql
@@ -3129,6 +4163,17 @@ END;
 
 ### Recursive CTE in Organization Management
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" alt="Handwritten: Recursive CTE in Organization Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" alt="Diagram: Recursive CTE in Organization Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" alt="Sticky Note: Recursive CTE in Organization Management" width="30%">
+</a>
+
+
 **Real Use Case: Access Control Hierarchy Resolution**
 ```sql
 -- Given a user's role, find all permissions including inherited ones
@@ -3152,6 +4197,17 @@ FROM role_permissions;
 ```
 
 ### MERGE in Data Warehousing (Slowly Changing Dimensions)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" alt="Handwritten: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" alt="Diagram: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" alt="Sticky Note: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+</a>
+
 
 ```sql
 -- Type 2 SCD: track historical changes to customer data
@@ -3223,6 +4279,17 @@ LIMIT / OFFSET   â†’ Pagination
 ---
 
 ### 6.16 Recursive CTE Simulator (TypeScript)
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" alt="Handwritten: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" alt="Diagram: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" alt="Sticky Note: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+</a>
+
 
 The following code models recursive CTE execution â€” anchor member, recursive member, and termination â€” with performance tracking.
 
@@ -3363,6 +4430,17 @@ flowchart LR
 
 ### Additional Chapter Quiz Questions
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
+
 11. A recursive CTE must contain which operator between the anchor and recursive members?
     a) UNION
     b) UNION ALL
@@ -3396,6 +4474,17 @@ flowchart LR
 **Answers:** 11-b, 12-b, 13-b, 14-a, 15-b
 
 ### Additional Exercises
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+</a>
+
 
 11. Write a recursive CTE that generates Fibonacci numbers up to the 20th term. Schema: `fib(n, fibonacci_number)`.
 
@@ -3511,6 +4600,17 @@ flowchart LR
 
 ### Basic
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. Write a scalar subquery to find all employees whose salary is above the company average. Include the average in the output.
 
 2. Write a query using EXISTS to find all departments that have at least one employee.
@@ -3523,6 +4623,17 @@ flowchart LR
 
 ### Intermediate
 
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
+
 6. Write a recursive CTE that generates dates from January 1, 2026 to December 31, 2026.
 
 7. Find employees whose salary is above their department's average salary. Write this using: a) a correlated subquery, b) a window function. Compare the approaches.
@@ -3534,6 +4645,17 @@ flowchart LR
 10. Write a dynamic SQL procedure that accepts a table name and column name, and returns the MIN, MAX, AVG of that column.
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 11. Write a query using LAG to compute the day-over-day percentage change in stock price. Schema: `prices(symbol, date, close_price)`. Return symbol, date, price, and pct_change.
 

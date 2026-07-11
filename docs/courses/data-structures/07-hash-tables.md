@@ -51,6 +51,17 @@ flowchart LR
 
 ### Hash Table Concept
 
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" alt="Handwritten: Hash Table Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" alt="Diagram: Hash Table Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" alt="Sticky Note: Hash Table Concept" width="30%">
+</a>
+
+
 A hash table maps keys to values using a **hash function** \( h(k) \) that computes an index into an array (the bucket array). The goal is \( O(1) \) average-case lookup.
 
 **Components:**
@@ -62,6 +73,17 @@ A hash table maps keys to values using a **hash function** \( h(k) \) that compu
 ---
 
 ### Hash Function
+
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" alt="Handwritten: Hash Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" alt="Diagram: Hash Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" alt="Sticky Note: Hash Function" width="30%">
+</a>
+
 
 **Real-world analogy:** A postal code system. When you mail a letter, the ZIP code tells the postal service which region to send it to. A good ZIP code system spreads mail evenly across all postal workers. A bad one dumps everything on one worker — just like a bad hash function dumps all keys into one bucket.
 
@@ -165,6 +187,17 @@ public class HashUtils {
 ---
 
 ### Chaining
+
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" alt="Handwritten: Chaining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" alt="Diagram: Chaining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" alt="Sticky Note: Chaining" width="30%">
+</a>
+
 
 **Real-world analogy:** A coat check room with numbered hooks. Each hook can hold multiple coats (chained together on the same hook). When two people get the same number, the attendant hangs one coat and clips the second onto the same hook. Finding your coat means searching through the chain on that hook — fast if the hook is lightly loaded, slow if everyone gets the same number.
 
@@ -512,6 +545,17 @@ class HashTableChaining<K, V> {
 ---
 
 ### Open Addressing
+
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" alt="Handwritten: Open Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" alt="Diagram: Open Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" alt="Sticky Note: Open Addressing" width="30%">
+</a>
+
 
 **Real-world analogy:** A parking lot with numbered spots. If your assigned spot is taken, you drive to the next empty spot and park there. When you return, you check your assigned spot first, then check nearby spots in order until you find your car. The problem: if many people park near the same section (clustering), you may walk far before finding an empty space.
 
@@ -1249,6 +1293,17 @@ class HashTableOpen<K, V> {
 
 ### Rehashing
 
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" alt="Handwritten: Rehashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" alt="Diagram: Rehashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" alt="Sticky Note: Rehashing" width="30%">
+</a>
+
+
 **Real-world analogy:** A growing library. When the shelves get too full (load factor too high), you move to a bigger building with more shelves. Every book gets a new shelf number because the numbering system depends on the total shelf count. Moving is expensive but infrequent.
 
 **When to rehash:** When load factor α = n/m exceeds the chosen threshold.
@@ -1309,6 +1364,17 @@ New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] — all indices recomputed.
 ---
 
 ### Cuckoo Hashing
+
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" alt="Handwritten: Cuckoo Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" alt="Diagram: Cuckoo Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" alt="Sticky Note: Cuckoo Hashing" width="30%">
+</a>
+
 
 **Real-world analogy:** Two competing shoe stores on the same street. When a new brand arrives (key), it goes to Store A. If Store A is full, the shoe that was there gets **kicked out** and moves to Store B. If Store B is also full, that shoe kicks out Store B's occupant, which goes back to Store A. This continues until every shoe finds a spot — or a cycle is detected, meaning we need more stores (rehash). Named after the cuckoo bird that pushes other birds' eggs out of the nest.
 
@@ -1693,6 +1759,17 @@ class CuckooHashTable<K, V> {
 ---
 
 ### Comparison: Chaining vs Open Addressing
+
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" alt="Handwritten: Comparison: Chaining vs Open Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" alt="Diagram: Comparison: Chaining vs Open Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" alt="Sticky Note: Comparison: Chaining vs Open Addressing" width="30%">
+</a>
+
 
 | Feature | Chaining | Open Addressing |
 |---------|----------|---------------|

@@ -17,6 +17,17 @@ By the end of this chapter, you will be able to:
 
 ### How Jobs Are Filled
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-handwritten.svg" alt="Handwritten: How Jobs Are Filled" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-diagram.svg" alt="Diagram: How Jobs Are Filled" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-jobs-are-filled-sticky.svg" alt="Sticky Note: How Jobs Are Filled" width="30%">
+</a>
+
+
 ```mermaid
 pie title How Indian IT Jobs Are Filled
     "Job Portals (Naukri, LinkedIn, Indeed)" : 40
@@ -28,6 +39,17 @@ pie title How Indian IT Jobs Are Filled
 ```
 
 ### Key Insight: The Hidden Job Market
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-handwritten.svg" alt="Handwritten: Key Insight: The Hidden Job Market" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-diagram.svg" alt="Diagram: Key Insight: The Hidden Job Market" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/key-insight-the-hidden-job-market-sticky.svg" alt="Sticky Note: Key Insight: The Hidden Job Market" width="30%">
+</a>
+
 
 Approximately 60% of jobs in the Indian IT industry are never publicly advertised. They are filled through:
 - **Internal referrals** from existing employees
@@ -42,6 +64,17 @@ This means relying solely on job portals will limit you to only 40% of available
 
 ### Primary Portals
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-handwritten.svg" alt="Handwritten: Primary Portals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-diagram.svg" alt="Diagram: Primary Portals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/primary-portals-sticky.svg" alt="Sticky Note: Primary Portals" width="30%">
+</a>
+
+
 | Portal | Monthly Active Users (India) | Best For | Free Tier | Premium Features | ATS Integration |
 |--------|----------------------------|----------|-----------|------------------|-----------------|
 | Naukri.com | 70M+ | All IT roles, mass applications | Unlimited applies, resume visible | Naukri FastForward (profile boost, resume writing) | High |
@@ -54,6 +87,17 @@ This means relying solely on job portals will limit you to only 40% of available
 | TimesJobs | 15M+ | Managerial, senior roles | Unlimited | Priority listing | Medium |
 
 ### Government Job Notification Sites
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-handwritten.svg" alt="Handwritten: Government Job Notification Sites" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-diagram.svg" alt="Diagram: Government Job Notification Sites" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-job-notification-sites-sticky.svg" alt="Sticky Note: Government Job Notification Sites" width="30%">
+</a>
+
 
 | Site | Coverage | Update Frequency | Reliability |
 |------|----------|-----------------|-------------|
@@ -70,6 +114,17 @@ This means relying solely on job portals will limit you to only 40% of available
 
 ### Portal Strategy by Career Stage
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-handwritten.svg" alt="Handwritten: Portal Strategy by Career Stage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-diagram.svg" alt="Diagram: Portal Strategy by Career Stage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/portal-strategy-by-career-stage-sticky.svg" alt="Sticky Note: Portal Strategy by Career Stage" width="30%">
+</a>
+
+
 | Stage | Primary Portal | Secondary | Approach |
 |-------|---------------|-----------|----------|
 | Fresher (Campus) | College placement portal | Naukri, LinkedIn | Mass apply (100+ companies) |
@@ -80,6 +135,17 @@ This means relying solely on job portals will limit you to only 40% of available
 | Govt/PSU | Official portals, SarkariResult | FreeAlerts | Apply as soon as notification releases |
 
 ### Daily Portal Routine
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-handwritten.svg" alt="Handwritten: Daily Portal Routine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-diagram.svg" alt="Diagram: Daily Portal Routine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/daily-portal-routine-sticky.svg" alt="Sticky Note: Daily Portal Routine" width="30%">
+</a>
+
 
 | Time | Activity | Duration |
 |------|----------|----------|
@@ -94,6 +160,17 @@ This means relying solely on job portals will limit you to only 40% of available
 ## Networking Strategies
 
 ### The Power of Networking in Indian IT
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-handwritten.svg" alt="Handwritten: The Power of Networking in Indian IT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-diagram.svg" alt="Diagram: The Power of Networking in Indian IT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/the-power-of-networking-in-indian-it-sticky.svg" alt="Sticky Note: The Power of Networking in Indian IT" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -114,6 +191,17 @@ flowchart TD
 ```
 
 ### LinkedIn Networking Blueprint
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-handwritten.svg" alt="Handwritten: LinkedIn Networking Blueprint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-diagram.svg" alt="Diagram: LinkedIn Networking Blueprint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/linkedin-networking-blueprint-sticky.svg" alt="Sticky Note: LinkedIn Networking Blueprint" width="30%">
+</a>
+
 
 #### Phase 1: Profile Optimization (Days 1-3)
 - Complete profile to "All-Star" rating
@@ -136,6 +224,17 @@ flowchart TD
 - Share your job search status (subtly) through posts
 
 ### Connection Request Templates
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-handwritten.svg" alt="Handwritten: Connection Request Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-diagram.svg" alt="Diagram: Connection Request Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/connection-request-templates-sticky.svg" alt="Sticky Note: Connection Request Templates" width="30%">
+</a>
+
 
 **Template 1: Alumni Connection**
 ```
@@ -194,6 +293,17 @@ Best,
 
 ### Why Referrals Matter
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-handwritten.svg" alt="Handwritten: Why Referrals Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-diagram.svg" alt="Diagram: Why Referrals Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-referrals-matter-sticky.svg" alt="Sticky Note: Why Referrals Matter" width="30%">
+</a>
+
+
 | Metric | Portal Application | Referral Application |
 |--------|-------------------|---------------------|
 | Response Rate | 2-5% | 30-60% |
@@ -203,6 +313,17 @@ Best,
 | Salary Negotiation Power | Low | Medium |
 
 ### How to Ask for a Referral
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-handwritten.svg" alt="Handwritten: How to Ask for a Referral" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-diagram.svg" alt="Diagram: How to Ask for a Referral" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-ask-for-a-referral-sticky.svg" alt="Sticky Note: How to Ask for a Referral" width="30%">
+</a>
+
 
 #### Step 1: Do Your Homework
 - Find the exact job opening on the company's career page
@@ -262,6 +383,17 @@ Best regards,
 
 ### Referral Follow-Up Best Practices
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-handwritten.svg" alt="Handwritten: Referral Follow-Up Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-diagram.svg" alt="Diagram: Referral Follow-Up Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/referral-follow-up-best-practices-sticky.svg" alt="Sticky Note: Referral Follow-Up Best Practices" width="30%">
+</a>
+
+
 | Action | Timing | Message |
 |--------|--------|---------|
 | Thank immediately | Within 1 hour | "Thank you so much for the referral! Really appreciate your help." |
@@ -272,6 +404,17 @@ Best regards,
 ## Cold Email Templates
 
 ### Cold Email to Hiring Manager
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-handwritten.svg" alt="Handwritten: Cold Email to Hiring Manager" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-diagram.svg" alt="Diagram: Cold Email to Hiring Manager" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-hiring-manager-sticky.svg" alt="Sticky Note: Cold Email to Hiring Manager" width="30%">
+</a>
+
 
 ```
 Subject: [Role] Application - [Your Name] - [X] years experience
@@ -308,6 +451,17 @@ Best regards,
 
 ### Cold Email to Startup Founder / CTO
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-handwritten.svg" alt="Handwritten: Cold Email to Startup Founder / CTO" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-diagram.svg" alt="Diagram: Cold Email to Startup Founder / CTO" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/cold-email-to-startup-founder-cto-sticky.svg" alt="Sticky Note: Cold Email to Startup Founder / CTO" width="30%">
+</a>
+
+
 ```
 Subject: Excited about [Company Name] - [Your Background]
 
@@ -336,6 +490,17 @@ Thanks for your time,
 
 ### Follow-Up Email (After No Response)
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-handwritten.svg" alt="Handwritten: Follow-Up Email (After No Response)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-diagram.svg" alt="Diagram: Follow-Up Email (After No Response)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/follow-up-email-after-no-response-sticky.svg" alt="Sticky Note: Follow-Up Email (After No Response)" width="30%">
+</a>
+
+
 ```
 Subject: Re: [Role] Application - [Your Name]
 
@@ -355,6 +520,17 @@ Best regards,
 
 ### Sequence Strategy: Multi-Touch Approach
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-handwritten.svg" alt="Handwritten: Sequence Strategy: Multi-Touch Approach" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-diagram.svg" alt="Diagram: Sequence Strategy: Multi-Touch Approach" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sequence-strategy-multi-touch-approach-sticky.svg" alt="Sticky Note: Sequence Strategy: Multi-Touch Approach" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     A[Day 1: Apply + Email] --> B[Day 4: LinkedIn Connect]
@@ -370,6 +546,17 @@ flowchart LR
 
 ### Types of Recruitment Agencies in India
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-handwritten.svg" alt="Handwritten: Types of Recruitment Agencies in India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-diagram.svg" alt="Diagram: Types of Recruitment Agencies in India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/types-of-recruitment-agencies-in-india-sticky.svg" alt="Sticky Note: Types of Recruitment Agencies in India" width="30%">
+</a>
+
+
 | Agency Type | Examples | Roles They Fill | Fee Structure |
 |-------------|----------|-----------------|---------------|
 | IT Staffing | TeamLease, Randstad, Adecco | Contract, contract-to-hire | 8-15% of annual CTC |
@@ -380,6 +567,17 @@ flowchart LR
 | PSU Placement Cells | PSU own HR | Direct recruitment | No fee (direct) |
 
 ### How to Work with Recruiters
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-handwritten.svg" alt="Handwritten: How to Work with Recruiters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-diagram.svg" alt="Diagram: How to Work with Recruiters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/how-to-work-with-recruiters-sticky.svg" alt="Sticky Note: How to Work with Recruiters" width="30%">
+</a>
+
 
 | Do | Don't |
 |----|-------|
@@ -392,6 +590,17 @@ flowchart LR
 | Maintain professional relationship after placement | Expect immediate responses 24/7 |
 
 ### Red Flags in Recruitment Agencies
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-handwritten.svg" alt="Handwritten: Red Flags in Recruitment Agencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-diagram.svg" alt="Diagram: Red Flags in Recruitment Agencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/red-flags-in-recruitment-agencies-sticky.svg" alt="Sticky Note: Red Flags in Recruitment Agencies" width="30%">
+</a>
+
 
 | Red Flag | Why It's Dangerous |
 |----------|-------------------|
@@ -406,6 +615,17 @@ flowchart LR
 ## Campus Placement vs Off-Campus Strategy
 
 ### Campus Placement Strategy
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-handwritten.svg" alt="Handwritten: Campus Placement Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-diagram.svg" alt="Diagram: Campus Placement Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/campus-placement-strategy-sticky.svg" alt="Sticky Note: Campus Placement Strategy" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -458,6 +678,17 @@ flowchart TD
 
 ### Off-Campus Strategy
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-handwritten.svg" alt="Handwritten: Off-Campus Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-diagram.svg" alt="Diagram: Off-Campus Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/off-campus-strategy-sticky.svg" alt="Sticky Note: Off-Campus Strategy" width="30%">
+</a>
+
+
 #### Fresher Off-Campus Challenges
 
 | Challenge | Solution |
@@ -494,9 +725,31 @@ flowchart TD
 
 ### Why You Need a Tracking System
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-handwritten.svg" alt="Handwritten: Why You Need a Tracking System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-diagram.svg" alt="Diagram: Why You Need a Tracking System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/why-you-need-a-tracking-system-sticky.svg" alt="Sticky Note: Why You Need a Tracking System" width="30%">
+</a>
+
+
 Government vacancies are published at unpredictable times across dozens of portals. Missing a 3-day application window can cost you a year. A structured tracking system ensures you never miss an opportunity.
 
 ### Tracking Spreadsheet Template
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-handwritten.svg" alt="Handwritten: Tracking Spreadsheet Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-diagram.svg" alt="Diagram: Tracking Spreadsheet Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tracking-spreadsheet-template-sticky.svg" alt="Sticky Note: Tracking Spreadsheet Template" width="30%">
+</a>
+
 
 Create a spreadsheet with the following columns:
 
@@ -765,6 +1018,17 @@ console.log(tracker.generateMonthlyReport());
 
 ### Government Notification Calendar Template
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-handwritten.svg" alt="Handwritten: Government Notification Calendar Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-diagram.svg" alt="Diagram: Government Notification Calendar Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/government-notification-calendar-template-sticky.svg" alt="Sticky Note: Government Notification Calendar Template" width="30%">
+</a>
+
+
 Create an annual calendar view to track when each exam typically occurs:
 
 | Month | Expected Notifications | Typical Exams |
@@ -785,6 +1049,17 @@ Create an annual calendar view to track when each exam typically occurs:
 ## Application Tracking System (ATS) for Your Own Use
 
 ### Sample Application Tracker Spreadsheet
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-handwritten.svg" alt="Handwritten: Sample Application Tracker Spreadsheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-diagram.svg" alt="Diagram: Sample Application Tracker Spreadsheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/sample-application-tracker-spreadsheet-sticky.svg" alt="Sticky Note: Sample Application Tracker Spreadsheet" width="30%">
+</a>
+
 
 | Date Applied | Company | Role | Platform | Referral? | Status | Interview Rounds | Notes | Follow-Up Date |
 |-------------|---------|-----|----------|-----------|--------|-----------------|-------|----------------|
@@ -1057,6 +1332,17 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 
 ### Information Gathering Before Salary Discussion
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-handwritten.svg" alt="Handwritten: Information Gathering Before Salary Discussion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-diagram.svg" alt="Diagram: Information Gathering Before Salary Discussion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/information-gathering-before-salary-discussion-sticky.svg" alt="Sticky Note: Information Gathering Before Salary Discussion" width="30%">
+</a>
+
+
 | Information | Source | What to Look For |
 |-------------|--------|------------------|
 | Company salary range | Glassdoor, AmbitionBox | Band for your role and level |
@@ -1068,6 +1354,17 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 
 ### Strategic Application Timing
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-handwritten.svg" alt="Handwritten: Strategic Application Timing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-diagram.svg" alt="Diagram: Strategic Application Timing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/strategic-application-timing-sticky.svg" alt="Sticky Note: Strategic Application Timing" width="30%">
+</a>
+
+
 | Time Period | Advantage | Disadvantage |
 |-------------|-----------|--------------|
 | Q1 (Jan-Mar) | Fresh budgets, high hiring | High competition (everyone resigned after bonus) |
@@ -1078,6 +1375,17 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 ## Quick Reference
 
 ### Job Search KPIs to Track
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-handwritten.svg" alt="Handwritten: Job Search KPIs to Track" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-diagram.svg" alt="Diagram: Job Search KPIs to Track" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/job-search-kpis-to-track-sticky.svg" alt="Sticky Note: Job Search KPIs to Track" width="30%">
+</a>
+
 
 | Metric | Fresher Target | Experienced Target |
 |--------|---------------|-------------------|
@@ -1093,6 +1401,17 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 
 ### Response Rate Optimization
 
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-handwritten.svg" alt="Handwritten: Response Rate Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-diagram.svg" alt="Diagram: Response Rate Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/response-rate-optimization-sticky.svg" alt="Sticky Note: Response Rate Optimization" width="30%">
+</a>
+
+
 | Action | Expected Improvement in Response Rate |
 |--------|--------------------------------------|
 | Customize resume for each job | +20% |
@@ -1104,6 +1423,17 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 | Apply on company website (not just portal) | +25% |
 
 ### Tools for Job Search Automation
+
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-handwritten.svg" alt="Handwritten: Tools for Job Search Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-diagram.svg" alt="Diagram: Tools for Job Search Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/job-preparation/02-job-search-strategy/tools-for-job-search-automation-sticky.svg" alt="Sticky Note: Tools for Job Search Automation" width="30%">
+</a>
+
 
 | Tool | Purpose | Cost |
 |------|---------|------|

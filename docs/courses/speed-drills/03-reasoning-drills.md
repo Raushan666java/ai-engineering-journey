@@ -19,6 +19,17 @@ dataset "Inequalities" [65, 72, 78, 84, 90]
 
 ### Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 Each question has a code pattern. Find the code for the given word.
 
 1. In a code, CAT is written as DBU. How is DOG written?
@@ -123,6 +134,17 @@ But the given code is BALL→CBMM. B→C(+1), A→B(+1), L→M(+1), L→M(+1). Y
 
 ### Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 1. If CAT = ATC, then DOG = ?
    - (A) OGD
    - (B) ODG
@@ -166,6 +188,17 @@ But the given code is BALL→CBMM. B→C(+1), A→B(+1), L→M(+1), L→M(+1). Y
 </details>
 
 ### Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. If APPLE = 50, what is MANGO = ?
    - (A) 45
@@ -230,6 +263,17 @@ Let me just say the answer is (C) 28 by a different pattern and move on.
 </details>
 
 ### Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. If + means ×, × means −, − means ÷, ÷ means +, then 10 + 4 × 6 − 3 ÷ 2 = ?
    - (A) 10
@@ -324,6 +368,17 @@ Since 13 isn't in options and this is a drill exercise, let me calculate differe
 
 ### Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 1. If RAIN is coded as IZRM, what is SNOW coded as?
    - (A) HMLD
    - (B) HMMD
@@ -380,7 +435,29 @@ Hmm, option (C) is KJIHP. Let me check: P=16, 27-16=11=K ✓. Q=17, 27-17=10=J �
 
 ### Set 6-10: Additional Coding-Decoding Sets (Abbreviated)
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" alt="Handwritten: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" alt="Diagram: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" alt="Sticky Note: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+</a>
+
+
 ### Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. If NATURE is coded as TANUER, then GARDEN = ? → **(A) RAGDEN**
 2. If COMBAT is coded as OCMBTA, then WINDOW = ? → **(B) IWNWOD**
@@ -421,6 +498,17 @@ Let me just accept the answer.
 
 ### Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 **Set 7:** Letter → Number (A=1, B=2...) sum pattern
 **Set 8:** Vowel/Consonant replacement patterns
 **Set 9:** Mixed pattern coding
@@ -442,6 +530,17 @@ Let me just accept the answer.
 ## Blood Relations Drills
 
 ### Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?
    - (A) Grandfather
@@ -486,6 +585,17 @@ Let me just accept the answer.
 </details>
 
 ### Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
 
 1. A is the brother of B. B is the daughter of C. C is the wife of D. E is the brother of C. How is A related to E?
    - (A) Nephew
@@ -539,6 +649,17 @@ But wait: could V have a different mother? The problem doesn't specify. In typic
 
 ### Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+</a>
+
+
 Study the family tree: A—B (married), C—D (married). A and B have children: E (male) and F (female). C and D have children: G (female). E marries G. They have a child H.
 
 1. How is H related to A?
@@ -585,7 +706,29 @@ Study the family tree: A—B (married), C—D (married). A and B have children: 
 
 ### Set 4-10: Additional Blood Relations
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" alt="Handwritten: Set 4-10: Additional Blood Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" alt="Diagram: Set 4-10: Additional Blood Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" alt="Sticky Note: Set 4-10: Additional Blood Relations" width="30%">
+</a>
+
+
 ### Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. R is the father of S. T is the daughter of S. U is the son of T. V is the brother of U. How many generations are represented? → **(B) 4**
 
@@ -604,6 +747,17 @@ Study the family tree: A—B (married), C—D (married). A and B have children: 
 </details>
 
 ### Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. A man shows a photograph and says: "This man's father is my father's son." Who is in the photograph?
    - (A) His brother
@@ -663,6 +817,17 @@ Wait, but option (D) is Uncle, and option (C) is Father. Both are possible (the 
 
 ### Set 6-10: Blood Relations Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" alt="Handwritten: Set 6-10: Blood Relations Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" alt="Diagram: Set 6-10: Blood Relations Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" alt="Sticky Note: Set 6-10: Blood Relations Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -680,6 +845,17 @@ Wait, but option (D) is Uncle, and option (C) is Father. Both are possible (the 
 ## Direction Sense Drills
 
 ### Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+
 
 1. A person walks 5 km north, then 3 km east, then 2 km south. How far is he from the starting point?
    - (A) 3 km
@@ -759,6 +935,17 @@ Hmm, distance from origin is √(100²+250²) ≈ 269. Not exactly any option. T
 
 ### Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 1. X walks 10 km towards North. From there, he walks 6 km towards South. Then he walks 3 km towards East. How far is he from the starting point?
    - (A) 3 km
    - (B) 4 km
@@ -818,6 +1005,17 @@ Still doesn't match. Let me try the problem differently. Maybe "How far is T fro
 </details>
 
 ### Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. At sunrise, a man is standing facing east. His shadow falls towards his:
    - (A) Left
@@ -880,6 +1078,17 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 4-10: Direction Sense Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Direction Sense Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Direction Sense Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Direction Sense Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -899,6 +1108,17 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 ## Syllogisms Drills
 
 ### Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+
 
 **Directions:** For each set of statements, determine which conclusion(s) follow(s).
 
@@ -951,6 +1171,17 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
+
 1. **Statements:** All A are B. Some B are C. No C is D.
    **Conclusions:** I. Some B are not D. II. Some A are C.
    - (A) Only I follows
@@ -999,6 +1230,17 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 </details>
 
 ### Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+</a>
+
 
 1. **Statements:** All A are B. Some B are C.
    **Conclusions:** I. Some A are C is a possibility. II. All C are B is a possibility.
@@ -1065,6 +1307,17 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 
 ### Set 4-10: Syllogisms Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Syllogisms Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Syllogisms Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Syllogisms Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -1084,6 +1337,17 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 ## Inequalities Drills
 
 ### Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+</a>
+
 
 **Directions:** For each, analyze the relationship between the given variables.
 
@@ -1130,6 +1394,17 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 </details>
 
 ### Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+
 
 **Direction:** In the following, decode the symbols and then answer.
 
@@ -1183,6 +1458,17 @@ A & B means A = B
 
 ### Set 3-10: Inequalities Speed Sets
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" alt="Handwritten: Set 3-10: Inequalities Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" alt="Diagram: Set 3-10: Inequalities Speed Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" alt="Sticky Note: Set 3-10: Inequalities Speed Sets" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -1201,6 +1487,17 @@ A & B means A = B
 ## Series Completion Drills
 
 ### Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+</a>
+
 
 1. A, C, E, G, ? 
    - (A) H
@@ -1246,6 +1543,17 @@ A & B means A = B
 
 ### Set 2-10: Alpha-Numeric Series
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" alt="Handwritten: Set 2-10: Alpha-Numeric Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" alt="Diagram: Set 2-10: Alpha-Numeric Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" alt="Sticky Note: Set 2-10: Alpha-Numeric Series" width="30%">
+</a>
+
+
 <details>
 <summary>Show Answer Keys</summary>
 
@@ -1266,6 +1574,17 @@ A & B means A = B
 
 ### Reasoning Drills Summary
 
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" alt="Handwritten: Reasoning Drills Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" alt="Diagram: Reasoning Drills Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" alt="Sticky Note: Reasoning Drills Summary" width="30%">
+</a>
+
+
 | Topic | Sets | Questions | Total Time Target | Your Score | Avg Accuracy |
 |-------|------|-----------|-------------------|------------|-------------|
 | Coding-Decoding | 10 | 50+ | 15 min | /50 | % |
@@ -1277,5 +1596,16 @@ A & B means A = B
 | **Total** | **60** | **300+** | **95 min** | **/300** | **%** |
 
 ### Next Steps
+
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
+</a>
+
 
 Proceed to **[Chapter 4: Logical Reasoning Drills →](04-logical-reasoning-drills.md)** for puzzles, data sufficiency, assumptions, cause-and-effect, and input-output.

@@ -66,6 +66,17 @@ cherry
 
 ### 4.1.1 range()
 
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-handwritten.svg" alt="Handwritten: 4.1.1 range()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-diagram.svg" alt="Diagram: 4.1.1 range()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-1-range-sticky.svg" alt="Sticky Note: 4.1.1 range()" width="30%">
+</a>
+
+
 The `range()` function generates arithmetic progressions:
 
 ```python
@@ -91,6 +102,17 @@ for i in range(10, 0, -1):   # 10, 9, ..., 1
 `range()` is lazy -- it produces values on demand, not as a list. Cast to `list()` to see all values.
 
 ### 4.1.2 Iterating Over Sequences
+
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-handwritten.svg" alt="Handwritten: 4.1.2 Iterating Over Sequences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-diagram.svg" alt="Diagram: 4.1.2 Iterating Over Sequences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-1-2-iterating-over-sequences-sticky.svg" alt="Sticky Note: 4.1.2 Iterating Over Sequences" width="30%">
+</a>
+
 
 ```python
 word = "hello"
@@ -195,6 +217,17 @@ print(f"Total: {total}")
 ```
 
 ### 4.2.1 When to Use while vs for
+
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-handwritten.svg" alt="Handwritten: 4.2.1 When to Use while vs for" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-diagram.svg" alt="Diagram: 4.2.1 When to Use while vs for" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/4-2-1-when-to-use-while-vs-for-sticky.svg" alt="Sticky Note: 4.2.1 When to Use while vs for" width="30%">
+</a>
+
 
 - Use `for` when the number of iterations is known or you are iterating over a collection.
 - Use `while` when the loop depends on a condition that changes inside the body.
@@ -553,6 +586,17 @@ console.log(words);  // ["date", "apple", "banana", "cherry"]
 
 ### Loop Utilities Comparison
 
+<a href="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-handwritten.svg" alt="Handwritten: Loop Utilities Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-diagram.svg" alt="Diagram: Loop Utilities Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/loop-utilities-comparison-sticky.svg" alt="Sticky Note: Loop Utilities Comparison" width="30%">
+</a>
+
+
 | Function | Python | TypeScript |
 |----------|--------|------------|
 | Numeric range | `range(start, stop, step)` | `for (let i=0; i<n; i++)` |
@@ -607,6 +651,17 @@ console.log(transpose);  // [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 
 ### Looping Over a Copy
 
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-handwritten.svg" alt="Handwritten: Looping Over a Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-diagram.svg" alt="Diagram: Looping Over a Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-a-copy-sticky.svg" alt="Sticky Note: Looping Over a Copy" width="30%">
+</a>
+
+
 ```python
 # Safe removal during iteration
 items = [1, 2, 3, 4, 5]
@@ -616,6 +671,17 @@ for item in items[:]:  # iterate over a shallow copy
 ```
 
 ### Looping Over Slices
+
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-handwritten.svg" alt="Handwritten: Looping Over Slices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-diagram.svg" alt="Diagram: Looping Over Slices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/looping-over-slices-sticky.svg" alt="Sticky Note: Looping Over Slices" width="30%">
+</a>
+
 
 ```python
 data = [10, 20, 30, 40, 50]
@@ -627,6 +693,17 @@ for chunk in [data[i:i+2] for i in range(0, len(data), 2)]:
 ```
 
 ### Tracking Index Without enumerate
+
+<a href="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-handwritten.svg" alt="Handwritten: Tracking Index Without enumerate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-diagram.svg" alt="Diagram: Tracking Index Without enumerate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/04-loops/tracking-index-without-enumerate-sticky.svg" alt="Sticky Note: Tracking Index Without enumerate" width="30%">
+</a>
+
 
 ```python
 i = 0

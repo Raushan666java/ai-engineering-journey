@@ -41,6 +41,17 @@ HDFS (Hadoop Distributed File System) is a fault-tolerant, high-throughput distr
 
 ### 2.1.1 Core Components
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" alt="Handwritten: 2.1.1 Core Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" alt="Diagram: 2.1.1 Core Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" alt="Sticky Note: 2.1.1 Core Components" width="30%">
+</a>
+
+
 **Namenode (NN):** The single master. Stores the filesystem tree and metadata for all files and directories (inode ? block list mapping). Acts as the "directory" of the filesystem.
 
 **Datanodes (DN):** One per cluster node. Store the actual block data. Report block health via heartbeats to the namenode.
@@ -58,6 +69,17 @@ print(f"Blocks per datanode (avg): {blocks_per_node}")
 ```
 
 ### 2.1.2 Block Replication
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" alt="Handwritten: 2.1.2 Block Replication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" alt="Diagram: 2.1.2 Block Replication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" alt="Sticky Note: 2.1.2 Block Replication" width="30%">
+</a>
+
 
 Each file is split into blocks (default 128 MB). Each block is replicated across multiple datanodes (default 3 replicas). The replication strategy places the first replica on the writer's node, the second on a rack-different node, and the third on a same-rack different node.
 
@@ -78,6 +100,17 @@ This rack-aware placement ensures that a full rack failure or a single node fail
 
 ### 2.1.3 Heartbeats & Block Reports
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" alt="Handwritten: 2.1.3 Heartbeats & Block Reports" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" alt="Diagram: 2.1.3 Heartbeats & Block Reports" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" alt="Sticky Note: 2.1.3 Heartbeats & Block Reports" width="30%">
+</a>
+
+
 Datanodes send heartbeats every 3 seconds to the namenode. If the namenode does not receive a heartbeat for 10 minutes (default), it marks the datanode as dead and re-replicates its blocks.
 
 ```python
@@ -91,6 +124,17 @@ print(f"Namenode waits {timeout}s ({max_missed} heartbeats) before declaring DN 
 ![HDFS Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
 
 ### 2.1.4 HDFS CLI
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" alt="Handwritten: 2.1.4 HDFS CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" alt="Diagram: 2.1.4 HDFS CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" alt="Sticky Note: 2.1.4 HDFS CLI" width="30%">
+</a>
+
 
 ```bash
 # HDFS command-line operations
@@ -112,9 +156,31 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.1 How MapReduce Works
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" alt="Handwritten: 2.2.1 How MapReduce Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" alt="Diagram: 2.2.1 How MapReduce Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" alt="Sticky Note: 2.2.1 How MapReduce Works" width="30%">
+</a>
+
+
 ![MapReduce Data Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
 
 ### 2.2.2 Word Count in MapReduce (Python)
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" alt="Handwritten: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" alt="Diagram: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" alt="Sticky Note: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+</a>
+
 
 ```python
 # mapper.py
@@ -152,6 +218,17 @@ if current_word == current_word:
 
 ### 2.2.3 Running a MapReduce Job
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" alt="Handwritten: 2.2.3 Running a MapReduce Job" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" alt="Diagram: 2.2.3 Running a MapReduce Job" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" alt="Sticky Note: 2.2.3 Running a MapReduce Job" width="30%">
+</a>
+
+
 ```bash
 hadoop jar /path/to/hadoop-streaming.jar \
   -input /user/myuser/input \
@@ -167,6 +244,17 @@ Hadoop Streaming allows any executable (Python, Perl, Ruby) to serve as mapper a
 > **One-Sentence Takeaway:** MapReduce automatically parallelizes data processing across a cluster by splitting work into map (transform) and reduce (aggregate) phases, with optional combiners for network optimization.
 
 ### 2.2.4 MapReduce Optimizations
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" alt="Handwritten: 2.2.4 MapReduce Optimizations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" alt="Diagram: 2.2.4 MapReduce Optimizations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" alt="Sticky Note: 2.2.4 MapReduce Optimizations" width="30%">
+</a>
+
 
 **Combiner:** A mini-reducer that runs on the mapper node, reducing data transferred over the network. For word count, the combiner is identical to the reducer.
 
@@ -190,6 +278,17 @@ YARN separates cluster resource management from the processing framework. This a
 
 ### 2.3.1 YARN Components
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" alt="Handwritten: 2.3.1 YARN Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" alt="Diagram: 2.3.1 YARN Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" alt="Sticky Note: 2.3.1 YARN Components" width="30%">
+</a>
+
+
 | Component | Role |
 |-----------|------|
 | **ResourceManager (RM)** | Master ? allocates resources, arbitrates contention |
@@ -198,6 +297,17 @@ YARN separates cluster resource management from the processing framework. This a
 | **Container** | Isolated execution environment (CPU + memory) |
 
 ### 2.3.2 YARN Scheduling Flow
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" alt="Handwritten: 2.3.2 YARN Scheduling Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" alt="Diagram: 2.3.2 YARN Scheduling Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" alt="Sticky Note: 2.3.2 YARN Scheduling Flow" width="30%">
+</a>
+
 
 ```python
 # Conceptual flow
@@ -228,6 +338,17 @@ def yarn_job_submission():
 ```
 
 ### 2.3.3 YARN Schedulers
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" alt="Handwritten: 2.3.3 YARN Schedulers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" alt="Diagram: 2.3.3 YARN Schedulers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" alt="Sticky Note: 2.3.3 YARN Schedulers" width="30%">
+</a>
+
 
 | Scheduler | Behavior | Use Case |
 |-----------|----------|----------|
@@ -382,6 +503,17 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 | HDFS CLI | File operations | AWS CLI, gsutil | `dfs -put/get/ls/cat` |
 
 ### Hadoop Troubleshooting Quick Reference
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" alt="Handwritten: Hadoop Troubleshooting Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" alt="Diagram: Hadoop Troubleshooting Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" alt="Sticky Note: Hadoop Troubleshooting Quick Reference" width="30%">
+</a>
+
 
 - **Namenode out of memory:** Too many files (reduce file count, increase heap)
 - **Slow MapReduce jobs:** Not enough reducers, data skew, too many small files
@@ -549,6 +681,17 @@ hdfs.getClusterStatus();
 
 ### Mermaid: HDFS Block Replication Flow
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" alt="Handwritten: Mermaid: HDFS Block Replication Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" alt="Diagram: Mermaid: HDFS Block Replication Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" alt="Sticky Note: Mermaid: HDFS Block Replication Flow" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     A[Client writes 1.28 GB file] --> B[HDFS splits into 128 MB blocks]
@@ -564,6 +707,17 @@ flowchart TD
 ```
 
 ### Mermaid: MapReduce Execution Pipeline
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" alt="Handwritten: Mermaid: MapReduce Execution Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" alt="Diagram: Mermaid: MapReduce Execution Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" alt="Sticky Note: Mermaid: MapReduce Execution Pipeline" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -597,6 +751,17 @@ flowchart LR
 
 ### Case Study: Migrating a Hadoop Pipeline to Cloud
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" alt="Handwritten: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" alt="Diagram: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" alt="Sticky Note: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+</a>
+
+
 **Scenario:** A retail company runs daily ETL jobs on a 50-node on-premise Hadoop cluster processing 5 TB of data daily. The cluster costs $200K/year in hardware maintenance and operations. They want to migrate to AWS.
 
 **Migration Plan:**
@@ -623,6 +788,17 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 
 ### Additional Exercises
 
+<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+</a>
+
+
 6. Write a Python MapReduce job to compute the average temperature per month from a weather dataset (format: "date,temperature"). Use a combiner.
 7. Design a rack-aware replica placement strategy for a 30-node cluster across 3 racks. Show which rack receives each replica of Block 1.
 8. A YARN cluster has 10 nodes, each with 32 GB RAM and 8 vcores. If each container needs 4 GB and 1 vcore, what is the maximum number of concurrent mappers?
@@ -630,6 +806,17 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 10. Simulate a datanode failure and trace the complete recovery process through heartbeat timeout ? block detection ? re-replication.
 
 ### Answer Key (Additional)
+
+<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
+</a>
+
 
 6. Mapper: parse date, emit (month, temp). Combiner: sum temps per month. Reducer: average = sum/count. | 7. R1: Rack1-Node1, R2: Rack2-Node4, R3: Rack2-Node5 | 8. 80 containers | 9. HDFS: ~$150K (disks+servers), S3: ~$414K over 3 years (S3 cheaper on storage but compute separate)
 

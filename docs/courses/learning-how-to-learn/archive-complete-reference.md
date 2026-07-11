@@ -9,6 +9,17 @@
 
 ### Q1: What are focused and diffuse modes of thinking, and when should you use each?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+</a>
+
+
 **Answer:** Focused mode is concentrated, attentive thinking on a specific problem using well-worn neural pathways. Diffuse mode is a relaxed, big-picture state where your brain makes remote associations. You need both.
 
 When you sit down to solve a subnetting problem from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) → say, finding the network address for `192.168.15.42/27` → you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
@@ -39,6 +50,17 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
+</a>
+
+
 **Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed → that's your cue to switch to diffuse mode.
 
 In [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q37 asks you to find the median of two sorted arrays in O(log(min(n,m))). This is a hard problem. If you've sketched three approaches (merge-and-find, two-pointer, binary search on the smaller array) and all have flaws, continuing to stare at the screen yields diminishing returns. Your mental "chalkboard" is full.
@@ -50,6 +72,17 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 ---
 
 ### Q3: What is the 4-chunk limit, and how does it affect studying?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+</a>
+
 
 **Answer:** Working memory can hold roughly 4 discrete chunks of information simultaneously (the "magic number 4"). Each chunk is a package of related concepts. To learn complex material, you must compress information into larger chunks.
 
@@ -80,6 +113,17 @@ public class ChunkExample {
 
 ### Q4: How do you build a chunk from new material?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
+</a>
+
+
 **Answer:** A chunk is built through three steps: (1) **focus** your attention on the concept, (2) **understand** the main idea, (3) **practice** to build context so you know when to use it.
 
 Take "Binary Search Tree" from [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md). Here's how to chunk it:
@@ -107,6 +151,17 @@ class BST {
 ---
 
 ### Q5: How does chunk hierarchy help you understand layered systems?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
+</a>
+
 
 **Answer:** Complex systems have natural chunk hierarchies. Understanding the hierarchy lets you "zoom in" on details or "zoom out" to the big picture without getting lost.
 
@@ -137,6 +192,17 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+</a>
+
+
 **Answer:** Declarative knowledge is "knowing *that*" → facts, concepts, theories. Procedural knowledge is "knowing *how*" → the ability to execute a process. Learning requires both, but they live in different memory systems.
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md): you can **declare** that recursion has a base case and a recursive case (declarative). But **procedurally** writing a recursive DFS on a tree requires practice:
@@ -159,6 +225,17 @@ Many students read the code and think "I understand" → that's declarative. But
 ---
 
 ### Q7: How does sleep affect memory consolidation?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
+</a>
+
 
 **Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated → it's like saving a file without clicking "Save."
 
@@ -188,6 +265,17 @@ public class MemoryConsolidation {
 ---
 
 ### Q8: What is deliberate practice, and how do you apply it?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is deliberate practice, and how do you apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is deliberate practice, and how do you apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is deliberate practice, and how do you apply it?" width="30%">
+</a>
+
 
 **Answer:** Deliberate practice is focused, structured practice at the edge of your current ability → not doing what you're already good at, but working on the next thing you can barely do.
 
@@ -222,6 +310,17 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 ### Q9: What are illusions of competence, and how do you avoid them?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" alt="Handwritten: What are illusions of competence, and how do you avoid them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" alt="Diagram: What are illusions of competence, and how do you avoid them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" alt="Sticky Note: What are illusions of competence, and how do you avoid them?" width="30%">
+</a>
+
+
 **Answer:** The #1 learning trap: **rereading** feels productive but isn't. When you re-read a chapter, your brain recognizes the content → and recognition feels like knowing. But recognition â‰  recall, and exams test recall.
 
 A student opens [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md) and reads the Normal Form Summary table: 1NF, 2NF, 3NF, BCNF, 4NF, 5NF. They read it twice. "I know this," they think. But when a GATE question asks:
@@ -248,6 +347,17 @@ public class CompetenceIllusion {
 ---
 
 ### Q10: What is the recall test truth, and why is it the most effective study technique?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" alt="Handwritten: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" alt="Diagram: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" alt="Sticky Note: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+</a>
+
 
 **Answer:** **Close the book. Recall what you read.** This single technique outperforms rereading, highlighting, summarizing, and most other study methods by a wide margin. It's the highest-utility learning technique known to cognitive science.
 
@@ -285,6 +395,17 @@ public class RecallTest {
 
 ### Q11: What is the Einstellung Effect, and how does it block learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" alt="Handwritten: What is the Einstellung Effect, and how does it block learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" alt="Diagram: What is the Einstellung Effect, and how does it block learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" alt="Sticky Note: What is the Einstellung Effect, and how does it block learning?" width="30%">
+</a>
+
+
 **Answer:** Einstellung (German: "attitude" or "mindset") is the brain's tendency to get stuck in one approach, preventing you from seeing a better solution. Your initial neural pattern blocks alternative patterns.
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), consider Q11: Container With Most Water (Amazon, Google, Meta). A novice sees two heights and immediately thinks: "Find the maximum height, then compute area with every other line." That's O(nÂ²). They chase this approach for 20 minutes.
@@ -318,6 +439,17 @@ public int maxArea(int[] height) {
 
 ### Q12: How does knowledge transfer work between different frameworks and languages?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" alt="Handwritten: How does knowledge transfer work between different frameworks and languages?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" alt="Diagram: How does knowledge transfer work between different frameworks and languages?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" alt="Sticky Note: How does knowledge transfer work between different frameworks and languages?" width="30%">
+</a>
+
+
 **Answer:** Knowledge transfer is the ability to apply a concept learned in one context to a different context. Deep understanding of a principle transfers; surface-level mechanics don't.
 
 If you learned Eloquent ORM from [`docs/courses/laravel/04-eloquent-database.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/04-eloquent-database.md), you understand the Active Record pattern: a model wraps a database row, relationships are methods, queries are chainable. When you approach JPA in [`docs/courses/java/p5-generics-reflection.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/java/p5-generics-reflection.md) (or the Java course's Spring Data JPA chapters), you see the same patterns under different syntax:
@@ -347,6 +479,17 @@ public class User {
 
 ### Q13: What is attention residue, and why does multitasking hurt learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" alt="Handwritten: What is attention residue, and why does multitasking hurt learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" alt="Diagram: What is attention residue, and why does multitasking hurt learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" alt="Sticky Note: What is attention residue, and why does multitasking hurt learning?" width="30%">
+</a>
+
+
 **Answer:** Attention residue is the partial focus that remains on Task A when you switch to Task B. Your brain doesn't switch instantly → it carries a "residue" of the previous task that degrades performance on the current one.
 
 If you're studying [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (page replacement algorithms: FIFO, LRU, Optimal), and you check a notification about placement interview prep from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), your brain now has two contexts partially loaded. When you return to FIFO vs LRU, you're not at full capacity → your brain is still processing where you left off in the DSA problem.
@@ -370,6 +513,17 @@ public class AttentionResidue {
 
 ### Q14: How does arousal level affect learning and performance?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" alt="Handwritten: How does arousal level affect learning and performance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" alt="Diagram: How does arousal level affect learning and performance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" alt="Sticky Note: How does arousal level affect learning and performance?" width="30%">
+</a>
+
+
 **Answer:** The Yerkes-Dodson law states that performance increases with arousal (stress, pressure) up to an optimal point, after which it decreases. The optimal arousal level depends on task difficulty.
 
 Simple tasks (e.g., recalling TCP port numbers from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md): HTTP=80, HTTPS=443, DNS=53) benefit from higher arousal. But complex tasks (e.g., solving a GATE question about TCP congestion control: slow start → congestion avoidance → fast retransmit) suffer from too much arousal.
@@ -391,6 +545,17 @@ During a GATE mock test (from [`docs/courses/gate-cs-preparation/index.md`](http
 ---
 
 ### Q15: How does stress affect learning, and what can you do about it?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" alt="Handwritten: How does stress affect learning, and what can you do about it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" alt="Diagram: How does stress affect learning, and what can you do about it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" alt="Sticky Note: How does stress affect learning, and what can you do about it?" width="30%">
+</a>
+
 
 **Answer:** Chronic stress elevates cortisol, which impairs hippocampal function → the brain region responsible for forming new memories. Acute stress before a test can block recall entirely.
 
@@ -420,6 +585,17 @@ public class StressInoculation {
 ---
 
 ### Q16: What is a growth mindset, and how does it apply to CS learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" alt="Handwritten: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" alt="Diagram: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" alt="Sticky Note: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+</a>
+
 
 **Answer:** Growth mindset is the belief that ability can be developed through effort and learning. Fixed mindset is the belief that ability is innate and static. This difference predicts resilience, enjoyment, and ultimate success in challenging fields.
 
@@ -455,6 +631,17 @@ public class GrowthMindset {
 
 ### Q17: What is neuroplasticity, and how does learning Laravel change your brain?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" alt="Handwritten: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" alt="Diagram: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" alt="Sticky Note: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+</a>
+
+
 **Answer:** Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. Every time you learn something, your brain physically changes → dendrites grow, synapses strengthen, and myelin sheaths thicken around frequently used pathways.
 
 When you first studied [`docs/courses/laravel/04-eloquent-database.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/04-eloquent-database.md), Eloquent's fluent syntax felt foreign: `User::where('active', true)->orderBy('name')->get()`. After practice, this syntax becomes automatic. Your brain has physically rewired: the neural pathways for method chaining, ActiveRecord patterns, and query building have been myelinated.
@@ -466,6 +653,17 @@ Now when you approach Java's Stream API from [`docs/courses/java/p6-lambdas-stre
 ---
 
 ### Q18: Is the 10,000-hour rule real? How long does it take to become competent?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" alt="Handwritten: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" alt="Diagram: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" alt="Sticky Note: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+</a>
+
 
 **Answer:** The 10,000-hour rule (popularized by Gladwell from Ericsson's research) applies to world-class expertise in competitive fields → Olympic athletes, concert violinists. For *initial competence* in a technical skill, Josh Kaufman's research suggests **20 hours** of deliberate practice.
 
@@ -495,6 +693,17 @@ public class TwentyHourRule {
 
 ### Q19: What is the Pygmalion Effect in learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" alt="Handwritten: What is the Pygmalion Effect in learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" alt="Diagram: What is the Pygmalion Effect in learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" alt="Sticky Note: What is the Pygmalion Effect in learning?" width="30%">
+</a>
+
+
 **Answer:** The Pygmalion Effect is the phenomenon where higher expectations lead to higher performance. When a teacher (or you yourself) expects success, behavior subtly shifts to fulfill that expectation. Low expectations become self-fulfilling prophecies.
 
 If you approach [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) thinking "OS is too hard, I'll never understand paging," you'll skim the material, avoid the hard problems, and indeed not understand it. But if you tell yourself "This is challenging but I can master it with practice," you'll engage more deeply, persist through confusion, and succeed.
@@ -522,6 +731,17 @@ public class Pygmalion {
 
 ### Q20: How does brain health (exercise, nutrition, caffeine) affect learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" alt="Handwritten: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" alt="Diagram: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" alt="Sticky Note: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+</a>
+
+
 **Answer:** Your brain is a biological organ. Its performance depends on blood flow, glucose, oxygen, and neurotransmitter balance. Neglecting brain health sabotages even the best study techniques.
 
 - **Exercise**: 20 minutes of cardio increases BDNF (Brain-Derived Neurotrophic Factor), which supports neuron growth and synaptic plasticity. Study [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md) after a run → your brain forms chunks faster.
@@ -548,6 +768,17 @@ public class BrainOptimization {
 ## Part 2: The Core Learning Engine
 
 ### Q21: What is active recall, and why is it the most powerful learning technique?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" alt="Handwritten: What is active recall, and why is it the most powerful learning technique?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" alt="Diagram: What is active recall, and why is it the most powerful learning technique?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" alt="Sticky Note: What is active recall, and why is it the most powerful learning technique?" width="30%">
+</a>
+
 
 **Answer:** Active recall is the act of retrieving information from memory without looking at the source. Every time you successfully retrieve a memory, you strengthen the neural pathway to it. Each retrieval failure signals your brain that this information needs stronger encoding.
 
@@ -581,6 +812,17 @@ public class ActiveRecall {
 
 ### Q22: How do you practice active recall during reading?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" alt="Handwritten: How do you practice active recall during reading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" alt="Diagram: How do you practice active recall during reading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" alt="Sticky Note: How do you practice active recall during reading?" width="30%">
+</a>
+
+
 **Answer:** The read-close-recall-verify cycle: read a small section (1-2 paragraphs), close the book, recall the key points in your own words, open and verify. Repeat.
 
 Here's the protocol applied to [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md), section on TCP Congestion Control:
@@ -609,6 +851,17 @@ public class ReadRecallVerify {
 
 ### Q23: What is the Blank Page Method, and how does it surface your knowledge gaps?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" alt="Handwritten: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" alt="Diagram: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" alt="Sticky Note: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+</a>
+
+
 **Answer:** Before studying a topic, take a blank page and write down everything you already know about it → from memory, without any references. This surfaces what you actually know (vs. what you think you know) and primes your brain to fill the gaps.
 
 Before opening [`docs/courses/computer-networks/08-transport-layer.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/computer-networks/08-transport-layer.md), write everything you know about TCP:
@@ -627,6 +880,17 @@ That last item is your gap. Now when you read about TCP Reno, your brain is prim
 ---
 
 ### Q24: What's the difference between recall and recognition, and which builds stronger memory?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" alt="Handwritten: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" alt="Diagram: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" alt="Sticky Note: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+</a>
+
 
 **Answer:** Recognition is identifying the correct answer among options (multiple choice). Recall is generating the answer from scratch (short answer, essay). They use different neural pathways. Recall builds stronger, more durable memories.
 
@@ -662,6 +926,17 @@ public class RecallVersusRecognition {
 
 ### Q25: How does teaching someone else serve as active recall?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" alt="Handwritten: How does teaching someone else serve as active recall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" alt="Diagram: How does teaching someone else serve as active recall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" alt="Sticky Note: How does teaching someone else serve as active recall?" width="30%">
+</a>
+
+
 **Answer:** Teaching forces you to retrieve, organize, and express knowledge coherently. If you can't explain it simply, you don't understand it well enough. The act of explaining also reveals gaps in your own understanding.
 
 Explain BFS (Breadth-First Search) from [`docs/courses/data-structures/12-graph-traversals.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/12-graph-traversals.md) to an imaginary classmate:
@@ -696,6 +971,17 @@ void bfs(Map<Integer, List<Integer>> graph, int start) {
 
 ### Q26: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" alt="Handwritten: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" alt="Diagram: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" alt="Sticky Note: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+</a>
+
+
 **Answer:** Ebbinghaus discovered that memory decays exponentially: you lose ~50% within an hour, ~70% within 24 hours, and ~90% within a week → unless you actively recall. Spaced repetition schedules reviews just before the forgetting curve would erase the memory, strengthening the neural trace each time.
 
 Take the GATE formula for CPU Turnaround Time from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md):
@@ -728,6 +1014,17 @@ public class ForgettingCurve {
 ---
 
 ### Q27: How do you set up Anki for this course repository?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" alt="Handwritten: How do you set up Anki for this course repository?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" alt="Diagram: How do you set up Anki for this course repository?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" alt="Sticky Note: How do you set up Anki for this course repository?" width="30%">
+</a>
+
 
 **Answer:** Anki is a spaced repetition flashcard app. Here's how to set it up for the courses in this repo.
 
@@ -765,6 +1062,17 @@ public record AnkiCard(String front, String back, Date nextReview) {
 
 ### Q28: What is the optimal review schedule for spaced repetition?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" alt="Handwritten: What is the optimal review schedule for spaced repetition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" alt="Diagram: What is the optimal review schedule for spaced repetition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" alt="Sticky Note: What is the optimal review schedule for spaced repetition?" width="30%">
+</a>
+
+
 **Answer:** The standard SM-2 algorithm (used by Anki) schedules reviews at increasing intervals: 1 day, then 7 days, then 16 days, then 35 days, then approximately every 3 months. Each successful review doubles the interval.
 
 For GATE PYQs (Previous Year Questions) across the chapters in `docs/courses/gate-cs-preparation/`:
@@ -796,6 +1104,17 @@ public class ReviewSchedule {
 
 ### Q29: How do you design effective Anki cards for technical content?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" alt="Handwritten: How do you design effective Anki cards for technical content?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" alt="Diagram: How do you design effective Anki cards for technical content?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" alt="Sticky Note: How do you design effective Anki cards for technical content?" width="30%">
+</a>
+
+
 **Answer:** A good card tests understanding, not memorization of definitions. A bad card has too much information or tests trivial facts.
 
 **Bad card** (tests recognition, too much info):
@@ -821,6 +1140,17 @@ Reference: [`docs/courses/database-management-systems/09-transactions.md`](https
 
 ### Q30: How do you integrate spaced repetition into a daily study schedule?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" alt="Handwritten: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" alt="Diagram: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" alt="Sticky Note: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+</a>
+
+
 **Answer:** Anki reviews should be the **first thing** you do in each study session (5-15 minutes). They warm up your brain, reactivate prior knowledge, and surface gaps you need to fill today.
 
 Sample daily schedule using content from this repo:
@@ -841,6 +1171,17 @@ The key insight: Anki is not *extra* work → it replaces re-reading. Those 15 m
 ---
 
 ### Q31: How does the standard Pomodoro technique work for theory subjects?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" alt="Handwritten: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" alt="Diagram: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" alt="Sticky Note: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+</a>
+
 
 **Answer:** The standard Pomodoro: 25 minutes of focused work, 5-minute break. Each Pomodoro is indivisible → if interrupted, start over.
 
@@ -877,6 +1218,17 @@ public class Pomodoro {
 ---
 
 ### Q32: How do you adapt Pomodoro for coding and problem-solving?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" alt="Handwritten: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" alt="Diagram: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" alt="Sticky Note: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+</a>
+
 
 **Answer:** Coding problems need longer focus blocks because building mental context for a complex algorithm takes 10-15 minutes. Use 50-minute sessions with 10-minute breaks for DSA practice.
 
@@ -937,6 +1289,17 @@ class LRUCache {
 
 ### Q33: How do you deal with interruptions during a Pomodoro?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" alt="Handwritten: How do you deal with interruptions during a Pomodoro?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" alt="Diagram: How do you deal with interruptions during a Pomodoro?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" alt="Sticky Note: How do you deal with interruptions during a Pomodoro?" width="30%">
+</a>
+
+
 **Answer:** Interruptions break the Pomodoro. The rule: if the interruption is external (Slack, email, someone talking), note it down on a "distraction list" and return to focus. If the interruption is internal (a thought about something else), write it down and let it go.
 
 During Pomodoro 2 of studying [`docs/courses/operating-systems/02-processes.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/operating-systems/02-processes.md), your phone buzzes → a teammate's message about deployment. Don't answer. Write on your distraction list: "Check deployment issue after Pomodoro." Resume focus.
@@ -964,6 +1327,17 @@ public class DistractionManager {
 
 ### Q34: How do you chunk a theory-of-computation chapter into Pomodoro pieces?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" alt="Handwritten: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" alt="Diagram: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" alt="Sticky Note: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+</a>
+
+
 **Answer:** A theory chapter is dense with formal definitions, theorems, and proofs. Chunk it into Pomodoro-sized pieces by following the natural section breaks.
 
 From [`docs/courses/theory-of-computation/08-turing.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/theory-of-computation/08-turing.md) (Turing Machines), split across 4 Pomodoros:
@@ -982,6 +1356,17 @@ Each Pomodoro has a concrete deliverable. Abstract theory becomes tangible when 
 ---
 
 ### Q35: How do you structure Pomodoro sessions for coding practice?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" alt="Handwritten: How do you structure Pomodoro sessions for coding practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" alt="Diagram: How do you structure Pomodoro sessions for coding practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" alt="Sticky Note: How do you structure Pomodoro sessions for coding practice?" width="30%">
+</a>
+
 
 **Answer:** Coding Pomodoros should alternate between solving and reviewing. Each solved problem becomes a permanent artifact in your learning.
 
@@ -1024,6 +1409,17 @@ public int robCircular(int[] nums) {
 
 ### Q36: Why does interleaving (mixing topics) improve learning more than blocking?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" alt="Handwritten: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" alt="Diagram: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" alt="Sticky Note: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+</a>
+
+
 **Answer:** Blocking (practicing 10 of the same type of problem in a row) feels productive because you quickly get the right answer. But your brain memorizes the procedure, not the *discrimination* → the skill of recognizing *which* procedure to apply.
 
 Interleaving forces your brain to do the harder work: matching a problem type to a solution strategy. Every time you switch topics, you exercise this matching skill.
@@ -1049,6 +1445,17 @@ Now every problem requires fresh analysis. Which technique fits? Your brain prac
 
 ### Q37: How do you create an interleaving study schedule across courses?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" alt="Handwritten: How do you create an interleaving study schedule across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" alt="Diagram: How do you create an interleaving study schedule across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" alt="Sticky Note: How do you create an interleaving study schedule across courses?" width="30%">
+</a>
+
+
 **Answer:** An interleaving schedule rotates through different courses within a single study session or across days. The rotation prevents context saturation and builds flexible knowledge.
 
 Weekly rotation across GATE subjects from `docs/courses/gate-cs-preparation/`:
@@ -1070,6 +1477,17 @@ Notice Friday: mixed PYQs across all 4 subjects within a single session. That's 
 ---
 
 ### Q38: What's the difference between blocked and mixed practice, and when should you use each?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" alt="Diagram: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+</a>
+
 
 **Answer:** Blocked practice = same topic, many examples. Mixed practice = different topics, fewer examples each. Use blocked practice when you're first building a chunk. Switch to mixed practice once the chunk is formed.
 
@@ -1103,6 +1521,17 @@ public class PracticeMode {
 ---
 
 ### Q39: How do you interleave GATE preparation across subjects?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" alt="Handwritten: How do you interleave GATE preparation across subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" alt="Diagram: How do you interleave GATE preparation across subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" alt="Sticky Note: How do you interleave GATE preparation across subjects?" width="30%">
+</a>
+
 
 **Answer:** Rotate OS, DBMS, CN, and DSA across days and within sessions. The GATE exam itself interleaves subjects randomly → you must be ready to context-switch instantly.
 
@@ -1141,6 +1570,17 @@ public class GateInterleaving {
 
 ### Q40: How do you interleave DSA problem types for coding interviews?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" alt="Handwritten: How do you interleave DSA problem types for coding interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" alt="Diagram: How do you interleave DSA problem types for coding interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" alt="Sticky Note: How do you interleave DSA problem types for coding interviews?" width="30%">
+</a>
+
+
 **Answer:** Rotate array, string, tree, graph, and DP problems within each practice session. This trains your brain to identify problem patterns rather than relying on context cues.
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md):
@@ -1174,6 +1614,17 @@ public class ProblemCycle {
 ---
 
 ### Q41: What is the Feynman Technique, and how do you apply it?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is the Feynman Technique, and how do you apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is the Feynman Technique, and how do you apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is the Feynman Technique, and how do you apply it?" width="30%">
+</a>
+
 
 **Answer:** The Feynman Technique has 4 steps: (1) choose a concept, (2) explain it in plain language as if teaching a child, (3) identify gaps in your explanation, (4) review and simplify.
 
@@ -1210,6 +1661,17 @@ public class FeynmanTest {
 
 ### Q42: What is gap analysis in the Feynman Technique, and how do you identify gaps?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" alt="Handwritten: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" alt="Diagram: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" alt="Sticky Note: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+</a>
+
+
 **Answer:** Gap analysis is the process of identifying what you *thought* you knew vs. what you *actually* know. The best way to surface gaps is to record yourself explaining a concept, then listen back critically.
 
 Record yourself explaining the CAP Theorem from [`docs/courses/system-design/06-distributed-consistency.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/06-distributed-consistency.md):
@@ -1228,6 +1690,17 @@ Each gap is a specific thing to study. Record again after filling the gaps.
 ---
 
 ### Q43: How does rubber duck debugging help you learn DSA?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" alt="Handwritten: How does rubber duck debugging help you learn DSA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" alt="Diagram: How does rubber duck debugging help you learn DSA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" alt="Sticky Note: How does rubber duck debugging help you learn DSA?" width="30%">
+</a>
+
 
 **Answer:** Rubber duck debugging is explaining your code line-by-line to an inanimate object (a rubber duck). The act of verbalizing forces you to think sequentially and catch your own errors.
 
@@ -1261,6 +1734,17 @@ public class RubberDuck {
 
 ### Q44: How does writing as thinking deepen your understanding?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" alt="Handwritten: How does writing as thinking deepen your understanding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" alt="Diagram: How does writing as thinking deepen your understanding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" alt="Sticky Note: How does writing as thinking deepen your understanding?" width="30%">
+</a>
+
+
 **Answer:** Writing forces sequential, precise thought. Vague understanding is exposed when you must commit words to paper. Writing a 1-page summary from memory is a powerful active recall test.
 
 After studying [`docs/courses/operating-systems/09-virtual-memory.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/operating-systems/09-virtual-memory.md):
@@ -1276,6 +1760,17 @@ Now check: did I mention the difference between FIFO and LRU? Did I explain Bela
 ---
 
 ### Q45: How do you use peer teaching to solidify learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" alt="Handwritten: How do you use peer teaching to solidify learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" alt="Diagram: How do you use peer teaching to solidify learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" alt="Sticky Note: How do you use peer teaching to solidify learning?" width="30%">
+</a>
+
 
 **Answer:** Teaching a peer is the highest-fidelity test of understanding. Your peer asks questions you didn't think of, revealing gaps you couldn't see alone. Structured peer teaching uses a clear protocol.
 
@@ -1307,6 +1802,17 @@ The peer's questions force you to think about edge cases, justify design decisio
 ## Part 3: Memory Systems → Never Forget Anything
 
 ### Q46: Method of Loci → Can I Really Store the OSI Model in My Kitchen?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" alt="Handwritten: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" alt="Diagram: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" alt="Sticky Note: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+</a>
+
 
 **Answer:** Yes → the Method of Loci (memory palace) uses spatial memory to encode abstract information by associating each item with a familiar physical location. Your brain evolved to remember places, not protocol stacks. Hijack that hardware.
 
@@ -1340,6 +1846,17 @@ public enum OsiLayer {
 ---
 
 ### Q47: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" alt="Handwritten: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" alt="Diagram: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" alt="Sticky Note: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+</a>
+
 
 **Answer:** Pick 10 distinct locations in your current room. Each location stores one sorting algorithm from the GATE DSA question bank (see [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md)).
 
@@ -1375,6 +1892,17 @@ public class SortingPalace {
 
 ### Q48: Visual Mnemonics → How Do I Picture the CAP Theorem?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" alt="Handwritten: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" alt="Diagram: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" alt="Sticky Note: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+</a>
+
+
 **Answer:** The CAP theorem (Consistency, Availability, Partition Tolerance) is defined in [`docs/courses/system-design/06-distributed-consistency.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/06-distributed-consistency.md) (lines 17-43) with Gilbert and Lynch's formal proof. Visual mnemonics make the trade-off unforgettable:
 
 - **Consistency** = A tightrope walker. Every step (read) must be perfectly balanced. One wobble (stale data) and she falls.
@@ -1397,6 +1925,17 @@ public enum CapTradeoff {
 
 ### Q49: Chaining Mnemonics → ACID Properties in One Story
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" alt="Handwritten: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" alt="Diagram: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" alt="Sticky Note: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+</a>
+
+
 **Answer:** Chain mnemonics link each item into a story where one thing leads to the next. ACID (Atomicity, Consistency, Isolation, Durability) from [`docs/courses/database-management-systems/09-transactions.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/09-transactions.md) (lines 34-42) is perfect for this.
 
 Story: "An **atom bomb** (Atomicity) hits a database. Everything must either survive completely or be gone → no half-destroyed records. A soldier with a giant **ruler** (Consistency) measures every piece of data to make sure the books still balance. The ruler is so strict that you must sit on a separate **island** (Isolation) → no one sees your work until it's done. When you finish, you lock the result in a **steel safe** (Durability) so that even a tsunami can't wash it away."
@@ -1417,6 +1956,17 @@ The GATE DBMS PYQ file ([`docs/courses/gate-cs-preparation/08-database-managemen
 ---
 
 ### Q50: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" alt="Handwritten: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" alt="Diagram: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" alt="Sticky Note: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+</a>
+
 
 **Answer:** The peg system maps numbers 1-10 to rhyming images: 1-bun, 2-shoe, 3-tree, 4-door, 5-hive, 6-sticks, 7-heaven, 8-gate, 9-line, 10-hen. Each peg hooks a piece of data.
 
@@ -1450,6 +2000,17 @@ public class PegSystem {
 
 ### Q51: Memory Compression → Can I Compress Quicksort into 3 Words?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" alt="Handwritten: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" alt="Diagram: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" alt="Sticky Note: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+</a>
+
+
 **Answer:** Memory compression reduces a complex idea to its essence → the minimum information needed to reconstruct the whole. Think GZIP for your brain.
 
 Quicksort in 3 words: **pivot → partition → recurse**
@@ -1480,6 +2041,17 @@ public class MemoryCompression {
 ---
 
 ### Q52: The Memory Palace for GATE → One Palace per Subject
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" alt="Handwritten: The Memory Palace for GATE → One Palace per Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" alt="Diagram: The Memory Palace for GATE → One Palace per Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" alt="Sticky Note: The Memory Palace for GATE → One Palace per Subject" width="30%">
+</a>
+
 
 **Answer:** Building one palace per GATE subject prevents cross-contamination. Your brain stores spatial memories separately for different environments, so use different buildings.
 
@@ -1524,6 +2096,17 @@ public class GatePalace {
 
 ### Q53: Encoding Specificity → Why Should I Study in a Mock-Test Environment?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" alt="Handwritten: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" alt="Diagram: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" alt="Sticky Note: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+</a>
+
+
 **Answer:** Encoding specificity means you recall better when the retrieval context matches the encoding context. If you study GATE OS scheduling while sitting at a desk under time pressure (mimicking exam conditions), you'll recall it better during the actual exam.
 
 The 8 GATE mock tests in `docs/courses/gate-cs-preparation/` (files `15-mock-test-1.md` through `22-mock-test-8.md`) are designed for this. Take them in a quiet room with a timer, no phone, no notes → exactly like the real exam. But the technique works at the study stage too: when learning the OS CPU scheduling formulas from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (lines 26-37), sit at the same desk, use the same chair, dim the same lights you'll have on exam day.
@@ -1538,6 +2121,17 @@ Three practical implementations:
 ---
 
 ### Q54: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" alt="Handwritten: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" alt="Diagram: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" alt="Sticky Note: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+</a>
+
 
 **Answer:** State-dependent memory means your internal physiological state (mood, caffeine level, chewing gum, standing vs sitting) becomes part of the memory trace. If you chew mint gum while studying DBMS normalization from [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md) (lines 30-39), chewing the same gum during the exam acts as a retrieval cue.
 
@@ -1565,6 +2159,17 @@ public class StateDependentLearning {
 
 ### Q55: Context-Dependent Recall → Should I Only Study CN in the Library?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" alt="Handwritten: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" alt="Diagram: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" alt="Sticky Note: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+</a>
+
+
 **Answer:** Context-dependent recall is the environmental version of encoding specificity. If you studied the Network Layer (from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) lines 60+) sitting in a library's quiet section, you'll recall it better when sitting in that same spot.
 
 This is why varying study locations is a double-edged sword:
@@ -1580,6 +2185,17 @@ The 54 DSA PYQs in [`docs/courses/gate-cs-preparation/10-data-structures-algorit
 ---
 
 ### Q56: The Generation Effect → Why Do I Remember My Own Examples Better?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" alt="Handwritten: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" alt="Diagram: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" alt="Sticky Note: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+</a>
+
 
 **Answer:** The generation effect (Slamecka & Graf, 1978) shows that self-generated information is remembered 30-50% better than read information. When you generate your own example for a formula, your brain allocates more cognitive resources to it, strengthening encoding.
 
@@ -1618,6 +2234,17 @@ public class GenerationEffect {
 
 ### Q57: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" alt="Handwritten: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" alt="Diagram: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" alt="Sticky Note: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+</a>
+
+
 **Answer:** The testing effect (Roediger & Karpicke, 2006) is one of learning science's most robust findings: each self-test improves long-term retention by approximately 50% compared to re-reading the same material. Testing forces retrieval, which strengthens the neural pathways used during recall.
 
 Your repo contains built-in testing material. The GATE PYQ files → [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (70 PYQs), `08-database-management-systems.md` (75 PYQs), `09-computer-networks.md` (60 PYQs), `10-data-structures-algorithms.md` (54 PYQs), and `11-computer-architecture.md` (60 PYQs) → are designed for this exact purpose.
@@ -1651,6 +2278,17 @@ public class TestingEffect {
 
 ### Q58: Desirable Difficulties → Why Should I Close the Solution Before Solving?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" alt="Handwritten: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" alt="Diagram: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" alt="Sticky Note: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+</a>
+
+
 **Answer:** Desirable difficulties (Bjork, 1994) are challenges that slow initial learning but dramatically strengthen long-term retention. The most powerful is **generation before retrieval** → attempting a problem without looking at the solution first.
 
 The DSA problem bank at [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) contains 125 problems with compilable Java solutions. The instinct is to read the solution, understand it, then move on. That's the trap.
@@ -1677,6 +2315,17 @@ public class DesirableDifficulties {
 
 ### Q59: Overlearning → How Do I Know When I've Studied Enough?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" alt="Handwritten: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" alt="Diagram: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" alt="Sticky Note: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+</a>
+
+
 **Answer:** Overlearning is continuing to study after you've achieved perfect recall. It has diminishing returns → once you can teach a topic, stop. Move to the next PYQ.
 
 The GATE PYQ files follow a progression. In [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md), the questions go from D1 (basic ER model) to D75 (advanced recovery). The signal to move on is the **teach-back test**:
@@ -1702,6 +2351,17 @@ This directly applies to the [`docs/courses/placement-preparation/03-sql-problem
 
 ### Q60: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" alt="Handwritten: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" alt="Diagram: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" alt="Sticky Note: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+</a>
+
+
 **Answer:** These 10 mnemonic patterns work across any subject. Each is shown with an example from this repo's courses.
 
 | # | Pattern | How It Works | Example from Repo |
@@ -1724,6 +2384,17 @@ Combine multiple patterns for the strongest effect. The ACID chain (pattern 4) i
 ## Part 4: Procrastination & Deep Work → Become Unstoppable (Q61-Q80)
 
 ### Q61: Why We Procrastinate → Why Can't I Start the Hard DP Problem?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" alt="Handwritten: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" alt="Diagram: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" alt="Sticky Note: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+</a>
+
 
 **Answer:** Procrastination isn't laziness → it's emotional regulation. Your brain's amygdala perceives a difficult task (like solving a 0/1 Knapsack DP problem from [`docs/courses/algorithms/08-dp-knapsack.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/algorithms/08-dp-knapsack.md)) as a threat. The discomfort triggers an escape response → dopamine hit from YouTube/Twitter → relief. This reinforces the procrastination loop.
 
@@ -1748,6 +2419,17 @@ The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.m
 
 ### Q62: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" alt="Handwritten: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" alt="Diagram: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" alt="Sticky Note: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+</a>
+
+
 **Answer:** Procrastination follows a 3-part loop (from Charles Duhigg's *The Power of Habit*):
 - **Cue:** You see a hard SQL problem from [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md)
 - **Routine:** You open YouTube instead of the file
@@ -1765,6 +2447,17 @@ The SQL bank has 75 problems. S22-S30 involve advanced joins, correlated subquer
 ---
 
 ### Q63: The 2-Minute Rule → What's the Smallest Commit I Can Make?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" alt="Handwritten: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" alt="Diagram: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" alt="Sticky Note: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+</a>
+
 
 **Answer:** The 2-Minute Rule (from James Clear's *Atomic Habits*) states: "When you start a new habit, it should take less than two minutes to do." The goal isn't to finish the task → it's to start it. Momentum does the rest.
 
@@ -1794,6 +2487,17 @@ public class TwoMinuteRule {
 ---
 
 ### Q64: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" alt="Handwritten: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" alt="Diagram: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" alt="Sticky Note: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+</a>
+
 
 **Answer:** Implementation intentions use a specific formula: **"At [TIME] in [LOCATION], I will [ACTION]."** This turns a vague intention into a concrete plan that fires automatically when the conditions are met.
 
@@ -1826,6 +2530,17 @@ public class ImplementationIntention {
 
 ### Q65: Temptation Bundling → How Do I Make DSA Problems Less Painful?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" alt="Handwritten: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" alt="Diagram: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" alt="Sticky Note: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+</a>
+
+
 **Answer:** Temptation bundling pairs a behavior you *want* to do (enjoyable) with a behavior you *need* to do (difficult). The enjoyable activity becomes the reward for doing the hard one.
 
 - **Want:** Listen to your favorite podcast or audiobook
@@ -1844,6 +2559,17 @@ For GATE prep, bundle:
 ---
 
 ### Q66: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" alt="Handwritten: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" alt="Diagram: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" alt="Sticky Note: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+</a>
+
 
 **Answer:** The Zeigarnik Effect (Bluma Zeigarnik, 1920s) states that interrupted tasks are remembered better than completed ones. Your brain keeps working on unfinished tasks subconsciously → what she called "tension toward completion."
 
@@ -1868,6 +2594,17 @@ Next morning, the first thing you want to do is finish that `Need` vs `Allocatio
 ---
 
 ### Q67: The 20-Second Rule → How Much Friction Do I Need?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" alt="Handwritten: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" alt="Diagram: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" alt="Sticky Note: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+</a>
+
 
 **Answer:** The 20-Second Rule (Shawn Achor, *The Happiness Advantage*) states that increasing friction for bad habits by 20 seconds dramatically reduces their frequency → and decreasing friction for good habits by 20 seconds increases theirs.
 
@@ -1899,6 +2636,17 @@ For the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/15-mock-test-1.md`
 
 ### Q68: Habit Stacking → How Do I Chain Study to Something I Already Do?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" alt="Handwritten: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" alt="Diagram: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" alt="Sticky Note: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+</a>
+
+
 **Answer:** Habit stacking (James Clear) uses the formula: **"After [CURRENT HABIT], I will [NEW HABIT]."** You piggyback the new behavior on an existing automatic one.
 
 "After I finish dinner, I will solve 1 DSA problem from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) and mark a streak on my calendar."
@@ -1928,6 +2676,17 @@ public class HabitStack {
 ---
 
 ### Q69: Keystone Habits → Which ONE Habit Changes Everything?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" alt="Handwritten: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" alt="Diagram: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" alt="Sticky Note: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+</a>
+
 
 **Answer:** A keystone habit is a single behavior that triggers a cascade of positive changes across unrelated areas. The DSA practice habit from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) is a keystone habit for placement prep.
 
@@ -1965,6 +2724,17 @@ public class KeystoneHabit {
 
 ### Q70: Willpower Depletion → Why Can't I Study Hard Theory at Night?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" alt="Handwritten: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" alt="Diagram: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" alt="Sticky Note: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+</a>
+
+
 **Answer:** Willpower is a finite resource that depletes throughout the day (Baumeister, 1998). Ego depletion means every decision → what to eat, which email to answer, whether to check your phone → drains from the same pool. By 10 PM, your reserves are empty.
 
 GATE theory topics require high cognitive load:
@@ -1995,6 +2765,17 @@ public class WillpowerSchedule {
 ---
 
 ### Q71: Deep Work Definition → What Counts as Deep Work for GATE Prep?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" alt="Handwritten: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" alt="Diagram: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" alt="Sticky Note: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+</a>
+
 
 **Answer:** Deep Work (Cal Newport) is "professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit." For this repo, deep work means:
 
@@ -2027,6 +2808,17 @@ public class DeepWork {
 
 ### Q72: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" alt="Handwritten: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" alt="Diagram: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" alt="Sticky Note: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+</a>
+
+
 **Answer:** The 4DX framework (Chris McChesney) bridges the gap between goals and execution:
 
 1. **Focus on the Wildly Important:** Your wildly important goal is "Crack GATE CS." The lead measure is not "study 8 hours" → it's "solve 10 unsolved PYQs from the GATE files."
@@ -2057,6 +2849,17 @@ public class FourDisciplines {
 
 ### Q73: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" alt="Handwritten: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" alt="Diagram: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" alt="Sticky Note: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+</a>
+
+
 **Answer:** Working developers face the toughest schedule → full-time job, family commitments, then study. The solution is to protect a specific deep work window every day.
 
 **Option A: Early morning (7:30-9:00 AM)** → before work, when your willpower is full and no work emails have arrived. Study the Laravel architecture patterns from [`docs/courses/laravel/19-architecture-patterns.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/19-architecture-patterns.md) or the MCP integration in [`docs/courses/laravel/15-mcp.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/15-mcp.md).
@@ -2086,6 +2889,17 @@ public class WorkingDevSchedule {
 
 ### Q74: Attention Residue → Why Should I Journal Between Topics?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" alt="Handwritten: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" alt="Diagram: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" alt="Sticky Note: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+</a>
+
+
 **Answer:** Attention residue (Sophie Leroy, 2009) is the cognitive carryover from one task to the next. When you switch from studying OS deadlocks ([`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) lines 48-53: Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait) to DBMS normalization (`08-database-management-systems.md` lines 30-39), part of your brain still processes deadlock conditions.
 
 The fix: 60 seconds of closure journaling between topics.
@@ -2104,6 +2918,17 @@ This 60-second ritual clears the residue. Studies show it improves performance o
 ---
 
 ### Q75: The Grand Central Station Error → Why Can't I Study in Coffee Shops?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" alt="Handwritten: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" alt="Diagram: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" alt="Sticky Note: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+</a>
+
 
 **Answer:** The Grand Central Station Error is studying in an environment with constant unpredictable interruptions. Each interruption fragments attention and costs 23 minutes (on average) to regain deep focus.
 
@@ -2133,6 +2958,17 @@ Good environments for the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/
 ---
 
 ### Q76: Weekly Review → What Should I Review Every Sunday?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" alt="Handwritten: Weekly Review → What Should I Review Every Sunday?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" alt="Diagram: Weekly Review → What Should I Review Every Sunday?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" alt="Sticky Note: Weekly Review → What Should I Review Every Sunday?" width="30%">
+</a>
+
 
 **Answer:** A weekly review (30 minutes, every Sunday) is the meta-habit that keeps all other habits on track. It prevents drift and ensures you're working on what matters.
 
@@ -2173,6 +3009,17 @@ public class WeeklyReview {
 
 ### Q77: Monthly Retrospective → What Questions Should I Ask Myself?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" alt="Handwritten: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" alt="Diagram: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" alt="Sticky Note: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+</a>
+
+
 **Answer:** A monthly retrospective goes deeper than the weekly review. It measures not just *what* you studied but *how well* your system is working.
 
 **4 Questions:**
@@ -2199,6 +3046,17 @@ Reference the 16 case studies in [`docs/courses/system-design/18-case-studies-cl
 ---
 
 ### Q78: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" alt="Handwritten: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" alt="Diagram: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" alt="Sticky Note: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+</a>
+
 
 **Answer:** A visual streak tracker turns abstract progress into concrete motivation. The GitHub contribution graph works because it makes *absence* visible → blank squares are uncomfortable.
 
@@ -2244,6 +3102,17 @@ public class StreakTracker {
 
 ### Q79: Dealing with Slumps → Is a 3-Day Break Catastrophic?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" alt="Handwritten: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" alt="Diagram: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" alt="Sticky Note: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+</a>
+
+
 **Answer:** No → slumps are part of any long-term learning journey. The key is distinguishing between a *strategic reset* (1-3 days) and *abandonment* (1+ weeks of zero activity).
 
 **The 3-day break rule:** If you miss 1 day, that's fine. 2 days, you're in a micro-slump. 3 days, it's a real break → take it guilt-free, but mark a hard stop. On day 4, do exactly **1 Pomodoro** (25 minutes). Not a full session → just one Pomodoro.
@@ -2268,6 +3137,17 @@ public class SlumpBuster {
 ---
 
 ### Q80: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" alt="Handwritten: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" alt="Diagram: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" alt="Sticky Note: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+</a>
+
 
 **Answer:** The compound effect (Darren Hardy) is the principle that small, consistent actions produce extraordinary results over time. 1 hour per day Ã— 365 days = 365 hours. That's enough time to complete any 2 full courses from this repo.
 
@@ -2309,6 +3189,17 @@ public class CompoundEffect {
 
 ### Q81: What is the 3-pass method for LeetCode practice?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" alt="Handwritten: What is the 3-pass method for LeetCode practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" alt="Diagram: What is the 3-pass method for LeetCode practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" alt="Sticky Note: What is the 3-pass method for LeetCode practice?" width="30%">
+</a>
+
+
 **Answer:** The 3-pass method is Solve → Optimize → Teach Aloud. First pass: solve brute force within 30 minutes. Second pass: optimize time/space complexity using the solution bank. Third pass: explain the solution aloud as if interviewing, covering trade-offs, edge cases, and alternative approaches.
 
 Reference the DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) which has 125 problems with Java solutions. For example, Q1 (Two Sum) starts with the hashmap O(n) solution:
@@ -2331,6 +3222,17 @@ Pass 1: solve with nested loops (O(nÂ²)). Pass 2: find the hashmap solution (O
 
 ### Q82: How should I classify DSA problems by pattern?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" alt="Handwritten: How should I classify DSA problems by pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" alt="Diagram: How should I classify DSA problems by pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" alt="Sticky Note: How should I classify DSA problems by pattern?" width="30%">
+</a>
+
+
 **Answer:** Tag every problem you solve with its pattern family. The DSA problem bank (Q1-Q125) already categorizes by: Arrays (Q1-Q19), Strings (Q20), Linked Lists (Q21-Q28), Trees (Q29-Q38), DP (Q39-Q57), Graphs (Q58-Q77), Stack/Queue/Heap (Q78-Q89), Miscellaneous (Q90-Q100), LLD (Q101-Q115), and Concurrency (Q116-Q125).
 
 Build a personal classification system:
@@ -2341,6 +3243,17 @@ Build a personal classification system:
 For each new problem, ask: "Which of the 125 existing DSA bank problems does this resemble?" For example, Q40 (Coin Change) is the unbounded knapsack pattern. If you see "minimum coins to make amount", the pattern is DP with `dp[i] = min(dp[i], dp[i-coin] + 1)`.
 
 ### Q83: How do I build a pattern-recognition Anki deck?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" alt="Handwritten: How do I build a pattern-recognition Anki deck?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" alt="Diagram: How do I build a pattern-recognition Anki deck?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" alt="Sticky Note: How do I build a pattern-recognition Anki deck?" width="30%">
+</a>
+
 
 **Answer:** Create Anki cards with the format: "If you see [X constraint], try [Y algorithm]." Front side is the constraint pattern, back side is the algorithmic approach with a reference to the DSA bank.
 
@@ -2353,6 +3266,17 @@ Three example cards:
 **Card 3 → Front:** "Two pointers moving toward each other on sorted array" **Back:** Two-pointer technique. See DSA bank Q6 (Container With Most Water): `int left = 0, right = n-1; while (left < right) { area = Math.min(height[left], height[right]) * (right - left); if (height[left] < height[right]) left++; else right--; }`
 
 ### Q84: How do I solve a DP problem using the DSA bank step by step?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" alt="Handwritten: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" alt="Diagram: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" alt="Sticky Note: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+</a>
+
 
 **Answer:** Walk through Q24 from the DSA bank. Wait → Q24 is "Remove Nth Node From End" (Linked List). Let's use a real DP problem: Q40 (Coin Change).
 
@@ -2386,6 +3310,17 @@ public int coinChange(int[] coins, int amount) {
 
 ### Q85: How do I use the DSA bank solutions effectively?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" alt="Handwritten: How do I use the DSA bank solutions effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" alt="Diagram: How do I use the DSA bank solutions effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" alt="Sticky Note: How do I use the DSA bank solutions effectively?" width="30%">
+</a>
+
+
 **Answer:** Use the 30-minute rule: attempt for 30 minutes, then check the solution, then understand deeply, then re-implement from memory.
 
 The DSA bank (`02-dsa-problem-bank.md`) includes complete, compilable Java classes with each solution. For Q4 (Maximum Subarray / Kadane's):
@@ -2411,6 +3346,17 @@ Workflow:
 6. Run the provided `main()` test case to verify.
 
 ### Q86: How do I build time complexity intuition?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" alt="Handwritten: How do I build time complexity intuition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" alt="Diagram: How do I build time complexity intuition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" alt="Sticky Note: How do I build time complexity intuition?" width="30%">
+</a>
+
 
 **Answer:** Map each complexity class to DSA bank examples you've already solved:
 
@@ -2444,6 +3390,17 @@ boolean hasDuplicate(int[] arr) { for (int i = 0; i < n; i++) for (int j = i+1; 
 Train your eye: Any loop over n inside another loop over n is O(nÂ²). Any loop that halves each iteration is O(log n).
 
 ### Q87: How do I evaluate space-time tradeoffs with DP memoization?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" alt="Handwritten: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" alt="Diagram: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" alt="Sticky Note: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+</a>
+
 
 **Answer:** The DSA bank DP problems (Q39-Q57) show the memoization vs tabulation tradeoff. Take Q47 (Word Break):
 
@@ -2488,6 +3445,17 @@ Tradeoff: Memoization uses O(2â¿) stack space worst-case, tabulation uses O(
 
 ### Q88: How do I learn SQL from the SQL problem bank?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn SQL from the SQL problem bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn SQL from the SQL problem bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn SQL from the SQL problem bank?" width="30%">
+</a>
+
+
 **Answer:** Use the recall-before-checking protocol on Q1-Q50 from `03-sql-problem-bank.md`. For each problem:
 1. Read the schema (employees, departments, orders tables).
 2. Cover the solution SQL.
@@ -2511,6 +3479,17 @@ WHERE e.salary > dept_avg.avg_salary;
 Key learning: The subquery computes per-department averages via `GROUP BY`. The `INNER JOIN` attaches those averages to each employee. The `WHERE` filters. This is a classic correlated-subquery alternative pattern. After writing this, create a variation: "Find departments where average salary exceeds company average."
 
 ### Q89: How do I learn NoSQL from the SQL problem bank?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn NoSQL from the SQL problem bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn NoSQL from the SQL problem bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn NoSQL from the SQL problem bank?" width="30%">
+</a>
+
 
 **Answer:** The SQL bank covers Q51-Q62 for MongoDB aggregation pipelines and Redis caching patterns. Reference Q58-Q62 for Redis specifically.
 
@@ -2546,6 +3525,17 @@ Compare with the SQL bank's relational approach: JOIN-based queries vs Redis's k
 
 ### Q90: How do I learn system design from the repo?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" alt="Handwritten: How do I learn system design from the repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" alt="Diagram: How do I learn system design from the repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" alt="Sticky Note: How do I learn system design from the repo?" width="30%">
+</a>
+
+
 **Protocol:** Read the system-design course chapter → draw the architecture on paper (or whiteboard) from memory → explain it aloud as if teaching a peer.
 
 The system design course ([`docs/courses/system-design/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/index.md)) is structured in 4 parts with 22 chapters. For example, Chapter 3 covers caching strategies (cache-aside, read-through, write-through, write-behind). The company-specific file (`04-company-specific.md`) adds Google's CACH framework: Clarify, Assumptions, Components, High-level.
@@ -2559,6 +3549,17 @@ Learning workflow for "Design URL Shortener":
 Company-specific tips from `04-company-specific.md`: Google asks system design for L5+ roles; Amazon asks for L5+ as well with LP focus on "Deliver Results."
 
 ### Q91: How do I memorize design patterns with simple mental models?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" alt="Handwritten: How do I memorize design patterns with simple mental models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" alt="Diagram: How do I memorize design patterns with simple mental models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" alt="Sticky Note: How do I memorize design patterns with simple mental models?" width="30%">
+</a>
+
 
 **Answer:** Anchor each pattern to a vivid metaphor:
 
@@ -2604,6 +3605,17 @@ Review these patterns by reading the LLD section of the DSA bank (Q101-Q115) whi
 
 ### Q92: How should I learn from code review of Java examples?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" alt="Handwritten: How should I learn from code review of Java examples?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" alt="Diagram: How should I learn from code review of Java examples?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" alt="Sticky Note: How should I learn from code review of Java examples?" width="30%">
+</a>
+
+
 **Answer:** Read the Java/Spring examples from chapter 57 (`57-interview-spring.md`) and ask "what would I change?" before reading the author's explanation.
 
 Take Q1 from the Spring chapter → dependency injection types. The chapter shows constructor, setter, and field injection:
@@ -2629,6 +3641,17 @@ Code review checklist from the DSA bank solutions:
 - Can you spot the space-time tradeoff? (HashMap for speed vs extra memory)
 
 ### Q93: How do I learn LLD from the DSA bank?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn LLD from the DSA bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn LLD from the DSA bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn LLD from the DSA bank?" width="30%">
+</a>
+
 
 **Answer:** The DSA bank covers Q101-Q115 for Low-Level Design: Parking Lot, Library Management, Vending Machine, Snake & Ladder, Chess, Elevator, Tic-Tac-Toe, Splitwise, Logger, Task Management, Pub-Sub, ATM, Coffee Machine, Restaurant Booking, File System.
 
@@ -2661,6 +3684,17 @@ Each LLD problem in Q101-Q115 builds on the same OOP patterns: inheritance for s
 
 ### Q94: How do I learn concurrency from the DSA bank?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn concurrency from the DSA bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn concurrency from the DSA bank?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn concurrency from the DSA bank?" width="30%">
+</a>
+
+
 **Answer:** The DSA bank covers Q116-Q125 for concurrency: Print 1-100 Alternately (Q116), Producer-Consumer wait/notify (Q117), Producer-Consumer BlockingQueue (Q118), Reader-Writers (Q119), Dining Philosophers (Q120), FooBar Alternately (Q121), Zero-Even-Odd (Q122), Thread-Safe Singleton (Q123), Custom Thread Pool (Q124), Deadlock Detection (Q125).
 
 Workflow: Compare Q117 (low-level wait/notify) with Q118 (BlockingQueue) for the same pattern. The BlockingQueue version is dramatically simpler:
@@ -2691,6 +3725,17 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ### Q95: What is the full interview preparation workflow using this repo?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" alt="Handwritten: What is the full interview preparation workflow using this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" alt="Diagram: What is the full interview preparation workflow using this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" alt="Sticky Note: What is the full interview preparation workflow using this repo?" width="30%">
+</a>
+
+
 **Answer:** The pipeline is: DSA bank → SQL bank → system design → company-specific → mock tests.
 
 **Phase 1 → DSA foundation (Weeks 1-4):** Solve 3-5 problems daily from `02-dsa-problem-bank.md` (Q1-Q125). Start with Arrays (Q1-Q19), then Trees (Q29-Q38), then DP (Q39-Q57). Each problem has a compilable Java solution → always run it to verify.
@@ -2719,6 +3764,17 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ### Q96: How does theory learning differ from coding practice?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" alt="Handwritten: How does theory learning differ from coding practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" alt="Diagram: How does theory learning differ from coding practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" alt="Sticky Note: How does theory learning differ from coding practice?" width="30%">
+</a>
+
+
 **Answer:** GATE preparation needs recall speed + formula accuracy, not the open-ended problem-solving depth that placement coding does. Placement interviews explore how you think; GATE tests whether you know the exact answer in 2 minutes.
 
 From the OS chapter (`07-operating-systems.md`), CPU scheduling questions require Gantt chart drawing speed → a placement question might ask "design a scheduler", but a GATE question asks "given these processes and Round Robin with TQ=4, what is the average waiting time?"
@@ -2743,6 +3799,17 @@ Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) → T(n) = Î˜(n^{log_b a}Â·log^{
 You don't code this in GATE → you apply it to find the complexity class. Study accordingly.
 
 ### Q97: How do I create formula cheat sheets from GATE chapters?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" alt="Handwritten: How do I create formula cheat sheets from GATE chapters?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" alt="Diagram: How do I create formula cheat sheets from GATE chapters?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" alt="Sticky Note: How do I create formula cheat sheets from GATE chapters?" width="30%">
+</a>
+
 
 **Answer:** Each GATE chapter has a formula section. Extract these into one-page summaries organized by topic.
 
@@ -2770,6 +3837,17 @@ Create flashcards for each table. The ROIC for memorizing these is enormous → 
 
 ### Q98: How do GATE subjects interlink with each other?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" alt="Handwritten: How do GATE subjects interlink with each other?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" alt="Diagram: How do GATE subjects interlink with each other?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" alt="Sticky Note: How do GATE subjects interlink with each other?" width="30%">
+</a>
+
+
 **Answer:** The GATE chapters form a dependency graph. Knowledge flows: OS → COA → CN → System Design.
 
 **OS → COA:** CPU scheduling (OS) requires understanding pipeline hazards (COA). Memory paging (OS) requires TLB and cache mapping (COA). The OS chapter covers page replacement algorithms (LRU, FIFO, Optimal); the COA chapter (`11-computer-architecture.md`) covers cache mapping (direct, set-associative, fully-associative) which determine effective access time.
@@ -2783,6 +3861,17 @@ Create flashcards for each table. The ROIC for memorizing these is enormous → 
 When studying a GATE subject, always ask: "Where else in the syllabus does this concept appear?" The interlinks reduce total learning time by ~30%.
 
 ### Q99: What is the GATE PYQ solving strategy?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" alt="Handwritten: What is the GATE PYQ solving strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" alt="Diagram: What is the GATE PYQ solving strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" alt="Sticky Note: What is the GATE PYQ solving strategy?" width="30%">
+</a>
+
 
 **Answer:** Solve PYQs from the GATE chapters with a timer. Each chapter has 54-75 PYQs with solutions. The OS chapter has G1-G70; DBMS has D1-D75; CN has N1-N60; DSA has A1-A54; COA has C1-C60.
 
@@ -2808,6 +3897,17 @@ Solve: Gantt chart: P1(0-4), P2(4-7), P3(7-12). WT: P1=0, P2=4-1=3, P3=7-2=5. Av
 Review: "I got this right because I drew the Gantt chart before computing. Mistake to avoid: forgetting to subtract arrival time from start time to get waiting time."
 
 ### Q100: How does the 3-pass method apply to theory subjects?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" alt="Handwritten: How does the 3-pass method apply to theory subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" alt="Diagram: How does the 3-pass method apply to theory subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" alt="Sticky Note: How does the 3-pass method apply to theory subjects?" width="30%">
+</a>
+
 
 **Answer:** Read → Recall → Apply to PYQ. This mirrors the coding 3-pass method but adapted for fact-heavy subjects.
 
@@ -2835,6 +3935,17 @@ Pass 3: Solve PYQ and verify.
 ```
 
 ### Q101: How do I use diagrams to learn GATE subjects?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" alt="Handwritten: How do I use diagrams to learn GATE subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" alt="Diagram: How do I use diagrams to learn GATE subjects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" alt="Sticky Note: How do I use diagrams to learn GATE subjects?" width="30%">
+</a>
+
 
 **Answer:** Draw every concept diagram from memory. This activates visual-spatial memory which is stronger than text-only recall.
 
@@ -2877,6 +3988,17 @@ Draw each diagram from memory until it's perfect. Then add the formulas next to 
 
 ### Q102: How do I approach the mathematical foundation for GATE?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" alt="Handwritten: How do I approach the mathematical foundation for GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" alt="Diagram: How do I approach the mathematical foundation for GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" alt="Sticky Note: How do I approach the mathematical foundation for GATE?" width="30%">
+</a>
+
+
 **Answer:** The discrete mathematics course (`docs/courses/discrete-mathematics/`) covers the math requirements for GATE: set theory, combinatorics, graph theory, logic, probability, and linear algebra.
 
 Priority ordering for GATE math:
@@ -2896,6 +4018,17 @@ Study approach: Solve the math PYQs first. They follow predictable patterns. Onl
 
 ### Q103: How do I prioritize GATE subjects by ROI?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" alt="Handwritten: How do I prioritize GATE subjects by ROI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" alt="Diagram: How do I prioritize GATE subjects by ROI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" alt="Sticky Note: How do I prioritize GATE subjects by ROI?" width="30%">
+</a>
+
+
 **Answer:** ROI ranking based on average marks per hour studied, from the GATE chapter weightage tables:
 
 | Rank | Subject | Avg Marks | Weight | Why |
@@ -2913,6 +4046,17 @@ Study approach: Solve the math PYQs first. They follow predictable patterns. Onl
 Strategy: Master OS + DBMS + CN + COA first (ROI rank 1-4) → they account for 40-50% of total marks with predictable patterns. Then DSA + TOC (ROI rank 5-6). Leave Digital Logic and Compiler Design for last unless they're your strength.
 
 ### Q104: How do I manage time in GATE exams?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" alt="Handwritten: How do I manage time in GATE exams?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" alt="Diagram: How do I manage time in GATE exams?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" alt="Sticky Note: How do I manage time in GATE exams?" width="30%">
+</a>
+
 
 **Answer:** Use the mock tests (15-22 referenced in the placement preparation module) to practice the "easy first" strategy.
 
@@ -2932,6 +4076,17 @@ From the `04-company-specific.md` file, Google's CRACK method applies to GATE to
 The difference between a 65 and a 75 in GATE is often time management, not knowledge. Use PYQ solving to build speed.
 
 ### Q105: How do I analyze and fix common GATE mistakes?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" alt="Handwritten: How do I analyze and fix common GATE mistakes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" alt="Diagram: How do I analyze and fix common GATE mistakes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" alt="Sticky Note: How do I analyze and fix common GATE mistakes?" width="30%">
+</a>
+
 
 **Answer:** Track every wrong PYQ answer by error type. The GATE chapters include solutions → use them to categorize your mistakes.
 
@@ -2959,6 +4114,17 @@ Corrective action: Re-do Gantt chart practice on 10 scheduling problems.
 
 ### Q106: How do I build a memory palace for OS theory?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" alt="Handwritten: How do I build a memory palace for OS theory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" alt="Diagram: How do I build a memory palace for OS theory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" alt="Sticky Note: How do I build a memory palace for OS theory?" width="30%">
+</a>
+
+
 **Answer:** Map OS process states to physical locations in a familiar space (your home). Each room holds a state, and the transitions are the paths between rooms.
 
 Process states (from the OS chapter `07-operating-systems.md`):
@@ -2978,6 +4144,17 @@ The transitions: NEW→READY (admit), READY→RUNNING (dispatch), RUNNING→READ
 Walk through your house mentally. Each room triggers state recall. This turns an abstract state machine into a spatial memory.
 
 ### Q107: How do I run a dual GATE + placement preparation track?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" alt="Handwritten: How do I run a dual GATE + placement preparation track?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" alt="Diagram: How do I run a dual GATE + placement preparation track?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" alt="Sticky Note: How do I run a dual GATE + placement preparation track?" width="30%">
+</a>
+
 
 **Answer:** Divide your day: morning for GATE theory (recall-heavy), evening for placement coding (problem-solving heavy).
 
@@ -2999,6 +4176,17 @@ Walk through your house mentally. Each room triggers state recall. This turns an
 Overlap between the tracks reduces total study time. The same concept in OS (process scheduling) appears in system design (load balancing) → learn it once, apply in both.
 
 ### Q108: How do I use the cheat sheets at the end of each GATE chapter?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" alt="Handwritten: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" alt="Diagram: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" alt="Sticky Note: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+</a>
+
 
 **Answer:** Each GATE chapter includes a formula cheat sheet section. These are your primary revision aid in the last 30 days.
 
@@ -3023,6 +4211,17 @@ Usage workflow:
 By exam week, you should be able to mentally visualize every formula table. This is faster than re-reading chapters.
 
 ### Q109: How do I analyze mock tests effectively?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" alt="Handwritten: How do I analyze mock tests effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" alt="Diagram: How do I analyze mock tests effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" alt="Sticky Note: How do I analyze mock tests effectively?" width="30%">
+</a>
+
 
 **Answer:** After each GATE mock test (referenced as 15-22 in the placement prep module), analyze wrong answers by subject using a structured template.
 
@@ -3053,6 +4252,17 @@ This analysis reveals which sections to re-study and which to skip. Don't waste 
 
 ### Q110: What is the 30-day GATE final strategy?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" alt="Handwritten: What is the 30-day GATE final strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" alt="Diagram: What is the 30-day GATE final strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" alt="Sticky Note: What is the 30-day GATE final strategy?" width="30%">
+</a>
+
+
 **Answer:** A phased 30-day plan using all GATE chapters + 8 mock tests.
 
 **Days 1-10 → Foundation consolidation:**
@@ -3082,6 +4292,17 @@ During this phase, use the company-specific chapter (`04-company-specific.md`) o
 
 ### Q111: What is the universal framework learning blueprint?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" alt="Handwritten: What is the universal framework learning blueprint?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" alt="Diagram: What is the universal framework learning blueprint?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" alt="Sticky Note: What is the universal framework learning blueprint?" width="30%">
+</a>
+
+
 **Answer:** Five phases: Docs → Tutorial → Build → Refactor → Teach.
 
 **Phase 1 → Docs (2-3 days):** Read the official documentation's "Getting Started" and "Core Concepts" sections. Not the whole docs → just what you need to understand the mental model. From the Java course index (`java/index.md`), each chapter has Learning Objectives at the top → use those as a filter.
@@ -3097,6 +4318,17 @@ During this phase, use the company-specific chapter (`04-company-specific.md`) o
 The 27 courses in this repo follow this blueprint: each starts with learning objectives (Docs), progresses through examples (Tutorial), and ends with exercises (Build).
 
 ### Q112: How do I learn Java from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Java from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" alt="Diagram: How do I learn Java from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Java from this repo?" width="30%">
+</a>
+
 
 **Path:** `java/index.md` → Chapters P1-P6 (foundations) → Chapters 1-6 (core Java) → Chapter 57 (Spring interview) → Chapter 60 (microservices).
 
@@ -3125,6 +4357,17 @@ class UserService {
 ```
 
 ### Q113: How do I learn Python from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Python from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" alt="Diagram: How do I learn Python from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Python from this repo?" width="30%">
+</a>
+
 
 **Path:** `python-programming/` → `machine-learning/` → `applied-ai/`.
 
@@ -3162,6 +4405,17 @@ def two_sum(nums, target):
 
 ### Q114: How do I learn DevOps from this repo?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn DevOps from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" alt="Diagram: How do I learn DevOps from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn DevOps from this repo?" width="30%">
+</a>
+
+
 **Path:** `devops/` → `cloud-computing/` → apply to deploy this repo.
 
 The DevOps course (`devops/index.md`) has 18 chapters covering the full lifecycle:
@@ -3188,6 +4442,17 @@ EXPOSE 80
 After Docker, learn Docker Compose (multi-container), then Kubernetes (chapter 6), then Terraform (chapter 7). Add CI/CD with GitHub Actions (chapter 4) to automate building and deploying this repo.
 
 ### Q115: How do I learn Laravel from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Laravel from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" alt="Diagram: How do I learn Laravel from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Laravel from this repo?" width="30%">
+</a>
+
 
 **Path:** The Laravel course (`laravel/index.md`) has 54 chapters across 10 parts.
 
@@ -3221,6 +4486,17 @@ After CRUD, add authentication (chapter 5 → Breeze/Jetstream), then API endpoi
 
 ### Q116: Why shouldn't I learn two new frameworks at once?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" alt="Handwritten: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" alt="Diagram: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" alt="Sticky Note: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+
+
 **Answer:** Learning a new framework rewires your mental model of how applications work. Two simultaneous models cause interference → you'll confuse Laravel's service container with Spring's DI container, or Eloquent's active record with JPA's entity manager.
 
 The 27 courses in this repo span Java, Python, PHP, JavaScript/TypeScript, and DevOps tools. If you're studying Java for placement and Laravel for a side project:
@@ -3235,6 +4511,17 @@ The 27 courses in this repo span Java, Python, PHP, JavaScript/TypeScript, and D
 Evidence: After mastering the Spring chapter (57), learning Laravel's service container takes 2 days instead of 2 weeks because you already understand IoC, DI, and service providers conceptually.
 
 ### Q117: What is the Minimal Viable Project pattern for learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" alt="Handwritten: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" alt="Diagram: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" alt="Sticky Note: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+
 
 **Answer:** For any framework, build exactly one CRUD app first. The template is identical across all frameworks:
 
@@ -3293,6 +4580,17 @@ Build this one project in the new framework. Skip everything else until the CRUD
 
 ### Q118: How do I read documentation effectively vs tutorials?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" alt="Handwritten: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" alt="Diagram: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" alt="Sticky Note: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+
+
 **Answer:** Documentation tells you what's possible. Tutorials tell you one path. You need both → but extract different things from each.
 
 From the Spring chapter (`57-interview-spring.md`), the pattern for reading Spring docs:
@@ -3322,6 +4620,17 @@ class UserService {
 The doc tells you *why* (immutability, testability). The code tells you *how*. Read the doc to understand the philosophy; study the code to implement.
 
 ### Q119: How do I debug using StackOverflow and systematic methods?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" alt="Handwritten: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" alt="Diagram: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" alt="Sticky Note: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+
 
 **Answer:** Reproduce → Isolate → Search → Understand root cause. Never paste code without understanding it.
 
@@ -3355,6 +4664,17 @@ Always look for the *accepted* answer with the most upvotes. Read the explanatio
 
 ### Q120: How does "Building in Public" accelerate learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+
+
 **Answer:** Building in public means sharing your work as you learn → open-source contributions, blog posts, or solving problems from this repo publicly.
 
 The learning accelerator:
@@ -3376,6 +4696,17 @@ Contributing workflow: fork → clone → branch → commit → PR. Even fixing 
 
 ### Q121: What is meta-learning and why does it matter?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is meta-learning and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" alt="Diagram: What is meta-learning and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is meta-learning and why does it matter?" width="30%">
+</a>
+
+
 **Answer:** Meta-learning is learning about learning. You're already doing it by reading this chapter → instead of just cramming facts, you're studying how to structure the learning process itself.
 
 The 27 courses in this repo are organized using meta-learning principles:
@@ -3396,6 +4727,17 @@ Remember → Anki flashcards for formulas and patterns
 The most effective learners in this repo aren't necessarily the ones with the highest IQ → they're the ones who deliberately manage their learning process: spacing reviews, testing recall, interleaving topics, and teaching others. Meta-learning compounds. Each chapter you study makes you better at studying the next one.
 
 ### Q122: What are Josh Waitzkin's 3 stages of learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" alt="Handwritten: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" alt="Diagram: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" alt="Sticky Note: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+
 
 **Answer:** Josh Waitzkin (chess prodigy, martial arts champion) describes three stages: Investment, Integration, Innovation.
 
@@ -3423,6 +4765,17 @@ Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Ja
 
 ### Q123: What is the 80/20 rule for CS interview preparation?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" alt="Handwritten: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" alt="Diagram: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" alt="Sticky Note: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+
+
 **Answer:** 20% of topics give 80% of interview results. From the company-specific chapter (`04-company-specific.md`), the high-leverage topics are:
 
 | Company | 20% Topics | 80% of Questions |
@@ -3441,6 +4794,17 @@ For system design (from `system-design/index.md`), the 20% high-RC topics are:
 Identify your personal 20%: which 5 of the 27 courses matter most for your target role? For Java backend interviews: Java course (chapters P1-66), DSA bank (125 problems), Spring chapter (57), system design (22 chapters), company-specific (FAANG strategies).
 
 ### Q124: How do I build a personal skill tree?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" alt="Handwritten: How do I build a personal skill tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" alt="Diagram: How do I build a personal skill tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" alt="Sticky Note: How do I build a personal skill tree?" width="30%">
+</a>
+
 
 **Answer:** A skill tree visualizes dependencies between topics. Learning becomes a sequence, not a firehose.
 
@@ -3477,6 +4841,17 @@ Each node represents a measurable skill. Complete a node when you can solve rela
 
 ### Q125: Where do I fall on the Dunning-Kruger curve for each skill?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" alt="Handwritten: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" alt="Diagram: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" alt="Sticky Note: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+
+
 **Answer:** The Dunning-Kruger effect means beginners overestimate their ability, and experts underestimate it. Self-assess honestly across the 27 courses.
 
 **Phase 1 → "Mount Stupid" (Week 1):** After reading the DSA bank table of contents, you think you know algorithms. Reality: you haven't solved a single problem.
@@ -3499,6 +4874,17 @@ Self-assessment exercise:
 Update this table every month. The Dunning-Kruger curve is a map, not a judgment → knowing where you are tells you what to do next.
 
 ### Q126: How do I handle imposter syndrome when learning new tech?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" alt="Handwritten: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" alt="Diagram: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" alt="Sticky Note: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+
 
 **Answer:** Your existing experience doesn't disappear when you learn something new. Your 2 years of Java experience is real skill → learning Python doesn't erase it.
 
@@ -3533,6 +4919,17 @@ You're not starting from zero. You're starting from a different platform with tr
 
 ### Q127: How does knowledge compound across courses?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" alt="Handwritten: How does knowledge compound across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" alt="Diagram: How does knowledge compound across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" alt="Sticky Note: How does knowledge compound across courses?" width="30%">
+</a>
+
+
 **Answer:** Each course you complete makes the next one 20% faster because of concept reuse. The 27 courses form a directed acyclic graph of dependencies.
 
 **Empirical estimate from this repo:**
@@ -3552,6 +4949,17 @@ You're not starting from zero. You're starting from a different platform with tr
 The total time to study all 27 courses is not the sum of individual times → it's closer to 60% of the sum because of compounding. The first course is the hardest (no transfer), the tenth is significantly easier (nine courses of transfer).
 
 ### Q128: How do I build a Second Brain across 27 courses?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" alt="Handwritten: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" alt="Diagram: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" alt="Sticky Note: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+
 
 **Answer:** A Second Brain is an external knowledge system. The 27 courses are your input; your notes are your output. The system needs four components:
 
@@ -3576,6 +4984,17 @@ Create Anki cards from each note. The DSA bank pattern cards (Q83) follow this m
 For this repo, the simplest Second Brain is a folder structure mirroring the courses with markdown summaries of each chapter, links between related concepts, and Anki export for spaced repetition.
 
 ### Q129: What is your post-interview roadmap?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" alt="Handwritten: What is your post-interview roadmap?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" alt="Diagram: What is your post-interview roadmap?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" alt="Sticky Note: What is your post-interview roadmap?" width="30%">
+</a>
+
 
 **Answer:** After interviews, the learning continues. The roadmap builds toward mastery: Java mastery → Spring depth → microservices → system design deep dive.
 
@@ -3604,6 +5023,17 @@ For this repo, the simplest Second Brain is a folder structure mirroring the cou
 The 27 courses are not just for interviews. They form a complete CS education path. The interview is a milestone, not the destination.
 
 ### Q130: What is the final stage → teaching others?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" alt="Handwritten: What is the final stage → teaching others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" alt="Diagram: What is the final stage → teaching others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" alt="Sticky Note: What is the final stage → teaching others?" width="30%">
+</a>
+
 
 **Answer:** Teaching is the ultimate learning accelerator. The final stage is contributing back to this repo → writing examples, solving problems, opening PRs, and helping others learn.
 

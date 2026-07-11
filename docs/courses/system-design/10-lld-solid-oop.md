@@ -35,6 +35,17 @@ flowchart LR
 
 ### Object-Oriented Programming Foundations
 
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" alt="Handwritten: Object-Oriented Programming Foundations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" alt="Diagram: Object-Oriented Programming Foundations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" alt="Sticky Note: Object-Oriented Programming Foundations" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -54,6 +65,17 @@ Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstract
 
 ### Coupling and Cohesion
 
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
+</a>
+
+
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
@@ -65,6 +87,17 @@ Cohesion measures how strongly the responsibilities of a module are related. **H
 A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of methods that do not share any fields. A high LCOM value suggests the class should be split. Most static analysis tools calculate LCOM4, which counts connected components in a method-field access graph; LCOM4 > 1 indicates the class has multiple responsibilities.
 
 ### Single Responsibility Principle (SRP)
+
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" alt="Handwritten: Single Responsibility Principle (SRP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" alt="Diagram: Single Responsibility Principle (SRP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" alt="Sticky Note: Single Responsibility Principle (SRP)" width="30%">
+</a>
+
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -78,6 +111,17 @@ Consider a `Report` class that generates content, formats it as HTML and PDF, an
 
 ### Open/Closed Principle (OCP)
 
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" alt="Handwritten: Open/Closed Principle (OCP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" alt="Diagram: Open/Closed Principle (OCP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" alt="Sticky Note: Open/Closed Principle (OCP)" width="30%">
+</a>
+
+
 > Software entities should be open for extension but closed for modification.
 
 New functionality should be added by writing new code, not by modifying existing, tested code. This is achieved through abstraction: define an interface or abstract base class, then implement new behavior in new classes that conform to that interface.
@@ -85,6 +129,17 @@ New functionality should be added by writing new code, not by modifying existing
 The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class that uses a `switch` statement on payment type violates OCP—adding a new payment type requires modifying the class. Instead, define a `PaymentStrategy` interface with a `pay(amount)` method, then implement `CreditCardPayment`, `PayPalPayment`, and `CryptoPayment` separately. New payment types require zero changes to existing code.
 
 ### Liskov Substitution Principle (LSP)
+
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" alt="Handwritten: Liskov Substitution Principle (LSP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" alt="Diagram: Liskov Substitution Principle (LSP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" alt="Sticky Note: Liskov Substitution Principle (LSP)" width="30%">
+</a>
+
 
 > Subtypes must be substitutable for their base types without altering the correctness of the program.
 
@@ -105,6 +160,17 @@ The fix: do not model Square as a subtype of Rectangle. Both should inherit from
 
 ### Interface Segregation Principle (ISP)
 
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" alt="Handwritten: Interface Segregation Principle (ISP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" alt="Diagram: Interface Segregation Principle (ISP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" alt="Sticky Note: Interface Segregation Principle (ISP)" width="30%">
+</a>
+
+
 > No client should be forced to depend on methods it does not use.
 
 A "fat interface" contains methods that are irrelevant to some implementors. Clients that depend on the fat interface must recompile or redeploy even when changes are made to methods they never call.
@@ -114,6 +180,17 @@ Consider a `Worker` interface with `work()`, `eat()`, and `sleep()`. A `Robot` c
 The symptom of ISP violation is the **"not implemented" exception**—methods that throw `NotImplementedError` or `UnsupportedOperationException`.
 
 ### Dependency Inversion Principle (DIP)
+
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" alt="Handwritten: Dependency Inversion Principle (DIP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" alt="Diagram: Dependency Inversion Principle (DIP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" alt="Sticky Note: Dependency Inversion Principle (DIP)" width="30%">
+</a>
+
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
@@ -140,6 +217,17 @@ The `UserService` never knows whether it is backed by PostgreSQL, MySQL, or an i
 
 ### Composition Over Inheritance
 
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" alt="Handwritten: Composition Over Inheritance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" alt="Diagram: Composition Over Inheritance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" alt="Sticky Note: Composition Over Inheritance" width="30%">
+</a>
+
+
 Inheritance exposes subclasses to parent implementation details, violating encapsulation. Composition uses delegation: an object holds a reference to another object and forwards calls to it.
 
 ```python
@@ -163,6 +251,17 @@ class OrderedCache:
 The composition version can change its internal storage (e.g., switch to a database) without changing its public contract. Inheritance would require overriding every method that touches the internal dict.
 
 ### Package Principles
+
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" alt="Handwritten: Package Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" alt="Diagram: Package Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" alt="Sticky Note: Package Principles" width="30%">
+</a>
+
 
 Three principles guide package cohesion:
 

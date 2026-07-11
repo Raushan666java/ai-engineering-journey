@@ -19,6 +19,17 @@ flowchart LR
 
 ### Q21: What is a service mesh and when would you use Istio?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-handwritten.svg" alt="Handwritten: What is a service mesh and when would you use Istio?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-diagram.svg" alt="Diagram: What is a service mesh and when would you use Istio?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-a-service-mesh-and-when-would-you-use-istio-sticky.svg" alt="Sticky Note: What is a service mesh and when would you use Istio?" width="30%">
+</a>
+
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -144,6 +155,17 @@ Use a service mesh when you have 10+ services and can't add cross-cutting code t
 
 ### Q22: How do you implement structured logging and log aggregation?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-handwritten.svg" alt="Handwritten: How do you implement structured logging and log aggregation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-diagram.svg" alt="Diagram: How do you implement structured logging and log aggregation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-structured-logging-and-log-aggregation-sticky.svg" alt="Sticky Note: How do you implement structured logging and log aggregation?" width="30%">
+</a>
+
+
 **Answer:**
 
 Structured logging outputs JSON with consistent fields (service name, trace ID, level, message, timestamp). ELK or Loki aggregates logs from all services into a searchable store.
@@ -247,6 +269,17 @@ Best practices:
 
 ### Q23: How do you handle database migrations across multiple microservices?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-handwritten.svg" alt="Handwritten: How do you handle database migrations across multiple microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-diagram.svg" alt="Diagram: How do you handle database migrations across multiple microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-database-migrations-across-multiple-microservices-sticky.svg" alt="Sticky Note: How do you handle database migrations across multiple microservices?" width="30%">
+</a>
+
+
 **Answer:**
 
 Each microservice manages its own database migrations independently. Migrations are versioned, sequential, and tested in CI.
@@ -340,6 +373,17 @@ Each service's migration is independent. Never share migration files across serv
 ---
 
 ### Q24: How do you implement idempotency in microservices?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-handwritten.svg" alt="Handwritten: How do you implement idempotency in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-diagram.svg" alt="Diagram: How do you implement idempotency in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-implement-idempotency-in-microservices-sticky.svg" alt="Sticky Note: How do you implement idempotency in microservices?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -447,6 +491,17 @@ Idempotency is not optional in microservices → network retries guarantee dupli
 ---
 
 ### Q25: What distributed caching strategies work for microservices?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-handwritten.svg" alt="Handwritten: What distributed caching strategies work for microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-diagram.svg" alt="Diagram: What distributed caching strategies work for microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-distributed-caching-strategies-work-for-microservices-sticky.svg" alt="Sticky Note: What distributed caching strategies work for microservices?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -617,6 +672,17 @@ Use cache-aside with TTL for most services. Never cache sensitive data (PII, fin
 
 ### Q24: What is idempotency and how do you implement it in microservices?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-handwritten.svg" alt="Handwritten: What is idempotency and how do you implement it in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-diagram.svg" alt="Diagram: What is idempotency and how do you implement it in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/what-is-idempotency-and-how-do-you-implement-it-in-microservices-sticky.svg" alt="Sticky Note: What is idempotency and how do you implement it in microservices?" width="30%">
+</a>
+
+
 **Answer:**
 
 Idempotency means that executing the same operation multiple times has the same effect as executing it once. In distributed systems, retries are inevitable (network timeouts, leader elections), and without idempotency, retries cause duplicate orders, double charges, and data corruption.
@@ -701,6 +767,17 @@ public PaymentResult processPayment(PaymentRequest request) {
 ---
 
 ### Q25: How do you handle schema changes in event-driven microservices?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-handwritten.svg" alt="Handwritten: How do you handle schema changes in event-driven microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-diagram.svg" alt="Diagram: How do you handle schema changes in event-driven microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/how-do-you-handle-schema-changes-in-event-driven-microservices-sticky.svg" alt="Sticky Note: How do you handle schema changes in event-driven microservices?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -789,6 +866,17 @@ public class OrderEventConsumer {
 ## Common Mistakes in Advanced Microservices (GFG-Style)
 
 ### Mistake 1: Not setting timeouts on all external calls
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-handwritten.svg" alt="Handwritten: Mistake 1: Not setting timeouts on all external calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-diagram.svg" alt="Diagram: Mistake 1: Not setting timeouts on all external calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-1-not-setting-timeouts-on-all-external-calls-sticky.svg" alt="Sticky Note: Mistake 1: Not setting timeouts on all external calls" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: No timeout — thread blocks indefinitely
 restTemplate.getForObject("/users/{id}", UserDto.class, id);
@@ -814,6 +902,17 @@ WebClient.builder()
 ```
 
 ### Mistake 2: Cache stampede without protection
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-handwritten.svg" alt="Handwritten: Mistake 2: Cache stampede without protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-diagram.svg" alt="Diagram: Mistake 2: Cache stampede without protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-2-cache-stampede-without-protection-sticky.svg" alt="Sticky Note: Mistake 2: Cache stampede without protection" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: 100 concurrent requests all miss cache, all hit DB
 public Product getProduct(Long id) {
@@ -844,6 +943,17 @@ public Product getProduct(Long id) {
 ```
 
 ### Mistake 3: Treating all services the same in deployment
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-handwritten.svg" alt="Handwritten: Mistake 3: Treating all services the same in deployment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-diagram.svg" alt="Diagram: Mistake 3: Treating all services the same in deployment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-d/mistake-3-treating-all-services-the-same-in-deployment-sticky.svg" alt="Sticky Note: Mistake 3: Treating all services the same in deployment" width="30%">
+</a>
+
 ```yaml
 # ❌ WRONG: Same resources for all services
 # order-service: 2 CPU, 4GB RAM

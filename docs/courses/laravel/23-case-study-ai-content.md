@@ -50,6 +50,17 @@ flowchart LR
 
 ### 7.1 Requirements Gathering
 
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-handwritten.svg" alt="Handwritten: 7.1 Requirements Gathering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-diagram.svg" alt="Diagram: 7.1 Requirements Gathering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-1-requirements-gathering-sticky.svg" alt="Sticky Note: 7.1 Requirements Gathering" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** The AI content platform requires content creation, moderation, search, and real-time collaboration features.
 
@@ -80,6 +91,17 @@ The platform enables content teams to author, edit, search, and publish articles
 | Moderation throughput | Process 1000 submissions per minute via async queue |
 
 ### 7.2 Architecture Overview
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-handwritten.svg" alt="Handwritten: 7.2 Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-diagram.svg" alt="Diagram: 7.2 Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-2-architecture-overview-sticky.svg" alt="Sticky Note: 7.2 Architecture Overview" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** The architecture uses event-driven design with queued AI processing and WebSocket real-time updates.
@@ -146,6 +168,17 @@ The system consists of five layers: API gateway, Laravel backend, vector databas
 ```
 
 ### 7.3 Data Model
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-handwritten.svg" alt="Handwritten: 7.3 Data Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-diagram.svg" alt="Diagram: 7.3 Data Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-3-data-model-sticky.svg" alt="Sticky Note: 7.3 Data Model" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Content, users, embeddings, and moderation results are stored in PostgreSQL with pgvector for vector search.
@@ -322,6 +355,17 @@ CREATE TABLE moderation_results (
 ```
 
 ### 7.4 RAG Pipeline
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-handwritten.svg" alt="Handwritten: 7.4 RAG Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-diagram.svg" alt="Diagram: 7.4 RAG Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-4-rag-pipeline-sticky.svg" alt="Sticky Note: 7.4 RAG Pipeline" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Retrieve-Augment-Generate: fetch relevant content from vector store, augment the prompt, generate the response.
@@ -717,6 +761,17 @@ class RagService
 > **Pro Tip:** Chunk your content strategically. Overlapping chunks with metadata improve retrieval accuracy significantly.
 
 ### 7.5 AI Agent Design
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-handwritten.svg" alt="Handwritten: 7.5 AI Agent Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-diagram.svg" alt="Diagram: 7.5 AI Agent Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-5-ai-agent-design-sticky.svg" alt="Sticky Note: 7.5 AI Agent Design" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Specialized agents handle moderation, generation, and search, communicating through events and queues.
@@ -1123,6 +1178,17 @@ class ContentGenerationService
 
 ### 7.6 Vector Store Strategy
 
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-handwritten.svg" alt="Handwritten: 7.6 Vector Store Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-diagram.svg" alt="Diagram: 7.6 Vector Store Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-6-vector-store-strategy-sticky.svg" alt="Sticky Note: 7.6 Vector Store Strategy" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** PostgreSQL pgvector stores embeddings alongside relational data, avoiding a separate vector database.
 
@@ -1197,6 +1263,17 @@ class ReindexEmbeddings extends Command
 > **Warning:** Embedding generation is expensive. Cache embeddings and generate them asynchronously via queue jobs.
 
 ### 7.7 MCP Tool Exposure
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-handwritten.svg" alt="Handwritten: 7.7 MCP Tool Exposure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-diagram.svg" alt="Diagram: 7.7 MCP Tool Exposure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-7-mcp-tool-exposure-sticky.svg" alt="Sticky Note: 7.7 MCP Tool Exposure" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Expose content search and generation as MCP tools for external AI agents to discover and use.
@@ -1351,6 +1428,17 @@ Route::match(['POST'], 'mcp/content/sentiment', [ContentMcpServer::class, 'analy
 
 ### 7.8 Content Moderation
 
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-handwritten.svg" alt="Handwritten: 7.8 Content Moderation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-diagram.svg" alt="Diagram: 7.8 Content Moderation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-8-content-moderation-sticky.svg" alt="Sticky Note: 7.8 Content Moderation" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Moderation agents scan content for policy violations using AI classification before publication.
 
@@ -1482,6 +1570,17 @@ class ModerationService
 
 ### 7.9 Caching Strategy
 
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-handwritten.svg" alt="Handwritten: 7.9 Caching Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-diagram.svg" alt="Diagram: 7.9 Caching Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-9-caching-strategy-sticky.svg" alt="Sticky Note: 7.9 Caching Strategy" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Cache generated content and search results with Redis, invalidating on content updates.
 
@@ -1568,6 +1667,17 @@ class AiCacheService
 ```
 
 ### 7.10 Real-Time Collaboration
+
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-handwritten.svg" alt="Handwritten: 7.10 Real-Time Collaboration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-diagram.svg" alt="Diagram: 7.10 Real-Time Collaboration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/23-case-study-ai-content/7-10-real-time-collaboration-sticky.svg" alt="Sticky Note: 7.10 Real-Time Collaboration" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Laravel Reverb provides WebSocket-based real-time updates for collaborative content editing.

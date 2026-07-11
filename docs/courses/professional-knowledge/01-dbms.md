@@ -13,6 +13,17 @@
 ## 1. ER Model Quick Reference
 
 ### Entity, Attribute, Relationship
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-handwritten.svg" alt="Handwritten: Entity, Attribute, Relationship" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-diagram.svg" alt="Diagram: Entity, Attribute, Relationship" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/entity-attribute-relationship-sticky.svg" alt="Sticky Note: Entity, Attribute, Relationship" width="30%">
+</a>
+
 | Construct | Notation | Example |
 |-----------|----------|---------|
 | Entity (strong) | Rectangle | EMPLOYEE, DEPARTMENT |
@@ -25,6 +36,17 @@
 | Key attribute | Underlined text | emp_id (primary key) |
 
 ### Cardinality Constraints
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-handwritten.svg" alt="Handwritten: Cardinality Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-diagram.svg" alt="Diagram: Cardinality Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cardinality-constraints-sticky.svg" alt="Sticky Note: Cardinality Constraints" width="30%">
+</a>
+
 | Notation | Meaning |
 |----------|---------|
 | 1:1 | One entity of A relates to at most one of B (e.g., EMPLOYEE ↔ COMPANY_CAR) |
@@ -32,6 +54,17 @@
 | M:N | Many of A relate to many of B (e.g., STUDENT enrolls in COURSE) |
 
 ### Participation Constraints
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-handwritten.svg" alt="Handwritten: Participation Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-diagram.svg" alt="Diagram: Participation Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/participation-constraints-sticky.svg" alt="Sticky Note: Participation Constraints" width="30%">
+</a>
+
 - **Total participation** (double line): Every entity in the set participates (e.g., every EMPLOYEE must belong to a DEPARTMENT)
 - **Partial participation** (single line): Some entities may not participate
 
@@ -42,31 +75,97 @@
 **Basis:** Set of operators that take one or two relations as input and produce a new relation as output.
 
 ### Select (σ) — Row Selection
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-handwritten.svg" alt="Handwritten: Select (σ) — Row Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-diagram.svg" alt="Diagram: Select (σ) — Row Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/select-row-selection-sticky.svg" alt="Sticky Note: Select (σ) — Row Selection" width="30%">
+</a>
+
 ```
 σ_condition(R) = { t | t ∈ R ∧ condition(t) }
 ```
 Example: `σ_salary > 50000(EMPLOYEE)` — employees earning more than 50K.
 
 ### Project (π) — Column Selection
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-handwritten.svg" alt="Handwritten: Project (π) — Column Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-diagram.svg" alt="Diagram: Project (π) — Column Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/project-column-selection-sticky.svg" alt="Sticky Note: Project (π) — Column Selection" width="30%">
+</a>
+
 ```
 π_col1, col2, ..., colk(R) = { t[col1, ..., colk] | t ∈ R }
 ```
 Example: `π_emp_name, salary(EMPLOYEE)`
 
 ### Rename (ρ) — Alias
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-handwritten.svg" alt="Handwritten: Rename (ρ) — Alias" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-diagram.svg" alt="Diagram: Rename (ρ) — Alias" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/rename-alias-sticky.svg" alt="Sticky Note: Rename (ρ) — Alias" width="30%">
+</a>
+
 ```
 ρ_new_name(R) or ρ_new_name(col1,...,coln)(R)
 ```
 
 ### Union (∪), Intersection (∩), Set Difference (−)
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-handwritten.svg" alt="Handwritten: Union (∪), Intersection (∩), Set Difference (−)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-diagram.svg" alt="Diagram: Union (∪), Intersection (∩), Set Difference (−)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/union-intersection-set-difference-sticky.svg" alt="Sticky Note: Union (∪), Intersection (∩), Set Difference (−)" width="30%">
+</a>
+
 Require relations to be **union-compatible** (same number of attributes, same domains).
 
 ### Cartesian Product (×)
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-handwritten.svg" alt="Handwritten: Cartesian Product (×)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-diagram.svg" alt="Diagram: Cartesian Product (×)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/cartesian-product-sticky.svg" alt="Sticky Note: Cartesian Product (×)" width="30%">
+</a>
+
 ```
 R × S = { (r, s) | r ∈ R ∧ s ∈ S }
 ```
 
 ### Join Operators
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-handwritten.svg" alt="Handwritten: Join Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-diagram.svg" alt="Diagram: Join Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-operators-sticky.svg" alt="Sticky Note: Join Operators" width="30%">
+</a>
+
 
 | Join Type | Symbol | Description |
 |-----------|--------|-------------|
@@ -78,6 +177,17 @@ R × S = { (r, s) | r ∈ R ∧ s ∈ S }
 | Full outer join | R ⟗ S | All tuples from both, NULLs where no match |
 
 ### Division (÷)
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/division-handwritten.svg" alt="Handwritten: Division (÷)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/division-diagram.svg" alt="Diagram: Division (÷)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/division-sticky.svg" alt="Sticky Note: Division (÷)" width="30%">
+</a>
+
 ```
 R ÷ S = { t | t ∈ π_{R−S}(R) ∧ ∀u ∈ S, (t,u) ∈ R }
 ```
@@ -88,6 +198,17 @@ R ÷ S = { t | t ∈ π_{R−S}(R) ∧ ∀u ∈ S, (t,u) ∈ R }
 ## 3. Normalization
 
 ### Functional Dependency (FD) Axioms (Armstrong's)
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-handwritten.svg" alt="Handwritten: Functional Dependency (FD) Axioms (Armstrong's)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-diagram.svg" alt="Diagram: Functional Dependency (FD) Axioms (Armstrong's)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/functional-dependency-fd-axioms-armstrong-s-sticky.svg" alt="Sticky Note: Functional Dependency (FD) Axioms (Armstrong's)" width="30%">
+</a>
+
 - **Reflexivity:** If Y ⊆ X, then X → Y
 - **Augmentation:** If X → Y, then XZ → YZ
 - **Transitivity:** If X → Y and Y → Z, then X → Z
@@ -95,6 +216,17 @@ R ÷ S = { t | t ∈ π_{R−S}(R) ∧ ∀u ∈ S, (t,u) ∈ R }
 - Union: If X → Y and X → Z, then X → YZ
 
 ### Normal Forms — Decomposition Guide
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-handwritten.svg" alt="Handwritten: Normal Forms — Decomposition Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-diagram.svg" alt="Diagram: Normal Forms — Decomposition Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normal-forms-decomposition-guide-sticky.svg" alt="Sticky Note: Normal Forms — Decomposition Guide" width="30%">
+</a>
+
 
 | NF | Condition | How to Fix Violation |
 |----|-----------|---------------------|
@@ -104,11 +236,33 @@ R ÷ S = { t | t ∈ π_{R−S}(R) ∧ ∀u ∈ S, (t,u) ∈ R }
 | **BCNF** | 3NF + every determinant must be a superkey | Decompose by violating FD X→Y: R1(XY), R2(R−Y) |
 
 ### Decomposition Properties
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-handwritten.svg" alt="Handwritten: Decomposition Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-diagram.svg" alt="Diagram: Decomposition Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/decomposition-properties-sticky.svg" alt="Sticky Note: Decomposition Properties" width="30%">
+</a>
+
 - **Lossless join:** Decomposition should be recoverable via natural join
   - Binary decomposition check: `R1 ∩ R2 → R1` or `R1 ∩ R2 → R2`
 - **Dependency preservation:** All FDs should be checkable on individual decomposed relations
 
 ### Solved Numerical: Decomposition
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-handwritten.svg" alt="Handwritten: Solved Numerical: Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-diagram.svg" alt="Diagram: Solved Numerical: Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/solved-numerical-decomposition-sticky.svg" alt="Sticky Note: Solved Numerical: Decomposition" width="30%">
+</a>
+
 **Given:** R(A, B, C, D) with FDs: AB → C, C → D, D → A
 
 **Step 1 — Candidate keys:** {AB}, {BC}, {BD} (all minimal superkeys)
@@ -145,6 +299,17 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 ```
 
 ### Relational Algebra → SQL Mapping
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-handwritten.svg" alt="Handwritten: Relational Algebra → SQL Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-diagram.svg" alt="Diagram: Relational Algebra → SQL Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-sql-mapping-sticky.svg" alt="Sticky Note: Relational Algebra → SQL Mapping" width="30%">
+</a>
+
 | SQL Clause | Relational Algebra |
 |------------|-------------------|
 | `WHERE` | σ (select) |
@@ -157,6 +322,17 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 | `HAVING` | σ on groups |
 
 ### Aggregate Functions
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-handwritten.svg" alt="Handwritten: Aggregate Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-diagram.svg" alt="Diagram: Aggregate Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-sticky.svg" alt="Sticky Note: Aggregate Functions" width="30%">
+</a>
+
 `COUNT`, `SUM`, `AVG`, `MAX`, `MIN` — used with `GROUP BY`
 
 **Query order:** `SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY`
@@ -177,12 +353,34 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 ## 6. Concurrency Control Protocols
 
 ### Lock-Based (2PL — Two-Phase Locking)
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-handwritten.svg" alt="Handwritten: Lock-Based (2PL — Two-Phase Locking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-diagram.svg" alt="Diagram: Lock-Based (2PL — Two-Phase Locking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-2pl-two-phase-locking-sticky.svg" alt="Sticky Note: Lock-Based (2PL — Two-Phase Locking)" width="30%">
+</a>
+
 - **Phase 1 (Growing):** Acquire locks, no release
 - **Phase 2 (Shrinking):** Release locks, no acquire
 - **Strict 2PL:** All exclusive locks released only after commit — prevents cascading aborts
 - **Rigorous 2PL:** All locks (shared + exclusive) released after commit
 
 ### Timestamp-Based Ordering
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-handwritten.svg" alt="Handwritten: Timestamp-Based Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-diagram.svg" alt="Diagram: Timestamp-Based Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/timestamp-based-ordering-sticky.svg" alt="Sticky Note: Timestamp-Based Ordering" width="30%">
+</a>
+
 - Each transaction gets unique timestamp TS(T)
 - **Read_TS(X):** Latest read timestamp on X
 - **Write_TS(X):** Latest write timestamp on X
@@ -196,6 +394,17 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 | W_T(X) | TS(T) &lt; W_TS(X) | Ignore (Thomas rule) or abort |
 
 ### Deadlock in DB
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-handwritten.svg" alt="Handwritten: Deadlock in DB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-diagram.svg" alt="Diagram: Deadlock in DB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/deadlock-in-db-sticky.svg" alt="Sticky Note: Deadlock in DB" width="30%">
+</a>
+
 - **Cycle in wait-for graph** ⇒ deadlock
 - **Prevention:** Wait-die (older waits for younger) or Wound-wait (younger wounds older)
 - **Detection:** Periodic check for cycle in wait-for graph
@@ -219,18 +428,51 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 ## 8. Indexing
 
 ### B+ Tree Index
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-handwritten.svg" alt="Handwritten: B+ Tree Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-diagram.svg" alt="Diagram: B+ Tree Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-index-sticky.svg" alt="Sticky Note: B+ Tree Index" width="30%">
+</a>
+
 - **Multi-level index** — all keys in leaves; internal nodes act as routers
 - **Order p** of B+ tree: max number of pointers in a node
 - **Search cost:** O(log_p N) — typically 2–4 levels
 - Supports range queries efficiently (linked leaves)
 
 ### Hash Index
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-handwritten.svg" alt="Handwritten: Hash Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-diagram.svg" alt="Diagram: Hash Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/hash-index-sticky.svg" alt="Sticky Note: Hash Index" width="30%">
+</a>
+
 - Direct address computation via hash function
 - **O(1) for equality lookups** — but not for range queries
 - **Static hashing:** overflow chaining when bucket full
 - **Extendable hashing:** doubles directory size on overflow; gradual growth
 
 ### Clustered vs Non-clustered
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-handwritten.svg" alt="Handwritten: Clustered vs Non-clustered" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-diagram.svg" alt="Diagram: Clustered vs Non-clustered" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/clustered-vs-non-clustered-sticky.svg" alt="Sticky Note: Clustered vs Non-clustered" width="30%">
+</a>
+
 | Aspect | Clustered | Non-clustered |
 |--------|-----------|---------------|
 | Data order | Physical order same as index | Logical order different from physical |
@@ -268,6 +510,17 @@ FROM EMP A INNER JOIN EMP B ON A.mgr_id = B.emp_id;
 ## 9. Transaction States &amp; Log-Based Recovery
 
 ### Transaction States
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-handwritten.svg" alt="Handwritten: Transaction States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-diagram.svg" alt="Diagram: Transaction States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/transaction-states-sticky.svg" alt="Sticky Note: Transaction States" width="30%">
+</a>
+
 ```
 Active → Partially Committed → Committed
 Active → Failed → Aborted
@@ -280,6 +533,17 @@ Active → Failed → Aborted
 - **Committed:** All changes made permanent (durable)
 
 ### Log-Based Recovery
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-handwritten.svg" alt="Handwritten: Log-Based Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-diagram.svg" alt="Diagram: Log-Based Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/log-based-recovery-sticky.svg" alt="Sticky Note: Log-Based Recovery" width="30%">
+</a>
+
 | Log Entry Type | Format | Action |
 |---------------|--------|--------|
 | Start | `&lt;T1 start&gt;` | Transaction began |
@@ -297,6 +561,17 @@ Active → Failed → Aborted
 3. **Undo pass:** Roll back uncommitted transactions (LSN-based)
 
 ### Checkpoint
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-handwritten.svg" alt="Handwritten: Checkpoint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-diagram.svg" alt="Diagram: Checkpoint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/checkpoint-sticky.svg" alt="Sticky Note: Checkpoint" width="30%">
+</a>
+
 - Periodically write dirty page table + active transaction list to disk
 - Reduces recovery time — only need to scan log from last checkpoint
 
@@ -311,12 +586,34 @@ Active → Failed → Aborted
 | Shared+Intention Exclusive (SIX) | SIX | IS | S on this + IX on finer level |
 
 ### Lock Granularity Hierarchy
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-handwritten.svg" alt="Handwritten: Lock Granularity Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-diagram.svg" alt="Diagram: Lock Granularity Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-granularity-hierarchy-sticky.svg" alt="Sticky Note: Lock Granularity Hierarchy" width="30%">
+</a>
+
 ```
 Table → Page → Row → Attribute
 ```
 **Lock escalation:** Convert many fine locks to one coarse lock (reduces overhead)
 
 ### Two-Phase Locking (2PL) Subtypes
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-handwritten.svg" alt="Handwritten: Two-Phase Locking (2PL) Subtypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-diagram.svg" alt="Diagram: Two-Phase Locking (2PL) Subtypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/two-phase-locking-2pl-subtypes-sticky.svg" alt="Sticky Note: Two-Phase Locking (2PL) Subtypes" width="30%">
+</a>
+
 | Protocol | Growing | Shrinking | Cascading Aborts? |
 |----------|---------|-----------|-------------------|
 | Basic 2PL | Lock acquire | Lock release | ❌ Yes |
@@ -328,6 +625,17 @@ Table → Page → Row → Attribute
 ## 11. SQL Aggregates &amp; Group By — Extended Examples
 
 ### GROUP BY with HAVING
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-handwritten.svg" alt="Handwritten: GROUP BY with HAVING" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-diagram.svg" alt="Diagram: GROUP BY with HAVING" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/group-by-with-having-sticky.svg" alt="Sticky Note: GROUP BY with HAVING" width="30%">
+</a>
+
 ```sql
 -- Find departments with avg salary > 50000
 SELECT dept_name, AVG(salary) as avg_sal, COUNT(*) as emp_count
@@ -339,11 +647,33 @@ ORDER BY avg_sal DESC;
 ```
 
 ### Execution Order in SQL
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-handwritten.svg" alt="Handwritten: Execution Order in SQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-diagram.svg" alt="Diagram: Execution Order in SQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/execution-order-in-sql-sticky.svg" alt="Sticky Note: Execution Order in SQL" width="30%">
+</a>
+
 ```
 FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 ```
 
 ### Aggregate Functions with NULL Handling
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-handwritten.svg" alt="Handwritten: Aggregate Functions with NULL Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-diagram.svg" alt="Diagram: Aggregate Functions with NULL Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/aggregate-functions-with-null-handling-sticky.svg" alt="Sticky Note: Aggregate Functions with NULL Handling" width="30%">
+</a>
+
 - `COUNT(*)` — counts all rows including NULLs
 - `COUNT(column)` — counts non-NULL values only
 - `AVG`, `SUM`, `MIN`, `MAX` — ignore NULLs
@@ -352,6 +682,17 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 ## 12. Query Optimization Basics
 
 ### Heuristic Optimization Rules
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-handwritten.svg" alt="Handwritten: Heuristic Optimization Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-diagram.svg" alt="Diagram: Heuristic Optimization Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/heuristic-optimization-rules-sticky.svg" alt="Sticky Note: Heuristic Optimization Rules" width="30%">
+</a>
+
 1. **Project early** (reduce columns early)
 2. **Select early** (reduce rows early)
 3. **Perform joins before Cartesian products**
@@ -359,6 +700,17 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 5. **Pipeline operations** (avoid materializing intermediate results)
 
 ### Join Algorithms
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-handwritten.svg" alt="Handwritten: Join Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-diagram.svg" alt="Diagram: Join Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/join-algorithms-sticky.svg" alt="Sticky Note: Join Algorithms" width="30%">
+</a>
+
 | Algorithm | Conditions | Complexity | Use When |
 |-----------|-----------|------------|----------|
 | **Nested Loop** | Any join condition | O(n×m) | Small tables |
@@ -374,6 +726,17 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 ## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
 ### Relational Algebra — Advanced Query Representation
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-handwritten.svg" alt="Handwritten: Relational Algebra — Advanced Query Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-diagram.svg" alt="Diagram: Relational Algebra — Advanced Query Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/relational-algebra-advanced-query-representation-sticky.svg" alt="Sticky Note: Relational Algebra — Advanced Query Representation" width="30%">
+</a>
+
 
 **Division Operator Deep-Dive:**
 The division operator `R ÷ S` answers "find all X that are associated with every Y." This is frequently tested in IBPS SO Mains.
@@ -398,6 +761,17 @@ WHERE NOT EXISTS (
 
 ### Extended SQL Joins — Master Class with Set Semantics
 
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-handwritten.svg" alt="Handwritten: Extended SQL Joins — Master Class with Set Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-diagram.svg" alt="Diagram: Extended SQL Joins — Master Class with Set Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/extended-sql-joins-master-class-with-set-semantics-sticky.svg" alt="Sticky Note: Extended SQL Joins — Master Class with Set Semantics" width="30%">
+</a>
+
+
 ```mermaid
 graph LR
     subgraph "R (Left)"
@@ -412,6 +786,17 @@ graph LR
 ```
 
 ### ACID Properties — Real-World Scenarios
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-handwritten.svg" alt="Handwritten: ACID Properties — Real-World Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-diagram.svg" alt="Diagram: ACID Properties — Real-World Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/acid-properties-real-world-scenarios-sticky.svg" alt="Sticky Note: ACID Properties — Real-World Scenarios" width="30%">
+</a>
+
 
 > **PYQ 2024:** A banking transaction transfers ₹500 from A to B. After `UPDATE A SET balance = balance - 500` executes, the system crashes. Which ACID property is violated?
 
@@ -433,6 +818,17 @@ T2: Read A=100 → A = 100 + 30 = 130  ← overwrites T1's update!
 **Solution:** Exclusive locks or SERIALIZABLE isolation.
 
 ### Lock-Based Concurrency Control — TypeScript Implementation
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-handwritten.svg" alt="Handwritten: Lock-Based Concurrency Control — TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-diagram.svg" alt="Diagram: Lock-Based Concurrency Control — TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/lock-based-concurrency-control-typescript-implementation-sticky.svg" alt="Sticky Note: Lock-Based Concurrency Control — TypeScript Implementation" width="30%">
+</a>
+
 
 ```typescript
 type LockType = 'S' | 'X' | 'IS' | 'IX' | 'SIX';
@@ -470,6 +866,17 @@ class LockManager {
 
 ### B+ Tree Visualization — Order and Structure
 
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-handwritten.svg" alt="Handwritten: B+ Tree Visualization — Order and Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-diagram.svg" alt="Diagram: B+ Tree Visualization — Order and Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/b-tree-visualization-order-and-structure-sticky.svg" alt="Sticky Note: B+ Tree Visualization — Order and Structure" width="30%">
+</a>
+
+
 ```mermaid
 graph TD
     subgraph "Internal Node"
@@ -486,6 +893,17 @@ graph TD
 
 ### Normalization Numericals — Step-by-Step
 
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-handwritten.svg" alt="Handwritten: Normalization Numericals — Step-by-Step" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-diagram.svg" alt="Diagram: Normalization Numericals — Step-by-Step" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/normalization-numericals-step-by-step-sticky.svg" alt="Sticky Note: Normalization Numericals — Step-by-Step" width="30%">
+</a>
+
+
 > **PYQ 2025:** Relation R(A, B, C, D, E, F) with FDs: AB → C, C → D, D → E, E → F, F → A. Find candidate keys and check if R is in 3NF/BCNF.
 
 **Solution:**
@@ -499,6 +917,17 @@ graph TD
 **BCNF Check:** FD `C → D`: C is NOT a superkey → violates BCNF. So R is NOT in BCNF.
 
 ### Query Optimization — Join Order Selection
+
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-handwritten.svg" alt="Handwritten: Query Optimization — Join Order Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-diagram.svg" alt="Diagram: Query Optimization — Join Order Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/01-dbms/query-optimization-join-order-selection-sticky.svg" alt="Sticky Note: Query Optimization — Join Order Selection" width="30%">
+</a>
+
 
 ```typescript
 interface RelationStats {

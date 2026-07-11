@@ -48,6 +48,17 @@ flowchart TD
 
 ### Q1: Two Sum
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" alt="Handwritten: Two Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" alt="Diagram: Two Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" alt="Sticky Note: Two Sum" width="30%">
+</a>
+
+
 **Problem:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers that add up to `target`. You may assume exactly one solution, and you may not use the same element twice.
 
 **Difficulty:** Easy
@@ -90,6 +101,17 @@ public class TwoSum {
 
 ### Q2: Best Time to Buy and Sell Stock
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Best Time to Buy and Sell Stock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Best Time to Buy and Sell Stock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Best Time to Buy and Sell Stock" width="30%">
+</a>
+
+
 **Problem:** You are given an array `prices` where `prices[i]` is the price of a given stock on day `i`. You want to maximize profit by choosing a single day to buy and a different day in the future to sell. Return the maximum profit. If no profit possible, return 0.
 
 **Difficulty:** Easy
@@ -125,6 +147,17 @@ public class BestTimeToBuyAndSellStock {
 ---
 
 ### Q3: Product of Array Except Self
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" alt="Handwritten: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" alt="Diagram: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" alt="Sticky Note: Product of Array Except Self" width="30%">
+</a>
+
 
 **Problem:** Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all elements of `nums` except `nums[i]`. You must solve it **without division** in O(n) time.
 
@@ -167,6 +200,17 @@ public class ProductOfArrayExceptSelf {
 
 ### Q4: Maximum Subarray (Kadane's Algorithm)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums`, find the contiguous subarray (containing at least one number) with the largest sum and return its sum.
 
 **Difficulty:** Medium
@@ -199,6 +243,17 @@ public class MaximumSubarray {
 ---
 
 ### Q5: Find Minimum in Rotated Sorted Array
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+
 
 **Problem:** Suppose an array of length `n` sorted in ascending order is rotated between 1 and `n` times. Find the minimum element in O(log n) time.
 
@@ -235,6 +290,17 @@ public class FindMinimumInRotatedSortedArray {
 ---
 
 ### Q6: Container With Most Water
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" alt="Handwritten: Container With Most Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" alt="Diagram: Container With Most Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" alt="Sticky Note: Container With Most Water" width="30%">
+</a>
+
 
 **Problem:** Given an integer array `height` of length `n`, find two lines that together with the x-axis form a container that holds the most water. Return the maximum amount of water.
 
@@ -273,6 +339,17 @@ public class ContainerWithMostWater {
 ---
 
 ### Q7: 3Sum
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" alt="Handwritten: 3Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" alt="Diagram: 3Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" alt="Sticky Note: 3Sum" width="30%">
+</a>
+
 
 **Problem:** Given an integer array `nums`, return all triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, `j != k`, and `nums[i] + nums[j] + nums[k] == 0`. No duplicate triplets.
 
@@ -323,6 +400,17 @@ public class ThreeSum {
 
 ### Q8: Merge Intervals
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" alt="Handwritten: Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" alt="Diagram: Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" alt="Sticky Note: Merge Intervals" width="30%">
+</a>
+
+
 **Problem:** Given an array of intervals where `intervals[i] = [startáµ¢, endáµ¢]`, merge all overlapping intervals and return an array of non-overlapping intervals covering all input intervals.
 
 **Difficulty:** Medium
@@ -365,6 +453,17 @@ public class MergeIntervals {
 ---
 
 ### Q9: Next Permutation
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" alt="Handwritten: Next Permutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" alt="Diagram: Next Permutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" alt="Sticky Note: Next Permutation" width="30%">
+</a>
+
 
 **Problem:** Implement next permutation, which rearranges numbers into the lexicographically next greater permutation. If no such arrangement exists, rearrange into the lowest possible order (sorted ascending).
 
@@ -415,6 +514,17 @@ public class NextPermutation {
 
 ### Q10: Sort Colors (Dutch National Flag)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" alt="Handwritten: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" alt="Diagram: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" alt="Sticky Note: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+
+
 **Problem:** Given an array `nums` with `n` objects colored red (0), white (1), or blue (2), sort them **in-place** so that same colors are adjacent. Do it in one pass with constant space.
 
 **Difficulty:** Medium
@@ -460,6 +570,17 @@ public class SortColors {
 
 ### Q11: Subarray Sum Equals K
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" alt="Handwritten: Subarray Sum Equals K" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" alt="Diagram: Subarray Sum Equals K" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" alt="Sticky Note: Subarray Sum Equals K" width="30%">
+</a>
+
+
 **Problem:** Given an array of integers `nums` and an integer `k`, return the total number of contiguous subarrays whose sum equals `k`.
 
 **Difficulty:** Medium
@@ -501,6 +622,17 @@ public class SubarraySumEqualsK {
 
 ### Q12: First Missing Positive
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" alt="Handwritten: First Missing Positive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" alt="Diagram: First Missing Positive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" alt="Sticky Note: First Missing Positive" width="30%">
+</a>
+
+
 **Problem:** Given an unsorted integer array `nums`, return the smallest positive integer that does not appear in it. Must run in O(n) time and O(1) space.
 
 **Difficulty:** Hard
@@ -540,6 +672,17 @@ public class FirstMissingPositive {
 ## Strings
 
 ### Q13: Longest Substring Without Repeating Characters
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Longest Substring Without Repeating Characters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Longest Substring Without Repeating Characters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Longest Substring Without Repeating Characters" width="30%">
+</a>
+
 
 **Problem:** Given a string `s`, find the length of the longest substring without repeating characters.
 
@@ -581,6 +724,17 @@ public class LongestSubstringWithoutRepeating {
 
 ### Q14: Valid Anagram
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" alt="Handwritten: Valid Anagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" alt="Diagram: Valid Anagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" alt="Sticky Note: Valid Anagram" width="30%">
+</a>
+
+
 **Problem:** Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
 **Difficulty:** Easy
@@ -618,6 +772,17 @@ public class ValidAnagram {
 ---
 
 ### Q15: Longest Palindromic Substring
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" alt="Handwritten: Longest Palindromic Substring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" alt="Diagram: Longest Palindromic Substring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" alt="Sticky Note: Longest Palindromic Substring" width="30%">
+</a>
+
 
 **Problem:** Given a string `s`, return the longest palindromic substring in `s`.
 
@@ -665,6 +830,17 @@ public class LongestPalindromicSubstring {
 
 ### Q16: Group Anagrams
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" alt="Handwritten: Group Anagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" alt="Diagram: Group Anagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" alt="Sticky Note: Group Anagrams" width="30%">
+</a>
+
+
 **Problem:** Given an array of strings `strs`, group the anagrams together. You can return the answer in any order.
 
 **Difficulty:** Medium
@@ -701,6 +877,17 @@ public class GroupAnagrams {
 ---
 
 ### Q17: Valid Parentheses
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" alt="Handwritten: Valid Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" alt="Diagram: Valid Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" alt="Sticky Note: Valid Parentheses" width="30%">
+</a>
+
 
 **Problem:** Given a string `s` containing just the characters `(`, `)`, `{`, `}`, `[`, `]`, determine if the input string is valid. Open brackets must be closed by the same type in the correct order.
 
@@ -741,6 +928,17 @@ public class ValidParentheses {
 ---
 
 ### Q18: Count and Say
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" alt="Handwritten: Count and Say" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" alt="Diagram: Count and Say" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" alt="Sticky Note: Count and Say" width="30%">
+</a>
+
 
 **Problem:** The count-and-say sequence is a sequence of digit strings defined by: `countAndSay(1) = "1"`. For n > 1, `countAndSay(n)` is the run-length encoding of `countAndSay(n-1)`. Return the nth term.
 
@@ -785,6 +983,17 @@ public class CountAndSay {
 
 ### Q19: Implement strStr() / IndexOf
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" alt="Handwritten: Implement strStr() / IndexOf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" alt="Diagram: Implement strStr() / IndexOf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" alt="Sticky Note: Implement strStr() / IndexOf" width="30%">
+</a>
+
+
 **Problem:** Given two strings `haystack` and `needle`, return the index of the first occurrence of `needle` in `haystack`, or -1 if not found.
 
 **Difficulty:** Easy
@@ -820,6 +1029,17 @@ public class ImplementStrStr {
 ---
 
 ### Q20: String to Integer (atoi)
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" alt="Handwritten: String to Integer (atoi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" alt="Diagram: String to Integer (atoi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" alt="Sticky Note: String to Integer (atoi)" width="30%">
+</a>
+
 
 **Problem:** Implement `myAtoi(string s)` which converts a string to a 32-bit signed integer. Skip leading whitespace, handle +/- sign, read digits, clamp to [âˆ’2Â³Â¹, 2Â³Â¹âˆ’1].
 
@@ -865,6 +1085,17 @@ public class StringToInteger {
 ## Linked Lists
 
 ### Q21: Reverse a Linked List
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" alt="Handwritten: Reverse a Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" alt="Diagram: Reverse a Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" alt="Sticky Note: Reverse a Linked List" width="30%">
+</a>
+
 
 **Problem:** Given the head of a singly linked list, reverse the list and return the new head.
 
@@ -916,6 +1147,17 @@ public class ReverseLinkedList {
 
 ### Q22: Detect Cycle in Linked List
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" alt="Handwritten: Detect Cycle in Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" alt="Diagram: Detect Cycle in Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" alt="Sticky Note: Detect Cycle in Linked List" width="30%">
+</a>
+
+
 **Problem:** Given `head` of a linked list, determine if it has a cycle. A cycle occurs when a node's `next` pointer connects back to an earlier node.
 
 **Difficulty:** Easy
@@ -958,6 +1200,17 @@ public class LinkedListCycle {
 ---
 
 ### Q23: Merge Two Sorted Lists
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Merge Two Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" alt="Diagram: Merge Two Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Merge Two Sorted Lists" width="30%">
+</a>
+
 
 **Problem:** Merge two sorted linked lists into one sorted list. The new list should be made by splicing together the nodes of the first two lists.
 
@@ -1014,6 +1267,17 @@ public class MergeTwoSortedLists {
 
 ### Q24: Remove Nth Node From End
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" alt="Handwritten: Remove Nth Node From End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" alt="Diagram: Remove Nth Node From End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" alt="Sticky Note: Remove Nth Node From End" width="30%">
+</a>
+
+
 **Problem:** Given the head of a linked list, remove the nth node from the end and return the head.
 
 **Difficulty:** Medium
@@ -1066,6 +1330,17 @@ public class RemoveNthFromEnd {
 
 ### Q25: Find Middle of Linked List
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" alt="Handwritten: Find Middle of Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" alt="Diagram: Find Middle of Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" alt="Sticky Note: Find Middle of Linked List" width="30%">
+</a>
+
+
 **Problem:** Given the head of a singly linked list, return the middle node. If there are two middle nodes, return the second one.
 
 **Difficulty:** Easy
@@ -1108,6 +1383,17 @@ public class MiddleOfLinkedList {
 ---
 
 ### Q26: Add Two Numbers
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" alt="Handwritten: Add Two Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" alt="Diagram: Add Two Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" alt="Sticky Note: Add Two Numbers" width="30%">
+</a>
+
 
 **Problem:** You are given two non-empty linked lists representing two non-negative integers. The digits are stored in **reverse order**. Add the two numbers and return the sum as a linked list.
 
@@ -1162,6 +1448,17 @@ public class AddTwoNumbers {
 
 ### Q27: Intersection of Two Linked Lists
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" alt="Handwritten: Intersection of Two Linked Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" alt="Diagram: Intersection of Two Linked Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" alt="Sticky Note: Intersection of Two Linked Lists" width="30%">
+</a>
+
+
 **Problem:** Given the heads of two singly linked lists, return the node at which they intersect. If no intersection, return null.
 
 **Difficulty:** Easy
@@ -1206,6 +1503,17 @@ public class IntersectionOfTwoLinkedLists {
 ---
 
 ### Q28: LRU Cache
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" alt="Handwritten: LRU Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" alt="Diagram: LRU Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" alt="Sticky Note: LRU Cache" width="30%">
+</a>
+
 
 **Problem:** Design a data structure that follows the Least Recently Used (LRU) cache constraints. Implement `LRUCache` with O(1) `get` and `put`.
 
@@ -1300,6 +1608,17 @@ public class LRUCache {
 
 ### Q29: Maximum Depth of Binary Tree
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Maximum Depth of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Maximum Depth of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Maximum Depth of Binary Tree" width="30%">
+</a>
+
+
 **Problem:** Given the `root` of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest root-to-leaf path.
 
 **Difficulty:** Easy
@@ -1337,6 +1656,17 @@ public class MaximumDepthOfBinaryTree {
 ---
 
 ### Q30: Invert Binary Tree
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" alt="Handwritten: Invert Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" alt="Diagram: Invert Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" alt="Sticky Note: Invert Binary Tree" width="30%">
+</a>
+
 
 **Problem:** Given the `root` of a binary tree, invert the tree and return its root.
 
@@ -1379,6 +1709,17 @@ public class InvertBinaryTree {
 
 ### Q31: Validate Binary Search Tree
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" alt="Handwritten: Validate Binary Search Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" alt="Diagram: Validate Binary Search Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" alt="Sticky Note: Validate Binary Search Tree" width="30%">
+</a>
+
+
 **Problem:** Given the `root` of a binary tree, determine if it is a valid BST. A valid BST has: left subtree values &lt; node value, right subtree values &gt; node value, and both subtrees recursively valid.
 
 **Difficulty:** Medium
@@ -1419,6 +1760,17 @@ public class ValidateBST {
 ---
 
 ### Q32: Binary Tree Level Order Traversal
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Level Order Traversal" width="30%">
+</a>
+
 
 **Problem:** Given the `root` of a binary tree, return the level order traversal of its nodes' values (left to right, level by level).
 
@@ -1473,6 +1825,17 @@ public class LevelOrderTraversal {
 ---
 
 ### Q33: Serialize and Deserialize Binary Tree
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Serialize and Deserialize Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Serialize and Deserialize Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Serialize and Deserialize Binary Tree" width="30%">
+</a>
+
 
 **Problem:** Design an algorithm to serialize a binary tree into a string and deserialize the string back into the tree.
 
@@ -1542,6 +1905,17 @@ public class SerializeDeserializeBT {
 
 ### Q34: Lowest Common Ancestor of BST
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" alt="Handwritten: Lowest Common Ancestor of BST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" alt="Diagram: Lowest Common Ancestor of BST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" alt="Sticky Note: Lowest Common Ancestor of BST" width="30%">
+</a>
+
+
 **Problem:** Given a BST, find the lowest common ancestor (LCA) of two given nodes. The LCA is the lowest node that has both p and q as descendants.
 
 **Difficulty:** Medium
@@ -1588,6 +1962,17 @@ public class LowestCommonAncestorBST {
 ---
 
 ### Q35: Diameter of Binary Tree
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" alt="Handwritten: Diameter of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" alt="Diagram: Diameter of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" alt="Sticky Note: Diameter of Binary Tree" width="30%">
+</a>
+
 
 **Problem:** Given the `root` of a binary tree, return the length of the diameter. The diameter is the longest path between any two nodes, measured by the number of edges.
 
@@ -1637,6 +2022,17 @@ public class DiameterOfBinaryTree {
 
 ### Q36: Balanced Binary Tree
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" alt="Handwritten: Balanced Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" alt="Diagram: Balanced Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" alt="Sticky Note: Balanced Binary Tree" width="30%">
+</a>
+
+
 **Problem:** Given a binary tree, determine if it is height-balanced. A height-balanced tree is one where the depth difference between left and right subtrees is at most 1 for every node.
 
 **Difficulty:** Easy
@@ -1684,6 +2080,17 @@ public class BalancedBinaryTree {
 
 ### Q37: Symmetric Tree
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" alt="Handwritten: Symmetric Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" alt="Diagram: Symmetric Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" alt="Sticky Note: Symmetric Tree" width="30%">
+</a>
+
+
 **Problem:** Given the `root` of a binary tree, check whether it is symmetric (mirror of itself about its center).
 
 **Difficulty:** Easy
@@ -1727,6 +2134,17 @@ public class SymmetricTree {
 ---
 
 ### Q38: Binary Tree Right Side View
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" alt="Handwritten: Binary Tree Right Side View" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" alt="Diagram: Binary Tree Right Side View" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" alt="Sticky Note: Binary Tree Right Side View" width="30%">
+</a>
+
 
 **Problem:** Given the `root` of a binary tree, imagine yourself standing on the **right side** of it. Return the values of the nodes you can see ordered from top to bottom.
 
@@ -1782,6 +2200,17 @@ public class BinaryTreeRightSideView {
 
 ### Q39: Climbing Stairs
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" alt="Handwritten: Climbing Stairs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" alt="Diagram: Climbing Stairs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" alt="Sticky Note: Climbing Stairs" width="30%">
+</a>
+
+
 **Problem:** You are climbing a staircase with `n` steps. Each time you can climb 1 or 2 steps. Return the number of distinct ways to reach the top.
 
 **Difficulty:** Easy
@@ -1814,6 +2243,17 @@ public class ClimbingStairs {
 ---
 
 ### Q40: Coin Change
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" alt="Handwritten: Coin Change" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" alt="Diagram: Coin Change" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" alt="Sticky Note: Coin Change" width="30%">
+</a>
+
 
 **Problem:** You are given an integer array `coins` representing different denominations and an integer `amount`. Return the fewest number of coins needed to make up that amount. If impossible, return -1.
 
@@ -1854,6 +2294,17 @@ public class CoinChange {
 
 ### Q41: Longest Increasing Subsequence
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" alt="Handwritten: Longest Increasing Subsequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" alt="Diagram: Longest Increasing Subsequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" alt="Sticky Note: Longest Increasing Subsequence" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums`, return the length of the longest strictly increasing subsequence.
 
 **Difficulty:** Medium
@@ -1891,6 +2342,17 @@ public class LongestIncreasingSubsequence {
 
 ### Q42: Longest Common Subsequence
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" alt="Handwritten: Longest Common Subsequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" alt="Diagram: Longest Common Subsequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" alt="Sticky Note: Longest Common Subsequence" width="30%">
+</a>
+
+
 **Problem:** Given two strings `text1` and `text2`, return the length of their longest common subsequence.
 
 **Difficulty:** Medium
@@ -1927,6 +2389,17 @@ public class LongestCommonSubsequence {
 ---
 
 ### Q43: 0/1 Knapsack
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" alt="Handwritten: 0/1 Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" alt="Diagram: 0/1 Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" alt="Sticky Note: 0/1 Knapsack" width="30%">
+</a>
+
 
 **Problem:** Given `n` items each with a weight `w[i]` and value `v[i]`, and a knapsack capacity `W`, find the maximum value you can achieve by selecting items (each item at most once).
 
@@ -1968,6 +2441,17 @@ public class Knapsack01 {
 
 ### Q44: Edit Distance
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" alt="Handwritten: Edit Distance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" alt="Diagram: Edit Distance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" alt="Sticky Note: Edit Distance" width="30%">
+</a>
+
+
 **Problem:** Given two strings `word1` and `word2`, return the minimum number of operations (insert, delete, replace) required to convert `word1` to `word2`.
 
 **Difficulty:** Medium
@@ -2008,6 +2492,17 @@ public class EditDistance {
 
 ### Q45: House Robber
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" alt="Handwritten: House Robber" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" alt="Diagram: House Robber" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" alt="Sticky Note: House Robber" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums` representing the amount of money of each house, determine the max amount you can rob without robbing adjacent houses.
 
 **Difficulty:** Medium
@@ -2043,6 +2538,17 @@ public class HouseRobber {
 ---
 
 ### Q46: Maximum Product Subarray
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" alt="Handwritten: Maximum Product Subarray" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" alt="Diagram: Maximum Product Subarray" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" alt="Sticky Note: Maximum Product Subarray" width="30%">
+</a>
+
 
 **Problem:** Given an integer array `nums`, find a contiguous non-empty subarray with the largest product, and return the product.
 
@@ -2081,6 +2587,17 @@ public class MaximumProductSubarray {
 ---
 
 ### Q47: Word Break
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" alt="Handwritten: Word Break" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" alt="Diagram: Word Break" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" alt="Sticky Note: Word Break" width="30%">
+</a>
+
 
 **Problem:** Given a string `s` and a dictionary `wordDict`, return `true` if `s` can be segmented into space-separated sequences of dictionary words.
 
@@ -2121,6 +2638,17 @@ public class WordBreak {
 ---
 
 ### Q48: Palindromic Substrings
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" alt="Handwritten: Palindromic Substrings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" alt="Diagram: Palindromic Substrings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" alt="Sticky Note: Palindromic Substrings" width="30%">
+</a>
+
 
 **Problem:** Given a string `s`, return the number of palindromic substrings in it. A substring is a contiguous sequence of characters.
 
@@ -2163,6 +2691,17 @@ public class PalindromicSubstrings {
 
 ### Q49: Unique Paths
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" alt="Handwritten: Unique Paths" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" alt="Diagram: Unique Paths" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" alt="Sticky Note: Unique Paths" width="30%">
+</a>
+
+
 **Problem:** A robot is at top-left corner of an `m Ã— n` grid. It can only move down or right. How many unique paths to bottom-right corner?
 
 **Difficulty:** Medium
@@ -2196,6 +2735,17 @@ public class UniquePaths {
 ---
 
 ### Q50: Partition Equal Subset Sum
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" alt="Handwritten: Partition Equal Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" alt="Diagram: Partition Equal Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" alt="Sticky Note: Partition Equal Subset Sum" width="30%">
+</a>
+
 
 **Problem:** Given a non-empty array `nums` containing only positive integers, check if it can be partitioned into two subsets with equal sum.
 
@@ -2236,6 +2786,17 @@ public class PartitionEqualSubsetSum {
 ## Graphs
 
 ### Q51: Clone Graph
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" alt="Handwritten: Clone Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" alt="Diagram: Clone Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" alt="Sticky Note: Clone Graph" width="30%">
+</a>
+
 
 **Problem:** Given a reference of a node in a connected undirected graph, return a deep copy of the graph.
 
@@ -2293,6 +2854,17 @@ public class CloneGraph {
 
 ### Q52: Number of Islands
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" alt="Handwritten: Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" alt="Diagram: Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" alt="Sticky Note: Number of Islands" width="30%">
+</a>
+
+
 **Problem:** Given an `m Ã— n` 2D grid of `'1'` (land) and `'0'` (water), return the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.
 
 **Difficulty:** Medium
@@ -2344,6 +2916,17 @@ public class NumberOfIslands {
 
 ### Q53: Course Schedule (Topological Sort)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" alt="Handwritten: Course Schedule (Topological Sort)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" alt="Diagram: Course Schedule (Topological Sort)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" alt="Sticky Note: Course Schedule (Topological Sort)" width="30%">
+</a>
+
+
 **Problem:** There are `numCourses` courses labeled from 0 to numCourses-1. Given prerequisites `[a, b]` meaning to take `a` you must first take `b`, determine if it's possible to finish all courses.
 
 **Difficulty:** Medium
@@ -2391,6 +2974,17 @@ public class CourseSchedule {
 ---
 
 ### Q54: Graph Valid Tree
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" alt="Handwritten: Graph Valid Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" alt="Diagram: Graph Valid Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" alt="Sticky Note: Graph Valid Tree" width="30%">
+</a>
+
 
 **Problem:** Given `n` nodes labeled from 0 to n-1 and a list of undirected edges, determine if these edges form a valid tree (connected and acyclic).
 
@@ -2442,6 +3036,17 @@ public class GraphValidTree {
 ---
 
 ### Q55: Word Ladder
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" alt="Handwritten: Word Ladder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" alt="Diagram: Word Ladder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" alt="Sticky Note: Word Ladder" width="30%">
+</a>
+
 
 **Problem:** Given `beginWord`, `endWord`, and a `wordList`, return the length of the shortest transformation sequence from `beginWord` to `endWord` where each step changes exactly one letter and each intermediate word exists in `wordList`.
 
@@ -2496,6 +3101,17 @@ public class WordLadder {
 ---
 
 ### Q56: Pacific Atlantic Water Flow
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" alt="Handwritten: Pacific Atlantic Water Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" alt="Diagram: Pacific Atlantic Water Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" alt="Sticky Note: Pacific Atlantic Water Flow" width="30%">
+</a>
+
 
 **Problem:** Given an `m Ã— n` matrix of heights, water flows from a cell to neighbors with equal or lower height. Return all cells where water can flow to both the Pacific (top/left edges) and Atlantic (bottom/right edges) oceans.
 
@@ -2562,6 +3178,17 @@ public class PacificAtlanticWaterFlow {
 
 ### Q57: Alien Dictionary
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
+</a>
+
+
 **Problem:** Given a sorted dictionary of an alien language (array of words), find the order of letters in the alien language.
 
 **Difficulty:** Hard
@@ -2627,6 +3254,17 @@ public class AlienDictionary {
 
 ### Q58: Cheapest Flights Within K Stops
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" alt="Handwritten: Cheapest Flights Within K Stops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" alt="Diagram: Cheapest Flights Within K Stops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" alt="Sticky Note: Cheapest Flights Within K Stops" width="30%">
+</a>
+
+
 **Problem:** Find the cheapest price from `src` to `dst` with at most `k` stops. Given `n` cities and flights `[from, to, price]`.
 
 **Difficulty:** Medium
@@ -2680,6 +3318,17 @@ public class CheapestFlightsWithinKStops {
 ## Stack / Queue / Heap
 
 ### Q59: Min Stack
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" alt="Handwritten: Min Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" alt="Diagram: Min Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" alt="Sticky Note: Min Stack" width="30%">
+</a>
+
 
 **Problem:** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
@@ -2736,6 +3385,17 @@ public class MinStack {
 
 ### Q60: Daily Temperatures
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" alt="Handwritten: Daily Temperatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" alt="Diagram: Daily Temperatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" alt="Sticky Note: Daily Temperatures" width="30%">
+</a>
+
+
 **Problem:** Given an array of integers `temperatures`, return an array `answer` such that `answer[i]` is the number of days you have to wait after the ith day to get a warmer temperature.
 
 **Difficulty:** Medium
@@ -2778,6 +3438,17 @@ public class DailyTemperatures {
 
 ### Q61: Kth Largest Element in an Array
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" alt="Handwritten: Kth Largest Element in an Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" alt="Diagram: Kth Largest Element in an Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" alt="Sticky Note: Kth Largest Element in an Array" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums` and an integer `k`, return the káµ—Ê° largest element in the array (not k distinct elements, just the káµ—Ê° largest by value).
 
 **Difficulty:** Medium
@@ -2811,6 +3482,17 @@ public class KthLargestElement {
 ---
 
 ### Q62: Find Median from Data Stream
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" alt="Handwritten: Find Median from Data Stream" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" alt="Diagram: Find Median from Data Stream" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" alt="Sticky Note: Find Median from Data Stream" width="30%">
+</a>
+
 
 **Problem:** Implement a data structure supporting `addNum(int num)` and `findMedian()` returning the median of all added elements.
 
@@ -2856,6 +3538,17 @@ public class MedianFinder {
 
 ### Q63: Top K Frequent Elements
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" alt="Handwritten: Top K Frequent Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" alt="Diagram: Top K Frequent Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" alt="Sticky Note: Top K Frequent Elements" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums` and an integer `k`, return the k most frequent elements.
 
 **Difficulty:** Medium
@@ -2895,6 +3588,17 @@ public class TopKFrequentElements {
 ---
 
 ### Q64: Largest Rectangle in Histogram
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" alt="Handwritten: Largest Rectangle in Histogram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" alt="Diagram: Largest Rectangle in Histogram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" alt="Sticky Note: Largest Rectangle in Histogram" width="30%">
+</a>
+
 
 **Problem:** Given an array `heights` representing bar heights in a histogram (each bar width=1), return the area of the largest rectangle in the histogram.
 
@@ -2937,6 +3641,17 @@ public class LargestRectangleInHistogram {
 
 ### Q65: Sliding Window Maximum
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" alt="Handwritten: Sliding Window Maximum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" alt="Diagram: Sliding Window Maximum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" alt="Sticky Note: Sliding Window Maximum" width="30%">
+</a>
+
+
 **Problem:** Given an array `nums` and a sliding window of size `k`, find the maximum element in each window.
 
 **Difficulty:** Hard
@@ -2977,6 +3692,17 @@ public class SlidingWindowMaximum {
 ## Searching & Sorting
 
 ### Q66: Binary Search (First and Last Position)
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" alt="Handwritten: Binary Search (First and Last Position)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" alt="Diagram: Binary Search (First and Last Position)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" alt="Sticky Note: Binary Search (First and Last Position)" width="30%">
+</a>
+
 
 **Problem:** Given a sorted array of integers `nums` and a target, find the starting and ending position of the target. Return `[-1, -1]` if not found.
 
@@ -3026,6 +3752,17 @@ public class BinarySearchFirstLast {
 
 ### Q67: Search in Rotated Sorted Array
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Search in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" alt="Diagram: Search in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Search in Rotated Sorted Array" width="30%">
+</a>
+
+
 **Problem:** There is an integer array `nums` sorted in ascending order (with distinct values), possibly rotated at an unknown pivot. Search for a target, return index or -1. Must run in O(log n).
 
 **Difficulty:** Medium
@@ -3071,6 +3808,17 @@ public class SearchInRotatedSortedArray {
 
 ### Q68: Kth Smallest Element in a Sorted Matrix
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" alt="Handwritten: Kth Smallest Element in a Sorted Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" alt="Diagram: Kth Smallest Element in a Sorted Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" alt="Sticky Note: Kth Smallest Element in a Sorted Matrix" width="30%">
+</a>
+
+
 **Problem:** Given an `n Ã— n` matrix where each row and column is sorted, find the káµ—Ê° smallest element.
 
 **Difficulty:** Medium
@@ -3112,6 +3860,17 @@ public class KthSmallestInSortedMatrix {
 
 ### Q69: Find Peak Element
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" alt="Handwritten: Find Peak Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" alt="Diagram: Find Peak Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" alt="Sticky Note: Find Peak Element" width="30%">
+</a>
+
+
 **Problem:** A peak element is an element strictly greater than its neighbors. Given an integer array `nums`, find a peak element and return its index. The array may contain multiple peaks; return any. Must be O(log n).
 
 **Difficulty:** Medium
@@ -3147,6 +3906,17 @@ public class FindPeakElement {
 ---
 
 ### Q70: Merge Sorted Array
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" alt="Handwritten: Merge Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" alt="Diagram: Merge Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" alt="Sticky Note: Merge Sorted Array" width="30%">
+</a>
+
 
 **Problem:** You are given two integer arrays `nums1` (size m + n) and `nums2` (size n), sorted in ascending order. Merge `nums2` into `nums1` in-place (use the extra space at the end of `nums1`).
 
@@ -3187,6 +3957,17 @@ public class MergeSortedArray {
 ## Miscellaneous
 
 ### Q71: Roman to Integer
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" alt="Handwritten: Roman to Integer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" alt="Diagram: Roman to Integer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" alt="Sticky Note: Roman to Integer" width="30%">
+</a>
+
 
 **Problem:** Given a valid Roman numeral string, convert it to an integer. Roman numerals use I=1, V=5, X=10, L=50, C=100, D=500, M=1000, with subtractive notation (IV=4, IX=9, XL=40, etc.).
 
@@ -3231,6 +4012,17 @@ public class RomanToInteger {
 
 ### Q72: Excel Sheet Column Number
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" alt="Handwritten: Excel Sheet Column Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" alt="Diagram: Excel Sheet Column Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" alt="Sticky Note: Excel Sheet Column Number" width="30%">
+</a>
+
+
 **Problem:** Given a string `columnTitle` (like "A", "AB", "ZY"), return its corresponding column number. A → 1, B → 2, ..., Z → 26, AA → 27, AB → 28.
 
 **Difficulty:** Easy
@@ -3262,6 +4054,17 @@ public class ExcelSheetColumnNumber {
 ---
 
 ### Q73: Happy Number
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" alt="Handwritten: Happy Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" alt="Diagram: Happy Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" alt="Sticky Note: Happy Number" width="30%">
+</a>
+
 
 **Problem:** A happy number is defined by the following process: Starting with any positive integer, replace it by the sum of squares of its digits, and repeat until it equals 1 (it is happy) or loops endlessly in a cycle that does not include 1. Return true if n is a happy number.
 
@@ -3303,6 +4106,17 @@ public class HappyNumber {
 
 ### Q74: Power of Three (Without Loop/Recursion)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" alt="Handwritten: Power of Three (Without Loop/Recursion)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" alt="Diagram: Power of Three (Without Loop/Recursion)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" alt="Sticky Note: Power of Three (Without Loop/Recursion)" width="30%">
+</a>
+
+
 **Problem:** Given an integer `n`, return `true` if it is a power of three. Solve without loops or recursion.
 
 **Difficulty:** Easy
@@ -3332,6 +4146,17 @@ public class PowerOfThree {
 ---
 
 ### Q75: Fizz Buzz
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" alt="Handwritten: Fizz Buzz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" alt="Diagram: Fizz Buzz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" alt="Sticky Note: Fizz Buzz" width="30%">
+</a>
+
 
 **Problem:** Given an integer `n`, return a string array answer (1-indexed) where:
 - `answer[i] = "FizzBuzz"` if i is divisible by 3 and 5
@@ -3407,6 +4232,17 @@ public class FizzBuzz {
 
 ### Q76: Find All Duplicates in Array
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" alt="Handwritten: Find All Duplicates in Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" alt="Diagram: Find All Duplicates in Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" alt="Sticky Note: Find All Duplicates in Array" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums` of length `n` where all integers are in the range `[1, n]` and each appears once or twice, return an array of all integers that appear twice. You must achieve O(n) time and O(1) extra space without modifying the input (marking is acceptable).
 
 **Difficulty:** Medium
@@ -3444,6 +4280,17 @@ public class FindAllDuplicates {
 ---
 
 ### Q77: Longest Consecutive Sequence
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" alt="Handwritten: Longest Consecutive Sequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" alt="Diagram: Longest Consecutive Sequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" alt="Sticky Note: Longest Consecutive Sequence" width="30%">
+</a>
+
 
 **Problem:** Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence. Write an O(n) algorithm.
 
@@ -3486,6 +4333,17 @@ public class LongestConsecutiveSequence {
 ---
 
 ### Q78: Max Area of Island
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" alt="Handwritten: Max Area of Island" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" alt="Diagram: Max Area of Island" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" alt="Sticky Note: Max Area of Island" width="30%">
+</a>
+
 
 **Problem:** You are given an `m x n` binary matrix `grid` where `1` represents land and `0` represents water. An island is a group of `1`s connected 4-directionally. Find the maximum area of any island. Return 0 if no island exists.
 
@@ -3546,6 +4404,17 @@ public class MaxAreaOfIsland {
 
 ### Q79: Jump Game II
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" alt="Handwritten: Jump Game II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" alt="Diagram: Jump Game II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" alt="Sticky Note: Jump Game II" width="30%">
+</a>
+
+
 **Problem:** You are given a 0-indexed array `nums` of length `n`. You start at index 0. `nums[i]` represents the maximum jump length from index `i`. Return the minimum number of jumps to reach `nums[n-1]`. The test cases guarantee reachability.
 
 **Difficulty:** Medium
@@ -3580,6 +4449,17 @@ public class JumpGameII {
 ---
 
 ### Q80: Combination Sum
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" alt="Handwritten: Combination Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" alt="Diagram: Combination Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" alt="Sticky Note: Combination Sum" width="30%">
+</a>
+
 
 **Problem:** Given an array of distinct integers `candidates` and a target integer `target`, return all unique combinations where the candidate numbers sum to `target`. The same number may be used unlimited times. All combinations are unique.
 
@@ -3626,6 +4506,17 @@ public class CombinationSum {
 ---
 
 ### Q81: Permutations
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" alt="Handwritten: Permutations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" alt="Diagram: Permutations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" alt="Sticky Note: Permutations" width="30%">
+</a>
+
 
 **Problem:** Given an array `nums` of distinct integers, return all possible permutations.
 
@@ -3676,6 +4567,17 @@ public class Permutations {
 
 ### Q82: Rotate Image
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" alt="Handwritten: Rotate Image" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" alt="Diagram: Rotate Image" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" alt="Sticky Note: Rotate Image" width="30%">
+</a>
+
+
 **Problem:** You are given an `n x n` 2D matrix representing an image. Rotate the image by 90 degrees clockwise **in-place**.
 
 **Difficulty:** Medium
@@ -3722,6 +4624,17 @@ public class RotateImage {
 
 ### Q83: Spiral Matrix
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" alt="Handwritten: Spiral Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" alt="Diagram: Spiral Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" alt="Sticky Note: Spiral Matrix" width="30%">
+</a>
+
+
 **Problem:** Given an `m x n` matrix, return all elements of the matrix in spiral order.
 
 **Difficulty:** Medium
@@ -3767,6 +4680,17 @@ public class SpiralMatrix {
 ---
 
 ### Q84: Set Matrix Zeroes
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" alt="Handwritten: Set Matrix Zeroes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" alt="Diagram: Set Matrix Zeroes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" alt="Sticky Note: Set Matrix Zeroes" width="30%">
+</a>
+
 
 **Problem:** Given an `m x n` integer matrix, if an element is 0, set its entire row and column to 0. Do it **in-place** using constant extra space.
 
@@ -3815,6 +4739,17 @@ public class SetMatrixZeroes {
 ---
 
 ### Q85: Word Search
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" alt="Handwritten: Word Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" alt="Diagram: Word Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" alt="Sticky Note: Word Search" width="30%">
+</a>
+
 
 **Problem:** Given an `m x n` board of characters and a string `word`, return `true` if `word` exists in the grid. The word can be constructed from sequentially adjacent cells (4-directionally). The same cell may not be used more than once.
 
@@ -3871,6 +4806,17 @@ public class WordSearch {
 ---
 
 ### Q86: Construct Binary Tree from Preorder and Inorder Traversal
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" alt="Handwritten: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" alt="Diagram: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" alt="Sticky Note: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+</a>
+
 
 **Problem:** Given two integer arrays `preorder` and `inorder` representing the preorder and inorder traversals of a binary tree, construct and return the binary tree.
 
@@ -3934,6 +4880,17 @@ public class ConstructBinaryTree {
 
 ### Q87: Kth Smallest Element in a BST
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" alt="Handwritten: Kth Smallest Element in a BST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" alt="Diagram: Kth Smallest Element in a BST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" alt="Sticky Note: Kth Smallest Element in a BST" width="30%">
+</a>
+
+
 **Problem:** Given the `root` of a binary search tree and an integer `k`, return the `k`th smallest value (1-indexed). Optimize for frequent queries.
 
 **Difficulty:** Medium
@@ -3980,6 +4937,17 @@ public class KthSmallestBST {
 ---
 
 ### Q88: Binary Tree Zigzag Level Order Traversal
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Zigzag Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Zigzag Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Zigzag Level Order Traversal" width="30%">
+</a>
+
 
 **Problem:** Given the `root` of a binary tree, return the zigzag level order traversal (left-to-right, then right-to-left for next level, alternating).
 
@@ -4031,6 +4999,17 @@ public class ZigzagLevelOrder {
 ---
 
 ### Q89: Populating Next Right Pointers in Each Node
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" alt="Handwritten: Populating Next Right Pointers in Each Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" alt="Diagram: Populating Next Right Pointers in Each Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" alt="Sticky Note: Populating Next Right Pointers in Each Node" width="30%">
+</a>
+
 
 **Problem:** You are given a perfect binary tree where all leaves are on the same level. Populate each `next` pointer to point to its next right node. If none exists, set it to `null`. O(1) space.
 
@@ -4086,6 +5065,17 @@ public class PopulatingNextRight {
 
 ### Q90: Flatten Binary Tree to Linked List
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" alt="Handwritten: Flatten Binary Tree to Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" alt="Diagram: Flatten Binary Tree to Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" alt="Sticky Note: Flatten Binary Tree to Linked List" width="30%">
+</a>
+
+
 **Problem:** Given the `root` of a binary tree, flatten it into a linked list in-place using the same `TreeNode` class where `right` points to next and `left` is always null. The order should follow a preorder traversal.
 
 **Difficulty:** Medium
@@ -4137,6 +5127,17 @@ public class FlattenBinaryTree {
 ---
 
 ### Q91: Palindrome Partitioning
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" alt="Handwritten: Palindrome Partitioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" alt="Diagram: Palindrome Partitioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" alt="Sticky Note: Palindrome Partitioning" width="30%">
+</a>
+
 
 **Problem:** Given a string `s`, partition it such that every substring is a palindrome. Return all possible palindrome partitions.
 
@@ -4190,6 +5191,17 @@ public class PalindromePartitioning {
 
 ### Q92: Decode Ways
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" alt="Handwritten: Decode Ways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" alt="Diagram: Decode Ways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" alt="Sticky Note: Decode Ways" width="30%">
+</a>
+
+
 **Problem:** A message containing letters A-Z is encoded as '1'→'A', '2'→'B', ..., '26'→'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
 
 **Difficulty:** Medium
@@ -4229,6 +5241,17 @@ public class DecodeWays {
 
 ### Q93: Gas Station
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" alt="Handwritten: Gas Station" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" alt="Diagram: Gas Station" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" alt="Sticky Note: Gas Station" width="30%">
+</a>
+
+
 **Problem:** There are `n` gas stations along a circular route. You have two integer arrays `gas[i]` (gas available) and `cost[i]` (gas to travel to i+1). Return the starting station index if you can complete the circuit once, or -1. The solution is guaranteed to be unique.
 
 **Difficulty:** Medium
@@ -4266,6 +5289,17 @@ public class GasStation {
 ---
 
 ### Q94: Candy
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" alt="Handwritten: Candy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" alt="Diagram: Candy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" alt="Sticky Note: Candy" width="30%">
+</a>
+
 
 **Problem:** There are `n` children standing in a line. Each child is assigned a rating value. You must give at least 1 candy per child and children with a higher rating get more than their neighbors. Return the minimum candies needed.
 
@@ -4311,6 +5345,17 @@ public class Candy {
 
 ### Q95: Majority Element II
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" alt="Handwritten: Majority Element II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" alt="Diagram: Majority Element II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" alt="Sticky Note: Majority Element II" width="30%">
+</a>
+
+
 **Problem:** Given an integer array of size `n`, find all elements that appear more than `âŒŠn/3âŒ‹` times. Use O(1) space and O(n) time.
 
 **Difficulty:** Medium
@@ -4355,6 +5400,17 @@ public class MajorityElementII {
 
 ### Q96: Find the Duplicate Number
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" alt="Handwritten: Find the Duplicate Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" alt="Diagram: Find the Duplicate Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" alt="Sticky Note: Find the Duplicate Number" width="30%">
+</a>
+
+
 **Problem:** Given an array of integers `nums` containing `n + 1` integers where each integer is in `[1, n]`, there is exactly one duplicate number. Find it without modifying the array and using O(1) extra space.
 
 **Difficulty:** Medium
@@ -4391,6 +5447,17 @@ public class FindDuplicateNumber {
 ---
 
 ### Q97: Longest Substring with At Most K Distinct Characters
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" alt="Handwritten: Longest Substring with At Most K Distinct Characters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" alt="Diagram: Longest Substring with At Most K Distinct Characters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" alt="Sticky Note: Longest Substring with At Most K Distinct Characters" width="30%">
+</a>
+
 
 **Problem:** Given a string `s` and an integer `k`, return the length of the longest substring that contains at most `k` distinct characters.
 
@@ -4432,6 +5499,17 @@ public class LongestSubstringKDistinct {
 ---
 
 ### Q98: Minimum Window Substring
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" alt="Handwritten: Minimum Window Substring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" alt="Diagram: Minimum Window Substring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" alt="Sticky Note: Minimum Window Substring" width="30%">
+</a>
+
 
 **Problem:** Given two strings `s` and `t`, return the minimum window substring of `s` that contains all characters of `t` (including duplicates). If no such window exists, return empty string.
 
@@ -4479,6 +5557,17 @@ public class MinimumWindowSubstring {
 ---
 
 ### Q99: Alien Dictionary
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
+</a>
+
 
 **Problem:** There is a new alien language that uses the English lowercase letters. You are given a list of `words` from the alien language sorted lexicographically. Determine the order of letters in the alien language. Return empty string if invalid.
 
@@ -4537,6 +5626,17 @@ public class AlienDictionary {
 ---
 
 ### Q100: Word Ladder II
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" alt="Handwritten: Word Ladder II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" alt="Diagram: Word Ladder II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" alt="Sticky Note: Word Ladder II" width="30%">
+</a>
+
 
 **Problem:** Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return all shortest transformation sequences from `beginWord` to `endWord` where each adjacent pair differs by one letter. Each transformed word must exist in `wordList`.
 
@@ -4639,6 +5739,17 @@ Master these 15 patterns to solve ~85% of DSA interview problems. Each includes 
 
 ### 1. Sliding Window
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" alt="Handwritten: 1. Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" alt="Diagram: 1. Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" alt="Sticky Note: 1. Sliding Window" width="30%">
+</a>
+
+
 **When to use:** Problems involving contiguous subarrays/substrings with a constraint (max, min, longest, shortest, contains, sum = k). Often paired with "at most K", "at least K", or "maximum/minimum length".
 
 **Template:**
@@ -4663,6 +5774,17 @@ int slidingWindow(int[] arr, int k) {
 
 ### 2. Two Pointers
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" alt="Handwritten: 2. Two Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" alt="Diagram: 2. Two Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" alt="Sticky Note: 2. Two Pointers" width="30%">
+</a>
+
+
 **When to use:** Sorted arrays, pair/triplet sum problems, palindrome checking, or partitioning arrays. The pointers move toward each other or in the same direction.
 
 **Template:**
@@ -4685,6 +5807,17 @@ boolean twoPointers(int[] arr, int target) {
 
 ### 3. Fast & Slow Pointers (Floyd's Algorithm)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" alt="Handwritten: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" alt="Diagram: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" alt="Sticky Note: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+</a>
+
+
 **When to use:** Cycle detection in linked lists, finding middle of linked list, finding duplicate in immutable array.
 
 **Template:**
@@ -4705,6 +5838,17 @@ boolean hasCycle(ListNode head) {
 ---
 
 ### 4. Merge Intervals
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" alt="Handwritten: 4. Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" alt="Diagram: 4. Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" alt="Sticky Note: 4. Merge Intervals" width="30%">
+</a>
+
 
 **When to use:** Problems about overlapping intervals, meeting rooms, calendar conflicts, or interval intersection.
 
@@ -4729,6 +5873,17 @@ int[][] mergeIntervals(int[][] intervals) {
 
 ### 5. Cyclic Sort
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" alt="Handwritten: 5. Cyclic Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" alt="Diagram: 5. Cyclic Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" alt="Sticky Note: 5. Cyclic Sort" width="30%">
+</a>
+
+
 **When to use:** Arrays of numbers in range [1, n] where we need to find missing/duplicate/smallest missing positive numbers.
 
 **Template:**
@@ -4752,6 +5907,17 @@ void cyclicSort(int[] nums) {
 
 ### 6. In-place Reversal of Linked List
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" alt="Handwritten: 6. In-place Reversal of Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" alt="Diagram: 6. In-place Reversal of Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" alt="Sticky Note: 6. In-place Reversal of Linked List" width="30%">
+</a>
+
+
 **When to use:** Reversing a linked list or a segment of it without extra space.
 
 **Template:**
@@ -4773,6 +5939,17 @@ ListNode reverse(ListNode head) {
 ---
 
 ### 7. Tree BFS (Level Order)
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" alt="Handwritten: 7. Tree BFS (Level Order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" alt="Diagram: 7. Tree BFS (Level Order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" alt="Sticky Note: 7. Tree BFS (Level Order)" width="30%">
+</a>
+
 
 **When to use:** Tree/Graph level-by-level traversal, shortest path in unweighted graph, zigzag, right-side view.
 
@@ -4799,6 +5976,17 @@ void bfs(TreeNode root) {
 
 ### 8. Tree DFS (Pre/In/Post-order)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" alt="Handwritten: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" alt="Diagram: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" alt="Sticky Note: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+</a>
+
+
 **When to use:** Tree path sum, maximum depth, diameter, symmetric tree, validating BST, constructing tree.
 
 **Template:**
@@ -4819,6 +6007,17 @@ void dfs(TreeNode node) {
 
 ### 9. Subsets (Backtracking)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" alt="Handwritten: 9. Subsets (Backtracking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" alt="Diagram: 9. Subsets (Backtracking)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" alt="Sticky Note: 9. Subsets (Backtracking)" width="30%">
+</a>
+
+
 **When to use:** Generating all combinations, permutations, subsets, or partitions. Use when the problem space requires exploring all possibilities.
 
 **Template:**
@@ -4838,6 +6037,17 @@ void backtrack(int[] nums, int start, List<Integer> path, List<List<Integer>> re
 ---
 
 ### 10. Modified Binary Search
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" alt="Handwritten: 10. Modified Binary Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" alt="Diagram: 10. Modified Binary Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" alt="Sticky Note: 10. Modified Binary Search" width="30%">
+</a>
+
 
 **When to use:** Sorted or rotated arrays, search space reduction, "find peak", "find boundary", sqrt, etc.
 
@@ -4861,6 +6071,17 @@ int binarySearch(int[] arr, int target) {
 
 ### 11. Top K Elements (Heap)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" alt="Handwritten: 11. Top K Elements (Heap)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" alt="Diagram: 11. Top K Elements (Heap)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" alt="Sticky Note: 11. Top K Elements (Heap)" width="30%">
+</a>
+
+
 **When to use:** Finding top K largest/smallest, K most frequent, K closest points. Use a min-heap for top K largest, max-heap for top K smallest.
 
 **Template:**
@@ -4880,6 +6101,17 @@ List<Integer> topK(int[] nums, int k) {
 ---
 
 ### 12. K-way Merge
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" alt="Handwritten: 12. K-way Merge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" alt="Diagram: 12. K-way Merge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" alt="Sticky Note: 12. K-way Merge" width="30%">
+</a>
+
 
 **When to use:** Merging K sorted arrays/lists efficiently. Common in external sorting and merge K sorted lists problems.
 
@@ -4905,6 +6137,17 @@ ListNode mergeKLists(ListNode[] lists) {
 
 ### 13. 0/1 Knapsack (DP)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: 13. 0/1 Knapsack (DP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" alt="Diagram: 13. 0/1 Knapsack (DP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: 13. 0/1 Knapsack (DP)" width="30%">
+</a>
+
+
 **When to use:** Optimization problems where each item can be taken or left (binary choice), with capacity constraints.
 
 **Template:**
@@ -4929,6 +6172,17 @@ int knapsack(int[] weights, int[] values, int capacity) {
 ---
 
 ### 14. Topological Sort (Graph)
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" alt="Handwritten: 14. Topological Sort (Graph)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" alt="Diagram: 14. Topological Sort (Graph)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" alt="Sticky Note: 14. Topological Sort (Graph)" width="30%">
+</a>
+
 
 **When to use:** Problems with dependency ordering (course prerequisites, build order, alien dictionary). Requires a DAG.
 
@@ -4960,6 +6214,17 @@ List<Integer> topologicalSort(int n, int[][] edges) {
 
 ### 15. Union Find (Disjoint Set)
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" alt="Handwritten: 15. Union Find (Disjoint Set)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" alt="Diagram: 15. Union Find (Disjoint Set)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" alt="Sticky Note: 15. Union Find (Disjoint Set)" width="30%">
+</a>
+
+
 **When to use:** Dynamic connectivity, finding connected components, detecting cycles in undirected graphs, number of islands, accounts merge.
 
 **Template:**
@@ -4987,6 +6252,17 @@ class UnionFind {
 ---
 
 ### 16. Trie (Prefix Tree)
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" alt="Handwritten: 16. Trie (Prefix Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" alt="Diagram: 16. Trie (Prefix Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" alt="Sticky Note: 16. Trie (Prefix Tree)" width="30%">
+</a>
+
 
 **When to use:** Prefix matching, autocomplete, spell checker, word search in dictionary, longest prefix.
 
@@ -5031,6 +6307,17 @@ class Trie {
 ## Low-Level Design & OOP Problems
 
 ### Q101: Design a Parking Lot
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" alt="Handwritten: Design a Parking Lot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" alt="Diagram: Design a Parking Lot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" alt="Sticky Note: Design a Parking Lot" width="30%">
+</a>
+
 
 **Problem:** Design a parking lot with multiple floors and spots for different vehicle types (Car, Bike, Truck). Support parking/unparking, tracking available spots, and calculating fees. Use strategy pattern for pricing (hourly vs. per-minute).
 
@@ -5170,6 +6457,17 @@ class ParkingLot {
 
 ### Q102: Design a Library Management System
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" alt="Handwritten: Design a Library Management System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" alt="Diagram: Design a Library Management System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" alt="Sticky Note: Design a Library Management System" width="30%">
+</a>
+
+
 **Problem:** Design a library system with books, members, librarians. Support borrowing/returning books with due dates, fines for overdue books, searching by title/author, and managing book inventory.
 
 **Difficulty:** Medium
@@ -5278,6 +6576,17 @@ class Library {
 ---
 
 ### Q103: Design a Vending Machine
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" alt="Handwritten: Design a Vending Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" alt="Diagram: Design a Vending Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" alt="Sticky Note: Design a Vending Machine" width="30%">
+</a>
+
 
 **Problem:** Design a vending machine that accepts coins, dispenses products, tracks inventory, handles change, and supports multiple states (idle, selecting, dispensing, refund).
 
@@ -5428,6 +6737,17 @@ class VendingMachine {
 
 ### Q104: Design a Snake & Ladder Game
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" alt="Handwritten: Design a Snake & Ladder Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" alt="Diagram: Design a Snake & Ladder Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" alt="Sticky Note: Design a Snake & Ladder Game" width="30%">
+</a>
+
+
 **Problem:** Design Snake & Ladder with N players, configurable board size, snakes and ladders placed randomly, dice rolls, and turn-based play. Track winner and game state.
 
 **Difficulty:** Medium
@@ -5530,6 +6850,17 @@ class Game {
 ---
 
 ### Q105: Design a Chess Game
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" alt="Handwritten: Design a Chess Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" alt="Diagram: Design a Chess Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" alt="Sticky Note: Design a Chess Game" width="30%">
+</a>
+
 
 **Problem:** Design a chess game with standard pieces, turn-based play, move validation, check/checkmate detection, and board display. Support undo move and game state tracking.
 
@@ -5761,6 +7092,17 @@ class ChessGame {
 
 ### Q106: Design an Elevator System
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" alt="Handwritten: Design an Elevator System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" alt="Diagram: Design an Elevator System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" alt="Sticky Note: Design an Elevator System" width="30%">
+</a>
+
+
 **Problem:** Design an elevator system with multiple elevators, request scheduling, floor buttons, door open/close, weight sensor, and emergency stop. Support SCAN/LOOK scheduling algorithm.
 
 **Difficulty:** Medium
@@ -5860,6 +7202,17 @@ class ElevatorController {
 ---
 
 ### Q107: Design a Tic-Tac-Toe Game
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" alt="Handwritten: Design a Tic-Tac-Toe Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" alt="Diagram: Design a Tic-Tac-Toe Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" alt="Sticky Note: Design a Tic-Tac-Toe Game" width="30%">
+</a>
+
 
 **Problem:** Design a Tic-Tac-Toe game supporting NxN boards, two players, win/draw detection, undo move, and move history.
 
@@ -5984,6 +7337,17 @@ class TicTacToeGame {
 ---
 
 ### Q108: Design a Splitwise/Ledger System
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" alt="Handwritten: Design a Splitwise/Ledger System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" alt="Diagram: Design a Splitwise/Ledger System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" alt="Sticky Note: Design a Splitwise/Ledger System" width="30%">
+</a>
+
 
 **Problem:** Design an expense-splitting system similar to Splitwise. Support adding expenses, splitting equally/percentage/exact, settling balances, showing balances per user, and simplifying debts.
 
@@ -6112,6 +7476,17 @@ class ExpenseManager {
 
 ### Q109: Design a Logger
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" alt="Handwritten: Design a Logger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" alt="Diagram: Design a Logger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" alt="Sticky Note: Design a Logger" width="30%">
+</a>
+
+
 **Problem:** Design a logging framework with multiple log levels (DEBUG, INFO, WARN, ERROR), multiple appenders (console, file, network), configurable formatting, and thread-safe singleton logger.
 
 **Difficulty:** Medium
@@ -6238,6 +7613,17 @@ class LoggerFactory {
 ---
 
 ### Q110: Design a Task Management System
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" alt="Handwritten: Design a Task Management System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" alt="Diagram: Design a Task Management System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" alt="Sticky Note: Design a Task Management System" width="30%">
+</a>
+
 
 **Problem:** Design a task management system like Todoist with users, projects, tasks with priorities, due dates, labels, filtering, and status tracking.
 
@@ -6380,6 +7766,17 @@ class TaskManager {
 
 ### Q111: Design a Pub-Sub System
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" alt="Handwritten: Design a Pub-Sub System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" alt="Diagram: Design a Pub-Sub System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" alt="Sticky Note: Design a Pub-Sub System" width="30%">
+</a>
+
+
 **Problem:** Design a publish-subscribe messaging system with topics, publishers, subscribers, async message delivery, subscriber groups, and message filtering.
 
 **Difficulty:** Medium
@@ -6469,6 +7866,17 @@ class Broker {
 ---
 
 ### Q112: Design an ATM
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" alt="Handwritten: Design an ATM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" alt="Diagram: Design an ATM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" alt="Sticky Note: Design an ATM" width="30%">
+</a>
+
 
 **Problem:** Design an ATM machine supporting card insertion, PIN verification, balance inquiry, cash withdrawal with denomination dispensing, deposit, and transfer between accounts.
 
@@ -6578,6 +7986,17 @@ class ATMSession {
 ---
 
 ### Q113: Design a Coffee Machine
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" alt="Handwritten: Design a Coffee Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" alt="Diagram: Design a Coffee Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" alt="Sticky Note: Design a Coffee Machine" width="30%">
+</a>
+
 
 **Problem:** Design a coffee machine (like a Starbucks automated brewer) supporting multiple beverages (espresso, latte, cappuccino), ingredient management, recipe-based brewing, and concurrent order processing.
 
@@ -6695,6 +8114,17 @@ class CoffeeMachine {
 
 ### Q114: Design a Restaurant Table Booking System
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" alt="Handwritten: Design a Restaurant Table Booking System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" alt="Diagram: Design a Restaurant Table Booking System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" alt="Sticky Note: Design a Restaurant Table Booking System" width="30%">
+</a>
+
+
 **Problem:** Design a restaurant reservation system with tables, time slots, customer booking, cancellation, waitlist, and conflict detection.
 
 **Difficulty:** Medium
@@ -6797,6 +8227,17 @@ class Restaurant {
 ---
 
 ### Q115: Design a File System
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" alt="Handwritten: Design a File System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" alt="Diagram: Design a File System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" alt="Sticky Note: Design a File System" width="30%">
+</a>
+
 
 **Problem:** Design a Unix-like file system with File and Directory classes, hierarchical structure, path-based navigation, size calculation, search, and permission model.
 
@@ -7031,6 +8472,17 @@ Test your understanding of the core DSA patterns covered in this chapter.
 
 ### Q116: Print Numbers 1-100 Using Two Threads Alternately
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" alt="Handwritten: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" alt="Diagram: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" alt="Sticky Note: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+</a>
+
+
 **Problem:** Print numbers from 1 to 100 such that two threads alternately print even and odd numbers. Thread1 prints odd, Thread2 prints even.
 
 **Difficulty:** Medium
@@ -7087,6 +8539,17 @@ public class EvenOddPrinter {
 ---
 
 ### Q117: Producer-Consumer Using wait/notify
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" alt="Handwritten: Producer-Consumer Using wait/notify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" alt="Diagram: Producer-Consumer Using wait/notify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" alt="Sticky Note: Producer-Consumer Using wait/notify" width="30%">
+</a>
+
 
 **Problem:** Implement the producer-consumer problem where one or more producers add items to a shared buffer and one or more consumers consume items. The buffer has a fixed capacity. Use wait/notify for coordination.
 
@@ -7172,6 +8635,17 @@ public class ProducerConsumerWaitNotify {
 
 ### Q118: Producer-Consumer Using BlockingQueue
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" alt="Handwritten: Producer-Consumer Using BlockingQueue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" alt="Diagram: Producer-Consumer Using BlockingQueue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" alt="Sticky Note: Producer-Consumer Using BlockingQueue" width="30%">
+</a>
+
+
 **Problem:** Implement the producer-consumer problem using Java's `BlockingQueue` instead of low-level wait/notify. Demonstrate how `ArrayBlockingQueue` handles synchronization internally.
 
 **Difficulty:** Easy
@@ -7224,6 +8698,17 @@ public class ProducerConsumerBlockingQueue {
 ---
 
 ### Q119: Reader-Writers Problem
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" alt="Handwritten: Reader-Writers Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" alt="Diagram: Reader-Writers Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" alt="Sticky Note: Reader-Writers Problem" width="30%">
+</a>
+
 
 **Problem:** Implement the readers-writers problem where multiple readers can read simultaneously, but writers need exclusive access. Use ReadWriteLock to prioritize either readers or writers.
 
@@ -7299,6 +8784,17 @@ public class ReaderWritersProblem {
 ---
 
 ### Q120: Dining Philosophers
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
+</a>
+
 
 **Problem:** Implement the classic Dining Philosophers problem where N philosophers sit at a table with N forks. Each philosopher alternates between thinking and eating. Eating requires two forks. Avoid deadlock.
 
@@ -7378,6 +8874,17 @@ public class DiningPhilosophers {
 
 ### Q121: Print FooBar Alternately
 
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" alt="Handwritten: Print FooBar Alternately" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" alt="Diagram: Print FooBar Alternately" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" alt="Sticky Note: Print FooBar Alternately" width="30%">
+</a>
+
+
 **Problem:** Write a program that prints "FooBar" alternately n times using two threads. Thread A prints "Foo", Thread B prints "Bar". The output should be "FooBarFooBarFooBar..." for n repetitions.
 
 **Difficulty:** Medium
@@ -7428,6 +8935,17 @@ public class FooBarAlternate {
 ---
 
 ### Q122: Zero-Even-Odd Sequence Printing
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" alt="Handwritten: Zero-Even-Odd Sequence Printing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" alt="Diagram: Zero-Even-Odd Sequence Printing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" alt="Sticky Note: Zero-Even-Odd Sequence Printing" width="30%">
+</a>
+
 
 **Problem:** Print the sequence 0102030405... where Thread A prints "0", Thread B prints even numbers, Thread C prints odd numbers. For n=5, output should be "0102030405".
 
@@ -7495,6 +9013,17 @@ public class ZeroEvenOdd {
 ---
 
 ### Q123: Thread-Safe Singleton
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" alt="Handwritten: Thread-Safe Singleton" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" alt="Diagram: Thread-Safe Singleton" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" alt="Sticky Note: Thread-Safe Singleton" width="30%">
+</a>
+
 
 **Problem:** Implement a thread-safe Singleton pattern using three approaches: double-checked locking, Bill Pugh initialization holder, and enum singleton. Discuss pros and cons.
 
@@ -7583,6 +9112,17 @@ public class ThreadSafeSingleton {
 ---
 
 ### Q124: Custom Thread Pool Implementation
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" alt="Handwritten: Custom Thread Pool Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" alt="Diagram: Custom Thread Pool Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" alt="Sticky Note: Custom Thread Pool Implementation" width="30%">
+</a>
+
 
 **Problem:** Implement a custom thread pool from scratch with configurable core size, max size, and a blocking queue for pending tasks. Demonstrate with sample tasks.
 
@@ -7684,6 +9224,17 @@ class CustomThreadPool {
 ---
 
 ### Q125: Deadlock Detection Example
+
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" alt="Handwritten: Deadlock Detection Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" alt="Diagram: Deadlock Detection Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" alt="Sticky Note: Deadlock Detection Example" width="30%">
+</a>
+
 
 **Problem:** Demonstrate a classic deadlock scenario with two threads holding locks in opposite order. Show how to detect deadlock using `ThreadMXBean` and how to prevent it using ordered lock acquisition.
 

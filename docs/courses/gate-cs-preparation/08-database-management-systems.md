@@ -88,6 +88,17 @@ flowchart LR
 ## Quick Reference Tables
 
 ### Normal Form Summary
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-handwritten.svg" alt="Handwritten: Normal Form Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-diagram.svg" alt="Diagram: Normal Form Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/normal-form-summary-sticky.svg" alt="Sticky Note: Normal Form Summary" width="30%">
+</a>
+
 
 | Normal Form | Condition | Violation Fix |
 |-------------|-----------|---------------|
@@ -99,6 +110,17 @@ flowchart LR
 | **5NF** | 4NF + every join dependency implied by candidate keys | Decompose for join dependencies |
 
 ### ACID Properties
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-handwritten.svg" alt="Handwritten: ACID Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-diagram.svg" alt="Diagram: ACID Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/acid-properties-sticky.svg" alt="Sticky Note: ACID Properties" width="30%">
+</a>
+
 
 | Property | Meaning | Enforced By |
 |----------|---------|-------------|
@@ -108,6 +130,17 @@ flowchart LR
 | **Durability** | Committed changes persist despite failures | Recovery manager (redo log) |
 
 ### SQL Isolation Levels
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-handwritten.svg" alt="Handwritten: SQL Isolation Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-diagram.svg" alt="Diagram: SQL Isolation Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/sql-isolation-levels-sticky.svg" alt="Sticky Note: SQL Isolation Levels" width="30%">
+</a>
+
 
 | Level | Dirty Read | Non-Repeatable Read | Phantom Read | Implementation |
 |-------|------------|---------------------|--------------|----------------|
@@ -117,6 +150,17 @@ flowchart LR
 | SERIALIZABLE | Prevented | Prevented | Prevented | Range locks / predicate locking |
 
 ### B+ Tree Parameters
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-handwritten.svg" alt="Handwritten: B+ Tree Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-diagram.svg" alt="Diagram: B+ Tree Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/b-tree-parameters-sticky.svg" alt="Sticky Note: B+ Tree Parameters" width="30%">
+</a>
+
 
 | Parameter | Description | Formula / Notes |
 |-----------|-------------|-----------------|
@@ -132,6 +176,17 @@ flowchart LR
 ## 1. Entity-Relationship (ER) Model
 
 ### 1.1 Basic Constructs
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-handwritten.svg" alt="Handwritten: 1.1 Basic Constructs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-diagram.svg" alt="Diagram: 1.1 Basic Constructs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-1-basic-constructs-sticky.svg" alt="Sticky Note: 1.1 Basic Constructs" width="30%">
+</a>
+
 
 | Construct | Symbol | Description |
 |-----------|--------|-------------|
@@ -145,23 +200,67 @@ flowchart LR
 | Partial Key | Dashed underline | Distinguishes weak entities |
 
 ### 1.2 Cardinality Constraints
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-handwritten.svg" alt="Handwritten: 1.2 Cardinality Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-diagram.svg" alt="Diagram: 1.2 Cardinality Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-2-cardinality-constraints-sticky.svg" alt="Sticky Note: 1.2 Cardinality Constraints" width="30%">
+</a>
+
 
 - **1:1** Ã¢â€ â€™ One entity A associated with exactly one B and vice versa
 - **1:N** Ã¢â€ â€™ One A associated with many B; each B with one A
 - **M:N** Ã¢â€ â€™ Many A associated with many B
 
 ### 1.3 Participation Constraints
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-handwritten.svg" alt="Handwritten: 1.3 Participation Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-diagram.svg" alt="Diagram: 1.3 Participation Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-3-participation-constraints-sticky.svg" alt="Sticky Note: 1.3 Participation Constraints" width="30%">
+</a>
+
 
 - **Total (double line):** Every entity in set participates in relationship
 - **Partial (single line):** Some entities may not participate
 
 ### 1.4 Weak Entity
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-handwritten.svg" alt="Handwritten: 1.4 Weak Entity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-diagram.svg" alt="Diagram: 1.4 Weak Entity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-4-weak-entity-sticky.svg" alt="Sticky Note: 1.4 Weak Entity" width="30%">
+</a>
+
 
 - Entity that cannot exist without a **strong (identifying) entity**
 - Identified by **partial key** + **identifying relationship** (double diamond)
 - Owner entity set and weak entity set must have **total participation**
 
 ### 1.5 Generalization / Specialization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-handwritten.svg" alt="Handwritten: 1.5 Generalization / Specialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-diagram.svg" alt="Diagram: 1.5 Generalization / Specialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-5-generalization-specialization-sticky.svg" alt="Sticky Note: 1.5 Generalization / Specialization" width="30%">
+</a>
+
 
 - **Generalization:** Bottom-up Ã¢â€ â€™ combining entities into higher-level entity
 - **Specialization:** Top-down Ã¢â€ â€™ subdividing entity into sub-entities
@@ -172,6 +271,17 @@ flowchart LR
   - **Partial:** Some superclass entities may not be in any subclass (single line)
 
 ### 1.6 ER-to-Relational Mapping Steps
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-handwritten.svg" alt="Handwritten: 1.6 ER-to-Relational Mapping Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-diagram.svg" alt="Diagram: 1.6 ER-to-Relational Mapping Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/1-6-er-to-relational-mapping-steps-sticky.svg" alt="Sticky Note: 1.6 ER-to-Relational Mapping Steps" width="30%">
+</a>
+
 
 1. Each strong entity Ã¢â€ â€™ relation (key becomes PK)
 2. Each weak entity Ã¢â€ â€™ relation (PK = partial key + owner PK)
@@ -186,6 +296,17 @@ flowchart LR
 ## 2. Relational Model & Algebra
 
 ### 2.1 Schema Concepts
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-handwritten.svg" alt="Handwritten: 2.1 Schema Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-diagram.svg" alt="Diagram: 2.1 Schema Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-1-schema-concepts-sticky.svg" alt="Sticky Note: 2.1 Schema Concepts" width="30%">
+</a>
+
 
 - **Relation:** Table with rows (tuples) and columns (attributes)
 - **Degree:** Number of attributes
@@ -198,6 +319,17 @@ flowchart LR
 - **Referential Integrity:** FK must be NULL or match a PK in referenced relation
 
 ### 2.2 Relational Algebra Operations
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-handwritten.svg" alt="Handwritten: 2.2 Relational Algebra Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-diagram.svg" alt="Diagram: 2.2 Relational Algebra Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-2-relational-algebra-operations-sticky.svg" alt="Sticky Note: 2.2 Relational Algebra Operations" width="30%">
+</a>
+
 
 #### Basic Operations
 
@@ -233,6 +365,17 @@ Output: A values that appear in R paired with every B in S
 **Equivalence:** `R ÃƒÆ’Ã‚Â· S = pi_A(R) - pi_A( (pi_A(R) ÃƒÆ’Ã¢â‚¬â€� S) - R )`
 
 ### 2.3 Tuple Relational Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-handwritten.svg" alt="Handwritten: 2.3 Tuple Relational Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-diagram.svg" alt="Diagram: 2.3 Tuple Relational Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-3-tuple-relational-calculus-sticky.svg" alt="Sticky Note: 2.3 Tuple Relational Calculus" width="30%">
+</a>
+
 
 - **Declarative:** `{ t | condition(t) }`
 - t is a tuple variable; condition specifies constraints
@@ -240,6 +383,17 @@ Output: A values that appear in R paired with every B in S
 - **Safe expression:** Results must be finite (domain-restricted)
 
 ### 2.4 Domain Relational Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-handwritten.svg" alt="Handwritten: 2.4 Domain Relational Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-diagram.svg" alt="Diagram: 2.4 Domain Relational Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/2-4-domain-relational-calculus-sticky.svg" alt="Sticky Note: 2.4 Domain Relational Calculus" width="30%">
+</a>
+
 
 - **Declarative:** `{ <a1, a2, ..., an> | condition(a1, ..., an) }`
 - Variables range over domains (not tuples)
@@ -250,6 +404,17 @@ Output: A values that appear in R paired with every B in S
 ## 3. SQL (Structured Query Language)
 
 ### 3.1 DDL (Data Definition Language)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-handwritten.svg" alt="Handwritten: 3.1 DDL (Data Definition Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-diagram.svg" alt="Diagram: 3.1 DDL (Data Definition Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-1-ddl-data-definition-language-sticky.svg" alt="Sticky Note: 3.1 DDL (Data Definition Language)" width="30%">
+</a>
+
 
 ```sql
 CREATE TABLE Employee (
@@ -266,6 +431,17 @@ CREATE INDEX idx_dept ON Employee(dept);
 ```
 
 ### 3.2 DML (Data Manipulation Language)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-handwritten.svg" alt="Handwritten: 3.2 DML (Data Manipulation Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-diagram.svg" alt="Diagram: 3.2 DML (Data Manipulation Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-2-dml-data-manipulation-language-sticky.svg" alt="Sticky Note: 3.2 DML (Data Manipulation Language)" width="30%">
+</a>
+
 
 ```sql
 -- Insert
@@ -287,6 +463,17 @@ ORDER BY avg_sal DESC;
 ```
 
 ### 3.3 Nested Queries
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-handwritten.svg" alt="Handwritten: 3.3 Nested Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-diagram.svg" alt="Diagram: 3.3 Nested Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-3-nested-queries-sticky.svg" alt="Sticky Note: 3.3 Nested Queries" width="30%">
+</a>
+
 
 ```sql
 -- IN subquery
@@ -306,6 +493,17 @@ SELECT ename, (SELECT AVG(salary) FROM Employee) AS overall_avg FROM Employee;
 ```
 
 ### 3.4 Correlated Subqueries
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-handwritten.svg" alt="Handwritten: 3.4 Correlated Subqueries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-diagram.svg" alt="Diagram: 3.4 Correlated Subqueries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-4-correlated-subqueries-sticky.svg" alt="Sticky Note: 3.4 Correlated Subqueries" width="30%">
+</a>
+
 
 Inner query references outer query variable. Executed once per outer row.
 
@@ -318,6 +516,17 @@ WHERE e.salary > (SELECT AVG(salary) FROM Employee
 ```
 
 ### 3.5 Aggregation & GROUP BY
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-handwritten.svg" alt="Handwritten: 3.5 Aggregation & GROUP BY" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-diagram.svg" alt="Diagram: 3.5 Aggregation & GROUP BY" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-5-aggregation-group-by-sticky.svg" alt="Sticky Note: 3.5 Aggregation & GROUP BY" width="30%">
+</a>
+
 
 | Function | Description |
 |----------|-------------|
@@ -330,6 +539,17 @@ WHERE e.salary > (SELECT AVG(salary) FROM Employee
 **Order of execution:** FROM Ã¢â€ â€™ WHERE Ã¢â€ â€™ GROUP BY Ã¢â€ â€™ HAVING Ã¢â€ â€™ SELECT Ã¢â€ â€™ ORDER BY
 
 ### 3.6 Views
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-handwritten.svg" alt="Handwritten: 3.6 Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-diagram.svg" alt="Diagram: 3.6 Views" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-6-views-sticky.svg" alt="Sticky Note: 3.6 Views" width="30%">
+</a>
+
 
 ```sql
 CREATE VIEW DeptAvgSalary AS
@@ -342,6 +562,17 @@ GROUP BY dept;
 - **Materialized views:** Physically stored; refreshed periodically
 
 ### 3.7 Triggers
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-handwritten.svg" alt="Handwritten: 3.7 Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-diagram.svg" alt="Diagram: 3.7 Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-7-triggers-sticky.svg" alt="Sticky Note: 3.7 Triggers" width="30%">
+</a>
+
 
 ```sql
 CREATE TRIGGER salary_check BEFORE INSERT ON Employee
@@ -355,6 +586,17 @@ SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Negative salary';
 - **Granularity:** FOR EACH ROW, FOR EACH STATEMENT
 
 ### 3.8 Assertions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-handwritten.svg" alt="Handwritten: 3.8 Assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-diagram.svg" alt="Diagram: 3.8 Assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-8-assertions-sticky.svg" alt="Sticky Note: 3.8 Assertions" width="30%">
+</a>
+
 
 ```sql
 CREATE ASSERTION salary_constraint CHECK (
@@ -365,6 +607,17 @@ CREATE ASSERTION salary_constraint CHECK (
 Assertions are schema-level constraints checked on every modification. Most DBMS implement them through triggers.
 
 ### 3.9 DCL (Data Control Language)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-handwritten.svg" alt="Handwritten: 3.9 DCL (Data Control Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-diagram.svg" alt="Diagram: 3.9 DCL (Data Control Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/3-9-dcl-data-control-language-sticky.svg" alt="Sticky Note: 3.9 DCL (Data Control Language)" width="30%">
+</a>
+
 
 ```sql
 GRANT SELECT, INSERT ON Employee TO user1 WITH GRANT OPTION;
@@ -376,6 +629,17 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 ## 4. Normalization
 
 ### 4.1 Functional Dependencies
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-handwritten.svg" alt="Handwritten: 4.1 Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-diagram.svg" alt="Diagram: 4.1 Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-1-functional-dependencies-sticky.svg" alt="Sticky Note: 4.1 Functional Dependencies" width="30%">
+</a>
+
 
 **Definition:** A Ã¢â€ â€™ B means each value of A determines exactly one value of B.
 
@@ -396,6 +660,17 @@ REVOKE SELECT ON Employee FROM user1 CASCADE;
 | **Pseudo-transitivity** | If A Ã¢â€ â€™ B and BC Ã¢â€ â€™ D, then AC Ã¢â€ â€™ D |
 
 ### 4.2 Attribute Closure Computation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-handwritten.svg" alt="Handwritten: 4.2 Attribute Closure Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-diagram.svg" alt="Diagram: 4.2 Attribute Closure Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-2-attribute-closure-computation-sticky.svg" alt="Sticky Note: 4.2 Attribute Closure Computation" width="30%">
+</a>
+
 
 Given FD set F, find closure of attribute set X (XÃƒÂ¢Ã‚Â�Ã‚Âº):
 
@@ -411,6 +686,17 @@ Algorithm:
 **Uses:** Finding candidate keys, checking if FD is implied, testing superkeys.
 
 ### 4.3 Candidate Key Computation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-handwritten.svg" alt="Handwritten: 4.3 Candidate Key Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-diagram.svg" alt="Diagram: 4.3 Candidate Key Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-3-candidate-key-computation-sticky.svg" alt="Sticky Note: 4.3 Candidate Key Computation" width="30%">
+</a>
+
 
 - A candidate key is a minimal superkey: XÃƒÂ¢Ã‚Â�Ã‚Âº = all attributes, and no proper subset has closure = all attributes.
 - **Steps:**
@@ -419,6 +705,17 @@ Algorithm:
 - **GATE shortcut:** Attributes that appear only on LHS of FDs (and never on RHS) must be part of EVERY candidate key.
 
 ### 4.4 Canonical Cover
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-handwritten.svg" alt="Handwritten: 4.4 Canonical Cover" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-diagram.svg" alt="Diagram: 4.4 Canonical Cover" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-4-canonical-cover-sticky.svg" alt="Sticky Note: 4.4 Canonical Cover" width="30%">
+</a>
+
 
 Minimal equivalent set of FDs with:
 1. **No extraneous attributes** in LHS or RHS
@@ -433,18 +730,51 @@ Algorithm:
 ```
 
 ### 4.5 Lossless Decomposition
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-handwritten.svg" alt="Handwritten: 4.5 Lossless Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-diagram.svg" alt="Diagram: 4.5 Lossless Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-5-lossless-decomposition-sticky.svg" alt="Sticky Note: 4.5 Lossless Decomposition" width="30%">
+</a>
+
 
 Decomposition of R into R1, R2 is **lossless** if:
 - `R1 ÃƒÂ¢Ã‹â€ Ã‚Â© R2 Ã¢â€ â€™ R1` or `R1 ÃƒÂ¢Ã‹â€ Ã‚Â© R2 Ã¢â€ â€™ R2` (i.e., common attributes form a superkey in at least one)
 - Or for decomposition into multiple relations: natural join of all decomposed relations yields original R without spurious tuples
 
 ### 4.6 Dependency Preservation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-handwritten.svg" alt="Handwritten: 4.6 Dependency Preservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-diagram.svg" alt="Diagram: 4.6 Dependency Preservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-6-dependency-preservation-sticky.svg" alt="Sticky Note: 4.6 Dependency Preservation" width="30%">
+</a>
+
 
 Decomposition preserves dependencies if the union of FDs projected on each decomposed relation implies the original FD set.
 
 **Algorithm:** For each FD X Ã¢â€ â€™ Y in F, check if `XÃƒÂ¢Ã‚Â�Ã‚Âº` w.r.t. projected FDs contains Y. If all FDs are preserved, the decomposition is dependency-preserving.
 
 ### 4.7 Normal Forms in Detail
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-handwritten.svg" alt="Handwritten: 4.7 Normal Forms in Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-diagram.svg" alt="Diagram: 4.7 Normal Forms in Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/4-7-normal-forms-in-detail-sticky.svg" alt="Sticky Note: 4.7 Normal Forms in Detail" width="30%">
+</a>
+
 
 #### 1NF
 - Every attribute contains **atomic (indivisible)** values
@@ -483,6 +813,17 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 ## 5. Transaction Management
 
 ### 5.1 Transaction States
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-handwritten.svg" alt="Handwritten: 5.1 Transaction States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-diagram.svg" alt="Diagram: 5.1 Transaction States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-1-transaction-states-sticky.svg" alt="Sticky Note: 5.1 Transaction States" width="30%">
+</a>
+
 
 ```
 Active Ã¢â€ â€™ Partially Committed Ã¢â€ â€™ Committed
@@ -491,12 +832,34 @@ Failed Ã¢â€ â€™ Aborted
 ```
 
 ### 5.2 Schedules
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-handwritten.svg" alt="Handwritten: 5.2 Schedules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-diagram.svg" alt="Diagram: 5.2 Schedules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-2-schedules-sticky.svg" alt="Sticky Note: 5.2 Schedules" width="30%">
+</a>
+
 
 - **Serial schedule:** Transactions execute one after another (no interleaving)
 - **Serializable schedule:** Equivalent to some serial schedule
 - **Non-serializable schedule:** May lead to inconsistency
 
 ### 5.3 Conflict Serializability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-handwritten.svg" alt="Handwritten: 5.3 Conflict Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-diagram.svg" alt="Diagram: 5.3 Conflict Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-3-conflict-serializability-sticky.svg" alt="Sticky Note: 5.3 Conflict Serializability" width="30%">
+</a>
+
 
 **Conflict:** Two operations on same data item where at least one is write.
 - **Read-Write (RW):** Unrepeatable read
@@ -514,6 +877,17 @@ Failed Ã¢â€ â€™ Aborted
 4. If acyclic Ã¢â€ â€™ conflict serializable (topological sort gives equivalent serial order)
 
 ### 5.4 View Serializability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-handwritten.svg" alt="Handwritten: 5.4 View Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-diagram.svg" alt="Diagram: 5.4 View Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-4-view-serializability-sticky.svg" alt="Sticky Note: 5.4 View Serializability" width="30%">
+</a>
+
 
 Schedule S1 is **view equivalent** to S2 if:
 1. Same initial reads: If Ti reads initial value of A in S1, same in S2
@@ -525,6 +899,17 @@ Schedule S1 is **view equivalent** to S2 if:
 - Some view-serializable schedules are **not** conflict-serializable (e.g., with blind writes)
 
 ### 5.5 Concurrency Control Protocols
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-handwritten.svg" alt="Handwritten: 5.5 Concurrency Control Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-diagram.svg" alt="Diagram: 5.5 Concurrency Control Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-5-concurrency-control-protocols-sticky.svg" alt="Sticky Note: 5.5 Concurrency Control Protocols" width="30%">
+</a>
+
 
 #### Lock-Based (2PL)
 
@@ -563,6 +948,17 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 - Avoids readers blocking writers and vice versa
 
 ### 5.6 Deadlock Handling
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-handwritten.svg" alt="Handwritten: 5.6 Deadlock Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-diagram.svg" alt="Diagram: 5.6 Deadlock Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/5-6-deadlock-handling-sticky.svg" alt="Sticky Note: 5.6 Deadlock Handling" width="30%">
+</a>
+
 
 | Strategy | Method | Pros | Cons |
 |----------|--------|------|------|
@@ -575,6 +971,17 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 ## 6. Recovery
 
 ### 6.1 Storage Types
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-handwritten.svg" alt="Handwritten: 6.1 Storage Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-diagram.svg" alt="Diagram: 6.1 Storage Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-1-storage-types-sticky.svg" alt="Sticky Note: 6.1 Storage Types" width="30%">
+</a>
+
 
 | Storage | Volatility | Speed | Contents |
 |---------|------------|-------|----------|
@@ -583,6 +990,17 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 | Flash/SSD | Non-volatile | Medium | Persistent |
 
 ### 6.2 Log-Based Recovery
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-handwritten.svg" alt="Handwritten: 6.2 Log-Based Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-diagram.svg" alt="Diagram: 6.2 Log-Based Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-2-log-based-recovery-sticky.svg" alt="Sticky Note: 6.2 Log-Based Recovery" width="30%">
+</a>
+
 
 **Log entry types:**
 - `<Ti START>` Ã¢â€ â€™ Transaction begins
@@ -594,6 +1012,17 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 **Redo:** Apply new values from log (for committed transactions)
 
 ### 6.3 Deferred Update (No-Undo/Redo)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-handwritten.svg" alt="Handwritten: 6.3 Deferred Update (No-Undo/Redo)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-diagram.svg" alt="Diagram: 6.3 Deferred Update (No-Undo/Redo)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-3-deferred-update-no-undo-redo-sticky.svg" alt="Sticky Note: 6.3 Deferred Update (No-Undo/Redo)" width="30%">
+</a>
+
 
 - Writes deferred until commit point
 - No undo needed (transaction that didn't commit wrote nothing)
@@ -601,18 +1030,51 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 - **Log:** `<Ti START>`, `<Ti, X, V2>` (new value only), `<Ti COMMIT>`
 
 ### 6.4 Immediate Update (Undo/Redo)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-handwritten.svg" alt="Handwritten: 6.4 Immediate Update (Undo/Redo)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-diagram.svg" alt="Diagram: 6.4 Immediate Update (Undo/Redo)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-4-immediate-update-undo-redo-sticky.svg" alt="Sticky Note: 6.4 Immediate Update (Undo/Redo)" width="30%">
+</a>
+
 
 - Writes can happen before commit
 - Both undo and redo may be needed
 - **Log:** `<Ti START>`, `<Ti, X, V1, V2>` (old + new), `<Ti COMMIT>`
 
 ### 6.5 Checkpointing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-handwritten.svg" alt="Handwritten: 6.5 Checkpointing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-diagram.svg" alt="Diagram: 6.5 Checkpointing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-5-checkpointing-sticky.svg" alt="Sticky Note: 6.5 Checkpointing" width="30%">
+</a>
+
 
 - Periodically write all dirty buffers to disk
 - Reduces recovery time: only need to process logs after checkpoint
 - **Fuzzy checkpoint:** Allow updates during checkpoint (more practical)
 
 ### 6.6 ARIES Recovery Algorithm
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-handwritten.svg" alt="Handwritten: 6.6 ARIES Recovery Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-diagram.svg" alt="Diagram: 6.6 ARIES Recovery Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/6-6-aries-recovery-algorithm-sticky.svg" alt="Sticky Note: 6.6 ARIES Recovery Algorithm" width="30%">
+</a>
+
 
 **ARIES = Algorithm for Recovery and Isolation Exploiting Semantics**
 
@@ -632,6 +1094,17 @@ Three phases:
 ## 7. File Organization & Indexing
 
 ### 7.1 B/B+ Trees
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-handwritten.svg" alt="Handwritten: 7.1 B/B+ Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-diagram.svg" alt="Diagram: 7.1 B/B+ Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-1-b-b-trees-sticky.svg" alt="Sticky Note: 7.1 B/B+ Trees" width="30%">
+</a>
+
 
 #### B-Tree
 - Internal nodes store keys + pointers to children
@@ -658,6 +1131,17 @@ Three phases:
 - **Delete:** Locate key Ã¢â€ â€™ remove Ã¢â€ â€™ merge/redistribute if underflow
 
 ### 7.2 Indexing Techniques
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-handwritten.svg" alt="Handwritten: 7.2 Indexing Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-diagram.svg" alt="Diagram: 7.2 Indexing Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-2-indexing-techniques-sticky.svg" alt="Sticky Note: 7.2 Indexing Techniques" width="30%">
+</a>
+
 
 | Index Type | Description | Best For |
 |------------|-------------|----------|
@@ -669,6 +1153,17 @@ Three phases:
 | Non-clustered | Index contains pointers to data rows | Secondary attribute lookups |
 
 ### 7.3 Hashing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-handwritten.svg" alt="Handwritten: 7.3 Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-diagram.svg" alt="Diagram: 7.3 Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-hashing-sticky.svg" alt="Sticky Note: 7.3 Hashing" width="30%">
+</a>
+
 
 #### Static Hashing
 - **Bucket:** Unit of storage (1 block)
@@ -691,6 +1186,17 @@ Three phases:
 - No need for directory doubling
 
 ### 7.3 Indexing vs Hashing Comparison
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-handwritten.svg" alt="Handwritten: 7.3 Indexing vs Hashing Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-diagram.svg" alt="Diagram: 7.3 Indexing vs Hashing Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/7-3-indexing-vs-hashing-comparison-sticky.svg" alt="Sticky Note: 7.3 Indexing vs Hashing Comparison" width="30%">
+</a>
+
 
 | Aspect | B+ Tree | Hashing |
 |--------|---------|---------|
@@ -705,6 +1211,17 @@ Three phases:
 ## 8. GATE Previous Year Questions
 
 ### D1. [GATE 2025, 2M, ER Model]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-handwritten.svg" alt="Handwritten: D1. [GATE 2025, 2M, ER Model]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-diagram.svg" alt="Diagram: D1. [GATE 2025, 2M, ER Model]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d1-gate-2025-2m-er-model-sticky.svg" alt="Sticky Note: D1. [GATE 2025, 2M, ER Model]" width="30%">
+</a>
+
 Consider a weak entity set W with partial key A, owned by strong entity set S with key B. Which of the following is the primary key of the relation mapping W?
 
 (a) A
@@ -718,6 +1235,17 @@ Consider a weak entity set W with partial key A, owned by strong entity set S wi
 ---
 
 ### D2. [GATE 2025, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-handwritten.svg" alt="Handwritten: D2. [GATE 2025, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-diagram.svg" alt="Diagram: D2. [GATE 2025, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d2-gate-2025-1m-sql-sticky.svg" alt="Sticky Note: D2. [GATE 2025, 1M, SQL]" width="30%">
+</a>
+
 What is the output of:
 ```sql
 SELECT COUNT(NULL) FROM Employee;
@@ -735,6 +1263,17 @@ SELECT COUNT(NULL) FROM Employee;
 ---
 
 ### D3. [GATE 2025, 2M, B+ Tree]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-handwritten.svg" alt="Handwritten: D3. [GATE 2025, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-diagram.svg" alt="Diagram: D3. [GATE 2025, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d3-gate-2025-2m-b-tree-sticky.svg" alt="Sticky Note: D3. [GATE 2025, 2M, B+ Tree]" width="30%">
+</a>
+
 A B+ tree of order p (maximum pointers per node) has 500,000 keys. The tree height is 3. What is the smallest possible value of p?
 
 (a) 75
@@ -753,6 +1292,17 @@ Solving: p = 80 gives enough capacity.
 ---
 
 ### D4. [GATE 2024, 2M, Relational Algebra]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-handwritten.svg" alt="Handwritten: D4. [GATE 2024, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-diagram.svg" alt="Diagram: D4. [GATE 2024, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d4-gate-2024-2m-relational-algebra-sticky.svg" alt="Sticky Note: D4. [GATE 2024, 2M, Relational Algebra]" width="30%">
+</a>
+
 Consider R(A, B, C, D) with FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ D. Which of the following is a candidate key?
 
 (a) A
@@ -770,6 +1320,17 @@ ABC is a superkey but not minimal.
 ---
 
 ### D5. [GATE 2024, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-handwritten.svg" alt="Handwritten: D5. [GATE 2024, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-diagram.svg" alt="Diagram: D5. [GATE 2024, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d5-gate-2024-1m-sql-sticky.svg" alt="Sticky Note: D5. [GATE 2024, 1M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT dept_id, AVG(salary)
 FROM instructor
@@ -789,6 +1350,17 @@ What does this query return?
 ---
 
 ### D6. [GATE 2024, 2M, Normalization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-handwritten.svg" alt="Handwritten: D6. [GATE 2024, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-diagram.svg" alt="Diagram: D6. [GATE 2024, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d6-gate-2024-2m-normalization-sticky.svg" alt="Sticky Note: D6. [GATE 2024, 2M, Normalization]" width="30%">
+</a>
+
 R(A, B, C, D, E) with FDs: AB Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ E. Which normal form is this relation in?
 
 (a) 1NF only
@@ -806,6 +1378,17 @@ So it's in 2NF. Answer is 2NF only.
 ---
 
 ### D7. [GATE 2024, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-handwritten.svg" alt="Handwritten: D7. [GATE 2024, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-diagram.svg" alt="Diagram: D7. [GATE 2024, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d7-gate-2024-2m-transaction-sticky.svg" alt="Sticky Note: D7. [GATE 2024, 2M, Transaction]" width="30%">
+</a>
+
 Schedule S: r1(A), w2(A), r1(B), w2(B), r1(C), w2(C). Is this schedule conflict serializable?
 
 (a) Yes, equivalent to T1, T2
@@ -823,6 +1406,17 @@ Precedence graph: T2 Ã¢â€ â€™ T1 only. Acyclic, so conflict serializa
 ---
 
 ### D8. [GATE 2023, 2M, Candidate Keys]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-handwritten.svg" alt="Handwritten: D8. [GATE 2023, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-diagram.svg" alt="Diagram: D8. [GATE 2023, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d8-gate-2023-2m-candidate-keys-sticky.svg" alt="Sticky Note: D8. [GATE 2023, 2M, Candidate Keys]" width="30%">
+</a>
+
 R(A, B, C, D, E, F) with FDs: AB Ã¢â€ â€™ C, BC Ã¢â€ â€™ D, D Ã¢â€ â€™ E, E Ã¢â€ â€™ F. What are the candidate keys?
 
 (a) AB only
@@ -840,6 +1434,17 @@ AB is the only candidate key.
 ---
 
 ### D9. [GATE 2023, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-handwritten.svg" alt="Handwritten: D9. [GATE 2023, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-diagram.svg" alt="Diagram: D9. [GATE 2023, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d9-gate-2023-1m-sql-sticky.svg" alt="Sticky Note: D9. [GATE 2023, 1M, SQL]" width="30%">
+</a>
+
 Which SQL clause is used to filter groups formed by GROUP BY?
 
 (a) WHERE
@@ -853,6 +1458,17 @@ Which SQL clause is used to filter groups formed by GROUP BY?
 ---
 
 ### D10. [GATE 2023, 2M, Normalization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-handwritten.svg" alt="Handwritten: D10. [GATE 2023, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-diagram.svg" alt="Diagram: D10. [GATE 2023, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d10-gate-2023-2m-normalization-sticky.svg" alt="Sticky Note: D10. [GATE 2023, 2M, Normalization]" width="30%">
+</a>
+
 R(A, B, C, D) with FDs: A Ã¢â€ â€™ B, B Ã¢â€ â€™ C, C Ã¢â€ â€™ D. Decompose into R1(A, B, C) and R2(C, D). Which of the following is true?
 
 (a) Lossless and dependency-preserving
@@ -868,6 +1484,17 @@ Dependency-preserving: A Ã¢â€ â€™ B (in R1), B Ã¢â€ â€™ C 
 ---
 
 ### D11. [GATE 2023, 2M, Serializability]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-handwritten.svg" alt="Handwritten: D11. [GATE 2023, 2M, Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-diagram.svg" alt="Diagram: D11. [GATE 2023, 2M, Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d11-gate-2023-2m-serializability-sticky.svg" alt="Sticky Note: D11. [GATE 2023, 2M, Serializability]" width="30%">
+</a>
+
 Schedule S: r1(X), r2(X), w1(Y), w2(Y), r1(Z), w2(Z). Is this view serializable?
 
 (a) Yes, conflict serializable too
@@ -885,6 +1512,17 @@ Graph: T1 Ã¢â€ â€™ T2 only. Acyclic. Conflict serializable (T1, T2). 
 ---
 
 ### D12. [GATE 2023, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-handwritten.svg" alt="Handwritten: D12. [GATE 2023, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-diagram.svg" alt="Diagram: D12. [GATE 2023, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d12-gate-2023-2m-sql-sticky.svg" alt="Sticky Note: D12. [GATE 2023, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT DISTINCT e.ename
 FROM emp e
@@ -909,6 +1547,17 @@ What does this query return?
 ---
 
 ### D13. [GATE 2022, 2M, BCNF]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-handwritten.svg" alt="Handwritten: D13. [GATE 2022, 2M, BCNF]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-diagram.svg" alt="Diagram: D13. [GATE 2022, 2M, BCNF]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d13-gate-2022-2m-bcnf-sticky.svg" alt="Sticky Note: D13. [GATE 2022, 2M, BCNF]" width="30%">
+</a>
+
 R(A, B, C, D, E) with FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ E, C Ã¢â€ â€™ D. Is R in BCNF?
 
 (a) Yes
@@ -928,6 +1577,17 @@ But the violation question: which FD violates? All do. The answer choices only f
 ---
 
 ### D14. [GATE 2022, 1M, Relational Algebra]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-handwritten.svg" alt="Handwritten: D14. [GATE 2022, 1M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-diagram.svg" alt="Diagram: D14. [GATE 2022, 1M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d14-gate-2022-1m-relational-algebra-sticky.svg" alt="Sticky Note: D14. [GATE 2022, 1M, Relational Algebra]" width="30%">
+</a>
+
 Which operation in relational algebra eliminates duplicate tuples?
 
 (a) SELECT
@@ -941,6 +1601,17 @@ Which operation in relational algebra eliminates duplicate tuples?
 ---
 
 ### D15. [GATE 2022, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-handwritten.svg" alt="Handwritten: D15. [GATE 2022, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-diagram.svg" alt="Diagram: D15. [GATE 2022, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d15-gate-2022-2m-sql-sticky.svg" alt="Sticky Note: D15. [GATE 2022, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT name FROM student
 WHERE marks > (SELECT AVG(marks) FROM student);
@@ -958,6 +1629,17 @@ What type of subquery is this?
 ---
 
 ### D16. [GATE 2022, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-handwritten.svg" alt="Handwritten: D16. [GATE 2022, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-diagram.svg" alt="Diagram: D16. [GATE 2022, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d16-gate-2022-2m-transaction-sticky.svg" alt="Sticky Note: D16. [GATE 2022, 2M, Transaction]" width="30%">
+</a>
+
 Schedule S: w1(A), w1(B), w2(A), r2(C), w2(B). Which of the following is true?
 
 (a) Conflict serializable
@@ -975,6 +1657,17 @@ Graph: T1 Ã¢â€ â€™ T2 only. Acyclic. Conflict serializable as T1, T2.
 ---
 
 ### D17. [GATE 2021, 2M, B+ Tree]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-handwritten.svg" alt="Handwritten: D17. [GATE 2021, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-diagram.svg" alt="Diagram: D17. [GATE 2021, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d17-gate-2021-2m-b-tree-sticky.svg" alt="Sticky Note: D17. [GATE 2021, 2M, B+ Tree]" width="30%">
+</a>
+
 A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). What is the maximum number of keys stored?
 
 (a) (2d + 1)^h
@@ -988,6 +1681,17 @@ A B+ tree of order d (max keys per node = 2d) has height h (leaf level = h). Wha
 ---
 
 ### D18. [GATE 2021, 2M, Normalization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-handwritten.svg" alt="Handwritten: D18. [GATE 2021, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-diagram.svg" alt="Diagram: D18. [GATE 2021, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d18-gate-2021-2m-normalization-sticky.svg" alt="Sticky Note: D18. [GATE 2021, 2M, Normalization]" width="30%">
+</a>
+
 R(A, B, C, D, E, F) with FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ D, D Ã¢â€ â€™ EF. Which normal form?
 
 (a) 1NF
@@ -1005,6 +1709,17 @@ Wait Ã¢â€ â€™ A is a proper subset of CK = {A,C}. So A Ã¢â€ â�
 ---
 
 ### D19. [GATE 2021, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-handwritten.svg" alt="Handwritten: D19. [GATE 2021, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-diagram.svg" alt="Diagram: D19. [GATE 2021, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d19-gate-2021-1m-sql-sticky.svg" alt="Sticky Note: D19. [GATE 2021, 1M, SQL]" width="30%">
+</a>
+
 Which of the following integrity constraints is checked LAST during a SQL UPDATE?
 
 (a) NOT NULL
@@ -1018,6 +1733,17 @@ Which of the following integrity constraints is checked LAST during a SQL UPDATE
 ---
 
 ### D20. [GATE 2021, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-handwritten.svg" alt="Handwritten: D20. [GATE 2021, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-diagram.svg" alt="Diagram: D20. [GATE 2021, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d20-gate-2021-2m-transaction-sticky.svg" alt="Sticky Note: D20. [GATE 2021, 2M, Transaction]" width="30%">
+</a>
+
 Consider the schedule: r1(A), r2(B), w2(A), w1(B). Is the schedule conflict serializable?
 
 (a) Yes
@@ -1035,6 +1761,17 @@ Graph: T1 Ã¢â€ â€™ T2 and T2 Ã¢â€ â€™ T1. Cycle! Not confl
 ---
 
 ### D21. [GATE 2021, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-handwritten.svg" alt="Handwritten: D21. [GATE 2021, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-diagram.svg" alt="Diagram: D21. [GATE 2021, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d21-gate-2021-2m-sql-sticky.svg" alt="Sticky Note: D21. [GATE 2021, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT S.name
 FROM Student S
@@ -1061,6 +1798,17 @@ What does the query return?
 ---
 
 ### D22. [GATE 2020, 2M, Canonical Cover]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-handwritten.svg" alt="Handwritten: D22. [GATE 2020, 2M, Canonical Cover]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-diagram.svg" alt="Diagram: D22. [GATE 2020, 2M, Canonical Cover]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d22-gate-2020-2m-canonical-cover-sticky.svg" alt="Sticky Note: D22. [GATE 2020, 2M, Canonical Cover]" width="30%">
+</a>
+
 R(A, B, C) with FDs: A Ã¢â€ â€™ BC, B Ã¢â€ â€™ C, A Ã¢â€ â€™ B, AB Ã¢â€ â€™ C. What is the canonical cover?
 
 (a) {A Ã¢â€ â€™ B, B Ã¢â€ â€™ C}
@@ -1078,6 +1826,17 @@ Remaining: {A Ã¢â€ â€™ B, B Ã¢â€ â€™ C}. This is the canon
 ---
 
 ### D23. [GATE 2020, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-handwritten.svg" alt="Handwritten: D23. [GATE 2020, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-diagram.svg" alt="Diagram: D23. [GATE 2020, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d23-gate-2020-1m-sql-sticky.svg" alt="Sticky Note: D23. [GATE 2020, 1M, SQL]" width="30%">
+</a>
+
 What is the result of:
 ```sql
 SELECT COUNT(*) FROM (
@@ -1095,6 +1854,17 @@ SELECT COUNT(*) FROM (
 ---
 
 ### D24. [GATE 2020, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-handwritten.svg" alt="Handwritten: D24. [GATE 2020, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-diagram.svg" alt="Diagram: D24. [GATE 2020, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d24-gate-2020-2m-transaction-sticky.svg" alt="Sticky Note: D24. [GATE 2020, 2M, Transaction]" width="30%">
+</a>
+
 Schedule: r1(X), r2(Y), r1(Y), w2(X), w1(Y), w1(X). Is this conflict serializable?
 
 (a) Yes
@@ -1118,6 +1888,17 @@ So we have: T1 Ã¢â€ â€™ T2 and T2 Ã¢â€ â€™ T1. Cycle. Not 
 ---
 
 ### D25. [GATE 2020, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-handwritten.svg" alt="Handwritten: D25. [GATE 2020, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-diagram.svg" alt="Diagram: D25. [GATE 2020, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d25-gate-2020-2m-sql-sticky.svg" alt="Sticky Note: D25. [GATE 2020, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT e1.name
 FROM emp e1
@@ -1140,6 +1921,17 @@ This is an example of:
 ---
 
 ### D26. [GATE 2019, 2M, FD Closure]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-handwritten.svg" alt="Handwritten: D26. [GATE 2019, 2M, FD Closure]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-diagram.svg" alt="Diagram: D26. [GATE 2019, 2M, FD Closure]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d26-gate-2019-2m-fd-closure-sticky.svg" alt="Sticky Note: D26. [GATE 2019, 2M, FD Closure]" width="30%">
+</a>
+
 R(A, B, C, D, E) with FDs: A Ã¢â€ â€™ B, B Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ E. What is AÃƒÂ¢Ã‚Â�Ã‚Âº?
 
 (a) {A, B}
@@ -1158,6 +1950,17 @@ D Ã¢â€ â€™ E: D ÃƒÂ¢Ã…Â Ã¢â‚¬Â  AÃƒÂ¢Ã‚Â��
 ---
 
 ### D27. [GATE 2019, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-handwritten.svg" alt="Handwritten: D27. [GATE 2019, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-diagram.svg" alt="Diagram: D27. [GATE 2019, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d27-gate-2019-1m-sql-sticky.svg" alt="Sticky Note: D27. [GATE 2019, 1M, SQL]" width="30%">
+</a>
+
 What does the SQL operator IS NULL check for?
 
 (a) Whether value is zero
@@ -1171,6 +1974,17 @@ What does the SQL operator IS NULL check for?
 ---
 
 ### D28. [GATE 2019, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-handwritten.svg" alt="Handwritten: D28. [GATE 2019, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-diagram.svg" alt="Diagram: D28. [GATE 2019, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d28-gate-2019-2m-transaction-sticky.svg" alt="Sticky Note: D28. [GATE 2019, 2M, Transaction]" width="30%">
+</a>
+
 Schedule S: w1(A), w1(B), r2(A), w2(B), w1(C), r2(C). Is this conflict serializable?
 
 (a) Yes
@@ -1191,6 +2005,17 @@ All edges T1 Ã¢â€ â€™ T2. No cycle. Conflict serializable as T1, T2.
 ---
 
 ### D29. [GATE 2019, 2M, Normalization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-handwritten.svg" alt="Handwritten: D29. [GATE 2019, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-diagram.svg" alt="Diagram: D29. [GATE 2019, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d29-gate-2019-2m-normalization-sticky.svg" alt="Sticky Note: D29. [GATE 2019, 2M, Normalization]" width="30%">
+</a>
+
 R(A, B, C, D, E, F) with FDs: A Ã¢â€ â€™ B, CD Ã¢â€ â€™ E, B Ã¢â€ â€™ D, E Ã¢â€ â€™ F. What is the candidate key?
 
 (a) A
@@ -1207,6 +2032,17 @@ ACÃƒÂ¢Ã‚Â�Ã‚Âº = {A, C, B, D, E, F} = all attributes. Minimal? Ch
 ---
 
 ### D30. [GATE 2018, 2M, B+ Tree]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-handwritten.svg" alt="Handwritten: D30. [GATE 2018, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-diagram.svg" alt="Diagram: D30. [GATE 2018, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d30-gate-2018-2m-b-tree-sticky.svg" alt="Sticky Note: D30. [GATE 2018, 2M, B+ Tree]" width="30%">
+</a>
+
 A B+ tree index with order p (max keys per internal node = p-1, max pointers = p) is built on a key attribute. If the tree height is 3 (root at level 0, leaves at level 2) and there are 10,000 keys, what is minimum p?
 
 (a) 20
@@ -1257,6 +2093,17 @@ So with p = 24, 4 levels, min keys = 3456 ÃƒÆ’Ã¢â‚¬â€� 12 = 4147
 ---
 
 ### D31. [GATE 2018, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-handwritten.svg" alt="Handwritten: D31. [GATE 2018, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-diagram.svg" alt="Diagram: D31. [GATE 2018, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d31-gate-2018-2m-sql-sticky.svg" alt="Sticky Note: D31. [GATE 2018, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT dept_name, COUNT(DISTINCT instructor_id)
 FROM teaches NATURAL JOIN instructor
@@ -1276,6 +2123,17 @@ What does this return?
 ---
 
 ### D32. [GATE 2018, 1M, ACID]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-handwritten.svg" alt="Handwritten: D32. [GATE 2018, 1M, ACID]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-diagram.svg" alt="Diagram: D32. [GATE 2018, 1M, ACID]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d32-gate-2018-1m-acid-sticky.svg" alt="Sticky Note: D32. [GATE 2018, 1M, ACID]" width="30%">
+</a>
+
 Which ACID property ensures that concurrent execution of transactions results in a state equivalent to some serial execution?
 
 (a) Atomicity
@@ -1289,6 +2147,17 @@ Which ACID property ensures that concurrent execution of transactions results in
 ---
 
 ### D33. [GATE 2018, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-handwritten.svg" alt="Handwritten: D33. [GATE 2018, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-diagram.svg" alt="Diagram: D33. [GATE 2018, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d33-gate-2018-2m-transaction-sticky.svg" alt="Sticky Note: D33. [GATE 2018, 2M, Transaction]" width="30%">
+</a>
+
 Schedule S: r1(P), w2(Q), r3(R), w1(P), r2(R), w3(Q). Which is true?
 
 (a) Conflict serializable
@@ -1309,6 +2178,17 @@ Only edge: T2 Ã¢â€ â€™ T3. No cycle. Conflict serializable (order: T1
 ---
 
 ### D34. [GATE 2017, 2M, Candidate Keys]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-handwritten.svg" alt="Handwritten: D34. [GATE 2017, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-diagram.svg" alt="Diagram: D34. [GATE 2017, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d34-gate-2017-2m-candidate-keys-sticky.svg" alt="Sticky Note: D34. [GATE 2017, 2M, Candidate Keys]" width="30%">
+</a>
+
 R(A, B, C, D, E, F, G) with FDs: A Ã¢â€ â€™ B, B Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ E, E Ã¢â€ â€™ F, F Ã¢â€ â€™ G. Find candidate keys.
 
 (a) A only
@@ -1324,6 +2204,17 @@ Check if any other: BÃƒÂ¢Ã‚Â�Ã‚Âº = {B, C, D, E, F, G} Ã¢â€�
 ---
 
 ### D35. [GATE 2017, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-handwritten.svg" alt="Handwritten: D35. [GATE 2017, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-diagram.svg" alt="Diagram: D35. [GATE 2017, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d35-gate-2017-1m-sql-sticky.svg" alt="Sticky Note: D35. [GATE 2017, 1M, SQL]" width="30%">
+</a>
+
 What is the difference between DELETE and TRUNCATE in SQL?
 
 (a) DELETE is DDL, TRUNCATE is DML
@@ -1337,6 +2228,17 @@ What is the difference between DELETE and TRUNCATE in SQL?
 ---
 
 ### D36. [GATE 2017, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-handwritten.svg" alt="Handwritten: D36. [GATE 2017, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-diagram.svg" alt="Diagram: D36. [GATE 2017, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d36-gate-2017-2m-transaction-sticky.svg" alt="Sticky Note: D36. [GATE 2017, 2M, Transaction]" width="30%">
+</a>
+
 Which of the following is TRUE about Two-Phase Locking (2PL)?
 
 (a) Guarantees conflict serializability
@@ -1350,6 +2252,17 @@ Which of the following is TRUE about Two-Phase Locking (2PL)?
 ---
 
 ### D37. [GATE 2016, 2M, Lossless Decomposition]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-handwritten.svg" alt="Handwritten: D37. [GATE 2016, 2M, Lossless Decomposition]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-diagram.svg" alt="Diagram: D37. [GATE 2016, 2M, Lossless Decomposition]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d37-gate-2016-2m-lossless-decomposition-sticky.svg" alt="Sticky Note: D37. [GATE 2016, 2M, Lossless Decomposition]" width="30%">
+</a>
+
 R(A, B, C, D, E) with FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ D, D Ã¢â€ â€™ E. Decompose into R1(A, B), R2(A, C, D, E). Is this lossless?
 
 (a) Yes
@@ -1365,6 +2278,17 @@ AÃƒÂ¢Ã‚Â�Ã‚Âº = {A, B}. In R1: {A, B} Ã¢â€ â€™ A is ke
 ---
 
 ### D38. [GATE 2016, 1M, SQL Triggers]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-handwritten.svg" alt="Handwritten: D38. [GATE 2016, 1M, SQL Triggers]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-diagram.svg" alt="Diagram: D38. [GATE 2016, 1M, SQL Triggers]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d38-gate-2016-1m-sql-triggers-sticky.svg" alt="Sticky Note: D38. [GATE 2016, 1M, SQL Triggers]" width="30%">
+</a>
+
 Which of the following events can activate a trigger in SQL?
 
 (a) INSERT only
@@ -1378,6 +2302,17 @@ Which of the following events can activate a trigger in SQL?
 ---
 
 ### D39. [GATE 2016, 2M, Recovery]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-handwritten.svg" alt="Handwritten: D39. [GATE 2016, 2M, Recovery]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-diagram.svg" alt="Diagram: D39. [GATE 2016, 2M, Recovery]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d39-gate-2016-2m-recovery-sticky.svg" alt="Sticky Note: D39. [GATE 2016, 2M, Recovery]" width="30%">
+</a>
+
 In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 
 (a) Apply all committed transactions
@@ -1393,6 +2328,17 @@ In the ARIES recovery algorithm, what is the purpose of the Analysis phase?
 ---
 
 ### D40. [GATE 2016, 2M, Relational Algebra]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-handwritten.svg" alt="Handwritten: D40. [GATE 2016, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-diagram.svg" alt="Diagram: D40. [GATE 2016, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d40-gate-2016-2m-relational-algebra-sticky.svg" alt="Sticky Note: D40. [GATE 2016, 2M, Relational Algebra]" width="30%">
+</a>
+
 Consider two relations R(A, B) and S(B, C). Which relational algebra expression is equivalent to R ÃƒÂ¢Ã¢â‚¬Â¹Ã‹â€  S?
 
 (a) pi_{A,B,C}(sigma_{R.B = S.B}(R ÃƒÆ’Ã¢â‚¬â€� S))
@@ -1406,6 +2352,17 @@ Consider two relations R(A, B) and S(B, C). Which relational algebra expression 
 ---
 
 ### D41. [GATE 2015, 2M, Normal Forms]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-handwritten.svg" alt="Handwritten: D41. [GATE 2015, 2M, Normal Forms]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-diagram.svg" alt="Diagram: D41. [GATE 2015, 2M, Normal Forms]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d41-gate-2015-2m-normal-forms-sticky.svg" alt="Sticky Note: D41. [GATE 2015, 2M, Normal Forms]" width="30%">
+</a>
+
 R(A, B, C, D) with FDs: AB Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ A. In which normal form?
 
 (a) BCNF
@@ -1440,6 +2397,17 @@ So R is in 3NF but not BCNF.
 ---
 
 ### D42. [GATE 2015, 1M, Hashing]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-handwritten.svg" alt="Handwritten: D42. [GATE 2015, 1M, Hashing]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-diagram.svg" alt="Diagram: D42. [GATE 2015, 1M, Hashing]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d42-gate-2015-1m-hashing-sticky.svg" alt="Sticky Note: D42. [GATE 2015, 1M, Hashing]" width="30%">
+</a>
+
 In extendible hashing, when a bucket overflows and its local depth equals global depth:
 
 (a) Only the bucket splits
@@ -1453,6 +2421,17 @@ In extendible hashing, when a bucket overflows and its local depth equals global
 ---
 
 ### D43. [GATE 2015, 2M, Serializability]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-handwritten.svg" alt="Handwritten: D43. [GATE 2015, 2M, Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-diagram.svg" alt="Diagram: D43. [GATE 2015, 2M, Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d43-gate-2015-2m-serializability-sticky.svg" alt="Sticky Note: D43. [GATE 2015, 2M, Serializability]" width="30%">
+</a>
+
 Schedule S: r1(A), w2(B), w1(C), r3(B), r1(B), w3(C). Is this conflict serializable?
 
 (a) Yes
@@ -1473,6 +2452,17 @@ Edges: T2 Ã¢â€ â€™ T3, T2 Ã¢â€ â€™ T1, T1 Ã¢â€ â€
 ---
 
 ### D44. [GATE 2014, 2M, Division]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-handwritten.svg" alt="Handwritten: D44. [GATE 2014, 2M, Division]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-diagram.svg" alt="Diagram: D44. [GATE 2014, 2M, Division]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d44-gate-2014-2m-division-sticky.svg" alt="Sticky Note: D44. [GATE 2014, 2M, Division]" width="30%">
+</a>
+
 Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following correctly represents R ÃƒÆ’Ã‚Â· S?
 
 (a) {a | exists b1,b2 in R with B = b1 and B = b2}
@@ -1486,6 +2476,17 @@ Consider R(A, B) and S(B) where S contains {b1, b2}. Which of the following corr
 ---
 
 ### D45. [GATE 2014, 2M, B+ Tree]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-handwritten.svg" alt="Handwritten: D45. [GATE 2014, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-diagram.svg" alt="Diagram: D45. [GATE 2014, 2M, B+ Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d45-gate-2014-2m-b-tree-sticky.svg" alt="Sticky Note: D45. [GATE 2014, 2M, B+ Tree]" width="30%">
+</a>
+
 A B+ tree of order p (max keys) is used for indexing. Each node is one disk block (size 1024 bytes). Key = 12 bytes, pointer = 8 bytes. Max order p is:
 
 (a) 50
@@ -1505,6 +2506,17 @@ Order = 51 (maximum pointers per node).
 ---
 
 ### D46. [GATE 2014, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-handwritten.svg" alt="Handwritten: D46. [GATE 2014, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-diagram.svg" alt="Diagram: D46. [GATE 2014, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d46-gate-2014-1m-sql-sticky.svg" alt="Sticky Note: D46. [GATE 2014, 1M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT *
 FROM R NATURAL LEFT OUTER JOIN S
@@ -1523,6 +2535,17 @@ What is wrong with this query?
 ---
 
 ### D47. [GATE 2014, 2M, Transaction]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-handwritten.svg" alt="Handwritten: D47. [GATE 2014, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-diagram.svg" alt="Diagram: D47. [GATE 2014, 2M, Transaction]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d47-gate-2014-2m-transaction-sticky.svg" alt="Sticky Note: D47. [GATE 2014, 2M, Transaction]" width="30%">
+</a>
+
 Consider schedule S: r1(A), r2(B), r1(C), w1(A), w2(B), r2(C), w1(C), w2(C). Which of the following is true?
 
 (a) S is conflict serializable as T1, T2
@@ -1544,6 +2567,17 @@ Edges: T2 Ã¢â€ â€™ T1 and T1 Ã¢â€ â€™ T2. Cycle! Not confl
 ---
 
 ### D48. [GATE 2013, 2M, ER Model]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-handwritten.svg" alt="Handwritten: D48. [GATE 2013, 2M, ER Model]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-diagram.svg" alt="Diagram: D48. [GATE 2013, 2M, ER Model]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d48-gate-2013-2m-er-model-sticky.svg" alt="Sticky Note: D48. [GATE 2013, 2M, ER Model]" width="30%">
+</a>
+
 Which of the following is NOT a valid reason to use weak entity sets?
 
 (a) To avoid NULL values in FK
@@ -1557,6 +2591,17 @@ Which of the following is NOT a valid reason to use weak entity sets?
 ---
 
 ### D49. [GATE 2013, 2M, Functional Dependencies]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-handwritten.svg" alt="Handwritten: D49. [GATE 2013, 2M, Functional Dependencies]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-diagram.svg" alt="Diagram: D49. [GATE 2013, 2M, Functional Dependencies]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d49-gate-2013-2m-functional-dependencies-sticky.svg" alt="Sticky Note: D49. [GATE 2013, 2M, Functional Dependencies]" width="30%">
+</a>
+
 R(A, B, C, D, E, F) with FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ D, D Ã¢â€ â€™ E, E Ã¢â€ â€™ F. How many candidate keys?
 
 (a) 1
@@ -1573,6 +2618,17 @@ Check if any other: A alone Ã¢â€ â€™ no (C missing). C alone Ã¢â�
 ---
 
 ### D50. [GATE 2013, 2M, 2PL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-handwritten.svg" alt="Handwritten: D50. [GATE 2013, 2M, 2PL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-diagram.svg" alt="Diagram: D50. [GATE 2013, 2M, 2PL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d50-gate-2013-2m-2pl-sticky.svg" alt="Sticky Note: D50. [GATE 2013, 2M, 2PL]" width="30%">
+</a>
+
 A schedule follows 2PL. Which of the following is guaranteed?
 
 (a) Deadlock-free
@@ -1586,6 +2642,17 @@ A schedule follows 2PL. Which of the following is guaranteed?
 ---
 
 ### D51. [GATE 2012, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-handwritten.svg" alt="Handwritten: D51. [GATE 2012, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-diagram.svg" alt="Diagram: D51. [GATE 2012, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d51-gate-2012-2m-sql-sticky.svg" alt="Sticky Note: D51. [GATE 2012, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT S.name
 FROM Student S
@@ -1612,6 +2679,17 @@ What does this return? (MINUS = set difference)
 ---
 
 ### D52. [GATE 2012, 2M, Canonical Cover]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-handwritten.svg" alt="Handwritten: D52. [GATE 2012, 2M, Canonical Cover]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-diagram.svg" alt="Diagram: D52. [GATE 2012, 2M, Canonical Cover]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d52-gate-2012-2m-canonical-cover-sticky.svg" alt="Sticky Note: D52. [GATE 2012, 2M, Canonical Cover]" width="30%">
+</a>
+
 R(A, B, C) with FDs: A Ã¢â€ â€™ BC, AB Ã¢â€ â€™ C, B Ã¢â€ â€™ C. Find canonical cover.
 
 (a) {A Ã¢â€ â€™ B, B Ã¢â€ â€™ C, A Ã¢â€ â€™ C}
@@ -1629,6 +2707,17 @@ Final: {A Ã¢â€ â€™ B, B Ã¢â€ â€™ C}
 ---
 
 ### D53. [GATE 2012, 2M, B-Tree]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-handwritten.svg" alt="Handwritten: D53. [GATE 2012, 2M, B-Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-diagram.svg" alt="Diagram: D53. [GATE 2012, 2M, B-Tree]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d53-gate-2012-2m-b-tree-sticky.svg" alt="Sticky Note: D53. [GATE 2012, 2M, B-Tree]" width="30%">
+</a>
+
 A B-tree of order 5 (max 4 keys, 5 children) initially empty. Insert: 1, 2, 3, 4, 5. What is the root key after all insertions?
 
 (a) 2
@@ -1645,6 +2734,17 @@ Root key = 3.
 ---
 
 ### D54. [GATE 2011, 2M, Relational Algebra]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-handwritten.svg" alt="Handwritten: D54. [GATE 2011, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-diagram.svg" alt="Diagram: D54. [GATE 2011, 2M, Relational Algebra]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d54-gate-2011-2m-relational-algebra-sticky.svg" alt="Sticky Note: D54. [GATE 2011, 2M, Relational Algebra]" width="30%">
+</a>
+
 R(A, B) and S(B, C). Which expression gives all tuples in R that have a matching tuple in S?
 
 (a) R ÃƒÂ¢Ã¢â‚¬Â¹Ã‹â€  S
@@ -1673,6 +2773,17 @@ So (a) and (c) are correct. If the answer is (d) All of these, the interpretatio
 ---
 
 ### D55. [GATE 2011, 2M, Normalization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-handwritten.svg" alt="Handwritten: D55. [GATE 2011, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-diagram.svg" alt="Diagram: D55. [GATE 2011, 2M, Normalization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d55-gate-2011-2m-normalization-sticky.svg" alt="Sticky Note: D55. [GATE 2011, 2M, Normalization]" width="30%">
+</a>
+
 R(A, B, C, D, E) with FDs: A Ã¢â€ â€™ B, B Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ E. Decompose into R1(A, B) and R2(A, C, D, E). Is it dependency-preserving?
 
 (a) Yes
@@ -1689,6 +2800,17 @@ B Ã¢â€ â€™ C: B no longer exists as a non-key in any relation. B Ã¢
 ---
 
 ### D56. [GATE 2010, 2M, ER-to-Relational]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-handwritten.svg" alt="Handwritten: D56. [GATE 2010, 2M, ER-to-Relational]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-diagram.svg" alt="Diagram: D56. [GATE 2010, 2M, ER-to-Relational]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d56-gate-2010-2m-er-to-relational-sticky.svg" alt="Sticky Note: D56. [GATE 2010, 2M, ER-to-Relational]" width="30%">
+</a>
+
 ER diagram has entities E1, E2 with M:N relationship R. What is the minimum number of tables needed?
 
 (a) 1
@@ -1702,6 +2824,17 @@ ER diagram has entities E1, E2 with M:N relationship R. What is the minimum numb
 ---
 
 ### D57. [GATE 2010, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-handwritten.svg" alt="Handwritten: D57. [GATE 2010, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-diagram.svg" alt="Diagram: D57. [GATE 2010, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d57-gate-2010-1m-sql-sticky.svg" alt="Sticky Note: D57. [GATE 2010, 1M, SQL]" width="30%">
+</a>
+
 Which of the following is NOT a valid SQL data type?
 
 (a) VARCHAR
@@ -1715,6 +2848,17 @@ Which of the following is NOT a valid SQL data type?
 ---
 
 ### D58. [GATE 2010, 2M, Locking]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-handwritten.svg" alt="Handwritten: D58. [GATE 2010, 2M, Locking]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-diagram.svg" alt="Diagram: D58. [GATE 2010, 2M, Locking]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d58-gate-2010-2m-locking-sticky.svg" alt="Sticky Note: D58. [GATE 2010, 2M, Locking]" width="30%">
+</a>
+
 Consider a table with 100 rows. T1 reads 50 rows, T2 reads all rows. What's the minimum locks held simultaneously under 2PL?
 
 (a) 50 shared, 100 shared
@@ -1728,6 +2872,17 @@ Consider a table with 100 rows. T1 reads 50 rows, T2 reads all rows. What's the 
 ---
 
 ### D59. [GATE 2025, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-handwritten.svg" alt="Handwritten: D59. [GATE 2025, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-diagram.svg" alt="Diagram: D59. [GATE 2025, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d59-gate-2025-2m-sql-sticky.svg" alt="Sticky Note: D59. [GATE 2025, 2M, SQL]" width="30%">
+</a>
+
 Consider Employee(eid, ename, dept, salary). Which query finds departments where every employee earns more than 50000?
 
 ```sql
@@ -1748,6 +2903,17 @@ Is this correct?
 ---
 
 ### D60. [GATE 2024, 2M, B+ Tree Order]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-handwritten.svg" alt="Handwritten: D60. [GATE 2024, 2M, B+ Tree Order]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-diagram.svg" alt="Diagram: D60. [GATE 2024, 2M, B+ Tree Order]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d60-gate-2024-2m-b-tree-order-sticky.svg" alt="Sticky Note: D60. [GATE 2024, 2M, B+ Tree Order]" width="30%">
+</a>
+
 A B+ tree index has block size 2048 bytes. Key = 16 bytes, pointer = 8 bytes, block header = 40 bytes. What is the maximum order (max pointers per internal node)?
 
 **Answer:** p = 85
@@ -1779,6 +2945,17 @@ So p = 84.
 ---
 
 ### D61. [GATE 2023, 2M, 3NF Decomposition]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-handwritten.svg" alt="Handwritten: D61. [GATE 2023, 2M, 3NF Decomposition]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-diagram.svg" alt="Diagram: D61. [GATE 2023, 2M, 3NF Decomposition]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d61-gate-2023-2m-3nf-decomposition-sticky.svg" alt="Sticky Note: D61. [GATE 2023, 2M, 3NF Decomposition]" width="30%">
+</a>
+
 R(A, B, C, D) with FDs: AB Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ A. Decompose into BCNF. Which decomposition(s) is/are dependency-preserving?
 
 (a) R1(A, C, D), R2(B, C)
@@ -1810,6 +2987,17 @@ But among the options, (b) is the best/correct BCNF decomposition. GATE answer w
 ---
 
 ### D62. [GATE 2022, 2M, SQL Aggregation]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-handwritten.svg" alt="Handwritten: D62. [GATE 2022, 2M, SQL Aggregation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-diagram.svg" alt="Diagram: D62. [GATE 2022, 2M, SQL Aggregation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d62-gate-2022-2m-sql-aggregation-sticky.svg" alt="Sticky Note: D62. [GATE 2022, 2M, SQL Aggregation]" width="30%">
+</a>
+
 ```sql
 SELECT dept, COUNT(*) AS cnt
 FROM instructor
@@ -1830,6 +3018,17 @@ The alias `cnt` is used in HAVING. Is this valid SQL?
 ---
 
 ### D63. [GATE 2021, 2M, View Serializability]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-handwritten.svg" alt="Handwritten: D63. [GATE 2021, 2M, View Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-diagram.svg" alt="Diagram: D63. [GATE 2021, 2M, View Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d63-gate-2021-2m-view-serializability-sticky.svg" alt="Sticky Note: D63. [GATE 2021, 2M, View Serializability]" width="30%">
+</a>
+
 Schedule S: r1(A), w2(A), r2(B), w1(B). Which is TRUE?
 
 (a) Conflict serializable
@@ -1857,6 +3056,17 @@ So view serializable but not conflict serializable.
 ---
 
 ### D64. [GATE 2020, 2M, Dependency Preservation]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-handwritten.svg" alt="Handwritten: D64. [GATE 2020, 2M, Dependency Preservation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-diagram.svg" alt="Diagram: D64. [GATE 2020, 2M, Dependency Preservation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d64-gate-2020-2m-dependency-preservation-sticky.svg" alt="Sticky Note: D64. [GATE 2020, 2M, Dependency Preservation]" width="30%">
+</a>
+
 R(A, B, C, D) with FDs: A Ã¢â€ â€™ B, A Ã¢â€ â€™ C, C Ã¢â€ â€™ D. Decompose into R1(A, B, C) and R2(C, D). Is this dependency-preserving?
 
 (a) Yes
@@ -1873,6 +3083,17 @@ All FDs: A Ã¢â€ â€™ B (R1), A Ã¢â€ â€™ C (R1), C Ã¢â€
 ---
 
 ### D65. [GATE 2019, 2M, Relational Algebra Equivalence]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-handwritten.svg" alt="Handwritten: D65. [GATE 2019, 2M, Relational Algebra Equivalence]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-diagram.svg" alt="Diagram: D65. [GATE 2019, 2M, Relational Algebra Equivalence]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d65-gate-2019-2m-relational-algebra-equivalence-sticky.svg" alt="Sticky Note: D65. [GATE 2019, 2M, Relational Algebra Equivalence]" width="30%">
+</a>
+
 Which of the following is NOT equivalent to sigma_{c1 ÃƒÂ¢Ã‹â€ Ã‚Â§ c2}(R)?
 
 (a) sigma_{c1}(sigma_{c2}(R))
@@ -1889,6 +3110,17 @@ Which of the following is NOT equivalent to sigma_{c1 ÃƒÂ¢Ã‹â€ Ã‚�
 ---
 
 ### D66. [GATE 2018, 2M, MVCC]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-handwritten.svg" alt="Handwritten: D66. [GATE 2018, 2M, MVCC]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-diagram.svg" alt="Diagram: D66. [GATE 2018, 2M, MVCC]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d66-gate-2018-2m-mvcc-sticky.svg" alt="Sticky Note: D66. [GATE 2018, 2M, MVCC]" width="30%">
+</a>
+
 In Multiversion Concurrency Control, a read operation:
 
 (a) Always reads the latest committed version
@@ -1902,6 +3134,17 @@ In Multiversion Concurrency Control, a read operation:
 ---
 
 ### D67. [GATE 2017, 2M, B+ Tree Deletion]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-handwritten.svg" alt="Handwritten: D67. [GATE 2017, 2M, B+ Tree Deletion]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-diagram.svg" alt="Diagram: D67. [GATE 2017, 2M, B+ Tree Deletion]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d67-gate-2017-2m-b-tree-deletion-sticky.svg" alt="Sticky Note: D67. [GATE 2017, 2M, B+ Tree Deletion]" width="30%">
+</a>
+
 A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The root needs to merge with siblings. What condition triggers merging?
 
 (a) Root has &lt; 2 keys
@@ -1915,6 +3158,17 @@ A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The r
 ---
 
 ### D68. [GATE 2017, 1M, Relational Calculus]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-handwritten.svg" alt="Handwritten: D68. [GATE 2017, 1M, Relational Calculus]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-diagram.svg" alt="Diagram: D68. [GATE 2017, 1M, Relational Calculus]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d68-gate-2017-1m-relational-calculus-sticky.svg" alt="Sticky Note: D68. [GATE 2017, 1M, Relational Calculus]" width="30%">
+</a>
+
 Which of the following is a safe expression in tuple relational calculus?
 
 (a) {t | Ãƒâ€šÃ‚Â¬(t ÃƒÂ¢Ã‹â€ Ã‹â€  R)}
@@ -1928,6 +3182,17 @@ Which of the following is a safe expression in tuple relational calculus?
 ---
 
 ### D69. [GATE 2018, 1M, File Organization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-handwritten.svg" alt="Handwritten: D69. [GATE 2018, 1M, File Organization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-diagram.svg" alt="Diagram: D69. [GATE 2018, 1M, File Organization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d69-gate-2018-1m-file-organization-sticky.svg" alt="Sticky Note: D69. [GATE 2018, 1M, File Organization]" width="30%">
+</a>
+
 A clustered index on a non-key attribute means:
 
 (a) Data file is sorted by that attribute
@@ -1941,6 +3206,17 @@ A clustered index on a non-key attribute means:
 ---
 
 ### D70. [GATE 2016, 2M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-handwritten.svg" alt="Handwritten: D70. [GATE 2016, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-diagram.svg" alt="Diagram: D70. [GATE 2016, 2M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d70-gate-2016-2m-sql-sticky.svg" alt="Sticky Note: D70. [GATE 2016, 2M, SQL]" width="30%">
+</a>
+
 ```sql
 SELECT dept_name, AVG(salary) AS avg_sal
 FROM instructor
@@ -1961,6 +3237,17 @@ What does this return?
 ---
 
 ### D71. [GATE 2015, 2M, Candidate Keys]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-handwritten.svg" alt="Handwritten: D71. [GATE 2015, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-diagram.svg" alt="Diagram: D71. [GATE 2015, 2M, Candidate Keys]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d71-gate-2015-2m-candidate-keys-sticky.svg" alt="Sticky Note: D71. [GATE 2015, 2M, Candidate Keys]" width="30%">
+</a>
+
 R(A, B, C, D, E, F) with FDs: AB Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ E, E Ã¢â€ â€™ F, F Ã¢â€ â€™ A. Find candidate keys.
 
 (a) AB, BC, CD, DE, EF
@@ -1988,6 +3275,17 @@ GATE 2015 answer was (a) AB, BC.
 ---
 
 ### D72. [GATE 2014, 2M, Transaction Isolation]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-handwritten.svg" alt="Handwritten: D72. [GATE 2014, 2M, Transaction Isolation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-diagram.svg" alt="Diagram: D72. [GATE 2014, 2M, Transaction Isolation]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d72-gate-2014-2m-transaction-isolation-sticky.svg" alt="Sticky Note: D72. [GATE 2014, 2M, Transaction Isolation]" width="30%">
+</a>
+
 Which isolation level allows phantom reads?
 
 (a) READ UNCOMMITTED and READ COMMITTED
@@ -2005,6 +3303,17 @@ Which isolation level allows phantom reads?
 ---
 
 ### D73. [GATE 2013, 1M, ACID]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-handwritten.svg" alt="Handwritten: D73. [GATE 2013, 1M, ACID]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-diagram.svg" alt="Diagram: D73. [GATE 2013, 1M, ACID]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d73-gate-2013-1m-acid-sticky.svg" alt="Sticky Note: D73. [GATE 2013, 1M, ACID]" width="30%">
+</a>
+
 Which property ensures that either all operations of a transaction complete or none do?
 
 (a) Atomicity
@@ -2018,6 +3327,17 @@ Which property ensures that either all operations of a transaction complete or n
 ---
 
 ### D74. [GATE 2012, 2M, Conflict Serializability]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-handwritten.svg" alt="Handwritten: D74. [GATE 2012, 2M, Conflict Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-diagram.svg" alt="Diagram: D74. [GATE 2012, 2M, Conflict Serializability]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d74-gate-2012-2m-conflict-serializability-sticky.svg" alt="Sticky Note: D74. [GATE 2012, 2M, Conflict Serializability]" width="30%">
+</a>
+
 Schedule S: r1(A), r2(A), w1(B), w2(B), r1(C), r2(C). Is this conflict serializable?
 
 (a) Yes, T1 Ã¢â€ â€™ T2
@@ -2040,6 +3360,17 @@ Wait that IS acyclic. So it IS conflict serializable as T1, T2.
 ---
 
 ### D75. [GATE 2011, 1M, SQL]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-handwritten.svg" alt="Handwritten: D75. [GATE 2011, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-diagram.svg" alt="Diagram: D75. [GATE 2011, 1M, SQL]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/08-database-management-systems/d75-gate-2011-1m-sql-sticky.svg" alt="Sticky Note: D75. [GATE 2011, 1M, SQL]" width="30%">
+</a>
+
 Which of the following is not a DDL command?
 
 (a) CREATE

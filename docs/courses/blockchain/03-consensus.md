@@ -44,6 +44,39 @@ flowchart LR
 
 ### The Byzantine Generals' Problem
 
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals' Problem" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals' Problem" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals' Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals' Problem" width="30%">
+</a>
+
+
 A classic problem in distributed computing where multiple generals must agree on a common battle plan (Attack or Retreat). Some generals might be traitors (malicious nodes). A consensus mechanism must ensure that all loyal generals reach the same decision even if a certain percentage of the network is faulty or malicious.
 
 The problem has three key requirements:
@@ -69,6 +102,39 @@ flowchart TB
 ```
 
 ### Proof of Work (PoW)
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" alt="Handwritten: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" alt="Diagram: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" alt="Sticky Note: Proof of Work (PoW)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" alt="Handwritten: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" alt="Diagram: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" alt="Sticky Note: Proof of Work (PoW)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-handwritten.svg" alt="Handwritten: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-diagram.svg" alt="Diagram: Proof of Work (PoW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-work-pow-sticky.svg" alt="Sticky Note: Proof of Work (PoW)" width="30%">
+</a>
+
 
 Nodes (miners) compete to solve a computationally intensive puzzle.
 
@@ -98,6 +164,39 @@ flowchart TB
 The **difficulty** is adjusted periodically (Bitcoin: every 2016 blocks, ~2 weeks) to maintain consistent block times (10 minutes for Bitcoin).
 
 ### Proof of Stake (PoS)
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" alt="Handwritten: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" alt="Diagram: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" alt="Sticky Note: Proof of Stake (PoS)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" alt="Handwritten: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" alt="Diagram: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" alt="Sticky Note: Proof of Stake (PoS)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-handwritten.svg" alt="Handwritten: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-diagram.svg" alt="Diagram: Proof of Stake (PoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/proof-of-stake-pos-sticky.svg" alt="Sticky Note: Proof of Stake (PoS)" width="30%">
+</a>
+
 
 Validators are chosen based on the amount of cryptocurrency they "stake" (lock up as collateral).
 
@@ -134,6 +233,39 @@ flowchart TB
 
 ### Delegated Proof of Stake (DPoS)
 
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" alt="Handwritten: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" alt="Diagram: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" alt="Sticky Note: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" alt="Handwritten: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" alt="Diagram: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" alt="Sticky Note: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-handwritten.svg" alt="Handwritten: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-diagram.svg" alt="Diagram: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/delegated-proof-of-stake-dpos-sticky.svg" alt="Sticky Note: Delegated Proof of Stake (DPoS)" width="30%">
+</a>
+
+
 DPoS is a variation where token holders vote for a small set of block producers (delegates).
 
 - **Voting:** Token holders vote with their stake weight.
@@ -150,6 +282,39 @@ DPoS is a variation where token holders vote for a small set of block producers 
 | Examples | Ethereum 2.0, Cardano | EOS, Tron |
 
 ### Practical Byzantine Fault Tolerance (PBFT)
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" alt="Handwritten: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" alt="Diagram: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" alt="Sticky Note: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" alt="Handwritten: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" alt="Diagram: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" alt="Sticky Note: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-handwritten.svg" alt="Handwritten: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-diagram.svg" alt="Diagram: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/practical-byzantine-fault-tolerance-pbft-sticky.svg" alt="Sticky Note: Practical Byzantine Fault Tolerance (PBFT)" width="30%">
+</a>
+
 
 PBFT uses a multi-round voting protocol among a known set of validators (replicas). One replica is the **primary** (leader) for a given view, and others are **backups**.
 
@@ -202,6 +367,39 @@ sequenceDiagram
 PBFT provides **instant finality** — once a block is committed, it cannot be reverted. However, communication complexity is `O(n^2)`, limiting scalability to dozens of nodes.
 
 ### Raft (Crash Fault Tolerant)
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" alt="Handwritten: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" alt="Diagram: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" alt="Sticky Note: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" alt="Handwritten: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" alt="Diagram: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" alt="Sticky Note: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-handwritten.svg" alt="Handwritten: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-diagram.svg" alt="Diagram: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/03-consensus/raft-crash-fault-tolerant-sticky.svg" alt="Sticky Note: Raft (Crash Fault Tolerant)" width="30%">
+</a>
+
 
 Raft is a simpler consensus algorithm that tolerates crash faults (not Byzantine faults). It elects a leader and replicates logs:
 

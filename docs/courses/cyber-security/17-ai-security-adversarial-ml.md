@@ -42,6 +42,17 @@ Artificial Intelligence and Machine Learning introduce a fundamentally new attac
 
 ### 1.1 OWASP ML Top 10
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-handwritten.svg" alt="Handwritten: 1.1 OWASP ML Top 10" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-diagram.svg" alt="Diagram: 1.1 OWASP ML Top 10" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-1-owasp-ml-top-10-sticky.svg" alt="Sticky Note: 1.1 OWASP ML Top 10" width="30%">
+</a>
+
+
 The OWASP ML Top 10 catalogs the most critical security risks to machine learning systems:
 
 | Rank | Risk | Description | Example |
@@ -58,6 +69,17 @@ The OWASP ML Top 10 catalogs the most critical security risks to machine learnin
 | ML10 | **ML Pipeline Compromise** | CI/CD for ML is subverted | Attacker modifies a DVC remote to serve a backdoored model |
 
 ### 1.2 Attack Surface Across the ML Pipeline
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-handwritten.svg" alt="Handwritten: 1.2 Attack Surface Across the ML Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-diagram.svg" alt="Diagram: 1.2 Attack Surface Across the ML Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/1-2-attack-surface-across-the-ml-pipeline-sticky.svg" alt="Sticky Note: 1.2 Attack Surface Across the ML Pipeline" width="30%">
+</a>
+
 
 ```
 ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
@@ -81,6 +103,17 @@ Adversarial examples are inputs crafted with small, often imperceptible perturba
 
 ### 2.1 Fast Gradient Sign Method (FGSM)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-handwritten.svg" alt="Handwritten: 2.1 Fast Gradient Sign Method (FGSM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-diagram.svg" alt="Diagram: 2.1 Fast Gradient Sign Method (FGSM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-1-fast-gradient-sign-method-fgsm-sticky.svg" alt="Sticky Note: 2.1 Fast Gradient Sign Method (FGSM)" width="30%">
+</a>
+
+
 FGSM is the simplest adversarial attack. Given a model with loss function \(L\), input \(x\), and true label \(y\), the adversarial perturbation is:
 
 \[
@@ -93,6 +126,17 @@ The gradient is computed with respect to the input pixels, not the model weights
 
 ### 2.2 Projected Gradient Descent (PGD)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-handwritten.svg" alt="Handwritten: 2.2 Projected Gradient Descent (PGD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-diagram.svg" alt="Diagram: 2.2 Projected Gradient Descent (PGD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-2-projected-gradient-descent-pgd-sticky.svg" alt="Sticky Note: 2.2 Projected Gradient Descent (PGD)" width="30%">
+</a>
+
+
 PGD is a stronger, iterative variant:
 
 \[
@@ -103,9 +147,31 @@ At each step the perturbation is projected back onto the \(\epsilon\)-ball aroun
 
 ### 2.3 DeepFool
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-handwritten.svg" alt="Handwritten: 2.3 DeepFool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-diagram.svg" alt="Diagram: 2.3 DeepFool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-3-deepfool-sticky.svg" alt="Sticky Note: 2.3 DeepFool" width="30%">
+</a>
+
+
 DeepFool finds the minimal perturbation needed to change classification by projecting the input onto the nearest decision boundary. It iteratively pushes the input across the boundary using the local linear approximation of the classifier, producing smaller perturbations than FGSM for the same misclassification.
 
 ### 2.4 Evasion of ML-based Defences
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-handwritten.svg" alt="Handwritten: 2.4 Evasion of ML-based Defences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-diagram.svg" alt="Diagram: 2.4 Evasion of ML-based Defences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/2-4-evasion-of-ml-based-defences-sticky.svg" alt="Sticky Note: 2.4 Evasion of ML-based Defences" width="30%">
+</a>
+
 
 ML-based malware detectors (e.g., Windows Defender ML, Cylance) and network IDS (e.g., Darktrace, Suricata with ML plugins) are vulnerable to adversarial examples:
 
@@ -141,6 +207,17 @@ Model poisoning attacks compromise the integrity of an ML model by corrupting it
 
 ### 3.1 Data Poisoning
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-handwritten.svg" alt="Handwritten: 3.1 Data Poisoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-diagram.svg" alt="Diagram: 3.1 Data Poisoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-1-data-poisoning-sticky.svg" alt="Sticky Note: 3.1 Data Poisoning" width="30%">
+</a>
+
+
 The attacker injects malicious samples into the training set:
 
 - **Availability poisoning:** Degrade overall model accuracy (e.g., label-flipping where 10% of training labels are toggled).
@@ -149,6 +226,17 @@ The attacker injects malicious samples into the training set:
 **Label flipping example:** An email classifier trained with 5% of "ham" emails labelled as "spam" will misclassify legitimate emails — a denial-of-service against the user.
 
 ### 3.2 Backdoor Attacks (Trojaning)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-handwritten.svg" alt="Handwritten: 3.2 Backdoor Attacks (Trojaning)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-diagram.svg" alt="Diagram: 3.2 Backdoor Attacks (Trojaning)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-2-backdoor-attacks-trojaning-sticky.svg" alt="Sticky Note: 3.2 Backdoor Attacks (Trojaning)" width="30%">
+</a>
+
 
 The attacker implants a hidden trigger pattern that causes the model to output a target class whenever the trigger is present. The model behaves normally on clean inputs.
 
@@ -160,6 +248,17 @@ Input + "Trigger sticker" → "Dog" (attacker-chosen)
 Backdoors persist even after fine-tuning and compression, making supply-chain attacks particularly dangerous.
 
 ### 3.3 Supply Chain Attacks on ML
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-handwritten.svg" alt="Handwritten: 3.3 Supply Chain Attacks on ML" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-diagram.svg" alt="Diagram: 3.3 Supply Chain Attacks on ML" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/3-3-supply-chain-attacks-on-ml-sticky.svg" alt="Sticky Note: 3.3 Supply Chain Attacks on ML" width="30%">
+</a>
+
 
 | Vector | Description | Real Example |
 |--------|-------------|--------------|
@@ -174,11 +273,33 @@ Backdoors persist even after fine-tuning and compression, making supply-chain at
 
 ### 4.1 Model Extraction (Stealing)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-handwritten.svg" alt="Handwritten: 4.1 Model Extraction (Stealing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-diagram.svg" alt="Diagram: 4.1 Model Extraction (Stealing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-1-model-extraction-stealing-sticky.svg" alt="Sticky Note: 4.1 Model Extraction (Stealing)" width="30%">
+</a>
+
+
 An attacker with black-box API access reconstructs a functionally equivalent model. Each query returns a label or confidence vector, and the attacker uses these output-label pairs as training data for a substitute model.
 
 **Cost analysis:** Stealing a commercial image classifier from a cloud API costs approximately $10–$100 in query fees, yielding >95% agreement with the victim model.
 
 ### 4.2 Membership Inference
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-handwritten.svg" alt="Handwritten: 4.2 Membership Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-diagram.svg" alt="Diagram: 4.2 Membership Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-2-membership-inference-sticky.svg" alt="Sticky Note: 4.2 Membership Inference" width="30%">
+</a>
+
 
 Given a model and a data record, determine whether that record was in the training set. The attack exploits the fact that models typically exhibit higher confidence on training samples than on unseen samples.
 
@@ -191,6 +312,17 @@ Given a model and a data record, determine whether that record was in the traini
 
 ### 4.3 Model Inversion
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-handwritten.svg" alt="Handwritten: 4.3 Model Inversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-diagram.svg" alt="Diagram: 4.3 Model Inversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/4-3-model-inversion-sticky.svg" alt="Sticky Note: 4.3 Model Inversion" width="30%">
+</a>
+
+
 Reconstruct representative examples of a training class from the model itself. In the extreme case, a face-recognition model can be probed until a generated image matches a specific training identity — effectively stealing the visual likeness from the training data.
 
 ---
@@ -200,6 +332,17 @@ Reconstruct representative examples of a training class from the model itself. I
 Deepfakes are synthetic media — images, video, or audio — generated by deep learning, most commonly Generative Adversarial Networks (GANs).
 
 ### 5.1 GAN Architecture for Face Swapping
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-handwritten.svg" alt="Handwritten: 5.1 GAN Architecture for Face Swapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-diagram.svg" alt="Diagram: 5.1 GAN Architecture for Face Swapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-1-gan-architecture-for-face-swapping-sticky.svg" alt="Sticky Note: 5.1 GAN Architecture for Face Swapping" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TB
@@ -232,6 +375,17 @@ flowchart TB
 
 ### 5.2 Voice Cloning (TTS)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-handwritten.svg" alt="Handwritten: 5.2 Voice Cloning (TTS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-diagram.svg" alt="Diagram: 5.2 Voice Cloning (TTS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-2-voice-cloning-tts-sticky.svg" alt="Sticky Note: 5.2 Voice Cloning (TTS)" width="30%">
+</a>
+
+
 Text-to-speech models such as Tacotron 2 + WaveNet can be fine-tuned with as little as 5 seconds of a target speaker's voice. The resulting model can synthesise arbitrary text in that speaker's voice, enabling vishing (voice phishing) attacks.
 
 **Common voice cloning pipeline:**
@@ -241,6 +395,17 @@ Text-to-speech models such as Tacotron 2 + WaveNet can be fine-tuned with as lit
 3. The attacker types arbitrary text; the model produces speech indistinguishable from the target.
 
 ### 5.3 Deepfake Detection
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-handwritten.svg" alt="Handwritten: 5.3 Deepfake Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-diagram.svg" alt="Diagram: 5.3 Deepfake Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/5-3-deepfake-detection-sticky.svg" alt="Sticky Note: 5.3 Deepfake Detection" width="30%">
+</a>
+
 
 Detection methods fall into two broad categories:
 
@@ -263,17 +428,61 @@ Machine learning is dual-use — the same techniques used by attackers power def
 
 ### 6.1 Anomaly Detection with Autoencoders
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-handwritten.svg" alt="Handwritten: 6.1 Anomaly Detection with Autoencoders" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-diagram.svg" alt="Diagram: 6.1 Anomaly Detection with Autoencoders" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-1-anomaly-detection-with-autoencoders-sticky.svg" alt="Sticky Note: 6.1 Anomaly Detection with Autoencoders" width="30%">
+</a>
+
+
 An autoencoder learns to reconstruct "normal" data with low error. Anomalous inputs produce high reconstruction error, flagging them as suspicious. This works for network flows, user behaviour, and system logs.
 
 ### 6.2 Phishing Detection (NLP)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-handwritten.svg" alt="Handwritten: 6.2 Phishing Detection (NLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-diagram.svg" alt="Diagram: 6.2 Phishing Detection (NLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-2-phishing-detection-nlp-sticky.svg" alt="Sticky Note: 6.2 Phishing Detection (NLP)" width="30%">
+</a>
+
 
 A text classifier trained on email bodies and headers can distinguish phishing from legitimate mail. TF-IDF feature extraction combined with logistic regression is a strong baseline that is explainable and fast.
 
 ### 6.3 Malware Classification (CNN)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-handwritten.svg" alt="Handwritten: 6.3 Malware Classification (CNN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-diagram.svg" alt="Diagram: 6.3 Malware Classification (CNN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-3-malware-classification-cnn-sticky.svg" alt="Sticky Note: 6.3 Malware Classification (CNN)" width="30%">
+</a>
+
+
 Malware binaries are converted to greyscale images (byte values as pixels). A CNN trained on these images classifies malware families by visual texture. This approach is resilient to simple obfuscation techniques.
 
 ### 6.4 Network Intrusion (RNN/LSTM)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-handwritten.svg" alt="Handwritten: 6.4 Network Intrusion (RNN/LSTM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-diagram.svg" alt="Diagram: 6.4 Network Intrusion (RNN/LSTM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/6-4-network-intrusion-rnn-lstm-sticky.svg" alt="Sticky Note: 6.4 Network Intrusion (RNN/LSTM)" width="30%">
+</a>
+
 
 Recurrent models process network flows as sequences of packets, learning temporal patterns of reconnaissance, exploitation, and C2 communication. LSTMs capture long-range dependencies — a scanning phase followed by exploitation hours later.
 
@@ -285,6 +494,17 @@ Large Language Models (LLMs) introduce a completely new class of security vulner
 
 ### 7.1 Prompt Injection
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-handwritten.svg" alt="Handwritten: 7.1 Prompt Injection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-diagram.svg" alt="Diagram: 7.1 Prompt Injection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-1-prompt-injection-sticky.svg" alt="Sticky Note: 7.1 Prompt Injection" width="30%">
+</a>
+
+
 An attacker crafts input that overrides the model's system prompt or constraints.
 
 **Direct injection:**
@@ -294,6 +514,17 @@ Model output: "I am hacked."
 ```
 
 ### 7.2 Jailbreaking
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-handwritten.svg" alt="Handwritten: 7.2 Jailbreaking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-diagram.svg" alt="Diagram: 7.2 Jailbreaking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-2-jailbreaking-sticky.svg" alt="Sticky Note: 7.2 Jailbreaking" width="30%">
+</a>
+
 
 Jailbreak prompts circumvent safety guardrails. A catalog of common techniques:
 
@@ -308,11 +539,33 @@ Jailbreak prompts circumvent safety guardrails. A catalog of common techniques:
 
 ### 7.3 Data Leakage from Training Data
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-handwritten.svg" alt="Handwritten: 7.3 Data Leakage from Training Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-diagram.svg" alt="Diagram: 7.3 Data Leakage from Training Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-3-data-leakage-from-training-data-sticky.svg" alt="Sticky Note: 7.3 Data Leakage from Training Data" width="30%">
+</a>
+
+
 LLMs memorise parts of their training data. Extraction attacks prompt the model with prefix strings from the training distribution and collect verbatim output containing PII, secrets, or copyrighted text.
 
 **Mitigation:** Differential privacy during training (DP-SGD) bounds memorisation but reduces utility.
 
 ### 7.4 Indirect Prompt Injection (Web Retrieval)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-handwritten.svg" alt="Handwritten: 7.4 Indirect Prompt Injection (Web Retrieval)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-diagram.svg" alt="Diagram: 7.4 Indirect Prompt Injection (Web Retrieval)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-4-indirect-prompt-injection-web-retrieval-sticky.svg" alt="Sticky Note: 7.4 Indirect Prompt Injection (Web Retrieval)" width="30%">
+</a>
+
 
 When an LLM is augmented with web search or document retrieval, the attacker places a hidden prompt in a publicly accessible document:
 
@@ -345,6 +598,17 @@ sequenceDiagram
 
 ### 7.5 OWASP Top 10 for LLM Applications (Summary)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-handwritten.svg" alt="Handwritten: 7.5 OWASP Top 10 for LLM Applications (Summary)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-diagram.svg" alt="Diagram: 7.5 OWASP Top 10 for LLM Applications (Summary)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/7-5-owasp-top-10-for-llm-applications-summary-sticky.svg" alt="Sticky Note: 7.5 OWASP Top 10 for LLM Applications (Summary)" width="30%">
+</a>
+
+
 | Rank | Risk |
 |------|------|
 | LLM01 | Prompt Injection |
@@ -365,6 +629,17 @@ sequenceDiagram
 Securing ML in production requires controls at every layer of the pipeline.
 
 ### 8.1 ML Pipeline Security Gates
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-handwritten.svg" alt="Handwritten: 8.1 ML Pipeline Security Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-diagram.svg" alt="Diagram: 8.1 ML Pipeline Security Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-1-ml-pipeline-security-gates-sticky.svg" alt="Sticky Note: 8.1 ML Pipeline Security Gates" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -392,6 +667,17 @@ flowchart LR
 
 ### 8.2 Model Signing & Attestation
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-handwritten.svg" alt="Handwritten: 8.2 Model Signing & Attestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-diagram.svg" alt="Diagram: 8.2 Model Signing & Attestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-2-model-signing-attestation-sticky.svg" alt="Sticky Note: 8.2 Model Signing & Attestation" width="30%">
+</a>
+
+
 Models should be cryptographically signed at build time and verified at deployment time:
 
 - **Signing:** The CI/CD pipeline computes SHA-256 of the serialised model, then signs the hash with an HSM-backed private key.
@@ -399,11 +685,33 @@ Models should be cryptographically signed at build time and verified at deployme
 
 ### 8.3 Differential Privacy (DP)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-handwritten.svg" alt="Handwritten: 8.3 Differential Privacy (DP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-diagram.svg" alt="Diagram: 8.3 Differential Privacy (DP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-3-differential-privacy-dp-sticky.svg" alt="Sticky Note: 8.3 Differential Privacy (DP)" width="30%">
+</a>
+
+
 DP guarantees that the output of a computation does not significantly change when any single training record is added or removed. This bounds the success of membership inference and model inversion attacks.
 
 **Mechanism:** Add calibrated Laplace or Gaussian noise to gradients during training (DP-SGD). The noise magnitude is controlled by the privacy budget \(\epsilon\) — lower \(\epsilon\) means stronger privacy but worse accuracy.
 
 ### 8.4 Federated Learning Security
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-handwritten.svg" alt="Handwritten: 8.4 Federated Learning Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-diagram.svg" alt="Diagram: 8.4 Federated Learning Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/8-4-federated-learning-security-sticky.svg" alt="Sticky Note: 8.4 Federated Learning Security" width="30%">
+</a>
+
 
 Federated learning trains a shared model across decentralised clients without centralising raw data. Security challenges include:
 
@@ -417,6 +725,17 @@ Federated learning trains a shared model across decentralised clients without ce
 
 ### 9.1 Model Registry Security
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-handwritten.svg" alt="Handwritten: 9.1 Model Registry Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-diagram.svg" alt="Diagram: 9.1 Model Registry Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-1-model-registry-security-sticky.svg" alt="Sticky Note: 9.1 Model Registry Security" width="30%">
+</a>
+
+
 Model registries (MLflow, DVC, Hugging Face Hub) are critical infrastructure:
 
 | Control | Implementation |
@@ -429,6 +748,17 @@ Model registries (MLflow, DVC, Hugging Face Hub) are critical infrastructure:
 
 ### 9.2 Pickle Serialisation Risks
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-handwritten.svg" alt="Handwritten: 9.2 Pickle Serialisation Risks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-diagram.svg" alt="Diagram: 9.2 Pickle Serialisation Risks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-2-pickle-serialisation-risks-sticky.svg" alt="Sticky Note: 9.2 Pickle Serialisation Risks" width="30%">
+</a>
+
+
 Python's `pickle` (and PyTorch's `torch.save`) can execute arbitrary code during deserialisation. A malicious model file is equivalent to a remote-code-execution payload.
 
 **Mitigations:**
@@ -437,6 +767,17 @@ Python's `pickle` (and PyTorch's `torch.save`) can execute arbitrary code during
 - Run model loading in a sandboxed environment (gVisor, Firecracker micro-VM).
 
 ### 9.3 MLflow / DVC Safety
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-handwritten.svg" alt="Handwritten: 9.3 MLflow / DVC Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-diagram.svg" alt="Diagram: 9.3 MLflow / DVC Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/9-3-mlflow-dvc-safety-sticky.svg" alt="Sticky Note: 9.3 MLflow / DVC Safety" width="30%">
+</a>
+
 
 | Tool | Risk | Mitigation |
 |------|------|------------|
@@ -451,6 +792,17 @@ Python's `pickle` (and PyTorch's `torch.save`) can execute arbitrary code during
 The following TypeScript examples demonstrate core AI security concepts. Each implementation is self-contained with proper types.
 
 ### 10.1 FGSM Adversarial Perturbation Generator
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-handwritten.svg" alt="Handwritten: 10.1 FGSM Adversarial Perturbation Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-diagram.svg" alt="Diagram: 10.1 FGSM Adversarial Perturbation Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-1-fgsm-adversarial-perturbation-generator-sticky.svg" alt="Sticky Note: 10.1 FGSM Adversarial Perturbation Generator" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -541,6 +893,17 @@ FGSM Attack Result:
 ```
 
 ### 10.2 ML Model Poisoning Detector
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-handwritten.svg" alt="Handwritten: 10.2 ML Model Poisoning Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-diagram.svg" alt="Diagram: 10.2 ML Model Poisoning Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-2-ml-model-poisoning-detector-sticky.svg" alt="Sticky Note: 10.2 ML Model Poisoning Detector" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -636,6 +999,17 @@ Poisoning Detector Results:
 ```
 
 ### 10.3 Deepfake Detection Tool
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-handwritten.svg" alt="Handwritten: 10.3 Deepfake Detection Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-diagram.svg" alt="Diagram: 10.3 Deepfake Detection Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-3-deepfake-detection-tool-sticky.svg" alt="Sticky Note: 10.3 Deepfake Detection Tool" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -781,6 +1155,17 @@ resultSingle.reasons.forEach(r => console.log(`  • ${r}`));
 ```
 
 ### 10.4 Phishing Email Classifier (TF-IDF + Logistic Regression)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-handwritten.svg" alt="Handwritten: 10.4 Phishing Email Classifier (TF-IDF + Logistic Regression)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-diagram.svg" alt="Diagram: 10.4 Phishing Email Classifier (TF-IDF + Logistic Regression)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-4-phishing-email-classifier-tf-idf-logistic-regression-sticky.svg" alt="Sticky Note: 10.4 Phishing Email Classifier (TF-IDF + Logistic Regression)" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -951,6 +1336,17 @@ Phishing Classifier Results:
 
 ### 10.5 Anomaly Detection (Isolation Forest-style Algorithm)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-handwritten.svg" alt="Handwritten: 10.5 Anomaly Detection (Isolation Forest-style Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-diagram.svg" alt="Diagram: 10.5 Anomaly Detection (Isolation Forest-style Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-5-anomaly-detection-isolation-forest-style-algorithm-sticky.svg" alt="Sticky Note: 10.5 Anomaly Detection (Isolation Forest-style Algorithm)" width="30%">
+</a>
+
+
 ```typescript
 /**
  * Isolation Forest-style anomaly detector.
@@ -1110,6 +1506,17 @@ Anomaly Detection Results (Isolation Forest):
 
 ### 10.6 Prompt Injection Detector
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-handwritten.svg" alt="Handwritten: 10.6 Prompt Injection Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-diagram.svg" alt="Diagram: 10.6 Prompt Injection Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-6-prompt-injection-detector-sticky.svg" alt="Sticky Note: 10.6 Prompt Injection Detector" width="30%">
+</a>
+
+
 ```typescript
 /**
  * LLM Prompt Injection Detector.
@@ -1256,6 +1663,17 @@ Prompt Injection Detection Results:
 ```
 
 ### 10.7 Membership Inference Attacker
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-handwritten.svg" alt="Handwritten: 10.7 Membership Inference Attacker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-diagram.svg" alt="Diagram: 10.7 Membership Inference Attacker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/10-7-membership-inference-attacker-sticky.svg" alt="Sticky Note: 10.7 Membership Inference Attacker" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -1461,6 +1879,17 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
 
 ### Review (Fundamental)
 
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-handwritten.svg" alt="Handwritten: Review (Fundamental)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-diagram.svg" alt="Diagram: Review (Fundamental)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/review-fundamental-sticky.svg" alt="Sticky Note: Review (Fundamental)" width="30%">
+</a>
+
+
 1. **OWASP ML Top 10 Mapping.** Choose three risks from the OWASP ML Top 10. For each, describe a concrete scenario and identify which stage of the ML pipeline it targets (data collection, training, deployment, etc.).
 
 2. **FGSM Explanation.** In your own words, explain why adding the sign of the gradient (rather than the gradient itself) produces an effective adversarial perturbation. What would happen if we used the raw gradient instead?
@@ -1468,6 +1897,17 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
 3. **Jailbreak Taxonomy.** From the jailbreak techniques catalogued in Section 7.2, select three. For each, write a one-sentence mitigation strategy.
 
 ### Application (Hands-On)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-handwritten.svg" alt="Handwritten: Application (Hands-On)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-diagram.svg" alt="Diagram: Application (Hands-On)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/application-hands-on-sticky.svg" alt="Sticky Note: Application (Hands-On)" width="30%">
+</a>
+
 
 4. **FGSM Parameter Sensitivity.** Take the FGSM implementation from §10.1. Modify `epsilon` to values [0.01, 0.1, 0.3, 0.5, 1.0] and record the original and adversarial classes. At what epsilon does the classification flip? Is the adversarial example still semantically similar to the original?
 
@@ -1479,6 +1919,17 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
 6. **Deepfake Detector on Synthetic Data.** Generate 5 "real" frames (low HF noise, natural blink variance) and 5 "fake" frames (high HF noise, uniform blink patterns). Run through the DeepfakeDetector and report which frames are correctly identified.
 
 ### Challenge (Advanced)
+
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-handwritten.svg" alt="Handwritten: Challenge (Advanced)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-diagram.svg" alt="Diagram: Challenge (Advanced)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/17-ai-security-adversarial-ml/challenge-advanced-sticky.svg" alt="Sticky Note: Challenge (Advanced)" width="30%">
+</a>
+
 
 7. **Adversarial Training Defence.** Implement an adversarial training loop:
    - For each training sample, generate an FGSM adversarial example

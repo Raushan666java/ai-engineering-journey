@@ -40,6 +40,17 @@ flowchart LR
 
 ### 1.1 Supervisor Loop
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-handwritten.svg" alt="Handwritten: 1.1 Supervisor Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-diagram.svg" alt="Diagram: 1.1 Supervisor Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-1-supervisor-loop-sticky.svg" alt="Sticky Note: 1.1 Supervisor Loop" width="30%">
+</a>
+
+
 The **supervisor loop** is the most widely deployed multi-agent pattern. A single orchestrator agent (the supervisor) manages a pool of worker agents:
 
 ```
@@ -73,6 +84,17 @@ Supervisor
 - Mark the subtask as failed and continue
 
 ### 1.2 Debate Loop
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-handwritten.svg" alt="Handwritten: 1.2 Debate Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-diagram.svg" alt="Diagram: 1.2 Debate Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-2-debate-loop-sticky.svg" alt="Sticky Note: 1.2 Debate Loop" width="30%">
+</a>
+
 
 Debate loops simulate structured argumentation between agents. They produce higher-quality reasoning than single-agent approaches by forcing each agent to defend its position against critique.
 
@@ -117,6 +139,17 @@ Debate loops simulate structured argumentation between agents. They produce high
 
 ### 1.3 Negotiation Loop
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-handwritten.svg" alt="Handwritten: 1.3 Negotiation Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-diagram.svg" alt="Diagram: 1.3 Negotiation Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-3-negotiation-loop-sticky.svg" alt="Sticky Note: 1.3 Negotiation Loop" width="30%">
+</a>
+
+
 Negotiation loops model agents with different resources or objectives that must reach a mutually acceptable agreement through iterative proposal exchange.
 
 **Formal model:**
@@ -141,6 +174,17 @@ Negotiation loops model agents with different resources or objectives that must 
 - **Tit-for-Tat.** Match the other agent's concession level. Reciprocity-based.
 
 ### 1.4 Consensus Loop
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-handwritten.svg" alt="Handwritten: 1.4 Consensus Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-diagram.svg" alt="Diagram: 1.4 Consensus Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-4-consensus-loop-sticky.svg" alt="Sticky Note: 1.4 Consensus Loop" width="30%">
+</a>
+
 
 Consensus loops are inspired by Byzantine Fault Tolerance (BFT) distributed systems. A group of agents must agree on a single outcome even if some agents are faulty or adversarial.
 
@@ -175,6 +219,17 @@ Quorum threshold = ceil(2N/3) = ceil(2*4/3) = 3
 
 ### 1.5 Swarm Loop
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-handwritten.svg" alt="Handwritten: 1.5 Swarm Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-diagram.svg" alt="Diagram: 1.5 Swarm Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/1-5-swarm-loop-sticky.svg" alt="Sticky Note: 1.5 Swarm Loop" width="30%">
+</a>
+
+
 Swarm loops take inspiration from ant colonies, bird flocking, and fish schooling. Simple per-agent rules produce complex emergent behavior without central coordination.
 
 **Principles:**
@@ -204,6 +259,17 @@ Swarm loops take inspiration from ant colonies, bird flocking, and fish schoolin
 ## 2. Examples
 
 ### 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-handwritten.svg" alt="Handwritten: 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-diagram.svg" alt="Diagram: 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-1-supervisorloop-task-distribution-and-score-based-aggregation-sticky.svg" alt="Sticky Note: 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -390,6 +456,17 @@ console.log(supervisor.getReport());
 ```
 
 ### 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-handwritten.svg" alt="Handwritten: 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-diagram.svg" alt="Diagram: 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-2-debateagent-adversarial-arguments-with-judge-evaluation-sticky.svg" alt="Sticky Note: 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -624,6 +701,17 @@ console.log(JSON.stringify({
 ```
 
 ### 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-handwritten.svg" alt="Handwritten: 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-diagram.svg" alt="Diagram: 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/2-3-consensusvote-tie-breaking-thresholds-and-quorum-sticky.svg" alt="Sticky Note: 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -1538,6 +1626,17 @@ main();
 
 ### Mermaid: Supervisor-Worker Architecture with Health Checks
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-handwritten.svg" alt="Handwritten: Mermaid: Supervisor-Worker Architecture with Health Checks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-diagram.svg" alt="Diagram: Mermaid: Supervisor-Worker Architecture with Health Checks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/mermaid-supervisor-worker-architecture-with-health-checks-sticky.svg" alt="Sticky Note: Mermaid: Supervisor-Worker Architecture with Health Checks" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     subgraph Supervisor["Supervisor Node"]
@@ -2259,6 +2358,17 @@ main();
 
 ### 4.1 Review
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-handwritten.svg" alt="Handwritten: 4.1 Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-diagram.svg" alt="Diagram: 4.1 Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-1-review-sticky.svg" alt="Sticky Note: 4.1 Review" width="30%">
+</a>
+
+
 1. Describe the six steps of the supervisor loop. What happens when a worker fails?
 2. Explain the role of the judge in a debate loop. What criteria should the judge evaluate?
 3. Define the negotiation set and Pareto frontier in the context of multi-agent negotiation.
@@ -2267,6 +2377,17 @@ main();
 
 ### 4.2 Application
 
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-handwritten.svg" alt="Handwritten: 4.2 Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-diagram.svg" alt="Diagram: 4.2 Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-2-application-sticky.svg" alt="Sticky Note: 4.2 Application" width="30%">
+</a>
+
+
 6. Design a supervisor loop for a code review system with three workers: a linter agent, a security agent, and a style agent. The supervisor must produce a unified review report. Write the aggregation function that merges findings from all three workers and resolves conflicts when workers disagree.
 
 7. Implement a **NegotiationLoop** with two agents trading API rate limit allocations. Agent X needs more read quota; Agent Y needs more write quota. The total pool is 1000 requests/minute. Each agent has a reservation price (minimum quota they need to function). Agents exchange proposals and concede over up to 5 rounds. Output the final allocation and which agent conceded more.
@@ -2274,6 +2395,17 @@ main();
 8. Extend the `ConsensusVote` example to include a **WeightedVoter** subclass where agents have different voting weight based on expertise. For example, a senior architect's vote counts as 3, while a junior developer's counts as 1. The win threshold must consider weighted votes, not raw counts. Implement weighted quorum calculation and weighted tie-breaking.
 
 ### 4.3 Challenge
+
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-handwritten.svg" alt="Handwritten: 4.3 Challenge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-diagram.svg" alt="Diagram: 4.3 Challenge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch08-multi-agent-loops/4-3-challenge-sticky.svg" alt="Sticky Note: 4.3 Challenge" width="30%">
+</a>
+
 
 9. **Build a SwarmSearchEngine.** Design and implement a TypeScript class `SwarmSearchEngine` that:
    - Maintains N explorer agents (configurable, default 5)

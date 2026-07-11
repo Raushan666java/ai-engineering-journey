@@ -58,6 +58,17 @@ flowchart TD
 
 ### How AI Solves Healthcare Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" alt="Handwritten: How AI Solves Healthcare Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" alt="Diagram: How AI Solves Healthcare Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" alt="Sticky Note: How AI Solves Healthcare Problems" width="30%">
+</a>
+
+
 1. **Data Acquisition:** Collect medical data → DICOM images (X-ray, CT, MRI), electronic health records (EHR), genomic sequences, wearable sensor streams, and clinical notes.
 2. **Preprocessing:** Normalize pixel intensities, resample to uniform resolution, segment regions of interest, remove PHI (protected health information), augment with rotations/flips for robustness.
 3. **Feature Extraction:** Deploy deep CNNs (ResNet, DenseNet) for imaging, transformers (ClinicalBERT, BioBERT) for clinical text, graph neural networks for molecular structures.
@@ -66,6 +77,17 @@ flowchart TD
 6. **Human-in-the-Loop Review:** Flag low-confidence predictions for specialist review, maintain audit trail, support second-opinion workflows.
 
 ### Diagnostic Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Diagnostic Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" alt="Diagram: Diagnostic Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Diagnostic Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function medicalDiagnosisPipeline(patientDicomPath):
@@ -97,6 +119,17 @@ function medicalDiagnosisPipeline(patientDicomPath):
 ```
 
 ### Python Implementation → Chest X-Ray Classifier
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" alt="Handwritten: Python Implementation → Chest X-Ray Classifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" alt="Diagram: Python Implementation → Chest X-Ray Classifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" alt="Sticky Note: Python Implementation → Chest X-Ray Classifier" width="30%">
+</a>
+
 
 ```python
 import torch
@@ -168,6 +201,17 @@ for f in result['findings']:
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Before AI | After AI | Improvement |
 |--------|-----------|----------|-------------|
 | Pneumonia detection sensitivity | 72% | 88% (CheXNet) | +16% |
@@ -177,6 +221,17 @@ for f in result['findings']:
 | Diabetic retinopathy screening | 50% of patients screened | 85% (automated) | +35% coverage |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -189,6 +244,17 @@ for f in result['findings']:
 | Accelerates drug discovery 10â€“100x | Adversarial vulnerability → small pixel changes flip predictions |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Rare pathologies:** Diseases with &lt;100 training examples are poorly detected → solution: few-shot learning with prototypical networks
 - **Domain shift:** X-rays from portable machines look different from fixed machines → monitor input distribution with OOD detectors
@@ -204,6 +270,17 @@ for f in result['findings']:
 
 ### How AI Solves Finance Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" alt="Handwritten: How AI Solves Finance Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" alt="Diagram: How AI Solves Finance Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" alt="Sticky Note: How AI Solves Finance Problems" width="30%">
+</a>
+
+
 1. **Data Ingestion:** Stream real-time market data (NASDAQ SIP, Reuters, Bloomberg), ingest news feeds (RSS, Twitter, SEC EDGAR), load historical prices and fundamental data.
 2. **Feature Engineering:** Compute technical indicators (moving averages, RSI, MACD), generate sentiment scores from NLP, build order-book imbalance features, calculate volatility surfaces.
 3. **Signal Generation:** Apply ML models (LSTM, XGBoost, transformers) to predict price direction, volatility regimes, or anomaly scores for fraud detection.
@@ -212,6 +289,17 @@ for f in result['findings']:
 6. **Monitoring & Adaptation:** Track P&L attribution, detect regime changes via drift detection, retrain models on new data, roll back degrading strategies.
 
 ### Fraud Detection Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Fraud Detection Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Fraud Detection Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Fraud Detection Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function realtimeFraudDetection(transaction):
@@ -241,6 +329,17 @@ function realtimeFraudDetection(transaction):
 ```
 
 ### Python Implementation → Anomaly-Based Fraud Detection
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" alt="Diagram: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -308,6 +407,17 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Fraud detection rate | 65% | 92% | +27% |
@@ -318,6 +428,17 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 | Compliance reporting | 40 person-hours | 2 minutes (NLP extraction) | 99.9% faster |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -330,6 +451,17 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 | Scalable across markets and currencies | Interpretability tools (SHAP) add latency |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Adversarial adaptation:** Fraudsters probe model boundaries → deploy GAN-based adversarial training with continuous red-teaming
 - **Regime shift:** COVID-style market disruption invalidates historical patterns → ensemble with regime-detection trigger for fast adaptation
@@ -345,6 +477,17 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### How AI Solves Transportation Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" alt="Handwritten: How AI Solves Transportation Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" alt="Diagram: How AI Solves Transportation Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" alt="Sticky Note: How AI Solves Transportation Problems" width="30%">
+</a>
+
+
 1. **Perception:** Sensors (cameras, LIDAR, radar, ultrasonic) capture raw environment data. Deep learning models detect objects (vehicles, pedestrians, cyclists, animals), classify traffic signs, identify lane markings, and estimate depth.
 2. **Localization:** GPS provides coarse position; IMU + wheel odometry provides dead reckoning; LIDAR point-cloud matching (ICP, NDT) against HD maps provides centimeter-level localization.
 3. **Prediction:** Trajectory prediction models (Social LSTM, VectorNet, Scene Transformer) forecast the future positions of all dynamic agents 3â€“8 seconds ahead, modeling multimodal outcomes (turn left, go straight, stop).
@@ -353,6 +496,17 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 6. **Safety Monitoring:** Redundant systems cross-check perception and planning outputs, apply Operational Design Domain (ODD) limits, and execute minimal risk maneuvers if confidence drops.
 
 ### Perception Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Perception Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" alt="Diagram: Perception Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Perception Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function perceptionPipeline(lidarPointCloud, cameraImages):
@@ -388,6 +542,17 @@ function perceptionPipeline(lidarPointCloud, cameraImages):
 ```
 
 ### Python Implementation → Object Detection Pipeline
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" alt="Handwritten: Python Implementation → Object Detection Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" alt="Diagram: Python Implementation → Object Detection Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" alt="Sticky Note: Python Implementation → Object Detection Pipeline" width="30%">
+</a>
+
 
 ```python
 import cv2
@@ -442,6 +607,17 @@ for obj in result["objects"][:5]:
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Traffic fatalities (US annual) | ~40,000 | Target: &lt;1,000 (AV) | 97% reduction potential |
@@ -452,6 +628,17 @@ for obj in result["objects"][:5]:
 | Fleet maintenance cost | $0.18/mile | $0.11 (predictive) | 39% reduction |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -464,6 +651,17 @@ for obj in result["objects"][:5]:
 | 24/7 operation for logistics | Cybersecurity attack surface (remote exploit risks) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Occlusion:** Pedestrian behind a delivery truck → solution: probabilistic occupancy grid with learned priors
 - **Extreme weather:** LIDAR absorbed by fog, cameras blinded by snow → solution: radar-primary mode with learned degradation models
@@ -479,6 +677,17 @@ for obj in result["objects"][:5]:
 
 ### How AI Solves Education Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" alt="Handwritten: How AI Solves Education Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" alt="Diagram: How AI Solves Education Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" alt="Sticky Note: How AI Solves Education Problems" width="30%">
+</a>
+
+
 1. **Student Modeling:** Build a knowledge state vector representing what each student knows. Bayesian Knowledge Tracing (BKT) tracks binary latent skills; Deep Knowledge Tracing (DKT) uses RNNs to model complex skill relationships.
 2. **Content Personalization:** Knowledge state drives next-exercise selection. If student mastered multiplication, move to division; if struggling with factoring, provide more practice with hints.
 3. **Intelligent Feedback:** Auto-grade essays with rubric-based scoring (BERT similarity), provide code-level feedback on programming assignments, detect misconceptions in math solutions.
@@ -487,6 +696,17 @@ for obj in result["objects"][:5]:
 6. **Natural Language Tutoring:** LLM-powered tutors answer student questions, provide explanations, and engage in Socratic dialogue → but with guardrails against hallucinating incorrect content.
 
 ### Adaptive Learning Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Adaptive Learning Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" alt="Diagram: Adaptive Learning Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Adaptive Learning Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function adaptiveLesson(currentStudentState, curriculum):
@@ -526,6 +746,17 @@ function adaptiveLesson(currentStudentState, curriculum):
 ```
 
 ### Python Implementation → Bayesian Knowledge Tracing
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" alt="Handwritten: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" alt="Diagram: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" alt="Sticky Note: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -596,6 +827,17 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Student mastery rate | 60% | 85% (adaptive) | +25% |
@@ -606,6 +848,17 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 | Content coverage per course | 70% | 95% (adaptive) | +25% |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -618,6 +871,17 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 | 24/7 availability across time zones | Screen fatigue from extended usage |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Student gaming the system:** Clicking through hints without learning → solution: interaction pattern analysis with minimum-time thresholds
 - **Knowledge decay:** Skills mastered in February forgotten by April → incorporate forgetting curves (Pavlik & Anderson model)
@@ -633,6 +897,17 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### How AI Solves Entertainment Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" alt="Handwritten: How AI Solves Entertainment Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" alt="Diagram: How AI Solves Entertainment Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" alt="Sticky Note: How AI Solves Entertainment Problems" width="30%">
+</a>
+
+
 1. **Game AI & NPC Behavior:** Non-player characters use behavior trees, finite state machines, or reinforcement learning to make realistic decisions. AlphaGo-style MCTS enables superhuman strategic play. Dynamic difficulty adjustment (DDA) keeps players in the flow channel.
 2. **Procedural Content Generation (PCG):** Algorithms generate game levels, quests, items, textures, and dialogue using noise functions (Perlin), grammars (L-systems), search-based methods (evolutionary algorithms), and ML models (GANs, VAEs).
 3. **Generative Art & Design:** Diffusion models (Stable Diffusion, DALL-E, Midjourney) generate images from text prompts. Style transfer applies artistic styles to photographs. AI-assisted tools suggest compositions, color palettes, and layouts.
@@ -641,6 +916,17 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 6. **Automated Testing & QA:** Reinforcement learning agents explore game environments to find bugs, test edge cases, and verify level completability. Computer vision detects rendering artifacts and animation glitches.
 
 ### Procedural Content Generation Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Procedural Content Generation Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" alt="Diagram: Procedural Content Generation Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Procedural Content Generation Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function generateDungeonLevel(seed, difficulty, theme):
@@ -674,6 +960,17 @@ function generateDungeonLevel(seed, difficulty, theme):
 ```
 
 ### Python Implementation → Wave Function Collapse Level Generator
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" alt="Handwritten: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" alt="Diagram: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" alt="Sticky Note: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+</a>
+
 
 ```python
 import random
@@ -741,6 +1038,17 @@ if result is not None:
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Game level design time | 2 weeks | 2 hours (PCG) | 98% faster |
@@ -751,6 +1059,17 @@ if result is not None:
 | Player engagement (session length) | 22 min baseline | 35 min (adaptive difficulty) | +59% |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -763,6 +1082,17 @@ if result is not None:
 | Real-time content adapts to player choices | Computational cost of real-time generation on consumer hardware |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Unbeatable generated levels:** Impossible-to-complete layout due to constraint misconfiguration → solution: automated playtesting with RL agents plus guaranteed-path validation
 - **Copyright infringement:** Generated art reproduces training data too closely → use deduplication filters + prompt-diversity tracking + legal licensing of training datasets
@@ -778,6 +1108,17 @@ if result is not None:
 
 ### How AI Solves Agriculture Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" alt="Handwritten: How AI Solves Agriculture Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" alt="Diagram: How AI Solves Agriculture Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" alt="Sticky Note: How AI Solves Agriculture Problems" width="30%">
+</a>
+
+
 1. **Remote Sensing:** Drones and satellites capture multispectral imagery (NDVI, NDWI, thermal). Computer vision models detect crop health, water stress, nutrient deficiency, and pest infestation from spectral signatures.
 2. **Soil Analysis:** IoT sensors measure soil moisture, pH, temperature, electrical conductivity, and nutrient levels. ML models map soil variability at sub-meter resolution, creating prescription maps for variable-rate application.
 3. **Yield Prediction:** Time-series models (LSTM, Transformer) integrate weather forecasts, soil data, satellite imagery, and historical yields to predict harvest output months in advance, enabling supply chain optimization.
@@ -786,6 +1127,17 @@ if result is not None:
 6. **Supply Chain Optimization:** Reinforcement learning optimizes harvest scheduling, cold chain logistics, and distribution routing to minimize post-harvest loss (currently 30-40% globally).
 
 ### Precision Farming Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Precision Farming Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" alt="Diagram: Precision Farming Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Precision Farming Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function precisionFarmingPipeline(fieldPolygon):
@@ -828,6 +1180,17 @@ function precisionFarmingPipeline(fieldPolygon):
 ```
 
 ### Python Implementation → Crop Disease Detection
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" alt="Handwritten: Python Implementation → Crop Disease Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" alt="Diagram: Python Implementation → Crop Disease Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" alt="Sticky Note: Python Implementation → Crop Disease Detection" width="30%">
+</a>
+
 
 ```python
 import torch
@@ -888,6 +1251,17 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Crop yield per acre | 170 bu/acre | 205 bu/acre (precision) | +20% |
@@ -898,6 +1272,17 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 | Post-harvest loss | 35% | 15% (supply chain AI) | 57% reduction |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -910,6 +1295,17 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 | Supports regenerative agriculture practices | Requires technical training that many farmers lack |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Weather disruption:** Persistent cloud cover blocks satellite imagery for weeks → solution: SAR (Synthetic Aperture Radar) satellite fusion + local drone deployment
 - **Novel pests:** Disease never seen in training data → solution: anomaly detection to flag unknown conditions + few-shot class expansion
@@ -925,6 +1321,17 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### How AI Solves Security Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" alt="Handwritten: How AI Solves Security Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" alt="Diagram: How AI Solves Security Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" alt="Sticky Note: How AI Solves Security Problems" width="30%">
+</a>
+
+
 1. **Threat Detection:** ML models analyze network traffic (Zeek logs, NetFlow), endpoint events (Sysmon, EDR telemetry), and cloud audit logs (CloudTrail, Azure Activity) to identify malicious patterns → C2 beaconing, data exfiltration, privilege escalation.
 2. **Anomaly-Based Intrusion Detection:** Unsupervised models (Isolation Forest, autoencoders, OC-SVM) build baselines of normal behavior and flag deviations → a finance employee accessing HR databases at 3 AM, or a server sending data to a new external IP.
 3. **Malware Classification:** Static analysis (PE header features, byte n-grams) and dynamic analysis (API call sequences, network behavior) feed classifiers that identify malware families, zero-day samples, and ransomware encryption activity.
@@ -933,6 +1340,17 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 6. **Adversarial ML Defense:** Detect and defend against adversarial examples, model poisoning, data extraction, and membership inference attacks. Deploy ensemble models, input sanitization, and differential privacy.
 
 ### Network Intrusion Detection Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function realtimeNetworkIDS(packetStream):
@@ -974,6 +1392,17 @@ function realtimeNetworkIDS(packetStream):
 ```
 
 ### Python Implementation → Anomaly Detection for Network Security
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly Detection for Network Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" alt="Diagram: Python Implementation → Anomaly Detection for Network Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly Detection for Network Security" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -1059,6 +1488,17 @@ print(f"Reason: {result['reason']}")
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Mean time to detect (MTTD) | 96 hours | 15 minutes | 99.7% faster |
@@ -1071,6 +1511,17 @@ print(f"Reason: {result['reason']}")
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | 24/7 monitoring at machine speed | High false positive rate without careful tuning |
@@ -1082,6 +1533,17 @@ print(f"Reason: {result['reason']}")
 | Scalable across cloud, on-prem, hybrid | Computational cost of real-time deep learning inference |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Encrypted traffic:** TLS 1.3 hides payload content → solution: metadata-only analysis (packet size, timing, flow duration) with traffic fingerprinting
 - **Insider threat → slow exfiltration:** Employee copies files over weeks → solution: long-window behavioral drift detection with user-entity behavior baselines
@@ -1097,6 +1559,17 @@ print(f"Reason: {result['reason']}")
 
 ### How AI Solves Environmental Problems
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" alt="Handwritten: How AI Solves Environmental Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" alt="Diagram: How AI Solves Environmental Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" alt="Sticky Note: How AI Solves Environmental Problems" width="30%">
+</a>
+
+
 1. **Climate Modeling:** Graph neural networks and physics-informed ML (GraphCast, FourCastNet) learn atmospheric dynamics from reanalysis data, producing 10-day weather forecasts in under a minute → 1,000x faster than traditional numerical weather prediction (NWP).
 2. **Deforestation Monitoring:** CNNs analyze satellite imagery (Landsat, Sentinel-2, Planet) to detect illegal logging, track forest fragmentation, and quantify above-ground biomass. Change detection models highlight areas of forest loss within days.
 3. **Wildlife Conservation:** Computer vision processes camera trap images to identify species, count populations, and detect poachers. Acoustic monitoring (BirdNET) identifies species from audio recordings. GPS collar data + movement models predict wildlife corridors.
@@ -1105,6 +1578,17 @@ print(f"Reason: {result['reason']}")
 6. **Disaster Response:** Flood prediction models (Google Flood Hub) forecast riverine flooding 7 days in advance. Wildfire spread models integrate satellite thermal data, weather forecasts, and topography to predict fire perimeters.
 
 ### Climate Forecasting Pipeline Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Climate Forecasting Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" alt="Diagram: Climate Forecasting Pipeline Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Climate Forecasting Pipeline Pseudocode" width="30%">
+</a>
+
 
 ```
 function climateForecastingPipeline(location, forecastDays):
@@ -1148,6 +1632,17 @@ function climateForecastingPipeline(location, forecastDays):
 ```
 
 ### Python Implementation → Satellite Image Change Detection for Deforestation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" alt="Handwritten: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" alt="Diagram: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" alt="Sticky Note: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -1222,6 +1717,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Impact Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
+
 | Domain | Traditional Method | AI-Powered Method | Improvement |
 |--------|-------------------|-------------------|-------------|
 | Weather forecasting | 10-day NWP → 3 hours compute | GraphCast → 1 minute | 180x faster |
@@ -1232,6 +1738,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 | Flood prediction | 48-hour warning | 7-day AI forecast | +5 days lead time |
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1245,6 +1762,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 | Enables precision agriculture at watershed scale | Rare event prediction (once-in-century floods) lacks training data |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Cloud cover masking:** Persistent cloud in tropical regions blocks satellite views for weeks → solution: SAR (Sentinel-1) radar imagery that penetrates clouds + temporal interpolation
 - **Adversarial conservation:** Poachers learn detection patterns → solution: randomized patrol routing with game-theoretic optimization
@@ -1268,6 +1796,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 | Environment | Nascent | Build (1/4) | Google, Planet Labs, ClimateAI | $5 | 5â€“15 years | Low |
 
 ### AI Maturity Level Definitions
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" alt="Handwritten: AI Maturity Level Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" alt="Diagram: AI Maturity Level Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" alt="Sticky Note: AI Maturity Level Definitions" width="30%">
+</a>
+
 
 | Level | Name | Characteristics | Example |
 |:-----:|------|----------------|---------|
@@ -1326,6 +1865,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q2: How do you choose the right evaluation metric for an AI product?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" alt="Handwritten: How do you choose the right evaluation metric for an AI product?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" alt="Diagram: How do you choose the right evaluation metric for an AI product?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" alt="Sticky Note: How do you choose the right evaluation metric for an AI product?" width="30%">
+</a>
+
+
 **Answer:** Match the metric to the business cost structure. Never optimize for accuracy alone.
 
 - **Fraud detection:** Optimize for precision at recall=k (prevent blocking the 99.9% legitimate transactions while catching fraud). Cost of false positive = customer friction; cost of false negative = chargeback.
@@ -1335,6 +1885,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - **Content moderation:** Precision is paramount at scale → 99.9% precision still means 1,000 false flags per million posts. Balanced against recall to catch actual violations.
 
 ### Q3: What are the most common deployment challenges for AI systems?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" alt="Handwritten: What are the most common deployment challenges for AI systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" alt="Diagram: What are the most common deployment challenges for AI systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" alt="Sticky Note: What are the most common deployment challenges for AI systems?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1352,6 +1913,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q4: Explain the AI product lifecycle from problem definition to maintenance.
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" alt="Handwritten: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" alt="Diagram: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" alt="Sticky Note: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+</a>
+
+
 **Answer:**
 
 1. **Problem Framing:** Convert business problem to ML problem. "Detect fraud" → "Binary classifier on transaction sequences with temporal features."
@@ -1364,6 +1936,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 8. **Deprecation:** Retire models that no longer meet accuracy thresholds or have been superseded. Document lessons learned.
 
 ### Q5: How do you handle imbalanced datasets in production AI?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" alt="Handwritten: How do you handle imbalanced datasets in production AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" alt="Diagram: How do you handle imbalanced datasets in production AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" alt="Sticky Note: How do you handle imbalanced datasets in production AI?" width="30%">
+</a>
+
 
 **Answer:** Class imbalance is pervasive (fraud: 0.1%, rare disease: 0.01%, churn: 2-5%). Strategies by deployment phase:
 
@@ -1380,6 +1963,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q6: What MLOps practices are essential for reliable AI deployment?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" alt="Handwritten: What MLOps practices are essential for reliable AI deployment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" alt="Diagram: What MLOps practices are essential for reliable AI deployment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" alt="Sticky Note: What MLOps practices are essential for reliable AI deployment?" width="30%">
+</a>
+
+
 **Answer:**
 
 - **Reproducibility:** Pin data versions (DVC), code commits (Git), model artifacts (MLflow registry), and environment (Docker + conda/pip freeze). Every model must be traceable to exact training run.
@@ -1393,6 +1987,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 ## Applications in Real Systems
 
 ### DeepMind (Healthcare → AlphaFold & Medical Imaging)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" alt="Handwritten: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" alt="Diagram: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" alt="Sticky Note: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+</a>
+
 
 **What it does:** DeepMind (Google) develops AI systems for healthcare challenges. AlphaFold (2021) predicts protein 3D structures from amino acid sequences with atomic-level accuracy (GDT score > 90%), solving a 50-year grand challenge in biology. DeepMind's medical imaging models detect over 50 eye diseases from retinal scans with referral accuracy matching expert clinicians.
 
@@ -1411,6 +2016,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 **Impact:** Reduced protein structure determination from years (X-ray crystallography, cryo-EM) to minutes. Enabled structure-based drug design for neglected tropical diseases. Open-sourced weights and architecture.
 
 ### Waymo (Transportation → Autonomous Driving)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" alt="Handwritten: Waymo (Transportation → Autonomous Driving)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" alt="Diagram: Waymo (Transportation → Autonomous Driving)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" alt="Sticky Note: Waymo (Transportation → Autonomous Driving)" width="30%">
+</a>
+
 
 **What it does:** Waymo (Alphabet) operates a fully autonomous ride-hailing service (Waymo One) in Phoenix, San Francisco, Los Angeles, and Austin. Their 5th-generation system (Waymo Driver) handles all SAE Level 4 driving tasks within its Operational Design Domain.
 
@@ -1431,6 +2047,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Grammarly (Education & Writing → NLP at Scale)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" alt="Handwritten: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" alt="Diagram: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" alt="Sticky Note: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+</a>
+
+
 **What it does:** Grammarly is an AI-powered writing assistant that provides grammar correction, style suggestions, tone detection, clarity improvements, and plagiarism checking → processing 5,000+ suggestions per second across 500K+ daily active applications.
 
 **Architecture:**
@@ -1448,6 +2075,17 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - Personalization: Avoid contradicting user's established style and vocabulary over time
 
 ### GitHub Copilot (Code Generation → Developer Productivity)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" alt="Handwritten: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" alt="Diagram: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" alt="Sticky Note: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+</a>
+
 
 **What it does:** GitHub Copilot (powered by OpenAI Codex/GPT-4) provides real-time code completion, function generation, bug detection, and documentation → integrated into VS Code, JetBrains, Neovim, and other IDEs. Used by 1M+ developers, generating 46% of new code on average.
 
@@ -1580,6 +2218,17 @@ AI applications have transcended research labs to become integral components of 
 - **Environment** → AI accelerates climate modeling by 180x, tracks deforestation in near real-time, identifies endangered species from camera trap images, and optimizes renewable energy grids. The environmental domain is nascent but has the highest potential impact on humanity.
 
 ### Key Takeaways
+
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
+</a>
+
 
 1. **No single AI approach dominates** → each domain exploits different techniques: CNNs for vision, transformers for text, GNNs for molecular and climate data, RL for control and games.
 2. **Data is the bottleneck** → model architecture matters, but data quality, quantity, and relevance determine real-world performance.

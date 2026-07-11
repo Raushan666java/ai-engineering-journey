@@ -13,6 +13,17 @@
 
 ### The 30-Second Resume Test
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-handwritten.svg" alt="Handwritten: The 30-Second Resume Test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-diagram.svg" alt="Diagram: The 30-Second Resume Test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-30-second-resume-test-sticky.svg" alt="Sticky Note: The 30-Second Resume Test" width="30%">
+</a>
+
+
 Recruiters spend an average of 6-8 seconds scanning a resume before deciding to read more. Your resume must pass the **30-second test**:
 
 ```mermaid
@@ -30,6 +41,17 @@ flowchart LR
 
 ### ATS (Applicant Tracking System)
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-handwritten.svg" alt="Handwritten: ATS (Applicant Tracking System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-diagram.svg" alt="Diagram: ATS (Applicant Tracking System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-applicant-tracking-system-sticky.svg" alt="Sticky Note: ATS (Applicant Tracking System)" width="30%">
+</a>
+
+
 Most companies use ATS to filter resumes before human review. ATS parses your resume into structured data.
 
 **ATS-friendly resume rules:**
@@ -43,6 +65,17 @@ Most companies use ATS to filter resumes before human review. ATS parses your re
 8. **Spell out acronyms:** "Software Development Life Cycle (SDLC)" not just "SDLC"
 
 ### ATS Parsing Flow
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-handwritten.svg" alt="Handwritten: ATS Parsing Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-diagram.svg" alt="Diagram: ATS Parsing Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-parsing-flow-sticky.svg" alt="Sticky Note: ATS Parsing Flow" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -64,6 +97,17 @@ flowchart TD
 
 ### The Perfect Resume Structure
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-handwritten.svg" alt="Handwritten: The Perfect Resume Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-diagram.svg" alt="Diagram: The Perfect Resume Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-perfect-resume-structure-sticky.svg" alt="Sticky Note: The Perfect Resume Structure" width="30%">
+</a>
+
+
 ```
 1. HEADER  — Name, Phone, Email, LinkedIn, GitHub, Location
 2. SUMMARY — 3-4 lines professional summary (optional for experienced)
@@ -75,6 +119,17 @@ flowchart TD
 ```
 
 ### Resume Template: Fresher (BE/BTech/MCA)
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-handwritten.svg" alt="Handwritten: Resume Template: Fresher (BE/BTech/MCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-diagram.svg" alt="Diagram: Resume Template: Fresher (BE/BTech/MCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-fresher-be-btech-mca-sticky.svg" alt="Sticky Note: Resume Template: Fresher (BE/BTech/MCA)" width="30%">
+</a>
+
 
 <details>
 <summary>Click to reveal template</summary>
@@ -121,6 +176,17 @@ ACHIEVEMENTS
 </details>
 
 ### Resume Template: Experienced (3-10 Years)
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-handwritten.svg" alt="Handwritten: Resume Template: Experienced (3-10 Years)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-diagram.svg" alt="Diagram: Resume Template: Experienced (3-10 Years)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-template-experienced-3-10-years-sticky.svg" alt="Sticky Note: Resume Template: Experienced (3-10 Years)" width="30%">
+</a>
+
 
 <details>
 <summary>Click to reveal template</summary>
@@ -169,6 +235,17 @@ ACHIEVEMENTS
 
 ### Quantified Achievement Examples
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-handwritten.svg" alt="Handwritten: Quantified Achievement Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-diagram.svg" alt="Diagram: Quantified Achievement Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/quantified-achievement-examples-sticky.svg" alt="Sticky Note: Quantified Achievement Examples" width="30%">
+</a>
+
+
 | Weak Statement | Strong (Quantified) Statement |
 |---------------|------------------------------|
 | Improved application performance | Reduced API response time by 40% (from 250ms to 150ms) |
@@ -183,6 +260,17 @@ ACHIEVEMENTS
 | Mentored juniors | Mentored 4 junior devs; all reached senior level within 18 months |
 
 ### Resume Mistakes to Avoid
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Resume Mistakes to Avoid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-diagram.svg" alt="Diagram: Resume Mistakes to Avoid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Resume Mistakes to Avoid" width="30%">
+</a>
+
 
 | Mistake | Why It Hurts |
 |---------|-------------|
@@ -203,6 +291,17 @@ ACHIEVEMENTS
 
 ### The STAR Method for Projects
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-handwritten.svg" alt="Handwritten: The STAR Method for Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-diagram.svg" alt="Diagram: The STAR Method for Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/the-star-method-for-projects-sticky.svg" alt="Sticky Note: The STAR Method for Projects" width="30%">
+</a>
+
+
 Apply STAR to each project:
 | Element | What to Include |
 |---------|-----------------|
@@ -212,6 +311,17 @@ Apply STAR to each project:
 | **Result** | Quantified impact, users served |
 
 ### Project Templates by Category
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-handwritten.svg" alt="Handwritten: Project Templates by Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-diagram.svg" alt="Diagram: Project Templates by Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/project-templates-by-category-sticky.svg" alt="Sticky Note: Project Templates by Category" width="30%">
+</a>
+
 
 #### Web Application Project
 ```
@@ -269,6 +379,17 @@ Hostel Management Portal | React, Node.js, MongoDB, Docker
 
 ### LinkedIn Profile Checklist
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-handwritten.svg" alt="Handwritten: LinkedIn Profile Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-diagram.svg" alt="Diagram: LinkedIn Profile Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-checklist-sticky.svg" alt="Sticky Note: LinkedIn Profile Checklist" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     A[Complete Profile<br/>100% completeness] --> B[Headline]
@@ -290,6 +411,17 @@ flowchart TD
 
 ### Headline Optimization
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-handwritten.svg" alt="Handwritten: Headline Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-diagram.svg" alt="Diagram: Headline Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/headline-optimization-sticky.svg" alt="Sticky Note: Headline Optimization" width="30%">
+</a>
+
+
 | Weak Headline | Strong Headline |
 |---------------|-----------------|
 | Software Engineer at ABC Corp | Senior Software Engineer | Java, Spring Boot, Distributed Systems | Building Scalable Fintech Solutions |
@@ -298,6 +430,17 @@ flowchart TD
 | IIT Graduate | SDE-2 @ Google | Android Developer | Ex-Microsoft | GSoC Mentor |
 
 ### About Section Template
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-handwritten.svg" alt="Handwritten: About Section Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-diagram.svg" alt="Diagram: About Section Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/about-section-template-sticky.svg" alt="Sticky Note: About Section Template" width="30%">
+</a>
+
 
 ```
 [Paragraph 1: Who you are]
@@ -325,6 +468,17 @@ Feel free to reach out for:
 
 ### LinkedIn Best Practices
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-handwritten.svg" alt="Handwritten: LinkedIn Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-diagram.svg" alt="Diagram: LinkedIn Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-best-practices-sticky.svg" alt="Sticky Note: LinkedIn Best Practices" width="30%">
+</a>
+
+
 | Best Practice | How to Implement |
 |--------------|-----------------|
 | Professional photo | Headshot against neutral background, business casual |
@@ -344,6 +498,17 @@ Feel free to reach out for:
 
 ### GitHub Profile Essentials
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-handwritten.svg" alt="Handwritten: GitHub Profile Essentials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-diagram.svg" alt="Diagram: GitHub Profile Essentials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-essentials-sticky.svg" alt="Sticky Note: GitHub Profile Essentials" width="30%">
+</a>
+
+
 | Element | Description | Impact |
 |---------|-------------|--------|
 | Profile README | Custom markdown README on profile repo | High — creates first impression |
@@ -354,6 +519,17 @@ Feel free to reach out for:
 | Activity timeline | Daily commits/issues/PRs | Medium — shows engagement |
 
 ### GitHub Profile README Template
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-handwritten.svg" alt="Handwritten: GitHub Profile README Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-diagram.svg" alt="Diagram: GitHub Profile README Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-profile-readme-template-sticky.svg" alt="Sticky Note: GitHub Profile README Template" width="30%">
+</a>
+
 
 ```markdown
 # Hi there, I's 👋
@@ -391,6 +567,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 
 ### Repository Best Practices
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-handwritten.svg" alt="Handwritten: Repository Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-diagram.svg" alt="Diagram: Repository Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/repository-best-practices-sticky.svg" alt="Sticky Note: Repository Best Practices" width="30%">
+</a>
+
+
 | Element | What to Include |
 |---------|-----------------|
 | README.md | Project description, tech stack, setup instructions, screenshots |
@@ -406,6 +593,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 
 ### GitHub Activity Guidelines
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-handwritten.svg" alt="Handwritten: GitHub Activity Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-diagram.svg" alt="Diagram: GitHub Activity Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/github-activity-guidelines-sticky.svg" alt="Sticky Note: GitHub Activity Guidelines" width="30%">
+</a>
+
+
 - **Commit daily:** Even small contributions maintain the green graph
 - **Write good commit messages:** "Fix bug in payment flow" not "Update file"
 - **Open-source contributions:** Fix a typo in a popular repo counts
@@ -418,6 +616,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 ## Section 5: Portfolio Website Essentials
 
 ### Portfolio Sections
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-handwritten.svg" alt="Handwritten: Portfolio Sections" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-diagram.svg" alt="Diagram: Portfolio Sections" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-sections-sticky.svg" alt="Sticky Note: Portfolio Sections" width="30%">
+</a>
+
 
 | Section | Content | Priority |
 |---------|---------|----------|
@@ -434,6 +643,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 
 ### Portfolio Tech Stack Recommendations
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-handwritten.svg" alt="Handwritten: Portfolio Tech Stack Recommendations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-diagram.svg" alt="Diagram: Portfolio Tech Stack Recommendations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-tech-stack-recommendations-sticky.svg" alt="Sticky Note: Portfolio Tech Stack Recommendations" width="30%">
+</a>
+
+
 | Requirement | Options |
 |-------------|---------|
 | Static site generator (minimal) | Next.js, Hugo, Jekyll |
@@ -443,6 +663,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 | Domain | yourname.com (\~₹800/yr) |
 
 ### Portfolio Content Rules
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-handwritten.svg" alt="Handwritten: Portfolio Content Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-diagram.svg" alt="Diagram: Portfolio Content Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-content-rules-sticky.svg" alt="Sticky Note: Portfolio Content Rules" width="30%">
+</a>
+
 
 ```
 ✓ Show, don't tell — include live demos, screenshots, architecture diagrams
@@ -461,6 +692,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 
 ### Tailoring Resumes for Different Job Types
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-handwritten.svg" alt="Handwritten: Tailoring Resumes for Different Job Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-diagram.svg" alt="Diagram: Tailoring Resumes for Different Job Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/tailoring-resumes-for-different-job-types-sticky.svg" alt="Sticky Note: Tailoring Resumes for Different Job Types" width="30%">
+</a>
+
+
 | Target | Focus On | De-emphasize |
 |--------|----------|-------------|
 | FAANG/Product-based | System design, DSA depth, scale metrics | College projects (unless impressive) |
@@ -470,6 +712,17 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 | Consulting | Client management, delivery, communication | Research papers |
 
 ### Cover Letter Template
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-handwritten.svg" alt="Handwritten: Cover Letter Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-diagram.svg" alt="Diagram: Cover Letter Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/cover-letter-template-sticky.svg" alt="Sticky Note: Cover Letter Template" width="30%">
+</a>
+
 
 ```markdown
 Subject: Application for Software Engineer — [Company Name]
@@ -500,6 +753,17 @@ Best regards,
 
 ### Application Tracking Template
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-handwritten.svg" alt="Handwritten: Application Tracking Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-diagram.svg" alt="Diagram: Application Tracking Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/application-tracking-template-sticky.svg" alt="Sticky Note: Application Tracking Template" width="30%">
+</a>
+
+
 | Company | Role | Applied Date | Status | Notes | Follow-up |
 |---------|------|-------------|--------|-------|-----------|
 | Google | SDE-2 | 1-Jan | Screening | Referral from John | 15-Jan |
@@ -513,6 +777,17 @@ Best regards,
 
 ### Resume Action Verbs
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-handwritten.svg" alt="Handwritten: Resume Action Verbs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-diagram.svg" alt="Diagram: Resume Action Verbs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-action-verbs-sticky.svg" alt="Sticky Note: Resume Action Verbs" width="30%">
+</a>
+
+
 | Category | Strong Verbs |
 |----------|-------------|
 | Leadership | Led, Directed, Coordinated, Spearheaded, Orchestrated |
@@ -523,6 +798,17 @@ Best regards,
 | Results | Delivered, Achieved, Generated, Launched, Deployed |
 
 ### LinkedIn Profile Strength Score
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-handwritten.svg" alt="Handwritten: LinkedIn Profile Strength Score" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-diagram.svg" alt="Diagram: LinkedIn Profile Strength Score" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/linkedin-profile-strength-score-sticky.svg" alt="Sticky Note: LinkedIn Profile Strength Score" width="30%">
+</a>
+
 
 | Factor | Impact | Your Score |
 |--------|--------|------------|
@@ -538,6 +824,17 @@ Best regards,
 | **Total** | **100%** | **Score: ___** |
 
 ### ATS Keyword Optimization
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-handwritten.svg" alt="Handwritten: ATS Keyword Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-diagram.svg" alt="Diagram: ATS Keyword Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/ats-keyword-optimization-sticky.svg" alt="Sticky Note: ATS Keyword Optimization" width="30%">
+</a>
+
 
 ```
 Job Description Keywords:
@@ -555,6 +852,17 @@ Map each keyword to YOUR experience:
 ```
 
 ### Portfolio Checklist
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-handwritten.svg" alt="Handwritten: Portfolio Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-diagram.svg" alt="Diagram: Portfolio Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/portfolio-checklist-sticky.svg" alt="Sticky Note: Portfolio Checklist" width="30%">
+</a>
+
 
 | Item | Status | Priority |
 |------|--------|----------|
@@ -576,6 +884,17 @@ Map each keyword to YOUR experience:
 ## Section 7: Templates for Common Scenarios
 
 ### Scenario Template 1: Career Change (Non-IT to IT)
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-handwritten.svg" alt="Handwritten: Scenario Template 1: Career Change (Non-IT to IT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-diagram.svg" alt="Diagram: Scenario Template 1: Career Change (Non-IT to IT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-1-career-change-non-it-to-it-sticky.svg" alt="Sticky Note: Scenario Template 1: Career Change (Non-IT to IT)" width="30%">
+</a>
+
 
 ```
 Name | Phone | Email | LinkedIn | GitHub
@@ -620,6 +939,17 @@ B.Tech Mechanical Engineering — NIT Warangal (CGPA: 7.8/10)
 
 ### Scenario Template 2: Gap in Education/Employment
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-handwritten.svg" alt="Handwritten: Scenario Template 2: Gap in Education/Employment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-diagram.svg" alt="Diagram: Scenario Template 2: Gap in Education/Employment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-2-gap-in-education-employment-sticky.svg" alt="Sticky Note: Scenario Template 2: Gap in Education/Employment" width="30%">
+</a>
+
+
 ```
 STRATEGY: Address gaps upfront in a positive, learning-focused way.
 
@@ -638,6 +968,17 @@ resilience and time management."
 ```
 
 ### Scenario Template 3: Multiple Short Tenures
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-handwritten.svg" alt="Handwritten: Scenario Template 3: Multiple Short Tenures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-diagram.svg" alt="Diagram: Scenario Template 3: Multiple Short Tenures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/scenario-template-3-multiple-short-tenures-sticky.svg" alt="Sticky Note: Scenario Template 3: Multiple Short Tenures" width="30%">
+</a>
+
 
 ```
 STRATEGY: Frame short stints as intentional learning periods in early career.
@@ -666,6 +1007,17 @@ these diverse experiences."
 ## Section 8: Interview-Specific Resume Customization
 
 ### Resume Customization by Company Type
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-handwritten.svg" alt="Handwritten: Resume Customization by Company Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-diagram.svg" alt="Diagram: Resume Customization by Company Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-customization-by-company-type-sticky.svg" alt="Sticky Note: Resume Customization by Company Type" width="30%">
+</a>
+
 
 #### For Service Companies (TCS, Infosys, Wipro)
 
@@ -702,6 +1054,17 @@ these diverse experiences."
 
 ### Resume Checklist Before Submission
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-handwritten.svg" alt="Handwritten: Resume Checklist Before Submission" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-diagram.svg" alt="Diagram: Resume Checklist Before Submission" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/resume-checklist-before-submission-sticky.svg" alt="Sticky Note: Resume Checklist Before Submission" width="30%">
+</a>
+
+
 ```
 ☐ File name: YourName_Role_Company.pdf (not "Resume.pdf")
 ☐ File format: As requested (PDF or DOCX)
@@ -726,6 +1089,17 @@ these diverse experiences."
 
 ### Chronological Resume (Standard)
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-handwritten.svg" alt="Handwritten: Chronological Resume (Standard)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-diagram.svg" alt="Diagram: Chronological Resume (Standard)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/chronological-resume-standard-sticky.svg" alt="Sticky Note: Chronological Resume (Standard)" width="30%">
+</a>
+
+
 | Pros | Cons |
 |------|------|
 | Preferred by 95% recruiters | Highlights gaps |
@@ -734,6 +1108,17 @@ these diverse experiences."
 
 ### Functional Resume (Skill-Based)
 
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-handwritten.svg" alt="Handwritten: Functional Resume (Skill-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-diagram.svg" alt="Diagram: Functional Resume (Skill-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/functional-resume-skill-based-sticky.svg" alt="Sticky Note: Functional Resume (Skill-Based)" width="30%">
+</a>
+
+
 | Pros | Cons |
 |------|------|
 | Highlights skills | ATS may not parse well |
@@ -741,6 +1126,17 @@ these diverse experiences."
 | Good for career changers | Less common in IT |
 
 ### Combination Resume
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-handwritten.svg" alt="Handwritten: Combination Resume" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-diagram.svg" alt="Diagram: Combination Resume" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/combination-resume-sticky.svg" alt="Sticky Note: Combination Resume" width="30%">
+</a>
+
 
 | Pros | Cons |
 |------|------|
@@ -755,6 +1151,17 @@ these diverse experiences."
 ## Section 10: Digital Presence Management
 
 ### Online Reputation Checklist
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-handwritten.svg" alt="Handwritten: Online Reputation Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-diagram.svg" alt="Diagram: Online Reputation Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/online-reputation-checklist-sticky.svg" alt="Sticky Note: Online Reputation Checklist" width="30%">
+</a>
+
 
 ```
 Search Engine Check
@@ -782,6 +1189,17 @@ GitHub Cleanup
 ```
 
 ### Building a Personal Brand
+
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-handwritten.svg" alt="Handwritten: Building a Personal Brand" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-diagram.svg" alt="Diagram: Building a Personal Brand" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/07-resume-linkedin-portfolio/building-a-personal-brand-sticky.svg" alt="Sticky Note: Building a Personal Brand" width="30%">
+</a>
+
 
 | Action | Frequency | Platform |
 |--------|-----------|----------|

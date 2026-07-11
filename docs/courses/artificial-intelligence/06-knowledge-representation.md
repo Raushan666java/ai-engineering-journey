@@ -61,6 +61,17 @@ Knowledge representation languages vary in their **expressiveness** (what can be
 
 ### Steps to Build an Ontology
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-handwritten.svg" alt="Handwritten: Steps to Build an Ontology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-diagram.svg" alt="Diagram: Steps to Build an Ontology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-an-ontology-sticky.svg" alt="Sticky Note: Steps to Build an Ontology" width="30%">
+</a>
+
+
 1. **Define the domain and scope** — What area of knowledge are we modeling? (e.g., University domain)
 2. **Identify key concepts/classes** — List the important categories (Person, Student, Professor, Course)
 3. **Define class hierarchy** — Arrange classes in a taxonomy (Student ⊑ Person, Professor ⊑ Person)
@@ -69,6 +80,17 @@ Knowledge representation languages vary in their **expressiveness** (what can be
 6. **Populate instances (individuals)** — Add concrete facts (Student(Alice), teaches(Dr.Smith, CS101))
 
 ### Pseudocode for Ontology Construction
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-handwritten.svg" alt="Handwritten: Pseudocode for Ontology Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-diagram.svg" alt="Diagram: Pseudocode for Ontology Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-ontology-construction-sticky.svg" alt="Sticky Note: Pseudocode for Ontology Construction" width="30%">
+</a>
+
 
 ```
 ALGORITHM: BuildOntology
@@ -93,6 +115,17 @@ FUNCTION IsConsistent(O):
 
 ### Step-by-Step Dry Run: Building a University Ontology
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Building a University Ontology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Building a University Ontology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-building-a-university-ontology-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Building a University Ontology" width="30%">
+</a>
+
+
 | Step | Action | Ontology State |
 |------|--------|----------------|
 | 1 | Define scope: University domain | Domain = {university} |
@@ -105,6 +138,17 @@ FUNCTION IsConsistent(O):
 | 8 | Inference | Query: Who teaches Alice? → Dr.Smith (via enrolledIn + teaches chain) |
 
 ### Python Implementation: Basic Ontology Class
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-handwritten.svg" alt="Handwritten: Python Implementation: Basic Ontology Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-diagram.svg" alt="Diagram: Python Implementation: Basic Ontology Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-basic-ontology-class-sticky.svg" alt="Sticky Note: Python Implementation: Basic Ontology Class" width="30%">
+</a>
+
 
 ```python
 class Ontology:
@@ -178,6 +222,17 @@ print(uni.query_by_class("Person"))             # ['Alice', 'DrSmith']
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
 | Class insertion | O(1) amortized | O(C) | Hash map append — no traversal |
@@ -191,6 +246,17 @@ Where C = number of classes, I = number of instances, H = hierarchy depth, R = n
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Formal semantics enable machine reasoning | Building ontologies is labor-intensive |
@@ -200,6 +266,17 @@ Where C = number of classes, I = number of instances, H = hierarchy depth, R = n
 | Foundation for the Semantic Web (OWL/RDF) | May require ontology engineers, not domain experts |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Empty ontology:** All queries return empty lists — always validate that classes exist before adding instances.
 - **Cyclic hierarchy:** A ⊑ B, B ⊑ C, C ⊑ A causes infinite recursion in ancestor lookup — use a visited set to detect cycles.
@@ -215,6 +292,17 @@ Where C = number of classes, I = number of instances, H = hierarchy depth, R = n
 
 ### 6.2.1 Propositional Logic
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-handwritten.svg" alt="Handwritten: 6.2.1 Propositional Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-diagram.svg" alt="Diagram: 6.2.1 Propositional Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-1-propositional-logic-sticky.svg" alt="Sticky Note: 6.2.1 Propositional Logic" width="30%">
+</a>
+
+
 **Syntax:** Atomic propositions $P, Q, R, \ldots$ combined with logical connectives $\neg, \land, \lor, \Rightarrow, \Leftrightarrow$.
 
 **Semantics:** Truth tables assign truth values to formulas given an interpretation (assignment of truth values to atoms). A formula is valid (tautology) if true under all interpretations; satisfiable if true under at least one interpretation; unsatisfiable if false under all interpretations.
@@ -222,6 +310,17 @@ Where C = number of classes, I = number of instances, H = hierarchy depth, R = n
 **Inference:** Modus ponens: from $\alpha$ and $\alpha \Rightarrow \beta$, infer $\beta$. Resolution: from $(\alpha \lor \beta)$ and $(\neg\beta \lor \gamma)$, infer $(\alpha \lor \gamma)$.
 
 ### 6.2.2 First-Order Logic (FOL)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-handwritten.svg" alt="Handwritten: 6.2.2 First-Order Logic (FOL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-diagram.svg" alt="Diagram: 6.2.2 First-Order Logic (FOL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-2-2-first-order-logic-fol-sticky.svg" alt="Sticky Note: 6.2.2 First-Order Logic (FOL)" width="30%">
+</a>
+
 
 FOL extends propositional logic with:
 - **Terms:** Constants ($a, b$), variables ($x, y$), functions ($f(t_1, \ldots, t_n)$).
@@ -248,6 +347,17 @@ A **semantic network** is a directed graph where nodes represent concepts or ind
 
 ### Steps for Building and Querying a Semantic Network
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-handwritten.svg" alt="Handwritten: Steps for Building and Querying a Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-diagram.svg" alt="Diagram: Steps for Building and Querying a Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-building-and-querying-a-semantic-network-sticky.svg" alt="Sticky Note: Steps for Building and Querying a Semantic Network" width="30%">
+</a>
+
+
 1. **Identify all concepts and individuals** — List the entities (Person, Animal, Dog, Fido, Tweety, Bird)
 2. **Establish is-a hierarchy** — Define class membership (Fido is-a Dog, Dog is-a Animal)
 3. **Add property edges** — Attach attributes (Dog has-property Mammal, Bird can-fly True)
@@ -257,6 +367,17 @@ A **semantic network** is a directed graph where nodes represent concepts or ind
 7. **Handle conflicts** — In multiple inheritance, define resolution (e.g., depth-first, linearization)
 
 ### Pseudocode for Semantic Network Inference
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-handwritten.svg" alt="Handwritten: Pseudocode for Semantic Network Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-diagram.svg" alt="Diagram: Pseudocode for Semantic Network Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-semantic-network-inference-sticky.svg" alt="Sticky Note: Pseudocode for Semantic Network Inference" width="30%">
+</a>
+
 
 ```
 ALGORITHM: SemanticNetworkInference
@@ -293,6 +414,17 @@ FUNCTION Query(subject, relation):
 
 ### Step-by-Step Dry Run: Animal Kingdom Semantic Network
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Animal Kingdom Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Animal Kingdom Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-animal-kingdom-semantic-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Animal Kingdom Semantic Network" width="30%">
+</a>
+
+
 **Knowledge Base (Edges):**
 1. is-a(Fido, Dog)
 2. is-a(Dog, Mammal)
@@ -317,6 +449,17 @@ FUNCTION Query(subject, relation):
 | Query(Fido, Animal) | 1 | Fido | is-a? Yes | Fido → Dog → Mammal → Animal | **True** |
 
 ### Python Implementation: Semantic Network
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-handwritten.svg" alt="Handwritten: Python Implementation: Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-diagram.svg" alt="Diagram: Python Implementation: Semantic Network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-semantic-network-sticky.svg" alt="Sticky Note: Python Implementation: Semantic Network" width="30%">
+</a>
+
 
 ```python
 class SemanticNetwork:
@@ -387,6 +530,17 @@ print(net.query("Tweety", "can-fly"))        # True
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
 | Add node | O(1) | O(N) | Hash set insertion |
@@ -399,6 +553,17 @@ Where N = number of nodes, E = number of edges, H = hierarchy depth.
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Intuitive visual representation | Semantics are not formally defined in early versions |
@@ -408,6 +573,17 @@ Where N = number of nodes, E = number of edges, H = hierarchy depth.
 | Low implementation overhead | No standard for quantifier representation |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Cyclic is-a:** is-a(A, B), is-a(B, A) — infinite loop. Always use a visited set.
 - **Diamond problem:** B ⊑ A, C ⊑ A, D ⊑ {B, C}. If B and C both define property P differently, which does D inherit? Resolution: depth-first (prefer first parent chain), breadth-first, or explicit override.
@@ -423,6 +599,17 @@ A **frame** (Minsky, 1975) is a structured representation of a concept or object
 
 ### Steps for Frame-Based Knowledge Representation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-handwritten.svg" alt="Handwritten: Steps for Frame-Based Knowledge Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-diagram.svg" alt="Diagram: Steps for Frame-Based Knowledge Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-frame-based-knowledge-representation-sticky.svg" alt="Sticky Note: Steps for Frame-Based Knowledge Representation" width="30%">
+</a>
+
+
 1. **Define the frame class** — Create a template with named slots and their types
 2. **Set default values** — Specify what each slot contains if not explicitly provided
 3. **Define procedural attachments** — Attach demons: when-needed (compute on access), when-changed (validate on update), when-removed (cleanup)
@@ -433,6 +620,17 @@ A **frame** (Minsky, 1975) is a structured representation of a concept or object
 8. **Handle defaults override** — Instance values override class defaults; class defaults override parent defaults
 
 ### Pseudocode for Frame System
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-handwritten.svg" alt="Handwritten: Pseudocode for Frame System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-diagram.svg" alt="Diagram: Pseudocode for Frame System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-frame-system-sticky.svg" alt="Sticky Note: Pseudocode for Frame System" width="30%">
+</a>
+
 
 ```
 ALGORITHM: FrameSlotRetrieval
@@ -471,6 +669,17 @@ FUNCTION SetSlotValue(F, S, V):
 ```
 
 ### Step-by-Step Dry Run: University Course Frame
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: University Course Frame" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-diagram.svg" alt="Diagram: Step-by-Step Dry Run: University Course Frame" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-university-course-frame-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: University Course Frame" width="30%">
+</a>
+
 
 **Frame Definition:**
 
@@ -512,6 +721,17 @@ Frame: GraduateStudent ⊑ Student
 | 10 | Query Bob.name | Inherited default → "Unknown" (no instance value) |
 
 ### Python Implementation: Frame System
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-handwritten.svg" alt="Handwritten: Python Implementation: Frame System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-diagram.svg" alt="Diagram: Python Implementation: Frame System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-frame-system-sticky.svg" alt="Sticky Note: Python Implementation: Frame System" width="30%">
+</a>
+
 
 ```python
 class Frame:
@@ -623,6 +843,17 @@ alice.set_slot("gpa", 3.9)          # Prints: [DEMON] GPA changing to 3.9 for Al
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
 | Add slot | O(1) | O(S) | Dictionary insertion |
@@ -636,6 +867,17 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Intuitive object-like structure (precursor to OOP) | No formal semantics in original formulation |
@@ -645,6 +887,17 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 | Constraints enforce data integrity | No standard reasoning algorithm across implementations |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Circular inheritance:** GradStudent ⊑ Student ⊑ Person ⊑ GradStudent — use a visited set in get_slot.
 - **Missing slot in demon:** Querying a slot with a when-needed demon that raises an exception — wrap in try/except.
@@ -662,6 +915,17 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 
 ### Steps to Build and Reason with Conceptual Graphs
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-handwritten.svg" alt="Handwritten: Steps to Build and Reason with Conceptual Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-diagram.svg" alt="Diagram: Steps to Build and Reason with Conceptual Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-to-build-and-reason-with-conceptual-graphs-sticky.svg" alt="Sticky Note: Steps to Build and Reason with Conceptual Graphs" width="30%">
+</a>
+
+
 1. **Identify concepts** — Extract noun phrases (Person, Book, Library)
 2. **Identify conceptual relations** — Extract verb phrases (borrows, located-in)
 3. **Build the bipartite graph** — Concepts as rectangles, relations as ovals, alternating edges
@@ -670,6 +934,17 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 6. **Perform inference** — Derive new graphs via projection or join
 
 ### Pseudocode for Conceptual Graph Operations
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-handwritten.svg" alt="Handwritten: Pseudocode for Conceptual Graph Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-diagram.svg" alt="Diagram: Pseudocode for Conceptual Graph Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-conceptual-graph-operations-sticky.svg" alt="Sticky Note: Pseudocode for Conceptual Graph Operations" width="30%">
+</a>
+
 
 ```
 ALGORITHM: ConceptualGraphProjection
@@ -711,6 +986,17 @@ FUNCTION Join(G1, G2, concept_c):
 
 ### Step-by-Step Dry Run: Library Borrowing Conceptual Graph
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Library Borrowing Conceptual Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Library Borrowing Conceptual Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-library-borrowing-conceptual-graph-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Library Borrowing Conceptual Graph" width="30%">
+</a>
+
+
 **Initial Facts:**
 - [Person: Alice] ← (Borrower) ← [Borrow] → (Object) → [Book: "Dune"]
 - [Book: "Dune"] ← (Location) ← [LocatedIn] → (Place) → [Library: Central]
@@ -738,6 +1024,17 @@ FUNCTION Join(G1, G2, concept_c):
 | 7 | Query: Can Alice get Dune at Central? | Traverse: Alice → Borrower → Borrow → Object → Book → Location → Place → Central → **Yes** |
 
 ### Python Implementation: Conceptual Graph
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-handwritten.svg" alt="Handwritten: Python Implementation: Conceptual Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-diagram.svg" alt="Diagram: Python Implementation: Conceptual Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-conceptual-graph-sticky.svg" alt="Sticky Note: Python Implementation: Conceptual Graph" width="30%">
+</a>
+
 
 ```python
 class ConceptNode:
@@ -890,6 +1187,17 @@ print(f"\nGeneralization match: {g.projection(g2)}")  # True
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
 | Add concept/relation | O(1) | O(C + R) | Set insertion |
@@ -902,6 +1210,17 @@ Where C = concepts, R = relations, E = edges, N = total graph size.
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Visually intuitive — bipartite structure maps to natural language | More verbose than frames or semantic nets for simple hierarchies |
@@ -911,6 +1230,17 @@ Where C = concepts, R = relations, E = edges, N = total graph size.
 | Natural mapping to/from natural language (Sowa's original motivation) | Tooling ecosystem is limited compared to OWL |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Disconnected relation:** A relation node with only one edge — semantically invalid (relation must connect at least two concepts).
 - **Generic referent:** [Book] (no specific book) vs [Book: "Dune"] — projection matching treats generic as wildcard.
@@ -936,6 +1266,17 @@ A DL knowledge base consists of:
 
 ### Steps for Description Logic Reasoning
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-handwritten.svg" alt="Handwritten: Steps for Description Logic Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-diagram.svg" alt="Diagram: Steps for Description Logic Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/steps-for-description-logic-reasoning-sticky.svg" alt="Sticky Note: Steps for Description Logic Reasoning" width="30%">
+</a>
+
+
 1. **Define the TBox** — Declare atomic concepts (Person, Animal) and roles (hasChild, eats)
 2. **Add concept definitions** — Define complex concepts (Mother ≡ Woman ⊓ ∃hasChild.Person)
 3. **Add concept hierarchy** — Declare subsumption axioms (Dog ⊑ Animal)
@@ -945,6 +1286,17 @@ A DL knowledge base consists of:
 7. **Answer queries** — Instance check, retrieval, subsumption queries
 
 ### Pseudocode for DL Tableau Reasoner (Satisfiability)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-handwritten.svg" alt="Handwritten: Pseudocode for DL Tableau Reasoner (Satisfiability)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-diagram.svg" alt="Diagram: Pseudocode for DL Tableau Reasoner (Satisfiability)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/pseudocode-for-dl-tableau-reasoner-satisfiability-sticky.svg" alt="Sticky Note: Pseudocode for DL Tableau Reasoner (Satisfiability)" width="30%">
+</a>
+
 
 ```
 ALGORITHM: TableauSatisfiability
@@ -977,6 +1329,17 @@ FUNCTION NoClash(A):
 
 ### Step-by-Step Dry Run: Family Tree in DL
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Family Tree in DL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Family Tree in DL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/step-by-step-dry-run-family-tree-in-dl-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Family Tree in DL" width="30%">
+</a>
+
+
 **TBox:**
 - Person ⊑ ⊤
 - Woman ≡ Person ⊓ Female
@@ -1004,6 +1367,17 @@ FUNCTION NoClash(A):
 | 8 | Retrieval: Who is a Parent? | Alice (Mother ✓), Bob (Father ✓) → {Alice, Bob} |
 
 ### Python Implementation: Description Logic Reasoner
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-handwritten.svg" alt="Handwritten: Python Implementation: Description Logic Reasoner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-diagram.svg" alt="Diagram: Python Implementation: Description Logic Reasoner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/python-implementation-description-logic-reasoner-sticky.svg" alt="Sticky Note: Python Implementation: Description Logic Reasoner" width="30%">
+</a>
+
 
 ```python
 class DLReasoner:
@@ -1124,6 +1498,17 @@ print(dl.subsumes("Person", "Woman"))          # True (Person subsumes Woman)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
 | TBox assertion | O(1) | O(C) | Hash map insert |
@@ -1138,6 +1523,17 @@ Where C = concepts, A = atomic concepts per individual, H = hierarchy depth, I =
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Decidable — always terminates with an answer | Less expressive than FOL (cannot represent n-ary relations directly) |
@@ -1147,6 +1543,17 @@ Where C = concepts, A = atomic concepts per individual, H = hierarchy depth, I =
 | Compositional concept constructors (⊓, ⊔, ¬, ∃, ∀) | Learning curve for domain experts unfamiliar with formal logic |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Unsatisfiable concept:** Person ⊓ ¬Person — the empty concept. Reasoner must report inconsistency without crashing.
 - **Empty domain:** TBox with no ABox — reasoning about concept satisfiability is still meaningful (a concept is satisfiable if there exists a model).
@@ -1159,6 +1566,17 @@ Where C = concepts, A = atomic concepts per individual, H = hierarchy depth, I =
 
 ### 6.7.1 Categories
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-handwritten.svg" alt="Handwritten: 6.7.1 Categories" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-diagram.svg" alt="Diagram: 6.7.1 Categories" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-1-categories-sticky.svg" alt="Sticky Note: 6.7.1 Categories" width="30%">
+</a>
+
+
 Categories organize knowledge into hierarchies. The **semantic web** formalizes this via RDF (Resource Description Framework), RDFS, and OWL. Key constructors include:
 - **Intersection:** $C \sqcap D$
 - **Union:** $C \sqcup D$
@@ -1167,6 +1585,17 @@ Categories organize knowledge into hierarchies. The **semantic web** formalizes 
 - **Universal restriction:** $\forall R.C$
 
 ### 6.7.2 Situation Calculus
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-handwritten.svg" alt="Handwritten: 6.7.2 Situation Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-diagram.svg" alt="Diagram: 6.7.2 Situation Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-2-situation-calculus-sticky.svg" alt="Sticky Note: 6.7.2 Situation Calculus" width="30%">
+</a>
+
 
 The **situation calculus** (McCarthy and Hayes, 1969) represents actions and their effects in a dynamic world. A **situation** is a history of actions. The initial situation is $S_0$. The function $do(a, s)$ returns the situation resulting from executing action $a$ in situation $s$.
 
@@ -1177,6 +1606,17 @@ The **frame problem** arises because we must explicitly specify what does not ch
 $$\text{On}(x, y, do(a, s)) \Leftrightarrow (a = \text{stack}(x, y)) \lor (\text{On}(x, y, s) \land a \neq \text{move}(x, z))$$
 
 ### 6.7.3 Event Calculus
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-handwritten.svg" alt="Handwritten: 6.7.3 Event Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-diagram.svg" alt="Diagram: 6.7.3 Event Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/6-7-3-event-calculus-sticky.svg" alt="Sticky Note: 6.7.3 Event Calculus" width="30%">
+</a>
+
 
 **Event calculus** (Kowalski and Sergot, 1986) represents events as points in time that initiate and terminate fluent values. Unlike situation calculus, event calculus supports continuous time, concurrent events, and delayed effects.
 
@@ -1207,6 +1647,17 @@ A knowledge-based system consists of:
 
 ### Q1: How is a Knowledge Representation system different from a database?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-handwritten.svg" alt="Handwritten: How is a Knowledge Representation system different from a database?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-diagram.svg" alt="Diagram: How is a Knowledge Representation system different from a database?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-is-a-knowledge-representation-system-different-from-a-database-sticky.svg" alt="Sticky Note: How is a Knowledge Representation system different from a database?" width="30%">
+</a>
+
+
 | Aspect | Database (SQL) | Knowledge Representation |
 |--------|---------------|-------------------------|
 | **Assumption** | Closed-world — what isn't in DB is false | Open-world — what isn't stated is unknown |
@@ -1220,6 +1671,17 @@ A knowledge-based system consists of:
 
 ### Q2: How do you design an ontology for a new domain?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-handwritten.svg" alt="Handwritten: How do you design an ontology for a new domain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-diagram.svg" alt="Diagram: How do you design an ontology for a new domain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-design-an-ontology-for-a-new-domain-sticky.svg" alt="Sticky Note: How do you design an ontology for a new domain?" width="30%">
+</a>
+
+
 1. **Competency questions first** — Write questions the ontology must answer (e.g., "Which drugs interact with aspirin?").
 2. **Identify key terms** — Extract nouns (classes) and verbs (properties) from competency questions.
 3. **Reuse existing ontologies** — Check Bioportal, Schema.org, or DBPedia for domain coverage before building from scratch.
@@ -1230,6 +1692,17 @@ A knowledge-based system consists of:
 **Common mistake:** Over-engineering the hierarchy. Start shallow (3–4 levels); add depth only when reasoning requires it.
 
 ### Q3: How does inference work in semantic networks?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-handwritten.svg" alt="Handwritten: How does inference work in semantic networks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-diagram.svg" alt="Diagram: How does inference work in semantic networks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-does-inference-work-in-semantic-networks-sticky.svg" alt="Sticky Note: How does inference work in semantic networks?" width="30%">
+</a>
+
 
 Semantic network inference is primarily **inheritance-based**. When querying whether Fido has property P:
 
@@ -1245,6 +1718,17 @@ Semantic network inference is primarily **inheritance-based**. When querying whe
 
 ### Q4: What are the limitations of Description Logic vs First-Order Logic?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-handwritten.svg" alt="Handwritten: What are the limitations of Description Logic vs First-Order Logic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-diagram.svg" alt="Diagram: What are the limitations of Description Logic vs First-Order Logic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/what-are-the-limitations-of-description-logic-vs-first-order-logic-sticky.svg" alt="Sticky Note: What are the limitations of Description Logic vs First-Order Logic?" width="30%">
+</a>
+
+
 | Cannot express in DL | Can express in FOL |
 |---------------------|-------------------|
 | n-ary relations (≥ 3 arguments) | `teaches(Prof, Course, Semester)` |
@@ -1257,6 +1741,17 @@ Semantic network inference is primarily **inheritance-based**. When querying whe
 
 ### Q5: How do you handle inconsistency in a knowledge base?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-handwritten.svg" alt="Handwritten: How do you handle inconsistency in a knowledge base?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-diagram.svg" alt="Diagram: How do you handle inconsistency in a knowledge base?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/how-do-you-handle-inconsistency-in-a-knowledge-base-sticky.svg" alt="Sticky Note: How do you handle inconsistency in a knowledge base?" width="30%">
+</a>
+
+
 1. **Detection:** Run a reasoner to find unsatisfiable concepts.
 2. **Diagnosis:** Use axiom pinpointing (glass-box approach) to identify minimal inconsistent subsets (MUPS).
 3. **Repair options:**
@@ -1268,6 +1763,17 @@ Semantic network inference is primarily **inheritance-based**. When querying whe
 ## Applications in Real Systems
 
 ### DBpedia and Wikidata
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-handwritten.svg" alt="Handwritten: DBpedia and Wikidata" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-diagram.svg" alt="Diagram: DBpedia and Wikidata" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/dbpedia-and-wikidata-sticky.svg" alt="Sticky Note: DBpedia and Wikidata" width="30%">
+</a>
+
 
 | Feature | DBpedia | Wikidata |
 |---------|---------|----------|
@@ -1287,6 +1793,17 @@ Inference: dbr:Albert_Einstein rdf:type dbo:Person  (via RDFS inheritance)
 
 ### SNOMED CT (Medical Ontology)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-handwritten.svg" alt="Handwritten: SNOMED CT (Medical Ontology)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-diagram.svg" alt="Diagram: SNOMED CT (Medical Ontology)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/snomed-ct-medical-ontology-sticky.svg" alt="Sticky Note: SNOMED CT (Medical Ontology)" width="30%">
+</a>
+
+
 SNOMED CT is the world's largest clinical ontology, with ~350,000 concepts and ~1.5 million relationships:
 
 - **Used in:** 50+ countries, mandated in US EHR systems (Meaningful Use)
@@ -1298,6 +1815,17 @@ SNOMED CT is the world's largest clinical ontology, with ~350,000 concepts and ~
 **Why DL matters for SNOMED:** The ontology is too large (350K concepts) for manual maintenance. DL classification ensures that when a new concept is added with its defining properties, the reasoner automatically computes all 350K subsumption relationships — saving thousands of person-hours per release.
 
 ### Google Knowledge Graph
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-handwritten.svg" alt="Handwritten: Google Knowledge Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-diagram.svg" alt="Diagram: Google Knowledge Graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/google-knowledge-graph-sticky.svg" alt="Sticky Note: Google Knowledge Graph" width="30%">
+</a>
+
 
 Google's Knowledge Graph powers search results with structured knowledge:
 
@@ -1319,6 +1847,17 @@ Query: "Mona Lisa painter nationality"
 This is a semantic network traversal — three edges in the Knowledge Graph, no explicit "Mona Lisa" to "Italian" path stored.
 
 ### MYCIN (Historical — First Major Expert System)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-handwritten.svg" alt="Handwritten: MYCIN (Historical — First Major Expert System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-diagram.svg" alt="Diagram: MYCIN (Historical — First Major Expert System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/06-knowledge-representation/mycin-historical-first-major-expert-system-sticky.svg" alt="Sticky Note: MYCIN (Historical — First Major Expert System)" width="30%">
+</a>
+
 
 - **Domain:** Bacterial blood infection diagnosis (1970s)
 - **KR Formalism:** Production rules with certainty factors

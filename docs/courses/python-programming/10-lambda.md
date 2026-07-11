@@ -451,6 +451,17 @@ console.log(ops["add"](3, 4));  // 7
 
 ### Arrow Functions vs Python Lambdas
 
+<a href="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-handwritten.svg" alt="Handwritten: Arrow Functions vs Python Lambdas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-diagram.svg" alt="Diagram: Arrow Functions vs Python Lambdas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/arrow-functions-vs-python-lambdas-sticky.svg" alt="Sticky Note: Arrow Functions vs Python Lambdas" width="30%">
+</a>
+
+
 | Feature | Python lambda | TypeScript Arrow |
 |---------|---------------|------------------|
 | Syntax | `lambda x: expr` | `x => expr` |
@@ -461,6 +472,17 @@ console.log(ops["add"](3, 4));  // 7
 | Common use | `map`/`filter`/`reduce` | `.map()`/`.filter()`/`.reduce()` |
 
 ### Functional Programming vs Pythonic Style
+
+<a href="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-handwritten.svg" alt="Handwritten: Functional Programming vs Pythonic Style" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-diagram.svg" alt="Diagram: Functional Programming vs Pythonic Style" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/functional-programming-vs-pythonic-style-sticky.svg" alt="Sticky Note: Functional Programming vs Pythonic Style" width="30%">
+</a>
+
 
 Python is not a purely functional language, so idiomatic Python often prefers alternatives:
 
@@ -509,6 +531,17 @@ pipeline = [x.upper() for x in data if len(x) > 3]
 
 ### Advanced Partial Application
 
+<a href="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-handwritten.svg" alt="Handwritten: Advanced Partial Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-diagram.svg" alt="Diagram: Advanced Partial Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/advanced-partial-application-sticky.svg" alt="Sticky Note: Advanced Partial Application" width="30%">
+</a>
+
+
 ```python
 # Partial with keyword arguments
 from functools import partial
@@ -533,6 +566,17 @@ print(get_api("https://api.example.com/users"))
 ```
 
 ### Performance: Lambda vs Named Function
+
+<a href="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-handwritten.svg" alt="Handwritten: Performance: Lambda vs Named Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-diagram.svg" alt="Diagram: Performance: Lambda vs Named Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/performance-lambda-vs-named-function-sticky.svg" alt="Sticky Note: Performance: Lambda vs Named Function" width="30%">
+</a>
+
 
 ```python
 import timeit
@@ -567,6 +611,17 @@ print(f"Named:    {named_time:.3f}s")
 List comprehensions are typically faster than `map` with lambdas because they avoid function call overhead. `map` with a built-in function (`map(str.upper, items)`) can be faster than the equivalent comprehension. Always profile when performance matters.
 
 ### Lambda Pitfalls
+
+<a href="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-handwritten.svg" alt="Handwritten: Lambda Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-diagram.svg" alt="Diagram: Lambda Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/10-lambda/lambda-pitfalls-sticky.svg" alt="Sticky Note: Lambda Pitfalls" width="30%">
+</a>
+
 
 ```python
 # Pitfall 1: Late binding in closures

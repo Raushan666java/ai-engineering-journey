@@ -49,6 +49,17 @@ flowchart LR
 
 ### File Concept
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" alt="Handwritten: File Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" alt="Diagram: File Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" alt="Sticky Note: File Concept" width="30%">
+</a>
+
+
 A **file** is a named collection of related information recorded on secondary storage. Files are the primary abstraction the OS provides for persistent data storage.
 
 **Real-world analogy:** A file is like a library book. The book has a title (file name), call number (inode/identifier), content (data), borrower card (protection), and due-date stamp (timestamps). The library shelf (directory) organises books so you can find them.
@@ -668,6 +679,17 @@ if __name__ == "__main__":
 
 ### Access Methods
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
+</a>
+
+
 #### Sequential Access
 
 The simplest method. Data is read in order, from beginning to end.
@@ -1246,6 +1268,17 @@ if __name__ == "__main__":
 ---
 
 ### Directory Structure
+
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" alt="Handwritten: Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" alt="Diagram: Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" alt="Sticky Note: Directory Structure" width="30%">
+</a>
+
 
 Directories provide a way to organise files in a hierarchical structure. Each directory maps file names to inode/file control block references.
 
@@ -1846,6 +1879,17 @@ if __name__ == "__main__":
 
 ### Mounting
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" alt="Handwritten: Mounting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" alt="Diagram: Mounting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" alt="Sticky Note: Mounting" width="30%">
+</a>
+
+
 A file system must be **mounted** before it can be accessed. Mounting attaches a new file system's root directory to a mount point in the existing directory tree.
 
 **Real-world analogy:** Plugging in an extension cord. The wall outlet is the mount point. The extension cord (new file system) extends the reach of the electrical system. Unplugging removes it. You cannot plug a 220V appliance into a 110V outlet (incompatible FS types).
@@ -2008,6 +2052,17 @@ if __name__ == "__main__":
 
 ### File Allocation Overview
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" alt="Handwritten: File Allocation Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" alt="Diagram: File Allocation Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" alt="Sticky Note: File Allocation Overview" width="30%">
+</a>
+
+
 File allocation strategies determine how disk blocks are assigned to files. These are covered in depth in Chapter 11; here we summarise the three classic strategies.
 
 **Real-world analogy:** Three ways to store a novel across multiple notebooks:
@@ -2037,6 +2092,17 @@ File allocation strategies determine how disk blocks are assigned to files. Thes
 ---
 
 ### Protection
+
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" alt="Handwritten: Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" alt="Diagram: Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" alt="Sticky Note: Protection" width="30%">
+</a>
+
 
 #### Access Control Lists (ACLs)
 
@@ -2145,6 +2211,17 @@ if __name__ == "__main__":
 
 ### Interview Corner
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
+</a>
+
+
 #### Q1: What is the difference between a hard link and a symbolic link?
 
 | Aspect | Hard Link | Symbolic Link |
@@ -2208,6 +2285,17 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 
 ### Applications in Real Systems
 
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
+</a>
+
+
 #### ext4 (Fourth Extended File System) — Linux
 
 - Journaling file system (default on most Linux distros)
@@ -2269,6 +2357,17 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 ---
 
 ### Virtual File Systems (VFS)
+
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" alt="Handwritten: Virtual File Systems (VFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" alt="Diagram: Virtual File Systems (VFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" alt="Sticky Note: Virtual File Systems (VFS)" width="30%">
+</a>
+
 
 The **Virtual File System** (VFS) provides an abstraction layer that allows the OS to support multiple file system types transparently. Applications use the same system calls (`open()`, `read()`, `write()`) regardless of the underlying file system.
 
@@ -2519,6 +2618,17 @@ int main(int argc, char* argv[]) {
 ## Concept Comparison
 
 ### Access Methods
+
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
+</a>
+
 
 | Feature | Sequential Access | Direct Access | Indexed Access |
 |-------|-----------------|-------------|--------------|

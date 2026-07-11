@@ -36,6 +36,17 @@
 
 ### Q1. [DS] | 1 Mark | Data Structures
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q1. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q1. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q1-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q1. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
+
 **What is the time complexity of inserting an element at the beginning of an array-based list with n elements?**
 
 A) O(1)  B) O(log n)  C) O(n)  D) O(n^2)
@@ -53,6 +64,17 @@ A) O(1)  B) O(log n)  C) O(n)  D) O(n^2)
 ---
 
 ### Q2. [DS] | 1 Mark | Data Structures
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q2. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q2. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q2-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q2. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
 
 **Which data structure is used for implementing recursion?**
 
@@ -72,6 +94,17 @@ A) Queue  B) Stack  C) Array  D) Linked List
 
 ### Q3. [DS] | 1 Mark | Data Structures
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q3. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q3. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q3-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q3. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
+
 **In a circular linked list, the last node points to:**
 
 A) NULL  B) The first node  C) Itself  D) The previous node
@@ -89,6 +122,17 @@ A) NULL  B) The first node  C) Itself  D) The previous node
 ---
 
 ### Q4. [DS] | 1 Mark | Data Structures
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q4. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q4. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q4-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q4. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
 
 **What is a spanning tree of a graph?**
 
@@ -108,6 +152,17 @@ A) A tree that contains all vertices with minimum edges  B) A tree that contains
 
 ### Q5. [Algorithms] | 1 Mark | Algorithms
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q5. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q5. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q5-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q5. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
+
 **Which sorting algorithm has the best average-case time complexity?**
 
 A) Bubble Sort  B) Selection Sort  C) Merge Sort  D) Insertion Sort
@@ -125,6 +180,17 @@ A) Bubble Sort  B) Selection Sort  C) Merge Sort  D) Insertion Sort
 ---
 
 ### Q6. [Algorithms] | 1 Mark | Algorithms
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q6. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q6. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q6-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q6. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
 
 **The time complexity of binary search on a sorted array of size n is:**
 
@@ -144,6 +210,17 @@ A) O(1)  B) O(log n)  C) O(n)  D) O(n log n)
 
 ### Q7. [Algorithms] | 1 Mark | Algorithms
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q7. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q7. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q7-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q7. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
+
 **Which algorithm is used to detect cycles in a directed graph?**
 
 A) BFS  B) DFS with recursion stack  C) Prim's algorithm  D) Dijkstra's algorithm
@@ -161,6 +238,17 @@ A) BFS  B) DFS with recursion stack  C) Prim's algorithm  D) Dijkstra's algorith
 ---
 
 ### Q8. [Algorithms] | 1 Mark | Algorithms
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q8. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q8. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q8-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q8. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
 
 **What is the space complexity of the Floyd-Warshall algorithm?**
 
@@ -180,6 +268,17 @@ A) O(V)  B) O(V^2)  C) O(V^3)  D) O(E)
 
 ### Q9. [Algorithms] | 1 Mark | Algorithms
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q9. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q9. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q9-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q9. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
+
 **Which algorithm finds the shortest path from a single source in a weighted graph with non-negative edges?**
 
 A) Bellman-Ford  B) Dijkstra  C) Floyd-Warshall  D) Kruskal
@@ -197,6 +296,17 @@ A) Bellman-Ford  B) Dijkstra  C) Floyd-Warshall  D) Kruskal
 ---
 
 ### Q10. [Algorithms] | 1 Mark | Algorithms
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q10. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q10. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q10-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q10. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
 
 **What is the number of comparisons in the worst case for finding the minimum and maximum of n elements simultaneously?**
 
@@ -216,6 +326,17 @@ A) 2n-2  B) 3n/2 - 2  C) n-1  D) n
 
 ### Q11. [OS] | 1 Mark | Operating Systems
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q11. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q11. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q11-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q11. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
+
 **Which of the following is a page replacement algorithm?**
 
 A) FCFS  B) LRU  C) SSTF  D) SCAN
@@ -233,6 +354,17 @@ A) FCFS  B) LRU  C) SSTF  D) SCAN
 ---
 
 ### Q12. [OS] | 1 Mark | Operating Systems
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q12. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q12. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q12-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q12. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
 
 **Which of the following is NOT a process state?**
 
@@ -252,6 +384,17 @@ A) Running  B) Ready  C) Waiting  D) Compiling
 
 ### Q13. [OS] | 1 Mark | Operating Systems
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q13. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q13. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q13-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q13. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
+
 **What is a critical section?**
 
 A) A section of code that handles critical errors  B) A section of code that accesses shared resources and must not be executed by multiple processes simultaneously  C) A section of memory that is critical for OS boot  D) A high-priority process
@@ -269,6 +412,17 @@ A) A section of code that handles critical errors  B) A section of code that acc
 ---
 
 ### Q14. [OS] | 1 Mark | Operating Systems
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q14. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q14. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q14-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q14. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
 
 **Which is a preemptive scheduling algorithm?**
 
@@ -288,6 +442,17 @@ A) FCFS  B) Round Robin  C) SJF (non-preemptive)  D) Priority (non-preemptive)
 
 ### Q15. [OS] | 1 Mark | Operating Systems
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q15. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q15. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q15-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q15. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
+
 **Thrashing occurs when:**
 
 A) CPU is idle  B) The system spends more time paging than executing  C) There are too many processes  D) Memory is too large
@@ -305,6 +470,17 @@ A) CPU is idle  B) The system spends more time paging than executing  C) There a
 ---
 
 ### Q16. [OS] | 1 Mark | Operating Systems
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q16. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q16. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q16-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q16. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
 
 **The Banker's Algorithm is used for:**
 
@@ -324,6 +500,17 @@ A) CPU scheduling  B) Deadlock avoidance  C) Memory management  D) Disk scheduli
 
 ### Q17. [OS] | 1 Mark | Operating Systems
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q17. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q17. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q17-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q17. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
+
 **Which memory allocation scheme suffers from external fragmentation?**
 
 A) Paging  B) Segmentation  C) Virtual memory  D) Demand paging
@@ -341,6 +528,17 @@ A) Paging  B) Segmentation  C) Virtual memory  D) Demand paging
 ---
 
 ### Q18. [OS] | 1 Mark | Operating Systems
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q18. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q18. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q18-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q18. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
 
 **What is the main function of a TLB (Translation Lookaside Buffer)?**
 
@@ -360,6 +558,17 @@ A) Store frequently accessed data  B) Cache recent page table entries  C) Store 
 
 ### Q19. [DBMS] | 1 Mark | DBMS
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q19. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q19. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q19-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q19. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
+
 **Which normal form eliminates transitive dependencies?**
 
 A) 1NF  B) 2NF  C) 3NF  D) BCNF
@@ -377,6 +586,17 @@ A) 1NF  B) 2NF  C) 3NF  D) BCNF
 ---
 
 ### Q20. [DBMS] | 1 Mark | DBMS
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q20. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q20. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q20-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q20. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
 
 **Which SQL statement is used to add a new column to an existing table?**
 
@@ -396,6 +616,17 @@ A) ADD COLUMN  B) ALTER TABLE  C) MODIFY TABLE  D) INSERT COLUMN
 
 ### Q21. [DBMS] | 1 Mark | DBMS
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q21. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q21. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q21-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q21. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
+
 **What is a foreign key?**
 
 A) A key that uniquely identifies each row  B) A field that references the primary key of another table  C) A key used for encryption  D) A key that can have NULL values
@@ -413,6 +644,17 @@ A) A key that uniquely identifies each row  B) A field that references the prima
 ---
 
 ### Q22. [DBMS] | 1 Mark | DBMS
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q22. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q22. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q22-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q22. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
 
 **Which of the following is a type of NoSQL database?**
 
@@ -432,6 +674,17 @@ A) MySQL  B) PostgreSQL  C) MongoDB  D) Oracle
 
 ### Q23. [DBMS] | 1 Mark | DBMS
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q23. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q23. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q23-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q23. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
+
 **Which ACID property ensures that committed changes persist even after system failure?**
 
 A) Atomicity  B) Consistency  C) Isolation  D) Durability
@@ -449,6 +702,17 @@ A) Atomicity  B) Consistency  C) Isolation  D) Durability
 ---
 
 ### Q24. [DBMS] | 1 Mark | DBMS
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q24. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q24. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q24-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q24. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
 
 **What is a deadlock in DBMS?**
 
@@ -468,6 +732,17 @@ A) Two transactions waiting for each other's locks  B) A transaction that never 
 
 ### Q25. [CN] | 1 Mark | Computer Networks
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q25. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q25. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q25-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q25. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
+
 **Which protocol provides reliable data transfer?**
 
 A) UDP  B) IP  C) TCP  D) ICMP
@@ -485,6 +760,17 @@ A) UDP  B) IP  C) TCP  D) ICMP
 ---
 
 ### Q26. [CN] | 1 Mark | Computer Networks
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q26. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q26. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q26-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q26. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
 
 **What is the subnet mask for a /28 CIDR block?**
 
@@ -504,6 +790,17 @@ A) 255.255.255.0  B) 255.255.255.224  C) 255.255.255.240  D) 255.255.255.248
 
 ### Q27. [CN] | 1 Mark | Computer Networks
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q27. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q27. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q27-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q27. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
+
 **Which device operates at the Data Link Layer (Layer 2)?**
 
 A) Router  B) Switch  C) Hub  D) Gateway
@@ -521,6 +818,17 @@ A) Router  B) Switch  C) Hub  D) Gateway
 ---
 
 ### Q28. [CN] | 1 Mark | Computer Networks
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q28. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q28. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q28-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q28. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
 
 **What is the maximum data rate of Cat 5e Ethernet cable?**
 
@@ -540,6 +848,17 @@ A) 10 Mbps  B) 100 Mbps  C) 1000 Mbps (1 Gbps)  D) 10 Gbps
 
 ### Q29. [CN] | 1 Mark | Computer Networks
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q29. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q29. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q29-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q29. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
+
 **Which protocol is used for email retrieval?**
 
 A) SMTP  B) POP3  C) HTTP  D) FTP
@@ -557,6 +876,17 @@ A) SMTP  B) POP3  C) HTTP  D) FTP
 ---
 
 ### Q30. [CN] | 1 Mark | Computer Networks
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q30. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q30. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q30-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q30. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
 
 **What does DHCP stand for?**
 
@@ -576,6 +906,17 @@ A) Dynamic Host Configuration Protocol  B) Distributed Host Control Protocol  C)
 
 ### Q31. [CN] | 1 Mark | Computer Networks
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q31. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q31. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q31-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q31. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
+
 **What is the port number for HTTPS?**
 
 A) 80  B) 443  C) 8080  D) 8443
@@ -593,6 +934,17 @@ A) 80  B) 443  C) 8080  D) 8443
 ---
 
 ### Q32. [SE] | 1 Mark | Software Engineering
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q32. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q32. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q32-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q32. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
 
 **Which model is best for large, complex projects with high risk?**
 
@@ -612,6 +964,17 @@ A) Waterfall  B) Spiral  C) V-Model  D) RAD
 
 ### Q33. [SE] | 1 Mark | Software Engineering
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q33. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q33. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q33-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q33. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
+
 **What is the purpose of a DFD (Data Flow Diagram)?**
 
 A) To show class hierarchies  B) To represent the flow of data through a system  C) To display network architecture  D) To show user interfaces
@@ -629,6 +992,17 @@ A) To show class hierarchies  B) To represent the flow of data through a system 
 ---
 
 ### Q34. [SE] | 1 Mark | Software Engineering
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q34. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q34. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q34-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q34. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
 
 **What is the difference between verification and validation?**
 
@@ -648,6 +1022,17 @@ A) They are the same  B) Verification: Are we building the product right? Valida
 
 ### Q35. [SE] | 1 Mark | Software Engineering
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q35. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q35. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q35-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q35. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
+
 **Which UML diagram shows the interaction between objects over time?**
 
 A) Class Diagram  B) Use Case Diagram  C) Sequence Diagram  D) Component Diagram
@@ -665,6 +1050,17 @@ A) Class Diagram  B) Use Case Diagram  C) Sequence Diagram  D) Component Diagram
 ---
 
 ### Q36. [SE] | 1 Mark | Software Engineering
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q36. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q36. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q36-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q36. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
 
 **What is software maintenance?**
 
@@ -684,6 +1080,17 @@ A) Installing software  B) Modifying software after delivery to correct faults o
 
 ### Q37. [SE] | 1 Mark | Software Engineering
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q37. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q37. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q37-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q37. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
+
 **What is a black box test?**
 
 A) Testing without knowledge of internal code  B) Testing with knowledge of internal code  C) Testing only the user interface  D) Testing security vulnerabilities
@@ -701,6 +1108,17 @@ A) Testing without knowledge of internal code  B) Testing with knowledge of inte
 ---
 
 ### Q38. [COA] | 1 Mark | Computer Organization
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-handwritten.svg" alt="Handwritten: Q38. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-diagram.svg" alt="Diagram: Q38. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q38-coa-1-mark-computer-organization-sticky.svg" alt="Sticky Note: Q38. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+
 
 **What is the role of the Program Counter (PC)?**
 
@@ -720,6 +1138,17 @@ A) To store the result of arithmetic operations  B) To hold the address of the n
 
 ### Q39. [COA] | 1 Mark | Computer Organization
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-handwritten.svg" alt="Handwritten: Q39. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-diagram.svg" alt="Diagram: Q39. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q39-coa-1-mark-computer-organization-sticky.svg" alt="Sticky Note: Q39. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+
+
 **Which cache mapping technique allows a specific memory block to be placed in any cache line?**
 
 A) Direct Mapping  B) Associative Mapping  C) Set-Associative Mapping  D) Segmented Mapping
@@ -737,6 +1166,17 @@ A) Direct Mapping  B) Associative Mapping  C) Set-Associative Mapping  D) Segmen
 ---
 
 ### Q40. [COA] | 1 Mark | Computer Organization
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-handwritten.svg" alt="Handwritten: Q40. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-diagram.svg" alt="Diagram: Q40. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q40-coa-1-mark-computer-organization-sticky.svg" alt="Sticky Note: Q40. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+
 
 **What is the function of the ALU?**
 
@@ -756,6 +1196,17 @@ A) Manage memory  B) Perform arithmetic and logic operations  C) Control input/o
 
 ### Q41. [COA] | 1 Mark | Computer Organization
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-handwritten.svg" alt="Handwritten: Q41. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-diagram.svg" alt="Diagram: Q41. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q41-coa-1-mark-computer-organization-sticky.svg" alt="Sticky Note: Q41. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+
+
 **What is pipelining in computer architecture?**
 
 A) Connecting multiple computers  B) Overlapping the execution of multiple instructions  C) Increasing clock speed  D) Adding more memory
@@ -773,6 +1224,17 @@ A) Connecting multiple computers  B) Overlapping the execution of multiple instr
 ---
 
 ### Q42. [DS] | 1 Mark | Data Structures
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q42. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q42. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q42-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q42. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
 
 **Which tree traversal visits nodes in Root-Left-Right order?**
 
@@ -792,6 +1254,17 @@ A) Inorder  B) Preorder  C) Postorder  D) Level Order
 
 ### Q43. [DS] | 1 Mark | Data Structures
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q43. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-diagram.svg" alt="Diagram: Q43. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q43-ds-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q43. [DS] | 1 Mark | Data Structures" width="30%">
+</a>
+
+
 **What is the maximum height of a binary tree with n nodes (where height = number of edges on longest path from root to leaf)?**
 
 A) log2(n)  B) n-1  C) n  D) n/2
@@ -809,6 +1282,17 @@ A) log2(n)  B) n-1  C) n  D) n/2
 ---
 
 ### Q44. [Algorithms] | 1 Mark | Algorithms
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q44. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q44. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q44-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q44. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
 
 **What is the time complexity of the Tower of Hanoi problem with n disks?**
 
@@ -828,6 +1312,17 @@ A) O(n)  B) O(n^2)  C) O(2^n)  D) O(n log n)
 
 ### Q45. [Algorithms] | 1 Mark | Algorithms
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-handwritten.svg" alt="Handwritten: Q45. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-diagram.svg" alt="Diagram: Q45. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q45-algorithms-1-mark-algorithms-sticky.svg" alt="Sticky Note: Q45. [Algorithms] | 1 Mark | Algorithms" width="30%">
+</a>
+
+
 **What is the worst-case time complexity of Quick Sort?**
 
 A) O(n)  B) O(n log n)  C) O(n^2)  D) O(log n)
@@ -845,6 +1340,17 @@ A) O(n)  B) O(n log n)  C) O(n^2)  D) O(log n)
 ---
 
 ### Q46. [DBMS] | 1 Mark | DBMS
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-handwritten.svg" alt="Handwritten: Q46. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-diagram.svg" alt="Diagram: Q46. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q46-dbms-1-mark-dbms-sticky.svg" alt="Sticky Note: Q46. [DBMS] | 1 Mark | DBMS" width="30%">
+</a>
+
 
 **What is the result of the SQL query: SELECT COUNT(*) FROM employees WHERE department = 'IT'?**
 
@@ -864,6 +1370,17 @@ A) Number of departments  B) Number of IT employees  C) Total employees  D) Aver
 
 ### Q47. [OS] | 1 Mark | Operating Systems
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q47. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-diagram.svg" alt="Diagram: Q47. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q47-os-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q47. [OS] | 1 Mark | Operating Systems" width="30%">
+</a>
+
+
 **Which system call creates a new process in Unix/Linux?**
 
 A) create()  B) fork()  C) new()  D) process()
@@ -881,6 +1398,17 @@ A) create()  B) fork()  C) new()  D) process()
 ---
 
 ### Q48. [CN] | 1 Mark | Computer Networks
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q48. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-diagram.svg" alt="Diagram: Q48. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q48-cn-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q48. [CN] | 1 Mark | Computer Networks" width="30%">
+</a>
+
 
 **Which network topology provides the highest redundancy?**
 
@@ -900,6 +1428,17 @@ A) Bus  B) Star  C) Ring  D) Mesh
 
 ### Q49. [SE] | 1 Mark | Software Engineering
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q49. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-diagram.svg" alt="Diagram: Q49. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q49-se-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q49. [SE] | 1 Mark | Software Engineering" width="30%">
+</a>
+
+
 **What is the Capability Maturity Model (CMM)?**
 
 A) A programming language  B) A framework for improving software development processes  C) A testing methodology  D) A design pattern
@@ -917,6 +1456,17 @@ A) A programming language  B) A framework for improving software development pro
 ---
 
 ### Q50. [COA] | 1 Mark | Computer Organization
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-handwritten.svg" alt="Handwritten: Q50. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-diagram.svg" alt="Diagram: Q50. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q50-coa-1-mark-computer-organization-sticky.svg" alt="Sticky Note: Q50. [COA] | 1 Mark | Computer Organization" width="30%">
+</a>
+
 
 **Which of the following is a RISC characteristic?**
 
@@ -942,6 +1492,17 @@ A) Complex instructions  B) Variable instruction length  C) Fixed instruction le
 
 ### Q51. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q51. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q51. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q51-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q51. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **What is the output of: printf("%d", sizeof(int)); in C (assuming 32-bit system)?**
 
 A) 2  B) 4  C) 8  D) Depends on compiler
@@ -959,6 +1520,17 @@ A) 2  B) 4  C) 8  D) Depends on compiler
 ---
 
 ### Q52. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q52. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q52. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q52-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q52. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What does the following C code print? int x = 5; printf("%d", x++);**
 
@@ -978,6 +1550,17 @@ A) 5  B) 6  C) 4  D) Undefined
 
 ### Q53. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q53. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q53. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q53-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q53. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **Which of the following is a valid C pointer declaration?**
 
 A) int ptr;  B) int *ptr;  C) int &ptr;  D) pointer int ptr;
@@ -995,6 +1578,17 @@ A) int ptr;  B) int *ptr;  C) int &ptr;  D) pointer int ptr;
 ---
 
 ### Q54. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q54. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q54. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q54-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q54. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is the output of: int a[5] = {1,2,3,4,5}; printf("%d", *(a+2));**
 
@@ -1014,6 +1608,17 @@ A) 1  B) 2  C) 3  D) 4
 
 ### Q55. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q55. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q55. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q55-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q55. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **Which header file is needed for malloc() in C?**
 
 A) <stdio.h>  B) <string.h>  C) <stdlib.h>  D) <math.h>
@@ -1031,6 +1636,17 @@ A) <stdio.h>  B) <string.h>  C) <stdlib.h>  D) <math.h>
 ---
 
 ### Q56. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q56. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q56. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q56-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q56. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is a static variable in C?**
 
@@ -1050,6 +1666,17 @@ A) A variable that cannot be modified  B) A variable that retains its value betw
 
 ### Q57. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q57. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q57. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q57-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q57. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **What does the following code print? char s[] = "Hello"; printf("%lu", strlen(s));**
 
 A) 5  B) 6  C) 4  D) 7
@@ -1067,6 +1694,17 @@ A) 5  B) 6  C) 4  D) 7
 ---
 
 ### Q58. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q58. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q58. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q58-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q58. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is the output of: int i; for(i=0; i<5; i++); printf("%d", i);**
 
@@ -1086,6 +1724,17 @@ A) 0  B) 4  C) 5  D) Compilation error
 
 ### Q59. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q59. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q59. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q59-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q59. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **Which operator is used to access structure members via a pointer?**
 
 A) . (dot)  B) -> (arrow)  C) :: (scope)  D) & (address of)
@@ -1103,6 +1752,17 @@ A) . (dot)  B) -> (arrow)  C) :: (scope)  D) & (address of)
 ---
 
 ### Q60. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q60. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q60. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q60-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q60. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is recursion in C?**
 
@@ -1122,6 +1782,17 @@ A) A function calling itself  B) A loop inside a function  C) Including a header
 
 ### Q61. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-handwritten.svg" alt="Handwritten: Q61. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-diagram.svg" alt="Diagram: Q61. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q61-java-1-mark-java-sticky.svg" alt="Sticky Note: Q61. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What is the JVM?**
 
 A) Java Virtual Machine — executes Java bytecode  B) Java Visual Method  C) Java Variable Manager  D) Java Virtual Memory
@@ -1139,6 +1810,17 @@ A) Java Virtual Machine — executes Java bytecode  B) Java Visual Method  C) Ja
 ---
 
 ### Q62. [Java] | 1 Mark | Java
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-handwritten.svg" alt="Handwritten: Q62. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-diagram.svg" alt="Diagram: Q62. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q62-java-1-mark-java-sticky.svg" alt="Sticky Note: Q62. [Java] | 1 Mark | Java" width="30%">
+</a>
+
 
 **Which keyword is used to inherit a class in Java?**
 
@@ -1158,6 +1840,17 @@ A) extends  B) implements  C) inherits  D) derives
 
 ### Q63. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-handwritten.svg" alt="Handwritten: Q63. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-diagram.svg" alt="Diagram: Q63. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q63-java-1-mark-java-sticky.svg" alt="Sticky Note: Q63. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What is the output of: System.out.println("Java" + 10 + 20);**
 
 A) Java30  B) Java1020  C) Java 30  D) Compilation error
@@ -1175,6 +1868,17 @@ A) Java30  B) Java1020  C) Java 30  D) Compilation error
 ---
 
 ### Q64. [Java] | 1 Mark | Java
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-handwritten.svg" alt="Handwritten: Q64. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-diagram.svg" alt="Diagram: Q64. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q64-java-1-mark-java-sticky.svg" alt="Sticky Note: Q64. [Java] | 1 Mark | Java" width="30%">
+</a>
+
 
 **What does the final keyword mean for a method in Java?**
 
@@ -1194,6 +1898,17 @@ A) The method cannot be overridden  B) The method runs faster  C) The method is 
 
 ### Q65. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-handwritten.svg" alt="Handwritten: Q65. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-diagram.svg" alt="Diagram: Q65. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q65-java-1-mark-java-sticky.svg" alt="Sticky Note: Q65. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What is the difference between abstract class and interface in Java (pre-Java 8)?**
 
 A) Abstract class can have concrete methods; interface cannot  B) Interface can have concrete methods; abstract class cannot  C) Both are same  D) Abstract class supports multiple inheritance
@@ -1211,6 +1926,17 @@ A) Abstract class can have concrete methods; interface cannot  B) Interface can 
 ---
 
 ### Q66. [Java] | 1 Mark | Java
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-handwritten.svg" alt="Handwritten: Q66. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-diagram.svg" alt="Diagram: Q66. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q66-java-1-mark-java-sticky.svg" alt="Sticky Note: Q66. [Java] | 1 Mark | Java" width="30%">
+</a>
+
 
 **What is a constructor in Java?**
 
@@ -1230,6 +1956,17 @@ A) A method that destroys objects  B) A special method that initializes objects 
 
 ### Q67. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-handwritten.svg" alt="Handwritten: Q67. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-diagram.svg" alt="Diagram: Q67. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q67-java-1-mark-java-sticky.svg" alt="Sticky Note: Q67. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What does the garbage collector do in Java?**
 
 A) Cleans up unused objects automatically  B) Deletes files  C) Manages memory allocation  D) Compiles code
@@ -1247,6 +1984,17 @@ A) Cleans up unused objects automatically  B) Deletes files  C) Manages memory a
 ---
 
 ### Q68. [Java] | 1 Mark | Java
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-handwritten.svg" alt="Handwritten: Q68. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-diagram.svg" alt="Diagram: Q68. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q68-java-1-mark-java-sticky.svg" alt="Sticky Note: Q68. [Java] | 1 Mark | Java" width="30%">
+</a>
+
 
 **What is method overloading in Java?**
 
@@ -1266,6 +2014,17 @@ A) Multiple methods with same name but different parameters  B) A method overrid
 
 ### Q69. [OOP] | 1 Mark | OOP Concepts
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q69. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q69. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q69-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q69. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
+
 **What is encapsulation?**
 
 A) Hiding internal state and requiring all interaction through methods  B) Making all variables public  C) Using inheritance  D) Overloading methods
@@ -1283,6 +2042,17 @@ A) Hiding internal state and requiring all interaction through methods  B) Makin
 ---
 
 ### Q70. [OOP] | 1 Mark | OOP Concepts
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q70. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q70. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q70-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q70. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
 
 **What is polymorphism?**
 
@@ -1302,6 +2072,17 @@ A) The ability of an object to take multiple forms  B) A class with multiple con
 
 ### Q71. [OOP] | 1 Mark | OOP Concepts
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q71. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q71. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q71-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q71. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
+
 **Which design pattern creates objects without specifying the exact class?**
 
 A) Singleton  B) Factory  C) Observer  D) Decorator
@@ -1319,6 +2100,17 @@ A) Singleton  B) Factory  C) Observer  D) Decorator
 ---
 
 ### Q72. [OOP] | 1 Mark | OOP Concepts
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q72. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q72. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q72-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q72. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
 
 **What is the purpose of the "this" keyword in Java/C++?**
 
@@ -1338,6 +2130,17 @@ A) To refer to the current object  B) To refer to the parent class  C) To create
 
 ### Q73. [C] | 1 Mark | C Programming
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q73. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q73. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q73-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q73. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
+
 **What is the output of: printf("%d", 10 << 2);**
 
 A) 20  B) 40  C) 12  D) 5
@@ -1355,6 +2158,17 @@ A) 20  B) 40  C) 12  D) 5
 ---
 
 ### Q74. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q74. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q74. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q74-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q74. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is a null pointer in C?**
 
@@ -1374,6 +2188,17 @@ A) A pointer that points to memory address 0  B) A pointer that has not been ini
 
 ### Q75. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-handwritten.svg" alt="Handwritten: Q75. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-diagram.svg" alt="Diagram: Q75. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q75-java-1-mark-java-sticky.svg" alt="Sticky Note: Q75. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What is the output of: try { return 1; } finally { return 2; }**
 
 A) 1  B) 2  C) Compilation error  D) Runtime exception
@@ -1391,6 +2216,17 @@ A) 1  B) 2  C) Compilation error  D) Runtime exception
 ---
 
 ### Q76. [Java] | 1 Mark | Java
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-handwritten.svg" alt="Handwritten: Q76. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-diagram.svg" alt="Diagram: Q76. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q76-java-1-mark-java-sticky.svg" alt="Sticky Note: Q76. [Java] | 1 Mark | Java" width="30%">
+</a>
+
 
 **What does the synchronized keyword do?**
 
@@ -1410,6 +2246,17 @@ A) Makes a method run faster  B) Ensures only one thread can access the method/b
 
 ### Q77. [OOP] | 1 Mark | OOP Concepts
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q77. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q77. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q77-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q77. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
+
 **What is a virtual function in C++?**
 
 A) A function that is always inlined  B) A function that can be overridden in derived classes  C) A static function  D) A function that cannot be called
@@ -1427,6 +2274,17 @@ A) A function that is always inlined  B) A function that can be overridden in de
 ---
 
 ### Q78. [C] | 1 Mark | C Programming
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-handwritten.svg" alt="Handwritten: Q78. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-diagram.svg" alt="Diagram: Q78. [C] | 1 Mark | C Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q78-c-1-mark-c-programming-sticky.svg" alt="Sticky Note: Q78. [C] | 1 Mark | C Programming" width="30%">
+</a>
+
 
 **What is a union in C?**
 
@@ -1446,6 +2304,17 @@ A) A data structure that stores different data types at the same memory location
 
 ### Q79. [Java] | 1 Mark | Java
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-handwritten.svg" alt="Handwritten: Q79. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-diagram.svg" alt="Diagram: Q79. [Java] | 1 Mark | Java" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q79-java-1-mark-java-sticky.svg" alt="Sticky Note: Q79. [Java] | 1 Mark | Java" width="30%">
+</a>
+
+
 **What is the difference between String and StringBuilder in Java?**
 
 A) String is immutable; StringBuilder is mutable  B) String is mutable; StringBuilder is immutable  C) Both are mutable  D) Both are immutable
@@ -1463,6 +2332,17 @@ A) String is immutable; StringBuilder is mutable  B) String is mutable; StringBu
 ---
 
 ### Q80. [OOP] | 1 Mark | OOP Concepts
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q80. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q80. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q80-oop-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q80. [OOP] | 1 Mark | OOP Concepts" width="30%">
+</a>
+
 
 **What is dependency injection?**
 
@@ -1488,6 +2368,17 @@ A) A design pattern where objects receive their dependencies from outside rather
 
 ### Q81. [Quant] | 1 Mark | Quantitative Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q81. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q81. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q81-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q81. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
+
 **If x + 1/x = 3, find x^2 + 1/x^2.**
 
 A) 7  B) 9  C) 11  D) 5
@@ -1505,6 +2396,17 @@ A) 7  B) 9  C) 11  D) 5
 ---
 
 ### Q82. [Quant] | 1 Mark | Quantitative Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q82. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q82. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q82-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q82. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
 
 **A train 300 meters long crosses a pole in 15 seconds. What is the speed of the train?**
 
@@ -1524,6 +2426,17 @@ A) 60 km/h  B) 72 km/h  C) 54 km/h  D) 48 km/h
 
 ### Q83. [Quant] | 1 Mark | Quantitative Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q83. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q83. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q83-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q83. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
+
 **What is the probability of getting a sum of 7 when rolling two dice?**
 
 A) 1/6  B) 1/9  C) 5/36  D) 1/12
@@ -1541,6 +2454,17 @@ A) 1/6  B) 1/9  C) 5/36  D) 1/12
 ---
 
 ### Q84. [Quant] | 1 Mark | Quantitative Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q84. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q84. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q84-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q84. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
 
 **If the compound interest on a sum for 2 years at 10% p.a. is Rs. 1050, what is the principal?**
 
@@ -1560,6 +2484,17 @@ A) Rs. 4000  B) Rs. 5000  C) Rs. 6000  D) Rs. 5500
 
 ### Q85. [Quant] | 1 Mark | Quantitative Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q85. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q85. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q85-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q85. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
+
 **A man can row 12 km/h in still water. If the stream speed is 4 km/h, how long does it take to row 24 km downstream?**
 
 A) 1 hour  B) 1.5 hours  C) 2 hours  D) 3 hours
@@ -1577,6 +2512,17 @@ A) 1 hour  B) 1.5 hours  C) 2 hours  D) 3 hours
 ---
 
 ### Q86. [Quant] | 1 Mark | Quantitative Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q86. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q86. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q86-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q86. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
 
 **In how many ways can the letters of "APPLE" be arranged?**
 
@@ -1596,6 +2542,17 @@ A) 24  B) 60  C) 120  D) 30
 
 ### Q87. [Quant] | 1 Mark | Quantitative Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q87. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q87. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q87-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q87. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
+
 **Find the area of a circle with circumference 44 cm.**
 
 A) 154 cm^2  B) 616 cm^2  C) 308 cm^2  D) 77 cm^2
@@ -1613,6 +2570,17 @@ A) 154 cm^2  B) 616 cm^2  C) 308 cm^2  D) 77 cm^2
 ---
 
 ### Q88. [Quant] | 1 Mark | Quantitative Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q88. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-diagram.svg" alt="Diagram: Q88. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q88-quant-1-mark-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q88. [Quant] | 1 Mark | Quantitative Aptitude" width="30%">
+</a>
+
 
 **A number when divided by 15 leaves remainder 7. What is the remainder when the same number is divided by 5?**
 
@@ -1632,6 +2600,17 @@ A) 0  B) 2  C) 3  D) 4
 
 ### Q89. [Reasoning] | 1 Mark | Reasoning
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q89. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q89. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q89-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q89. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
+
 **If all cats are mammals and all mammals are animals, which conclusion follows?**
 
 A) All cats are animals  B) Some animals are cats  C) No cat is an animal  D) Both A and B
@@ -1649,6 +2628,17 @@ A) All cats are animals  B) Some animals are cats  C) No cat is an animal  D) Bo
 ---
 
 ### Q90. [Reasoning] | 1 Mark | Reasoning
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q90. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q90. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q90-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q90. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
 
 **A clock shows 3:15. What is the angle between the hour and minute hands?**
 
@@ -1668,6 +2658,17 @@ A) 0 degrees  B) 7.5 degrees  C) 15 degrees  D) 30 degrees
 
 ### Q91. [Reasoning] | 1 Mark | Reasoning
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q91. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q91. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q91-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q91. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
+
 **Find the missing number: 2, 6, 12, 20, 30, ?**
 
 A) 36  B) 40  C) 42  D) 56
@@ -1685,6 +2686,17 @@ A) 36  B) 40  C) 42  D) 56
 ---
 
 ### Q92. [Reasoning] | 1 Mark | Reasoning
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q92. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q92. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q92-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q92. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
 
 **Which one is different from the others? 64, 125, 216, 343, 512**
 
@@ -1708,6 +2720,17 @@ Let me think differently: 64 = 2^6, 125 = 5^3, 216 = 6^3, 343 = 7^3, 512 = 8^3. 
 
 ### Q93. [Reasoning] | 1 Mark | Reasoning
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q93. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q93. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q93-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q93. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
+
 **A is the father of B. B is the sister of C. D is the mother of C. How is D related to A?**
 
 A) Sister  B) Wife  C) Mother  D) Daughter
@@ -1725,6 +2748,17 @@ A) Sister  B) Wife  C) Mother  D) Daughter
 ---
 
 ### Q94. [Reasoning] | 1 Mark | Reasoning
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q94. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q94. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q94-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q94. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
 
 **If '+' means 'x', '-' means '/', 'x' means '-', '/' means '+', then 8 + 4 - 2 x 6 / 3 = ?**
 
@@ -1785,6 +2819,17 @@ I keep getting 13. Let me just provide a corrected puzzle in the answer explanat
 
 ### Q95. [Reasoning] | 1 Mark | Reasoning
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-handwritten.svg" alt="Handwritten: Q95. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-diagram.svg" alt="Diagram: Q95. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q95-reasoning-1-mark-reasoning-sticky.svg" alt="Sticky Note: Q95. [Reasoning] | 1 Mark | Reasoning" width="30%">
+</a>
+
+
 **Introducing a man, a woman said, "His wife is the only daughter of my father." How is the man related to the woman?**
 
 A) Husband  B) Brother  C) Father  D) Son-in-law
@@ -1802,6 +2847,17 @@ A) Husband  B) Brother  C) Father  D) Son-in-law
 ---
 
 ### Q96. [English] | 1 Mark | English
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-handwritten.svg" alt="Handwritten: Q96. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-diagram.svg" alt="Diagram: Q96. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q96-english-1-mark-english-sticky.svg" alt="Sticky Note: Q96. [English] | 1 Mark | English" width="30%">
+</a>
+
 
 **Choose the correct spelling:**
 
@@ -1821,6 +2877,17 @@ A) Accommodate  B) Acommodate  C) Accomodate  D) Acommmodate
 
 ### Q97. [English] | 1 Mark | English
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-handwritten.svg" alt="Handwritten: Q97. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-diagram.svg" alt="Diagram: Q97. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q97-english-1-mark-english-sticky.svg" alt="Sticky Note: Q97. [English] | 1 Mark | English" width="30%">
+</a>
+
+
 **Choose the antonym of "TRANSIENT":**
 
 A) Temporary  B) Permanent  C) Fleeting  D) Brief
@@ -1838,6 +2905,17 @@ A) Temporary  B) Permanent  C) Fleeting  D) Brief
 ---
 
 ### Q98. [English] | 1 Mark | English
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-handwritten.svg" alt="Handwritten: Q98. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-diagram.svg" alt="Diagram: Q98. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q98-english-1-mark-english-sticky.svg" alt="Sticky Note: Q98. [English] | 1 Mark | English" width="30%">
+</a>
+
 
 **Fill in the blank: The committee _____ decided to postpone the meeting.**
 
@@ -1857,6 +2935,17 @@ A) has  B) have  C) are  D) were
 
 ### Q99. [English] | 1 Mark | English
 
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-handwritten.svg" alt="Handwritten: Q99. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-diagram.svg" alt="Diagram: Q99. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q99-english-1-mark-english-sticky.svg" alt="Sticky Note: Q99. [English] | 1 Mark | English" width="30%">
+</a>
+
+
 **Which sentence is grammatically correct?**
 
 A) Neither the manager nor his assistants was present  B) Neither the manager nor his assistants were present  C) Neither the manager nor his assistants is present  D) Neither the manager nor his assistants has present
@@ -1874,6 +2963,17 @@ A) Neither the manager nor his assistants was present  B) Neither the manager no
 ---
 
 ### Q100. [English] | 1 Mark | English
+
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-handwritten.svg" alt="Handwritten: Q100. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-diagram.svg" alt="Diagram: Q100. [English] | 1 Mark | English" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/02-nic-scientist-b/q100-english-1-mark-english-sticky.svg" alt="Sticky Note: Q100. [English] | 1 Mark | English" width="30%">
+</a>
+
 
 **Choose the synonym of "BENEVOLENT":**
 

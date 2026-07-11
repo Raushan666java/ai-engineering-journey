@@ -42,6 +42,17 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 51% Attack (Majority Attack)
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-handwritten.svg" alt="Handwritten: 1.1 51% Attack (Majority Attack)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-diagram.svg" alt="Diagram: 1.1 51% Attack (Majority Attack)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-1-51-attack-majority-attack-sticky.svg" alt="Sticky Note: 1.1 51% Attack (Majority Attack)" width="30%">
+</a>
+
+
 An entity controlling >50% of the network's mining hash rate (PoW) or staked value (PoS) can rewrite history by producing a longer chain. The attacker can:
 
 - **Double-spend**: Send coins to an exchange, withdraw fiat, then publish a fork that omits that transaction.
@@ -61,11 +72,33 @@ An entity controlling >50% of the network's mining hash rate (PoW) or staked val
 
 ### 1.2 Sybil Attack
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-handwritten.svg" alt="Handwritten: 1.2 Sybil Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-diagram.svg" alt="Diagram: 1.2 Sybil Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-2-sybil-attack-sticky.svg" alt="Sticky Note: 1.2 Sybil Attack" width="30%">
+</a>
+
+
 An attacker creates many fake identities (nodes) to surround and isolate honest peers. Sybil attacks are a prerequisite for eclipse attacks and 51% attacks.
 
 **Defence:** Proof-of-work (costly to create identities), proof-of-stake (economic bond), peer scoring (up-time, age).
 
 ### 1.3 Eclipse Attack
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-handwritten.svg" alt="Handwritten: 1.3 Eclipse Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-diagram.svg" alt="Diagram: 1.3 Eclipse Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-3-eclipse-attack-sticky.svg" alt="Sticky Note: 1.3 Eclipse Attack" width="30%">
+</a>
+
 
 The attacker monopolises all incoming/outgoing connections to a target node, isolating it from the honest network. The eclipsed node sees a false view of the blockchain and can be tricked into accepting invalid transactions.
 
@@ -80,6 +113,17 @@ Attacker ←→ [Victim Node] ←→ Attacker
 
 ### 1.4 Selfish Mining
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-handwritten.svg" alt="Handwritten: 1.4 Selfish Mining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-diagram.svg" alt="Diagram: 1.4 Selfish Mining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-4-selfish-mining-sticky.svg" alt="Sticky Note: 1.4 Selfish Mining" width="30%">
+</a>
+
+
 A miner with >25% hash rate can gain an unfair advantage by *withholding* found blocks and only publishing them after building a lead. This wastes honest miners' work and destabilises the chain.
 
 **Probability of success:**
@@ -90,6 +134,17 @@ A miner with >25% hash rate can gain an unfair advantage by *withholding* found 
 
 ### 1.5 Timejacking
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-handwritten.svg" alt="Handwritten: 1.5 Timejacking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-diagram.svg" alt="Diagram: 1.5 Timejacking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/1-5-timejacking-sticky.svg" alt="Sticky Note: 1.5 Timejacking" width="30%">
+</a>
+
+
 An attacker manipulates a node's network time counter by sending false timestamps in peer address messages, causing the node to accept an alternative chain with different timestamps.
 
 **Defence:** Reject timestamps far from the node's system clock; use a maximum timestamp drift of 70 minutes (Bitcoin Core).
@@ -99,6 +154,17 @@ An attacker manipulates a node's network time counter by sending false timestamp
 ## 2. Consensus Security
 
 ### 2.1 Proof-of-Work — Double-Spend Probability
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-handwritten.svg" alt="Handwritten: 2.1 Proof-of-Work — Double-Spend Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-diagram.svg" alt="Diagram: 2.1 Proof-of-Work — Double-Spend Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-1-proof-of-work-double-spend-probability-sticky.svg" alt="Sticky Note: 2.1 Proof-of-Work — Double-Spend Probability" width="30%">
+</a>
+
 
 The probability that an attacker with proportion \( q \) of the total hash rate can overwrite \( z \) confirmations follows the **Meni Rosenfeld** formula:
 
@@ -129,6 +195,17 @@ console.log(doubleSpendProbability(0.3, 24)); // ~1.6e-6
 
 ### 2.2 Proof-of-Stake Vulnerabilities
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-handwritten.svg" alt="Handwritten: 2.2 Proof-of-Stake Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-diagram.svg" alt="Diagram: 2.2 Proof-of-Stake Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-2-proof-of-stake-vulnerabilities-sticky.svg" alt="Sticky Note: 2.2 Proof-of-Stake Vulnerabilities" width="30%">
+</a>
+
+
 | Attack | Description | Mitigation |
 |--------|-------------|------------|
 | **Long-Range Attack** | Attacker creates a fork from a past block using old keys | Weak subjectivity checkpoints, key-evolving signatures |
@@ -137,6 +214,17 @@ console.log(doubleSpendProbability(0.3, 24)); // ~1.6e-6
 | **Bribe Attack** | Attacker pays validators to reorg for a fee | Crypto-economic finality (e.g., Casper FFG) |
 
 ### 2.3 PBFT (Practical Byzantine Fault Tolerance)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-handwritten.svg" alt="Handwritten: 2.3 PBFT (Practical Byzantine Fault Tolerance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-diagram.svg" alt="Diagram: 2.3 PBFT (Practical Byzantine Fault Tolerance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-3-pbft-practical-byzantine-fault-tolerance-sticky.svg" alt="Sticky Note: 2.3 PBFT (Practical Byzantine Fault Tolerance)" width="30%">
+</a>
+
 
 PBFT requires \( 3f + 1 \) nodes to tolerate \( f \) Byzantine faults. Communication is O(n²). The protocol reaches finality in three phases:
 
@@ -147,6 +235,17 @@ PBFT requires \( 3f + 1 \) nodes to tolerate \( f \) Byzantine faults. Communica
 **Security property:** Under \( f < n/3 \) Byzantine nodes, the protocol guarantees safety and liveness.
 
 ### 2.4 DPoS (Delegated Proof-of-Stake)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-handwritten.svg" alt="Handwritten: 2.4 DPoS (Delegated Proof-of-Stake)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-diagram.svg" alt="Diagram: 2.4 DPoS (Delegated Proof-of-Stake)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/2-4-dpos-delegated-proof-of-stake-sticky.svg" alt="Sticky Note: 2.4 DPoS (Delegated Proof-of-Stake)" width="30%">
+</a>
+
 
 A small set of elected block producers (e.g., 21 in EOS) create blocks. While throughput is high (thousands of TPS), the attack surface narrows:
 
@@ -159,6 +258,17 @@ A small set of elected block producers (e.g., 21 in EOS) create blocks. While th
 ## 3. Smart Contract Vulnerabilities
 
 ### 3.1 Reentrancy — The DAO Hack (2016)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-handwritten.svg" alt="Handwritten: 3.1 Reentrancy — The DAO Hack (2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-diagram.svg" alt="Diagram: 3.1 Reentrancy — The DAO Hack (2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-1-reentrancy-the-dao-hack-2016-sticky.svg" alt="Sticky Note: 3.1 Reentrancy — The DAO Hack (2016)" width="30%">
+</a>
+
 
 **The DAO Hack (June 2016) — $60M stolen**
 
@@ -219,6 +329,17 @@ modifier nonReentrant() {
 
 ### 3.2 Integer Overflow / Underflow
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-handwritten.svg" alt="Handwritten: 3.2 Integer Overflow / Underflow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-diagram.svg" alt="Diagram: 3.2 Integer Overflow / Underflow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-2-integer-overflow-underflow-sticky.svg" alt="Sticky Note: 3.2 Integer Overflow / Underflow" width="30%">
+</a>
+
+
 Before Solidity 0.8, arithmetic operations silently wrapped. An attacker could underflow a balance check:
 
 ```solidity
@@ -236,6 +357,17 @@ function transfer(address to, uint amount) public {
 **Post-0.8:** Built-in checked arithmetic reverts on overflow. Use `unchecked` blocks only when overflow is explicitly intended (e.g., gas optimisation in Solidity 0.8+).
 
 ### 3.3 Access Control Vulnerabilities
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-handwritten.svg" alt="Handwritten: 3.3 Access Control Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-diagram.svg" alt="Diagram: 3.3 Access Control Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-3-access-control-vulnerabilities-sticky.svg" alt="Sticky Note: 3.3 Access Control Vulnerabilities" width="30%">
+</a>
+
 
 Missing or incorrect access control modifiers are the most common critical finding in audits.
 
@@ -257,6 +389,17 @@ function mint(address to, uint amount) public onlyOwner {
 - Incorrect role assignments in OpenZeppelin's `AccessControl`
 
 ### 3.4 Front-Running
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-handwritten.svg" alt="Handwritten: 3.4 Front-Running" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-diagram.svg" alt="Diagram: 3.4 Front-Running" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-4-front-running-sticky.svg" alt="Sticky Note: 3.4 Front-Running" width="30%">
+</a>
+
 
 Attackers monitor the mempool and submit transactions with higher gas to execute *before* a victim's pending transaction.
 
@@ -306,6 +449,17 @@ function detectFrontRunning(pendingTxs: MempoolTx[]): MempoolTx[] {
 
 ### 3.5 Flash Loan Attacks
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-handwritten.svg" alt="Handwritten: 3.5 Flash Loan Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-diagram.svg" alt="Diagram: 3.5 Flash Loan Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-5-flash-loan-attacks-sticky.svg" alt="Sticky Note: 3.5 Flash Loan Attacks" width="30%">
+</a>
+
+
 Flash loans allow borrowing any amount of assets *without collateral* as long as the loan is repaid within the same transaction. This enables complex multi-step exploits.
 
 **Anatomy of a flash loan attack:**
@@ -329,6 +483,17 @@ flowchart LR
 
 ### 3.6 Oracle Manipulation
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-handwritten.svg" alt="Handwritten: 3.6 Oracle Manipulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-diagram.svg" alt="Diagram: 3.6 Oracle Manipulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/3-6-oracle-manipulation-sticky.svg" alt="Sticky Note: 3.6 Oracle Manipulation" width="30%">
+</a>
+
+
 Oracles feed external data (e.g., asset prices) onto the blockchain. Manipulating an oracle lets attackers over-value collateral or under-value debt.
 
 **Attack: Manipulating a Uniswap TWAP oracle**
@@ -347,6 +512,17 @@ If a protocol uses a Uniswap TWAP (time-weighted average price) with a short win
 ## 4. DeFi Security
 
 ### 4.1 AMM Manipulation
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-handwritten.svg" alt="Handwritten: 4.1 AMM Manipulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-diagram.svg" alt="Diagram: 4.1 AMM Manipulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-1-amm-manipulation-sticky.svg" alt="Sticky Note: 4.1 AMM Manipulation" width="30%">
+</a>
+
 
 Uniswap's constant product formula: \( x \times y = k \)
 
@@ -390,6 +566,17 @@ console.log(`Price impact for 100 ETH swap: ${calculatePriceImpact(pool, BigInt(
 
 ### 4.2 Impermanent Loss
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-handwritten.svg" alt="Handwritten: 4.2 Impermanent Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-diagram.svg" alt="Diagram: 4.2 Impermanent Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-2-impermanent-loss-sticky.svg" alt="Sticky Note: 4.2 Impermanent Loss" width="30%">
+</a>
+
+
 Liquidity providers (LPs) suffer impermanent loss when the price ratio between pooled assets changes. The loss is "impermanent" until withdrawal — if the price ratio returns to the deposit ratio, IL disappears.
 
 \[
@@ -413,6 +600,17 @@ for (const r of ratios) {
 ```
 
 ### 4.3 MEV — Miner Extractable Value
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-handwritten.svg" alt="Handwritten: 4.3 MEV — Miner Extractable Value" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-diagram.svg" alt="Diagram: 4.3 MEV — Miner Extractable Value" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-3-mev-miner-extractable-value-sticky.svg" alt="Sticky Note: 4.3 MEV — Miner Extractable Value" width="30%">
+</a>
+
 
 MEV refers to value extracted by reordering, including, or excluding transactions within a block.
 
@@ -443,6 +641,17 @@ sequenceDiagram
 
 ### 4.4 Liquidation Attacks
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-handwritten.svg" alt="Handwritten: 4.4 Liquidation Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-diagram.svg" alt="Diagram: 4.4 Liquidation Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/4-4-liquidation-attacks-sticky.svg" alt="Sticky Note: 4.4 Liquidation Attacks" width="30%">
+</a>
+
+
 Lending protocols (Aave, Compound) allow over-collateralised borrowing. If collateral value falls below the liquidation threshold, anyone can liquidate the position for a bonus.
 
 **Attack vector:**
@@ -456,6 +665,17 @@ Lending protocols (Aave, Compound) allow over-collateralised borrowing. If colla
 ## 5. Solidity Security Patterns
 
 ### 5.1 `tx.origin` vs `msg.sender`
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-handwritten.svg" alt="Handwritten: 5.1 `tx.origin` vs `msg.sender`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-diagram.svg" alt="Diagram: 5.1 `tx.origin` vs `msg.sender`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-1-tx-origin-vs-msg-sender-sticky.svg" alt="Sticky Note: 5.1 `tx.origin` vs `msg.sender`" width="30%">
+</a>
+
 
 | Attribute | `tx.origin` | `msg.sender` |
 |-----------|-------------|--------------|
@@ -480,6 +700,17 @@ function withdrawAll() public {
 
 ### 5.2 Delegatecall Proxy Patterns
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-handwritten.svg" alt="Handwritten: 5.2 Delegatecall Proxy Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-diagram.svg" alt="Diagram: 5.2 Delegatecall Proxy Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-2-delegatecall-proxy-patterns-sticky.svg" alt="Sticky Note: 5.2 Delegatecall Proxy Patterns" width="30%">
+</a>
+
+
 `delegatecall` executes a contract's code in the caller's storage context. This is the foundation of upgradeable contracts — but it's dangerous.
 
 **The Parity Wallet Hack (2017) — $280M frozen**
@@ -490,6 +721,17 @@ The Parity multi-sig wallet used a library contract with `delegatecall`. An atta
 
 ### 5.3 `selfdestruct`
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-handwritten.svg" alt="Handwritten: 5.3 `selfdestruct`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-diagram.svg" alt="Diagram: 5.3 `selfdestruct`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-3-selfdestruct-sticky.svg" alt="Sticky Note: 5.3 `selfdestruct`" width="30%">
+</a>
+
+
 `selfdestruct(address)` removes contract bytecode and sends remaining ETH to the target. Attack vectors:
 
 - **Forced ETH send**: `selfdestruct` can send ETH to a contract without its fallback function being called, breaking balance invariants.
@@ -498,6 +740,17 @@ The Parity multi-sig wallet used a library contract with `delegatecall`. An atta
 **Mitigation:** Avoid `selfdestruct` in contracts that hold user funds. Use a timelock if destruction is required.
 
 ### 5.4 Unchecked Arithmetic & Unsafe Typecasting
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-handwritten.svg" alt="Handwritten: 5.4 Unchecked Arithmetic & Unsafe Typecasting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-diagram.svg" alt="Diagram: 5.4 Unchecked Arithmetic & Unsafe Typecasting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/5-4-unchecked-arithmetic-unsafe-typecasting-sticky.svg" alt="Sticky Note: 5.4 Unchecked Arithmetic & Unsafe Typecasting" width="30%">
+</a>
+
 
 ```solidity
 // VULNERABLE: overflow / truncation
@@ -518,6 +771,17 @@ uint16 c = SafeCast.toUint16(a); // reverts on overflow
 ## 6. Cross-Chain Security
 
 ### 6.1 Bridge Architecture & Trust Assumptions
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-handwritten.svg" alt="Handwritten: 6.1 Bridge Architecture & Trust Assumptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-diagram.svg" alt="Diagram: 6.1 Bridge Architecture & Trust Assumptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-1-bridge-architecture-trust-assumptions-sticky.svg" alt="Sticky Note: 6.1 Bridge Architecture & Trust Assumptions" width="30%">
+</a>
+
 
 Bridges transfer assets between blockchains. Every bridge introduces a **trust assumption**:
 
@@ -553,6 +817,17 @@ flowchart LR
 
 ### 6.2 Major Bridge Hacks
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-handwritten.svg" alt="Handwritten: 6.2 Major Bridge Hacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-diagram.svg" alt="Diagram: 6.2 Major Bridge Hacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-2-major-bridge-hacks-sticky.svg" alt="Sticky Note: 6.2 Major Bridge Hacks" width="30%">
+</a>
+
+
 **Ronin Bridge (Axie Infinity) — March 2022 — $625M**
 
 | Event | Details |
@@ -583,6 +858,17 @@ flowchart LR
 
 ### 6.3 Atomic Swaps
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-handwritten.svg" alt="Handwritten: 6.3 Atomic Swaps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-diagram.svg" alt="Diagram: 6.3 Atomic Swaps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/6-3-atomic-swaps-sticky.svg" alt="Sticky Note: 6.3 Atomic Swaps" width="30%">
+</a>
+
+
 An atomic swap is a trustless cross-chain exchange using hashed timelock contracts (HTLCs). It is "atomic" — either both parties receive funds, or neither does.
 
 ```typescript
@@ -607,6 +893,17 @@ interface HTLC {
 ## 7. Wallet Security
 
 ### 7.1 HD Wallet Derivation (BIP32/39/44)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-handwritten.svg" alt="Handwritten: 7.1 HD Wallet Derivation (BIP32/39/44)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-diagram.svg" alt="Diagram: 7.1 HD Wallet Derivation (BIP32/39/44)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-1-hd-wallet-derivation-bip32-39-44-sticky.svg" alt="Sticky Note: 7.1 HD Wallet Derivation (BIP32/39/44)" width="30%">
+</a>
+
 
 Hierarchical Deterministic (HD) wallets derive keys from a single seed phrase.
 
@@ -712,6 +1009,17 @@ console.log(`Depth: ${wallet.depth}`);
 
 ### 7.2 Mnemonic Security
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-handwritten.svg" alt="Handwritten: 7.2 Mnemonic Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-diagram.svg" alt="Diagram: 7.2 Mnemonic Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-2-mnemonic-security-sticky.svg" alt="Sticky Note: 7.2 Mnemonic Security" width="30%">
+</a>
+
+
 | Threat | Description | Mitigation |
 |--------|-------------|------------|
 | **Physical theft** | Seed phrase written on paper stolen | Steel plates (Cryptosteel, Billfodl) |
@@ -722,6 +1030,17 @@ console.log(`Depth: ${wallet.depth}`);
 
 ### 7.3 Hardware Wallets
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-handwritten.svg" alt="Handwritten: 7.3 Hardware Wallets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-diagram.svg" alt="Diagram: 7.3 Hardware Wallets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-3-hardware-wallets-sticky.svg" alt="Sticky Note: 7.3 Hardware Wallets" width="30%">
+</a>
+
+
 Hardware wallets (Ledger, Trezor, KeepKey) keep private keys in a secure enclave. Transactions are signed on-device; keys never touch the internet.
 
 **Attack surface:**
@@ -731,6 +1050,17 @@ Hardware wallets (Ledger, Trezor, KeepKey) keep private keys in a secure enclave
 - **Seed extraction:** If attacker steals the device and knows the PIN
 
 ### 7.4 Multisig Wallets (Gnosis Safe)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-handwritten.svg" alt="Handwritten: 7.4 Multisig Wallets (Gnosis Safe)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-diagram.svg" alt="Diagram: 7.4 Multisig Wallets (Gnosis Safe)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/7-4-multisig-wallets-gnosis-safe-sticky.svg" alt="Sticky Note: 7.4 Multisig Wallets (Gnosis Safe)" width="30%">
+</a>
+
 
 A multisig wallet requires M-of-N signatures to execute a transaction. This prevents a single compromised key from draining funds.
 
@@ -753,6 +1083,17 @@ Owner 3 └─────┘  (not required)
 
 ### 8.1 ECDSA (secp256k1, Ed25519)
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-handwritten.svg" alt="Handwritten: 8.1 ECDSA (secp256k1, Ed25519)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-diagram.svg" alt="Diagram: 8.1 ECDSA (secp256k1, Ed25519)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-1-ecdsa-secp256k1-ed25519-sticky.svg" alt="Sticky Note: 8.1 ECDSA (secp256k1, Ed25519)" width="30%">
+</a>
+
+
 | Curve | Usage | Key Size | Signature Size | Notes |
 |-------|-------|----------|----------------|-------|
 | secp256k1 | Bitcoin, Ethereum | 32 bytes (priv), 64 bytes (pub, uncompressed 65) | ~71 bytes (DER) | Standard in most L1s |
@@ -760,6 +1101,17 @@ Owner 3 └─────┘  (not required)
 | BLS12-381 | Ethereum 2.0, Filecoin | 32 bytes (priv), 48/96 bytes (pub) | 48/96 bytes | Signature aggregation |
 
 ### 8.2 Signature Malleability
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-handwritten.svg" alt="Handwritten: 8.2 Signature Malleability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-diagram.svg" alt="Diagram: 8.2 Signature Malleability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-2-signature-malleability-sticky.svg" alt="Sticky Note: 8.2 Signature Malleability" width="30%">
+</a>
+
 
 An ECDSA signature `(r, s)` can be modified to `(r, -s mod n)` while still being valid for the same message. Bitcoin's ECDSA had a high-s malleability issue exploited for transaction ID malleability.
 
@@ -811,6 +1163,17 @@ function addReplayProtection(txHash: string, chainId: number): string {
 
 ### 8.3 ECDSA Nonce Reuse
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-handwritten.svg" alt="Handwritten: 8.3 ECDSA Nonce Reuse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-diagram.svg" alt="Diagram: 8.3 ECDSA Nonce Reuse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-3-ecdsa-nonce-reuse-sticky.svg" alt="Sticky Note: 8.3 ECDSA Nonce Reuse" width="30%">
+</a>
+
+
 If two signatures share the same `k` (nonce), the private key can be recovered:
 
 \[
@@ -855,6 +1218,17 @@ function modInverse(a: bigint, m: bigint): bigint {
 
 ### 8.4 BLS Signatures
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-handwritten.svg" alt="Handwritten: 8.4 BLS Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-diagram.svg" alt="Diagram: 8.4 BLS Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/8-4-bls-signatures-sticky.svg" alt="Sticky Note: 8.4 BLS Signatures" width="30%">
+</a>
+
+
 BLS (Boneh–Lynn–Shacham) signatures enable:
 - **Signature aggregation**: Combine N signatures into one constant-size signature.
 - **Key aggregation**: Combine N public keys into one.
@@ -868,6 +1242,17 @@ Used in Ethereum 2.0 for validator signature aggregation (thousands of validator
 
 ### 9.1 Metadata Integrity
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-handwritten.svg" alt="Handwritten: 9.1 Metadata Integrity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-diagram.svg" alt="Diagram: 9.1 Metadata Integrity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-1-metadata-integrity-sticky.svg" alt="Sticky Note: 9.1 Metadata Integrity" width="30%">
+</a>
+
+
 NFT metadata (image URL, attributes) is often stored off-chain. Attack vectors:
 
 - **Metadata freeze**: If metadata is mutable (not pinned to IPFS/Arweave), the creator can change it post-sale.
@@ -877,6 +1262,17 @@ NFT metadata (image URL, attributes) is often stored off-chain. Attack vectors:
 **Secure pattern:** Store metadata on IPFS with a content-addressed URI (`ipfs://<CID>`) and freeze it.
 
 ### 9.2 Royalty Enforcement
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-handwritten.svg" alt="Handwritten: 9.2 Royalty Enforcement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-diagram.svg" alt="Diagram: 9.2 Royalty Enforcement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-2-royalty-enforcement-sticky.svg" alt="Sticky Note: 9.2 Royalty Enforcement" width="30%">
+</a>
+
 
 EIP-2981 standardises royalty payments, but royalties are **not enforced on-chain** at the exchange level.
 
@@ -889,6 +1285,17 @@ EIP-2981 standardises royalty payments, but royalties are **not enforced on-chai
 **Attack:** Buy NFT on Blur (no royalty), sell on OpenSea (with royalty) — wash trading and royalty arbitrage.
 
 ### 9.3 Token Standard Issues
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-handwritten.svg" alt="Handwritten: 9.3 Token Standard Issues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-diagram.svg" alt="Diagram: 9.3 Token Standard Issues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/9-3-token-standard-issues-sticky.svg" alt="Sticky Note: 9.3 Token Standard Issues" width="30%">
+</a>
+
 
 **ERC-721 vs ERC-1155:**
 | Issue | ERC-721 | ERC-1155 |
@@ -908,6 +1315,17 @@ EIP-2981 standardises royalty payments, but royalties are **not enforced on-chai
 
 ### 10.1 Chain Hopping Tracking
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-handwritten.svg" alt="Handwritten: 10.1 Chain Hopping Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-diagram.svg" alt="Diagram: 10.1 Chain Hopping Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-1-chain-hopping-tracking-sticky.svg" alt="Sticky Note: 10.1 Chain Hopping Tracking" width="30%">
+</a>
+
+
 Attackers move funds across blockchains (L1s, bridges, DEXs) to obfuscate the trail. Forensic trace must follow:
 
 ```
@@ -917,6 +1335,17 @@ BTC → Binance → ETH → Tornado Cash → Arbitrum → DEX → Solana → ...
 **Tools:** Chainalysis, Elliptic, CipherTrace, Dune Analytics.
 
 ### 10.2 Taint Analysis
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-handwritten.svg" alt="Handwritten: 10.2 Taint Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-diagram.svg" alt="Diagram: 10.2 Taint Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-2-taint-analysis-sticky.svg" alt="Sticky Note: 10.2 Taint Analysis" width="30%">
+</a>
+
 
 Taint analysis tracks the provenance of specific UTXOs or token amounts through the transaction graph.
 
@@ -1043,6 +1472,17 @@ console.log("Taint report:", analyzer.getTaintReport());
 
 ### 10.3 Deanonymization Techniques
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-handwritten.svg" alt="Handwritten: 10.3 Deanonymization Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-diagram.svg" alt="Diagram: 10.3 Deanonymization Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-3-deanonymization-techniques-sticky.svg" alt="Sticky Note: 10.3 Deanonymization Techniques" width="30%">
+</a>
+
+
 | Technique | Target | Method |
 |-----------|--------|--------|
 | **CoinJoin graph analysis** | Bitcoin | Cluster inputs that belong to same user via common-spend heuristic |
@@ -1051,6 +1491,17 @@ console.log("Taint report:", analyzer.getTaintReport());
 | **KYT (Know Your Transaction)** | VASP | Real-time screening of addresses against sanctions lists |
 
 ### 10.4 Know Your Transaction (KYT)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-handwritten.svg" alt="Handwritten: 10.4 Know Your Transaction (KYT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-diagram.svg" alt="Diagram: 10.4 Know Your Transaction (KYT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/10-4-know-your-transaction-kyt-sticky.svg" alt="Sticky Note: 10.4 Know Your Transaction (KYT)" width="30%">
+</a>
+
 
 KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) to screen incoming/outgoing transactions against:
 
@@ -1085,6 +1536,17 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 
 ### 12.1 DAO Hack Technical Breakdown (June 2016)
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-handwritten.svg" alt="Handwritten: 12.1 DAO Hack Technical Breakdown (June 2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-diagram.svg" alt="Diagram: 12.1 DAO Hack Technical Breakdown (June 2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-1-dao-hack-technical-breakdown-june-2016-sticky.svg" alt="Sticky Note: 12.1 DAO Hack Technical Breakdown (June 2016)" width="30%">
+</a>
+
+
 **Vulnerability:** Reentrancy in `splitDAO` function.
 
 **Step-by-step:**
@@ -1098,6 +1560,17 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 
 ### 12.2 bZx Flash Loan Attack (Feb 2020)
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-handwritten.svg" alt="Handwritten: 12.2 bZx Flash Loan Attack (Feb 2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-diagram.svg" alt="Diagram: 12.2 bZx Flash Loan Attack (Feb 2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-2-bzx-flash-loan-attack-feb-2020-sticky.svg" alt="Sticky Note: 12.2 bZx Flash Loan Attack (Feb 2020)" width="30%">
+</a>
+
+
 **Protocol:** bZx (lending protocol on Ethereum)
 
 **Exploit anatomy:**
@@ -1109,6 +1582,17 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 6. Repay flash loan. Profit: ~$350K.
 
 ### 12.3 Harvest Finance Attack (Oct 2020)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-handwritten.svg" alt="Handwritten: 12.3 Harvest Finance Attack (Oct 2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-diagram.svg" alt="Diagram: 12.3 Harvest Finance Attack (Oct 2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-3-harvest-finance-attack-oct-2020-sticky.svg" alt="Sticky Note: 12.3 Harvest Finance Attack (Oct 2020)" width="30%">
+</a>
+
 
 **Protocol:** Harvest Finance (yield optimiser on Curve)
 
@@ -1122,6 +1606,17 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 **Root cause:** The share price was calculated using the pool balance without accounting for the flash loan deposit artificially inflating it.
 
 ### 12.4 Ronin Bridge Timeline
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-handwritten.svg" alt="Handwritten: 12.4 Ronin Bridge Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-diagram.svg" alt="Diagram: 12.4 Ronin Bridge Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/12-4-ronin-bridge-timeline-sticky.svg" alt="Sticky Note: 12.4 Ronin Bridge Timeline" width="30%">
+</a>
+
 
 | Date | Event |
 |------|-------|
@@ -1138,6 +1633,17 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 ## 13. TypeScript Implementation Examples
 
 ### 13.1 Block Header Validator
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-handwritten.svg" alt="Handwritten: 13.1 Block Header Validator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-diagram.svg" alt="Diagram: 13.1 Block Header Validator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-1-block-header-validator-sticky.svg" alt="Sticky Note: 13.1 Block Header Validator" width="30%">
+</a>
+
 
 ```typescript
 // Block Header Validator — verify PoW difficulty and merkle root
@@ -1217,6 +1723,17 @@ console.log(`Merkle root: ${computeMerkleRoot(txs)}`);
 ```
 
 ### 13.2 Smart Contract Vulnerability Scanner
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-handwritten.svg" alt="Handwritten: 13.2 Smart Contract Vulnerability Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-diagram.svg" alt="Diagram: 13.2 Smart Contract Vulnerability Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-2-smart-contract-vulnerability-scanner-sticky.svg" alt="Sticky Note: 13.2 Smart Contract Vulnerability Scanner" width="30%">
+</a>
+
 
 ```typescript
 // Smart Contract Vulnerability Scanner
@@ -1449,6 +1966,17 @@ for (const v of results) {
 
 ### 13.3 Flash Loan Attack Simulator
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-handwritten.svg" alt="Handwritten: 13.3 Flash Loan Attack Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-diagram.svg" alt="Diagram: 13.3 Flash Loan Attack Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-3-flash-loan-attack-simulator-sticky.svg" alt="Sticky Note: 13.3 Flash Loan Attack Simulator" width="30%">
+</a>
+
+
 ```typescript
 // Flash Loan Attack Simulator — arbitrage between two AMMs
 interface SimAMMPool {
@@ -1516,6 +2044,17 @@ console.log(`Final profit: ${profit} wei`);
 ```
 
 ### 13.4 MEV Sandwich Attack Calculator
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-handwritten.svg" alt="Handwritten: 13.4 MEV Sandwich Attack Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-diagram.svg" alt="Diagram: 13.4 MEV Sandwich Attack Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-4-mev-sandwich-attack-calculator-sticky.svg" alt="Sticky Note: 13.4 MEV Sandwich Attack Calculator" width="30%">
+</a>
+
 
 ```typescript
 // MEV Sandwich Attack Calculator
@@ -1594,6 +2133,17 @@ console.log(`  Estimated profit: ${Number(result.profit) / 1e18} ETH`);
 
 ### 13.5 AMM Price Impact Calculator
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-handwritten.svg" alt="Handwritten: 13.5 AMM Price Impact Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-diagram.svg" alt="Diagram: 13.5 AMM Price Impact Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-5-amm-price-impact-calculator-sticky.svg" alt="Sticky Note: 13.5 AMM Price Impact Calculator" width="30%">
+</a>
+
+
 ```typescript
 // AMM Price Impact Calculator
 function ammPriceImpact(
@@ -1647,6 +2197,17 @@ console.log(`Large trade (5M DAI →): Impact ${largeTrade.priceImpactPct.toFixe
 ```
 
 ### 13.6 Signature Verification (ECDSA Replay Protection)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-handwritten.svg" alt="Handwritten: 13.6 Signature Verification (ECDSA Replay Protection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-diagram.svg" alt="Diagram: 13.6 Signature Verification (ECDSA Replay Protection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/13-6-signature-verification-ecdsa-replay-protection-sticky.svg" alt="Sticky Note: 13.6 Signature Verification (ECDSA Replay Protection)" width="30%">
+</a>
+
 
 ```typescript
 // ECDSA Signature Verification with Replay Protection
@@ -1779,6 +2340,17 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 
 ### Theory
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-handwritten.svg" alt="Handwritten: Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-diagram.svg" alt="Diagram: Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/theory-sticky.svg" alt="Sticky Note: Theory" width="30%">
+</a>
+
+
 1. **Double-Spend Probability.** An attacker controls 15% of the total hash rate on a PoW chain. Calculate the probability of successfully double-spending after 3, 6, and 12 confirmations using `doubleSpendProbability`. At what confirmation depth does the probability drop below 10⁻⁶?
 
 2. **51% Attack Cost Estimation.** Assume a blockchain has a total hash rate of 100 PH/s. Mining hardware costs $50 per TH/s per day (rental). How much would it cost to sustain a 51% attack for 6 hours? Include a 20% safety margin for variance.
@@ -1799,6 +2371,17 @@ function redeem(uint256 amount) external {
 
 ### Application (Hands-On)
 
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-handwritten.svg" alt="Handwritten: Application (Hands-On)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-diagram.svg" alt="Diagram: Application (Hands-On)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/application-hands-on-sticky.svg" alt="Sticky Note: Application (Hands-On)" width="30%">
+</a>
+
+
 5. **Vulnerability Scanner Extension.** Extend the `SolidityVulnScanner` from §13.2 with a new check for **unprotected initializer functions** (detect `initialize` functions without an `initializer` modifier). Write the TypeScript check and test it against a sample contract.
 
 6. **Flash Loan Simulator — Three-Pool Arbitrage.** Extend the `flashLoanArbitrage` function from §13.3 to handle three AMM pools. Given:
@@ -1816,6 +2399,17 @@ function redeem(uint256 amount) external {
    Compute the final taint amounts at Exchanges 1 and 2. Which address has the highest taint concentration?
 
 ### Challenge (Advanced)
+
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-handwritten.svg" alt="Handwritten: Challenge (Advanced)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-diagram.svg" alt="Diagram: Challenge (Advanced)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/19-blockchain-defi-security/challenge-advanced-sticky.svg" alt="Sticky Note: Challenge (Advanced)" width="30%">
+</a>
+
 
 8. **BIP32 HD Wallet — Path Derivation & Address Generation.** Implement a full BIP44 derivation that generates the first 5 Ethereum addresses from a mnemonic. For each address, output the derivation path, public key (uncompressed hex), and address (keccak256 of the public key, last 20 bytes). Use the `crypto` module for HMAC-SHA512 and PBKDF2.
 

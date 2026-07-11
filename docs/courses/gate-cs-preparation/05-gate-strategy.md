@@ -60,6 +60,17 @@ flowchart LR
 ![GATE CS Exam Strategy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/05-gate-strategy.png)
 
 ### What is GATE?
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-handwritten.svg" alt="Handwritten: What is GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-diagram.svg" alt="Diagram: What is GATE?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/what-is-gate-sticky.svg" alt="Sticky Note: What is GATE?" width="30%">
+</a>
+
 
 Graduate Aptitude Test in Engineering (GATE) is a national-level examination conducted jointly by the Indian Institute of Science (IISc) and seven Indian Institutes of Technology (IITs). It tests the comprehensive understanding of undergraduate engineering subjects. GATE scores are used for:
 
@@ -69,6 +80,17 @@ Graduate Aptitude Test in Engineering (GATE) is a national-level examination con
 - Some foreign universities also accept GATE scores for graduate programs
 
 ### Paper Pattern
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-handwritten.svg" alt="Handwritten: Paper Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-diagram.svg" alt="Diagram: Paper Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/paper-pattern-sticky.svg" alt="Sticky Note: Paper Pattern" width="30%">
+</a>
+
 
 | Component | Details |
 |-----------|---------|
@@ -80,6 +102,17 @@ Graduate Aptitude Test in Engineering (GATE) is a national-level examination con
 | **Question Types** | Multiple Choice (MCQ), Multiple Select (MSQ), Numerical Answer Type (NAT) |
 
 ### Marking Scheme
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-handwritten.svg" alt="Handwritten: Marking Scheme" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-diagram.svg" alt="Diagram: Marking Scheme" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/marking-scheme-sticky.svg" alt="Sticky Note: Marking Scheme" width="30%">
+</a>
+
 
 | Question Type | Marks | Negative Marking |
 |---------------|-------|------------------|
@@ -91,6 +124,17 @@ Graduate Aptitude Test in Engineering (GATE) is a national-level examination con
 | **NAT Ã¢â€ â€™ 2 marks** | 2 | No negative marking |
 
 ### GATE Score vs Rank vs Percentile
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-handwritten.svg" alt="Handwritten: GATE Score vs Rank vs Percentile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-diagram.svg" alt="Diagram: GATE Score vs Rank vs Percentile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/gate-score-vs-rank-vs-percentile-sticky.svg" alt="Sticky Note: GATE Score vs Rank vs Percentile" width="30%">
+</a>
+
 
 These three metrics are often confused by aspirants:
 
@@ -120,6 +164,17 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 **NOTE**: GATE score ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  percentage of marks. A score of 750+ generally indicates a top-100 rank in CS.
 
 ### Important Dates (Typical Cycle)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-handwritten.svg" alt="Handwritten: Important Dates (Typical Cycle)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-diagram.svg" alt="Diagram: Important Dates (Typical Cycle)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/important-dates-typical-cycle-sticky.svg" alt="Sticky Note: Important Dates (Typical Cycle)" width="30%">
+</a>
+
 
 | Event | Expected Timeline |
 |-------|------------------|
@@ -134,6 +189,17 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 | Scorecard download | March/April |
 
 ### Registration Process
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-handwritten.svg" alt="Handwritten: Registration Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-diagram.svg" alt="Diagram: Registration Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/registration-process-sticky.svg" alt="Sticky Note: Registration Process" width="30%">
+</a>
+
 
 1. Visit the official GATE website (gate.iitd.ac.in or corresponding IIT site for that year)
 2. Create a new user account with email and phone number
@@ -149,6 +215,17 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 | Female candidates (all categories) | ~ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹750 |
 
 ### Latest Changes (2024-2025)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-handwritten.svg" alt="Handwritten: Latest Changes (2024-2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-diagram.svg" alt="Diagram: Latest Changes (2024-2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/latest-changes-2024-2025-sticky.svg" alt="Sticky Note: Latest Changes (2024-2025)" width="30%">
+</a>
+
 
 - **MSQ (Multiple Select Questions)** have become more prominent, particularly in the subject paper section
 - **NAT (Numerical Answer Type)** questions now require up to 2 decimal places for answers
@@ -159,6 +236,17 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 - **More focus on application-based questions** rather than rote memorization
 
 ### Eligibility Criteria
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-handwritten.svg" alt="Handwritten: Eligibility Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-diagram.svg" alt="Diagram: Eligibility Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/eligibility-criteria-sticky.svg" alt="Sticky Note: Eligibility Criteria" width="30%">
+</a>
+
 
 | Requirement | Details |
 |-------------|---------|
@@ -172,6 +260,17 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 ## Topic Weightage & Analysis
 
 ### Subject-Wise Marks Distribution (Last 10 Years Analysis)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-handwritten.svg" alt="Handwritten: Subject-Wise Marks Distribution (Last 10 Years Analysis)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-diagram.svg" alt="Diagram: Subject-Wise Marks Distribution (Last 10 Years Analysis)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-wise-marks-distribution-last-10-years-analysis-sticky.svg" alt="Sticky Note: Subject-Wise Marks Distribution (Last 10 Years Analysis)" width="30%">
+</a>
+
 
 The table below shows the approximate marks distribution across subjects based on analysis of GATE CS papers from 2015 to 2025:
 
@@ -192,6 +291,17 @@ The table below shows the approximate marks distribution across subjects based o
 | Engineering Mathematics (Others) | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | **2.0** |
 
 ### Subject Classification by Difficulty & Return on Investment
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-handwritten.svg" alt="Handwritten: Subject Classification by Difficulty & Return on Investment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-diagram.svg" alt="Diagram: Subject Classification by Difficulty & Return on Investment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-classification-by-difficulty-return-on-investment-sticky.svg" alt="Sticky Note: Subject Classification by Difficulty & Return on Investment" width="30%">
+</a>
+
 
 #### HIGH RETURN (Easy to Moderate + High Weightage)
 These subjects offer the best marks-per-effort ratio. Master these first.
@@ -223,6 +333,17 @@ These are vast subjects that yield relatively fewer marks. Do not spend dispropo
 | **Engineering Mathematics** | ~9 marks total but spread across 4 sub-areas. Linear algebra gives highest return. Probability is easy. Calculus questions are minimal. |
 
 ### General Aptitude Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-handwritten.svg" alt="Handwritten: General Aptitude Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-diagram.svg" alt="Diagram: General Aptitude Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-strategy-sticky.svg" alt="Sticky Note: General Aptitude Strategy" width="30%">
+</a>
+
 
 General Aptitude carries **15 marks** and is divided into:
 
@@ -265,6 +386,17 @@ Answer: (B) 24
 ## Study Plan & Timetable
 
 ### 6-Month Comprehensive Plan (July to January)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-handwritten.svg" alt="Handwritten: 6-Month Comprehensive Plan (July to January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-diagram.svg" alt="Diagram: 6-Month Comprehensive Plan (July to January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/6-month-comprehensive-plan-july-to-january-sticky.svg" alt="Sticky Note: 6-Month Comprehensive Plan (July to January)" width="30%">
+</a>
+
 
 This plan assumes you start in July, giving you 6 months before the February exam.
 
@@ -321,6 +453,17 @@ This plan assumes you start in July, giving you 6 months before the February exa
 | Week 32 | Light revision, formula cards, relax | 2 hrs | Ready for exam |
 
 ### 3-Month Accelerated Plan (November to January)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-handwritten.svg" alt="Handwritten: 3-Month Accelerated Plan (November to January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-diagram.svg" alt="Diagram: 3-Month Accelerated Plan (November to January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/3-month-accelerated-plan-november-to-january-sticky.svg" alt="Sticky Note: 3-Month Accelerated Plan (November to January)" width="30%">
+</a>
+
 
 For those starting late, this compressed schedule works:
 
@@ -331,6 +474,17 @@ For those starting late, this compressed schedule works:
 | Month 3 (Jan) | COA + DLD + Math + Revision + Mocks | 6-7 hrs | 3 mocks/week + intensive revision |
 
 ### 1-Month Crash Plan (January)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-handwritten.svg" alt="Handwritten: 1-Month Crash Plan (January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-diagram.svg" alt="Diagram: 1-Month Crash Plan (January)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/1-month-crash-plan-january-sticky.svg" alt="Sticky Note: 1-Month Crash Plan (January)" width="30%">
+</a>
+
 
 Only if you have strong fundamentals from your BTech:
 
@@ -342,6 +496,17 @@ Only if you have strong fundamentals from your BTech:
 | Week 4 | Full mocks + revision | 1 mock daily + error analysis |
 
 ### Daily Timetable Template
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-handwritten.svg" alt="Handwritten: Daily Timetable Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-diagram.svg" alt="Diagram: Daily Timetable Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/daily-timetable-template-sticky.svg" alt="Sticky Note: Daily Timetable Template" width="30%">
+</a>
+
 
 ```
 Time Slot        | Activity                    | Subject Rotation
@@ -360,6 +525,17 @@ Time Slot        | Activity                    | Subject Rotation
 ```
 
 ### Revision Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-handwritten.svg" alt="Handwritten: Revision Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-diagram.svg" alt="Diagram: Revision Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/revision-strategy-sticky.svg" alt="Sticky Note: Revision Strategy" width="30%">
+</a>
+
 
 1. **Spaced Repetition**: After studying a topic, revise it:
    - First revision: After 24 hours
@@ -378,6 +554,17 @@ Time Slot        | Activity                    | Subject Rotation
 4. **Quick Revision Sheets**: Create 1-page summaries for each major topic (e.g., 1 page for process scheduling, 1 page for TCP congestion control). Use these for last-minute revision.
 
 ### Mock Test Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-handwritten.svg" alt="Handwritten: Mock Test Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-diagram.svg" alt="Diagram: Mock Test Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-strategy-sticky.svg" alt="Sticky Note: Mock Test Strategy" width="30%">
+</a>
+
 
 - **Start mocks from Month 4** (not earlier Ã¢â€ â€™ you need syllabus coverage first)
 - **Frequency**: 1 mock per week initially, 2-3 per week in the last month
@@ -417,6 +604,17 @@ Action Items:
 ## Previous Year Question Analysis
 
 ### Problem 1: Data Structures & Algorithms (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-handwritten.svg" alt="Handwritten: Problem 1: Data Structures & Algorithms (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-diagram.svg" alt="Diagram: Problem 1: Data Structures & Algorithms (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-1-data-structures-algorithms-gate-2023-sticky.svg" alt="Sticky Note: Problem 1: Data Structures & Algorithms (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: Consider the following C function:
@@ -481,6 +679,17 @@ Answer: 15
 ```
 
 ### Problem 2: Operating Systems (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-handwritten.svg" alt="Handwritten: Problem 2: Operating Systems (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-diagram.svg" alt="Diagram: Problem 2: Operating Systems (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-2-operating-systems-gate-2023-sticky.svg" alt="Sticky Note: Problem 2: Operating Systems (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: Consider the following processes with arrival time and burst time:
@@ -567,6 +776,17 @@ Answer: (A) 3.25 Ã¢â€ â€™ for the actual GATE problem with slightly d
 ```
 
 ### Problem 3: Database Management Systems (GATE 2022)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-handwritten.svg" alt="Handwritten: Problem 3: Database Management Systems (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-diagram.svg" alt="Diagram: Problem 3: Database Management Systems (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-3-database-management-systems-gate-2022-sticky.svg" alt="Sticky Note: Problem 3: Database Management Systems (GATE 2022)" width="30%">
+</a>
+
 
 ```
 Q: Consider the following schedule S of transactions T1, T2, T3:
@@ -646,6 +866,17 @@ Answer: (D) Ã¢â€ â€™ for illustration purposes. Always draw the prece
 ```
 
 ### Problem 4: Theory of Computation (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-handwritten.svg" alt="Handwritten: Problem 4: Theory of Computation (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-diagram.svg" alt="Diagram: Problem 4: Theory of Computation (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-4-theory-of-computation-gate-2023-sticky.svg" alt="Sticky Note: Problem 4: Theory of Computation (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: Which of the following languages is/are context-free?
@@ -698,6 +929,17 @@ d's pop a's.
 ```
 
 ### Problem 5: Computer Networks (GATE 2022)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-handwritten.svg" alt="Handwritten: Problem 5: Computer Networks (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-diagram.svg" alt="Diagram: Problem 5: Computer Networks (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-5-computer-networks-gate-2022-sticky.svg" alt="Sticky Note: Problem 5: Computer Networks (GATE 2022)" width="30%">
+</a>
+
 
 ```
 Q: Consider a 10 Mbps Ethernet link. If the propagation delay between
@@ -742,6 +984,17 @@ frame size Ã¢â€ â€™ it's the data portion that matters.
 ```
 
 ### Problem 6: Discrete Mathematics (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-handwritten.svg" alt="Handwritten: Problem 6: Discrete Mathematics (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-diagram.svg" alt="Diagram: Problem 6: Discrete Mathematics (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-6-discrete-mathematics-gate-2023-sticky.svg" alt="Sticky Note: Problem 6: Discrete Mathematics (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: How many distinct Hamiltonian cycles exist in a complete graph with
@@ -792,6 +1045,17 @@ with both rotation and reversal being the same. The GATE key accepted 12.
 ```
 
 ### Problem 7: Computer Organization & Architecture (GATE 2022)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-handwritten.svg" alt="Handwritten: Problem 7: Computer Organization & Architecture (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-diagram.svg" alt="Diagram: Problem 7: Computer Organization & Architecture (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-7-computer-organization-architecture-gate-2022-sticky.svg" alt="Sticky Note: Problem 7: Computer Organization & Architecture (GATE 2022)" width="30%">
+</a>
+
 
 ```
 Q: Consider a 4-stage pipeline with stage delays: 2 ns, 3 ns, 2.5 ns, 2 ns.
@@ -834,6 +1098,17 @@ The pipeline clock is determined by the slowest stage.
 ```
 
 ### Problem 8: Compiler Design (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-handwritten.svg" alt="Handwritten: Problem 8: Compiler Design (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-diagram.svg" alt="Diagram: Problem 8: Compiler Design (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-8-compiler-design-gate-2023-sticky.svg" alt="Sticky Note: Problem 8: Compiler Design (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: Given the grammar:
@@ -911,6 +1186,17 @@ also, students often confuse FIRST and FOLLOW computation rules.
 ```
 
 ### Problem 9: Engineering Mathematics Ã¢â€ â€™ Linear Algebra (GATE 2022)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-handwritten.svg" alt="Handwritten: Problem 9: Engineering Mathematics Ã¢â€ â€™ Linear Algebra (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-diagram.svg" alt="Diagram: Problem 9: Engineering Mathematics Ã¢â€ â€™ Linear Algebra (GATE 2022)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-9-engineering-mathematics-linear-algebra-gate-2022-sticky.svg" alt="Sticky Note: Problem 9: Engineering Mathematics Ã¢â€ â€™ Linear Algebra (GATE 2022)" width="30%">
+</a>
+
 
 ```
 Q: Consider the matrix A = [[3, 1], [1, 3]]. What is the sum of the
@@ -952,6 +1238,17 @@ versus 30 seconds of algebra.
 ```
 
 ### Problem 10: Digital Logic (GATE 2023)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-handwritten.svg" alt="Handwritten: Problem 10: Digital Logic (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-diagram.svg" alt="Diagram: Problem 10: Digital Logic (GATE 2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/problem-10-digital-logic-gate-2023-sticky.svg" alt="Sticky Note: Problem 10: Digital Logic (GATE 2023)" width="30%">
+</a>
+
 
 ```
 Q: How many 2-to-4 line decoders are needed to construct a 4-to-16
@@ -998,6 +1295,17 @@ enable decoder. Always include the top-level decoder.
 ```
 
 ### Common Traps in GATE CS (Summary)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-handwritten.svg" alt="Handwritten: Common Traps in GATE CS (Summary)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-diagram.svg" alt="Diagram: Common Traps in GATE CS (Summary)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/common-traps-in-gate-cs-summary-sticky.svg" alt="Sticky Note: Common Traps in GATE CS (Summary)" width="30%">
+</a>
+
 
 | Trap Type | Example | How to Avoid |
 |-----------|---------|-------------|
@@ -1013,6 +1321,17 @@ enable decoder. Always include the top-level decoder.
 | **CSMA/CD formula** | Forgetting 2ÃƒÆ’Ã¢â‚¬â€� | RTT = 2 ÃƒÆ’Ã¢â‚¬â€� propagation delay |
 
 ### Time Management Tips Per Question Type
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-handwritten.svg" alt="Handwritten: Time Management Tips Per Question Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-diagram.svg" alt="Diagram: Time Management Tips Per Question Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/time-management-tips-per-question-type-sticky.svg" alt="Sticky Note: Time Management Tips Per Question Type" width="30%">
+</a>
+
 
 | Question Type | Suggested Time | Strategy |
 |--------------|---------------|----------|
@@ -1030,6 +1349,17 @@ enable decoder. Always include the top-level decoder.
 ## Resources & Preparation Tips
 
 ### Best Books for Each Subject
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-handwritten.svg" alt="Handwritten: Best Books for Each Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-diagram.svg" alt="Diagram: Best Books for Each Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/best-books-for-each-subject-sticky.svg" alt="Sticky Note: Best Books for Each Subject" width="30%">
+</a>
+
 
 | Subject | Recommended Book | Author | Priority |
 |---------|-----------------|--------|----------|
@@ -1053,6 +1383,17 @@ enable decoder. Always include the top-level decoder.
 - Skip advanced topics that are not in the GATE syllabus (e.g., skip B-trees in CLRS beyond basic operations).
 
 ### Online Resources
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-handwritten.svg" alt="Handwritten: Online Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-diagram.svg" alt="Diagram: Online Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/online-resources-sticky.svg" alt="Sticky Note: Online Resources" width="30%">
+</a>
+
 
 #### NPTEL Courses (Free, IIT-Quality)
 
@@ -1089,6 +1430,17 @@ enable decoder. Always include the top-level decoder.
 | **Previous Year Papers (free)** | Solve all past 10 years Ã¢â€ â€™ best practice | ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ |
 
 ### Formula Sheet Example
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-handwritten.svg" alt="Handwritten: Formula Sheet Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-diagram.svg" alt="Diagram: Formula Sheet Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/formula-sheet-example-sticky.svg" alt="Sticky Note: Formula Sheet Example" width="30%">
+</a>
+
 
 Create compact formula sheets like this for each subject:
 
@@ -1138,6 +1490,17 @@ DISK SCHEDULING:
 ```
 
 ### Last Week Preparation (7 Days Before Exam)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-handwritten.svg" alt="Handwritten: Last Week Preparation (7 Days Before Exam)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-diagram.svg" alt="Diagram: Last Week Preparation (7 Days Before Exam)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-week-preparation-7-days-before-exam-sticky.svg" alt="Sticky Note: Last Week Preparation (7 Days Before Exam)" width="30%">
+</a>
+
 
 #### What to Do
 
@@ -1160,6 +1523,17 @@ DISK SCHEDULING:
 - ÃƒÂ¢Ã‚Â�Ã…â€™ Do not discuss with friends who are also preparing (anxiety multiplies)
 
 ### Exam Day Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-handwritten.svg" alt="Handwritten: Exam Day Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-diagram.svg" alt="Diagram: Exam Day Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-day-strategy-sticky.svg" alt="Sticky Note: Exam Day Strategy" width="30%">
+</a>
+
 
 #### Before the Exam
 
@@ -1216,6 +1590,17 @@ later may solve it in 30 seconds.
 ```
 
 ### PSU Recruitment Strategy (If Applicable)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-handwritten.svg" alt="Handwritten: PSU Recruitment Strategy (If Applicable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-diagram.svg" alt="Diagram: PSU Recruitment Strategy (If Applicable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/psu-recruitment-strategy-if-applicable-sticky.svg" alt="Sticky Note: PSU Recruitment Strategy (If Applicable)" width="30%">
+</a>
+
 
 If you are targeting PSUs (BHEL, ONGC, IOCL, etc.):
 
@@ -1230,6 +1615,17 @@ If you are targeting PSUs (BHEL, ONGC, IOCL, etc.):
 For PSU recruitment, **GATE marks > GATE rank** (since PSUs often have their own cutoff scores). Focus on maximizing your raw marks rather than just rank.
 
 ### Mistakes to Avoid (From Toppers)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-handwritten.svg" alt="Handwritten: Mistakes to Avoid (From Toppers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-diagram.svg" alt="Diagram: Mistakes to Avoid (From Toppers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mistakes-to-avoid-from-toppers-sticky.svg" alt="Sticky Note: Mistakes to Avoid (From Toppers)" width="30%">
+</a>
+
 
 | Mistake | Impact | Solution |
 |---------|--------|----------|
@@ -1243,6 +1639,17 @@ For PSU recruitment, **GATE marks > GATE rank** (since PSUs often have their own
 | **Exam day anxiety** | Performance drop | Simulate exam conditions in last 3 mocks |
 
 ### Final Pep Talk
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-handwritten.svg" alt="Handwritten: Final Pep Talk" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-diagram.svg" alt="Diagram: Final Pep Talk" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/final-pep-talk-sticky.svg" alt="Sticky Note: Final Pep Talk" width="30%">
+</a>
+
 
 ```
 GATE is NOT an IQ test. It is a preparation test.
@@ -1274,6 +1681,17 @@ All the best!
 ## Additional Previous Year Questions (GATE 2020-2025)
 
 ### Data Structures & Algorithms
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-handwritten.svg" alt="Handwritten: Data Structures & Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-diagram.svg" alt="Diagram: Data Structures & Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-sticky.svg" alt="Sticky Note: Data Structures & Algorithms" width="30%">
+</a>
+
 
 #### Problem 11: Time Complexity (GATE 2020)
 
@@ -1577,6 +1995,17 @@ at every level.
 ---
 
 ### Operating Systems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
+</a>
+
 
 #### Problem 17: Banker's Algorithm (GATE 2020)
 
@@ -1913,6 +2342,17 @@ actual data size.
 ---
 
 ### Database Management Systems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-handwritten.svg" alt="Handwritten: Database Management Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-diagram.svg" alt="Diagram: Database Management Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-sticky.svg" alt="Sticky Note: Database Management Systems" width="30%">
+</a>
+
 
 #### Problem 23: SQL Ã¢â€ â€™ Correlated Subquery (GATE 2020)
 
@@ -2196,6 +2636,17 @@ the student and course attributes.
 ---
 
 ### Computer Networks
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-handwritten.svg" alt="Handwritten: Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-diagram.svg" alt="Diagram: Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-sticky.svg" alt="Sticky Note: Computer Networks" width="30%">
+</a>
+
 
 #### Problem 28: Subnetting (GATE 2020)
 
@@ -2421,6 +2872,17 @@ for HTTP/1.1 persistent connections unless stated otherwise.
 ---
 
 ### Theory of Computation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-handwritten.svg" alt="Handwritten: Theory of Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-diagram.svg" alt="Diagram: Theory of Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-sticky.svg" alt="Sticky Note: Theory of Computation" width="30%">
+</a>
+
 
 #### Problem 33: DFA Minimization (GATE 2020)
 
@@ -2737,6 +3199,17 @@ are undecidable.
 ---
 
 ### Compiler Design
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-handwritten.svg" alt="Handwritten: Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-diagram.svg" alt="Diagram: Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-sticky.svg" alt="Sticky Note: Compiler Design" width="30%">
+</a>
+
 
 #### Problem 37: LL(1) Parsing Table (GATE 2020)
 
@@ -2918,6 +3391,17 @@ recursive part (ÃƒÅ½Ã‚Â±) comes in the new symbol's production.
 ---
 
 ### Digital Logic
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-handwritten.svg" alt="Handwritten: Digital Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-diagram.svg" alt="Diagram: Digital Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-sticky.svg" alt="Sticky Note: Digital Logic" width="30%">
+</a>
+
 
 #### Problem 41: K-Map Simplification (GATE 2020)
 
@@ -3144,6 +3628,17 @@ Each data input connects directly; substitute and simplify.
 ---
 
 ### Discrete Mathematics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-handwritten.svg" alt="Handwritten: Discrete Mathematics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-diagram.svg" alt="Diagram: Discrete Mathematics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-sticky.svg" alt="Sticky Note: Discrete Mathematics" width="30%">
+</a>
+
 
 #### Problem 44: Graph Theory Ã¢â€ â€™ Chromatic Number (GATE 2020)
 
@@ -3320,6 +3815,17 @@ catch this instantly.
 ---
 
 ### Linear Algebra & Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-handwritten.svg" alt="Handwritten: Linear Algebra & Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-diagram.svg" alt="Diagram: Linear Algebra & Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-calculus-sticky.svg" alt="Sticky Note: Linear Algebra & Calculus" width="30%">
+</a>
+
 
 #### Problem 48: System of Linear Equations (GATE 2020)
 
@@ -3487,10 +3993,32 @@ A must be invertible (no zero eigenvalues).
 ## Recommended Books & Resources
 
 ### Comprehensive Book References for Each GATE CS Subject
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-handwritten.svg" alt="Handwritten: Comprehensive Book References for Each GATE CS Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-diagram.svg" alt="Diagram: Comprehensive Book References for Each GATE CS Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/comprehensive-book-references-for-each-gate-cs-subject-sticky.svg" alt="Sticky Note: Comprehensive Book References for Each GATE CS Subject" width="30%">
+</a>
+
 
 This section provides detailed chapter-wise book references for systematic GATE preparation. For each subject, the recommended reading order, specific chapters, and problem-solving focus areas are listed.
 
 ### Data Structures & Algorithms
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-handwritten.svg" alt="Handwritten: Data Structures & Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-diagram.svg" alt="Diagram: Data Structures & Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-sticky.svg" alt="Sticky Note: Data Structures & Algorithms" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3500,6 +4028,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Start with Karumanchi for quick concept coverage and problem practice. Use CLRS for deep understanding of complex topics (DP, Graph algorithms, NP-Completeness). Focus on Chapters 2-6, 10-12, 15-16, 22-25 from CLRS for GATE. Skip amortized analysis, B-trees, Fibonacci heaps, and advanced data structures not in GATE syllabus.
 
 ### Operating Systems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3509,6 +4048,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Silberschatz Ch 3-11 cover 100% of the GATE OS syllabus. Focus on: scheduling algorithms (numericals), synchronization problems (semaphore coding questions), deadlock (banker's algorithm), memory management (paging, segmentation, TLB), and file systems (inode, disk scheduling). Tanenbaum provides alternative explanations for tough topics. Solve all numericals from both books' exercise sections.
 
 ### Database Management Systems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-handwritten.svg" alt="Handwritten: Database Management Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-diagram.svg" alt="Diagram: Database Management Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-sticky.svg" alt="Sticky Note: Database Management Systems" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3518,6 +4068,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Korth Ch 2-7 for conceptual design and SQL; Ch 14-16 for transaction theory (critical for GATE). Practice: 50+ SQL queries covering GROUP BY, HAVING, correlated subqueries, nested queries. Normalization: solve problems for all normal forms (1NF through BCNF, 4NF). Transaction: practice conflict/view serializability, precedence graphs, lock-based protocols (2PL, timestamp ordering).
 
 ### Computer Networks
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-handwritten.svg" alt="Handwritten: Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-diagram.svg" alt="Diagram: Computer Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-sticky.svg" alt="Sticky Note: Computer Networks" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3527,6 +4088,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Kurose is the primary GATE resource. Focus on: Ch 2 (HTTP, DNS Ã¢â€ â€™ application concepts), Ch 3 (TCP congestion control, flow control Ã¢â€ â€™ numerical questions), Ch 4 (subnetting, routing algorithms, IPv4 Ã¢â€ â€™ NAT questions), Ch 5 (CSMA/CD, Ethernet Ã¢â€ â€™ formula-based questions). Tanenbaum supplements with deeper coverage of CRC, error detection, and network hardware.
 
 ### Theory of Computation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-handwritten.svg" alt="Handwritten: Theory of Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-diagram.svg" alt="Diagram: Theory of Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-sticky.svg" alt="Sticky Note: Theory of Computation" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3536,6 +4108,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Focus on Hopcroft/Ullman Ch 2-6 for GATE. Topic-wise: Regular languages (DFA minimization, pumping lemma Ã¢â€ â€™ 1-2 questions), CFL/PDA (PDA design, closure properties, pumping lemma for CFL Ã¢â€ â€™ 1-2 questions), Turing machines (design, variants Ã¢â€ â€™ 1 question), Undecidability (Rice's theorem, reductions Ã¢â€ â€™ 1 question). Sipser provides clearer explanations for undecidability proofs.
 
 ### Compiler Design
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-handwritten.svg" alt="Handwritten: Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-diagram.svg" alt="Diagram: Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-sticky.svg" alt="Sticky Note: Compiler Design" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3544,6 +4127,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Only 4-5 marks in GATE. Focus on: parsing (FIRST/FOLLOW, LL(1) parse tables, LR(0)/SLR(1)/LR(1) parsing Ã¢â€ â€™ 1-2 questions), SDT (synthesized/inherited attributes, dependency graphs Ã¢â€ â€™ 1 question), intermediate code (three-address code, DAG representation Ã¢â€ â€™ 1 question), symbol table and runtime (activation records Ã¢â€ â€™ potential question). Do NOT deep-dive into optimization or code generation.
 
 ### Digital Logic
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-handwritten.svg" alt="Handwritten: Digital Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-diagram.svg" alt="Diagram: Digital Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-sticky.svg" alt="Sticky Note: Digital Logic" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3552,6 +4146,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Only 4-5 marks. Focus on: Boolean algebra simplification (K-maps, Quine-McCluskey), combinational circuits (MUX, decoder, encoder design Ã¢â€ â€™ 1 question), sequential circuits (flip-flop conversions, counter design Ã¢â€ â€™ 1-2 questions), number systems and conversions. Skip PLDs, ASM charts, and advanced sequential design.
 
 ### Discrete Mathematics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-handwritten.svg" alt="Handwritten: Discrete Mathematics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-diagram.svg" alt="Diagram: Discrete Mathematics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-sticky.svg" alt="Sticky Note: Discrete Mathematics" width="30%">
+</a>
+
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
@@ -3561,6 +4166,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 **Strategy**: Rosen is the primary text. Focus on: Propositional logic (tautologies, equivalences Ã¢â€ â€™ 1 question), Set theory (power sets, cardinality Ã¢â€ â€™ 1 question), Combinatorics (permutations, combinations, inclusion-exclusion Ã¢â€ â€™ 1-2 questions), Graph theory (spanning trees, coloring, Euler/Hamiltonian Ã¢â€ â€™ 1-2 questions), Group theory (properties, subgroups Ã¢â€ â€™ 1 question). Grimaldi supplements for group theory depth.
 
 ### General GATE Preparation Resources
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-handwritten.svg" alt="Handwritten: General GATE Preparation Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-diagram.svg" alt="Diagram: General GATE Preparation Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-gate-preparation-resources-sticky.svg" alt="Sticky Note: General GATE Preparation Resources" width="30%">
+</a>
+
 
 | Resource | Publisher | Description | Usage |
 |----------|-----------|-------------|-------|
@@ -3570,6 +4186,17 @@ This section provides detailed chapter-wise book references for systematic GATE 
 | **GATE CS: Topic-wise Previous Year Questions** | Made Easy | Subject-wise and topic-wise PYQ organization | Systematic subject-by-subject PYQ solving |
 
 ### Reading Workflow for Each Subject
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-handwritten.svg" alt="Handwritten: Reading Workflow for Each Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-diagram.svg" alt="Diagram: Reading Workflow for Each Subject" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/reading-workflow-for-each-subject-sticky.svg" alt="Sticky Note: Reading Workflow for Each Subject" width="30%">
+</a>
+
 
 ```
 Step 1: Review GATE syllabus for the subject (2 min)
@@ -3587,6 +4214,17 @@ Step 6: After 1 week, solve 5 more PYQs for retention (30 min)
 ## Mock Test Blueprints
 
 ### Blueprint 1: Full-Length Mock Test (Standard Distribution)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-handwritten.svg" alt="Handwritten: Blueprint 1: Full-Length Mock Test (Standard Distribution)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-diagram.svg" alt="Diagram: Blueprint 1: Full-Length Mock Test (Standard Distribution)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-1-full-length-mock-test-standard-distribution-sticky.svg" alt="Sticky Note: Blueprint 1: Full-Length Mock Test (Standard Distribution)" width="30%">
+</a>
+
 
 This mock follows the average subject weightage from 2020-2025 GATE CS papers.
 
@@ -3639,6 +4277,17 @@ This mock follows the average subject weightage from 2020-2025 GATE CS papers.
 ---
 
 ### Blueprint 2: Subject-Focused Mock (DSA + CS Theory Heavy)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-handwritten.svg" alt="Handwritten: Blueprint 2: Subject-Focused Mock (DSA + CS Theory Heavy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-diagram.svg" alt="Diagram: Blueprint 2: Subject-Focused Mock (DSA + CS Theory Heavy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-2-subject-focused-mock-dsa-cs-theory-heavy-sticky.svg" alt="Sticky Note: Blueprint 2: Subject-Focused Mock (DSA + CS Theory Heavy)" width="30%">
+</a>
+
 
 This mock emphasizes core Computer Science subjects (DSA, OS, DBMS, TOC, CN) while reducing Engineering Mathematics and Digital Logic weightage.
 
@@ -3689,6 +4338,17 @@ This mock emphasizes core Computer Science subjects (DSA, OS, DBMS, TOC, CN) whi
 ---
 
 ### Blueprint 3: Full-Simulation Mock (GATE 2025 Pattern)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-handwritten.svg" alt="Handwritten: Blueprint 3: Full-Simulation Mock (GATE 2025 Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-diagram.svg" alt="Diagram: Blueprint 3: Full-Simulation Mock (GATE 2025 Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/blueprint-3-full-simulation-mock-gate-2025-pattern-sticky.svg" alt="Sticky Note: Blueprint 3: Full-Simulation Mock (GATE 2025 Pattern)" width="30%">
+</a>
+
 
 This mock exactly mirrors the latest GATE 2025 pattern with 65 questions and includes the higher MSQ count seen in recent papers.
 
@@ -3775,6 +4435,17 @@ Progressive targets:
 ```
 
 ### Mock Test Analysis Framework
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-handwritten.svg" alt="Handwritten: Mock Test Analysis Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-diagram.svg" alt="Diagram: Mock Test Analysis Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/mock-test-analysis-framework-sticky.svg" alt="Sticky Note: Mock Test Analysis Framework" width="30%">
+</a>
+
 
 ```
 After each mock test, fill this template:
@@ -3820,6 +4491,17 @@ Main deterioration area:
 ```
 
 ### Recommended Mock Test Schedule
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-handwritten.svg" alt="Handwritten: Recommended Mock Test Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-diagram.svg" alt="Diagram: Recommended Mock Test Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/recommended-mock-test-schedule-sticky.svg" alt="Sticky Note: Recommended Mock Test Schedule" width="30%">
+</a>
+
 
 | Period | Frequency | Total Mocks | Purpose |
 |--------|:---------:|:-----------:|---------|
@@ -3837,6 +4519,17 @@ Main deterioration area:
 ## Additional Previous Year Questions (GATE 2015-2019)
 
 ### Data Structures & Algorithms (Q51-Q57)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-handwritten.svg" alt="Handwritten: Data Structures & Algorithms (Q51-Q57)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-diagram.svg" alt="Diagram: Data Structures & Algorithms (Q51-Q57)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/data-structures-algorithms-q51-q57-sticky.svg" alt="Sticky Note: Data Structures & Algorithms (Q51-Q57)" width="30%">
+</a>
+
 
 #### Q51 (GATE 2015) Ã¢â€ â€™ Recursion with Static Variable
 
@@ -3957,6 +4650,17 @@ Answer: B
 ---
 
 ### Operating Systems (Q58-Q64)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-handwritten.svg" alt="Handwritten: Operating Systems (Q58-Q64)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-diagram.svg" alt="Diagram: Operating Systems (Q58-Q64)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/operating-systems-q58-q64-sticky.svg" alt="Sticky Note: Operating Systems (Q58-Q64)" width="30%">
+</a>
+
 
 #### Q58 (GATE 2015) Ã¢â€ â€™ Banker's Algorithm
 
@@ -4084,6 +4788,17 @@ Answer: B
 ---
 
 ### Database Management Systems (Q65-Q70)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-handwritten.svg" alt="Handwritten: Database Management Systems (Q65-Q70)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-diagram.svg" alt="Diagram: Database Management Systems (Q65-Q70)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/database-management-systems-q65-q70-sticky.svg" alt="Sticky Note: Database Management Systems (Q65-Q70)" width="30%">
+</a>
+
 
 #### Q65 (GATE 2015) Ã¢â€ â€™ Candidate Keys
 
@@ -4187,6 +4902,17 @@ Answer: A
 ---
 
 ### Computer Networks (Q71-Q76)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-handwritten.svg" alt="Handwritten: Computer Networks (Q71-Q76)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-diagram.svg" alt="Diagram: Computer Networks (Q71-Q76)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/computer-networks-q71-q76-sticky.svg" alt="Sticky Note: Computer Networks (Q71-Q76)" width="30%">
+</a>
+
 
 #### Q71 (GATE 2015) Ã¢â€ â€™ Classful IP: Class C
 
@@ -4272,6 +4998,17 @@ Answer: D
 ---
 
 ### Theory of Computation (Q77-Q81)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-handwritten.svg" alt="Handwritten: Theory of Computation (Q77-Q81)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-diagram.svg" alt="Diagram: Theory of Computation (Q77-Q81)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/theory-of-computation-q77-q81-sticky.svg" alt="Sticky Note: Theory of Computation (Q77-Q81)" width="30%">
+</a>
+
 
 #### Q77 (GATE 2015) Ã¢â€ â€™ Regular Language Identification
 
@@ -4354,6 +5091,17 @@ Answer: D
 ---
 
 ### Compiler Design (Q82-Q86)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-handwritten.svg" alt="Handwritten: Compiler Design (Q82-Q86)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-diagram.svg" alt="Diagram: Compiler Design (Q82-Q86)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/compiler-design-q82-q86-sticky.svg" alt="Sticky Note: Compiler Design (Q82-Q86)" width="30%">
+</a>
+
 
 #### Q82 (GATE 2015) Ã¢â€ â€™ Lexical Analysis
 
@@ -4422,6 +5170,17 @@ Answer: A
 
 
 ### Digital Logic (Q87-Q90)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-handwritten.svg" alt="Handwritten: Digital Logic (Q87-Q90)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-diagram.svg" alt="Diagram: Digital Logic (Q87-Q90)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/digital-logic-q87-q90-sticky.svg" alt="Sticky Note: Digital Logic (Q87-Q90)" width="30%">
+</a>
+
 
 #### Q87 (GATE 2015) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â� XOR Using NAND
 
@@ -4482,6 +5241,17 @@ Answer: D
 ---
 
 ### Discrete Mathematics (Q91-Q95)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-handwritten.svg" alt="Handwritten: Discrete Mathematics (Q91-Q95)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-diagram.svg" alt="Diagram: Discrete Mathematics (Q91-Q95)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/discrete-mathematics-q91-q95-sticky.svg" alt="Sticky Note: Discrete Mathematics (Q91-Q95)" width="30%">
+</a>
+
 
 #### Q91 (GATE 2015) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â� Counting: Balls into Boxes
 
@@ -4551,6 +5321,17 @@ Answer: C
 ---
 
 ### Linear Algebra (Q96-Q98)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-handwritten.svg" alt="Handwritten: Linear Algebra (Q96-Q98)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-diagram.svg" alt="Diagram: Linear Algebra (Q96-Q98)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/linear-algebra-q96-q98-sticky.svg" alt="Sticky Note: Linear Algebra (Q96-Q98)" width="30%">
+</a>
+
 
 #### Q96 (GATE 2015) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â� Matrix Rank
 
@@ -4589,6 +5370,17 @@ Answer: B
 ---
 
 ### General Aptitude (Q99-Q100)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-handwritten.svg" alt="Handwritten: General Aptitude (Q99-Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-diagram.svg" alt="Diagram: General Aptitude (Q99-Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/general-aptitude-q99-q100-sticky.svg" alt="Sticky Note: General Aptitude (Q99-Q100)" width="30%">
+</a>
+
 
 #### Q99 (GATE 2015) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â� Speed Conversion
 
@@ -4622,6 +5414,17 @@ Answer: C
 ## Subject-Wise Trap Analysis & Final Revision
 
 ### Subject-Specific Traps (30 Traps)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-handwritten.svg" alt="Handwritten: Subject-Specific Traps (30 Traps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-diagram.svg" alt="Diagram: Subject-Specific Traps (30 Traps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/subject-specific-traps-30-traps-sticky.svg" alt="Sticky Note: Subject-Specific Traps (30 Traps)" width="30%">
+</a>
+
 
 #### DS & Algorithms (4 Traps)
 
@@ -4795,6 +5598,17 @@ Answer: C
 ---
 
 ### Last 30-Day Revision Calendar
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-handwritten.svg" alt="Handwritten: Last 30-Day Revision Calendar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-diagram.svg" alt="Diagram: Last 30-Day Revision Calendar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/last-30-day-revision-calendar-sticky.svg" alt="Sticky Note: Last 30-Day Revision Calendar" width="30%">
+</a>
+
 
 | Day | Focus Area | Activities |
 |:---:|------------|-----------|
@@ -4831,6 +5645,17 @@ Answer: C
 
 
 ### Exam Hall Strategy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-handwritten.svg" alt="Handwritten: Exam Hall Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-diagram.svg" alt="Diagram: Exam Hall Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/exam-hall-strategy-sticky.svg" alt="Sticky Note: Exam Hall Strategy" width="30%">
+</a>
+
 
 #### Order of Attempting Sections
 
@@ -4872,6 +5697,17 @@ Answer: C
 ---
 
 ### Negative Marking Optimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-handwritten.svg" alt="Handwritten: Negative Marking Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-diagram.svg" alt="Diagram: Negative Marking Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/negative-marking-optimization-sticky.svg" alt="Sticky Note: Negative Marking Optimization" width="30%">
+</a>
+
 
 #### When to GUESS
 
@@ -4920,6 +5756,17 @@ Let p = probability of correct, V = marks for correct, P = penalty for wrong.
 ---
 
 ### Quick Formula Reference Sheet
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-handwritten.svg" alt="Handwritten: Quick Formula Reference Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-diagram.svg" alt="Diagram: Quick Formula Reference Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/05-gate-strategy/quick-formula-reference-sheet-sticky.svg" alt="Sticky Note: Quick Formula Reference Sheet" width="30%">
+</a>
+
 
 #### Data Structures & Algorithms
 

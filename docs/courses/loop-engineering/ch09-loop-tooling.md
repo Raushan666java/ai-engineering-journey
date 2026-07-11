@@ -20,6 +20,17 @@ Production agent loops require more than correct logic — they need **tooling**
 
 ### 9.1 Durable Execution
 
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" alt="Handwritten: 9.1 Durable Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" alt="Diagram: 9.1 Durable Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" alt="Sticky Note: 9.1 Durable Execution" width="30%">
+</a>
+
+
 Agent loops run for unpredictable durations. A single coding task may require dozens of LLM calls, each consuming seconds. If the process crashes mid-task, all progress is lost. **Durable execution** guarantees that a workflow survives restarts.
 
 **State machines.** A loop is a state machine where each iteration is a transition. Durable execution records each transition to persistent storage. On restart, the engine reads the last committed state and resumes from there.
@@ -36,6 +47,17 @@ Step 3: deploy     → compensation: rollbackDeploy  ← FAIL
 **Temporal-style workflows.** Temporal.io popularized the idea of writing workflows as regular async functions whose execution is transparently recorded. The SDK replays the function on worker restart, skipping already-completed activities. While we implement a simplified version here, the same principle applies: make side effects idempotent and log every transition.
 
 ### 9.2 Checkpoint / Restore
+
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" alt="Handwritten: 9.2 Checkpoint / Restore" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" alt="Diagram: 9.2 Checkpoint / Restore" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" alt="Sticky Note: 9.2 Checkpoint / Restore" width="30%">
+</a>
+
 
 Checkpointing saves the complete agent context — conversation history, tool results, accumulated state — to durable storage. On recovery, the agent loads the checkpoint and continues without losing context.
 
@@ -54,6 +76,17 @@ Checkpointing saves the complete agent context — conversation history, tool re
 **Restore strategy.** On startup, check for an active checkpoint. If one exists, hydrate the agent and continue from the last completed step. If the last step was a tool call whose result was never received, the recovery logic must decide whether to retry the call or skip it (idempotency keys help here).
 
 ### 9.3 Rate Limiting
+
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" alt="Handwritten: 9.3 Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" alt="Diagram: 9.3 Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" alt="Sticky Note: 9.3 Rate Limiting" width="30%">
+</a>
+
 
 Agent loops can burn through tokens and money at alarming speed. A runaway loop that costs $0.50 per iteration can accumulate hundreds of dollars in minutes. Rate limiting provides three orthogonal controls:
 
@@ -77,6 +110,17 @@ Agent loops can burn through tokens and money at alarming speed. A runaway loop 
 
 ### 9.4 Observability
 
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" alt="Handwritten: 9.4 Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" alt="Diagram: 9.4 Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" alt="Sticky Note: 9.4 Observability" width="30%">
+</a>
+
+
 Debugging an agent loop is harder than debugging a synchronous program because the control flow involves LLM calls, tool execution, and branching decisions. **Structured tracing** captures every step as a span with:
 
 - **Step type:** `plan`, `act`, `observe`, `critique`, `gate`
@@ -93,6 +137,17 @@ Debugging an agent loop is harder than debugging a synchronous program because t
 - Did the agent ever retry? Why?
 
 ### 9.5 Loop Testing
+
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" alt="Handwritten: 9.5 Loop Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" alt="Diagram: 9.5 Loop Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" alt="Sticky Note: 9.5 Loop Testing" width="30%">
+</a>
+
 
 Agent loops are stochastic — the same input can produce different outputs. Testing requires strategies beyond simple assertions.
 

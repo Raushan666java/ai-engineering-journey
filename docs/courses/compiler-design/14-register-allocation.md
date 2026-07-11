@@ -44,6 +44,17 @@ flowchart TB
 
 ### The Register Allocation Problem
 
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" alt="Handwritten: The Register Allocation Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" alt="Diagram: The Register Allocation Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" alt="Sticky Note: The Register Allocation Problem" width="30%">
+</a>
+
+
 Register allocation is one of the most critical optimization phases in a compiler. Accessing a value from a register is typically 10?100? faster than accessing it from memory (with L1 cache access ~1 ns vs. DRAM access ~100 ns on modern hardware). The goal is to maximize the number of values held in registers at every program point, minimizing loads from and stores to memory.
 
 **Allocation** decides which live ranges reside in registers and which are **spilled** (forced to memory). **Assignment** determines which specific register each allocated live range occupies. These are traditionally solved together via graph coloring.
@@ -61,6 +72,17 @@ Find: A mapping color: V ? {1, ..., K} such that if (u, v) ? E then color(u) ? c
 A K-coloring corresponds to an assignment where each live range gets a register and interfering live ranges get distinct registers. If no K-coloring exists, some live ranges must be spilled.
 
 ### Live Ranges and Interference
+
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" alt="Handwritten: Live Ranges and Interference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" alt="Diagram: Live Ranges and Interference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" alt="Sticky Note: Live Ranges and Interference" width="30%">
+</a>
+
 
 A **live range** is the program region where a value is alive. It begins at a value's definition point and extends through all program points where the value may be used, following control-flow paths, until the last use. A single source-level variable may have multiple disjoint live ranges if it is assigned in multiple places.
 
@@ -104,6 +126,17 @@ Certain registers are **pre-colored** due to hardware constraints or calling con
 Pre-colored live ranges have fixed colors in the graph. The allocator must treat them as already assigned; no other live range may take their color if they interfere.
 
 ### Chaitin's Algorithm
+
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" alt="Handwritten: Chaitin's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" alt="Diagram: Chaitin's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" alt="Sticky Note: Chaitin's Algorithm" width="30%">
+</a>
+
 
 Chaitin's graph-coloring allocator (1982) operates in four phases:
 
@@ -160,6 +193,17 @@ If no spills were confirmed, allocation is complete.
 
 ### The Briggs Improvement
 
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" alt="Handwritten: The Briggs Improvement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" alt="Diagram: The Briggs Improvement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" alt="Sticky Note: The Briggs Improvement" width="30%">
+</a>
+
+
 Chaitin's algorithm makes a pessimistic spill decision during Simplify: it spills a node as soon as all remaining nodes have degree = K. The **Briggs improvement** (Briggs et al., 1989) uses **optimistic coloring**: during Simplify, push **all** nodes onto the stack, including those with degree = K. The spill decision is deferred to Select:
 
 - During Simplify: push every node, regardless of degree. (Nodes with degree = K are optimistically assumed to be colorable.)
@@ -183,6 +227,17 @@ Result: 1 spilled instead of 3
 ```
 
 ### Coalescing
+
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" alt="Handwritten: Coalescing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" alt="Diagram: Coalescing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" alt="Sticky Note: Coalescing" width="30%">
+</a>
+
 
 **Coalescing** eliminates copy instructions (`x = y`) by merging the live ranges of the source and destination into a single live range. If they share a register, the copy becomes a no-op and can be removed.
 
@@ -216,6 +271,17 @@ function canMerge_George(x, y, K):
 Production allocators (e.g., LLVM's `GreedyRegAlloc`) use iterative coalescing that applies both criteria repeatedly until no more safe merges are possible.
 
 ### Spill-Cost Optimization
+
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" alt="Handwritten: Spill-Cost Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" alt="Diagram: Spill-Cost Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" alt="Sticky Note: Spill-Cost Optimization" width="30%">
+</a>
+
 
 #### Weighted Spill Costs
 
@@ -253,6 +319,17 @@ The allocator computes a **rematerialization cost**. If it is less than the spil
 
 ### Modern Production Allocators
 
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" alt="Handwritten: Modern Production Allocators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" alt="Diagram: Modern Production Allocators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" alt="Sticky Note: Modern Production Allocators" width="30%">
+</a>
+
+
 #### LLVM's Greedy Register Allocator
 
 LLVM's default allocator (since LLVM 3.0) extends the Briggs framework with:
@@ -276,6 +353,17 @@ Oracle HotSpot's C2 compiler uses a variant of the Chaitin-Briggs algorithm with
 Go uses a simpler approach: a **linear-scan allocator** that processes live ranges in their start-order, assigning registers greedily and spilling when none are available. Linear scan is O(N log N) vs. graph coloring's O(N?), and for small-to-medium functions it produces competitive code. Go also applies coalescing during the SSA-elimination phase.
 
 ### Putting It All Together ? TypeScript Implementation
+
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
+</a>
+
 
 ```typescript
 // ============================================================

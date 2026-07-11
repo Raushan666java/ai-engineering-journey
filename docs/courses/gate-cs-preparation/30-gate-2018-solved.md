@@ -46,6 +46,17 @@
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+
 If 7x + 3y = 31 and 3x + 7y = 29, what is x + y?
 
 (A) 4  
@@ -71,6 +82,17 @@ console.log(sumVariables(7, 3, 31, 3, 7, 29)); // 6
 </details>
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+
 The value of (0.1 Ãƒâ€” 0.01 Ãƒâ€” 0.001) / (0.2 Ãƒâ€” 0.002 Ãƒâ€” 0.0002) is:
 
 (A) 1.25  
@@ -95,6 +117,17 @@ Hmm, 12.5. Let me recalculate: (0.1Ãƒâ€”0.01Ãƒâ€”0.001) = 0.000001
 </details>
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+
 Choose the CORRECTLY punctuated sentence:
 
 (A) Where are you going?  
@@ -113,6 +146,17 @@ A question must end with a question mark.
 </details>
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+
 If APPLE is coded as 50, MANGO is coded as 57, what is ORANGE coded as?
 
 (A) 60  
@@ -192,6 +236,17 @@ Answer = (A) 60. I'll explain the pattern as sum of alphabet positions.
 </details>
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+
 The difference between the largest 4-digit number and smallest 4-digit number using digits 5,6,7,8 (without repetition) is:
 
 (A) 3087  
@@ -210,6 +265,17 @@ Largest = 8765, Smallest = 5678. Difference = 8765 - 5678 = 3087.
 </details>
 
 ### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+
 A sum of money becomes 3 times in 10 years at simple interest. The rate of interest is:
 
 (A) 10%  
@@ -235,6 +301,17 @@ console.log(siRate(3, 10)); // 20%
 </details>
 
 ### Q7 [2 Marks] Ã¢â‚¬â€� Data Interpretation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+</a>
+
 The median of 2, 5, 3, 8, 4, 7, 6 is:
 
 (A) 4  
@@ -253,6 +330,17 @@ Sorted: 2, 3, 4, 5, 6, 7, 8. n=7 (odd). Median = 4th term = 5.
 </details>
 
 ### Q8 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+</a>
+
 Six friends sit in a circle. A is between B and C. D is opposite A. E is to the immediate right of A. Who is to the left of C?
 
 (A) B  
@@ -273,6 +361,17 @@ Position: B-A-E-?-D-?-C-B. So left of C is the person between D and C. That must
 </details>
 
 ### Q9 [2 Marks] Ã¢â‚¬â€� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+</a>
+
 The speed of a boat in still water is 15 km/h. It takes 6 hours to go 72 km downstream and return. The stream speed is:
 
 (A) 3 km/h  
@@ -372,6 +471,17 @@ But I initially said the boat speed is 15 km/h. Let me change the question to us
 </details>
 
 ### Q10 [2 Marks] Ã¢â‚¬â€� Verbal Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+</a>
+
 Select the word that best fills the blank: "The scientist's ________ approach to the problem was praised by her colleagues."
 
 (A) Haphazard  
@@ -394,6 +504,17 @@ Select the word that best fills the blank: "The scientist's ________ approach to
 ## Section B: Technical (85 marks)
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 If f(x) = xÃ‚Â² + 3x + 2, the value of f(1) is:
 
 (A) 4  
@@ -412,6 +533,17 @@ f(1) = 1Ã‚Â² + 3(1) + 2 = 1 + 3 + 2 = 6.
 </details>
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 AÃ¢Ë†Â©(BÃ¢Ë†ÂªC) = (AÃ¢Ë†Â©B)Ã¢Ë†Âª(AÃ¢Ë†Â©C) is known as:
 
 (A) De Morgan's law  
@@ -430,6 +562,17 @@ This is the distributive law: intersection distributes over union.
 </details>
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 The number of elements in a complete binary tree of height 3 (root at level 0) is:
 
 (A) 7  
@@ -448,6 +591,17 @@ Complete binary tree of height 3 has all levels 0,1,2,3 full: 2Ã¢Â�Â°+2Ã
 </details>
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 Which of the following is a state management technique for processes?
 
 (A) PCB (Process Control Block)  
@@ -466,6 +620,17 @@ The Process Control Block (PCB) stores all information about a process, includin
 </details>
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 Which of these is NOT a network topology?
 
 (A) Star  
@@ -484,6 +649,17 @@ Common network topologies: Star, Ring, Bus, Mesh, Tree. There is no "Triangle" t
 </details>
 
 ### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 The full form of DDL is:
 
 (A) Data Definition Language  
@@ -502,6 +678,17 @@ DDL includes CREATE, ALTER, DROP statements used to define database schema.
 </details>
 
 ### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 Which automaton has memory in the form of a stack?
 
 (A) DFA  
@@ -520,6 +707,17 @@ Pushdown Automaton (PDA) has a stack as auxiliary memory, giving it more power t
 </details>
 
 ### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 The ALU performs:
 
 (A) Arithmetic operations  
@@ -538,6 +736,17 @@ ALU (Arithmetic Logic Unit) performs both arithmetic (add, subtract) and logic (
 </details>
 
 ### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 A symbol table is used to store:
 
 (A) Source code  
@@ -556,6 +765,17 @@ A symbol table stores identifiers (variable names, function names), their types,
 </details>
 
 ### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+</a>
+
 The output of an OR gate with inputs 0 and 1 is:
 
 (A) 0  
@@ -574,6 +794,17 @@ OR: 0+1 = 1. AND: 0Ãƒâ€”1 = 0.
 </details>
 
 ### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The complexity of the following function is:
 
 ```
@@ -599,6 +830,17 @@ i doubles each iteration: 1, 2, 4, 8, ..., n. Number of iterations = logÃ¢â�
 </details>
 
 ### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The kernel that combines monolithic and microkernel features is called:
 
 (A) Exokernel  
@@ -617,6 +859,17 @@ Hybrid kernels (like Windows NT) combine the speed of monolithic kernels with th
 </details>
 
 ### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 In the OSI model, error detection and correction is handled at which layer?
 
 (A) Transport layer  
@@ -635,6 +888,17 @@ Error detection/correction occurs at the Data Link layer (CRC) and Transport lay
 </details>
 
 ### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The number of levels in a B+ tree index affects:
 
 (A) Query speed  
@@ -653,6 +917,17 @@ Fewer levels mean faster queries (fewer disk accesses) but require more branchin
 </details>
 
 ### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 For a DFA, the initial state is:
 
 (A) Always a final state  
@@ -675,6 +950,17 @@ Let me choose (D) as the answer since (C) talks about final state which is not a
 </details>
 
 ### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The intermediate representation used by GCC is:
 
 (A) RTL (Register Transfer Language)  
@@ -693,6 +979,17 @@ GCC uses RTL (Register Transfer Language) as its intermediate representation. LL
 </details>
 
 ### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-digital-logic-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The output of a 4-bit magnitude comparator is high when:
 
 (A) A > B  
@@ -711,6 +1008,17 @@ A magnitude comparator has three outputs: greater-than, less-than, and equal.
 </details>
 
 ### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The time between placing a read request and receiving the data is called:
 
 (A) Access time  
@@ -729,6 +1037,17 @@ Latency (or access latency) is the time from request to data arrival. Bandwidth 
 </details>
 
 ### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 Which of the following is a divide-and-conquer algorithm?
 
 (A) Quick Sort  
@@ -747,6 +1066,17 @@ Quick Sort (and Merge Sort) are divide-and-conquer algorithms. Insertion, Select
 </details>
 
 ### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/1-mark-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The number of leaves in a tree with n vertices and maximum degree 3 is at least:
 
 (A) 2  
@@ -792,6 +1122,17 @@ Hmm, let me drop this question and use a simpler one instead.
 </details>
 
 ### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The value of Ã¢Ë†Â«Ã¢â€šâ‚¬^Ã�â‚¬ sin(x) dx is:
 
 (A) 0  
@@ -810,6 +1151,17 @@ The value of Ã¢Ë†Â«Ã¢â€šâ‚¬^Ã�â‚¬ sin(x) dx is:
 </details>
 
 ### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 Which of the following is true about a binary heap?
 
 (A) It is always a complete binary tree  
@@ -830,6 +1182,17 @@ Wait, both (A) and (C) are true. So (D) would be the answer if both are true. Le
 </details>
 
 ### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The Buddy System is used for:
 
 (A) CPU scheduling  
@@ -848,6 +1211,17 @@ The Buddy System allocates memory from a fixed-size segment by dividing into pow
 </details>
 
 ### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 In SQL, the query SELECT * FROM student WHERE name LIKE 'A%' returns:
 
 (A) Students whose name contains 'A'  
@@ -866,6 +1240,17 @@ In SQL, the query SELECT * FROM student WHERE name LIKE 'A%' returns:
 </details>
 
 ### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The port number for SMTP is:
 
 (A) 21  
@@ -884,6 +1269,17 @@ SMTP (Simple Mail Transfer Protocol) uses port 25. FTP uses 21. Telnet uses 23. 
 </details>
 
 ### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The time taken to delete an element from a linked list given the pointer to the node is:
 
 (A) O(1)  
@@ -904,6 +1300,17 @@ In GATE, the standard answer: deletion from a linked list given node pointer is 
 </details>
 
 ### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 A counting semaphore S is initialized to 2. After 5 wait() and 3 signal() operations, what is S?
 
 (A) -1  
@@ -922,6 +1329,17 @@ S = 2 - 5 + 3 = 0.
 </details>
 
 ### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 Which of the following is a valid LR(0) item for the production A Ã¢â€ â€™ aB?
 
 (A) A Ã¢â€ â€™ .aB  
@@ -940,6 +1358,17 @@ LR(0) items are productions with a dot at any position: .aB, a.B, aB. All are va
 </details>
 
 ### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 Which of the following is used to connect the CPU to high-speed devices?
 
 (A) DMA controller  
@@ -958,6 +1387,17 @@ PCI Express is a high-speed serial bus for connecting peripheral devices. USB is
 </details>
 
 ### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+</a>
+
 The language L = {0Ã¢Â�Â¿1Ã¢Â�Â¿2Ã¢Â�Â¿ | n Ã¢â€°Â¥ 0} is:
 
 (A) Regular  
@@ -976,6 +1416,17 @@ The language L = {0Ã¢Â�Â¿1Ã¢Â�Â¿2Ã¢Â�Â¿ | n Ã¢â€°Â¥
 </details>
 
 ### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which of the following schedules is conflict serializable?
 S1: R1(A), R2(A), W1(A), W2(A)
 S2: R1(A), W2(A), W1(A), R2(A)
@@ -1033,6 +1484,17 @@ So (D) Neither. Let me fix the answer.
 </details>
 
 ### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The height of an AVL tree with 7 nodes in the best case is:
 
 (A) 1  
@@ -1057,6 +1519,17 @@ If height = number of nodes in longest path, then height = 3. But standard GATE 
 </details>
 
 ### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which protocol is used to obtain an IP address from a MAC address?
 
 (A) ARP  
@@ -1075,6 +1548,17 @@ RARP (Reverse ARP) maps MAC addresses to IP addresses. ARP maps IP to MAC. DHCP 
 </details>
 
 ### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Consider the following snapshot of a system with processes P1, P2 and resources R1 (4 instances), R2 (3 instances). P1 holds (2,1) and needs (3,2). P2 holds (1,1) and needs (2,2). Is the system in a safe state?
 
 (A) Yes, safe  
@@ -1097,6 +1581,17 @@ Safe sequence: P1, P2. System is safe.
 </details>
 
 ### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The read access time of a cache is 1 ns and main memory is 100 ns. If the hit rate is 95%, the average access time is:
 
 (A) 4.95 ns  
@@ -1127,6 +1622,17 @@ That gives (B) 5.95 ns. The question might define EAT as hit Ãƒâ€” cache 
 </details>
 
 ### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 A bag contains 3 red and 5 blue marbles. Two marbles are drawn without replacement. The probability that both are red is:
 
 (A) 3/28  
@@ -1153,6 +1659,17 @@ console.log(probBothRed(3, 5)); // 3/28 Ã¢â€°Ë† 0.107
 </details>
 
 ### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The number of comparisons in the worst case for finding the largest element in an array of size n is:
 
 (A) n - 1  
@@ -1183,6 +1700,17 @@ console.log(maxComparisons([3, 7, 1, 9, 2])); // 4 comparisons
 </details>
 
 ### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 A Turing machine that never moves left is equivalent to:
 
 (A) DFA  
@@ -1201,6 +1729,17 @@ A TM that only moves right never revisits written symbols. It's essentially a re
 </details>
 
 ### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The Boyce-Codd Normal Form (BCNF) is a stronger version of:
 
 (A) 1NF  
@@ -1219,6 +1758,17 @@ BCNF is a stricter version of 3NF. Every BCNF relation is in 3NF, but not vice v
 </details>
 
 ### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which of the following is FALSE about TCP?
 
 (A) Connection-oriented  
@@ -1237,6 +1787,17 @@ TCP is connection-oriented, reliable, and full-duplex, but does NOT support broa
 </details>
 
 ### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 If all edge weights in a graph are distinct, the MST is:
 
 (A) Unique  
@@ -1255,6 +1816,17 @@ If all edge weights are distinct, the Minimum Spanning Tree is unique.
 </details>
 
 ### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The CPU scheduling algorithm that minimizes response time is:
 
 (A) FCFS  
@@ -1273,6 +1845,17 @@ Round Robin provides fair CPU time sharing with low response time due to the tim
 </details>
 
 ### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The number of address lines in a 2KÃƒâ€”8 memory chip is:
 
 (A) 8  
@@ -1298,6 +1881,17 @@ console.log(addressLines(2)); // 11
 </details>
 
 ### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which is true about a complete graph with n vertices?
 
 (A) Has n(n-1)/2 edges  
@@ -1316,6 +1910,17 @@ A complete graph KÃ¢â€šâ„¢ has n(n-1)/2 edges and each vertex has degr
 </details>
 
 ### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which of the following is NOT a type of grammar in the Chomsky hierarchy?
 
 (A) Regular  
@@ -1334,6 +1939,17 @@ The Chomsky hierarchy consists of Type-3 (Regular), Type-2 (CFL), Type-1 (CSL), 
 </details>
 
 ### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which of the following is equivalent to a Deterministic Finite Automaton (DFA)?
 
 (A) NFA  
@@ -1352,6 +1968,17 @@ DFA, NFA, regular expressions, and regular grammars are all equivalent formalism
 </details>
 
 ### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The number of injections (one-to-one functions) from a set of 3 elements to a set of 5 elements is:
 
 (A) 60  
@@ -1380,6 +2007,17 @@ console.log(permutations(5, 3)); // 60
 </details>
 
 ### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The in-order traversal of a BST yields:
 
 (A) Descending order  
@@ -1398,6 +2036,17 @@ Inorder traversal (Left-Root-Right) of a BST visits nodes in ascending (sorted) 
 </details>
 
 ### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The allocation method that supports both sequential and direct access efficiently is:
 
 (A) Contiguous  
@@ -1416,6 +2065,17 @@ Indexed allocation uses an index block containing pointers to data blocks, suppo
 </details>
 
 ### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The view that shows the logical structure of the database is called:
 
 (A) Physical view  
@@ -1434,6 +2094,17 @@ In the three-schema architecture: External (user views), Conceptual (logical str
 </details>
 
 ### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The process of finding the best path for packets in a network is called:
 
 (A) Switching  
@@ -1452,6 +2123,17 @@ Routing is the process of determining the best path. Forwarding is moving packet
 </details>
 
 ### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 Which is true about a hardwired control unit compared to a micro-programmed one?
 
 (A) Faster  
@@ -1470,6 +2152,17 @@ Hardwired control is faster (direct circuit logic) but less flexible. Micro-prog
 </details>
 
 ### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The set of all languages that are accepted by some Turing machine is:
 
 (A) Regular  
@@ -1488,6 +2181,17 @@ The set of languages accepted by a TM is exactly the set of recursively enumerab
 </details>
 
 ### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 The complexity of the subset-sum problem using dynamic programming is:
 
 (A) O(n)  
@@ -1517,6 +2221,17 @@ function subsetSumDP(nums: number[], target: number): boolean {
 </details>
 
 ### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+</a>
+
 A 1-to-4 demultiplexer has how many select lines?
 
 (A) 1  
@@ -1605,13 +2320,46 @@ pie title "Difficulty Distribution - GATE CS 2018"
 
 ### Paper Analysis
 
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
+</a>
+
+
 GATE 2018 Computer Science paper followed the standard format with 65 questions totaling 100 marks. The paper had 10 GA questions (15 marks) and 55 Technical questions (85 marks). For the first time, GATE CS introduced MSQs (Multiple Select Questions) in limited numbers Ã¢â‚¬â€� 5 MSQs were present in the 2018 paper, marking the beginning of this question format. The number of NAT questions was 15. The paper had strong representation from Theory of Computation (10 marks, higher than the typical 8), reflecting a temporary shift in emphasis. Data Structures & Algorithms and Operating Systems continued to dominate with 14 and 12 marks respectively. The GA section had a unique puzzle question that required combinatorial arrangement Ã¢â‚¬â€� a test of logical rather than mathematical ability.
 
 ### Difficulty Trends
 
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
+</a>
+
+
 GATE 2018 had a difficulty distribution of approximately 32% Easy, 48% Medium, and 20% Hard. The paper was considered moderately difficult, comparable to 2017 but slightly harder. Data Structures had a notable question on AVL tree rotations that required identifying the correct sequence among 4 choices Ã¢â‚¬â€� many test-takers selected the wrong rotation type. Operating Systems had a tough question on buddy system memory allocation requiring calculation of fragmentation. Computer Networks introduced a question on SMTP protocol details that caught many off-guard due to its specificity. Computer Architecture had a challenging ALU design question involving carry-lookahead adder fundamentals. The overall impression was that GATE 2018 rewarded deep understanding over superficial knowledge, particularly in theoretical subjects like Theory of Computation and Compiler Design.
 
 ### Key Concepts Tested
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
+</a>
+
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1834,6 +2582,17 @@ Test your understanding of GATE 2018 concepts with these 5 questions.
 - d) BCNF does not consider functional dependencies
 
 ### Answer Key
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/30-gate-2018-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+</a>
+
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

@@ -39,6 +39,17 @@ flowchart LR
 
 ### Service Registry Pattern
 
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-handwritten.svg" alt="Handwritten: Service Registry Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-diagram.svg" alt="Diagram: Service Registry Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/service-registry-pattern-sticky.svg" alt="Sticky Note: Service Registry Pattern" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -62,6 +73,17 @@ Registry -> [10.0.0.1:8080, 10.0.0.2:8080, 10.0.0.3:8080]
 - **Kubernetes Services:** DNS-based registry built into the platform
 
 ### Client-Side vs Server-Side Discovery
+
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-handwritten.svg" alt="Handwritten: Client-Side vs Server-Side Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-diagram.svg" alt="Diagram: Client-Side vs Server-Side Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/client-side-vs-server-side-discovery-sticky.svg" alt="Sticky Note: Client-Side vs Server-Side Discovery" width="30%">
+</a>
+
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -100,6 +122,17 @@ Client <- response
 **Kubernetes Services** use server-side discovery via kube-proxy.
 
 ### ZooKeeper
+
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-handwritten.svg" alt="Handwritten: ZooKeeper" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-diagram.svg" alt="Diagram: ZooKeeper" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/zookeeper-sticky.svg" alt="Sticky Note: ZooKeeper" width="30%">
+</a>
+
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -190,6 +223,17 @@ When the leader fails, its ephemeral znode is deleted, triggering the next in li
 
 ### Etcd
 
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-handwritten.svg" alt="Handwritten: Etcd" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-diagram.svg" alt="Diagram: Etcd" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/etcd-sticky.svg" alt="Sticky Note: Etcd" width="30%">
+</a>
+
+
 Etcd is a strongly consistent, distributed key-value store that uses the Raft consensus protocol. It is the primary coordination store in Kubernetes.
 
 #### Leases
@@ -221,6 +265,17 @@ for event in watch:
 ```
 
 ### Raft Consensus Algorithm
+
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-handwritten.svg" alt="Handwritten: Raft Consensus Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-diagram.svg" alt="Diagram: Raft Consensus Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/raft-consensus-algorithm-sticky.svg" alt="Sticky Note: Raft Consensus Algorithm" width="30%">
+</a>
+
 
 Raft is a consensus algorithm designed for understandability. It breaks consensus into three sub-problems: leader election, log replication, and safety.
 
@@ -308,6 +363,17 @@ Raft guarantees these safety properties:
 
 ### Paxos vs Raft vs Zab
 
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-handwritten.svg" alt="Handwritten: Paxos vs Raft vs Zab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-diagram.svg" alt="Diagram: Paxos vs Raft vs Zab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/paxos-vs-raft-vs-zab-sticky.svg" alt="Sticky Note: Paxos vs Raft vs Zab" width="30%">
+</a>
+
+
 | Aspect | Paxos | Raft | Zab |
 |---|---|---|---|
 | Year | 1998 (published) | 2013 | 2008 (ZooKeeper) |
@@ -325,6 +391,17 @@ Raft guarantees these safety properties:
 - **Paxos** when building on proven implementations (not from scratch)
 
 ### Distributed Locks
+
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-handwritten.svg" alt="Handwritten: Distributed Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-diagram.svg" alt="Diagram: Distributed Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/distributed-locks-sticky.svg" alt="Sticky Note: Distributed Locks" width="30%">
+</a>
+
 
 Distributed locks prevent multiple processes from simultaneously accessing a shared resource.
 
@@ -377,6 +454,17 @@ def update_resource(key, value, fencing_token):
 
 ### Heartbeats and Failure Detection
 
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-handwritten.svg" alt="Handwritten: Heartbeats and Failure Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-diagram.svg" alt="Diagram: Heartbeats and Failure Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/heartbeats-and-failure-detection-sticky.svg" alt="Sticky Note: Heartbeats and Failure Detection" width="30%">
+</a>
+
+
 #### Phi-Accrual Failure Detector
 
 The Phi-accrual failure detector, used in Cassandra and Akka, computes a suspicion level (phi) rather than a binary alive/dead judgment.
@@ -404,6 +492,17 @@ Threshold:
 
 ### SWIM Membership Protocol
 
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-handwritten.svg" alt="Handwritten: SWIM Membership Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-diagram.svg" alt="Diagram: SWIM Membership Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/swim-membership-protocol-sticky.svg" alt="Sticky Note: SWIM Membership Protocol" width="30%">
+</a>
+
+
 SWIM (Scalable Weakly-consistent Infection-style Process Group Membership Protocol) provides failure detection and membership dissemination.
 
 **Two components:**
@@ -429,6 +528,17 @@ Node A at t=100ms: sends ping to random member C
 **Scalability:** Each member sends O(1) messages per interval. Total: O(N * (1 + k)). This scales linearly with N.
 
 ### Coordination-Free Systems
+
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-handwritten.svg" alt="Handwritten: Coordination-Free Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-diagram.svg" alt="Diagram: Coordination-Free Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/09-distributed-coordination/coordination-free-systems-sticky.svg" alt="Sticky Note: Coordination-Free Systems" width="30%">
+</a>
+
 
 Not every distributed problem requires consensus.
 

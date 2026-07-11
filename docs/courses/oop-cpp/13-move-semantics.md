@@ -92,9 +92,31 @@ MOVE:    [Book A: 500 pages] --steal pages--> [Book B: 500 pages]
 
 ### 13.1.1 Historical Context
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-handwritten.svg" alt="Handwritten: 13.1.1 Historical Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-diagram.svg" alt="Diagram: 13.1.1 Historical Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-1-historical-context-sticky.svg" alt="Sticky Note: 13.1.1 Historical Context" width="30%">
+</a>
+
+
 C++98 had two value categories: lvalue (expressions with identity/address) and rvalue (everything else, typically temporaries). C++11 introduced a refined five-category taxonomy to support move semantics while preserving backward compatibility.
 
 ### 13.1.2 The Taxonomy Diagram
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-handwritten.svg" alt="Handwritten: 13.1.2 The Taxonomy Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-diagram.svg" alt="Diagram: 13.1.2 The Taxonomy Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-2-the-taxonomy-diagram-sticky.svg" alt="Sticky Note: 13.1.2 The Taxonomy Diagram" width="30%">
+</a>
+
 
 Every expression in C++ belongs to exactly one of five value categories:
 
@@ -108,6 +130,17 @@ Every expression in C++ belongs to exactly one of five value categories:
 
 ### 13.1.3 Category Definitions
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-handwritten.svg" alt="Handwritten: 13.1.3 Category Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-diagram.svg" alt="Diagram: 13.1.3 Category Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-3-category-definitions-sticky.svg" alt="Sticky Note: 13.1.3 Category Definitions" width="30%">
+</a>
+
+
 | Category | Name | Has Identity? | Can Be Moved? | Definition |
 |----------|------|--------------|---------------|------------|
 | **lvalue** | locator value | Yes | No | An expression that has an identity (addressable). Represents a named object, function, or dereferenced pointer. |
@@ -117,6 +150,17 @@ Every expression in C++ belongs to exactly one of five value categories:
 | **rvalue** | → | No | Yes | Union of prvalue and xvalue. Any expression whose resources can be reused. |
 
 ### 13.1.4 Examples of Each Category
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-handwritten.svg" alt="Handwritten: 13.1.4 Examples of Each Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-diagram.svg" alt="Diagram: 13.1.4 Examples of Each Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-4-examples-of-each-category-sticky.svg" alt="Sticky Note: 13.1.4 Examples of Each Category" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -166,6 +210,17 @@ int main() {
 
 ### 13.1.5 How Value Categories Determine Overload Resolution
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-handwritten.svg" alt="Handwritten: 13.1.5 How Value Categories Determine Overload Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-diagram.svg" alt="Diagram: 13.1.5 How Value Categories Determine Overload Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-5-how-value-categories-determine-overload-resolution-sticky.svg" alt="Sticky Note: 13.1.5 How Value Categories Determine Overload Resolution" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 
@@ -194,6 +249,17 @@ rvalue
 
 ### 13.1.6 Category Membership Rules
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-handwritten.svg" alt="Handwritten: 13.1.6 Category Membership Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-diagram.svg" alt="Diagram: 13.1.6 Category Membership Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-6-category-membership-rules-sticky.svg" alt="Sticky Note: 13.1.6 Category Membership Rules" width="30%">
+</a>
+
+
 | Expression Type | Category | Example |
 |---|---|---|
 | Named variable | lvalue | `int x; x` |
@@ -215,6 +281,17 @@ rvalue
 | Member access on xvalue | xvalue | `std::move(obj).member` |
 
 ### 13.1.7 Dry Run: Category Identification
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-handwritten.svg" alt="Handwritten: 13.1.7 Dry Run: Category Identification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-diagram.svg" alt="Diagram: 13.1.7 Dry Run: Category Identification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-1-7-dry-run-category-identification-sticky.svg" alt="Sticky Note: 13.1.7 Dry Run: Category Identification" width="30%">
+</a>
+
 
 ```cpp
 std::string make_string() { return "temporary"; }
@@ -242,6 +319,17 @@ int main() {
 
 ### 13.2.1 Definition and Syntax
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-handwritten.svg" alt="Handwritten: 13.2.1 Definition and Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-diagram.svg" alt="Diagram: 13.2.1 Definition and Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-1-definition-and-syntax-sticky.svg" alt="Sticky Note: 13.2.1 Definition and Syntax" width="30%">
+</a>
+
+
 An **rvalue reference** is declared with `T&&` (where T is a concrete type, not a template parameter). It binds exclusively to rvalues (prvalues and xvalues).
 
 ```cpp
@@ -251,6 +339,17 @@ int&& rref2 = std::move(x); // binds to xvalue
 ```
 
 ### 13.2.2 Critical Rule: Named Rvalue References Are Lvalues
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-handwritten.svg" alt="Handwritten: 13.2.2 Critical Rule: Named Rvalue References Are Lvalues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-diagram.svg" alt="Diagram: 13.2.2 Critical Rule: Named Rvalue References Are Lvalues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-2-critical-rule-named-rvalue-references-are-lvalues-sticky.svg" alt="Sticky Note: 13.2.2 Critical Rule: Named Rvalue References Are Lvalues" width="30%">
+</a>
+
 
 Once an rvalue reference has a name, it is an lvalue inside its scope. This prevents accidental double moves.
 
@@ -269,6 +368,17 @@ void consume(int&& x) { std::cout << "rvalue\n"; }
 
 ### 13.2.3 Rvalue Reference Binds to Temporaries
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-handwritten.svg" alt="Handwritten: 13.2.3 Rvalue Reference Binds to Temporaries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-diagram.svg" alt="Diagram: 13.2.3 Rvalue Reference Binds to Temporaries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-3-rvalue-reference-binds-to-temporaries-sticky.svg" alt="Sticky Note: 13.2.3 Rvalue Reference Binds to Temporaries" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 
@@ -286,6 +396,17 @@ int main() {
 ```
 
 ### 13.2.4 Lifetime Extension
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-handwritten.svg" alt="Handwritten: 13.2.4 Lifetime Extension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-diagram.svg" alt="Diagram: 13.2.4 Lifetime Extension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-4-lifetime-extension-sticky.svg" alt="Sticky Note: 13.2.4 Lifetime Extension" width="30%">
+</a>
+
 
 Binding a temporary to an rvalue reference extends its lifetime to match the reference's scope → similar to const lvalue references but with move semantics available.
 
@@ -307,6 +428,17 @@ int main() {
 
 ### 13.2.5 Overload Resolution with &&
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-handwritten.svg" alt="Handwritten: 13.2.5 Overload Resolution with &&" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-diagram.svg" alt="Diagram: 13.2.5 Overload Resolution with &&" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-2-5-overload-resolution-with-sticky.svg" alt="Sticky Note: 13.2.5 Overload Resolution with &&" width="30%">
+</a>
+
+
 | Argument | int& (lvalue ref) | const int& (const lvalue ref) | int&& (rvalue ref) |
 |----------|------------------|------------------------------|-------------------|
 | lvalue int | âœ“ (exact) | âœ“ (conversion) | âœ— |
@@ -321,6 +453,17 @@ The compiler prefers int&& for rvalues over const int&, enabling move semantics.
 
 ### 13.3.1 Syntax and Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-handwritten.svg" alt="Handwritten: 13.3.1 Syntax and Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-diagram.svg" alt="Diagram: 13.3.1 Syntax and Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-1-syntax-and-definition-sticky.svg" alt="Sticky Note: 13.3.1 Syntax and Definition" width="30%">
+</a>
+
+
 The move constructor takes an rvalue reference to the same type and transfers ownership of resources from the source to the newly constructed object.
 
 ```cpp
@@ -333,6 +476,17 @@ class_name(class_name&& other) noexcept
 ```
 
 ### 13.3.2 Core Example: DynamicBuffer
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-handwritten.svg" alt="Handwritten: 13.3.2 Core Example: DynamicBuffer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-diagram.svg" alt="Diagram: 13.3.2 Core Example: DynamicBuffer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-2-core-example-dynamicbuffer-sticky.svg" alt="Sticky Note: 13.3.2 Core Example: DynamicBuffer" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -420,6 +574,17 @@ private:
 
 ### 13.3.3 Move Constructor Execution: Step-by-Step
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-handwritten.svg" alt="Handwritten: 13.3.3 Move Constructor Execution: Step-by-Step" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-diagram.svg" alt="Diagram: 13.3.3 Move Constructor Execution: Step-by-Step" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-3-move-constructor-execution-step-by-step-sticky.svg" alt="Sticky Note: 13.3.3 Move Constructor Execution: Step-by-Step" width="30%">
+</a>
+
+
 | Step | Operation | Code | State After |
 |------|-----------|------|-------------|
 | 1 | Receive source as rvalue reference | `DynamicBuffer(DynamicBuffer&& other)` | `other` holds ptr to heap memory |
@@ -432,6 +597,17 @@ private:
 **Critical invariant:** After the move, `other` must be destructible and assignable. Its destructor will call `delete[] nullptr`, which is safe.
 
 ### 13.3.4 Default Move Constructor
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-handwritten.svg" alt="Handwritten: 13.3.4 Default Move Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-diagram.svg" alt="Diagram: 13.3.4 Default Move Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-4-default-move-constructor-sticky.svg" alt="Sticky Note: 13.3.4 Default Move Constructor" width="30%">
+</a>
+
 
 If a class does not declare a move constructor, and all of the following are true:
 
@@ -461,6 +637,17 @@ struct Container {
 
 ### 13.3.5 Move Constructor is Not Generated When
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-handwritten.svg" alt="Handwritten: 13.3.5 Move Constructor is Not Generated When" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-diagram.svg" alt="Diagram: 13.3.5 Move Constructor is Not Generated When" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-5-move-constructor-is-not-generated-when-sticky.svg" alt="Sticky Note: 13.3.5 Move Constructor is Not Generated When" width="30%">
+</a>
+
+
 The implicitly declared move constructor is **deleted** (not generated) if any of the following are true:
 
 - A non-static data member or direct base cannot be moved (no accessible move ctor, and copy ctor is not trivial)
@@ -484,6 +671,17 @@ struct ConstMember {
 ```
 
 ### 13.3.6 Delegating to Member Move Constructors
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-handwritten.svg" alt="Handwritten: 13.3.6 Delegating to Member Move Constructors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-diagram.svg" alt="Diagram: 13.3.6 Delegating to Member Move Constructors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-3-6-delegating-to-member-move-constructors-sticky.svg" alt="Sticky Note: 13.3.6 Delegating to Member Move Constructors" width="30%">
+</a>
+
 
 ```cpp
 class Manager {
@@ -510,6 +708,17 @@ private:
 
 ### 13.4.1 Syntax and Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-handwritten.svg" alt="Handwritten: 13.4.1 Syntax and Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-diagram.svg" alt="Diagram: 13.4.1 Syntax and Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-1-syntax-and-definition-sticky.svg" alt="Sticky Note: 13.4.1 Syntax and Definition" width="30%">
+</a>
+
+
 ```cpp
 class_name& operator=(class_name&& other) noexcept {
     if (this != &other) {  // self-assignment guard
@@ -522,6 +731,17 @@ class_name& operator=(class_name&& other) noexcept {
 ```
 
 ### 13.4.2 Self-Assignment and Exception Safety
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-handwritten.svg" alt="Handwritten: 13.4.2 Self-Assignment and Exception Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-diagram.svg" alt="Diagram: 13.4.2 Self-Assignment and Exception Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-2-self-assignment-and-exception-safety-sticky.svg" alt="Sticky Note: 13.4.2 Self-Assignment and Exception Safety" width="30%">
+</a>
+
 
 Self-assignment in move assignment is unlikely (why would you write `x = std::move(x)`?) but can happen through aliasing:
 
@@ -561,6 +781,17 @@ Buffer& operator=(Buffer other) noexcept {
 
 ### 13.4.3 Move Assignment Execution Trace
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-handwritten.svg" alt="Handwritten: 13.4.3 Move Assignment Execution Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-diagram.svg" alt="Diagram: 13.4.3 Move Assignment Execution Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-4-3-move-assignment-execution-trace-sticky.svg" alt="Sticky Note: 13.4.3 Move Assignment Execution Trace" width="30%">
+</a>
+
+
 Assume `buf1` holds 1000 elements and `buf2` holds 500 elements.
 
 ```cpp
@@ -588,9 +819,31 @@ buf2 = std::move(buf1);
 
 ### 13.5.1 Why noexcept Matters
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-handwritten.svg" alt="Handwritten: 13.5.1 Why noexcept Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-diagram.svg" alt="Diagram: 13.5.1 Why noexcept Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-1-why-noexcept-matters-sticky.svg" alt="Sticky Note: 13.5.1 Why noexcept Matters" width="30%">
+</a>
+
+
 The `noexcept` specifier on move operations tells both the compiler and the standard library that the operation will never throw. This enables critical optimizations.
 
 ### 13.5.2 Vector Reallocation: The Critical Case
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-handwritten.svg" alt="Handwritten: 13.5.2 Vector Reallocation: The Critical Case" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-diagram.svg" alt="Diagram: 13.5.2 Vector Reallocation: The Critical Case" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-2-vector-reallocation-the-critical-case-sticky.svg" alt="Sticky Note: 13.5.2 Vector Reallocation: The Critical Case" width="30%">
+</a>
+
 
 When `std::vector` grows beyond its capacity, it must:
 
@@ -618,6 +871,17 @@ v.push_back(MyClass{}); // capacity exceeded! Must reallocate
 - If copy throws, old memory is intact → strong exception guarantee preserved
 
 ### 13.5.3 std::move_if_noexcept
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-handwritten.svg" alt="Handwritten: 13.5.3 std::move_if_noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-diagram.svg" alt="Diagram: 13.5.3 std::move_if_noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-3-std-move-if-noexcept-sticky.svg" alt="Sticky Note: 13.5.3 std::move_if_noexcept" width="30%">
+</a>
+
 
 The standard library implements this check via `std::move_if_noexcept`:
 
@@ -647,6 +911,17 @@ void vector<T>::reallocate(size_t new_cap) {
 ```
 
 ### 13.5.4 Demonstration: noexcept vs Non-noexcept
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-handwritten.svg" alt="Handwritten: 13.5.4 Demonstration: noexcept vs Non-noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-diagram.svg" alt="Diagram: 13.5.4 Demonstration: noexcept vs Non-noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-4-demonstration-noexcept-vs-non-noexcept-sticky.svg" alt="Sticky Note: 13.5.4 Demonstration: noexcept vs Non-noexcept" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -699,6 +974,17 @@ SafeMove reallocation:
 
 ### 13.5.5 When NOT to Mark noexcept
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-handwritten.svg" alt="Handwritten: 13.5.5 When NOT to Mark noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-diagram.svg" alt="Diagram: 13.5.5 When NOT to Mark noexcept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-5-5-when-not-to-mark-noexcept-sticky.svg" alt="Sticky Note: 13.5.5 When NOT to Mark noexcept" width="30%">
+</a>
+
+
 Exceptionally, do not mark move operations noexcept if:
 
 1. The move operation can genuinely throw (e.g., acquiring a system resource that can fail)
@@ -711,9 +997,31 @@ Exceptionally, do not mark move operations noexcept if:
 
 ### 13.6.1 What std::move Actually Does
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-handwritten.svg" alt="Handwritten: 13.6.1 What std::move Actually Does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-diagram.svg" alt="Diagram: 13.6.1 What std::move Actually Does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-1-what-std-move-actually-does-sticky.svg" alt="Sticky Note: 13.6.1 What std::move Actually Does" width="30%">
+</a>
+
+
 **std::move does NOT move anything.** It is an unconditional cast to an rvalue reference. The "move" happens when a move constructor or move assignment operator receives the rvalue reference.
 
 ### 13.6.2 Reference Implementation
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-handwritten.svg" alt="Handwritten: 13.6.2 Reference Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-diagram.svg" alt="Diagram: 13.6.2 Reference Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-2-reference-implementation-sticky.svg" alt="Sticky Note: 13.6.2 Reference Implementation" width="30%">
+</a>
+
 
 ```cpp
 template <typename T>
@@ -724,6 +1032,17 @@ move(T&& t) noexcept {
 ```
 
 ### 13.6.3 Usage Patterns
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-handwritten.svg" alt="Handwritten: 13.6.3 Usage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-diagram.svg" alt="Diagram: 13.6.3 Usage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-3-usage-patterns-sticky.svg" alt="Sticky Note: 13.6.3 Usage Patterns" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -755,6 +1074,17 @@ int main() {
 
 ### 13.6.4 Common Misconceptions
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-handwritten.svg" alt="Handwritten: 13.6.4 Common Misconceptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-diagram.svg" alt="Diagram: 13.6.4 Common Misconceptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-4-common-misconceptions-sticky.svg" alt="Sticky Note: 13.6.4 Common Misconceptions" width="30%">
+</a>
+
+
 | Misconception | Truth |
 |--------------|-------|
 | "std::move moves the object" | No → it only casts to &&. The move happens in the move constructor/assignment. |
@@ -764,6 +1094,17 @@ int main() {
 | "std::move is always beneficial" | No → for trivially copyable types (int, double), copying is as fast as moving. |
 
 ### 13.6.5 When NOT to Use std::move
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-handwritten.svg" alt="Handwritten: 13.6.5 When NOT to Use std::move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-diagram.svg" alt="Diagram: 13.6.5 When NOT to Use std::move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-5-when-not-to-use-std-move-sticky.svg" alt="Sticky Note: 13.6.5 When NOT to Use std::move" width="30%">
+</a>
+
 
 ```cpp
 // BAD: RVO prevents the copy anyway; std::move inhibits it
@@ -782,6 +1123,17 @@ int y = std::move(x);  // same as int y = x; → no benefit
 ```
 
 ### 13.6.6 std::move vs Return Value Optimization
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-handwritten.svg" alt="Handwritten: 13.6.6 std::move vs Return Value Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-diagram.svg" alt="Diagram: 13.6.6 std::move vs Return Value Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-6-6-std-move-vs-return-value-optimization-sticky.svg" alt="Sticky Note: 13.6.6 std::move vs Return Value Optimization" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -816,9 +1168,31 @@ std::string make_string_conditional(bool flag) {
 
 ### 13.7.1 Purpose
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-handwritten.svg" alt="Handwritten: 13.7.1 Purpose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-diagram.svg" alt="Diagram: 13.7.1 Purpose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-1-purpose-sticky.svg" alt="Sticky Note: 13.7.1 Purpose" width="30%">
+</a>
+
+
 `std::forward` conditionally casts its argument to an rvalue reference → only if the argument was originally an rvalue. It "forwards" the value category of the argument through a template function.
 
 ### 13.7.2 Reference Implementation
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-handwritten.svg" alt="Handwritten: 13.7.2 Reference Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-diagram.svg" alt="Diagram: 13.7.2 Reference Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-2-reference-implementation-sticky.svg" alt="Sticky Note: 13.7.2 Reference Implementation" width="30%">
+</a>
+
 
 ```cpp
 /// Overload 1: For lvalue references (T is deduced as T&)
@@ -840,12 +1214,34 @@ constexpr T&& forward(typename std::remove_reference<T>::type&& t) noexcept {
 
 ### 13.7.3 Key: Two Overloads
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-handwritten.svg" alt="Handwritten: 13.7.3 Key: Two Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-diagram.svg" alt="Diagram: 13.7.3 Key: Two Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-3-key-two-overloads-sticky.svg" alt="Sticky Note: 13.7.3 Key: Two Overloads" width="30%">
+</a>
+
+
 The key to understanding `std::forward` is that it has two overloads:
 
 1. **Lvalue overload** (takes `Type&`): When the original argument was an lvalue, T deduces as `T&`, and `T& &&` collapses to `T&` → returns lvalue reference.
 2. **Rvalue overload** (takes `Type&&`): When the original argument was an rvalue, T deduces as `T`, and `T&&` stays `T&&` → returns rvalue reference.
 
 ### 13.7.4 How Forward Preserves Category
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-handwritten.svg" alt="Handwritten: 13.7.4 How Forward Preserves Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-diagram.svg" alt="Diagram: 13.7.4 How Forward Preserves Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-4-how-forward-preserves-category-sticky.svg" alt="Sticky Note: 13.7.4 How Forward Preserves Category" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -876,6 +1272,17 @@ rvalue: 10
 
 ### 13.7.5 Forwarding Reference Deduction Table
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-handwritten.svg" alt="Handwritten: 13.7.5 Forwarding Reference Deduction Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-diagram.svg" alt="Diagram: 13.7.5 Forwarding Reference Deduction Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-7-5-forwarding-reference-deduction-table-sticky.svg" alt="Sticky Note: 13.7.5 Forwarding Reference Deduction Table" width="30%">
+</a>
+
+
 ```cpp
 template <typename T>
 void f(T&& x);  // forwarding reference
@@ -899,9 +1306,31 @@ int& ref = a;
 
 ### 13.8.1 The "Universal Reference" Pattern
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-handwritten.svg" alt="Handwritten: 13.8.1 The "Universal Reference" Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-diagram.svg" alt="Diagram: 13.8.1 The "Universal Reference" Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-1-the-universal-reference-pattern-sticky.svg" alt="Sticky Note: 13.8.1 The "Universal Reference" Pattern" width="30%">
+</a>
+
+
 A **forwarding reference** (originally called "universal reference" by Scott Meyers) is `T&&` where `T` is a **deduced** template parameter. It can bind to both lvalues and rvalues, preserving the original value category through reference collapsing.
 
 ### 13.8.2 Forwarding Reference vs Rvalue Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-handwritten.svg" alt="Handwritten: 13.8.2 Forwarding Reference vs Rvalue Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-diagram.svg" alt="Diagram: 13.8.2 Forwarding Reference vs Rvalue Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-2-forwarding-reference-vs-rvalue-reference-sticky.svg" alt="Sticky Note: 13.8.2 Forwarding Reference vs Rvalue Reference" width="30%">
+</a>
+
 
 ```cpp
 // FORWARDING REFERENCE: T&& in deduced context
@@ -920,6 +1349,17 @@ auto&& ref = 42;   // auto&& is a forwarding reference (auto is deduced)
 ```
 
 ### 13.8.3 auto&& is Also a Forwarding Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-handwritten.svg" alt="Handwritten: 13.8.3 auto&& is Also a Forwarding Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-diagram.svg" alt="Diagram: 13.8.3 auto&& is Also a Forwarding Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-3-auto-is-also-a-forwarding-reference-sticky.svg" alt="Sticky Note: 13.8.3 auto&& is Also a Forwarding Reference" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -952,6 +1392,17 @@ int main() {
 
 ### 13.8.4 When T&& is NOT a Forwarding Reference
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-handwritten.svg" alt="Handwritten: 13.8.4 When T&& is NOT a Forwarding Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-diagram.svg" alt="Diagram: 13.8.4 When T&& is NOT a Forwarding Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-4-when-t-is-not-a-forwarding-reference-sticky.svg" alt="Sticky Note: 13.8.4 When T&& is NOT a Forwarding Reference" width="30%">
+</a>
+
+
 ```cpp
 // CASE 1: Template parameter is not deduced (known from class)
 template <typename T>
@@ -969,6 +1420,17 @@ void h(const T&& x);  // rvalue reference (const prohibits forwarding)
 ```
 
 ### 13.8.5 Practical Pattern: std::make_unique
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-handwritten.svg" alt="Handwritten: 13.8.5 Practical Pattern: std::make_unique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-diagram.svg" alt="Diagram: 13.8.5 Practical Pattern: std::make_unique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-8-5-practical-pattern-std-make-unique-sticky.svg" alt="Sticky Note: 13.8.5 Practical Pattern: std::make_unique" width="30%">
+</a>
+
 
 ```cpp
 #include <memory>
@@ -1002,6 +1464,17 @@ int main() {
 
 ### 13.9.1 The Four Scenarios
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-handwritten.svg" alt="Handwritten: 13.9.1 The Four Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-diagram.svg" alt="Diagram: 13.9.1 The Four Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-1-the-four-scenarios-sticky.svg" alt="Sticky Note: 13.9.1 The Four Scenarios" width="30%">
+</a>
+
+
 Reference collapsing determines what happens when a reference to a reference appears (which only happens through template instantiation, typedefs, or decltype).
 
 ```text
@@ -1018,6 +1491,17 @@ T&& &&              T&&           (rvalue ref to rvalue ref → rvalue ref)
 
 ### 13.9.2 Reference Collapsing Table
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-handwritten.svg" alt="Handwritten: 13.9.2 Reference Collapsing Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-diagram.svg" alt="Diagram: 13.9.2 Reference Collapsing Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-2-reference-collapsing-table-sticky.svg" alt="Sticky Note: 13.9.2 Reference Collapsing Table" width="30%">
+</a>
+
+
 | Type 1 | Type 2 | Combined | Collapsed | Explanation |
 |--------|--------|----------|-----------|-------------|
 | `int&` | `&` | `int& &` | `int&` | Double lvalue reference |
@@ -1026,6 +1510,17 @@ T&& &&              T&&           (rvalue ref to rvalue ref → rvalue ref)
 | `int&&` | `&&` | `int&& &&` | `int&&` | Double rvalue reference ⇒ rvalue reference |
 
 ### 13.9.3 Where Reference Collapsing Happens
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-handwritten.svg" alt="Handwritten: 13.9.3 Where Reference Collapsing Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-diagram.svg" alt="Diagram: 13.9.3 Where Reference Collapsing Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-3-where-reference-collapsing-happens-sticky.svg" alt="Sticky Note: 13.9.3 Where Reference Collapsing Happens" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1050,6 +1545,17 @@ int main() {
 
 ### 13.9.4 Reference Collapsing in typedef / using
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-handwritten.svg" alt="Handwritten: 13.9.4 Reference Collapsing in typedef / using" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-diagram.svg" alt="Diagram: 13.9.4 Reference Collapsing in typedef / using" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-4-reference-collapsing-in-typedef-using-sticky.svg" alt="Sticky Note: 13.9.4 Reference Collapsing in typedef / using" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 
@@ -1069,6 +1575,17 @@ int main() {
 
 ### 13.9.5 Reference Collapsing in decltype
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-handwritten.svg" alt="Handwritten: 13.9.5 Reference Collapsing in decltype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-diagram.svg" alt="Diagram: 13.9.5 Reference Collapsing in decltype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-5-reference-collapsing-in-decltype-sticky.svg" alt="Sticky Note: 13.9.5 Reference Collapsing in decltype" width="30%">
+</a>
+
+
 ```cpp
 int a = 10;
 int& b = a;
@@ -1084,6 +1601,17 @@ using T3 = decltype(z)&&;  // int&& && → int&&
 ```
 
 ### 13.9.6 Why Reference Collapsing Enables Perfect Forwarding
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-handwritten.svg" alt="Handwritten: 13.9.6 Why Reference Collapsing Enables Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-diagram.svg" alt="Diagram: 13.9.6 Why Reference Collapsing Enables Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-9-6-why-reference-collapsing-enables-perfect-forwarding-sticky.svg" alt="Sticky Note: 13.9.6 Why Reference Collapsing Enables Perfect Forwarding" width="30%">
+</a>
+
 
 Reference collapsing is the mechanism that makes forwarding references work:
 
@@ -1112,9 +1640,31 @@ When `wrapper(42)` is called with an rvalue `42`:
 
 ### 13.10.1 Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-handwritten.svg" alt="Handwritten: 13.10.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-diagram.svg" alt="Diagram: 13.10.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-1-definition-sticky.svg" alt="Sticky Note: 13.10.1 Definition" width="30%">
+</a>
+
+
 Perfect forwarding is the technique of passing arguments through one or more layers of function calls while preserving each argument's value category (lvalue or rvalue). It uses forwarding references (`T&&`) and `std::forward`.
 
 ### 13.10.2 The Problem: Loss of Value Category
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-handwritten.svg" alt="Handwritten: 13.10.2 The Problem: Loss of Value Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-diagram.svg" alt="Diagram: 13.10.2 The Problem: Loss of Value Category" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-2-the-problem-loss-of-value-category-sticky.svg" alt="Sticky Note: 13.10.2 The Problem: Loss of Value Category" width="30%">
+</a>
+
 
 Without perfect forwarding, value category information is lost:
 
@@ -1150,6 +1700,17 @@ int main() {
 
 ### 13.10.3 The Solution: Forwarding Reference + std::forward
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-handwritten.svg" alt="Handwritten: 13.10.3 The Solution: Forwarding Reference + std::forward" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-diagram.svg" alt="Diagram: 13.10.3 The Solution: Forwarding Reference + std::forward" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-3-the-solution-forwarding-reference-std-forward-sticky.svg" alt="Sticky Note: 13.10.3 The Solution: Forwarding Reference + std::forward" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -1180,6 +1741,17 @@ rvalue: direct
 ```
 
 ### 13.10.4 Variadic Perfect Forwarding
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-handwritten.svg" alt="Handwritten: 13.10.4 Variadic Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-diagram.svg" alt="Diagram: 13.10.4 Variadic Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-4-variadic-perfect-forwarding-sticky.svg" alt="Sticky Note: 13.10.4 Variadic Perfect Forwarding" width="30%">
+</a>
+
 
 The full power of perfect forwarding emerges with variadic templates:
 
@@ -1259,6 +1831,17 @@ int main() {
 
 ### 13.10.5 Common Patterns Using Perfect Forwarding
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-handwritten.svg" alt="Handwritten: 13.10.5 Common Patterns Using Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-diagram.svg" alt="Diagram: 13.10.5 Common Patterns Using Perfect Forwarding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-5-common-patterns-using-perfect-forwarding-sticky.svg" alt="Sticky Note: 13.10.5 Common Patterns Using Perfect Forwarding" width="30%">
+</a>
+
+
 | Pattern | Snippet | Description |
 |---------|---------|-------------|
 | Factory | `make_unique<T>(std::forward<Args>(args)...)` | Construct T from forwarded args |
@@ -1268,6 +1851,17 @@ int main() {
 | Tuple | `std::tuple<Decay_t<Args>...>(std::forward<Args>(args)...)` | Capture values |
 
 ### 13.10.6 Perfect Forwarding Failure Cases
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-handwritten.svg" alt="Handwritten: 13.10.6 Perfect Forwarding Failure Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-diagram.svg" alt="Diagram: 13.10.6 Perfect Forwarding Failure Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-10-6-perfect-forwarding-failure-cases-sticky.svg" alt="Sticky Note: 13.10.6 Perfect Forwarding Failure Cases" width="30%">
+</a>
+
 
 ```cpp
 // Case 1: Braced initializer lists cannot be deduced
@@ -1292,11 +1886,33 @@ f(static_cast<void(*)(int)>(g));  // OK → disambiguate
 
 ### 13.11.1 From Rule of Three to Rule of Five
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-handwritten.svg" alt="Handwritten: 13.11.1 From Rule of Three to Rule of Five" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-diagram.svg" alt="Diagram: 13.11.1 From Rule of Three to Rule of Five" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-1-from-rule-of-three-to-rule-of-five-sticky.svg" alt="Sticky Note: 13.11.1 From Rule of Three to Rule of Five" width="30%">
+</a>
+
+
 In C++98, the Rule of Three stated: if you define any of the destructor, copy constructor, or copy assignment operator, you likely need all three.
 
 C++11 adds two more: move constructor and move assignment operator, making the **Rule of Five**.
 
 ### 13.11.2 The Five Special Member Functions
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-handwritten.svg" alt="Handwritten: 13.11.2 The Five Special Member Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-diagram.svg" alt="Diagram: 13.11.2 The Five Special Member Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-2-the-five-special-member-functions-sticky.svg" alt="Sticky Note: 13.11.2 The Five Special Member Functions" width="30%">
+</a>
+
 
 ```cpp
 class Resource {
@@ -1322,6 +1938,17 @@ public:
 ```
 
 ### 13.11.3 Complete Rule of Five Example
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-handwritten.svg" alt="Handwritten: 13.11.3 Complete Rule of Five Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-diagram.svg" alt="Diagram: 13.11.3 Complete Rule of Five Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-3-complete-rule-of-five-example-sticky.svg" alt="Sticky Note: 13.11.3 Complete Rule of Five Example" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1398,6 +2025,17 @@ private:
 
 ### 13.11.4 Rule of Zero
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-handwritten.svg" alt="Handwritten: 13.11.4 Rule of Zero" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-diagram.svg" alt="Diagram: 13.11.4 Rule of Zero" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-4-rule-of-zero-sticky.svg" alt="Sticky Note: 13.11.4 Rule of Zero" width="30%">
+</a>
+
+
 If your class does not manage resources directly (no raw pointers, no manual new/delete), follow the **Rule of Zero**: let the compiler generate all special member functions.
 
 ```cpp
@@ -1415,6 +2053,17 @@ class Student {
 
 ### 13.11.5 Rule of Five Decision Table
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-handwritten.svg" alt="Handwritten: 13.11.5 Rule of Five Decision Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-diagram.svg" alt="Diagram: 13.11.5 Rule of Five Decision Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-5-rule-of-five-decision-table-sticky.svg" alt="Sticky Note: 13.11.5 Rule of Five Decision Table" width="30%">
+</a>
+
+
 | If you define... | You should also define... |
 |-----------------|-------------------------|
 | Destructor | Copy ctor, copy assign, move ctor, move assign (or =delete them) |
@@ -1424,6 +2073,17 @@ class Student {
 | Move assignment | Destructor, copy ctor, copy assign, move ctor |
 
 ### 13.11.6 =default and =delete
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-handwritten.svg" alt="Handwritten: 13.11.6 =default and =delete" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-diagram.svg" alt="Diagram: 13.11.6 =default and =delete" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-11-6-default-and-delete-sticky.svg" alt="Sticky Note: 13.11.6 =default and =delete" width="30%">
+</a>
+
 
 ```cpp
 class ExplicitFive {
@@ -1459,6 +2119,17 @@ public:
 
 ### 13.12.1 Detailed Comparison Table
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-handwritten.svg" alt="Handwritten: 13.12.1 Detailed Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-diagram.svg" alt="Diagram: 13.12.1 Detailed Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-1-detailed-comparison-table-sticky.svg" alt="Sticky Note: 13.12.1 Detailed Comparison Table" width="30%">
+</a>
+
+
 | Aspect | std::move | std::forward&lt;T> |
 |--------|-----------|-----------------|
 | **Full name** | `std::move` | `std::forward<T>` |
@@ -1472,6 +2143,17 @@ public:
 | **Misuse risk** | Casts const objects to && (ignored) | Forgets template argument (compile error) |
 
 ### 13.12.2 Concrete Behavioral Difference
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-handwritten.svg" alt="Handwritten: 13.12.2 Concrete Behavioral Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-diagram.svg" alt="Diagram: 13.12.2 Concrete Behavioral Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-12-2-concrete-behavioral-difference-sticky.svg" alt="Sticky Note: 13.12.2 Concrete Behavioral Difference" width="30%">
+</a>
+
 
 ```cpp
 template <typename T>
@@ -1533,6 +2215,17 @@ rvalue
 
 ### 13.13.1 Complexity Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-handwritten.svg" alt="Handwritten: 13.13.1 Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-diagram.svg" alt="Diagram: 13.13.1 Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-1-complexity-comparison-sticky.svg" alt="Sticky Note: 13.13.1 Complexity Comparison" width="30%">
+</a>
+
+
 | Operation | Copy Complexity | Move Complexity | Speedup Factor |
 |-----------|----------------|----------------|----------------|
 | `std::vector<int>` (n elements) | O(n) allocation + copy | O(1) pointer swap | n (100x for n=1000) |
@@ -1544,6 +2237,17 @@ rvalue
 | DynamicBuffer (custom class) | O(n) heap alloc + copy | O(1) pointer steal | n |
 
 ### 13.13.2 Detailed Performance Benchmark
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-handwritten.svg" alt="Handwritten: 13.13.2 Detailed Performance Benchmark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-diagram.svg" alt="Diagram: 13.13.2 Detailed Performance Benchmark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-2-detailed-performance-benchmark-sticky.svg" alt="Sticky Note: 13.13.2 Detailed Performance Benchmark" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1602,6 +2306,17 @@ MOVE: 0 us
 
 ### 13.13.3 Dry Run Trace: Copy vs Move for std::string
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-handwritten.svg" alt="Handwritten: 13.13.3 Dry Run Trace: Copy vs Move for std::string" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-diagram.svg" alt="Diagram: 13.13.3 Dry Run Trace: Copy vs Move for std::string" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-3-dry-run-trace-copy-vs-move-for-std-string-sticky.svg" alt="Sticky Note: 13.13.3 Dry Run Trace: Copy vs Move for std::string" width="30%">
+</a>
+
+
 ```cpp
 std::string a = "Hello, this is a long string that goes on the heap";
 std::string b;
@@ -1631,6 +2346,17 @@ std::string b;
 
 ### 13.13.4 Move Semantics Benefits → Performance Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-handwritten.svg" alt="Handwritten: 13.13.4 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-diagram.svg" alt="Diagram: 13.13.4 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-13-4-move-semantics-benefits-performance-comparison-sticky.svg" alt="Sticky Note: 13.13.4 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+
+
 | Scenario | Copy | Move | Benefit |
 |----------|------|------|---------|
 | `vector<string>` reallocation (n=1000) | 1000 heap allocs + 1000 memcpy | 1000 pointer swaps | ~1000x fewer bytes copied |
@@ -1644,6 +2370,17 @@ std::string b;
 ## 13.14 Edge Cases and Gotchas
 
 ### 13.14.1 Moving from Const Objects
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-handwritten.svg" alt="Handwritten: 13.14.1 Moving from Const Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-diagram.svg" alt="Diagram: 13.14.1 Moving from Const Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-1-moving-from-const-objects-sticky.svg" alt="Sticky Note: 13.14.1 Moving from Const Objects" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1667,6 +2404,17 @@ int main() {
 **Lesson:** `std::move` on const objects degrades to copy. The const rvalue reference `const T&&` binds to the copy constructor (`const T&`), not the move constructor (`T&&`).
 
 ### 13.14.2 Moving from a Base Class
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-handwritten.svg" alt="Handwritten: 13.14.2 Moving from a Base Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-diagram.svg" alt="Diagram: 13.14.2 Moving from a Base Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-2-moving-from-a-base-class-sticky.svg" alt="Sticky Note: 13.14.2 Moving from a Base Class" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1696,6 +2444,17 @@ int main() {
 **Lesson:** Moving a derived object through a base class reference slices the derived portion. Only the base sub-object is moved.
 
 ### 13.14.3 Mixed Move and Copy in Containers
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-handwritten.svg" alt="Handwritten: 13.14.3 Mixed Move and Copy in Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-diagram.svg" alt="Diagram: 13.14.3 Mixed Move and Copy in Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-3-mixed-move-and-copy-in-containers-sticky.svg" alt="Sticky Note: 13.14.3 Mixed Move and Copy in Containers" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1737,6 +2496,17 @@ int main() {
 
 ### 13.14.4 Move Operations on Primitive Types
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-handwritten.svg" alt="Handwritten: 13.14.4 Move Operations on Primitive Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-diagram.svg" alt="Diagram: 13.14.4 Move Operations on Primitive Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-4-move-operations-on-primitive-types-sticky.svg" alt="Sticky Note: 13.14.4 Move Operations on Primitive Types" width="30%">
+</a>
+
+
 ```cpp
 int x = 42;
 int y = std::move(x);  // Same as int y = x; → no benefit
@@ -1746,6 +2516,17 @@ int y = std::move(x);  // Same as int y = x; → no benefit
 **Rule:** For trivially copyable types (int, double, char, pointers, POD structs), moving is identical to copying. The move constructor is never generated → copying is the fastest possible operation.
 
 ### 13.14.5 std::move on auto&& Return
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-handwritten.svg" alt="Handwritten: 13.14.5 std::move on auto&& Return" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-diagram.svg" alt="Diagram: 13.14.5 std::move on auto&& Return" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-5-std-move-on-auto-return-sticky.svg" alt="Sticky Note: 13.14.5 std::move on auto&& Return" width="30%">
+</a>
+
 
 ```cpp
 #include <string>
@@ -1771,6 +2552,17 @@ int main() {
 
 ### 13.14.6 Move in Return Statement: The Pitfall
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-handwritten.svg" alt="Handwritten: 13.14.6 Move in Return Statement: The Pitfall" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-diagram.svg" alt="Diagram: 13.14.6 Move in Return Statement: The Pitfall" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-6-move-in-return-statement-the-pitfall-sticky.svg" alt="Sticky Note: 13.14.6 Move in Return Statement: The Pitfall" width="30%">
+</a>
+
+
 ```cpp
 #include <string>
 
@@ -1790,6 +2582,17 @@ std::string good() {
 **C++17 rule for return value:** If the returned expression is a non-volatile automatic object (not a function parameter), the compiler first tries RVO. If RVO doesn't apply, it treats the return as an rvalue (implicit move). Explicit `std::move` prevents RVO.
 
 ### 13.14.7 Self-Move Assignment
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-handwritten.svg" alt="Handwritten: 13.14.7 Self-Move Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-diagram.svg" alt="Diagram: 13.14.7 Self-Move Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-14-7-self-move-assignment-sticky.svg" alt="Sticky Note: 13.14.7 Self-Move Assignment" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1818,9 +2621,31 @@ int main() {
 
 ### 13.15.1 What Are Move-Only Types?
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-handwritten.svg" alt="Handwritten: 13.15.1 What Are Move-Only Types?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-diagram.svg" alt="Diagram: 13.15.1 What Are Move-Only Types?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-1-what-are-move-only-types-sticky.svg" alt="Sticky Note: 13.15.1 What Are Move-Only Types?" width="30%">
+</a>
+
+
 Move-only types can be moved but not copied. They typically represent unique ownership of a resource.
 
 ### 13.15.2 Examples of Move-Only Types
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-handwritten.svg" alt="Handwritten: 13.15.2 Examples of Move-Only Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-diagram.svg" alt="Diagram: 13.15.2 Examples of Move-Only Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-2-examples-of-move-only-types-sticky.svg" alt="Sticky Note: 13.15.2 Examples of Move-Only Types" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1853,6 +2678,17 @@ int main() {
 ```
 
 ### 13.15.3 Implementing a Move-Only Type
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-handwritten.svg" alt="Handwritten: 13.15.3 Implementing a Move-Only Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-diagram.svg" alt="Diagram: 13.15.3 Implementing a Move-Only Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-15-3-implementing-a-move-only-type-sticky.svg" alt="Sticky Note: 13.15.3 Implementing a Move-Only Type" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1912,6 +2748,17 @@ int main() {
 
 ### 13.16.1 Standard Library Containers
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-handwritten.svg" alt="Handwritten: 13.16.1 Standard Library Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-diagram.svg" alt="Diagram: 13.16.1 Standard Library Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-1-standard-library-containers-sticky.svg" alt="Sticky Note: 13.16.1 Standard Library Containers" width="30%">
+</a>
+
+
 All standard library containers use move semantics extensively:
 
 ```cpp
@@ -1950,6 +2797,17 @@ int main() {
 
 ### 13.16.2 std::swap Optimized with Move
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-handwritten.svg" alt="Handwritten: 13.16.2 std::swap Optimized with Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-diagram.svg" alt="Diagram: 13.16.2 std::swap Optimized with Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-2-std-swap-optimized-with-move-sticky.svg" alt="Sticky Note: 13.16.2 std::swap Optimized with Move" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -1982,6 +2840,17 @@ int main() {
 ```
 
 ### 13.16.3 Move Semantics in Multithreading
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-handwritten.svg" alt="Handwritten: 13.16.3 Move Semantics in Multithreading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-diagram.svg" alt="Diagram: 13.16.3 Move Semantics in Multithreading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-3-move-semantics-in-multithreading-sticky.svg" alt="Sticky Note: 13.16.3 Move Semantics in Multithreading" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2024,6 +2893,17 @@ int main() {
 
 ### 13.16.4 Move Semantics in DirectX / OpenGL Handles
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-handwritten.svg" alt="Handwritten: 13.16.4 Move Semantics in DirectX / OpenGL Handles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-diagram.svg" alt="Diagram: 13.16.4 Move Semantics in DirectX / OpenGL Handles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-4-move-semantics-in-directx-opengl-handles-sticky.svg" alt="Sticky Note: 13.16.4 Move Semantics in DirectX / OpenGL Handles" width="30%">
+</a>
+
+
 Game engines and graphics frameworks use move semantics for RAII wrappers around GPU resources:
 
 ```cpp
@@ -2062,6 +2942,17 @@ private:
 
 ### 13.16.5 Move Semantics in Parsers and Compilers
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-handwritten.svg" alt="Handwritten: 13.16.5 Move Semantics in Parsers and Compilers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-diagram.svg" alt="Diagram: 13.16.5 Move Semantics in Parsers and Compilers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-5-move-semantics-in-parsers-and-compilers-sticky.svg" alt="Sticky Note: 13.16.5 Move Semantics in Parsers and Compilers" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -2095,6 +2986,17 @@ ASTNode parse_expression(const std::string& expr) {
 ```
 
 ### 13.16.6 Network Buffers
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-handwritten.svg" alt="Handwritten: 13.16.6 Network Buffers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-diagram.svg" alt="Diagram: 13.16.6 Network Buffers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-16-6-network-buffers-sticky.svg" alt="Sticky Note: 13.16.6 Network Buffers" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2157,6 +3059,17 @@ private:
 
 ### 13.17.1 Value Categories Deep Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-handwritten.svg" alt="Handwritten: 13.17.1 Value Categories Deep Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-diagram.svg" alt="Diagram: 13.17.1 Value Categories Deep Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-1-value-categories-deep-comparison-sticky.svg" alt="Sticky Note: 13.17.1 Value Categories Deep Comparison" width="30%">
+</a>
+
+
 | Property | lvalue | prvalue | xvalue | glvalue | rvalue |
 |----------|--------|---------|--------|---------|--------|
 | Has identity | âœ“ | âœ— | âœ“ | âœ“ | âœ— |
@@ -2169,6 +3082,17 @@ private:
 | Polymorphic | type known | dynamic type | type known | → | → |
 
 ### 13.17.2 std::move vs std::forward Detailed Table
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-handwritten.svg" alt="Handwritten: 13.17.2 std::move vs std::forward Detailed Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-diagram.svg" alt="Diagram: 13.17.2 std::move vs std::forward Detailed Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-2-std-move-vs-std-forward-detailed-table-sticky.svg" alt="Sticky Note: 13.17.2 std::move vs std::forward Detailed Table" width="30%">
+</a>
+
 
 | Aspect | std::move | std::forward&lt;T> |
 |--------|-----------|-----------------|
@@ -2184,6 +3108,17 @@ private:
 
 ### 13.17.3 Rule of Five → Member Function Summary
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-handwritten.svg" alt="Handwritten: 13.17.3 Rule of Five → Member Function Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-diagram.svg" alt="Diagram: 13.17.3 Rule of Five → Member Function Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-3-rule-of-five-member-function-summary-sticky.svg" alt="Sticky Note: 13.17.3 Rule of Five → Member Function Summary" width="30%">
+</a>
+
+
 | Function | Signature | When Called | noexcept? |
 |----------|-----------|------------|-----------|
 | Destructor | `~T()` | Object goes out of scope | implicit |
@@ -2193,6 +3128,17 @@ private:
 | Move assignment | `T& operator=(T&&)` | `a = std::move(b);` | **yes** |
 
 ### 13.17.4 Reference Collapsing Summary Table
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-handwritten.svg" alt="Handwritten: 13.17.4 Reference Collapsing Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-diagram.svg" alt="Diagram: 13.17.4 Reference Collapsing Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-4-reference-collapsing-summary-table-sticky.svg" alt="Sticky Note: 13.17.4 Reference Collapsing Summary Table" width="30%">
+</a>
+
 
 | Original A | Original B | Collapsed | Name |
 |------------|------------|-----------|------|
@@ -2204,6 +3150,17 @@ private:
 **Rule:** "& wins" → if either reference is `&`, the result is `&`.
 
 ### 13.17.5 Move Semantics Benefits → Performance Comparison
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-handwritten.svg" alt="Handwritten: 13.17.5 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-diagram.svg" alt="Diagram: 13.17.5 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/13-17-5-move-semantics-benefits-performance-comparison-sticky.svg" alt="Sticky Note: 13.17.5 Move Semantics Benefits → Performance Comparison" width="30%">
+</a>
+
 
 | Scenario | Copy | Move | Benefit |
 |----------|------|------|---------|
@@ -2218,6 +3175,17 @@ private:
 ## 13.18 Interview Corner
 
 ### Q1: What is std::move and does it actually move anything?
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-handwritten.svg" alt="Handwritten: What is std::move and does it actually move anything?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-diagram.svg" alt="Diagram: What is std::move and does it actually move anything?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-std-move-and-does-it-actually-move-anything-sticky.svg" alt="Sticky Note: What is std::move and does it actually move anything?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2240,6 +3208,17 @@ std::string t = std::move(s);
 After `std::move`, the source object is in a valid but unspecified state → it must still be destructible and assignable.
 
 ### Q2: Explain perfect forwarding. Why do we need std::forward instead of std::move?
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-handwritten.svg" alt="Handwritten: Explain perfect forwarding. Why do we need std::forward instead of std::move?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-diagram.svg" alt="Diagram: Explain perfect forwarding. Why do we need std::forward instead of std::move?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/explain-perfect-forwarding-why-do-we-need-std-forward-instead-of-std-move-sticky.svg" alt="Sticky Note: Explain perfect forwarding. Why do we need std::forward instead of std::move?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2268,6 +3247,17 @@ int main() {
 The mechanism: when `T = int&` (lvalue argument), `std::forward<int&>` returns `int&` (via reference collapsing `int& && → int&`). When `T = int` (rvalue argument), `std::forward<int>` returns `int&&`.
 
 ### Q3: What is the difference between T&& in template context and non-template context?
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-handwritten.svg" alt="Handwritten: What is the difference between T&& in template context and non-template context?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-diagram.svg" alt="Diagram: What is the difference between T&& in template context and non-template context?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-t-in-template-context-and-non-template-context-sticky.svg" alt="Sticky Note: What is the difference between T&& in template context and non-template context?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2303,6 +3293,17 @@ auto&& r2 = 20;  // int&& (rvalue reference)
 
 ### Q4: Why should move constructors be noexcept? What happens if they aren't?
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-handwritten.svg" alt="Handwritten: Why should move constructors be noexcept? What happens if they aren't?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-diagram.svg" alt="Diagram: Why should move constructors be noexcept? What happens if they aren't?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/why-should-move-constructors-be-noexcept-what-happens-if-they-aren-t-sticky.svg" alt="Sticky Note: Why should move constructors be noexcept? What happens if they aren't?" width="30%">
+</a>
+
+
 **Answer:**
 
 Move constructors should be `noexcept` primarily for `std::vector` reallocation. When `std::vector` grows its capacity, it needs to transfer existing elements to new memory. It checks `std::is_nothrow_move_constructible<T>::value`:
@@ -2328,6 +3329,17 @@ std::vector<Risky> v2;  // Reallocation: uses expensive copies!
 
 ### Q5: What are the reference collapsing rules and why are they important?
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-handwritten.svg" alt="Handwritten: What are the reference collapsing rules and why are they important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-diagram.svg" alt="Diagram: What are the reference collapsing rules and why are they important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-are-the-reference-collapsing-rules-and-why-are-they-important-sticky.svg" alt="Sticky Note: What are the reference collapsing rules and why are they important?" width="30%">
+</a>
+
+
 **Answer:**
 
 The reference collapsing rules determine what type results when a reference to a reference appears (which only happens through template instantiation, typedefs, or decltype). The four rules are:
@@ -2345,6 +3357,17 @@ The reference collapsing rules determine what type results when a reference to a
 
 ### Q6: What is the difference between a prvalue and an xvalue?
 
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-handwritten.svg" alt="Handwritten: What is the difference between a prvalue and an xvalue?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-diagram.svg" alt="Diagram: What is the difference between a prvalue and an xvalue?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-difference-between-a-prvalue-and-an-xvalue-sticky.svg" alt="Sticky Note: What is the difference between a prvalue and an xvalue?" width="30%">
+</a>
+
+
 **Answer:**
 
 Both are rvalues (they can be moved from), but they differ in identity:
@@ -2361,6 +3384,17 @@ A prvalue is a "pure" temporary with no name or address. An xvalue has a name/ad
 The taxonomy: rvalue = prvalue âˆª xvalue; glvalue = lvalue âˆª xvalue.
 
 ### Q7: What is the Rule of Five? When should I apply it?
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-handwritten.svg" alt="Handwritten: What is the Rule of Five? When should I apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-diagram.svg" alt="Diagram: What is the Rule of Five? When should I apply it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-rule-of-five-when-should-i-apply-it-sticky.svg" alt="Sticky Note: What is the Rule of Five? When should I apply it?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2396,6 +3430,17 @@ public:
 ```
 
 ### Q8: What is the output of this code and why?
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-handwritten.svg" alt="Handwritten: What is the output of this code and why?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-diagram.svg" alt="Diagram: What is the output of this code and why?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/what-is-the-output-of-this-code-and-why-sticky.svg" alt="Sticky Note: What is the output of this code and why?" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2457,6 +3502,17 @@ lvalue rvalue lvalue
 ## 13.19 Chapter Quiz
 
 ### Multiple Choice
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-handwritten.svg" alt="Handwritten: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-diagram.svg" alt="Diagram: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/multiple-choice-sticky.svg" alt="Sticky Note: Multiple Choice" width="30%">
+</a>
+
 
 1. What does `std::move` actually do?
    A) Moves the object to a new memory location
@@ -2529,6 +3585,17 @@ lvalue rvalue lvalue
     <details><summary>Answer&lt;/summary&gt;**B)** Perfect forwarding preserves the value category (lvalue or rvalue) of each argument as it passes through a template function, using forwarding references and `std::forward`.</details>
 
 ### True or False
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-handwritten.svg" alt="Handwritten: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-diagram.svg" alt="Diagram: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/true-or-false-sticky.svg" alt="Sticky Note: True or False" width="30%">
+</a>
+
 
 11. `std::move` actually moves the object at runtime.
     <details><summary>Answer&lt;/summary&gt;**False.** `std::move` is just a cast to rvalue reference. The move operation happens in the move constructor or move assignment operator.</details>
@@ -2649,6 +3716,17 @@ Move semantics, introduced in C++11, fundamentally transformed how C++ programs 
    ```
 
 ### Real-World Mini-Projects
+
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-handwritten.svg" alt="Handwritten: Real-World Mini-Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-diagram.svg" alt="Diagram: Real-World Mini-Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/13-move-semantics/real-world-mini-projects-sticky.svg" alt="Sticky Note: Real-World Mini-Projects" width="30%">
+</a>
+
 
 8. **Build a simple JSON parser** that uses move semantics for string and array values to avoid copies during parsing. Parse `{"name": "Alice", "scores": [95, 87, 92]}` and extract values using move operations.
 

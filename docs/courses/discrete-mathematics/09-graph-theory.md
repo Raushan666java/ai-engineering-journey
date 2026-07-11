@@ -55,6 +55,17 @@ flowchart LR
 
 ### 9.1 Definition
 
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" alt="Handwritten: 9.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" alt="Diagram: 9.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" alt="Sticky Note: 9.1 Definition" width="30%">
+</a>
+
+
 A **graph** $G = (V, E)$ consists of a set $V$ of **vertices** (or **nodes**) and a set $E$ of **edges** connecting pairs of vertices. An edge $\{u, v\}$ connects vertices $u$ and $v$.
 
 **Graph types:**
@@ -67,6 +78,17 @@ A **graph** $G = (V, E)$ consists of a set $V$ of **vertices** (or **nodes**) an
 > **One-Sentence Takeaway:** A graph is a set of vertices connected by edges; the edge type (directed, weighted, multiple) determines the graph variant.
 
 ### 9.2 Basic Concepts
+
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" alt="Handwritten: 9.2 Basic Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" alt="Diagram: 9.2 Basic Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" alt="Sticky Note: 9.2 Basic Concepts" width="30%">
+</a>
+
 
 **Adjacency:** Two vertices are adjacent if an edge connects them.
 
@@ -84,6 +106,17 @@ A **graph** $G = (V, E)$ consists of a set $V$ of **vertices** (or **nodes**) an
 
 ### 9.3 Connectivity
 
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" alt="Handwritten: 9.3 Connectivity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" alt="Diagram: 9.3 Connectivity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" alt="Sticky Note: 9.3 Connectivity" width="30%">
+</a>
+
+
 A graph is **connected** if there is a path between any two vertices. A **connected component** is a maximal connected subgraph.
 
 **Cut vertex (articulation point):** A vertex whose removal disconnects the graph.
@@ -99,6 +132,17 @@ A graph is **connected** if there is a path between any two vertices. A **connec
 > **One-Sentence Takeaway:** A vertex or edge whose removal disconnects the graph is a cut vertex or bridge; strong connectivity requires directed paths both ways.
 
 ### 9.4 Special Graphs
+
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" alt="Handwritten: 9.4 Special Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" alt="Diagram: 9.4 Special Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" alt="Sticky Note: 9.4 Special Graphs" width="30%">
+</a>
+
 
 **Complete graph $K_n$:** Every pair of vertices is connected. Has $n(n-1)/2$ edges.
 
@@ -119,6 +163,17 @@ A graph is **connected** if there is a path between any two vertices. A **connec
 > **One-Sentence Takeaway:** Complete graphs ($K_n$) and bipartite graphs ($K_{m,n}$) are fundamental special classes; bipartite is equivalent to 2-colorability and absence of odd cycles.
 
 ### 9.5 Graph Representations
+
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" alt="Handwritten: 9.5 Graph Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" alt="Diagram: 9.5 Graph Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" alt="Sticky Note: 9.5 Graph Representations" width="30%">
+</a>
+
 
 **Adjacency Matrix:** $A[i][j] = 1$ if edge $(i,j)$ exists, $0$ otherwise. For undirected graphs, $A$ is symmetric. Size: $|V| \times |V|$.
 
@@ -164,6 +219,17 @@ class Graph {
 
 ### 9.6 Euler and Hamilton Paths
 
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" alt="Handwritten: 9.6 Euler and Hamilton Paths" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" alt="Diagram: 9.6 Euler and Hamilton Paths" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" alt="Sticky Note: 9.6 Euler and Hamilton Paths" width="30%">
+</a>
+
+
 **Eulerian path:** A trail that traverses every edge exactly once.
 **Eulerian circuit:** An Eulerian path that starts and ends at the same vertex.
 
@@ -179,6 +245,17 @@ No simple characterization exists for Hamiltonian graphs (the problem is NP-comp
 > **One-Sentence Takeaway:** Eulerian paths traverse every edge once (easy to characterize via parity); Hamiltonian paths visit every vertex once (NP-complete to characterize).
 
 ### 9.7 Subgraphs and Graph Isomorphism
+
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" alt="Handwritten: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" alt="Diagram: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" alt="Sticky Note: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+</a>
+
 
 **Subgraph:** $H = (V', E')$ where $V' \subseteq V$ and $E' \subseteq E$.
 

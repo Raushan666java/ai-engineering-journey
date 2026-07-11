@@ -27,6 +27,17 @@ flowchart LR
 
 ### Q1: What are the three categories of design patterns in the GoF book?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-handwritten.svg" alt="Handwritten: What are the three categories of design patterns in the GoF book?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-diagram.svg" alt="Diagram: What are the three categories of design patterns in the GoF book?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-three-categories-of-design-patterns-in-the-gof-book-sticky.svg" alt="Sticky Note: What are the three categories of design patterns in the GoF book?" width="30%">
+</a>
+
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -43,6 +54,17 @@ flowchart LR
 ---
 
 ### Q2: What is the Singleton pattern and how do you implement it in Java?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-handwritten.svg" alt="Handwritten: What is the Singleton pattern and how do you implement it in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-diagram.svg" alt="Diagram: What is the Singleton pattern and how do you implement it in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-singleton-pattern-and-how-do-you-implement-it-in-java-sticky.svg" alt="Sticky Note: What is the Singleton pattern and how do you implement it in Java?" width="30%">
+</a>
+
 
 **Answer:** Singleton ensures a class has only one instance and provides a global access point to it. In Spring, beans are singletons by default (one instance per IoC container).
 
@@ -102,6 +124,17 @@ Singleton is the default Spring bean scope. Other scopes: prototype, request, se
 ---
 
 ### Q3: What is the Factory Method pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-handwritten.svg" alt="Handwritten: What is the Factory Method pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-diagram.svg" alt="Diagram: What is the Factory Method pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-factory-method-pattern-sticky.svg" alt="Sticky Note: What is the Factory Method pattern?" width="30%">
+</a>
+
 
 **Answer:** Factory Method defines an interface for creating an object, but lets subclasses decide which class to instantiate. It lets a class defer instantiation to subclasses.
 
@@ -165,6 +198,17 @@ public class AppConfig {
 
 ### Q4: What is the Abstract Factory pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-handwritten.svg" alt="Handwritten: What is the Abstract Factory pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-diagram.svg" alt="Diagram: What is the Abstract Factory pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-abstract-factory-pattern-sticky.svg" alt="Sticky Note: What is the Abstract Factory pattern?" width="30%">
+</a>
+
+
 **Answer:** Abstract Factory provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ```java
@@ -210,6 +254,17 @@ public class Application {
 ---
 
 ### Q5: What is the Builder pattern and when do you use it?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-handwritten.svg" alt="Handwritten: What is the Builder pattern and when do you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-diagram.svg" alt="Diagram: What is the Builder pattern and when do you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-and-when-do-you-use-it-sticky.svg" alt="Sticky Note: What is the Builder pattern and when do you use it?" width="30%">
+</a>
+
 
 **Answer:** Builder separates the construction of a complex object from its representation, allowing the same construction process to create different representations. Used when:
 - Objects have many optional parameters (telescoping constructor problem)
@@ -293,6 +348,17 @@ Order order = new Order.Builder("ord-123", "usr-456")
 
 ### Q6: What is the Prototype pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-handwritten.svg" alt="Handwritten: What is the Prototype pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-diagram.svg" alt="Diagram: What is the Prototype pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-prototype-pattern-sticky.svg" alt="Sticky Note: What is the Prototype pattern?" width="30%">
+</a>
+
+
 **Answer:** Prototype creates new objects by cloning an existing object (prototype) rather than instantiating a new class. Useful when object creation is expensive.
 
 ```java
@@ -324,6 +390,17 @@ public class ReportTemplate implements Cloneable {
 ---
 
 ### Q7: What is the Adapter pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-handwritten.svg" alt="Handwritten: What is the Adapter pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-diagram.svg" alt="Diagram: What is the Adapter pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-adapter-pattern-sticky.svg" alt="Sticky Note: What is the Adapter pattern?" width="30%">
+</a>
+
 
 **Answer:** Adapter allows incompatible interfaces to work together. It converts the interface of a class into another interface that the client expects.
 
@@ -366,6 +443,17 @@ public class StripePaymentAdapter implements PaymentGateway {
 ---
 
 ### Q8: What is the Decorator pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-handwritten.svg" alt="Handwritten: What is the Decorator pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-diagram.svg" alt="Diagram: What is the Decorator pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-decorator-pattern-sticky.svg" alt="Sticky Note: What is the Decorator pattern?" width="30%">
+</a>
+
 
 **Answer:** Decorator allows behavior to be added to an individual object dynamically, without affecting other objects of the same class. An alternative to subclassing for extending functionality.
 
@@ -460,6 +548,17 @@ source.writeData("Hello, World!");  // encrypted + compressed
 
 ### Q9: What is the Proxy pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-handwritten.svg" alt="Handwritten: What is the Proxy pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-diagram.svg" alt="Diagram: What is the Proxy pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-sticky.svg" alt="Sticky Note: What is the Proxy pattern?" width="30%">
+</a>
+
+
 **Answer:** Proxy provides a surrogate or placeholder for another object to control access to it. Types: virtual proxy (lazy loading), protection proxy (access control), remote proxy (RPC).
 
 ```java
@@ -507,6 +606,17 @@ public class InventoryServiceProxy implements InventoryService {
 
 ### Q10: What is the Facade pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-handwritten.svg" alt="Handwritten: What is the Facade pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-diagram.svg" alt="Diagram: What is the Facade pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-facade-pattern-sticky.svg" alt="Sticky Note: What is the Facade pattern?" width="30%">
+</a>
+
+
 **Answer:** Facade provides a simplified interface to a complex subsystem. It hides the complexity of multiple interdependent classes behind a single, easy-to-use API.
 
 ```java
@@ -552,6 +662,17 @@ public class OrderFacade {
 ---
 
 ### Q11: What is the Strategy pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-handwritten.svg" alt="Handwritten: What is the Strategy pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-diagram.svg" alt="Diagram: What is the Strategy pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-strategy-pattern-sticky.svg" alt="Sticky Note: What is the Strategy pattern?" width="30%">
+</a>
+
 
 **Answer:** Strategy defines a family of algorithms, encapsulates each one, and makes them interchangeable. The algorithm can vary independently from the clients that use it.
 
@@ -624,6 +745,17 @@ public class PricingService {
 ---
 
 ### Q12: What is the Observer pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-handwritten.svg" alt="Handwritten: What is the Observer pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-diagram.svg" alt="Diagram: What is the Observer pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-observer-pattern-sticky.svg" alt="Sticky Note: What is the Observer pattern?" width="30%">
+</a>
+
 
 **Answer:** Observer defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
@@ -724,6 +856,17 @@ public class EmailService {
 
 ### Q13: What is the Template Method pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-handwritten.svg" alt="Handwritten: What is the Template Method pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-diagram.svg" alt="Diagram: What is the Template Method pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-template-method-pattern-sticky.svg" alt="Sticky Note: What is the Template Method pattern?" width="30%">
+</a>
+
+
 **Answer:** Template Method defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Subclasses can redefine certain steps without changing the algorithm's structure.
 
 ```java
@@ -775,6 +918,17 @@ public class CsvExporter extends DataExporter {
 ---
 
 ### Q14: What is the Command pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-handwritten.svg" alt="Handwritten: What is the Command pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-diagram.svg" alt="Diagram: What is the Command pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-command-pattern-sticky.svg" alt="Sticky Note: What is the Command pattern?" width="30%">
+</a>
+
 
 **Answer:** Command encapsulates a request as an object, allowing parameterization of clients with different requests, queuing of requests, and support for undoable operations.
 
@@ -832,6 +986,17 @@ public class OrderCommandInvoker {
 ---
 
 ### Q15: What is the Chain of Responsibility pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-handwritten.svg" alt="Handwritten: What is the Chain of Responsibility pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-diagram.svg" alt="Diagram: What is the Chain of Responsibility pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-chain-of-responsibility-pattern-sticky.svg" alt="Sticky Note: What is the Chain of Responsibility pattern?" width="30%">
+</a>
+
 
 **Answer:** Chain of Responsibility lets you pass requests along a chain of handlers. Each handler decides either to process the request or pass it to the next handler in the chain.
 
@@ -898,6 +1063,17 @@ chain.linkWith(new ProductAvailableValidator())
 
 ### Q16: What is the State pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-handwritten.svg" alt="Handwritten: What is the State pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-diagram.svg" alt="Diagram: What is the State pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-state-pattern-sticky.svg" alt="Sticky Note: What is the State pattern?" width="30%">
+</a>
+
+
 **Answer:** State allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
 
 ```java
@@ -961,6 +1137,17 @@ public class Order {
 ---
 
 ### Q17: What is the Composite pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-handwritten.svg" alt="Handwritten: What is the Composite pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-diagram.svg" alt="Diagram: What is the Composite pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-composite-pattern-sticky.svg" alt="Sticky Note: What is the Composite pattern?" width="30%">
+</a>
+
 
 **Answer:** Composite composes objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions uniformly.
 
@@ -1034,6 +1221,17 @@ menu.render();  // Renders entire menu tree
 
 ### Q18: What is the Flyweight pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-handwritten.svg" alt="Handwritten: What is the Flyweight pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-diagram.svg" alt="Diagram: What is the Flyweight pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-flyweight-pattern-sticky.svg" alt="Sticky Note: What is the Flyweight pattern?" width="30%">
+</a>
+
+
 **Answer:** Flyweight minimizes memory usage by sharing as much data as possible with similar objects. It's useful when a large number of nearly identical objects are needed.
 
 ```java
@@ -1084,6 +1282,17 @@ public class Character {
 ---
 
 ### Q19: What is the Proxy pattern used for in Spring AOP?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-handwritten.svg" alt="Handwritten: What is the Proxy pattern used for in Spring AOP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-diagram.svg" alt="Diagram: What is the Proxy pattern used for in Spring AOP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-proxy-pattern-used-for-in-spring-aop-sticky.svg" alt="Sticky Note: What is the Proxy pattern used for in Spring AOP?" width="30%">
+</a>
+
 
 **Answer:** Spring AOP uses proxy objects to implement cross-cutting concerns. When you annotate a bean with `@Transactional`, `@Cacheable`, or `@Async`, Spring creates a proxy that wraps the original bean.
 
@@ -1145,6 +1354,17 @@ public class OrderService {
 
 ### Q20: What is the Mediator pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-handwritten.svg" alt="Handwritten: What is the Mediator pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-diagram.svg" alt="Diagram: What is the Mediator pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-mediator-pattern-sticky.svg" alt="Sticky Note: What is the Mediator pattern?" width="30%">
+</a>
+
+
 **Answer:** Mediator reduces coupling between communicating objects by having them communicate indirectly through a mediator object.
 
 ```java
@@ -1199,6 +1419,17 @@ public class User {
 
 ### Q21: What is the Memento pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-handwritten.svg" alt="Handwritten: What is the Memento pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-diagram.svg" alt="Diagram: What is the Memento pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-memento-pattern-sticky.svg" alt="Sticky Note: What is the Memento pattern?" width="30%">
+</a>
+
+
 **Answer:** Memento captures and externalizes an object's internal state so the object can be restored to this state later, without violating encapsulation.
 
 ```java
@@ -1248,6 +1479,17 @@ public class OrderHistory {
 ---
 
 ### Q22: What is the Interpreter pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-handwritten.svg" alt="Handwritten: What is the Interpreter pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-diagram.svg" alt="Diagram: What is the Interpreter pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-interpreter-pattern-sticky.svg" alt="Sticky Note: What is the Interpreter pattern?" width="30%">
+</a>
+
 
 **Answer:** Interpreter defines a grammar for a language and an interpreter that uses the grammar to interpret sentences in the language.
 
@@ -1316,6 +1558,17 @@ boolean matches = javaAndSpring.interpret("Java Spring Boot");  // true
 
 ### Q23: What is the Visitor pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-handwritten.svg" alt="Handwritten: What is the Visitor pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-diagram.svg" alt="Diagram: What is the Visitor pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-visitor-pattern-sticky.svg" alt="Sticky Note: What is the Visitor pattern?" width="30%">
+</a>
+
+
 **Answer:** Visitor lets you define a new operation on a set of objects without changing the objects' classes. It separates the algorithm from the objects it operates on.
 
 ```java
@@ -1366,6 +1619,17 @@ public class User implements Reportable {
 ---
 
 ### Q24: What enterprise integration patterns are most relevant for Spring Boot?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-handwritten.svg" alt="Handwritten: What enterprise integration patterns are most relevant for Spring Boot?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-diagram.svg" alt="Diagram: What enterprise integration patterns are most relevant for Spring Boot?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-enterprise-integration-patterns-are-most-relevant-for-spring-boot-sticky.svg" alt="Sticky Note: What enterprise integration patterns are most relevant for Spring Boot?" width="30%">
+</a>
+
 
 **Answer:** Enterprise Integration Patterns (EIP) that are commonly used in Spring Boot microservices:
 
@@ -1459,6 +1723,17 @@ Messages that fail after retries are sent to a dead letter queue for manual insp
 
 ### Q25: What is the Saga pattern in distributed transactions?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-handwritten.svg" alt="Handwritten: What is the Saga pattern in distributed transactions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-diagram.svg" alt="Diagram: What is the Saga pattern in distributed transactions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-saga-pattern-in-distributed-transactions-sticky.svg" alt="Sticky Note: What is the Saga pattern in distributed transactions?" width="30%">
+</a>
+
+
 **Answer:** Saga is a microservices pattern for managing distributed transactions. Instead of a single ACID transaction across services, a saga is a sequence of local transactions where each step publishes an event to trigger the next step. If a step fails, compensating transactions undo the previous steps.
 
 **Types of Saga:**
@@ -1537,6 +1812,17 @@ public class OrderSagaOrchestrator {
 ---
 
 ### Q26: What are the most common anti-patterns in Java/Spring applications?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-handwritten.svg" alt="Handwritten: What are the most common anti-patterns in Java/Spring applications?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-diagram.svg" alt="Diagram: What are the most common anti-patterns in Java/Spring applications?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-anti-patterns-in-java-spring-applications-sticky.svg" alt="Sticky Note: What are the most common anti-patterns in Java/Spring applications?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1663,6 +1949,17 @@ try {
 
 ### Q27: What are concurrency patterns in Java?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-handwritten.svg" alt="Handwritten: What are concurrency patterns in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-diagram.svg" alt="Diagram: What are concurrency patterns in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-concurrency-patterns-in-java-sticky.svg" alt="Sticky Note: What are concurrency patterns in Java?" width="30%">
+</a>
+
+
 **Answer:**
 
 **1. Thread Pool Pattern**
@@ -1773,6 +2070,17 @@ public class RequestContextHolder {
 
 ### Q28: What is the Data Access Object (DAO) pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-handwritten.svg" alt="Handwritten: What is the Data Access Object (DAO) pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-diagram.svg" alt="Diagram: What is the Data Access Object (DAO) pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-data-access-object-dao-pattern-sticky.svg" alt="Sticky Note: What is the Data Access Object (DAO) pattern?" width="30%">
+</a>
+
+
 **Answer:** DAO abstracts and encapsulates all access to a data source. The DAO manages the connection to the data source and provides CRUD operations without exposing data source details to the caller.
 
 ```java
@@ -1833,6 +2141,17 @@ public class JdbcOrderDao implements OrderDao {
 
 ### Q29: What is the DTO (Data Transfer Object) pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" alt="Handwritten: What is the DTO (Data Transfer Object) pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-diagram.svg" alt="Diagram: What is the DTO (Data Transfer Object) pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-dto-data-transfer-object-pattern-sticky.svg" alt="Sticky Note: What is the DTO (Data Transfer Object) pattern?" width="30%">
+</a>
+
+
 **Answer:** DTO is an object that carries data between processes (usually between the API layer and the client). It prevents exposing internal entities and allows control over what data is sent over the wire.
 
 ```java
@@ -1880,6 +2199,17 @@ public class UserController {
 ---
 
 ### Q30: What are functional programming patterns used in Java 8+?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-handwritten.svg" alt="Handwritten: What are functional programming patterns used in Java 8+?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-diagram.svg" alt="Diagram: What are functional programming patterns used in Java 8+?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-functional-programming-patterns-used-in-java-8-sticky.svg" alt="Sticky Note: What are functional programming patterns used in Java 8+?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1938,6 +2268,17 @@ public class ExpensiveResource {
 
 ### Q31: What design patterns are used in Spring Framework itself?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-handwritten.svg" alt="Handwritten: What design patterns are used in Spring Framework itself?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-diagram.svg" alt="Diagram: What design patterns are used in Spring Framework itself?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-design-patterns-are-used-in-spring-framework-itself-sticky.svg" alt="Sticky Note: What design patterns are used in Spring Framework itself?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Pattern | Where Spring Uses It |
@@ -1963,6 +2304,17 @@ public class ExpensiveResource {
 
 ### Q32: What is the difference between Strategy and State patterns?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-handwritten.svg" alt="Handwritten: What is the difference between Strategy and State patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-diagram.svg" alt="Diagram: What is the difference between Strategy and State patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-strategy-and-state-patterns-sticky.svg" alt="Sticky Note: What is the difference between Strategy and State patterns?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Strategy | State |
@@ -1976,6 +2328,17 @@ public class ExpensiveResource {
 ---
 
 ### Q33: What is the difference between Factory Method and Abstract Factory?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-handwritten.svg" alt="Handwritten: What is the difference between Factory Method and Abstract Factory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-diagram.svg" alt="Diagram: What is the difference between Factory Method and Abstract Factory?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-factory-method-and-abstract-factory-sticky.svg" alt="Sticky Note: What is the difference between Factory Method and Abstract Factory?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1991,6 +2354,17 @@ public class ExpensiveResource {
 
 ### Q34: What is the difference between Proxy and Decorator patterns?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-handwritten.svg" alt="Handwritten: What is the difference between Proxy and Decorator patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-diagram.svg" alt="Diagram: What is the difference between Proxy and Decorator patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-proxy-and-decorator-patterns-sticky.svg" alt="Sticky Note: What is the difference between Proxy and Decorator patterns?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Proxy | Decorator |
@@ -2005,6 +2379,17 @@ public class ExpensiveResource {
 
 ### Q35: When would you use Template Method vs Strategy?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-handwritten.svg" alt="Handwritten: When would you use Template Method vs Strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-diagram.svg" alt="Diagram: When would you use Template Method vs Strategy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/when-would-you-use-template-method-vs-strategy-sticky.svg" alt="Sticky Note: When would you use Template Method vs Strategy?" width="30%">
+</a>
+
+
 **Answer:** Use **Template Method** when you have a fixed algorithm skeleton but want subclasses to override specific steps. Use **Strategy** when you want to completely swap out an algorithm.
 
 **Template Method:** "Here's the recipe → you just choose the toppings."
@@ -2017,6 +2402,17 @@ In Spring: `JdbcTemplate` uses Template Method. `PasswordEncoder` uses Strategy.
 ---
 
 ### Q36: What is the difference between Adapter and Facade patterns?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-handwritten.svg" alt="Handwritten: What is the difference between Adapter and Facade patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-diagram.svg" alt="Diagram: What is the difference between Adapter and Facade patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-adapter-and-facade-patterns-sticky.svg" alt="Sticky Note: What is the difference between Adapter and Facade patterns?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2034,6 +2430,17 @@ In Spring: `JdbcTemplate` uses Template Method. `PasswordEncoder` uses Strategy.
 
 ### Q37: What is the difference between Command and Strategy patterns?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-handwritten.svg" alt="Handwritten: What is the difference between Command and Strategy patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-diagram.svg" alt="Diagram: What is the difference between Command and Strategy patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-command-and-strategy-patterns-sticky.svg" alt="Sticky Note: What is the difference between Command and Strategy patterns?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Command | Strategy |
@@ -2047,6 +2454,17 @@ In Spring: `JdbcTemplate` uses Template Method. `PasswordEncoder` uses Strategy.
 ---
 
 ### Q38: What is the difference between Composite and Decorator patterns?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-handwritten.svg" alt="Handwritten: What is the difference between Composite and Decorator patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-diagram.svg" alt="Diagram: What is the difference between Composite and Decorator patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-composite-and-decorator-patterns-sticky.svg" alt="Sticky Note: What is the difference between Composite and Decorator patterns?" width="30%">
+</a>
+
 
 **Answer:** Both use recursive composition, but for different purposes:
 
@@ -2062,6 +2480,17 @@ In Spring: `JdbcTemplate` uses Template Method. `PasswordEncoder` uses Strategy.
 ---
 
 ### Q39: What is the difference between Singleton and Prototype bean scopes in Spring?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-handwritten.svg" alt="Handwritten: What is the difference between Singleton and Prototype bean scopes in Spring?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-diagram.svg" alt="Diagram: What is the difference between Singleton and Prototype bean scopes in Spring?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-singleton-and-prototype-bean-scopes-in-spring-sticky.svg" alt="Sticky Note: What is the difference between Singleton and Prototype bean scopes in Spring?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2107,6 +2536,17 @@ public class OrderService {
 
 ### Q40: What is the difference between JPA Entity and DTO?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-handwritten.svg" alt="Handwritten: What is the difference between JPA Entity and DTO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-diagram.svg" alt="Diagram: What is the difference between JPA Entity and DTO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-jpa-entity-and-dto-sticky.svg" alt="Sticky Note: What is the difference between JPA Entity and DTO?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Entity | DTO |
@@ -2126,6 +2566,17 @@ Always use DTOs for API responses. Exposing entities directly risks:
 ---
 
 ### Q41: What is the specification pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-handwritten.svg" alt="Handwritten: What is the specification pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-diagram.svg" alt="Diagram: What is the specification pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-specification-pattern-sticky.svg" alt="Sticky Note: What is the specification pattern?" width="30%">
+</a>
+
 
 **Answer:** The specification pattern allows business rules to be combined using boolean logic (AND, OR, NOT) in a reusable way.
 
@@ -2181,6 +2632,17 @@ List<Order> orders = orderRepository.findAll(
 
 ### Q42: What is the Null Object pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-handwritten.svg" alt="Handwritten: What is the Null Object pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-diagram.svg" alt="Diagram: What is the Null Object pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-null-object-pattern-sticky.svg" alt="Sticky Note: What is the Null Object pattern?" width="30%">
+</a>
+
+
 **Answer:** Null Object provides a surrogate for null by implementing a no-op version of an interface, eliminating null checks.
 
 ```java
@@ -2225,6 +2687,17 @@ public class OrderService {
 
 ### Q43: What is the Builder pattern's relationship with Immutable objects?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-handwritten.svg" alt="Handwritten: What is the Builder pattern's relationship with Immutable objects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-diagram.svg" alt="Diagram: What is the Builder pattern's relationship with Immutable objects?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-builder-pattern-s-relationship-with-immutable-objects-sticky.svg" alt="Sticky Note: What is the Builder pattern's relationship with Immutable objects?" width="30%">
+</a>
+
+
 **Answer:** Builder is the standard way to construct immutable objects with many parameters. The object is built through a mutable Builder and then the final `build()` method creates the immutable object. The immutability is enforced by:
 
 1. All fields `final`
@@ -2251,6 +2724,17 @@ public final class OrderRequest {
 ---
 
 ### Q44: What is the difference between Service Layer and Repository pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-handwritten.svg" alt="Handwritten: What is the difference between Service Layer and Repository pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-diagram.svg" alt="Diagram: What is the difference between Service Layer and Repository pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-service-layer-and-repository-pattern-sticky.svg" alt="Sticky Note: What is the difference between Service Layer and Repository pattern?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2289,6 +2773,17 @@ public class OrderService {
 
 ### Q45: What is the difference between Inversion of Control and Dependency Injection?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-handwritten.svg" alt="Handwritten: What is the difference between Inversion of Control and Dependency Injection?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-diagram.svg" alt="Diagram: What is the difference between Inversion of Control and Dependency Injection?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inversion-of-control-and-dependency-injection-sticky.svg" alt="Sticky Note: What is the difference between Inversion of Control and Dependency Injection?" width="30%">
+</a>
+
+
 **Answer:** IoC (Inversion of Control) is a broad principle where the framework controls the flow of the program and calls into your code. DI (Dependency Injection) is a specific implementation of IoC where dependencies are provided to an object rather than the object creating them.
 
 **IoC:** "Don't call us, we'll call you." (The framework calls your code.)
@@ -2320,6 +2815,17 @@ public class OrderService {
 ---
 
 ### Q46: What is the Law of Demeter (Principle of Least Knowledge)?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-handwritten.svg" alt="Handwritten: What is the Law of Demeter (Principle of Least Knowledge)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-diagram.svg" alt="Diagram: What is the Law of Demeter (Principle of Least Knowledge)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-law-of-demeter-principle-of-least-knowledge-sticky.svg" alt="Sticky Note: What is the Law of Demeter (Principle of Least Knowledge)?" width="30%">
+</a>
+
 
 **Answer:** A design guideline that says an object should only communicate with its immediate collaborators, not with their sub-components. "Only talk to your immediate friends."
 
@@ -2357,6 +2863,17 @@ Benefits: reduced coupling, easier refactoring, more maintainable code. Costs: m
 
 ### Q47: What is the difference between Inheritance and Composition?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-handwritten.svg" alt="Handwritten: What is the difference between Inheritance and Composition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-diagram.svg" alt="Diagram: What is the difference between Inheritance and Composition?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-inheritance-and-composition-sticky.svg" alt="Sticky Note: What is the difference between Inheritance and Composition?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Inheritance | Composition |
@@ -2389,6 +2906,17 @@ public class OrderService {
 ---
 
 ### Q48: What are marker interfaces in Java?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-handwritten.svg" alt="Handwritten: What are marker interfaces in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-diagram.svg" alt="Diagram: What are marker interfaces in Java?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-marker-interfaces-in-java-sticky.svg" alt="Sticky Note: What are marker interfaces in Java?" width="30%">
+</a>
+
 
 **Answer:** A marker interface is an interface with no methods or fields. It serves as metadata for the JVM or compiler to signal that a class has a certain property.
 
@@ -2426,6 +2954,17 @@ In modern Java, annotations are typically preferred over marker interfaces (e.g.
 ---
 
 ### Q49: What is the difference between checked and unchecked exceptions in Java design?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-handwritten.svg" alt="Handwritten: What is the difference between checked and unchecked exceptions in Java design?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-diagram.svg" alt="Diagram: What is the difference between checked and unchecked exceptions in Java design?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-checked-and-unchecked-exceptions-in-java-design-sticky.svg" alt="Sticky Note: What is the difference between checked and unchecked exceptions in Java design?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2469,6 +3008,17 @@ public class OrderNotFoundException extends RuntimeException {
 ---
 
 ### Q50: How do you handle cross-cutting concerns with AOP?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-handwritten.svg" alt="Handwritten: How do you handle cross-cutting concerns with AOP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-diagram.svg" alt="Diagram: How do you handle cross-cutting concerns with AOP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-handle-cross-cutting-concerns-with-aop-sticky.svg" alt="Sticky Note: How do you handle cross-cutting concerns with AOP?" width="30%">
+</a>
+
 
 **Answer:** AOP (Aspect-Oriented Programming) modularizes cross-cutting concerns (logging, security, transactions) into reusable aspects.
 
@@ -2532,6 +3082,17 @@ public @interface TrackExecutionTime {}
 
 ### Q51: What is the difference between a framework and a library?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-handwritten.svg" alt="Handwritten: What is the difference between a framework and a library?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-diagram.svg" alt="Diagram: What is the difference between a framework and a library?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-and-a-library-sticky.svg" alt="Sticky Note: What is the difference between a framework and a library?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Library | Framework |
@@ -2550,6 +3111,17 @@ Spring Boot is a framework: it calls your `@Controller` methods, your `@Service`
 ---
 
 ### Q52: What is the difference between Cohesion and Coupling?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-handwritten.svg" alt="Handwritten: What is the difference between Cohesion and Coupling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-diagram.svg" alt="Diagram: What is the difference between Cohesion and Coupling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-cohesion-and-coupling-sticky.svg" alt="Sticky Note: What is the difference between Cohesion and Coupling?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2592,6 +3164,17 @@ public class OrderService {
 
 ### Q53: What is DRY (Don't Repeat Yourself)?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-handwritten.svg" alt="Handwritten: What is DRY (Don't Repeat Yourself)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-diagram.svg" alt="Diagram: What is DRY (Don't Repeat Yourself)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-dry-don-t-repeat-yourself-sticky.svg" alt="Sticky Note: What is DRY (Don't Repeat Yourself)?" width="30%">
+</a>
+
+
 **Answer:** DRY states that every piece of knowledge must have a single, unambiguous representation within a system. Avoid duplication in code through abstraction, but don't force premature abstraction.
 
 ```java
@@ -2629,6 +3212,17 @@ public class OrderValidator {
 
 ### Q54: What is YAGNI (You Aren't Gonna Need It)?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-handwritten.svg" alt="Handwritten: What is YAGNI (You Aren't Gonna Need It)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-diagram.svg" alt="Diagram: What is YAGNI (You Aren't Gonna Need It)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-yagni-you-aren-t-gonna-need-it-sticky.svg" alt="Sticky Note: What is YAGNI (You Aren't Gonna Need It)?" width="30%">
+</a>
+
+
 **Answer:** YAGNI states that you should not add functionality until it's actually needed. Premature abstraction and over-engineering are wastes of time.
 
 ```java
@@ -2650,6 +3244,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ---
 
 ### Q55: How do you refactor a God Class?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-handwritten.svg" alt="Handwritten: How do you refactor a God Class?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-diagram.svg" alt="Diagram: How do you refactor a God Class?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-you-refactor-a-god-class-sticky.svg" alt="Sticky Note: How do you refactor a God Class?" width="30%">
+</a>
+
 
 **Answer:** A God Class is a class that has too many responsibilities. Refactoring steps:
 
@@ -2692,6 +3297,17 @@ public class OrderService {
 ---
 
 ### Q56: What patterns help with writing testable code?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-handwritten.svg" alt="Handwritten: What patterns help with writing testable code?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-diagram.svg" alt="Diagram: What patterns help with writing testable code?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-writing-testable-code-sticky.svg" alt="Sticky Note: What patterns help with writing testable code?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2740,6 +3356,17 @@ Isolates your domain from external dependencies (third-party APIs, legacy system
 ---
 
 ### Q57: What patterns are used in event-driven architectures?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-handwritten.svg" alt="Handwritten: What patterns are used in event-driven architectures?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-diagram.svg" alt="Diagram: What patterns are used in event-driven architectures?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-are-used-in-event-driven-architectures-sticky.svg" alt="Sticky Note: What patterns are used in event-driven architectures?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2809,6 +3436,17 @@ public class OrderConsumer {
 
 ### Q58: What are the most common architectural patterns for microservices?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-handwritten.svg" alt="Handwritten: What are the most common architectural patterns for microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-diagram.svg" alt="Diagram: What are the most common architectural patterns for microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-architectural-patterns-for-microservices-sticky.svg" alt="Sticky Note: What are the most common architectural patterns for microservices?" width="30%">
+</a>
+
+
 **Answer:**
 
 **1. Strangler Fig Pattern** → Gradually replace a monolithic system by creating new microservices alongside it, routing traffic to the new services incrementally.
@@ -2851,6 +3489,17 @@ public class RoutingConfig {
 
 ### Q59: What is the difference between a monolith and a modular monolith?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-handwritten.svg" alt="Handwritten: What is the difference between a monolith and a modular monolith?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-diagram.svg" alt="Diagram: What is the difference between a monolith and a modular monolith?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-monolith-and-a-modular-monolith-sticky.svg" alt="Sticky Note: What is the difference between a monolith and a modular monolith?" width="30%">
+</a>
+
+
 **Answer:**
 
 **Monolith:** All code in a single deployable unit with no module boundaries.
@@ -2892,6 +3541,17 @@ module inventory {
 ---
 
 ### Q60: What is a hexagonal architecture (Ports and Adapters)?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: What is a hexagonal architecture (Ports and Adapters)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: What is a hexagonal architecture (Ports and Adapters)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: What is a hexagonal architecture (Ports and Adapters)?" width="30%">
+</a>
+
 
 **Answer:** Hexagonal architecture (Alistair Cockburn) isolates the core business logic from external concerns (database, web, messaging). The core communicates through **ports** (interfaces) and **adapters** (implementations).
 
@@ -3047,6 +3707,17 @@ public class OrderApplicationService {
 
 ### Q62: What is the difference between an Aggregate and an Aggregate Root in DDD?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-handwritten.svg" alt="Handwritten: What is the difference between an Aggregate and an Aggregate Root in DDD?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-diagram.svg" alt="Diagram: What is the difference between an Aggregate and an Aggregate Root in DDD?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-an-aggregate-and-an-aggregate-root-in-ddd-sticky.svg" alt="Sticky Note: What is the difference between an Aggregate and an Aggregate Root in DDD?" width="30%">
+</a>
+
+
 **Answer:** An **Aggregate** is a cluster of domain objects that can be treated as a single unit. An **Aggregate Root** is the root entity within an aggregate → the only object accessible from outside.
 
 ```java
@@ -3102,6 +3773,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ---
 
 ### Q63: What is an anti-corruption layer?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-handwritten.svg" alt="Handwritten: What is an anti-corruption layer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-diagram.svg" alt="Diagram: What is an anti-corruption layer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-an-anti-corruption-layer-sticky.svg" alt="Sticky Note: What is an anti-corruption layer?" width="30%">
+</a>
+
 
 **Answer:** An anti-corruption layer (ACL) protects your domain from external systems. It translates between the external system's model and your domain model, preventing external concepts from leaking into your core business logic.
 
@@ -3160,6 +3842,17 @@ public class PaymentAcl {
 ---
 
 ### Q64: What is a domain event?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-handwritten.svg" alt="Handwritten: What is a domain event?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-diagram.svg" alt="Diagram: What is a domain event?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-domain-event-sticky.svg" alt="Sticky Note: What is a domain event?" width="30%">
+</a>
+
 
 **Answer:** A domain event is a record of something that happened in the domain that domain experts care about. It's immutable, named in past tense, and carries relevant data.
 
@@ -3225,6 +3918,17 @@ public class OrderService {
 
 ### Q65: What is a value object?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-handwritten.svg" alt="Handwritten: What is a value object?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-diagram.svg" alt="Diagram: What is a value object?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-a-value-object-sticky.svg" alt="Sticky Note: What is a value object?" width="30%">
+</a>
+
+
 **Answer:** A value object is an immutable object defined by its attributes, not its identity. Two value objects with the same attributes are considered equal.
 
 ```java
@@ -3283,6 +3987,17 @@ public class Order {
 ---
 
 ### Q66: What are the most common Java EE / Jakarta EE patterns?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-handwritten.svg" alt="Handwritten: What are the most common Java EE / Jakarta EE patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-diagram.svg" alt="Diagram: What are the most common Java EE / Jakarta EE patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-are-the-most-common-java-ee-jakarta-ee-patterns-sticky.svg" alt="Sticky Note: What are the most common Java EE / Jakarta EE patterns?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -3346,6 +4061,17 @@ public class RequestContextFilter implements Filter {
 
 ### Q67: What is the difference between a framework pattern and an application pattern?
 
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-handwritten.svg" alt="Handwritten: What is the difference between a framework pattern and an application pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-diagram.svg" alt="Diagram: What is the difference between a framework pattern and an application pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-framework-pattern-and-an-application-pattern-sticky.svg" alt="Sticky Note: What is the difference between a framework pattern and an application pattern?" width="30%">
+</a>
+
+
 **Answer:**
 
 **Framework patterns** are built into the framework and you use them by following conventions (Singleton beans, Template Method in JdbcTemplate, Observer via ApplicationEventPublisher).
@@ -3357,6 +4083,17 @@ Framework patterns are usually invisible → you benefit from them without imple
 ---
 
 ### Q68: What is the difference between a pattern and an anti-pattern?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-handwritten.svg" alt="Handwritten: What is the difference between a pattern and an anti-pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-diagram.svg" alt="Diagram: What is the difference between a pattern and an anti-pattern?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-is-the-difference-between-a-pattern-and-an-anti-pattern-sticky.svg" alt="Sticky Note: What is the difference between a pattern and an anti-pattern?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -3380,6 +4117,17 @@ An **anti-pattern** is a commonly used but ineffective solution that creates mor
 ---
 
 ### Q69: What patterns help with performance optimization?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-handwritten.svg" alt="Handwritten: What patterns help with performance optimization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-diagram.svg" alt="Diagram: What patterns help with performance optimization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/what-patterns-help-with-performance-optimization-sticky.svg" alt="Sticky Note: What patterns help with performance optimization?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -3434,6 +4182,17 @@ Page<Order> page = repository.findAll(PageRequest.of(0, 20, Sort.by("createdAt")
 ---
 
 ### Q70: How do patterns relate to software architecture?
+
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-handwritten.svg" alt="Handwritten: How do patterns relate to software architecture?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-diagram.svg" alt="Diagram: How do patterns relate to software architecture?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/64-interview-design-patterns/how-do-patterns-relate-to-software-architecture-sticky.svg" alt="Sticky Note: How do patterns relate to software architecture?" width="30%">
+</a>
+
 
 **Answer:** Patterns exist at different levels of abstraction:
 

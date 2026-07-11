@@ -56,6 +56,17 @@ graph TD
 
 ### 1.1 Semantic Document Structure
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-handwritten.svg" alt="Handwritten: 1.1 Semantic Document Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-diagram.svg" alt="Diagram: 1.1 Semantic Document Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-1-semantic-document-structure-sticky.svg" alt="Sticky Note: 1.1 Semantic Document Structure" width="30%">
+</a>
+
+
 ![HTML5 Elements Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/01-html.png)
 
 HTML5 introduced a set of landmark elements that replace the generic `<div>`-based document structure. These elements convey meaning about the content they contain, aiding accessibility, search-engine indexing, and code readability.
@@ -109,6 +120,17 @@ A typical document skeleton:
 ```
 
 ### 1.2 HTML Forms
+
+<a href="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-handwritten.svg" alt="Handwritten: 1.2 HTML Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-diagram.svg" alt="Diagram: 1.2 HTML Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-2-html-forms-sticky.svg" alt="Sticky Note: 1.2 HTML Forms" width="30%">
+</a>
+
 
 Forms are the primary mechanism for user-to-server data submission. HTML5 specifies a rich set of input types and attributes that enable client-side constraint validation without JavaScript.
 
@@ -165,6 +187,17 @@ The `novalidate` attribute on `<form>` disables browser validation, allowing Jav
 
 ### 1.3 Multimedia
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-handwritten.svg" alt="Handwritten: 1.3 Multimedia" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-diagram.svg" alt="Diagram: 1.3 Multimedia" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-3-multimedia-sticky.svg" alt="Sticky Note: 1.3 Multimedia" width="30%">
+</a>
+
+
 HTML5 provides native elements for embedding media without third-party plugins.
 
 **Audio:**
@@ -218,6 +251,17 @@ ctx.fillText('42%', 200, 200);
 
 ### 1.4 Accessibility
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-handwritten.svg" alt="Handwritten: 1.4 Accessibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-diagram.svg" alt="Diagram: 1.4 Accessibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-4-accessibility-sticky.svg" alt="Sticky Note: 1.4 Accessibility" width="30%">
+</a>
+
+
 Web accessibility ensures that people with disabilities can perceive, understand, navigate, and interact with web content. The WCAG 2.2 standard defines four principles: **Perceivable**, **Operable**, **Understandable**, and **Robust**.
 
 **ARIA (Accessible Rich Internet Applications)** provides a vocabulary of roles, states, and properties for custom interactive widgets.
@@ -253,6 +297,17 @@ Web accessibility ensures that people with disabilities can perceive, understand
 
 ### 1.5 SEO Meta Tags
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-handwritten.svg" alt="Handwritten: 1.5 SEO Meta Tags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-diagram.svg" alt="Diagram: 1.5 SEO Meta Tags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-5-seo-meta-tags-sticky.svg" alt="Sticky Note: 1.5 SEO Meta Tags" width="30%">
+</a>
+
+
 Search engines use `<meta>` tags and structured data to understand page content and generate rich search results.
 
 ```html
@@ -285,6 +340,17 @@ Search engines use `<meta>` tags and structured data to understand page content 
 
 ### 1.6 The Picture Element and Responsive Images
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-handwritten.svg" alt="Handwritten: 1.6 The Picture Element and Responsive Images" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-diagram.svg" alt="Diagram: 1.6 The Picture Element and Responsive Images" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-6-the-picture-element-and-responsive-images-sticky.svg" alt="Sticky Note: 1.6 The Picture Element and Responsive Images" width="30%">
+</a>
+
+
 The `<picture>` element provides art-direction and format-fallback capabilities for responsive images.
 
 ```html
@@ -303,6 +369,17 @@ The `<picture>` element provides art-direction and format-fallback capabilities 
 ```
 
 ### 1.7 Microdata and Structured Data
+
+<a href="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-handwritten.svg" alt="Handwritten: 1.7 Microdata and Structured Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-diagram.svg" alt="Diagram: 1.7 Microdata and Structured Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-7-microdata-and-structured-data-sticky.svg" alt="Sticky Note: 1.7 Microdata and Structured Data" width="30%">
+</a>
+
 
 Structured data helps search engines understand page content and display rich snippets.
 
@@ -349,6 +426,17 @@ Structured data helps search engines understand page content and display rich sn
 
 ### 1.8 Web Components: Templates and Slots
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-handwritten.svg" alt="Handwritten: 1.8 Web Components: Templates and Slots" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-diagram.svg" alt="Diagram: 1.8 Web Components: Templates and Slots" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-8-web-components-templates-and-slots-sticky.svg" alt="Sticky Note: 1.8 Web Components: Templates and Slots" width="30%">
+</a>
+
+
 The `<template>` element holds HTML that is not rendered until cloned into the DOM.
 
 ```html
@@ -390,6 +478,17 @@ customElements.define("user-card", UserCard);
 
 ### 1.9 Internationalization (i18n)
 
+<a href="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-handwritten.svg" alt="Handwritten: 1.9 Internationalization (i18n)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-diagram.svg" alt="Diagram: 1.9 Internationalization (i18n)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-9-internationalization-i18n-sticky.svg" alt="Sticky Note: 1.9 Internationalization (i18n)" width="30%">
+</a>
+
+
 The `lang` attribute and `Intl` API handle multilingual content.
 
 ```html
@@ -421,6 +520,17 @@ console.log(pluralRules.select(3)); // "other"
 ```
 
 ### 1.10 HTML APIs
+
+<a href="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-handwritten.svg" alt="Handwritten: 1.10 HTML APIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-diagram.svg" alt="Diagram: 1.10 HTML APIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/01-html/1-10-html-apis-sticky.svg" alt="Sticky Note: 1.10 HTML APIs" width="30%">
+</a>
+
 
 ```javascript
 // Store

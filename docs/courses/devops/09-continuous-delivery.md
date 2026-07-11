@@ -55,6 +55,17 @@ flowchart LR
 
 ### CD vs CI vs Continuous Deployment
 
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-handwritten.svg" alt="Handwritten: CD vs CI vs Continuous Deployment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-diagram.svg" alt="Diagram: CD vs CI vs Continuous Deployment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/cd-vs-ci-vs-continuous-deployment-sticky.svg" alt="Sticky Note: CD vs CI vs Continuous Deployment" width="30%">
+</a>
+
+
 | Aspect | Continuous Delivery | Continuous Deployment |
 |--------|-------------------|----------------------|
 | Automation | Automated to staging | Automated to production |
@@ -64,6 +75,17 @@ flowchart LR
 | Compliance needs | Can include manual steps | Requires full automation |
 
 ### Deployment Strategies
+
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
+</a>
+
 
 **Blue-Green Deployment:**
 
@@ -115,6 +137,17 @@ Step 5:     [v2] [v2] [v2] [v2] [v2]   (5 new, 0 old)
 **Disadvantages:** Slower rollback, exposes multiple versions simultaneously.
 
 ### Feature Flags
+
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-handwritten.svg" alt="Handwritten: Feature Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-diagram.svg" alt="Diagram: Feature Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/feature-flags-sticky.svg" alt="Sticky Note: Feature Flags" width="30%">
+</a>
+
 
 Feature flags decouple deployment from release. Code can be deployed to production but remain inactive until the flag is toggled:
 
@@ -168,6 +201,17 @@ console.log('New checkout for user_42:', features.isEnabled('new-checkout-flow',
 
 ### Environment Promotion
 
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-handwritten.svg" alt="Handwritten: Environment Promotion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-diagram.svg" alt="Diagram: Environment Promotion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/environment-promotion-sticky.svg" alt="Sticky Note: Environment Promotion" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     A[Developer] --> B[Feature Branch]
@@ -190,6 +234,17 @@ flowchart LR
 
 ### Rollback Strategies
 
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-handwritten.svg" alt="Handwritten: Rollback Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-diagram.svg" alt="Diagram: Rollback Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/rollback-strategies-sticky.svg" alt="Sticky Note: Rollback Strategies" width="30%">
+</a>
+
+
 **Automatic rollback triggers:**
 - Health check failure after deploy
 - Increased error rate (e.g., 5xx > 1%)
@@ -203,6 +258,17 @@ flowchart LR
 - **Feature flag off:** Disable the feature at runtime
 
 ### Deployment Pipeline Implementation
+
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-handwritten.svg" alt="Handwritten: Deployment Pipeline Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-diagram.svg" alt="Diagram: Deployment Pipeline Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/09-continuous-delivery/deployment-pipeline-implementation-sticky.svg" alt="Sticky Note: Deployment Pipeline Implementation" width="30%">
+</a>
+
 
 ```yaml
 # deploy-pipeline.yaml

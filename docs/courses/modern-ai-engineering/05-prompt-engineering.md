@@ -21,6 +21,17 @@ A prompt is the interface between human intent and model behavior. Unlike tradit
 
 ### 5.1.1 Clarity
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" alt="Handwritten: 5.1.1 Clarity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" alt="Diagram: 5.1.1 Clarity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" alt="Sticky Note: 5.1.1 Clarity" width="30%">
+</a>
+
+
 Clear prompts leave no room for ambiguity. Instead of "Write about AI," specify "Write a 200-word introduction to transformer-based language models, explaining the self-attention mechanism in simple terms suitable for a high school audience." Clarity includes:
 
 - **Explicit task description:** State exactly what the model should do (summarize, classify, generate, extract).
@@ -28,6 +39,17 @@ Clear prompts leave no room for ambiguity. Instead of "Write about AI," specify 
 - **Constraint enumeration:** List constraints (e.g., "do not include markdown formatting" or "use only information from the provided context").
 
 ### 5.1.2 Specificity
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" alt="Handwritten: 5.1.2 Specificity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" alt="Diagram: 5.1.2 Specificity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" alt="Sticky Note: 5.1.2 Specificity" width="30%">
+</a>
+
 
 Specific prompts constrain the output space, reducing hallucinations and irrelevant content. Compare:
 
@@ -38,6 +60,17 @@ Specificity includes providing examples, defining key terms, and scoping the res
 
 ### 5.1.3 Role Assignment
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" alt="Handwritten: 5.1.3 Role Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" alt="Diagram: 5.1.3 Role Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" alt="Sticky Note: 5.1.3 Role Assignment" width="30%">
+</a>
+
+
 Assigning a role (persona) to the model improves output quality by activating relevant knowledge. Roles work because they prime the model to adopt specific reasoning patterns, vocabulary, and constraints:
 
 - "You are a senior software engineer reviewing a pull request..."
@@ -47,6 +80,17 @@ Assigning a role (persona) to the model improves output quality by activating re
 Role assignment is most effective when the role implies specific expertise, constraints, and output standards.
 
 ### 5.1.4 Output Formatting
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" alt="Handwritten: 5.1.4 Output Formatting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" alt="Diagram: 5.1.4 Output Formatting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" alt="Sticky Note: 5.1.4 Output Formatting" width="30%">
+</a>
+
 
 Explicit formatting instructions reduce parsing errors and improve downstream processing:
 
@@ -86,6 +130,17 @@ graph TD
 
 ### 5.2.1 Zero-Shot Prompting
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.1 Zero-Shot Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" alt="Diagram: 5.2.1 Zero-Shot Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.1 Zero-Shot Prompting" width="30%">
+</a>
+
+
 Zero-shot prompting asks the model to perform a task without providing any examples. The model relies entirely on its pre-training knowledge and instruction-following ability.
 
 Zero-shot works well for:
@@ -100,6 +155,17 @@ Zero-shot struggles with:
 
 ### 5.2.2 Few-Shot Prompting
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.2 Few-Shot Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" alt="Diagram: 5.2.2 Few-Shot Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.2 Few-Shot Prompting" width="30%">
+</a>
+
+
 Few-shot prompting provides 2-10 examples of input-output pairs before asking the model to perform the task. Examples serve as implicit instructions, showing the model what the expected output looks like.
 
 Few-shot is superior for:
@@ -110,6 +176,17 @@ Few-shot is superior for:
 **Dynamic few-shot selection** improves performance by choosing the most relevant examples for each query. Rather than using the same examples for every query, a retrieval system selects examples similar to the current input. This is especially important when the task has diverse subcategories.
 
 ### 5.2.3 Example Quality
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" alt="Handwritten: 5.2.3 Example Quality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" alt="Diagram: 5.2.3 Example Quality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" alt="Sticky Note: 5.2.3 Example Quality" width="30%">
+</a>
+
 
 The quality of few-shot examples directly impacts performance. Best practices:
 
@@ -124,6 +201,17 @@ The quality of few-shot examples directly impacts performance. Best practices:
 
 ### 5.3.1 Chain-of-Thought Prompting
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" alt="Handwritten: 5.3.1 Chain-of-Thought Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" alt="Diagram: 5.3.1 Chain-of-Thought Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" alt="Sticky Note: 5.3.1 Chain-of-Thought Prompting" width="30%">
+</a>
+
+
 Chain-of-thought (CoT) prompting instructs the model to show its reasoning step by step before producing the final answer. CoT significantly improves performance on arithmetic, logical, and multi-step reasoning tasks.
 
 **Standard CoT:** Provide examples that include intermediate reasoning steps. The model learns to produce similar step-by-step reasoning.
@@ -131,6 +219,17 @@ Chain-of-thought (CoT) prompting instructs the model to show its reasoning step 
 **Zero-shot CoT:** Simply append "Let's think step by step" to the prompt. This surprisingly effective technique activates the model's reasoning capabilities without any examples. Zero-shot CoT improves accuracy on GSM8K (math word problems) by 10-20 percentage points compared to direct answering.
 
 ### 5.3.2 Tree-of-Thought
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" alt="Handwritten: 5.3.2 Tree-of-Thought" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" alt="Diagram: 5.3.2 Tree-of-Thought" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" alt="Sticky Note: 5.3.2 Tree-of-Thought" width="30%">
+</a>
+
 
 Tree-of-Thought (ToT) extends CoT by exploring multiple reasoning paths simultaneously. At each step, the model generates several possible next steps, evaluates them, and branches the most promising ones. ToT uses breadth-first or depth-first search over the reasoning space.
 
@@ -142,6 +241,17 @@ ToT is effective for:
 The main cost is increased token usage — each reasoning path generates additional tokens, and branching multiplies this by the branching factor.
 
 ### 5.3.3 Self-Consistency
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" alt="Handwritten: 5.3.3 Self-Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" alt="Diagram: 5.3.3 Self-Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" alt="Sticky Note: 5.3.3 Self-Consistency" width="30%">
+</a>
+
 
 Self-consistency improves CoT by sampling multiple reasoning paths and selecting the most common answer. The intuition: while individual reasoning paths may contain errors, the correct answer will appear more frequently across diverse reasoning paths.
 
@@ -194,13 +304,46 @@ flowchart LR
 
 ### 5.4.1 JSON Mode
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" alt="Handwritten: 5.4.1 JSON Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" alt="Diagram: 5.4.1 JSON Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" alt="Sticky Note: 5.4.1 JSON Mode" width="30%">
+</a>
+
+
 Many LLM providers support JSON mode, which guarantees the output can be parsed as valid JSON. OpenAI's JSON mode requires the prompt to contain the word "JSON" and the model is guided to produce a valid JSON object. However, JSON mode does not guarantee schema compliance — the output may be valid JSON but with missing or extra fields.
 
 ### 5.4.2 Grammar Constraints
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" alt="Handwritten: 5.4.2 Grammar Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" alt="Diagram: 5.4.2 Grammar Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" alt="Sticky Note: 5.4.2 Grammar Constraints" width="30%">
+</a>
+
+
 Libraries like **Outlines**, **Guidance**, and **LMQL** constrain model generation at the token level using context-free grammars. This guarantees that every token generated is valid according to the specified grammar. For JSON, the grammar enforces that only valid JSON tokens are produced at each position.
 
 ### 5.4.3 Schema Enforcement
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" alt="Handwritten: 5.4.3 Schema Enforcement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" alt="Diagram: 5.4.3 Schema Enforcement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" alt="Sticky Note: 5.4.3 Schema Enforcement" width="30%">
+</a>
+
 
 For production systems, schema enforcement at the application level is essential. After parsing the JSON, validate against a Zod schema or JSON Schema:
 
@@ -218,6 +361,17 @@ type ValidatedResponse = z.infer<typeof ResponseSchema>;
 ```
 
 ### 5.4.4 TypeScript Type Guards
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" alt="Handwritten: 5.4.4 TypeScript Type Guards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" alt="Diagram: 5.4.4 TypeScript Type Guards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" alt="Sticky Note: 5.4.4 TypeScript Type Guards" width="30%">
+</a>
+
 
 Type guards provide runtime validation with compile-time safety:
 
@@ -250,6 +404,17 @@ function isStructuredOutput(obj: unknown): obj is StructuredOutput {
 
 ### 5.5.1 Prompt Compression
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" alt="Handwritten: 5.5.1 Prompt Compression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" alt="Diagram: 5.5.1 Prompt Compression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" alt="Sticky Note: 5.5.1 Prompt Compression" width="30%">
+</a>
+
+
 Long prompts degrade model performance due to the "lost in the middle" phenomenon — models pay less attention to content in the middle of long contexts. Compression strategies include:
 
 - **Summary compression:** Replace verbose sections with shorter summaries.
@@ -260,11 +425,33 @@ LLMLingua and similar tools use small models to score token importance and remov
 
 ### 5.5.2 Sliding Window
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" alt="Handwritten: 5.5.2 Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" alt="Diagram: 5.5.2 Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" alt="Sticky Note: 5.5.2 Sliding Window" width="30%">
+</a>
+
+
 When processing long documents, a sliding window approach moves through the text in overlapping chunks. Each chunk is processed independently (or with a running summary). This limits context consumption while maintaining coverage.
 
 A common pattern: process a document in 4000-token windows with 500-token overlap. The overlap ensures that information spanning chunk boundaries is not lost.
 
 ### 5.5.3 Dynamic Context Insertion
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" alt="Handwritten: 5.5.3 Dynamic Context Insertion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" alt="Diagram: 5.5.3 Dynamic Context Insertion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" alt="Sticky Note: 5.5.3 Dynamic Context Insertion" width="30%">
+</a>
+
 
 Rather than including all available context in every prompt, dynamically select the most relevant pieces:
 
@@ -275,6 +462,17 @@ Rather than including all available context in every prompt, dynamically select 
 This is the foundation of RAG (covered in Chapter 6) but applies broadly to any context-rich task.
 
 ### 5.5.4 Recursive Repositories
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" alt="Handwritten: 5.5.4 Recursive Repositories" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" alt="Diagram: 5.5.4 Recursive Repositories" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" alt="Sticky Note: 5.5.4 Recursive Repositories" width="30%">
+</a>
+
 
 For code generation with large codebases, a recursive context-building approach navigates the codebase hierarchy:
 
@@ -291,6 +489,17 @@ This allows models to work with codebases far larger than the context window.
 
 ### 5.6.1 Separation of Concerns
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" alt="Handwritten: 5.6.1 Separation of Concerns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" alt="Diagram: 5.6.1 Separation of Concerns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" alt="Sticky Note: 5.6.1 Separation of Concerns" width="30%">
+</a>
+
+
 Modern LLM APIs separate prompts into two roles:
 
 - **System prompt:** Set by the developer, defines the model's behavior, constraints, and persona. The system prompt is typically invisible to the end user.
@@ -299,6 +508,17 @@ Modern LLM APIs separate prompts into two roles:
 This separation allows the developer to enforce safety rules, output formatting, and behavioral guidelines that the user cannot override.
 
 ### 5.6.2 System Prompt Design Patterns
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" alt="Handwritten: 5.6.2 System Prompt Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" alt="Diagram: 5.6.2 System Prompt Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" alt="Sticky Note: 5.6.2 System Prompt Design Patterns" width="30%">
+</a>
+
 
 Effective system prompts follow structured design patterns:
 
@@ -336,6 +556,17 @@ If information is missing, use null as the value.
 
 ### 5.6.3 Prompt Injection Prevention
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" alt="Handwritten: 5.6.3 Prompt Injection Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" alt="Diagram: 5.6.3 Prompt Injection Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" alt="Sticky Note: 5.6.3 Prompt Injection Prevention" width="30%">
+</a>
+
+
 Prompt injection occurs when user input contains instructions that override the system prompt. Prevention strategies:
 
 - **Input sanitization:** Strip or escape directives from user input.
@@ -350,6 +581,17 @@ Prompt injection occurs when user input contains instructions that override the 
 
 ### 5.7.1 Version Control
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" alt="Handwritten: 5.7.1 Version Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" alt="Diagram: 5.7.1 Version Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" alt="Sticky Note: 5.7.1 Version Control" width="30%">
+</a>
+
+
 Prompts should be version-controlled alongside code. Each prompt version is a distinct artifact with a unique identifier, associated model, timestamp, and evaluation results.
 
 Best practices:
@@ -360,6 +602,17 @@ Best practices:
 
 ### 5.7.2 A/B Testing
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" alt="Handwritten: 5.7.2 A/B Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" alt="Diagram: 5.7.2 A/B Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" alt="Sticky Note: 5.7.2 A/B Testing" width="30%">
+</a>
+
+
 A/B testing compares prompt variants on live traffic:
 
 1. Define a control prompt (current production version) and a treatment prompt (new version).
@@ -369,6 +622,17 @@ A/B testing compares prompt variants on live traffic:
 
 ### 5.7.3 Automated Evaluation
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" alt="Handwritten: 5.7.3 Automated Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" alt="Diagram: 5.7.3 Automated Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" alt="Sticky Note: 5.7.3 Automated Evaluation" width="30%">
+</a>
+
+
 Each prompt version should be automatically evaluated against a golden dataset:
 
 - Run the prompt against 100+ evaluation examples.
@@ -377,6 +641,17 @@ Each prompt version should be automatically evaluated against a golden dataset:
 - Flag regressions for human review.
 
 ### 5.7.4 Regression Testing
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" alt="Handwritten: 5.7.4 Regression Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" alt="Diagram: 5.7.4 Regression Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" alt="Sticky Note: 5.7.4 Regression Testing" width="30%">
+</a>
+
 
 Regression tests catch unintended behavior changes when modifying prompts:
 
@@ -417,6 +692,17 @@ flowchart LR
 
 ### 5.8.1 Systematic Debugging
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" alt="Handwritten: 5.8.1 Systematic Debugging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" alt="Diagram: 5.8.1 Systematic Debugging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" alt="Sticky Note: 5.8.1 Systematic Debugging" width="30%">
+</a>
+
+
 When a prompt produces unexpected outputs, follow a systematic debugging process:
 
 1. **Isolate the problem:** Is the issue with the system prompt, user prompt, or model behavior?
@@ -426,6 +712,17 @@ When a prompt produces unexpected outputs, follow a systematic debugging process
 5. **Test edge cases:** Try empty input, extreme lengths, and adversarial phrasing.
 
 ### 5.8.2 Log Analysis
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" alt="Handwritten: 5.8.2 Log Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" alt="Diagram: 5.8.2 Log Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" alt="Sticky Note: 5.8.2 Log Analysis" width="30%">
+</a>
+
 
 Comprehensive logging is essential for prompt debugging. Log:
 
@@ -444,6 +741,17 @@ Analyze failure patterns across logs to identify systematic issues:
 
 ### 5.8.3 Failure Categorization
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" alt="Handwritten: 5.8.3 Failure Categorization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" alt="Diagram: 5.8.3 Failure Categorization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" alt="Sticky Note: 5.8.3 Failure Categorization" width="30%">
+</a>
+
+
 Categorize failures to guide remediation:
 
 | Category | Symptom | Likely Cause | Fix |
@@ -459,6 +767,17 @@ Categorize failures to guide remediation:
 ## TypeScript Implementation
 
 ### PromptTemplate Class
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" alt="Handwritten: PromptTemplate Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" alt="Diagram: PromptTemplate Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" alt="Sticky Note: PromptTemplate Class" width="30%">
+</a>
+
 
 The `PromptTemplate` class provides a template engine with variable injection, version tracking, structured output support, and serialization for version control.
 
@@ -675,6 +994,17 @@ class PromptTemplate {
 ```
 
 ### PromptOptimizer Class
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" alt="Handwritten: PromptOptimizer Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" alt="Diagram: PromptOptimizer Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" alt="Sticky Note: PromptOptimizer Class" width="30%">
+</a>
+
 
 The `PromptOptimizer` class provides few-shot example selection, prompt compression, and automated testing against evaluation datasets.
 
@@ -920,6 +1250,17 @@ D) The system prompt is too long
 ---
 
 ### Answer Key
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+</a>
+
 
 | Question | Answer |
 |----------|--------|

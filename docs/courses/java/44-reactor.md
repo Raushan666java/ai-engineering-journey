@@ -46,6 +46,17 @@ After completing this chapter, you will be able to:
 
 ### 1.1 The Problem with Blocking I/O
 
+<a href="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-handwritten.svg" alt="Handwritten: 1.1 The Problem with Blocking I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-diagram.svg" alt="Diagram: 1.1 The Problem with Blocking I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-1-the-problem-with-blocking-i-o-sticky.svg" alt="Sticky Note: 1.1 The Problem with Blocking I/O" width="30%">
+</a>
+
+
 Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file, it blocks → waiting idle while the underlying I/O completes. Under moderate load, thread pools saturate, new requests queue, and latency spirals.
 
 Consider a typical Spring MVC endpoint that calls three downstream services:
@@ -73,6 +84,17 @@ Even with `CompletableFuture`, the thread-pool management and error handling bec
 
 ### 1.2 The Reactive Streams Specification
 
+<a href="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-handwritten.svg" alt="Handwritten: 1.2 The Reactive Streams Specification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-diagram.svg" alt="Diagram: 1.2 The Reactive Streams Specification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-2-the-reactive-streams-specification-sticky.svg" alt="Sticky Note: 1.2 The Reactive Streams Specification" width="30%">
+</a>
+
+
 Reactive Streams (www.reactive-streams.org) is a specification for asynchronous stream processing with non-blocking backpressure. It defines four interfaces:
 
 | Interface | Role |
@@ -90,6 +112,17 @@ The contract is strict:
 
 ### 1.3 Project Reactor
 
+<a href="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-handwritten.svg" alt="Handwritten: 1.3 Project Reactor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-diagram.svg" alt="Diagram: 1.3 Project Reactor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/1-3-project-reactor-sticky.svg" alt="Sticky Note: 1.3 Project Reactor" width="30%">
+</a>
+
+
 Project Reactor is the reactive library underpinning Spring WebFlux, R2DBC, and Spring Cloud Gateway. It implements the Reactive Streams specification and adds:
 
 - **Flux\<T\>** → a publisher of 0..N items (potentially infinite)
@@ -104,6 +137,17 @@ Both `Flux` and `Mono` implement `Publisher<T>` and are lazy → nothing happens
 ## 2. Creating Publishers
 
 ### 2.1 Creating Flux Instances
+
+<a href="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-handwritten.svg" alt="Handwritten: 2.1 Creating Flux Instances" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-diagram.svg" alt="Diagram: 2.1 Creating Flux Instances" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-1-creating-flux-instances-sticky.svg" alt="Sticky Note: 2.1 Creating Flux Instances" width="30%">
+</a>
+
 
 ```java
 package com.reactor.creating;
@@ -244,6 +288,17 @@ public class CreatingPublishers {
 
 ### 2.2 Understanding Subscription Lifecycle
 
+<a href="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-handwritten.svg" alt="Handwritten: 2.2 Understanding Subscription Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-diagram.svg" alt="Diagram: 2.2 Understanding Subscription Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-2-understanding-subscription-lifecycle-sticky.svg" alt="Sticky Note: 2.2 Understanding Subscription Lifecycle" width="30%">
+</a>
+
+
 Every subscription follows this lifecycle:
 
 ```
@@ -328,6 +383,17 @@ All items received
 
 ### 2.3 Lambda-Based Subscribers
 
+<a href="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-handwritten.svg" alt="Handwritten: 2.3 Lambda-Based Subscribers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-diagram.svg" alt="Diagram: 2.3 Lambda-Based Subscribers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-3-lambda-based-subscribers-sticky.svg" alt="Sticky Note: 2.3 Lambda-Based Subscribers" width="30%">
+</a>
+
+
 Reactor provides overloaded `subscribe` methods that accept lambdas:
 
 ```java
@@ -359,6 +425,17 @@ flux.subscribe(
 ```
 
 ### 2.4 Disposable and Lifecycle Management
+
+<a href="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-handwritten.svg" alt="Handwritten: 2.4 Disposable and Lifecycle Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-diagram.svg" alt="Diagram: 2.4 Disposable and Lifecycle Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/2-4-disposable-and-lifecycle-management-sticky.svg" alt="Sticky Note: 2.4 Disposable and Lifecycle Management" width="30%">
+</a>
+
 
 ```java
 package com.reactor.lifecycle;
@@ -399,6 +476,17 @@ public class DisposableDemo {
 ## 3. Core Operators
 
 ### 3.1 Transformation Operators
+
+<a href="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-handwritten.svg" alt="Handwritten: 3.1 Transformation Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-diagram.svg" alt="Diagram: 3.1 Transformation Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-1-transformation-operators-sticky.svg" alt="Sticky Note: 3.1 Transformation Operators" width="30%">
+</a>
+
 
 ```java
 package com.reactor.operators.transform;
@@ -496,6 +584,17 @@ public class TransformationOperators {
 
 ### 3.2 Filtering Operators
 
+<a href="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-handwritten.svg" alt="Handwritten: 3.2 Filtering Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-diagram.svg" alt="Diagram: 3.2 Filtering Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-2-filtering-operators-sticky.svg" alt="Sticky Note: 3.2 Filtering Operators" width="30%">
+</a>
+
+
 ```java
 package com.reactor.operators.filtering;
 
@@ -578,6 +677,17 @@ public class FilteringOperators {
 ```
 
 ### 3.3 Combination Operators
+
+<a href="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-handwritten.svg" alt="Handwritten: 3.3 Combination Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-diagram.svg" alt="Diagram: 3.3 Combination Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-3-combination-operators-sticky.svg" alt="Sticky Note: 3.3 Combination Operators" width="30%">
+</a>
+
 
 ```java
 package com.reactor.operators.combination;
@@ -665,6 +775,17 @@ public class CombinationOperators {
 
 ### 3.4 Conditional Operators
 
+<a href="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-handwritten.svg" alt="Handwritten: 3.4 Conditional Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-diagram.svg" alt="Diagram: 3.4 Conditional Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-4-conditional-operators-sticky.svg" alt="Sticky Note: 3.4 Conditional Operators" width="30%">
+</a>
+
+
 ```java
 package com.reactor.operators.conditional;
 
@@ -723,6 +844,17 @@ public class ConditionalOperators {
 ```
 
 ### 3.5 Mathematical and Aggregating Operators
+
+<a href="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-handwritten.svg" alt="Handwritten: 3.5 Mathematical and Aggregating Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-diagram.svg" alt="Diagram: 3.5 Mathematical and Aggregating Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/3-5-mathematical-and-aggregating-operators-sticky.svg" alt="Sticky Note: 3.5 Mathematical and Aggregating Operators" width="30%">
+</a>
+
 
 ```java
 package com.reactor.operators.math;
@@ -795,6 +927,17 @@ public class AggregatingOperators {
 
 ### 4.1 What Is Backpressure?
 
+<a href="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-handwritten.svg" alt="Handwritten: 4.1 What Is Backpressure?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-diagram.svg" alt="Diagram: 4.1 What Is Backpressure?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-1-what-is-backpressure-sticky.svg" alt="Sticky Note: 4.1 What Is Backpressure?" width="30%">
+</a>
+
+
 Backpressure is the mechanism by which a downstream subscriber signals to an upstream publisher how much data it can handle. Without backpressure, a fast publisher can overwhelm a slow subscriber, causing unbounded memory growth and eventual OutOfMemoryError.
 
 Reactor's backpressure model is **pull-based**: the subscriber controls the pace by calling `request(n)`. Every operator in the chain respects this protocol.
@@ -831,6 +974,17 @@ public class BackpressureDemo {
 ```
 
 ### 4.2 Backpressure Strategies
+
+<a href="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-handwritten.svg" alt="Handwritten: 4.2 Backpressure Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-diagram.svg" alt="Diagram: 4.2 Backpressure Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-2-backpressure-strategies-sticky.svg" alt="Sticky Note: 4.2 Backpressure Strategies" width="30%">
+</a>
+
 
 Reactor provides several strategies via `Flux.onBackpressureXxx()` operators:
 
@@ -896,6 +1050,17 @@ public class BackpressureStrategies {
 
 ### 4.3 Manual Request Control
 
+<a href="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-handwritten.svg" alt="Handwritten: 4.3 Manual Request Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-diagram.svg" alt="Diagram: 4.3 Manual Request Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/4-3-manual-request-control-sticky.svg" alt="Sticky Note: 4.3 Manual Request Control" width="30%">
+</a>
+
+
 For fine-grained control, use `limitRate` to chunk upstream demand:
 
 ```java
@@ -923,6 +1088,17 @@ public class LimitRateDemo {
 
 ### 5.1 The Schedulers Abstraction
 
+<a href="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-handwritten.svg" alt="Handwritten: 5.1 The Schedulers Abstraction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-diagram.svg" alt="Diagram: 5.1 The Schedulers Abstraction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-1-the-schedulers-abstraction-sticky.svg" alt="Sticky Note: 5.1 The Schedulers Abstraction" width="30%">
+</a>
+
+
 Reactor operators execute on the calling thread by default. To shift work to different thread pools, use `publishOn` (for downstream operators) and `subscribeOn` (for upstream operators including the source).
 
 | Scheduler | Description |
@@ -935,6 +1111,17 @@ Reactor operators execute on the calling thread by default. To shift work to dif
 | `Schedulers.fromExecutorService(exec)` | Wrap an existing ExecutorService |
 
 ### 5.2 publishOn vs subscribeOn
+
+<a href="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-handwritten.svg" alt="Handwritten: 5.2 publishOn vs subscribeOn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-diagram.svg" alt="Diagram: 5.2 publishOn vs subscribeOn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-2-publishon-vs-subscribeon-sticky.svg" alt="Sticky Note: 5.2 publishOn vs subscribeOn" width="30%">
+</a>
+
 
 ```java
 package com.reactor.schedulers;
@@ -1008,6 +1195,17 @@ public class PublishOnSubscribeOn {
 ```
 
 ### 5.3 Parallel and FlatMap with Concurrency
+
+<a href="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-handwritten.svg" alt="Handwritten: 5.3 Parallel and FlatMap with Concurrency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-diagram.svg" alt="Diagram: 5.3 Parallel and FlatMap with Concurrency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/5-3-parallel-and-flatmap-with-concurrency-sticky.svg" alt="Sticky Note: 5.3 Parallel and FlatMap with Concurrency" width="30%">
+</a>
+
 
 ```java
 package com.reactor.schedulers.parallel;
@@ -1163,6 +1361,17 @@ public class ErrorHandlingOperators {
 ```
 
 ### 6.1 Fallback Patterns for Mono
+
+<a href="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-handwritten.svg" alt="Handwritten: 6.1 Fallback Patterns for Mono" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-diagram.svg" alt="Diagram: 6.1 Fallback Patterns for Mono" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/6-1-fallback-patterns-for-mono-sticky.svg" alt="Sticky Note: 6.1 Fallback Patterns for Mono" width="30%">
+</a>
+
 
 ```java
 package com.reactor.errors.fallback;
@@ -1335,6 +1544,17 @@ public class ContextPropagation {
 
 ### 9.1 StepVerifier
 
+<a href="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-handwritten.svg" alt="Handwritten: 9.1 StepVerifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-diagram.svg" alt="Diagram: 9.1 StepVerifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-1-stepverifier-sticky.svg" alt="Sticky Note: 9.1 StepVerifier" width="30%">
+</a>
+
+
 ```java
 package com.reactor.testing;
 
@@ -1461,6 +1681,17 @@ class StepVerifierTests {
 
 ### 9.2 TestPublisher
 
+<a href="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-handwritten.svg" alt="Handwritten: 9.2 TestPublisher" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-diagram.svg" alt="Diagram: 9.2 TestPublisher" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-2-testpublisher-sticky.svg" alt="Sticky Note: 9.2 TestPublisher" width="30%">
+</a>
+
+
 ```java
 package com.reactor.testing.publisher;
 
@@ -1542,6 +1773,17 @@ class TestPublisherTests {
 ```
 
 ### 9.3 Virtual Time Scheduler
+
+<a href="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-handwritten.svg" alt="Handwritten: 9.3 Virtual Time Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-diagram.svg" alt="Diagram: 9.3 Virtual Time Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/44-reactor/9-3-virtual-time-scheduler-sticky.svg" alt="Sticky Note: 9.3 Virtual Time Scheduler" width="30%">
+</a>
+
 
 ```java
 package com.reactor.testing.virtualtime;

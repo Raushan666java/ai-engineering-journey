@@ -367,6 +367,17 @@ Introduced in Python 3.10, `match-case` provides powerful pattern matching inspi
 
 ### 3.6.1 Literal Patterns
 
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-handwritten.svg" alt="Handwritten: 3.6.1 Literal Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-diagram.svg" alt="Diagram: 3.6.1 Literal Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-1-literal-patterns-sticky.svg" alt="Sticky Note: 3.6.1 Literal Patterns" width="30%">
+</a>
+
+
 ```python
 def describe_status(code: int) -> str:
     match code:
@@ -383,6 +394,17 @@ print(describe_status(404))  # Not Found
 ```
 
 ### 3.6.2 Capture and Guard Patterns
+
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-handwritten.svg" alt="Handwritten: 3.6.2 Capture and Guard Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-diagram.svg" alt="Diagram: 3.6.2 Capture and Guard Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-2-capture-and-guard-patterns-sticky.svg" alt="Sticky Note: 3.6.2 Capture and Guard Patterns" width="30%">
+</a>
+
 
 ```python
 def classify_point(point):
@@ -406,6 +428,17 @@ print(classify_point((3, 3)))  # On diagonal at (3, 3)
 
 ### 3.6.3 Sequence and Mapping Patterns
 
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-handwritten.svg" alt="Handwritten: 3.6.3 Sequence and Mapping Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-diagram.svg" alt="Diagram: 3.6.3 Sequence and Mapping Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-3-sequence-and-mapping-patterns-sticky.svg" alt="Sticky Note: 3.6.3 Sequence and Mapping Patterns" width="30%">
+</a>
+
+
 ```python
 def handle_command(command):
     match command.split():
@@ -425,6 +458,17 @@ handle_command("take sword potion")  # Taking ['sword', 'potion']
 ```
 
 ### 3.6.4 Class Patterns
+
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-handwritten.svg" alt="Handwritten: 3.6.4 Class Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-diagram.svg" alt="Diagram: 3.6.4 Class Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/3-6-4-class-patterns-sticky.svg" alt="Sticky Note: 3.6.4 Class Patterns" width="30%">
+</a>
+
 
 ```python
 from dataclasses import dataclass
@@ -698,6 +742,17 @@ function area(shape: Shape): number {
 ```
 
 ### More TypeScript Control Flow Patterns
+
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-handwritten.svg" alt="Handwritten: More TypeScript Control Flow Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-diagram.svg" alt="Diagram: More TypeScript Control Flow Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/03-control-flow/more-typescript-control-flow-patterns-sticky.svg" alt="Sticky Note: More TypeScript Control Flow Patterns" width="30%">
+</a>
+
 
 ```typescript
 // Python: ternary with complex expressions

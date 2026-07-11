@@ -40,6 +40,17 @@ Apache Hive provides a SQL interface to data stored in HDFS. It translates HiveQ
 
 ### 5.1.1 Hive Architecture
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-handwritten.svg" alt="Handwritten: 5.1.1 Hive Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-diagram.svg" alt="Diagram: 5.1.1 Hive Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-1-hive-architecture-sticky.svg" alt="Sticky Note: 5.1.1 Hive Architecture" width="30%">
+</a>
+
+
 ```sql
 -- Create a Hive table backed by HDFS
 CREATE EXTERNAL TABLE logs (
@@ -61,6 +72,17 @@ ORDER BY cnt DESC;
 
 ### 5.1.2 Hive vs Spark SQL vs Presto
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-handwritten.svg" alt="Handwritten: 5.1.2 Hive vs Spark SQL vs Presto" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-diagram.svg" alt="Diagram: 5.1.2 Hive vs Spark SQL vs Presto" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-1-2-hive-vs-spark-sql-vs-presto-sticky.svg" alt="Sticky Note: 5.1.2 Hive vs Spark SQL vs Presto" width="30%">
+</a>
+
+
 | Feature | Hive | Spark SQL | Presto/Trino |
 |---------|------|-----------|--------------|
 | Engine | MapReduce/Tez | Spark | Custom MPP |
@@ -78,6 +100,17 @@ Apache HBase is a distributed, column-oriented NoSQL database modeled after Goog
 
 ### 5.2.1 HBase Data Model
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-handwritten.svg" alt="Handwritten: 5.2.1 HBase Data Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-diagram.svg" alt="Diagram: 5.2.1 HBase Data Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-1-hbase-data-model-sticky.svg" alt="Sticky Note: 5.2.1 HBase Data Model" width="30%">
+</a>
+
+
 ```
 Table: events
 Row Key         | Column Family: meta          | Column Family: payload
@@ -90,6 +123,17 @@ user_001_ts_abd | meta:user_id = "001"         | payload:event_type = "purchase"
 ```
 
 ### 5.2.2 HBase Operations
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-handwritten.svg" alt="Handwritten: 5.2.2 HBase Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-diagram.svg" alt="Diagram: 5.2.2 HBase Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-2-hbase-operations-sticky.svg" alt="Sticky Note: 5.2.2 HBase Operations" width="30%">
+</a>
+
 
 ```bash
 # HBase shell
@@ -110,6 +154,17 @@ get "events", "row1"
 ```
 
 ### 5.2.3 HBase Row Key Design
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-handwritten.svg" alt="Handwritten: 5.2.3 HBase Row Key Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-diagram.svg" alt="Diagram: 5.2.3 HBase Row Key Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-2-3-hbase-row-key-design-sticky.svg" alt="Sticky Note: 5.2.3 HBase Row Key Design" width="30%">
+</a>
+
 
 Row key design is critical for performance. Monotonically increasing keys cause hot spotting on a single region server.
 
@@ -136,6 +191,17 @@ Kafka is a distributed streaming platform used for building real-time data pipel
 
 ### 5.3.1 Kafka Core Concepts
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-handwritten.svg" alt="Handwritten: 5.3.1 Kafka Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-diagram.svg" alt="Diagram: 5.3.1 Kafka Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-1-kafka-core-concepts-sticky.svg" alt="Sticky Note: 5.3.1 Kafka Core Concepts" width="30%">
+</a>
+
+
 | Concept | Description |
 |---------|-------------|
 | **Topic** | A category/feed name to which records are published |
@@ -146,6 +212,17 @@ Kafka is a distributed streaming platform used for building real-time data pipel
 | **Consumer Group** | Multiple consumers that divide partitions |
 
 ### 5.3.2 Kafka CLI
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-handwritten.svg" alt="Handwritten: 5.3.2 Kafka CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-diagram.svg" alt="Diagram: 5.3.2 Kafka CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-2-kafka-cli-sticky.svg" alt="Sticky Note: 5.3.2 Kafka CLI" width="30%">
+</a>
+
 
 ```bash
 # Start Kafka (with ZooKeeper)
@@ -172,6 +249,17 @@ bin/kafka-console-consumer.sh \
 ```
 
 ### 5.3.3 Kafka with Python
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-handwritten.svg" alt="Handwritten: 5.3.3 Kafka with Python" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-diagram.svg" alt="Diagram: 5.3.3 Kafka with Python" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-3-kafka-with-python-sticky.svg" alt="Sticky Note: 5.3.3 Kafka with Python" width="30%">
+</a>
+
 
 ```python
 from kafka import KafkaProducer, KafkaConsumer
@@ -205,6 +293,17 @@ consumer.close()
 ```
 
 ### 5.3.4 Kafka + Spark Streaming
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-handwritten.svg" alt="Handwritten: 5.3.4 Kafka + Spark Streaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-diagram.svg" alt="Diagram: 5.3.4 Kafka + Spark Streaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-3-4-kafka-spark-streaming-sticky.svg" alt="Sticky Note: 5.3.4 Kafka + Spark Streaming" width="30%">
+</a>
+
 
 ```python
 from pyspark.sql import SparkSession
@@ -247,6 +346,17 @@ query.awaitTermination()
 
 ### 5.4.1 Parquet (Analytics)
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-handwritten.svg" alt="Handwritten: 5.4.1 Parquet (Analytics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-diagram.svg" alt="Diagram: 5.4.1 Parquet (Analytics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-1-parquet-analytics-sticky.svg" alt="Sticky Note: 5.4.1 Parquet (Analytics)" width="30%">
+</a>
+
+
 Columnar storage with predicate pushdown and schema enforcement.
 
 ```python
@@ -257,6 +367,17 @@ df.filter(df.year == 2026).select("month", "revenue").show()
 ```
 
 ### 5.4.2 Avro (Serialization)
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-handwritten.svg" alt="Handwritten: 5.4.2 Avro (Serialization)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-diagram.svg" alt="Diagram: 5.4.2 Avro (Serialization)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/5-4-2-avro-serialization-sticky.svg" alt="Sticky Note: 5.4.2 Avro (Serialization)" width="30%">
+</a>
+
 
 Row-oriented format with embedded schema, ideal for Kafka and streaming.
 
@@ -386,6 +507,17 @@ decision = {
 | Presto/Trino | Interactive ad-hoc SQL on data lake | Heavy ETL, long-running batch jobs |
 
 ### Cloud Migration Decision Guide
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-handwritten.svg" alt="Handwritten: Cloud Migration Decision Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-diagram.svg" alt="Diagram: Cloud Migration Decision Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/cloud-migration-decision-guide-sticky.svg" alt="Sticky Note: Cloud Migration Decision Guide" width="30%">
+</a>
+
 
 1. **Start small:** Migrate one pipeline at a time (Hive ? Spark SQL)
 2. **Storage first:** Move HDFS to S3/GCS (retain data format)
@@ -573,6 +705,17 @@ consumer.commit();
 
 ### Kafka + Spark Streaming Data Flow
 
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-handwritten.svg" alt="Handwritten: Kafka + Spark Streaming Data Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-diagram.svg" alt="Diagram: Kafka + Spark Streaming Data Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/kafka-spark-streaming-data-flow-sticky.svg" alt="Sticky Note: Kafka + Spark Streaming Data Flow" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     subgraph Producers["Producers"]
@@ -701,6 +844,17 @@ console.log("\nTable stats:", events.stats);
 ```
 
 ### Row Key Design Comparison
+
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-handwritten.svg" alt="Handwritten: Row Key Design Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-diagram.svg" alt="Diagram: Row Key Design Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/05-ecosystem/row-key-design-comparison-sticky.svg" alt="Sticky Note: Row Key Design Comparison" width="30%">
+</a>
+
 
 ```typescript
 function simulateWriteDistribution(numWrites: number): void {

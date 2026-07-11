@@ -50,6 +50,17 @@ Reinforcement learning is this exact process, formalized mathematically. The age
 
 ### Chapter Roadmap
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     A[RL Framework] --> B[MDP Formulation]
@@ -82,6 +93,17 @@ This loop continues until a terminal state is reached (e.g., game over, goal ach
 
 ### The Return
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" alt="Handwritten: The Return" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" alt="Diagram: The Return" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" alt="Sticky Note: The Return" width="30%">
+</a>
+
+
 The agent's goal is to maximize the expected **cumulative discounted reward** (the return):
 
 $$G_t = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}$$
@@ -90,12 +112,34 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 
 ### 11.1.1 Key Components
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" alt="Handwritten: 11.1.1 Key Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" alt="Diagram: 11.1.1 Key Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" alt="Sticky Note: 11.1.1 Key Components" width="30%">
+</a>
+
+
 - **Policy** $\pi(a \mid s)$: The agent's behavior — a mapping from states to action probabilities. $\pi$ is what the agent learns.
 - **Value function** $V_\pi(s) = \mathbb{E}_\pi[G_t \mid S_t = s]$: How good is it to be in state $s$ under policy $\pi$?
 - **Action-value function** $Q_\pi(s, a) = \mathbb{E}_\pi[G_t \mid S_t = s, A_t = a]$: How good is it to take action $a$ from state $s$ under policy $\pi$?
 - **Model:** The agent's internal representation of how the environment works — transition probabilities $P(s' \mid s, a)$ and expected rewards $R(s, a)$.
 
 ### 11.1.2 How RL Differs from Other Learning Paradigms
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" alt="Handwritten: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" alt="Diagram: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" alt="Sticky Note: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+</a>
+
 
 | Aspect | Supervised Learning | Unsupervised Learning | Reinforcement Learning |
 |--------|-------------------|---------------------|----------------------|
@@ -106,6 +150,17 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 | Sequential | No | No | Yes (decisions affect future states) |
 
 ### Real-World Analogy: Training a Dog
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" alt="Handwritten: Real-World Analogy: Training a Dog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" alt="Diagram: Real-World Analogy: Training a Dog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" alt="Sticky Note: Real-World Analogy: Training a Dog" width="30%">
+</a>
+
 
 > Teaching a dog to fetch works exactly like RL. The state is "dog at position X with ball at position Y." Actions are "run left, run right, grab, return." The reward is +1 (treat) when the dog brings the ball back and drops it. The dog tries random actions at first (exploration), and over time learns that returning the ball leads to a treat. This is the **reward hypothesis**: any goal can be framed as maximizing cumulative reward.
 
@@ -127,9 +182,31 @@ $$P(S_{t+1} \mid S_t, A_t, S_{t-1}, A_{t-1}, \dots) = P(S_{t+1} \mid S_t, A_t)$$
 
 ### Real-World Analogy: Navigation Robot
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" alt="Handwritten: Real-World Analogy: Navigation Robot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" alt="Diagram: Real-World Analogy: Navigation Robot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" alt="Sticky Note: Real-World Analogy: Navigation Robot" width="30%">
+</a>
+
+
 > A robot navigating a warehouse: states are grid cells, actions are {up, down, left, right}, rewards are +10 at the goal, -1 per step, and -5 for bumping into shelves. The robot doesn't know the transition probabilities — it learns by moving. The MDP captures exactly this: the robot's goal is to find a policy (path to goal) that maximizes cumulative reward (shortest safe path).
 
 ### 11.2.1 Bellman Expectation Equation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" alt="Handwritten: 11.2.1 Bellman Expectation Equation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" alt="Diagram: 11.2.1 Bellman Expectation Equation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" alt="Sticky Note: 11.2.1 Bellman Expectation Equation" width="30%">
+</a>
+
 
 The value function for a given policy $\pi$ satisfies a recursive relationship:
 
@@ -140,6 +217,17 @@ This is the **Bellman expectation equation** — it relates the value of a state
 $$Q_\pi(s, a) = R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) \sum_{a'} \pi(a' \mid s') Q_\pi(s', a')$$
 
 ### 11.2.2 Bellman Optimality Equation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" alt="Handwritten: 11.2.2 Bellman Optimality Equation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" alt="Diagram: 11.2.2 Bellman Optimality Equation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" alt="Sticky Note: 11.2.2 Bellman Optimality Equation" width="30%">
+</a>
+
 
 The optimal value function $V^*$ and optimal action-value function $Q^*$ satisfy:
 
@@ -158,6 +246,17 @@ These are **Bellman optimality equations** — they define the fixed-point equat
 When the model (transitions $P$ and rewards $R$) is known, we can compute the optimal policy using **dynamic programming**.
 
 ### 11.3.1 Policy Evaluation (Prediction)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" alt="Handwritten: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" alt="Diagram: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" alt="Sticky Note: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+</a>
+
 
 Policy evaluation computes $V_\pi$ for a given policy $\pi$ by iteratively applying the Bellman expectation equation until convergence.
 
@@ -300,6 +399,17 @@ def policy_evaluation(P, R, gamma, policy, theta=1e-6):
 
 ### 11.3.2 Policy Iteration
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.2 Policy Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" alt="Diagram: 11.3.2 Policy Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.2 Policy Iteration" width="30%">
+</a>
+
+
 Policy iteration alternates between **policy evaluation** (compute $V_\pi$) and **policy improvement** (make $\pi$ greedy with respect to $V_\pi$).
 
 #### Real-World Analogy: Chef Refining Recipes
@@ -439,6 +549,17 @@ def policy_iteration(P, R, gamma, n_actions, theta=1e-6):
 
 ### 11.3.3 Value Iteration
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" alt="Handwritten: 11.3.3 Value Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" alt="Diagram: 11.3.3 Value Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" alt="Sticky Note: 11.3.3 Value Iteration" width="30%">
+</a>
+
+
 Value iteration combines policy evaluation and improvement into a single update: it directly applies the Bellman optimality backup.
 
 $$V_{k+1}(s) = \max_a \left[ R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) V_k(s') \right]$$
@@ -566,6 +687,17 @@ def value_iteration(P, R, gamma, n_actions, theta=1e-6):
 
 ### 11.3.4 Value Iteration vs Policy Iteration
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" alt="Diagram: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+</a>
+
+
 | Aspect | Value Iteration | Policy Iteration |
 |--------|----------------|-----------------|
 | Update | Bellman optimality backup directly | Alternates evaluation + improvement |
@@ -599,6 +731,17 @@ The core dilemma: the agent must **explore** unknown actions to discover better 
 
 ### Standard Exploration Strategies
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" alt="Handwritten: Standard Exploration Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" alt="Diagram: Standard Exploration Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" alt="Sticky Note: Standard Exploration Strategies" width="30%">
+</a>
+
+
 1. **Epsilon-greedy:** With probability $\epsilon$, choose a random action; otherwise, choose $\arg\max_a Q(s, a)$. Simple but explores uniformly (all suboptimal actions equally likely).
 
 2. **Softmax (Boltzmann):** Select action $a$ with probability proportional to $\exp(Q(s, a) / \tau)$ where $\tau$ is temperature. High $\tau$ = uniform exploration; low $\tau$ = greedy.
@@ -617,6 +760,17 @@ TD learning combines ideas from dynamic programming (bootstrapping) and Monte Ca
 
 ### TD(0) Update
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" alt="Handwritten: TD(0) Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" alt="Diagram: TD(0) Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" alt="Sticky Note: TD(0) Update" width="30%">
+</a>
+
+
 $$V(S_t) \leftarrow V(S_t) + \alpha [R_{t+1} + \gamma V(S_{t+1}) - V(S_t)]$$
 
 The **TD error** $\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$ is the difference between the predicted value and the better estimate using the actual reward and next state's value.
@@ -624,6 +778,17 @@ The **TD error** $\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$ is the differ
 > **Real-World Analogy (Weather Forecast):** If you predict 70F tomorrow and wake to 68F, you adjust your forecast model by the error of 2F. TD learning does the same -- it adjusts $V(S_t)$ toward a slightly more correct target (actual + discounted future), not a fully correct one.
 
 ### Advantages of TD Learning
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" alt="Handwritten: Advantages of TD Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" alt="Diagram: Advantages of TD Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" alt="Sticky Note: Advantages of TD Learning" width="30%">
+</a>
+
 
 | Advantage | Explanation |
 |-----------|-------------|
@@ -644,9 +809,31 @@ Q-learning is **off-policy**: it learns the optimal Q-function $Q^*$ while follo
 
 ### Real-World Analogy: Learning Chess from Watching
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning Chess from Watching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" alt="Diagram: Real-World Analogy: Learning Chess from Watching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning Chess from Watching" width="30%">
+</a>
+
+
 > Imagine learning chess by watching random players (exploration policy). Even though the players aren't optimal, you can still imagine: "In this position, the *best* move would be Nf3 (max over actions)." Q-learning does exactly this -- it learns the optimal move even when the current behavior is suboptimal.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Initialize $Q(s, a) = 0$ for all $s \in \mathcal{S}$, $a \in \mathcal{A}$.
 2. Set learning rate $\alpha$, discount $\gamma$, exploration $\epsilon$.
@@ -659,6 +846,17 @@ Q-learning is **off-policy**: it learns the optimal Q-function $Q^*$ while follo
      - $S \leftarrow S'$
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function Q-LEARNING(env, gamma, alpha, epsilon, episodes) returns Q
@@ -674,6 +872,17 @@ function Q-LEARNING(env, gamma, alpha, epsilon, episodes) returns Q
 ```
 
 ### Step-by-Step Dry Run: 1D Grid of 5 Cells
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" alt="Diagram: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+</a>
+
 
 States: 1-2-3-4-5 (goal at 5, reward +10). Actions: {left, right}. gamma = 0.9, alpha = 0.1, epsilon = 0.3.
 
@@ -909,9 +1118,31 @@ The key difference from Q-learning: SARSA uses the **actual next action** $A_{t+
 
 ### Real-World Analogy: Defensive Driving
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" alt="Handwritten: Real-World Analogy: Defensive Driving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" alt="Diagram: Real-World Analogy: Defensive Driving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" alt="Sticky Note: Real-World Analogy: Defensive Driving" width="30%">
+</a>
+
+
 > Q-learning is like racing: "What's the **best** possible move at every turn?" SARSA is like defensive driving: "Given that I sometimes make mistakes (explore), what's the **safe** action?" If there's a cliff ahead, Q-learning believes it will never fall off (assumes optimal future actions), while SARSA acknowledges it might slip and stays farther from the edge.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Initialize $Q(s, a) = 0$ for all $s, a$.
 2. For each episode:
@@ -924,6 +1155,17 @@ The key difference from Q-learning: SARSA uses the **actual next action** $A_{t+
      - $S \leftarrow S'$, $A \leftarrow A'$.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function SARSA(env, gamma, alpha, epsilon, episodes) returns Q
@@ -940,6 +1182,17 @@ function SARSA(env, gamma, alpha, epsilon, episodes) returns Q
 ```
 
 ### Step-by-Step Dry Run: Cliff Walking
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Cliff Walking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Cliff Walking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Cliff Walking" width="30%">
+</a>
+
 
 A 3x3 grid with a cliff at positions 3, 6, 9 (falling off gives -100, resets to start). Start = 1, Goal = 7. gamma = 0.9, alpha = 0.1, epsilon = 0.3.
 
@@ -1138,6 +1391,17 @@ public class SARSA {
 
 ### Q-Learning vs SARSA: When to Use Which
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" alt="Handwritten: Q-Learning vs SARSA: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" alt="Diagram: Q-Learning vs SARSA: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" alt="Sticky Note: Q-Learning vs SARSA: When to Use Which" width="30%">
+</a>
+
+
 | Criterion | Q-Learning | SARSA |
 |-----------|------------|-------|
 | Environment risk | Low -- optimal is safe | High -- exploration could be catastrophic |
@@ -1154,11 +1418,33 @@ Tabular RL becomes infeasible for large or continuous state spaces. **Function a
 
 ### Linear Function Approximation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" alt="Handwritten: Linear Function Approximation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" alt="Diagram: Linear Function Approximation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" alt="Sticky Note: Linear Function Approximation" width="30%">
+</a>
+
+
 $$Q(s, a; \theta) = \theta^\top \phi(s, a)$$
 
 Update: $\theta \leftarrow \theta + \alpha [R + \gamma \max_a Q(s', a'; \theta) - Q(s, a; \theta)] \nabla_\theta Q(s, a; \theta)$
 
 ### Neural Network Approximation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" alt="Handwritten: Neural Network Approximation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" alt="Diagram: Neural Network Approximation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" alt="Sticky Note: Neural Network Approximation" width="30%">
+</a>
+
 
 A neural network $Q(s, a; \theta)$ with parameters $\theta$ replaces the table. This is the foundation of Deep RL.
 
@@ -1170,15 +1456,48 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 
 ### Real-World Analogy: Apprentice Learning from Memory
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" alt="Handwritten: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" alt="Diagram: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" alt="Sticky Note: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+</a>
+
+
 > An apprentice watches a master carpenter. Rather than learning from each individual action in sequence (correlated and misleading), the apprentice writes down every observation on a notepad. Later, the apprentice randomly flips through the notepad and learns from random moments. This breaks temporal correlation. DQN does exactly this with its **experience replay buffer**.
 
 ### Key Innovations
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" alt="Handwritten: Key Innovations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" alt="Diagram: Key Innovations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" alt="Sticky Note: Key Innovations" width="30%">
+</a>
+
 
 1. **Experience replay:** Store transitions $(s, a, r, s')$ in a buffer $D$. Sample mini-batches uniformly to break temporal correlations and enable reuse of past experiences.
 
 2. **Target network:** Maintain a separate network $Q(s, a; \theta^-)$ for computing TD targets. Periodically copy $\theta$ to $\theta^-$ to reduce moving-target instability.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Initialize Q-network $\theta$ and target network $\theta^- \leftarrow \theta$.
 2. Initialize replay buffer $D$ with capacity $N$.
@@ -1196,6 +1515,17 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
      - Every $C$ steps: $\theta^- \leftarrow \theta$.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function DQN-TRAIN(env, buffer_size, batch_size, gamma)
@@ -1217,6 +1547,17 @@ function DQN-TRAIN(env, buffer_size, batch_size, gamma)
 ```
 
 ### Step-by-Step Dry Run: Neural Net Training (Conceptual)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+</a>
+
 
 Consider a simple 4-state, 2-action environment. Q-network: 4 input -> 16 hidden (ReLU) -> 2 output. Batch size = 2.
 
@@ -1357,15 +1698,48 @@ Policy gradient methods directly optimize the policy $\pi_\theta(a \mid s)$ with
 
 ### The Policy Gradient Theorem
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" alt="Handwritten: The Policy Gradient Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" alt="Diagram: The Policy Gradient Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" alt="Sticky Note: The Policy Gradient Theorem" width="30%">
+</a>
+
+
 $$\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta} [\nabla_\theta \log \pi_\theta(a \mid s) \, Q^{\pi_\theta}(s, a)]$$
 
 The gradient of expected return w.r.t. policy parameters equals the expected gradient of log-probability weighted by the action-value.
 
 ### REINFORCE (Monte Carlo Policy Gradient)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" alt="Handwritten: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" alt="Diagram: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" alt="Sticky Note: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+</a>
+
+
 $$\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^{T_i} \nabla_\theta \log \pi_\theta(a_{i,t} \mid s_{i,t}) \, G_{i,t}$$
 
 ### Real-World Analogy: Learning to Juggle
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning to Juggle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" alt="Diagram: Real-World Analogy: Learning to Juggle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning to Juggle" width="30%">
+</a>
+
 
 > A juggling student tries a throw (action). If the catch works (high return $G_t$), the student strengthens the neural pathway that produced that throw (increase log-prob). If it fails (low return), the pathway is weakened. REINFORCE does this using the complete return from the episode.
 
@@ -1379,6 +1753,17 @@ $$\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^{T_i} \nab
      - $\theta \leftarrow \theta + \alpha \gamma^t G_t \nabla_\theta \log \pi_\theta(a_t \mid s_t)$.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function REINFORCE(env, gamma, alpha, episodes) returns pi_theta
@@ -1499,6 +1884,17 @@ The critic provides a lower-variance baseline for the actor's gradient updates.
 
 ### Advantage Actor-Critic (A2C)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" alt="Handwritten: Advantage Actor-Critic (A2C)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" alt="Diagram: Advantage Actor-Critic (A2C)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" alt="Sticky Note: Advantage Actor-Critic (A2C)" width="30%">
+</a>
+
+
 Uses the advantage function $A(s, a) = Q(s, a) - V(s)$:
 
 $$\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta} [\nabla_\theta \log \pi_\theta(a \mid s) \, A(s, a)]$$
@@ -1506,6 +1902,17 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta} [\nabla_\theta \log \pi_\the
 The TD error $\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$ is an unbiased estimate of the advantage.
 
 ### Proximal Policy Optimization (PPO)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" alt="Handwritten: Proximal Policy Optimization (PPO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" alt="Diagram: Proximal Policy Optimization (PPO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" alt="Sticky Note: Proximal Policy Optimization (PPO)" width="30%">
+</a>
+
 
 PPO (Schulman et al., 2017) clips policy updates to prevent destructively large changes:
 
@@ -1578,6 +1985,17 @@ where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \m
 
 ### Common RL Interview Questions
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" alt="Handwritten: Common RL Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" alt="Diagram: Common RL Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" alt="Sticky Note: Common RL Interview Questions" width="30%">
+</a>
+
+
 **Q1: Explain the exploration-exploitation dilemma. Compare epsilon-greedy, UCB, and Thompson Sampling.**
 
 The exploration-exploitation dilemma arises because an agent must both try unknown actions (to discover high-reward options) and exploit known good actions (to maximize return).
@@ -1620,6 +2038,17 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Key Papers to Know
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" alt="Handwritten: Key Papers to Know" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" alt="Diagram: Key Papers to Know" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" alt="Sticky Note: Key Papers to Know" width="30%">
+</a>
+
+
 | Paper | Year | Contribution | Why It Matters |
 |-------|------|-------------|----------------|
 | Watkins & Dayan (Q-learning) | 1992 | Off-policy TD control | Foundation of model-free RL |
@@ -1634,6 +2063,17 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Game Playing
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" alt="Handwritten: Game Playing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" alt="Diagram: Game Playing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" alt="Sticky Note: Game Playing" width="30%">
+</a>
+
+
 | System | RL Algorithm | Achievement |
 |--------|-------------|-------------|
 | AlphaGo (DeepMind) | MCTS + policy/value DNN | Defeated world champion Lee Sedol (2016) |
@@ -1644,17 +2084,50 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Robotics
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" alt="Handwritten: Robotics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" alt="Diagram: Robotics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" alt="Sticky Note: Robotics" width="30%">
+</a>
+
+
 - **Grasping:** RL learns to grasp novel objects from visual input. The Q-function encodes "how likely is this grasp to succeed?"
 - **Locomotion:** PPO and SAC learn walking, running, and jumping gaits in simulation before transferring to real robots.
 - **Manipulation:** Robot arms learn assembly tasks through trial and error. The reward is task completion; the policy directly outputs joint torques.
 
 ### Autonomous Driving
 
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" alt="Handwritten: Autonomous Driving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" alt="Diagram: Autonomous Driving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" alt="Sticky Note: Autonomous Driving" width="30%">
+</a>
+
+
 - **Waymo:** RL policies for lane changing, merging, and intersection handling. Trained in simulation with millions of miles.
 - **End-to-end driving:** A DNN takes camera input -> outputs steering angle. Reward is lane-keeping + progress toward destination.
 - **Safety constraints:** Constrained MDP formulations ensure RL policies respect speed limits and safety distances.
 
 ### Recommendation Systems
+
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" alt="Handwritten: Recommendation Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" alt="Diagram: Recommendation Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" alt="Sticky Note: Recommendation Systems" width="30%">
+</a>
+
 
 - **YouTube:** RL recommends the next video by maximizing long-term engagement (watch time), not just immediate click-through rate.
 - **News recommendation:** The recommendation is an action; user engagement (clicks, time spent) is the reward. RL discovers content sequences that maximize total engagement.

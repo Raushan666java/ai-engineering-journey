@@ -30,6 +30,17 @@ By the end of this chapter, you will be able to:
 
 ### 1. Eval-Driven Loops
 
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-handwritten.svg" alt="Handwritten: 1. Eval-Driven Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-diagram.svg" alt="Diagram: 1. Eval-Driven Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/1-eval-driven-loops-sticky.svg" alt="Sticky Note: 1. Eval-Driven Loops" width="30%">
+</a>
+
+
 An eval-driven loop is the most general form of agentic feedback. The agent produces an output, evaluates it against a set of criteria, adjusts its approach based on the evaluation, and repeats.
 
 ```
@@ -58,6 +69,17 @@ An eval-driven loop is the most general form of agentic feedback. The agent prod
 
 ### 2. Code Review Loops
 
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-handwritten.svg" alt="Handwritten: 2. Code Review Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-diagram.svg" alt="Diagram: 2. Code Review Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/2-code-review-loops-sticky.svg" alt="Sticky Note: 2. Code Review Loops" width="30%">
+</a>
+
+
 In a code review loop, the AI authors code and a human plays the role of reviewer. This mirrors real engineering workflows and is one of the most practical agent patterns.
 
 ```
@@ -78,6 +100,17 @@ The agent should restate its understanding of each comment before making changes
 
 ### 3. Test-Driven Loops
 
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-handwritten.svg" alt="Handwritten: 3. Test-Driven Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-diagram.svg" alt="Diagram: 3. Test-Driven Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/3-test-driven-loops-sticky.svg" alt="Sticky Note: 3. Test-Driven Loops" width="30%">
+</a>
+
+
 Test-driven agent loops invert the normal flow: a human (or automated test generator) writes a failing test first, then the agent implements code to make it pass.
 
 ```
@@ -94,6 +127,17 @@ This pattern is especially powerful because:
 **Caveat:** The agent must be able to read test failures (stack traces, assertion messages) and translate them into debugging actions. A test that says "expected 5 but got 3" is only useful if the agent can trace which code produced the 3.
 
 ### 4. Failure-to-Task Conversion
+
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-handwritten.svg" alt="Handwritten: 4. Failure-to-Task Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-diagram.svg" alt="Diagram: 4. Failure-to-Task Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/4-failure-to-task-conversion-sticky.svg" alt="Sticky Note: 4. Failure-to-Task Conversion" width="30%">
+</a>
+
 
 When an agent fails at a step, the failure should not be discarded — it should be converted into a new subtask. This is the agentic equivalent of "fail fast, fail forward."
 
@@ -114,6 +158,17 @@ Task: "Implement user authentication"
 - If a subtask also fails, escalate to a human — do not create subtasks of subtasks indefinitely.
 
 ### 5. Sweep Loops
+
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-handwritten.svg" alt="Handwritten: 5. Sweep Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-diagram.svg" alt="Diagram: 5. Sweep Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch04-feedback-loops/5-sweep-loops-sticky.svg" alt="Sticky Note: 5. Sweep Loops" width="30%">
+</a>
+
 
 A sweep loop processes a collection of items (bugs, tasks, PRs) and automatically creates fix tasks for any that fail. It is the batch-processing counterpart to the eval-driven loop.
 

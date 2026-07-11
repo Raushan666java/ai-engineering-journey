@@ -66,6 +66,17 @@ print(sys._is_gil_enabled())  # True on CPython
 
 ### 21.1.1 Why the GIL Exists
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-handwritten.svg" alt="Handwritten: 21.1.1 Why the GIL Exists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-diagram.svg" alt="Diagram: 21.1.1 Why the GIL Exists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-1-why-the-gil-exists-sticky.svg" alt="Sticky Note: 21.1.1 Why the GIL Exists" width="30%">
+</a>
+
+
 Every Python object has a reference count. Without the GIL, two threads incrementing/decrementing counts simultaneously would corrupt memory. The GIL guarantees that only one thread runs Python code at a time.
 
 ```python
@@ -87,6 +98,17 @@ print(counter)  # Almost never 10_000_000 due to GIL interleaving
 The GIL ensures safe memory access by serializing bytecode execution. The trade-off is that pure Python CPU-bound code can never use more than one core.
 
 ### 21.1.2 I/O-bound vs CPU-bound
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-handwritten.svg" alt="Handwritten: 21.1.2 I/O-bound vs CPU-bound" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-diagram.svg" alt="Diagram: 21.1.2 I/O-bound vs CPU-bound" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-1-2-i-o-bound-vs-cpu-bound-sticky.svg" alt="Sticky Note: 21.1.2 I/O-bound vs CPU-bound" width="30%">
+</a>
+
 
 ```python
 import time
@@ -114,6 +136,17 @@ Threading excels when the program spends most of its time waiting on external re
 
 ### 21.2.1 ThreadPoolExecutor
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-handwritten.svg" alt="Handwritten: 21.2.1 ThreadPoolExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-diagram.svg" alt="Diagram: 21.2.1 ThreadPoolExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-1-threadpoolexecutor-sticky.svg" alt="Sticky Note: 21.2.1 ThreadPoolExecutor" width="30%">
+</a>
+
+
 ```python
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib.request
@@ -136,6 +169,17 @@ with ThreadPoolExecutor(max_workers=10) as executor:
 ```
 
 ### 21.2.2 Thread Safety with Locks
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-handwritten.svg" alt="Handwritten: 21.2.2 Thread Safety with Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-diagram.svg" alt="Diagram: 21.2.2 Thread Safety with Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-2-thread-safety-with-locks-sticky.svg" alt="Sticky Note: 21.2.2 Thread Safety with Locks" width="30%">
+</a>
+
 
 ```python
 import threading
@@ -168,6 +212,17 @@ assert counter.value == 10_000
 ```
 
 ### 21.2.3 Queue-Based Worker Pattern
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-handwritten.svg" alt="Handwritten: 21.2.3 Queue-Based Worker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-diagram.svg" alt="Diagram: 21.2.3 Queue-Based Worker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-2-3-queue-based-worker-pattern-sticky.svg" alt="Sticky Note: 21.2.3 Queue-Based Worker Pattern" width="30%">
+</a>
+
 
 ```python
 import queue
@@ -210,6 +265,17 @@ Multiprocessing bypasses the GIL by spawning separate Python processes, each wit
 
 ### 21.3.1 ProcessPoolExecutor
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-handwritten.svg" alt="Handwritten: 21.3.1 ProcessPoolExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-diagram.svg" alt="Diagram: 21.3.1 ProcessPoolExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-1-processpoolexecutor-sticky.svg" alt="Sticky Note: 21.3.1 ProcessPoolExecutor" width="30%">
+</a>
+
+
 ```python
 from concurrent.futures import ProcessPoolExecutor
 import math
@@ -233,6 +299,17 @@ for n, prime in zip(numbers, results):
 
 ### 21.3.2 Manual Process Pool with Pool
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-handwritten.svg" alt="Handwritten: 21.3.2 Manual Process Pool with Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-diagram.svg" alt="Diagram: 21.3.2 Manual Process Pool with Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-2-manual-process-pool-with-pool-sticky.svg" alt="Sticky Note: 21.3.2 Manual Process Pool with Pool" width="30%">
+</a>
+
+
 ```python
 from multiprocessing import Pool, cpu_count
 import time
@@ -252,6 +329,17 @@ print(f"{cpu_count()} cores: {elapsed:.2f}s")
 ```
 
 ### 21.3.3 When to Use Pool.map vs Pool.starmap vs Pool.imap
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-handwritten.svg" alt="Handwritten: 21.3.3 When to Use Pool.map vs Pool.starmap vs Pool.imap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-diagram.svg" alt="Diagram: 21.3.3 When to Use Pool.map vs Pool.starmap vs Pool.imap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-3-3-when-to-use-pool-map-vs-pool-starmap-vs-pool-imap-sticky.svg" alt="Sticky Note: 21.3.3 When to Use Pool.map vs Pool.starmap vs Pool.imap" width="30%">
+</a>
+
 
 ```python
 from multiprocessing import Pool
@@ -281,6 +369,17 @@ The concurrent.futures module provides a uniform interface for both threading an
 
 ### 21.4.1 Choosing the Right Executor
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-handwritten.svg" alt="Handwritten: 21.4.1 Choosing the Right Executor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-diagram.svg" alt="Diagram: 21.4.1 Choosing the Right Executor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-1-choosing-the-right-executor-sticky.svg" alt="Sticky Note: 21.4.1 Choosing the Right Executor" width="30%">
+</a>
+
+
 ```python
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, Future
 import time
@@ -307,6 +406,17 @@ with ProcessPoolExecutor(max_workers=4) as ex:
 
 ### 21.4.2 Callbacks and Timeouts
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-handwritten.svg" alt="Handwritten: 21.4.2 Callbacks and Timeouts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-diagram.svg" alt="Diagram: 21.4.2 Callbacks and Timeouts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-2-callbacks-and-timeouts-sticky.svg" alt="Sticky Note: 21.4.2 Callbacks and Timeouts" width="30%">
+</a>
+
+
 ```python
 from concurrent.futures import ThreadPoolExecutor, TimeoutError
 
@@ -326,6 +436,17 @@ with ThreadPoolExecutor() as ex:
 ```
 
 ### 21.4.3 Exception Handling
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-handwritten.svg" alt="Handwritten: 21.4.3 Exception Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-diagram.svg" alt="Diagram: 21.4.3 Exception Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-4-3-exception-handling-sticky.svg" alt="Sticky Note: 21.4.3 Exception Handling" width="30%">
+</a>
+
 
 ```python
 from concurrent.futures import ThreadPoolExecutor
@@ -353,6 +474,17 @@ joblib is the standard parallelism library in the scikit-learn ecosystem. It han
 
 ### 21.5.1 Parallel and delayed
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-handwritten.svg" alt="Handwritten: 21.5.1 Parallel and delayed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-diagram.svg" alt="Diagram: 21.5.1 Parallel and delayed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-1-parallel-and-delayed-sticky.svg" alt="Sticky Note: 21.5.1 Parallel and delayed" width="30%">
+</a>
+
+
 ```python
 from joblib import Parallel, delayed
 import time
@@ -378,6 +510,17 @@ for r in results:
 
 ### 21.5.2 Automatic Batching
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-handwritten.svg" alt="Handwritten: 21.5.2 Automatic Batching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-diagram.svg" alt="Diagram: 21.5.2 Automatic Batching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-2-automatic-batching-sticky.svg" alt="Sticky Note: 21.5.2 Automatic Batching" width="30%">
+</a>
+
+
 joblib automatically batches tasks for efficiency. The batch_size parameter controls how many tasks are sent to each worker at once.
 
 ```python
@@ -393,6 +536,17 @@ results = Parallel(n_jobs=4, batch_size=100)(
 ```
 
 ### 21.5.3 Memory Mapping for Large Arrays
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-handwritten.svg" alt="Handwritten: 21.5.3 Memory Mapping for Large Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-diagram.svg" alt="Diagram: 21.5.3 Memory Mapping for Large Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-5-3-memory-mapping-for-large-arrays-sticky.svg" alt="Sticky Note: 21.5.3 Memory Mapping for Large Arrays" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -421,6 +575,17 @@ print(f"Global mean: {np.mean(results):.4f}")
 
 ### 21.6.1 multiprocessing.shared_memory (Python 3.8+)
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-handwritten.svg" alt="Handwritten: 21.6.1 multiprocessing.shared_memory (Python 3.8+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-diagram.svg" alt="Diagram: 21.6.1 multiprocessing.shared_memory (Python 3.8+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-1-multiprocessing-shared-memory-python-3-8-sticky.svg" alt="Sticky Note: 21.6.1 multiprocessing.shared_memory (Python 3.8+)" width="30%">
+</a>
+
+
 ```python
 from multiprocessing import shared_memory, Process
 import numpy as np
@@ -447,6 +612,17 @@ shm.unlink()
 
 ### 21.6.2 Serialization Overhead
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-handwritten.svg" alt="Handwritten: 21.6.2 Serialization Overhead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-diagram.svg" alt="Diagram: 21.6.2 Serialization Overhead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-6-2-serialization-overhead-sticky.svg" alt="Sticky Note: 21.6.2 Serialization Overhead" width="30%">
+</a>
+
+
 ```python
 import pickle
 import numpy as np
@@ -472,6 +648,17 @@ NumPy and many pandas operations release the GIL because they are implemented in
 
 ### 21.7.1 BLAS Threading
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-handwritten.svg" alt="Handwritten: 21.7.1 BLAS Threading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-diagram.svg" alt="Diagram: 21.7.1 BLAS Threading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-1-blas-threading-sticky.svg" alt="Sticky Note: 21.7.1 BLAS Threading" width="30%">
+</a>
+
+
 ```python
 import os
 os.environ["OMP_NUM_THREADS"] = "4"
@@ -487,6 +674,17 @@ c = a @ b  # Uses multiple cores internally
 ```
 
 ### 21.7.2 Pandas Groupby with Parallel Backend
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-handwritten.svg" alt="Handwritten: 21.7.2 Pandas Groupby with Parallel Backend" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-diagram.svg" alt="Diagram: 21.7.2 Pandas Groupby with Parallel Backend" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-7-2-pandas-groupby-with-parallel-backend-sticky.svg" alt="Sticky Note: 21.7.2 Pandas Groupby with Parallel Backend" width="30%">
+</a>
+
 
 ```python
 import pandas as pd
@@ -515,6 +713,17 @@ print(result)
 
 
 ### 21.8.1 Hyperparameter Tuning with Grid Search
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-handwritten.svg" alt="Handwritten: 21.8.1 Hyperparameter Tuning with Grid Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-diagram.svg" alt="Diagram: 21.8.1 Hyperparameter Tuning with Grid Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-1-hyperparameter-tuning-with-grid-search-sticky.svg" alt="Sticky Note: 21.8.1 Hyperparameter Tuning with Grid Search" width="30%">
+</a>
+
 
 ```python
 from joblib import Parallel, delayed
@@ -557,6 +766,17 @@ print(f"Best: {best}")
 
 ### 21.8.2 Batch Inference
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-handwritten.svg" alt="Handwritten: 21.8.2 Batch Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-diagram.svg" alt="Diagram: 21.8.2 Batch Inference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-2-batch-inference-sticky.svg" alt="Sticky Note: 21.8.2 Batch Inference" width="30%">
+</a>
+
+
 ```python
 import numpy as np
 from joblib import Parallel, delayed
@@ -577,6 +797,17 @@ print(f"Predictions: {result.shape}")
 ```
 
 ### 21.8.3 Ensemble Evaluation
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-handwritten.svg" alt="Handwritten: 21.8.3 Ensemble Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-diagram.svg" alt="Diagram: 21.8.3 Ensemble Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-3-ensemble-evaluation-sticky.svg" alt="Sticky Note: 21.8.3 Ensemble Evaluation" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -604,6 +835,17 @@ print(f"Mean accuracy: {np.mean(scores):.3f} +/- {np.std(scores):.3f}")
 ```
 
 ### 21.8.4 Chunked Data Processing Pipeline
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-handwritten.svg" alt="Handwritten: 21.8.4 Chunked Data Processing Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-diagram.svg" alt="Diagram: 21.8.4 Chunked Data Processing Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/21-8-4-chunked-data-processing-pipeline-sticky.svg" alt="Sticky Note: 21.8.4 Chunked Data Processing Pipeline" width="30%">
+</a>
+
 
 ```python
 import pandas as pd
@@ -974,17 +1216,50 @@ console.log(outputs);
 
 ### Basic
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. Write a script that downloads 10 URLs using ThreadPoolExecutor and measures the total time vs sequential download.
 2. Modify the SafeCounter example to use multiprocessing instead of threading. What happens and why?
 3. Use ProcessPoolExecutor to compute the sum of squares for numbers 0-10_000_000 in parallel.
 
 ### Intermediate
 
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
+
 4. Compare the performance of ThreadPoolExecutor vs ProcessPoolExecutor for a function that alternates between CPU computation and time.sleep. Explain the results.
 5. Implement a producer-consumer pattern where a producer generates 1000 random arrays and multiple worker processes compute their means, using multiprocessing.Queue.
 6. Write a grid search for a RandomForestClassifier with 3 parameters (n_estimators, max_depth, min_samples_split) using joblib.Parallel.
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/21-concurrency-multiprocessing/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 7. Design a parallel data processing pipeline that reads a large CSV file (100M rows), splits it by a categorical column, applies rolling window statistics to each group, and writes results. Use chunked processing and joblib.
 8. Benchmark the serialization overhead of passing a 100MB NumPy array to ProcessPoolExecutor workers. Implement a shared_memory alternative and compare wall-clock time.

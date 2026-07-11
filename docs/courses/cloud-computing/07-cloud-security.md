@@ -48,6 +48,17 @@ flowchart LR
 
 ### 7.1 Shared Responsibility Model
 
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-handwritten.svg" alt="Handwritten: 7.1 Shared Responsibility Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-diagram.svg" alt="Diagram: 7.1 Shared Responsibility Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-1-shared-responsibility-model-sticky.svg" alt="Sticky Note: 7.1 Shared Responsibility Model" width="30%">
+</a>
+
+
 Security in the cloud is a partnership:
 
 | Layer | AWS Responsible | Customer Responsible |
@@ -85,6 +96,17 @@ graph TB
 \\\
 
 ### 7.2 Identity and Access Management (IAM)
+
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-handwritten.svg" alt="Handwritten: 7.2 Identity and Access Management (IAM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-diagram.svg" alt="Diagram: 7.2 Identity and Access Management (IAM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-2-identity-and-access-management-iam-sticky.svg" alt="Sticky Note: 7.2 Identity and Access Management (IAM)" width="30%">
+</a>
+
 
 **Core IAM Concepts:**
 
@@ -194,6 +216,17 @@ console.log(JSON.stringify(policy, null, 2));
 
 ### 7.3 Data Encryption
 
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-handwritten.svg" alt="Handwritten: 7.3 Data Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-diagram.svg" alt="Diagram: 7.3 Data Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-3-data-encryption-sticky.svg" alt="Sticky Note: 7.3 Data Encryption" width="30%">
+</a>
+
+
 **Encryption at Rest:**
 
 | Service | Default Encryption | Custom Key | Notes |
@@ -233,6 +266,17 @@ sequenceDiagram
 
 ### 7.4 Network Security Services
 
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-handwritten.svg" alt="Handwritten: 7.4 Network Security Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-diagram.svg" alt="Diagram: 7.4 Network Security Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-4-network-security-services-sticky.svg" alt="Sticky Note: 7.4 Network Security Services" width="30%">
+</a>
+
+
 **AWS WAF (Web Application Firewall):**
 
 - Protects against SQL injection, XSS, and OWASP Top 10 attacks.
@@ -271,6 +315,17 @@ graph TB
 - Can trigger automated remediation via EventBridge and Lambda.
 
 ### 7.5 Secrets Management
+
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-handwritten.svg" alt="Handwritten: 7.5 Secrets Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-diagram.svg" alt="Diagram: 7.5 Secrets Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-5-secrets-management-sticky.svg" alt="Sticky Note: 7.5 Secrets Management" width="30%">
+</a>
+
 
 **AWS Secrets Manager vs Systems Manager Parameter Store:**
 
@@ -332,6 +387,17 @@ async function connectToDatabase(): Promise&lt;void&gt; {
 \\\
 
 ### 7.6 Compliance Frameworks
+
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-handwritten.svg" alt="Handwritten: 7.6 Compliance Frameworks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-diagram.svg" alt="Diagram: 7.6 Compliance Frameworks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/07-cloud-security/7-6-compliance-frameworks-sticky.svg" alt="Sticky Note: 7.6 Compliance Frameworks" width="30%">
+</a>
+
 
 | Framework | Scope | Key Requirements | AWS Support |
 |-----------|-------|------------------|-------------|

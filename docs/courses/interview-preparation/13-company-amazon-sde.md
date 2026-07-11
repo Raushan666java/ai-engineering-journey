@@ -81,6 +81,17 @@ flowchart LR
 
 ### Problem OA-1: Top K Frequent Elements
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-handwritten.svg" alt="Handwritten: Problem OA-1: Top K Frequent Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-diagram.svg" alt="Diagram: Problem OA-1: Top K Frequent Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-1-top-k-frequent-elements-sticky.svg" alt="Sticky Note: Problem OA-1: Top K Frequent Elements" width="30%">
+</a>
+
+
 **Problem:** Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. Return in any order.
 
 **Amazon Context:** Amazon OA frequently tests hash map + priority queue combinations.
@@ -130,6 +141,17 @@ function topKFrequent(nums: number[], k: number): number[] {
 ---
 
 ### Problem OA-2: Number of Islands
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-handwritten.svg" alt="Handwritten: Problem OA-2: Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-diagram.svg" alt="Diagram: Problem OA-2: Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-2-number-of-islands-sticky.svg" alt="Sticky Note: Problem OA-2: Number of Islands" width="30%">
+</a>
+
 
 **Problem:** Given an `m x n` 2D binary grid of `'1'` (land) and `'0'` (water), count the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.
 
@@ -228,6 +250,17 @@ function numIslandsBFS(grid: string[][]): number {
 
 ### Problem OA-3: LRU Cache
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-handwritten.svg" alt="Handwritten: Problem OA-3: LRU Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-diagram.svg" alt="Diagram: Problem OA-3: LRU Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-3-lru-cache-sticky.svg" alt="Sticky Note: Problem OA-3: LRU Cache" width="30%">
+</a>
+
+
 **Problem:** Design and implement an LRU (Least Recently Used) cache with `get(key)` and `put(key, value)` in O(1) average time.
 
 **Amazon Context:** LRU Cache is one of Amazon's most frequently asked problems — tests combined use of HashMap and Doubly Linked List.
@@ -323,6 +356,17 @@ class DoublyLinkedListNode {
 
 ### Problem OA-4: Rotting Oranges
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-handwritten.svg" alt="Handwritten: Problem OA-4: Rotting Oranges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-diagram.svg" alt="Diagram: Problem OA-4: Rotting Oranges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-oa-4-rotting-oranges-sticky.svg" alt="Sticky Note: Problem OA-4: Rotting Oranges" width="30%">
+</a>
+
+
 **Problem:** Given an `m x n` grid where 0 = empty, 1 = fresh orange, 2 = rotten orange. Every minute, any fresh orange adjacent (4-direction) to a rotten orange becomes rotten. Return the minimum minutes until no cell has a fresh orange, or -1 if impossible.
 
 **Amazon Context:** Multi-source BFS — Amazon tests BFS variants frequently in OA.
@@ -388,6 +432,17 @@ function orangesRotting(grid: number[][]): number {
 ## Section 2: Technical Round 1 — Data Structures (4 Problems)
 
 ### Problem TR1-1: Merge K Sorted Lists
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-handwritten.svg" alt="Handwritten: Problem TR1-1: Merge K Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-diagram.svg" alt="Diagram: Problem TR1-1: Merge K Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-1-merge-k-sorted-lists-sticky.svg" alt="Sticky Note: Problem TR1-1: Merge K Sorted Lists" width="30%">
+</a>
+
 
 **Problem:** Given an array of `k` sorted linked lists, merge them into one sorted list.
 
@@ -492,6 +547,17 @@ class MinHeap {
 
 ### Problem TR1-2: Binary Tree Level Order Traversal
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Problem TR1-2: Binary Tree Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Problem TR1-2: Binary Tree Level Order Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-2-binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Problem TR1-2: Binary Tree Level Order Traversal" width="30%">
+</a>
+
+
 **Problem:** Return the level order traversal of a binary tree (left to right, level by level).
 
 **Amazon Context:** Tree BFS is fundamental — Amazon tests this as a warm-up to harder tree problems.
@@ -544,6 +610,17 @@ function levelOrder(root: TreeNode | null): number[][] {
 ---
 
 ### Problem TR1-3: Valid Anagram Grouping
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-handwritten.svg" alt="Handwritten: Problem TR1-3: Valid Anagram Grouping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-diagram.svg" alt="Diagram: Problem TR1-3: Valid Anagram Grouping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-3-valid-anagram-grouping-sticky.svg" alt="Sticky Note: Problem TR1-3: Valid Anagram Grouping" width="30%">
+</a>
+
 
 **Problem:** Given an array of strings, group anagrams together.
 
@@ -602,6 +679,17 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 
 ### Problem TR1-4: Product of Array Except Self
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-handwritten.svg" alt="Handwritten: Problem TR1-4: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-diagram.svg" alt="Diagram: Problem TR1-4: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr1-4-product-of-array-except-self-sticky.svg" alt="Sticky Note: Problem TR1-4: Product of Array Except Self" width="30%">
+</a>
+
+
 **Problem:** Given an array `nums`, return an array `output` where `output[i]` is the product of all elements except `nums[i]`. Solve without division.
 
 **Amazon Context:** This problem is asked in nearly every Amazon SDE interview loop — tests prefix/suffix product pattern.
@@ -647,6 +735,17 @@ function productExceptSelf(nums: number[]): number[] {
 ## Section 3: Technical Round 2 — Algorithms & Design (4 Problems)
 
 ### Problem TR2-1: Word Ladder
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-handwritten.svg" alt="Handwritten: Problem TR2-1: Word Ladder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-diagram.svg" alt="Diagram: Problem TR2-1: Word Ladder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-1-word-ladder-sticky.svg" alt="Sticky Note: Problem TR2-1: Word Ladder" width="30%">
+</a>
+
 
 **Problem:** Given `beginWord`, `endWord`, and `wordList`, find the length of the shortest transformation sequence from `beginWord` to `endWord`. Each transformation changes exactly one letter, and each intermediate word must be in `wordList`.
 
@@ -698,6 +797,17 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
 
 ### Problem TR2-2: Trapping Rain Water
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-handwritten.svg" alt="Handwritten: Problem TR2-2: Trapping Rain Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-diagram.svg" alt="Diagram: Problem TR2-2: Trapping Rain Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-2-trapping-rain-water-sticky.svg" alt="Sticky Note: Problem TR2-2: Trapping Rain Water" width="30%">
+</a>
+
+
 **Problem:** Given `n` non-negative integers representing an elevation map where width of each bar is 1, compute how much water it can trap after raining.
 
 **Amazon Context:** Hard-level problem testing two-pointer technique — Amazon's most asked hard problem.
@@ -744,6 +854,17 @@ function trap(height: number[]): number {
 ---
 
 ### Problem TR2-3: Design Add and Search Words Data Structure
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-handwritten.svg" alt="Handwritten: Problem TR2-3: Design Add and Search Words Data Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-diagram.svg" alt="Diagram: Problem TR2-3: Design Add and Search Words Data Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-3-design-add-and-search-words-data-structure-sticky.svg" alt="Sticky Note: Problem TR2-3: Design Add and Search Words Data Structure" width="30%">
+</a>
+
 
 **Problem:** Design a data structure that supports adding words and searching for words with the ability to use '.' as a wildcard character matching any letter.
 
@@ -809,6 +930,17 @@ class TrieNode {
 
 ### Problem TR2-4: Basic Calculator II
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-handwritten.svg" alt="Handwritten: Problem TR2-4: Basic Calculator II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-diagram.svg" alt="Diagram: Problem TR2-4: Basic Calculator II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-tr2-4-basic-calculator-ii-sticky.svg" alt="Sticky Note: Problem TR2-4: Basic Calculator II" width="30%">
+</a>
+
+
 **Problem:** Evaluate a string expression containing integers and operators +, -, *, / (integer division). No parentheses.
 
 **Amazon Context:** Calculator problems test stack usage and operator precedence handling.
@@ -853,6 +985,17 @@ function calculate(s: string): number {
 ## Section 4: System Design (2 Problems)
 
 ### Problem SD-1: Design Amazon Cart Service
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-handwritten.svg" alt="Handwritten: Problem SD-1: Design Amazon Cart Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-diagram.svg" alt="Diagram: Problem SD-1: Design Amazon Cart Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-1-design-amazon-cart-service-sticky.svg" alt="Sticky Note: Problem SD-1: Design Amazon Cart Service" width="30%">
+</a>
+
 
 **Problem:** Design the shopping cart service for an e-commerce platform like Amazon.
 
@@ -923,6 +1066,17 @@ POST /cart/{cartId}/checkout → OrderId
 ---
 
 ### Problem SD-2: Design URL Shortener (like TinyURL)
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-handwritten.svg" alt="Handwritten: Problem SD-2: Design URL Shortener (like TinyURL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-diagram.svg" alt="Diagram: Problem SD-2: Design URL Shortener (like TinyURL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/problem-sd-2-design-url-shortener-like-tinyurl-sticky.svg" alt="Sticky Note: Problem SD-2: Design URL Shortener (like TinyURL)" width="30%">
+</a>
+
 
 **Problem:** Design a URL shortening service.
 
@@ -1000,6 +1154,17 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 
 ### Q1: Tell me about a time you went above and beyond for a customer. (Customer Obsession)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-handwritten.svg" alt="Handwritten: Tell me about a time you went above and beyond for a customer. (Customer Obsession)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-diagram.svg" alt="Diagram: Tell me about a time you went above and beyond for a customer. (Customer Obsession)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-customer-obsession-sticky.svg" alt="Sticky Note: Tell me about a time you went above and beyond for a customer. (Customer Obsession)" width="30%">
+</a>
+
+
 **Strategy:**
 - Describe a specific situation where you identified an unstated customer need
 - Show how you advocated for the customer even when it was inconvenient
@@ -1018,6 +1183,17 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 </details>
 
 ### Q2: Describe a time you disagreed with your manager or a team lead. (Have Backbone; Disagree and Commit)
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-handwritten.svg" alt="Handwritten: Describe a time you disagreed with your manager or a team lead. (Have Backbone; Disagree and Commit)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-diagram.svg" alt="Diagram: Describe a time you disagreed with your manager or a team lead. (Have Backbone; Disagree and Commit)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-a-time-you-disagreed-with-your-manager-or-a-team-lead-have-backbone-disagree-and-commit-sticky.svg" alt="Sticky Note: Describe a time you disagreed with your manager or a team lead. (Have Backbone; Disagree and Commit)" width="30%">
+</a>
+
 
 **Strategy:**
 - Show respectful disagreement backed by data
@@ -1038,6 +1214,17 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 
 ### Q3: Tell me about a time you invented a simple solution to a complex problem. (Invent and Simplify)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-handwritten.svg" alt="Handwritten: Tell me about a time you invented a simple solution to a complex problem. (Invent and Simplify)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-diagram.svg" alt="Diagram: Tell me about a time you invented a simple solution to a complex problem. (Invent and Simplify)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-invented-a-simple-solution-to-a-complex-problem-invent-and-simplify-sticky.svg" alt="Sticky Note: Tell me about a time you invented a simple solution to a complex problem. (Invent and Simplify)" width="30%">
+</a>
+
+
 <details>
 <summary><b>Sample STAR Response</b></summary>
 
@@ -1052,6 +1239,17 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 
 ### Q4: Give an example of a difficult decision you made with limited information. (Bias for Action)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-handwritten.svg" alt="Handwritten: Give an example of a difficult decision you made with limited information. (Bias for Action)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-diagram.svg" alt="Diagram: Give an example of a difficult decision you made with limited information. (Bias for Action)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-a-difficult-decision-you-made-with-limited-information-bias-for-action-sticky.svg" alt="Sticky Note: Give an example of a difficult decision you made with limited information. (Bias for Action)" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1062,6 +1260,17 @@ Amazon values speed over perfection. Show that you:
 </details>
 
 ### Q5: Describe the most challenging project you've worked on. (Deliver Results)
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-handwritten.svg" alt="Handwritten: Describe the most challenging project you've worked on. (Deliver Results)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-diagram.svg" alt="Diagram: Describe the most challenging project you've worked on. (Deliver Results)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/describe-the-most-challenging-project-you-ve-worked-on-deliver-results-sticky.svg" alt="Sticky Note: Describe the most challenging project you've worked on. (Deliver Results)" width="30%">
+</a>
+
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1075,6 +1284,17 @@ Pick a project with clear obstacles — technical, team, or timeline related. Sh
 
 ### Q6: Tell me about a time you took ownership of a problem outside your scope. (Ownership)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-handwritten.svg" alt="Handwritten: Tell me about a time you took ownership of a problem outside your scope. (Ownership)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-diagram.svg" alt="Diagram: Tell me about a time you took ownership of a problem outside your scope. (Ownership)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-ownership-of-a-problem-outside-your-scope-ownership-sticky.svg" alt="Sticky Note: Tell me about a time you took ownership of a problem outside your scope. (Ownership)" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1086,6 +1306,17 @@ Amazon wants "owners, not tenants." Show that you:
 
 ### Q7: Give an example of how you helped a teammate grow. (Hire and Develop the Best)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-handwritten.svg" alt="Handwritten: Give an example of how you helped a teammate grow. (Hire and Develop the Best)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-diagram.svg" alt="Diagram: Give an example of how you helped a teammate grow. (Hire and Develop the Best)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/give-an-example-of-how-you-helped-a-teammate-grow-hire-and-develop-the-best-sticky.svg" alt="Sticky Note: Give an example of how you helped a teammate grow. (Hire and Develop the Best)" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1096,6 +1327,17 @@ Show leadership without formal authority:
 </details>
 
 ### Q8: Tell me about a time you were wrong about something. (Learn and Be Curious)
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-handwritten.svg" alt="Handwritten: Tell me about a time you were wrong about something. (Learn and Be Curious)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-diagram.svg" alt="Diagram: Tell me about a time you were wrong about something. (Learn and Be Curious)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-were-wrong-about-something-learn-and-be-curious-sticky.svg" alt="Sticky Note: Tell me about a time you were wrong about something. (Learn and Be Curious)" width="30%">
+</a>
+
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1120,6 +1362,17 @@ Demonstrate intellectual humility:
 
 ### Q10: Tell me about a time you took a calculated risk. (Think Big)
 
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-handwritten.svg" alt="Handwritten: Tell me about a time you took a calculated risk. (Think Big)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-diagram.svg" alt="Diagram: Tell me about a time you took a calculated risk. (Think Big)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/tell-me-about-a-time-you-took-a-calculated-risk-think-big-sticky.svg" alt="Sticky Note: Tell me about a time you took a calculated risk. (Think Big)" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1137,6 +1390,17 @@ Amazon values bold ideas. Show:
 ## Amazon SDE Preparation Tips
 
 ### Coding Preparation
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-handwritten.svg" alt="Handwritten: Coding Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-diagram.svg" alt="Diagram: Coding Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/coding-preparation-sticky.svg" alt="Sticky Note: Coding Preparation" width="30%">
+</a>
+
 | Difficulty | LeetCode Problems | Target |
 |------------|------------------|--------|
 | Easy | 50+ | Warm-up, array/string basics |
@@ -1144,6 +1408,17 @@ Amazon values bold ideas. Show:
 | Hard | 25+ | DP, complex graphs, advanced trees |
 
 ### System Design (SDE2+)
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-handwritten.svg" alt="Handwritten: System Design (SDE2+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-diagram.svg" alt="Diagram: System Design (SDE2+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/system-design-sde2-sticky.svg" alt="Sticky Note: System Design (SDE2+)" width="30%">
+</a>
+
 | Topic | Case Studies |
 |-------|------|
 | **E-commerce** | Amazon cart, product catalog, recommendation system |
@@ -1152,6 +1427,17 @@ Amazon values bold ideas. Show:
 | **Data** | Web crawler, analytics pipeline, logging system |
 
 ### Behavioral Preparation
+
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-handwritten.svg" alt="Handwritten: Behavioral Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-diagram.svg" alt="Diagram: Behavioral Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/13-company-amazon-sde/behavioral-preparation-sticky.svg" alt="Sticky Note: Behavioral Preparation" width="30%">
+</a>
+
 | Principle | Prepare 2 Stories |
 |-----------|------------------|
 | Customer Obsession | Feature built for user + went beyond requirements |

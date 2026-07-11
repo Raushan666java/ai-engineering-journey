@@ -46,6 +46,17 @@ flowchart LR
 
 ### 5.1 The CAP Theorem
 
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" alt="Handwritten: 5.1 The CAP Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" alt="Diagram: 5.1 The CAP Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" alt="Sticky Note: 5.1 The CAP Theorem" width="30%">
+</a>
+
+
 The CAP theorem states that a distributed data system can only provide two of three guarantees:
 
 - **Consistency (C):** Every read receives the most recent write or an error.
@@ -77,6 +88,17 @@ graph TB
 
 ### 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)
 
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" alt="Handwritten: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" alt="Diagram: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" alt="Sticky Note: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+</a>
+
+
 **AWS RDS** supports multiple database engines (PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, and Amazon Aurora). Offers automated backups, patching, Multi-AZ deployments, and read replicas.
 
 **Key Features:**
@@ -106,6 +128,17 @@ graph TB
 \\\
 
 ### 5.3 NoSQL Databases
+
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" alt="Handwritten: 5.3 NoSQL Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" alt="Diagram: 5.3 NoSQL Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" alt="Sticky Note: 5.3 NoSQL Databases" width="30%">
+</a>
+
 
 **Amazon DynamoDB:** Fully managed, key-value and document database. Offers single-digit millisecond latency at any scale.
 
@@ -178,6 +211,17 @@ console.log("Estimated monthly cost:", sessionTable.estimateMonthlyCost(), "USD"
 \\\
 
 ### 5.4 In-Memory Caching
+
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" alt="Handwritten: 5.4 In-Memory Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" alt="Diagram: 5.4 In-Memory Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" alt="Sticky Note: 5.4 In-Memory Caching" width="30%">
+</a>
+
 
 **Amazon ElastiCache:** Managed Redis or Memcached for sub-millisecond data access.
 
@@ -262,6 +306,17 @@ run();
 
 ### 5.5 Data Warehousing
 
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" alt="Handwritten: 5.5 Data Warehousing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" alt="Diagram: 5.5 Data Warehousing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" alt="Sticky Note: 5.5 Data Warehousing" width="30%">
+</a>
+
+
 **OLTP vs OLAP:**
 
 | Dimension | OLTP (Online Transaction Processing) | OLAP (Online Analytical Processing) |
@@ -273,6 +328,17 @@ run();
 | Typical Database | RDS, DynamoDB | Redshift, BigQuery, Snowflake |
 
 ### 5.6 Multi-Tenancy Models
+
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" alt="Handwritten: 5.6 Multi-Tenancy Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" alt="Diagram: 5.6 Multi-Tenancy Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" alt="Sticky Note: 5.6 Multi-Tenancy Models" width="30%">
+</a>
+
 
 In a SaaS database architecture, tenants can be isolated at different levels:
 

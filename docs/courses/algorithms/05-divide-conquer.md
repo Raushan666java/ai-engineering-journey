@@ -64,6 +64,17 @@ flowchart LR
 
 ### 5.1 Maximum Subarray Problem
 
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" alt="Handwritten: 5.1 Maximum Subarray Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" alt="Diagram: 5.1 Maximum Subarray Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" alt="Sticky Note: 5.1 Maximum Subarray Problem" width="30%">
+</a>
+
+
 **Problem:** Given an array \( A \) of \( n \) integers (which may be negative), find the contiguous subarray with the largest sum.
 
 **Real-World Analogy:** You are a stock trader analyzing price fluctuations over 30 days. You want the contiguous window where buying then selling yields the maximum profit. The "crossing" case corresponds to a trade that starts in the first half of the month and ends in the second half — you must consider windows that cross the midpoint.
@@ -273,6 +284,17 @@ Result: \( T(n) = \Theta(n^{\log_b a} \log n) = \Theta(n \log n) \).
 ---
 
 ### 5.2 Strassen's Matrix Multiplication
+
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" alt="Handwritten: 5.2 Strassen's Matrix Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" alt="Diagram: 5.2 Strassen's Matrix Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" alt="Sticky Note: 5.2 Strassen's Matrix Multiplication" width="30%">
+</a>
+
 
 **Problem:** Multiply two \( n \times n \) matrices, where \( n \) is a power of 2. The standard algorithm requires \( O(n^3) \) time.
 
@@ -561,6 +583,17 @@ Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 
 ### 5.3 Closest Pair of Points
 
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" alt="Handwritten: 5.3 Closest Pair of Points" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" alt="Diagram: 5.3 Closest Pair of Points" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" alt="Sticky Note: 5.3 Closest Pair of Points" width="30%">
+</a>
+
+
 **Problem:** Given \( n \) points in the plane, find the pair with the smallest Euclidean distance.
 
 **Real-World Analogy:** You are an air traffic controller managing 1000 flights. You need to find which two planes are closest together to issue a warning. Checking every pair (\( O(n^2) \)) takes too long. Instead, you divide the airspace into east and west halves, find the closest pair in each half, then check only a narrow strip around the dividing line — knowing that only a few planes in that strip can be close enough to matter.
@@ -813,6 +846,17 @@ Result: \( T(n) = \Theta(n \log n) \).
 
 ### 5.4 Karatsuba Multiplication
 
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" alt="Handwritten: 5.4 Karatsuba Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" alt="Diagram: 5.4 Karatsuba Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" alt="Sticky Note: 5.4 Karatsuba Multiplication" width="30%">
+</a>
+
+
 **Problem:** Multiply two \( n \)-digit integers efficiently. The grade-school algorithm takes \( O(n^2) \) time.
 
 **Real-World Analogy:** To compute \( 37 \times 53 \), you normally do \( 30 \times 50 + 30 \times 3 + 7 \times 50 + 7 \times 3 \) — four products. Karatsuba notices that \( (30+7) \times (50+3) = 30 \times 50 + (30 \times 3 + 7 \times 50) + 7 \times 3 \), and the middle term can be derived from \( (30+7) \times (50+3) - 30 \times 50 - 7 \times 3 \), requiring only three multiplications instead of four. This is your mental math shortcut: compute \( 37 \times 53 = 37 \times 50 + 37 \times 3 \) — two products. Karatsuba extends this idea recursively.
@@ -1006,6 +1050,17 @@ Result: \( T(n) = \Theta(n^{\log_2 3}) = \Theta(n^{1.585}) \).
 ---
 
 ### 5.5 When Divide and Conquer Fails
+
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" alt="Handwritten: 5.5 When Divide and Conquer Fails" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" alt="Diagram: 5.5 When Divide and Conquer Fails" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" alt="Sticky Note: 5.5 When Divide and Conquer Fails" width="30%">
+</a>
+
 
 Divide-and-conquer is powerful but not universal. Here are the situations where it struggles or fails outright:
 

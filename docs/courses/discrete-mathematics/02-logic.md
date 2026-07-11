@@ -50,6 +50,17 @@ flowchart LR
 
 ### 2.1 Propositions
 
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" alt="Handwritten: 2.1 Propositions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" alt="Diagram: 2.1 Propositions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" alt="Sticky Note: 2.1 Propositions" width="30%">
+</a>
+
+
 A **proposition** is a declarative statement that is either true (T) or false (F), but not both.
 
 Examples: "2 + 2 = 4" (true). "5 is an even number" (false). "If it rains, the ground gets wet" (a conditional proposition whose truth depends on the meaning; in logic we treat it as a compound proposition).
@@ -59,6 +70,17 @@ Non-examples: "What time is it?" (question), "Close the door" (command), "This s
 > **One-Sentence Takeaway:** A proposition is the atomic unit of logic ? it must have a definite truth value (true or false) with no ambiguity.
 
 ### 2.2 Logical Connectives
+
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" alt="Handwritten: 2.2 Logical Connectives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" alt="Diagram: 2.2 Logical Connectives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" alt="Sticky Note: 2.2 Logical Connectives" width="30%">
+</a>
+
 
 Let $p$ and $q$ be propositions.
 
@@ -75,6 +97,17 @@ Let $p$ and $q$ be propositions.
 
 ### 2.3 Truth Tables
 
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" alt="Handwritten: 2.3 Truth Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" alt="Diagram: 2.3 Truth Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" alt="Sticky Note: 2.3 Truth Tables" width="30%">
+</a>
+
+
 A truth table enumerates all possible truth assignments to the variables and shows the resulting truth value of a compound proposition.
 
 | $p$ | $q$ | $\neg p$ | $p \land q$ | $p \lor q$ | $p \oplus q$ | $p \rightarrow q$ | $p \leftrightarrow q$ |
@@ -89,6 +122,17 @@ Note carefully: $p \rightarrow q$ is false only when $p$ is true and $q$ is fals
 > **One-Sentence Takeaway:** A truth table enumerates all $2^n$ possible truth assignments ? it is the definitive method for checking equivalence and validity.
 
 ### 2.4 Logical Equivalence
+
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" alt="Handwritten: 2.4 Logical Equivalence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" alt="Diagram: 2.4 Logical Equivalence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" alt="Sticky Note: 2.4 Logical Equivalence" width="30%">
+</a>
+
 
 Two compound propositions $A$ and $B$ are **logically equivalent**, written $A \equiv B$, if they have identical truth values for all truth assignments.
 
@@ -145,6 +189,17 @@ console.log(`p?q = ?p?q: ${allMatch}`); // true
 
 ### 2.5 Conditional and Related Statements
 
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" alt="Handwritten: 2.5 Conditional and Related Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" alt="Diagram: 2.5 Conditional and Related Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" alt="Sticky Note: 2.5 Conditional and Related Statements" width="30%">
+</a>
+
+
 For the conditional $p \rightarrow q$:
 
 - **Converse:** $q \rightarrow p$
@@ -165,6 +220,17 @@ flowchart TD
 > **One-Sentence Takeaway:** The conditional $p \rightarrow q$ is logically equivalent to its contrapositive $\neg q \rightarrow \neg p$, but NOT to its converse $q \rightarrow p$.
 
 ### 2.6 Normal Forms
+
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" alt="Handwritten: 2.6 Normal Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" alt="Diagram: 2.6 Normal Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" alt="Sticky Note: 2.6 Normal Forms" width="30%">
+</a>
+
 
 **Literal:** a variable ($p$) or its negation ($\neg p$).
 
@@ -204,6 +270,17 @@ function toDNF(truthTable: { vars: boolean[], result: boolean }[]): string {
 
 ### 2.7 Satisfiability and Tautology
 
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" alt="Handwritten: 2.7 Satisfiability and Tautology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" alt="Diagram: 2.7 Satisfiability and Tautology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" alt="Sticky Note: 2.7 Satisfiability and Tautology" width="30%">
+</a>
+
+
 A compound proposition is a **tautology** if it is always true (e.g., $p \lor \neg p$). It is a **contradiction** if always false (e.g., $p \land \neg p$). It is **satisfiable** if there exists at least one truth assignment making it true.
 
 **Theorem 2.3 (SAT).** Determining whether a CNF formula is satisfiable (SAT) is NP-complete. This is the canonical NP-complete problem (Cook-Levin theorem).
@@ -231,6 +308,17 @@ console.log(isSatisfiable(formula, ['p', 'q'])); // true
 > **One-Sentence Takeaway:** Tautologies are always-true statements (valid arguments), contradictions are always-false (impossible conditions), and satisfiable statements have at least one path to truth.
 
 ### 2.8 Arguments and Validity
+
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" alt="Handwritten: 2.8 Arguments and Validity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" alt="Diagram: 2.8 Arguments and Validity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" alt="Sticky Note: 2.8 Arguments and Validity" width="30%">
+</a>
+
 
 An **argument** consists of premises $P_1, P_2, \ldots, P_n$ and a conclusion $C$. It is **valid** when $(P_1 \land P_2 \land \cdots \land P_n) \rightarrow C$ is a tautology.
 
@@ -272,6 +360,17 @@ function resolution(p: boolean, q: boolean, r: boolean): boolean {
 > **One-Sentence Takeaway:** An argument is valid if the conclusion follows necessarily from the premises ? modus ponens and modus tollens are the most fundamental inference rules.
 
 ### 2.9 Limitations of Propositional Logic
+
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" alt="Handwritten: 2.9 Limitations of Propositional Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" alt="Diagram: 2.9 Limitations of Propositional Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" alt="Sticky Note: 2.9 Limitations of Propositional Logic" width="30%">
+</a>
+
 
 Propositional logic cannot express:
 - Statements about all/some objects: "All humans are mortal"

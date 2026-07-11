@@ -51,6 +51,17 @@ flowchart LR
 
 ### 10.1 Definition
 
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" alt="Handwritten: 10.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" alt="Diagram: 10.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" alt="Sticky Note: 10.1 Definition" width="30%">
+</a>
+
+
 A **tree** is a connected acyclic undirected graph. A **forest** is an acyclic graph (each component is a tree).
 
 **Theorem 10.1 (Basic tree properties).** For a tree $T = (V, E)$ with $n$ vertices:
@@ -66,6 +77,17 @@ A **tree** is a connected acyclic undirected graph. A **forest** is an acyclic g
 
 ### 10.2 Rooted Trees
 
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" alt="Handwritten: 10.2 Rooted Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" alt="Diagram: 10.2 Rooted Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" alt="Sticky Note: 10.2 Rooted Trees" width="30%">
+</a>
+
+
 A **rooted tree** designates one vertex as the **root**, establishing a hierarchy:
 - **Parent:** the node directly above in the tree.
 - **Child:** a node directly below.
@@ -80,6 +102,17 @@ A **rooted tree** designates one vertex as the **root**, establishing a hierarch
 > **One-Sentence Takeaway:** Rooting a tree creates parent-child relationships; depth, height, level, and subtree all derive from this orientation.
 
 ### 10.3 Binary Trees
+
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" alt="Handwritten: 10.3 Binary Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" alt="Diagram: 10.3 Binary Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" alt="Sticky Note: 10.3 Binary Trees" width="30%">
+</a>
+
 
 A **binary tree** is a rooted tree where each node has at most two children (left and right).
 
@@ -136,6 +169,17 @@ class BinarySearchTree<T> {
 
 ### 10.4 Tree Traversals
 
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" alt="Handwritten: 10.4 Tree Traversals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" alt="Diagram: 10.4 Tree Traversals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" alt="Sticky Note: 10.4 Tree Traversals" width="30%">
+</a>
+
+
 **Preorder (NLR):** Visit root, traverse left subtree, traverse right subtree.
 
 **Inorder (LNR):** Traverse left subtree, visit root, traverse right subtree. (Gives sorted order in BST.)
@@ -187,6 +231,17 @@ function levelOrder<T>(root: TreeNode<T> | null): T[] {
 
 ### 10.5 Spanning Trees
 
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" alt="Handwritten: 10.5 Spanning Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" alt="Diagram: 10.5 Spanning Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" alt="Sticky Note: 10.5 Spanning Trees" width="30%">
+</a>
+
+
 A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and includes all vertices of $G$.
 
 **Theorem 10.5 (Spanning tree existence).** Every connected graph has at least one spanning tree.
@@ -201,6 +256,17 @@ A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and in
 
 ### 10.6 Decision Trees
 
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" alt="Handwritten: 10.6 Decision Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" alt="Diagram: 10.6 Decision Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" alt="Sticky Note: 10.6 Decision Trees" width="30%">
+</a>
+
+
 A **decision tree** models a decision process as a binary tree where internal nodes test a condition and branches represent outcomes. Used in:
 - Classification and regression (machine learning)
 - Game theory (game trees for minimax)
@@ -212,6 +278,17 @@ A **decision tree** models a decision process as a binary tree where internal no
 > **One-Sentence Takeaway:** Decision trees model sequential decisions; the sorting lower bound ($\Omega(n \log n)$) follows from the height of a binary decision tree with $n!$ leaves.
 
 ### 10.7 Huffman Coding
+
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" alt="Handwritten: 10.7 Huffman Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" alt="Diagram: 10.7 Huffman Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" alt="Sticky Note: 10.7 Huffman Coding" width="30%">
+</a>
+
 
 Huffman coding is a greedy algorithm for constructing an optimal prefix code.
 

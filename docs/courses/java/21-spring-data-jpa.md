@@ -51,6 +51,17 @@ Spring Data JPA provides a hierarchy of repository interfaces. Each adds functio
 
 ### 1.1 Interface Hierarchy
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-handwritten.svg" alt="Handwritten: 1.1 Interface Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-diagram.svg" alt="Diagram: 1.1 Interface Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-1-interface-hierarchy-sticky.svg" alt="Sticky Note: 1.1 Interface Hierarchy" width="30%">
+</a>
+
+
 ```java
 // Repository Ã¢â‚¬â€ Marker interface (no methods)
 public interface Repository<T, ID> { }
@@ -75,6 +86,17 @@ public interface Repository<T, ID> { }
 
 ### 1.2 Choosing the Right Interface
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-handwritten.svg" alt="Handwritten: 1.2 Choosing the Right Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-diagram.svg" alt="Diagram: 1.2 Choosing the Right Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-2-choosing-the-right-interface-sticky.svg" alt="Sticky Note: 1.2 Choosing the Right Interface" width="30%">
+</a>
+
+
 ```java
 // Minimal Ã¢â‚¬â€ just type-safe ID-based access
 @Repository
@@ -94,6 +116,17 @@ public interface ProductRepository extends ListCrudRepository<Product, Long>,
 ```
 
 ### 1.3 Complete Repository Example
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-handwritten.svg" alt="Handwritten: 1.3 Complete Repository Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-diagram.svg" alt="Diagram: 1.3 Complete Repository Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/1-3-complete-repository-example-sticky.svg" alt="Sticky Note: 1.3 Complete Repository Example" width="30%">
+</a>
+
 
 ```java
 @Entity
@@ -154,6 +187,17 @@ Spring Data JPA parses method names to generate JPQL queries automatically.
 
 ### 2.1 Subject Keywords
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-handwritten.svg" alt="Handwritten: 2.1 Subject Keywords" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-diagram.svg" alt="Diagram: 2.1 Subject Keywords" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-1-subject-keywords-sticky.svg" alt="Sticky Note: 2.1 Subject Keywords" width="30%">
+</a>
+
+
 ```java
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
@@ -180,6 +224,17 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 ```
 
 ### 2.2 Query Expressions
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-handwritten.svg" alt="Handwritten: 2.2 Query Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-diagram.svg" alt="Diagram: 2.2 Query Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-2-query-expressions-sticky.svg" alt="Sticky Note: 2.2 Query Expressions" width="30%">
+</a>
+
 
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -227,6 +282,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 ### 2.3 Nested Property Traversal
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-handwritten.svg" alt="Handwritten: 2.3 Nested Property Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-diagram.svg" alt="Diagram: 2.3 Nested Property Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-3-nested-property-traversal-sticky.svg" alt="Sticky Note: 2.3 Nested Property Traversal" width="30%">
+</a>
+
+
 ```java
 @Entity
 public class Shipment {
@@ -259,6 +325,17 @@ public interface ShipmentRepository extends JpaRepository<Shipment, Long> {
 
 ### 2.4 Limiting Results
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-handwritten.svg" alt="Handwritten: 2.4 Limiting Results" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-diagram.svg" alt="Diagram: 2.4 Limiting Results" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/2-4-limiting-results-sticky.svg" alt="Sticky Note: 2.4 Limiting Results" width="30%">
+</a>
+
+
 ```java
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
@@ -277,6 +354,17 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 ## 3. @Query Ã¢â‚¬â€ Custom JPQL and Native Queries
 
 ### 3.1 JPQL Queries
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-handwritten.svg" alt="Handwritten: 3.1 JPQL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-diagram.svg" alt="Diagram: 3.1 JPQL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-1-jpql-queries-sticky.svg" alt="Sticky Note: 3.1 JPQL Queries" width="30%">
+</a>
+
 
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -310,6 +398,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ```
 
 ### 3.2 Native Queries
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-handwritten.svg" alt="Handwritten: 3.2 Native Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-diagram.svg" alt="Diagram: 3.2 Native Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-2-native-queries-sticky.svg" alt="Sticky Note: 3.2 Native Queries" width="30%">
+</a>
+
 
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -345,6 +444,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 ### 3.3 @QueryHints
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-handwritten.svg" alt="Handwritten: 3.3 @QueryHints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-diagram.svg" alt="Diagram: 3.3 @QueryHints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-3-queryhints-sticky.svg" alt="Sticky Note: 3.3 @QueryHints" width="30%">
+</a>
+
+
 ```java
 public interface CountryRepository extends JpaRepository<Country, Long> {
 
@@ -366,6 +476,17 @@ public interface CountryRepository extends JpaRepository<Country, Long> {
 ```
 
 ### 3.4 Dynamic SpEL Queries
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-handwritten.svg" alt="Handwritten: 3.4 Dynamic SpEL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-diagram.svg" alt="Diagram: 3.4 Dynamic SpEL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/3-4-dynamic-spel-queries-sticky.svg" alt="Sticky Note: 3.4 Dynamic SpEL Queries" width="30%">
+</a>
+
 
 ```java
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
@@ -390,6 +511,17 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
 ### 4.1 Basic Usage
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-handwritten.svg" alt="Handwritten: 4.1 Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-diagram.svg" alt="Diagram: 4.1 Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-1-basic-usage-sticky.svg" alt="Sticky Note: 4.1 Basic Usage" width="30%">
+</a>
+
+
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
@@ -407,6 +539,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ```
 
 ### 4.2 clearAutomatically and flushAutomatically
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-handwritten.svg" alt="Handwritten: 4.2 clearAutomatically and flushAutomatically" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-diagram.svg" alt="Diagram: 4.2 clearAutomatically and flushAutomatically" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-2-clearautomatically-and-flushautomatically-sticky.svg" alt="Sticky Note: 4.2 clearAutomatically and flushAutomatically" width="30%">
+</a>
+
 
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -432,6 +575,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ```
 
 ### 4.3 @Transactional on Modifications
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-handwritten.svg" alt="Handwritten: 4.3 @Transactional on Modifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-diagram.svg" alt="Diagram: 4.3 @Transactional on Modifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/4-3-transactional-on-modifications-sticky.svg" alt="Sticky Note: 4.3 @Transactional on Modifications" width="30%">
+</a>
+
 
 ```java
 @Service
@@ -467,6 +621,17 @@ public class OrderService {
 
 ### 5.1 JpaSpecificationExecutor
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-handwritten.svg" alt="Handwritten: 5.1 JpaSpecificationExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-diagram.svg" alt="Diagram: 5.1 JpaSpecificationExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-1-jpaspecificationexecutor-sticky.svg" alt="Sticky Note: 5.1 JpaSpecificationExecutor" width="30%">
+</a>
+
+
 ```java
 // First, extend JpaSpecificationExecutor
 @Repository
@@ -485,6 +650,17 @@ public interface OrderRepository extends JpaRepository<Order, Long>,
 ```
 
 ### 5.2 Building Specifications
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-handwritten.svg" alt="Handwritten: 5.2 Building Specifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-diagram.svg" alt="Diagram: 5.2 Building Specifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-2-building-specifications-sticky.svg" alt="Sticky Note: 5.2 Building Specifications" width="30%">
+</a>
+
 
 ```java
 public class OrderSpecifications {
@@ -523,6 +699,17 @@ public class OrderSpecifications {
 ```
 
 ### 5.3 Combining Specifications
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-handwritten.svg" alt="Handwritten: 5.3 Combining Specifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-diagram.svg" alt="Diagram: 5.3 Combining Specifications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-3-combining-specifications-sticky.svg" alt="Sticky Note: 5.3 Combining Specifications" width="30%">
+</a>
+
 
 ```java
 @Service
@@ -563,6 +750,17 @@ public class OrderSearchService {
 ```
 
 ### 5.4 Criteria API Ã¢â‚¬â€ Advanced Usage
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-handwritten.svg" alt="Handwritten: 5.4 Criteria API Ã¢â‚¬â€ Advanced Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-diagram.svg" alt="Diagram: 5.4 Criteria API Ã¢â‚¬â€ Advanced Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/5-4-criteria-api-advanced-usage-sticky.svg" alt="Sticky Note: 5.4 Criteria API Ã¢â‚¬â€ Advanced Usage" width="30%">
+</a>
+
 
 ```java
 @Repository
@@ -686,6 +884,17 @@ public interface CustomOrderRepository {
 
 ### 6.1 Setup and Configuration
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-handwritten.svg" alt="Handwritten: 6.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-diagram.svg" alt="Diagram: 6.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-1-setup-and-configuration-sticky.svg" alt="Sticky Note: 6.1 Setup and Configuration" width="30%">
+</a>
+
+
 ```xml
 <dependency>
     <groupId>com.querydsl</groupId>
@@ -716,6 +925,17 @@ public interface CustomOrderRepository {
 ```
 
 ### 6.2 QuerydslPredicateExecutor
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-handwritten.svg" alt="Handwritten: 6.2 QuerydslPredicateExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-diagram.svg" alt="Diagram: 6.2 QuerydslPredicateExecutor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-2-querydslpredicateexecutor-sticky.svg" alt="Sticky Note: 6.2 QuerydslPredicateExecutor" width="30%">
+</a>
+
 
 ```java
 @Entity
@@ -748,6 +968,17 @@ public interface CustomerRepository extends JpaRepository<Customer, Long>,
 ```
 
 ### 6.3 Building QueryDSL Predicates
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-handwritten.svg" alt="Handwritten: 6.3 Building QueryDSL Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-diagram.svg" alt="Diagram: 6.3 Building QueryDSL Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-3-building-querydsl-predicates-sticky.svg" alt="Sticky Note: 6.3 Building QueryDSL Predicates" width="30%">
+</a>
+
 
 ```java
 import static com.example.domain.QCustomer.customer;
@@ -809,6 +1040,17 @@ public class CustomerSearchService {
 
 ### 6.4 QuerydslBinderCustomizer
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-handwritten.svg" alt="Handwritten: 6.4 QuerydslBinderCustomizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-diagram.svg" alt="Diagram: 6.4 QuerydslBinderCustomizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-4-querydslbindercustomizer-sticky.svg" alt="Sticky Note: 6.4 QuerydslBinderCustomizer" width="30%">
+</a>
+
+
 ```java
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long>,
@@ -845,6 +1087,17 @@ public interface ProductRepository extends JpaRepository<Product, Long>,
 ```
 
 ### 6.5 QuerydslRepositorySupport
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-handwritten.svg" alt="Handwritten: 6.5 QuerydslRepositorySupport" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-diagram.svg" alt="Diagram: 6.5 QuerydslRepositorySupport" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/6-5-querydslrepositorysupport-sticky.svg" alt="Sticky Note: 6.5 QuerydslRepositorySupport" width="30%">
+</a>
+
 
 ```java
 @Repository
@@ -921,6 +1174,17 @@ public class CustomOrderRepositoryImpl extends QuerydslRepositorySupport
 
 ### 7.1 Entity Auditing Annotations
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-handwritten.svg" alt="Handwritten: 7.1 Entity Auditing Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-diagram.svg" alt="Diagram: 7.1 Entity Auditing Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-1-entity-auditing-annotations-sticky.svg" alt="Sticky Note: 7.1 Entity Auditing Annotations" width="30%">
+</a>
+
+
 ```java
 @Entity
 @Table(name = "auditable_entities")
@@ -952,6 +1216,17 @@ public class AuditableEntity {
 ```
 
 ### 7.2 AuditorAware Implementation
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-handwritten.svg" alt="Handwritten: 7.2 AuditorAware Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-diagram.svg" alt="Diagram: 7.2 AuditorAware Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-2-auditoraware-implementation-sticky.svg" alt="Sticky Note: 7.2 AuditorAware Implementation" width="30%">
+</a>
+
 
 ```java
 @Configuration
@@ -994,6 +1269,17 @@ public class StaticAuditorAware implements AuditorAware<String> {
 ```
 
 ### 7.3 MappedSuperclass for Reusable Auditing
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-handwritten.svg" alt="Handwritten: 7.3 MappedSuperclass for Reusable Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-diagram.svg" alt="Diagram: 7.3 MappedSuperclass for Reusable Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/7-3-mappedsuperclass-for-reusable-auditing-sticky.svg" alt="Sticky Note: 7.3 MappedSuperclass for Reusable Auditing" width="30%">
+</a>
+
 
 ```java
 @MappedSuperclass
@@ -1043,6 +1329,17 @@ public class Article extends BaseAuditEntity {
 
 ### 8.1 Pageable, Page, and Sort
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-handwritten.svg" alt="Handwritten: 8.1 Pageable, Page, and Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-diagram.svg" alt="Diagram: 8.1 Pageable, Page, and Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-1-pageable-page-and-sort-sticky.svg" alt="Sticky Note: 8.1 Pageable, Page, and Sort" width="30%">
+</a>
+
+
 ```java
 // Controller
 @RestController
@@ -1086,6 +1383,17 @@ public class OrderController {
 
 ### 8.2 Repository Methods with Pagination
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-handwritten.svg" alt="Handwritten: 8.2 Repository Methods with Pagination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-diagram.svg" alt="Diagram: 8.2 Repository Methods with Pagination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-2-repository-methods-with-pagination-sticky.svg" alt="Sticky Note: 8.2 Repository Methods with Pagination" width="30%">
+</a>
+
+
 ```java
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
@@ -1111,6 +1419,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ```
 
 ### 8.3 Page vs Slice vs List
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-handwritten.svg" alt="Handwritten: 8.3 Page vs Slice vs List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-diagram.svg" alt="Diagram: 8.3 Page vs Slice vs List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-3-page-vs-slice-vs-list-sticky.svg" alt="Sticky Note: 8.3 Page vs Slice vs List" width="30%">
+</a>
+
 
 ```java
 @Service
@@ -1141,6 +1460,17 @@ public class OrderService {
 
 ### 8.4 JpaSort (Unsafe)
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-handwritten.svg" alt="Handwritten: 8.4 JpaSort (Unsafe)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-diagram.svg" alt="Diagram: 8.4 JpaSort (Unsafe)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-4-jpasort-unsafe-sticky.svg" alt="Sticky Note: 8.4 JpaSort (Unsafe)" width="30%">
+</a>
+
+
 ```java
 @Service
 public class OrderService {
@@ -1167,6 +1497,17 @@ public class OrderService {
 **Warning:** `JpaSort.unsafe` is vulnerable to SQL injection if user input reaches the sort expression. Never concatenate user input into unsafe sort strings.
 
 ### 8.5 Keyset Pagination
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-handwritten.svg" alt="Handwritten: 8.5 Keyset Pagination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-diagram.svg" alt="Diagram: 8.5 Keyset Pagination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/8-5-keyset-pagination-sticky.svg" alt="Sticky Note: 8.5 Keyset Pagination" width="30%">
+</a>
+
 
 ```java
 // Keyset pagination Ã¢â‚¬â€ efficient for large datasets
@@ -1213,6 +1554,17 @@ Projections allow you to fetch only the data you need, reducing network transfer
 
 ### 9.1 Interface-Based Closed Projection
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-handwritten.svg" alt="Handwritten: 9.1 Interface-Based Closed Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-diagram.svg" alt="Diagram: 9.1 Interface-Based Closed Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-1-interface-based-closed-projection-sticky.svg" alt="Sticky Note: 9.1 Interface-Based Closed Projection" width="30%">
+</a>
+
+
 ```java
 // Closed projection Ã¢â‚¬â€ only getter methods matching entity properties
 // Spring Data generates a proxy at runtime Ã¢â‚¬â€ no data is fetched for unneeded columns
@@ -1251,6 +1603,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 ### 9.2 Interface-Based Open Projection
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-handwritten.svg" alt="Handwritten: 9.2 Interface-Based Open Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-diagram.svg" alt="Diagram: 9.2 Interface-Based Open Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-2-interface-based-open-projection-sticky.svg" alt="Sticky Note: 9.2 Interface-Based Open Projection" width="30%">
+</a>
+
+
 ```java
 // Open projection Ã¢â‚¬â€ uses SpEL to compute values
 // Spring Data loads ALL columns because it cannot determine which ones are needed
@@ -1271,6 +1634,17 @@ public interface CustomerWithFullName {
 ```
 
 ### 9.3 Class-Based DTO Projection (DTO)
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-handwritten.svg" alt="Handwritten: 9.3 Class-Based DTO Projection (DTO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-diagram.svg" alt="Diagram: 9.3 Class-Based DTO Projection (DTO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-3-class-based-dto-projection-dto-sticky.svg" alt="Sticky Note: 9.3 Class-Based DTO Projection (DTO)" width="30%">
+</a>
+
 
 ```java
 // DTO with constructor Ã¢â‚¬â€ most efficient projection
@@ -1325,6 +1699,17 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 ### 9.4 Dynamic Projection
 
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-handwritten.svg" alt="Handwritten: 9.4 Dynamic Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-diagram.svg" alt="Diagram: 9.4 Dynamic Projection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-4-dynamic-projection-sticky.svg" alt="Sticky Note: 9.4 Dynamic Projection" width="30%">
+</a>
+
+
 ```java
 // Single repository method that returns different projection types
 @Repository
@@ -1360,6 +1745,17 @@ public class CustomerService {
 ```
 
 ### 9.5 Projection Performance
+
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-handwritten.svg" alt="Handwritten: 9.5 Projection Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-diagram.svg" alt="Diagram: 9.5 Projection Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/21-spring-data-jpa/9-5-projection-performance-sticky.svg" alt="Sticky Note: 9.5 Projection Performance" width="30%">
+</a>
+
 
 ```java
 // Performance comparison:

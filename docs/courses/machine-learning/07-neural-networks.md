@@ -51,6 +51,17 @@ flowchart LR
 
 ### The Artificial Neuron
 
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-handwritten.svg" alt="Handwritten: The Artificial Neuron" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-diagram.svg" alt="Diagram: The Artificial Neuron" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-artificial-neuron-sticky.svg" alt="Sticky Note: The Artificial Neuron" width="30%">
+</a>
+
+
 An artificial neuron is the fundamental building block of a neural network. It takes several inputs, applies a weight to each, sums them with a bias, and passes the result through an **activation function**.
 
 $$y = f(\sum_{i=1}^{n} w_i x_i + b)$$
@@ -63,9 +74,31 @@ Where:
 
 ### Multi-Layer Perceptron (MLP)
 
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-handwritten.svg" alt="Handwritten: Multi-Layer Perceptron (MLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-diagram.svg" alt="Diagram: Multi-Layer Perceptron (MLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/multi-layer-perceptron-mlp-sticky.svg" alt="Sticky Note: Multi-Layer Perceptron (MLP)" width="30%">
+</a>
+
+
 An MLP is a feedforward neural network consisting of at least three layers of nodes: an **input layer**, one or more **hidden layers**, and an **output layer**. Except for the input nodes, each node is a neuron that uses a nonlinear activation function. The hidden layers allow the network to learn complex, non-linear representations of the data.
 
 ### Activation Functions
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-handwritten.svg" alt="Handwritten: Activation Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-diagram.svg" alt="Diagram: Activation Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/activation-functions-sticky.svg" alt="Sticky Note: Activation Functions" width="30%">
+</a>
+
 
 Activation functions introduce non-linearity into the network, which is essential for learning complex patterns.
 
@@ -105,6 +138,17 @@ graph LR
 | Softmax | $\sigma(\mathbf{z})_i = e^{z_i} / \sum e^{z_j}$ | (0, 1) | Shift-invariant | Multi-class output |
 
 ### Backpropagation: Detailed Derivation
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-handwritten.svg" alt="Handwritten: Backpropagation: Detailed Derivation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-diagram.svg" alt="Diagram: Backpropagation: Detailed Derivation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/backpropagation-detailed-derivation-sticky.svg" alt="Sticky Note: Backpropagation: Detailed Derivation" width="30%">
+</a>
+
 
 Backpropagation computes the gradient of the loss function with respect to every weight in the network using the chain rule. Consider a 3-layer MLP with MSE loss:
 
@@ -172,6 +216,17 @@ flowchart TD
 
 ### Vanishing & Exploding Gradients
 
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-handwritten.svg" alt="Handwritten: Vanishing & Exploding Gradients" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-diagram.svg" alt="Diagram: Vanishing & Exploding Gradients" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/vanishing-exploding-gradients-sticky.svg" alt="Sticky Note: Vanishing & Exploding Gradients" width="30%">
+</a>
+
+
 **Vanishing gradients** occur when repeated multiplication of gradients (chain rule) produces values approaching zero. This is especially severe with Sigmoid or Tanh activations because their derivatives saturate:
 
 $$\sigma'(x) = \sigma(x)(1-\sigma(x)) \leq 0.25$$
@@ -191,6 +246,17 @@ After $L$ layers, the gradient is multiplied by $(0.25)^L$ ? for $L=10$, that gi
 | Residual Connections | Skip connections allow gradient shortcut paths | Enables training of 100+ layer networks |
 
 ### Weight Initialization
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-handwritten.svg" alt="Handwritten: Weight Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-diagram.svg" alt="Diagram: Weight Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/weight-initialization-sticky.svg" alt="Sticky Note: Weight Initialization" width="30%">
+</a>
+
 
 Initializing all weights to zero causes every neuron in a layer to compute the same gradient ? they become symmetric and never differentiate.
 
@@ -217,6 +283,17 @@ ReLU zeroes half the neurons, doubling the variance needed to compensate.
 
 ### Gradient Descent Variants
 
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-handwritten.svg" alt="Handwritten: Gradient Descent Variants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-diagram.svg" alt="Diagram: Gradient Descent Variants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/gradient-descent-variants-sticky.svg" alt="Sticky Note: Gradient Descent Variants" width="30%">
+</a>
+
+
 | Optimizer | Update Rule | Key Property | Best When |
 |-----------|------------|--------------|-----------|
 | SGD | $w_{t+1} = w_t - \alpha \nabla \mathcal{L}_t$ | No momentum, fixed LR | Simple problems, small datasets |
@@ -239,6 +316,17 @@ $$\theta_t = \theta_{t-1} - \alpha \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
 Default hyperparameters: $\alpha = 0.001$, $\beta_1 = 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$.
 
 ### The Training Loop
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-handwritten.svg" alt="Handwritten: The Training Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-diagram.svg" alt="Diagram: The Training Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/the-training-loop-sticky.svg" alt="Sticky Note: The Training Loop" width="30%">
+</a>
+
 
 Training a neural network follows an iterative loop:
 
@@ -274,6 +362,17 @@ flowchart TD
 | Linear Warmup + Decay | Linear increase to $\alpha_0$ then cosine/step decay | Prevents early instability |
 
 ### Regularization
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-handwritten.svg" alt="Handwritten: Regularization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-diagram.svg" alt="Diagram: Regularization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/regularization-sticky.svg" alt="Sticky Note: Regularization" width="30%">
+</a>
+
 
 **L1 Regularization (Lasso):** Adds absolute weight penalty, encourages sparsity:
 
@@ -321,6 +420,17 @@ Benefits: allows higher learning rates, reduces sensitivity to initialization, p
 | Label Smoothing | Softens target labels | Prevents overconfidence | None |
 
 ### Hyperparameters
+
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-handwritten.svg" alt="Handwritten: Hyperparameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-diagram.svg" alt="Diagram: Hyperparameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/07-neural-networks/hyperparameters-sticky.svg" alt="Sticky Note: Hyperparameters" width="30%">
+</a>
+
 
 | Hyperparameter | Typical Range | Effect of Too Large | Effect of Too Small |
 |---------------|-------------|--------------------|--------------------|

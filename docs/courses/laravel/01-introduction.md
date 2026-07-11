@@ -88,6 +88,17 @@ flowchart TD
 
 ### 1.1 What is Laravel?
 
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" alt="Handwritten: 1.1 What is Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" alt="Diagram: 1.1 What is Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" alt="Sticky Note: 1.1 What is Laravel?" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Laravel's progressive nature lets you start small and scale up by adopting only the features you need
 
 Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better → a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP's fragmented ecosystem.
@@ -110,6 +121,17 @@ Laravel also brands itself as a *progressive framework*. You can adopt only the 
 
 ### 1.2 Laravel 13 Specifics
 
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" alt="Handwritten: 1.2 Laravel 13 Specifics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" alt="Diagram: 1.2 Laravel 13 Specifics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" alt="Sticky Note: 1.2 Laravel 13 Specifics" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** With PHP 8.3 minimum and AI-native workflows, Laravel 13 is designed for modern, agent-assisted development
 
 Laravel follows an annual major release cadence, shipping each August. Laravel 13 continues this tradition with several defining characteristics:
@@ -129,6 +151,17 @@ Laravel follows an annual major release cadence, shipping each August. Laravel 1
 **AI-Native Workflows**: Laravel 13 introduces first-class support for AI-assisted development. The framework's conventions are designed to be predictable for AI coding agents. Method signatures follow consistent naming patterns. Service providers always have `register()` and `boot()`. Middleware always uses `handle()`. This predictability means an AI agent can scaffold an entire feature with near-100% accuracy on file paths and wiring.
 
 ### 1.3 Creating Laravel Applications
+
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" alt="Handwritten: 1.3 Creating Laravel Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" alt="Diagram: 1.3 Creating Laravel Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" alt="Sticky Note: 1.3 Creating Laravel Applications" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Laravel Herd provides instant local PHP environments while Sail ensures Docker-consistent team setups
 
@@ -197,6 +230,17 @@ This downloads the latest skeleton, installs dependencies, and copies `.env.exam
 
 ### 1.4 Directory Structure
 
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" alt="Handwritten: 1.4 Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" alt="Diagram: 1.4 Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" alt="Sticky Note: 1.4 Directory Structure" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Laravel's predictable directory layout makes every file findable without documentation
 
 A fresh Laravel application follows a consistent, well-documented layout.
@@ -231,6 +275,17 @@ A fresh Laravel application follows a consistent, well-documented layout.
 The `app/Models` directory is notable. Models live under `app/Models/` by convention rather than directly in `app/`. This keeps the namespace clean and predictable.
 
 ### 1.5 Artisan CLI
+
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" alt="Handwritten: 1.5 Artisan CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" alt="Diagram: 1.5 Artisan CLI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" alt="Sticky Note: 1.5 Artisan CLI" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Artisan is your Swiss Army knife — from scaffolding to migrations to custom commands, it handles everything
 
@@ -288,6 +343,17 @@ make:provider ReportService  # Service provider
 Each scaffolded file follows the correct namespace, imports framework base classes, and includes PHPDoc stubs. This saves minutes per feature and enforces consistency across the codebase.
 
 ### 1.6 Environment Configuration
+
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" alt="Handwritten: 1.6 Environment Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" alt="Diagram: 1.6 Environment Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" alt="Sticky Note: 1.6 Environment Configuration" width="30%">
+</a>
+
 
 Laravel separates configuration from code to support different environments without modifying application files.
 
@@ -364,6 +430,17 @@ The golden rule: never hardcode sensitive values. Use `.env` in development and 
 
 ### 1.7 Laravel and AI
 
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" alt="Handwritten: 1.7 Laravel and AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" alt="Diagram: 1.7 Laravel and AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" alt="Sticky Note: 1.7 Laravel and AI" width="30%">
+</a>
+
+
 Laravel 13 is explicitly designed to work well with AI coding assistants. This influences the framework in concrete ways.
 
 **Predicable Conventions**: An AI agent can reliably predict that `php artisan make:controller ProductController --resource` creates seven methods with specific names and signatures. It knows Eloquent models are in `app/Models/`, form requests in `app/Http/Requests/`, and middleware in `app/Http/Middleware/`. This deterministic structure dramatically reduces ambiguity.
@@ -373,6 +450,17 @@ Laravel 13 is explicitly designed to work well with AI coding assistants. This i
 **Laravel for Agents**: The ecosystem publishes guidelines for AI coding tools. These guidelines recommend using `artisan make` commands over manual file creation, defining routes explicitly rather than relying on magic, and writing tests first. They also document file path conventions, namespace rules, and naming patterns that AI agents should follow.
 
 ### 1.8 Hello World → Complete Walkthrough
+
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" alt="Handwritten: 1.8 Hello World → Complete Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" alt="Diagram: 1.8 Hello World → Complete Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" alt="Sticky Note: 1.8 Hello World → Complete Walkthrough" width="30%">
+</a>
+
 
 We will build "Hello World" three ways, each demonstrating a deeper layer.
 
@@ -493,6 +581,17 @@ The route stays the same. Now visiting `/` renders a styled HTML page. The `$gre
 This is the classic Model-View-Controller pattern in action: the route delegates to the controller, the controller prepares data, and the view renders it.
 
 ### 1.9 Package Ecosystem Overview
+
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" alt="Handwritten: 1.9 Package Ecosystem Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" alt="Diagram: 1.9 Package Ecosystem Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" alt="Sticky Note: 1.9 Package Ecosystem Overview" width="30%">
+</a>
+
 
 Laravel's first-party ecosystem is one of its greatest strengths. These packages solve common production concerns:
 

@@ -55,6 +55,17 @@ Migration tools bring database changes under version control, making them repeat
 
 ### 1.1 How Migrations Work
 
+<a href="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-handwritten.svg" alt="Handwritten: 1.1 How Migrations Work" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-diagram.svg" alt="Diagram: 1.1 How Migrations Work" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/1-1-how-migrations-work-sticky.svg" alt="Sticky Note: 1.1 How Migrations Work" width="30%">
+</a>
+
+
 The migration tool reads a tracking table (e.g. `flyway_schema_history`), identifies unapplied migrations, and applies them in order. Each migration is a file with a unique version number, description, and the SQL/DDL to execute. The tracking table records which migrations have been applied, their checksums, and timestamps.
 
 ```
@@ -74,6 +85,17 @@ flyway_schema_history
 ## 2. Flyway
 
 ### 2.1 Setup and Configuration
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-handwritten.svg" alt="Handwritten: 2.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-diagram.svg" alt="Diagram: 2.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-1-setup-and-configuration-sticky.svg" alt="Sticky Note: 2.1 Setup and Configuration" width="30%">
+</a>
+
 
 ```xml
 <dependency>
@@ -113,6 +135,17 @@ spring.flyway.out-of-order=false
 
 ### 2.2 Migration File Naming
 
+<a href="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-handwritten.svg" alt="Handwritten: 2.2 Migration File Naming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-diagram.svg" alt="Diagram: 2.2 Migration File Naming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-2-migration-file-naming-sticky.svg" alt="Sticky Note: 2.2 Migration File Naming" width="30%">
+</a>
+
+
 ```sql
 -- Prefix: V (versioned), R (repeatable), U (undo -- Pro only)
 -- Version: numeric with dots and underscores
@@ -128,6 +161,17 @@ spring.flyway.out-of-order=false
 ```
 
 ### 2.3 Versioned Migrations
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-handwritten.svg" alt="Handwritten: 2.3 Versioned Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-diagram.svg" alt="Diagram: 2.3 Versioned Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-3-versioned-migrations-sticky.svg" alt="Sticky Note: 2.3 Versioned Migrations" width="30%">
+</a>
+
 
 ```sql
 -- V1__create_users.sql
@@ -223,6 +267,17 @@ CREATE TABLE order_items (
 
 ### 2.4 Repeatable Migrations
 
+<a href="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-handwritten.svg" alt="Handwritten: 2.4 Repeatable Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-diagram.svg" alt="Diagram: 2.4 Repeatable Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-4-repeatable-migrations-sticky.svg" alt="Sticky Note: 2.4 Repeatable Migrations" width="30%">
+</a>
+
+
 ```sql
 -- R__active_products_view.sql
 -- Re-applied every time the checksum changes
@@ -256,6 +311,17 @@ $$ LANGUAGE plpgsql;
 ```
 
 ### 2.5 Callbacks
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-handwritten.svg" alt="Handwritten: 2.5 Callbacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-diagram.svg" alt="Diagram: 2.5 Callbacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-5-callbacks-sticky.svg" alt="Sticky Note: 2.5 Callbacks" width="30%">
+</a>
+
 
 ```java
 @Component
@@ -303,6 +369,17 @@ public class FlywayCallback implements Callback {
 
 ### 2.6 SQL Callbacks (File-Based)
 
+<a href="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-handwritten.svg" alt="Handwritten: 2.6 SQL Callbacks (File-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-diagram.svg" alt="Diagram: 2.6 SQL Callbacks (File-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-6-sql-callbacks-file-based-sticky.svg" alt="Sticky Note: 2.6 SQL Callbacks (File-Based)" width="30%">
+</a>
+
+
 ```sql
 -- db/migration/callbacks/beforeMigrate.sql
 CREATE SCHEMA IF NOT EXISTS app;
@@ -314,6 +391,17 @@ VALUES ('MIGRATION_COMPLETED', CURRENT_TIMESTAMP);
 ```
 
 ### 2.7 Flyway Configuration Options
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-handwritten.svg" alt="Handwritten: 2.7 Flyway Configuration Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-diagram.svg" alt="Diagram: 2.7 Flyway Configuration Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-7-flyway-configuration-options-sticky.svg" alt="Sticky Note: 2.7 Flyway Configuration Options" width="30%">
+</a>
+
 
 ```yaml
 spring:
@@ -346,6 +434,17 @@ spring:
 ```
 
 ### 2.8 Java-Based Migrations
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-handwritten.svg" alt="Handwritten: 2.8 Java-Based Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-diagram.svg" alt="Diagram: 2.8 Java-Based Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-8-java-based-migrations-sticky.svg" alt="Sticky Note: 2.8 Java-Based Migrations" width="30%">
+</a>
+
 
 ```java
 public class V5__MigrateLegacyData implements JavaMigration {
@@ -386,6 +485,17 @@ public class V5__MigrateLegacyData implements JavaMigration {
 
 ### 2.9 Programmatic Flyway Usage
 
+<a href="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-handwritten.svg" alt="Handwritten: 2.9 Programmatic Flyway Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-diagram.svg" alt="Diagram: 2.9 Programmatic Flyway Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-9-programmatic-flyway-usage-sticky.svg" alt="Sticky Note: 2.9 Programmatic Flyway Usage" width="30%">
+</a>
+
+
 ```java
 @Configuration
 public class FlywayConfig {
@@ -424,6 +534,17 @@ public class MigrationService {
 ```
 
 ### 2.10 Flyway in Tests
+
+<a href="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-handwritten.svg" alt="Handwritten: 2.10 Flyway in Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-diagram.svg" alt="Diagram: 2.10 Flyway in Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/2-10-flyway-in-tests-sticky.svg" alt="Sticky Note: 2.10 Flyway in Tests" width="30%">
+</a>
+
 
 ```java
 @SpringBootTest
@@ -502,6 +623,17 @@ class FlywayMigrationTest {
 
 ### 3.1 Setup and Configuration
 
+<a href="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-handwritten.svg" alt="Handwritten: 3.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-diagram.svg" alt="Diagram: 3.1 Setup and Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-1-setup-and-configuration-sticky.svg" alt="Sticky Note: 3.1 Setup and Configuration" width="30%">
+</a>
+
+
 ```xml
 <dependency>
     <groupId>org.liquibase</groupId>
@@ -532,6 +664,17 @@ spring:
 ```
 
 ### 3.2 Changelog Formats
+
+<a href="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-handwritten.svg" alt="Handwritten: 3.2 Changelog Formats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-diagram.svg" alt="Diagram: 3.2 Changelog Formats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-2-changelog-formats-sticky.svg" alt="Sticky Note: 3.2 Changelog Formats" width="30%">
+</a>
+
 
 #### XML (Most Common)
 
@@ -594,6 +737,17 @@ CREATE TABLE users (
 
 ### 3.3 Changeset Structure
 
+<a href="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-handwritten.svg" alt="Handwritten: 3.3 Changeset Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-diagram.svg" alt="Diagram: 3.3 Changeset Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-3-changeset-structure-sticky.svg" alt="Sticky Note: 3.3 Changeset Structure" width="30%">
+</a>
+
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
@@ -636,6 +790,17 @@ CREATE TABLE users (
 ```
 
 ### 3.4 Common Liquibase Changes
+
+<a href="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-handwritten.svg" alt="Handwritten: 3.4 Common Liquibase Changes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-diagram.svg" alt="Diagram: 3.4 Common Liquibase Changes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-4-common-liquibase-changes-sticky.svg" alt="Sticky Note: 3.4 Common Liquibase Changes" width="30%">
+</a>
+
 
 ```xml
 <changeSet id="002" author="jdoe">
@@ -699,6 +864,17 @@ CREATE TABLE users (
 
 ### 3.5 Rollback
 
+<a href="../../assets/images/diagrams/java/22-migrations/3-5-rollback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-5-rollback-handwritten.svg" alt="Handwritten: 3.5 Rollback" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-5-rollback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-5-rollback-diagram.svg" alt="Diagram: 3.5 Rollback" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-5-rollback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-5-rollback-sticky.svg" alt="Sticky Note: 3.5 Rollback" width="30%">
+</a>
+
+
 ```xml
 <changeSet id="005" author="jdoe">
     <createTable tableName="reports">
@@ -723,6 +899,17 @@ CREATE TABLE users (
 
 ### 3.6 Contexts and Labels
 
+<a href="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-handwritten.svg" alt="Handwritten: 3.6 Contexts and Labels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-diagram.svg" alt="Diagram: 3.6 Contexts and Labels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-6-contexts-and-labels-sticky.svg" alt="Sticky Note: 3.6 Contexts and Labels" width="30%">
+</a>
+
+
 ```xml
 <changeSet id="006" author="jdoe" context="seed" labels="dev,staging">
     <comment>Seed data for development and staging environments only</comment>
@@ -744,6 +931,17 @@ CREATE TABLE users (
 ```
 
 ### 3.7 Preconditions
+
+<a href="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-handwritten.svg" alt="Handwritten: 3.7 Preconditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-diagram.svg" alt="Diagram: 3.7 Preconditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-7-preconditions-sticky.svg" alt="Sticky Note: 3.7 Preconditions" width="30%">
+</a>
+
 
 ```xml
 <changeSet id="008" author="jdoe">
@@ -777,6 +975,17 @@ CREATE TABLE users (
 
 ### 3.8 Liquibase Maven Plugin
 
+<a href="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-handwritten.svg" alt="Handwritten: 3.8 Liquibase Maven Plugin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-diagram.svg" alt="Diagram: 3.8 Liquibase Maven Plugin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-8-liquibase-maven-plugin-sticky.svg" alt="Sticky Note: 3.8 Liquibase Maven Plugin" width="30%">
+</a>
+
+
 ```bash
 # Generate diff between database and reference
 mvn liquibase:diff \
@@ -802,6 +1011,17 @@ mvn liquibase:status
 ```
 
 ### 3.9 Programmatic Liquibase API
+
+<a href="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-handwritten.svg" alt="Handwritten: 3.9 Programmatic Liquibase API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-diagram.svg" alt="Diagram: 3.9 Programmatic Liquibase API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-9-programmatic-liquibase-api-sticky.svg" alt="Sticky Note: 3.9 Programmatic Liquibase API" width="30%">
+</a>
+
 
 ```java
 @Configuration
@@ -852,6 +1072,17 @@ public class LiquibaseService {
 ```
 
 ### 3.10 Liquibase in Tests
+
+<a href="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-handwritten.svg" alt="Handwritten: 3.10 Liquibase in Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-diagram.svg" alt="Diagram: 3.10 Liquibase in Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/3-10-liquibase-in-tests-sticky.svg" alt="Sticky Note: 3.10 Liquibase in Tests" width="30%">
+</a>
+
 
 ```java
 @SpringBootTest
@@ -936,6 +1167,17 @@ class LiquibaseMigrationTest {
 
 ### 4.1 Semantic Versioning
 
+<a href="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-handwritten.svg" alt="Handwritten: 4.1 Semantic Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-diagram.svg" alt="Diagram: 4.1 Semantic Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-1-semantic-versioning-sticky.svg" alt="Sticky Note: 4.1 Semantic Versioning" width="30%">
+</a>
+
+
 ```sql
 -- V{major}_{minor}_{patch}__{description}.sql
 -- V1_0_0__initial_schema.sql
@@ -949,6 +1191,17 @@ class LiquibaseMigrationTest {
 
 ### 4.2 Timestamp-Based Versioning
 
+<a href="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-handwritten.svg" alt="Handwritten: 4.2 Timestamp-Based Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-diagram.svg" alt="Diagram: 4.2 Timestamp-Based Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-2-timestamp-based-versioning-sticky.svg" alt="Sticky Note: 4.2 Timestamp-Based Versioning" width="30%">
+</a>
+
+
 ```sql
 -- V{YYYYMMDDHHMMSS}__{description}.sql
 -- V20240115120000__create_users.sql
@@ -960,6 +1213,17 @@ class LiquibaseMigrationTest {
 ```
 
 ### 4.3 Run-Always (Repeatable)
+
+<a href="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-handwritten.svg" alt="Handwritten: 4.3 Run-Always (Repeatable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-diagram.svg" alt="Diagram: 4.3 Run-Always (Repeatable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-3-run-always-repeatable-sticky.svg" alt="Sticky Note: 4.3 Run-Always (Repeatable)" width="30%">
+</a>
+
 
 ```sql
 -- R__{description}.sql
@@ -973,6 +1237,17 @@ class LiquibaseMigrationTest {
 
 ### 4.4 Versioned vs Repeatable
 
+<a href="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-handwritten.svg" alt="Handwritten: 4.4 Versioned vs Repeatable" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-diagram.svg" alt="Diagram: 4.4 Versioned vs Repeatable" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-4-versioned-vs-repeatable-sticky.svg" alt="Sticky Note: 4.4 Versioned vs Repeatable" width="30%">
+</a>
+
+
 | Aspect         | Versioned                          | Repeatable                            |
 |----------------|------------------------------------|---------------------------------------|
 | Applied        | Once                               | Every time (if changed)               |
@@ -983,6 +1258,17 @@ class LiquibaseMigrationTest {
 | Order          | Sorted by version                  | Applied after all versioned           |
 
 ### 4.5 Migration Naming Conventions
+
+<a href="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-handwritten.svg" alt="Handwritten: 4.5 Migration Naming Conventions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-diagram.svg" alt="Diagram: 4.5 Migration Naming Conventions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/4-5-migration-naming-conventions-sticky.svg" alt="Sticky Note: 4.5 Migration Naming Conventions" width="30%">
+</a>
+
 
 ```sql
 -- 1. Use prefixes: V = Versioned, R = Repeatable, U = Undo
@@ -997,6 +1283,17 @@ class LiquibaseMigrationTest {
 ## 5. Migration Testing
 
 ### 5.1 Testcontainers Migration Test
+
+<a href="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-handwritten.svg" alt="Handwritten: 5.1 Testcontainers Migration Test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-diagram.svg" alt="Diagram: 5.1 Testcontainers Migration Test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-1-testcontainers-migration-test-sticky.svg" alt="Sticky Note: 5.1 Testcontainers Migration Test" width="30%">
+</a>
+
 
 ```java
 @SpringBootTest
@@ -1088,6 +1385,17 @@ class DatabaseMigrationIntegrationTest {
 
 ### 5.2 @DataJpaTest with Migrations
 
+<a href="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-handwritten.svg" alt="Handwritten: 5.2 @DataJpaTest with Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-diagram.svg" alt="Diagram: 5.2 @DataJpaTest with Migrations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-2-datajpatest-with-migrations-sticky.svg" alt="Sticky Note: 5.2 @DataJpaTest with Migrations" width="30%">
+</a>
+
+
 ```java
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
@@ -1139,6 +1447,17 @@ class OrderRepositoryMigrationTest {
 
 ### 5.3 Rollback Testing
 
+<a href="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-handwritten.svg" alt="Handwritten: 5.3 Rollback Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-diagram.svg" alt="Diagram: 5.3 Rollback Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/5-3-rollback-testing-sticky.svg" alt="Sticky Note: 5.3 Rollback Testing" width="30%">
+</a>
+
+
 ```java
 @SpringBootTest
 @Testcontainers
@@ -1173,6 +1492,17 @@ class RollbackTest {
 ## 6. Environment Management
 
 ### 6.1 Per-Environment Scripts
+
+<a href="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-handwritten.svg" alt="Handwritten: 6.1 Per-Environment Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-diagram.svg" alt="Diagram: 6.1 Per-Environment Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-1-per-environment-scripts-sticky.svg" alt="Sticky Note: 6.1 Per-Environment Scripts" width="30%">
+</a>
+
 
 ```java
 @Configuration
@@ -1214,6 +1544,17 @@ public class FlywayEnvironmentConfig {
 
 ### 6.2 Reference Data Seeds
 
+<a href="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-handwritten.svg" alt="Handwritten: 6.2 Reference Data Seeds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-diagram.svg" alt="Diagram: 6.2 Reference Data Seeds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-2-reference-data-seeds-sticky.svg" alt="Sticky Note: 6.2 Reference Data Seeds" width="30%">
+</a>
+
+
 ```sql
 -- R__seed_countries.sql
 -- Reference data stable across all environments
@@ -1237,6 +1578,17 @@ WHEN NOT MATCHED THEN INSERT (code, name) VALUES (source.code, source.name);
 
 ### 6.3 Data Seeds Per Profile
 
+<a href="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-handwritten.svg" alt="Handwritten: 6.3 Data Seeds Per Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-diagram.svg" alt="Diagram: 6.3 Data Seeds Per Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-3-data-seeds-per-profile-sticky.svg" alt="Sticky Note: 6.3 Data Seeds Per Profile" width="30%">
+</a>
+
+
 ```sql
 -- db/seed/dev/R__seed_dev_data.sql
 INSERT INTO users (username, email, password_hash, full_name, is_active)
@@ -1249,6 +1601,17 @@ WHERE NOT EXISTS (SELECT 1 FROM users WHERE username = 'testuser1');
 ```
 
 ### 6.4 afterMigrate Scripts
+
+<a href="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-handwritten.svg" alt="Handwritten: 6.4 afterMigrate Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-diagram.svg" alt="Diagram: 6.4 afterMigrate Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/6-4-aftermigrate-scripts-sticky.svg" alt="Sticky Note: 6.4 afterMigrate Scripts" width="30%">
+</a>
+
 
 ```sql
 -- R__after_migrate_audit.sql
@@ -1270,6 +1633,17 @@ VALUES ('MIGRATE', 'Migration cycle completed');
 ## 7. Flyway vs Liquibase Comparison
 
 ### 7.1 Feature Comparison Table
+
+<a href="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-handwritten.svg" alt="Handwritten: 7.1 Feature Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-diagram.svg" alt="Diagram: 7.1 Feature Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-1-feature-comparison-table-sticky.svg" alt="Sticky Note: 7.1 Feature Comparison Table" width="30%">
+</a>
+
 
 | Feature                        | Flyway                                 | Liquibase                                  |
 |--------------------------------|----------------------------------------|--------------------------------------------|
@@ -1293,6 +1667,17 @@ VALUES ('MIGRATE', 'Migration cycle completed');
 
 ### 7.2 When to Choose Which
 
+<a href="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-handwritten.svg" alt="Handwritten: 7.2 When to Choose Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-diagram.svg" alt="Diagram: 7.2 When to Choose Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-2-when-to-choose-which-sticky.svg" alt="Sticky Note: 7.2 When to Choose Which" width="30%">
+</a>
+
+
 **Choose Flyway when:**
 - Your team is comfortable writing SQL
 - You want simplicity: files on disk, no XML configuration
@@ -1309,6 +1694,17 @@ VALUES ('MIGRATE', 'Migration cycle completed');
 - You have a heterogeneous database environment
 
 ### 7.3 Migration Tool Decision Matrix
+
+<a href="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-handwritten.svg" alt="Handwritten: 7.3 Migration Tool Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-diagram.svg" alt="Diagram: 7.3 Migration Tool Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-3-migration-tool-decision-matrix-sticky.svg" alt="Sticky Note: 7.3 Migration Tool Decision Matrix" width="30%">
+</a>
+
 
 ```java
 // Decision framework
@@ -1351,6 +1747,17 @@ public class MigrationToolDecision {
 
 ### 7.4 Migration File Organization
 
+<a href="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-handwritten.svg" alt="Handwritten: 7.4 Migration File Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-diagram.svg" alt="Diagram: 7.4 Migration File Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-4-migration-file-organization-sticky.svg" alt="Sticky Note: 7.4 Migration File Organization" width="30%">
+</a>
+
+
 ```
 src/main/resources/db/
 |
@@ -1379,6 +1786,17 @@ src/main/resources/db/
 ```
 
 ### 7.5 Migration Best Practices
+
+<a href="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-handwritten.svg" alt="Handwritten: 7.5 Migration Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-diagram.svg" alt="Diagram: 7.5 Migration Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/22-migrations/7-5-migration-best-practices-sticky.svg" alt="Sticky Note: 7.5 Migration Best Practices" width="30%">
+</a>
+
 
 ```java
 // 1. Always version control migrations alongside application code

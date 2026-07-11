@@ -19,6 +19,17 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Seating Arrangements in IBPS SO IT Officer Prelims
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Seating Arrangements in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Seating Arrangements in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/1-importance-of-seating-arrangements-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Seating Arrangements in IBPS SO IT Officer Prelims" width="30%">
+</a>
+
+
 Seating arrangement questions appear in almost every IBPS SO IT Officer Prelims paper. They carry approximately 4–6 questions out of the 25 Reasoning Ability questions. These questions are considered moderately difficult and time-consuming. However, with the right approach, they can be solved in 4–5 minutes.
 
 The three primary types of seating arrangements are:
@@ -62,6 +73,17 @@ flowchart LR
 
 ### 2. Fundamental Concepts
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-handwritten.svg" alt="Handwritten: 2. Fundamental Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-diagram.svg" alt="Diagram: 2. Fundamental Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/2-fundamental-concepts-sticky.svg" alt="Sticky Note: 2. Fundamental Concepts" width="30%">
+</a>
+
+
 #### Direction of Faces: Left vs. Right
 
 The most common source of error in seating arrangement questions is misidentifying left and right. The direction depends on which way the person is facing.
@@ -96,6 +118,17 @@ When counting positions in seating arrangements, be precise about the meaning:
 - "At the center" → Middle position (in an odd-numbered row)
 
 ### 3. Linear (Single Row) Seating Arrangements
+
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-handwritten.svg" alt="Handwritten: 3. Linear (Single Row) Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-diagram.svg" alt="Diagram: 3. Linear (Single Row) Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/3-linear-single-row-seating-arrangements-sticky.svg" alt="Sticky Note: 3. Linear (Single Row) Seating Arrangements" width="30%">
+</a>
+
 
 Linear seating is the simplest form. Persons are arranged in a straight line, either all facing north, all facing south, or facing in mixed directions.
 
@@ -143,6 +176,17 @@ Pos:      1     2     3     4     5     6
 - If "A and B sit at the ends" → A and B are at positions 1 and N (order not determined)
 
 ### 4. Circular Seating Arrangements
+
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-handwritten.svg" alt="Handwritten: 4. Circular Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-diagram.svg" alt="Diagram: 4. Circular Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/4-circular-seating-arrangements-sticky.svg" alt="Sticky Note: 4. Circular Seating Arrangements" width="30%">
+</a>
+
 
 Circular seating arrangements involve persons sitting around a circular table. This is one of the most common types in IBPS SO exams.
 
@@ -241,6 +285,17 @@ For inward facing:
 
 ### 5. Double Row (Parallel) Seating Arrangements
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-handwritten.svg" alt="Handwritten: 5. Double Row (Parallel) Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-diagram.svg" alt="Diagram: 5. Double Row (Parallel) Seating Arrangements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/5-double-row-parallel-seating-arrangements-sticky.svg" alt="Sticky Note: 5. Double Row (Parallel) Seating Arrangements" width="30%">
+</a>
+
+
 Two parallel rows of persons face each other. Row 1 faces north (or south), and Row 2 faces the opposite direction.
 
 **Framework for Double Row (6 persons per row):**
@@ -283,6 +338,17 @@ flowchart TD
 
 ### 6. Advanced Multi-Attribute Seating
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-handwritten.svg" alt="Handwritten: 6. Advanced Multi-Attribute Seating" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-diagram.svg" alt="Diagram: 6. Advanced Multi-Attribute Seating" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/6-advanced-multi-attribute-seating-sticky.svg" alt="Sticky Note: 6. Advanced Multi-Attribute Seating" width="30%">
+</a>
+
+
 In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attributes. For example:
 - Eight persons with eight different professions
 - Six persons with six different pet preferences
@@ -308,6 +374,17 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 
 ### 7. Common Patterns and Shortcuts
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-handwritten.svg" alt="Handwritten: 7. Common Patterns and Shortcuts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-diagram.svg" alt="Diagram: 7. Common Patterns and Shortcuts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/7-common-patterns-and-shortcuts-sticky.svg" alt="Sticky Note: 7. Common Patterns and Shortcuts" width="30%">
+</a>
+
+
 **Pattern 1: "A sits three places away from B"**
 - In a circle of 8: A and B have 2 persons between them on one side and 3 on the other
 - In a line of 8: |Position(A) − Position(B)| = 4
@@ -331,6 +408,17 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 - In a circle of 8: Two distinct paths with 2 persons between (3 positions) on one path and 3 persons between (4 positions) on the other
 
 ### 8. Step-by-Step Solving Methodology
+
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-handwritten.svg" alt="Handwritten: 8. Step-by-Step Solving Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-diagram.svg" alt="Diagram: 8. Step-by-Step Solving Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/8-step-by-step-solving-methodology-sticky.svg" alt="Sticky Note: 8. Step-by-Step Solving Methodology" width="30%">
+</a>
+
 
 **Phase 1: Setup (1 minute)**
 1. Read the question completely to identify the type of arrangement
@@ -362,6 +450,17 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 
 ### 9. Common Mistakes and How to Avoid Them
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 9. Common Mistakes and How to Avoid Them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-diagram.svg" alt="Diagram: 9. Common Mistakes and How to Avoid Them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/9-common-mistakes-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 9. Common Mistakes and How to Avoid Them" width="30%">
+</a>
+
+
 | Mistake | Why It Happens | How to Avoid |
 |---------|---------------|--------------|
 | Confusing left and right | Not accounting for facing direction | Draw direction arrows and use a rule sheet |
@@ -375,6 +474,17 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 
 ### 10. Time Management Strategy for Seating Questions
 
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-handwritten.svg" alt="Handwritten: 10. Time Management Strategy for Seating Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-diagram.svg" alt="Diagram: 10. Time Management Strategy for Seating Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/10-time-management-strategy-for-seating-questions-sticky.svg" alt="Sticky Note: 10. Time Management Strategy for Seating Questions" width="30%">
+</a>
+
+
 | Seating Type | Target Time | Max Time |
 |-------------|-------------|----------|
 | Linear (6 persons, 1 attribute) | 2.5 min | 4 min |
@@ -385,6 +495,17 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 | Multi-attribute seating (circular + 2 more) | 5 min | 7 min |
 
 ### 11. Practice Strategy
+
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-handwritten.svg" alt="Handwritten: 11. Practice Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-diagram.svg" alt="Diagram: 11. Practice Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/02-seating-arrangements/11-practice-strategy-sticky.svg" alt="Sticky Note: 11. Practice Strategy" width="30%">
+</a>
+
 
 - Solve at least 30 linear, 30 circular, and 20 double-row puzzles before the exam
 - Practice identifying left and right with varying facing directions until it becomes second nature

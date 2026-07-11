@@ -18,6 +18,17 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Ancient India
 
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" alt="Handwritten: 3.1 Ancient India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" alt="Diagram: 3.1 Ancient India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" alt="Sticky Note: 3.1 Ancient India" width="30%">
+</a>
+
+
 #### 3.1.1 Indus Valley Civilization (c. 2500–1750 BCE)
 
 Also known as the Harappan Civilization, it was one of the world's earliest urban civilizations, contemporary with Mesopotamia and Egypt.
@@ -121,6 +132,17 @@ flowchart LR
 
 ### 3.2 Medieval India
 
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" alt="Handwritten: 3.2 Medieval India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" alt="Diagram: 3.2 Medieval India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" alt="Sticky Note: 3.2 Medieval India" width="30%">
+</a>
+
+
 #### 3.2.1 Delhi Sultanate (1206–1526 CE)
 
 | Dynasty | Period | Founder | Key Ruler |
@@ -191,6 +213,17 @@ flowchart TD
 | Madhavrao | 1761–1772 | Revived Maratha power after Panipat |
 
 ### 3.3 Modern India
+
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" alt="Handwritten: 3.3 Modern India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" alt="Diagram: 3.3 Modern India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" alt="Sticky Note: 3.3 Modern India" width="30%">
+</a>
+
 
 #### 3.3.1 British Expansion and Consolidation
 
@@ -295,6 +328,17 @@ timeline
 | Partition & Independence | 15 Aug 1947 | India and Pakistan created; millions displaced |
 
 ### 3.4 Indian Culture & Heritage
+
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" alt="Handwritten: 3.4 Indian Culture & Heritage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" alt="Diagram: 3.4 Indian Culture & Heritage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" alt="Sticky Note: 3.4 Indian Culture & Heritage" width="30%">
+</a>
+
 
 #### 3.4.1 Classical Dance Forms
 

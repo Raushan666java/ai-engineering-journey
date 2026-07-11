@@ -48,6 +48,17 @@ Spring Integration implements the Enterprise Integration Patterns, providing a l
 
 ### 1.1 Maven Dependencies
 
+<a href="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
+</a>
+
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -172,6 +183,17 @@ Spring Integration implements the Enterprise Integration Patterns, providing a l
 ```
 
 ### 1.2 Application Configuration
+
+<a href="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-handwritten.svg" alt="Handwritten: 1.2 Application Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-diagram.svg" alt="Diagram: 1.2 Application Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/1-2-application-configuration-sticky.svg" alt="Sticky Note: 1.2 Application Configuration" width="30%">
+</a>
+
 
 ```yaml
 # src/main/resources/application.yml
@@ -374,6 +396,17 @@ public class ChannelConfig {
 ```
 
 ### 2.1 Channel Bridge Configuration
+
+<a href="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-handwritten.svg" alt="Handwritten: 2.1 Channel Bridge Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-diagram.svg" alt="Diagram: 2.1 Channel Bridge Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/2-1-channel-bridge-configuration-sticky.svg" alt="Sticky Note: 2.1 Channel Bridge Configuration" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.config;
@@ -705,6 +738,17 @@ public class TransformerConfig {
 
 ### 4.1 Custom Transformer Service
 
+<a href="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-handwritten.svg" alt="Handwritten: 4.1 Custom Transformer Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-diagram.svg" alt="Diagram: 4.1 Custom Transformer Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/4-1-custom-transformer-service-sticky.svg" alt="Sticky Note: 4.1 Custom Transformer Service" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.transformer;
 
@@ -1022,6 +1066,17 @@ public class OrderRouterService {
 
 ### 6.1 File Adapters
 
+<a href="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-handwritten.svg" alt="Handwritten: 6.1 File Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-diagram.svg" alt="Diagram: 6.1 File Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-1-file-adapters-sticky.svg" alt="Sticky Note: 6.1 File Adapters" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.config;
 
@@ -1108,6 +1163,17 @@ public class FileAdapterConfig {
 ```
 
 ### 6.2 JMS Adapters
+
+<a href="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-handwritten.svg" alt="Handwritten: 6.2 JMS Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-diagram.svg" alt="Diagram: 6.2 JMS Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-2-jms-adapters-sticky.svg" alt="Sticky Note: 6.2 JMS Adapters" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.config;
@@ -1200,6 +1266,17 @@ public class JmsAdapterConfig {
 ```
 
 ### 6.3 FTP Adapters
+
+<a href="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-handwritten.svg" alt="Handwritten: 6.3 FTP Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-diagram.svg" alt="Diagram: 6.3 FTP Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-3-ftp-adapters-sticky.svg" alt="Sticky Note: 6.3 FTP Adapters" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.config;
@@ -1304,6 +1381,17 @@ public class FtpAdapterConfig {
 ```
 
 ### 6.4 Mail Adapters
+
+<a href="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-handwritten.svg" alt="Handwritten: 6.4 Mail Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-diagram.svg" alt="Diagram: 6.4 Mail Adapters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/50-integration/6-4-mail-adapters-sticky.svg" alt="Sticky Note: 6.4 Mail Adapters" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.config;

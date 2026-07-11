@@ -19,6 +19,17 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 Basic Concepts of Economics
 
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-handwritten.svg" alt="Handwritten: 4.1 Basic Concepts of Economics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-diagram.svg" alt="Diagram: 4.1 Basic Concepts of Economics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-1-basic-concepts-of-economics-sticky.svg" alt="Sticky Note: 4.1 Basic Concepts of Economics" width="30%">
+</a>
+
+
 #### 4.1.1 National Income Aggregates
 
 | Term | Definition | Formula (if applicable) |
@@ -49,6 +60,17 @@ By the end of this chapter, you will be able to:
 - **Stagflation:** High inflation + high unemployment + low growth
 
 ### 4.2 Union Budget of India
+
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-handwritten.svg" alt="Handwritten: 4.2 Union Budget of India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-diagram.svg" alt="Diagram: 4.2 Union Budget of India" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-2-union-budget-of-india-sticky.svg" alt="Sticky Note: 4.2 Union Budget of India" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -87,6 +109,17 @@ flowchart TD
 - Current target for 2025-26: Fiscal deficit below 4.5% of GDP
 
 ### 4.3 Five-Year Plans & NITI Aayog
+
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-handwritten.svg" alt="Handwritten: 4.3 Five-Year Plans & NITI Aayog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-diagram.svg" alt="Diagram: 4.3 Five-Year Plans & NITI Aayog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-3-five-year-plans-niti-aayog-sticky.svg" alt="Sticky Note: 4.3 Five-Year Plans & NITI Aayog" width="30%">
+</a>
+
 
 #### 4.3.1 Five-Year Plans (1951–2017)
 
@@ -134,6 +167,17 @@ timeline
 - **Major Initiatives:** SDG India Index, Aspirational Districts Programme, Atal Innovation Mission, India Artificial Intelligence Mission
 
 ### 4.4 Banking & Monetary Policy
+
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-handwritten.svg" alt="Handwritten: 4.4 Banking & Monetary Policy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-diagram.svg" alt="Diagram: 4.4 Banking & Monetary Policy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-4-banking-monetary-policy-sticky.svg" alt="Sticky Note: 4.4 Banking & Monetary Policy" width="30%">
+</a>
+
 
 #### 4.4.1 RBI — The Central Bank
 
@@ -198,6 +242,17 @@ flowchart TD
 
 ### 4.5 Taxation System
 
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-handwritten.svg" alt="Handwritten: 4.5 Taxation System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-diagram.svg" alt="Diagram: 4.5 Taxation System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-5-taxation-system-sticky.svg" alt="Sticky Note: 4.5 Taxation System" width="30%">
+</a>
+
+
 ```mermaid
 mindmap
   root((Taxation in India))
@@ -225,6 +280,17 @@ mindmap
 **GST Tax Slabs:** 0% (essential goods), 5%, 12%, 18% (standard rate), 28% (luxury/demerit goods)
 
 ### 4.6 Sectors of Indian Economy
+
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-handwritten.svg" alt="Handwritten: 4.6 Sectors of Indian Economy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-diagram.svg" alt="Diagram: 4.6 Sectors of Indian Economy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-6-sectors-of-indian-economy-sticky.svg" alt="Sticky Note: 4.6 Sectors of Indian Economy" width="30%">
+</a>
+
 
 #### 4.6.1 Agriculture
 
@@ -272,6 +338,17 @@ mindmap
 | Major import sources | China, UAE, USA, Russia |
 
 ### 4.7 Major Government Schemes
+
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-handwritten.svg" alt="Handwritten: 4.7 Major Government Schemes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-diagram.svg" alt="Diagram: 4.7 Major Government Schemes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/04-indian-economy/4-7-major-government-schemes-sticky.svg" alt="Sticky Note: 4.7 Major Government Schemes" width="30%">
+</a>
+
 
 | Scheme | Year | Ministry | Description |
 |--------|------|----------|-------------|

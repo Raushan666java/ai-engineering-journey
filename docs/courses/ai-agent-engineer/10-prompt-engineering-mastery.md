@@ -26,6 +26,17 @@
 
 ### Chain-of-Thought (CoT)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-handwritten.svg" alt="Handwritten: Chain-of-Thought (CoT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-diagram.svg" alt="Diagram: Chain-of-Thought (CoT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/chain-of-thought-cot-sticky.svg" alt="Sticky Note: Chain-of-Thought (CoT)" width="30%">
+</a>
+
+
 The most impactful prompt pattern. Elicits step-by-step reasoning before the answer.
 
 ```python
@@ -80,6 +91,17 @@ Q: """ + question}
 
 ### CoT with Self-Consistency
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-handwritten.svg" alt="Handwritten: CoT with Self-Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-diagram.svg" alt="Diagram: CoT with Self-Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/cot-with-self-consistency-sticky.svg" alt="Sticky Note: CoT with Self-Consistency" width="30%">
+</a>
+
+
 Run CoT multiple times and take the majority answer. Improves accuracy on mathematical and logical tasks by 5-15%.
 
 ```python
@@ -118,6 +140,17 @@ def self_consistency_cot(question: str, n_attempts: int = 5) -> tuple[str, str]:
 ```
 
 ### Tree-of-Thoughts (ToT)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-handwritten.svg" alt="Handwritten: Tree-of-Thoughts (ToT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-diagram.svg" alt="Diagram: Tree-of-Thoughts (ToT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tree-of-thoughts-tot-sticky.svg" alt="Sticky Note: Tree-of-Thoughts (ToT)" width="30%">
+</a>
+
 
 Explore multiple reasoning branches simultaneously, then evaluate and select the best path.
 
@@ -166,6 +199,17 @@ def tree_of_thoughts(problem: str, n_branches: int = 3) -> str:
 
 ### JSON Mode (OpenAI)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-handwritten.svg" alt="Handwritten: JSON Mode (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-diagram.svg" alt="Diagram: JSON Mode (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/json-mode-openai-sticky.svg" alt="Sticky Note: JSON Mode (OpenAI)" width="30%">
+</a>
+
+
 ```python
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -206,6 +250,17 @@ def analyze_message(message: str) -> CustomerMessageAnalysis:
 ```
 
 ### Tool Calling for Structured Output
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-handwritten.svg" alt="Handwritten: Tool Calling for Structured Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-diagram.svg" alt="Diagram: Tool Calling for Structured Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/tool-calling-for-structured-output-sticky.svg" alt="Sticky Note: Tool Calling for Structured Output" width="30%">
+</a>
+
 
 ```python
 def extract_invoice_data(text: str) -> dict:
@@ -259,6 +314,17 @@ def extract_invoice_data(text: str) -> dict:
 
 ### Constrained Decoding Patterns
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-handwritten.svg" alt="Handwritten: Constrained Decoding Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-diagram.svg" alt="Diagram: Constrained Decoding Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/constrained-decoding-patterns-sticky.svg" alt="Sticky Note: Constrained Decoding Patterns" width="30%">
+</a>
+
+
 ```python
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
@@ -294,6 +360,17 @@ def generate_code_with_validation(task: CodeGenerationTask) -> GeneratedCode:
 ## 10.3 Prompt Management & Versioning
 
 ### Prompt Template System
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-handwritten.svg" alt="Handwritten: Prompt Template System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-diagram.svg" alt="Diagram: Prompt Template System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/prompt-template-system-sticky.svg" alt="Sticky Note: Prompt Template System" width="30%">
+</a>
+
 
 ```python
 from string import Template
@@ -475,6 +552,17 @@ for ex in examples:
 
 ### Label Balance in Few-Shot
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-handwritten.svg" alt="Handwritten: Label Balance in Few-Shot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-diagram.svg" alt="Diagram: Label Balance in Few-Shot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/label-balance-in-few-shot-sticky.svg" alt="Sticky Note: Label Balance in Few-Shot" width="30%">
+</a>
+
+
 ```python
 def balanced_few_shot(
     query: str,
@@ -516,6 +604,17 @@ balanced = balanced_few_shot("This app is amazing!", sentiment_examples)
 ## 10.5 System Prompt Design Patterns
 
 ### Persona + Constraints + Format
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-handwritten.svg" alt="Handwritten: Persona + Constraints + Format" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-diagram.svg" alt="Diagram: Persona + Constraints + Format" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/persona-constraints-format-sticky.svg" alt="Sticky Note: Persona + Constraints + Format" width="30%">
+</a>
+
 
 ```python
 def build_system_prompt(
@@ -562,6 +661,17 @@ code_review_prompt = build_system_prompt(
 
 ### Dynamic Persona Injection
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-handwritten.svg" alt="Handwritten: Dynamic Persona Injection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-diagram.svg" alt="Diagram: Dynamic Persona Injection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/dynamic-persona-injection-sticky.svg" alt="Sticky Note: Dynamic Persona Injection" width="30%">
+</a>
+
+
 ```python
 class DynamicPersona:
     """Inject domain-specific persona context at runtime."""
@@ -597,6 +707,17 @@ class DynamicPersona:
 ## 10.6 Multi-Turn Conversation Design
 
 ### Conversation State Machine
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-handwritten.svg" alt="Handwritten: Conversation State Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-diagram.svg" alt="Diagram: Conversation State Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/conversation-state-machine-sticky.svg" alt="Sticky Note: Conversation State Machine" width="30%">
+</a>
+
 
 ```python
 from enum import Enum
@@ -746,6 +867,17 @@ class PromptCompressor:
 
 ### LLM-as-Judge Evaluation
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-handwritten.svg" alt="Handwritten: LLM-as-Judge Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-diagram.svg" alt="Diagram: LLM-as-Judge Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/llm-as-judge-evaluation-sticky.svg" alt="Sticky Note: LLM-as-Judge Evaluation" width="30%">
+</a>
+
+
 ```python
 from pydantic import BaseModel, Field
 
@@ -807,6 +939,17 @@ test_suite = [
 ```
 
 ### Automated Prompt Regression
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-handwritten.svg" alt="Handwritten: Automated Prompt Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-diagram.svg" alt="Diagram: Automated Prompt Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/automated-prompt-regression-sticky.svg" alt="Sticky Note: Automated Prompt Regression" width="30%">
+</a>
+
 
 ```python
 class PromptRegressionSuite:
@@ -935,6 +1078,17 @@ class PromptABTest:
 ## 10.10 Prompt Injection Defense
 
 ### Multi-Layer Defense
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-handwritten.svg" alt="Handwritten: Multi-Layer Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-diagram.svg" alt="Diagram: Multi-Layer Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/10-prompt-engineering-mastery/multi-layer-defense-sticky.svg" alt="Sticky Note: Multi-Layer Defense" width="30%">
+</a>
+
 
 ```python
 import re

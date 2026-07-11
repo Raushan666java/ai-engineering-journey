@@ -45,6 +45,17 @@ flowchart LR
 
 ### Tokens, Lexemes, and Patterns
 
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" alt="Handwritten: Tokens, Lexemes, and Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" alt="Diagram: Tokens, Lexemes, and Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" alt="Sticky Note: Tokens, Lexemes, and Patterns" width="30%">
+</a>
+
+
 Lexical analysis is the first phase of compilation. The **lexical analyzer**, or scanner, reads the source program's character stream and groups characters into **lexemes** ? sequences of characters that form a logical unit. For each lexeme, the scanner produces a **token**, a pair consisting of a token name and an optional attribute value.
 
 A **token name** is a symbolic category such as `ID` (identifier), `NUMBER` (numeric literal), `IF` (the keyword `if`), `PLUS` (the plus operator), or `LPAREN` (left parenthesis). The attribute value carries the specific lexeme or other information associated with the token. For example, the token for the lexeme `count` might be `ID` with attribute `pointer to symbol-table entry for "count"`. For a numeric literal, the attribute might be the integer or floating-point value.
@@ -55,6 +66,17 @@ A **pattern** is a rule that describes the set of lexemes belonging to a given t
 
 ### Input Buffering
 
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" alt="Handwritten: Input Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" alt="Diagram: Input Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" alt="Sticky Note: Input Buffering" width="30%">
+</a>
+
+
 The scanner examines characters one at a time and must often look ahead one or more characters to determine the token boundary. Efficient input handling is essential because lexical analysis is I/O-bound.
 
 In the **two-buffer scheme**, the source file is read into two alternating buffers, typically of size 4096 or 8192 characters. A pointer `lexemeBegin` marks the start of the current lexeme. A second pointer `forward` scans ahead. When `forward` reaches the end of a buffer, the next block of input is loaded into the other buffer. A sentinel character (frequently EOF) placed at the end of each buffer simplifies the end-of-buffer check, eliminating a conditional branch in the innermost scanning loop.
@@ -62,6 +84,17 @@ In the **two-buffer scheme**, the source file is read into two alternating buffe
 The **one-buffer scheme** uses a single buffer that is refilled when necessary. While simpler, it requires more careful management of the lexeme-start pointer because buffer contents may be overwritten. Most production scanners use the two-buffer approach for efficiency.
 
 ### Specification of Tokens Using Regular Expressions
+
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" alt="Handwritten: Specification of Tokens Using Regular Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" alt="Diagram: Specification of Tokens Using Regular Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" alt="Sticky Note: Specification of Tokens Using Regular Expressions" width="30%">
+</a>
+
 
 Regular expressions provide a formal notation for specifying token patterns. The basic operations are:
 
@@ -88,6 +121,17 @@ stringlit   ? "\"" (any - "\"")* "\""
 A lexical-analyzer generator converts these regular definitions into a deterministic finite automaton (DFA). The conversion proceeds through three steps: constructing NFAs via Thompson's construction, converting to a DFA via subset construction, and minimizing the DFA.
 
 ### Regex to NFA: Thompson's Construction
+
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" alt="Handwritten: Regex to NFA: Thompson's Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" alt="Diagram: Regex to NFA: Thompson's Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" alt="Sticky Note: Regex to NFA: Thompson's Construction" width="30%">
+</a>
+
 
 Thompson's construction maps each regular expression to an NFA inductively, following the structure of the regex:
 
@@ -160,6 +204,17 @@ function Thompson(regex):
 
 ### NFA to DFA: Subset Construction
 
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" alt="Handwritten: NFA to DFA: Subset Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" alt="Diagram: NFA to DFA: Subset Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" alt="Sticky Note: NFA to DFA: Subset Construction" width="30%">
+</a>
+
+
 The subset construction converts an NFA into an equivalent DFA. Each DFA state corresponds to a set of NFA states reachable on the same input.
 
 **Algorithm:**
@@ -203,6 +258,17 @@ function move(states, a):
 ```
 
 ### DFA Minimization: Hopcroft's Algorithm
+
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" alt="Handwritten: DFA Minimization: Hopcroft's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" alt="Diagram: DFA Minimization: Hopcroft's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" alt="Sticky Note: DFA Minimization: Hopcroft's Algorithm" width="30%">
+</a>
+
 
 Hopcroft's algorithm produces the minimal DFA by partitioning states into equivalence classes. Two states are equivalent if, for every input string, they either both reach an accepting state or both reach a non-accepting state.
 
@@ -593,6 +659,17 @@ for (const t of tests) {
 
 ### Lookahead and Maximal Munch
 
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" alt="Handwritten: Lookahead and Maximal Munch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" alt="Diagram: Lookahead and Maximal Munch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" alt="Sticky Note: Lookahead and Maximal Munch" width="30%">
+</a>
+
+
 The scanner must decide where one token ends and the next begins. The **maximal munch** rule states: the scanner reads the longest possible string of input characters that matches any token pattern. This ensures that `ifx` is never mistakenly tokenized as the keyword `if` followed by `x`.
 
 However, maximal munch occasionally interacts poorly with lookahead. Consider the `>>` token in C++: without context, `a>b>c` could be parsed as `a > b > c` or `a >> c` (if `>>` is a token). C++11 resolves this lexically: `>>` in template contexts is treated as two `>` tokens. The scanner may need to consult parser state to make correct decisions ? this is known as **context-sensitive lexing**.
@@ -600,6 +677,17 @@ However, maximal munch occasionally interacts poorly with lookahead. Consider th
 **Lookahead** is handled by reading one character beyond the lexeme boundary without consuming it. In a two-buffer scheme, `forward` advances past the lexeme, then retracts to the boundary after the token is identified. Some tokens require indefinite lookahead; for example, C++ raw string literals `R"delimiter(content)delimiter"` require scanning until a matching delimiter is found.
 
 ### Error Recovery in Lexers
+
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" alt="Handwritten: Error Recovery in Lexers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" alt="Diagram: Error Recovery in Lexers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" alt="Sticky Note: Error Recovery in Lexers" width="30%">
+</a>
+
 
 When the scanner encounters a character that does not match any token pattern, the recovery strategy is critical. Common strategies:
 
@@ -611,6 +699,17 @@ When the scanner encounters a character that does not match any token pattern, t
 The TypeScript `ErrorRecoveringLexer` from Chapter 1 demonstrates panic mode.
 
 ### Lex and Flex
+
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" alt="Handwritten: Lex and Flex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" alt="Diagram: Lex and Flex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" alt="Sticky Note: Lex and Flex" width="30%">
+</a>
+
 
 Lex and its GNU implementation Flex are lexical-analyzer generators that accept a specification file containing regular-expression patterns and associated semantic actions. The generated C function `yylex()` reads input characters and returns token codes.
 

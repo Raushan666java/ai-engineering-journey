@@ -19,6 +19,17 @@ flowchart LR
 
 ### Q26: What is database sharding, and how do you implement it?
 
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is database sharding, and how do you implement it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is database sharding, and how do you implement it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-database-sharding-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is database sharding, and how do you implement it?" width="30%">
+</a>
+
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -64,6 +75,17 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 ---
 
 ### Q27: How do you configure read replicas with Spring Boot?
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-handwritten.svg" alt="Handwritten: How do you configure read replicas with Spring Boot?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-diagram.svg" alt="Diagram: How do you configure read replicas with Spring Boot?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-configure-read-replicas-with-spring-boot-sticky.svg" alt="Sticky Note: How do you configure read replicas with Spring Boot?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -128,6 +150,17 @@ Caveats:
 
 ### Q28: Explain Hibernate cascade types with examples
 
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-handwritten.svg" alt="Handwritten: Explain Hibernate cascade types with examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-diagram.svg" alt="Diagram: Explain Hibernate cascade types with examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-hibernate-cascade-types-with-examples-sticky.svg" alt="Sticky Note: Explain Hibernate cascade types with examples" width="30%">
+</a>
+
+
 **Answer:**
 
 Cascade types dictate how operations on a parent entity propagate to its children.
@@ -190,6 +223,17 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 ---
 
 ### Q29: What is the difference between `@Embedded` and `@OneToOne`?
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-handwritten.svg" alt="Handwritten: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-diagram.svg" alt="Diagram: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-difference-between-embedded-and-onetoone-sticky.svg" alt="Sticky Note: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -254,6 +298,17 @@ private Address homeAddress;
 ---
 
 ### Q30: How do you implement batch processing with JPA and Hibernate?
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-handwritten.svg" alt="Handwritten: How do you implement batch processing with JPA and Hibernate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-diagram.svg" alt="Diagram: How do you implement batch processing with JPA and Hibernate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-do-you-implement-batch-processing-with-jpa-and-hibernate-sticky.svg" alt="Sticky Note: How do you implement batch processing with JPA and Hibernate?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -335,6 +390,17 @@ int bulkUpdateStatus(@Param("ids") List<Long> ids, @Param("status") String statu
 
 ### Q31: Explain database indexing strategies for common query patterns
 
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-handwritten.svg" alt="Handwritten: Explain database indexing strategies for common query patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-diagram.svg" alt="Diagram: Explain database indexing strategies for common query patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/explain-database-indexing-strategies-for-common-query-patterns-sticky.svg" alt="Sticky Note: Explain database indexing strategies for common query patterns" width="30%">
+</a>
+
+
 **Answer:**
 
 Indexes are the single most impactful performance optimization. Choosing the right index type depends on your query pattern.
@@ -393,6 +459,17 @@ Most applications need fewer than 20 indexes per table. Too many indexes slow do
 
 ### Q32: How does Hibernate's first-level cache interact with `@Transactional`?
 
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-handwritten.svg" alt="Handwritten: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-diagram.svg" alt="Diagram: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/how-does-hibernate-s-first-level-cache-interact-with-transactional-sticky.svg" alt="Sticky Note: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
+</a>
+
+
 **Answer:**
 
 The first-level cache (persistence context) is scoped to the Hibernate `Session`, which is bound to a Spring transaction. Within a `@Transactional` method, all entity operations share the same persistence context.
@@ -436,6 +513,17 @@ public void updateName(Long id, String name) {
 ---
 
 ### Q33: What are database migration rollback strategies in production?
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-handwritten.svg" alt="Handwritten: What are database migration rollback strategies in production?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-diagram.svg" alt="Diagram: What are database migration rollback strategies in production?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-are-database-migration-rollback-strategies-in-production-sticky.svg" alt="Sticky Note: What are database migration rollback strategies in production?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -507,6 +595,17 @@ Never rename or drop columns without a multi-phase migration. Never make columns
 ---
 
 ### Q27: What is the `@Version` annotation and how does it prevent lost updates?
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-handwritten.svg" alt="Handwritten: What is the `@Version` annotation and how does it prevent lost updates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-diagram.svg" alt="Diagram: What is the `@Version` annotation and how does it prevent lost updates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-the-version-annotation-and-how-does-it-prevent-lost-updates-sticky.svg" alt="Sticky Note: What is the `@Version` annotation and how does it prevent lost updates?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -583,6 +682,17 @@ public class InventoryService {
 
 ### Q28: What is a `@ManyToOne` relationship's default fetch type and why is it problematic?
 
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-handwritten.svg" alt="Handwritten: What is a `@ManyToOne` relationship's default fetch type and why is it problematic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-diagram.svg" alt="Diagram: What is a `@ManyToOne` relationship's default fetch type and why is it problematic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/what-is-a-manytoone-relationship-s-default-fetch-type-and-why-is-it-problematic-sticky.svg" alt="Sticky Note: What is a `@ManyToOne` relationship's default fetch type and why is it problematic?" width="30%">
+</a>
+
+
 **Answer:**
 
 `@ManyToOne` defaults to `FetchType.EAGER`. This is problematic because:
@@ -644,6 +754,17 @@ Optional<Order> findByIdWithCustomer(@Param("id") Long id);
 ## Common Mistakes in JPA Entity Design (GFG-Style)
 
 ### Mistake 1: Circular references in bidirectional relationships
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-handwritten.svg" alt="Handwritten: Mistake 1: Circular references in bidirectional relationships" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-diagram.svg" alt="Diagram: Mistake 1: Circular references in bidirectional relationships" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-1-circular-references-in-bidirectional-relationships-sticky.svg" alt="Sticky Note: Mistake 1: Circular references in bidirectional relationships" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: Both sides eager-load each other → infinite loop on serialization
 @Entity
@@ -669,6 +790,17 @@ public class Order {
 ```
 
 ### Mistake 2: Using `List` on the Many side of OneToMany
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-handwritten.svg" alt="Handwritten: Mistake 2: Using `List` on the Many side of OneToMany" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-diagram.svg" alt="Diagram: Mistake 2: Using `List` on the Many side of OneToMany" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-2-using-list-on-the-many-side-of-onetomany-sticky.svg" alt="Sticky Note: Mistake 2: Using `List` on the Many side of OneToMany" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: List on @OneToMany can cause Hibernate to delete all and re-insert
 @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
@@ -682,6 +814,17 @@ private Set<Child> children = new HashSet<>();
 ```
 
 ### Mistake 3: Forgetting `fetch = FetchType.LAZY` on @ToOne associations
+
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-handwritten.svg" alt="Handwritten: Mistake 3: Forgetting `fetch = FetchType.LAZY` on @ToOne associations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-diagram.svg" alt="Diagram: Mistake 3: Forgetting `fetch = FetchType.LAZY` on @ToOne associations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/59-interview-databases-d/mistake-3-forgetting-fetch-fetchtype-lazy-on-toone-associations-sticky.svg" alt="Sticky Note: Mistake 3: Forgetting `fetch = FetchType.LAZY` on @ToOne associations" width="30%">
+</a>
+
 ```properties
 # Best practice: Make LAZY the global default
 spring.jpa.properties.hibernate.default_batch_fetch_size=25

@@ -49,6 +49,17 @@ flowchart LR
 
 ### 13.1 The Three Pillars of Observability
 
+<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 13.1 The Three Pillars of Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 13.1 The Three Pillars of Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 13.1 The Three Pillars of Observability" width="30%">
+</a>
+
+
 Observability is the ability to understand a system's internal state by examining its outputs. The three pillars provide complementary views:
 
 **Logs** — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
@@ -60,6 +71,17 @@ Observability is the ability to understand a system's internal state by examinin
 The pillars are interconnected. A metric alert leads to a dashboard, which reveals a trace with a slow span, which links to error logs containing the root cause. Modern observability platforms correlate these signals automatically.
 
 ### 13.2 OpenTelemetry
+
+<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" alt="Handwritten: 13.2 OpenTelemetry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" alt="Diagram: 13.2 OpenTelemetry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" alt="Sticky Note: 13.2 OpenTelemetry" width="30%">
+</a>
+
 
 OpenTelemetry (OTel) is the industry standard for observability instrumentation. It provides APIs, SDKs, and collectors for generating, collecting, and exporting telemetry data.
 
@@ -81,6 +103,17 @@ traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
 This header is automatically injected into outgoing HTTP requests and extracted from incoming requests by OTel instrumentation libraries, enabling distributed trace reconstruction across service boundaries.
 
 ### 13.3 Distributed Tracing
+
+<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" alt="Handwritten: 13.3 Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" alt="Diagram: 13.3 Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" alt="Sticky Note: 13.3 Distributed Tracing" width="30%">
+</a>
+
 
 Distributed tracing tracks a single request as it traverses multiple services.
 
@@ -135,6 +168,17 @@ async function processPayment(paymentId: string, amount: number) {
 
 ### 13.4 Service Maps and Dependency Analysis
 
+<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" alt="Handwritten: 13.4 Service Maps and Dependency Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" alt="Diagram: 13.4 Service Maps and Dependency Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" alt="Sticky Note: 13.4 Service Maps and Dependency Analysis" width="30%">
+</a>
+
+
 Observability platforms generate service maps that visualize inter-service communication:
 
 - Node size indicates request volume or resource consumption
@@ -145,6 +189,17 @@ Observability platforms generate service maps that visualize inter-service commu
 Service maps reveal unknown dependencies, single points of failure, unexpected traffic patterns, and orphan services that no longer serve traffic.
 
 ### 13.5 RED Metrics and the USE Method
+
+<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" alt="Handwritten: 13.5 RED Metrics and the USE Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" alt="Diagram: 13.5 RED Metrics and the USE Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" alt="Sticky Note: 13.5 RED Metrics and the USE Method" width="30%">
+</a>
+
 
 **RED Method** (Rate, Errors, Duration) — For service-level monitoring:
 - **Rate** — Requests per second. Indicates traffic patterns and load.
@@ -161,6 +216,17 @@ RED applies to each service in the architecture. Every service should have RED m
 USE applies to every resource in the system: CPU, memory, disk, network, and system limits (file descriptors, connection pools, thread pools).
 
 ### 13.6 SLOs and Error Budgets
+
+<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" alt="Handwritten: 13.6 SLOs and Error Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" alt="Diagram: 13.6 SLOs and Error Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" alt="Sticky Note: 13.6 SLOs and Error Budgets" width="30%">
+</a>
+
 
 **Service Level Objective (SLO)** — Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
 
@@ -199,6 +265,17 @@ groups:
 ```
 
 ### 13.7 Observability Cost Optimization
+
+<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" alt="Handwritten: 13.7 Observability Cost Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" alt="Diagram: 13.7 Observability Cost Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" alt="Sticky Note: 13.7 Observability Cost Optimization" width="30%">
+</a>
+
 
 Observability infrastructure can become a significant cost driver. Optimization strategies:
 

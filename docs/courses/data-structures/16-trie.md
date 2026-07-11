@@ -56,6 +56,17 @@ flowchart TD
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **trie** (from "retrieval") is a tree data structure for storing strings. Each node represents a character. A path from root to a node spells a prefix. Nodes may be marked as terminal (end of a word).
 
 ```
@@ -76,6 +87,17 @@ Words: "app", "at", "bat", "cat", "cats"
 ```
 
 ### Complexity
+
+<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
 
 | Operation | Trie | BST | Hash Table |
 |-----------|------|-----|------------|

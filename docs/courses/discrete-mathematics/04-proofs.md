@@ -50,6 +50,17 @@ flowchart LR
 
 ### 4.1 Direct Proof
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" alt="Handwritten: 4.1 Direct Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" alt="Diagram: 4.1 Direct Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" alt="Sticky Note: 4.1 Direct Proof" width="30%">
+</a>
+
+
 A **direct proof** of $P \implies Q$ assumes $P$ is true and uses logical reasoning, definitions, and known theorems to derive $Q$.
 
 **Theorem 4.1.** If $n$ is an even integer, then $n^2$ is even.
@@ -64,6 +75,17 @@ A **direct proof** of $P \implies Q$ assumes $P$ is true and uses logical reason
 
 ### 4.2 Proof by Contrapositive
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" alt="Handwritten: 4.2 Proof by Contrapositive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" alt="Diagram: 4.2 Proof by Contrapositive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" alt="Sticky Note: 4.2 Proof by Contrapositive" width="30%">
+</a>
+
+
 The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$. Since they are logically equivalent, proving the contrapositive proves the original statement.
 
 **Theorem 4.3.** If $n^2$ is odd, then $n$ is odd.
@@ -77,6 +99,17 @@ The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$. Since they
 > **One-Sentence Takeaway:** Proving the contrapositive $\neg Q \rightarrow \neg P$ is logically equivalent to proving $P \rightarrow Q$, and is often more direct.
 
 ### 4.3 Proof by Contradiction
+
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" alt="Handwritten: 4.3 Proof by Contradiction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" alt="Diagram: 4.3 Proof by Contradiction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" alt="Sticky Note: 4.3 Proof by Contradiction" width="30%">
+</a>
+
 
 A proof by contradiction assumes the negation of the statement to be proved and derives a logical contradiction ($F \equiv \text{false}$). This shows the original statement must be true.
 
@@ -117,6 +150,17 @@ console.log(findPrimeBeyond(10)); // some prime > 10
 
 ### 4.4 Counterexample
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" alt="Handwritten: 4.4 Counterexample" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" alt="Diagram: 4.4 Counterexample" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" alt="Sticky Note: 4.4 Counterexample" width="30%">
+</a>
+
+
 To disprove a universally quantified statement $\forall x\; P(x)$, it suffices to find a single element $c$ (a counterexample) for which $P(c)$ is false.
 
 **Example 4.1.** Disprove: "All prime numbers are odd."
@@ -130,6 +174,17 @@ To disprove a universally quantified statement $\forall x\; P(x)$, it suffices t
 > **One-Sentence Takeaway:** One carefully chosen counterexample is sufficient to refute any universal claim ? you never need to disprove "all" by checking everything.
 
 ### 4.5 Mathematical Induction
+
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" alt="Handwritten: 4.5 Mathematical Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" alt="Diagram: 4.5 Mathematical Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" alt="Sticky Note: 4.5 Mathematical Induction" width="30%">
+</a>
+
 
 **Principle of Mathematical Induction.** Let $P(n)$ be a statement for each integer $n \geq n_0$. If:
 
@@ -175,6 +230,17 @@ console.log("All checks passed for n = 1 to 100");
 
 ### 4.6 Strong Induction
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" alt="Handwritten: 4.6 Strong Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" alt="Diagram: 4.6 Strong Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" alt="Sticky Note: 4.6 Strong Induction" width="30%">
+</a>
+
+
 **Principle of Strong Induction.** If:
 
 1. **Base case(s):** $P(n_0), P(n_0+1), \ldots, P(m)$ are true, and
@@ -198,6 +264,17 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 ### 4.7 Structural Induction
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" alt="Handwritten: 4.7 Structural Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" alt="Diagram: 4.7 Structural Induction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" alt="Sticky Note: 4.7 Structural Induction" width="30%">
+</a>
+
+
 **Structural induction** proves properties of recursively defined sets (e.g., trees, lists, formulas). For each constructor in the recursive definition, prove that if all sub-instances satisfy the property, then the constructed instance does as well.
 
 **Example (Full binary trees).** Define: a single vertex is a full binary tree. If $T_1$ and $T_2$ are full binary trees, then $(T_1, r, T_2)$ is a full binary tree with root $r$, left subtree $T_1$, and right subtree $T_2$.
@@ -213,6 +290,17 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 > **One-Sentence Takeaway:** Structural induction mirrors the recursive definition of a data type ? prove the base constructors and prove that the property is preserved by each recursive constructor.
 
 ### 4.8 Proof by Cases
+
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" alt="Handwritten: 4.8 Proof by Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" alt="Diagram: 4.8 Proof by Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" alt="Sticky Note: 4.8 Proof by Cases" width="30%">
+</a>
+
 
 Sometimes a statement can be proved by dividing the domain into exhaustive cases and proving each case separately.
 
@@ -230,6 +318,17 @@ In all cases, $n^2$ is $0$ or $1$ mod $3$. $\square$
 
 ### 4.9 Existence Proofs
 
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" alt="Handwritten: 4.9 Existence Proofs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" alt="Diagram: 4.9 Existence Proofs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" alt="Sticky Note: 4.9 Existence Proofs" width="30%">
+</a>
+
+
 An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Constructive** proofs exhibit an explicit $c$ with $P(c)$. **Non-constructive** proofs show existence without producing an example (e.g., by contradiction or pigeonhole principle).
 
 **Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ ? it is prime, and $10 &lt; 11 < 20$.
@@ -237,6 +336,17 @@ An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Construct
 **Non-constructive example:** Prove that for any 5 points in a unit square, some pair is at most $\sqrt{2}/2$ apart. The pigeonhole principle shows existence but does not say which pair.
 
 ### 4.10 Proof Strategy Decision Tree
+
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" alt="Handwritten: 4.10 Proof Strategy Decision Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" alt="Diagram: 4.10 Proof Strategy Decision Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" alt="Sticky Note: 4.10 Proof Strategy Decision Tree" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD

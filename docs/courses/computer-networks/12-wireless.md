@@ -15,6 +15,17 @@ Wireless communication faces fundamental challenges that wired networks avoid. T
 
 ### 12.1.1 Key Challenges
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" alt="Handwritten: 12.1.1 Key Challenges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" alt="Diagram: 12.1.1 Key Challenges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" alt="Sticky Note: 12.1.1 Key Challenges" width="30%">
+</a>
+
+
 | Challenge | Description | Impact |
 |-----------|-------------|--------|
 | Attenuation | Signal power decays with distance ($P_r \propto P_t / d^2$ in free space, worse indoors) | Reduced range, lower data rates at distance |
@@ -28,6 +39,17 @@ Wireless communication faces fundamental challenges that wired networks avoid. T
 
 ### 12.1.2 Real-World Analogy: The Noisy Room
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" alt="Handwritten: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" alt="Diagram: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" alt="Sticky Note: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+</a>
+
+
 Imagine a large room where people are trying to have conversations:
 
 - **Attenuation**: Two people speaking softly across opposite ends of the room cannot hear each other clearly.
@@ -38,6 +60,17 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.1.3 Edge Cases
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" alt="Handwritten: 12.1.3 Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" alt="Diagram: 12.1.3 Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" alt="Sticky Note: 12.1.3 Edge Cases" width="30%">
+</a>
+
+
 **Hidden Terminal Still Colliding**: Even with RTS/CTS, if two hidden stations transmit RTS simultaneously, both RTS frames collide at the AP. Both time out waiting for CTS and double their backoff windows. This is the RTS collision problem → RTS frames themselves are vulnerable.
 
 **Exposed Terminal False Deferral**: Station C hears Station A's transmission to the AP. C defers even though C's transmission to D would not interfere with A's reception at the AP. The exposed terminal cannot distinguish between "the medium is busy for me" and "the medium is busy for someone else."
@@ -45,6 +78,17 @@ Imagine a large room where people are trying to have conversations:
 **Co-Channel Interference**: Two APs on the same channel in adjacent coverage areas. Clients at the cell edge experience collisions from both cells. With 2.4 GHz having only 3 non-overlapping channels, dense deployments inevitably suffer this.
 
 ### 12.1.4 A&D of Wireless Communication
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" alt="Handwritten: 12.1.4 A&D of Wireless Communication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" alt="Diagram: 12.1.4 A&D of Wireless Communication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" alt="Sticky Note: 12.1.4 A&D of Wireless Communication" width="30%">
+</a>
+
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -57,6 +101,17 @@ Imagine a large room where people are trying to have conversations:
 ## 12.2 IEEE 802.11 Architecture
 
 ### 12.2.1 Components
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" alt="Handwritten: 12.2.1 Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" alt="Diagram: 12.2.1 Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" alt="Sticky Note: 12.2.1 Components" width="30%">
+</a>
+
 
 | Component | Full Name | Role |
 |-----------|-----------|------|
@@ -76,6 +131,17 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.2.2 Real-World Analogy: Office Building
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" alt="Handwritten: 12.2.2 Real-World Analogy: Office Building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" alt="Diagram: 12.2.2 Real-World Analogy: Office Building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" alt="Sticky Note: 12.2.2 Real-World Analogy: Office Building" width="30%">
+</a>
+
+
 - **STA**: An employee at their desk.
 - **AP**: The departmental office that handles mail and phone calls for the floor.
 - **BSS**: One floor of the building with one office.
@@ -84,6 +150,17 @@ Imagine a large room where people are trying to have conversations:
 - **Roaming**: An employee moves from floor 3 to floor 5. They still receive mail at the same address (SSID) even though their local office (AP) has changed.
 
 ### 12.2.3 Wi-Fi Association Process (Numbered Steps)
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" alt="Handwritten: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" alt="Diagram: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" alt="Sticky Note: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+</a>
+
 
 **Step 1 → Probe Request**: STA broadcasts a Probe Request on each channel, listing supported data rates and capabilities.
 
@@ -100,6 +177,17 @@ Imagine a large room where people are trying to have conversations:
 After Step 6, if WPA2/WPA3 is used, the 4-way handshake occurs for key exchange before data can flow.
 
 ### 12.2.4 Pseudocode: Wi-Fi Association
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" alt="Diagram: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+</a>
+
 
 ```
 procedure wifi_association(sta, ap)
@@ -146,6 +234,17 @@ procedure wifi_association(sta, ap)
 ```
 
 ### 12.2.5 Dry Run Trace: Wi-Fi Association
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" alt="Diagram: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+</a>
+
 
 Parameters: STA = "Client-A", AP = "Office-AP" on Channel 6, RSSI = -45 dBm.
 
@@ -285,6 +384,17 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 ### 12.3.1 Detailed Standards Table
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" alt="Handwritten: 12.3.1 Detailed Standards Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" alt="Diagram: 12.3.1 Detailed Standards Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" alt="Sticky Note: 12.3.1 Detailed Standards Table" width="30%">
+</a>
+
+
 | Standard | Wi-Fi Gen | Year | Freq (GHz) | Channel Width | Max Data Rate | MIMO Streams | Modulation | Subcarriers | Guard Interval |
 |----------|-----------|------|------------|---------------|--------------|-------------|------------|-------------|----------------|
 | 802.11a | WiFi 2 | 1999 | 5 | 20 MHz | 54 Mbps | 1Ã—1 (no MIMO) | OFDM (64-subcarrier) | 52 data + 4 pilot | 800 ns |
@@ -297,6 +407,17 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 ### 12.3.2 Complexity Analysis
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" alt="Handwritten: 12.3.2 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" alt="Diagram: 12.3.2 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" alt="Sticky Note: 12.3.2 Complexity Analysis" width="30%">
+</a>
+
+
 **Spatial Stream Scaling**: Throughput scales linearly with the number of spatial streams (up to MIMO rank). Doubling streams doubles data rate for the same channel width and modulation. Complexity: $O(S)$ where $S = \text{number of streams}$.
 
 **Channel Width Scaling**: Doubling channel width doubles subcarriers and thus throughput. Complexity: $O(W)$ where $W = \text{channel width}$. Larger channels are more susceptible to noise → a single narrowband interferer can wipe out a 320 MHz channel.
@@ -306,6 +427,17 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 **Why WiFi 7 reaches 46 Gbps**: 320 MHz Ã— 16 streams Ã— 4096-QAM (12 bits/symbol) Ã— 5/6 code rate Ã— OFDMA efficiency â‰ˆ 46 Gbps. The 320 MHz channel alone (doubled from WiFi 6's 160 MHz) doubles throughput. 16Ã—16 MIMO doubles it again vs WiFi 6's 8Ã—8. 4096-QAM adds ~20% more bits per symbol than 1024-QAM.
 
 ### 12.3.3 A&D of Wi-Fi Standards
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" alt="Handwritten: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" alt="Diagram: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" alt="Sticky Note: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+</a>
+
 
 | Standard | Advantages | Disadvantages |
 |----------|-----------|-------------|
@@ -321,6 +453,17 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen while transmitting (half-duplex), making collision detection impossible. Instead of detecting collisions after they occur, CSMA/CA tries to prevent them before transmission.
 
 ### 12.4.1 The NAV and Backoff Mechanism
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" alt="Handwritten: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" alt="Diagram: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" alt="Sticky Note: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+</a>
+
 
 **NAV (Network Allocation Vector)**: A virtual carrier-sense mechanism. Each station maintains a NAV counter indicating how long the medium will be busy. Stations set their NAV based on the Duration field in received frames. NAV = "the channel will be busy for this many microseconds." A station defers its own transmission while NAV > 0. This prevents collisions even when stations cannot hear each other's physical signals.
 
@@ -340,6 +483,17 @@ WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen
 
 ### 12.4.2 Real-World Analogy: Courteous Conversation
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" alt="Handwritten: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" alt="Diagram: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" alt="Sticky Note: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+</a>
+
+
 Imagine a group conversation where only one person speaks at a time:
 
 - **DIFS**: Everyone pauses to check if anyone is currently speaking.
@@ -348,6 +502,17 @@ Imagine a group conversation where only one person speaks at a time:
 - **NAV**: The current speaker says "I'll be speaking for about 30 seconds." Everyone sets a timer for 30 seconds and stays quiet until it expires.
 
 ### 12.4.3 Numbered Steps: CSMA/CA Transmission
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" alt="Handwritten: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" alt="Diagram: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" alt="Sticky Note: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+</a>
+
 
 1. **Physical Carrier Sense**: Check if the medium is idle for DIFS duration (34 Âµs for 802.11a/g).
 2. **Backoff Selection**: If medium was busy or this is a retransmission, select backoff $B = \text{random}[0, CW]$ where CW starts at $CW_{min} = 15$.
@@ -359,6 +524,17 @@ Imagine a group conversation where only one person speaks at a time:
 8. **Drop**: After retry limit ($\text{short} = 7$, $\text{long} = 4$), discard the frame.
 
 ### 12.4.4 Pseudocode: CSMA/CA with Backoff
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" alt="Handwritten: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" alt="Diagram: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" alt="Sticky Note: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+</a>
+
 
 ```
 procedure csma_ca_transmit(frame, sta)
@@ -410,6 +586,17 @@ procedure csma_ca_transmit(frame, sta)
 
 ### 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" alt="Handwritten: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" alt="Diagram: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" alt="Sticky Note: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+</a>
+
+
 Parameters: Slot time = 9 Âµs, DIFS = 34 Âµs, SIFS = 16 Âµs, CW_min = 15, CW_max = 1023.
 Data frame transmission time = 200 Âµs (1500-byte frame at 54 Mbps). ACK = 30 Âµs.
 
@@ -443,6 +630,17 @@ Three stations (A, B, C) all have a frame to send. The medium starts idle.
 Total time for 3 stations: 672 Âµs. Without CSMA/CA (all transmitting simultaneously), all 3 frames would collide. CSMA/CA serialized the transmissions with ~100% channel utilization (minus overhead).
 
 ### 12.4.6 C++ Implementation: CSMA/CA Simulator
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -637,6 +835,17 @@ int main() {
 
 ### 12.4.7 Python Implementation: CSMA/CA Simulator
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+</a>
+
+
 ```python
 import random
 import time
@@ -764,6 +973,17 @@ if __name__ == "__main__":
 
 ### 12.4.8 Complexity Analysis
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" alt="Handwritten: 12.4.8 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" alt="Diagram: 12.4.8 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" alt="Sticky Note: 12.4.8 Complexity Analysis" width="30%">
+</a>
+
+
 **Time Complexity of CSMA/CA**: $O(N \times R \times B)$ where:
 - $N$ = number of stations
 - $R$ = number of retransmissions per frame
@@ -780,6 +1000,17 @@ if __name__ == "__main__":
 - CA prevents collisions probabilistically rather than detecting them reactively.
 
 ### 12.4.9 Edge Cases in CSMA/CA
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" alt="Handwritten: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" alt="Diagram: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" alt="Sticky Note: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+</a>
+
 
 | Edge Case | Description | Mitigation |
 |-----------|-------------|------------|
@@ -887,6 +1118,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.5.1 Frame Fields Detail
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" alt="Handwritten: 12.5.1 Frame Fields Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" alt="Diagram: 12.5.1 Frame Fields Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" alt="Sticky Note: 12.5.1 Frame Fields Detail" width="30%">
+</a>
+
+
 | Field | Size | Description |
 |-------|------|-------------|
 | Frame Control | 2 B | Protocol version, Type, Subtype, To DS, From DS, More Frag, Retry, Pwr Mgmt, More Data, Protected Frame, Order |
@@ -912,6 +1154,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.5.2 Frame Types
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" alt="Handwritten: 12.5.2 Frame Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" alt="Diagram: 12.5.2 Frame Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" alt="Sticky Note: 12.5.2 Frame Types" width="30%">
+</a>
+
+
 **Management Frames** (Type = 00):
 - Beacon (Subtype 8): AP advertises SSID, capabilities, timestamp, beacon interval (100 TU = 102.4 ms)
 - Probe Request/Response (Subtypes 4/5): Active scanning
@@ -934,6 +1187,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.1 Hidden Terminal Problem
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.1 Hidden Terminal Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" alt="Diagram: 12.6.1 Hidden Terminal Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.1 Hidden Terminal Problem" width="30%">
+</a>
+
+
 **Scenario**: Station A and Station C are both within range of AP B, but A and C cannot hear each other. A transmits to B. C, sensing an idle medium (it cannot hear A), also transmits. A collision occurs at B.
 
 **Why it matters**: The sender (A or C) cannot detect the collision because it happens at the receiver (B). Without ACK, neither A nor C realizes the collision occurred. Throughput suffers due to repeated collisions and exponential backoff.
@@ -942,6 +1206,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.2 Exposed Terminal Problem
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.2 Exposed Terminal Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" alt="Diagram: 12.6.2 Exposed Terminal Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.2 Exposed Terminal Problem" width="30%">
+</a>
+
+
 **Scenario**: Station B is transmitting to AP A. Station C (near B) wants to transmit to STA D (on the other side of C). C hears B's transmission and defers, even though C's transmission would not interfere with B's reception at A (A is far enough from C).
 
 **Why it matters**: The exposed terminal unnecessarily defers, reducing channel utilization. The medium is idle from the perspective of both receivers (A and D), but the transmitter C stays silent.
@@ -949,6 +1224,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 **Solution**: RTS/CTS partially mitigates this → if C sends RTS to D, D responds with CTS, and B hears D's CTS. But if B is near C, B may still defer to C. In practice, exposed terminal is harder to solve and often requires directional antennas or centralized scheduling.
 
 ### 12.6.3 Comparison Table
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" alt="Handwritten: 12.6.3 Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" alt="Diagram: 12.6.3 Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" alt="Sticky Note: 12.6.3 Comparison Table" width="30%">
+</a>
+
 
 | Feature | Hidden Terminal | Exposed Terminal |
 |---------|----------------|-----------------|
@@ -962,6 +1248,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.4 RTS/CTS Exchange (Numbered Steps)
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" alt="Handwritten: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" alt="Diagram: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" alt="Sticky Note: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+</a>
+
+
 1. **Sender RTS**: Sender transmits RTS (20 bytes) to receiver. RTS contains Receiver Address and Duration (= time needed for entire exchange).
 2. **Receiver CTS**: Receiver waits SIFS (16 Âµs), transmits CTS (14 bytes) to sender. CTS copies the Duration field, subtracting SIFS + CTS time. All other stations that hear CTS set their NAV.
 3. **Data Transmission**: Sender waits SIFS after CTS, transmits data frame. All stations that heard RTS (but not CTS) or CTS (but not RTS) maintain their NAV.
@@ -970,6 +1267,17 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 **When RTS/CTS is used**: RTS threshold is typically 2346 bytes (disabled by default on many devices). For small frames, RTS/CTS overhead (RTS + CTS â‰ˆ 34 bytes + 2Ã—SIFS = 52 Âµs plus contention) exceeds its benefit. RTS/CTS is recommended in dense or high-interference environments.
 
 ### 12.6.5 Dry Run Trace: RTS/CTS Exchange
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" alt="Handwritten: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" alt="Diagram: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" alt="Sticky Note: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+</a>
+
 
 Scenario: Station A (STA A) sends to AP. Station C is hidden from A but can hear AP.
 
@@ -990,6 +1298,17 @@ CTS duration = 400 - SIFS(16) - CTS_time(14B @ 54 Mbps â‰ˆ 4 Âµs) â‰ˆ 
 During the entire exchange (0-370 Âµs), Station C defers because its NAV > 0. The hidden terminal collision is avoided.
 
 ### 12.6.6 Pseudocode: RTS/CTS Protocol
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" alt="Handwritten: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" alt="Diagram: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" alt="Sticky Note: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+</a>
+
 
 ```
 procedure rts_cts_send(data_frame, receiver)
@@ -1024,6 +1343,17 @@ procedure rts_cts_send(data_frame, receiver)
 
 ### 12.6.7 Edge Cases in Hidden/Exposed Terminal
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" alt="Handwritten: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" alt="Diagram: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" alt="Sticky Note: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+</a>
+
+
 **RTS Collision (Hidden Terminals Still Colliding)**:
 Two hidden stations (A and C) both sense the medium as idle (neither hears the other). Both send RTS to the AP at the same time. The AP receives garbled data. Both A and C time out waiting for CTS and double their CW. After backoff, the one with the smaller backoff wins. RTS frames themselves are short (20 bytes), so the collision is brief, but it does happen.
 
@@ -1035,6 +1365,17 @@ Two hidden stations (A and C) both sense the medium as idle (neither hears the o
 
 ### 12.6.8 A&D of RTS/CTS
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" alt="Handwritten: 12.6.8 A&D of RTS/CTS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" alt="Diagram: 12.6.8 A&D of RTS/CTS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" alt="Sticky Note: 12.6.8 A&D of RTS/CTS" width="30%">
+</a>
+
+
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Solves hidden terminal problem | Adds fixed overhead (RTS+CTS = 34 bytes per exchange) |
@@ -1045,6 +1386,17 @@ Two hidden stations (A and C) both sense the medium as idle (neither hears the o
 ## 12.7 Power Management
 
 ### 12.7.1 TIM and PS-Poll
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" alt="Handwritten: 12.7.1 TIM and PS-Poll" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" alt="Diagram: 12.7.1 TIM and PS-Poll" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" alt="Sticky Note: 12.7.1 TIM and PS-Poll" width="30%">
+</a>
+
 
 Wireless stations conserve power by entering doze (sleep) state. The AP buffers frames for sleeping stations.
 
@@ -1060,6 +1412,17 @@ Wireless stations conserve power by entering doze (sleep) state. The AP buffers 
 
 ### 12.7.2 Real-World Analogy: Office Mailroom
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" alt="Handwritten: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" alt="Diagram: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" alt="Sticky Note: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+</a>
+
+
 - **Beacon**: The mailroom clerk rings a bell every hour to announce "mail is here."
 - **TIM**: The clerk posts a list of employees who have mail. You only need to look if your name is on the list.
 - **PS-Poll**: You approach the counter and say "I have mail → please give it to me."
@@ -1067,6 +1430,17 @@ Wireless stations conserve power by entering doze (sleep) state. The AP buffers 
 - **TWT**: You schedule a specific time each day with the clerk: "I'll pick up mail at 10 AM and 2 PM." No need to check every hour.
 
 ### 12.7.3 Numbered Steps: Power-Save Operation
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" alt="Handwritten: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" alt="Diagram: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" alt="Sticky Note: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+</a>
+
 
 1. **Association**: STA informs AP of its listen interval (e.g., 10 beacon periods). AP will buffer frames for up to this duration.
 2. **Sleep**: STA enters doze state, turning off the radio. AP buffers any incoming frames for the STA.
@@ -1083,6 +1457,17 @@ Wireless stations conserve power by entering doze (sleep) state. The AP buffers 
 Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 2.4 GHz ISM band. It uses frequency-hopping spread spectrum (FHSS) to mitigate interference and fading.
 
 ### 12.8.1 Piconet and Scatternet
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" alt="Handwritten: 12.8.1 Piconet and Scatternet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" alt="Diagram: 12.8.1 Piconet and Scatternet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" alt="Sticky Note: 12.8.1 Piconet and Scatternet" width="30%">
+</a>
+
 
 **Piconet**: A Bluetooth piconet consists of one master and up to seven active slaves (plus up to 255 parked slaves). Key characteristics:
 - All communication is master-to-slave or slave-to-master. Slaves do not communicate directly.
@@ -1104,6 +1489,17 @@ Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 
 
 ### 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" alt="Handwritten: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" alt="Diagram: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" alt="Sticky Note: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+</a>
+
+
 L2CAP sits above the baseband layer in the Bluetooth protocol stack and provides:
 - **Segmentation and reassembly**: Large packets are divided into baseband frames and reassembled at the receiver.
 - **Protocol multiplexing**: Multiple higher-layer protocols (RFCOMM, SDP, BNEP) share the same ACL (Asynchronous Connection-Less) link.
@@ -1118,6 +1514,17 @@ L2CAP channel identifiers (CIDs):
 
 ### 12.8.3 Real-World Analogy: Classroom
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" alt="Handwritten: 12.8.3 Real-World Analogy: Classroom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" alt="Diagram: 12.8.3 Real-World Analogy: Classroom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" alt="Sticky Note: 12.8.3 Real-World Analogy: Classroom" width="30%">
+</a>
+
+
 - **Master (Teacher)**: Controls the conversation. Calls on students one at a time.
 - **Slave (Student)**: Speaks only when the teacher calls on them.
 - **Slots**: The teacher speaks for 30 seconds (slot), then a student responds for 30 seconds (slot).
@@ -1127,6 +1534,17 @@ L2CAP channel identifiers (CIDs):
 - **L2CAP**: The teacher's assistant organizes materials → splits long books into chapters (segmentation), labels each book with its subject (protocol multiplexing).
 
 ### 12.8.4 C++ Implementation: Bluetooth Piconet
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1274,6 +1692,17 @@ int main() {
 ```
 
 ### 12.8.5 Python Implementation: Bluetooth Piconet
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+</a>
+
 
 ```python
 import random
@@ -1454,6 +1883,17 @@ if __name__ == "__main__":
 
 ### 12.8.6 A&D of Bluetooth
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" alt="Handwritten: 12.8.6 A&D of Bluetooth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" alt="Diagram: 12.8.6 A&D of Bluetooth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" alt="Sticky Note: 12.8.6 A&D of Bluetooth" width="30%">
+</a>
+
+
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Very low power consumption (BLE: 0.01-0.5 W) | Low data rate (1-3 Mbps, 2 Mbps for BLE 5) |
@@ -1466,6 +1906,17 @@ if __name__ == "__main__":
 ## 12.9 Cellular Networks
 
 ### 12.9.1 4G/LTE
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" alt="Handwritten: 12.9.1 4G/LTE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" alt="Diagram: 12.9.1 4G/LTE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" alt="Sticky Note: 12.9.1 4G/LTE" width="30%">
+</a>
+
 
 **Architecture**:
 - **UE (User Equipment)**: Mobile device with SIM/USIM.
@@ -1486,6 +1937,17 @@ if __name__ == "__main__":
 **SC-FDMA in LTE Uplink**: Single-carrier FDMA reduces PAPR (Peak-to-Average Power Ratio), improving battery life and power amplifier efficiency compared to OFDMA.
 
 ### 12.9.2 5G NR
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" alt="Handwritten: 12.9.2 5G NR" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" alt="Diagram: 12.9.2 5G NR" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" alt="Sticky Note: 12.9.2 5G NR" width="30%">
+</a>
+
 
 **Service Categories**:
 
@@ -1518,6 +1980,17 @@ if __name__ == "__main__":
 
 ### 12.9.3 4G vs 5G Comparison
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" alt="Handwritten: 12.9.3 4G vs 5G Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" alt="Diagram: 12.9.3 4G vs 5G Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" alt="Sticky Note: 12.9.3 4G vs 5G Comparison" width="30%">
+</a>
+
+
 | Feature | 4G LTE | 5G NR |
 |---------|--------|-------|
 | Peak downlink | 300 Mbps (LTE Cat 6) → 3 Gbps (LTE-A) | 10-20 Gbps |
@@ -1538,6 +2011,17 @@ if __name__ == "__main__":
 | Energy efficiency | Reference | 100Ã— better per bit (target) |
 
 ### 12.9.4 Real-World Analogy: Highway System
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" alt="Handwritten: 12.9.4 Real-World Analogy: Highway System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" alt="Diagram: 12.9.4 Real-World Analogy: Highway System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" alt="Sticky Note: 12.9.4 Real-World Analogy: Highway System" width="30%">
+</a>
+
 
 - **4G LTE**: A multi-lane highway with fixed lane widths and fixed speed limits. On-ramps (uplink) merge slowly (SC-FDMA). Traffic jams cause delays of 10-30 minutes (10-30 ms latency).
 - **5G NR**: A highway with dynamically adjustable lanes and variable speed limits. During rush hour, lane widths narrow to increase throughput. Cars with critical destinations (autonomous driving) get dedicated express lanes (uRLLC). Each vehicle communicates directly with a traffic tower (beamforming) instead of broadcasting to all lanes.
@@ -1659,6 +2143,17 @@ Total handoffs: 2
 
 ### 12.10.1 Selection Guide
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" alt="Handwritten: 12.10.1 Selection Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" alt="Diagram: 12.10.1 Selection Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" alt="Sticky Note: 12.10.1 Selection Guide" width="30%">
+</a>
+
+
 | Requirement | Best Choice | Why |
 |-------------|-------------|-----|
 | File transfer at close range (home) | WiFi (802.11ac/ax) | 100-1000Ã— faster than Bluetooth |
@@ -1674,17 +2169,61 @@ Total handoffs: 2
 
 ### Q1: Why does WiFi use CSMA/CA instead of CSMA/CD?
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" alt="Handwritten: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" alt="Diagram: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" alt="Sticky Note: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+</a>
+
+
 **Answer**: Wireless transceivers are half-duplex → the transmitter cannot listen for collisions while transmitting because its own signal overwhelms any incoming signal (self-interference). Full-duplex wireless is still experimental. Additionally, the hidden terminal problem means the collision happens at the receiver, not the sender. CSMA/CA prevents collisions probabilistically rather than detecting them reactively.
 
 ### Q2: What is NAV and why is it important?
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is NAV and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" alt="Diagram: What is NAV and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is NAV and why is it important?" width="30%">
+</a>
+
 
 **Answer**: The Network Allocation Vector (NAV) is a virtual carrier-sense mechanism. Each station maintains a timer indicating how long the medium will be busy. Stations set their NAV based on the Duration field in received frames (RTS, CTS, Data). NAV prevents collisions from hidden terminals → even if a station's physical carrier sense says the medium is idle, NAV can still indicate it is busy.
 
 ### Q3: Explain the difference between WiFi handoff and cellular handover.
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" alt="Handwritten: Explain the difference between WiFi handoff and cellular handover." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" alt="Diagram: Explain the difference between WiFi handoff and cellular handover." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" alt="Sticky Note: Explain the difference between WiFi handoff and cellular handover." width="30%">
+</a>
+
+
 **Answer**: WiFi handoff (roaming) is client-initiated and can take 50-500 ms. The client decides when to disassociate from one AP and associate with another. Cellular handover is network-controlled → the base stations and core network coordinate the transition. LTE hard handover takes 10-50 ms; 5G targets &lt;1 ms handover interruption for uRLLC services. Cellular handover is seamless and transparent to the user.
 
 ### Q4: How does MIMO improve wireless performance?
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" alt="Handwritten: How does MIMO improve wireless performance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" alt="Diagram: How does MIMO improve wireless performance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" alt="Sticky Note: How does MIMO improve wireless performance?" width="30%">
+</a>
+
 
 **Answer**: MIMO (Multiple Input Multiple Output) uses multiple antennas at both transmitter and receiver. Three benefits:
 - **Spatial multiplexing**: Multiple data streams transmitted simultaneously over the same frequency → throughput increases linearly with stream count (up to 8Ã— in WiFi 6, 16Ã— in WiFi 7, 64Ã— in 5G).
@@ -1693,21 +2232,65 @@ Total handoffs: 2
 
 ### Q5: What is OFDMA and why is it important in WiFi 6/7?
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" alt="Handwritten: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" alt="Diagram: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" alt="Sticky Note: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+</a>
+
+
 **Answer**: Orthogonal Frequency Division Multiple Access divides a channel into smaller sub-channels (Resource Units, RUs) that can be allocated to different users simultaneously. In WiFi 5 (OFDM), only one user could transmit per channel per slot. WiFi 6 (OFDMA) allows 9 users (20 MHz) to 74 users (160 MHz) to transmit simultaneously.
 
 Real-world benefit: In a crowded office, OFDMA handles many small packets efficiently. A 20 MHz OFDMA transmission can serve 9 devices simultaneously instead of serializing them (9Ã— latency reduction for small frames).
 
 ### Q6: Compare WiFi and LTE for voice over wireless.
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" alt="Handwritten: Compare WiFi and LTE for voice over wireless." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" alt="Diagram: Compare WiFi and LTE for voice over wireless." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" alt="Sticky Note: Compare WiFi and LTE for voice over wireless." width="30%">
+</a>
+
+
 **Answer**: LTE voice (VoLTE) uses IMS with dedicated bearers, priority scheduling, and seamless handover → providing near-wireline voice quality. WiFi voice (VoWiFi) rides on best-effort IP with CSMA/CA contention and can suffer from jitter, packet loss, and interference. VoLTE uses narrowband (WB-AMR 12.65 kbps) or EVS codecs; VoWiFi uses codec-over-UDP with no guaranteed QoS. VoWiFi with WMM (802.11e) can improve but cannot match VoLTE's dedicated bearer QoS.
 
 ### Q7: What is the range vs. rate trade-off in wireless?
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" alt="Handwritten: What is the range vs. rate trade-off in wireless?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" alt="Diagram: What is the range vs. rate trade-off in wireless?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" alt="Sticky Note: What is the range vs. rate trade-off in wireless?" width="30%">
+</a>
+
 
 **Answer**: As data rate increases, range decreases (for the same transmit power). Higher-order modulation (e.g., 64-QAM → 256-QAM) requires higher SNR to maintain the same BER. At the cell edge, WiFi and cellular fall back to robust modulation (BPSK, QPSK) at lower rates. For WiFi 6: 1024-QAM MCS 11 requires ~32 dB SNR for &lt;10% PER; BPSK MCS 0 requires ~5 dB SNR. This is why you get 9.6 Gbps standing next to the AP but only 10-50 Mbps at the far end of your house.
 
 ## 12.12 Applications in Real Systems
 
 ### 12.12.1 WiFi 6/7 Deployments
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" alt="Handwritten: 12.12.1 WiFi 6/7 Deployments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" alt="Diagram: 12.12.1 WiFi 6/7 Deployments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" alt="Sticky Note: 12.12.1 WiFi 6/7 Deployments" width="30%">
+</a>
+
 
 **Enterprise Campus WiFi 6**: An office building with 3 APs per floor (5 GHz), 200 clients per AP. Key features:
 - OFDMA reduces airtime contention → 74 users can share a 160 MHz channel simultaneously.
@@ -1719,11 +2302,33 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.12.2 Cellular Infrastructure
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" alt="Handwritten: 12.12.2 Cellular Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" alt="Diagram: 12.12.2 Cellular Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" alt="Sticky Note: 12.12.2 Cellular Infrastructure" width="30%">
+</a>
+
+
 **Fixed Wireless Access (FWA)**: 5G NR replaces fiber-to-the-home. A customer's premises equipment (CPE) connects to a gNB up to 15 km away (sub-6 GHz) or 500 m (mmWave). Typical throughput: 300 Mbps-1 Gbps, enough for 4K streaming, video calls, and home office. Trials in Germany and the US show FWA as the fastest-growing 5G use case (20M+ subscribers in the US by 2024).
 
 **Private 5G (NPN)**: A factory deploys a private 5G network (3.7-4.2 GHz CBRS in the US, n77/n78 in Europe). uRLLC slice for robotic arm control (99.999% reliability, &lt;1 ms) and mMTC slice for 10,000 environmental sensors. 5G LAN functionality provides device-to-device communication without traversing the core.
 
 ### 12.12.3 IoT Wireless Technologies
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" alt="Handwritten: 12.12.3 IoT Wireless Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" alt="Diagram: 12.12.3 IoT Wireless Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" alt="Sticky Note: 12.12.3 IoT Wireless Technologies" width="30%">
+</a>
+
 
 **LoRaWAN**: Long-range (2-15 km), sub-GHz (868/915 MHz), ultra-low power (10+ years on battery). Data rate: 0.25-50 kbps. Use case: smart city parking sensors that report occupancy every 5 minutes. Each transmission costs ~0.01 ÂµAh. A single gateway covers an entire city district.
 
@@ -1748,6 +2353,17 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.13.1 Handover
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" alt="Handwritten: 12.13.1 Handover" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" alt="Diagram: 12.13.1 Handover" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" alt="Sticky Note: 12.13.1 Handover" width="30%">
+</a>
+
+
 Handover (handoff) transfers an active connection from one base station (or access point) to another.
 
 **Hard Handover**: The connection with the old base station is broken before the new connection is established (break-before-make). Used in GSM and some LTE scenarios. Packet loss during the interruption is inevitable. Typical interruption time: 10-50 ms (LTE).
@@ -1758,11 +2374,33 @@ Handover (handoff) transfers an active connection from one base station (or acce
 
 ### 12.13.2 Location Management
 
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" alt="Handwritten: 12.13.2 Location Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" alt="Diagram: 12.13.2 Location Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" alt="Sticky Note: 12.13.2 Location Management" width="30%">
+</a>
+
+
 Cellular networks track mobile devices through location areas and paging. The network divides coverage into location areas (LA) or tracking areas (TA). When a mobile crosses a TA boundary, it performs a tracking area update (TAU). When a call arrives for a mobile, the network pages all cells in the last known TA.
 
 **Handover vs. TAU**: Handover maintains an active session; TAU updates the network for future incoming sessions (idle mode mobility).
 
 ### 12.13.3 Roaming
+
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" alt="Handwritten: 12.13.3 Roaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" alt="Diagram: 12.13.3 Roaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" alt="Sticky Note: 12.13.3 Roaming" width="30%">
+</a>
+
 
 Roaming allows a mobile device to connect to a visited network. The visited network uses the home network's authentication infrastructure. In LTE, the UE connects to a visited eNB and MME; the visited MME communicates with the home subscriber server (HSS) for authentication and with the home PGW for data.
 

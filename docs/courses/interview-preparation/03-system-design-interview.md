@@ -39,6 +39,17 @@ flowchart TD
 
 ### Step-by-Step Framework
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-handwritten.svg" alt="Handwritten: Step-by-Step Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-diagram.svg" alt="Diagram: Step-by-Step Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/step-by-step-framework-sticky.svg" alt="Sticky Note: Step-by-Step Framework" width="30%">
+</a>
+
+
 #### Step 1: Requirements Clarification (5 minutes)
 | Question Type | Examples |
 |--------------|----------|
@@ -91,6 +102,17 @@ flowchart LR
 ## Key Scalability Concepts
 
 ### 1. Load Balancing
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-handwritten.svg" alt="Handwritten: 1. Load Balancing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-diagram.svg" alt="Diagram: 1. Load Balancing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/1-load-balancing-sticky.svg" alt="Sticky Note: 1. Load Balancing" width="30%">
+</a>
+
 | Algorithm | How it Works | Best For |
 |-----------|-------------|----------|
 | Round Robin | Distributes requests sequentially | Equal-capacity servers |
@@ -99,6 +121,17 @@ flowchart LR
 | Weighted Round Robin | Servers have weights based on capacity | Heterogeneous server capacities |
 
 ### 2. Caching Strategies
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-handwritten.svg" alt="Handwritten: 2. Caching Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-diagram.svg" alt="Diagram: 2. Caching Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/2-caching-strategies-sticky.svg" alt="Sticky Note: 2. Caching Strategies" width="30%">
+</a>
+
 | Strategy | Description | Use Case |
 |----------|-------------|----------|
 | Cache Aside | Application checks cache first, falls back to DB | General purpose |
@@ -117,6 +150,17 @@ flowchart LR
 
 ### 3. Database Scaling
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-handwritten.svg" alt="Handwritten: 3. Database Scaling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-diagram.svg" alt="Diagram: 3. Database Scaling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/3-database-scaling-sticky.svg" alt="Sticky Note: 3. Database Scaling" width="30%">
+</a>
+
+
 | Strategy | Description | Complexity | Use Case |
 |----------|-------------|-----------|----------|
 | Read Replicas | Multiple read-only copies of DB | Low | Read-heavy apps |
@@ -134,6 +178,17 @@ Geographic: Users in India → India shard
 
 ### 4. Message Queues
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-handwritten.svg" alt="Handwritten: 4. Message Queues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-diagram.svg" alt="Diagram: 4. Message Queues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/4-message-queues-sticky.svg" alt="Sticky Note: 4. Message Queues" width="30%">
+</a>
+
+
 | Feature | Kafka | RabbitMQ | SQS |
 |---------|-------|----------|-----|
 | Model | Pub-sub log | Message broker | Managed queue |
@@ -143,6 +198,17 @@ Geographic: Users in India → India shard
 | Best for | Event streaming, analytics | Task queues, RPC | Simple queuing |
 
 ### 5. CDN (Content Delivery Network)
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-handwritten.svg" alt="Handwritten: 5. CDN (Content Delivery Network)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-diagram.svg" alt="Diagram: 5. CDN (Content Delivery Network)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/5-cdn-content-delivery-network-sticky.svg" alt="Sticky Note: 5. CDN (Content Delivery Network)" width="30%">
+</a>
+
 - Caches static content at edge locations
 - Reduces latency for global users
 - Handles DDoS protection
@@ -153,11 +219,33 @@ Geographic: Users in India → India shard
 ## Section 1: Case Study — URL Shortener (tinyurl.com)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Generate short URL, redirect to original, custom alias, analytics.
 
 **Non-functional:** 10M URLs/day, read-heavy (99% reads), low latency (&lt;100ms redirect).
 
 ### Scale Estimation
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-handwritten.svg" alt="Handwritten: Scale Estimation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-diagram.svg" alt="Diagram: Scale Estimation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/scale-estimation-sticky.svg" alt="Sticky Note: Scale Estimation" width="30%">
+</a>
+
 ```
 Write: 10M × 100 bytes = 1 GB/day → 365 GB/year
 Read: 10M × 99 reads/1 write = 990M reads/day
@@ -165,6 +253,17 @@ RPS: 10M/86400 ≈ 116 writes/sec, 11,458 reads/sec
 ```
 
 ### Design
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-handwritten.svg" alt="Handwritten: Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-diagram.svg" alt="Diagram: Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/design-sticky.svg" alt="Sticky Note: Design" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -177,6 +276,17 @@ flowchart LR
 ```
 
 ### API Design
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-handwritten.svg" alt="Handwritten: API Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-diagram.svg" alt="Diagram: API Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/api-design-sticky.svg" alt="Sticky Note: API Design" width="30%">
+</a>
+
 ```typescript
 POST /shorten
 {
@@ -194,6 +304,17 @@ GET /{shortCode}/analytics
 ```
 
 ### Database Schema
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-handwritten.svg" alt="Handwritten: Database Schema" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-diagram.svg" alt="Diagram: Database Schema" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-sticky.svg" alt="Sticky Note: Database Schema" width="30%">
+</a>
+
 ```sql
 CREATE TABLE urls (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -218,6 +339,17 @@ CREATE TABLE clicks (
 ```
 
 ### Short Code Generation
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-handwritten.svg" alt="Handwritten: Short Code Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-diagram.svg" alt="Diagram: Short Code Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/short-code-generation-sticky.svg" alt="Sticky Note: Short Code Generation" width="30%">
+</a>
+
 ```typescript
 // Base62 encoding (a-z, A-Z, 0-9) = 62^7 ≈ 3.5 trillion combinations
 const BASE62 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -241,6 +373,17 @@ function generateUniqueId(): number {
 ```
 
 ### Deep Dive: Cache Strategy
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-handwritten.svg" alt="Handwritten: Deep Dive: Cache Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-diagram.svg" alt="Diagram: Deep Dive: Cache Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-cache-strategy-sticky.svg" alt="Sticky Note: Deep Dive: Cache Strategy" width="30%">
+</a>
+
 ```
 Write: Cache-aside. On URL creation, write to DB and set cache (TTL: 24h).
 Read: Check Redis cache first. On miss, fetch from DB and populate cache.
@@ -248,6 +391,17 @@ Eviction: LRU for old URLs. Most popular URLs stay cached.
 ```
 
 ### Trade-offs
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-handwritten.svg" alt="Handwritten: Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-diagram.svg" alt="Diagram: Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-sticky.svg" alt="Sticky Note: Trade-offs" width="30%">
+</a>
+
 | Decision | Pros | Cons |
 |----------|------|------|
 | SQL vs NoSQL | ACID, joins for analytics | Scaling reads requires read replicas |
@@ -260,11 +414,33 @@ Eviction: LRU for old URLs. Most popular URLs stay cached.
 ## Section 2: Case Study — Chat System (WhatsApp)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** 1:1 messaging, group chat, online status, message delivery status, media sharing.
 
 **Non-functional:** 1B users, &lt;100ms delivery, high availability, end-to-end encryption.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -279,6 +455,17 @@ flowchart LR
 ```
 
 ### Database Schema (Cassandra)
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-handwritten.svg" alt="Handwritten: Database Schema (Cassandra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-diagram.svg" alt="Diagram: Database Schema (Cassandra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-schema-cassandra-sticky.svg" alt="Sticky Note: Database Schema (Cassandra)" width="30%">
+</a>
+
 ```sql
 -- For message ordering by time
 CREATE TABLE messages_by_chat (
@@ -303,6 +490,17 @@ CREATE TABLE user_inbox (
 ```
 
 ### WebSocket vs Polling
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-handwritten.svg" alt="Handwritten: WebSocket vs Polling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-diagram.svg" alt="Diagram: WebSocket vs Polling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/websocket-vs-polling-sticky.svg" alt="Sticky Note: WebSocket vs Polling" width="30%">
+</a>
+
 ```typescript
 // WebSocket implementation
 class ChatWebSocket {
@@ -338,6 +536,17 @@ class ChatWebSocket {
 ```
 
 ### Deep Dive: Message Delivery Guarantees
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-handwritten.svg" alt="Handwritten: Deep Dive: Message Delivery Guarantees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-diagram.svg" alt="Diagram: Deep Dive: Message Delivery Guarantees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-message-delivery-guarantees-sticky.svg" alt="Sticky Note: Deep Dive: Message Delivery Guarantees" width="30%">
+</a>
+
 ```
 1. User A sends message
 2. WebSocket server receives → queue → message service
@@ -349,6 +558,17 @@ class ChatWebSocket {
 ```
 
 ### Trade-offs
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-handwritten.svg" alt="Handwritten: Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-diagram.svg" alt="Diagram: Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/trade-offs-sticky.svg" alt="Sticky Note: Trade-offs" width="30%">
+</a>
+
 | Decision | Rationale |
 |----------|-----------|
 | Cassandra for messages | Write-optimized, time-series data, horizontal scaling |
@@ -360,11 +580,33 @@ class ChatWebSocket {
 ## Section 3: Case Study — Ride-Sharing (Uber/Ola)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Real-time driver tracking, ride booking, fare calculation, driver-rider matching, trip history.
 
 **Non-functional:** 10s of millions daily rides, &lt;5s matching, millisecond location updates.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -384,6 +626,17 @@ flowchart LR
 ```
 
 ### Geographic Indexing (QuadTree)
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-handwritten.svg" alt="Handwritten: Geographic Indexing (QuadTree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-diagram.svg" alt="Diagram: Geographic Indexing (QuadTree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/geographic-indexing-quadtree-sticky.svg" alt="Sticky Note: Geographic Indexing (QuadTree)" width="30%">
+</a>
+
 ```typescript
 // Simple grid-based approach for finding nearby drivers
 class GeoHashService {
@@ -423,6 +676,17 @@ class GeoHashService {
 ```
 
 ### Matching Algorithm
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-handwritten.svg" alt="Handwritten: Matching Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-diagram.svg" alt="Diagram: Matching Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/matching-algorithm-sticky.svg" alt="Sticky Note: Matching Algorithm" width="30%">
+</a>
+
 ```typescript
 interface RideRequest {
   riderId: string;
@@ -458,6 +722,17 @@ function findBestDriver(request: RideRequest, availableDrivers: Driver[]): Drive
 ```
 
 ### Deep Dive: Surge Pricing
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-handwritten.svg" alt="Handwritten: Deep Dive: Surge Pricing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-diagram.svg" alt="Diagram: Deep Dive: Surge Pricing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/deep-dive-surge-pricing-sticky.svg" alt="Sticky Note: Deep Dive: Surge Pricing" width="30%">
+</a>
+
 ```
 1. Monitor supply/demand ratio in each geo-region
 2. If demand > supply for >5 min → activate surge (multiplier: 1.2x to 3x)
@@ -470,11 +745,33 @@ function findBestDriver(request: RideRequest, availableDrivers: Driver[]): Drive
 ## Section 4: Case Study — Social Media Feed (Facebook/Instagram)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** View timeline feed, post content, like/comment/share, follow/unfollow, infinite scroll.
 
 **Non-functional:** 2B users, &lt;500ms feed load, high availability, eventual consistency for feed.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -490,6 +787,17 @@ flowchart TD
 ```
 
 ### Feed Generation Approaches
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-handwritten.svg" alt="Handwritten: Feed Generation Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-diagram.svg" alt="Diagram: Feed Generation Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/feed-generation-approaches-sticky.svg" alt="Sticky Note: Feed Generation Approaches" width="30%">
+</a>
+
 
 | Approach | Fanout on Write | Fanout on Read |
 |----------|----------------|----------------|
@@ -563,11 +871,33 @@ class FeedService {
 ## Section 5: Case Study — Payment System (Razorpay/PayPal)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Process payments (cards, UPI, netbanking), payment status tracking, refunds, reconciliation.
 
 **Non-functional:** 99.99% uptime, exactly-once processing, &lt;5s transaction, PCI compliance.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -584,6 +914,17 @@ flowchart LR
 ```
 
 ### Two-Phase Commit (Simplified)
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-handwritten.svg" alt="Handwritten: Two-Phase Commit (Simplified)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-diagram.svg" alt="Diagram: Two-Phase Commit (Simplified)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/two-phase-commit-simplified-sticky.svg" alt="Sticky Note: Two-Phase Commit (Simplified)" width="30%">
+</a>
+
 ```typescript
 enum PaymentState {
   INITIATED = 'INITIATED',
@@ -628,6 +969,17 @@ async function processPayment(payment: Payment): Promise<PaymentResult> {
 ```
 
 ### Idempotency Key
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-handwritten.svg" alt="Handwritten: Idempotency Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-diagram.svg" alt="Diagram: Idempotency Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/idempotency-key-sticky.svg" alt="Sticky Note: Idempotency Key" width="30%">
+</a>
+
 ```typescript
 // Ensure exactly-once processing
 async function handlePaymentRequest(
@@ -654,11 +1006,33 @@ async function handlePaymentRequest(
 ## Section 6: Case Study — Video Streaming (YouTube/Netflix)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Upload videos, stream video, search, recommendations, comments/likes.
 
 **Non-functional:** 2B users, &lt;5s startup time, adaptive bitrate streaming, global CDN.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -677,6 +1051,17 @@ flowchart TD
 ```
 
 ### Adaptive Bitrate Streaming (ABR)
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-handwritten.svg" alt="Handwritten: Adaptive Bitrate Streaming (ABR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-diagram.svg" alt="Diagram: Adaptive Bitrate Streaming (ABR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/adaptive-bitrate-streaming-abr-sticky.svg" alt="Sticky Note: Adaptive Bitrate Streaming (ABR)" width="30%">
+</a>
+
 ```typescript
 interface VideoManifest {
   segments: Segment[];
@@ -722,11 +1107,33 @@ class AdaptiveBitrateSelector {
 ## Section 7: Case Study — E-Commerce Platform (Amazon/Flipkart)
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Product catalog, cart, checkout, payment, order tracking, inventory management.
 
 **Non-functional:** 1M products, 100K concurrent users, &lt;500ms search, high availability during sales.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -750,6 +1157,17 @@ flowchart TD
 ```
 
 ### Inventory Reservation Pattern
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-handwritten.svg" alt="Handwritten: Inventory Reservation Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-diagram.svg" alt="Diagram: Inventory Reservation Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/inventory-reservation-pattern-sticky.svg" alt="Sticky Note: Inventory Reservation Pattern" width="30%">
+</a>
+
 ```typescript
 async function addToCart(userId: string, productId: string, quantity: number): Promise<boolean> {
   const key = `inventory:${productId}`;
@@ -797,11 +1215,33 @@ async function placeOrder(userId: string): Promise<Order> {
 ## Section 8: Case Study — Notification System
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Push notifications, email, SMS, in-app notifications, preference management.
 
 **Non-functional:** 1M notifications/min, &lt;100ms delivery, 99.9% deliverability.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -826,6 +1266,17 @@ flowchart LR
 ```
 
 ### Rate Limiting & Deduplication
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-handwritten.svg" alt="Handwritten: Rate Limiting & Deduplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-diagram.svg" alt="Diagram: Rate Limiting & Deduplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/rate-limiting-deduplication-sticky.svg" alt="Sticky Note: Rate Limiting & Deduplication" width="30%">
+</a>
+
 ```typescript
 class NotificationService {
   private readonly RATE_LIMITS = {
@@ -884,6 +1335,17 @@ class NotificationService {
 
 ### Algorithms
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-handwritten.svg" alt="Handwritten: Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-diagram.svg" alt="Diagram: Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/algorithms-sticky.svg" alt="Sticky Note: Algorithms" width="30%">
+</a>
+
+
 | Algorithm | How it Works | Pros | Cons |
 |-----------|-------------|------|------|
 | Token Bucket | Tokens added at fixed rate, consumed per request | Smooth burst handling | Complex parameter tuning |
@@ -893,6 +1355,17 @@ class NotificationService {
 | Sliding Window Counter | Combines fixed window + counter | Good accuracy + efficiency | Approximation |
 
 ### Token Bucket Implementation
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-handwritten.svg" alt="Handwritten: Token Bucket Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-diagram.svg" alt="Diagram: Token Bucket Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/token-bucket-implementation-sticky.svg" alt="Sticky Note: Token Bucket Implementation" width="30%">
+</a>
+
 ```typescript
 class TokenBucket {
   private tokens: Map<string, { count: number; lastRefill: number }> = new Map();
@@ -945,11 +1418,33 @@ if (rateLimiter.allow(`user:${userId}`)) {
 ## Section 10: Case Study — Distributed Web Crawler
 
 ### Requirements
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+</a>
+
 **Functional:** Crawl websites, extract content, detect duplicates, respect robots.txt, schedule recrawls.
 
 **Non-functional:** 10B pages, distributed, polite (respect crawl delay), fault-tolerant.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -967,6 +1462,17 @@ flowchart TD
 ```
 
 ### Polite Crawler Implementation
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-handwritten.svg" alt="Handwritten: Polite Crawler Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-diagram.svg" alt="Diagram: Polite Crawler Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/polite-crawler-implementation-sticky.svg" alt="Sticky Note: Polite Crawler Implementation" width="30%">
+</a>
+
 ```typescript
 interface CrawlJob {
   url: string;
@@ -1038,6 +1544,17 @@ class PoliteCrawler {
 
 ### System Design Concepts Summary
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-handwritten.svg" alt="Handwritten: System Design Concepts Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-diagram.svg" alt="Diagram: System Design Concepts Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/system-design-concepts-summary-sticky.svg" alt="Sticky Note: System Design Concepts Summary" width="30%">
+</a>
+
+
 | Concept | Key Points |
 |---------|-----------|
 | Load Balancing | Round Robin, Least Connections, IP Hash, Weighted |
@@ -1053,6 +1570,17 @@ class PoliteCrawler {
 
 ### Database Choice Guide
 
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-handwritten.svg" alt="Handwritten: Database Choice Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-diagram.svg" alt="Diagram: Database Choice Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/database-choice-guide-sticky.svg" alt="Sticky Note: Database Choice Guide" width="30%">
+</a>
+
+
 | Requirement | Recommended DB | Example |
 |-------------|---------------|---------|
 | Transactions, complex queries | PostgreSQL | Payments, banking |
@@ -1064,6 +1592,17 @@ class PoliteCrawler {
 | Graph relationships | Neo4j | Social graph, recommendations |
 
 ### Non-Functional Requirement Targets
+
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-handwritten.svg" alt="Handwritten: Non-Functional Requirement Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-diagram.svg" alt="Diagram: Non-Functional Requirement Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/03-system-design-interview/non-functional-requirement-targets-sticky.svg" alt="Sticky Note: Non-Functional Requirement Targets" width="30%">
+</a>
+
 
 | Requirement | Target | Measurement |
 |-------------|--------|-------------|

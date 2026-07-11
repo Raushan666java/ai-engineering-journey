@@ -50,6 +50,17 @@ flowchart LR
 
 ### 1.1 Analog vs Digital Systems
 
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" alt="Handwritten: 1.1 Analog vs Digital Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" alt="Diagram: 1.1 Analog vs Digital Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" alt="Sticky Note: 1.1 Analog vs Digital Systems" width="30%">
+</a>
+
+
 An **analog** signal is continuous in both time and amplitude. It can take any value within a range. A **digital** signal is discrete ? it takes only a finite set of values, typically two (0 and 1) in binary logic.
 
 | Property | Analog | Digital |
@@ -76,6 +87,17 @@ graph LR
 ```
 
 ### 1.2 Positional Number Systems
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" alt="Handwritten: 1.2 Positional Number Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" alt="Diagram: 1.2 Positional Number Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" alt="Sticky Note: 1.2 Positional Number Systems" width="30%">
+</a>
+
 
 A positional number system represents quantities using an ordered set of digits, wherein each digit position carries a weight equal to a power of the base *r*. The general form of a number in base *r* is:
 
@@ -104,6 +126,17 @@ The octal system employs eight digits {0, 1, 2, 3, 4, 5, 6, 7}. It serves as a c
 The hexadecimal system employs sixteen digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}, where A through F represent decimal values 10 through 15 respectively. Each hexadecimal digit maps to four binary bits.
 
 ### 1.3 Base Conversion
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" alt="Handwritten: 1.3 Base Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" alt="Diagram: 1.3 Base Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" alt="Sticky Note: 1.3 Base Conversion" width="30%">
+</a>
+
 
 #### 1.3.1 Conversion to Decimal
 
@@ -160,6 +193,17 @@ flowchart LR
 ```
 
 ### 1.4 Signed Number Representations
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" alt="Handwritten: 1.4 Signed Number Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" alt="Diagram: 1.4 Signed Number Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" alt="Sticky Note: 1.4 Signed Number Representations" width="30%">
+</a>
+
 
 Digital systems require methods for representing negative integers. Four principal representations exist.
 
@@ -220,6 +264,17 @@ Example: Extend 1011 (-5 in 4 bits) to 8 bits: 11111011. The value remains -5.
 
 ### 1.5 Overflow Detection
 
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" alt="Handwritten: 1.5 Overflow Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" alt="Diagram: 1.5 Overflow Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" alt="Sticky Note: 1.5 Overflow Detection" width="30%">
+</a>
+
+
 Overflow occurs when the result of an arithmetic operation exceeds the representable range of the number system. In two's complement addition, overflow is detected by comparing the carry into the sign bit with the carry out of the sign bit. Overflow = C_in ? C_out.
 
 **Cases**:
@@ -239,6 +294,17 @@ function detectOverflow(a: number, b: number, result: number, bits: number): boo
 ```
 
 ### 1.6 Binary-Coded Decimal (BCD)
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" alt="Handwritten: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" alt="Diagram: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" alt="Sticky Note: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+</a>
+
 
 BCD encodes each decimal digit as a 4-bit binary sequence. The weighted codes use bits with weights 8, 4, 2, 1 (natural BCD). Only the ten codes 0000 through 1001 are valid; codes 1010 through 1111 are invalid.
 
@@ -270,6 +336,17 @@ function bcdAdd(a: number, b: number): { sum: number; carry: number } {
 ```
 
 ### 1.7 Gray Code
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" alt="Handwritten: 1.7 Gray Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" alt="Diagram: 1.7 Gray Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" alt="Sticky Note: 1.7 Gray Code" width="30%">
+</a>
+
 
 Gray code (reflected binary code) is a binary sequence wherein successive values differ in exactly one bit position. This property is valuable for reducing switching errors in mechanical encoders and for state machines where single-bit transitions prevent glitches.
 
@@ -309,6 +386,17 @@ function grayToBinary(gray: string): string {
 ```
 
 ### 1.8 Error Detection and Correction Codes
+
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" alt="Handwritten: 1.8 Error Detection and Correction Codes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" alt="Diagram: 1.8 Error Detection and Correction Codes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" alt="Sticky Note: 1.8 Error Detection and Correction Codes" width="30%">
+</a>
+
 
 #### 1.8.1 Parity Bit
 

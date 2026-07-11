@@ -48,6 +48,17 @@ flowchart LR
 
 ### 13.1 Query Processing Overview
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-handwritten.svg" alt="Handwritten: 13.1 Query Processing Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-diagram.svg" alt="Diagram: 13.1 Query Processing Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-1-query-processing-overview-sticky.svg" alt="Sticky Note: 13.1 Query Processing Overview" width="30%">
+</a>
+
+
 When a user submits a SQL query, the DBMS transforms it through several stages:
 
 ```
@@ -187,6 +198,17 @@ The optimization stage has exponential worst-case complexity in the number of jo
 
 ### 13.2 Parsing and Preprocessing
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-handwritten.svg" alt="Handwritten: 13.2 Parsing and Preprocessing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-diagram.svg" alt="Diagram: 13.2 Parsing and Preprocessing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-2-parsing-and-preprocessing-sticky.svg" alt="Sticky Note: 13.2 Parsing and Preprocessing" width="30%">
+</a>
+
+
 **Parsing:** The SQL text is tokenized into keywords, identifiers, operators, and literals. The parser builds a **parse tree** (or abstract syntax tree) representing the query structure.
 
 ```sql
@@ -290,6 +312,17 @@ END PROCEDURE
 ---
 
 ### 13.3 Query Cost Estimation
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-handwritten.svg" alt="Handwritten: 13.3 Query Cost Estimation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-diagram.svg" alt="Diagram: 13.3 Query Cost Estimation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-3-query-cost-estimation-sticky.svg" alt="Sticky Note: 13.3 Query Cost Estimation" width="30%">
+</a>
+
 
 The optimizer needs a way to compare alternative execution plans quantitatively. Cost estimation provides this measure.
 
@@ -409,6 +442,17 @@ The optimizer would still pick the index (17.5 vs estimated 600), but the actual
 ---
 
 ### 13.4 Selection Operations
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-handwritten.svg" alt="Handwritten: 13.4 Selection Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-diagram.svg" alt="Diagram: 13.4 Selection Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-4-selection-operations-sticky.svg" alt="Sticky Note: 13.4 Selection Operations" width="30%">
+</a>
+
 
 Selection operations retrieve rows from a table based on a predicate. The DBMS has several access methods, each with different cost characteristics.
 
@@ -575,6 +619,17 @@ Cost = index_height * random_page_cost
 ---
 
 ### 13.5 Sorting (External Merge Sort)
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-handwritten.svg" alt="Handwritten: 13.5 Sorting (External Merge Sort)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-diagram.svg" alt="Diagram: 13.5 Sorting (External Merge Sort)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-5-sorting-external-merge-sort-sticky.svg" alt="Sticky Note: 13.5 Sorting (External Merge Sort)" width="30%">
+</a>
+
 
 When data does not fit in memory, the DBMS cannot use in-memory sort algorithms (QuickSort, TimSort). Instead, it uses **external merge sort** -- a divide-and-conquer strategy that splits data into runs, sorts each run in memory, then merges them.
 
@@ -1030,6 +1085,17 @@ if __name__ == "__main__":
 ---
 
 ### 13.6 Join Operations
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-handwritten.svg" alt="Handwritten: 13.6 Join Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-diagram.svg" alt="Diagram: 13.6 Join Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-6-join-operations-sticky.svg" alt="Sticky Note: 13.6 Join Operations" width="30%">
+</a>
+
 
 Join operations combine rows from two tables based on a related column. They are the most performance-critical operations in query processing.
 
@@ -1601,6 +1667,17 @@ if __name__ == "__main__":
 
 ### 13.7 Query Optimization
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-handwritten.svg" alt="Handwritten: 13.7 Query Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-diagram.svg" alt="Diagram: 13.7 Query Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-7-query-optimization-sticky.svg" alt="Sticky Note: 13.7 Query Optimization" width="30%">
+</a>
+
+
 Query optimization transforms the parse tree into an efficient execution plan. It is the most complex and important part of query processing.
 
 #### Real-World Analogy: GPS Route Planning
@@ -1815,6 +1892,17 @@ Index Scan (employees.dept_id)
 
 ### 13.8 Materialization vs Pipelining
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-handwritten.svg" alt="Handwritten: 13.8 Materialization vs Pipelining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-diagram.svg" alt="Diagram: 13.8 Materialization vs Pipelining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-8-materialization-vs-pipelining-sticky.svg" alt="Sticky Note: 13.8 Materialization vs Pipelining" width="30%">
+</a>
+
+
 These two strategies determine how results flow between operators in the execution plan.
 
 #### Real-World Analogy: Restaurant Kitchen
@@ -1917,6 +2005,17 @@ The build side MUST be materialized because the hash table requires all tuples t
 
 ### 13.9 Reading Execution Plans
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-handwritten.svg" alt="Handwritten: 13.9 Reading Execution Plans" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-diagram.svg" alt="Diagram: 13.9 Reading Execution Plans" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-9-reading-execution-plans-sticky.svg" alt="Sticky Note: 13.9 Reading Execution Plans" width="30%">
+</a>
+
+
 ```sql
 -- PostgreSQL: View query plan without executing
 EXPLAIN SELECT * FROM employees WHERE salary > 100000;
@@ -1967,6 +2066,17 @@ WHERE e.salary > 100000;
 
 ### 13.10 Query Plan Selection Example
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-handwritten.svg" alt="Handwritten: 13.10 Query Plan Selection Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-diagram.svg" alt="Diagram: 13.10 Query Plan Selection Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-10-query-plan-selection-example-sticky.svg" alt="Sticky Note: 13.10 Query Plan Selection Example" width="30%">
+</a>
+
+
 ```sql
 SELECT o.order_id, c.name
 FROM orders o
@@ -2009,6 +2119,17 @@ The optimizer estimates which plan has the lowest total cost.
 
 ### 13.11 Optimization Hints
 
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-handwritten.svg" alt="Handwritten: 13.11 Optimization Hints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-diagram.svg" alt="Diagram: 13.11 Optimization Hints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-11-optimization-hints-sticky.svg" alt="Sticky Note: 13.11 Optimization Hints" width="30%">
+</a>
+
+
 Most DBMS allow hints to override the optimizer:
 
 ```sql
@@ -2034,6 +2155,17 @@ SELECT STRAIGHT_JOIN e.* FROM employees e JOIN departments d ON e.dept_id = d.de
 ---
 
 ### 13.12 Interview Corner
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-handwritten.svg" alt="Handwritten: 13.12 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-diagram.svg" alt="Diagram: 13.12 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-12-interview-corner-sticky.svg" alt="Sticky Note: 13.12 Interview Corner" width="30%">
+</a>
+
 
 #### Q1: Hash Join vs Sort-Merge Join -- When to Use Which?
 
@@ -2133,6 +2265,17 @@ WHERE relname = 'employees';
 ---
 
 ### 13.13 Applications in Real Systems
+
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-handwritten.svg" alt="Handwritten: 13.13 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-diagram.svg" alt="Diagram: 13.13 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/13-query-processing/13-13-applications-in-real-systems-sticky.svg" alt="Sticky Note: 13.13 Applications in Real Systems" width="30%">
+</a>
+
 
 #### PostgreSQL Query Planner
 

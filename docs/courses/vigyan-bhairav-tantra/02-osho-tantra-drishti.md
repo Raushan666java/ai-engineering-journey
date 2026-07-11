@@ -26,6 +26,17 @@
 
 ### तंत्र शब्द का अर्थ
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र शब्द का अर्थ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र शब्द का अर्थ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र शब्द का अर्थ" width="30%">
+</a>
+
+
 तंत्र शब्द संस्कृत धातु **"तन"** से बना है — जिसका अर्थ है फैलाना, विस्तार करना, बुनना। तंत्र का अर्थ है — वह विज्ञान जो सीमित को असीम में बदल दे।
 
 **ओशो वाणी:**
@@ -40,6 +51,17 @@
 | तंत्र = यौन क्रियाएँ | तंत्र = सम्पूर्ण जीवन को स्वीकार |
 
 ### ओशो तंत्र को कैसे देखते हैं?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+</a>
+
 
 ओशो के लिए तंत्र केवल ११२ तकनीकों का संग्रह नहीं है — यह जीवन को देखने का एक नया ढंग है। यह एक मनोवैज्ञानिक और आध्यात्मिक क्रांति है।
 
@@ -97,15 +119,48 @@ flowchart TB
 
 ### योग की मानसिकता — ओशो के शब्दों में
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "योग कहता है — तुम नीचे हो, ऊपर जाओ। योग कहता है — तुम पतित हो, उठो। योग कहता है — यह शरीर गंदा है, इसे त्यागो। योग एक संघर्ष है — तुम्हारे वर्तमान और तुम्हारे आदर्श के बीच। और संघर्ष में तनाव है। योगी तनावग्रस्त है — क्योंकि वह लड़ रहा है।"
 
 ### तंत्र की मानसिकता — ओशो के शब्दों में
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "तंत्र कहता है — तुम वही हो जो तुम्हें होना चाहिए। कहीं जाना नहीं है — बस जागना है। तुम पहले से ही वहाँ हो जहाँ परमात्मा है — बस तुम सो रहे हो। तंत्र कोई आदर्श नहीं देता — कोई लक्ष्य नहीं देता। तंत्र देता है — एक विधि, एक तकनीक, एक प्रयोग — ताकि तुम अपनी आँखें खोल सको।"
 
 ### तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+</a>
+
 
 | आयाम | योग (पतंजलि परंपरा) | तंत्र (ओशो की व्याख्या) |
 |------|--------------------|------------------------|
@@ -125,6 +180,17 @@ flowchart TB
 
 ### पहला स्तंभ: कोई दमन नहीं (No Repression)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" alt="Handwritten: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" alt="Diagram: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" alt="Sticky Note: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "दमन बीमारी है। दमन पागलपन है। दमन विक्षिप्तता है। जो कुछ भी तुम दबाते हो, वह और गहरा होता है — अंदर, अचेतन में। वह वहाँ से तुम्हें नियंत्रित करता है, और तुम जानते भी नहीं। तंत्र कहता है — दबाओ मत। व्यक्त करो? नहीं, व्यक्त करने की भी ज़रूरत नहीं। बस देखो। देखना ही काफ़ी है। देखने से ऊर्जा बदल जाती है।"
 
@@ -137,6 +203,17 @@ flowchart TB
 | ईर्ष्या | जलन, द्वेष | ईर्ष्या को देखो — वह स्वतंत्रता बन जाएगी |
 
 ### दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" alt="Handwritten: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" alt="Diagram: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" alt="Sticky Note: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "तंत्र का पहला और आखिरी शब्द है — स्वीकार। जो कुछ भी है, उसे स्वीकार करो। तुम जैसे हो, वैसे ही स्वीकार करो। अपने शरीर को स्वीकार करो — उसे बदलने की कोशिश मत करो। अपने मन को स्वीकार करो — उसे साफ करने की जल्दी मत करो। अपनी भावनाओं को स्वीकार करो — उन्हें दबाने की कोशिश मत करो। स्वीकार एक चमत्कार है। जब तुम पूरी तरह स्वीकार करते हो — तब परिवर्तन स्वतः घटित होता है।"
@@ -166,6 +243,17 @@ flowchart LR
 
 ### तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" alt="Handwritten: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" alt="Diagram: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" alt="Sticky Note: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "जागरूकता एक कीमिया है। जैसे लोहे को सोना बनाने का विज्ञान होता है — ठीक वैसे ही जागरूकता साधारण ऊर्जा को असाधारण में बदल देती है। क्रोध को जागरूकता की आँख से देखो — वह करुणा बन जाता है। काम को जागरूकता से देखो — वह प्रेम बन जाता है। भय को जागरूकता से देखो — वह साहस बन जाता है। जागरूकता ही परिवर्तन है।"
 
@@ -187,6 +275,17 @@ flowchart LR
 
 ### आणव उपाय — Osho's Interpretation
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: आणव उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: आणव उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: आणव उपाय — Osho's Interpretation" width="30%">
+</a>
+
+
 **पारंपरिक अर्थ:** क्रिया-प्रधान साधना — मंत्र, जप, अनुष्ठान, श्वास नियंत्रण।
 
 **ओशो की व्याख्या:**
@@ -196,6 +295,17 @@ flowchart LR
 
 ### शाक्त उपाय — Osho's Interpretation
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शाक्त उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शाक्त उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शाक्त उपाय — Osho's Interpretation" width="30%">
+</a>
+
+
 **पारंपरिक अर्थ:** ऊर्जा-केंद्रित साधना — कुंडलिनी, चक्र, प्राण।
 
 **ओशो की व्याख्या:**
@@ -204,6 +314,17 @@ flowchart LR
 **ओशो के अनुसार उदाहरण:** विधि ४ — श्वास रुकने पर उस ठहराव को देखना। यहाँ क्रिया नहीं है — केवल जागरूकता है।
 
 ### शांभव उपाय — Osho's Interpretation
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शांभव उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शांभव उपाय — Osho's Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शांभव उपाय — Osho's Interpretation" width="30%">
+</a>
+
 
 **पारंपरिक अर्थ:** चैतन्य-केंद्रित साधना — शिव-स्वरूप में स्थिति, उन्मनी।
 
@@ -254,20 +375,64 @@ flowchart TB
 
 ### 1. तंत्र प्रयोगशाला है, चर्च नहीं
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" alt="Handwritten: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" alt="Diagram: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" alt="Sticky Note: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "तंत्र में कोई आस्था नहीं है — केवल प्रयोग है। कोई पवित्र पुस्तक नहीं — केवल तकनीकें हैं। कोई पुजारी नहीं — केवल वैज्ञानिक हैं। मैं तुमसे कह रहा हूँ — आस्था मत लाओ। संदेह लाओ। प्रश्न लाओ। जिज्ञासा लाओ। और तब प्रयोग करके देखो। देखो क्या होता है।"
 
 ### 2. तंत्र इस जीवन को स्वीकार करता है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" alt="Handwritten: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" alt="Diagram: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" alt="Sticky Note: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "तंत्र कहता है — इस जीवन में ही परमात्मा है। इस शरीर में ही परमात्मा है। इस साँस में ही परमात्मा है। कहीं और मत जाओ — यहीं खोजो। जहाँ खड़े हो, वहीं खोजो। जो कर रहे हो, उसमें ही खोजो। परमात्मा को पाने के लिए संसार छोड़ने की ज़रूरत नहीं — बस संसार में जागने की ज़रूरत है।"
 
 ### 3. तंत्र कोई नैतिकता नहीं सिखाता
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" alt="Handwritten: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" alt="Diagram: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" alt="Sticky Note: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "तंत्र को इससे कोई मतलब नहीं कि क्या अच्छा है और क्या बुरा। तंत्र को केवल एक चीज़ से मतलब है — क्या तुम जागरूक हो? अगर जागरूक हो, तो अच्छा-बुरा अपने आप गिर जाता है। जागरूकता ही एकमात्र नैतिकता है। बाकी सब पाखंड है।"
 
 ### 4. तंत्र समग्रता सिखाता है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" alt="Handwritten: 4. तंत्र समग्रता सिखाता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" alt="Diagram: 4. तंत्र समग्रता सिखाता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" alt="Sticky Note: 4. तंत्र समग्रता सिखाता है" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "तंत्र कहता है — अलग मत करो। शरीर को मन से अलग मत करो। मन को आत्मा से अलग मत करो। संसार को परमात्मा से अलग मत करो। सब एक है। सब एक ही ऊर्जा का नृत्य है। जब तुम इस एकता को देखते हो — तब तंत्र सफल हुआ।"
@@ -646,6 +811,17 @@ runTantraYogaComparison();
 ## प्रश्नोत्तरी (Quiz)
 
 ### प्रश्न १
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+</a>
+
 ओशो के अनुसार योग और तंत्र में मुख्य अंतर क्या है?
 
 a) योग में श्वास पर ध्यान, तंत्र में मंत्र
@@ -659,6 +835,17 @@ b) ओशो कहते हैं — "योग संघर्ष है, �
 </details>
 
 ### प्रश्न २
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+</a>
+
 तंत्र शब्द का मूल अर्थ क्या है?
 
 a) अंधकार
@@ -672,6 +859,17 @@ b) तंत्र का अर्थ है विस्तार करना
 </details>
 
 ### प्रश्न ३
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+</a>
+
 ओशो के अनुसार तंत्र का पहला स्तंभ क्या है?
 
 a) कठोर तपस्या
@@ -685,6 +883,17 @@ b) कोई दमन नहीं — जो कुछ भी है, उस�
 </details>
 
 ### प्रश्न ४
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+</a>
+
 पारंपरिक तीन उपायों में सबसे ऊँचा कौन सा है?
 
 a) आणव उपाय
@@ -698,6 +907,17 @@ c) शांभव उपाय — जहाँ केवल चैतन्य
 </details>
 
 ### प्रश्न ५
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+</a>
+
 ओशो शरीर को क्या मानते हैं?
 
 a) एक जेल
@@ -711,6 +931,17 @@ b) एक मंदिर — तंत्र शरीर को परमा�
 </details>
 
 ### प्रश्न ६
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+</a>
+
 ओशो के अनुसार काम-वासना को कैसे देखना चाहिए?
 
 a) पाप — उसे दबाओ
@@ -724,6 +955,17 @@ c) प्राकृतिक ऊर्जा — उसे समझो और
 </details>
 
 ### प्रश्न ७
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+</a>
+
 तंत्र के अनुसार जागरूकता क्या करती है?
 
 a) ऊर्जा को नष्ट करती है
@@ -737,6 +979,17 @@ c) ऊर्जा को रूपांतरित करती है — �
 </details>
 
 ### प्रश्न ८
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+</a>
+
 "योग चढ़ाई है — तंत्र उतराई है" — यह किसका कथन है?
 
 a) पतंजलि
@@ -754,6 +1007,17 @@ c) ओशो — वे योग को चढ़ाई और तंत्र 
 ## अभ्यास (Exercises)
 
 ### अभ्यास १: तुलनात्मक विश्लेषण
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+</a>
+
 
 **निर्देश:** `TantraYogaComparator` क्लास का उपयोग करके:
 
@@ -779,6 +1043,17 @@ highPolarity.forEach(d => {
 
 ### अभ्यास २: मार्ग सुझाव
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास २: मार्ग सुझाव" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास २: मार्ग सुझाव" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास २: मार्ग सुझाव" width="30%">
+</a>
+
+
 **निर्देश:** `OshoTantraPhilosophy` का उपयोग करके अपने लिए मार्ग सुझाव लें:
 
 1. अपने गुणों के अनुसार `suggestPath` को कॉल करें।
@@ -801,6 +1076,17 @@ console.log(`कारण: ${mySuggestion.reason}`);
 ```
 
 ### अभ्यास ३: तीन उपाय — अपनी यात्रा
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+</a>
+
 
 **निर्देश:** ओशो के तीन उपायों (आणव, शाक्त, शांभव) पर चिंतन करें:
 
@@ -825,6 +1111,17 @@ reflectOnUpayas('आणव');
 ```
 
 ### अभ्यास ४: अपनी तंत्र डायरी
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+</a>
+
 
 **निर्देश:** एक सप्ताह तक ओशो के तंत्र दर्शन को अपने जीवन में प्रयोग करें:
 

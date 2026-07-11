@@ -32,6 +32,17 @@ By the end of this chapter, you will be able to:
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Meta-Learning | Learning how to learn is the ultimate multiplier for every future skill | Study learning itself � every hour invested in meta-learning pays 10x across all courses |
@@ -63,6 +74,17 @@ flowchart LR
 ## Q&A
 
 ### Q121: What is meta-learning and why does it matter?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is meta-learning and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-diagram.svg" alt="Diagram: What is meta-learning and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-meta-learning-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is meta-learning and why does it matter?" width="30%">
+</a>
+
 
 **Answer:** Meta-learning is learning about learning. You're already doing it by reading this chapter � instead of just cramming facts, you're studying how to structure the learning process itself.
 
@@ -116,6 +138,17 @@ The most effective learners in this repo aren't necessarily the ones with the hi
 
 ### Q122: What are Josh Waitzkin's 3 stages of learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" alt="Handwritten: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" alt="Diagram: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" alt="Sticky Note: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+</a>
+
+
 **Answer:** Josh Waitzkin (chess prodigy, martial arts champion) describes three stages: Investment, Integration, Innovation.
 
 **Stage 1 � Investment (choosing a domain):** You commit to a field and build the fundamentals. In this repo, this is choosing your track (placement preparation, GATE, or both) and investing the initial time to learn Java, Python, or another language. The 27 courses represent investment domains � pick one and go deep.
@@ -146,6 +179,17 @@ Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Ja
 
 ### Q123: What is the 80/20 rule for CS interview preparation?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" alt="Handwritten: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" alt="Diagram: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" alt="Sticky Note: What is the 80/20 rule for CS interview preparation?" width="30%">
+</a>
+
+
 **Answer:** 20% of topics give 80% of interview results. From the company-specific chapter (`04-company-specific.md`), the high-leverage topics are:
 
 | Company | 20% Topics | 80% of Questions |
@@ -168,6 +212,17 @@ Identify your personal 20%: which 5 of the 27 courses matter most for your targe
 ---
 
 ### Q124: How do I build a personal skill tree?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-handwritten.svg" alt="Handwritten: How do I build a personal skill tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-diagram.svg" alt="Diagram: How do I build a personal skill tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-personal-skill-tree-sticky.svg" alt="Sticky Note: How do I build a personal skill tree?" width="30%">
+</a>
+
 
 **Answer:** A skill tree visualizes dependencies between topics. Learning becomes a sequence, not a firehose.
 
@@ -208,6 +263,17 @@ Each node represents a measurable skill. Complete a node when you can solve rela
 
 ### Q125: Where do I fall on the Dunning-Kruger curve for each skill?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" alt="Handwritten: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" alt="Diagram: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" alt="Sticky Note: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+</a>
+
+
 **Answer:** The Dunning-Kruger effect means beginners overestimate their ability, and experts underestimate it. Self-assess honestly across the 27 courses.
 
 **Phase 1 � "Mount Stupid" (Week 1):** After reading the DSA bank table of contents, you think you know algorithms. Reality: you haven't solved a single problem.
@@ -244,6 +310,17 @@ Update this table every month. The Dunning-Kruger curve is a map, not a judgment
 ---
 
 ### Q126: How do I handle imposter syndrome when learning new tech?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" alt="Handwritten: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" alt="Diagram: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" alt="Sticky Note: How do I handle imposter syndrome when learning new tech?" width="30%">
+</a>
+
 
 **Answer:** Your existing experience doesn't disappear when you learn something new. Your 2 years of Java experience is real skill � learning Python doesn't erase it.
 
@@ -282,6 +359,17 @@ You're not starting from zero. You're starting from a different platform with tr
 
 ### Q127: How does knowledge compound across courses?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-handwritten.svg" alt="Handwritten: How does knowledge compound across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-diagram.svg" alt="Diagram: How does knowledge compound across courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-knowledge-compound-across-courses-sticky.svg" alt="Sticky Note: How does knowledge compound across courses?" width="30%">
+</a>
+
+
 **Answer:** Each course you complete makes the next one 20% faster because of concept reuse. The 27 courses form a directed acyclic graph of dependencies.
 
 **Empirical estimate from this repo:**
@@ -305,6 +393,17 @@ The total time to study all 27 courses is not the sum of individual times � it
 ---
 
 ### Q128: How do I build a Second Brain across 27 courses?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" alt="Handwritten: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" alt="Diagram: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" alt="Sticky Note: How do I build a Second Brain across 27 courses?" width="30%">
+</a>
+
 
 **Answer:** A Second Brain is an external knowledge system. The 27 courses are your input; your notes are your output. The system needs four components:
 
@@ -355,6 +454,17 @@ For this repo, the simplest Second Brain is a folder structure mirroring the cou
 
 ### Q129: What is your post-interview roadmap?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-handwritten.svg" alt="Handwritten: What is your post-interview roadmap?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-diagram.svg" alt="Diagram: What is your post-interview roadmap?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-your-post-interview-roadmap-sticky.svg" alt="Sticky Note: What is your post-interview roadmap?" width="30%">
+</a>
+
+
 **Answer:** After interviews, the learning continues. The roadmap builds toward mastery: Java mastery ? Spring depth ? microservices ? system design deep dive.
 
 **Months 1-3 � Java Mastery:**
@@ -387,6 +497,17 @@ The 27 courses are not just for interviews. They form a complete CS education pa
 
 ### Q130: What is the final stage � teaching others?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-handwritten.svg" alt="Handwritten: What is the final stage � teaching others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-diagram.svg" alt="Diagram: What is the final stage � teaching others?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-final-stage-teaching-others-sticky.svg" alt="Sticky Note: What is the final stage � teaching others?" width="30%">
+</a>
+
+
 **Answer:** Teaching is the ultimate learning accelerator. The final stage is contributing back to this repo � writing examples, solving problems, opening PRs, and helping others learn.
 
 **How to teach from this repo:**
@@ -414,6 +535,17 @@ The Feynman Technique applies here better than anywhere: "If you can't explain i
 ---
 
 ### Q131: How do I build a daily learning habit using Atomic Habits principles?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-handwritten.svg" alt="Handwritten: How do I build a daily learning habit using Atomic Habits principles?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-diagram.svg" alt="Diagram: How do I build a daily learning habit using Atomic Habits principles?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-build-a-daily-learning-habit-using-atomic-habits-principles-sticky.svg" alt="Sticky Note: How do I build a daily learning habit using Atomic Habits principles?" width="30%">
+</a>
+
 
 **Answer:** James Clear's Atomic Habits provides a four-law framework for habit formation. Applied to learning, it transforms sporadic study into an automatic daily practice.
 
@@ -486,6 +618,17 @@ public class HabitStreakTracker {
 
 ### Q132: What is the PARA method and how do I apply it to course notes?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-handwritten.svg" alt="Handwritten: What is the PARA method and how do I apply it to course notes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-diagram.svg" alt="Diagram: What is the PARA method and how do I apply it to course notes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-is-the-para-method-and-how-do-i-apply-it-to-course-notes-sticky.svg" alt="Sticky Note: What is the PARA method and how do I apply it to course notes?" width="30%">
+</a>
+
+
 **Answer:** Tiago Forte's PARA method organizes digital information into four categories: Projects, Areas, Resources, and Archives. It turns the firehose of 27 courses into a manageable, action-oriented system.
 
 **The four categories:**
@@ -541,6 +684,17 @@ Layer 4 (executive summary): A 3-bullet recap at the top of each note
 ---
 
 ### Q133: How do I create a learning dashboard with measurable metrics?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-handwritten.svg" alt="Handwritten: How do I create a learning dashboard with measurable metrics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-diagram.svg" alt="Diagram: How do I create a learning dashboard with measurable metrics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-learning-dashboard-with-measurable-metrics-sticky.svg" alt="Sticky Note: How do I create a learning dashboard with measurable metrics?" width="30%">
+</a>
+
 
 **Answer:** A learning dashboard turns vague progress ("I studied some DSA today") into measurable velocity. What gets measured gets improved.
 
@@ -639,6 +793,17 @@ public class LearningDashboard {
 ---
 
 ### Q134: How does the SM-2 spaced repetition algorithm work?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-handwritten.svg" alt="Handwritten: How does the SM-2 spaced repetition algorithm work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-diagram.svg" alt="Diagram: How does the SM-2 spaced repetition algorithm work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-sm-2-spaced-repetition-algorithm-work-sticky.svg" alt="Sticky Note: How does the SM-2 spaced repetition algorithm work?" width="30%">
+</a>
+
 
 **Answer:** The SM-2 algorithm, created by Piotr Wozniak for SuperMemo, is the mathematical engine behind Anki's default scheduler. It calculates optimal review intervals based on how well you remember each card.
 
@@ -750,6 +915,17 @@ The SM-2 algorithm self-corrects: cards you find easy get scheduled further out;
 
 ### Q135: How does the FSRS algorithm differ from SM-2?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-handwritten.svg" alt="Handwritten: How does the FSRS algorithm differ from SM-2?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-diagram.svg" alt="Diagram: How does the FSRS algorithm differ from SM-2?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-fsrs-algorithm-differ-from-sm-2-sticky.svg" alt="Sticky Note: How does the FSRS algorithm differ from SM-2?" width="30%">
+</a>
+
+
 **Answer:** FSRS (Free Spaced Repetition Scheduler) is a modern replacement for SM-2, introduced in 2023 and now the default in Anki. It uses a three-parameter logistic model rather than the heuristic rules of SM-2, making it significantly more efficient.
 
 **Key differences:**
@@ -824,6 +1000,17 @@ public class SM2vsFSRSComparison {
 ---
 
 ### Q136: How do I use Obsidian for a connected learning system?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-handwritten.svg" alt="Handwritten: How do I use Obsidian for a connected learning system?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-diagram.svg" alt="Diagram: How do I use Obsidian for a connected learning system?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-use-obsidian-for-a-connected-learning-system-sticky.svg" alt="Sticky Note: How do I use Obsidian for a connected learning system?" width="30%">
+</a>
+
 
 **Answer:** Obsidian turns markdown notes into a graph-based knowledge base. For the 27 courses in this repo, Obsidian provides the perfect Second Brain: local-first, searchable, and linkable.
 
@@ -906,6 +1093,17 @@ A healthy vault has many bridges between clusters. If DSA and System Design neve
 
 ### Q137: How do I find and use learning communities effectively?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-handwritten.svg" alt="Handwritten: How do I find and use learning communities effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-diagram.svg" alt="Diagram: How do I find and use learning communities effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-find-and-use-learning-communities-effectively-sticky.svg" alt="Sticky Note: How do I find and use learning communities effectively?" width="30%">
+</a>
+
+
 **Answer:** Learning alone works for memorization. Learning in community works for understanding, motivation, and accountability. The 27 courses are solo material, but they come alive when discussed with others.
 
 **Types of learning communities:**
@@ -957,6 +1155,17 @@ Posting this weekly creates accountability. When people follow your progress, yo
 ---
 
 ### Q138: How do I push through learning plateaus?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-handwritten.svg" alt="Handwritten: How do I push through learning plateaus?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-diagram.svg" alt="Diagram: How do I push through learning plateaus?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-push-through-learning-plateaus-sticky.svg" alt="Sticky Note: How do I push through learning plateaus?" width="30%">
+</a>
+
 
 **Answer:** Learning plateaus are normal. Progress is not linear � it's staircase-shaped. A plateau means you're consolidating, not failing. The key is diagnosing which type of plateau you're on.
 
@@ -1028,6 +1237,17 @@ public class PlateauDiagnostic {
 ---
 
 ### Q139: How do I design an optimal daily learning routine?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-handwritten.svg" alt="Handwritten: How do I design an optimal daily learning routine?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-diagram.svg" alt="Diagram: How do I design an optimal daily learning routine?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-design-an-optimal-daily-learning-routine-sticky.svg" alt="Sticky Note: How do I design an optimal daily learning routine?" width="30%">
+</a>
+
 
 **Answer:** An optimal routine aligns your energy levels with task difficulty. The science of chronotypes (morning larks vs. night owls) and ultradian rhythms (90-minute focus cycles) gives us a template for peak learning performance.
 
@@ -1128,6 +1348,17 @@ public class StudyScheduler {
 
 ### Q140: How do I allocate learning time across multiple domains?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-handwritten.svg" alt="Handwritten: How do I allocate learning time across multiple domains?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-diagram.svg" alt="Diagram: How do I allocate learning time across multiple domains?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-allocate-learning-time-across-multiple-domains-sticky.svg" alt="Sticky Note: How do I allocate learning time across multiple domains?" width="30%">
+</a>
+
+
 **Answer:** Learning multiple domains requires intentional allocation. Without a system, you end up with shallow knowledge across everything and deep knowledge of nothing. The 70/20/10 portfolio model solves this.
 
 **The learning portfolio:**
@@ -1212,6 +1443,17 @@ public class LearningPortfolio {
 
 ### Q141: How do I conduct a personal annual learning review?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-handwritten.svg" alt="Handwritten: How do I conduct a personal annual learning review?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-diagram.svg" alt="Diagram: How do I conduct a personal annual learning review?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-conduct-a-personal-annual-learning-review-sticky.svg" alt="Sticky Note: How do I conduct a personal annual learning review?" width="30%">
+</a>
+
+
 **Answer:** An annual learning review is the meta-learning equivalent of a retrospective. Amazon's annual review process, adapted for self-directed learners, provides the template: Document ? Analyze ? Plan.
 
 **Annual review template:**
@@ -1222,6 +1464,17 @@ public class LearningPortfolio {
 ## Year in Review
 
 ### Courses Completed
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-handwritten.svg" alt="Handwritten: Courses Completed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-diagram.svg" alt="Diagram: Courses Completed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/courses-completed-sticky.svg" alt="Sticky Note: Courses Completed" width="30%">
+</a>
+
 | Course | Status | Key Takeaways |
 |--------|--------|---------------|
 | DSA 125 Problems | Completed | Pattern recognition improved |
@@ -1230,18 +1483,51 @@ public class LearningPortfolio {
 | ... | ... | ... |
 
 ### Skills Gained
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-handwritten.svg" alt="Handwritten: Skills Gained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-diagram.svg" alt="Diagram: Skills Gained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skills-gained-sticky.svg" alt="Sticky Note: Skills Gained" width="30%">
+</a>
+
 - Programming language depth: [Java, Python, SQL]
 - Frameworks: [Spring Boot, JPA, React]
 - Concepts: [Distributed systems, ACID, CAP theorem]
 - Tools: [Docker, Git, Anki]
 
 ### Problems Solved
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-handwritten.svg" alt="Handwritten: Problems Solved" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-diagram.svg" alt="Diagram: Problems Solved" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/problems-solved-sticky.svg" alt="Sticky Note: Problems Solved" width="30%">
+</a>
+
 - Total DSA problems: [number]
 - System designs practiced: [number]
 - Open source contributions: [number]
 - Blog posts written: [number]
 
 ### Projects Built
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-handwritten.svg" alt="Handwritten: Projects Built" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-diagram.svg" alt="Diagram: Projects Built" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/projects-built-sticky.svg" alt="Sticky Note: Projects Built" width="30%">
+</a>
+
 - [Project 1: tech stack, what you learned]
 - [Project 2: tech stack, what you learned]
 - [Side project: why, outcome]
@@ -1249,14 +1535,47 @@ public class LearningPortfolio {
 ## Lessons Learned
 
 ### What Worked Well
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-handwritten.svg" alt="Handwritten: What Worked Well" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-diagram.svg" alt="Diagram: What Worked Well" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-worked-well-sticky.svg" alt="Sticky Note: What Worked Well" width="30%">
+</a>
+
 - [Strategy 1: why it worked, evidence]
 - [Strategy 2: why it worked, evidence]
 
 ### What Didn't Work
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-handwritten.svg" alt="Handwritten: What Didn't Work" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-diagram.svg" alt="Diagram: What Didn't Work" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-didn-t-work-sticky.svg" alt="Sticky Note: What Didn't Work" width="30%">
+</a>
+
 - [Failure 1: what happened, root cause]
 - [Failure 2: what happened, root cause]
 
 ### Surprises
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-handwritten.svg" alt="Handwritten: Surprises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-diagram.svg" alt="Diagram: Surprises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/surprises-sticky.svg" alt="Sticky Note: Surprises" width="30%">
+</a>
+
 - [Concept you expected to be hard but wasn't]
 - [Concept you expected to be easy but wasn't]
 - [Learning method that worked unexpectedly well]
@@ -1264,16 +1583,49 @@ public class LearningPortfolio {
 ## Next Year's Focus
 
 ### 3 Primary Goals
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-handwritten.svg" alt="Handwritten: 3 Primary Goals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-diagram.svg" alt="Diagram: 3 Primary Goals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/3-primary-goals-sticky.svg" alt="Sticky Note: 3 Primary Goals" width="30%">
+</a>
+
 1. [SMART goal 1: target, metric, deadline]
 2. [SMART goal 2: target, metric, deadline]
 3. [SMART goal 3: target, metric, deadline]
 
 ### Skill Tree Updates
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-handwritten.svg" alt="Handwritten: Skill Tree Updates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-diagram.svg" alt="Diagram: Skill Tree Updates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/skill-tree-updates-sticky.svg" alt="Sticky Note: Skill Tree Updates" width="30%">
+</a>
+
 - New branches to add: [List]
 - Branches to deepen: [List]
 - Branches to prune: [List]
 
 ### Learning Budget
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-handwritten.svg" alt="Handwritten: Learning Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-diagram.svg" alt="Diagram: Learning Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-sticky.svg" alt="Sticky Note: Learning Budget" width="30%">
+</a>
+
 - New courses to start: [List]
 - Certifications to pursue: [List]
 - Books to read: [List]
@@ -1307,6 +1659,17 @@ Career trajectory                  ? Post-interview roadmap (Q129)
 ---
 
 ### Q142: What are the most common anti-patterns in self-directed learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-handwritten.svg" alt="Handwritten: What are the most common anti-patterns in self-directed learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-diagram.svg" alt="Diagram: What are the most common anti-patterns in self-directed learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/what-are-the-most-common-anti-patterns-in-self-directed-learning-sticky.svg" alt="Sticky Note: What are the most common anti-patterns in self-directed learning?" width="30%">
+</a>
+
 
 **Answer:** Self-directed learners make predictable mistakes. Identifying these anti-patterns early prevents months of wasted effort. Here are the top 10, with fixes.
 
@@ -1381,6 +1744,17 @@ public class AntiPatternDetector {
 ---
 
 ### Q143: How does the compound effect of daily learning actually work mathematically?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-handwritten.svg" alt="Handwritten: How does the compound effect of daily learning actually work mathematically?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-diagram.svg" alt="Diagram: How does the compound effect of daily learning actually work mathematically?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-does-the-compound-effect-of-daily-learning-actually-work-mathematically-sticky.svg" alt="Sticky Note: How does the compound effect of daily learning actually work mathematically?" width="30%">
+</a>
+
 
 **Answer:** The compound effect is not a metaphor � it's arithmetic. Small daily improvements, sustained over time, produce exponential results. The math works for learning the same way it works for investing.
 
@@ -1491,6 +1865,17 @@ The real headline is not 38x in one year. It's that after 3 years of consistent 
 ---
 
 ### Q144: How do I set up learning feedback loops?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-handwritten.svg" alt="Handwritten: How do I set up learning feedback loops?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-diagram.svg" alt="Diagram: How do I set up learning feedback loops?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-set-up-learning-feedback-loops-sticky.svg" alt="Sticky Note: How do I set up learning feedback loops?" width="30%">
+</a>
+
 
 **Answer:** Learning without feedback is guessing. You can't improve what you can't measure. Effective learning systems have four feedback loops that close the gap between what you think you know and what you actually know.
 
@@ -1606,6 +1991,17 @@ public class FeedbackLoopSystem {
 
 ### Q145: How do I create a personal annual learning review?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-handwritten.svg" alt="Handwritten: How do I create a personal annual learning review?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-diagram.svg" alt="Diagram: How do I create a personal annual learning review?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/how-do-i-create-a-personal-annual-learning-review-sticky.svg" alt="Sticky Note: How do I create a personal annual learning review?" width="30%">
+</a>
+
+
 **Answer:** An annual learning review is your learning system's system � it reviews the reviews, measures the measurements, and plans the plans. It's the meta-meta-learning layer: learning about how you learned this year.
 
 **Year-in-review structure:**
@@ -1654,36 +2050,124 @@ Total study hours: [SUM]
 ## Lessons Learned
 
 ### Most Valuable Discovery
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-handwritten.svg" alt="Handwritten: Most Valuable Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-diagram.svg" alt="Diagram: Most Valuable Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/most-valuable-discovery-sticky.svg" alt="Sticky Note: Most Valuable Discovery" width="30%">
+</a>
+
 [What surprised you most about how you learn?]
 
 ### Biggest Waste of Time
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-handwritten.svg" alt="Handwritten: Biggest Waste of Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-diagram.svg" alt="Diagram: Biggest Waste of Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/biggest-waste-of-time-sticky.svg" alt="Sticky Note: Biggest Waste of Time" width="30%">
+</a>
+
 [What would you cut if you could redo the year?]
 
 ### One Thing to Keep Doing
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-handwritten.svg" alt="Handwritten: One Thing to Keep Doing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-diagram.svg" alt="Diagram: One Thing to Keep Doing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-keep-doing-sticky.svg" alt="Sticky Note: One Thing to Keep Doing" width="30%">
+</a>
+
 [The strategy that worked best � double down on it.]
 
 ### One Thing to Stop Doing
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-handwritten.svg" alt="Handwritten: One Thing to Stop Doing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-diagram.svg" alt="Diagram: One Thing to Stop Doing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/one-thing-to-stop-doing-sticky.svg" alt="Sticky Note: One Thing to Stop Doing" width="30%">
+</a>
+
 [The anti-pattern that keeps appearing � eliminate it.]
 
 ## Next Year's Focus
 
 ### Primary Growth Areas
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-handwritten.svg" alt="Handwritten: Primary Growth Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-diagram.svg" alt="Diagram: Primary Growth Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/primary-growth-areas-sticky.svg" alt="Sticky Note: Primary Growth Areas" width="30%">
+</a>
+
 1. Deepen: Java concurrency + performance tuning
 2. Expand: Kubernetes + cloud deployment
 3. Explore: AI/ML fundamentals (10% portfolio)
 
 ### Learning Budget Allocation
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-handwritten.svg" alt="Handwritten: Learning Budget Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-diagram.svg" alt="Diagram: Learning Budget Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/learning-budget-allocation-sticky.svg" alt="Sticky Note: Learning Budget Allocation" width="30%">
+</a>
+
 - Core (70%): Java, Spring, System Design
 - Adjacent (20%): DevOps, SQL, Testing
 - Exploratory (10%): AI, Rust
 
 ### Monthly Check-in Questions
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-handwritten.svg" alt="Handwritten: Monthly Check-in Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-diagram.svg" alt="Diagram: Monthly Check-in Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/monthly-check-in-questions-sticky.svg" alt="Sticky Note: Monthly Check-in Questions" width="30%">
+</a>
+
 - Did I follow my allocation? Adjust for next month.
 - Did I teach anything? Schedule one teaching activity.
 - Did I build anything? If 2 months without building, pause consumption.
 - Am I enjoying this? If no, revisit exploratory allocation.
 
 ### Reflection Protocol
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-handwritten.svg" alt="Handwritten: Reflection Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-diagram.svg" alt="Diagram: Reflection Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/reflection-protocol-sticky.svg" alt="Sticky Note: Reflection Protocol" width="30%">
+</a>
+
 Block 1 hour every quarter to revisit this document and answer:
 1. What did I complete this quarter?
 2. What did I learn about my learning?
@@ -1695,6 +2179,17 @@ Block 1 hour every quarter to revisit this document and answer:
 ---
 
 ### Self-Assessment Quiz
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+</a>
+
 
 **1. What does the meta prefix in meta-learning mean?**
 A. Learning about computers

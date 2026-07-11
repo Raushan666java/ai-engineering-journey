@@ -42,6 +42,17 @@ flowchart LR
 
 ### Intermediate Representations
 
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" alt="Handwritten: Intermediate Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" alt="Diagram: Intermediate Representations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" alt="Sticky Note: Intermediate Representations" width="30%">
+</a>
+
+
 An **intermediate representation** (IR) sits between the source-language parse tree and the target-machine code. A good IR is independent of both the source language and the target machine, facilitates optimization, and supports retargeting. Three principal forms are in wide use:
 
 - **Graphical IRs**: Abstract syntax trees (ASTs) and directed acyclic graphs (DAGs).
@@ -51,6 +62,17 @@ An **intermediate representation** (IR) sits between the source-language parse t
 The choice of IR significantly influences the compiler's optimization capability, the complexity of analysis passes, and the ease of adding new language features.
 
 ### Abstract Syntax Trees
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" alt="Handwritten: Abstract Syntax Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" alt="Diagram: Abstract Syntax Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" alt="Sticky Note: Abstract Syntax Trees" width="30%">
+</a>
+
 
 An **abstract syntax tree** (AST) is a compressed representation of the parse tree in which operators appear as interior nodes and operands as children. Syntactic markers such as parentheses, semicolons, commas, and grouping nonterminals are omitted.
 
@@ -75,6 +97,17 @@ An AST node stores its operator (or token kind) and pointers to its children. Th
 
 ### Postfix Notation
 
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" alt="Handwritten: Postfix Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" alt="Diagram: Postfix Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" alt="Sticky Note: Postfix Notation" width="30%">
+</a>
+
+
 **Postfix** (Reverse Polish) notation represents expressions with the operator following its operands. `ab c * +` corresponds to `a + b * c`. Postfix requires no parentheses and no precedence rules because operator placement alone fixes evaluation order.
 
 | Infix | Postfix |
@@ -89,6 +122,17 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 
 ### Three-Address Code
 
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" alt="Handwritten: Three-Address Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" alt="Diagram: Three-Address Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" alt="Sticky Note: Three-Address Code" width="30%">
+</a>
+
+
 **Three-address code** (TAC) is a linear IR where each instruction has the form `x = y op z`, performing one operation with at most one operator on the right-hand side. The name derives from each instruction referencing at most three addresses: two for operands and one for the result. Addresses may be names (identifiers), constants, or compiler-generated temporaries.
 
 **Key properties of TAC**:
@@ -100,6 +144,17 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 > **One-Sentence Takeaway:** TAC is the universal IR ? simple enough to optimize, expressive enough for all language constructs, and close enough to machine code to generate efficiently.
 
 ### Types of Three-Address Code Instructions
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" alt="Handwritten: Types of Three-Address Code Instructions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" alt="Diagram: Types of Three-Address Code Instructions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" alt="Sticky Note: Types of Three-Address Code Instructions" width="30%">
+</a>
+
 
 | Instruction Type | Format | Example |
 |-----------------|--------|---------|
@@ -120,6 +175,17 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 
 ### Quadruples, Triples, and Indirect Triples
 
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" alt="Handwritten: Quadruples, Triples, and Indirect Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" alt="Diagram: Quadruples, Triples, and Indirect Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" alt="Sticky Note: Quadruples, Triples, and Indirect Triples" width="30%">
+</a>
+
+
 A **quadruple** is a four-field record `(op, arg1, arg2, result)`. For unary operators, `arg2` is omitted. The instruction `x = y + z` becomes `(+, y, z, x)`. Quadruples are the most common TAC representation because temporaries are named explicitly, simplifying code transformation. Optimization passes can freely move, modify, and insert quadruples without concern for positional references.
 
 | # | op | arg1 | arg2 | result |
@@ -139,6 +205,17 @@ A **triple** uses three fields `(op, arg1, arg2)` and refers to the result of an
 Triples save space by omitting the result field, but they complicate code movement because reordering changes positional references. An **indirect triple** lists pointers to triples in execution order. The triple list stores actual instructions while a separate execution list determines evaluation order. Code motion is achieved by rearranging the execution list without renumbering triples.
 
 ### Directed Acyclic Graphs
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" alt="Handwritten: Directed Acyclic Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" alt="Diagram: Directed Acyclic Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" alt="Sticky Note: Directed Acyclic Graphs" width="30%">
+</a>
+
 
 A **DAG** for an expression merges common subexpressions into a single node. If the same subexpression appears multiple times, the DAG shares one node.
 
@@ -174,6 +251,17 @@ DAGs enable:
 - **Simplified code generation**: The DAG is traversed once per unique value.
 
 ### Generating TAC for Statements
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" alt="Handwritten: Generating TAC for Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" alt="Diagram: Generating TAC for Statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" alt="Sticky Note: Generating TAC for Statements" width="30%">
+</a>
+
 
 **Assignment**: `x = expr` generates code for `expr` ending with a temporary holding the result value, then `x = temp`:
 
@@ -238,6 +326,17 @@ exit:
 
 ### TAC Generation from AST
 
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" alt="Handwritten: TAC Generation from AST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" alt="Diagram: TAC Generation from AST" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" alt="Sticky Note: TAC Generation from AST" width="30%">
+</a>
+
+
 The standard algorithm processes the AST recursively:
 
 ```
@@ -283,6 +382,17 @@ function genTAC(node, nextLabel):
 Labels are generated sequentially (L1, L2, L3, ...). Temporaries are generated sequentially (t1, t2, t3, ...). The algorithm maintains counters for both and passes them through recursive calls.
 
 ### Complete TypeScript TAC Generator
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" alt="Handwritten: Complete TypeScript TAC Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" alt="Diagram: Complete TypeScript TAC Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" alt="Sticky Note: Complete TypeScript TAC Generator" width="30%">
+</a>
+
 
 ```typescript
 // AST node types for intermediate code generation
@@ -854,6 +964,17 @@ dag2.toTAC().forEach((instr, i) => {
 ```
 
 ### Concept Comparison
+
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
+</a>
+
 
 | IR Format | Structure | Optimization Suitability | Storage Cost | Retargetability |
 |-----------|-----------|------------------------|--------------|-----------------|

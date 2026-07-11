@@ -51,6 +51,17 @@ flowchart LR
 
 ### 6.1 Definitions
 
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-handwritten.svg" alt="Handwritten: 6.1 Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-diagram.svg" alt="Diagram: 6.1 Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-1-definitions-sticky.svg" alt="Sticky Note: 6.1 Definitions" width="30%">
+</a>
+
+
 A **recurrence relation** for a sequence $\{a_n\}$ is an equation relating $a_n$ to one or more preceding terms $a_{n-1}, a_{n-2}, \ldots, a_{n-k}$ for $n \geq k$. A sequence is called a **solution** if its terms satisfy the recurrence for all $n \geq k$. The **initial conditions** specify $a_0, a_1, \ldots, a_{k-1}$.
 
 **Example.** The Fibonacci recurrence $F_n = F_{n-1} + F_{n-2}$ with $F_1 = 1, F_2 = 1$.
@@ -63,6 +74,17 @@ The **order** (or degree) of a recurrence is the difference between the largest 
 
 ### 6.2 Solving by Iteration (Forward Substitution)
 
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-handwritten.svg" alt="Handwritten: 6.2 Solving by Iteration (Forward Substitution)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-diagram.svg" alt="Diagram: 6.2 Solving by Iteration (Forward Substitution)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-2-solving-by-iteration-forward-substitution-sticky.svg" alt="Sticky Note: 6.2 Solving by Iteration (Forward Substitution)" width="30%">
+</a>
+
+
 Work forward from initial conditions, computing terms until a pattern emerges, then prove by induction.
 
 **Example:** $a_n = a_{n-1} + 3$, $a_0 = 2$.
@@ -73,6 +95,17 @@ $a_1 = 5$, $a_2 = 8$, $a_3 = 11$, $a_4 = 14$. Pattern: $a_n = 2 + 3n$. Prove by 
 
 ### 6.3 Solving by Backward Substitution
 
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-handwritten.svg" alt="Handwritten: 6.3 Solving by Backward Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-diagram.svg" alt="Diagram: 6.3 Solving by Backward Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-3-solving-by-backward-substitution-sticky.svg" alt="Sticky Note: 6.3 Solving by Backward Substitution" width="30%">
+</a>
+
+
 Express $a_n$ in terms of $a_{n-1}$, then $a_{n-1}$ in terms of $a_{n-2}$, continuing until reaching the base case. This often reveals a closed form.
 
 **Example:** $a_n = 2a_{n-1}$, $a_0 = 3$.
@@ -82,6 +115,17 @@ $a_n = 2a_{n-1} = 2(2a_{n-2}) = 2^2 a_{n-2} = \cdots = 2^n a_0 = 3 \cdot 2^n$.
 > **One-Sentence Takeaway:** Backward substitution repeatedly expands the current term into previous terms until the base case is reached, exposing a pattern.
 
 ### 6.4 Linear Homogeneous Recurrences
+
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-handwritten.svg" alt="Handwritten: 6.4 Linear Homogeneous Recurrences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-diagram.svg" alt="Diagram: 6.4 Linear Homogeneous Recurrences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-4-linear-homogeneous-recurrences-sticky.svg" alt="Sticky Note: 6.4 Linear Homogeneous Recurrences" width="30%">
+</a>
+
 
 A **linear homogeneous recurrence of degree $k$ with constant coefficients** has the form:
 $$a_n = c_1 a_{n-1} + c_2 a_{n-2} + \cdots + c_k a_{n-k}$$
@@ -143,6 +187,17 @@ console.log(solveLinearRecurrence(1, 1, 0, 1, 10)); // 55
 
 ### 6.5 Linear Nonhomogeneous Recurrences
 
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-handwritten.svg" alt="Handwritten: 6.5 Linear Nonhomogeneous Recurrences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-diagram.svg" alt="Diagram: 6.5 Linear Nonhomogeneous Recurrences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-5-linear-nonhomogeneous-recurrences-sticky.svg" alt="Sticky Note: 6.5 Linear Nonhomogeneous Recurrences" width="30%">
+</a>
+
+
 A **linear nonhomogeneous recurrence** has the form:
 $$a_n = c_1 a_{n-1} + \cdots + c_k a_{n-k} + f(n)$$
 
@@ -163,6 +218,17 @@ The solution is $a_n = a_n^{(h)} + a_n^{(p)}$, where $a_n^{(h)}$ solves the homo
 > **Warning:** When $f(n)$ already appears as a characteristic root, the standard particular solution guess must be multiplied by $n^m$ to avoid duplication.
 
 ### 6.6 Generating Functions
+
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-handwritten.svg" alt="Handwritten: 6.6 Generating Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-diagram.svg" alt="Diagram: 6.6 Generating Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-6-generating-functions-sticky.svg" alt="Sticky Note: 6.6 Generating Functions" width="30%">
+</a>
+
 
 The **(ordinary) generating function** of a sequence $\{a_n\}$ is:
 $$G(x) = \sum_{n=0}^{\infty} a_n x^n$$
@@ -213,6 +279,17 @@ function generatingFunctionCoefficients(
 
 ### 6.7 The Master Theorem
 
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-handwritten.svg" alt="Handwritten: 6.7 The Master Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-diagram.svg" alt="Diagram: 6.7 The Master Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-7-the-master-theorem-sticky.svg" alt="Sticky Note: 6.7 The Master Theorem" width="30%">
+</a>
+
+
 **Theorem 6.5 (Master Theorem).** Let $T(n) = a T(n/b) + f(n)$ where $a \geq 1$, $b > 1$, and $f(n)$ is asymptotically positive. Then:
 
 1. If $f(n) = O(n^{\log_b a - \epsilon})$ for some $\epsilon > 0$, then $T(n) = \Theta(n^{\log_b a})$.
@@ -230,6 +307,17 @@ function generatingFunctionCoefficients(
 > **One-Sentence Takeaway:** The Master theorem provides immediate closed-form solutions for recurrences of the form $T(n) = aT(n/b) + f(n)$ by comparing $f(n)$ to $n^{\log_b a}$.
 
 ### 6.8 Recurrences in Algorithm Analysis
+
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-handwritten.svg" alt="Handwritten: 6.8 Recurrences in Algorithm Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-diagram.svg" alt="Diagram: 6.8 Recurrences in Algorithm Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/06-recurrence/6-8-recurrences-in-algorithm-analysis-sticky.svg" alt="Sticky Note: 6.8 Recurrences in Algorithm Analysis" width="30%">
+</a>
+
 
 ```typescript
 // Simulate divide-and-conquer recurrence T(n) = 2T(n/2) + n

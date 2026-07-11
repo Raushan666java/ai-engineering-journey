@@ -51,6 +51,17 @@ flowchart LR
 
 ### Why Orchestration?
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-handwritten.svg" alt="Handwritten: Why Orchestration?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-diagram.svg" alt="Diagram: Why Orchestration?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/why-orchestration-sticky.svg" alt="Sticky Note: Why Orchestration?" width="30%">
+</a>
+
+
 Running containers in production presents challenges that orchestration solves:
 
 1. **Placement:** Where should each container run? Which host has enough resources?
@@ -62,6 +73,17 @@ Running containers in production presents challenges that orchestration solves:
 7. **Storage:** How to persist data when containers move? Persistent volumes.
 
 ### Orchestration Platforms
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-handwritten.svg" alt="Handwritten: Orchestration Platforms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-diagram.svg" alt="Diagram: Orchestration Platforms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-platforms-sticky.svg" alt="Sticky Note: Orchestration Platforms" width="30%">
+</a>
+
 
 **Kubernetes (K8s):**
 - Industry standard for container orchestration
@@ -89,6 +111,17 @@ Running containers in production presents challenges that orchestration solves:
 - Best for: AWS-focused teams, simpler than K8s
 
 ### Orchestration Primitives
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-handwritten.svg" alt="Handwritten: Orchestration Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-diagram.svg" alt="Diagram: Orchestration Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/orchestration-primitives-sticky.svg" alt="Sticky Note: Orchestration Primitives" width="30%">
+</a>
+
 
 **Deployment:** Desired state for a set of identical pods. Defines replicas, strategy, health checks.
 
@@ -131,6 +164,17 @@ flowchart LR
 
 ### Scheduling
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/scheduling-handwritten.svg" alt="Handwritten: Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/scheduling-diagram.svg" alt="Diagram: Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/scheduling-sticky.svg" alt="Sticky Note: Scheduling" width="30%">
+</a>
+
+
 The scheduler decides which node runs each pod:
 
 **Scheduling factors:**
@@ -157,6 +201,17 @@ podAntiAffinity:
 
 ### Rolling Updates
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-handwritten.svg" alt="Handwritten: Rolling Updates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-diagram.svg" alt="Diagram: Rolling Updates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/rolling-updates-sticky.svg" alt="Sticky Note: Rolling Updates" width="30%">
+</a>
+
+
 Strategy for updating pods without downtime:
 
 ```yaml
@@ -178,6 +233,17 @@ flowchart LR
 
 ### Self-Healing
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/self-healing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/self-healing-handwritten.svg" alt="Handwritten: Self-Healing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/self-healing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/self-healing-diagram.svg" alt="Diagram: Self-Healing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/self-healing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/self-healing-sticky.svg" alt="Sticky Note: Self-Healing" width="30%">
+</a>
+
+
 Orchestrators automatically maintain desired state:
 
 - **Pod failure:** If a pod crashes, the controller creates a replacement
@@ -186,6 +252,17 @@ Orchestrators automatically maintain desired state:
 - **Liveness probe:** If a pod fails liveness checks, it's restarted
 
 ### Autoscaling
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/autoscaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/autoscaling-handwritten.svg" alt="Handwritten: Autoscaling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/autoscaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/autoscaling-diagram.svg" alt="Diagram: Autoscaling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/autoscaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/autoscaling-sticky.svg" alt="Sticky Note: Autoscaling" width="30%">
+</a>
+
 
 Horizontal Pod Autoscaler (HPA) scales replicas based on metrics:
 
@@ -209,6 +286,17 @@ spec:
 ```
 
 ### Stateful Workloads in Orchestration
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-handwritten.svg" alt="Handwritten: Stateful Workloads in Orchestration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-diagram.svg" alt="Diagram: Stateful Workloads in Orchestration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/stateful-workloads-in-orchestration-sticky.svg" alt="Sticky Note: Stateful Workloads in Orchestration" width="30%">
+</a>
+
 
 Not all applications are stateless — databases, caches, and message queues require stateful orchestration:
 
@@ -265,6 +353,17 @@ flowchart LR
 
 ### Advanced Scheduling
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-handwritten.svg" alt="Handwritten: Advanced Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-diagram.svg" alt="Diagram: Advanced Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/advanced-scheduling-sticky.svg" alt="Sticky Note: Advanced Scheduling" width="30%">
+</a>
+
+
 Fine-grained control over pod placement:
 
 **Taints and Tolerations:** Nodes repel pods that don't tolerate the taint.
@@ -314,6 +413,17 @@ topologySpreadConstraints:
 ```
 
 ### Pod Lifecycle and Termination
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-handwritten.svg" alt="Handwritten: Pod Lifecycle and Termination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-diagram.svg" alt="Diagram: Pod Lifecycle and Termination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/pod-lifecycle-and-termination-sticky.svg" alt="Sticky Note: Pod Lifecycle and Termination" width="30%">
+</a>
+
 
 Understanding pod lifecycle ensures graceful handling:
 ```mermaid
@@ -381,6 +491,17 @@ class PodLifecycleSimulator {
 
 ### Service Discovery
 
+<a href="../../assets/images/diagrams/devops/06-orchestration/service-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/service-discovery-handwritten.svg" alt="Handwritten: Service Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/service-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/service-discovery-diagram.svg" alt="Diagram: Service Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/service-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/service-discovery-sticky.svg" alt="Sticky Note: Service Discovery" width="30%">
+</a>
+
+
 **DNS-based (Kubernetes):**
 - Each service gets a DNS name: `service-name.namespace.svc.cluster.local`
 - Cluster DNS (CoreDNS) resolves names to service IPs
@@ -391,6 +512,17 @@ class PodLifecycleSimulator {
 - Other services query the registry
 
 ### Load Balancing
+
+<a href="../../assets/images/diagrams/devops/06-orchestration/load-balancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/load-balancing-handwritten.svg" alt="Handwritten: Load Balancing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/load-balancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/load-balancing-diagram.svg" alt="Diagram: Load Balancing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/06-orchestration/load-balancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/06-orchestration/load-balancing-sticky.svg" alt="Sticky Note: Load Balancing" width="30%">
+</a>
+
 
 **Internal load balancing:**
 - ClusterIP service distributes traffic to pods (round-robin by default)

@@ -34,6 +34,17 @@ Without concurrency control, resource allocation becomes incorrect.
 
 ### Problem 1: Lost Update
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-handwritten.svg" alt="Handwritten: Problem 1: Lost Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-diagram.svg" alt="Diagram: Problem 1: Lost Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-1-lost-update-sticky.svg" alt="Sticky Note: Problem 1: Lost Update" width="30%">
+</a>
+
+
 
 
 **Occurs when:** Two transactions read the same value, both modify it, and the second write overwrites the first without knowledge.
@@ -236,6 +247,17 @@ print(f"Final balance: {account}")  # Often 800
 
 ### Problem 2: Dirty Read
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-handwritten.svg" alt="Handwritten: Problem 2: Dirty Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-diagram.svg" alt="Diagram: Problem 2: Dirty Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-2-dirty-read-sticky.svg" alt="Sticky Note: Problem 2: Dirty Read" width="30%">
+</a>
+
+
 
 
 **Occurs when:** T1 reads data written by an uncommitted (and later aborted) transaction.
@@ -336,6 +358,17 @@ T2 committed based on data that was rolled back. T2's computations are now incor
 
 ### Problem 3: Non-Repeatable Read
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-handwritten.svg" alt="Handwritten: Problem 3: Non-Repeatable Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-diagram.svg" alt="Diagram: Problem 3: Non-Repeatable Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-3-non-repeatable-read-sticky.svg" alt="Sticky Note: Problem 3: Non-Repeatable Read" width="30%">
+</a>
+
+
 
 
 **Occurs when:** T1 reads same data twice but gets different values because T2 modified and committed between reads.
@@ -392,6 +425,17 @@ int a2 = READ(A);       -- a2 = 600 (changed!)
 
 ### Problem 4: Phantom Read
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-handwritten.svg" alt="Handwritten: Problem 4: Phantom Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-diagram.svg" alt="Diagram: Problem 4: Phantom Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-4-phantom-read-sticky.svg" alt="Sticky Note: Problem 4: Phantom Read" width="30%">
+</a>
+
+
 
 
 **Occurs when:** T1 reads a set of rows matching a WHERE condition. T2 inserts/deletes a row that matches. T1 re-reads the condition and gets different rows.
@@ -446,6 +490,17 @@ int n2 = COUNT(accounts WHERE balance > 500);  -- n2 = 4 (PHANTOM!)
 
 ### Problem 5: Dirty Write
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-handwritten.svg" alt="Handwritten: Problem 5: Dirty Write" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-diagram.svg" alt="Diagram: Problem 5: Dirty Write" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-5-dirty-write-sticky.svg" alt="Sticky Note: Problem 5: Dirty Write" width="30%">
+</a>
+
+
 
 
 **Occurs when:** Two transactions write the same data before either commits. The first write is lost.
@@ -483,6 +538,17 @@ This creates unrecoverable schedules.
 
 
 ### Problem 6: Incorrect Summary
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-handwritten.svg" alt="Handwritten: Problem 6: Incorrect Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-diagram.svg" alt="Diagram: Problem 6: Incorrect Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-6-incorrect-summary-sticky.svg" alt="Sticky Note: Problem 6: Incorrect Summary" width="30%">
+</a>
+
 
 
 
@@ -535,6 +601,17 @@ int total = READ(A) + READ(B) + READ(C);
 
 
 ### Problem 7: Write Skew
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-handwritten.svg" alt="Handwritten: Problem 7: Write Skew" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-diagram.svg" alt="Diagram: Problem 7: Write Skew" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/problem-7-write-skew-sticky.svg" alt="Sticky Note: Problem 7: Write Skew" width="30%">
+</a>
+
 
 
 
@@ -631,6 +708,17 @@ Two on-call doctors, at least one must be available. Dr. A checks: "Dr. B is on-
 - Write skew: Scheduling systems allow resource over-allocation
 
 ### 10.2 Lock-Based Protocols (continued)
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-handwritten.svg" alt="Handwritten: 10.2 Lock-Based Protocols (continued)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-diagram.svg" alt="Diagram: 10.2 Lock-Based Protocols (continued)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-2-lock-based-protocols-continued-sticky.svg" alt="Sticky Note: 10.2 Lock-Based Protocols (continued)" width="30%">
+</a>
+
 
 
 
@@ -1147,6 +1235,17 @@ class LockManager:
 | **Multiple holders** | Yes | No | Yes | Yes | No (only one) |
 
 ### 10.3 Two-Phase Locking (2PL)
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-handwritten.svg" alt="Handwritten: 10.3 Two-Phase Locking (2PL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-diagram.svg" alt="Diagram: 10.3 Two-Phase Locking (2PL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-3-two-phase-locking-2pl-sticky.svg" alt="Sticky Note: 10.3 Two-Phase Locking (2PL)" width="30%">
+</a>
+
 
 
 
@@ -1748,6 +1847,17 @@ class TwoPhaseLock:
 
 ### 10.4 Deadlock
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-handwritten.svg" alt="Handwritten: 10.4 Deadlock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-diagram.svg" alt="Diagram: 10.4 Deadlock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-4-deadlock-sticky.svg" alt="Sticky Note: 10.4 Deadlock" width="30%">
+</a>
+
+
 
 
 A **deadlock** occurs when two or more transactions are each waiting for a lock held by the other.
@@ -2199,6 +2309,17 @@ class WoundWaitPrevention:
             return 'wait'   # younger waits
 
 ### 10.5 Timestamp Ordering (TO)
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-handwritten.svg" alt="Handwritten: 10.5 Timestamp Ordering (TO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-diagram.svg" alt="Diagram: 10.5 Timestamp Ordering (TO)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-5-timestamp-ordering-to-sticky.svg" alt="Sticky Note: 10.5 Timestamp Ordering (TO)" width="30%">
+</a>
+
 
 
 
@@ -2818,6 +2939,17 @@ class TOManager:
 
 ### 10.6 Multi-Version Concurrency Control (MVCC)
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-handwritten.svg" alt="Handwritten: 10.6 Multi-Version Concurrency Control (MVCC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-diagram.svg" alt="Diagram: 10.6 Multi-Version Concurrency Control (MVCC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-6-multi-version-concurrency-control-mvcc-sticky.svg" alt="Sticky Note: 10.6 Multi-Version Concurrency Control (MVCC)" width="30%">
+</a>
+
+
 
 
 MVCC maintains multiple versions of each data item so readers see a consistent snapshot without blocking writers.
@@ -3412,6 +3544,17 @@ SELECT relname, n_dead_tup FROM pg_stat_user_tables;
 
 ### 10.7 Optimistic Concurrency Control (OCC)
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-handwritten.svg" alt="Handwritten: 10.7 Optimistic Concurrency Control (OCC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-diagram.svg" alt="Diagram: 10.7 Optimistic Concurrency Control (OCC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-7-optimistic-concurrency-control-occ-sticky.svg" alt="Sticky Note: 10.7 Optimistic Concurrency Control (OCC)" width="30%">
+</a>
+
+
 
 
 Optimistic protocols assume conflicts are rare. Transactions execute freely and validate only at commit time.
@@ -3842,6 +3985,17 @@ class OptimisticCC:
 
 ### 10.8 Granularity of Locks
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-handwritten.svg" alt="Handwritten: 10.8 Granularity of Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-diagram.svg" alt="Diagram: 10.8 Granularity of Locks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-8-granularity-of-locks-sticky.svg" alt="Sticky Note: 10.8 Granularity of Locks" width="30%">
+</a>
+
+
 
 
 Lock granularity determines the size of locked data items. Trade-off: concurrency vs overhead.
@@ -4068,6 +4222,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### 2PL Variants Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-handwritten.svg" alt="Handwritten: 2PL Variants Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-diagram.svg" alt="Diagram: 2PL Variants Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/2pl-variants-comparison-sticky.svg" alt="Sticky Note: 2PL Variants Comparison" width="30%">
+</a>
+
+
 
 
 | Feature | Basic 2PL | Strict 2PL | Rigorous 2PL |
@@ -4089,6 +4254,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### Deadlock Detection vs Prevention
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-handwritten.svg" alt="Handwritten: Deadlock Detection vs Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-diagram.svg" alt="Diagram: Deadlock Detection vs Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/deadlock-detection-vs-prevention-sticky.svg" alt="Sticky Note: Deadlock Detection vs Prevention" width="30%">
+</a>
+
 
 
 
@@ -4114,6 +4290,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### Optimistic vs Pessimistic
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-diagram.svg" alt="Diagram: Optimistic vs Pessimistic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/optimistic-vs-pessimistic-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic" width="30%">
+</a>
+
+
 
 
 | Aspect | Optimistic | Pessimistic |
@@ -4135,6 +4322,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### MVCC vs Locking
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-handwritten.svg" alt="Handwritten: MVCC vs Locking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-diagram.svg" alt="Diagram: MVCC vs Locking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mvcc-vs-locking-sticky.svg" alt="Sticky Note: MVCC vs Locking" width="30%">
+</a>
+
 
 
 
@@ -4159,6 +4357,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### Isolation Levels with Anomalies
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-handwritten.svg" alt="Handwritten: Isolation Levels with Anomalies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-diagram.svg" alt="Diagram: Isolation Levels with Anomalies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/isolation-levels-with-anomalies-sticky.svg" alt="Sticky Note: Isolation Levels with Anomalies" width="30%">
+</a>
+
 
 
 
@@ -4190,6 +4399,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### Granularity Hierarchy
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-handwritten.svg" alt="Handwritten: Granularity Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-diagram.svg" alt="Diagram: Granularity Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/granularity-hierarchy-sticky.svg" alt="Sticky Note: Granularity Hierarchy" width="30%">
+</a>
+
+
 
 
 | Level | Granularity | Concurrency | Overhead | Example |
@@ -4214,6 +4434,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### Q1: What is the fundamental difference between 2PL and Timestamp Ordering?
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-handwritten.svg" alt="Handwritten: What is the fundamental difference between 2PL and Timestamp Ordering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-diagram.svg" alt="Diagram: What is the fundamental difference between 2PL and Timestamp Ordering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-the-fundamental-difference-between-2pl-and-timestamp-ordering-sticky.svg" alt="Sticky Note: What is the fundamental difference between 2PL and Timestamp Ordering?" width="30%">
+</a>
+
+
 
 
 **Answer:** 2PL uses locks and blocking - transactions wait and may deadlock. T/O uses timestamps and aborts - transactions never wait but may abort unnecessarily. 2PL is pessimistic; T/O is optimistic about ordering.
@@ -4221,6 +4452,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### Q2: How does MVCC handle undo logs in PostgreSQL vs Oracle?
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-handwritten.svg" alt="Handwritten: How does MVCC handle undo logs in PostgreSQL vs Oracle?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-diagram.svg" alt="Diagram: How does MVCC handle undo logs in PostgreSQL vs Oracle?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-mvcc-handle-undo-logs-in-postgresql-vs-oracle-sticky.svg" alt="Sticky Note: How does MVCC handle undo logs in PostgreSQL vs Oracle?" width="30%">
+</a>
+
 
 
 
@@ -4230,6 +4472,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### Q3: Can MVCC prevent phantom reads?
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-handwritten.svg" alt="Handwritten: Can MVCC prevent phantom reads?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-diagram.svg" alt="Diagram: Can MVCC prevent phantom reads?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/can-mvcc-prevent-phantom-reads-sticky.svg" alt="Sticky Note: Can MVCC prevent phantom reads?" width="30%">
+</a>
+
+
 
 
 **Answer:** MVCC with Snapshot Isolation alone does NOT prevent phantoms. T1 reads a range; T2 inserts a matching row and commits; T1 re-reads - snapshot isolation hides the new row. But if T1 tries to UPDATE based on assumption of no matching rows, anomalies occur. PostgreSQL's SERIALIZABLE uses SSI to detect these. InnoDB uses gap locks at REPEATABLE READ.
@@ -4237,6 +4490,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### Q4: What is lock escalation?
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-handwritten.svg" alt="Handwritten: What is lock escalation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-diagram.svg" alt="Diagram: What is lock escalation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/what-is-lock-escalation-sticky.svg" alt="Sticky Note: What is lock escalation?" width="30%">
+</a>
+
 
 
 
@@ -4246,6 +4510,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 ### Q5: How does PostgreSQL MVCC differ from MySQL InnoDB?
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-handwritten.svg" alt="Handwritten: How does PostgreSQL MVCC differ from MySQL InnoDB?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-diagram.svg" alt="Diagram: How does PostgreSQL MVCC differ from MySQL InnoDB?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/how-does-postgresql-mvcc-differ-from-mysql-innodb-sticky.svg" alt="Sticky Note: How does PostgreSQL MVCC differ from MySQL InnoDB?" width="30%">
+</a>
+
+
 
 
 **Answer:** PostgreSQL stores versions in heap (xmin/xmax), VACUUM cleans up. InnoDB stores old versions in rollback segment (UNDO), uses clustered PK index, gap locks for phantoms.
@@ -4253,6 +4528,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### Q6: Explain phantom read in MVCC context.
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-handwritten.svg" alt="Handwritten: Explain phantom read in MVCC context." width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-diagram.svg" alt="Diagram: Explain phantom read in MVCC context." width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/explain-phantom-read-in-mvcc-context-sticky.svg" alt="Sticky Note: Explain phantom read in MVCC context." width="30%">
+</a>
+
 
 
 
@@ -4265,6 +4551,17 @@ T1: SELECT * FROM accounts WHERE id = 1. T2: UPDATE accounts SET balance = 0.
 
 
 ### PostgreSQL MVCC
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-handwritten.svg" alt="Handwritten: PostgreSQL MVCC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-diagram.svg" alt="Diagram: PostgreSQL MVCC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-mvcc-sticky.svg" alt="Sticky Note: PostgreSQL MVCC" width="30%">
+</a>
+
 
 
 
@@ -4294,6 +4591,17 @@ VACUUM accounts;
 
 ### MySQL InnoDB
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-handwritten.svg" alt="Handwritten: MySQL InnoDB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-diagram.svg" alt="Diagram: MySQL InnoDB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/mysql-innodb-sticky.svg" alt="Sticky Note: MySQL InnoDB" width="30%">
+</a>
+
+
 
 
 - Old versions in rollback segment (UNDO log)
@@ -4319,6 +4627,17 @@ SHOW ENGINE INNODB STATUS;
 
 
 ### Oracle Undo
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-handwritten.svg" alt="Handwritten: Oracle Undo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-diagram.svg" alt="Diagram: Oracle Undo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-sticky.svg" alt="Sticky Note: Oracle Undo" width="30%">
+</a>
+
 
 
 
@@ -4500,6 +4819,17 @@ do {
 
 ### 10.12 TypeScript Lock Manager and Deadlock Detector
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-handwritten.svg" alt="Handwritten: 10.12 TypeScript Lock Manager and Deadlock Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-diagram.svg" alt="Diagram: 10.12 TypeScript Lock Manager and Deadlock Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/10-12-typescript-lock-manager-and-deadlock-detector-sticky.svg" alt="Sticky Note: 10.12 TypeScript Lock Manager and Deadlock Detector" width="30%">
+</a>
+
+
 The TypeScript code below simulates a lock manager with shared/exclusive locks, deadlock detection via wait-for graph.
 
 ```typescript
@@ -4654,6 +4984,17 @@ flowchart LR
 ```
 
 ### Additional Chapter Quiz Questions
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
 
 11. Two-Phase Locking (2PL) guarantees:
     a) Deadlock freedom
@@ -4885,6 +5226,17 @@ flowchart LR
 
 ### Basic
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 
 
 1. Explain "lost update" with a schedule. Show how Strict 2PL prevents it.
@@ -4909,6 +5261,17 @@ flowchart LR
 
 ### Intermediate
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
+
 
 
 6. For schedule T1: READ(A),WRITE(A),READ(B),WRITE(B); T2: READ(A),WRITE(A) - is it conflict serializable?
@@ -4932,6 +5295,17 @@ flowchart LR
 
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 
 
@@ -4958,6 +5332,17 @@ flowchart LR
 
 
 ### PostgreSQL Implementation Details
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-handwritten.svg" alt="Handwritten: PostgreSQL Implementation Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-diagram.svg" alt="Diagram: PostgreSQL Implementation Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/postgresql-implementation-details-sticky.svg" alt="Sticky Note: PostgreSQL Implementation Details" width="30%">
+</a>
+
 
 
 
@@ -5023,6 +5408,17 @@ ORDER BY xid_age DESC;
 
 ### InnoDB Implementation Details
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-handwritten.svg" alt="Handwritten: InnoDB Implementation Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-diagram.svg" alt="Diagram: InnoDB Implementation Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/innodb-implementation-details-sticky.svg" alt="Sticky Note: InnoDB Implementation Details" width="30%">
+</a>
+
+
 
 
 **Gap Locks:**
@@ -5075,6 +5471,17 @@ Look for "LATEST DETECTED DEADLOCK" section showing:
 
 ### Oracle Undo
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-handwritten.svg" alt="Handwritten: Oracle Undo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-diagram.svg" alt="Diagram: Oracle Undo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/oracle-undo-sticky.svg" alt="Sticky Note: Oracle Undo" width="30%">
+</a>
+
+
 
 
 **UNDO Retention:**
@@ -5116,6 +5523,17 @@ WHERE id = 1;
 
 
 ### Concurrency Monitoring Queries
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-handwritten.svg" alt="Handwritten: Concurrency Monitoring Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-diagram.svg" alt="Diagram: Concurrency Monitoring Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-monitoring-queries-sticky.svg" alt="Sticky Note: Concurrency Monitoring Queries" width="30%">
+</a>
+
 
 
 
@@ -5209,6 +5627,17 @@ FROM sys.dm_exec_requests WHERE blocking_session_id > 0;
 
 ### Concurrency Control in Distributed Systems
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-handwritten.svg" alt="Handwritten: Concurrency Control in Distributed Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-diagram.svg" alt="Diagram: Concurrency Control in Distributed Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/concurrency-control-in-distributed-systems-sticky.svg" alt="Sticky Note: Concurrency Control in Distributed Systems" width="30%">
+</a>
+
+
 
 
 **Distributed 2PL (D2PL):**
@@ -5242,6 +5671,17 @@ FROM sys.dm_exec_requests WHERE blocking_session_id > 0;
 
 
 ### Practical Guidelines
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-handwritten.svg" alt="Handwritten: Practical Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-diagram.svg" alt="Diagram: Practical Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/practical-guidelines-sticky.svg" alt="Sticky Note: Practical Guidelines" width="30%">
+</a>
+
 
 
 
@@ -5317,6 +5757,17 @@ for attempt in range(max_retries):
 
 ### Common Pitfalls
 
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+</a>
+
+
 
 
 1. **Forgetting transaction boundaries:** AUTOCOMMIT breaks atomicity
@@ -5332,6 +5783,17 @@ for attempt in range(max_retries):
 
 
 ### Pro Tips
+
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/10-concurrency/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
+</a>
+
 
 
 

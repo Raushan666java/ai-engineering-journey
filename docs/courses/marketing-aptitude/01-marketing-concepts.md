@@ -15,6 +15,17 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 What Is Marketing?
 
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-handwritten.svg" alt="Handwritten: 1.1 What Is Marketing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-diagram.svg" alt="Diagram: 1.1 What Is Marketing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-1-what-is-marketing-sticky.svg" alt="Sticky Note: 1.1 What Is Marketing?" width="30%">
+</a>
+
+
 Marketing is not merely selling or advertising. It is the process of identifying, anticipating, and satisfying customer needs profitably.
 
 **Key Definitions:**
@@ -35,6 +46,17 @@ Marketing is not merely selling or advertising. It is the process of identifying
 - **Value** — The ratio of perceived benefits to price paid
 
 ### 1.2 The Marketing Mix
+
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-handwritten.svg" alt="Handwritten: 1.2 The Marketing Mix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-diagram.svg" alt="Diagram: 1.2 The Marketing Mix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-2-the-marketing-mix-sticky.svg" alt="Sticky Note: 1.2 The Marketing Mix" width="30%">
+</a>
+
 
 The marketing mix is the set of controllable tactical marketing tools that a firm blends to produce the response it wants from the target market.
 
@@ -107,6 +129,17 @@ mindmap
 
 ### 1.3 Marketing Environment
 
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-handwritten.svg" alt="Handwritten: 1.3 Marketing Environment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-diagram.svg" alt="Diagram: 1.3 Marketing Environment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-3-marketing-environment-sticky.svg" alt="Sticky Note: 1.3 Marketing Environment" width="30%">
+</a>
+
+
 The marketing environment consists of all actors and forces outside marketing that affect the marketing management's ability to build and maintain successful relationships with target customers.
 
 #### Microenvironment
@@ -147,6 +180,17 @@ Broader societal forces that affect the entire microenvironment:
 | **Environmental** | Sustainability, climate change, green marketing |
 
 ### 1.4 Market Segmentation, Targeting, and Positioning (STP)
+
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-handwritten.svg" alt="Handwritten: 1.4 Market Segmentation, Targeting, and Positioning (STP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-diagram.svg" alt="Diagram: 1.4 Market Segmentation, Targeting, and Positioning (STP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-4-market-segmentation-targeting-and-positioning-stp-sticky.svg" alt="Sticky Note: 1.4 Market Segmentation, Targeting, and Positioning (STP)" width="30%">
+</a>
+
 
 The STP process is the foundation of modern marketing strategy.
 
@@ -194,6 +238,17 @@ Positioning is designing the company's offering and image to occupy a distinctiv
 
 ### 1.5 Marketing Philosophies
 
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-handwritten.svg" alt="Handwritten: 1.5 Marketing Philosophies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-diagram.svg" alt="Diagram: 1.5 Marketing Philosophies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-5-marketing-philosophies-sticky.svg" alt="Sticky Note: 1.5 Marketing Philosophies" width="30%">
+</a>
+
+
 Five competing concepts under which organisations conduct marketing activities:
 
 ```mermaid
@@ -230,6 +285,17 @@ Holistic marketing recognises that everything matters in marketing and that a br
 
 ### 1.6 Customer Relationship Management (CRM)
 
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-handwritten.svg" alt="Handwritten: 1.6 Customer Relationship Management (CRM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-diagram.svg" alt="Diagram: 1.6 Customer Relationship Management (CRM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-6-customer-relationship-management-crm-sticky.svg" alt="Sticky Note: 1.6 Customer Relationship Management (CRM)" width="30%">
+</a>
+
+
 CRM is the process of managing detailed information about individual customers and carefully managing customer touchpoints to maximise customer loyalty.
 
 **Key CRM metrics:**
@@ -239,6 +305,17 @@ CRM is the process of managing detailed information about individual customers a
 - **Net Promoter Score (NPS)** — Willingness to recommend the brand
 
 ### 1.7 Consumer Buying Behaviour
+
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-handwritten.svg" alt="Handwritten: 1.7 Consumer Buying Behaviour" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-diagram.svg" alt="Diagram: 1.7 Consumer Buying Behaviour" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-7-consumer-buying-behaviour-sticky.svg" alt="Sticky Note: 1.7 Consumer Buying Behaviour" width="30%">
+</a>
+
 
 Understanding how consumers make purchase decisions is fundamental to marketing strategy.
 
@@ -274,6 +351,17 @@ flowchart TD
 
 ### 1.8 Marketing Research Process
 
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-handwritten.svg" alt="Handwritten: 1.8 Marketing Research Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-diagram.svg" alt="Diagram: 1.8 Marketing Research Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-8-marketing-research-process-sticky.svg" alt="Sticky Note: 1.8 Marketing Research Process" width="30%">
+</a>
+
+
 Marketing research is the systematic design, collection, analysis, and reporting of data relevant to a specific marketing situation.
 
 ```mermaid
@@ -299,6 +387,17 @@ graph LR
 - **Secondary data** — Already exists (government reports, industry studies, internal sales data)
 
 ### 1.9 Demand States in Marketing
+
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-handwritten.svg" alt="Handwritten: 1.9 Demand States in Marketing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-diagram.svg" alt="Diagram: 1.9 Demand States in Marketing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-9-demand-states-in-marketing-sticky.svg" alt="Sticky Note: 1.9 Demand States in Marketing" width="30%">
+</a>
+
 
 Marketers face different demand states that require different strategies:
 
@@ -343,6 +442,17 @@ mindmap
 | **Unwholesome** | Demand for harmful products | Counter-marketing |
 
 ### 1.10 Comparison Tables for Exam Preparation
+
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-handwritten.svg" alt="Handwritten: 1.10 Comparison Tables for Exam Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-diagram.svg" alt="Diagram: 1.10 Comparison Tables for Exam Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/01-marketing-concepts/1-10-comparison-tables-for-exam-preparation-sticky.svg" alt="Sticky Note: 1.10 Comparison Tables for Exam Preparation" width="30%">
+</a>
+
 
 #### 4Ps vs 7Ps Marketing Mix
 

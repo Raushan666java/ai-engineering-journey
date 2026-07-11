@@ -63,6 +63,17 @@ flowchart LR
 ---
 
 ### Problem 1: Valid Parentheses
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-handwritten.svg" alt="Handwritten: Problem 1: Valid Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-diagram.svg" alt="Diagram: Problem 1: Valid Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-1-valid-parentheses-sticky.svg" alt="Sticky Note: Problem 1: Valid Parentheses" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, String]
@@ -112,6 +123,17 @@ console.log(isValid("{[]}")); // true
 ---
 
 ### Problem 2: Min Stack
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-handwritten.svg" alt="Handwritten: Problem 2: Min Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-diagram.svg" alt="Diagram: Problem 2: Min Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-2-min-stack-sticky.svg" alt="Sticky Note: Problem 2: Min Stack" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Design]
@@ -180,6 +202,17 @@ console.log(minStack.getMin()); // -2
 ---
 
 ### Problem 3: Implement Queue using Stacks
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-handwritten.svg" alt="Handwritten: Problem 3: Implement Queue using Stacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-diagram.svg" alt="Diagram: Problem 3: Implement Queue using Stacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-3-implement-queue-using-stacks-sticky.svg" alt="Sticky Note: Problem 3: Implement Queue using Stacks" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Queue, Design]
@@ -243,6 +276,17 @@ console.log(q.empty()); // false
 ---
 
 ### Problem 4: Baseball Game
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-handwritten.svg" alt="Handwritten: Problem 4: Baseball Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-diagram.svg" alt="Diagram: Problem 4: Baseball Game" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-4-baseball-game-sticky.svg" alt="Sticky Note: Problem 4: Baseball Game" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Array]
@@ -292,6 +336,17 @@ console.log(calPoints(["5", "-2", "4", "C", "D", "9", "+", "+"])); // 27
 ---
 
 ### Problem 5: Backspace String Compare
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-handwritten.svg" alt="Handwritten: Problem 5: Backspace String Compare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-diagram.svg" alt="Diagram: Problem 5: Backspace String Compare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-5-backspace-string-compare-sticky.svg" alt="Sticky Note: Problem 5: Backspace String Compare" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Two Pointers]
@@ -340,6 +395,17 @@ console.log(backspaceCompare("a#c", "b")); // false
 ---
 
 ### Problem 6: Remove All Adjacent Duplicates In String
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-handwritten.svg" alt="Handwritten: Problem 6: Remove All Adjacent Duplicates In String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-diagram.svg" alt="Diagram: Problem 6: Remove All Adjacent Duplicates In String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-6-remove-all-adjacent-duplicates-in-string-sticky.svg" alt="Sticky Note: Problem 6: Remove All Adjacent Duplicates In String" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, String]
@@ -382,6 +448,17 @@ console.log(removeDuplicates("a")); // "a"
 ---
 
 ### Problem 7: Next Greater Element I
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-handwritten.svg" alt="Handwritten: Problem 7: Next Greater Element I" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-diagram.svg" alt="Diagram: Problem 7: Next Greater Element I" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-7-next-greater-element-i-sticky.svg" alt="Sticky Note: Problem 7: Next Greater Element I" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Stack, Hash Table]
@@ -429,6 +506,17 @@ console.log(nextGreaterElement([2, 4], [1, 2, 3, 4])); // [3, -1]
 ---
 
 ### Problem 8: Next Greater Element II
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-handwritten.svg" alt="Handwritten: Problem 8: Next Greater Element II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-diagram.svg" alt="Diagram: Problem 8: Next Greater Element II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-8-next-greater-element-ii-sticky.svg" alt="Sticky Note: Problem 8: Next Greater Element II" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array]
@@ -474,6 +562,17 @@ console.log(nextGreaterElements([1, 2, 3, 4, 3])); // [2, 3, 4, -1, 4]
 ---
 
 ### Problem 9: Daily Temperatures
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-handwritten.svg" alt="Handwritten: Problem 9: Daily Temperatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-diagram.svg" alt="Diagram: Problem 9: Daily Temperatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-9-daily-temperatures-sticky.svg" alt="Sticky Note: Problem 9: Daily Temperatures" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array, Monotonic Stack]
@@ -520,6 +619,17 @@ console.log(dailyTemperatures([30, 40, 50, 60])); // [1, 1, 1, 0]
 ---
 
 ### Problem 10: Evaluate Reverse Polish Notation
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-handwritten.svg" alt="Handwritten: Problem 10: Evaluate Reverse Polish Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-diagram.svg" alt="Diagram: Problem 10: Evaluate Reverse Polish Notation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-10-evaluate-reverse-polish-notation-sticky.svg" alt="Sticky Note: Problem 10: Evaluate Reverse Polish Notation" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Math]
@@ -573,6 +683,17 @@ console.log(evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", 
 ---
 
 ### Problem 11: Decode String
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-handwritten.svg" alt="Handwritten: Problem 11: Decode String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-diagram.svg" alt="Diagram: Problem 11: Decode String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-11-decode-string-sticky.svg" alt="Sticky Note: Problem 11: Decode String" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, String, Recursion]
@@ -628,6 +749,17 @@ console.log(decodeString("2[abc]3[cd]ef")); // "abcabccdcdcdef"
 ---
 
 ### Problem 12: Asteroid Collision
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-handwritten.svg" alt="Handwritten: Problem 12: Asteroid Collision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-diagram.svg" alt="Diagram: Problem 12: Asteroid Collision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-12-asteroid-collision-sticky.svg" alt="Sticky Note: Problem 12: Asteroid Collision" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Array]
@@ -680,6 +812,17 @@ console.log(asteroidCollision([10, 2, -5])); // [10]
 ---
 
 ### Problem 13: Online Stock Span
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-handwritten.svg" alt="Handwritten: Problem 13: Online Stock Span" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-diagram.svg" alt="Diagram: Problem 13: Online Stock Span" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-13-online-stock-span-sticky.svg" alt="Sticky Note: Problem 13: Online Stock Span" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Monotonic Stack, Design]
@@ -730,6 +873,17 @@ console.log(spanner.next(85)); // 6
 ---
 
 ### Problem 14: Remove K Digits
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-handwritten.svg" alt="Handwritten: Problem 14: Remove K Digits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-diagram.svg" alt="Diagram: Problem 14: Remove K Digits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-14-remove-k-digits-sticky.svg" alt="Sticky Note: Problem 14: Remove K Digits" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Greedy]
@@ -784,6 +938,17 @@ console.log(removeKdigits("10", 2)); // "0"
 ---
 
 ### Problem 15: Simplify Path
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-handwritten.svg" alt="Handwritten: Problem 15: Simplify Path" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-diagram.svg" alt="Diagram: Problem 15: Simplify Path" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-15-simplify-path-sticky.svg" alt="Sticky Note: Problem 15: Simplify Path" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, String]
@@ -829,6 +994,17 @@ console.log(simplifyPath("/../")); // "/"
 ---
 
 ### Problem 16: Validate Stack Sequences
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-handwritten.svg" alt="Handwritten: Problem 16: Validate Stack Sequences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-diagram.svg" alt="Diagram: Problem 16: Validate Stack Sequences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-16-validate-stack-sequences-sticky.svg" alt="Sticky Note: Problem 16: Validate Stack Sequences" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Simulation]
@@ -870,6 +1046,17 @@ console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])); // false
 ---
 
 ### Problem 17: Flatten Nested List Iterator
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-handwritten.svg" alt="Handwritten: Problem 17: Flatten Nested List Iterator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-diagram.svg" alt="Diagram: Problem 17: Flatten Nested List Iterator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-17-flatten-nested-list-iterator-sticky.svg" alt="Sticky Note: Problem 17: Flatten Nested List Iterator" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Stack, Design, Recursion]
@@ -911,6 +1098,17 @@ class NestedIterator {
 ---
 
 ### Problem 18: Largest Rectangle in Histogram
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-handwritten.svg" alt="Handwritten: Problem 18: Largest Rectangle in Histogram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-diagram.svg" alt="Diagram: Problem 18: Largest Rectangle in Histogram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-18-largest-rectangle-in-histogram-sticky.svg" alt="Sticky Note: Problem 18: Largest Rectangle in Histogram" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Stack, Array, Monotonic Stack]
@@ -962,6 +1160,17 @@ console.log(largestRectangleArea([1])); // 1
 ---
 
 ### Problem 19: Sliding Window Maximum
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-handwritten.svg" alt="Handwritten: Problem 19: Sliding Window Maximum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-diagram.svg" alt="Diagram: Problem 19: Sliding Window Maximum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-19-sliding-window-maximum-sticky.svg" alt="Sticky Note: Problem 19: Sliding Window Maximum" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Queue, Deque, Sliding Window]
@@ -1020,6 +1229,17 @@ console.log(maxSlidingWindow([1, -1], 1)); // [1, -1]
 ---
 
 ### Problem 20: Trapping Rain Water II
+
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-handwritten.svg" alt="Handwritten: Problem 20: Trapping Rain Water II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-diagram.svg" alt="Diagram: Problem 20: Trapping Rain Water II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/04-stacks-queues/problem-20-trapping-rain-water-ii-sticky.svg" alt="Sticky Note: Problem 20: Trapping Rain Water II" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Heap, BFS, Matrix]

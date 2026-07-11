@@ -33,6 +33,17 @@
 
 ### ओशो का दृष्टि दर्शन — चार स्तर
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+</a>
+
+
 ओशो ने देखने की प्रक्रिया को चार स्तरों में विभाजित किया:
 
 #### १. बाह्य दृष्टि (External Seeing)
@@ -58,6 +69,17 @@
 ## विज्ञान भैरव तंत्र की १५ दृश्य तकनीकें — ओशो की व्याख्या
 
 ### तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" alt="Handwritten: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" alt="Diagram: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" alt="Sticky Note: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+</a>
+
 
 **मूल श्लोक:**
 > *"एकबिन्दुं समालोक्य दृष्टिं सम्यक् निरोधयेत्। भ्रुवोर्मध्ये दृशं स्थाप्य भैरवीपदमाप्नुयात्॥"*
@@ -93,6 +115,17 @@
 
 ### तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" alt="Handwritten: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" alt="Diagram: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" alt="Sticky Note: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+</a>
+
+
 **मूल श्लोक:**
 > *"भ्रुवोर्मध्ये दृशं स्थाप्य मनो ध्यानं निवेशयेत्। ततः परतरं ध्यायेद्भैरवं परमेश्वरम्॥"*
 
@@ -115,6 +148,17 @@
 ---
 
 ### तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" alt="Handwritten: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" alt="Diagram: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" alt="Sticky Note: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+</a>
+
 
 **मूल श्लोक:**
 > *"अग्नौ ज्वालां समालोक्य तन्मात्रां परिचिन्तयेत्। ज्वालायां च लयीभूतः प्रविशेद्वै भैरवीम्॥"*
@@ -139,6 +183,17 @@
 
 ### तकनीक ४: आकाश ध्यान (Space Gazing)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" alt="Handwritten: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" alt="Diagram: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" alt="Sticky Note: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+</a>
+
+
 **मूल श्लोक:**
 > *"व्योम्नि दृष्टिं विनिक्षिप्य स्थिरो भूत्वा निरन्तरम्। भैरवं ध्यायते यस्तु स भवेद्भैरवः स्वयम्॥"*
 
@@ -161,6 +216,17 @@
 ---
 
 ### तकनीक ५: अन्धकार ध्यान (Darkness Meditation)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" alt="Handwritten: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" alt="Diagram: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" alt="Sticky Note: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+</a>
+
 
 **मूल श्लोक:**
 > *"अन्धकारे महारात्रौ भैरवीं भावनां भजेत्। तमसा च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -185,6 +251,17 @@
 
 ### तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" alt="Handwritten: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" alt="Diagram: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" alt="Sticky Note: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+</a>
+
+
 **मूल श्लोक:**
 > *"हृदये दीपकं ध्यायेदन्तर्ज्योतिः प्रकाशते। तेन ज्ञानं प्रकाशेत भैरवं परमेश्वरम्॥"*
 
@@ -206,6 +283,17 @@
 
 ### तकनीक ७: शून्य ध्यान (Void Meditation)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" alt="Handwritten: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" alt="Diagram: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" alt="Sticky Note: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+</a>
+
+
 **मूल श्लोक:**
 > *"शून्ये दृष्टिं विनिक्षिप्य भावयेद्भैरवं शिवम्। न तस्य चिन्तया कार्यं चिन्ता यस्य लयङ्गता॥"*
 
@@ -218,6 +306,17 @@
 
 ### तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" alt="Handwritten: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" alt="Diagram: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" alt="Sticky Note: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+</a>
+
+
 **मूल श्लोक:**
 > *"जले स्थले च यद्बिम्बं तद्ध्यायेद्भैरवं शिवम्। बिम्बे च लयमापन्नो भैरवत्वमवाप्नुयात्॥"*
 
@@ -229,6 +328,17 @@
 ---
 
 ### तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" alt="Handwritten: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" alt="Diagram: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" alt="Sticky Note: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+</a>
+
 
 **मूल श्लोक:**
 > *"पिण्डे ब्रह्माण्डमालोक्य ब्रह्माण्डे पिण्डमेव च। सर्वं व्याप्तं चिदाकाशं ध्यायेद्भैरवमीश्वरम्॥"*
@@ -483,6 +593,17 @@ tratak.start();
 ## अध्याय प्रश्नोत्तरी (Chapter Quiz)
 
 ### प्रश्न १
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+</a>
+
 **ओशो के अनुसार त्राटक क्या है?**
 
 क) एकाग्रता की एक विधि
@@ -491,6 +612,17 @@ tratak.start();
 घ) एक मंत्र
 
 ### प्रश्न २
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+</a>
+
 **ओशो के 'देखने' के चार स्तर कौन-से हैं?**
 
 क) स्थूल, सूक्ष्म, कारण, महाकारण
@@ -499,6 +631,17 @@ tratak.start();
 घ) भूत, वर्तमान, भविष्य, अनन्त
 
 ### प्रश्न ३
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+</a>
+
 **अग्नि त्राटक में ज्वाला के किस भाग को देखना चाहिए — ओशो के अनुसार?**
 
 क) ज्वाला के ऊपरी भाग को
@@ -507,6 +650,17 @@ tratak.start();
 घ) ज्वाला के चारों ओर के प्रकाश को
 
 ### प्रश्न ४
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+</a>
+
 **आकाश ध्यान में किस पर ध्यान देना चाहिए?**
 
 क) तारों पर
@@ -515,6 +669,17 @@ tratak.start();
 घ) क्षितिज पर
 
 ### प्रश्न ५
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+</a>
+
 **ओशो के अनुसार अन्धकार ध्यान का उद्देश्य क्या है?**
 
 क) अन्धकार पर विजय पाना
@@ -523,6 +688,17 @@ tratak.start();
 घ) प्रकाश उत्पन्न करना
 
 ### प्रश्न ६
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+</a>
+
 **भ्रूमध्य त्राटक में आँखों को किस ओर मोड़ना चाहिए?**
 
 क) नीचे की ओर
@@ -531,6 +707,17 @@ tratak.start();
 घ) बंद रखना चाहिए
 
 ### प्रश्न ७
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+</a>
+
 **हृदय ज्योति ध्यान में क्या कल्पना करनी चाहिए?**
 
 क) हृदय में एक कमल
@@ -539,6 +726,17 @@ tratak.start();
 घ) हृदय में एक नदी
 
 ### प्रश्न ८
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+</a>
+
 **ओशो ने त्राटक को किस ज़ेन कहानी से समझाया?**
 
 क) बाँस की कहानी
@@ -547,6 +745,17 @@ tratak.start();
 घ) बैल की कहानी
 
 ### प्रश्न ९
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
+</a>
+
 **प्रतिबिम्ब ध्यान में ओशो क्या सिखाते हैं?**
 
 क) अपने प्रतिबिम्ब को अपना समझना
@@ -555,6 +764,17 @@ tratak.start();
 घ) प्रतिबिम्ब को पकड़ना
 
 ### प्रश्न १०
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
+</a>
+
 **शून्य ध्यान की विशेषता क्या है — ओशो के अनुसार?**
 
 क) वहाँ कुछ देखना है
@@ -565,6 +785,17 @@ tratak.start();
 ---
 
 ### उत्तर कुंजी
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
+</a>
+
 
 | प्रश्न | उत्तर | स्पष्टीकरण |
 |-------|--------|------------|
@@ -585,29 +816,106 @@ tratak.start();
 
 ### अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+</a>
+
+
 ११ दिनों तक प्रतिदिन १२ मिनट त्राटक करें — ओशो के निर्देशों के साथ। पहले दिन केवल बिन्दु को देखें, धीरे-धीरे प्रतिबिम्ब और शून्य की ओर बढ़ें। डायरी में प्रतिदिन का अनुभव लिखें।
 
 ### अभ्यास २: अग्नि त्राटक — सात दीपक
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+</a>
+
 
 एक सप्ताह तक प्रतिदिन ११ मिनट अग्नि त्राटक करें। मोमबत्ती की ज्वाला को देखें — पहले बाहर, फिर प्रतिबिम्ब को भीतर। देखें कि ज्वाला के रंग कैसे बदलते हैं।
 
 ### अभ्यास ३: आकाश ध्यान — १५ मिनट
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+</a>
+
+
 रात में तारों भरे आकाश के नीचे लेटें और १५ मिनट आकाश ध्यान करें। बिना किसी लक्ष्य के आकाश में देखें। एक सप्ताह बाद लिखें — क्या आकाश और आपके बीच का भेद मिटने लगा?
 
 ### अभ्यास ४: अन्धकार ध्यान — ७ दिन
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+</a>
+
 
 पूर्ण अँधेरे कमरे में प्रतिदिन ११ मिनट अन्धकार ध्यान करें। डर को देखें — उसे जाने दें। अन्धकार की गहराई में प्रवेश करें। ७वें दिन अपने अनुभव लिखें।
 
 ### अभ्यास ५: TypeScript त्राटक टाइमर विस्तार
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+</a>
+
+
 दिए गए TypeScript कोड में दो नई विधियाँ जोड़ें — **अग्नि त्राटक** और **अन्धकार ध्यान**। प्रत्येक के लिए ओशो के निर्देश, उद्धरण, और श्लोक संदर्भ जोड़ें।
 
 ### अभ्यास ६: चारों स्तरों पर देखना
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+</a>
+
+
 एक ही वस्तु (जैसे एक फूल या एक दीपक) को चारों स्तरों पर देखें — बाह्य, प्रतिबिम्ब, आन्तर प्रकाश, शुद्ध दृष्टि। प्रत्येक स्तर पर ५ मिनट दें। प्रत्येक स्तर के अनुभव को लिखें।
 
 ### अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+</a>
+
 
 एक बार १०८ मिनट का निर्बाध त्राटक सत्र करें। ३६ मिनट बिन्दु पर, ३६ मिनट प्रतिबिम्ब पर, ३६ मिनट शून्य में। ओशो के निर्देशों का पालन करें — शिथिल रहें, पकड़ें नहीं।
 

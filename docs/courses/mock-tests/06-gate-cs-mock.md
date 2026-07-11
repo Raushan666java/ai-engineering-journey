@@ -60,6 +60,17 @@ pie title GATE CS — Mark Distribution
 
 ### Q1. [Numerical Ability] | 1 Mark | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-handwritten.svg" alt="Handwritten: Q1. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-diagram.svg" alt="Diagram: Q1. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q1-numerical-ability-1-mark-general-aptitude-sticky.svg" alt="Sticky Note: Q1. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+
+
 **A train running at 72 km/h crosses a pole in 15 seconds. What is the length of the train?**
 
 A) 200 m  B) 250 m  C) 300 m  D) 350 m
@@ -80,6 +91,17 @@ Length = Speed × Time = 20 × 15 = 300 m.
 
 ### Q2. [Verbal Ability] | 1 Mark | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-handwritten.svg" alt="Handwritten: Q2. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-diagram.svg" alt="Diagram: Q2. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q2-verbal-ability-1-mark-general-aptitude-sticky.svg" alt="Sticky Note: Q2. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+
+
 **Choose the word most similar in meaning to "PERPETUAL":**
 
 A) Temporary  B) Continuous  C) Brief  D) Fleeting
@@ -97,6 +119,17 @@ A) Temporary  B) Continuous  C) Brief  D) Fleeting
 ---
 
 ### Q3. [Numerical Ability] | 1 Mark | General Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-handwritten.svg" alt="Handwritten: Q3. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-diagram.svg" alt="Diagram: Q3. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q3-numerical-ability-1-mark-general-aptitude-sticky.svg" alt="Sticky Note: Q3. [Numerical Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+
 
 **What is the average of the first 10 prime numbers?**
 
@@ -119,6 +152,17 @@ Average = 129/10 = 12.9.
 
 ### Q4. [Reasoning] | 1 Mark | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-handwritten.svg" alt="Handwritten: Q4. [Reasoning] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-diagram.svg" alt="Diagram: Q4. [Reasoning] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q4-reasoning-1-mark-general-aptitude-sticky.svg" alt="Sticky Note: Q4. [Reasoning] | 1 Mark | General Aptitude" width="30%">
+</a>
+
+
 **If January 1, 2025 is Wednesday, what day is January 1, 2026?**
 
 A) Wednesday  B) Thursday  C) Friday  D) Saturday
@@ -139,6 +183,17 @@ So January 1, 2026 = Wednesday + 1 = Thursday.
 
 ### Q5. [Verbal Ability] | 1 Mark | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-handwritten.svg" alt="Handwritten: Q5. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-diagram.svg" alt="Diagram: Q5. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q5-verbal-ability-1-mark-general-aptitude-sticky.svg" alt="Sticky Note: Q5. [Verbal Ability] | 1 Mark | General Aptitude" width="30%">
+</a>
+
+
 **Identify the correct sentence:**
 
 A) He did not went to school yesterday.  B) He did not go to school yesterday.  C) He did not goes to school yesterday.  D) He does not go to school yesterday.
@@ -156,6 +211,17 @@ A) He did not went to school yesterday.  B) He did not go to school yesterday.  
 ---
 
 ### Q6. [Numerical Ability] | 2 Marks | General Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-handwritten.svg" alt="Handwritten: Q6. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-diagram.svg" alt="Diagram: Q6. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q6-numerical-ability-2-marks-general-aptitude-sticky.svg" alt="Sticky Note: Q6. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+
 
 **A can do a piece of work in 12 days. B is 20% more efficient than A. How many days will B take to do the same work?**
 
@@ -179,6 +245,17 @@ Alternatively: Efficiency ratio A:B = 100:120 = 5:6. Time ratio = 6:5. B's time 
 ---
 
 ### Q7. [Data Interpretation] | 2 Marks | General Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-handwritten.svg" alt="Handwritten: Q7. [Data Interpretation] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-diagram.svg" alt="Diagram: Q7. [Data Interpretation] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q7-data-interpretation-2-marks-general-aptitude-sticky.svg" alt="Sticky Note: Q7. [Data Interpretation] | 2 Marks | General Aptitude" width="30%">
+</a>
+
 
 **Study the table:**
 
@@ -208,6 +285,17 @@ Profit % in 2023 = (Profit / Sales) × 100 = (18/90) × 100 = 20%.
 
 ### Q8. [Reasoning] | 2 Marks | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-handwritten.svg" alt="Handwritten: Q8. [Reasoning] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-diagram.svg" alt="Diagram: Q8. [Reasoning] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q8-reasoning-2-marks-general-aptitude-sticky.svg" alt="Sticky Note: Q8. [Reasoning] | 2 Marks | General Aptitude" width="30%">
+</a>
+
+
 **Find the missing number: 2, 6, 18, 54, ?**
 
 A) 108  B) 162  C) 172  D) 182
@@ -228,6 +316,17 @@ Pattern: multiply by 3 each time.
 
 ### Q9. [Numerical Ability] | 2 Marks | General Aptitude
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-handwritten.svg" alt="Handwritten: Q9. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-diagram.svg" alt="Diagram: Q9. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q9-numerical-ability-2-marks-general-aptitude-sticky.svg" alt="Sticky Note: Q9. [Numerical Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+
+
 **If log₂(x) = 5, what is the value of x?**
 
 A) 16  B) 25  C) 32  D) 64
@@ -247,6 +346,17 @@ x = 2⁵ = 32.
 ---
 
 ### Q10. [Verbal Ability] | 2 Marks | General Aptitude
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-handwritten.svg" alt="Handwritten: Q10. [Verbal Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-diagram.svg" alt="Diagram: Q10. [Verbal Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q10-verbal-ability-2-marks-general-aptitude-sticky.svg" alt="Sticky Note: Q10. [Verbal Ability] | 2 Marks | General Aptitude" width="30%">
+</a>
+
 
 **Choose the correctly spelled word:**
 
@@ -272,6 +382,17 @@ A) Accomodation  B) Acommodation  C) Accommodation  D) Acomodation
 
 ### Q11. [DS & Algorithms] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-handwritten.svg" alt="Handwritten: Q11. [DS & Algorithms] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-diagram.svg" alt="Diagram: Q11. [DS & Algorithms] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q11-ds-algorithms-1-mark-technical-sticky.svg" alt="Sticky Note: Q11. [DS & Algorithms] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **What is the time complexity of searching for an element in a balanced Binary Search Tree?**
 
 A) O(1)  B) O(log n)  C) O(n)  D) O(n²)
@@ -289,6 +410,17 @@ A) O(1)  B) O(log n)  C) O(n)  D) O(n²)
 ---
 
 ### Q12. [Programming] | 1 Mark | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-handwritten.svg" alt="Handwritten: Q12. [Programming] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-diagram.svg" alt="Diagram: Q12. [Programming] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q12-programming-1-mark-technical-sticky.svg" alt="Sticky Note: Q12. [Programming] | 1 Mark | Technical" width="30%">
+</a>
+
 
 **What does the following C code print?**
 
@@ -320,6 +452,17 @@ Note: In C, this is actually undefined behavior (modifying x twice between seque
 
 ### Q13. [Theory of Computation] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-handwritten.svg" alt="Handwritten: Q13. [Theory of Computation] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-diagram.svg" alt="Diagram: Q13. [Theory of Computation] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q13-theory-of-computation-1-mark-technical-sticky.svg" alt="Sticky Note: Q13. [Theory of Computation] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **Which of the following languages is NOT regular?**
 
 A) {aⁿ | n ≥ 0}  B) {aⁿbⁿ | n ≥ 0}  C) {aⁿbᵐ | n,m ≥ 0}  D) {w | w has an even number of a's}
@@ -342,6 +485,17 @@ A) {aⁿ | n ≥ 0}  B) {aⁿbⁿ | n ≥ 0}  C) {aⁿbᵐ | n,m ≥ 0}  D) {w |
 
 ### Q14. [Compiler Design] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-handwritten.svg" alt="Handwritten: Q14. [Compiler Design] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-diagram.svg" alt="Diagram: Q14. [Compiler Design] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q14-compiler-design-1-mark-technical-sticky.svg" alt="Sticky Note: Q14. [Compiler Design] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **Which phase of a compiler produces the Abstract Syntax Tree (AST)?**
 
 A) Lexical Analysis  B) Syntax Analysis  C) Semantic Analysis  D) Code Generation
@@ -359,6 +513,17 @@ A) Lexical Analysis  B) Syntax Analysis  C) Semantic Analysis  D) Code Generatio
 ---
 
 ### Q15. [Operating Systems] | 1 Mark | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-handwritten.svg" alt="Handwritten: Q15. [Operating Systems] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-diagram.svg" alt="Diagram: Q15. [Operating Systems] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q15-operating-systems-1-mark-technical-sticky.svg" alt="Sticky Note: Q15. [Operating Systems] | 1 Mark | Technical" width="30%">
+</a>
+
 
 **Which scheduling algorithm minimizes the average waiting time?**
 
@@ -378,6 +543,17 @@ A) FCFS  B) SJF (Shortest Job First)  C) Round Robin  D) Priority Scheduling
 
 ### Q16. [Databases] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-handwritten.svg" alt="Handwritten: Q16. [Databases] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-diagram.svg" alt="Diagram: Q16. [Databases] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q16-databases-1-mark-technical-sticky.svg" alt="Sticky Note: Q16. [Databases] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **Which normal form requires that every non-key attribute must be fully functionally dependent on the primary key?**
 
 A) 1NF  B) 2NF  C) 3NF  D) BCNF
@@ -396,6 +572,17 @@ A) 1NF  B) 2NF  C) 3NF  D) BCNF
 
 ### Q17. [Computer Networks] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-handwritten.svg" alt="Handwritten: Q17. [Computer Networks] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-diagram.svg" alt="Diagram: Q17. [Computer Networks] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q17-computer-networks-1-mark-technical-sticky.svg" alt="Sticky Note: Q17. [Computer Networks] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **Which layer of the OSI model handles routing and forwarding?**
 
 A) Data Link Layer  B) Network Layer  C) Transport Layer  D) Session Layer
@@ -413,6 +600,17 @@ A) Data Link Layer  B) Network Layer  C) Transport Layer  D) Session Layer
 ---
 
 ### Q18. [Discrete Mathematics] | 1 Mark | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-handwritten.svg" alt="Handwritten: Q18. [Discrete Mathematics] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-diagram.svg" alt="Diagram: Q18. [Discrete Mathematics] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q18-discrete-mathematics-1-mark-technical-sticky.svg" alt="Sticky Note: Q18. [Discrete Mathematics] | 1 Mark | Technical" width="30%">
+</a>
+
 
 **How many edges does a complete graph with 6 vertices have?**
 
@@ -433,6 +631,17 @@ Number of edges in Kₙ = n(n-1)/2 = 6×5/2 = 15.
 
 ### Q19. [Digital Logic] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-handwritten.svg" alt="Handwritten: Q19. [Digital Logic] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-diagram.svg" alt="Diagram: Q19. [Digital Logic] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q19-digital-logic-1-mark-technical-sticky.svg" alt="Sticky Note: Q19. [Digital Logic] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **What is the output of a 2-input NAND gate when both inputs are 1?**
 
 A) 0  B) 1  C) X (don't care)  D) High impedance
@@ -450,6 +659,17 @@ A) 0  B) 1  C) X (don't care)  D) High impedance
 ---
 
 ### Q20. [Linear Algebra] | 1 Mark | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-handwritten.svg" alt="Handwritten: Q20. [Linear Algebra] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-diagram.svg" alt="Diagram: Q20. [Linear Algebra] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q20-linear-algebra-1-mark-technical-sticky.svg" alt="Sticky Note: Q20. [Linear Algebra] | 1 Mark | Technical" width="30%">
+</a>
+
 
 **If A is a 3×3 matrix with determinant 5, what is det(2A)?**
 
@@ -471,6 +691,17 @@ det(2A) = 2³ × 5 = 8 × 5 = 40.
 
 ### Q21. [Calculus] | 1 Mark | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-handwritten.svg" alt="Handwritten: Q21. [Calculus] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-diagram.svg" alt="Diagram: Q21. [Calculus] | 1 Mark | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q21-calculus-1-mark-technical-sticky.svg" alt="Sticky Note: Q21. [Calculus] | 1 Mark | Technical" width="30%">
+</a>
+
+
 **What is the derivative of f(x) = eˣ × sin(x)?**
 
 A) eˣ(sin x + cos x)  B) eˣ(sin x - cos x)  C) eˣ(cos x - sin x)  D) eˣ × cos x
@@ -490,6 +721,17 @@ d/dx(eˣ sin x) = eˣ(sin x) + eˣ(cos x) = eˣ(sin x + cos x).
 ---
 
 ### Q22. [DS & Algorithms] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q22. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q22. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q22-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q22. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the output of the following postfix expression: 5 3 2 * + 8 4 / -**
 
@@ -518,6 +760,17 @@ Result: 9.
 
 ### Q23. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q23. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q23. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q23-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q23. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **How many distinct binary search trees can be formed with 4 distinct keys?**
 
 A) 10  B) 12  C) 14  D) 16
@@ -538,6 +791,17 @@ C₄ = (8)! / (5! × 4!) = 40320 / (120 × 24) = 40320 / 2880 = 14.
 ---
 
 ### Q24. [DS & Algorithms] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q24. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q24. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q24-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q24. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the minimum number of comparisons required to find the minimum and maximum of 8 elements?**
 
@@ -562,6 +826,17 @@ Alternatively: Pair elements (4 comparisons for min of pairs, 4 for max of pairs
 
 ### Q25. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q25. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q25. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q25-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q25. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which data structure is used for implementing recursion?**
 
 A) Queue  B) Stack  C) Array  D) Linked List
@@ -579,6 +854,17 @@ A) Queue  B) Stack  C) Array  D) Linked List
 ---
 
 ### Q26. [Programming] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-handwritten.svg" alt="Handwritten: Q26. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-diagram.svg" alt="Diagram: Q26. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q26-programming-2-marks-technical-sticky.svg" alt="Sticky Note: Q26. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What does the following C program output?**
 
@@ -616,6 +902,17 @@ f(5)=f(4)+f(3)=5+3=8
 
 ### Q27. [Programming] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-handwritten.svg" alt="Handwritten: Q27. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-diagram.svg" alt="Diagram: Q27. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q27-programming-2-marks-technical-sticky.svg" alt="Sticky Note: Q27. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **In C, what is the output of the following?**
 
 ```c
@@ -646,6 +943,17 @@ Array indexing: a[i] is equivalent to *(a + i).
 
 ### Q28. [Theory of Computation] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-handwritten.svg" alt="Handwritten: Q28. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-diagram.svg" alt="Diagram: Q28. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q28-theory-of-computation-2-marks-technical-sticky.svg" alt="Sticky Note: Q28. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which of the following is TRUE about the language L = {aⁿbⁿcⁿ | n ≥ 0}?**
 
 A) Regular  B) Context-free but not regular  C) Context-sensitive but not context-free  D) Recursively enumerable but not context-sensitive
@@ -665,6 +973,17 @@ L = {aⁿbⁿcⁿ | n ≥ 0} requires counting and matching three equal numbers,
 
 ### Q29. [Theory of Computation] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-handwritten.svg" alt="Handwritten: Q29. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-diagram.svg" alt="Diagram: Q29. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q29-theory-of-computation-2-marks-technical-sticky.svg" alt="Sticky Note: Q29. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which of the following problems is undecidable?**
 
 A) Whether a DFA accepts a given string  B) Whether a CFG generates an empty language  C) Whether a Turing machine halts on a given input  D) Whether two DFAs are equivalent
@@ -682,6 +1001,17 @@ A) Whether a DFA accepts a given string  B) Whether a CFG generates an empty lan
 ---
 
 ### Q30. [Compiler Design] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-handwritten.svg" alt="Handwritten: Q30. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-diagram.svg" alt="Diagram: Q30. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q30-compiler-design-2-marks-technical-sticky.svg" alt="Sticky Note: Q30. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which grammar has no ε-productions and no unit productions?**
 
@@ -701,6 +1031,17 @@ A) Chomsky Normal Form (CNF)  B) Greibach Normal Form (GNF)  C) LL(1) grammar  D
 
 ### Q31. [Compiler Design] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-handwritten.svg" alt="Handwritten: Q31. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-diagram.svg" alt="Diagram: Q31. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q31-compiler-design-2-marks-technical-sticky.svg" alt="Sticky Note: Q31. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is the role of a YACC (Yet Another Compiler Compiler)?**
 
 A) Lexical analyzer generator  B) Parser generator  C) Code optimizer  D) Symbol table manager
@@ -719,6 +1060,17 @@ A) Lexical analyzer generator  B) Parser generator  C) Code optimizer  D) Symbol
 
 ### Q32. [Operating Systems] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-handwritten.svg" alt="Handwritten: Q32. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-diagram.svg" alt="Diagram: Q32. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q32-operating-systems-2-marks-technical-sticky.svg" alt="Sticky Note: Q32. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which page replacement algorithm suffers from Belady's Anomaly?**
 
 A) FIFO  B) LRU  C) Optimal  D) Clock
@@ -736,6 +1088,17 @@ A) FIFO  B) LRU  C) Optimal  D) Clock
 ---
 
 ### Q33. [Operating Systems] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-handwritten.svg" alt="Handwritten: Q33. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-diagram.svg" alt="Diagram: Q33. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q33-operating-systems-2-marks-technical-sticky.svg" alt="Sticky Note: Q33. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which of the following is NOT a necessary condition for deadlock?**
 
@@ -760,6 +1123,17 @@ Starvation is a related concept but not a necessary condition for deadlock.
 
 ### Q34. [Operating Systems] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-handwritten.svg" alt="Handwritten: Q34. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-diagram.svg" alt="Diagram: Q34. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q34-operating-systems-2-marks-technical-sticky.svg" alt="Sticky Note: Q34. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is the size of virtual address space if the logical address has 32 bits?**
 
 A) 2³² bytes  B) 2³² words  C) 4 GB  D) Both A and C
@@ -778,6 +1152,17 @@ A) 2³² bytes  B) 2³² words  C) 4 GB  D) Both A and C
 
 ### Q35. [Databases] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-handwritten.svg" alt="Handwritten: Q35. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-diagram.svg" alt="Diagram: Q35. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q35-databases-2-marks-technical-sticky.svg" alt="Sticky Note: Q35. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which SQL clause is used to filter groups after aggregation?**
 
 A) WHERE  B) HAVING  C) GROUP BY  D) ORDER BY
@@ -795,6 +1180,17 @@ A) WHERE  B) HAVING  C) GROUP BY  D) ORDER BY
 ---
 
 ### Q36. [Databases] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-handwritten.svg" alt="Handwritten: Q36. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-diagram.svg" alt="Diagram: Q36. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q36-databases-2-marks-technical-sticky.svg" alt="Sticky Note: Q36. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **If a relation R(A,B,C) has functional dependencies A → B and B → C, which normal form violation is present?**
 
@@ -822,6 +1218,17 @@ The question asks which normal form violation. BCNF is the strongest violated. A
 
 ### Q37. [Computer Networks] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-handwritten.svg" alt="Handwritten: Q37. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-diagram.svg" alt="Diagram: Q37. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q37-computer-networks-2-marks-technical-sticky.svg" alt="Sticky Note: Q37. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which protocol is used to resolve IP addresses to MAC addresses?**
 
 A) DNS  B) ARP  C) DHCP  D) ICMP
@@ -839,6 +1246,17 @@ A) DNS  B) ARP  C) DHCP  D) ICMP
 ---
 
 ### Q38. [Computer Networks] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-handwritten.svg" alt="Handwritten: Q38. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-diagram.svg" alt="Diagram: Q38. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q38-computer-networks-2-marks-technical-sticky.svg" alt="Sticky Note: Q38. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the maximum window size in Go-Back-N ARQ with n-bit sequence numbers?**
 
@@ -858,6 +1276,17 @@ A) n  B) 2ⁿ  C) 2ⁿ - 1  D) 2ⁿ⁻¹
 
 ### Q39. [Computer Networks] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-handwritten.svg" alt="Handwritten: Q39. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-diagram.svg" alt="Diagram: Q39. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q39-computer-networks-2-marks-technical-sticky.svg" alt="Sticky Note: Q39. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **How many bits are in an IPv4 address?**
 
 A) 16  B) 32  C) 64  D) 128
@@ -875,6 +1304,17 @@ A) 16  B) 32  C) 64  D) 128
 ---
 
 ### Q40. [Discrete Mathematics] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-handwritten.svg" alt="Handwritten: Q40. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-diagram.svg" alt="Diagram: Q40. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q40-discrete-mathematics-2-marks-technical-sticky.svg" alt="Sticky Note: Q40. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the number of elements in the power set of a set with 5 elements?**
 
@@ -894,6 +1334,17 @@ A) 10  B) 16  C) 25  D) 32
 ---
 
 ### Q41. [Discrete Mathematics] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-handwritten.svg" alt="Handwritten: Q41. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-diagram.svg" alt="Diagram: Q41. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q41-discrete-mathematics-2-marks-technical-sticky.svg" alt="Sticky Note: Q41. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **How many ways can 5 people be arranged in a circle? (Circular permutations)**
 
@@ -915,6 +1366,17 @@ Number of circular permutations of n distinct objects = (n-1)!
 
 ### Q42. [Discrete Mathematics] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-handwritten.svg" alt="Handwritten: Q42. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-diagram.svg" alt="Diagram: Q42. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q42-discrete-mathematics-2-marks-technical-sticky.svg" alt="Sticky Note: Q42. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **If p → q is false, which of the following is true?**
 
 A) p is true, q is true  B) p is true, q is false  C) p is false, q is true  D) p is false, q is false
@@ -935,6 +1397,17 @@ Truth table: p→q is false only in the T→F case. In all other cases (T→T, F
 ---
 
 ### Q43. [Linear Algebra] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-handwritten.svg" alt="Handwritten: Q43. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-diagram.svg" alt="Diagram: Q43. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q43-linear-algebra-2-marks-technical-sticky.svg" alt="Sticky Note: Q43. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **For what values of k does the system have a unique solution?**
 **x + y + z = 1**
@@ -964,6 +1437,17 @@ For unique solution, det ≠ 0, so k ≠ 3.
 
 ### Q44. [Linear Algebra] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-handwritten.svg" alt="Handwritten: Q44. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-diagram.svg" alt="Diagram: Q44. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q44-linear-algebra-2-marks-technical-sticky.svg" alt="Sticky Note: Q44. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What are the eigenvalues of matrix A = [[2, 0], [0, 5]]?**
 
 A) 2 and 5  B) -2 and -5  C) 0 and 10  D) 3 and 4
@@ -987,6 +1471,17 @@ So λ = 2 or λ = 5.
 
 ### Q45. [Calculus] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-handwritten.svg" alt="Handwritten: Q45. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-diagram.svg" alt="Diagram: Q45. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q45-calculus-2-marks-technical-sticky.svg" alt="Sticky Note: Q45. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is the value of ∫₀¹ x² dx?**
 
 A) 1/4  B) 1/3  C) 1/2  D) 2/3
@@ -1006,6 +1501,17 @@ A) 1/4  B) 1/3  C) 1/2  D) 2/3
 
 ### Q46. [Calculus] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-handwritten.svg" alt="Handwritten: Q46. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-diagram.svg" alt="Diagram: Q46. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q46-calculus-2-marks-technical-sticky.svg" alt="Sticky Note: Q46. [Calculus] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is ∫ eˣ dx?**
 
 A) eˣ + C  B) ln|x| + C  C) xeˣ⁻¹ + C  D) eˣ/x + C
@@ -1024,6 +1530,17 @@ The integral of eˣ is eˣ + C (since the derivative of eˣ is eˣ).
 ---
 
 ### Q47. [Digital Logic] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-handwritten.svg" alt="Handwritten: Q47. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-diagram.svg" alt="Diagram: Q47. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q47-digital-logic-2-marks-technical-sticky.svg" alt="Sticky Note: Q47. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the simplified Boolean expression for F = A'BC + AB'C + ABC' + ABC?**
 
@@ -1053,6 +1570,17 @@ Using K-map: F = AB + BC + CA (majority function).
 
 ### Q48. [Digital Logic] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-handwritten.svg" alt="Handwritten: Q48. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-diagram.svg" alt="Diagram: Q48. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q48-digital-logic-2-marks-technical-sticky.svg" alt="Sticky Note: Q48. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **A 4:1 multiplexer requires how many select lines?**
 
 A) 1  B) 2  C) 3  D) 4
@@ -1073,6 +1601,17 @@ For 4:1 MUX, log₂(4) = 2 select lines.
 
 ### Q49. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q49. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q49. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q49-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q49. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **The worst-case time complexity of QuickSort is:**
 
 A) O(n log n)  B) O(n²)  C) O(n)  D) O(log n)
@@ -1092,6 +1631,17 @@ Best/Average case: O(n log n). Worst case: O(n²) when the pivot is always the s
 
 ### Q50. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q50. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q50. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q50-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q50. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **In hashing with separate chaining, what is the load factor α?**
 
 A) Number of slots / Number of keys  B) Number of keys / Number of slots  C) Number of collisions  D) Hash table size
@@ -1109,6 +1659,17 @@ A) Number of slots / Number of keys  B) Number of keys / Number of slots  C) Num
 ---
 
 ### Q51. [DS & Algorithms] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q51. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q51. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q51-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q51. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which data structure is used for implementing Dijkstra's shortest path algorithm efficiently?**
 
@@ -1128,6 +1689,17 @@ A) Stack  B) Queue  C) Priority Queue (Min-Heap)  D) Linked List
 
 ### Q52. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q52. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q52. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q52-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q52. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is the time complexity of inserting a node at the beginning of a singly linked list?**
 
 A) O(1)  B) O(n)  C) O(log n)  D) O(n²)
@@ -1145,6 +1717,17 @@ A) O(1)  B) O(n)  C) O(log n)  D) O(n²)
 ---
 
 ### Q53. [Theory of Computation] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-handwritten.svg" alt="Handwritten: Q53. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-diagram.svg" alt="Diagram: Q53. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q53-theory-of-computation-2-marks-technical-sticky.svg" alt="Sticky Note: Q53. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which of the following statements about the Pumping Lemma for regular languages is TRUE?**
 
@@ -1164,6 +1747,17 @@ A) It can be used to prove that a language is regular  B) It can be used to prov
 
 ### Q54. [Compiler Design] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-handwritten.svg" alt="Handwritten: Q54. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-diagram.svg" alt="Diagram: Q54. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q54-compiler-design-2-marks-technical-sticky.svg" alt="Sticky Note: Q54. [Compiler Design] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which of the following is NOT a type of intermediate code?**
 
 A) Three Address Code (TAC)  B) Abstract Syntax Tree (AST)  C) DAG (Directed Acyclic Graph)  D) Object Code
@@ -1181,6 +1775,17 @@ A) Three Address Code (TAC)  B) Abstract Syntax Tree (AST)  C) DAG (Directed Acy
 ---
 
 ### Q55. [Operating Systems] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-handwritten.svg" alt="Handwritten: Q55. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-diagram.svg" alt="Diagram: Q55. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q55-operating-systems-2-marks-technical-sticky.svg" alt="Sticky Note: Q55. [Operating Systems] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which memory allocation strategy suffers from external fragmentation?**
 
@@ -1200,6 +1805,17 @@ A) Paging  B) Segmentation  C) Both paging and segmentation  D) Neither
 
 ### Q56. [Databases] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-handwritten.svg" alt="Handwritten: Q56. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-diagram.svg" alt="Diagram: Q56. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q56-databases-2-marks-technical-sticky.svg" alt="Sticky Note: Q56. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **In a B+ Tree of order m, what is the maximum number of children a non-root node can have?**
 
 A) m  B) m+1  C) ⌈m/2⌉  D) ⌊m/2⌋
@@ -1217,6 +1833,17 @@ A) m  B) m+1  C) ⌈m/2⌉  D) ⌊m/2⌋
 ---
 
 ### Q57. [Computer Networks] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-handwritten.svg" alt="Handwritten: Q57. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-diagram.svg" alt="Diagram: Q57. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q57-computer-networks-2-marks-technical-sticky.svg" alt="Sticky Note: Q57. [Computer Networks] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the maximum data rate for a channel with bandwidth 4 MHz and SNR of 1023? (Use Shannon's Theorem)**
 
@@ -1241,6 +1868,17 @@ C = 40 × 10⁶ = 40 Mbps.
 
 ### Q58. [Discrete Mathematics] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-handwritten.svg" alt="Handwritten: Q58. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-diagram.svg" alt="Diagram: Q58. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q58-discrete-mathematics-2-marks-technical-sticky.svg" alt="Sticky Note: Q58. [Discrete Mathematics] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **How many vertices does a 3-regular graph with 12 edges have?**
 
 A) 4  B) 6  C) 8  D) 12
@@ -1262,6 +1900,17 @@ Number of vertices = Sum of degrees / 3 = 24 / 3 = 8.
 
 ### Q59. [Linear Algebra] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-handwritten.svg" alt="Handwritten: Q59. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-diagram.svg" alt="Diagram: Q59. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q59-linear-algebra-2-marks-technical-sticky.svg" alt="Sticky Note: Q59. [Linear Algebra] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **If A and B are two n×n matrices, which of the following is TRUE?**
 
 A) det(A + B) = det(A) + det(B)  B) det(AB) = det(A) × det(B)  C) det(AB) = det(A) + det(B)  D) det(A - B) = det(A) - det(B)
@@ -1279,6 +1928,17 @@ A) det(A + B) = det(A) + det(B)  B) det(AB) = det(A) × det(B)  C) det(AB) = det
 ---
 
 ### Q60. [Digital Logic] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-handwritten.svg" alt="Handwritten: Q60. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-diagram.svg" alt="Diagram: Q60. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q60-digital-logic-2-marks-technical-sticky.svg" alt="Sticky Note: Q60. [Digital Logic] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What is the Gray code equivalent of binary 1010?**
 
@@ -1302,6 +1962,17 @@ Gray = 1111.
 
 ### Q61. [DS & Algorithms] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q61. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q61. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q61-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q61. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **Which algorithm is used to find the Minimum Spanning Tree (MST) of a graph?**
 
 A) Floyd-Warshall  B) Prim's  C) Dijkstra's  D) Bellman-Ford
@@ -1319,6 +1990,17 @@ A) Floyd-Warshall  B) Prim's  C) Dijkstra's  D) Bellman-Ford
 ---
 
 ### Q62. [DS & Algorithms] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-handwritten.svg" alt="Handwritten: Q62. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-diagram.svg" alt="Diagram: Q62. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q62-ds-algorithms-2-marks-technical-sticky.svg" alt="Sticky Note: Q62. [DS & Algorithms] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Which of the following is NOT a stable sorting algorithm?**
 
@@ -1339,6 +2021,17 @@ Unstable: QuickSort, HeapSort, Selection Sort.
 ---
 
 ### Q63. [Programming] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-handwritten.svg" alt="Handwritten: Q63. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-diagram.svg" alt="Diagram: Q63. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q63-programming-2-marks-technical-sticky.svg" alt="Sticky Note: Q63. [Programming] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **What does the following C code print?**
 
@@ -1369,6 +2062,17 @@ strlen(s) counts characters until '\0' = 4.
 
 ### Q64. [Theory of Computation] | 2 Marks | Technical
 
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-handwritten.svg" alt="Handwritten: Q64. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-diagram.svg" alt="Diagram: Q64. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q64-theory-of-computation-2-marks-technical-sticky.svg" alt="Sticky Note: Q64. [Theory of Computation] | 2 Marks | Technical" width="30%">
+</a>
+
+
 **What is the minimum number of states required in a DFA to accept all strings with an even number of 0s and an even number of 1s?**
 
 A) 2  B) 3  C) 4  D) 5
@@ -1387,6 +2091,17 @@ We need to track 4 states: (even 0s, even 1s) - accepting, (even 0s, odd 1s), (o
 ---
 
 ### Q65. [Databases] | 2 Marks | Technical
+
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-handwritten.svg" alt="Handwritten: Q65. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-diagram.svg" alt="Diagram: Q65. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/mock-tests/06-gate-cs-mock/q65-databases-2-marks-technical-sticky.svg" alt="Sticky Note: Q65. [Databases] | 2 Marks | Technical" width="30%">
+</a>
+
 
 **Consider a relation R(A,B,C,D,E) with FDs: A → B, A → C, B → C, B → D, A → E. What is the candidate key?**
 

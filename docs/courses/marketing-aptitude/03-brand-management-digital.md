@@ -15,6 +15,17 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Understanding Brands
 
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" alt="Handwritten: 3.1 Understanding Brands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" alt="Diagram: 3.1 Understanding Brands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" alt="Sticky Note: 3.1 Understanding Brands" width="30%">
+</a>
+
+
 A **brand** is a name, term, sign, symbol, or design — or a combination of these — intended to identify the goods or services of one seller and differentiate them from competitors.
 
 #### Key Brand Concepts
@@ -31,6 +42,17 @@ A **brand** is a name, term, sign, symbol, or design — or a combination of the
 | **Brand Associations** | Any mental links connected to the brand | Nike = athleticism, "Just Do It" |
 
 ### 3.2 Keller's Customer-Based Brand Equity (CBBE) Model
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" alt="Handwritten: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" alt="Diagram: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" alt="Sticky Note: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+</a>
+
 
 The CBBE model views brand equity from the perspective of the consumer — the power of a brand lies in what customers have learned, felt, seen, and heard about it.
 
@@ -70,6 +92,17 @@ Brand resonance is the highest level of brand equity where customers feel a deep
 
 ### 3.3 Brand Positioning
 
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" alt="Handwritten: 3.3 Brand Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" alt="Diagram: 3.3 Brand Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" alt="Sticky Note: 3.3 Brand Positioning" width="30%">
+</a>
+
+
 Brand positioning is designing the brand's offer and image to occupy a distinctive place in the target market's mind.
 
 **Positioning framework:**
@@ -94,6 +127,17 @@ Repositioning is changing the brand's position in the consumer's mind. Reasons i
 **Examples:** Old Spice (from "old man's brand" to "young, hip"), Domino's (from "average pizza" to "quality pizza with 30-minute delivery").
 
 ### 3.4 Brand Extensions
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" alt="Handwritten: 3.4 Brand Extensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" alt="Diagram: 3.4 Brand Extensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" alt="Sticky Note: 3.4 Brand Extensions" width="30%">
+</a>
+
 
 A brand extension uses an existing brand name to launch a product in a new category.
 
@@ -120,6 +164,17 @@ graph LR
 
 ### 3.5 Co-Branding and Licensing
 
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" alt="Handwritten: 3.5 Co-Branding and Licensing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" alt="Diagram: 3.5 Co-Branding and Licensing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" alt="Sticky Note: 3.5 Co-Branding and Licensing" width="30%">
+</a>
+
+
 | Strategy | Definition | Example |
 |----------|------------|---------|
 | **Co-branding** | Two established brands collaborate on a single product | Nestlé + Starbucks (at-home coffee) |
@@ -128,6 +183,17 @@ graph LR
 | **Brand alliance** | Two brands partner for marketing | Uber + Spotify (ride + music) |
 
 ### 3.6 Digital Marketing
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" alt="Handwritten: 3.6 Digital Marketing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" alt="Diagram: 3.6 Digital Marketing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" alt="Sticky Note: 3.6 Digital Marketing" width="30%">
+</a>
+
 
 Digital marketing is the use of electronic media (websites, social media, email, search engines) to market products and services.
 
@@ -336,6 +402,17 @@ Influencer marketing involves partnering with individuals who have a strong soci
 
 ### 3.7 Customer Relationship Management (CRM)
 
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" alt="Handwritten: 3.7 Customer Relationship Management (CRM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" alt="Diagram: 3.7 Customer Relationship Management (CRM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" alt="Sticky Note: 3.7 Customer Relationship Management (CRM)" width="30%">
+</a>
+
+
 CRM is a strategy for managing all interactions with customers, leveraging technology to organise, automate, and synchronise sales, marketing, customer service, and technical support.
 
 ```typescript
@@ -399,6 +476,17 @@ console.log(CRMSegmenter.segmentReport(customers));
 
 ### 3.8 Brand Architecture
 
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" alt="Handwritten: 3.8 Brand Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" alt="Diagram: 3.8 Brand Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" alt="Sticky Note: 3.8 Brand Architecture" width="30%">
+</a>
+
+
 Brand architecture is the structure that organises a company's portfolio of brands to create synergy and clarity.
 
 ```mermaid
@@ -423,6 +511,17 @@ graph TD
 | **Endorsed Brands** | Individual brands with corporate backing (Nestlé KitKat) | Balance of independence and association | Moderate complexity |
 
 ### 3.9 Brand Revitalization and Managing Brand Crises
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" alt="Handwritten: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" alt="Diagram: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" alt="Sticky Note: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+</a>
+
 
 **When to revitalise a brand:**
 - Declining sales and market share
@@ -465,6 +564,17 @@ graph LR
 | **CEO misstep** | Elon Musk's tweets affecting Tesla | Board intervention + communication controls |
 
 ### 3.10 Digital Marketing Funnel and KPIs
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" alt="Handwritten: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" alt="Diagram: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" alt="Sticky Note: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+</a>
+
 
 ```mermaid
 graph TD
@@ -544,6 +654,17 @@ console.log(generateKPIDashboard(campaignMetrics));
 ```
 
 ### 3.11 Comparison Tables
+
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" alt="Handwritten: 3.11 Comparison Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" alt="Diagram: 3.11 Comparison Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" alt="Sticky Note: 3.11 Comparison Tables" width="30%">
+</a>
+
 
 #### Brand Identity vs Brand Image
 

@@ -129,6 +129,17 @@ Every HTML document follows a mandatory outer structure that the browser uses to
 
 ### 1.1 The DOCTYPE Declaration
 
+<a href="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-handwritten.svg" alt="Handwritten: 1.1 The DOCTYPE Declaration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-diagram.svg" alt="Diagram: 1.1 The DOCTYPE Declaration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-1-the-doctype-declaration-sticky.svg" alt="Sticky Note: 1.1 The DOCTYPE Declaration" width="30%">
+</a>
+
+
 The `DOCTYPE` is not an HTML element but a *prolog* Ã¢â‚¬â€ an instruction that tells the browser to render the page in **standards mode** rather than quirks mode. In HTML5 the declaration is minimal:
 
 ```html
@@ -139,9 +150,31 @@ This single line activates the latest rendering engine in every modern browser. 
 
 ### 1.2 The `<html>` Element
 
+<a href="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-handwritten.svg" alt="Handwritten: 1.2 The `<html>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-diagram.svg" alt="Diagram: 1.2 The `<html>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-sticky.svg" alt="Sticky Note: 1.2 The `<html>` Element" width="30%">
+</a>
+
+
 The `<html>` element is the document's root. The `lang` attribute is **required** for accessibility and SEO; it tells screen readers which pronunciation rules to use and helps search engines serve the page to the correct language audience.
 
 ### 1.3 The `<head>` Element
+
+<a href="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-handwritten.svg" alt="Handwritten: 1.3 The `<head>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-diagram.svg" alt="Diagram: 1.3 The `<head>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-sticky.svg" alt="Sticky Note: 1.3 The `<head>` Element" width="30%">
+</a>
+
 
 The `<head>` contains metadata Ã¢â‚¬â€ data about the document that is not displayed as content. Critical children include:
 
@@ -153,9 +186,31 @@ The `<head>` contains metadata Ã¢â‚¬â€ data about the document that i
 
 ### 1.4 The `<body>` Element
 
+<a href="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-handwritten.svg" alt="Handwritten: 1.4 The `<body>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-diagram.svg" alt="Diagram: 1.4 The `<body>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-sticky.svg" alt="Sticky Note: 1.4 The `<body>` Element" width="30%">
+</a>
+
+
 Everything visible to the user lives inside `<body>`: text, images, forms, media, and interactive widgets.
 
 ### Complete Minimal Document
+
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-handwritten.svg" alt="Handwritten: Complete Minimal Document" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-diagram.svg" alt="Diagram: Complete Minimal Document" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-minimal-document-sticky.svg" alt="Sticky Note: Complete Minimal Document" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -175,6 +230,17 @@ Everything visible to the user lives inside `<body>`: text, images, forms, media
 ```
 
 ### The Viewport Meta Tag in Detail
+
+<a href="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-handwritten.svg" alt="Handwritten: The Viewport Meta Tag in Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-diagram.svg" alt="Diagram: The Viewport Meta Tag in Detail" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/the-viewport-meta-tag-in-detail-sticky.svg" alt="Sticky Note: The Viewport Meta Tag in Detail" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -212,6 +278,17 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 
 ### 2.1 Content Sectioning Elements
 
+<a href="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-handwritten.svg" alt="Handwritten: 2.1 Content Sectioning Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-diagram.svg" alt="Diagram: 2.1 Content Sectioning Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-1-content-sectioning-elements-sticky.svg" alt="Sticky Note: 2.1 Content Sectioning Elements" width="30%">
+</a>
+
+
 | Element    | Purpose                                                                 |
 |------------|-------------------------------------------------------------------------|
 | `<header>` | Introductory content or navigational aids for its nearest ancestor      |
@@ -224,6 +301,17 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 
 ### 2.2 Inline Semantic Elements
 
+<a href="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-handwritten.svg" alt="Handwritten: 2.2 Inline Semantic Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-diagram.svg" alt="Diagram: 2.2 Inline Semantic Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/2-2-inline-semantic-elements-sticky.svg" alt="Sticky Note: 2.2 Inline Semantic Elements" width="30%">
+</a>
+
+
 | Element      | Purpose                                                      |
 |--------------|--------------------------------------------------------------|
 | `<figure>`   | Self-contained content like illustrations, diagrams, photos  |
@@ -232,6 +320,17 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 | `<time>`     | A machine-readable date or time                              |
 
 ### Complete Semantic Layout
+
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-handwritten.svg" alt="Handwritten: Complete Semantic Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-diagram.svg" alt="Diagram: Complete Semantic Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-semantic-layout-sticky.svg" alt="Sticky Note: Complete Semantic Layout" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -346,6 +445,17 @@ HTML provides a rich vocabulary for marking up text. Choosing the correct elemen
 
 ### 3.1 Headings
 
+<a href="../../assets/images/diagrams/laravel/html-basics/3-1-headings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-1-headings-handwritten.svg" alt="Handwritten: 3.1 Headings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-1-headings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-1-headings-diagram.svg" alt="Diagram: 3.1 Headings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-1-headings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-1-headings-sticky.svg" alt="Sticky Note: 3.1 Headings" width="30%">
+</a>
+
+
 Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page should have exactly one `<h1>` Ã¢â‚¬â€ typically the page title Ã¢â‚¬â€ and headings should nest without skipping levels.
 
 ```html
@@ -391,9 +501,31 @@ Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page s
 
 ### 3.2 Paragraphs
 
+<a href="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-handwritten.svg" alt="Handwritten: 3.2 Paragraphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-diagram.svg" alt="Diagram: 3.2 Paragraphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-2-paragraphs-sticky.svg" alt="Sticky Note: 3.2 Paragraphs" width="30%">
+</a>
+
+
 The `<p>` element represents a paragraph Ã¢â‚¬â€ a block of text separated from adjacent blocks by spacing.
 
 ### 3.3 Lists
+
+<a href="../../assets/images/diagrams/laravel/html-basics/3-3-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-3-lists-handwritten.svg" alt="Handwritten: 3.3 Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-3-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-3-lists-diagram.svg" alt="Diagram: 3.3 Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-3-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-3-lists-sticky.svg" alt="Sticky Note: 3.3 Lists" width="30%">
+</a>
+
 
 HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and description (`<dl>`).
 
@@ -483,6 +615,17 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
 
 ### 3.4 Blockquotes, Preformatted Text, and Code
 
+<a href="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-handwritten.svg" alt="Handwritten: 3.4 Blockquotes, Preformatted Text, and Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-diagram.svg" alt="Diagram: 3.4 Blockquotes, Preformatted Text, and Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/3-4-blockquotes-preformatted-text-and-code-sticky.svg" alt="Sticky Note: 3.4 Blockquotes, Preformatted Text, and Code" width="30%">
+</a>
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -544,6 +687,17 @@ class Article extends Model
 Hyperlinks are what make the web a *web* Ã¢â‚¬â€ interconnected documents reachable through a single click. The `<a>` element (anchor) creates a hyperlink.
 
 ### 4.1 Link Targets
+
+<a href="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-handwritten.svg" alt="Handwritten: 4.1 Link Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-diagram.svg" alt="Diagram: 4.1 Link Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-1-link-targets-sticky.svg" alt="Sticky Note: 4.1 Link Targets" width="30%">
+</a>
+
 
 The `href` attribute specifies the destination. The `target` attribute controls where the linked document opens.
 
@@ -646,6 +800,17 @@ The `href` attribute specifies the destination. The `target` attribute controls 
 
 ### 4.2 Download Links and Email Links
 
+<a href="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-handwritten.svg" alt="Handwritten: 4.2 Download Links and Email Links" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-diagram.svg" alt="Diagram: 4.2 Download Links and Email Links" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/4-2-download-links-and-email-links-sticky.svg" alt="Sticky Note: 4.2 Download Links and Email Links" width="30%">
+</a>
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -698,13 +863,46 @@ The `href` attribute specifies the destination. The `target` attribute controls 
 
 ### 5.1 The `<img>` Element
 
+<a href="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-handwritten.svg" alt="Handwritten: 5.1 The `<img>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-diagram.svg" alt="Diagram: 5.1 The `<img>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-sticky.svg" alt="Sticky Note: 5.1 The `<img>` Element" width="30%">
+</a>
+
+
 The `<img>` element embeds an image. The `alt` attribute is **mandatory** for accessibility Ã¢â‚¬â€ it provides a textual replacement when the image cannot be displayed or when the user relies on a screen reader.
 
 ### 5.2 Responsive Images with `<picture>`
 
+<a href="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-handwritten.svg" alt="Handwritten: 5.2 Responsive Images with `<picture>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-diagram.svg" alt="Diagram: 5.2 Responsive Images with `<picture>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-sticky.svg" alt="Sticky Note: 5.2 Responsive Images with `<picture>`" width="30%">
+</a>
+
+
 The `<picture>` element allows you to serve different image files based on viewport size, screen density, or format support.
 
 ### 5.3 Video and Audio
+
+<a href="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-handwritten.svg" alt="Handwritten: 5.3 Video and Audio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-diagram.svg" alt="Diagram: 5.3 Video and Audio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/5-3-video-and-audio-sticky.svg" alt="Sticky Note: 5.3 Video and Audio" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -803,6 +1001,17 @@ The `<picture>` element allows you to serve different image files based on viewp
 HTML tables organize data into rows and columns. While tables should never be used for page layout (use CSS Grid or Flexbox instead), they are the correct and only semantic choice for tabular data.
 
 ### 6.1 Table Structure
+
+<a href="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-handwritten.svg" alt="Handwritten: 6.1 Table Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-diagram.svg" alt="Diagram: 6.1 Table Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/6-1-table-structure-sticky.svg" alt="Sticky Note: 6.1 Table Structure" width="30%">
+</a>
+
 
 A proper HTML table uses three structural sections:
 
@@ -1022,13 +1231,46 @@ HTML forms are the primary mechanism for collecting user input and sending it to
 
 ### 7.1 The `<form>` Element
 
+<a href="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-handwritten.svg" alt="Handwritten: 7.1 The `<form>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-diagram.svg" alt="Diagram: 7.1 The `<form>` Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-sticky.svg" alt="Sticky Note: 7.1 The `<form>` Element" width="30%">
+</a>
+
+
 The `action` attribute specifies the URL that receives the data. The `method` attribute is typically `GET` or `POST`.
 
 ### 7.2 Input Types and Elements
 
+<a href="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-handwritten.svg" alt="Handwritten: 7.2 Input Types and Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-diagram.svg" alt="Diagram: 7.2 Input Types and Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-2-input-types-and-elements-sticky.svg" alt="Sticky Note: 7.2 Input Types and Elements" width="30%">
+</a>
+
+
 HTML5 defines over 20 input types. Each type triggers an appropriate on-screen keyboard on mobile devices and provides built-in browser validation.
 
 ### Complete Forms Example
+
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-handwritten.svg" alt="Handwritten: Complete Forms Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-diagram.svg" alt="Diagram: Complete Forms Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-forms-example-sticky.svg" alt="Sticky Note: Complete Forms Example" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -1188,6 +1430,17 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
 
 ### 7.3 The `<fieldset>` and `<legend>` Elements
 
+<a href="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-handwritten.svg" alt="Handwritten: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-diagram.svg" alt="Diagram: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-sticky.svg" alt="Sticky Note: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
+</a>
+
+
 Grouping related form controls with `<fieldset>` and providing a label with `<legend>` improves both visual organization and accessibility. Screen readers announce the legend before each control inside the fieldset.
 
 ---
@@ -1197,6 +1450,17 @@ Grouping related form controls with `<fieldset>` and providing a label with `<le
 HTML5 provides built-in client-side validation through attributes and a JavaScript API for custom constraints.
 
 ### 8.1 Constraint Attributes
+
+<a href="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-handwritten.svg" alt="Handwritten: 8.1 Constraint Attributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-diagram.svg" alt="Diagram: 8.1 Constraint Attributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-1-constraint-attributes-sticky.svg" alt="Sticky Note: 8.1 Constraint Attributes" width="30%">
+</a>
+
 
 | Attribute    | Applies To                    | Behavior                                                  |
 |-------------|-------------------------------|-----------------------------------------------------------|
@@ -1210,6 +1474,17 @@ HTML5 provides built-in client-side validation through attributes and a JavaScri
 | `type`      | email, url, number, etc.     | Built-in format validation                                 |
 
 ### 8.2 Constraint Validation API
+
+<a href="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-handwritten.svg" alt="Handwritten: 8.2 Constraint Validation API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-diagram.svg" alt="Diagram: 8.2 Constraint Validation API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/8-2-constraint-validation-api-sticky.svg" alt="Sticky Note: 8.2 Constraint Validation API" width="30%">
+</a>
+
 
 ```html
 <!DOCTYPE html>
@@ -1384,6 +1659,17 @@ Web accessibility (a11y) ensures that people with disabilities can perceive, und
 
 ### 9.1 ARIA Roles and Properties
 
+<a href="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-handwritten.svg" alt="Handwritten: 9.1 ARIA Roles and Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-diagram.svg" alt="Diagram: 9.1 ARIA Roles and Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/9-1-aria-roles-and-properties-sticky.svg" alt="Sticky Note: 9.1 ARIA Roles and Properties" width="30%">
+</a>
+
+
 ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantics when native elements are insufficient. The golden rule: **do not use ARIA if a native HTML element already conveys the semantics you need.**
 
 ```html
@@ -1542,6 +1828,17 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
 
 ### 10.1 Essential Meta Tags
 
+<a href="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-handwritten.svg" alt="Handwritten: 10.1 Essential Meta Tags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-diagram.svg" alt="Diagram: 10.1 Essential Meta Tags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-1-essential-meta-tags-sticky.svg" alt="Sticky Note: 10.1 Essential Meta Tags" width="30%">
+</a>
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1625,6 +1922,17 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
 ```
 
 ### 10.2 Structured Data with JSON-LD
+
+<a href="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-handwritten.svg" alt="Handwritten: 10.2 Structured Data with JSON-LD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-diagram.svg" alt="Diagram: 10.2 Structured Data with JSON-LD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/10-2-structured-data-with-json-ld-sticky.svg" alt="Sticky Note: 10.2 Structured Data with JSON-LD" width="30%">
+</a>
+
 
 JSON-LD (JavaScript Object Notation for Linked Data) is Google's recommended format for structured data. It helps search engines understand the content and enables rich results (star ratings, FAQ snippets, breadcrumbs, etc.).
 
@@ -1762,6 +2070,17 @@ HTML5 introduced a powerful set of APIs that run directly in the browser, reduci
 
 ### 11.1 Canvas API
 
+<a href="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-handwritten.svg" alt="Handwritten: 11.1 Canvas API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-diagram.svg" alt="Diagram: 11.1 Canvas API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-1-canvas-api-sticky.svg" alt="Sticky Note: 11.1 Canvas API" width="30%">
+</a>
+
+
 The Canvas API provides pixel-level drawing via a JavaScript context. Every shape, line, and text is imperatively drawn.
 
 ```html
@@ -1859,6 +2178,17 @@ The Canvas API provides pixel-level drawing via a JavaScript context. Every shap
 
 ### 11.2 Drag and Drop API
 
+<a href="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-handwritten.svg" alt="Handwritten: 11.2 Drag and Drop API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-diagram.svg" alt="Diagram: 11.2 Drag and Drop API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-2-drag-and-drop-api-sticky.svg" alt="Sticky Note: 11.2 Drag and Drop API" width="30%">
+</a>
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1942,6 +2272,17 @@ The Canvas API provides pixel-level drawing via a JavaScript context. Every shap
 ```
 
 ### 11.3 Web Storage API
+
+<a href="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-handwritten.svg" alt="Handwritten: 11.3 Web Storage API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-diagram.svg" alt="Diagram: 11.3 Web Storage API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-3-web-storage-api-sticky.svg" alt="Sticky Note: 11.3 Web Storage API" width="30%">
+</a>
+
 
 The Web Storage API provides two client-side key-value stores: `localStorage` (persists across sessions) and `sessionStorage` (cleared when the tab closes).
 
@@ -2050,6 +2391,17 @@ The Web Storage API provides two client-side key-value stores: `localStorage` (p
 
 ### 11.4 History API
 
+<a href="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-handwritten.svg" alt="Handwritten: 11.4 History API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-diagram.svg" alt="Diagram: 11.4 History API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-4-history-api-sticky.svg" alt="Sticky Note: 11.4 History API" width="30%">
+</a>
+
+
 The History API allows you to manipulate the browser's session history Ã¢â‚¬â€ enabling modern single-page application navigation without full page reloads.
 
 ```html
@@ -2131,6 +2483,17 @@ The History API allows you to manipulate the browser's session history Ã¢â‚
 ```
 
 ### 11.5 Geolocation API
+
+<a href="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-handwritten.svg" alt="Handwritten: 11.5 Geolocation API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-diagram.svg" alt="Diagram: 11.5 Geolocation API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/11-5-geolocation-api-sticky.svg" alt="Sticky Note: 11.5 Geolocation API" width="30%">
+</a>
+
 
 The Geolocation API provides access to the user's geographical location (with their explicit permission).
 
@@ -2257,6 +2620,17 @@ Now that you understand pure HTML forms, this section shows how Laravel's Blade 
 
 ### 12.1 CSRF Protection
 
+<a href="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-handwritten.svg" alt="Handwritten: 12.1 CSRF Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-diagram.svg" alt="Diagram: 12.1 CSRF Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-1-csrf-protection-sticky.svg" alt="Sticky Note: 12.1 CSRF Protection" width="30%">
+</a>
+
+
 Every HTML form that sends a `POST`, `PUT`, `PATCH`, or `DELETE` request must include a CSRF token. In Blade, the `@csrf` directive generates the hidden input automatically.
 
 ```blade
@@ -2276,6 +2650,17 @@ This renders as:
 ```
 
 ### 12.2 Method Spoofing
+
+<a href="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-handwritten.svg" alt="Handwritten: 12.2 Method Spoofing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-diagram.svg" alt="Diagram: 12.2 Method Spoofing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-2-method-spoofing-sticky.svg" alt="Sticky Note: 12.2 Method Spoofing" width="30%">
+</a>
+
 
 HTML forms only support `GET` and `POST` natively. Laravel's `@method` directive spoofs other HTTP verbs:
 
@@ -2299,9 +2684,31 @@ This renders as:
 
 ### 12.3 Old Input and Error Display
 
+<a href="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-handwritten.svg" alt="Handwritten: 12.3 Old Input and Error Display" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-diagram.svg" alt="Diagram: 12.3 Old Input and Error Display" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-3-old-input-and-error-display-sticky.svg" alt="Sticky Note: 12.3 Old Input and Error Display" width="30%">
+</a>
+
+
 When validation fails, Laravel redirects back with the user's input and error messages. The `old()` helper repopulates fields; the `$errors` variable provides per-field error messages.
 
 ### Complete Blade Form Example
+
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-handwritten.svg" alt="Handwritten: Complete Blade Form Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-diagram.svg" alt="Diagram: Complete Blade Form Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/complete-blade-form-example-sticky.svg" alt="Sticky Note: Complete Blade Form Example" width="30%">
+</a>
+
 
 ```blade
 {{-- resources/views/posts/create.blade.php --}}
@@ -2487,6 +2894,17 @@ When validation fails, Laravel redirects back with the user's input and error me
 ```
 
 ### 12.4 Blade Form Helper Reference
+
+<a href="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-handwritten.svg" alt="Handwritten: 12.4 Blade Form Helper Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-diagram.svg" alt="Diagram: 12.4 Blade Form Helper Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/html-basics/12-4-blade-form-helper-reference-sticky.svg" alt="Sticky Note: 12.4 Blade Form Helper Reference" width="30%">
+</a>
+
 
 | Directive / Helper | Purpose |
 |---|---|

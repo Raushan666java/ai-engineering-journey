@@ -66,6 +66,17 @@ flowchart LR
 
 ### What is Machine Learning?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-handwritten.svg" alt="Handwritten: What is Machine Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-diagram.svg" alt="Diagram: What is Machine Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/09-machine-learning/what-is-machine-learning-sticky.svg" alt="Sticky Note: What is Machine Learning?" width="30%">
+</a>
+
+
 Machine Learning (ML) is the study of algorithms that improve their performance **P** at some task **T** with experience **E** (Tom Mitchell, 1997).
 
 - **Supervised Learning**: The agent learns a function from input-output pairs (labels provided).

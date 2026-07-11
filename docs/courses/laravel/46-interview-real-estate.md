@@ -44,6 +44,17 @@ flowchart LR
 
 ### Q1: What are the key entities in a real estate platform data model, and how do they relate?
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-handwritten.svg" alt="Handwritten: What are the key entities in a real estate platform data model, and how do they relate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-diagram.svg" alt="Diagram: What are the key entities in a real estate platform data model, and how do they relate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-are-the-key-entities-in-a-real-estate-platform-data-model-and-how-do-they-relate-sticky.svg" alt="Sticky Note: What are the key entities in a real estate platform data model, and how do they relate?" width="30%">
+</a>
+
+
 A typical real estate platform revolves around a core `Property` entity → the physical asset (land, house, condo, commercial unit). A `Property` has one or more `Listing` records over time (each representing a period when it's on the market). `Agent` (or `Broker`) represents the licensed professional. `Client` generalizes buyers, sellers, and renters. `Showing` links an agent or client to a property tour. `Offer` represents a purchase or lease proposal tied to a listing.
 
 The relationships form a hub-and-spoke:
@@ -82,6 +93,17 @@ Additional supporting entities include `Inspection`, `Document` (deeds, disclosu
 ---
 
 ### Q2: What is an MLS, and how does it affect system design for a real estate application?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-handwritten.svg" alt="Handwritten: What is an MLS, and how does it affect system design for a real estate application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-diagram.svg" alt="Diagram: What is an MLS, and how does it affect system design for a real estate application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-an-mls-and-how-does-it-affect-system-design-for-a-real-estate-application-sticky.svg" alt="Sticky Note: What is an MLS, and how does it affect system design for a real estate application?" width="30%">
+</a>
+
 
 The **Multiple Listing Service (MLS)** is a private database used by real estate brokers to share property listing data. Each regional MLS (there are ~600 in North America) has its own data format, field definitions, and API access rules.
 
@@ -122,6 +144,17 @@ class SyncMlsFeedJob implements ShouldQueue
 ---
 
 ### Q3: How do real estate platforms handle property status transitions?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-handwritten.svg" alt="Handwritten: How do real estate platforms handle property status transitions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-diagram.svg" alt="Diagram: How do real estate platforms handle property status transitions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-do-real-estate-platforms-handle-property-status-transitions-sticky.svg" alt="Sticky Note: How do real estate platforms handle property status transitions?" width="30%">
+</a>
+
 
 Property statuses follow a well-defined lifecycle. Common statuses include:
 
@@ -192,6 +225,17 @@ Each transition typically triggers side effects: changing `status_changed_at`, f
 
 ### Q4: Explain the concept of property tax, escrow, and title in a real estate transaction context.
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-handwritten.svg" alt="Handwritten: Explain the concept of property tax, escrow, and title in a real estate transaction context." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-diagram.svg" alt="Diagram: Explain the concept of property tax, escrow, and title in a real estate transaction context." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/explain-the-concept-of-property-tax-escrow-and-title-in-a-real-estate-transaction-context-sticky.svg" alt="Sticky Note: Explain the concept of property tax, escrow, and title in a real estate transaction context." width="30%">
+</a>
+
+
 These three concepts are central to real estate closings and must be modeled in any platform that handles transactions:
 
 - **Property tax**: An annual ad-valorem tax levied by local government (county, city, school district). In transactions, taxes are prorated between buyer and seller at closing. The system must track the annual tax amount, the assessment date, and compute daily prorations. Many platforms integrate with county tax assessor databases for lookups.
@@ -227,6 +271,17 @@ class Transaction extends Model
 ---
 
 ### Q5: What is a Comparable Market Analysis (CMA) and how would you automate it?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-handwritten.svg" alt="Handwritten: What is a Comparable Market Analysis (CMA) and how would you automate it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-diagram.svg" alt="Diagram: What is a Comparable Market Analysis (CMA) and how would you automate it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/what-is-a-comparable-market-analysis-cma-and-how-would-you-automate-it-sticky.svg" alt="Sticky Note: What is a Comparable Market Analysis (CMA) and how would you automate it?" width="30%">
+</a>
+
 
 A CMA estimates a property's value by comparing it to recently sold, similar properties in the same area. Automation requires:
 
@@ -280,6 +335,17 @@ class ValuationService
 ## 2. Technical Implementation
 
 ### Q6: How would you build a PropertyListingAgent that generates AI-powered property descriptions?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-handwritten.svg" alt="Handwritten: How would you build a PropertyListingAgent that generates AI-powered property descriptions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-diagram.svg" alt="Diagram: How would you build a PropertyListingAgent that generates AI-powered property descriptions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-propertylistingagent-that-generates-ai-powered-property-descriptions-sticky.svg" alt="Sticky Note: How would you build a PropertyListingAgent that generates AI-powered property descriptions?" width="30%">
+</a>
+
 
 A `PropertyListingAgent` takes raw property data (features, room dimensions, location, images) and produces compelling, search-optimized listing copy. The architecture:
 
@@ -376,6 +442,17 @@ The agent should also handle batch generation for multiple listings via queued j
 
 ### Q7: How would you implement a ValuationPredictionAgent that estimates property values?
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-handwritten.svg" alt="Handwritten: How would you implement a ValuationPredictionAgent that estimates property values?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-diagram.svg" alt="Diagram: How would you implement a ValuationPredictionAgent that estimates property values?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-valuationpredictionagent-that-estimates-property-values-sticky.svg" alt="Sticky Note: How would you implement a ValuationPredictionAgent that estimates property values?" width="30%">
+</a>
+
+
 A valuation agent combines traditional comparable-sales analysis with AI-driven adjustments and market trend data:
 
 ```php
@@ -448,6 +525,17 @@ The key design decision is keeping the AI as an *adjustment layer* on top of a d
 ---
 
 ### Q8: How would you build a TourSchedulingAgent that automates property showing coordination?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-handwritten.svg" alt="Handwritten: How would you build a TourSchedulingAgent that automates property showing coordination?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-diagram.svg" alt="Diagram: How would you build a TourSchedulingAgent that automates property showing coordination?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-tourschedulingagent-that-automates-property-showing-coordination-sticky.svg" alt="Sticky Note: How would you build a TourSchedulingAgent that automates property showing coordination?" width="30%">
+</a>
+
 
 A tour scheduling agent must handle the full lifecycle: availability lookup → slot proposal → confirmation → reminder → feedback:
 
@@ -539,6 +627,17 @@ For production, integrate with calendar APIs (Google Calendar, Outlook) to refle
 ---
 
 ### Q9: How would you implement a DocumentProcessingAgent for leases, deeds, and inspection reports?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-handwritten.svg" alt="Handwritten: How would you implement a DocumentProcessingAgent for leases, deeds, and inspection reports?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-diagram.svg" alt="Diagram: How would you implement a DocumentProcessingAgent for leases, deeds, and inspection reports?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-documentprocessingagent-for-leases-deeds-and-inspection-reports-sticky.svg" alt="Sticky Note: How would you implement a DocumentProcessingAgent for leases, deeds, and inspection reports?" width="30%">
+</a>
+
 
 A document processing agent extracts structured data from uploaded documents using OCR + AI extraction:
 
@@ -641,6 +740,17 @@ Documents should be processed asynchronously via jobs. The extracted data should
 ---
 
 ### Q10: How would you build a LeadQualificationAgent for real estate leads?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-handwritten.svg" alt="Handwritten: How would you build a LeadQualificationAgent for real estate leads?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-diagram.svg" alt="Diagram: How would you build a LeadQualificationAgent for real estate leads?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-leadqualificationagent-for-real-estate-leads-sticky.svg" alt="Sticky Note: How would you build a LeadQualificationAgent for real estate leads?" width="30%">
+</a>
+
 
 A lead qualification agent scores and routes prospects based on budget, property preferences, timeline, and behavioral signals:
 
@@ -761,6 +871,17 @@ Leads should be re-scored on key events (new property view, budget change, inqui
 
 ### Q11: How would you implement a MarketAnalysisAgent for neighborhood trends?
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-handwritten.svg" alt="Handwritten: How would you implement a MarketAnalysisAgent for neighborhood trends?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-diagram.svg" alt="Diagram: How would you implement a MarketAnalysisAgent for neighborhood trends?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-marketanalysisagent-for-neighborhood-trends-sticky.svg" alt="Sticky Note: How would you implement a MarketAnalysisAgent for neighborhood trends?" width="30%">
+</a>
+
+
 A market analysis agent aggregates transaction data and generates intelligence reports:
 
 ```php
@@ -869,6 +990,17 @@ Pair this agent with a scheduled command (`$schedule->call(...)->weekly()`) to p
 ---
 
 ### Q12: How would you build a RentalManagementAgent for automating landlord operations?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-handwritten.svg" alt="Handwritten: How would you build a RentalManagementAgent for automating landlord operations?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-diagram.svg" alt="Diagram: How would you build a RentalManagementAgent for automating landlord operations?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-build-a-rentalmanagementagent-for-automating-landlord-operations-sticky.svg" alt="Sticky Note: How would you build a RentalManagementAgent for automating landlord operations?" width="30%">
+</a>
+
 
 A rental management agent handles the end-to-end rental lifecycle: tenant onboarding, rent collection, maintenance, lease renewals, and inspections:
 
@@ -995,6 +1127,17 @@ Run `processMonthlyRent()` through a scheduled task (`$schedule->job(...)->daily
 ---
 
 ### Q13: How would you implement a CRM for real estate agents using AI?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-handwritten.svg" alt="Handwritten: How would you implement a CRM for real estate agents using AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-diagram.svg" alt="Diagram: How would you implement a CRM for real estate agents using AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-a-crm-for-real-estate-agents-using-ai-sticky.svg" alt="Sticky Note: How would you implement a CRM for real estate agents using AI?" width="30%">
+</a>
+
 
 A real estate CRM tracks client interactions, predicts deal health, and recommends strategic follow-ups:
 
@@ -1126,6 +1269,17 @@ Integrate this agent into agent dashboards. Cache health scores and update them 
 
 ### Q14: Describe the architecture of a property listing platform built with Laravel.
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-handwritten.svg" alt="Handwritten: Describe the architecture of a property listing platform built with Laravel." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-diagram.svg" alt="Diagram: Describe the architecture of a property listing platform built with Laravel." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-the-architecture-of-a-property-listing-platform-built-with-laravel-sticky.svg" alt="Sticky Note: Describe the architecture of a property listing platform built with Laravel." width="30%">
+</a>
+
+
 A production real estate platform typically follows a layered architecture:
 
 ```
@@ -1167,6 +1321,17 @@ Key architectural decisions:
 ---
 
 ### Q15: How would you handle property search at scale?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-handwritten.svg" alt="Handwritten: How would you handle property search at scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-diagram.svg" alt="Diagram: How would you handle property search at scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-handle-property-search-at-scale-sticky.svg" alt="Sticky Note: How would you handle property search at scale?" width="30%">
+</a>
+
 
 Property search at scale requires a multi-layered strategy:
 
@@ -1256,6 +1421,17 @@ Under heavy load, degrade gracefully:
 
 ### Q16: How would you integrate geolocation and mapping into a real estate application?
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-handwritten.svg" alt="Handwritten: How would you integrate geolocation and mapping into a real estate application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-diagram.svg" alt="Diagram: How would you integrate geolocation and mapping into a real estate application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-integrate-geolocation-and-mapping-into-a-real-estate-application-sticky.svg" alt="Sticky Note: How would you integrate geolocation and mapping into a real estate application?" width="30%">
+</a>
+
+
 Real estate apps heavily depend on location features. Here's a comprehensive approach:
 
 **Geocoding addresses on save:**
@@ -1330,6 +1506,17 @@ $nearby = Property::query()
 ---
 
 ### Q17: How would you design the MLS data sync pipeline for reliability and scale?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-handwritten.svg" alt="Handwritten: How would you design the MLS data sync pipeline for reliability and scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-diagram.svg" alt="Diagram: How would you design the MLS data sync pipeline for reliability and scale?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-mls-data-sync-pipeline-for-reliability-and-scale-sticky.svg" alt="Sticky Note: How would you design the MLS data sync pipeline for reliability and scale?" width="30%">
+</a>
+
 
 The MLS sync pipeline must handle regional differences, rate limits, incremental updates, and error recovery. Design:
 
@@ -1414,6 +1601,17 @@ Key reliability patterns:
 
 ### Q18: How would you design the photo and virtual tour storage pipeline for real estate listings?
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-handwritten.svg" alt="Handwritten: How would you design the photo and virtual tour storage pipeline for real estate listings?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-diagram.svg" alt="Diagram: How would you design the photo and virtual tour storage pipeline for real estate listings?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-design-the-photo-and-virtual-tour-storage-pipeline-for-real-estate-listings-sticky.svg" alt="Sticky Note: How would you design the photo and virtual tour storage pipeline for real estate listings?" width="30%">
+</a>
+
+
 Property media has specific requirements: high resolution, multiple variants, CDN delivery, EXIF stripping, and integration with MLS photo rules.
 
 ```php
@@ -1492,6 +1690,17 @@ For virtual tours, store Matterport or Kuula embed URLs directly on the property
 
 ### Q19: Walk me through designing an AI-powered real estate platform from scratch.
 
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-handwritten.svg" alt="Handwritten: Walk me through designing an AI-powered real estate platform from scratch." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-diagram.svg" alt="Diagram: Walk me through designing an AI-powered real estate platform from scratch." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/walk-me-through-designing-an-ai-powered-real-estate-platform-from-scratch-sticky.svg" alt="Sticky Note: Walk me through designing an AI-powered real estate platform from scratch." width="30%">
+</a>
+
+
 **Step 1: Understand the core workflow**
 
 The platform connects buyers/renters with properties via agents. The primary flow: search → discover → inquire → tour → offer → close. For agents: list properties → manage leads → schedule tours → process documents → close deals.
@@ -1564,6 +1773,17 @@ class PropertyCreated
 ---
 
 ### Q20: How would you implement property recommendation for a real estate platform?
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-handwritten.svg" alt="Handwritten: How would you implement property recommendation for a real estate platform?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-diagram.svg" alt="Diagram: How would you implement property recommendation for a real estate platform?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/how-would-you-implement-property-recommendation-for-a-real-estate-platform-sticky.svg" alt="Sticky Note: How would you implement property recommendation for a real estate platform?" width="30%">
+</a>
+
 
 Property recommendations need to balance user preferences, behavioral signals, and market dynamics. A hybrid approach works best:
 
@@ -1662,6 +1882,17 @@ Combine all three approaches with a weighted blend (50% personalized AI, 30% con
 ---
 
 ### Q21: Describe how you'd build a property management SaaS using Laravel.
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-handwritten.svg" alt="Handwritten: Describe how you'd build a property management SaaS using Laravel." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-diagram.svg" alt="Diagram: Describe how you'd build a property management SaaS using Laravel." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/describe-how-you-d-build-a-property-management-saas-using-laravel-sticky.svg" alt="Sticky Note: Describe how you'd build a property management SaaS using Laravel." width="30%">
+</a>
+
 
 A property management SaaS (PMS) serves landlords and property managers. Key modules:
 
@@ -1911,6 +2142,17 @@ Display a disclaimer on every listing: "Information deemed reliable but not guar
 ---
 
 ### Q24: Design a system for real-time property price change alerts.
+
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-handwritten.svg" alt="Handwritten: Design a system for real-time property price change alerts." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-diagram.svg" alt="Diagram: Design a system for real-time property price change alerts." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/46-interview-real-estate/design-a-system-for-real-time-property-price-change-alerts-sticky.svg" alt="Sticky Note: Design a system for real-time property price change alerts." width="30%">
+</a>
+
 
 Users want to know immediately when a property they're watching changes price. Design:
 

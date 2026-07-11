@@ -63,6 +63,17 @@ flowchart LR
 
 ### Defining Artificial Intelligence
 
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-handwritten.svg" alt="Handwritten: Defining Artificial Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-diagram.svg" alt="Diagram: Defining Artificial Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/defining-artificial-intelligence-sticky.svg" alt="Sticky Note: Defining Artificial Intelligence" width="30%">
+</a>
+
+
 > **Real-World Analogy:** Defining AI is like defining "life" — everyone recognizes it when they see it, but a single crisp definition remains elusive. A cat is alive; a rock is not. But where exactly is the boundary? Similarly, a chess-playing program seems intelligent; a pocket calculator does not. But as calculators became powerful, the boundary shifted.
 
 **One-Sentence Takeaway:** AI is a multidisciplinary field defined by four distinct perspectives — acting/thinking humanly or rationally — each emphasizing different aspects of intelligence.
@@ -312,6 +323,17 @@ Location: B, Status: Clean -> Action: Left
 
 ### Foundations of AI
 
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-handwritten.svg" alt="Handwritten: Foundations of AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-diagram.svg" alt="Diagram: Foundations of AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/foundations-of-ai-sticky.svg" alt="Sticky Note: Foundations of AI" width="30%">
+</a>
+
+
 > **Real-World Analogy:** AI is a cathedral built on six pillars. No single discipline built AI — just as a medieval cathedral required architects (for structure), stonemasons (for materials), glassblowers (for windows), and theologians (for purpose), AI requires philosophy, mathematics, economics, neuroscience, computer science, and linguistics. Each pillar adds an essential perspective that the others cannot provide.
 
 **One-Sentence Takeaway:** AI draws on philosophy (what is knowledge?), mathematics (formal logic and probability), neuroscience (how does the brain compute?), and engineering (how do we build it?).
@@ -384,6 +406,17 @@ Location: B, Status: Clean -> Action: Left
 ---
 
 ### History of Artificial Intelligence
+
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-handwritten.svg" alt="Handwritten: History of Artificial Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-diagram.svg" alt="Diagram: History of Artificial Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/history-of-artificial-intelligence-sticky.svg" alt="Sticky Note: History of Artificial Intelligence" width="30%">
+</a>
+
 
 > **Real-World Analogy:** The history of AI is like the history of **flight**. Icarus (myth) dreamed of flying. The Montgolfier brothers (1783) got off the ground but had no control. The Wright brothers (1903) achieved controlled, sustained flight. Then jets (1940s), then rockets (1960s), then drones (2010s). Each breakthrough followed a period of frustration and failure. AI followed the same pattern: cycles of soaring optimism ("we'll solve intelligence in a decade") followed by crashes into the hard reality of complexity ("AI winters").
 
@@ -476,6 +509,17 @@ Location: B, Status: Clean -> Action: Left
 ---
 
 ### AI Subfields
+
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-handwritten.svg" alt="Handwritten: AI Subfields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-diagram.svg" alt="Diagram: AI Subfields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-subfields-sticky.svg" alt="Sticky Note: AI Subfields" width="30%">
+</a>
+
 
 > **Real-World Analogy:** AI subfields are like the **departments of a hospital**. A hospital has cardiology (heart), neurology (brain), orthopedics (bones), and radiology (imaging). Each is a specialized discipline with its own tools and techniques, but they all serve the same patient. Similarly, AI's subfields — ML, NLP, CV, robotics, expert systems — each specialize in one aspect of intelligence but work together to build intelligent systems.
 
@@ -608,6 +652,17 @@ public class LinearRegression {
 ---
 
 ### AI Ethics and Societal Impact
+
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-handwritten.svg" alt="Handwritten: AI Ethics and Societal Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-diagram.svg" alt="Diagram: AI Ethics and Societal Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/01-introduction/ai-ethics-and-societal-impact-sticky.svg" alt="Sticky Note: AI Ethics and Societal Impact" width="30%">
+</a>
+
 
 > **Real-World Analogy:** AI ethics is like **fire safety for the electrical grid**. When electricity was first deployed, buildings burned down — no one had thought about proper insulation, fuses, or circuit breakers. Over decades, we developed building codes, safety standards, and inspection regimes. AI today is at the same stage: the technology is being deployed faster than our safety infrastructure has been developed.
 

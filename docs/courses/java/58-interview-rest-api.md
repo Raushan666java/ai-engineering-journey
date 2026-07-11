@@ -25,6 +25,17 @@ flowchart LR
 
 ### Q1: What are the six constraints of REST? How do they affect API design?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" alt="Handwritten: What are the six constraints of REST? How do they affect API design?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" alt="Diagram: What are the six constraints of REST? How do they affect API design?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" alt="Sticky Note: What are the six constraints of REST? How do they affect API design?" width="30%">
+</a>
+
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -189,6 +200,17 @@ REST constraints create loosely coupled, evolvable systems. The uniform interfac
 
 ### Q2: What is the difference between POST and PUT? When should you use PATCH?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" alt="Handwritten: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" alt="Diagram: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" alt="Sticky Note: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+</a>
+
+
 **Answer:** POST creates resources (non-idempotent, server-generated ID). PUT replaces the entire resource (idempotent, client-specified identifier). PATCH applies partial modifications (can be non-idempotent). POST is for creation with unknown URL; PUT for full replacement at a known URL; PATCH for partial updates.
 
 ```java
@@ -317,6 +339,17 @@ OPTIONS  Yes         Yes    Allowed methods         200 OK
 POST creates, PUT replaces fully, PATCH updates partially. The idempotency guarantee of PUT makes it safe for retry logic. For PATCH, use JSON Merge Patch for simple cases and JSON Patch (RFC 6902) for complex operations. Always include idempotency keys for POST operations that trigger payments or critical actions.
 
 ### Q3: HTTP status codes → how do you choose the right ones?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" alt="Handwritten: HTTP status codes → how do you choose the right ones?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" alt="Diagram: HTTP status codes → how do you choose the right ones?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" alt="Sticky Note: HTTP status codes → how do you choose the right ones?" width="30%">
+</a>
+
 
 **Answer:** HTTP status codes communicate the result of a request. 2xx for success, 3xx for redirection, 4xx for client errors, 5xx for server errors. Choosing correctly is critical for API usability and proper client behavior. Common pattern: 200 for GET success, 201 for creation, 204 for deletion, 400 for bad input, 401/403 for auth issues, 404 for not found, 409 for conflicts, 422 for validation errors, 429 for rate limiting, 500 for unexpected errors.
 
@@ -541,6 +574,17 @@ Request received
 Choose status codes to enable correct client behavior without inspecting the response body. Use 201 for creation, 202 for async acceptance, 204 for successful empty responses, 400 for bad syntax, 422 for bad semantics, 409 for conflicts, 429 for rate limits. Never expose 5xx details to clients → log internally, return generic messages.
 ### Q4: RESTful URL design → what are the best practices?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" alt="Handwritten: RESTful URL design → what are the best practices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" alt="Diagram: RESTful URL design → what are the best practices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" alt="Sticky Note: RESTful URL design → what are the best practices?" width="30%">
+</a>
+
+
 **Answer:** Good REST URLs use nouns (not verbs), plural collection names, hierarchical paths for sub-resources, query parameters for filtering/sorting/pagination, and avoid deep nesting (max 2-3 levels). URLs should represent resources, not actions. Use kebab-case for multi-word resources.
 
 ```java
@@ -673,6 +717,17 @@ Resource naming rules:
 
 Good URLs are self-documenting and consistent. Use plural nouns for collections, path parameters for identities, query parameters for filtering. Keep nesting to 2-3 levels max → deeper hierarchies suggest poor resource modeling. Use actions as sub-resources (e.g., /api/orders/123/cancel) only for operations that don't map to standard CRUD.
 ### Q5: REST API versioning → what strategies exist?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" alt="Handwritten: REST API versioning → what strategies exist?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" alt="Diagram: REST API versioning → what strategies exist?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" alt="Sticky Note: REST API versioning → what strategies exist?" width="30%">
+</a>
+
 
 **Answer:** Four main API versioning strategies: URI path versioning (/v1/orders), query parameter (?v=1), custom header (Accept: application/vnd.company.v1+json), and content negotiation (Accept header media type versioning). URI versioning is most common for public APIs. Content negotiation is most RESTful but harder to consume.
 
@@ -840,6 +895,17 @@ Migration approach:
 
 URI path versioning is the most practical choice for public APIs → it's explicit, easy to route, cache-friendly, and simple for clients. Content negotiation is theoretically more RESTful but adds client complexity. Always provide deprecation headers and migration guides when retiring versions.
 ### Q6: How do you implement pagination, sorting, and filtering?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" alt="Handwritten: How do you implement pagination, sorting, and filtering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" alt="Diagram: How do you implement pagination, sorting, and filtering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" alt="Sticky Note: How do you implement pagination, sorting, and filtering?" width="30%">
+</a>
+
 
 **Answer:** Spring Data provides Pageable and Sort abstractions for pagination and sorting. Combine with Spring Data JPA Specifications or Querydsl for dynamic filtering. Use cursor-based pagination for real-time data and offset-based for stable data. Always validate sort properties to prevent injection attacks.
 
@@ -1123,6 +1189,17 @@ class SortValidator {
 Offset-based pagination works for most cases but degrades at high offsets. Cursor-based is better for real-time feeds and infinite scroll. Always whitelist sort fields to prevent injection and unintended joins. For complex filtering, use Specifications, Querydsl, or a dedicated search service.
 ### Q7: How do you implement error handling with Problem Details (RFC 7807)?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" alt="Handwritten: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" alt="Diagram: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" alt="Sticky Note: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+</a>
+
+
 **Answer:** RFC 7807 standardizes error responses with a "problem details" JSON format (type, title, status, detail, instance). Spring Boot 3.x natively supports ProblemDetail via ResponseEntity and @ControllerAdvice. This replaces custom error DTOs and makes API errors consistent and machine-readable.
 
 ```java
@@ -1365,6 +1442,17 @@ Custom (no standard) {"error": "Not found", "code": 404}    None
 RFC 7807 Problem Details provides a consistent, extensible error format across your entire API. Spring Boot 3.x makes it the default error mechanism. Use custom error types for different error categories and include correlation IDs for debugging. Always test error responses in integration tests.
 ### Q8: How do you implement content negotiation in a REST API?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement content negotiation in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement content negotiation in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement content negotiation in a REST API?" width="30%">
+</a>
+
+
 **Answer:** Content negotiation lets clients choose response format (JSON, XML, CSV) via the Accept header and specify request format via Content-Type. Spring Boot auto-negotiates based on Accept header and registered HttpMessageConverters. You can also use URL suffixes (.json, .xml) or query parameters. Always use Accept header → that's what HTTP designed.
 
 ```java
@@ -1589,6 +1677,17 @@ spring:
 
 Content negotiation decouples resource representation from resource identity. Always use the Accept header. Support JSON as minimum; add XML for enterprise clients. Use versioned media types (application/vnd.company.v1+json) for API versioning. Return 406 for unsupported formats.
 ### Q9: CORS → what is it and how do you configure it?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" alt="Handwritten: CORS → what is it and how do you configure it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" alt="Diagram: CORS → what is it and how do you configure it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" alt="Sticky Note: CORS → what is it and how do you configure it?" width="30%">
+</a>
+
 
 **Answer:** CORS (Cross-Origin Resource Sharing) controls which origins can access your API from browser-based applications. Browsers enforce same-origin policy by default. CORS headers (Access-Control-Allow-Origin, Allow-Methods, Allow-Headers) tell the browser which cross-origin requests are permitted. Spring Boot provides @CrossOrigin annotation and WebMvcConfigurer for global configuration.
 
@@ -1850,6 +1949,17 @@ class ProdCorsConfig implements WebMvcConfigurer {
 CORS is a browser-enforced security mechanism. Configure it globally via WebMvcConfigurer for consistency. Never combine `allowedOrigins("*")` with `allowCredentials(true)`. Use different CORS configurations per profile (permissive for dev, restrictive for prod). Test with curl OPTIONS requests before relying on browser behavior.
 ### Q10: What is HATEOAS and do you need it?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" alt="Handwritten: What is HATEOAS and do you need it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" alt="Diagram: What is HATEOAS and do you need it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" alt="Sticky Note: What is HATEOAS and do you need it?" width="30%">
+</a>
+
+
 **Answer:** HATEOAS (Hypermedia As The Engine Of Application State) means API responses include links that tell clients what actions are available next. Clients navigate the API through hypermedia links instead of hardcoded URL paths. Spring HATEOAS provides Link, EntityModel, CollectionModel, and RepresentationModel to build hypermedia responses. While theoretically elegant, most real-world APIs use HATEOAS sparingly or skip it entirely.
 
 ```java
@@ -2078,6 +2188,17 @@ public EntityModel<Order> getOrderMinimal(@PathVariable Long id) {
 
 HATEOAS is a REST maturity level L3 concept. Most real APIs provide minimal hypermedia (self links, pagination links) without full action-discovery HATEOAS. Use it for workflow-driven APIs where available actions change based on state. Skip it for simple CRUD or performance-critical APIs. The pragmatic approach: add self links and pagination, skip action links.
 ### Q11: How do you secure a REST API with authentication?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" alt="Handwritten: How do you secure a REST API with authentication?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" alt="Diagram: How do you secure a REST API with authentication?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" alt="Sticky Note: How do you secure a REST API with authentication?" width="30%">
+</a>
+
 
 **Answer:** REST APIs use stateless authentication → every request carries credentials. Common approaches: Basic Auth (simple, insecure alone), Bearer tokens (JWT), API keys (server-to-server), and OAuth2 (delegated auth). Spring Security + JWT is the standard pattern. Never use session-based auth (cookies) for REST APIs → it's stateful and breaks scaling.
 
@@ -2443,6 +2564,17 @@ Pragma: no-cache
 JWT Bearer tokens in the Authorization header are the standard for REST API auth. Stateless, scalable, and cross-platform. Use OAuth2 for third-party access delegation. Never use session cookies in REST APIs. Always use HTTPS, short token expiry, and proper token validation.
 ### Q12: How do you implement rate limiting in a REST API?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement rate limiting in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement rate limiting in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement rate limiting in a REST API?" width="30%">
+</a>
+
+
 **Answer:** Rate limiting protects your API from abuse and ensures fair usage. Common strategies: token bucket (burst traffic), leaking bucket (smoothing), fixed window (simple, boundary issue), sliding window (accurate). Spring Boot doesn't have built-in rate limiting → implement with interceptors, Bucket4j library, or API gateway. Always return 429 Too Many Requests with Retry-After header.
 
 ```java
@@ -2790,6 +2922,17 @@ Response body (Problem Details):
 Rate limiting is essential for production APIs. Use the token bucket algorithm (Bucket4j) for burst handling. Return 429 Too Many Requests with Retry-After and X-RateLimit-* headers. Use Redis for distributed rate limiting across instances. Different rate limits per endpoint, per tier, and per client. Always log rate limit violations.
 ### Q13: Explain the Richardson Maturity Model.
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" alt="Handwritten: Explain the Richardson Maturity Model." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" alt="Diagram: Explain the Richardson Maturity Model." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" alt="Sticky Note: Explain the Richardson Maturity Model." width="30%">
+</a>
+
+
 **Answer:** The Richardson Maturity Model (RMM) defines four levels of REST API maturity from Level 0 (plain XML/HTTP) to Level 3 (hypermedia). Most practical APIs reach Level 2 (resources + HTTP verbs). Level 3 (HATEOAS) is rarely implemented. The model helps evaluate how well an API follows REST principles.
 
 ```java
@@ -3001,6 +3144,17 @@ void testRmmLevel() {
 
 Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Level 3 (hypermedia) adds discoverability but increases complexity. Don't jump to L3 unless you have hypermedia clients. The model is descriptive, not prescriptive → build at the level that serves your consumers.
 ### Q14: How does REST compare to GraphQL and gRPC?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" alt="Handwritten: How does REST compare to GraphQL and gRPC?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" alt="Diagram: How does REST compare to GraphQL and gRPC?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" alt="Sticky Note: How does REST compare to GraphQL and gRPC?" width="30%">
+</a>
+
 
 **Answer:** REST, GraphQL, and gRPC are three major API styles with different tradeoffs. REST (resource-oriented, HTTP) is the most universal. GraphQL (query language, single endpoint) excels at flexible data fetching. gRPC (protobuf, HTTP/2) wins on performance and typed contracts. Choose based on your clients, performance needs, and team expertise.
 
@@ -3304,6 +3458,17 @@ Don't use gRPC when:
 
 Choose the right protocol for the job: REST for public APIs, GraphQL for flexible frontends, gRPC for microservice-internal communication. Many large systems use all three → REST for external, GraphQL for frontend gateway, gRPC for service mesh. Don't over-engineer: REST is the safest default.
 ### Q15: How do you implement caching in a REST API (ETag, Cache-Control)?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" alt="Handwritten: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" alt="Diagram: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" alt="Sticky Note: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+</a>
+
 
 **Answer:** HTTP caching reduces server load and latency. Two levels: client-side (Cache-Control header tells browsers/proxies to cache) and server-side (ETag for conditional requests → 304 Not Modified avoids resending data). Spring supports both via WebMvcConfigurer and Servlet filters. Always set Cache-Control for GET responses and use ETags for validation.
 
@@ -3647,6 +3812,17 @@ public ResponseEntity&lt;Product&gt; getProductCached(@PathVariable Long id) {
 
 Caching is the most impactful performance optimization for REST APIs. Use ETags for conditional requests (returns 304 with empty body), Cache-Control headers for client/CDN caching, and Spring @Cacheable for server-side caching. Combine all three for maximum benefit. Match cache invalidation granularity to your data change patterns.
 ### Q16: How do you document a REST API with OpenAPI/Swagger?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" alt="Handwritten: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" alt="Diagram: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" alt="Sticky Note: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+</a>
+
 
 **Answer:** OpenAPI (formerly Swagger) is the industry standard for REST API documentation. Springdoc openapi-ui auto-generates OpenAPI 3.0 docs from annotations, controller signatures, and model classes. The generated spec provides interactive API documentation (Swagger UI), client SDK generation, and API validation. Always document request/response schemas, error responses, and auth requirements.
 
@@ -4066,6 +4242,17 @@ public Attachment uploadAttachment(
 OpenAPI is essential for production APIs. Springdoc auto-generates the spec from annotations → add descriptive text, examples, and response codes. Document error responses (Problem Details schema), auth requirements (Bearer, API key), and pagination parameters. Group endpoints by domain for manageable docs. Provide examples for request/response bodies.
 ### Q17: How do you validate request bodies and parameters?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" alt="Handwritten: How do you validate request bodies and parameters?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" alt="Diagram: How do you validate request bodies and parameters?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" alt="Sticky Note: How do you validate request bodies and parameters?" width="30%">
+</a>
+
+
 **Answer:** Spring Boot uses Bean Validation (Jakarta Validation) annotations for request validation. Combine @Valid on request bodies with validation annotations on DTO fields. Use @Validated for grouped validation, custom validators for complex rules, and @ControllerAdvice for consistent error responses. Always validate at the boundary → never trust client input.
 
 ```java
@@ -4476,6 +4663,17 @@ void testEnumValidation() throws Exception {
 
 Bean Validation is the standard approach. Combine javax/jakarta validation annotations on DTOs, @Valid on controller parameters, and @Validated for method-level validation. Add custom validators for cross-field rules (@ValidDateRange). Handle validation errors with @ControllerAdvice returning Problem Details with individual field errors. Never trust client input.
 ### Q18: How do you handle file uploads in a REST API?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you handle file uploads in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" alt="Diagram: How do you handle file uploads in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you handle file uploads in a REST API?" width="30%">
+</a>
+
 
 **Answer:** File uploads use multipart/form-data content type. Spring Boot handles multipart requests via MultipartFile. Configure max file size in application.yml. Store files locally, on cloud storage (S3), or in a database (not recommended). Validate file type, size, and content. Stream large files to avoid memory issues. Return file metadata and download URLs.
 
@@ -4928,6 +5126,17 @@ class FileStorageException extends RuntimeException {
 File uploads require careful validation and secure storage. Validate file type (MIME whitelist), size, and extension before storing. Use UUID-based filenames to prevent path traversal. Stream large files to avoid memory issues. For production, use cloud storage (S3) with presigned URLs for secure access. Set multipart limits based on your use case.
 ### Q19: How do you implement streaming responses in a REST API?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement streaming responses in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement streaming responses in a REST API?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement streaming responses in a REST API?" width="30%">
+</a>
+
+
 **Answer:** Streaming sends large responses incrementally without loading everything into memory. Spring Boot supports several streaming approaches: StreamingResponseBody (byte streaming), ResponseBodyEmitter (object streaming), Server-Sent Events (SSE), and text/event-stream. Choose based on whether you need real-time pushes (SSE) or efficient large-data transfer (streaming).
 
 ```java
@@ -5339,6 +5548,17 @@ public void handleSseError(IOException e) {
 Streaming is essential for large datasets and real-time updates. Use StreamingResponseBody for file/data exports (CSV, JSON arrays). Use SseEmitter (Server-Sent Events) for real-time pushes to browser clients. Always handle client disconnects gracefully. Use database cursors (Stream<Order>) for memory-efficient large data processing.
 ### Q20: How do you implement idempotency keys for safe retries?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" alt="Handwritten: How do you implement idempotency keys for safe retries?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" alt="Diagram: How do you implement idempotency keys for safe retries?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" alt="Sticky Note: How do you implement idempotency keys for safe retries?" width="30%">
+</a>
+
+
 **Answer:** Idempotency ensures that multiple identical requests produce the same result as a single request. Clients send a unique idempotency key (e.g., UUID) in the Idempotency-Key header. The server stores the key and result of the first request. Subsequent requests with the same key return the stored result without re-execution. Essential for payment APIs and any mutation endpoint.
 
 ```java
@@ -5721,6 +5941,17 @@ void testInvalidIdempotencyKey() throws Exception {
 Idempotency keys prevent duplicate processing on retries. Store results with TTL in Redis. Use atomic locks to handle concurrent requests with the same key. Return stored results on replay (including original status code). This is critical for payment processing, order creation, and any operation that shouldn't execute twice.
 ### Q21: What are REST API security best practices?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" alt="Handwritten: What are REST API security best practices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" alt="Diagram: What are REST API security best practices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" alt="Sticky Note: What are REST API security best practices?" width="30%">
+</a>
+
+
 **Answer:** REST API security covers authentication, authorization, transport security, input validation, rate limiting, and auditing. Use HTTPS exclusively. Implement the principle of least privilege for every endpoint. Never expose internal details. Validate everything at the boundary. Log security-relevant events. Defense in depth → multiple layers of security.
 
 ```java
@@ -6091,6 +6322,17 @@ class ProductionSecurityConfig {
 Security is layered: HTTPS + HSTS for transport, JWT/OAuth2 for auth, @PreAuthorize for authorization, bean validation for input, rate limiting for abuse prevention, and audit logging for accountability. Every layer is necessary → one missed layer becomes the weakest link. Test security headers, injection vectors, and error information leakage.
 ### Q22: How do you handle async requests in REST (DeferredResult / Callable)?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" alt="Handwritten: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" alt="Diagram: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" alt="Sticky Note: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+</a>
+
+
 **Answer:** Spring Boot provides three async options: Callable (offload to thread pool), DeferredResult (response from external thread), and WebAsyncTask (timeout handling). These free up the servlet container thread while processing continues, improving scalability. Use DeferredResult when the response comes from a queue or event. Use Callable for simple offloading of blocking operations.
 
 ```java
@@ -6453,6 +6695,17 @@ server:
 
 Async request processing frees servlet container threads during long operations. Use Callable for simple offloading, DeferredResult for event-driven responses (queues, long polling), and CompletableFuture for complex orchestration. Always configure a proper thread pool → the default SimpleAsyncTaskExecutor creates unbounded threads. Test async endpoints with asyncDispatch().
 ### Q23: How do you test REST APIs?
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" alt="Handwritten: How do you test REST APIs?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" alt="Diagram: How do you test REST APIs?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" alt="Sticky Note: How do you test REST APIs?" width="30%">
+</a>
+
 
 **Answer:** REST API testing spans three levels: unit tests (controller logic), integration tests (full request/response cycle with MockMvc), and contract tests (API compatibility). Use MockMvc for web layer tests, TestRestTemplate for full integration tests, and REST Assured or WebTestClient for advanced scenarios. Always test success paths, validation errors, auth failures, edge cases, and error responses.
 
@@ -6934,6 +7187,17 @@ Test every endpoint for:
 Test your REST API at every level. MockMvc for fast controller tests with validation and error scenarios. TestRestTemplate for full integration tests that exercise the entire stack. Always test security (auth, authorization, IDOR). Include performance tests for critical endpoints. Use parameterized tests for status codes and edge cases. Every endpoint needs a success test AND failure tests.
 ### Q24: What are REST conditional requests and how do they work?
 
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" alt="Handwritten: What are REST conditional requests and how do they work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" alt="Diagram: What are REST conditional requests and how do they work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" alt="Sticky Note: What are REST conditional requests and how do they work?" width="30%">
+</a>
+
+
 **Answer:** Conditional requests use HTTP headers to make the server check a condition before executing the request. They prevent unnecessary data transfer (GET) and lost updates (PUT/PATCH/DELETE). Two groups: Last-Modified/If-Modified-Since (time-based) and ETag/If-None-Match-If-Match (content-based). Essential for caching and optimistic concurrency.
 
 ```java
@@ -7253,6 +7517,17 @@ DELETE /resource
 
 Conditional requests are the foundation of HTTP caching and optimistic concurrency. Use ETag + If-None-Match for efficient caching (304). Use If-Match for safe updates (prevents lost updates, 412 Precondition Failed). Always include both ETag and Last-Modified headers. Test all conditional scenarios: not modified (304), conflict (412), and normal success (200).
 ### Q25: REST API design → complete best practices checklist
+
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" alt="Handwritten: REST API design → complete best practices checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" alt="Diagram: REST API design → complete best practices checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" alt="Sticky Note: REST API design → complete best practices checklist" width="30%">
+</a>
+
 
 **Answer:** A well-designed REST API follows consistent conventions, uses HTTP properly, handles errors gracefully, and considers consumers first. This answer provides a comprehensive checklist of REST API best practices covering URL design, HTTP semantics, error handling, security, performance, documentation, and evolution.
 

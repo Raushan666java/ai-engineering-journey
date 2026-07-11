@@ -331,6 +331,17 @@ https.createServer(options, app).listen(443);
 
 ### Security Logging and Monitoring
 
+<a href="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-handwritten.svg" alt="Handwritten: Security Logging and Monitoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-diagram.svg" alt="Diagram: Security Logging and Monitoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/security-logging-and-monitoring-sticky.svg" alt="Sticky Note: Security Logging and Monitoring" width="30%">
+</a>
+
+
 ```typescript
 import pino from "pino";
 
@@ -365,6 +376,17 @@ router.delete("/api/users/:id", authenticate, auditLog("USER_DELETE"), deleteUse
 
 ### Secure Session Configuration
 
+<a href="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-handwritten.svg" alt="Handwritten: Secure Session Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-diagram.svg" alt="Diagram: Secure Session Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/secure-session-configuration-sticky.svg" alt="Sticky Note: Secure Session Configuration" width="30%">
+</a>
+
+
 ```typescript
 import session from "express-session";
 import RedisStore from "connect-redis";
@@ -393,6 +415,17 @@ app.use(
 ```
 
 ### Dependency Security and Supply Chain
+
+<a href="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-handwritten.svg" alt="Handwritten: Dependency Security and Supply Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-diagram.svg" alt="Diagram: Dependency Security and Supply Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/dependency-security-and-supply-chain-sticky.svg" alt="Sticky Note: Dependency Security and Supply Chain" width="30%">
+</a>
+
 
 Vulnerable dependencies are a common attack vector (OWASP #6).
 
@@ -440,6 +473,17 @@ npm publish --provenance
 ```
 
 ### Environment-Specific Security
+
+<a href="../../assets/images/diagrams/web-development/13-security/environment-specific-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/environment-specific-security-handwritten.svg" alt="Handwritten: Environment-Specific Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/environment-specific-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/environment-specific-security-diagram.svg" alt="Diagram: Environment-Specific Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/environment-specific-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/environment-specific-security-sticky.svg" alt="Sticky Note: Environment-Specific Security" width="30%">
+</a>
+
 
 ```typescript
 // Security configuration per environment
@@ -864,6 +908,17 @@ Web security requires defense in depth: parameterized queries prevent SQL inject
 
 ### Application Projects
 
+<a href="../../assets/images/diagrams/web-development/13-security/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+</a>
+
+
 1. Add CSRF protection to an existing REST API
 2. Implement a Content Security Policy for a React SPA
 3. Add rate limiting with different tiers for authenticated vs anonymous users
@@ -876,9 +931,31 @@ Web security requires defense in depth: parameterized queries prevent SQL inject
 
 ### Challenge Project
 
+<a href="../../assets/images/diagrams/web-development/13-security/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+</a>
+
+
 Perform a security audit of a web application covering OWASP Top 10, using automated scanners (ZAP) and manual testing. Document findings, implement fixes, and verify with a second scan.
 
 ### Practical Takeaways
+
+<a href="../../assets/images/diagrams/web-development/13-security/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/13-security/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/13-security/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+</a>
+
 
 1. **Defense in depth** — never rely on a single security control. Combine CSP, CORS, rate limiting, input validation, and authentication together.
 2. **Validate server-side always** — client validation is UX only. Every API endpoint must re-validate inputs regardless of frontend checks.

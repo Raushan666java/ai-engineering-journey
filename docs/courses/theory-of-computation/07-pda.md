@@ -43,11 +43,33 @@ flowchart LR
 
 ### 6.1 What is a Pushdown Automaton?
 
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" alt="Handwritten: 6.1 What is a Pushdown Automaton?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" alt="Diagram: 6.1 What is a Pushdown Automaton?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" alt="Sticky Note: 6.1 What is a Pushdown Automaton?" width="30%">
+</a>
+
+
 A pushdown automaton (PDA) extends an NFA with a **stack** → an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** → languages that NFAs/DFAs cannot recognize (like {aâ¿bâ¿ | n â‰¥ 0}).
 
 The stack is a powerful addition: it provides unlimited memory, but the LIFO restriction means not all types of unbounded memory are available (unlike the Turing machine's tape).
 
 ### 6.2 Formal Definition of a PDA
+
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" alt="Handwritten: 6.2 Formal Definition of a PDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" alt="Diagram: 6.2 Formal Definition of a PDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" alt="Sticky Note: 6.2 Formal Definition of a PDA" width="30%">
+</a>
+
 
 A **pushdown automaton** is a 6-tuple (Q, Î£, Î“, Î´, qâ‚€, F) where:
 
@@ -66,6 +88,17 @@ A transition Î´(q, a, X) contains (p, Y), meaning:
 
 ### 6.3 PDA Computation
 
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" alt="Handwritten: 6.3 PDA Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" alt="Diagram: 6.3 PDA Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" alt="Sticky Note: 6.3 PDA Computation" width="30%">
+</a>
+
+
 A **configuration** (or instantaneous description) of a PDA is a triple (q, w, Î³) where:
 - q âˆˆ Q is the current state.
 - w âˆˆ Î£* is the remaining input.
@@ -79,6 +112,17 @@ Transitions between configurations follow the transition function.
 
 ### 6.4 Deterministic vs Nondeterministic PDA
 
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" alt="Handwritten: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" alt="Diagram: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" alt="Sticky Note: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+</a>
+
+
 A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆª {Îµ} and X âˆˆ Î“ âˆª {Îµ}, there is at most one possible next configuration. Nondeterministic (NPDA) PDAs may have multiple choices.
 
 **Key difference:** Deterministic and nondeterministic PDA are **NOT** equivalent! There are context-free languages that require nondeterminism. Example: { wwÊ€ | w âˆˆ {a,b}* } (even-length palindromes) requires nondeterminism to guess the midpoint.
@@ -86,6 +130,17 @@ A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆ
 **DPDA languages** are called deterministic context-free languages (DCFLs), which form a proper subset of CFLs.
 
 ### 6.5 Equivalence of PDA and CFG
+
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" alt="Handwritten: 6.5 Equivalence of PDA and CFG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" alt="Diagram: 6.5 Equivalence of PDA and CFG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" alt="Sticky Note: 6.5 Equivalence of PDA and CFG" width="30%">
+</a>
+
 
 **Theorem:** A language is context-free if and only if some PDA recognizes it.
 
@@ -102,6 +157,17 @@ This **top-down** construction produces an NPDA with one state.
 - Productions simulate stack behavior.
 
 ### 6.6 PDA Design Patterns
+
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" alt="Handwritten: 6.6 PDA Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" alt="Diagram: 6.6 PDA Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" alt="Sticky Note: 6.6 PDA Design Patterns" width="30%">
+</a>
+
 
 Common patterns for PDA design:
 

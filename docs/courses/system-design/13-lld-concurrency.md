@@ -33,6 +33,17 @@ flowchart LR
 > **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### Thread Safety Fundamentals
 
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" alt="Handwritten: Thread Safety Fundamentals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" alt="Diagram: Thread Safety Fundamentals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" alt="Sticky Note: Thread Safety Fundamentals" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -69,6 +80,17 @@ def increment():
 
 ### Deadlock
 
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" alt="Handwritten: Deadlock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" alt="Diagram: Deadlock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" alt="Sticky Note: Deadlock" width="30%">
+</a>
+
+
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
@@ -104,6 +126,17 @@ A **lock order** prevents circular wait by ensuring that all threads acquire loc
 
 ### Lock-Free Programming
 
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" alt="Handwritten: Lock-Free Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" alt="Diagram: Lock-Free Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" alt="Sticky Note: Lock-Free Programming" width="30%">
+</a>
+
+
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
@@ -138,6 +171,17 @@ If another thread modifies the counter between the read and the CAS, the CAS fai
 
 ### Amdahl's Law and Gustafson's Law
 
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" alt="Handwritten: Amdahl's Law and Gustafson's Law" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" alt="Diagram: Amdahl's Law and Gustafson's Law" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" alt="Sticky Note: Amdahl's Law and Gustafson's Law" width="30%">
+</a>
+
+
 **Amdahl's Law** gives the theoretical speedup when parallelizing a workload with a serial fraction `s` (non-parallelizable) and a parallel fraction `p` (where `p = 1 - s`):
 
 ```
@@ -155,6 +199,17 @@ Scaled Speedup(S) = s + p * N = s + (1 - s) * N = N - s * (N - 1)
 Amdahl's Law describes strong scaling (fixed problem, more cores). Gustafson's Law describes weak scaling (fixed time, larger problem). Both are useful: Amdahl tells you the ceiling for a given computation; Gustafson tells you how much you can compute with more resources.
 
 ### Thread Pools
+
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" alt="Handwritten: Thread Pools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" alt="Diagram: Thread Pools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" alt="Sticky Note: Thread Pools" width="30%">
+</a>
+
 
 Thread pools mitigate the overhead of thread creation and destruction. Four common configurations:
 
@@ -181,6 +236,17 @@ with ThreadPoolExecutor(max_workers=10) as executor:
 ```
 
 ### Async/Await Internals
+
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" alt="Handwritten: Async/Await Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" alt="Diagram: Async/Await Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" alt="Sticky Note: Async/Await Internals" width="30%">
+</a>
+
 
 Async/await is a cooperative concurrency model where a single thread switches between tasks at explicit await points. The core components are:
 
@@ -209,6 +275,17 @@ asyncio.run(main())
 The JavaScript event loop is similar but runs on a single thread with a callback queue. The microtask queue (promises) has higher priority than the macrotask queue (setTimeout, I/O). This ordering is critical: a promise resolution always runs before the next timer callback, even if the timer has elapsed.
 
 ### Actor Model
+
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" alt="Handwritten: Actor Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" alt="Diagram: Actor Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" alt="Sticky Note: Actor Model" width="30%">
+</a>
+
 
 The Actor model (Erlang, Akka) treats every entity as an **actor**—a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
 
@@ -240,6 +317,17 @@ class Actor:
 Erlang's "let it crash" philosophy treats crashes as first-class failures to be managed by supervisors, not caught and handled inline. This produces systems that self-heal without complex error-handling logic.
 
 ### Go Goroutines and CSP
+
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" alt="Handwritten: Go Goroutines and CSP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" alt="Diagram: Go Goroutines and CSP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" alt="Sticky Note: Go Goroutines and CSP" width="30%">
+</a>
+
 
 Go implements Communicating Sequential Processes (CSP). Goroutines are lightweight threads multiplexed onto OS threads by Go's runtime scheduler. The key abstraction is the **channel**:
 
@@ -280,6 +368,17 @@ case <-done:
 Goroutine leaks occur when a goroutine is blocked forever on a send or receive. Detection tools (Go's pprof, leak-checking libraries) identify goroutines that have not terminated. The typical fix: use contexts with deadlines or cancellations.
 
 ### Dining Philosophers
+
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
+</a>
+
 
 Five philosophers sit at a table with five forks. Each philosopher alternates between thinking and eating. To eat, a philosopher needs both the left and right forks. The naive solution (pick up left, then right) deadlocks when all five philosophers pick up their left fork simultaneously.
 

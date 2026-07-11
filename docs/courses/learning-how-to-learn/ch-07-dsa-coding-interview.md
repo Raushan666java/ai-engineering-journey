@@ -58,6 +58,17 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 
 
 | Topic | Key Insight | Practical Takeaway |
@@ -117,6 +128,17 @@ flowchart LR
 
 
 ### Q81: What is the 3-pass method for solving DSA problems, and why does it work?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-handwritten.svg" alt="Handwritten: What is the 3-pass method for solving DSA problems, and why does it work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-diagram.svg" alt="Diagram: What is the 3-pass method for solving DSA problems, and why does it work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-3-pass-method-for-solving-dsa-problems-and-why-does-it-work-sticky.svg" alt="Sticky Note: What is the 3-pass method for solving DSA problems, and why does it work?" width="30%">
+</a>
+
 
 
 
@@ -284,6 +306,17 @@ The 3-pass method works because it matches how your brain solves problems: diffu
 
 ### Q82: How do you classify DSA problems into patterns?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-handwritten.svg" alt="Handwritten: How do you classify DSA problems into patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-diagram.svg" alt="Diagram: How do you classify DSA problems into patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-classify-dsa-problems-into-patterns-sticky.svg" alt="Sticky Note: How do you classify DSA problems into patterns?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -425,6 +458,17 @@ public int maxSubArray(int[] nums) {
 
 
 ### Q83: How do you create Anki decks specifically for DSA?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-handwritten.svg" alt="Handwritten: How do you create Anki decks specifically for DSA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-diagram.svg" alt="Diagram: How do you create Anki decks specifically for DSA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-you-create-anki-decks-specifically-for-dsa-sticky.svg" alt="Sticky Note: How do you create Anki decks specifically for DSA?" width="30%">
+</a>
+
 
 
 
@@ -609,6 +653,17 @@ but left <= right would be the standard binary search variant.
 
 
 ### Q84: What is the DP workflow and how do I use it consistently?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-handwritten.svg" alt="Handwritten: What is the DP workflow and how do I use it consistently?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-diagram.svg" alt="Diagram: What is the DP workflow and how do I use it consistently?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-dp-workflow-and-how-do-i-use-it-consistently-sticky.svg" alt="Sticky Note: What is the DP workflow and how do I use it consistently?" width="30%">
+</a>
+
 
 
 
@@ -820,6 +875,17 @@ public int minPathSumOptimized(int[][] grid) {
 
 ### Q85: How do I use LeetCode solutions without abusing them?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-handwritten.svg" alt="Handwritten: How do I use LeetCode solutions without abusing them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-diagram.svg" alt="Diagram: How do I use LeetCode solutions without abusing them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-use-leetcode-solutions-without-abusing-them-sticky.svg" alt="Sticky Note: How do I use LeetCode solutions without abusing them?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -975,6 +1041,17 @@ After reading a solution, you must re-solve the same problem from scratch within
 
 
 ### Q86: How do I develop intuition for time and space complexity quickly?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-handwritten.svg" alt="Handwritten: How do I develop intuition for time and space complexity quickly?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-diagram.svg" alt="Diagram: How do I develop intuition for time and space complexity quickly?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-intuition-for-time-and-space-complexity-quickly-sticky.svg" alt="Sticky Note: How do I develop intuition for time and space complexity quickly?" width="30%">
+</a>
+
 
 
 
@@ -1153,6 +1230,17 @@ public String joinStrings(List<String> words) {
 
 
 ### Q87: How do I think about space-time tradeoffs in interviews?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-handwritten.svg" alt="Handwritten: How do I think about space-time tradeoffs in interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-diagram.svg" alt="Diagram: How do I think about space-time tradeoffs in interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-think-about-space-time-tradeoffs-in-interviews-sticky.svg" alt="Sticky Note: How do I think about space-time tradeoffs in interviews?" width="30%">
+</a>
+
 
 
 
@@ -1410,6 +1498,17 @@ public char[] reverseCopy(char[] s) {
 
 ### Q88: How do I decide between SQL and NoSQL for an interview problem?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-handwritten.svg" alt="Handwritten: How do I decide between SQL and NoSQL for an interview problem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-diagram.svg" alt="Diagram: How do I decide between SQL and NoSQL for an interview problem?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-decide-between-sql-and-nosql-for-an-interview-problem-sticky.svg" alt="Sticky Note: How do I decide between SQL and NoSQL for an interview problem?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -1594,6 +1693,17 @@ CREATE TABLE trips (
 
 ### Q89: How do I approach system design fundamentals for interviews?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-handwritten.svg" alt="Handwritten: How do I approach system design fundamentals for interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-diagram.svg" alt="Diagram: How do I approach system design fundamentals for interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-approach-system-design-fundamentals-for-interviews-sticky.svg" alt="Sticky Note: How do I approach system design fundamentals for interviews?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -1757,6 +1867,17 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 ### Q90: How do I study design patterns for interviews?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-handwritten.svg" alt="Handwritten: How do I study design patterns for interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-diagram.svg" alt="Diagram: How do I study design patterns for interviews?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-study-design-patterns-for-interviews-sticky.svg" alt="Sticky Note: How do I study design patterns for interviews?" width="30%">
+</a>
+
 
 
 
@@ -1980,6 +2101,17 @@ class ShoppingCart {
 
 ### Q91: How do I develop code review and debugging skills through deliberate practice?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-handwritten.svg" alt="Handwritten: How do I develop code review and debugging skills through deliberate practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-diagram.svg" alt="Diagram: How do I develop code review and debugging skills through deliberate practice?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-develop-code-review-and-debugging-skills-through-deliberate-practice-sticky.svg" alt="Sticky Note: How do I develop code review and debugging skills through deliberate practice?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -2177,6 +2309,17 @@ public int binarySearch(int[] arr, int target) {
 
 
 ### Q92: How do I prepare for Low-Level Design (LLD) rounds?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-handwritten.svg" alt="Handwritten: How do I prepare for Low-Level Design (LLD) rounds?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-diagram.svg" alt="Diagram: How do I prepare for Low-Level Design (LLD) rounds?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-low-level-design-lld-rounds-sticky.svg" alt="Sticky Note: How do I prepare for Low-Level Design (LLD) rounds?" width="30%">
+</a>
+
 
 
 
@@ -2470,6 +2613,17 @@ class ParkingLot {
 
 ### Q93: How do I prepare for concurrency and multithreading questions?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-handwritten.svg" alt="Handwritten: How do I prepare for concurrency and multithreading questions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-diagram.svg" alt="Diagram: How do I prepare for concurrency and multithreading questions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-prepare-for-concurrency-and-multithreading-questions-sticky.svg" alt="Sticky Note: How do I prepare for concurrency and multithreading questions?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -2734,6 +2888,17 @@ CompletableFuture.supplyAsync(() -> fetchData())
 
 ### Q94: What is the complete interview workflow from start to follow-up?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-handwritten.svg" alt="Handwritten: What is the complete interview workflow from start to follow-up?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-diagram.svg" alt="Diagram: What is the complete interview workflow from start to follow-up?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/what-is-the-complete-interview-workflow-from-start-to-follow-up-sticky.svg" alt="Sticky Note: What is the complete interview workflow from start to follow-up?" width="30%">
+</a>
+
+
 
 
 **Answer:**
@@ -2867,6 +3032,17 @@ Before you hit "submit" or "I'm done":
 
 
 ### Q95: How do I maintain the meta-skill of learning itself through the interview process?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-handwritten.svg" alt="Handwritten: How do I maintain the meta-skill of learning itself through the interview process?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-diagram.svg" alt="Diagram: How do I maintain the meta-skill of learning itself through the interview process?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/how-do-i-maintain-the-meta-skill-of-learning-itself-through-the-interview-process-sticky.svg" alt="Sticky Note: How do I maintain the meta-skill of learning itself through the interview process?" width="30%">
+</a>
+
 
 
 
@@ -3109,6 +3285,17 @@ Everything else is just the domain wrapping. You now know how to learn DSA. Go p
 
 
 ### Self-Assessment Quiz
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+</a>
+
 
 
 

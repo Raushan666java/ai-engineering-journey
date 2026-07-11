@@ -91,6 +91,17 @@ quadrantChart
 ---
 
 ### Problem 1: Two Sum
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-handwritten.svg" alt="Handwritten: Problem 1: Two Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-diagram.svg" alt="Diagram: Problem 1: Two Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-1-two-sum-sticky.svg" alt="Sticky Note: Problem 1: Two Sum" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table]
@@ -150,6 +161,17 @@ console.log(twoSum([1, 5, 3, 7], 8));     // [1, 3] or [0, 2]
 ---
 
 ### Problem 2: Best Time to Buy and Sell Stock
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Problem 2: Best Time to Buy and Sell Stock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Problem 2: Best Time to Buy and Sell Stock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-2-best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Problem 2: Best Time to Buy and Sell Stock" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Dynamic Programming]
@@ -210,6 +232,17 @@ console.log(maxProfit([2, 4, 1]));            // 2
 ---
 
 ### Problem 3: Maximum Subarray (Kadane's Algorithm)
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta] [LinkedIn]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Divide and Conquer, DP]
@@ -266,6 +299,17 @@ console.log(maxSubArray([-2, -1]));                          // -1
 ---
 
 ### Problem 4: Move Zeroes
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-handwritten.svg" alt="Handwritten: Problem 4: Move Zeroes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-diagram.svg" alt="Diagram: Problem 4: Move Zeroes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-4-move-zeroes-sticky.svg" alt="Sticky Note: Problem 4: Move Zeroes" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Two Pointers]
@@ -320,6 +364,17 @@ console.log(arr3); // [1, 2, 3]
 ---
 
 ### Problem 5: Contains Duplicate
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-handwritten.svg" alt="Handwritten: Problem 5: Contains Duplicate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-diagram.svg" alt="Diagram: Problem 5: Contains Duplicate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-5-contains-duplicate-sticky.svg" alt="Sticky Note: Problem 5: Contains Duplicate" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table, Sorting]
@@ -373,6 +428,17 @@ console.log(containsDuplicate([1, 1, 1]));     // true
 ---
 
 ### Problem 6: Missing Number
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-handwritten.svg" alt="Handwritten: Problem 6: Missing Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-diagram.svg" alt="Diagram: Problem 6: Missing Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-6-missing-number-sticky.svg" alt="Sticky Note: Problem 6: Missing Number" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Microsoft] [Meta] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math, Bit Manipulation]
@@ -427,6 +493,17 @@ console.log(missingNumber([0]));          // 1
 ---
 
 ### Problem 7: Find All Numbers Disappeared in an Array
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-handwritten.svg" alt="Handwritten: Problem 7: Find All Numbers Disappeared in an Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-diagram.svg" alt="Diagram: Problem 7: Find All Numbers Disappeared in an Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-7-find-all-numbers-disappeared-in-an-array-sticky.svg" alt="Sticky Note: Problem 7: Find All Numbers Disappeared in an Array" width="30%">
+</a>
+
 🏷️ **Companies:** [Google] [Amazon]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table]
@@ -482,6 +559,17 @@ console.log(findDisappearedNumbers([2, 2]));                    // [1]
 ---
 
 ### Problem 8: Single Number
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-handwritten.svg" alt="Handwritten: Problem 8: Single Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-diagram.svg" alt="Diagram: Problem 8: Single Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-8-single-number-sticky.svg" alt="Sticky Note: Problem 8: Single Number" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Bit Manipulation]
@@ -532,6 +620,17 @@ console.log(singleNumber([1]));                 // 1
 ---
 
 ### Problem 9: Intersection of Two Arrays II
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-handwritten.svg" alt="Handwritten: Problem 9: Intersection of Two Arrays II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-diagram.svg" alt="Diagram: Problem 9: Intersection of Two Arrays II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-9-intersection-of-two-arrays-ii-sticky.svg" alt="Sticky Note: Problem 9: Intersection of Two Arrays II" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Hash Table, Two Pointers]
@@ -585,6 +684,17 @@ console.log(intersect([4, 9, 5], [9, 4, 9, 8, 4])); // [4, 9] or [9, 4]
 ---
 
 ### Problem 10: Plus One
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-handwritten.svg" alt="Handwritten: Problem 10: Plus One" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-diagram.svg" alt="Diagram: Problem 10: Plus One" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-10-plus-one-sticky.svg" alt="Sticky Note: Problem 10: Plus One" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math]
@@ -640,6 +750,17 @@ console.log(plusOne([9, 9]));    // [1, 0, 0]
 ---
 
 ### Problem 11: Three Sum
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-handwritten.svg" alt="Handwritten: Problem 11: Three Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-diagram.svg" alt="Diagram: Problem 11: Three Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-11-three-sum-sticky.svg" alt="Sticky Note: Problem 11: Three Sum" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Sorting]
@@ -706,6 +827,17 @@ console.log(threeSum([1, 2, -2, -1])); // []
 ---
 
 ### Problem 12: Product of Array Except Self
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-handwritten.svg" alt="Handwritten: Problem 12: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-diagram.svg" alt="Diagram: Problem 12: Product of Array Except Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-12-product-of-array-except-self-sticky.svg" alt="Sticky Note: Problem 12: Product of Array Except Self" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Meta] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Prefix Sum]
@@ -758,6 +890,17 @@ console.log(productExceptSelf([-1, 1, 0, -3, 3])); // [0, 0, 9, 0, 0]
 ---
 
 ### Problem 13: Container With Most Water
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-handwritten.svg" alt="Handwritten: Problem 13: Container With Most Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-diagram.svg" alt="Diagram: Problem 13: Container With Most Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-13-container-with-most-water-sticky.svg" alt="Sticky Note: Problem 13: Container With Most Water" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Greedy]
@@ -814,6 +957,17 @@ console.log(maxArea([4, 3, 2, 1, 4])); // 16
 ---
 
 ### Problem 14: Find the Duplicate Number
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-handwritten.svg" alt="Handwritten: Problem 14: Find the Duplicate Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-diagram.svg" alt="Diagram: Problem 14: Find the Duplicate Number" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-14-find-the-duplicate-number-sticky.svg" alt="Sticky Note: Problem 14: Find the Duplicate Number" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Binary Search]
@@ -869,6 +1023,17 @@ console.log(findDuplicate([1, 1])); // 1
 ---
 
 ### Problem 15: Subarray Sum Equals K
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-handwritten.svg" alt="Handwritten: Problem 15: Subarray Sum Equals K" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-diagram.svg" alt="Diagram: Problem 15: Subarray Sum Equals K" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-15-subarray-sum-equals-k-sticky.svg" alt="Sticky Note: Problem 15: Subarray Sum Equals K" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Hash Table, Prefix Sum]
@@ -922,6 +1087,17 @@ console.log(subarraySum([-1, -1, 1], 0)); // 1
 ---
 
 ### Problem 16: Merge Intervals
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-handwritten.svg" alt="Handwritten: Problem 16: Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-diagram.svg" alt="Diagram: Problem 16: Merge Intervals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-16-merge-intervals-sticky.svg" alt="Sticky Note: Problem 16: Merge Intervals" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Sorting]
@@ -975,6 +1151,17 @@ console.log(merge([[1, 4], [2, 3]])); // [[1, 4]]
 ---
 
 ### Problem 17: Next Permutation
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-handwritten.svg" alt="Handwritten: Problem 17: Next Permutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-diagram.svg" alt="Diagram: Problem 17: Next Permutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-17-next-permutation-sticky.svg" alt="Sticky Note: Problem 17: Next Permutation" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers]
@@ -1037,6 +1224,17 @@ console.log(arr2); // [1, 2, 3]
 ---
 
 ### Problem 18: Sort Colors (Dutch National Flag)
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-handwritten.svg" alt="Handwritten: Problem 18: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-diagram.svg" alt="Diagram: Problem 18: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-18-sort-colors-dutch-national-flag-sticky.svg" alt="Sticky Note: Problem 18: Sort Colors (Dutch National Flag)" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Two Pointers, Sorting]
@@ -1096,6 +1294,17 @@ console.log(arr2); // [0, 1, 2]
 ---
 
 ### Problem 19: Rotate Array
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-handwritten.svg" alt="Handwritten: Problem 19: Rotate Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-diagram.svg" alt="Diagram: Problem 19: Rotate Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-19-rotate-array-sticky.svg" alt="Sticky Note: Problem 19: Rotate Array" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Math, Two Pointers]
@@ -1151,6 +1360,17 @@ console.log(arr2); // [3, 99, -1, -100]
 ---
 
 ### Problem 20: Maximum Product Subarray
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-handwritten.svg" alt="Handwritten: Problem 20: Maximum Product Subarray" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-diagram.svg" alt="Diagram: Problem 20: Maximum Product Subarray" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-20-maximum-product-subarray-sticky.svg" alt="Sticky Note: Problem 20: Maximum Product Subarray" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Dynamic Programming]
@@ -1201,6 +1421,17 @@ console.log(maxProduct([-2, 3, -4]));   // 24
 ---
 
 ### Problem 21: Search in Rotated Sorted Array
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Problem 21: Search in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-diagram.svg" alt="Diagram: Problem 21: Search in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-21-search-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Problem 21: Search in Rotated Sorted Array" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
@@ -1263,6 +1494,17 @@ console.log(search([1], 0)); // -1
 ---
 
 ### Problem 22: First and Last Position of Element in Sorted Array
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-handwritten.svg" alt="Handwritten: Problem 22: First and Last Position of Element in Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-diagram.svg" alt="Diagram: Problem 22: First and Last Position of Element in Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-22-first-and-last-position-of-element-in-sorted-array-sticky.svg" alt="Sticky Note: Problem 22: First and Last Position of Element in Sorted Array" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
@@ -1325,6 +1567,17 @@ console.log(searchRange([], 0)); // [-1, -1]
 ---
 
 ### Problem 23: Find Minimum in Rotated Sorted Array
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Problem 23: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Problem 23: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-23-find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Problem 23: Find Minimum in Rotated Sorted Array" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Binary Search]
@@ -1371,6 +1624,17 @@ console.log(findMin([11, 13, 15, 17])); // 11
 ---
 
 ### Problem 24: Jump Game II
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-handwritten.svg" alt="Handwritten: Problem 24: Jump Game II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-diagram.svg" alt="Diagram: Problem 24: Jump Game II" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-24-jump-game-ii-sticky.svg" alt="Sticky Note: Problem 24: Jump Game II" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Array, Greedy]
@@ -1421,6 +1685,17 @@ console.log(jump([0]));             // 0
 ---
 
 ### Problem 25: Majority Element
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-handwritten.svg" alt="Handwritten: Problem 25: Majority Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-diagram.svg" alt="Diagram: Problem 25: Majority Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-25-majority-element-sticky.svg" alt="Sticky Note: Problem 25: Majority Element" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy → Medium
 📂 **Topics:** [Array, Voting Algorithm]
@@ -1472,6 +1747,17 @@ console.log(majorityElement([2, 2, 1, 1, 1, 2, 2])); // 2
 ---
 
 ### Problem 26: First Missing Positive
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-handwritten.svg" alt="Handwritten: Problem 26: First Missing Positive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-diagram.svg" alt="Diagram: Problem 26: First Missing Positive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-26-first-missing-positive-sticky.svg" alt="Sticky Note: Problem 26: First Missing Positive" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Hash Table]
@@ -1530,6 +1816,17 @@ console.log(firstMissingPositive([7, 8, 9, 11, 12])); // 1
 ---
 
 ### Problem 27: Trapping Rain Water
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-handwritten.svg" alt="Handwritten: Problem 27: Trapping Rain Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-diagram.svg" alt="Diagram: Problem 27: Trapping Rain Water" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-27-trapping-rain-water-sticky.svg" alt="Sticky Note: Problem 27: Trapping Rain Water" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Two Pointers, Stack, DP]
@@ -1594,6 +1891,17 @@ console.log(trap([1, 0, 1])); // 1
 ---
 
 ### Problem 28: Median of Two Sorted Arrays
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-handwritten.svg" alt="Handwritten: Problem 28: Median of Two Sorted Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-diagram.svg" alt="Diagram: Problem 28: Median of Two Sorted Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-28-median-of-two-sorted-arrays-sticky.svg" alt="Sticky Note: Problem 28: Median of Two Sorted Arrays" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Binary Search, Divide and Conquer]
@@ -1663,6 +1971,17 @@ console.log(findMedianSortedArrays([0, 0], [0, 0]));    // 0
 ---
 
 ### Problem 29: Maximum Gap
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-handwritten.svg" alt="Handwritten: Problem 29: Maximum Gap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-diagram.svg" alt="Diagram: Problem 29: Maximum Gap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-29-maximum-gap-sticky.svg" alt="Sticky Note: Problem 29: Maximum Gap" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Bucket Sort, Radix Sort]
@@ -1727,6 +2046,17 @@ console.log(maximumGap([1, 10000000]));  // 9999999
 ---
 
 ### Problem 30: Count of Smaller Numbers After Self
+
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-handwritten.svg" alt="Handwritten: Problem 30: Count of Smaller Numbers After Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-diagram.svg" alt="Diagram: Problem 30: Count of Smaller Numbers After Self" width="30%">
+</a>
+<a href="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/coding-problems/01-arrays/problem-30-count-of-smaller-numbers-after-self-sticky.svg" alt="Sticky Note: Problem 30: Count of Smaller Numbers After Self" width="30%">
+</a>
+
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Array, Binary Search, Divide and Conquer, Fenwick Tree]

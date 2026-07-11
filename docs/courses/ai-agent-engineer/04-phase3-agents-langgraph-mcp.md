@@ -87,6 +87,17 @@ Explain the difference between a single LLM call and an agent loop in one senten
 
 ### Nested parameter schemas
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-handwritten.svg" alt="Handwritten: Nested parameter schemas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-diagram.svg" alt="Diagram: Nested parameter schemas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/nested-parameter-schemas-sticky.svg" alt="Sticky Note: Nested parameter schemas" width="30%">
+</a>
+
+
 ```python
 # Tool that creates a booking — nested address object
 create_booking_schema = {
@@ -127,6 +138,17 @@ create_booking_schema = {
 
 ### How the model decides which tool to call
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-handwritten.svg" alt="Handwritten: How the model decides which tool to call" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-diagram.svg" alt="Diagram: How the model decides which tool to call" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/how-the-model-decides-which-tool-to-call-sticky.svg" alt="Sticky Note: How the model decides which tool to call" width="30%">
+</a>
+
+
 The model reads the `description` field and the parameter names/types to decide. **Clear descriptions are critical** — the function name and parameter descriptions are what the model sees, not your code comments.
 
 ```python
@@ -160,6 +182,17 @@ Write a tool schema with 3 levels of nesting (e.g., a booking tool where each bo
 
 ### State definition
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-handwritten.svg" alt="Handwritten: State definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-diagram.svg" alt="Diagram: State definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-definition-sticky.svg" alt="Sticky Note: State definition" width="30%">
+</a>
+
+
 ```python
 from typing import TypedDict, Optional, Annotated
 from langgraph.graph import StateGraph, END
@@ -178,6 +211,17 @@ class PipelineState(TypedDict):
 
 ### Node implementation
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-handwritten.svg" alt="Handwritten: Node implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-diagram.svg" alt="Diagram: Node implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementation-sticky.svg" alt="Sticky Note: Node implementation" width="30%">
+</a>
+
+
 Each node is a function that takes state and returns a partial state update:
 
 ```python
@@ -191,6 +235,17 @@ def generate_lyrics_node(state: PipelineState) -> dict:
 ```
 
 ### Graph construction
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-handwritten.svg" alt="Handwritten: Graph construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-diagram.svg" alt="Diagram: Graph construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/graph-construction-sticky.svg" alt="Sticky Note: Graph construction" width="30%">
+</a>
+
 
 ```python
 graph = StateGraph(PipelineState)
@@ -232,6 +287,17 @@ app = graph.compile(checkpointer=checkpointer)
 
 ### Running the graph
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-handwritten.svg" alt="Handwritten: Running the graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-diagram.svg" alt="Diagram: Running the graph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/running-the-graph-sticky.svg" alt="Sticky Note: Running the graph" width="30%">
+</a>
+
+
 ```python
 # Initial state
 initial = {
@@ -262,6 +328,17 @@ Conditional edges are where LangGraph separates from visual orchestrators. n8n h
 
 ### Routing based on output quality
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-handwritten.svg" alt="Handwritten: Routing based on output quality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-diagram.svg" alt="Diagram: Routing based on output quality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/routing-based-on-output-quality-sticky.svg" alt="Sticky Note: Routing based on output quality" width="30%">
+</a>
+
+
 ```python
 def route_by_quality(state: PipelineState) -> str:
     """Route based on whether lyrics meet quality threshold."""
@@ -282,6 +359,17 @@ graph.add_conditional_edges(
 
 ### Why conditional edges matter for your portfolio
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-handwritten.svg" alt="Handwritten: Why conditional edges matter for your portfolio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-diagram.svg" alt="Diagram: Why conditional edges matter for your portfolio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-conditional-edges-matter-for-your-portfolio-sticky.svg" alt="Sticky Note: Why conditional edges matter for your portfolio" width="30%">
+</a>
+
+
 Visual examples: generic tutorials show `router.add_conditional_edges("classify", ...)`. Your pipeline shows **real business logic** — retry based on output length, quality checks, failure recovery. That's the difference between "I read the docs" and "I built in production."
 
 ### Exercise
@@ -293,6 +381,17 @@ Write a conditional edge function that routes based on a custom state field (e.g
 ## 3.5 LangGraph Persistence (Checkpointer)
 
 ### Why this matters for media pipelines
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-handwritten.svg" alt="Handwritten: Why this matters for media pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-diagram.svg" alt="Diagram: Why this matters for media pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-this-matters-for-media-pipelines-sticky.svg" alt="Sticky Note: Why this matters for media pipelines" width="30%">
+</a>
+
 
 Your Purvanchal pipeline generates music files that take 2-5 minutes each. If the server crashes at "compose_video," n8n restarts from the beginning. With LangGraph's checkpointer, it resumes from "compose_video" — 4 nodes of work saved.
 
@@ -355,6 +454,17 @@ Describe one real use case from your own work where this pattern would prevent a
 
 ### Core concepts
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-handwritten.svg" alt="Handwritten: Core concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-diagram.svg" alt="Diagram: Core concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/core-concepts-sticky.svg" alt="Sticky Note: Core concepts" width="30%">
+</a>
+
+
 ```python
 from crewai import Agent, Task, Crew, Process
 
@@ -377,6 +487,17 @@ lyricist = Agent(
 
 ### Tasks
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-handwritten.svg" alt="Handwritten: Tasks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-diagram.svg" alt="Diagram: Tasks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/tasks-sticky.svg" alt="Sticky Note: Tasks" width="30%">
+</a>
+
+
 ```python
 research_task = Task(
     description="Research the topic '{topic}' and provide key themes and vocabulary.",
@@ -393,6 +514,17 @@ lyrics_task = Task(
 
 ### Crew execution
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-handwritten.svg" alt="Handwritten: Crew execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-diagram.svg" alt="Diagram: Crew execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/crew-execution-sticky.svg" alt="Sticky Note: Crew execution" width="30%">
+</a>
+
+
 ```python
 crew = Crew(
     agents=[researcher, lyricist],
@@ -406,6 +538,17 @@ print(result)
 ```
 
 ### Sequential vs Hierarchical
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-handwritten.svg" alt="Handwritten: Sequential vs Hierarchical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-diagram.svg" alt="Diagram: Sequential vs Hierarchical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sequential-vs-hierarchical-sticky.svg" alt="Sticky Note: Sequential vs Hierarchical" width="30%">
+</a>
+
 
 | Process | When to use |
 |---------|-------------|
@@ -422,6 +565,17 @@ Build a 2-agent throwaway crew (researcher + writer) without looking at docs. Ru
 
 ### The 3 Primitives
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-handwritten.svg" alt="Handwritten: The 3 Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-diagram.svg" alt="Diagram: The 3 Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/the-3-primitives-sticky.svg" alt="Sticky Note: The 3 Primitives" width="30%">
+</a>
+
+
 | Primitive | What it does | Analogy |
 |-----------|-------------|---------|
 | **Tools** | Actions the LLM can invoke (function calling) | Like an API endpoint |
@@ -429,6 +583,17 @@ Build a 2-agent throwaway crew (researcher + writer) without looking at docs. Ru
 | **Prompts** | Pre-built prompt templates | Like a route with a view |
 
 ### Message types
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-handwritten.svg" alt="Handwritten: Message types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-diagram.svg" alt="Diagram: Message types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/message-types-sticky.svg" alt="Sticky Note: Message types" width="30%">
+</a>
+
 
 ```
 Client ? Server:
@@ -449,6 +614,17 @@ Server ? Client:
 ```
 
 ### Your existing MCP server (`apex_memory_mcp.py`)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-handwritten.svg" alt="Handwritten: Your existing MCP server (`apex_memory_mcp.py`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-diagram.svg" alt="Diagram: Your existing MCP server (`apex_memory_mcp.py`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/your-existing-mcp-server-apex-memory-mcp-py-sticky.svg" alt="Sticky Note: Your existing MCP server (`apex_memory_mcp.py`)" width="30%">
+</a>
+
 
 ```python
 # You already have something like this:
@@ -504,6 +680,17 @@ asyncio.run(main())
 
 ### Integration: MCP client as a LangGraph tool
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-handwritten.svg" alt="Handwritten: Integration: MCP client as a LangGraph tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-diagram.svg" alt="Diagram: Integration: MCP client as a LangGraph tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/integration-mcp-client-as-a-langgraph-tool-sticky.svg" alt="Sticky Note: Integration: MCP client as a LangGraph tool" width="30%">
+</a>
+
+
 ```python
 from langgraph.prebuilt import ToolNode
 
@@ -528,6 +715,17 @@ Write a minimal MCP client that connects to your existing memory server and call
 
 ### Short-term memory (conversation buffer)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-handwritten.svg" alt="Handwritten: Short-term memory (conversation buffer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-diagram.svg" alt="Diagram: Short-term memory (conversation buffer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/short-term-memory-conversation-buffer-sticky.svg" alt="Sticky Note: Short-term memory (conversation buffer)" width="30%">
+</a>
+
+
 Stays in the context window. Automatically managed by the LLM API:
 
 ```python
@@ -539,6 +737,17 @@ messages = [
 ```
 
 ### Long-term memory (vector store)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-handwritten.svg" alt="Handwritten: Long-term memory (vector store)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-diagram.svg" alt="Diagram: Long-term memory (vector store)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/long-term-memory-vector-store-sticky.svg" alt="Sticky Note: Long-term memory (vector store)" width="30%">
+</a>
+
 
 Your ChromaDB server. Explicit retrieval needed:
 
@@ -560,6 +769,17 @@ def agent_with_memory(user_query: str, user_id: str):
 
 ### What your system is missing
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-handwritten.svg" alt="Handwritten: What your system is missing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-diagram.svg" alt="Diagram: What your system is missing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-your-system-is-missing-sticky.svg" alt="Sticky Note: What your system is missing" width="30%">
+</a>
+
+
 You have long-term memory (ChromaDB server). You're likely missing:
 - **Conversation summaries** — after N turns, summarize and store in memory
 - **Entity extraction** — extract key entities (project names, dates, decisions) and store them as structured memory
@@ -574,6 +794,17 @@ Identify what short-term memory your current agent pipelines are missing. Add a 
 
 ### Supervisor/Worker
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-handwritten.svg" alt="Handwritten: Supervisor/Worker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-diagram.svg" alt="Diagram: Supervisor/Worker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/supervisor-worker-sticky.svg" alt="Sticky Note: Supervisor/Worker" width="30%">
+</a>
+
+
 ```
 Supervisor agent --? Sales agent
                  --? Follow-up agent
@@ -586,6 +817,17 @@ Supervisor delegates tasks. Workers report back. Supervisor decides next action.
 
 ### Peer-to-Peer
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-handwritten.svg" alt="Handwritten: Peer-to-Peer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-diagram.svg" alt="Diagram: Peer-to-Peer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/peer-to-peer-sticky.svg" alt="Sticky Note: Peer-to-Peer" width="30%">
+</a>
+
+
 ```
 Sales agent ?--? Follow-up agent
      ¦
@@ -597,6 +839,17 @@ Agents communicate directly. No central coordinator.
 **Best for:** Independent agents that share information but don't need tight coordination.
 
 ### Applied to a CRM assistant
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-handwritten.svg" alt="Handwritten: Applied to a CRM assistant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-diagram.svg" alt="Diagram: Applied to a CRM assistant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/applied-to-a-crm-assistant-sticky.svg" alt="Sticky Note: Applied to a CRM assistant" width="30%">
+</a>
+
 
 ```
 Supervisor
@@ -618,6 +871,17 @@ Sketch a 3-agent multi-agent system for one of your own projects (ApexERP, Purva
 Non-deterministic output makes testing hard. Traditional assertions don't work for agent behavior.
 
 ### Evaluation method 1: Checklist assertions
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-handwritten.svg" alt="Handwritten: Evaluation method 1: Checklist assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-diagram.svg" alt="Diagram: Evaluation method 1: Checklist assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-1-checklist-assertions-sticky.svg" alt="Sticky Note: Evaluation method 1: Checklist assertions" width="30%">
+</a>
+
 
 ```python
 def test_lyrics_generation():
@@ -642,6 +906,17 @@ def evaluate_lyrics(output: dict) -> int:
 
 ### Evaluation method 2: Expected trajectory
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-handwritten.svg" alt="Handwritten: Evaluation method 2: Expected trajectory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-diagram.svg" alt="Diagram: Evaluation method 2: Expected trajectory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-2-expected-trajectory-sticky.svg" alt="Sticky Note: Evaluation method 2: Expected trajectory" width="30%">
+</a>
+
+
 Compare the agent's actual tool-call sequence against an expected sequence:
 
 ```python
@@ -652,6 +927,17 @@ assert actual_sequence[:2] == expected_sequence
 ```
 
 ### Evaluation method 3: LLM-as-judge
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-handwritten.svg" alt="Handwritten: Evaluation method 3: LLM-as-judge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-diagram.svg" alt="Diagram: Evaluation method 3: LLM-as-judge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/evaluation-method-3-llm-as-judge-sticky.svg" alt="Sticky Note: Evaluation method 3: LLM-as-judge" width="30%">
+</a>
+
 
 ```python
 def evaluate_answer(question: str, answer: str, context: str) -> dict:
@@ -678,6 +964,17 @@ Write 2 concrete evaluation checks for one of your agents. Don't just run it and
 
 ### Why costs add up fast
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-handwritten.svg" alt="Handwritten: Why costs add up fast" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-diagram.svg" alt="Diagram: Why costs add up fast" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/why-costs-add-up-fast-sticky.svg" alt="Sticky Note: Why costs add up fast" width="30%">
+</a>
+
+
 | Step | Model | Input tokens | Output tokens | Cost |
 |------|-------|-------------|--------------|------|
 | Generate lyrics | GPT-4 | 300 | 200 | $0.009 + $0.012 = $0.021 |
@@ -688,6 +985,17 @@ Write 2 concrete evaluation checks for one of your agents. Don't just run it and
 At 100 pipeline runs/day: $3/day, $90/month. At 1000 runs/day: $30/day, $900/month.
 
 ### Optimization strategies
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-handwritten.svg" alt="Handwritten: Optimization strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-diagram.svg" alt="Diagram: Optimization strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/optimization-strategies-sticky.svg" alt="Sticky Note: Optimization strategies" width="30%">
+</a>
+
 
 ```python
 # 1. Use cheaper models for intermediate steps
@@ -728,9 +1036,31 @@ Estimate the per-run cost of a 4-step agent chain using your actual models and t
 
 ### What you're building
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-handwritten.svg" alt="Handwritten: What you're building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-diagram.svg" alt="Diagram: What you're building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/what-you-re-building-sticky.svg" alt="Sticky Note: What you're building" width="30%">
+</a>
+
+
 Replace the n8n orchestration of your Bhojpuri content pipeline with a LangGraph state machine.
 
 ### State graph design
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-handwritten.svg" alt="Handwritten: State graph design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-diagram.svg" alt="Diagram: State graph design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/state-graph-design-sticky.svg" alt="Sticky Note: State graph design" width="30%">
+</a>
+
 
 ```
 generate_lyrics --? generate_music --? generate_vocals --? source_clips --? compose_video
@@ -744,6 +1074,17 @@ generate_lyrics --? generate_music --? generate_vocals --? source_clips --? comp
 ```
 
 ### Node implementations
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-handwritten.svg" alt="Handwritten: Node implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-diagram.svg" alt="Diagram: Node implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/node-implementations-sticky.svg" alt="Sticky Note: Node implementations" width="30%">
+</a>
+
 
 Each node wraps an existing external tool call:
 
@@ -782,6 +1123,17 @@ def ffmpeg_compose_node(state: PipelineState) -> dict:
 
 ### Project structure
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-handwritten.svg" alt="Handwritten: Project structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-diagram.svg" alt="Diagram: Project structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/project-structure-sticky.svg" alt="Sticky Note: Project structure" width="30%">
+</a>
+
+
 ```
 purvanchal-flow-studio/
 +-- pipeline/
@@ -806,6 +1158,17 @@ purvanchal-flow-studio/
 ```
 
 ### n8n vs LangGraph comparison write-up
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-handwritten.svg" alt="Handwritten: n8n vs LangGraph comparison write-up" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-diagram.svg" alt="Diagram: n8n vs LangGraph comparison write-up" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/n8n-vs-langgraph-comparison-write-up-sticky.svg" alt="Sticky Note: n8n vs LangGraph comparison write-up" width="30%">
+</a>
+
 
 Create `docs/n8n-vs-langgraph.md` covering:
 
@@ -835,6 +1198,17 @@ OpenAI released the Agents SDK as a lightweight alternative to LangGraph for sim
 
 ### Key concepts
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-handwritten.svg" alt="Handwritten: Key concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-diagram.svg" alt="Diagram: Key concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/key-concepts-sticky.svg" alt="Sticky Note: Key concepts" width="30%">
+</a>
+
+
 | Concept | LangGraph | OpenAI Agents SDK |
 |---------|-----------|-------------------|
 | Agent definition | StateGraph + nodes | `Agent` class with instructions + tools |
@@ -844,6 +1218,17 @@ OpenAI released the Agents SDK as a lightweight alternative to LangGraph for sim
 | Persistence | Checkpointer | Built-in, no config |
 
 ### Basic agent
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-handwritten.svg" alt="Handwritten: Basic agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-diagram.svg" alt="Diagram: Basic agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/basic-agent-sticky.svg" alt="Sticky Note: Basic agent" width="30%">
+</a>
+
 
 ```python
 from agents import Agent, Runner, function_tool
@@ -865,6 +1250,17 @@ print(result.final_output)
 ```
 
 ### Multi-agent with handoffs
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-handwritten.svg" alt="Handwritten: Multi-agent with handoffs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-diagram.svg" alt="Diagram: Multi-agent with handoffs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/multi-agent-with-handoffs-sticky.svg" alt="Sticky Note: Multi-agent with handoffs" width="30%">
+</a>
+
 
 ```python
 from agents import Agent, Runner
@@ -894,6 +1290,17 @@ print(result.final_output)
 
 ### Comparison to LangGraph
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-handwritten.svg" alt="Handwritten: Comparison to LangGraph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-diagram.svg" alt="Diagram: Comparison to LangGraph" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison-to-langgraph-sticky.svg" alt="Sticky Note: Comparison to LangGraph" width="30%">
+</a>
+
+
 | Dimension | OpenAI Agents SDK | LangGraph |
 |-----------|------------------|-----------|
 | Setup time | 5 minutes | 30 minutes |
@@ -915,6 +1322,17 @@ Your existing MCP memory server exposes tools. MCP also supports **resources** (
 
 ### MCP recap: 3 primitives
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-handwritten.svg" alt="Handwritten: MCP recap: 3 primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-diagram.svg" alt="Diagram: MCP recap: 3 primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mcp-recap-3-primitives-sticky.svg" alt="Sticky Note: MCP recap: 3 primitives" width="30%">
+</a>
+
+
 | Primitive | Purpose | Example |
 |-----------|---------|---------|
 | **Tools** | Action the LLM can invoke | `create_memory`, `search_memories` |
@@ -922,6 +1340,17 @@ Your existing MCP memory server exposes tools. MCP also supports **resources** (
 | **Prompts** | Pre-built prompt templates | `summarize-memories`, `extract-insights` |
 
 ### Adding resources
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-handwritten.svg" alt="Handwritten: Adding resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-diagram.svg" alt="Diagram: Adding resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-resources-sticky.svg" alt="Sticky Note: Adding resources" width="30%">
+</a>
+
 
 ```python
 from mcp.server.fastmcp import FastMCP
@@ -953,6 +1382,17 @@ def analyze_prompt() -> str:
 
 ### Adding prompt templates
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-handwritten.svg" alt="Handwritten: Adding prompt templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-diagram.svg" alt="Diagram: Adding prompt templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/adding-prompt-templates-sticky.svg" alt="Sticky Note: Adding prompt templates" width="30%">
+</a>
+
+
 ```python
 @mcp.prompt()
 def summarize_memories(topic: str) -> str:
@@ -980,6 +1420,17 @@ Text: {text}
 
 ### Dynamic resources with URI templates
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-handwritten.svg" alt="Handwritten: Dynamic resources with URI templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-diagram.svg" alt="Diagram: Dynamic resources with URI templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/dynamic-resources-with-uri-templates-sticky.svg" alt="Sticky Note: Dynamic resources with URI templates" width="30%">
+</a>
+
+
 ```python
 # Access patterns like memory:///search/acme or memory:///search/ranch
 from mcp.server import ResourceTemplate
@@ -993,6 +1444,17 @@ async def search_resource(query: str) -> str:
 ```
 
 ### Testing your server
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-handwritten.svg" alt="Handwritten: Testing your server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-diagram.svg" alt="Diagram: Testing your server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/04-phase3-agents-langgraph-mcp/testing-your-server-sticky.svg" alt="Sticky Note: Testing your server" width="30%">
+</a>
+
 
 ```bash
 # With MCP Inspector

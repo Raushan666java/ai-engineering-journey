@@ -39,6 +39,17 @@
 
 ### १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+</a>
+
+
 ओशो ने पारंपरिक गुरु-शिष्य संबंध को कभी स्वीकार नहीं किया। वे कहते थे:
 
 > *"गुरु शब्द ही बहुत खतरनाक है। गुरु का मतलब होता है वह जो अंधकार को हटाए। लेकिन असली बात यह है कि अंधकार है ही नहीं — तुमने बस आँखें बंद कर रखी हैं। क्या कोई तुम्हारी आँखें खोल सकता है? हाँ, कोई तुम्हें झकझोर सकता है, कोई तुम्हारे सामने खड़ा हो सकता है, कोई तुम्हें प्यार कर सकता है — लेकिन आँखें तो तुम्हें खुद ही खोलनी होंगी।"*
@@ -47,6 +58,17 @@
 *"मैं तुम्हारा गुरु नहीं हूँ — अगर मैं तुम्हारा गुरु होता तो तुम मुझ पर निर्भर हो जाते। मैं तो तुम्हारा मित्र हूँ। मैं तुम्हारा साथी हूँ इस यात्रा में। मैंने रास्ता पहचान लिया है, बस इतनी सी बात है। मैं तुम्हें बता सकता हूँ, 'देखो, वहाँ मत जाओ, मैं वहाँ जा चुका हूँ और वहाँ कुछ नहीं है।' लेकिन तुम्हें चलना खुद ही होगा। मैं तुम्हारे पैर उधार नहीं दे सकता।"*
 
 ### १.२ गुरु एक कैटेलिस्ट है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+</a>
+
 
 ओशो के लिए गुरु एक उत्प्रेरक (catalyst) है — जैसे कोई रासायनिक पदार्थ जो खुद तो बदलता नहीं, लेकिन दूसरों में बदलाव ला देता है।
 
@@ -73,6 +95,17 @@ flowchart LR
 > *"गुरु एक कैटेलिस्ट है — जैसे बीज को मिट्टी की ज़रूरत होती है। मिट्टी बीज को कुछ देती नहीं, बीज में सब कुछ पहले से है। मिट्टी तो बस वह वातावरण देती है जिसमें बीज फूट सके। गुरु भी वही करता है — वह तुम्हारे चारों ओर एक ऐसा प्रेममय वातावरण बनाता है जिसमें तुम फूट सको, खिल सको, विकसित हो सको।"*
 
 ### १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+</a>
+
 
 यह ओशो का सबसे क्रांतिकारी बिंदु है। पारंपरिक गुरु शिष्य को बाँधता है — नियमों में, अनुष्ठानों में, परंपरा में। ओशो का गुरु तुम्हें इन सबसे आज़ाद करता है।
 
@@ -108,11 +141,33 @@ mindmap
 
 ### २.१ परंपरा में दीक्षा
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.१ परंपरा में दीक्षा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.१ परंपरा में दीक्षा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.१ परंपरा में दीक्षा" width="30%">
+</a>
+
+
 परंपरा में दीक्षा का मतलब होता था — गुरु शिष्य को मंत्र देता है, कोई क्रिया सिखाता है, किसी रस्म से गुज़ारता है। ओशो इस पूरी अवधारणा को उलट देते हैं।
 
 > *"दीक्षा कोई रस्म नहीं है। दीक्षा कोई क्रिया नहीं है जो गुरु करता है। दीक्षा तो एक घटना है — एक क्षण जब गुरु की उपस्थिति में शिष्य के अंदर कुछ टूटता है, कुछ खुलता है, कुछ मुक्त होता है।"*
 
 ### २.२ शक्तिपात — ओशो की व्याख्या
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+</a>
+
 
 परंपरा में शक्तिपात का मतलब है — गुरु अपनी शक्ति शिष्य में संचारित करता है। ओशो इसकी व्याख्या बिल्कुल अलग ढंग से करते हैं:
 
@@ -133,6 +188,17 @@ sequenceDiagram
 ```
 
 ### २.३ ओशो की अनूठी दीक्षा प्रक्रिया
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+</a>
+
 
 ओशो ने दीक्षा को पूरी तरह बदल दिया। उनकी दीक्षा में:
 - कोई मंत्र नहीं दिया जाता था
@@ -168,6 +234,17 @@ flowchart TD
 
 ### ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+</a>
+
+
 ओशो ने एक बार कहा था:
 
 > *"गुरु एक बीमारी है। और चेला भी एक बीमारी है। दोनों एक-दूसरे को पैदा करते हैं। जहाँ अंधा गुरु होता है, वहाँ अंधा शिष्य ही आएगा। और जहाँ अंधा शिष्य होता है, वहाँ अंधा गुरु ही फलेगा-फूलेगा।"*
@@ -177,6 +254,17 @@ flowchart TD
 > *"मैं गुरु के विरोध में नहीं हूँ — मैं झूठे गुरु के विरोध में हूँ। और ९९ प्रतिशत गुरु झूठे हैं। वे खुद नहीं जागे हैं और दूसरों को जगाने का दावा करते हैं। सच्चा गुरु दुर्लभ है — जैसे सदियों में एक बार होता है। सच्चा गुरु तुम्हें अपने पैरों पर खड़ा करता है, अपने सहारे नहीं।"*
 
 ### ३.२ श्रद्धा बनाम अंधविश्वास
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+</a>
+
 
 ओशो ने श्रद्धा और अंधविश्वास के बीच स्पष्ट अंतर किया:
 
@@ -192,6 +280,17 @@ flowchart TD
 *"मैं तुमसे श्रद्धा की माँग नहीं करता। मैं तो चाहता हूँ कि तुम संदेह करो — खूब संदेह करो। संदेह को जलने दो, उसे पूरी तरह जलने दो। संदेह की आग में ही सच्चाई पकती है। मैं तुम्हें अंधा नहीं बनाना चाहता — मैं तो चाहता हूँ कि तुम्हारी आँखें खुल जाएँ। और आँखें खुलती हैं संदेह से, अंधविश्वास से नहीं।"*
 
 ### ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -224,11 +323,33 @@ flowchart TD
 
 ### ४.1 सत्संग का अर्थ
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" alt="Handwritten: ४.1 सत्संग का अर्थ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" alt="Diagram: ४.1 सत्संग का अर्थ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" alt="Sticky Note: ४.1 सत्संग का अर्थ" width="30%">
+</a>
+
+
 परंपरा में सत्संग का मतलब है — सच्चे लोगों की संगति। ओशो इसे नया अर्थ देते हैं:
 
 > *"सत्संग का मतलब है — सत् में संग। सत् का मतलब है सच्चाई, सत्य। सत्संग का मतलब है — सत्य के साथ जुड़ना। और सत्य कोई वस्तु नहीं है जो बाहर है — सत्य तो तुम्हारा अपना स्वभाव है। सत्संग का मतलब है — अपने स्वभाव में लौट आना।"*
 
 ### ४.2 ओशो का मौन सत्संग
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो का मौन सत्संग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो का मौन सत्संग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो का मौन सत्संग" width="30%">
+</a>
+
 
 ओशो ने सत्संग का एक अनूठा रूप विकसित किया — मौन सत्संग। उनके पास हजारों लोग बैठते थे और वे बिना बोले बैठे रहते थे।
 
@@ -251,6 +372,17 @@ flowchart LR
 
 ### ४.3 तीन प्रकार के सत्संग
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" alt="Handwritten: ४.3 तीन प्रकार के सत्संग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" alt="Diagram: ४.3 तीन प्रकार के सत्संग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" alt="Sticky Note: ४.3 तीन प्रकार के सत्संग" width="30%">
+</a>
+
+
 | प्रकार | ओशो का वर्णन | विधि |
 |--------|---------------|------|
 | वाचिक | शब्दों के माध्यम से | प्रवचन, प्रश्नोत्तर |
@@ -266,11 +398,33 @@ flowchart LR
 
 ### ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+</a>
+
+
 ओशो ने विज्ञान भैरव तंत्र पर १९७२-७३ में ११२ प्रवचन दिए, जो "द बुक ऑफ़ सीक्रेट्स" नाम से प्रकाशित हुए। यह उनकी सबसे महत्वपूर्ण कृतियों में से एक है।
 
 > *"यह पुस्तक अद्वितीय है। पूरे मानव इतिहास में ध्यान का इतना विस्तृत, इतना वैज्ञानिक विवेचन कहीं नहीं मिलता। विज्ञान भैरव तंत्र ध्यान का विज्ञान है — और मैंने इसे आधुनिक मनुष्य की भाषा में समझाने की कोशिश की है।"*
 
 ### ५.२ प्रमुख ओशो प्रवचन संदर्भ
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+</a>
+
 
 | क्रम | प्रवचन का मुख्य विषय | VBT श्लोक | ओशो का मुख्य संदेश |
 |------|---------------------|-----------|---------------------|
@@ -722,24 +876,101 @@ export {
 ## ७. ओशो की गुरु-दीक्षा के सात सूत्र
 
 ### सूत्र १: गुरु कोई टीचर नहीं है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+</a>
+
 गुरु तुम्हें कुछ नहीं सिखाता — वह तो बस एक माहौल बनाता है जिसमें तुम सीख सको।
 
 ### सूत्र २: गुरु एक मित्र है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र २: गुरु एक मित्र है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र २: गुरु एक मित्र है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र २: गुरु एक मित्र है" width="30%">
+</a>
+
 वह कोई अधिकारी नहीं, कोई बॉस नहीं — वह एक प्रेममय मित्र है जो तुम्हारे साथ चलता है।
 
 ### सूत्र ३: गुरु तुम्हें आज़ाद करता है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+</a>
+
 अगर कोई तुम्हें बाँधता है, वह गुरु नहीं है। सच्चा गुरु तुम्हें हर बंधन से मुक्त करता है — अपने बंधन से भी।
 
 ### सूत्र ४: गुरु की उपस्थिति ही दीक्षा है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+</a>
+
 दीक्षा कोई रस्म नहीं — यह गुरु के साथ रहने का प्रभाव है। जैसे अग्नि के पास रहने से गर्मी लगती है।
 
 ### सूत्र ५: गुरु को पहचानो, मत चुनो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+</a>
+
 गुरु को चुना नहीं जाता — उसे पहचाना जाता है। जब शिष्य तैयार होता है, गुरु प्रकट होता है।
 
 ### सूत्र ६: गुरु से सीखो, गुरु मत बनो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+</a>
+
 गुरु का अनुकरण मत करो — उसकी उपस्थिति से सीखो। नकल करने से तुम कभी गुरु नहीं बन सकते।
 
 ### सूत्र ७: अंत में, गुरु को भी छोड़ दो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+</a>
+
 > *"जब तुम नदी पार कर लो, तो नाव को किनारे पर छोड़ दो। नाव को सिर पर उठाकर मत चलो।"* — ओशो
 
 ---
@@ -747,12 +978,45 @@ export {
 ## ८. व्यावहारिक अभ्यास (Practical Exercises)
 
 ### अभ्यास १: गुरु-स्मरण
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: गुरु-स्मरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास १: गुरु-स्मरण" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: गुरु-स्मरण" width="30%">
+</a>
+
 प्रतिदिन ५ मिनट किसी ऐसे व्यक्ति को याद करो जिसने तुम्हारे जीवन में गहरा प्रभाव डाला हो — वह तुम्हारा गुरु है, चाहे उसने कभी यह खिताब न लिया हो।
 
 ### अभ्यास २: आंतरिक गुरु से संवाद
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+</a>
+
 आँखें बंद करो और अपने भीतर के गुरु से बात करो। वह तुम्हारी सबसे गहरी बुद्धि है — उसकी सलाह लो।
 
 ### अभ्यास ३: गुरु-प्रश्न
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: गुरु-प्रश्न" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास ३: गुरु-प्रश्न" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: गुरु-प्रश्न" width="30%">
+</a>
+
 अपने आप से पूछो: "अगर मैं ओशो के सामने बैठा होता, तो वह मुझसे क्या कहते?" इस प्रश्न को अपने भीतर गूँजने दो।
 
 ---

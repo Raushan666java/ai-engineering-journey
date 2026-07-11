@@ -19,6 +19,17 @@ Network security encompasses the policies and mechanisms that protect the confid
 
 ### 11.1.1 Passive Attacks
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" alt="Handwritten: 11.1.1 Passive Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" alt="Diagram: 11.1.1 Passive Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" alt="Sticky Note: 11.1.1 Passive Attacks" width="30%">
+</a>
+
+
 **Eavesdropping (sniffing).** An adversary captures packets traversing a network segment. On shared media (wireless, Ethernet hubs), any station on the segment can capture all traffic. On switched networks, ARP spoofing or port mirroring enables packet capture.
 
 **Traffic analysis.** Even if packets are encrypted, an adversary can observe communication patterns → who talks to whom, at what times, and in what volumes → to infer sensitive information.
@@ -115,6 +126,17 @@ std::vector<Packet> capturePackets(const std::string& iface, int count) {
 
 ### 11.1.2 Active Attacks
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" alt="Handwritten: 11.1.2 Active Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" alt="Diagram: 11.1.2 Active Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" alt="Sticky Note: 11.1.2 Active Attacks" width="30%">
+</a>
+
+
 **Tampering.** An adversary modifies packets in transit. Without integrity protection, a router or middlebox can alter packet content undetected.
 
 **Impersonation (spoofing).** An adversary sends packets with a forged source IP address. IP spoofing enables amplification attacks (e.g., DNS amplification) and session hijacking.
@@ -161,6 +183,17 @@ END
 ## 11.2 Cryptography Basics
 
 ### 11.2.1 Symmetric Key Cryptography
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.1 Symmetric Key Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.1 Symmetric Key Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.1 Symmetric Key Cryptography" width="30%">
+</a>
+
 
 In symmetric key cryptography, both sender and receiver share a single secret key K. The encryption function E and decryption function D satisfy:
 
@@ -310,6 +343,17 @@ int main() {
 
 ### 11.2.2 Asymmetric Key Cryptography
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.2 Asymmetric Key Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.2 Asymmetric Key Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.2 Asymmetric Key Cryptography" width="30%">
+</a>
+
+
 Asymmetric (public-key) cryptography uses a pair of keys: a public key K_pub freely distributed and a private key K_priv kept secret.
 
 D(K_priv, E(K_pub, M)) = M
@@ -455,6 +499,17 @@ int main() {
 
 ### 11.2.3 Diffie-Hellman Key Exchange
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" alt="Handwritten: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" alt="Diagram: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" alt="Sticky Note: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+
+
 Diffie-Hellman (DH) allows two parties to establish a shared secret over an insecure channel.
 
 **Numbered steps:**
@@ -481,6 +536,17 @@ DH is vulnerable to MITM unless public values are authenticated. Elliptic Curve 
 
 ### 11.2.4 Symmetric vs Asymmetric Cryptography
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" alt="Handwritten: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" alt="Diagram: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" alt="Sticky Note: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+</a>
+
+
 | Property | Symmetric (AES) | Asymmetric (RSA/ECC) |
 |----------|----------------|----------------------|
 | Key count | 1 shared key | 2 keys (public + private) |
@@ -497,6 +563,17 @@ DH is vulnerable to MITM unless public values are authenticated. Elliptic Curve 
 ## 11.3 Integrity and Authentication
 
 ### 11.3.1 Cryptographic Hash Functions
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" alt="Handwritten: 11.3.1 Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" alt="Diagram: 11.3.1 Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" alt="Sticky Note: 11.3.1 Cryptographic Hash Functions" width="30%">
+</a>
+
 
 A hash function H maps an arbitrary-length input to a fixed-length output (digest). Cryptographic hash functions must be:
 
@@ -524,6 +601,17 @@ END
 
 ### 11.3.2 Message Authentication Code (MAC)
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" alt="Handwritten: 11.3.2 Message Authentication Code (MAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" alt="Diagram: 11.3.2 Message Authentication Code (MAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" alt="Sticky Note: 11.3.2 Message Authentication Code (MAC)" width="30%">
+</a>
+
+
 A MAC uses a shared secret key K to produce an authentication tag for a message:
 
 T = MAC(K, M)
@@ -535,6 +623,17 @@ HMAC (Hash-based MAC, RFC 2104): HMAC(K, M) = H((K XOR opad) || H((K XOR ipad) |
 **Real-world analogy.** A MAC is like a tamper-evident seal on a package. The seal is created with a specific tool (key) that only the sender and receiver have. If the package is tampered with, the seal breaks and reveals the tampering.
 
 ### 11.3.3 Digital Signatures
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" alt="Handwritten: 11.3.3 Digital Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" alt="Diagram: 11.3.3 Digital Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" alt="Sticky Note: 11.3.3 Digital Signatures" width="30%">
+</a>
+
 
 A digital signature provides non-repudiation: the sender cannot deny having signed the message. The sender signs with their private key:
 
@@ -549,6 +648,17 @@ RSA signatures work analogously to encryption but with the roles of public and p
 **Real-world analogy.** A digital signature is like a handwritten signature on a legal contract. The signature proves who signed it (authentication), that the document was not altered after signing (integrity), and the signer cannot later deny signing (non-repudiation).
 
 ### 11.3.4 Certificates and PKI
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" alt="Handwritten: 11.3.4 Certificates and PKI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" alt="Diagram: 11.3.4 Certificates and PKI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" alt="Sticky Note: 11.3.4 Certificates and PKI" width="30%">
+</a>
+
 
 A digital certificate binds a public key to an identity. X.509 certificates contain:
 - Version, serial number, signature algorithm
@@ -572,6 +682,17 @@ The CA is a trusted third party. Certificate chains establish trust: a root CA c
 A firewall is a system that controls network traffic based on a security policy. Firewalls are categorized by the layer at which they operate and the statefulness of their inspection.
 
 ### 11.4.1 Packet-Filter Firewalls
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" alt="Handwritten: 11.4.1 Packet-Filter Firewalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" alt="Diagram: 11.4.1 Packet-Filter Firewalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" alt="Sticky Note: 11.4.1 Packet-Filter Firewalls" width="30%">
+</a>
+
 
 Packet filters examine IP and transport header fields: source/destination address, port, protocol type, and interface. Rules are evaluated in order; the first matching rule determines the action (allow or deny).
 
@@ -756,6 +877,17 @@ for t in tests:
 
 ### 11.4.2 Stateful Firewalls
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" alt="Handwritten: 11.4.2 Stateful Firewalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" alt="Diagram: 11.4.2 Stateful Firewalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" alt="Sticky Note: 11.4.2 Stateful Firewalls" width="30%">
+</a>
+
+
 Stateful firewalls track connection state. A connection table records (src IP, src port, dst IP, dst port, state). Inbound packets are allowed only if they correspond to an established outbound connection. Stateful inspection prevents many blind injection attacks.
 
 **State table example:**
@@ -769,9 +901,31 @@ Stateful firewalls track connection state. A connection table records (src IP, s
 
 ### 11.4.3 Application-Layer Firewalls (Proxies)
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" alt="Handwritten: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" alt="Diagram: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" alt="Sticky Note: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+</a>
+
+
 Application firewalls (proxies) inspect application-layer content. An HTTP proxy can block URLs matching malware patterns, validate HTTP headers, and filter file types.
 
 ### 11.4.4 Next-Generation Firewalls (NGFW)
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" alt="Handwritten: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" alt="Diagram: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" alt="Sticky Note: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+</a>
+
 
 Next-generation firewalls (NGFW) combine stateful inspection with intrusion prevention, application identification, user identity awareness, and TLS decryption.
 
@@ -882,6 +1036,17 @@ DENY
 A Virtual Private Network (VPN) secures communication over an untrusted network by encrypting traffic between endpoints.
 
 ### 11.5.1 IPSec
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" alt="Handwritten: 11.5.1 IPSec" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" alt="Diagram: 11.5.1 IPSec" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" alt="Sticky Note: 11.5.1 IPSec" width="30%">
+</a>
+
 
 IPSec (RFC 4301) provides security at the network layer. Modes: transport mode (protects payload only) and tunnel mode (protects entire IP packet). Security protocols:
 - **Authentication Header (AH):** provides integrity and authentication but not confidentiality.
@@ -1030,6 +1195,17 @@ int main() {
 | 6 | CHILD_SA ready | IPsec tunnel established | -- | IPsec tunnel established |
 
 ### 11.5.2 SSL/TLS VPN
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" alt="Handwritten: 11.5.2 SSL/TLS VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" alt="Diagram: 11.5.2 SSL/TLS VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" alt="Sticky Note: 11.5.2 SSL/TLS VPN" width="30%">
+</a>
+
 
 TLS (Transport Layer Security) operates at the transport layer between TCP and the application. SSL/TLS VPNs (e.g., OpenVPN) use TLS to authenticate and establish keys, then encrypt bulk data with symmetric keys.
 
@@ -1195,6 +1371,17 @@ std::string tlsClient(const std::string& hostname, int port = 443) {
 
 ### 11.5.3 VPN Types Comparison
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" alt="Handwritten: 11.5.3 VPN Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" alt="Diagram: 11.5.3 VPN Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" alt="Sticky Note: 11.5.3 VPN Types Comparison" width="30%">
+</a>
+
+
 | Property | IPSec | SSL/TLS VPN | WireGuard |
 |----------|-------|-------------|-----------|
 | OSI Layer | 3 (Network) | 4-7 (Transport/Application) | 3 (Network) |
@@ -1296,6 +1483,17 @@ Decapsulated: GET /index.html HTTP/1.1\r\nHost: example.com\r\n\r\n
 ## 11.6 TLS/SSL In Depth
 
 ### 11.6.1 TLS 1.3 vs 1.2 Comparison
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" alt="Handwritten: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" alt="Diagram: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" alt="Sticky Note: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+</a>
+
 
 | Feature | TLS 1.2 (RFC 5246) | TLS 1.3 (RFC 8446) |
 |---------|--------------------|--------------------|
@@ -1447,6 +1645,17 @@ Handshake log:
 Intrusion Detection Systems (IDS) monitor traffic for suspicious patterns. Intrusion Prevention Systems (IPS) sit inline and can block detected attacks.
 
 ### Detection Methods:
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" alt="Handwritten: Detection Methods:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" alt="Diagram: Detection Methods:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" alt="Sticky Note: Detection Methods:" width="30%">
+</a>
+
 - **Signature-based:** matches known attack patterns (Snort, Suricata). Fast, low false positives, but cannot detect zero-days.
 - **Anomaly-based:** detects deviations from normal traffic baselines. Can detect novel attacks but has higher false positive rates.
 - **Behavioral:** identifies sequences of actions that indicate compromise. More context-aware than signatures.
@@ -1522,6 +1731,17 @@ public:
 
 ### IDS vs IPS vs Firewall Comparison
 
+<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" alt="Handwritten: IDS vs IPS vs Firewall Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" alt="Diagram: IDS vs IPS vs Firewall Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" alt="Sticky Note: IDS vs IPS vs Firewall Comparison" width="30%">
+</a>
+
+
 | Aspect | Packet Filter Firewall | Stateful Firewall | IDS | IPS |
 |--------|----------------------|-------------------|-----|-----|
 | Location | Inline | Inline | Out-of-band (monitoring port) | Inline |
@@ -1539,6 +1759,17 @@ public:
 Distributed Denial of Service (DDoS) attacks overwhelm a target with traffic from multiple compromised hosts (botnet).
 
 ### DDoS Attack Types with Mitigation
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" alt="Handwritten: DDoS Attack Types with Mitigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" alt="Diagram: DDoS Attack Types with Mitigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" alt="Sticky Note: DDoS Attack Types with Mitigation" width="30%">
+</a>
+
 
 | Attack Type | Layer | Mechanism | Traffic Volume | Mitigation |
 |-------------|-------|-----------|----------------|------------|
@@ -1592,6 +1823,17 @@ END
 WPA3 (Wi-Fi Protected Access 3) is the latest Wi-Fi security standard, replacing WPA2.
 
 ### Key Features:
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" alt="Handwritten: Key Features:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" alt="Diagram: Key Features:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" alt="Sticky Note: Key Features:" width="30%">
+</a>
+
 - **Simultaneous Authentication of Equals (SAE):** Replaces WPA2's PSK 4-way handshake with a password-authenticated key exchange based on Diffie-Hellman. Resists offline dictionary attacks.
 - **192-bit security suite:** For enterprise networks, using CNSA (Commercial National Security Algorithm) Suite B cryptography.
 - **Forward secrecy:** Compromise of the password does not expose past session keys.
@@ -1599,6 +1841,17 @@ WPA3 (Wi-Fi Protected Access 3) is the latest Wi-Fi security standard, replacing
 - **Easy Connect (Wi-Fi Easy Connect):** QR code-based device onboarding.
 
 ### WPA2 vs WPA3 Comparison
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" alt="Handwritten: WPA2 vs WPA3 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" alt="Diagram: WPA2 vs WPA3 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" alt="Sticky Note: WPA2 vs WPA3 Comparison" width="30%">
+</a>
+
 
 | Feature | WPA2 | WPA3 |
 |---------|------|------|
@@ -1616,6 +1869,17 @@ WPA3 (Wi-Fi Protected Access 3) is the latest Wi-Fi security standard, replacing
 DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authentication and integrity for DNS responses through digital signatures. It does NOT provide confidentiality.
 
 ### How it works:
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" alt="Handwritten: How it works:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" alt="Diagram: How it works:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" alt="Sticky Note: How it works:" width="30%">
+</a>
+
 - Each DNS zone signs its resource record sets (RRsets) using the zone's private key (Zone Signing Key, ZSK).
 - A DNSKEY record stores the public ZSK. The ZSK is signed by a Key Signing Key (KSK).
 - The KSK is itself signed and linked to the parent zone via DS (Delegation Signer) records.
@@ -1633,30 +1897,118 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 ## 11.12 Interview Corner
 
 ### Q1: Explain the TLS handshake steps.
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" alt="Handwritten: Explain the TLS handshake steps." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" alt="Diagram: Explain the TLS handshake steps." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" alt="Sticky Note: Explain the TLS handshake steps." width="30%">
+</a>
+
 **A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello → client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange → server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished → client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished → server sends encrypted verification. Application data follows encrypted with symmetric keys.
 **TLS 1.3** reduces this to 1 RTT: ClientHello includes key_share; ServerHello includes its key_share; both compute shared secret immediately.
 
 ### Q2: Where should a firewall be placed in a network?
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" alt="Handwritten: Where should a firewall be placed in a network?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" alt="Diagram: Where should a firewall be placed in a network?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" alt="Sticky Note: Where should a firewall be placed in a network?" width="30%">
+</a>
+
 **A.** Firewalls deploy at these chokepoints: (1) **Internet edge** → between WAN router and internal network (perimeter firewall). (2) **DMZ** → between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** → between different security zones (finance, HR, engineering). (4) **Data center edge** → at the data center aggregation layer. (5) **Cloud** → cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
 
 ### Q3: Compare VPN vs MPLS.
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" alt="Handwritten: Compare VPN vs MPLS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" alt="Diagram: Compare VPN vs MPLS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" alt="Sticky Note: Compare VPN vs MPLS." width="30%">
+</a>
+
 **A.** VPN (IPSec/SSL) encrypts traffic over an untrusted network (typically the internet). It is cheaper (no dedicated circuits) but performance depends on ISP and encryption overhead. MPLS is a private WAN technology with traffic engineering (QoS), SLAs, and no encryption by default. MPLS is more expensive, provides better performance guarantees, but requires dedicated circuits. Modern approach: use SD-WAN over VPN with MPLS as a backup.
 
 ### Q4: Explain 802.1X authentication flow.
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" alt="Handwritten: Explain 802.1X authentication flow." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" alt="Diagram: Explain 802.1X authentication flow." width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" alt="Sticky Note: Explain 802.1X authentication flow." width="30%">
+</a>
+
 **A.** (1) Client (supplicant) connects to switch/AP (authenticator). Port is blocked. (2) Authenticator sends EAP-Request Identity. (3) Client responds with EAP-Response Identity, forwarded via RADIUS to authentication server. (4) EAP method exchange (e.g., EAP-TLS with certificates). (5) RADIUS sends Access-Accept or Access-Reject. (6) On accept, authenticator opens the port; client gets DHCP lease. On reject, port stays blocked.
 
 ### Q5: How does DNSSEC prevent cache poisoning?
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+
 **A.** DNS cache poisoning (e.g., Kaminsky attack) injects fake DNS records into a resolver's cache. DNSSEC prevents this by requiring every DNS response to include a digital signature (RRSIG) that the resolver verifies against the zone's public key (DNSKEY). If the data has been tampered with, signature verification fails and the resolver discards the response.
 
 ## 11.13 Applications in Real Systems
 
 ### OpenVPN
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" alt="Handwritten: OpenVPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" alt="Diagram: OpenVPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" alt="Sticky Note: OpenVPN" width="30%">
+</a>
+
 OpenVPN uses TLS for control channel authentication (certificate exchange) and IPSec-like ESP for the data channel. It typically uses UDP port 1194 with AES-256-GCM encryption. Operates in userspace via tun/tap interfaces. Supports TCP as a fallback. Works well across NAT due to single UDP port.
 
 ### IPsec (strongSwan, Libreswan, Windows built-in)
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" alt="Handwritten: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" alt="Diagram: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" alt="Sticky Note: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+</a>
+
 IPsec is the standard for site-to-site VPN. Most implementations use IKEv2 with ECDHE key exchange, AES-256-GCM encryption, and certificate authentication. IPsec tunnel mode encapsulates entire IP packets, making it suitable for routing between entire networks (e.g., AWS VPC to on-premises data center via AWS VPN Gateway).
 
 ### Let's Encrypt
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" alt="Handwritten: Let's Encrypt" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" alt="Diagram: Let's Encrypt" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" alt="Sticky Note: Let's Encrypt" width="30%">
+</a>
+
 Let's Encrypt is a free, automated, and open Certificate Authority using the ACME (Automated Certificate Management Environment) protocol. It validates domain control before issuing certificates. Certificates are valid for 90 days, encouraging automation. The ACME flow:
 1. Client generates key pair and requests certificate for domain.
 2. CA challenges the client to prove domain control (HTTP-01: serve a token at /.well-known/acme-challenge/; DNS-01: add a TXT record).
@@ -1664,6 +2016,17 @@ Let's Encrypt is a free, automated, and open Certificate Authority using the ACM
 4. Client installs certificate on the server. Renews before expiration.
 
 ### Cloudflare DDoS Protection
+
+<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: Cloudflare DDoS Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" alt="Diagram: Cloudflare DDoS Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: Cloudflare DDoS Protection" width="30%">
+</a>
+
 Cloudflare operates one of the largest anycast networks. Their DDoS mitigation strategy includes:
 - **Anycast distribution**: Traffic is spread across 330+ data centers worldwide, absorbing volumetric attacks.
 - **L3/L4 mitigation**: Kernel-level BPF (Berkeley Packet Filter) rules discard malicious packets (SYN floods, UDP amplification) at the edge before they reach the origin.

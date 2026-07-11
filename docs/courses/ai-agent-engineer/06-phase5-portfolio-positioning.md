@@ -32,9 +32,31 @@
 
 ### The 60-second skim
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-handwritten.svg" alt="Handwritten: The 60-second skim" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-diagram.svg" alt="Diagram: The 60-second skim" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-60-second-skim-sticky.svg" alt="Sticky Note: The 60-second skim" width="30%">
+</a>
+
+
 A recruiter or technical lead opens your README. They spend **60 seconds** deciding whether to read more or move on. Your README must communicate everything in those 60 seconds.
 
 ### Structure (applies to both projects)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-handwritten.svg" alt="Handwritten: Structure (applies to both projects)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-diagram.svg" alt="Diagram: Structure (applies to both projects)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-applies-to-both-projects-sticky.svg" alt="Sticky Note: Structure (applies to both projects)" width="30%">
+</a>
+
 
 ```markdown
 # Project Name
@@ -85,6 +107,17 @@ Rewrite both project READMEs using this structure. Time someone reading them —
 
 ### Structure
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
+
 | Time | Content |
 |------|---------|
 | 0-10s | Show the result first (answer from RAG query, or finished video) |
@@ -95,11 +128,33 @@ Rewrite both project READMEs using this structure. Time someone reading them —
 
 ### Tools
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-handwritten.svg" alt="Handwritten: Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-diagram.svg" alt="Diagram: Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tools-sticky.svg" alt="Sticky Note: Tools" width="30%">
+</a>
+
+
 - Screen recording: OBS Studio (free) or your phone's screen recording
 - Simple edit: trim front/back, add text overlays in CapCut or DaVinci Resolve
 - Host: YouTube (unlisted) or GitHub release page
 
 ### What NOT to do
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-handwritten.svg" alt="Handwritten: What NOT to do" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-diagram.svg" alt="Diagram: What NOT to do" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-do-sticky.svg" alt="Sticky Note: What NOT to do" width="30%">
+</a>
+
 
 - Don't show code scrolling (nobody reads code in a video)
 - Don't explain architecture for 45 seconds before showing the result
@@ -117,6 +172,17 @@ Content already drafted in `docs/profile/upwork-raw.md`. Key requirements:
 
 ### Tags/Skills (must-explicitly-list order)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-handwritten.svg" alt="Handwritten: Tags/Skills (must-explicitly-list order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-diagram.svg" alt="Diagram: Tags/Skills (must-explicitly-list order)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/tags-skills-must-explicitly-list-order-sticky.svg" alt="Sticky Note: Tags/Skills (must-explicitly-list order)" width="30%">
+</a>
+
+
 1. LangGraph
 2. CrewAI
 3. FastAPI
@@ -131,6 +197,17 @@ Content already drafted in `docs/profile/upwork-raw.md`. Key requirements:
 12. PostgreSQL / Redis
 
 ### Overview structure
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-handwritten.svg" alt="Handwritten: Overview structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-diagram.svg" alt="Diagram: Overview structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/overview-structure-sticky.svg" alt="Sticky Note: Overview structure" width="30%">
+</a>
+
 
 1. **Who you are** (1 sentence): "I build production agent systems — LangGraph orchestrators, RAG pipelines, MCP servers."
 2. **What you've built** (2-3 sentences): ChromaDB server, LangGraph pipeline, production ERP with WhatsApp AI.
@@ -150,6 +227,17 @@ Content already drafted in `docs/profile/linkedin-rewrite.md`.
 
 ### Headline (must fit in 220 characters)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-handwritten.svg" alt="Handwritten: Headline (must fit in 220 characters)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-diagram.svg" alt="Diagram: Headline (must fit in 220 characters)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/headline-must-fit-in-220-characters-sticky.svg" alt="Sticky Note: Headline (must fit in 220 characters)" width="30%">
+</a>
+
+
 ```
 AI Agent Engineer | LangGraph · RAG · FastAPI · MCP · Production Agentics
 ```
@@ -162,6 +250,17 @@ Building Production Agent Systems | LangGraph, FastAPI, ChromaDB, MCP | Open to 
 
 ### About section structure
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-handwritten.svg" alt="Handwritten: About section structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-diagram.svg" alt="Diagram: About section structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/about-section-structure-sticky.svg" alt="Sticky Note: About section structure" width="30%">
+</a>
+
+
 1. Current identity: "I build production agent systems."
 2. What that means: "LangGraph state machines, RAG pipelines, MCP servers."
 3. Proof: "Live projects: ChromaDB RAG demo, LangGraph content pipeline, WhatsApp AI ERP in production."
@@ -169,6 +268,17 @@ Building Production Agent Systems | LangGraph, FastAPI, ChromaDB, MCP | Open to 
 5. Stack list: same ordering as Upwork
 
 ### Featured section
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-handwritten.svg" alt="Handwritten: Featured section" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-diagram.svg" alt="Diagram: Featured section" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/featured-section-sticky.svg" alt="Sticky Note: Featured section" width="30%">
+</a>
+
 
 Add both project repos and the RAG demo link as Featured items.
 
@@ -181,6 +291,17 @@ Update your actual LinkedIn profile. Ask someone who doesn't know your work to r
 ## 5.5 Case-Study Post
 
 ### Structure
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
 
 ```
 Title: How I Built a Production RAG API in 2 Weeks (and Why ChromaDB Won)
@@ -208,6 +329,17 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 ### Where to search (quick reference)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-handwritten.svg" alt="Handwritten: Where to search (quick reference)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-diagram.svg" alt="Diagram: Where to search (quick reference)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-search-quick-reference-sticky.svg" alt="Sticky Note: Where to search (quick reference)" width="30%">
+</a>
+
+
 | Platform | Best for | Search terms |
 |----------|----------|-------------|
 | LinkedIn | Direct hire, companies | "AI Automation Engineer", "AI Agent", "LangGraph", "RAG" |
@@ -217,12 +349,34 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 ### Application rhythm
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-handwritten.svg" alt="Handwritten: Application rhythm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-diagram.svg" alt="Diagram: Application rhythm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/application-rhythm-sticky.svg" alt="Sticky Note: Application rhythm" width="30%">
+</a>
+
+
 - **Week 1:** Identify 20 target postings. Customize your proposal template for each. Apply to 5.
 - **Week 2:** Apply to 5 more. Follow up on Week 1 applications.
 - **Week 3:** Apply to 5 more. If response rate is &lt; 20%, revise profile.
 - **Week 4:** Apply to 5 more. By now you should have data on what's working.
 
 ### Response tracking
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-handwritten.svg" alt="Handwritten: Response tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-diagram.svg" alt="Diagram: Response tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/response-tracking-sticky.svg" alt="Sticky Note: Response tracking" width="30%">
+</a>
+
 
 Create a proposal tracker (see the [job search playbook](08-job-search-playbook.md) for a complete template):
 
@@ -245,6 +399,17 @@ Read the [full job search playbook](08-job-search-playbook.md). It covers everyt
 The AI Agent Engineer interview typically covers: system design (RAG pipeline), agent architecture (ReAct, LangGraph), and production concerns (latency, cost, safety).
 
 ### 10 common questions with concise answers
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-handwritten.svg" alt="Handwritten: 10 common questions with concise answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-diagram.svg" alt="Diagram: 10 common questions with concise answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/10-common-questions-with-concise-answers-sticky.svg" alt="Sticky Note: 10 common questions with concise answers" width="30%">
+</a>
+
 
 **Q1: Walk me through the RAG pipeline from ingestion to response.**
 ```
@@ -295,6 +460,17 @@ Record yourself answering all 10 questions. Play it back. If you stall on any qu
 
 ### Dubai market ranges (2026)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-handwritten.svg" alt="Handwritten: Dubai market ranges (2026)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-diagram.svg" alt="Diagram: Dubai market ranges (2026)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/dubai-market-ranges-2026-sticky.svg" alt="Sticky Note: Dubai market ranges (2026)" width="30%">
+</a>
+
+
 | Role | Junior (0-2yr) | Mid (2-5yr) | Senior (5-8yr) | Lead (8+yr) |
 |------|---------------|-------------|----------------|-------------|
 | AI Engineer | 8K-12K AED | 12K-18K AED | 18K-28K AED | 28K-40K AED |
@@ -302,6 +478,17 @@ Record yourself answering all 10 questions. Play it back. If you stall on any qu
 | Freelance hourly | $35-50 | $50-80 | $80-120 | $120-175 |
 
 ### Your walk-away numbers
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-handwritten.svg" alt="Handwritten: Your walk-away numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-diagram.svg" alt="Diagram: Your walk-away numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/your-walk-away-numbers-sticky.svg" alt="Sticky Note: Your walk-away numbers" width="30%">
+</a>
+
 
 ```python
 # Calculate your minimum acceptable rate
@@ -324,6 +511,17 @@ print(f"Minimum monthly AED: {desired_annual / 12 * 3.67:.0f} AED")
 
 ### Negotiation scripts
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-handwritten.svg" alt="Handwritten: Negotiation scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-diagram.svg" alt="Diagram: Negotiation scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/negotiation-scripts-sticky.svg" alt="Sticky Note: Negotiation scripts" width="30%">
+</a>
+
+
 **On rate:**
 > "I'd love to work on this. Based on the scope you described, which involves building a custom LangGraph pipeline with MCP integration, my rate is $X/hr. If the budget is tighter, I can scope it down to a simpler architecture — what range were you targeting?"
 
@@ -342,6 +540,17 @@ Your GitHub profile is often the first thing a technical interviewer checks afte
 
 ### Profile essentials
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-handwritten.svg" alt="Handwritten: Profile essentials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-diagram.svg" alt="Diagram: Profile essentials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-essentials-sticky.svg" alt="Sticky Note: Profile essentials" width="30%">
+</a>
+
+
 | Element | What to do | Why |
 |---------|-----------|-----|
 | **Profile README** | Create a repo named `{your-username}` with a README that summarizes your work | Shows up on your profile as a hero section |
@@ -352,8 +561,30 @@ Your GitHub profile is often the first thing a technical interviewer checks afte
 
 ### Profile README template
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-handwritten.svg" alt="Handwritten: Profile README template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-diagram.svg" alt="Diagram: Profile README template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/profile-readme-template-sticky.svg" alt="Sticky Note: Profile README template" width="30%">
+</a>
+
+
 ```markdown
 ### ?? I build production AI agent systems
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-handwritten.svg" alt="Handwritten: ?? I build production AI agent systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-diagram.svg" alt="Diagram: ?? I build production AI agent systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/i-build-production-ai-agent-systems-sticky.svg" alt="Sticky Note: ?? I build production AI agent systems" width="30%">
+</a>
+
 
 **What I do:** LangGraph state machines · RAG pipelines · MCP servers · FastAPI backends
 
@@ -378,6 +609,17 @@ Create your profile README repo. Pin your 3 project repos. Verify each has prope
 A simple single-page portfolio site gives you control over your narrative and a centralized link for applications. No need for a complex build — a single HTML file hosted on Cloudflare Pages or GitHub Pages.
 
 ### Minimal structure
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-handwritten.svg" alt="Handwritten: Minimal structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-diagram.svg" alt="Diagram: Minimal structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/minimal-structure-sticky.svg" alt="Sticky Note: Minimal structure" width="30%">
+</a>
+
 
 ```html
 <!-- index.html -->
@@ -423,6 +665,17 @@ A simple single-page portfolio site gives you control over your narrative and a 
 
 ### Deployment (Cloudflare Pages, free)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-handwritten.svg" alt="Handwritten: Deployment (Cloudflare Pages, free)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-diagram.svg" alt="Diagram: Deployment (Cloudflare Pages, free)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/deployment-cloudflare-pages-free-sticky.svg" alt="Sticky Note: Deployment (Cloudflare Pages, free)" width="30%">
+</a>
+
+
 1. Push the HTML file to a GitHub repo
 2. Go to Cloudflare Dashboard ? Workers & Pages ? Create ? Pages
 3. Connect your GitHub repo
@@ -441,12 +694,34 @@ Writing about your build process is a force multiplier for your job search. A si
 
 ### Why it works
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-handwritten.svg" alt="Handwritten: Why it works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-diagram.svg" alt="Diagram: Why it works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/why-it-works-sticky.svg" alt="Sticky Note: Why it works" width="30%">
+</a>
+
+
 - Recruiters search LinkedIn for specific terms (LangGraph, RAG, MCP)
 - A post demonstrating expertise is stronger than a resume bullet point
 - Engineers at target companies see your post and refer you internally
 - Each post becomes a shareable portfolio artifact
 
 ### Content calendar (bi-weekly cadence)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-handwritten.svg" alt="Handwritten: Content calendar (bi-weekly cadence)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-diagram.svg" alt="Diagram: Content calendar (bi-weekly cadence)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/content-calendar-bi-weekly-cadence-sticky.svg" alt="Sticky Note: Content calendar (bi-weekly cadence)" width="30%">
+</a>
+
 
 | Week | Topic | Format | Est. time |
 |------|-------|--------|-----------|
@@ -458,6 +733,17 @@ Writing about your build process is a force multiplier for your job search. A si
 | 11 | "How I Pivoted from Laravel to AI Agents in 12 Weeks" | Career story post | 2 hrs |
 
 ### Platform strategy
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-handwritten.svg" alt="Handwritten: Platform strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-diagram.svg" alt="Diagram: Platform strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/platform-strategy-sticky.svg" alt="Sticky Note: Platform strategy" width="30%">
+</a>
+
 
 | Platform | Content type | Frequency | Goal |
 |----------|-------------|-----------|------|
@@ -478,6 +764,17 @@ Certifications won't get you hired on their own, but they can help you past HR f
 
 ### High-value certs for AI Agent Engineer roles
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-handwritten.svg" alt="Handwritten: High-value certs for AI Agent Engineer roles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-diagram.svg" alt="Diagram: High-value certs for AI Agent Engineer roles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/high-value-certs-for-ai-agent-engineer-roles-sticky.svg" alt="Sticky Note: High-value certs for AI Agent Engineer roles" width="30%">
+</a>
+
+
 | Certification | Cost | Time | Why it helps |
 |-------------|------|------|-------------|
 | **OpenAI API Certification** | Free | 2 hours | Proves you know the most-used AI platform |
@@ -489,11 +786,33 @@ Certifications won't get you hired on their own, but they can help you past HR f
 
 ### What NOT to bother with
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-handwritten.svg" alt="Handwritten: What NOT to bother with" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-diagram.svg" alt="Diagram: What NOT to bother with" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/what-not-to-bother-with-sticky.svg" alt="Sticky Note: What NOT to bother with" width="30%">
+</a>
+
+
 - Generic "AI for Everyone" courses (too basic for agent roles)
 - Certifications from unverifiable providers (Udemy completion badges)
 - Outdated certs (TensorFlow Developer Certificate — framework-specific and stale)
 
 ### How to list them
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-handwritten.svg" alt="Handwritten: How to list them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-diagram.svg" alt="Diagram: How to list them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-list-them-sticky.svg" alt="Sticky Note: How to list them" width="30%">
+</a>
+
 
 ```
 **Certifications:**
@@ -514,6 +833,17 @@ Dubai's AI job market runs on relationships. A referral from a local engineer ca
 
 ### Where to network
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-handwritten.svg" alt="Handwritten: Where to network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-diagram.svg" alt="Diagram: Where to network" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/where-to-network-sticky.svg" alt="Sticky Note: Where to network" width="30%">
+</a>
+
+
 | Venue | Type | Frequency | How to engage |
 |-------|------|-----------|---------------|
 | **Dubai AI Meetup** | In-person | Monthly | Attend, ask 1 question per event |
@@ -523,6 +853,17 @@ Dubai's AI job market runs on relationships. A referral from a local engineer ca
 | **What's App AI groups** | Online | Weekly | Join shared from meetups |
 
 ### Cold outreach template (LinkedIn)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-handwritten.svg" alt="Handwritten: Cold outreach template (LinkedIn)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-diagram.svg" alt="Diagram: Cold outreach template (LinkedIn)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/cold-outreach-template-linkedin-sticky.svg" alt="Sticky Note: Cold outreach template (LinkedIn)" width="30%">
+</a>
+
 
 ```
 Hi {Name},
@@ -539,6 +880,17 @@ Raushan
 
 ### Keep the pipeline warm
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-handwritten.svg" alt="Handwritten: Keep the pipeline warm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-diagram.svg" alt="Diagram: Keep the pipeline warm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/keep-the-pipeline-warm-sticky.svg" alt="Sticky Note: Keep the pipeline warm" width="30%">
+</a>
+
+
 - Set a recurring calendar reminder: "Dubai networking — 30 min"
 - Review on Sunday: who to DM, which meetup to register, which post to comment on
 - Track connections in a spreadsheet: Name, Company, When met, Follow-up date, Notes
@@ -554,6 +906,17 @@ Join 2 of the online communities above. Register for the next Dubai AI Meetup. S
 Knowing the framework landscape signals that you understand the industry — not just your own stack. Interviewers ask "Why LangGraph over CrewAI?" and your answer needs data, not vibes.
 
 ### The 2026 Landscape (ranked by GitHub stars)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-handwritten.svg" alt="Handwritten: The 2026 Landscape (ranked by GitHub stars)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-diagram.svg" alt="Diagram: The 2026 Landscape (ranked by GitHub stars)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-landscape-ranked-by-github-stars-sticky.svg" alt="Sticky Note: The 2026 Landscape (ranked by GitHub stars)" width="30%">
+</a>
+
 
 | # | Framework | Stars | Creator | Best for |
 |---|-----------|-------|---------|----------|
@@ -576,6 +939,17 @@ Knowing the framework landscape signals that you understand the industry — not
 
 ### Which ones to actually learn
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-handwritten.svg" alt="Handwritten: Which ones to actually learn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-diagram.svg" alt="Diagram: Which ones to actually learn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/which-ones-to-actually-learn-sticky.svg" alt="Sticky Note: Which ones to actually learn" width="30%">
+</a>
+
+
 You don't need all 16. Here's the priority order for an AI Agent Engineer:
 
 | Tier | Frameworks | Why | Time |
@@ -586,6 +960,17 @@ You don't need all 16. Here's the priority order for an AI Agent Engineer:
 | **Legacy** (know why not) | AutoGen, pure LangChain | Maintenance mode or deprecated for agents | 30 min |
 
 ### Framework decision flow
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-handwritten.svg" alt="Handwritten: Framework decision flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-diagram.svg" alt="Diagram: Framework decision flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/framework-decision-flow-sticky.svg" alt="Sticky Note: Framework decision flow" width="30%">
+</a>
+
 
 ```
 What are you building?
@@ -611,6 +996,17 @@ What are you building?
 
 ### The 2026 production stack (most common)
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-handwritten.svg" alt="Handwritten: The 2026 production stack (most common)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-diagram.svg" alt="Diagram: The 2026 production stack (most common)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/the-2026-production-stack-most-common-sticky.svg" alt="Sticky Note: The 2026 production stack (most common)" width="30%">
+</a>
+
+
 Research from LangChain Inc., production deployment analysis, and community benchmarks converge on this pattern:
 
 ```
@@ -623,6 +1019,17 @@ Deployment ? Docker + FastAPI + Cloudflare Tunnel
 **The migration path:** Teams consistently start with CrewAI for speed, then migrate to LangGraph for production control. This is normal — plan for it.
 
 ### Interview talking points
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-handwritten.svg" alt="Handwritten: Interview talking points" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-diagram.svg" alt="Diagram: Interview talking points" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/interview-talking-points-sticky.svg" alt="Sticky Note: Interview talking points" width="30%">
+</a>
+
 
 When asked "Which framework should we use?":
 
@@ -639,6 +1046,17 @@ Pick 2 frameworks from the "Awareness" tier you haven't used. Spend 1 hour each 
 Following the right repos keeps you current, gives you interview ammunition (mentioning a trending repo signals you're engaged), and feeds your content pipeline with topics to write about.
 
 ### Must-watch repos (June 2026)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-handwritten.svg" alt="Handwritten: Must-watch repos (June 2026)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-diagram.svg" alt="Diagram: Must-watch repos (June 2026)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/must-watch-repos-june-2026-sticky.svg" alt="Sticky Note: Must-watch repos (June 2026)" width="30%">
+</a>
+
 
 These are the most influential repos by category:
 
@@ -660,6 +1078,17 @@ These are the most influential repos by category:
 
 ### How to stay updated
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-handwritten.svg" alt="Handwritten: How to stay updated" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-diagram.svg" alt="Diagram: How to stay updated" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-stay-updated-sticky.svg" alt="Sticky Note: How to stay updated" width="30%">
+</a>
+
+
 | Method | What to do | Time |
 |--------|-----------|------|
 | **GitHub trending** | Check github.com/trending/python weekly | 5 min/week |
@@ -669,6 +1098,17 @@ These are the most influential repos by category:
 | **Newsletter** | The Rundown AI, TLDR AI, AI Agent Insider | 10 min/read |
 
 ### How to use repos in your job search
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-handwritten.svg" alt="Handwritten: How to use repos in your job search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-diagram.svg" alt="Diagram: How to use repos in your job search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/06-phase5-portfolio-positioning/how-to-use-repos-in-your-job-search-sticky.svg" alt="Sticky Note: How to use repos in your job search" width="30%">
+</a>
+
 
 1. **In interviews:** "I've been following the `browser-use` repo — it's solving the problem of making any website accessible to AI agents. I'm experimenting with it for automated testing of my RAG API."
 

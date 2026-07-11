@@ -46,6 +46,17 @@ After completing this chapter, you will be able to:
 
 ### 1.1 Reactive Stack vs Servlet Stack
 
+<a href="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-handwritten.svg" alt="Handwritten: 1.1 Reactive Stack vs Servlet Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-diagram.svg" alt="Diagram: 1.1 Reactive Stack vs Servlet Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-1-reactive-stack-vs-servlet-stack-sticky.svg" alt="Sticky Note: 1.1 Reactive Stack vs Servlet Stack" width="30%">
+</a>
+
+
 Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built on Project Reactor. It runs on **Netty** (default), Undertow, or Servlet 3.1+ containers (Tomcat, Jetty) but uses **non-blocking I/O** throughout.
 
 | Aspect | Spring MVC | Spring WebFlux |
@@ -60,6 +71,17 @@ Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built
 
 ### 1.2 Netty Event Loop Model
 
+<a href="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-handwritten.svg" alt="Handwritten: 1.2 Netty Event Loop Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-diagram.svg" alt="Diagram: 1.2 Netty Event Loop Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-2-netty-event-loop-model-sticky.svg" alt="Sticky Note: 1.2 Netty Event Loop Model" width="30%">
+</a>
+
+
 WebFlux uses an event-loop threading model. For N CPU cores, Netty creates 2N event-loop threads (one reader, one writer per core). All non-blocking I/O operations run on these threads. Blocking operations must be offloaded to a `boundedElastic` scheduler.
 
 ```
@@ -71,6 +93,17 @@ Request → EventLoop → Controller → Service → Repository
 ```
 
 ### 1.3 When to Use WebFlux
+
+<a href="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-handwritten.svg" alt="Handwritten: 1.3 When to Use WebFlux" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-diagram.svg" alt="Diagram: 1.3 When to Use WebFlux" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/1-3-when-to-use-webflux-sticky.svg" alt="Sticky Note: 1.3 When to Use WebFlux" width="30%">
+</a>
+
 
 **Good fit:**
 - Long-running, streaming, or real-time endpoints (SSE, WebSocket)
@@ -88,6 +121,17 @@ Request → EventLoop → Controller → Service → Repository
 ## 2. Reactive REST API with Annotated Controllers
 
 ### 2.1 Project Setup (Maven)
+
+<a href="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-handwritten.svg" alt="Handwritten: 2.1 Project Setup (Maven)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-diagram.svg" alt="Diagram: 2.1 Project Setup (Maven)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-1-project-setup-maven-sticky.svg" alt="Sticky Note: 2.1 Project Setup (Maven)" width="30%">
+</a>
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -151,6 +195,17 @@ Request → EventLoop → Controller → Service → Repository
 
 ### 2.2 Application Entry Point
 
+<a href="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-handwritten.svg" alt="Handwritten: 2.2 Application Entry Point" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-diagram.svg" alt="Diagram: 2.2 Application Entry Point" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-2-application-entry-point-sticky.svg" alt="Sticky Note: 2.2 Application Entry Point" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo;
 
@@ -169,6 +224,17 @@ public class WebFluxApplication {
 ```
 
 ### 2.3 Domain Model and Repository
+
+<a href="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-handwritten.svg" alt="Handwritten: 2.3 Domain Model and Repository" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-diagram.svg" alt="Diagram: 2.3 Domain Model and Repository" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-3-domain-model-and-repository-sticky.svg" alt="Sticky Note: 2.3 Domain Model and Repository" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.model;
@@ -229,6 +295,17 @@ public interface ProductRepository extends ReactiveMongoRepository<Product, Stri
 ```
 
 ### 2.4 Reactive Controller
+
+<a href="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-handwritten.svg" alt="Handwritten: 2.4 Reactive Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-diagram.svg" alt="Diagram: 2.4 Reactive Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-4-reactive-controller-sticky.svg" alt="Sticky Note: 2.4 Reactive Controller" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.controller;
@@ -368,6 +445,17 @@ public class ProductController {
 
 ### 2.5 Non-Streaming Response Type
 
+<a href="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-handwritten.svg" alt="Handwritten: 2.5 Non-Streaming Response Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-diagram.svg" alt="Diagram: 2.5 Non-Streaming Response Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-5-non-streaming-response-type-sticky.svg" alt="Sticky Note: 2.5 Non-Streaming Response Type" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.controller;
 
@@ -419,6 +507,17 @@ public class ProductStatsController {
 ```
 
 ### 2.6 Error Handling in Reactive Controllers
+
+<a href="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-handwritten.svg" alt="Handwritten: 2.6 Error Handling in Reactive Controllers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-diagram.svg" alt="Diagram: 2.6 Error Handling in Reactive Controllers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/2-6-error-handling-in-reactive-controllers-sticky.svg" alt="Sticky Note: 2.6 Error Handling in Reactive Controllers" width="30%">
+</a>
+
 
 WebFlux supports `@ControllerAdvice` and `@ExceptionHandler` just like Spring MVC, but methods can return `Mono` and `Flux`.
 
@@ -500,6 +599,17 @@ public class GlobalExceptionHandler {
 ## 3. Functional Routing
 
 ### 3.1 Handler Functions
+
+<a href="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-handwritten.svg" alt="Handwritten: 3.1 Handler Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-diagram.svg" alt="Diagram: 3.1 Handler Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-1-handler-functions-sticky.svg" alt="Sticky Note: 3.1 Handler Functions" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.handler;
@@ -603,6 +713,17 @@ public class ProductHandler {
 
 ### 3.2 Router Function Configuration
 
+<a href="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-handwritten.svg" alt="Handwritten: 3.2 Router Function Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-diagram.svg" alt="Diagram: 3.2 Router Function Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-2-router-function-configuration-sticky.svg" alt="Sticky Note: 3.2 Router Function Configuration" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.config;
 
@@ -660,6 +781,17 @@ public class ProductRouterConfig {
 ```
 
 ### 3.3 Request Predicates
+
+<a href="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-handwritten.svg" alt="Handwritten: 3.3 Request Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-diagram.svg" alt="Diagram: 3.3 Request Predicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/3-3-request-predicates-sticky.svg" alt="Sticky Note: 3.3 Request Predicates" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.config;
@@ -727,6 +859,17 @@ public class AdvancedRouterConfig {
 
 ### 4.1 WebClient Configuration
 
+<a href="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-handwritten.svg" alt="Handwritten: 4.1 WebClient Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-diagram.svg" alt="Diagram: 4.1 WebClient Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-1-webclient-configuration-sticky.svg" alt="Sticky Note: 4.1 WebClient Configuration" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.client;
 
@@ -783,6 +926,17 @@ public class WebClientConfig {
 ```
 
 ### 4.2 WebClient Usage Examples
+
+<a href="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-handwritten.svg" alt="Handwritten: 4.2 WebClient Usage Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-diagram.svg" alt="Diagram: 4.2 WebClient Usage Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-2-webclient-usage-examples-sticky.svg" alt="Sticky Note: 4.2 WebClient Usage Examples" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.client;
@@ -922,6 +1076,17 @@ public class ProductServiceClient {
 
 ### 4.3 WebClient Error Handling
 
+<a href="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-handwritten.svg" alt="Handwritten: 4.3 WebClient Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-diagram.svg" alt="Diagram: 4.3 WebClient Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/4-3-webclient-error-handling-sticky.svg" alt="Sticky Note: 4.3 WebClient Error Handling" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.client;
 
@@ -980,6 +1145,17 @@ public class ResilientProductClient {
 ## 5. Server-Sent Events (SSE)
 
 ### 5.1 SSE Producer
+
+<a href="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-handwritten.svg" alt="Handwritten: 5.1 SSE Producer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-diagram.svg" alt="Diagram: 5.1 SSE Producer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-1-sse-producer-sticky.svg" alt="Sticky Note: 5.1 SSE Producer" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.controller;
@@ -1062,6 +1238,17 @@ public class SSEController {
 
 ### 5.2 SSE Consumer with WebClient
 
+<a href="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-handwritten.svg" alt="Handwritten: 5.2 SSE Consumer with WebClient" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-diagram.svg" alt="Diagram: 5.2 SSE Consumer with WebClient" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/5-2-sse-consumer-with-webclient-sticky.svg" alt="Sticky Note: 5.2 SSE Consumer with WebClient" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.client;
 
@@ -1100,6 +1287,17 @@ public class SSEClient {
 ## 6. Reactive Security
 
 ### 6.1 Security Configuration
+
+<a href="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-handwritten.svg" alt="Handwritten: 6.1 Security Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-diagram.svg" alt="Diagram: 6.1 Security Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-1-security-configuration-sticky.svg" alt="Sticky Note: 6.1 Security Configuration" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.security;
@@ -1201,6 +1399,17 @@ public class SecurityConfig {
 
 ### 6.2 OAuth2 Resource Server with WebFlux
 
+<a href="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-handwritten.svg" alt="Handwritten: 6.2 OAuth2 Resource Server with WebFlux" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-diagram.svg" alt="Diagram: 6.2 OAuth2 Resource Server with WebFlux" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-2-oauth2-resource-server-with-webflux-sticky.svg" alt="Sticky Note: 6.2 OAuth2 Resource Server with WebFlux" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.security;
 
@@ -1243,6 +1452,17 @@ public class OAuth2ResourceServerConfig {
 ```
 
 ### 6.3 Reactive Method Security
+
+<a href="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-handwritten.svg" alt="Handwritten: 6.3 Reactive Method Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-diagram.svg" alt="Diagram: 6.3 Reactive Method Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/6-3-reactive-method-security-sticky.svg" alt="Sticky Note: 6.3 Reactive Method Security" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.controller;
@@ -1311,6 +1531,17 @@ public class SecurityService {
 ## 7. File Upload and Streaming
 
 ### 7.1 Reactive File Upload
+
+<a href="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-handwritten.svg" alt="Handwritten: 7.1 Reactive File Upload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-diagram.svg" alt="Diagram: 7.1 Reactive File Upload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-1-reactive-file-upload-sticky.svg" alt="Sticky Note: 7.1 Reactive File Upload" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.controller;
@@ -1434,6 +1665,17 @@ public class FileController {
 
 ### 7.2 Streaming Large File Download
 
+<a href="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-handwritten.svg" alt="Handwritten: 7.2 Streaming Large File Download" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-diagram.svg" alt="Diagram: 7.2 Streaming Large File Download" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/7-2-streaming-large-file-download-sticky.svg" alt="Sticky Note: 7.2 Streaming Large File Download" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.controller;
 
@@ -1528,6 +1770,17 @@ public class StreamingController {
 
 ### 8.1 RSocket Server
 
+<a href="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-handwritten.svg" alt="Handwritten: 8.1 RSocket Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-diagram.svg" alt="Diagram: 8.1 RSocket Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-1-rsocket-server-sticky.svg" alt="Sticky Note: 8.1 RSocket Server" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.rsocket;
 
@@ -1592,6 +1845,17 @@ public class ProductRSocketController {
 ```
 
 ### 8.2 RSocket Client Configuration
+
+<a href="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-handwritten.svg" alt="Handwritten: 8.2 RSocket Client Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-diagram.svg" alt="Diagram: 8.2 RSocket Client Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/8-2-rsocket-client-configuration-sticky.svg" alt="Sticky Note: 8.2 RSocket Client Configuration" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.rsocket;
@@ -1891,6 +2155,17 @@ class ProductControllerWebTest {
 
 ### 10.1 Threading Model Comparison
 
+<a href="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-handwritten.svg" alt="Handwritten: 10.1 Threading Model Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-diagram.svg" alt="Diagram: 10.1 Threading Model Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-1-threading-model-comparison-sticky.svg" alt="Sticky Note: 10.1 Threading Model Comparison" width="30%">
+</a>
+
+
 ```java
 package com.webflux.demo.performance;
 
@@ -1976,6 +2251,17 @@ public class PerformanceController {
 ```
 
 ### 10.2 WebFlux Best Practices
+
+<a href="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-handwritten.svg" alt="Handwritten: 10.2 WebFlux Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-diagram.svg" alt="Diagram: 10.2 WebFlux Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/45-webflux/10-2-webflux-best-practices-sticky.svg" alt="Sticky Note: 10.2 WebFlux Best Practices" width="30%">
+</a>
+
 
 ```java
 package com.webflux.demo.config;

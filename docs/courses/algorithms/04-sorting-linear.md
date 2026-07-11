@@ -54,6 +54,17 @@ The \( \Omega(n \log n) \) lower bound for comparison sorting (Theorem 3.1) appl
 
 ### 4.1 Counting Sort
 
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" alt="Handwritten: 4.1 Counting Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" alt="Diagram: 4.1 Counting Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" alt="Sticky Note: 4.1 Counting Sort" width="30%">
+</a>
+
+
 **Real-World Analogy:** You are sorting 500 student answer sheets by roll number (1–100). Instead of comparing roll numbers pairwise, you prepare 100 slots, place each sheet into the slot matching its roll number, then collect the slots in order. No comparisons needed — just distribution and collection.
 
 **Core Idea:** Counting sort assumes the input consists of integers in a known range \([0, k-1]\). It counts the frequency of each distinct key, computes prefix sums to determine final positions, and places elements directly into their correct output positions.
@@ -219,6 +230,17 @@ public static int[] countingSort(int[] arr, int k) {
 ---
 
 ### 4.2 Radix Sort
+
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" alt="Handwritten: 4.2 Radix Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" alt="Diagram: 4.2 Radix Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" alt="Sticky Note: 4.2 Radix Sort" width="30%">
+</a>
+
 
 **Real-World Analogy:** A librarian sorts books by call number. Instead of comparing full call numbers, they look at only the first digit and sort into 10 piles (0–9). Within each pile, they look at the second digit and sort further. This is MSD radix sort. A mail sorter works the other way: sort packages by the last digit of the ZIP code first, then the second-to-last, and so on — LSD radix sort. Both avoid ever comparing two full numbers.
 
@@ -440,6 +462,17 @@ public static void radixSort(int[] arr) {
 ---
 
 ### 4.3 Bucket Sort
+
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" alt="Handwritten: 4.3 Bucket Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" alt="Diagram: 4.3 Bucket Sort" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" alt="Sticky Note: 4.3 Bucket Sort" width="30%">
+</a>
+
 
 **Real-World Analogy:** You need to sort 1,000 exam scores (between 0 and 100) that are uniformly distributed. You create 10 buckets labeled 0–9, 10–19, ..., 90–100. You drop each score into its bucket. Then you sort each bucket individually (with a simple sort like insertion sort) and concatenate the buckets. Since scores are uniformly distributed, each bucket has roughly 100 items, and sorting 100 items 10 times is much faster than sorting 1,000 items at once.
 

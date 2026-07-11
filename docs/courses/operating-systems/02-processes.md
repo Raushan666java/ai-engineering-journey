@@ -58,6 +58,17 @@ flowchart LR
 
 ### Process Concept
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-concept-handwritten.svg" alt="Handwritten: Process Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-concept-diagram.svg" alt="Diagram: Process Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-concept-sticky.svg" alt="Sticky Note: Process Concept" width="30%">
+</a>
+
+
 #### Real-World Analogy: Blueprint vs Building Under Construction
 
 A **program** is like a building blueprint → a static document describing what to build. A **process** is the actual construction site → workers moving, materials arriving, foundation being laid. One blueprint can produce multiple construction sites (running multiple instances of the same program).
@@ -280,6 +291,17 @@ pm.terminate(p1)
 
 ### Process in Memory
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-handwritten.svg" alt="Handwritten: Process in Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-diagram.svg" alt="Diagram: Process in Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-in-memory-sticky.svg" alt="Sticky Note: Process in Memory" width="30%">
+</a>
+
+
 #### Real-World Analogy: Office Building Floors
 
 A process's memory is like an office building. The **text section** is the building's structural blueprint (fixed, read-only). The **data section** is the building directory (global info). The **heap** is the storage warehouse (grows as needed). The **stack** is the elevator shaft (grows and shrinks per floor/function call).
@@ -433,6 +455,17 @@ demo.show()
 | **Memory Leak** | Allocated heap memory never freed | OS reclaims all memory on process termination |
 | **Null Pointer Dereference** | Accessing address 0 | MMU traps access; OS delivers SIGSEGV to process |
 ### Process States
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-states-handwritten.svg" alt="Handwritten: Process States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-states-diagram.svg" alt="Diagram: Process States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-states-sticky.svg" alt="Sticky Note: Process States" width="30%">
+</a>
+
 
 #### Real-World Analogy: Restaurant Order Lifecycle
 
@@ -676,6 +709,17 @@ for e in [Event.ADMITTED, Event.DISPATCH, Event.IO_WAIT,
 | **Infinite Loop** | Process in RUNNING never yields CPU | Timer interrupt forces preemption after quantum expires |
 | **Orphan in Waiting** | Parent dies while child is waiting on I/O | Child becomes orphan; init (PID 1) adopts and eventually cleans up |
 ### Process Control Block (PCB)
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-handwritten.svg" alt="Handwritten: Process Control Block (PCB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-diagram.svg" alt="Diagram: Process Control Block (PCB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-control-block-pcb-sticky.svg" alt="Sticky Note: Process Control Block (PCB)" width="30%">
+</a>
+
 
 #### Real-World Analogy: Employee File in HR
 
@@ -965,6 +1009,17 @@ print(f"P1 PC: {hex(p1.program_counter)}, R0: {p1.registers[0]}")
 | **Stale PCB Pointers** | PCB freed but pointer still referenced | Reference counting or RCU (Read-Copy-Update) in kernel |
 ### Context Switch
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/context-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/context-switch-handwritten.svg" alt="Handwritten: Context Switch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/context-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/context-switch-diagram.svg" alt="Diagram: Context Switch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/context-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/context-switch-sticky.svg" alt="Sticky Note: Context Switch" width="30%">
+</a>
+
+
 #### Real-World Analogy: Switching Workers on an Assembly Line
 
 Imagine an assembly line where one worker installs engines and another installs wheels. When the whistle blows, Worker A must **save** their progress (which car, which bolt, torque wrench setting), step aside, and Worker B must **restore** their setup (tools, position, parts). The time spent swapping is lost production → no cars move during the changeover. Context switching is identical: the CPU saves one process's state and loads another's, doing zero productive work during the swap.
@@ -1211,6 +1266,17 @@ os.benchmark(100)
 | **Overhead Dominance** | So many processes that 90%+ CPU time is context switching | Increase quantum or reduce process count; use hybrid threading |
 ### Process Creation
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-creation-handwritten.svg" alt="Handwritten: Process Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-creation-diagram.svg" alt="Diagram: Process Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-creation-sticky.svg" alt="Sticky Note: Process Creation" width="30%">
+</a>
+
+
 #### Real-World Analogy: Factory Duplicating a Machine
 
 A factory has a CNC machine running Program X. To run Program Y without stopping X, the factory buys an identical CNC machine (the "child"), copies the setup, then loads Program Y onto it. The original machine continues running Program X. This is exactly the Unix `fork()` + `exec()` pattern → `fork()` duplicates the process, then `exec()` replaces the child's program. The two-step design allows the child to adjust settings (file descriptors, signals) before loading the new program.
@@ -1400,6 +1466,17 @@ if __name__ == "__main__":
 ---
 
 ### Process Termination
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-termination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-termination-handwritten.svg" alt="Handwritten: Process Termination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-termination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-termination-diagram.svg" alt="Diagram: Process Termination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-termination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-termination-sticky.svg" alt="Sticky Note: Process Termination" width="30%">
+</a>
+
 
 #### Real-World Analogy: Employee Resignation
 
@@ -1593,6 +1670,17 @@ if __name__ == "__main__":
 | **Killed Before Cleanup** | Parent killed before calling wait() | init inherits all children of killed parent and cleans them |
 ### Interprocess Communication (IPC)
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-handwritten.svg" alt="Handwritten: Interprocess Communication (IPC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-diagram.svg" alt="Diagram: Interprocess Communication (IPC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interprocess-communication-ipc-sticky.svg" alt="Sticky Note: Interprocess Communication (IPC)" width="30%">
+</a>
+
+
 #### Real-World Analogy: Two Coworkers Communicating
 
 Alice and Bob work in the same office but different rooms. They can communicate in two ways:
@@ -1621,6 +1709,17 @@ Processes are **independent** if they cannot affect or be affected by other proc
 ---
 
 ### Shared Memory
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-handwritten.svg" alt="Handwritten: Shared Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-diagram.svg" alt="Diagram: Shared Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/shared-memory-sticky.svg" alt="Sticky Note: Shared Memory" width="30%">
+</a>
+
 
 #### Real-World Analogy: Whiteboard in Shared Office
 
@@ -1831,6 +1930,17 @@ if __name__ == "__main__":
 | **Stale Data** | Consumer reads data that producer hasn't finished writing | Use synchronization (ready flag, mutex) before reading |
 ### Message Passing
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/message-passing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/message-passing-handwritten.svg" alt="Handwritten: Message Passing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/message-passing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/message-passing-diagram.svg" alt="Diagram: Message Passing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/message-passing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/message-passing-sticky.svg" alt="Sticky Note: Message Passing" width="30%">
+</a>
+
+
 #### Real-World Analogy: Postal Mail System
 
 Alice writes a letter, puts it in an envelope, addresses it to Bob, and drops it in a mailbox. The postal service (kernel) picks up the letter, transports it (copies data), and delivers it to Bob's mailbox. Bob retrieves the letter when ready. This works even if Alice is in New York and Bob is in London (distributed). The postal service handles buffering, routing, and delivery guarantees. The tradeoff: mail is slower than walking to a shared whiteboard, but it's safer and works across cities.
@@ -2007,6 +2117,17 @@ Each copy traverses the memory bus. For large data (MB+), this overhead dominate
 ---
 
 ### Pipes
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/pipes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/pipes-handwritten.svg" alt="Handwritten: Pipes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/pipes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/pipes-diagram.svg" alt="Diagram: Pipes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/pipes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/pipes-sticky.svg" alt="Sticky Note: Pipes" width="30%">
+</a>
+
 
 #### Real-World Analogy: Water Pipe Connecting Two Tanks
 
@@ -2206,6 +2327,17 @@ int main(int argc, char* argv[]) {
 | **FIFO Reader Misses Data** | FIFO unlinked while reader opens | Reader blocks until writer opens; cannot open for reading if no writer |
 ### Process vs Thread: Comprehensive Comparison
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-handwritten.svg" alt="Handwritten: Process vs Thread: Comprehensive Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-diagram.svg" alt="Diagram: Process vs Thread: Comprehensive Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/process-vs-thread-comprehensive-comparison-sticky.svg" alt="Sticky Note: Process vs Thread: Comprehensive Comparison" width="30%">
+</a>
+
+
 #### Real-World Analogy: Factory vs Assembly Line Workers
 
 A **process** is like an entire factory → its own building, tools, raw materials, and workers. A **thread** is like a single worker on an assembly line within that factory. Multiple workers (threads) in the same factory share the building, tools, and inventory (memory). They can hand each other parts instantly. But if one worker makes a mistake (crash), the entire factory may shut down. Switching to a different factory is expensive (bring all new tools). Switching to a different worker on the same line is cheap.
@@ -2244,6 +2376,17 @@ A **process** is like an entire factory → its own building, tools, raw materia
 
 ### IPC Methods Comprehensive Comparison
 
+<a href="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-handwritten.svg" alt="Handwritten: IPC Methods Comprehensive Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-diagram.svg" alt="Diagram: IPC Methods Comprehensive Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/ipc-methods-comprehensive-comparison-sticky.svg" alt="Sticky Note: IPC Methods Comprehensive Comparison" width="30%">
+</a>
+
+
 | Feature | Shared Memory | Message Passing | Pipes | Sockets |
 |---------|--------------|-----------------|-------|---------|
 | **Direction** | Bidirectional | Bidirectional | Unidirectional | Bidirectional |
@@ -2264,6 +2407,17 @@ A **process** is like an entire factory → its own building, tools, raw materia
 ---
 
 ### Interview Corner
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
+</a>
+
 
 #### Zombie vs Orphan
 
@@ -2329,6 +2483,17 @@ Performance comparison for 1 MB transfer:
 ---
 
 ### Applications in Real Systems
+
+<a href="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/02-processes/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
+</a>
+
 
 #### Linux: fork() + exec() + COW
 

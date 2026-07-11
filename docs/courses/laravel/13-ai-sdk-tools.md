@@ -43,6 +43,17 @@ flowchart LR
 
 ### 13.1 The Tools Concept
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-handwritten.svg" alt="Handwritten: 13.1 The Tools Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-diagram.svg" alt="Diagram: 13.1 The Tools Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-1-the-tools-concept-sticky.svg" alt="Sticky Note: 13.1 The Tools Concept" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Tools bridge the gap between language models and external systems by letting agents call your code through a typed schema interface during generation.
 
 Language models are text-in, text-out systems. They cannot access external systems, query databases, browse the web, or compute values at runtime. Tools bridge this gap by giving the agent the ability to call your code during the prompting process.
@@ -55,6 +66,17 @@ Every tool must implement the `Tool` interface, which defines three methods:
 - `handle(Request $request)` → Receives model-generated arguments and executes the tool logic. Must return a string or Stringable.
 
 ### 13.2 Creating Tools
+
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-handwritten.svg" alt="Handwritten: 13.2 Creating Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-diagram.svg" alt="Diagram: 13.2 Creating Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-2-creating-tools-sticky.svg" alt="Sticky Note: 13.2 Creating Tools" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Every tool implements the Tool interface with description() guiding model decisions, schema() defining typed parameters, and handle() executing logic.
 
@@ -100,6 +122,17 @@ class RandomNumberGenerator implements Tool
 The `description()` return value is critical → the model uses these descriptions to decide which tool to call. A vague description causes misuse. Always cast or validate incoming values in `handle()`.
 
 ### 13.3 Registering Tools with Agents
+
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-handwritten.svg" alt="Handwritten: 13.3 Registering Tools with Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-diagram.svg" alt="Diagram: 13.3 Registering Tools with Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-3-registering-tools-with-agents-sticky.svg" alt="Sticky Note: 13.3 Registering Tools with Agents" width="30%">
+</a>
+
 
 Return `Tool` instances from the agent's `tools()` method:
 
@@ -158,6 +191,17 @@ class GameController extends Controller
 
 ### 13.4 Database Query Tools
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-handwritten.svg" alt="Handwritten: 13.4 Database Query Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-diagram.svg" alt="Diagram: 13.4 Database Query Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-4-database-query-tools-sticky.svg" alt="Sticky Note: 13.4 Database Query Tools" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Database query tools are the most common pattern, allowing agents to look up orders, users, or products through controlled, parameterized queries.
 
 The most common tool pattern is querying application data:
@@ -214,6 +258,17 @@ class OrderLookup implements Tool
 ```
 
 ### 13.5 Similarity Search Tool
+
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-handwritten.svg" alt="Handwritten: 13.5 Similarity Search Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-diagram.svg" alt="Diagram: 13.5 Similarity Search Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-5-similarity-search-tool-sticky.svg" alt="Sticky Note: 13.5 Similarity Search Tool" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** SimilaritySearch provides the foundation for Retrieval-Augmented Generation (RAG) by performing vector search against Eloquent models with embedding columns.
 
@@ -333,6 +388,17 @@ class CustomSimilarityAgent implements Agent
 
 ### 13.6 MCP Tools Integration
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-handwritten.svg" alt="Handwritten: 13.6 MCP Tools Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-diagram.svg" alt="Diagram: 13.6 MCP Tools Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-6-mcp-tools-integration-sticky.svg" alt="Sticky Note: 13.6 MCP Tools Integration" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** MCP tools from remote or local servers are spread into agents using the ... operator, combining external capabilities with local tools.
 
 The Model Context Protocol (MCP) is an open standard allowing agents to discover and invoke tools from external servers. Install with `composer require laravel/mcp`. Connect to remote MCP servers and spread their tools using `...`:
@@ -438,6 +504,17 @@ class LocalMcpAgent implements Agent
 
 ### 13.7 Provider Tools
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-handwritten.svg" alt="Handwritten: 13.7 Provider Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-diagram.svg" alt="Diagram: 13.7 Provider Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-7-provider-tools-sticky.svg" alt="Sticky Note: 13.7 Provider Tools" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Provider tools like WebSearch, WebFetch, and FileSearch are built-in capabilities configured directly on PendingAgentRequest without custom tool classes.
 
 Provider tools are built-in capabilities offered by AI providers, configured directly on `PendingAgentRequest`.
@@ -525,6 +602,17 @@ class VectorSearchController extends Controller
 
 ### 13.8 Anonymous Agents with Tools
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-handwritten.svg" alt="Handwritten: 13.8 Anonymous Agents with Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-diagram.svg" alt="Diagram: 13.8 Anonymous Agents with Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-8-anonymous-agents-with-tools-sticky.svg" alt="Sticky Note: 13.8 Anonymous Agents with Tools" width="30%">
+</a>
+
+
 Pass tools via `withTools()` on the `Agent` facade:
 
 ```php
@@ -561,6 +649,17 @@ class QuickSupportController extends Controller
 ```
 
 ### 13.9 Agent Middleware
+
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-handwritten.svg" alt="Handwritten: 13.9 Agent Middleware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-diagram.svg" alt="Diagram: 13.9 Agent Middleware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-9-agent-middleware-sticky.svg" alt="Sticky Note: 13.9 Agent Middleware" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Agent middleware provides before() and after() hooks for cross-cutting concerns like logging, metrics collection, and access control.
 
@@ -630,6 +729,17 @@ class AuditedAgent implements Agent
 
 ### 13.10 Agent Configuration
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-handwritten.svg" alt="Handwritten: 13.10 Agent Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-diagram.svg" alt="Diagram: 13.10 Agent Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-10-agent-configuration-sticky.svg" alt="Sticky Note: 13.10 Agent Configuration" width="30%">
+</a>
+
+
 Configure defaults directly on the agent class:
 
 ```php
@@ -670,6 +780,17 @@ class ConfiguredAgent implements Agent
 
 ### 13.11 Provider Options
 
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-handwritten.svg" alt="Handwritten: 13.11 Provider Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-diagram.svg" alt="Diagram: 13.11 Provider Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-11-provider-options-sticky.svg" alt="Sticky Note: 13.11 Provider Options" width="30%">
+</a>
+
+
 Pass provider-specific options to `prompt()` as a second argument:
 
 ```php
@@ -702,6 +823,17 @@ class OptionsController extends Controller
 ```
 
 ### 13.12 Complete Example: Support Agent
+
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-handwritten.svg" alt="Handwritten: 13.12 Complete Example: Support Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-diagram.svg" alt="Diagram: 13.12 Complete Example: Support Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/13-ai-sdk-tools/13-12-complete-example-support-agent-sticky.svg" alt="Sticky Note: 13.12 Complete Example: Support Agent" width="30%">
+</a>
+
 
 A production support agent combining database lookup, SimilaritySearch, WebSearch, streaming, and conversation context:
 

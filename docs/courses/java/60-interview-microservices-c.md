@@ -19,6 +19,17 @@ flowchart LR
 
 ### Q14: How do you deploy microservices on Kubernetes?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-handwritten.svg" alt="Handwritten: How do you deploy microservices on Kubernetes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-diagram.svg" alt="Diagram: How do you deploy microservices on Kubernetes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-deploy-microservices-on-kubernetes-sticky.svg" alt="Sticky Note: How do you deploy microservices on Kubernetes?" width="30%">
+</a>
+
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -214,6 +225,17 @@ Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Conf
 
 ### Q15: Compare deployment strategies: rolling, blue/green, and canary
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-handwritten.svg" alt="Handwritten: Compare deployment strategies: rolling, blue/green, and canary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-diagram.svg" alt="Diagram: Compare deployment strategies: rolling, blue/green, and canary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/compare-deployment-strategies-rolling-blue-green-and-canary-sticky.svg" alt="Sticky Note: Compare deployment strategies: rolling, blue/green, and canary" width="30%">
+</a>
+
+
 **Answer:**
 
 ```java
@@ -316,6 +338,17 @@ Start with rolling (built into Kubernetes, zero configuration). Move to blue/gre
 ---
 
 ### Q16: How do you monitor microservices with Prometheus and Grafana?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-handwritten.svg" alt="Handwritten: How do you monitor microservices with Prometheus and Grafana?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-diagram.svg" alt="Diagram: How do you monitor microservices with Prometheus and Grafana?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-monitor-microservices-with-prometheus-and-grafana-sticky.svg" alt="Sticky Note: How do you monitor microservices with Prometheus and Grafana?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -442,6 +475,17 @@ Alert on: p99 latency > 1s, error rate > 1%, circuit breaker OPEN, heap usage > 
 
 ### Q17: How do you implement contract testing with Spring Cloud Contract?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-handwritten.svg" alt="Handwritten: How do you implement contract testing with Spring Cloud Contract?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-diagram.svg" alt="Diagram: How do you implement contract testing with Spring Cloud Contract?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-contract-testing-with-spring-cloud-contract-sticky.svg" alt="Sticky Note: How do you implement contract testing with Spring Cloud Contract?" width="30%">
+</a>
+
+
 **Answer:**
 
 Contract testing verifies that a producer's API matches what the consumer expects, without end-to-end integration tests. Spring Cloud Contract generates tests and stubs from Groovy or YAML contracts.
@@ -522,6 +566,17 @@ Contract testing replaces brittle end-to-end tests for cross-service integration
 
 ### Q18: How do you handle database-per-service with shared data concerns?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-handwritten.svg" alt="Handwritten: How do you handle database-per-service with shared data concerns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-diagram.svg" alt="Diagram: How do you handle database-per-service with shared data concerns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-database-per-service-with-shared-data-concerns-sticky.svg" alt="Sticky Note: How do you handle database-per-service with shared data concerns?" width="30%">
+</a>
+
+
 **Answer:**
 
 Each microservice owns its database → no other service accesses it directly. Data that spans services is shared through events or API calls.
@@ -588,6 +643,17 @@ Never share databases between services. If two services need the same table, the
 ---
 
 ### Q19: What are common microservices anti-patterns and how do you avoid them?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-handwritten.svg" alt="Handwritten: What are common microservices anti-patterns and how do you avoid them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-diagram.svg" alt="Diagram: What are common microservices anti-patterns and how do you avoid them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/what-are-common-microservices-anti-patterns-and-how-do-you-avoid-them-sticky.svg" alt="Sticky Note: What are common microservices anti-patterns and how do you avoid them?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -660,6 +726,17 @@ Golden rule: If splitting a service doesn't give you independent deployability, 
 ---
 
 ### Q20: How do you test microservices end-to-end?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-handwritten.svg" alt="Handwritten: How do you test microservices end-to-end?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-diagram.svg" alt="Diagram: How do you test microservices end-to-end?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-test-microservices-end-to-end-sticky.svg" alt="Sticky Note: How do you test microservices end-to-end?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -796,6 +873,17 @@ End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service
 
 ### Q17: How do you implement feature flags for continuous deployment?
 
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-handwritten.svg" alt="Handwritten: How do you implement feature flags for continuous deployment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-diagram.svg" alt="Diagram: How do you implement feature flags for continuous deployment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-implement-feature-flags-for-continuous-deployment-sticky.svg" alt="Sticky Note: How do you implement feature flags for continuous deployment?" width="30%">
+</a>
+
+
 **Answer:**
 
 Feature flags (toggles) allow deploying code to production without activating it. This enables trunk-based development, canary releases, and instant rollbacks.
@@ -858,6 +946,17 @@ public class CheckoutService {
 ---
 
 ### Q18: How do you handle API versioning in microservices?
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-handwritten.svg" alt="Handwritten: How do you handle API versioning in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-diagram.svg" alt="Diagram: How do you handle API versioning in microservices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/how-do-you-handle-api-versioning-in-microservices-sticky.svg" alt="Sticky Note: How do you handle API versioning in microservices?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -924,6 +1023,17 @@ public List<Order> getOrdersV2() { /* ... */ }
 ## Common Mistakes in Microservices Testing (GFG-Style)
 
 ### Mistake 1: Only writing unit tests, no contract or integration tests
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-handwritten.svg" alt="Handwritten: Mistake 1: Only writing unit tests, no contract or integration tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-diagram.svg" alt="Diagram: Mistake 1: Only writing unit tests, no contract or integration tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-1-only-writing-unit-tests-no-contract-or-integration-tests-sticky.svg" alt="Sticky Note: Mistake 1: Only writing unit tests, no contract or integration tests" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: Unit test passes, but service fails in production
 // because the actual user-service returns a different response shape
@@ -943,6 +1053,17 @@ class OrderServiceContractTest {
 ```
 
 ### Mistake 2: Flaky E2E tests blocking the pipeline
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-handwritten.svg" alt="Handwritten: Mistake 2: Flaky E2E tests blocking the pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-diagram.svg" alt="Diagram: Mistake 2: Flaky E2E tests blocking the pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-2-flaky-e2e-tests-blocking-the-pipeline-sticky.svg" alt="Sticky Note: Mistake 2: Flaky E2E tests blocking the pipeline" width="30%">
+</a>
+
 ```yaml
 # ❌ WRONG 10+ E2E tests that fail randomly
 # Pipeline fails 3 times a day → team starts ignoring failures
@@ -954,6 +1075,17 @@ class OrderServiceContractTest {
 ```
 
 ### Mistake 3: Not testing failure scenarios
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-handwritten.svg" alt="Handwritten: Mistake 3: Not testing failure scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-diagram.svg" alt="Diagram: Mistake 3: Not testing failure scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-3-not-testing-failure-scenarios-sticky.svg" alt="Sticky Note: Mistake 3: Not testing failure scenarios" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: Only testing the happy path
 @Test
@@ -972,6 +1104,17 @@ void shouldFallbackWhenPaymentServiceIsDown() {
 ```
 
 ### Mistake 4: Shared test databases between developers
+
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-handwritten.svg" alt="Handwritten: Mistake 4: Shared test databases between developers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-diagram.svg" alt="Diagram: Mistake 4: Shared test databases between developers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/60-interview-microservices-c/mistake-4-shared-test-databases-between-developers-sticky.svg" alt="Sticky Note: Mistake 4: Shared test databases between developers" width="30%">
+</a>
+
 ```java
 // ❌ WRONG: All developers use the same shared PostgreSQL instance
 // Tests collide → "someone deleted my test data!"

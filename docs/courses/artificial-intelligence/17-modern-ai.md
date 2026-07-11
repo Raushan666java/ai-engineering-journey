@@ -56,9 +56,31 @@ flowchart TD
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Think of teaching a child to identify animals. **Traditional machine learning** is like giving the child a checklist: "If it has whiskers, pointy ears, and says meow, it's a cat." Every rule must be explicitly defined. **Deep learning** is like showing the child 10,000 pictures of cats and dogs without any rules — the child's brain automatically learns the distinguishing features. The "deep" refers to many layers of neurons, each building on simpler patterns (edges → shapes → parts → whole object).
 
 ### What is Deep Learning?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" alt="Handwritten: What is Deep Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" alt="Diagram: What is Deep Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" alt="Sticky Note: What is Deep Learning?" width="30%">
+</a>
+
 
 Deep learning uses multi-layer artificial neural networks to model complex patterns. Each layer transforms its input into progressively more abstract representations:
 
@@ -68,6 +90,17 @@ Deep learning uses multi-layer artificial neural networks to model complex patte
 - Layer 4: Combines parts into whole objects (face, car, house)
 
 ### Algorithm: Training a Neural Network via Gradient Descent
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" alt="Handwritten: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" alt="Diagram: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" alt="Sticky Note: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+</a>
+
 
 **Input:** Training data (X, y), network architecture (layers, activation functions), learning rate (eta), epochs (E)
 
@@ -92,6 +125,17 @@ Deep learning uses multi-layer artificial neural networks to model complex patte
 3. Return trained weights
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION TRAIN_NEURAL_NETWORK(X, y, hidden_size, learning_rate, epochs):
@@ -131,6 +175,17 @@ FUNCTION TRAIN_NEURAL_NETWORK(X, y, hidden_size, learning_rate, epochs):
 
 ### Dry Run Trace Table: Forward Pass
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Forward Pass" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" alt="Diagram: Dry Run Trace Table: Forward Pass" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Forward Pass" width="30%">
+</a>
+
+
 **Setup:** Input X=[0.5, -0.3], target y=[0,1,0] (class 1). Hidden layer size=3. Random initialized weights:
 
 W1 = [[0.1, -0.2, 0.3], [0.4, 0.1, -0.5]], b1=[0.0, 0.0, 0.0]
@@ -147,6 +202,17 @@ W2 = [[0.2, -0.3, 0.1], [0.5, 0.2, -0.4], [-0.1, 0.6, 0.3]], b2=[0.0, 0.0, 0.0]
 The model predicts class 1 with 37% confidence (correct class has highest probability but low confidence). Backpropagation would adjust weights to increase this to ~90%+ over many epochs.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -215,6 +281,17 @@ nn.train(X, y, epochs=100)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
 | Forward pass (per layer) | O(m * n_in * n_out) | O(n_in * n_out + n_out) | Matrix multiply of (m x n_in) · (n_in x n_out) — each of m examples does n_in * n_out operations |
@@ -226,6 +303,17 @@ nn.train(X, y, epochs=100)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Learns hierarchical features automatically | Requires massive labeled datasets |
@@ -236,6 +324,17 @@ nn.train(X, y, epochs=100)
 | End-to-end learning (no manual feature engineering) | Vanishing/exploding gradients in deep networks |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Vanishing Gradients:** In deep networks with sigmoid/tanh, gradients become near-zero in early layers — the network stops learning. Solution: ReLU, residual connections, batch normalization.
 
@@ -251,15 +350,48 @@ nn.train(X, y, epochs=100)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine a composer who has listened to every symphony ever written. When asked to compose a new symphony, they don't copy any single one — they've internalized the patterns: how themes develop, how tension builds, how instruments combine. **Generative AI** works the same way: it learns the probability distribution of training data and samples new instances from that distribution. It's not "remembering" — it's generating novel outputs that follow the learned patterns.
 
 ### What is Generative AI?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" alt="Handwritten: What is Generative AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" alt="Diagram: What is Generative AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" alt="Sticky Note: What is Generative AI?" width="30%">
+</a>
+
 
 Generative AI models learn the joint probability distribution P(data) and can sample new data points. This contrasts with **discriminative** models that learn P(label|data) for classification.
 
 Key paradigm: instead of predicting a label, predict the next piece of data — next word, next pixel, next audio sample.
 
 ### Algorithm: Autoregressive Text Generation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" alt="Handwritten: Algorithm: Autoregressive Text Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" alt="Diagram: Algorithm: Autoregressive Text Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" alt="Sticky Note: Algorithm: Autoregressive Text Generation" width="30%">
+</a>
+
 
 **Input:** Starting prompt (list of tokens), pre-trained model (transformer), temperature (T), max_length (L), top_k (K)
 
@@ -280,6 +412,17 @@ Key paradigm: instead of predicting a label, predict the next piece of data — 
 4. Return generated text
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
@@ -315,6 +458,17 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 
 ### Dry Run Trace Table: Generating "The cat"
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Generating "The cat"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" alt="Diagram: Dry Run Trace Table: Generating "The cat"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Generating "The cat"" width="30%">
+</a>
+
+
 **Setup:** Tiny vocabulary = {"The":0, "cat":1, "sat":2, "mat":3, "END":4}. Prompt="The". GPT with embedding_dim=4, hidden_dim=8.
 
 **Step 1:** Input tokens=[0] ("The")
@@ -346,6 +500,17 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 **Result:** "The cat mat" — with "sat" likely inserted between "cat" and "mat" in a larger model.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -399,6 +564,17 @@ print("Generated tokens:", output)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | Single forward pass | O(L * d^2) | L=sequence length, d=embedding dim — self-attention computes L² pairs, each O(d) |
@@ -410,6 +586,17 @@ print("Generated tokens:", output)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Generates novel, high-quality content | Can hallucinate — produce plausible but false information |
@@ -419,6 +606,17 @@ print("Generated tokens:", output)
 | Improves with scale (more data, larger models) | Difficult to attribute or explain specific outputs |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Repetition:** Model generates the same phrase repeatedly. Solution: repetition penalty, top-k/top-p sampling, frequency penalty.
 
@@ -435,9 +633,31 @@ print("Generated tokens:", output)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine a librarian who has read every book ever published — novels, textbooks, scientific papers, websites, poems. If you start a sentence, the librarian can finish it because they know the statistical patterns of language: which words follow which, how arguments are structured, what makes a coherent paragraph. **LLMs** are this librarian — a transformer trained on massive text corpora to predict the next token. The magic is that next-token prediction, when trained at sufficient scale, produces models that can summarize, translate, code, reason, and even write poetry.
 
 ### What are Large Language Models?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" alt="Handwritten: What are Large Language Models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" alt="Diagram: What are Large Language Models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" alt="Sticky Note: What are Large Language Models?" width="30%">
+</a>
+
 
 LLMs are transformer-based neural networks with billions of parameters trained on trillions of tokens. The three dominant architectures:
 
@@ -448,6 +668,17 @@ LLMs are transformer-based neural networks with billions of parameters trained o
 | Encoder-Decoder (T5) | T5, BART | Span corruption | Full attention | Yes |
 
 ### Algorithm: Next-Token Prediction Training (GPT-style)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" alt="Handwritten: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" alt="Diagram: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" alt="Sticky Note: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+</a>
+
 
 **Input:** Text corpus (tokenized), transformer model with parameters theta, batch size B, learning rate eta
 
@@ -471,6 +702,17 @@ LLMs are transformer-based neural networks with billions of parameters trained o
 3. Return trained model
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_size, lr):
@@ -504,6 +746,17 @@ FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_siz
 
 ### Dry Run Trace Table: Self-Attention for "I love AI"
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" alt="Diagram: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+</a>
+
+
 **Setup:** Sequence=["I", "love", "AI"]. d_model=4. Single head. Q, K, V are 3x4 matrices.
 
 **Input embeddings (after positional encoding):**
@@ -529,6 +782,17 @@ FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_siz
 **Interpretation:** Token "love" (row 1) has attention weight 0.52 on itself (highest) — the model learns that "love" is important context for predicting the next word. Token "I" attends fairly evenly since it provides weak context for what follows.
 
 ### Python Implementation: Single-Head Self-Attention
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" alt="Handwritten: Python Implementation: Single-Head Self-Attention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" alt="Diagram: Python Implementation: Single-Head Self-Attention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" alt="Sticky Note: Python Implementation: Single-Head Self-Attention" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -577,6 +841,17 @@ print("Output shape:", output.shape)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
 | Self-attention (single layer) | O(L² * d) | O(L²) | Each of L tokens compares to all L tokens with O(d) dot products |
@@ -588,6 +863,17 @@ print("Output shape:", output.shape)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Captures long-range dependencies (unlike RNNs) | O(L²) memory in sequence length — expensive for long contexts |
@@ -598,6 +884,17 @@ print("Output shape:", output.shape)
 | RLHF alignment improves helpfulness and safety | Alignment can reduce model capability on some tasks |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Long-Range Dependency Failure:** With L=128K, the model may "forget" information from the first sentence. Solution: sliding window attention, RAG, summarization.
 
@@ -613,9 +910,31 @@ print("Output shape:", output.shape)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A foundation model is like a Swiss Army knife that starts as a plain block of steel. Through massive pre-training (forging and tempering), it becomes a versatile tool that can be adapted into a blade, screwdriver, corkscrew, or scissors — each a specialized fine-tuning task. The key insight: the forging process (pre-training) is expensive but done once. The shaping (fine-tuning) is cheap and done many times for different tasks.
 
 ### What are Foundation Models?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" alt="Handwritten: What are Foundation Models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" alt="Diagram: What are Foundation Models?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" alt="Sticky Note: What are Foundation Models?" width="30%">
+</a>
+
 
 A **foundation model** (Bommasani et al., 2021) is a large neural network pre-trained on broad data via self-supervision, then adapted to downstream tasks. The term captures the idea that this model serves as a foundation upon which many task-specific models can be built.
 
@@ -626,6 +945,17 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
 - **Emergence:** Capabilities that appear only at sufficient model scale
 
 ### Algorithm: Pre-train → Fine-tune → RLHF Pipeline
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" alt="Handwritten: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" alt="Diagram: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" alt="Sticky Note: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+</a>
+
 
 **Input:** Large text corpus (pre-training), task-specific labeled data (fine-tuning), human preference data (RLHF)
 
@@ -654,6 +984,17 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
    d. Iterate: generate → evaluate → update
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION PRE_TRAIN(corpus, model, vocab_size, d_model, num_layers, max_steps):
@@ -718,6 +1059,17 @@ FUNCTION RLHF(model, reward_model, prompts, ppo_epochs=4):
 
 ### Dry Run Trace Table: Pre-training Loss over Steps
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" alt="Diagram: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+</a>
+
+
 **Setup:** 1B parameter GPT-style model trained on 250B tokens. Learning rate 3e-4 with cosine schedule. Batch size 512, seq_len 2048 (1M tokens/step).
 
 | Training Step | Tokens Seen | Loss | Perplexity (exp(loss)) | Observation |
@@ -731,6 +1083,17 @@ FUNCTION RLHF(model, reward_model, prompts, ppo_epochs=4):
 | 250,000 | 250B | 2.87 | 17.6 | Final checkpoint — diminishing returns near Chinchilla-optimal |
 
 ### Python Implementation: Simplified Fine-tuning Loop
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" alt="Handwritten: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" alt="Diagram: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" alt="Sticky Note: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -790,6 +1153,17 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Compute (est.) | Why |
 |-------|---------------|---------------|-----|
 | Pre-training | O(N_param * N_tokens) | 10^23 - 10^25 FLOPs | Forward + backward pass through all layers for every token |
@@ -800,6 +1174,17 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Single model adapts to thousands of tasks | Pre-training costs tens of millions of dollars |
@@ -809,6 +1194,17 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 | Continual improvement with RLHF alignment | Alignment tax — reduces performance on some metrics |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Catastrophic Forgetting:** Fine-tuning on new tasks overwrites pre-trained knowledge. Solution: LoRA (train small adapters instead of full weights), elastic weight consolidation (penalize changes to important weights).
 
@@ -823,9 +1219,31 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine a person who speaks English and also understands visual language — they can look at a photo and describe it in words, or read a description and sketch what they see. **Multimodal AI** bridges these modalities: aligning text representations with image, audio, or video representations in a shared embedding space so the model can reason across them.
 
 ### What is Multimodal AI?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" alt="Handwritten: What is Multimodal AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" alt="Diagram: What is Multimodal AI?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" alt="Sticky Note: What is Multimodal AI?" width="30%">
+</a>
+
 
 Multimodal models process and generate content across multiple data types. Key architectures:
 
@@ -838,6 +1256,17 @@ Multimodal models process and generate content across multiple data types. Key a
 | ImageBind | 6 modalities | Single shared embedding space |
 
 ### Algorithm: CLIP Contrastive Pre-training
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" alt="Handwritten: Algorithm: CLIP Contrastive Pre-training" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" alt="Diagram: Algorithm: CLIP Contrastive Pre-training" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" alt="Sticky Note: Algorithm: CLIP Contrastive Pre-training" width="30%">
+</a>
+
 
 **Input:** N image-text pairs (batch), image encoder (ResNet/ViT), text encoder (transformer), temperature tau
 
@@ -858,6 +1287,17 @@ Multimodal models process and generate content across multiple data types. Key a
 5. Update parameters of image and text encoders
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
@@ -889,6 +1329,17 @@ FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
 
 ### Dry Run Trace Table: CLIP Contrastive Loss
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" alt="Handwritten: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" alt="Diagram: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" alt="Sticky Note: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+</a>
+
+
 **Setup:** Batch of 4 image-text pairs. d=2 (tiny embedding). tau=0.07.
 
 **Image embeddings (after normalization):**
@@ -917,6 +1368,17 @@ FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
 If off-diagonal entries were higher (e.g., "dog" matched "cat" text), loss would be higher, forcing the model to better separate these concepts in embedding space.
 
 ### Python Implementation: CLIP-style Contrastive Loss
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" alt="Handwritten: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" alt="Diagram: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" alt="Sticky Note: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+</a>
+
 
 ```python
 import numpy as np
@@ -967,6 +1429,17 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | Image encoding (ViT) | O(N * L_img * d²) | N images, L_img patches per image, d² for attention |
@@ -978,6 +1451,17 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Zero-shot classification on any visual concept | Requires aligned image-text pairs (expensive to collect) |
@@ -987,6 +1471,17 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 | Supports fine-grained alignment (region-word) | Resolution and granularity mismatch |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Modality Mismatch:** Image of a "dog" with text "cat" — contrastive loss pushes embeddings apart, but if systematic (many mislabeled pairs), the model learns wrong alignments. Solution: careful data cleaning, robust contrastive loss.
 
@@ -1002,9 +1497,31 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A **personal assistant** doesn't just answer questions — they pick up the phone, search the web, schedule meetings, send emails, and coordinate with others. **AI agents** extend language models the same way: the model can call external tools (search engines, calculators, APIs, databases), observe the results, and decide what to do next. The key is a **reason-act loop**: think about what to do, do it, observe the result, and repeat until the task is complete.
 
 ### What are AI Agents?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" alt="Handwritten: What are AI Agents?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" alt="Diagram: What are AI Agents?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" alt="Sticky Note: What are AI Agents?" width="30%">
+</a>
+
 
 An AI agent is a system where an LLM controls the execution loop: it perceives context, reasons about next actions, invokes tools, and interprets results. The canonical architecture:
 
@@ -1019,6 +1536,17 @@ An AI agent is a system where an LLM controls the execution loop: it perceives c
 ```
 
 ### Algorithm: ReAct (Reason + Act)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" alt="Handwritten: Algorithm: ReAct (Reason + Act)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" alt="Diagram: Algorithm: ReAct (Reason + Act)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" alt="Sticky Note: Algorithm: ReAct (Reason + Act)" width="30%">
+</a>
+
 
 **Input:** User query, list of available tools (with descriptions and schemas), LLM, max iterations
 
@@ -1037,6 +1565,17 @@ An AI agent is a system where an LLM controls the execution loop: it perceives c
 4. Return final response
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
@@ -1067,6 +1606,17 @@ FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
 
 ### Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" alt="Diagram: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+</a>
+
+
 **Tools:** search(q), calculator(expression). Max iterations = 5.
 
 | Iter | Step | LLM Output | Tool/Result |
@@ -1083,6 +1633,17 @@ FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
 | 4 | Final | The population of Tokyo is approximately 14.0 million, its area is 2,194 km², giving a population density of about 6,381 people per km². | Return to user |
 
 ### Python Implementation: Simple ReAct Agent
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" alt="Handwritten: Python Implementation: Simple ReAct Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" alt="Diagram: Python Implementation: Simple ReAct Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" alt="Sticky Note: Python Implementation: Simple ReAct Agent" width="30%">
+</a>
+
 
 ```python
 import json
@@ -1157,6 +1718,17 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Component | Complexity | Why |
 |-----------|-----------|-----|
 | LLM call per iteration | O(L * d²) | Each iteration requires a full forward pass through the transformer |
@@ -1168,6 +1740,17 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Solves tasks requiring external knowledge (search, APIs) | Latency — each iteration adds response time |
@@ -1177,6 +1760,17 @@ result = react_agent("What is the population of Tokyo and its area?")
 | Handles multi-step tasks with feedback loops | Security — tool misuse, prompt injection through tool outputs |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Infinite Loop:** Agent keeps calling tools without reaching an answer. Solution: max iteration limit, loop detection (repeated identical actions).
 
@@ -1193,9 +1787,31 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 USB-C is a universal connector standard — any USB-C device can plug into any USB-C port and exchange data using the same physical interface. **MCP (Model Context Protocol)** is the same concept for AI tools: a standardized protocol that lets any LLM connect to any tool or data source using the same API contract. Instead of every model needing custom integrations for every tool, MCP defines a common language for tool discovery, invocation, and response.
 
 ### What is MCP?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" alt="Handwritten: What is MCP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" alt="Diagram: What is MCP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" alt="Sticky Note: What is MCP?" width="30%">
+</a>
+
 
 MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that standardizes how AI applications connect to external tools and data sources. It follows a client-server architecture:
 
@@ -1214,6 +1830,17 @@ MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that 
 
 ### Algorithm: MCP Tool Call Lifecycle
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" alt="Handwritten: Algorithm: MCP Tool Call Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" alt="Diagram: Algorithm: MCP Tool Call Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" alt="Sticky Note: Algorithm: MCP Tool Call Lifecycle" width="30%">
+</a>
+
+
 **Input:** User request requiring a tool, MCP client configuration with server endpoints
 
 **Output:** Tool execution result integrated into LLM response
@@ -1231,6 +1858,17 @@ MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that 
 8. **LLM responds:** LLM synthesizes final answer incorporating tool output
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 // MCP Server
@@ -1280,6 +1918,17 @@ FUNCTION MCP_CLIENT(llm, server_url):
 
 ### Dry Run Trace Table: MCP Communication Flow
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" alt="Handwritten: Dry Run Trace Table: MCP Communication Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" alt="Diagram: Dry Run Trace Table: MCP Communication Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" alt="Sticky Note: Dry Run Trace Table: MCP Communication Flow" width="30%">
+</a>
+
+
 **Setup:** User asks "What was the GDP of Japan in 2024?" Client has "search" and "calculator" MCP tools.
 
 | Step | Sender | Message (JSON-RPC) | Receiver | Response |
@@ -1296,6 +1945,17 @@ FUNCTION MCP_CLIENT(llm, server_url):
 | 10 | Client | Returns "Japan's GDP in 2024 was approximately $4.21 trillion" | User | — |
 
 ### Python Implementation: Minimal MCP Server
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Server" width="30%">
+</a>
+
 
 ```python
 import json
@@ -1368,6 +2028,17 @@ if __name__ == "__main__":
 
 ### Python Implementation: Minimal MCP Client
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Client" width="30%">
+</a>
+
+
 ```python
 import json
 import subprocess
@@ -1408,6 +2079,17 @@ class MCPClient:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
 | Tool discovery | O(1) per server | Single request returns all tool definitions — constant time |
@@ -1419,6 +2101,17 @@ class MCPClient:
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Standardizes tool interfaces across all AI apps | Relatively new protocol — ecosystem still evolving |
@@ -1428,6 +2121,17 @@ class MCPClient:
 | Tool schemas and descriptions are discoverable | Rate limiting and error handling left to implementations |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Timeout:** Tool execution exceeds timeout limit. Solution: async tool execution, timeout parameter, cancellation tokens.
 
@@ -1445,9 +2149,31 @@ class MCPClient:
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine a **startup founder** who has a big goal ("build a profitable SaaS business"). They don't execute every task themselves — they decompose the goal into steps (research → build → market → sell), delegate sub-tasks, check progress, and adjust strategy based on results. **AutoGPT** works the same way: given a high-level goal, it creates sub-tasks, executes them using tools, evaluates results, and iterates until the goal is achieved or it hits limits.
 
 ### What are AutoGPT / Autonomous Agent Systems?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" alt="Handwritten: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" alt="Diagram: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" alt="Sticky Note: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+</a>
+
 
 AutoGPT, BabyAGI, and similar systems are **autonomous AI agents** that operate in a continuous loop: set goals, create sub-tasks, execute tasks with tools, evaluate outcomes, and re-prioritize. Unlike ReAct (which handles individual queries), these systems maintain persistent state and long-running execution.
 
@@ -1459,6 +2185,17 @@ AutoGPT, BabyAGI, and similar systems are **autonomous AI agents** that operate 
 - **Prioritization:** Dynamically reorder tasks based on progress
 
 ### Algorithm: Autonomous Agent Loop
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" alt="Handwritten: Algorithm: Autonomous Agent Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" alt="Diagram: Algorithm: Autonomous Agent Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" alt="Sticky Note: Algorithm: Autonomous Agent Loop" width="30%">
+</a>
+
 
 **Input:** High-level goal (e.g., "Research and summarize quantum computing breakthroughs in 2025"), available tools, max_steps
 
@@ -1478,6 +2215,17 @@ AutoGPT, BabyAGI, and similar systems are **autonomous AI agents** that operate 
 4. Return final result
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
@@ -1521,6 +2269,17 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 
 ### Dry Run Trace Table: "Plan a birthday party"
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" alt="Diagram: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+</a>
+
+
 **Setup:** Initial task: "Plan the overall party approach."
 
 | Step | Current Task | LLM Response / Tool Calls | New Tasks Created | Priority Queue |
@@ -1536,6 +2295,17 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 **Result:** Complete party plan with venue, budget, menu, guest list, and weather backup.
 
 ### Python Implementation: Simplified AutoGPT
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" alt="Handwritten: Python Implementation: Simplified AutoGPT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" alt="Diagram: Python Implementation: Simplified AutoGPT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" alt="Sticky Note: Python Implementation: Simplified AutoGPT" width="30%">
+</a>
+
 
 ```python
 import json
@@ -1625,6 +2395,17 @@ print("\n" + final)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Component | Complexity | Why |
 |-----------|-----------|-----|
 | Task decomposition | O(K) per step | K new tasks created — constant per iteration |
@@ -1637,6 +2418,17 @@ print("\n" + final)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Handles complex, multi-step goals autonomously | Slow — each step takes seconds to minutes |
@@ -1646,6 +2438,17 @@ print("\n" + final)
 | Decomposes problems into manageable sub-tasks | Task drift — agent may go off-topic or create irrelevant sub-tasks |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Infinite Subtask Generation:** The agent keeps creating new sub-tasks without completing the main goal. Solution: max step limit, goal completion check, task cycle detection.
 
@@ -1671,6 +2474,17 @@ print("\n" + final)
 | **Video** | Sora, Runway Gen-3, Pika | Diffusion transformer (3D) | Millions of video clips | 60s photorealistic video | 1-10 min per clip | Temporal consistency, physics |
 
 ### Detailed Comparison Dimensions
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" alt="Handwritten: Detailed Comparison Dimensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" alt="Diagram: Detailed Comparison Dimensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" alt="Sticky Note: Detailed Comparison Dimensions" width="30%">
+</a>
+
 
 | Dimension | Text | Image | Code | Music | Video |
 |-----------|------|-------|------|-------|-------|
@@ -1704,6 +2518,17 @@ print("\n" + final)
 
 ### Key Architectural Differences Explained
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" alt="Handwritten: Key Architectural Differences Explained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" alt="Diagram: Key Architectural Differences Explained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" alt="Sticky Note: Key Architectural Differences Explained" width="30%">
+</a>
+
+
 **1. Grouped-Query Attention (GQA):** LLaMA 3 uses GQA where multiple query heads share a single key/value head. This reduces the KV cache size by ~4x during inference, enabling longer context and faster generation.
 
 **2. Mixture of Experts (MoE):** GPT-4 and Gemini use MoE layers where only a subset of parameters activates per token. GPT-4 has ~1.8T total parameters but only ~280B active per token. This allows larger models without proportional compute increase.
@@ -1715,6 +2540,17 @@ print("\n" + final)
 ## Interview Corner
 
 ### Q1: What is prompt engineering and what are the key techniques?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" alt="Handwritten: What is prompt engineering and what are the key techniques?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" alt="Diagram: What is prompt engineering and what are the key techniques?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" alt="Sticky Note: What is prompt engineering and what are the key techniques?" width="30%">
+</a>
+
 
 **Answer:** Prompt engineering is the practice of designing input prompts to elicit desired outputs from LLMs. Key techniques:
 
@@ -1730,6 +2566,17 @@ print("\n" + final)
 **Best practice:** Start with zero-shot, add few-shot examples if quality is poor, use CoT for reasoning tasks, and always validate outputs for structured formats.
 
 ### Q2: Explain RAG (Retrieval-Augmented Generation) patterns.
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" alt="Handwritten: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" alt="Diagram: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" alt="Sticky Note: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+</a>
+
 
 **Answer:** RAG combines a retrieval system with an LLM to ground generation in external knowledge.
 
@@ -1768,6 +2615,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### Q3: How do you design an AI agent system for production?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" alt="Handwritten: How do you design an AI agent system for production?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" alt="Diagram: How do you design an AI agent system for production?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" alt="Sticky Note: How do you design an AI agent system for production?" width="30%">
+</a>
+
+
 **Answer:** A production AI agent requires these elements:
 
 1. **Tool Registry:** All tools defined with name, description, input schema (JSON Schema), output format
@@ -1791,6 +2649,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
    - Harmlessness score
 
 ### Q4: What are safety considerations in modern AI systems?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" alt="Handwritten: What are safety considerations in modern AI systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" alt="Diagram: What are safety considerations in modern AI systems?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" alt="Sticky Note: What are safety considerations in modern AI systems?" width="30%">
+</a>
+
 
 **Answer:** AI safety spans multiple dimensions:
 
@@ -1823,6 +2692,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 1. ChatGPT (OpenAI)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" alt="Handwritten: 1. ChatGPT (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" alt="Diagram: 1. ChatGPT (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" alt="Sticky Note: 1. ChatGPT (OpenAI)" width="30%">
+</a>
+
+
 | Aspect | Detail |
 |--------|--------|
 | **Model** | GPT-4o, o3, o4-mini |
@@ -1836,6 +2716,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 2. GitHub Copilot (Microsoft/GitHub)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" alt="Handwritten: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" alt="Diagram: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" alt="Sticky Note: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+</a>
+
+
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Codex (GPT-3 derived) → GPT-4o based |
@@ -1848,6 +2739,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 | **Inference** | Low-latency requirement — <500ms for completions |
 
 ### 3. Midjourney
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" alt="Handwritten: 3. Midjourney" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" alt="Diagram: 3. Midjourney" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" alt="Sticky Note: 3. Midjourney" width="30%">
+</a>
+
 
 | Aspect | Detail |
 |--------|--------|
@@ -1863,6 +2765,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 4. AutoGPT (Significant Gravitas)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" alt="Handwritten: 4. AutoGPT (Significant Gravitas)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" alt="Diagram: 4. AutoGPT (Significant Gravitas)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" alt="Sticky Note: 4. AutoGPT (Significant Gravitas)" width="30%">
+</a>
+
+
 | Aspect | Detail |
 |--------|--------|
 | **Model** | GPT-4 (backbone) |
@@ -1876,6 +2789,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 5. Claude (Anthropic)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" alt="Handwritten: 5. Claude (Anthropic)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" alt="Diagram: 5. Claude (Anthropic)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" alt="Sticky Note: 5. Claude (Anthropic)" width="30%">
+</a>
+
+
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Claude 3.5 Sonnet → Claude 4 Opus |
@@ -1888,6 +2812,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 | **Inference** | Slow but thorough — designed for quality over speed |
 
 ### How These Systems Use Modern AI Concepts
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" alt="Handwritten: How These Systems Use Modern AI Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" alt="Diagram: How These Systems Use Modern AI Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" alt="Sticky Note: How These Systems Use Modern AI Concepts" width="30%">
+</a>
+
 
 | System | LLM | Multimodal | RAG | Agent Loop | Tool Use |
 |--------|:---:|:----------:|:---:|:----------:|:--------:|
@@ -2062,6 +2997,17 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 19. Construct a few-shot chain-of-thought prompt for a multi-step reasoning task (e.g., calculating compound interest, solving a logic puzzle, or planning a trip with constraints). Analyze the model's reasoning path and identify any errors. Then implement the task as an autonomous agent that uses a calculator tool.
 
 ### Research Questions
+
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" alt="Handwritten: Research Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" alt="Diagram: Research Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" alt="Sticky Note: Research Questions" width="30%">
+</a>
+
 
 20. Read the "Attention Is All You Need" paper (Vaswani et al., 2017). Explain how the transformer architecture improves upon the seq2seq model with attention.
 21. Compare scaling laws from Kaplan et al. (2020) and Hoffmann et al. (2022, Chinchilla). Why did Chinchilla conclude that most models were undertrained?

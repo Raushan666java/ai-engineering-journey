@@ -33,6 +33,17 @@
 
 ### Banking & Economy (15 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" alt="Handwritten: Banking & Economy (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" alt="Diagram: Banking & Economy (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" alt="Sticky Note: Banking & Economy (15 Qs)" width="30%">
+</a>
+
+
 **Q1.** The repo rate as of RBI's December 2023 policy review?
 
 A) 6.00%  
@@ -317,6 +328,17 @@ D) 6.75%
 
 ### Current Affairs (15 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" alt="Handwritten: Current Affairs (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" alt="Diagram: Current Affairs (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" alt="Sticky Note: Current Affairs (15 Qs)" width="30%">
+</a>
+
+
 **Q16.** Who became the Chief Minister of Rajasthan after the 2023 Assembly elections?
 
 A) Bhajan Lal Sharma  
@@ -589,6 +611,17 @@ D) Nanaji Deshmukh
 
 ### Static GK (10 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" alt="Handwritten: Static GK (10 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" alt="Diagram: Static GK (10 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" alt="Sticky Note: Static GK (10 Qs)" width="30%">
+</a>
+
+
 **Q31.** Which article of the Indian Constitution deals with the establishment of RBI?
 
 A) Article 246  
@@ -775,6 +808,17 @@ D) Saudi Arabia
 
 ### Puzzles & Seating (15 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" alt="Handwritten: Puzzles & Seating (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" alt="Diagram: Puzzles & Seating (15 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" alt="Sticky Note: Puzzles & Seating (15 Qs)" width="30%">
+</a>
+
+
 **Q41–45.** Directions: Eight persons A, B, C, D, E, F, G, H sit around a square table. Four sit at corners facing outside, four sit at edges facing inside. Conditions:
 - G sits second to the right of D
 - H sits third to the left of G
@@ -896,6 +940,17 @@ D) Cannot be determined
 
 ### Syllogism (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" alt="Handwritten: Syllogism (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" alt="Diagram: Syllogism (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" alt="Sticky Note: Syllogism (5 Qs)" width="30%">
+</a>
+
+
 **Q46.** Statements: All planets are stars. No star is a moon. Conclusions: I. No planet is a moon. II. Some stars are planets.
 
 A) Only I  
@@ -988,6 +1043,17 @@ D) Neither
 
 ### Inequality (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" alt="Handwritten: Inequality (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" alt="Diagram: Inequality (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" alt="Sticky Note: Inequality (5 Qs)" width="30%">
+</a>
+
+
 **Q51.** Statements: P ≥ Q > R, S < T ≤ R. Which is true?
 
 A) P > T  
@@ -1079,6 +1145,17 @@ D) M > O
 ---
 
 ### Coding-Decoding (5 Qs)
+
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" alt="Handwritten: Coding-Decoding (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" alt="Diagram: Coding-Decoding (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" alt="Sticky Note: Coding-Decoding (5 Qs)" width="30%">
+</a>
+
 
 **Q56.** If GROUND → HSPVOE, how is BRIDGE coded?
 
@@ -1299,6 +1376,17 @@ D) 13
 
 ### Blood Relations & Directions (10 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" alt="Handwritten: Blood Relations & Directions (10 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" alt="Diagram: Blood Relations & Directions (10 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" alt="Sticky Note: Blood Relations & Directions (10 Qs)" width="30%">
+</a>
+
+
 **Q61.** A is mother of B, B is father of C, C is sister of D, D is wife of E. How is A related to E?
 
 A) Mother  
@@ -1464,6 +1552,17 @@ This is complex. The standard answer in such relations is B) Brother-in-law.
 
 ### Data Sufficiency (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" alt="Handwritten: Data Sufficiency (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" alt="Diagram: Data Sufficiency (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" alt="Sticky Note: Data Sufficiency (5 Qs)" width="30%">
+</a>
+
+
 **Q66.** Is X > Y?
 I. X² > Y²
 II. X > 0, Y > 0
@@ -1568,6 +1667,17 @@ D) Neither
 
 ### Number Series (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" alt="Handwritten: Number Series (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" alt="Diagram: Number Series (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" alt="Sticky Note: Number Series (5 Qs)" width="30%">
+</a>
+
+
 **Q71.** 5, 11, 23, 47, ?
 
 A) 71  
@@ -1668,6 +1778,17 @@ D) 136
 
 ### Simplification & Approximation (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" alt="Handwritten: Simplification & Approximation (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" alt="Diagram: Simplification & Approximation (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" alt="Sticky Note: Simplification & Approximation (5 Qs)" width="30%">
+</a>
+
+
 **Q76.** 25% of 640 + 12.5% of 800 = ?
 
 A) 240  
@@ -1759,6 +1880,17 @@ D) 108
 ---
 
 ### Data Interpretation (5 Qs)
+
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" alt="Handwritten: Data Interpretation (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" alt="Diagram: Data Interpretation (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" alt="Sticky Note: Data Interpretation (5 Qs)" width="30%">
+</a>
+
 
 **Q81–85.** Table: Investment and Returns (₹ Crores)
 
@@ -1862,6 +1994,17 @@ D) ₹35 Cr
 
 ### Quadratic Equations (5 Qs)
 
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" alt="Handwritten: Quadratic Equations (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" alt="Diagram: Quadratic Equations (5 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" alt="Sticky Note: Quadratic Equations (5 Qs)" width="30%">
+</a>
+
+
 **Q86.** Solve: x² − 12x + 35 = 0
 
 A) 5, 7  
@@ -1953,6 +2096,17 @@ D) 6
 ---
 
 ### Arithmetic Word Problems (20 Qs)
+
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" alt="Handwritten: Arithmetic Word Problems (20 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" alt="Diagram: Arithmetic Word Problems (20 Qs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" alt="Sticky Note: Arithmetic Word Problems (20 Qs)" width="30%">
+</a>
+
 
 **Q91.** SP = ₹660, gain = 10%. CP?
 
@@ -2349,6 +2503,17 @@ Same result. I'll go with 24 not being in options, so maybe A) 42 is the intende
 | English Language | 12 | 13 | 5 | Easy–Medium |
 
 ### Current Affairs Focus Areas for 2025 Prep
+
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" alt="Handwritten: Current Affairs Focus Areas for 2025 Prep" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" alt="Diagram: Current Affairs Focus Areas for 2025 Prep" width="30%">
+</a>
+<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" alt="Sticky Note: Current Affairs Focus Areas for 2025 Prep" width="30%">
+</a>
+
 1. **RBI Policies**: Repo rate changes, MPC decisions, inflation targeting
 2. **Government Schemes**: PLI, PMJDY, National Green Hydrogen Mission
 3. **International Organizations**: IMF, World Bank, WEF reports

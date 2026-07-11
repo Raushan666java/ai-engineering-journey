@@ -72,6 +72,17 @@ flowchart LR
 
 ### 20.1.1 Creating Arrays
 
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-handwritten.svg" alt="Handwritten: 20.1.1 Creating Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-diagram.svg" alt="Diagram: 20.1.1 Creating Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-1-creating-arrays-sticky.svg" alt="Sticky Note: 20.1.1 Creating Arrays" width="30%">
+</a>
+
+
 ```python
 import numpy as np
 
@@ -105,6 +116,17 @@ seed = np.random.seed(42)               # reproducibility
 ```
 
 ### 20.1.2 Array Attributes
+
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-handwritten.svg" alt="Handwritten: 20.1.2 Array Attributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-diagram.svg" alt="Diagram: 20.1.2 Array Attributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-1-2-array-attributes-sticky.svg" alt="Sticky Note: 20.1.2 Array Attributes" width="30%">
+</a>
+
 
 ```python
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -383,6 +405,17 @@ df_html = pd.read_html("page.html")  # returns list of DataFrames
 
 ### 20.8.1 DataFrame Inspection
 
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-handwritten.svg" alt="Handwritten: 20.8.1 DataFrame Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-diagram.svg" alt="Diagram: 20.8.1 DataFrame Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-1-dataframe-inspection-sticky.svg" alt="Sticky Note: 20.8.1 DataFrame Inspection" width="30%">
+</a>
+
+
 ```python
 print(df.head(3))       # first 3 rows
 print(df.tail(2))       # last 2 rows
@@ -394,6 +427,17 @@ print(df.dtypes)        # column data types
 ```
 
 ### 20.8.2 Selecting Data
+
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-handwritten.svg" alt="Handwritten: 20.8.2 Selecting Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-diagram.svg" alt="Diagram: 20.8.2 Selecting Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-2-selecting-data-sticky.svg" alt="Sticky Note: 20.8.2 Selecting Data" width="30%">
+</a>
+
 
 ```python
 # Column selection
@@ -419,6 +463,17 @@ result = df.query("Age > 25 and Department == 'Engineering'")
 ```
 
 ### 20.8.3 Adding and Removing Columns
+
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-handwritten.svg" alt="Handwritten: 20.8.3 Adding and Removing Columns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-diagram.svg" alt="Diagram: 20.8.3 Adding and Removing Columns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-8-3-adding-and-removing-columns-sticky.svg" alt="Sticky Note: 20.8.3 Adding and Removing Columns" width="30%">
+</a>
+
 
 ```python
 # New column
@@ -593,6 +648,17 @@ print(ts_daily.rolling(window=3).mean())
 
 ### 20.13.1 matplotlib
 
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-handwritten.svg" alt="Handwritten: 20.13.1 matplotlib" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-diagram.svg" alt="Diagram: 20.13.1 matplotlib" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-1-matplotlib-sticky.svg" alt="Sticky Note: 20.13.1 matplotlib" width="30%">
+</a>
+
+
 ```python
 import matplotlib.pyplot as plt
 
@@ -643,6 +709,17 @@ plt.savefig("plot.png", dpi=300, bbox_inches="tight")
 ```
 
 ### 20.13.2 seaborn
+
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-handwritten.svg" alt="Handwritten: 20.13.2 seaborn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-diagram.svg" alt="Diagram: 20.13.2 seaborn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/20-13-2-seaborn-sticky.svg" alt="Sticky Note: 20.13.2 seaborn" width="30%">
+</a>
+
 
 ```python
 import seaborn as sns
@@ -789,6 +866,17 @@ console.log(dot([1, 2, 3], [4, 5, 6]));  // 32
 ```
 
 ### More TypeScript Data Processing Patterns
+
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-handwritten.svg" alt="Handwritten: More TypeScript Data Processing Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-diagram.svg" alt="Diagram: More TypeScript Data Processing Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/20-numpy-pandas/more-typescript-data-processing-patterns-sticky.svg" alt="Sticky Note: More TypeScript Data Processing Patterns" width="30%">
+</a>
+
 
 ```typescript
 // Python: pandas groupby + agg → TypeScript: reduce with grouping

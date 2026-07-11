@@ -39,6 +39,17 @@ flowchart LR
 
 ### 7.1 Error Analysis
 
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-handwritten.svg" alt="Handwritten: 7.1 Error Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-diagram.svg" alt="Diagram: 7.1 Error Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-1-error-analysis-sticky.svg" alt="Sticky Note: 7.1 Error Analysis" width="30%">
+</a>
+
+
 **Absolute Error:** $|x_{\text{true}} - x_{\text{approx}}|$
 
 **Relative Error:** $\frac{|x_{\text{true}} - x_{\text{approx}}|}{|x_{\text{true}}|}$
@@ -59,6 +70,17 @@ $$\lim_{n \to \infty} \frac{|e_{n+1}|}{|e_n|^p} = C$$
 - Quadratic: $p = 2$ (Newton-Raphson)
 
 ### 7.2 Root Finding
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-handwritten.svg" alt="Handwritten: 7.2 Root Finding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-diagram.svg" alt="Diagram: 7.2 Root Finding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-2-root-finding-sticky.svg" alt="Sticky Note: 7.2 Root Finding" width="30%">
+</a>
+
 
 #### 7.2.1 Bisection Method
 
@@ -92,6 +114,17 @@ Rewrite $f(x) = 0$ as $x = g(x)$. Iterate $x_{n+1} = g(x_n)$.
 **Convergence:** $|g'(x^*)| < 1$ at the fixed point guarantees local convergence.
 
 ### 7.3 Interpolation
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-handwritten.svg" alt="Handwritten: 7.3 Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-diagram.svg" alt="Diagram: 7.3 Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-3-interpolation-sticky.svg" alt="Sticky Note: 7.3 Interpolation" width="30%">
+</a>
+
 
 #### 7.3.1 Lagrange Interpolation
 
@@ -131,6 +164,17 @@ Splines avoid the **Runge phenomenon** (oscillation at endpoints) that plagues h
 
 ### 7.4 Numerical Differentiation
 
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-handwritten.svg" alt="Handwritten: 7.4 Numerical Differentiation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-diagram.svg" alt="Diagram: 7.4 Numerical Differentiation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-4-numerical-differentiation-sticky.svg" alt="Sticky Note: 7.4 Numerical Differentiation" width="30%">
+</a>
+
+
 **Forward Difference:** $f'(x) \approx \frac{f(x+h) - f(x)}{h}$, error $O(h)$
 
 **Central Difference:** $f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}$, error $O(h^2)$
@@ -142,6 +186,17 @@ Splines avoid the **Runge phenomenon** (oscillation at endpoints) that plagues h
 $$D = \frac{4D(h/2) - D(h)}{3}$$
 
 ### 7.5 Numerical Integration (Quadrature)
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-handwritten.svg" alt="Handwritten: 7.5 Numerical Integration (Quadrature)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-diagram.svg" alt="Diagram: 7.5 Numerical Integration (Quadrature)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-5-numerical-integration-quadrature-sticky.svg" alt="Sticky Note: 7.5 Numerical Integration (Quadrature)" width="30%">
+</a>
+
 
 #### 7.5.1 Newton-Cotes Formulas
 
@@ -171,6 +226,17 @@ where $x_i$ are roots of Legendre polynomials $P_n(x)$ and $w_i$ are chosen for 
 For general interval $[a,b]$, transform: $x = \frac{b-a}{2}t + \frac{a+b}{2}$.
 
 ### 7.6 Numerical Solution of ODEs
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-handwritten.svg" alt="Handwritten: 7.6 Numerical Solution of ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-diagram.svg" alt="Diagram: 7.6 Numerical Solution of ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-6-numerical-solution-of-odes-sticky.svg" alt="Sticky Note: 7.6 Numerical Solution of ODEs" width="30%">
+</a>
+
 
 #### 7.6.1 Euler's Method
 
@@ -210,11 +276,33 @@ $$y_{n+1} = y_n + h f(t_{n+1}, y_{n+1})$$
 
 ### 7.7 Boundary Value Problems
 
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-handwritten.svg" alt="Handwritten: 7.7 Boundary Value Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-diagram.svg" alt="Diagram: 7.7 Boundary Value Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-7-boundary-value-problems-sticky.svg" alt="Sticky Note: 7.7 Boundary Value Problems" width="30%">
+</a>
+
+
 **Shooting Method:** Convert BVP to IVP by guessing initial conditions, then use root finding to match boundary conditions.
 
 **Finite Difference Method:** Discretize the domain and replace derivatives with finite differences, resulting in a system of equations.
 
 ### 7.8 Monte Carlo Methods
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-handwritten.svg" alt="Handwritten: 7.8 Monte Carlo Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-diagram.svg" alt="Diagram: 7.8 Monte Carlo Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-8-monte-carlo-methods-sticky.svg" alt="Sticky Note: 7.8 Monte Carlo Methods" width="30%">
+</a>
+
 
 **Monte Carlo Integration:**
 
@@ -239,6 +327,17 @@ $$\int f(x)\,dx = \int \frac{f(x)}{g(x)} g(x)\,dx \approx \frac{1}{N} \sum \frac
 **Gibbs Sampling:** Special case of Metropolis-Hastings where each variable is sampled from its full conditional distribution.
 
 ### 7.9 Numerical Linear Algebra
+
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-handwritten.svg" alt="Handwritten: 7.9 Numerical Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-diagram.svg" alt="Diagram: 7.9 Numerical Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/07-numerical-methods/7-9-numerical-linear-algebra-sticky.svg" alt="Sticky Note: 7.9 Numerical Linear Algebra" width="30%">
+</a>
+
 
 **LU Decomposition:** $A = LU$, where $L$ is lower triangular and $U$ is upper triangular. Solves $Ax = b$ in $O(n^2)$ after $O(n^3)$ decomposition.
 

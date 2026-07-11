@@ -48,6 +48,17 @@ Spring Modulith helps architects and developers structure Spring Boot applicatio
 
 ### 1.1 Maven Dependencies
 
+<a href="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
+</a>
+
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -133,6 +144,17 @@ Spring Modulith helps architects and developers structure Spring Boot applicatio
 
 ### 1.2 Application Configuration
 
+<a href="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-handwritten.svg" alt="Handwritten: 1.2 Application Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-diagram.svg" alt="Diagram: 1.2 Application Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-2-application-configuration-sticky.svg" alt="Sticky Note: 1.2 Application Configuration" width="30%">
+</a>
+
+
 ```yaml
 # src/main/resources/application.yml
 
@@ -173,6 +195,17 @@ logging:
 ```
 
 ### 1.3 Project Structure
+
+<a href="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-handwritten.svg" alt="Handwritten: 1.3 Project Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-diagram.svg" alt="Diagram: 1.3 Project Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/1-3-project-structure-sticky.svg" alt="Sticky Note: 1.3 Project Structure" width="30%">
+</a>
+
 
 ```
 src/main/java/com/aiengineering/course/
@@ -297,6 +330,17 @@ src/main/java/com/aiengineering/course/
 
 ### 2.1 Main Application
 
+<a href="../../assets/images/diagrams/java/51-modulith/2-1-main-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-1-main-application-handwritten.svg" alt="Handwritten: 2.1 Main Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-1-main-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-1-main-application-diagram.svg" alt="Diagram: 2.1 Main Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-1-main-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-1-main-application-sticky.svg" alt="Sticky Note: 2.1 Main Application" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course;
 
@@ -348,6 +392,17 @@ public class CourseApplication {
 
 ### 2.2 Catalog Module
 
+<a href="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-handwritten.svg" alt="Handwritten: 2.2 Catalog Module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-diagram.svg" alt="Diagram: 2.2 Catalog Module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-2-catalog-module-sticky.svg" alt="Sticky Note: 2.2 Catalog Module" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.catalog;
 
@@ -374,6 +429,17 @@ public class CatalogModule {
 
 ### 2.3 Order Module
 
+<a href="../../assets/images/diagrams/java/51-modulith/2-3-order-module-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-3-order-module-handwritten.svg" alt="Handwritten: 2.3 Order Module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-3-order-module-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-3-order-module-diagram.svg" alt="Diagram: 2.3 Order Module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-3-order-module-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-3-order-module-sticky.svg" alt="Sticky Note: 2.3 Order Module" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.order;
 
@@ -398,6 +464,17 @@ public class OrderModule {
 ```
 
 ### 2.4 Other Module Declarations
+
+<a href="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-handwritten.svg" alt="Handwritten: 2.4 Other Module Declarations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-diagram.svg" alt="Diagram: 2.4 Other Module Declarations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/2-4-other-module-declarations-sticky.svg" alt="Sticky Note: 2.4 Other Module Declarations" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.payment;
@@ -712,6 +789,17 @@ public record PhoneNumber(String value, String countryCode) {
 
 ### 4.1 Catalog Module Domain
 
+<a href="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-handwritten.svg" alt="Handwritten: 4.1 Catalog Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-diagram.svg" alt="Diagram: 4.1 Catalog Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-1-catalog-module-domain-sticky.svg" alt="Sticky Note: 4.1 Catalog Module Domain" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.catalog.domain;
 
@@ -913,6 +1001,17 @@ public class InventoryItem {
 ```
 
 ### 4.2 Order Module Domain
+
+<a href="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-handwritten.svg" alt="Handwritten: 4.2 Order Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-diagram.svg" alt="Diagram: 4.2 Order Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-2-order-module-domain-sticky.svg" alt="Sticky Note: 4.2 Order Module Domain" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.order.domain;
@@ -1158,6 +1257,17 @@ public record ShippingAddress(
 
 ### 4.3 Payment Module Domain
 
+<a href="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-handwritten.svg" alt="Handwritten: 4.3 Payment Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-diagram.svg" alt="Diagram: 4.3 Payment Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-3-payment-module-domain-sticky.svg" alt="Sticky Note: 4.3 Payment Module Domain" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.payment.domain;
 
@@ -1271,6 +1381,17 @@ public enum PaymentStatus {
 
 ### 4.4 Inventory Module Domain
 
+<a href="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-handwritten.svg" alt="Handwritten: 4.4 Inventory Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-diagram.svg" alt="Diagram: 4.4 Inventory Module Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/4-4-inventory-module-domain-sticky.svg" alt="Sticky Note: 4.4 Inventory Module Domain" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.inventory.domain;
 
@@ -1376,6 +1497,17 @@ public class Stock {
 ## 5. Application Services
 
 ### 5.1 Order Service
+
+<a href="../../assets/images/diagrams/java/51-modulith/5-1-order-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-1-order-service-handwritten.svg" alt="Handwritten: 5.1 Order Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-1-order-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-1-order-service-diagram.svg" alt="Diagram: 5.1 Order Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-1-order-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-1-order-service-sticky.svg" alt="Sticky Note: 5.1 Order Service" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.order.application;
@@ -1538,6 +1670,17 @@ public class OrderService {
 
 ### 5.2 Payment Service
 
+<a href="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-handwritten.svg" alt="Handwritten: 5.2 Payment Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-diagram.svg" alt="Diagram: 5.2 Payment Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-2-payment-service-sticky.svg" alt="Sticky Note: 5.2 Payment Service" width="30%">
+</a>
+
+
 ```java
 package com.aiengineering.course.payment.application;
 
@@ -1629,6 +1772,17 @@ public class PaymentService {
 ```
 
 ### 5.3 Inventory Service
+
+<a href="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-handwritten.svg" alt="Handwritten: 5.3 Inventory Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-diagram.svg" alt="Diagram: 5.3 Inventory Service" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/51-modulith/5-3-inventory-service-sticky.svg" alt="Sticky Note: 5.3 Inventory Service" width="30%">
+</a>
+
 
 ```java
 package com.aiengineering.course.inventory.application;

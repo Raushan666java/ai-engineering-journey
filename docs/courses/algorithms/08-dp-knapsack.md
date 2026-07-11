@@ -74,6 +74,17 @@ flowchart LR
 
 ### 8.1 0/1 Knapsack
 
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" alt="Handwritten: 8.1 0/1 Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" alt="Diagram: 8.1 0/1 Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" alt="Sticky Note: 8.1 0/1 Knapsack" width="30%">
+</a>
+
+
 **Real-World Analogy:** You are a hiker packing a backpack with a 5 kg limit. You have a tent (1 kg, $10), sleeping bag (2 kg, $15), stove (3 kg, $40), and water filter (4 kg, $55). Each item can be taken at most once. Which combination gives the most value without exceeding 5 kg? The answer is the water filter ($55) + tent ($10) = 5 kg, $65. DP finds this optimum.
 
 #### Problem Definition
@@ -267,6 +278,17 @@ int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
 
 ### 8.2 Fractional Knapsack (Greedy)
 
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" alt="Handwritten: 8.2 Fractional Knapsack (Greedy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" alt="Diagram: 8.2 Fractional Knapsack (Greedy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" alt="Sticky Note: 8.2 Fractional Knapsack (Greedy)" width="30%">
+</a>
+
+
 > **Note:** This is a **greedy** algorithm, not DP. It is included because it is the only knapsack variant solvable in polynomial time and is the counterpoint that motivates why 0/1 needs DP.
 
 **Real-World Analogy:** At a bulk food market, you can take any amount of rice, beans, or flour — you do not need whole bags. Just scoop what you need.
@@ -431,6 +453,17 @@ class FractionalKnapsack {
 ---
 
 ### 8.3 Bounded Knapsack
+
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" alt="Handwritten: 8.3 Bounded Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" alt="Diagram: 8.3 Bounded Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" alt="Sticky Note: 8.3 Bounded Knapsack" width="30%">
+</a>
+
 
 **Real-World Analogy:** A warehouse can store 100 pallets. You have TVs (2 pallets, $500 profit, 5 available), Phones (1 pallet, $200, 10 available), and Laptops (3 pallets, $800, 2 available). Each product has limited stock. How many of each do you store?
 
@@ -599,6 +632,17 @@ public class BoundedKnapsack {
 
 ### 8.4 Unbounded Knapsack
 
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" alt="Handwritten: 8.4 Unbounded Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" alt="Diagram: 8.4 Unbounded Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" alt="Sticky Note: 8.4 Unbounded Knapsack" width="30%">
+</a>
+
+
 **Real-World Analogy:** You run a smoothie shop with unlimited stock of bananas ($0.50 each, 1 min prep), protein powder ($2.00 scoop, 30 sec), and spinach ($0.75 bunch, 20 sec). With 5 minutes before lunch rush, how many of each do you use to maximize profit per smoothie? Unlimited stock means any quantity of each ingredient.
 
 #### Problem Definition
@@ -737,6 +781,17 @@ public class UnboundedKnapsack {
 
 ### 8.5 Subset Sum
 
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" alt="Handwritten: 8.5 Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" alt="Diagram: 8.5 Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" alt="Sticky Note: 8.5 Subset Sum" width="30%">
+</a>
+
+
 **Real-World Analogy:** A cashier needs to give exactly $17 in change using $2, $3, $5, and $7 bills (each at most once). Is it possible?
 
 #### Problem Definition
@@ -864,6 +919,17 @@ public class SubsetSum {
 
 ### 8.6 Equal Partition Subset Sum
 
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" alt="Handwritten: 8.6 Equal Partition Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" alt="Diagram: 8.6 Equal Partition Subset Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" alt="Sticky Note: 8.6 Equal Partition Subset Sum" width="30%">
+</a>
+
+
 **Real-World Analogy:** Two siblings inherit valuables — can they split so each gets exactly half the total value?
 
 #### Problem Definition
@@ -966,6 +1032,17 @@ public class EqualPartition {
 ---
 
 ### 8.7 Coin Change (Minimum Coins)
+
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" alt="Handwritten: 8.7 Coin Change (Minimum Coins)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" alt="Diagram: 8.7 Coin Change (Minimum Coins)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" alt="Sticky Note: 8.7 Coin Change (Minimum Coins)" width="30%">
+</a>
+
 
 **Real-World Analogy:** A vending machine needs to return $0.87 using quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). What is the minimum number of coins?
 
@@ -1111,6 +1188,17 @@ public class CoinChange {
 ---
 
 ### 8.8 Target Sum
+
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" alt="Handwritten: 8.8 Target Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" alt="Diagram: 8.8 Target Sum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" alt="Sticky Note: 8.8 Target Sum" width="30%">
+</a>
+
 
 **Real-World Analogy:** In a voting system, each voter supports (+1) or opposes (-1) a proposition. Given the vote counts, can the final margin be exactly \( S \)? How many voting patterns achieve this margin?
 

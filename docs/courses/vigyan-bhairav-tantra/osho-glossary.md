@@ -84,6 +84,17 @@ mindmap
 
 ### १. अजपा जप (Ajapa Japa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" alt="Handwritten: १. अजपा जप (Ajapa Japa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" alt="Diagram: १. अजपा जप (Ajapa Japa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" alt="Sticky Note: १. अजपा जप (Ajapa Japa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 अजपा जप का अर्थ है — वह मंत्र जो बिना जपे ही जपा जा रहा है। ओशो के अनुसार, हर व्यक्ति लगातार एक मंत्र जप रहा है — अपने विचारों का। अजपा जप का अर्थ है — इस स्वाभाविक मंत्र के प्रति जागरूक हो जाना। जब तुम अपने श्वास को सुनते हो — सो-हम, सो-हम — यही अजपा जप है।
 
@@ -95,6 +106,17 @@ mindmap
 ---
 
 ### २. अणिमा (Anima)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" alt="Handwritten: २. अणिमा (Anima)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" alt="Diagram: २. अणिमा (Anima)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" alt="Sticky Note: २. अणिमा (Anima)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 अणिमा आठ सिद्धियों में से एक है — सूक्ष्म हो जाने की क्षमता। लेकिन ओशो इसे बाहरी चमत्कार के रूप में नहीं, बल्कि आंतरिक अनुभव के रूप में समझाते हैं। जब तुम ध्यान में इतने गहरे उतर जाते हो कि तुम्हारा अहंकार सूक्ष्म हो जाता है, लगभग गायब — यही अणिमा है।
@@ -108,6 +130,17 @@ mindmap
 
 ### ३. अद्वैत (Advaita)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" alt="Handwritten: ३. अद्वैत (Advaita)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" alt="Diagram: ३. अद्वैत (Advaita)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" alt="Sticky Note: ३. अद्वैत (Advaita)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 अद्वैत का अर्थ है — दो नहीं, एक। ओशो इसे दार्शनिक सिद्धांत के रूप में नहीं, बल्कि प्रत्यक्ष अनुभव के रूप में प्रस्तुत करते हैं। जब तुम ध्यान में गहरे उतरते हो, तो देखते हो कि भीतर और बाहर, मैं और तुम, सब एक ही चेतना के रूप हैं।
 
@@ -119,6 +152,17 @@ mindmap
 ---
 
 ### ४. अनाहत नाद (Anahata Nada)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" alt="Handwritten: ४. अनाहत नाद (Anahata Nada)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" alt="Diagram: ४. अनाहत नाद (Anahata Nada)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" alt="Sticky Note: ४. अनाहत नाद (Anahata Nada)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 अनाहत नाद का अर्थ है — वह ध्वनि जो बिना किसी आघात के उत्पन्न होती है। ओशो इसे ब्रह्मांड की मूल ध्वनि बताते हैं, जिसे सुनने के लिए आंतरिक श्रवण की आवश्यकता है। यह वह ध्वनि है जो तब सुनाई देती है जब सब ध्वनियाँ शांत हो जाती हैं।
@@ -132,6 +176,17 @@ mindmap
 
 ### ५. अपान (Apana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" alt="Handwritten: ५. अपान (Apana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" alt="Diagram: ५. अपान (Apana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" alt="Sticky Note: ५. अपान (Apana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 अपान पाँच प्राणों में से एक है — वह ऊर्जा जो नीचे की ओर बहती है, उत्सर्जन से संबंधित। ओशो इसे श्वास के बाहर जाने की क्रिया से जोड़ते हैं। वे कहते हैं — जब प्राण और अपान मिलते हैं, तो वहाँ चेतना का विस्फोट होता है।
 
@@ -143,6 +198,17 @@ mindmap
 ---
 
 ### ६. अभ्यास (Abhyasa)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" alt="Handwritten: ६. अभ्यास (Abhyasa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" alt="Diagram: ६. अभ्यास (Abhyasa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" alt="Sticky Note: ६. अभ्यास (Abhyasa)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 अभ्यास — निरंतर अभ्यास। लेकिन ओशो अभ्यास को यांत्रिक दोहराव नहीं मानते। उनके अनुसार, सच्चा अभ्यास जागरूकता के साथ किया गया दोहराव है — बिना उबाऊ हुए, बिना यांत्रिक हुए।
@@ -156,6 +222,17 @@ mindmap
 
 ### ७. अहंकार (Ahankara)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" alt="Handwritten: ७. अहंकार (Ahankara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" alt="Diagram: ७. अहंकार (Ahankara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" alt="Sticky Note: ७. अहंकार (Ahankara)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 अहंकार — 'मैं' की भावना। ओशो के अनुसार, अहंकार कोई वास्तविक चीज़ नहीं है — यह एक भ्रम है, एक गलत पहचान। तुम शरीर नहीं हो, तुम मन नहीं हो — फिर 'मैं' कौन है? अहंकार तब बनता है जब तुम अपने को सीमित रूपों से पहचान लेते हो।
 
@@ -167,6 +244,17 @@ mindmap
 ---
 
 ### ८. आत्मा (Atma)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" alt="Handwritten: ८. आत्मा (Atma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" alt="Diagram: ८. आत्मा (Atma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" alt="Sticky Note: ८. आत्मा (Atma)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 आत्मा — ओशो इसे व्यक्तिगत चेतना के रूप में समझाते हैं, जो परम चेतना (ब्रह्म) से अलग नहीं है। वे जोर देकर कहते हैं — आत्मा कोई वस्तु नहीं है जिसे पाया जाए, यह तो तुम्हारा स्वभाव है।
@@ -180,6 +268,17 @@ mindmap
 
 ### ९. आणव उपाय (Anava Upaya)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" alt="Handwritten: ९. आणव उपाय (Anava Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" alt="Diagram: ९. आणव उपाय (Anava Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" alt="Sticky Note: ९. आणव उपाय (Anava Upaya)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 आणव उपाय — तीन उपायों में पहला। ओशो के अनुसार, यह उनके लिए है जो 'अणु' (छोटे, सीमित) महसूस करते हैं। इसमें क्रिया, प्रयास, तकनीक और अनुशासन की आवश्यकता है। ओशो कहते हैं — यह सीढ़ी है, मंज़िल नहीं।
 
@@ -191,6 +290,17 @@ mindmap
 ---
 
 ### १०. इच्छा (Iccha)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" alt="Handwritten: १०. इच्छा (Iccha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" alt="Diagram: १०. इच्छा (Iccha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" alt="Sticky Note: १०. इच्छा (Iccha)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 इच्छा — ओशो इसे दमन करने की वस्तु नहीं, बल्कि समझने की वस्तु मानते हैं। वे कहते हैं — इच्छा ऊर्जा है। उसे दबाने से विकार पैदा होता है, उसे भोगने से लत लगती है। इच्छा को देखना, उसे जागरूकता में बदलना — यही तंत्र का तरीका है।
@@ -204,6 +314,17 @@ mindmap
 
 ### ११. उन्मनी (Unmani)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" alt="Handwritten: ११. उन्मनी (Unmani)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" alt="Diagram: ११. उन्मनी (Unmani)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" alt="Sticky Note: ११. उन्मनी (Unmani)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 उन्मनी — मन के पार की अवस्था। ओशो के अनुसार, यह ध्यान की सबसे गहरी अवस्था है जहाँ मन पूरी तरह विलीन हो जाता है। यह कोई अवस्था नहीं है जिसे तुम कर सकते हो — यह तो तुम्हारा स्वभाव है जब तुम मन की पहचान छोड़ देते हो।
 
@@ -215,6 +336,17 @@ mindmap
 ---
 
 ### १२. उपाय (Upaya)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" alt="Handwritten: १२. उपाय (Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" alt="Diagram: १२. उपाय (Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" alt="Sticky Note: १२. उपाय (Upaya)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 उपाय का शाब्दिक अर्थ है — साधन, तरीका। ओशो इसे एक विरोधाभास के रूप में समझाते हैं — उपाय का अर्थ है वह साधन जो अंततः साधन से मुक्त कर दे। एक अच्छा उपाय वह है जो स्वयं को नष्ट कर दे।
@@ -228,6 +360,17 @@ mindmap
 
 ### १३. उपाधि (Upadhi)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" alt="Handwritten: १३. उपाधि (Upadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" alt="Diagram: १३. उपाधि (Upadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" alt="Sticky Note: १३. उपाधि (Upadhi)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 उपाधि — वह आवरण जो आत्मा को ढक लेता है। ओशो कहते हैं — जैसे बादल सूरज को ढक लेते हैं, वैसे ही उपाधियाँ (शरीर, मन, अहंकार) आत्मा को ढक लेती हैं। लेकिन बादल सूरज को मिटा नहीं सकते।
 
@@ -239,6 +382,17 @@ mindmap
 ---
 
 ### १४. ऊर्ध्वरेता (Urdhvareta)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" alt="Handwritten: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" alt="Diagram: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" alt="Sticky Note: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 ऊर्ध्वरेता — यौन ऊर्जा का ऊर्ध्वगमन। ओशो इसे पारंपरिक योग की धारणा से अलग समझाते हैं। वे कहते हैं — ऊर्जा को जबरदस्ती ऊपर नहीं खींचा जा सकता। जागरूकता से ऊर्जा अपने आप रूपांतरित होती है।
@@ -252,6 +406,17 @@ mindmap
 
 ### १५. कंचुक (Kancuka)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" alt="Handwritten: १५. कंचुक (Kancuka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" alt="Diagram: १५. कंचुक (Kancuka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" alt="Sticky Note: १५. कंचुक (Kancuka)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 कंचुक का अर्थ है — आवरण, कोश। ओशो के अनुसार, तंत्र दर्शन में पाँच कंचुक बताए गए हैं जो शुद्ध चेतना को सीमित करते हैं — नियति, काल, राग, विद्या, कला। ये वे सीमाएँ हैं जिनके कारण व्यक्ति अपने वास्तविक स्वरूप को भूल जाता है।
 
@@ -263,6 +428,17 @@ mindmap
 ---
 
 ### १६. कर्म (Karma)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" alt="Handwritten: १६. कर्म (Karma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" alt="Diagram: १६. कर्म (Karma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" alt="Sticky Note: १६. कर्म (Karma)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 कर्म — ओशो इसे पारंपरिक अर्थ (कर्मफल, पुनर्जन्म) से अलग समझाते हैं। उनके अनुसार, कर्म का अर्थ है — अतीत का बोझ जो वर्तमान को प्रभावित करता है। अचेतन आदतों का जाल। मुक्ति का अर्थ है — इस जाल से बाहर निकलना।
@@ -276,6 +452,17 @@ mindmap
 
 ### १७. कल्पना (Kalpana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" alt="Handwritten: १७. कल्पना (Kalpana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" alt="Diagram: १७. कल्पना (Kalpana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" alt="Sticky Note: १७. कल्पना (Kalpana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 कल्पना — मन की वह शक्ति जो चित्र बनाती है। ओशो कल्पना को ध्यान में एक उपकरण के रूप में उपयोग करते हैं। कल्पना में खो जाना खतरनाक है, लेकिन कल्पना को साक्षी से देखना मुक्ति का द्वार है।
 
@@ -287,6 +474,17 @@ mindmap
 ---
 
 ### १८. कुंडलिनी (Kundalini)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" alt="Handwritten: १८. कुंडलिनी (Kundalini)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" alt="Diagram: १८. कुंडलिनी (Kundalini)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" alt="Sticky Note: १८. कुंडलिनी (Kundalini)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 कुंडलिनी — सुप्त ऊर्जा जो रीढ़ के आधार पर स्थित है। ओशो ने कुंडलिनी को एक मनोवैज्ञानिक और आध्यात्मिक वास्तविकता बताया, न कि कोई भौतिक वस्तु। वे कहते हैं — कुंडलिनी जागरण कोई चमत्कार नहीं, बल्कि चेतना का स्वाभाविक विस्तार है।
@@ -300,6 +498,17 @@ mindmap
 
 ### १९. कुंभक (Kumbhaka)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" alt="Handwritten: १९. कुंभक (Kumbhaka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" alt="Diagram: १९. कुंभक (Kumbhaka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" alt="Sticky Note: १९. कुंभक (Kumbhaka)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 कुंभक — श्वास का रुक जाना। ओशो दो प्रकार के कुंभक बताते हैं — श्वास भरने के बाद और श्वास खाली करने के बाद। लेकिन असली कुंभक वह नहीं है जो तुम करते हो, बल्कि वह जो अपने आप होता है जब मन शांत होता है।
 
@@ -311,6 +520,17 @@ mindmap
 ---
 
 ### २०. कृपा (Kripa)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" alt="Handwritten: २०. कृपा (Kripa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" alt="Diagram: २०. कृपा (Kripa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" alt="Sticky Note: २०. कृपा (Kripa)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 कृपा — दिव्य अनुग्रह। ओशो के अनुसार, कृपा कोई व्यक्तिगत देन नहीं है — यह अस्तित्व का स्वभाव है। जब तुम खुले होते हो, जब तुम समर्पित होते हो, तो कृपा अपने आप बरसती है। कृपा को कमाया नहीं जा सकता — केवल ग्रहण किया जा सकता है।
@@ -324,6 +544,17 @@ mindmap
 
 ### २१. गुरु (Guru)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" alt="Handwritten: २१. गुरु (Guru)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" alt="Diagram: २१. गुरु (Guru)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" alt="Sticky Note: २१. गुरु (Guru)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 गुरु — ओशो की यह सबसे विवादास्पद व्याख्याओं में से एक है। वे कहते हैं — गुरु कोई शिक्षक नहीं, कोई अधिकारी नहीं। गुरु तो वह दर्पण है जिसमें तुम अपना असली चेहरा देख सकते हो। किसी भी गुरु का अनुसरण मत करो — उनकी बात समझो और अपने पैरों पर खड़े हो जाओ।
 
@@ -335,6 +566,17 @@ mindmap
 ---
 
 ### २२. गुरुमुख (Gurumukha)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" alt="Handwritten: २२. गुरुमुख (Gurumukha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" alt="Diagram: २२. गुरुमुख (Gurumukha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" alt="Sticky Note: २२. गुरुमुख (Gurumukha)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 गुरुमुख — गुरु के मुख से निकली बात। ओशो के अनुसार, गुरुमुख का अर्थ है — वह शिक्षा जो गुरु से सीधे प्राप्त हो — किताबों से नहीं, जीवित संवाद से। सच्ची शिक्षा जीवित शब्दों से होती है।
@@ -348,6 +590,17 @@ mindmap
 
 ### २३. चक्र (Cakra)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" alt="Handwritten: २३. चक्र (Cakra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" alt="Diagram: २३. चक्र (Cakra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" alt="Sticky Note: २३. चक्र (Cakra)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 चक्र — शरीर में ऊर्जा के केंद्र। ओशो चक्रों को शारीरिक अंग नहीं, बल्कि मनोवैज्ञानिक-आध्यात्मिक केंद्र बताते हैं। वे कहते हैं — चक्र ध्यान के उपकरण हैं, ध्यान के लक्ष्य नहीं। उन पर ध्यान करो, लेकिन उनमें मत उलझो।
 
@@ -359,6 +612,17 @@ mindmap
 ---
 
 ### २४. चेतना (Cetana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" alt="Handwritten: २४. चेतना (Cetana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" alt="Diagram: २४. चेतना (Cetana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" alt="Sticky Note: २४. चेतना (Cetana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 चेतना — ओशो की शिक्षा का केंद्रीय शब्द। उनके अनुसार, चेतना कोई गुण नहीं है जो मनुष्य के पास है — चेतना तो मनुष्य का स्वभाव है। वह विचारों, भावनाओं, अहंकार के आवरणों से ढकी हुई है। ध्यान का अर्थ है — इन आवरणों को हटाना और शुद्ध चेतना में जीना।
@@ -372,6 +636,17 @@ mindmap
 
 ### २५. जागरूकता (Jagarukata)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" alt="Handwritten: २५. जागरूकता (Jagarukata)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" alt="Diagram: २५. जागरूकता (Jagarukata)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" alt="Sticky Note: २५. जागरूकता (Jagarukata)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 जागरूकता — ओशो इस शब्द का उपयोग साक्षी के समानांतर करते हैं। लेकिन एक सूक्ष्म अंतर है — साक्षी ध्यान की अवस्था का नाम है, जागरूकता उस अवस्था का व्यावहारिक रूप है। रोज़मर्रा के जीवन में — चलते, बोलते, खाते — जागरूक रहना।
 
@@ -383,6 +658,17 @@ mindmap
 ---
 
 ### २६. ज्ञान (Jnana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" alt="Handwritten: २६. ज्ञान (Jnana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" alt="Diagram: २६. ज्ञान (Jnana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" alt="Sticky Note: २६. ज्ञान (Jnana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 ज्ञान — ओशो इसे दो प्रकार का बताते हैं — शास्त्रीय ज्ञान (सूचना) और प्रत्यक्ष ज्ञान (अनुभव)। पहला किताबों से मिलता है, दूसरा जीवन से। ओशो कहते हैं — सूचना से मुक्ति नहीं मिलती, अनुभव से मिलती है।
@@ -396,6 +682,17 @@ mindmap
 
 ### २७. तंत्र (Tantra)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" alt="Handwritten: २७. तंत्र (Tantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" alt="Diagram: २७. तंत्र (Tantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" alt="Sticky Note: २७. तंत्र (Tantra)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 तंत्र — 'तन' धातु से, जिसका अर्थ है फैलाना, बुनना। ओशो के अनुसार, तंत्र कोई धर्म नहीं, कोई पंथ नहीं — यह चेतना का विज्ञान है। यह जीवन को समग्र रूप से देखना सिखाता है — किसी चीज़ को छोड़ना नहीं, बल्कि सबको समाहित करना।
 
@@ -407,6 +704,17 @@ mindmap
 ---
 
 ### २८. तत्त्व (Tattva)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" alt="Handwritten: २८. तत्त्व (Tattva)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" alt="Diagram: २८. तत्त्व (Tattva)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" alt="Sticky Note: २८. तत्त्व (Tattva)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 तत्त्व — 'वह जो है'। ओशो के अनुसार, तत्त्व कोई सिद्धांत नहीं, बल्कि वास्तविकता का मूल स्वरूप है। ३६ तत्त्वों का वर्णन कश्मीर शैव में आता है — मूल चेतना (शिव) से लेकर पृथ्वी तक। ओशो कहते हैं — यह तत्त्व-विद्या एक नक्शा है, स्वयं वास्तविकता नहीं।
@@ -420,6 +728,17 @@ mindmap
 
 ### २९. तुरीय (Turiya)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" alt="Handwritten: २९. तुरीय (Turiya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" alt="Diagram: २९. तुरीय (Turiya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" alt="Sticky Note: २९. तुरीय (Turiya)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 तुरीय — चौथी अवस्था। ओशो के अनुसार, तीन सामान्य अवस्थाएँ हैं — जागृत, स्वप्न, गहन निद्रा। तुरीय वह अवस्था है जो इन तीनों से परे है — शुद्ध चेतना। ओशो जोर देते हैं कि तुरीय कोई दूसरी दुनिया नहीं है — यह यहीं और अभी है।
 
@@ -431,6 +750,17 @@ mindmap
 ---
 
 ### ३०. त्याग (Tyaga)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" alt="Handwritten: ३०. त्याग (Tyaga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" alt="Diagram: ३०. त्याग (Tyaga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" alt="Sticky Note: ३०. त्याग (Tyaga)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 त्याग — ओशो त्याग को पारंपरिक अर्थ में नहीं लेते। वे कहते हैं — त्याग का अर्थ कुछ छोड़ना नहीं है, बल्कि कुछ समझना है। जब तुम किसी चीज़ को गहराई से समझ लेते हो, तो वह अपने आप छूट जाती है। त्याग समझ का परिणाम है, आदेश नहीं।
@@ -444,6 +774,17 @@ mindmap
 
 ### ३१. दीक्षा (Diksa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" alt="Handwritten: ३१. दीक्षा (Diksa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" alt="Diagram: ३१. दीक्षा (Diksa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" alt="Sticky Note: ३१. दीक्षा (Diksa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 दीक्षा — ओशो ने पारंपरिक दीक्षा को पूरी तरह बदल दिया। उनके अनुसार, दीक्षा कोई अनुष्ठान नहीं, कोई मंत्रदान नहीं — यह एक मनोवैज्ञानिक घटना है। जब शिष्य गुरु में पूरी तरह समर्पित हो जाता है — तब गुरु की चेतना शिष्य को छू जाती है।
 
@@ -455,6 +796,17 @@ mindmap
 ---
 
 ### ३२. द्वैत (Dvaita)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" alt="Handwritten: ३२. द्वैत (Dvaita)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" alt="Diagram: ३२. द्वैत (Dvaita)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" alt="Sticky Note: ३२. द्वैत (Dvaita)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 द्वैत — दो का सिद्धांत — अच्छा-बुरा, सुख-दुख, शरीर-आत्मा। ओशो के अनुसार, द्वैत ही मनुष्य के सारे दुख का कारण है। तंत्र द्वैत से परे जाना सिखाता है — जहाँ कुछ भी अच्छा नहीं, कुछ भी बुरा नहीं।
@@ -468,6 +820,17 @@ mindmap
 
 ### ३३. धारणा (Dharana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" alt="Handwritten: ३३. धारणा (Dharana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" alt="Diagram: ३३. धारणा (Dharana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" alt="Sticky Note: ३३. धारणा (Dharana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 धारणा — एकाग्रता, मन को एक बिंदु पर स्थिर करना। ओशो धारणा को ध्यान की तैयारी मानते हैं — धारणा में तुम केंद्रित होते हो, ध्यान में तुम जागरूक होते हो। अंतर सूक्ष्म है लेकिन महत्वपूर्ण।
 
@@ -479,6 +842,17 @@ mindmap
 ---
 
 ### ३४. ध्यान (Dhyana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" alt="Handwritten: ३४. ध्यान (Dhyana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" alt="Diagram: ३४. ध्यान (Dhyana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" alt="Sticky Note: ३४. ध्यान (Dhyana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 ध्यान — ओशो की शिक्षा का केंद्र। उनके अनुसार, ध्यान कोई क्रिया नहीं है — यह एक अवस्था है। तुम ध्यान नहीं कर सकते — तुम ध्यान में हो सकते हो। ध्यान का अर्थ है — बिना किसी चुनाव के, बिना किसी प्रयास के, शुद्ध जागरूकता में रहना।
@@ -492,6 +866,17 @@ mindmap
 
 ### ३५. धर्म (Dharma)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" alt="Handwritten: ३५. धर्म (Dharma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" alt="Diagram: ३५. धर्म (Dharma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" alt="Sticky Note: ३५. धर्म (Dharma)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 धर्म — ओशो ने इस शब्द की सबसे अनूठी व्याख्या की है। उनके अनुसार, धर्म का अर्थ कोई पंथ या संप्रदाय नहीं है — धर्म का अर्थ है तुम्हारा मूल स्वभाव। जैसे आग का धर्म गर्मी है, मनुष्य का धर्म चेतना है।
 
@@ -503,6 +888,17 @@ mindmap
 ---
 
 ### ३६. नाद (Nada)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" alt="Handwritten: ३६. नाद (Nada)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" alt="Diagram: ३६. नाद (Nada)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" alt="Sticky Note: ३६. नाद (Nada)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 नाद — ध्वनि। ओशो के लिए नाद केवल बाहरी ध्वनि नहीं है — यह ब्रह्मांड का मूल स्पंदन है। जब तुम गहरे ध्यान में होते हो, तो तुम इस नाद को सुन सकते हो। नाद ब्रह्म — ध्वनि ही परमात्मा है।
@@ -516,6 +912,17 @@ mindmap
 
 ### ३७. निरुपाय (Nirupaya)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" alt="Handwritten: ३७. निरुपाय (Nirupaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" alt="Diagram: ३७. निरुपाय (Nirupaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" alt="Sticky Note: ३७. निरुपाय (Nirupaya)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 निरुपाय — जहाँ कोई उपाय नहीं, कोई तकनीक नहीं। ओशो के अनुसार, यह सबसे उच्च अवस्था है — जहाँ तुम इतने सहज हो गए हो कि किसी तकनीक की ज़रूरत नहीं रही। तुम तकनीक नहीं कर रहे — तुम तकनीक ही हो गए हो।
 
@@ -527,6 +934,17 @@ mindmap
 ---
 
 ### ३८. निर्वाण (Nirvana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" alt="Handwritten: ३८. निर्वाण (Nirvana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" alt="Diagram: ३८. निर्वाण (Nirvana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" alt="Sticky Note: ३८. निर्वाण (Nirvana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 निर्वाण — 'निर्वा' धातु से — बुझ जाना। ओशो के अनुसार, निर्वाण का अर्थ है — अहंकार की ज्वाला का बुझ जाना। लेकिन यह नकारात्मक नहीं है — जब दीया बुझता है, तो अँधेरा नहीं होता, बल्कि सूरज उगता है।
@@ -540,6 +958,17 @@ mindmap
 
 ### ३९. निर्विकल्प (Nirvikalpa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" alt="Handwritten: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" alt="Diagram: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" alt="Sticky Note: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 निर्विकल्प — जहाँ कोई विकल्प नहीं, कोई विचार नहीं। ओशो के अनुसार, निर्विकल्प अवस्था ध्यान का चरम है। जहाँ मन पूरी तरह शांत है, कोई तरंग नहीं — केवल शुद्ध चेतना।
 
@@ -551,6 +980,17 @@ mindmap
 ---
 
 ### ४०. नो-माइंड (No-Mind)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" alt="Handwritten: ४०. नो-माइंड (No-Mind)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" alt="Diagram: ४०. नो-माइंड (No-Mind)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" alt="Sticky Note: ४०. नो-माइंड (No-Mind)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 नो-माइंड — ओशो का सबसे प्रसिद्ध शब्द। इसका मतलब मन को नष्ट करना नहीं है — इसका मतलब है मन से पहचान न जोड़ना। मन एक यंत्र है — उपयोगी यंत्र — लेकिन वह स्वामी नहीं है। नो-माइंड का अर्थ है — मन को सेवक बनाना, स्वामी नहीं।
@@ -564,6 +1004,17 @@ mindmap
 
 ### ४१. पदार्थ (Padartha)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" alt="Handwritten: ४१. पदार्थ (Padartha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" alt="Diagram: ४१. पदार्थ (Padartha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" alt="Sticky Note: ४१. पदार्थ (Padartha)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 पदार्थ — वह सब जो इन्द्रियों से जाना जा सकता है। ओशो के अनुसार, पदार्थ और चेतना में कोई बुनियादी अंतर नहीं है — पदार्थ चेतना का ही एक रूप है, सघन रूप।
 
@@ -575,6 +1026,17 @@ mindmap
 ---
 
 ### ४२. परमात्मा (Paramatma)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" alt="Handwritten: ४२. परमात्मा (Paramatma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" alt="Diagram: ४२. परमात्मा (Paramatma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" alt="Sticky Note: ४२. परमात्मा (Paramatma)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 परमात्मा — परम चेतना। ओशो के अनुसार, परमात्मा कोई व्यक्ति नहीं है — कोई स्वर्ग में बैठा न्यायाधीश नहीं। परमात्मा तो अस्तित्व का मूल स्वभाव है — वह चेतना जो सबमें व्याप्त है।
@@ -588,6 +1050,17 @@ mindmap
 
 ### ४३. पुरुष (Purusa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" alt="Handwritten: ४३. पुरुष (Purusa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" alt="Diagram: ४३. पुरुष (Purusa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" alt="Sticky Note: ४३. पुरुष (Purusa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 पुरुष — सांख्य दर्शन में चेतना का सिद्धांत। ओशो पुरुष को शुद्ध चेतना के रूप में समझाते हैं — वह साक्षी जो सब कुछ देखता है लेकिन कुछ भी नहीं करता।
 
@@ -599,6 +1072,17 @@ mindmap
 ---
 
 ### ४४. पूर्णता (Purnata)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" alt="Handwritten: ४४. पूर्णता (Purnata)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" alt="Diagram: ४४. पूर्णता (Purnata)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" alt="Sticky Note: ४४. पूर्णता (Purnata)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 पूर्णता — ओशो के अनुसार, पूर्णता का अर्थ कुछ और बनना नहीं है — यह जो है, उसे पूरी तरह स्वीकार करना है। तुम पहले से ही पूर्ण हो — बस इसे जानो। पूर्णता कोई उपलब्धि नहीं, यह एक पहचान है।
@@ -612,6 +1096,17 @@ mindmap
 
 ### ४५. प्रकृति (Prakrti)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" alt="Handwritten: ४५. प्रकृति (Prakrti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" alt="Diagram: ४५. प्रकृति (Prakrti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" alt="Sticky Note: ४५. प्रकृति (Prakrti)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 प्रकृति — वह मूल प्रकृति जिससे सब कुछ बना है। ओशो के अनुसार, प्रकृति कोई जड़ वस्तु नहीं — वह जीवंत, गतिशील, सृजनशील है। तंत्र प्रकृति के साथ बहना सिखाता है — उसके विरुद्ध नहीं।
 
@@ -623,6 +1118,17 @@ mindmap
 ---
 
 ### ४६. प्रज्ञा (Prajna)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" alt="Handwritten: ४६. प्रज्ञा (Prajna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" alt="Diagram: ४६. प्रज्ञा (Prajna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" alt="Sticky Note: ४६. प्रज्ञा (Prajna)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 प्रज्ञा — वह ज्ञान जो बुद्धि से परे है। ओशो के अनुसार, बुद्धि विश्लेषण करती है — प्रज्ञा सीधे देखती है। बुद्धि तर्क करती है — प्रज्ञा सत्य को पकड़ती है। ध्यान का अंतिम लक्ष्य प्रज्ञा का जागरण है।
@@ -636,6 +1142,17 @@ mindmap
 
 ### ४७. प्रणव (Pranava)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" alt="Handwritten: ४७. प्रणव (Pranava)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" alt="Diagram: ४७. प्रणव (Pranava)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" alt="Sticky Note: ४७. प्रणव (Pranava)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 प्रणव — ॐ (ओंकार)। ओशो के अनुसार, ॐ कोई धार्मिक प्रतीक नहीं है — यह ब्रह्मांड की मूल ध्वनि का प्रतिनिधित्व करता है। ॐ का जाप मन को एकाग्र करता है और फिर मौन में ले जाता है।
 
@@ -647,6 +1164,17 @@ mindmap
 ---
 
 ### ४८. प्राण (Prana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" alt="Handwritten: ४८. प्राण (Prana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" alt="Diagram: ४८. प्राण (Prana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" alt="Sticky Note: ४८. प्राण (Prana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 प्राण — जीवन ऊर्जा। ओशो के अनुसार, प्राण सिर्फ श्वास नहीं है — श्वास तो प्राण का स्थूल रूप है। प्राण वह सूक्ष्म ऊर्जा है जो पूरे ब्रह्मांड में व्याप्त है। सभी ११२ तकनीकों का संबंध प्राण से है।
@@ -660,6 +1188,17 @@ mindmap
 
 ### ४९. प्राणायाम (Pranayama)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" alt="Handwritten: ४९. प्राणायाम (Pranayama)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" alt="Diagram: ४९. प्राणायाम (Pranayama)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" alt="Sticky Note: ४९. प्राणायाम (Pranayama)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 प्राणायाम — श्वास पर नियंत्रण। लेकिन ओशो ने प्राणायाम को पारंपरिक अर्थ से भिन्न समझाया। उनके अनुसार, प्राणायाम का अर्थ श्वास को रोकना या नियंत्रित करना नहीं है — इसका अर्थ है प्राण का विस्तार।
 
@@ -671,6 +1210,17 @@ mindmap
 ---
 
 ### ५०. प्रारब्ध (Prarabdha)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" alt="Handwritten: ५०. प्रारब्ध (Prarabdha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" alt="Diagram: ५०. प्रारब्ध (Prarabdha)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" alt="Sticky Note: ५०. प्रारब्ध (Prarabdha)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 प्रारब्ध — वह कर्म जो इस जन्म में भोगना है। ओशो प्रारब्ध को भाग्य नहीं मानते — वे इसे एक आधार रेखा मानते हैं। जागरूकता से प्रारब्ध को पार किया जा सकता है।
@@ -684,6 +1234,17 @@ mindmap
 
 ### ५१. प्रेम (Prema)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" alt="Handwritten: ५१. प्रेम (Prema)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" alt="Diagram: ५१. प्रेम (Prema)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" alt="Sticky Note: ५१. प्रेम (Prema)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 प्रेम — ओशो प्रेम को सबसे गहन ध्यान मानते हैं। उनके अनुसार, प्रेम कोई भावना नहीं है — यह एक अवस्था है। जब अहंकार नहीं है, तब प्रेम है। प्रेम ध्यान का फल है और ध्यान प्रेम का मार्ग है।
 
@@ -695,6 +1256,17 @@ mindmap
 ---
 
 ### ५२. बिंदु (Bindu)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" alt="Handwritten: ५२. बिंदु (Bindu)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" alt="Diagram: ५२. बिंदु (Bindu)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" alt="Sticky Note: ५२. बिंदु (Bindu)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 बिंदु — केंद्र बिंदु। ओशो के अनुसार, बिंदु एकाग्रता का प्रतीक है — और अंततः चेतना का प्रतीक भी। जैसे एक बिंदु पर दृष्टि स्थिर करने से मन स्थिर होता है, वैसे ही चेतना का मूल भी एक बिंदु है।
@@ -708,6 +1280,17 @@ mindmap
 
 ### ५३. ब्रह्म (Brahma)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" alt="Handwritten: ५३. ब्रह्म (Brahma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" alt="Diagram: ५३. ब्रह्म (Brahma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" alt="Sticky Note: ५३. ब्रह्म (Brahma)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 ब्रह्म — परम वास्तविकता। ओशो के अनुसार, ब्रह्म कोई व्यक्तिगत ईश्वर नहीं है — वह शुद्ध चेतना है, जो सबमें व्याप्त है। ब्रह्म को मानने की ज़रूरत नहीं — उसे अनुभव करने की ज़रूरत है।
 
@@ -719,6 +1302,17 @@ mindmap
 ---
 
 ### ५४. भक्ति (Bhakti)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" alt="Handwritten: ५४. भक्ति (Bhakti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" alt="Diagram: ५४. भक्ति (Bhakti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" alt="Sticky Note: ५४. भक्ति (Bhakti)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 भक्ति — ओशो भक्ति को बहुत ऊँचा स्थान देते हैं। उनके अनुसार, भक्ति कोई पूजा-पाठ नहीं है — यह प्रेम की पराकाष्ठा है। जब तुम किसी में पूरी तरह डूब जाते हो — तब भक्ति ध्यान बन जाती है।
@@ -732,6 +1326,17 @@ mindmap
 
 ### ५५. भावना (Bhavana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" alt="Handwritten: ५५. भावना (Bhavana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" alt="Diagram: ५५. भावना (Bhavana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" alt="Sticky Note: ५५. भावना (Bhavana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 भावना — आंतरिक भाव, मनोभाव। ओशो भावना को ध्यान में एक महत्वपूर्ण उपकरण मानते हैं। विचारों की तुलना में भावनाएँ अधिक गहरी हैं। भावना का साक्षी होना बहुत शक्तिशाली ध्यान है।
 
@@ -743,6 +1348,17 @@ mindmap
 ---
 
 ### ५६. भ्रमरी (Bhramari)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" alt="Handwritten: ५६. भ्रमरी (Bhramari)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" alt="Diagram: ५६. भ्रमरी (Bhramari)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" alt="Sticky Note: ५६. भ्रमरी (Bhramari)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 भ्रमरी — भौंरे की गूँज। यह एक विशेष ध्यान तकनीक का नाम है जिसमें तुम भौंरे की तरह गूँजते हो। ओशो के अनुसार, यह गूँज एक बहुत शक्तिशाली ध्यान विधि है — ध्वनि के माध्यम से आंतरिक शांति तक पहुँचने की तकनीक।
@@ -756,6 +1372,17 @@ mindmap
 
 ### ५७. मंत्र (Mantra)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" alt="Handwritten: ५७. मंत्र (Mantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" alt="Diagram: ५७. मंत्र (Mantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" alt="Sticky Note: ५७. मंत्र (Mantra)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 मंत्र — 'मन' (मन) और 'त्र' (बचाना) — जो मन को बचाए। ओशो के अनुसार, मंत्र कोई पवित्र शब्द नहीं है जो जादुई शक्ति रखता हो — मंत्र एक मनोवैज्ञानिक उपकरण है। एक ही शब्द को दोहराने से मन एकाग्र होता है।
 
@@ -767,6 +1394,17 @@ mindmap
 ---
 
 ### ५८. मंडल (Mandala)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" alt="Handwritten: ५८. मंडल (Mandala)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" alt="Diagram: ५८. मंडल (Mandala)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" alt="Sticky Note: ५८. मंडल (Mandala)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 मंडल — ज्यामितीय चित्र, ब्रह्मांड का प्रतीक। ओशो मंडल को ध्यान का उपकरण मानते हैं। मंडल को देखना — उसके केंद्र में खो जाना — यह एक गहरी ध्यान विधि है।
@@ -780,6 +1418,17 @@ mindmap
 
 ### ५९. माया (Maya)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" alt="Handwritten: ५९. माया (Maya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" alt="Diagram: ५९. माया (Maya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" alt="Sticky Note: ५९. माया (Maya)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 माया — ओशो ने इस शब्द की बहुत अनूठी व्याख्या की है। उनके अनुसार, माया का अर्थ यह नहीं कि यह संसार झूठा है — इसका अर्थ है कि हम संसार को वैसा नहीं देखते जैसा वह है। संसार सच है — हमारी उसके बारे में समझ झूठी है।
 
@@ -791,6 +1440,17 @@ mindmap
 ---
 
 ### ६०. मिथ्या (Mithya)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" alt="Handwritten: ६०. मिथ्या (Mithya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" alt="Diagram: ६०. मिथ्या (Mithya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" alt="Sticky Note: ६०. मिथ्या (Mithya)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 मिथ्या — जो सत्य नहीं है, लेकिन सत्य प्रतीत होता है। जैसे रस्सी में साँप का भ्रम। मिथ्या को समझने का अर्थ है — उसे पार कर जाना।
@@ -804,6 +1464,17 @@ mindmap
 
 ### ६१. मुक्ति (Mukti)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" alt="Handwritten: ६१. मुक्ति (Mukti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" alt="Diagram: ६१. मुक्ति (Mukti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" alt="Sticky Note: ६१. मुक्ति (Mukti)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 मुक्ति — ओशो मुक्ति को किसी भविष्य की घटना के रूप में नहीं देखते। मुक्ति यहीं और अभी है। इसका अर्थ है — अतीत और भविष्य के बंधनों से मुक्त होना, वर्तमान में पूरी तरह जीना।
 
@@ -815,6 +1486,17 @@ mindmap
 ---
 
 ### ६२. मैत्री (Maitri)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" alt="Handwritten: ६२. मैत्री (Maitri)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" alt="Diagram: ६२. मैत्री (Maitri)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" alt="Sticky Note: ६२. मैत्री (Maitri)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 मैत्री — सबसे मित्रता। ओशो के अनुसार, मैत्री कोई कर्तव्य नहीं है — यह ध्यान की स्वाभाविक परिणति है। जैसे फूल खिलता है और खुशबू फैलती है — वैसे ही ध्यानी से मैत्री फैलती है।
@@ -828,6 +1510,17 @@ mindmap
 
 ### ६३. मोक्ष (Moksa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" alt="Handwritten: ६३. मोक्ष (Moksa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" alt="Diagram: ६३. मोक्ष (Moksa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" alt="Sticky Note: ६३. मोक्ष (Moksa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 मोक्ष — मुक्ति, बंधनों से आज़ादी। ओशो के अनुसार, बंधन क्या हैं? — अतीत, भविष्य, आदतें, पहचान। जब तुम इन सब से मुक्त हो जाते हो — वह मोक्ष है। मोक्ष को पाना नहीं है — मोक्ष तो खोना है, जंजीरों को खो देना है।
 
@@ -839,6 +1532,17 @@ mindmap
 ---
 
 ### ६४. मौन (Mauna)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" alt="Handwritten: ६४. मौन (Mauna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" alt="Diagram: ६४. मौन (Mauna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" alt="Sticky Note: ६४. मौन (Mauna)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 मौन — ओशो के लिए मौन केवल बोलना बंद करने का नाम नहीं है। असली मौन तब होता है जब मन का शोर बंद हो जाता है। भीतर का मौन ही असली है — और वह किसी प्रयास से नहीं आता, वह आता है देखने से।
@@ -852,6 +1556,17 @@ mindmap
 
 ### ६५. यंत्र (Yantra)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" alt="Handwritten: ६५. यंत्र (Yantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" alt="Diagram: ६५. यंत्र (Yantra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" alt="Sticky Note: ६५. यंत्र (Yantra)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 यंत्र — एक ज्यामितीय आरेख जो ध्यान में सहायक होता है। ओशो यंत्र को बाहरी वस्तु के रूप में नहीं, बल्कि आंतरिक उपकरण के रूप में समझाते हैं — एक प्रतीक जो मन को केंद्रित करने में मदद करता है।
 
@@ -863,6 +1578,17 @@ mindmap
 ---
 
 ### ६६. योग (Yoga)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" alt="Handwritten: ६६. योग (Yoga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" alt="Diagram: ६६. योग (Yoga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" alt="Sticky Note: ६६. योग (Yoga)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 योग — 'युज्' धातु से — जोड़ना। ओशो ने योग और तंत्र में बुनियादी अंतर बताया। योग संघर्ष है, तंत्र समर्पण है। योग दमन पर आधारित है, तंत्र स्वीकार पर। योग कहता है — ऊर्जा को ऊपर खींचो; तंत्र कहता है — ऊर्जा को समझो।
@@ -876,6 +1602,17 @@ mindmap
 
 ### ६७. राग (Raga)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" alt="Handwritten: ६७. राग (Raga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" alt="Diagram: ६७. राग (Raga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" alt="Sticky Note: ६७. राग (Raga)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 राग — आसक्ति। ओशो के अनुसार, राग का अर्थ है — किसी वस्तु या व्यक्ति से चिपक जाना। राग दुख का कारण है — लेकिन ओशो कहते हैं, राग को जबरदस्ती छोड़ने से वह और गहरा होता है। उसे समझना — और वह अपने आप गिर जाता है।
 
@@ -887,6 +1624,17 @@ mindmap
 ---
 
 ### ६८. लीला (Lila)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" alt="Handwritten: ६८. लीला (Lila)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" alt="Diagram: ६८. लीला (Lila)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" alt="Sticky Note: ६८. लीला (Lila)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 लीला — दिव्य खेल। ओशो के अनुसार, सारा ब्रह्मांड परमात्मा की लीला है — कोई उद्देश्य नहीं, कोई लक्ष्य नहीं, बस खेल। जब तुम जीवन को लीला के रूप में देखने लगते हो, तो सारा तनाव गायब हो जाता है।
@@ -900,6 +1648,17 @@ mindmap
 
 ### ६९. वासना (Vasana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" alt="Handwritten: ६९. वासना (Vasana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" alt="Diagram: ६९. वासना (Vasana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" alt="Sticky Note: ६९. वासना (Vasana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 वासना — गहरी संस्कारगत इच्छाएँ। ओशो के अनुसार, वासनाओं को दबाने से वे और गहरी होती हैं। उन्हें जागरूकता में लाना — उन्हें देखना — यही एकमात्र तरीका है उनसे मुक्त होने का।
 
@@ -911,6 +1670,17 @@ mindmap
 ---
 
 ### ७०. विवेक (Viveka)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" alt="Handwritten: ७०. विवेक (Viveka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" alt="Diagram: ७०. विवेक (Viveka)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" alt="Sticky Note: ७०. विवेक (Viveka)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 विवेक — समझदारी, भेद करने की क्षमता। लेकिन ओशो के अनुसार, असली विवेक वह है जो द्वैत से परे जाता है। सामान्य विवेक अच्छे-बुरे में भेद करता है — असली विवेक देखता है कि अच्छा और बुरा एक ही सिक्के के दो पहलू हैं।
@@ -924,6 +1694,17 @@ mindmap
 
 ### ७१. शक्ति (Sakti)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" alt="Handwritten: ७१. शक्ति (Sakti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" alt="Diagram: ७१. शक्ति (Sakti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" alt="Sticky Note: ७१. शक्ति (Sakti)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 शक्ति — दिव्य ऊर्जा, गतिशील सिद्धांत। ओशो के अनुसार, शिव और शक्ति एक ही वास्तविकता के दो पहलू हैं — शिव चेतना है, शक्ति ऊर्जा है। शिव शांत है, शक्ति गतिशील है।
 
@@ -935,6 +1716,17 @@ mindmap
 ---
 
 ### ७२. शांभव उपाय (Sambhava Upaya)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" alt="Handwritten: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" alt="Diagram: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" alt="Sticky Note: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 शांभव उपाय — तीन उपायों में सबसे उच्च। ओशो के अनुसार, शांभव उपाय में कोई प्रयास नहीं है — कोई तकनीक नहीं, कोई क्रिया नहीं। केवल इच्छा — परम को पाने की तीव्र इच्छा।
@@ -948,6 +1740,17 @@ mindmap
 
 ### ७३. शिव (Siva)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" alt="Handwritten: ७३. शिव (Siva)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" alt="Diagram: ७३. शिव (Siva)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" alt="Sticky Note: ७३. शिव (Siva)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 शिव — चेतना, शुद्ध चेतना। ओशो के अनुसार, शिव कोई देवता नहीं जो स्वर्ग में बैठा है — शिव एक अवस्था है। तुम शिव को पूज सकते हो, लेकिन असली बात है — तुम स्वयं शिव बन जाओ।
 
@@ -959,6 +1762,17 @@ mindmap
 ---
 
 ### ७४. शून्य (Sunya)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" alt="Handwritten: ७४. शून्य (Sunya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" alt="Diagram: ७४. शून्य (Sunya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" alt="Sticky Note: ७४. शून्य (Sunya)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 शून्य — खालीपन, लेकिन नकारात्मक नहीं। ओशो शून्य को बहुत सकारात्मक अर्थ में समझाते हैं। शून्य का अर्थ है — सब कुछ छोड़ देना, ताकि नया आ सके। जैसे खाली कमरे में नया फर्नीचर आ सकता है।
@@ -972,6 +1786,17 @@ mindmap
 
 ### ७५. श्वास (Svasa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" alt="Handwritten: ७५. श्वास (Svasa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" alt="Diagram: ७५. श्वास (Svasa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" alt="Sticky Note: ७५. श्वास (Svasa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 श्वास — जीवन और मृत्यु के बीच का सेतु। ओशो के अनुसार, श्वास सबसे सरल और सबसे गहरी ध्यान विधि है। श्वास हमेशा चल रही है — इसलिए यह हमेशा उपलब्ध है। श्वास को देखना — यही पहली और अंतिम ध्यान विधि है।
 
@@ -983,6 +1808,17 @@ mindmap
 ---
 
 ### ७६. षट्चक्र (Satcakra)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" alt="Handwritten: ७६. षट्चक्र (Satcakra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" alt="Diagram: ७६. षट्चक्र (Satcakra)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" alt="Sticky Note: ७६. षट्चक्र (Satcakra)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 षट्चक्र — छह ऊर्जा केंद्र। ओशो चक्रों को शारीरिक नहीं, बल्कि मनोवैज्ञानिक वास्तविकताएँ मानते हैं। चक्र ध्यान में अनुभव किए जा सकते हैं, लेकिन उन पर ज़्यादा ध्यान देना ठीक नहीं।
@@ -996,6 +1832,17 @@ mindmap
 
 ### ७७. संकल्प (Sankalpa)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" alt="Handwritten: ७७. संकल्प (Sankalpa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" alt="Diagram: ७७. संकल्प (Sankalpa)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" alt="Sticky Note: ७७. संकल्प (Sankalpa)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 संकल्प — दृढ़ निश्चय। ओशो के अनुसार, संकल्प ध्यान में बहुत महत्वपूर्ण है। बिना संकल्प के कोई यात्रा संभव नहीं है। लेकिन संकल्प कठोर नहीं होना चाहिए — वह लचीला होना चाहिए, जैसे नदी।
 
@@ -1007,6 +1854,17 @@ mindmap
 ---
 
 ### ७८. संसार (Samsara)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" alt="Handwritten: ७८. संसार (Samsara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" alt="Diagram: ७८. संसार (Samsara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" alt="Sticky Note: ७८. संसार (Samsara)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 संसार — ओशो संसार को पारंपरिक अर्थ (दुखों का घर) में नहीं लेते। उनके अनुसार, संसार कोई जगह नहीं है — यह एक अवस्था है। जब तुम अतीत और भविष्य के बीच झूलते हो — तब तुम संसार में हो।
@@ -1020,6 +1878,17 @@ mindmap
 
 ### ७९. साक्षी (Saksi)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" alt="Handwritten: ७९. साक्षी (Saksi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" alt="Diagram: ७९. साक्षी (Saksi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" alt="Sticky Note: ७९. साक्षी (Saksi)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 साक्षी — ओशो की शिक्षा का केंद्रीय शब्द। साक्षी का अर्थ है — बिना किसी निर्णय के, बिना किसी पहचान के देखना। जैसे कोई तीसरा व्यक्ति तुम्हारे जीवन की घटनाओं को देख रहा हो — वैसे ही अपने शरीर, मन, भावनाओं को देखो। यही सभी ११२ तकनीकों का मूल आधार है।
 
@@ -1031,6 +1900,17 @@ mindmap
 ---
 
 ### ८०. साक्षीभाव (Saksibhava)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" alt="Handwritten: ८०. साक्षीभाव (Saksibhava)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" alt="Diagram: ८०. साक्षीभाव (Saksibhava)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" alt="Sticky Note: ८०. साक्षीभाव (Saksibhava)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 साक्षीभाव — साक्षी की अवस्था में होना। ओशो ने इस शब्द को विशेष महत्व दिया। साक्षीभाव कोई करने की चीज़ नहीं है — यह एक स्वभाव है जिसे खोजना है। जब तुम साक्षीभाव में होते हो, तो तुम कुछ नहीं कर रहे होते — तुम बस हो रहे होते हो।
@@ -1044,6 +1924,17 @@ mindmap
 
 ### ८१. साक्षात्कार (Saksatkara)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" alt="Handwritten: ८१. साक्षात्कार (Saksatkara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" alt="Diagram: ८१. साक्षात्कार (Saksatkara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" alt="Sticky Note: ८१. साक्षात्कार (Saksatkara)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 साक्षात्कार — प्रत्यक्ष अनुभव। ओशो के अनुसार, साक्षात्कार का अर्थ है — सत्य को सीधे, बिना किसी मध्यस्थ के, अनुभव करना। जैसे तुम फल का स्वाद लेते हो — वैसे ही सत्य का।
 
@@ -1055,6 +1946,17 @@ mindmap
 ---
 
 ### ८२. साधना (Sadhana)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" alt="Handwritten: ८२. साधना (Sadhana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" alt="Diagram: ८२. साधना (Sadhana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" alt="Sticky Note: ८२. साधना (Sadhana)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 साधना — आध्यात्मिक अभ्यास। ओशो साधना को एक विरोधाभास के रूप में देखते हैं — साधना करो, लेकिन साधना में मत उलझो। साधना का अंतिम लक्ष्य है — साधना से परे जाना।
@@ -1068,6 +1970,17 @@ mindmap
 
 ### ८३. समर्पण (Samarpana)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" alt="Handwritten: ८३. समर्पण (Samarpana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" alt="Diagram: ८३. समर्पण (Samarpana)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" alt="Sticky Note: ८३. समर्पण (Samarpana)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 समर्पण — पूरी तरह छोड़ देना। ओशो के अनुसार, समर्पण किसी व्यक्ति या संस्था को नहीं किया जाता — समर्पण तो अस्तित्व को किया जाता है। अपने नियंत्रण को छोड़ना, अपनी चिंताओं को छोड़ना।
 
@@ -1079,6 +1992,17 @@ mindmap
 ---
 
 ### ८४. समाधि (Samadhi)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" alt="Handwritten: ८४. समाधि (Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" alt="Diagram: ८४. समाधि (Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" alt="Sticky Note: ८४. समाधि (Samadhi)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 समाधि — ध्यान की सबसे गहरी अवस्था। ओशो के अनुसार, समाधि का अर्थ है — मन का पूर्ण विश्राम। कोई विचार नहीं, कोई भावना नहीं — केवल शुद्ध चेतना। समाधि कोई लक्ष्य नहीं — यह तुम्हारा स्वभाव है।
@@ -1092,6 +2016,17 @@ mindmap
 
 ### ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" alt="Handwritten: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" alt="Diagram: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" alt="Sticky Note: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 सम्पूर्ण स्वीकार — ओशो का सबसे क्रांतिकारी सिद्धांत। इसका अर्थ है — जो कुछ भी है, उसे पूरी तरह स्वीकार करना। क्रोध, काम, लोभ — किसी भी चीज़ से मत भागो। जो तुम स्वीकार कर लेते हो, वह बदल जाता है।
 
@@ -1103,6 +2038,17 @@ mindmap
 ---
 
 ### ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" alt="Handwritten: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" alt="Diagram: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" alt="Sticky Note: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 सम्प्रज्ञात समाधि — वह समाधि जिसमें जागरूकता बनी रहती है, लेकिन द्वैत भी है (ध्याता और ध्येय)। इससे आगे असम्प्रज्ञात समाधि है — जहाँ द्वैत पूरी तरह मिट जाता है।
@@ -1116,6 +2062,17 @@ mindmap
 
 ### ८७. सहज समाधि (Sahaja Samadhi)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" alt="Handwritten: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" alt="Diagram: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" alt="Sticky Note: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 सहज समाधि — स्वाभाविक समाधि। ओशो के अनुसार, यह सबसे उच्च अवस्था है जहाँ समाधि कोई विशेष अनुभव नहीं रह जाती — वह तुम्हारा स्वभाव बन जाती है। चलते-फिरते, खाते-पीते — हर पल समाधि में होना।
 
@@ -1127,6 +2084,17 @@ mindmap
 ---
 
 ### ८८. सिद्धि (Siddhi)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" alt="Handwritten: ८८. सिद्धि (Siddhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" alt="Diagram: ८८. सिद्धि (Siddhi)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" alt="Sticky Note: ८८. सिद्धि (Siddhi)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 सिद्धि — आध्यात्मिक शक्ति। ओशो ने सिद्धियों को बहुत सावधानी से समझाया। वे कहते हैं — सिद्धियाँ ध्यान के उप-उत्पाद हैं, लक्ष्य नहीं। उनके पीछे मत भागो — वे अपने आप आएँगी, और जब आएँ, तो उनमें मत उलझो।
@@ -1140,6 +2108,17 @@ mindmap
 
 ### ८९. सुषुप्ति (Susupti)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" alt="Handwritten: ८९. सुषुप्ति (Susupti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" alt="Diagram: ८९. सुषुप्ति (Susupti)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" alt="Sticky Note: ८९. सुषुप्ति (Susupti)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 सुषुप्ति — गहन निद्रा। चेतना की तीसरी अवस्था। ओशो के अनुसार, सुषुप्ति में चेतना होती है लेकिन वह बेहोश होती है — जैसे बीज में पेड़ छिपा है।
 
@@ -1151,6 +2130,17 @@ mindmap
 ---
 
 ### ९०. सूक्ष्म शरीर (Suksma Sarira)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" alt="Handwritten: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" alt="Diagram: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" alt="Sticky Note: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 सूक्ष्म शरीर — वह शरीर जो स्थूल शरीर से परे है। ओशो के अनुसार, मनुष्य के कई आयाम हैं — स्थूल, सूक्ष्म, कारण शरीर। ध्यान सूक्ष्म शरीर को जगाने का काम करता है।
@@ -1164,6 +2154,17 @@ mindmap
 
 ### ९१. स्पंद (Spanda)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" alt="Handwritten: ९१. स्पंद (Spanda)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" alt="Diagram: ९१. स्पंद (Spanda)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" alt="Sticky Note: ९१. स्पंद (Spanda)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 स्पंद — स्पंदन, कंपन। ओशो के अनुसार, स्पंद ब्रह्मांड की मूल प्रक्रिया है — सब कुछ स्पंदित हो रहा है। शिव और शक्ति का मिलन एक स्पंद है। ध्यान में तुम इस मूल स्पंद को महसूस कर सकते हो।
 
@@ -1175,6 +2176,17 @@ mindmap
 ---
 
 ### ९२. स्वप्न (Svapna)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" alt="Handwritten: ९२. स्वप्न (Svapna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" alt="Diagram: ९२. स्वप्न (Svapna)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" alt="Sticky Note: ९२. स्वप्न (Svapna)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 स्वप्न — चेतना की दूसरी अवस्था। ओशो स्वप्न को सिर्फ रात के सपने नहीं मानते — वे कहते हैं, हम दिन में भी स्वप्न देख रहे हैं। हमारे विचार, कल्पनाएँ — ये सब स्वप्न हैं। ध्यान इस स्वप्न से जागना है।
@@ -1188,6 +2200,17 @@ mindmap
 
 ### ९३. स्वाध्याय (Svadhyaya)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" alt="Handwritten: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" alt="Diagram: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" alt="Sticky Note: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 स्वाध्याय — स्वयं का अध्ययन। ओशो के अनुसार, स्वाध्याय का अर्थ किताबें पढ़ना नहीं — अपने आप को पढ़ना है। अपने विचारों, भावनाओं, व्यवहार को — बिना किसी निर्णय के — देखना और समझना।
 
@@ -1200,6 +2223,17 @@ mindmap
 
 ### ९४. हठ योग (Hatha Yoga)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" alt="Handwritten: ९४. हठ योग (Hatha Yoga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" alt="Diagram: ९४. हठ योग (Hatha Yoga)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" alt="Sticky Note: ९४. हठ योग (Hatha Yoga)" width="30%">
+</a>
+
+
 **ओशो की परिभाषा:**
 हठ योग — शरीर को अनुशासित करने का योग। ओशो हठ योग को तंत्र से अलग बताते हैं। हठ योग शरीर को जीतना चाहता है — तंत्र शरीर को समझना चाहता है। हठ योग में संघर्ष है — तंत्र में स्वीकार है।
 
@@ -1211,6 +2245,17 @@ mindmap
 ---
 
 ### ९५. हृदय (Hrdaya)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" alt="Handwritten: ९५. हृदय (Hrdaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" alt="Diagram: ९५. हृदय (Hrdaya)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" alt="Sticky Note: ९५. हृदय (Hrdaya)" width="30%">
+</a>
+
 
 **ओशो की परिभाषा:**
 हृदय — केवल शारीरिक अंग नहीं, बल्कि भावनाओं और करुणा का केंद्र। ओशो के अनुसार, हृदय चेतना का एक द्वार है — जब तुम हृदय में जीते हो, तो तुम प्रेम में जीते हो। और प्रेम ही परम ध्यान है।

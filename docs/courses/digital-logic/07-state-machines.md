@@ -38,6 +38,17 @@ graph TD
 
 ### 7.1.1 Formal Definition
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-handwritten.svg" alt="Handwritten: 7.1.1 Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-diagram.svg" alt="Diagram: 7.1.1 Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-1-formal-definition-sticky.svg" alt="Sticky Note: 7.1.1 Formal Definition" width="30%">
+</a>
+
+
 An FSM is a 6-tuple (S, G, S, s0, d, ?) where:
 - S = input alphabet
 - G = output alphabet
@@ -47,6 +58,17 @@ An FSM is a 6-tuple (S, G, S, s0, d, ?) where:
 - ?: S ? G (Moore) or ?: S ? S ? G (Mealy) = output function
 
 ### 7.1.2 Mealy vs Moore Models
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-handwritten.svg" alt="Handwritten: 7.1.2 Mealy vs Moore Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-diagram.svg" alt="Diagram: 7.1.2 Mealy vs Moore Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-1-2-mealy-vs-moore-models-sticky.svg" alt="Sticky Note: 7.1.2 Mealy vs Moore Models" width="30%">
+</a>
+
 
 | Feature | Mealy | Moore |
 |---------|-------|-------|
@@ -78,6 +100,17 @@ graph LR
 
 ### 7.2.1 Design Flow
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-handwritten.svg" alt="Handwritten: 7.2.1 Design Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-diagram.svg" alt="Diagram: 7.2.1 Design Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-1-design-flow-sticky.svg" alt="Sticky Note: 7.2.1 Design Flow" width="30%">
+</a>
+
+
 1. **Word description:** understand the problem
 2. **State diagram:** graphical representation of states and transitions
 3. **State table:** tabular form of the state diagram
@@ -88,6 +121,17 @@ graph LR
 8. **Implementation:** map to flip-flops and gates
 
 ### 7.2.2 Example: Sequence Detector
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-handwritten.svg" alt="Handwritten: 7.2.2 Example: Sequence Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-diagram.svg" alt="Diagram: 7.2.2 Example: Sequence Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-2-example-sequence-detector-sticky.svg" alt="Sticky Note: 7.2.2 Example: Sequence Detector" width="30%">
+</a>
+
 
 Design a Moore FSM that detects the sequence "101" on a serial input X and asserts output Z=1 when the sequence is completed.
 
@@ -143,6 +187,17 @@ console.log(sequenceDetectorMoore(test).join('')); // 0010001001
 
 ### 7.2.3 Mealy Implementation
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-handwritten.svg" alt="Handwritten: 7.2.3 Mealy Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-diagram.svg" alt="Diagram: 7.2.3 Mealy Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-2-3-mealy-implementation-sticky.svg" alt="Sticky Note: 7.2.3 Mealy Implementation" width="30%">
+</a>
+
+
 The same sequence detector in Mealy form uses only 3 states:
 
 ```mermaid
@@ -192,6 +247,17 @@ console.log(sequenceDetectorMealy(test).join('')); // 0000001001 (output on same
 Reducing the number of states simplifies the combinational logic and reduces the flip-flop count (log2N flops for N states).
 
 ### 7.3.1 Implication Table Method
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-handwritten.svg" alt="Handwritten: 7.3.1 Implication Table Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-diagram.svg" alt="Diagram: 7.3.1 Implication Table Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-1-implication-table-method-sticky.svg" alt="Sticky Note: 7.3.1 Implication Table Method" width="30%">
+</a>
+
 
 The implication table (pair chart) systematically finds equivalent states.
 
@@ -276,6 +342,17 @@ function minimiseMealy(table: StateTable): string[][] {
 
 ### 7.3.2 Partitioning Method
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-handwritten.svg" alt="Handwritten: 7.3.2 Partitioning Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-diagram.svg" alt="Diagram: 7.3.2 Partitioning Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-3-2-partitioning-method-sticky.svg" alt="Sticky Note: 7.3.2 Partitioning Method" width="30%">
+</a>
+
+
 An alternative approach that partitions states into equivalence classes:
 
 1. P0 = partition by output values
@@ -289,6 +366,17 @@ State encoding assigns binary codes to symbolic states. The choice of encoding d
 
 ### 7.4.1 Binary (Sequential) Encoding
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-handwritten.svg" alt="Handwritten: 7.4.1 Binary (Sequential) Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-diagram.svg" alt="Diagram: 7.4.1 Binary (Sequential) Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-1-binary-sequential-encoding-sticky.svg" alt="Sticky Note: 7.4.1 Binary (Sequential) Encoding" width="30%">
+</a>
+
+
 Assigns consecutive binary values to states.
 
 ```
@@ -301,6 +389,17 @@ S0 = 00, S1 = 01, S2 = 10, S3 = 11
 | Natural for counters | Multiple bit transitions between states |
 
 ### 7.4.2 One-Hot Encoding
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-handwritten.svg" alt="Handwritten: 7.4.2 One-Hot Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-diagram.svg" alt="Diagram: 7.4.2 One-Hot Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-2-one-hot-encoding-sticky.svg" alt="Sticky Note: 7.4.2 One-Hot Encoding" width="30%">
+</a>
+
 
 Each state gets its own flip-flop; exactly one flip-flop is high at any time.
 
@@ -335,6 +434,17 @@ class OneHotFSM {
 
 ### 7.4.3 Gray Encoding
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-handwritten.svg" alt="Handwritten: 7.4.3 Gray Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-diagram.svg" alt="Diagram: 7.4.3 Gray Encoding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-3-gray-encoding-sticky.svg" alt="Sticky Note: 7.4.3 Gray Encoding" width="30%">
+</a>
+
+
 Consecutive states differ by exactly one bit.
 
 ```
@@ -347,6 +457,17 @@ S0 = 000, S1 = 001, S2 = 011, S3 = 010, S4 = 110, S5 = 111
 | Reduces switching activity | May not minimise logic optimally |
 
 ### 7.4.4 Encoding Selection Guide
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-handwritten.svg" alt="Handwritten: 7.4.4 Encoding Selection Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-diagram.svg" alt="Diagram: 7.4.4 Encoding Selection Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-4-4-encoding-selection-guide-sticky.svg" alt="Sticky Note: 7.4.4 Encoding Selection Guide" width="30%">
+</a>
+
 
 | Constraint | Best Encoding |
 |------------|--------------|
@@ -361,6 +482,17 @@ S0 = 000, S1 = 001, S2 = 011, S3 = 010, S4 = 110, S5 = 111
 ## 7.5 Implementing FSMs with Different Flip-Flops
 
 ### 7.5.1 D Flip-Flop Implementation
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-handwritten.svg" alt="Handwritten: 7.5.1 D Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-diagram.svg" alt="Diagram: 7.5.1 D Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-1-d-flip-flop-implementation-sticky.svg" alt="Sticky Note: 7.5.1 D Flip-Flop Implementation" width="30%">
+</a>
+
 
 D flip-flops are the simplest: Q? = D, so the next-state equations are directly the D inputs.
 
@@ -387,6 +519,17 @@ function dffImpl(Q1: number, Q0: number, X: number) {
 
 ### 7.5.2 JK Flip-Flop Implementation
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-handwritten.svg" alt="Handwritten: 7.5.2 JK Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-diagram.svg" alt="Diagram: 7.5.2 JK Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-2-jk-flip-flop-implementation-sticky.svg" alt="Sticky Note: 7.5.2 JK Flip-Flop Implementation" width="30%">
+</a>
+
+
 JK flip-flops often require less external logic because of their toggle capability.
 
 ```
@@ -411,6 +554,17 @@ function jkImpl(Q1: number, Q0: number, X: number) {
 
 ### 7.5.3 T Flip-Flop Implementation
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-handwritten.svg" alt="Handwritten: 7.5.3 T Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-diagram.svg" alt="Diagram: 7.5.3 T Flip-Flop Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-5-3-t-flip-flop-implementation-sticky.svg" alt="Sticky Note: 7.5.3 T Flip-Flop Implementation" width="30%">
+</a>
+
+
 T flip-flops are useful when many transitions are toggles.
 
 ```
@@ -434,6 +588,17 @@ graph TD
 
 ### 7.6.1 ASM Components
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-handwritten.svg" alt="Handwritten: 7.6.1 ASM Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-diagram.svg" alt="Diagram: 7.6.1 ASM Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-1-asm-components-sticky.svg" alt="Sticky Note: 7.6.1 ASM Components" width="30%">
+</a>
+
+
 | Symbol | Name | Description |
 |--------|------|-------------|
 | Rectangle | State box | State name and Moore outputs |
@@ -441,6 +606,17 @@ graph TD
 | Oval | Conditional output box | Mealy output |
 
 ### 7.6.2 ASM to Hardware
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-handwritten.svg" alt="Handwritten: 7.6.2 ASM to Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-diagram.svg" alt="Diagram: 7.6.2 ASM to Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-6-2-asm-to-hardware-sticky.svg" alt="Sticky Note: 7.6.2 ASM to Hardware" width="30%">
+</a>
+
 
 Each ASM block corresponds directly to:
 - One state flip-flop
@@ -477,6 +653,17 @@ class ASMController {
 ## 7.7 Common FSM Design Patterns
 
 ### 7.7.1 Traffic Light Controller
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-handwritten.svg" alt="Handwritten: 7.7.1 Traffic Light Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-diagram.svg" alt="Diagram: 7.7.1 Traffic Light Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-1-traffic-light-controller-sticky.svg" alt="Sticky Note: 7.7.1 Traffic Light Controller" width="30%">
+</a>
+
 
 ```mermaid
 graph TD
@@ -538,6 +725,17 @@ class TrafficLightController {
 
 ### 7.7.2 UART Receiver
 
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-handwritten.svg" alt="Handwritten: 7.7.2 UART Receiver" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-diagram.svg" alt="Diagram: 7.7.2 UART Receiver" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-2-uart-receiver-sticky.svg" alt="Sticky Note: 7.7.2 UART Receiver" width="30%">
+</a>
+
+
 A UART receiver FSM samples a serial line at 16x the baud rate:
 
 ```typescript
@@ -581,6 +779,17 @@ class UARTReceiver {
 ```
 
 ### 7.7.3 Vending Machine Controller
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-handwritten.svg" alt="Handwritten: 7.7.3 Vending Machine Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-diagram.svg" alt="Diagram: 7.7.3 Vending Machine Controller" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/7-7-3-vending-machine-controller-sticky.svg" alt="Sticky Note: 7.7.3 Vending Machine Controller" width="30%">
+</a>
+
 
 ```typescript
 class VendingMachineFSM {
@@ -936,6 +1145,17 @@ c) Both require the same number
 d) It depends on the application
 
 ### Answers
+
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/07-state-machines/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/07-state-machines/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+</a>
+
 
 Q1: a | Q2: a | Q3: a | Q4: b | Q5: b
 

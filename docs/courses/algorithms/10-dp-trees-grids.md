@@ -30,6 +30,17 @@ Trees and grids together form the backbone of **90% of DSA interview problems** 
 
 ### What is a Tree?
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" alt="Handwritten: What is a Tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" alt="Diagram: What is a Tree?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" alt="Sticky Note: What is a Tree?" width="30%">
+</a>
+
+
 A **tree** is a hierarchical data structure consisting of nodes connected by edges, with the following properties:
 - A single **root** node with no parent.
 - Every node has zero or more **child** nodes.
@@ -48,6 +59,17 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 
 ### Tree Terminology
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" alt="Handwritten: Tree Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" alt="Diagram: Tree Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" alt="Sticky Note: Tree Terminology" width="30%">
+</a>
+
+
 | Term | Definition |
 |------|------------|
 | **Root** | Topmost node with no parent |
@@ -62,6 +84,17 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 ---
 
 ### Binary Tree Traversals
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" alt="Handwritten: Binary Tree Traversals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" alt="Diagram: Binary Tree Traversals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" alt="Sticky Note: Binary Tree Traversals" width="30%">
+</a>
+
 
 Traversals visit every node in a specific order — the order determines the algorithm's behavior.
 
@@ -399,6 +432,17 @@ void levelOrder(Node root) {
 
 ### Binary Search Tree (BST) Operations
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" alt="Handwritten: Binary Search Tree (BST) Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" alt="Diagram: Binary Search Tree (BST) Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" alt="Sticky Note: Binary Search Tree (BST) Operations" width="30%">
+</a>
+
+
 A BST is a binary tree where for every node: all values in the left subtree are less, and all values in the right subtree are greater.
 
 ```
@@ -671,6 +715,17 @@ Node deleteBST(Node root, int key) {
 
 ### Segment Tree
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" alt="Handwritten: Segment Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" alt="Diagram: Segment Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" alt="Sticky Note: Segment Tree" width="30%">
+</a>
+
+
 **Real-World Analogy:** An organization's expense report breakdown — instead of summing all receipts each time, the accounting department keeps precomputed subtotals by department, by team, by project. A query for "total expenses from departments A–C" just adds three subtotals instead of scanning every receipt.
 
 A **segment tree** is a binary tree that stores interval/segment information. It enables answering range queries (sum, min, max) and updating elements in **O(log n)** time.
@@ -881,6 +936,17 @@ class SegmentTree {
 
 ### Fenwick Tree (Binary Indexed Tree)
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" alt="Handwritten: Fenwick Tree (Binary Indexed Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" alt="Diagram: Fenwick Tree (Binary Indexed Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" alt="Sticky Note: Fenwick Tree (Binary Indexed Tree)" width="30%">
+</a>
+
+
 **Real-World Analogy:** A library's book counter — instead of recounting all shelves every time, each librarian keeps a running count for their section. The head librarian combines a few section counts to answer "how many books on shelves 1–15?" without scanning every shelf.
 
 A **Fenwick Tree** is a simpler alternative to the segment tree for **prefix sum queries and point updates**. It uses **O(n)** space and has simpler implementation.
@@ -1047,6 +1113,17 @@ class FenwickTree {
 
 ### What is a Grid?
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" alt="Handwritten: What is a Grid?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" alt="Diagram: What is a Grid?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" alt="Sticky Note: What is a Grid?" width="30%">
+</a>
+
+
 A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column). Grids represent spatial data — images, maps, game boards.
 
 ```
@@ -1058,6 +1135,17 @@ A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column
 **Real-World Analogy:** An image is a grid of pixels. Each pixel has an RGB value. Filters (like blur) process neighbors in the grid.
 
 ### Grid Traversal: DFS and BFS on a Matrix
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" alt="Handwritten: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" alt="Diagram: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" alt="Sticky Note: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+</a>
+
 
 **Real-World Analogy (DFS):** Exploring a maze — you take each path as far as it goes before backtracking. You mark visited corridors with chalk.
 **Real-World Analogy (BFS):** Flood fill in a paint program — the color spreads outward in concentric rings from where you click.
@@ -1275,6 +1363,17 @@ void bfsGrid(int[][] grid, int sr, int sc) {
 ## Part 3: Dynamic Programming on Trees
 
 ### 10.1 DP on Trees
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" alt="Handwritten: 10.1 DP on Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" alt="Diagram: 10.1 DP on Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" alt="Sticky Note: 10.1 DP on Trees" width="30%">
+</a>
+
 
 Trees are naturally recursive: each node can be processed after its children are processed (post-order traversal). Tree DP typically defines a state \( dp[u] \) representing the optimal value for the subtree rooted at \( u \).
 
@@ -1665,6 +1764,17 @@ int rob(TreeNode root) {
 
 ### 10.2 DP on Grids
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" alt="Handwritten: 10.2 DP on Grids" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" alt="Diagram: 10.2 DP on Grids" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" alt="Sticky Note: 10.2 DP on Grids" width="30%">
+</a>
+
+
 Grid DP involves traversing a 2D array from one corner to another, making moves (right, down, diagonal). The DP state represents the value at position (i, j).
 
 **Real-World Analogy:** A warehouse robot moving from the receiving dock to the shipping bay, always moving right or down (never backward). Each cell has a handling cost. The DP finds the cheapest route without the robot needing to backtrack.
@@ -2020,6 +2130,17 @@ int uniquePathsWithObstacles(int[][] grid) {
 
 ### 10.3 DP with Bitmasking
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" alt="Handwritten: 10.3 DP with Bitmasking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" alt="Diagram: 10.3 DP with Bitmasking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" alt="Sticky Note: 10.3 DP with Bitmasking" width="30%">
+</a>
+
+
 DP with bitmasking is used for problems where we need to track subsets of elements. The state is a bitmask representing a set, and the transition adds or removes elements from the set.
 
 **Real-World Analogy:** A delivery driver planning the shortest route to visit 15 customers. Instead of trying all 15! permutations (~1.3 trillion), DP with bitmasking groups states by "which customers visited so far" — reducing the search space dramatically.
@@ -2203,6 +2324,17 @@ These problems are among the most frequently asked in FAANG/MAANG interviews.
 
 ### 1. Lowest Common Ancestor (LCA)
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" alt="Handwritten: 1. Lowest Common Ancestor (LCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" alt="Diagram: 1. Lowest Common Ancestor (LCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" alt="Sticky Note: 1. Lowest Common Ancestor (LCA)" width="30%">
+</a>
+
+
 **Problem:** Given a binary tree and two nodes p, q, find their lowest common ancestor (the deepest node that has both as descendants).
 
 **Approach (Recursive):**
@@ -2227,17 +2359,50 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 
 ### 2. Diameter of Binary Tree
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" alt="Handwritten: 2. Diameter of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" alt="Diagram: 2. Diameter of Binary Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" alt="Sticky Note: 2. Diameter of Binary Tree" width="30%">
+</a>
+
+
 **Problem:** Same as 10.1.1 but for any binary tree (not necessarily rooted at 0). See the full derivation above.
 
 ---
 
 ### 3. Grid Unique Paths with Obstacles
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" alt="Handwritten: 3. Grid Unique Paths with Obstacles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" alt="Diagram: 3. Grid Unique Paths with Obstacles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" alt="Sticky Note: 3. Grid Unique Paths with Obstacles" width="30%">
+</a>
+
+
 **Problem:** Same as 10.2.3. Common follow-up: "What if you can move in all 4 directions?" → Use BFS/DFS with visited tracking (not DP, moves can cycle).
 
 ---
 
 ### 4. Number of Islands
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" alt="Handwritten: 4. Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" alt="Diagram: 4. Number of Islands" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" alt="Sticky Note: 4. Number of Islands" width="30%">
+</a>
+
 
 **Problem:** Given a 2D grid of '1's (land) and '0's (water), count the number of islands (connected groups of '1's connected horizontally or vertically).
 
@@ -2268,9 +2433,31 @@ int numIslands(vector<vector<char>>& grid) {
 
 ### File System Indexing (Trees)
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" alt="Handwritten: File System Indexing (Trees)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" alt="Diagram: File System Indexing (Trees)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" alt="Sticky Note: File System Indexing (Trees)" width="30%">
+</a>
+
+
 Every OS uses a tree-based file system. `find / -name "*.txt"` performs a tree traversal. File system indexers (like Spotlight, Everything) maintain precomputed trees with metadata for instant search. The **B-tree** and variants are the cornerstone of database indexing (MySQL, PostgreSQL, MongoDB).
 
 ### Game Maps (Grid Pathfinding)
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" alt="Handwritten: Game Maps (Grid Pathfinding)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" alt="Diagram: Game Maps (Grid Pathfinding)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" alt="Sticky Note: Game Maps (Grid Pathfinding)" width="30%">
+</a>
+
 
 In game development, the game world is divided into a grid (tile map). Pathfinding algorithms (A*, Dijkstra) run on this grid:
 - **Civilization** uses hexagonal grids for turn-based movement.
@@ -2279,6 +2466,17 @@ In game development, the game world is divided into a grid (tile map). Pathfindi
 - **Google Maps** converts road networks into grid representations for route calculation.
 
 ### Compiler AST (Trees)
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" alt="Handwritten: Compiler AST (Trees)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" alt="Diagram: Compiler AST (Trees)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" alt="Sticky Note: Compiler AST (Trees)" width="30%">
+</a>
+
 
 Every compiler parses source code into an **Abstract Syntax Tree** (AST):
 ```
@@ -2304,12 +2502,34 @@ Linting tools (ESLint, PyLint) and formatters (Prettier) also work on ASTs.
 
 ### Image Processing (Grids)
 
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" alt="Handwritten: Image Processing (Grids)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" alt="Diagram: Image Processing (Grids)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" alt="Sticky Note: Image Processing (Grids)" width="30%">
+</a>
+
+
 Every image filter is a grid operation:
 - **Blur** averages each pixel with its 3×3 neighbors.
 - **Edge detection** (Sobel operator) convolves the grid with specific kernels.
 - **Seam carving** (content-aware image resizing) uses DP on the image grid to find minimal-energy seams.
 
 ### Robotics (Grids)
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" alt="Handwritten: Robotics (Grids)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" alt="Diagram: Robotics (Grids)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" alt="Sticky Note: Robotics (Grids)" width="30%">
+</a>
+
 
 Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 1. Maps the room onto a grid (SLAM algorithm).
@@ -2320,6 +2540,17 @@ Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 ---
 
 ### Chapter at a Glance
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -2335,6 +2566,17 @@ Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 | DP with Bitmask | dp[mask][v] = min cost ending at v | State = visited set + current node — classic TSP |
 
 ### Chapter Roadmap
+
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR

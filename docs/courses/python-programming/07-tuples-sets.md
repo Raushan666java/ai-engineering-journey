@@ -59,6 +59,17 @@ print(type(without_parens))  # <class 'tuple'>
 
 ### 7.1.1 Tuple Operations
 
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-handwritten.svg" alt="Handwritten: 7.1.1 Tuple Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-diagram.svg" alt="Diagram: 7.1.1 Tuple Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-1-tuple-operations-sticky.svg" alt="Sticky Note: 7.1.1 Tuple Operations" width="30%">
+</a>
+
+
 Tuples support indexing, slicing, concatenation, and repetition:
 
 ```python
@@ -80,6 +91,17 @@ t[0] = 10  # TypeError: 'tuple' object does not support item assignment
 ```
 
 ### 7.1.2 Why Use Tuples?
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-handwritten.svg" alt="Handwritten: 7.1.2 Why Use Tuples?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-diagram.svg" alt="Diagram: 7.1.2 Why Use Tuples?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-1-2-why-use-tuples-sticky.svg" alt="Sticky Note: 7.1.2 Why Use Tuples?" width="30%">
+</a>
+
 
 Tuples are used where immutability matters:
 - Dictionary keys (lists cannot be keys)
@@ -283,6 +305,17 @@ mixed = {1, "hello", (1, 2)}  # tuples are hashable
 
 ### 7.4.1 Creating Sets
 
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-handwritten.svg" alt="Handwritten: 7.4.1 Creating Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-diagram.svg" alt="Diagram: 7.4.1 Creating Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-1-creating-sets-sticky.svg" alt="Sticky Note: 7.4.1 Creating Sets" width="30%">
+</a>
+
+
 ```python
 from_list = set([1, 2, 3, 2, 1])   # {1, 2, 3} -- duplicates removed
 from_string = set("hello")          # {'h', 'e', 'l', 'o'} -- unordered
@@ -290,6 +323,17 @@ from_generator = set(x ** 2 for x in range(5))
 ```
 
 ### 7.4.2 Set Methods
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-handwritten.svg" alt="Handwritten: 7.4.2 Set Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-diagram.svg" alt="Diagram: 7.4.2 Set Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-2-set-methods-sticky.svg" alt="Sticky Note: 7.4.2 Set Methods" width="30%">
+</a>
+
 
 ```python
 s = {1, 2, 3, 4, 5}
@@ -304,6 +348,17 @@ print(2 in {1, 2, 3})           # True (O(1) on average)
 ```
 
 ### 7.4.3 Set Operations
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-handwritten.svg" alt="Handwritten: 7.4.3 Set Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-diagram.svg" alt="Diagram: 7.4.3 Set Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-3-set-operations-sticky.svg" alt="Sticky Note: 7.4.3 Set Operations" width="30%">
+</a>
+
 
 ```python
 a = {1, 2, 3, 4, 5}
@@ -321,6 +376,17 @@ print({1, 2}.isdisjoint({3}))  # True (no common elements)
 ```
 
 ### 7.4.4 Set Comprehensions
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-handwritten.svg" alt="Handwritten: 7.4.4 Set Comprehensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-diagram.svg" alt="Diagram: 7.4.4 Set Comprehensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-4-4-set-comprehensions-sticky.svg" alt="Sticky Note: 7.4.4 Set Comprehensions" width="30%">
+</a>
+
 
 ```python
 squares = {x ** 2 for x in range(10)}
@@ -419,6 +485,17 @@ const fs: ReadonlySet<number> = new Set([1, 2, 3]);
 
 ### 7.7.1 Removing Duplicates
 
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-handwritten.svg" alt="Handwritten: 7.7.1 Removing Duplicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-diagram.svg" alt="Diagram: 7.7.1 Removing Duplicates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-1-removing-duplicates-sticky.svg" alt="Sticky Note: 7.7.1 Removing Duplicates" width="30%">
+</a>
+
+
 ```python
 items = [3, 1, 2, 1, 3, 4, 2]
 unique_items = list(set(items))
@@ -430,6 +507,17 @@ print(unique_ordered)  # [3, 1, 2, 4]
 ```
 
 ### 7.7.2 Finding Common Elements
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-handwritten.svg" alt="Handwritten: 7.7.2 Finding Common Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-diagram.svg" alt="Diagram: 7.7.2 Finding Common Elements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/7-7-2-finding-common-elements-sticky.svg" alt="Sticky Note: 7.7.2 Finding Common Elements" width="30%">
+</a>
+
 
 ```python
 def common_elements(lst1, lst2):
@@ -980,6 +1068,17 @@ Implement a simple spell checker. Load a dictionary of English words into a set.
 Rewrite the `jaccard_similarity` function in TypeScript. Implement union, intersection, and difference as separate helper functions that operate on TypeScript `Set<T>`. Then compare TypeScript's Set performance vs Python's set for 10,000-element operations.
 
 ### Practical Takeaways
+
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/07-tuples-sets/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+</a>
+
 
 | Python Concept | TypeScript Equivalent | Key Difference |
 |----------------|----------------------|----------------|

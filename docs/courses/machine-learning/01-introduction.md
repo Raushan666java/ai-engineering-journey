@@ -65,6 +65,17 @@ flowchart TD
 
 ### What is Machine Learning?
 
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-handwritten.svg" alt="Handwritten: What is Machine Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-diagram.svg" alt="Diagram: What is Machine Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/what-is-machine-learning-sticky.svg" alt="Sticky Note: What is Machine Learning?" width="30%">
+</a>
+
+
 Machine learning is a subset of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. In traditional programming, a developer writes explicit if-then-else logic to process data. In machine learning, an algorithm uses data and statistical techniques to infer the underlying rules.
 
 **Arthur Samuel** (1959): "The field of study that gives computers the ability to learn without being explicitly programmed."
@@ -72,6 +83,17 @@ Machine learning is a subset of artificial intelligence that provides systems th
 **Tom Mitchell** (1997) ? a more precise, formal definition: "A computer program is said to learn from experience $E$ with respect to some class of tasks $T$ and performance measure $P$, if its performance at tasks in $T$, as measured by $P$, improves with experience $E$."
 
 ### Formal Problem Definition
+
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-handwritten.svg" alt="Handwritten: Formal Problem Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-diagram.svg" alt="Diagram: Formal Problem Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/formal-problem-definition-sticky.svg" alt="Sticky Note: Formal Problem Definition" width="30%">
+</a>
+
 
 Every machine learning problem consists of three components:
 
@@ -82,6 +104,17 @@ Every machine learning problem consists of three components:
 A learning algorithm takes experience $E$ as input and outputs a hypothesis $h \in \mathcal{H}$ (the hypothesis space) that performs task $T$. The goal is to find $h$ that maximizes $P$ on unseen data, not just the training set.
 
 ### Hypothesis Space and Inductive Bias
+
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-handwritten.svg" alt="Handwritten: Hypothesis Space and Inductive Bias" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-diagram.svg" alt="Diagram: Hypothesis Space and Inductive Bias" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/hypothesis-space-and-inductive-bias-sticky.svg" alt="Sticky Note: Hypothesis Space and Inductive Bias" width="30%">
+</a>
+
 
 The **hypothesis space** $\mathcal{H}$ is the set of all functions the learning algorithm can possibly produce. For linear regression, $\mathcal{H}$ contains all linear functions. For neural networks, it contains an enormous family of non-linear functions.
 
@@ -112,6 +145,17 @@ flowchart LR
 
 ### Types of Machine Learning
 
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-handwritten.svg" alt="Handwritten: Types of Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-diagram.svg" alt="Diagram: Types of Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-machine-learning-sticky.svg" alt="Sticky Note: Types of Machine Learning" width="30%">
+</a>
+
+
 Machine learning algorithms fall into three primary categories based on the nature of the learning signal available:
 
 | Type | Signal | Goal | Example Algorithms |
@@ -129,6 +173,17 @@ Machine learning algorithms fall into three primary categories based on the natu
 
 ### Types of Supervised Learning Problems
 
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-handwritten.svg" alt="Handwritten: Types of Supervised Learning Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-diagram.svg" alt="Diagram: Types of Supervised Learning Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/types-of-supervised-learning-problems-sticky.svg" alt="Sticky Note: Types of Supervised Learning Problems" width="30%">
+</a>
+
+
 | Problem Type | Target $y$ | Loss Function | Evaluation Metric |
 |---|---|---|---|
 | Regression | Continuous ($\mathbb{R}$) | MSE, MAE, Huber | $R^2$, RMSE, MAE |
@@ -139,6 +194,17 @@ Machine learning algorithms fall into three primary categories based on the natu
 | Ranking | Ordered lists | Pairwise ranking hinge | NDCG, MAP, MRR |
 
 ### The Inductive Learning Hypothesis
+
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-handwritten.svg" alt="Handwritten: The Inductive Learning Hypothesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-diagram.svg" alt="Diagram: The Inductive Learning Hypothesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-inductive-learning-hypothesis-sticky.svg" alt="Sticky Note: The Inductive Learning Hypothesis" width="30%">
+</a>
+
 
 A fundamental assumption in machine learning:
 
@@ -151,6 +217,17 @@ This assumption is what makes generalization possible ? but it only holds when:
 3. The inductive bias is aligned with the true underlying function
 
 ### No Free Lunch Theorem
+
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-handwritten.svg" alt="Handwritten: No Free Lunch Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-diagram.svg" alt="Diagram: No Free Lunch Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/no-free-lunch-theorem-sticky.svg" alt="Sticky Note: No Free Lunch Theorem" width="30%">
+</a>
+
 
 The No Free Lunch (NFL) theorem (Wolpert, 1996) states:
 
@@ -165,6 +242,17 @@ In other words, if an algorithm performs exceptionally well on one class of prob
 - The theorem motivates the need for cross-validation and empirical comparison on your specific dataset
 
 ### The Machine Learning Pipeline
+
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-handwritten.svg" alt="Handwritten: The Machine Learning Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-diagram.svg" alt="Diagram: The Machine Learning Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/01-introduction/the-machine-learning-pipeline-sticky.svg" alt="Sticky Note: The Machine Learning Pipeline" width="30%">
+</a>
+
 
 A typical ML project follows a structured workflow with feedback loops:
 

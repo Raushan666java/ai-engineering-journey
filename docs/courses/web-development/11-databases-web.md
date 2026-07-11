@@ -128,6 +128,17 @@ main()
 
 ### CRUD with Prisma
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-handwritten.svg" alt="Handwritten: CRUD with Prisma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-diagram.svg" alt="Diagram: CRUD with Prisma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-sticky.svg" alt="Sticky Note: CRUD with Prisma" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Proper indexing dramatically improves query performance with minimal write overhead.
 
 ```prisma
@@ -167,6 +178,17 @@ model Tag {
 ```
 
 ### CRUD with Prisma
+
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-handwritten.svg" alt="Handwritten: CRUD with Prisma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-diagram.svg" alt="Diagram: CRUD with Prisma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/crud-with-prisma-sticky.svg" alt="Sticky Note: CRUD with Prisma" width="30%">
+</a>
+
 
 ```typescript
 import { PrismaClient } from "@prisma/client";
@@ -389,6 +411,17 @@ await prisma.user.createMany({
 
 ### Connection Pooling
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-handwritten.svg" alt="Handwritten: Connection Pooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-diagram.svg" alt="Diagram: Connection Pooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/connection-pooling-sticky.svg" alt="Sticky Note: Connection Pooling" width="30%">
+</a>
+
+
 ```typescript
 import { Pool } from "pg";
 
@@ -425,6 +458,17 @@ graph LR
 
 ### Prisma Middleware and Logging
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-handwritten.svg" alt="Handwritten: Prisma Middleware and Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-diagram.svg" alt="Diagram: Prisma Middleware and Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/prisma-middleware-and-logging-sticky.svg" alt="Sticky Note: Prisma Middleware and Logging" width="30%">
+</a>
+
+
 Prisma middleware intercepts query operations for logging, caching, or modification.
 
 ```typescript
@@ -454,6 +498,17 @@ prisma.$use(async (params, next) => {
 
 ### Database Migration Strategy
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-handwritten.svg" alt="Handwritten: Database Migration Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-diagram.svg" alt="Diagram: Database Migration Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/database-migration-strategy-sticky.svg" alt="Sticky Note: Database Migration Strategy" width="30%">
+</a>
+
+
 ```mermaid
 graph LR
     A[Schema Change] --> B[Create Migration]
@@ -470,6 +525,17 @@ graph LR
 ```
 
 ### Query Performance Analysis
+
+<a href="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-handwritten.svg" alt="Handwritten: Query Performance Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-diagram.svg" alt="Diagram: Query Performance Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/query-performance-analysis-sticky.svg" alt="Sticky Note: Query Performance Analysis" width="30%">
+</a>
+
 
 Use `EXPLAIN ANALYZE` to understand query execution plans.
 
@@ -489,6 +555,17 @@ ORDER BY post_count DESC;
 ```
 
 ### Read Replicas and Sharding
+
+<a href="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-handwritten.svg" alt="Handwritten: Read Replicas and Sharding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-diagram.svg" alt="Diagram: Read Replicas and Sharding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/read-replicas-and-sharding-sticky.svg" alt="Sticky Note: Read Replicas and Sharding" width="30%">
+</a>
+
 
 For read-heavy workloads, offload queries to read replicas:
 
@@ -890,6 +967,17 @@ Databases are the persistence layer of web applications. Prisma ORM provides typ
 
 ### Application Projects
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+</a>
+
+
 1. Add full-text search to a blog using PostgreSQL tsvector
 2. Implement a leaderboard feature using Redis sorted sets
 3. Create a database migration strategy with rollback support
@@ -902,9 +990,31 @@ Databases are the persistence layer of web applications. Prisma ORM provides typ
 
 ### Challenge Project
 
+<a href="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+</a>
+
+
 Build a database layer for an e-commerce platform with products, categories, inventory, orders, and users. Include composite indexes for reporting queries, Redis caching for product listings, migration scripts for schema changes, and a query analysis tool that identifies slow queries.
 
 ### Practical Takeaways
+
+<a href="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/11-databases-web/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+</a>
+
 
 1. **Always use parameterized queries** — never interpolate user input into SQL strings, even in internal tools.
 2. **Model first, then migrate** — define your Prisma schema completely before generating the first migration to minimize schema drift.

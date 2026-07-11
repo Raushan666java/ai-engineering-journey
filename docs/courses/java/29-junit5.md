@@ -132,6 +132,17 @@ JUnit 5 is divided into three modules:
 
 ### 1.1 JUnit Platform
 
+<a href="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-handwritten.svg" alt="Handwritten: 1.1 JUnit Platform" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-diagram.svg" alt="Diagram: 1.1 JUnit Platform" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-1-junit-platform-sticky.svg" alt="Sticky Note: 1.1 JUnit Platform" width="30%">
+</a>
+
+
 The Platform is the foundation. It provides:
 
 - A `TestEngine` SPI that any test framework (JUnit Jupiter, JUnit Vintage, Spek, etcd) can implement
@@ -189,6 +200,17 @@ class SampleTest {
 
 ### 1.2 JUnit Jupiter
 
+<a href="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-handwritten.svg" alt="Handwritten: 1.2 JUnit Jupiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-diagram.svg" alt="Diagram: 1.2 JUnit Jupiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-2-junit-jupiter-sticky.svg" alt="Sticky Note: 1.2 JUnit Jupiter" width="30%">
+</a>
+
+
 Jupiter is the programming model Ã¢â‚¬â€ the `junit-jupiter-api` module provides every annotation and assertion you use when writing JUnit 5 tests. The `junit-jupiter-engine` module is the `TestEngine` implementation that the Platform discovers at runtime.
 
 ```java
@@ -216,6 +238,17 @@ class JupiterEngineDiscoveryDemo {
 ```
 
 ### 1.3 JUnit Vintage
+
+<a href="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-handwritten.svg" alt="Handwritten: 1.3 JUnit Vintage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-diagram.svg" alt="Diagram: 1.3 JUnit Vintage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/1-3-junit-vintage-sticky.svg" alt="Sticky Note: 1.3 JUnit Vintage" width="30%">
+</a>
+
 
 Vintage provides a `TestEngine` that runs JUnit 4 tests (and JUnit 3 tests via the JUnit 4 runner). This is critical for migration: you can adopt the JUnit 5 Platform immediately while keeping existing JUnit 4 tests running unchanged.
 
@@ -256,6 +289,17 @@ public class VintageCompatibilityTest {
 ## 2. Annotations & Lifecycle
 
 ### 2.1 Core Test Annotations
+
+<a href="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-handwritten.svg" alt="Handwritten: 2.1 Core Test Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-diagram.svg" alt="Diagram: 2.1 Core Test Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-1-core-test-annotations-sticky.svg" alt="Sticky Note: 2.1 Core Test Annotations" width="30%">
+</a>
+
 
 ```java
 package junit5.annotations;
@@ -314,6 +358,17 @@ class CoreAnnotationDemo {
 ```
 
 ### 2.2 DisplayName and DisplayNameGeneration
+
+<a href="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-handwritten.svg" alt="Handwritten: 2.2 DisplayName and DisplayNameGeneration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-diagram.svg" alt="Diagram: 2.2 DisplayName and DisplayNameGeneration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-2-displayname-and-displaynamegeneration-sticky.svg" alt="Sticky Note: 2.2 DisplayName and DisplayNameGeneration" width="30%">
+</a>
+
 
 ```java
 package junit5.annotations;
@@ -425,6 +480,17 @@ class CustomDisplayNameGeneratorDemo {
 
 ### 2.3 Test Method Ordering
 
+<a href="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-handwritten.svg" alt="Handwritten: 2.3 Test Method Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-diagram.svg" alt="Diagram: 2.3 Test Method Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-3-test-method-ordering-sticky.svg" alt="Sticky Note: 2.3 Test Method Ordering" width="30%">
+</a>
+
+
 ```java
 package junit5.annotations;
 
@@ -480,6 +546,17 @@ class AlphabeticalOrderDemo {
 ```
 
 ### 2.4 Test Instance Lifecycle
+
+<a href="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-handwritten.svg" alt="Handwritten: 2.4 Test Instance Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-diagram.svg" alt="Diagram: 2.4 Test Instance Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-4-test-instance-lifecycle-sticky.svg" alt="Sticky Note: 2.4 Test Instance Lifecycle" width="30%">
+</a>
+
 
 ```java
 package junit5.lifecycle;
@@ -589,6 +666,17 @@ class PerMethodLifecycleDemo {
 ```
 
 ### 2.5 Interface Default Methods
+
+<a href="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-handwritten.svg" alt="Handwritten: 2.5 Interface Default Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-diagram.svg" alt="Diagram: 2.5 Interface Default Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/2-5-interface-default-methods-sticky.svg" alt="Sticky Note: 2.5 Interface Default Methods" width="30%">
+</a>
+
 
 ```java
 package junit5.lifecycle;
@@ -713,6 +801,17 @@ class StringContractTest implements ComparableContract<String> {
 
 ### 3.1 Standard Assertions
 
+<a href="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-handwritten.svg" alt="Handwritten: 3.1 Standard Assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-diagram.svg" alt="Diagram: 3.1 Standard Assertions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-1-standard-assertions-sticky.svg" alt="Sticky Note: 3.1 Standard Assertions" width="30%">
+</a>
+
+
 ```java
 package junit5.assertions;
 
@@ -833,6 +932,17 @@ class Calculator {
 
 ### 3.2 Grouped Assertions (assertAll)
 
+<a href="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-handwritten.svg" alt="Handwritten: 3.2 Grouped Assertions (assertAll)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-diagram.svg" alt="Diagram: 3.2 Grouped Assertions (assertAll)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-2-grouped-assertions-assertall-sticky.svg" alt="Sticky Note: 3.2 Grouped Assertions (assertAll)" width="30%">
+</a>
+
+
 `assertAll` executes every assertion inside, even if some fail. This is critical for verifying domain objects: you want to see ALL violations, not stop at the first one.
 
 ```java
@@ -914,6 +1024,17 @@ record Person(String firstName, String lastName) {}
 
 ### 3.3 Assumptions
 
+<a href="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-handwritten.svg" alt="Handwritten: 3.3 Assumptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-diagram.svg" alt="Diagram: 3.3 Assumptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/3-3-assumptions-sticky.svg" alt="Sticky Note: 3.3 Assumptions" width="30%">
+</a>
+
+
 Assumptions gate test execution based on conditions. A failed assumption *skips* the test rather than failing it. This is different from `assert*` which fails.
 
 ```java
@@ -981,6 +1102,17 @@ Parameterized tests run the same test method multiple times with different argum
 
 ### 4.1 ValueSource
 
+<a href="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-handwritten.svg" alt="Handwritten: 4.1 ValueSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-diagram.svg" alt="Diagram: 4.1 ValueSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-1-valuesource-sticky.svg" alt="Sticky Note: 4.1 ValueSource" width="30%">
+</a>
+
+
 ```java
 package junit5.parameterized;
 
@@ -1028,6 +1160,17 @@ class StringValidator {
 ```
 
 ### 4.2 NullSource, EmptySource, NullAndEmptySource
+
+<a href="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-handwritten.svg" alt="Handwritten: 4.2 NullSource, EmptySource, NullAndEmptySource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-diagram.svg" alt="Diagram: 4.2 NullSource, EmptySource, NullAndEmptySource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-2-nullsource-emptysource-nullandemptysource-sticky.svg" alt="Sticky Note: 4.2 NullSource, EmptySource, NullAndEmptySource" width="30%">
+</a>
+
 
 ```java
 package junit5.parameterized;
@@ -1083,6 +1226,17 @@ class UserService {
 ```
 
 ### 4.3 EnumSource
+
+<a href="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-handwritten.svg" alt="Handwritten: 4.3 EnumSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-diagram.svg" alt="Diagram: 4.3 EnumSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-3-enumsource-sticky.svg" alt="Sticky Note: 4.3 EnumSource" width="30%">
+</a>
+
 
 ```java
 package junit5.parameterized;
@@ -1155,6 +1309,17 @@ class BusinessCalendar {
 ```
 
 ### 4.4 MethodSource
+
+<a href="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-handwritten.svg" alt="Handwritten: 4.4 MethodSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-diagram.svg" alt="Diagram: 4.4 MethodSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-4-methodsource-sticky.svg" alt="Sticky Note: 4.4 MethodSource" width="30%">
+</a>
+
 
 `@MethodSource` references a *static* factory method (or methods) that returns a `Stream`, `Collection`, `Iterable`, `Iterator`, or array of arguments.
 
@@ -1264,6 +1429,17 @@ class TaxCalculator {
 
 ### 4.5 CsvSource
 
+<a href="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-handwritten.svg" alt="Handwritten: 4.5 CsvSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-diagram.svg" alt="Diagram: 4.5 CsvSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-5-csvsource-sticky.svg" alt="Sticky Note: 4.5 CsvSource" width="30%">
+</a>
+
+
 ```java
 package junit5.parameterized;
 
@@ -1343,6 +1519,17 @@ class ShoppingCart {
 
 ### 4.6 CsvFileSource
 
+<a href="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-handwritten.svg" alt="Handwritten: 4.6 CsvFileSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-diagram.svg" alt="Diagram: 4.6 CsvFileSource" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-6-csvfilesource-sticky.svg" alt="Sticky Note: 4.6 CsvFileSource" width="30%">
+</a>
+
+
 ```java
 package junit5.parameterized;
 
@@ -1394,6 +1581,17 @@ class CsvFileSourceDemo {
 ```
 
 ### 4.7 ArgumentsSource (Custom ArgumentsProvider)
+
+<a href="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-handwritten.svg" alt="Handwritten: 4.7 ArgumentsSource (Custom ArgumentsProvider)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-diagram.svg" alt="Diagram: 4.7 ArgumentsSource (Custom ArgumentsProvider)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/4-7-argumentssource-custom-argumentsprovider-sticky.svg" alt="Sticky Note: 4.7 ArgumentsSource (Custom ArgumentsProvider)" width="30%">
+</a>
+
 
 ```java
 package junit5.parameterized;
@@ -1469,6 +1667,17 @@ class RomanConverter {
 
 ### 5.1 Implicit and Explicit Conversion
 
+<a href="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-handwritten.svg" alt="Handwritten: 5.1 Implicit and Explicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-diagram.svg" alt="Diagram: 5.1 Implicit and Explicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-1-implicit-and-explicit-conversion-sticky.svg" alt="Sticky Note: 5.1 Implicit and Explicit Conversion" width="30%">
+</a>
+
+
 JUnit 5 automatically converts strings to common types (`int`, `long`, `double`, `boolean`, `BigDecimal`, `UUID`, `Locale`, `File`, `Path`, `URL`, `URI`, `Instant`, etc.). For custom types, implement `ArgumentConverter`:
 
 ```java
@@ -1531,6 +1740,17 @@ class EuropeanDateConverter implements ArgumentConverter {
 ```
 
 ### 5.2 Argument Aggregation
+
+<a href="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-handwritten.svg" alt="Handwritten: 5.2 Argument Aggregation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-diagram.svg" alt="Diagram: 5.2 Argument Aggregation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/5-2-argument-aggregation-sticky.svg" alt="Sticky Note: 5.2 Argument Aggregation" width="30%">
+</a>
+
 
 When a parameterized test has many arguments, aggregating them into a single object improves readability.
 
@@ -1618,6 +1838,17 @@ class PersonAggregator implements ArgumentsAggregator {
 Dynamic tests are generated at runtime by a `@TestFactory` method. Unlike `@Test` methods which are compile-time constants, dynamic tests can be generated based on external data, database state, or file system contents.
 
 ### 6.1 DynamicTest
+
+<a href="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-handwritten.svg" alt="Handwritten: 6.1 DynamicTest" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-diagram.svg" alt="Diagram: 6.1 DynamicTest" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-1-dynamictest-sticky.svg" alt="Sticky Note: 6.1 DynamicTest" width="30%">
+</a>
+
 
 ```java
 package junit5.dynamictests;
@@ -1724,6 +1955,17 @@ class StringConverter {
 
 ### 6.2 DynamicContainer
 
+<a href="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-handwritten.svg" alt="Handwritten: 6.2 DynamicContainer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-diagram.svg" alt="Diagram: 6.2 DynamicContainer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-2-dynamiccontainer-sticky.svg" alt="Sticky Note: 6.2 DynamicContainer" width="30%">
+</a>
+
+
 `DynamicContainer` groups dynamic tests into a hierarchical structure.
 
 ```java
@@ -1789,6 +2031,17 @@ class ProductValidator {
 ```
 
 ### 6.3 Stream-Based Dynamic URL Tests
+
+<a href="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-handwritten.svg" alt="Handwritten: 6.3 Stream-Based Dynamic URL Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-diagram.svg" alt="Diagram: 6.3 Stream-Based Dynamic URL Tests" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/6-3-stream-based-dynamic-url-tests-sticky.svg" alt="Sticky Note: 6.3 Stream-Based Dynamic URL Tests" width="30%">
+</a>
+
 
 ```java
 package junit5.dynamictests;
@@ -2200,6 +2453,17 @@ class AnnotatedTagTest {
 Extensions are JUnit 5's mechanism for plugging custom behaviour into the test lifecycle. They replace JUnit 4's runners and rules.
 
 ### 10.1 @ExtendWith and Extension Interfaces
+
+<a href="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-handwritten.svg" alt="Handwritten: 10.1 @ExtendWith and Extension Interfaces" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-diagram.svg" alt="Diagram: 10.1 @ExtendWith and Extension Interfaces" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/29-junit5/10-1-extendwith-and-extension-interfaces-sticky.svg" alt="Sticky Note: 10.1 @ExtendWith and Extension Interfaces" width="30%">
+</a>
+
 
 ```java
 package junit5.extensions;

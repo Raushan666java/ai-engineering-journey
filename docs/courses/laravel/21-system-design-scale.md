@@ -23,6 +23,17 @@
 
 ### 1. Design for 10M+ Users
 
+<a href="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-handwritten.svg" alt="Handwritten: 1. Design for 10M+ Users" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-diagram.svg" alt="Diagram: 1. Design for 10M+ Users" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/21-system-design-scale/1-design-for-10m-users-sticky.svg" alt="Sticky Note: 1. Design for 10M+ Users" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Plan for horizontal scaling, caching, sharding, CDN, async processing, and multi-region from the start.
 

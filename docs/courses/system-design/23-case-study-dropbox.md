@@ -54,6 +54,17 @@ flowchart LR
 
 ### Phase 1: Problem Scope and Requirements
 
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-handwritten.svg" alt="Handwritten: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-diagram.svg" alt="Diagram: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-1-problem-scope-and-requirements-sticky.svg" alt="Sticky Note: Phase 1: Problem Scope and Requirements" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -70,6 +81,17 @@ Non-functional requirements include strong read-after-write consistency within a
 The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory — the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos — all within a browser tab.
 
 ### Phase 2: Client Architecture
+
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-handwritten.svg" alt="Handwritten: Phase 2: Client Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-diagram.svg" alt="Diagram: Phase 2: Client Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-2-client-architecture-sticky.svg" alt="Sticky Note: Phase 2: Client Architecture" width="30%">
+</a>
+
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -147,6 +169,17 @@ Smart Sync dramatically reduces local storage requirements. An enterprise user w
 
 ### Phase 3: Sync Protocol and Block-Level Transfer
 
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-handwritten.svg" alt="Handwritten: Phase 3: Sync Protocol and Block-Level Transfer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-diagram.svg" alt="Diagram: Phase 3: Sync Protocol and Block-Level Transfer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-sync-protocol-and-block-level-transfer-sticky.svg" alt="Sticky Note: Phase 3: Sync Protocol and Block-Level Transfer" width="30%">
+</a>
+
+
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
@@ -190,6 +223,17 @@ When the server receives a block upload, it checks if a block with that hash alr
 The deduplication ratio for Dropbox is estimated at 10:1 to 50:1 depending on the user population. Shared operating system files, common document templates, and popular media files all benefit from dedup.
 
 ### Phase 3 (continued): Server Architecture
+
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-handwritten.svg" alt="Handwritten: Phase 3 (continued): Server Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-diagram.svg" alt="Diagram: Phase 3 (continued): Server Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-3-continued-server-architecture-sticky.svg" alt="Sticky Note: Phase 3 (continued): Server Architecture" width="30%">
+</a>
+
 
 **Metadata Store**
 
@@ -255,6 +299,17 @@ The protocol:
 LAN sync provides dramatic speed improvements. A 1GB file that would take 30 seconds over a 300Mbps internet connection takes 3 seconds over a 1Gbps LAN. It also reduces server bandwidth costs: popular files shared within an organization are transferred locally rather than through the cloud.
 
 ### Phase 4: Team Collaboration and Security
+
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-handwritten.svg" alt="Handwritten: Phase 4: Team Collaboration and Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-diagram.svg" alt="Diagram: Phase 4: Team Collaboration and Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/phase-4-team-collaboration-and-security-sticky.svg" alt="Sticky Note: Phase 4: Team Collaboration and Security" width="30%">
+</a>
+
 
 **NAS Integration**
 
@@ -420,6 +475,17 @@ graph TB
 
 ### Mermaid: Dropbox Sync State Machine
 
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-handwritten.svg" alt="Handwritten: Mermaid: Dropbox Sync State Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-diagram.svg" alt="Diagram: Mermaid: Dropbox Sync State Machine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/mermaid-dropbox-sync-state-machine-sticky.svg" alt="Sticky Note: Mermaid: Dropbox Sync State Machine" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     A[Local: File Created] --> B{Compare with Remote}
@@ -529,6 +595,17 @@ class SyncEngine {
 
 
 ### Implementation: Dropbox Architecture Case Study
+
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-handwritten.svg" alt="Handwritten: Implementation: Dropbox Architecture Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-diagram.svg" alt="Diagram: Implementation: Dropbox Architecture Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/23-case-study-dropbox/implementation-dropbox-architecture-case-study-sticky.svg" alt="Sticky Note: Implementation: Dropbox Architecture Case Study" width="30%">
+</a>
+
 
 ```typescript
 class DropboxFileSystem {

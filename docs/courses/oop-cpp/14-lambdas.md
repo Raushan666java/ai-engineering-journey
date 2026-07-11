@@ -58,9 +58,31 @@ flowchart LR
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Think of a lambda like leaving a **sticky note instruction** for a colleague. The sticky note says *what to do*, *what supplies you've attached*, and *what result you expect* — all in one compact form. You don't need a full procedures document (a named function); a sticky note (a lambda) is faster and lives right where the task is.
 
 ### Lambda Grammar
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-handwritten.svg" alt="Handwritten: Lambda Grammar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-diagram.svg" alt="Diagram: Lambda Grammar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-grammar-sticky.svg" alt="Sticky Note: Lambda Grammar" width="30%">
+</a>
+
 
 The full lambda syntax in C++ is:
 
@@ -77,6 +99,17 @@ The full lambda syntax in C++ is:
 
 ### Numbered Steps to Write a Lambda
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-handwritten.svg" alt="Handwritten: Numbered Steps to Write a Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-diagram.svg" alt="Diagram: Numbered Steps to Write a Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/numbered-steps-to-write-a-lambda-sticky.svg" alt="Sticky Note: Numbered Steps to Write a Lambda" width="30%">
+</a>
+
+
 | Step | Action | Example |
 |------|--------|---------|
 | 1 | Start with `[]` — decide what to capture | `[x]` or `[&x]` or `[]` |
@@ -86,6 +119,17 @@ The full lambda syntax in C++ is:
 | 5 | Assign to `auto` variable (or invoke immediately) | `auto sum = ...;` |
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION create_lambda(capture_mode, parameters, body):
@@ -100,6 +144,17 @@ END FUNCTION
 ```
 
 ### Basic Lambda Examples
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-handwritten.svg" alt="Handwritten: Basic Lambda Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-diagram.svg" alt="Diagram: Basic Lambda Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/basic-lambda-examples-sticky.svg" alt="Sticky Note: Basic Lambda Examples" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -144,6 +199,17 @@ func(10) = 20
 
 ### What the Compiler Generates: Closure Object
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-handwritten.svg" alt="Handwritten: What the Compiler Generates: Closure Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-diagram.svg" alt="Diagram: What the Compiler Generates: Closure Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-the-compiler-generates-closure-object-sticky.svg" alt="Sticky Note: What the Compiler Generates: Closure Object" width="30%">
+</a>
+
+
 Every lambda is syntactic sugar for a compiler-generated **closure class** with `operator()`. Example:
 
 ```cpp
@@ -163,6 +229,17 @@ __lambda_1 cmp;
 
 ### Dry Run: Lambda Invocation
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-handwritten.svg" alt="Handwritten: Dry Run: Lambda Invocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-diagram.svg" alt="Diagram: Dry Run: Lambda Invocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-lambda-invocation-sticky.svg" alt="Sticky Note: Dry Run: Lambda Invocation" width="30%">
+</a>
+
+
 Consider: `auto square = [](int x) { return x * x; };` then `square(5)`.
 
 | Step | Instruction | `x` | Return | Notes |
@@ -172,6 +249,17 @@ Consider: `auto square = [](int x) { return x * x; };` then `square(5)`.
 | 3 | Return 25 | 5 | 25 | Value returned to caller |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time Complexity | Space Complexity | Notes |
 |-----------|----------------|------------------|-------|
@@ -184,11 +272,33 @@ Consider: `auto square = [](int x) { return x * x; };` then `square(5)`.
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A lambda's capture clause is like **packing a suitcase** before a trip. You decide what to bring along:
 - **By value** = you pack a photocopy of a document. You can read it, even scribble on your copy, but the original stays home.
 - **By reference** = you pack a GPS tracker pointing to your house. You can see what's happening at home in real time, but if the house burns down, the tracker is useless (dangling reference!).
 
 ### Capture Modes Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-handwritten.svg" alt="Handwritten: Capture Modes Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-diagram.svg" alt="Diagram: Capture Modes Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-modes-reference-sticky.svg" alt="Sticky Note: Capture Modes Reference" width="30%">
+</a>
+
 
 | Capture Syntax | Meaning | Lifetime Concern |
 |---------------|---------|------------------|
@@ -204,6 +314,17 @@ A lambda's capture clause is like **packing a suitcase** before a trip. You deci
 | `[x = expr]` (C++14) | Generalized capture | Flexible — own any expression result |
 
 ### Capture by Value: Deep Example
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-handwritten.svg" alt="Handwritten: Capture by Value: Deep Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-diagram.svg" alt="Diagram: Capture by Value: Deep Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-deep-example-sticky.svg" alt="Sticky Note: Capture by Value: Deep Example" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -246,6 +367,17 @@ counter2(): 1
 
 ### Capture by Reference: Deep Example
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-handwritten.svg" alt="Handwritten: Capture by Reference: Deep Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-diagram.svg" alt="Diagram: Capture by Reference: Deep Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-reference-deep-example-sticky.svg" alt="Sticky Note: Capture by Reference: Deep Example" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <functional>
@@ -286,6 +418,17 @@ count = 3
 
 ### Capture by Value vs Reference — Comparison Table
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-handwritten.svg" alt="Handwritten: Capture by Value vs Reference — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-diagram.svg" alt="Diagram: Capture by Value vs Reference — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capture-by-value-vs-reference-comparison-table-sticky.svg" alt="Sticky Note: Capture by Value vs Reference — Comparison Table" width="30%">
+</a>
+
+
 | Aspect | Capture by Value | Capture by Reference |
 |--------|------------------|----------------------|
 | **What is stored** | A copy of the variable | A reference to the variable |
@@ -300,6 +443,17 @@ count = 3
 | **Thread safety** | Safe (own copy, no race) | Unsafe without synchronization |
 
 ### Dry Run: Capture by Value Mutation
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-handwritten.svg" alt="Handwritten: Dry Run: Capture by Value Mutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-diagram.svg" alt="Diagram: Dry Run: Capture by Value Mutation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-capture-by-value-mutation-sticky.svg" alt="Sticky Note: Dry Run: Capture by Value Mutation" width="30%">
+</a>
+
 
 ```cpp
 int val = 5;
@@ -320,6 +474,17 @@ int result = lambda();
 | 5 | Second call `lambda()` | 5 | 25 | 25 |
 
 ### Common Mistakes with Captures
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-handwritten.svg" alt="Handwritten: Common Mistakes with Captures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-diagram.svg" alt="Diagram: Common Mistakes with Captures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-mistakes-with-captures-sticky.svg" alt="Sticky Note: Common Mistakes with Captures" width="30%">
+</a>
+
 
 ```cpp
 void example() {
@@ -345,11 +510,33 @@ void example() {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A `mutable` lambda is like a **notepad with a pencil** versus a whiteboard with a marker:
 - **Default (const)** = whiteboard marker. You can read the notes you brought, but you CANNOT change them. If you want to change the original board, you must point at the reference (capture by reference).
 - **Mutable** = pencil on paper. You can read your notes AND scribble on them. But it's YOUR copy — the original stays clean.
 
 ### Why Default Const?
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-handwritten.svg" alt="Handwritten: Why Default Const?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-diagram.svg" alt="Diagram: Why Default Const?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/why-default-const-sticky.svg" alt="Sticky Note: Why Default Const?" width="30%">
+</a>
+
 
 The closure's `operator()` defaults to `const` for safety. Without `mutable`, a lambda cannot accidentally mutate captured-by-value variables, which prevents subtle bugs.
 
@@ -372,6 +559,17 @@ struct Closure {
 ```
 
 ### Mutable Lambda Examples
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-handwritten.svg" alt="Handwritten: Mutable Lambda Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-diagram.svg" alt="Diagram: Mutable Lambda Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/mutable-lambda-examples-sticky.svg" alt="Sticky Note: Mutable Lambda Examples" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -445,6 +643,17 @@ Running avg: 2 3 4 5
 
 ### Dry Run: Mutable Lambda State
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-handwritten.svg" alt="Handwritten: Dry Run: Mutable Lambda State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-diagram.svg" alt="Diagram: Dry Run: Mutable Lambda State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-mutable-lambda-state-sticky.svg" alt="Sticky Note: Dry Run: Mutable Lambda State" width="30%">
+</a>
+
+
 ```cpp
 auto counter = [count = 0]() mutable { return ++count; };
 counter();  // 1
@@ -470,6 +679,17 @@ Note: a **copy** of this lambda starts at 0 independently:
 
 ### Stateful Lambda Idioms
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-handwritten.svg" alt="Handwritten: Stateful Lambda Idioms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-diagram.svg" alt="Diagram: Stateful Lambda Idioms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/stateful-lambda-idioms-sticky.svg" alt="Sticky Note: Stateful Lambda Idioms" width="30%">
+</a>
+
+
 ```cpp
 // Unique ID generator
 auto make_id_generator() {
@@ -494,6 +714,17 @@ auto throttled = [skip = 0, n = 3](int val) mutable -> std::optional<int> {
 
 ### Complexity Analysis — Mutable Lambda State
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-handwritten.svg" alt="Handwritten: Complexity Analysis — Mutable Lambda State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-diagram.svg" alt="Diagram: Complexity Analysis — Mutable Lambda State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-analysis-mutable-lambda-state-sticky.svg" alt="Sticky Note: Complexity Analysis — Mutable Lambda State" width="30%">
+</a>
+
+
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | Create stateful lambda (k captures) | O(k) | O(k) | Initializes k state variables |
@@ -505,11 +736,33 @@ auto throttled = [skip = 0, n = 3](int val) mutable -> std::optional<int> {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Capturing `this` is like giving someone **keys to your apartment**. They can enter, use your kitchen, access your fridge — anything the apartment contains. But if the apartment is demolished while they still have keys, they're holding useless metal.
 
 Capturing `*this` (C++17) is like giving someone a **fully furnished replica apartment**. They have their own copy of everything — even if the original burns down, their copy is fine.
 
 ### Capturing `this` (by Reference)
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-handwritten.svg" alt="Handwritten: Capturing `this` (by Reference)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-diagram.svg" alt="Diagram: Capturing `this` (by Reference)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-reference-sticky.svg" alt="Sticky Note: Capturing `this` (by Reference)" width="30%">
+</a>
+
 
 When a lambda is defined inside a non-static member function, it can capture `this` to access class members:
 
@@ -564,6 +817,17 @@ $44.991
 
 ### DANGER: Lambda Outliving `this`
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-handwritten.svg" alt="Handwritten: DANGER: Lambda Outliving `this`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-diagram.svg" alt="Diagram: DANGER: Lambda Outliving `this`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/danger-lambda-outliving-this-sticky.svg" alt="Sticky Note: DANGER: Lambda Outliving `this`" width="30%">
+</a>
+
+
 The single biggest lambda lifetime bug:
 
 ```cpp
@@ -599,6 +863,17 @@ int main() {
 ```
 
 ### Capturing `*this` by Value (C++17)
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-handwritten.svg" alt="Handwritten: Capturing `*this` by Value (C++17)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-diagram.svg" alt="Diagram: Capturing `*this` by Value (C++17)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/capturing-this-by-value-c-17-sticky.svg" alt="Sticky Note: Capturing `*this` by Value (C++17)" width="30%">
+</a>
+
 
 C++17 introduced `[*this]` which captures a **copy** of the entire object:
 
@@ -639,6 +914,17 @@ After destruction: 200
 
 ### `[this]` vs `[*this]` — Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-handwritten.svg" alt="Handwritten: `[this]` vs `[*this]` — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-diagram.svg" alt="Diagram: `[this]` vs `[*this]` — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/this-vs-this-comparison-sticky.svg" alt="Sticky Note: `[this]` vs `[*this]` — Comparison" width="30%">
+</a>
+
+
 | Aspect | `[this]` | `[*this]` (C++17) |
 |--------|----------|-------------------|
 | Captures | Address of object (pointer) | Copy of entire object |
@@ -651,6 +937,17 @@ After destruction: 200
 | Move-only type? | Not relevant (pointer) | Requires copy ctor |
 
 ### Dry Run: `[*this]` Capture
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-handwritten.svg" alt="Handwritten: Dry Run: `[*this]` Capture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-diagram.svg" alt="Diagram: Dry Run: `[*this]` Capture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-this-capture-sticky.svg" alt="Sticky Note: Dry Run: `[*this]` Capture" width="30%">
+</a>
+
 
 ```cpp
 class Counter {
@@ -674,15 +971,48 @@ c.val_ // still 0
 
 ### Subtle: Implicit `[this]` in C++20 with `[=]`
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-handwritten.svg" alt="Handwritten: Subtle: Implicit `[this]` in C++20 with `[=]`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-diagram.svg" alt="Diagram: Subtle: Implicit `[this]` in C++20 with `[=]`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/subtle-implicit-this-in-c-20-with-sticky.svg" alt="Sticky Note: Subtle: Implicit `[this]` in C++20 with `[=]`" width="30%">
+</a>
+
+
 In C++11/14/17, `[=]` inside a member function implicitly captures `this` by reference. **C++20 deprecates this.** Always prefer explicit `[this]`, `[*this]`, or specific member captures.
 
 ## 14.5 Initialized Captures / Generalized Capture (C++14)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A **generalized capture** is like packing a **custom travel bag** — not just grabbing what's on the table, but building exactly what you need right there in the suitcase. Need a move-only drone? Pack it directly. Need to compute a value first? Do the math while packing.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```cpp
 [var_name = expression](params) { body }
@@ -801,6 +1131,17 @@ closure data size: 10000000
 
 ### Multiple Initialized Captures
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-handwritten.svg" alt="Handwritten: Multiple Initialized Captures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-diagram.svg" alt="Diagram: Multiple Initialized Captures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/multiple-initialized-captures-sticky.svg" alt="Sticky Note: Multiple Initialized Captures" width="30%">
+</a>
+
+
 Multiple captures are comma-separated:
 
 ```cpp
@@ -814,6 +1155,17 @@ auto stats = [sum = 0.0, count = 0, &external_ref](double val) mutable {
 
 ### Dry Run: Initialized Capture
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-handwritten.svg" alt="Handwritten: Dry Run: Initialized Capture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-diagram.svg" alt="Diagram: Dry Run: Initialized Capture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-initialized-capture-sticky.svg" alt="Sticky Note: Dry Run: Initialized Capture" width="30%">
+</a>
+
+
 ```cpp
 auto func = [x = 5, y = 10]() { return x + y; };
 int result = func();
@@ -826,6 +1178,17 @@ int result = func();
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Cost | Notes |
 |-----------|------|-------|
 | Move capture (unique_ptr) | O(1) | Pointer swap |
@@ -837,9 +1200,31 @@ int result = func();
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A generic lambda is like a **universal adapter plug** — one plug works in any country's socket. The plug doesn't need to know the voltage beforehand; it adapts to whatever it's plugged into.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```cpp
 auto generic = [](auto x, auto y) { return x + y; };
@@ -968,6 +1353,17 @@ int main() {
 
 ### Template Expansion: What Compiler Generates
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-handwritten.svg" alt="Handwritten: Template Expansion: What Compiler Generates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-diagram.svg" alt="Diagram: Template Expansion: What Compiler Generates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/template-expansion-what-compiler-generates-sticky.svg" alt="Sticky Note: Template Expansion: What Compiler Generates" width="30%">
+</a>
+
+
 For `auto lambda = [](auto a, auto b) { return a + b; };` called as `lambda(3, 4.5)`:
 
 ```cpp
@@ -987,6 +1383,17 @@ auto __lambda::operator()<int, double>(int a, double b) const -> double {
 
 ### Dry Run: Generic Lambda Instantiation
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-handwritten.svg" alt="Handwritten: Dry Run: Generic Lambda Instantiation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-diagram.svg" alt="Diagram: Dry Run: Generic Lambda Instantiation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-generic-lambda-instantiation-sticky.svg" alt="Sticky Note: Dry Run: Generic Lambda Instantiation" width="30%">
+</a>
+
+
 ```cpp
 auto twice = [](auto x) { return x + x; };
 
@@ -1003,6 +1410,17 @@ twice("Hi");    // instantiation: const char* operator()(const char*) — pointe
 
 ### Generic Lambda with auto& and auto&&
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-handwritten.svg" alt="Handwritten: Generic Lambda with auto& and auto&&" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-diagram.svg" alt="Diagram: Generic Lambda with auto& and auto&&" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/generic-lambda-with-auto-and-auto-sticky.svg" alt="Sticky Note: Generic Lambda with auto& and auto&&" width="30%">
+</a>
+
+
 ```cpp
 // By reference: can modify
 increment = [](auto& x) { x++; };
@@ -1015,6 +1433,17 @@ forwarder = [](auto&& x) -> decltype(auto) {
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Aspect | Cost | Notes |
 |--------|------|-------|
 | One instantiation | Same as hand-written template | Compiler generates code per distinct type set |
@@ -1025,9 +1454,31 @@ forwarder = [](auto&& x) -> decltype(auto) {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A constexpr lambda is like a **pre-calculated multiplication table** — you compute all the values once at compile time, then use them instantly at runtime with zero calculation cost. It's the difference between a chef who prepares ingredients *before* the dinner rush versus one who chops vegetables for every single order.
 
 ### Core Concept
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-handwritten.svg" alt="Handwritten: Core Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-diagram.svg" alt="Diagram: Core Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/core-concept-sticky.svg" alt="Sticky Note: Core Concept" width="30%">
+</a>
+
 
 In C++17, lambdas can be `constexpr` — their body can be evaluated at compile time if all captured variables are constant expressions and the body meets constexpr requirements.
 
@@ -1131,6 +1582,17 @@ int main() {
 
 ### Benefits of constexpr Lambdas
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-handwritten.svg" alt="Handwritten: Benefits of constexpr Lambdas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-diagram.svg" alt="Diagram: Benefits of constexpr Lambdas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefits-of-constexpr-lambdas-sticky.svg" alt="Sticky Note: Benefits of constexpr Lambdas" width="30%">
+</a>
+
+
 | Benefit | Explanation |
 |---------|-------------|
 | **Zero runtime cost** | Computed during compilation — no CPU cycles at runtime |
@@ -1141,6 +1603,17 @@ int main() {
 | **Smaller binary** | No generated code for the computation path |
 
 ### constexpr Lambda Rules (C++17 vs C++20)
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-handwritten.svg" alt="Handwritten: constexpr Lambda Rules (C++17 vs C++20)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-diagram.svg" alt="Diagram: constexpr Lambda Rules (C++17 vs C++20)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/constexpr-lambda-rules-c-17-vs-c-20-sticky.svg" alt="Sticky Note: constexpr Lambda Rules (C++17 vs C++20)" width="30%">
+</a>
+
 
 | Rule | C++17 | C++20 |
 |------|-------|-------|
@@ -1153,6 +1626,17 @@ int main() {
 | mutable member access | Not allowed at constant eval | Same |
 
 ### Dry Run: constexpr Lambda Evaluation
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-handwritten.svg" alt="Handwritten: Dry Run: constexpr Lambda Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-diagram.svg" alt="Diagram: Dry Run: constexpr Lambda Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-constexpr-lambda-evaluation-sticky.svg" alt="Sticky Note: Dry Run: constexpr Lambda Evaluation" width="30%">
+</a>
+
 
 ```cpp
 constexpr auto sum_range = [](int n) {
@@ -1180,9 +1664,31 @@ Result: 5050, computed entirely at compile time. No runtime loop.
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A **captureless lambda** converting to a function pointer is like a **business card** — it's lightweight, universally accepted, and carries no extra baggage. A lambda **with captures** is like a full resume folder — it has more context, but you can't just slip it into a standard card holder.
 
 ### The Rule
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-handwritten.svg" alt="Handwritten: The Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-diagram.svg" alt="Diagram: The Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-rule-sticky.svg" alt="Sticky Note: The Rule" width="30%">
+</a>
+
 
 A lambda with an **empty capture list** (`[]`) has an implicit conversion to a function pointer matching its signature.
 
@@ -1274,6 +1780,17 @@ int main() {
 
 ### Lambda vs Function Pointer vs std::function — Comparison Table
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-handwritten.svg" alt="Handwritten: Lambda vs Function Pointer vs std::function — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-diagram.svg" alt="Diagram: Lambda vs Function Pointer vs std::function — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-vs-function-pointer-vs-std-function-comparison-table-sticky.svg" alt="Sticky Note: Lambda vs Function Pointer vs std::function — Comparison Table" width="30%">
+</a>
+
+
 | Aspect | Captureless Lambda (as fn ptr) | C-style Function Pointer | `std::function` |
 |--------|-------------------------------|-------------------------|-----------------|
 | **Size** | 1 byte (empty closure) + fn ptr | 8 bytes (pointer) | 32–64 bytes (type-erased storage) |
@@ -1289,6 +1806,17 @@ int main() {
 
 ### Performance Hierarchy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-handwritten.svg" alt="Handwritten: Performance Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-diagram.svg" alt="Diagram: Performance Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-hierarchy-sticky.svg" alt="Sticky Note: Performance Hierarchy" width="30%">
+</a>
+
+
 ```
 Fastest:  Captureless lambda (inlined) / function pointer (direct call)
 Medium:   Lambda with captures (direct call on closure)
@@ -1296,6 +1824,17 @@ Slowest:  std::function (type erasure + heap allocation + indirect call)
 ```
 
 ### Dry Run: Function Pointer Conversion
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-handwritten.svg" alt="Handwritten: Dry Run: Function Pointer Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-diagram.svg" alt="Diagram: Dry Run: Function Pointer Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-function-pointer-conversion-sticky.svg" alt="Sticky Note: Dry Run: Function Pointer Conversion" width="30%">
+</a>
+
 
 ```cpp
 void apply(int x, int (*op)(int)) { std::cout << op(x); }
@@ -1314,9 +1853,31 @@ apply(5, double_it);
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 An IIFE is like a **self-destructing message** — it's created, executes its purpose, and disappears, leaving only the result behind. It never lingers, never gets reused, never clutters the namespace.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```cpp
 // Define and invoke immediately
@@ -1448,6 +2009,17 @@ int main() {
 
 ### Dry Run: IIFE Execution
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-handwritten.svg" alt="Handwritten: Dry Run: IIFE Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-diagram.svg" alt="Diagram: Dry Run: IIFE Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-iife-execution-sticky.svg" alt="Sticky Note: Dry Run: IIFE Execution" width="30%">
+</a>
+
+
 ```cpp
 const int result = [](int a, int b) {
     int sum = a + b;
@@ -1467,6 +2039,17 @@ const int result = [](int a, int b) {
 
 ### IIFE Without Parameters: Clearing a vector
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-handwritten.svg" alt="Handwritten: IIFE Without Parameters: Clearing a vector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-diagram.svg" alt="Diagram: IIFE Without Parameters: Clearing a vector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/iife-without-parameters-clearing-a-vector-sticky.svg" alt="Sticky Note: IIFE Without Parameters: Clearing a vector" width="30%">
+</a>
+
+
 ```cpp
 std::vector<int> v = {1, 2, 3};
 // IIFE: swap with empty vector
@@ -1479,9 +2062,31 @@ const auto cleared = [v = std::move(v)] { return v; }();
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Return type deduction is like a **self-adjusting measuring cup** — you don't decide the unit (cups, ml, oz); the cup figures out what unit makes sense based on what you pour in.
 
 ### How Deduction Works
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-handwritten.svg" alt="Handwritten: How Deduction Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-diagram.svg" alt="Diagram: How Deduction Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-deduction-works-sticky.svg" alt="Sticky Note: How Deduction Works" width="30%">
+</a>
+
 
 The compiler deduces the return type from the `return` statement(s). If there are multiple returns, they must all deduce to the same type.
 
@@ -1495,6 +2100,17 @@ auto lambda3 = [](int x) {                         // returns double (promotion)
 ```
 
 ### When to Explicitly Specify Return Type
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-handwritten.svg" alt="Handwritten: When to Explicitly Specify Return Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-diagram.svg" alt="Diagram: When to Explicitly Specify Return Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-explicitly-specify-return-type-sticky.svg" alt="Sticky Note: When to Explicitly Specify Return Type" width="30%">
+</a>
+
 
 ```cpp
 // 1. Multiple return types differ
@@ -1559,6 +2175,17 @@ f2(5): 5
 
 ### Dry Run: Return Type Deduction
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-handwritten.svg" alt="Handwritten: Dry Run: Return Type Deduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-diagram.svg" alt="Diagram: Dry Run: Return Type Deduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-return-type-deduction-sticky.svg" alt="Sticky Note: Dry Run: Return Type Deduction" width="30%">
+</a>
+
+
 | Lambda | Return Statement | Deduced Type | Reason |
 |--------|-----------------|--------------|--------|
 | `[](int x) { return x + 1; }` | `x + 1` (int) | `int` | Simple int expression |
@@ -1571,9 +2198,31 @@ f2(5): 5
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Lambdas with STL algorithms are like **interchangeable tool bits for a power drill**. The drill (STL algorithm) provides the motor and mechanism; the bit (lambda) determines the exact shape and cut. You can swap bits to drill, screw, grind, or polish → all using the same drill.
 
 ### Common Patterns Matrix
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-handwritten.svg" alt="Handwritten: Common Patterns Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-diagram.svg" alt="Diagram: Common Patterns Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/common-patterns-matrix-sticky.svg" alt="Sticky Note: Common Patterns Matrix" width="30%">
+</a>
+
 
 | Algorithm | Lambda Purpose | Signature | Use Case |
 |-----------|---------------|-----------|----------|
@@ -1591,6 +2240,17 @@ Lambdas with STL algorithms are like **interchangeable tool bits for a power dri
 | `std::equal_range` | Comparator | `(T, T) -> bool` | Range in sorted data |
 
 ### Pattern 1: Custom Sorting
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-handwritten.svg" alt="Handwritten: Pattern 1: Custom Sorting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-diagram.svg" alt="Diagram: Pattern 1: Custom Sorting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-1-custom-sorting-sticky.svg" alt="Sticky Note: Pattern 1: Custom Sorting" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1657,6 +2317,17 @@ Sorted by salary (desc):
 
 ### Pattern 2: Find, Count, Filter
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-handwritten.svg" alt="Handwritten: Pattern 2: Find, Count, Filter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-diagram.svg" alt="Diagram: Pattern 2: Find, Count, Filter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-2-find-count-filter-sticky.svg" alt="Sticky Note: Pattern 2: Find, Count, Filter" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -1714,6 +2385,17 @@ After removing failing: 82 91 67 73 88 94 79
 ```
 
 ### Pattern 3: Transform (Map)
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-handwritten.svg" alt="Handwritten: Pattern 3: Transform (Map)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-diagram.svg" alt="Diagram: Pattern 3: Transform (Map)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-3-transform-map-sticky.svg" alt="Sticky Note: Pattern 3: Transform (Map)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1774,6 +2456,17 @@ Zipped sums: 11 22 33 44 55
 
 ### Pattern 4: Accumulate with Lambda
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-handwritten.svg" alt="Handwritten: Pattern 4: Accumulate with Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-diagram.svg" alt="Diagram: Pattern 4: Accumulate with Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-4-accumulate-with-lambda-sticky.svg" alt="Sticky Note: Pattern 4: Accumulate with Lambda" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -1813,6 +2506,17 @@ Sentence: "Lambda is awesome"
 
 ### Pattern 5: for_each with Side Effects
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-handwritten.svg" alt="Handwritten: Pattern 5: for_each with Side Effects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-diagram.svg" alt="Diagram: Pattern 5: for_each with Side Effects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/pattern-5-for-each-with-side-effects-sticky.svg" alt="Sticky Note: Pattern 5: for_each with Side Effects" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -1851,6 +2555,17 @@ Avg: 5.5
 
 ### Dry Run: Sort with Lambda
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-handwritten.svg" alt="Handwritten: Dry Run: Sort with Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-diagram.svg" alt="Diagram: Dry Run: Sort with Lambda" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/dry-run-sort-with-lambda-sticky.svg" alt="Sticky Note: Dry Run: Sort with Lambda" width="30%">
+</a>
+
+
 ```cpp
 std::vector<int> v = {4, 1, 3, 2};
 std::sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
@@ -1867,6 +2582,17 @@ std::sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
 
 ### Complexity of STL + Lambda Patterns
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-handwritten.svg" alt="Handwritten: Complexity of STL + Lambda Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-diagram.svg" alt="Diagram: Complexity of STL + Lambda Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-of-stl-lambda-patterns-sticky.svg" alt="Sticky Note: Complexity of STL + Lambda Patterns" width="30%">
+</a>
+
+
 | Algorithm | Time Complexity | Lambda Cost | Notes |
 |-----------|----------------|-------------|-------|
 | `std::sort` | O(N log N) | O(1) per comparison | Lambda inline-able |
@@ -1882,9 +2608,31 @@ std::sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 `auto` for a lambda is like **buying a specific car model** -- you know exactly what you have, the engine size, the fuel type. `std::function` is like **calling a taxi** -- you just need a vehicle that takes you from A to B; you don't care what make or model shows up.
 
 ### The Fundamental Difference
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-handwritten.svg" alt="Handwritten: The Fundamental Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-diagram.svg" alt="Diagram: The Fundamental Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/the-fundamental-difference-sticky.svg" alt="Sticky Note: The Fundamental Difference" width="30%">
+</a>
+
 
 | Aspect | `auto` lambda | `std::function` |
 |--------|---------------|-----------------|
@@ -1937,6 +2685,17 @@ func(5):   50
 
 ### Performance Benchmark Concept
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-handwritten.svg" alt="Handwritten: Performance Benchmark Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-diagram.svg" alt="Diagram: Performance Benchmark Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/performance-benchmark-concept-sticky.svg" alt="Sticky Note: Performance Benchmark Concept" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <functional>
@@ -1987,6 +2746,17 @@ ratio:          2.78x
 
 ### When to Use Each
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+</a>
+
+
 | Use `auto` (concrete type) | Use `std::function` (type-erased) |
 |---------------------------|-----------------------------------|
 | Pass lambda to template (STL algorithm) | Store callables in a container |
@@ -1997,6 +2767,17 @@ ratio:          2.78x
 | -- | Runtime-determined callable |
 
 ### Lambda Size Measurement
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-handwritten.svg" alt="Handwritten: Lambda Size Measurement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-diagram.svg" alt="Diagram: Lambda Size Measurement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/lambda-size-measurement-sticky.svg" alt="Sticky Note: Lambda Size Measurement" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2028,9 +2809,31 @@ sizeof(std::function<void()>): 32
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Capturing a **parameter pack** is like having a **net that catches every fish in a pond** at once -- you don't name each fish; you just know you caught them all. Then you can selectively work with each one.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```cpp
 template <typename... Args>
@@ -2103,6 +2906,17 @@ Task captured 3 args
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Step | Cost |
 |------|------|
 | Capture N elements | O(N) copies or moves |
@@ -2113,9 +2927,31 @@ Task captured 3 args
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 The **closure object** is like a **lunchbox with compartments**. Each captured variable is a compartment. An empty lambda (no captures) is just the lunchbox itself -- one byte. A lambda capturing an int is a lunchbox with one small compartment. A lambda capturing a vector is a lunchbox with a large built-in cooler.
 
 ### Closure Object Layout
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-handwritten.svg" alt="Handwritten: Closure Object Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-diagram.svg" alt="Diagram: Closure Object Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-layout-sticky.svg" alt="Sticky Note: Closure Object Layout" width="30%">
+</a>
+
 
 ```cpp
 auto empty = [](){};                          // sizeof = 1 byte
@@ -2168,6 +3004,17 @@ std::function<void()>:   32
 
 ### Closure Object Internals
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-handwritten.svg" alt="Handwritten: Closure Object Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-diagram.svg" alt="Diagram: Closure Object Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/closure-object-internals-sticky.svg" alt="Sticky Note: Closure Object Internals" width="30%">
+</a>
+
+
 For `auto lam = [x = 42, y = 3.14]() { return x + y; };`:
 
 ```cpp
@@ -2186,6 +3033,17 @@ struct __lambda_42 {
 ```
 
 ### Copy and Move of Closure Objects
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-handwritten.svg" alt="Handwritten: Copy and Move of Closure Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-diagram.svg" alt="Diagram: Copy and Move of Closure Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/copy-and-move-of-closure-objects-sticky.svg" alt="Sticky Note: Copy and Move of Closure Objects" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2215,6 +3073,17 @@ counter_move():5
 ```
 
 ### Alignment and Padding
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-handwritten.svg" alt="Handwritten: Alignment and Padding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-diagram.svg" alt="Diagram: Alignment and Padding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/alignment-and-padding-sticky.svg" alt="Sticky Note: Alignment and Padding" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2250,9 +3119,31 @@ alignment:     8
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Using constexpr lambdas is like **pre-fabricating building components** in a factory versus building everything on-site. Factory production (compile time) is faster, more precise, and costs less per unit. On-site assembly (runtime) is flexible but slow and expensive.
 
 ### Benefit 1: Compile-Time Computation
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-handwritten.svg" alt="Handwritten: Benefit 1: Compile-Time Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-diagram.svg" alt="Diagram: Benefit 1: Compile-Time Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-1-compile-time-computation-sticky.svg" alt="Sticky Note: Benefit 1: Compile-Time Computation" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2286,6 +3177,17 @@ Array size: 55
 ```
 
 ### Benefit 2: Template Metaprogramming Replacement
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-handwritten.svg" alt="Handwritten: Benefit 2: Template Metaprogramming Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-diagram.svg" alt="Diagram: Benefit 2: Template Metaprogramming Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-2-template-metaprogramming-replacement-sticky.svg" alt="Sticky Note: Benefit 2: Template Metaprogramming Replacement" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2326,6 +3228,17 @@ double max: 1.79769e+308
 
 ### Benefit 3: Policy-Based Design Without Templates
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-handwritten.svg" alt="Handwritten: Benefit 3: Policy-Based Design Without Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-diagram.svg" alt="Diagram: Benefit 3: Policy-Based Design Without Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/benefit-3-policy-based-design-without-templates-sticky.svg" alt="Sticky Note: Benefit 3: Policy-Based Design Without Templates" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -2351,6 +3264,17 @@ int main() {
 ## 14.16 Real Systems Using Lambdas
 
 ### Where Lambdas Shine in Production
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-handwritten.svg" alt="Handwritten: Where Lambdas Shine in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-diagram.svg" alt="Diagram: Where Lambdas Shine in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/where-lambdas-shine-in-production-sticky.svg" alt="Sticky Note: Where Lambdas Shine in Production" width="30%">
+</a>
+
 
 | System/Project | How Lambdas Are Used |
 |---------------|---------------------|
@@ -2578,6 +3502,17 @@ User logged out: Alice
 
 ### Q2: Explain the lifetime of a lambda that captures `this`. What can go wrong?
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-handwritten.svg" alt="Handwritten: Explain the lifetime of a lambda that captures `this`. What can go wrong?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-diagram.svg" alt="Diagram: Explain the lifetime of a lambda that captures `this`. What can go wrong?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/explain-the-lifetime-of-a-lambda-that-captures-this-what-can-go-wrong-sticky.svg" alt="Sticky Note: Explain the lifetime of a lambda that captures `this`. What can go wrong?" width="30%">
+</a>
+
+
 **Answer:**
 
 A lambda that captures `[this]` stores a **pointer to the enclosing object**. If the object is destroyed before the lambda is invoked, the lambda holds a dangling pointer -- invoking it is **undefined behavior**.
@@ -2597,6 +3532,17 @@ bad_callback();  // UB!
 3. Use `std::shared_ptr` + `[weak_this = std::weak_ptr(shared_from_this())]`
 
 ### Q3: What does `mutable` do in a lambda? Show the generated closure class.
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-handwritten.svg" alt="Handwritten: What does `mutable` do in a lambda? Show the generated closure class." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-diagram.svg" alt="Diagram: What does `mutable` do in a lambda? Show the generated closure class." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-does-mutable-do-in-a-lambda-show-the-generated-closure-class-sticky.svg" alt="Sticky Note: What does `mutable` do in a lambda? Show the generated closure class." width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2633,6 +3579,17 @@ struct __lambda {
 ```
 
 ### Q4: Can a lambda be recursive? How would you implement a recursive lambda?
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-handwritten.svg" alt="Handwritten: Can a lambda be recursive? How would you implement a recursive lambda?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-diagram.svg" alt="Diagram: Can a lambda be recursive? How would you implement a recursive lambda?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/can-a-lambda-be-recursive-how-would-you-implement-a-recursive-lambda-sticky.svg" alt="Sticky Note: Can a lambda be recursive? How would you implement a recursive lambda?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2676,6 +3633,17 @@ YCombinator factorial{[](auto& self, int n) -> int {
 
 ### Q5: How does a generic lambda differ from a non-generic lambda at the compiler level?
 
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-handwritten.svg" alt="Handwritten: How does a generic lambda differ from a non-generic lambda at the compiler level?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-diagram.svg" alt="Diagram: How does a generic lambda differ from a non-generic lambda at the compiler level?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/how-does-a-generic-lambda-differ-from-a-non-generic-lambda-at-the-compiler-level-sticky.svg" alt="Sticky Note: How does a generic lambda differ from a non-generic lambda at the compiler level?" width="30%">
+</a>
+
+
 **Answer:**
 
 A generic lambda uses `auto` parameters, which makes the compiler generate a **templated `operator()`**. Each distinct set of argument types causes a separate template instantiation.
@@ -2703,6 +3671,17 @@ struct __spec_lambda {
 - Generic lambda may bloat binary size if used with many different type pairs
 
 ### Q6: What is the size of a lambda? How does it compare to std::function?
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-handwritten.svg" alt="Handwritten: What is the size of a lambda? How does it compare to std::function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-diagram.svg" alt="Diagram: What is the size of a lambda? How does it compare to std::function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-size-of-a-lambda-how-does-it-compare-to-std-function-sticky.svg" alt="Sticky Note: What is the size of a lambda? How does it compare to std::function?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2733,6 +3712,17 @@ auto lambda = [p = std::move(ptr)]() { return *p; };
 C++11 only supports `[x]` (capture by value, which copies) and `[&x]` (capture by reference). `std::unique_ptr` is move-only -- cannot be copied. Initialized capture `[p = std::move(ptr)]` was introduced in C++14 to allow arbitrary expressions in the capture list, enabling moves.
 
 ### Q8: What is the IIFE pattern and why is it useful in C++?
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-handwritten.svg" alt="Handwritten: What is the IIFE pattern and why is it useful in C++?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-diagram.svg" alt="Diagram: What is the IIFE pattern and why is it useful in C++?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-is-the-iife-pattern-and-why-is-it-useful-in-c-sticky.svg" alt="Sticky Note: What is the IIFE pattern and why is it useful in C++?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2777,6 +3767,17 @@ const int result = [] {
 **Guideline:** Use `auto` (concrete type) where possible. Only use `std::function` when you need runtime polymorphism (storing heterogeneous callables, implementing callback registries).
 
 ### Q10: What are the C++17 constexpr lambda requirements? What changed in C++20?
+
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-handwritten.svg" alt="Handwritten: What are the C++17 constexpr lambda requirements? What changed in C++20?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-diagram.svg" alt="Diagram: What are the C++17 constexpr lambda requirements? What changed in C++20?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/14-lambdas/what-are-the-c-17-constexpr-lambda-requirements-what-changed-in-c-20-sticky.svg" alt="Sticky Note: What are the C++17 constexpr lambda requirements? What changed in C++20?" width="30%">
+</a>
+
 
 **Answer:**
 

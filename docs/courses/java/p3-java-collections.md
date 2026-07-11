@@ -44,6 +44,17 @@ The **Java Collections Framework** (JCF) is a unified architecture for storing, 
 
 ### 1.1 Interface Hierarchy
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-handwritten.svg" alt="Handwritten: 1.1 Interface Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-diagram.svg" alt="Diagram: 1.1 Interface Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-1-interface-hierarchy-sticky.svg" alt="Sticky Note: 1.1 Interface Hierarchy" width="30%">
+</a>
+
+
 The framework is built around two top-level interfaces: `Collection` and `Map`.
 
 ```
@@ -72,6 +83,17 @@ public interface Iterable<T> {
 Every `Collection` is `Iterable`, so every collection can be iterated with `for (var e : collection)`.
 
 ### 1.2 The `Collection` Interface
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-handwritten.svg" alt="Handwritten: 1.2 The `Collection` Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-diagram.svg" alt="Diagram: 1.2 The `Collection` Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-2-the-collection-interface-sticky.svg" alt="Sticky Note: 1.2 The `Collection` Interface" width="30%">
+</a>
+
 
 `Collection<E>` is the root interface of the collection hierarchy (excluding Map). Key methods:
 
@@ -102,6 +124,17 @@ public interface Collection<E> extends Iterable<E> {
 Implementations may throw `UnsupportedOperationException` for optional operations. For example, an unmodifiable collection throws on `add`, `remove`, or `clear`.
 
 ### 1.3 The `Collections` Utility Class
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-handwritten.svg" alt="Handwritten: 1.3 The `Collections` Utility Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-diagram.svg" alt="Diagram: 1.3 The `Collections` Utility Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/1-3-the-collections-utility-class-sticky.svg" alt="Sticky Note: 1.3 The `Collections` Utility Class" width="30%">
+</a>
+
 
 `java.util.Collections` provides static algorithms that operate on collections. Every method works with the interfaces, not implementations.
 
@@ -181,6 +214,17 @@ public interface List<E> extends Collection<E> {
 ```
 
 ### 2.1 ArrayList
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-handwritten.svg" alt="Handwritten: 2.1 ArrayList" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-diagram.svg" alt="Diagram: 2.1 ArrayList" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-1-arraylist-sticky.svg" alt="Sticky Note: 2.1 ArrayList" width="30%">
+</a>
+
 
 `ArrayList<E>` is a **resizable array** implementation. It is the most commonly used List.
 
@@ -267,6 +311,17 @@ public class ArrayListDemo {
 
 ### 2.2 LinkedList
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-handwritten.svg" alt="Handwritten: 2.2 LinkedList" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-diagram.svg" alt="Diagram: 2.2 LinkedList" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-2-linkedlist-sticky.svg" alt="Sticky Note: 2.2 LinkedList" width="30%">
+</a>
+
+
 `LinkedList<E>` is a **doubly-linked list** implementation. It also implements `Deque<E>`.
 
 **Internal structure**:
@@ -328,6 +383,17 @@ public class LinkedListDemo {
 
 ### 2.3 Vector & Stack → Legacy Classes
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-handwritten.svg" alt="Handwritten: 2.3 Vector & Stack → Legacy Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-diagram.svg" alt="Diagram: 2.3 Vector & Stack → Legacy Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-3-vector-stack-legacy-classes-sticky.svg" alt="Sticky Note: 2.3 Vector & Stack → Legacy Classes" width="30%">
+</a>
+
+
 `Vector` and `Stack` are **legacy** classes from Java 1.0. They were retrofitted to implement `List` in Java 2 but remain synchronized on every operation, which causes unnecessary overhead in single-threaded code.
 
 ```java
@@ -360,6 +426,17 @@ public class LegacyDemo {
 ```
 
 ### 2.4 List.of, List.copyOf, and Unmodifiable Lists
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-handwritten.svg" alt="Handwritten: 2.4 List.of, List.copyOf, and Unmodifiable Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-diagram.svg" alt="Diagram: 2.4 List.of, List.copyOf, and Unmodifiable Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/2-4-list-of-list-copyof-and-unmodifiable-lists-sticky.svg" alt="Sticky Note: 2.4 List.of, List.copyOf, and Unmodifiable Lists" width="30%">
+</a>
+
 
 Java 9+ introduced convenient factory methods for creating **unmodifiable lists**.
 
@@ -418,6 +495,17 @@ public interface Set<E> extends Collection<E> {
 ```
 
 ### 3.1 HashSet
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-handwritten.svg" alt="Handwritten: 3.1 HashSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-diagram.svg" alt="Diagram: 3.1 HashSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-1-hashset-sticky.svg" alt="Sticky Note: 3.1 HashSet" width="30%">
+</a>
+
 
 `HashSet<E>` is backed by a `HashMap<E, Object>` hash table.
 
@@ -493,6 +581,17 @@ final Node<K,V>[] resize() {
 
 ### 3.2 LinkedHashSet
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-handwritten.svg" alt="Handwritten: 3.2 LinkedHashSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-diagram.svg" alt="Diagram: 3.2 LinkedHashSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-2-linkedhashset-sticky.svg" alt="Sticky Note: 3.2 LinkedHashSet" width="30%">
+</a>
+
+
 `LinkedHashSet<E>` extends `HashSet<E>` with a **doubly-linked list** running through all entries.
 
 - Maintains **insertion order** (and access order if configured via LinkedHashMap)
@@ -526,6 +625,17 @@ public class LinkedHashSetDemo {
 ```
 
 ### 3.3 TreeSet
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-handwritten.svg" alt="Handwritten: 3.3 TreeSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-diagram.svg" alt="Diagram: 3.3 TreeSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-3-treeset-sticky.svg" alt="Sticky Note: 3.3 TreeSet" width="30%">
+</a>
+
 
 `TreeSet<E>` is a **Red-Black Tree** implementation that stores elements in **sorted order**.
 
@@ -582,6 +692,17 @@ record Person(String name, int age) {}
 
 ### 3.4 EnumSet
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-handwritten.svg" alt="Handwritten: 3.4 EnumSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-diagram.svg" alt="Diagram: 3.4 EnumSet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-4-enumset-sticky.svg" alt="Sticky Note: 3.4 EnumSet" width="30%">
+</a>
+
+
 `EnumSet<E extends Enum<E>>` is a **highly optimized** bit-vector implementation for enum types. It is one of the most performant collection types in Java.
 
 **Key characteristics**:
@@ -633,6 +754,17 @@ public class EnumSetDemo {
 ```
 
 ### 3.5 Set.of and Set.copyOf
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-handwritten.svg" alt="Handwritten: 3.5 Set.of and Set.copyOf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-diagram.svg" alt="Diagram: 3.5 Set.of and Set.copyOf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/3-5-set-of-and-set-copyof-sticky.svg" alt="Sticky Note: 3.5 Set.of and Set.copyOf" width="30%">
+</a>
+
 
 Like `List`, Java 9+ provides immutable set factories.
 
@@ -702,6 +834,17 @@ public interface Map<K, V> {
 ```
 
 ### 4.1 HashMap
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-handwritten.svg" alt="Handwritten: 4.1 HashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-diagram.svg" alt="Diagram: 4.1 HashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-1-hashmap-sticky.svg" alt="Sticky Note: 4.1 HashMap" width="30%">
+</a>
+
 
 `HashMap<K, V>` is a **hash table** implementation. It is the most commonly used Map.
 
@@ -797,6 +940,17 @@ for (int binCount = 0; ; ++binCount) {
 
 ### 4.2 LinkedHashMap
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-handwritten.svg" alt="Handwritten: 4.2 LinkedHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-diagram.svg" alt="Diagram: 4.2 LinkedHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-2-linkedhashmap-sticky.svg" alt="Sticky Note: 4.2 LinkedHashMap" width="30%">
+</a>
+
+
 `LinkedHashMap<K, V>` extends `HashMap` with a doubly-linked list running through entries.
 
 **Two ordering modes**:
@@ -859,6 +1013,17 @@ class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
 ### 4.3 TreeMap
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-handwritten.svg" alt="Handwritten: 4.3 TreeMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-diagram.svg" alt="Diagram: 4.3 TreeMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-3-treemap-sticky.svg" alt="Sticky Note: 4.3 TreeMap" width="30%">
+</a>
+
+
 `TreeMap<K, V>` is a **Red-Black Tree** implementation. Keys are stored in sorted order.
 
 - O(log n) for `put`, `get`, `containsKey`, `remove`
@@ -911,6 +1076,17 @@ public class TreeMapDemo {
 
 ### 4.4 EnumMap
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-handwritten.svg" alt="Handwritten: 4.4 EnumMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-diagram.svg" alt="Diagram: 4.4 EnumMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-4-enummap-sticky.svg" alt="Sticky Note: 4.4 EnumMap" width="30%">
+</a>
+
+
 `EnumMap<K extends Enum<K>, V>` is a highly optimized map for enum keys.
 
 **Internal structure**:
@@ -958,6 +1134,17 @@ public class EnumMapDemo {
 
 ### 4.5 WeakHashMap
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-handwritten.svg" alt="Handwritten: 4.5 WeakHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-diagram.svg" alt="Diagram: 4.5 WeakHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-5-weakhashmap-sticky.svg" alt="Sticky Note: 4.5 WeakHashMap" width="30%">
+</a>
+
+
 `WeakHashMap<K, V>` uses **weak references** for keys. When a key is only weakly reachable (no strong references outside the map), it is eligible for GC and will be removed from the map.
 
 **Use case**: Caches or metadata that should not prevent garbage collection.
@@ -1004,6 +1191,17 @@ class UniqueKey {
 
 ### 4.6 IdentityHashMap
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-handwritten.svg" alt="Handwritten: 4.6 IdentityHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-diagram.svg" alt="Diagram: 4.6 IdentityHashMap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-6-identityhashmap-sticky.svg" alt="Sticky Note: 4.6 IdentityHashMap" width="30%">
+</a>
+
+
 `IdentityHashMap<K, V>` uses **reference equality** (`==`) instead of `equals()` for key comparisons.
 
 **Internal**: Backed by a linear-probing hash table (not separate chaining like HashMap).
@@ -1039,6 +1237,17 @@ public class IdentityHashMapDemo {
 ```
 
 ### 4.7 Map.Entry
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-handwritten.svg" alt="Handwritten: 4.7 Map.Entry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-diagram.svg" alt="Diagram: 4.7 Map.Entry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-7-map-entry-sticky.svg" alt="Sticky Note: 4.7 Map.Entry" width="30%">
+</a>
+
 
 The `Map.Entry` interface represents a single key-value pair. It provides methods for accessing and (on modifiable maps) updating entries.
 
@@ -1089,6 +1298,17 @@ public class MapEntryDemo {
 ```
 
 ### 4.8 computeIfAbsent, merge, and Modern Map Methods
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-handwritten.svg" alt="Handwritten: 4.8 computeIfAbsent, merge, and Modern Map Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-diagram.svg" alt="Diagram: 4.8 computeIfAbsent, merge, and Modern Map Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-8-computeifabsent-merge-and-modern-map-methods-sticky.svg" alt="Sticky Note: 4.8 computeIfAbsent, merge, and Modern Map Methods" width="30%">
+</a>
+
 
 Java 8 added functional methods that eliminate the common "check then act" boilerplate.
 
@@ -1146,6 +1366,17 @@ public class ModernMapDemo {
 
 ### 4.9 Map.of, Map.copyOf, and Immutable Maps
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-handwritten.svg" alt="Handwritten: 4.9 Map.of, Map.copyOf, and Immutable Maps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-diagram.svg" alt="Diagram: 4.9 Map.of, Map.copyOf, and Immutable Maps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/4-9-map-of-map-copyof-and-immutable-maps-sticky.svg" alt="Sticky Note: 4.9 Map.of, Map.copyOf, and Immutable Maps" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.map;
 
@@ -1195,6 +1426,17 @@ public class ImmutableMapDemo {
 
 ### 5.1 Queue Interface
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-handwritten.svg" alt="Handwritten: 5.1 Queue Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-diagram.svg" alt="Diagram: 5.1 Queue Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-1-queue-interface-sticky.svg" alt="Sticky Note: 5.1 Queue Interface" width="30%">
+</a>
+
+
 `Queue<E>` represents a collection for holding elements prior to processing.
 
 **Two groups of methods**:
@@ -1218,6 +1460,17 @@ public interface Queue<E> extends Collection<E> {
 ```
 
 ### 5.2 PriorityQueue
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-handwritten.svg" alt="Handwritten: 5.2 PriorityQueue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-diagram.svg" alt="Diagram: 5.2 PriorityQueue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-2-priorityqueue-sticky.svg" alt="Sticky Note: 5.2 PriorityQueue" width="30%">
+</a>
+
 
 `PriorityQueue<E>` is an **unbounded priority queue** backed by a **binary heap** (min-heap by default).
 
@@ -1277,6 +1530,17 @@ public class PriorityQueueDemo {
 ```
 
 ### 5.3 ArrayDeque
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-handwritten.svg" alt="Handwritten: 5.3 ArrayDeque" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-diagram.svg" alt="Diagram: 5.3 ArrayDeque" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-3-arraydeque-sticky.svg" alt="Sticky Note: 5.3 ArrayDeque" width="30%">
+</a>
+
 
 `ArrayDeque<E>` is a **resizable array** implementation of `Deque<E>`. It is faster than `LinkedList` as a queue or stack and has no capacity restrictions.
 
@@ -1344,6 +1608,17 @@ public class ArrayDequeDemo {
 
 ### 5.4 LinkedList as Queue
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-handwritten.svg" alt="Handwritten: 5.4 LinkedList as Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-diagram.svg" alt="Diagram: 5.4 LinkedList as Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-4-linkedlist-as-queue-sticky.svg" alt="Sticky Note: 5.4 LinkedList as Queue" width="30%">
+</a>
+
+
 `LinkedList` implements both `List` and `Deque`, so it can serve as a FIFO queue.
 
 ```java
@@ -1377,6 +1652,17 @@ public class LinkedListAsQueueDemo {
 ```
 
 ### 5.5 BlockingQueue Overview
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-handwritten.svg" alt="Handwritten: 5.5 BlockingQueue Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-diagram.svg" alt="Diagram: 5.5 BlockingQueue Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/5-5-blockingqueue-overview-sticky.svg" alt="Sticky Note: 5.5 BlockingQueue Overview" width="30%">
+</a>
+
 
 `BlockingQueue<E>` extends `Queue` with blocking operations:
 
@@ -1465,6 +1751,17 @@ The ability to compare objects is fundamental to sorting and ordering in collect
 
 ### 6.1 Comparable → Natural Ordering
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-handwritten.svg" alt="Handwritten: 6.1 Comparable → Natural Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-diagram.svg" alt="Diagram: 6.1 Comparable → Natural Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-1-comparable-natural-ordering-sticky.svg" alt="Sticky Note: 6.1 Comparable → Natural Ordering" width="30%">
+</a>
+
+
 `Comparable<T>` defines the **natural ordering** of a class. A class implements Comparable to indicate its elements have a default sort order.
 
 ```java
@@ -1513,6 +1810,17 @@ public class ComparableDemo {
 ```
 
 ### 6.2 Comparator → Custom Ordering
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-handwritten.svg" alt="Handwritten: 6.2 Comparator → Custom Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-diagram.svg" alt="Diagram: 6.2 Comparator → Custom Ordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-2-comparator-custom-ordering-sticky.svg" alt="Sticky Note: 6.2 Comparator → Custom Ordering" width="30%">
+</a>
+
 
 `Comparator<T>` defines **custom comparison logic** outside the compared class. Use it when:
 
@@ -1573,6 +1881,17 @@ public class ComparatorDemo {
 ```
 
 ### 6.3 Comparator Method Chaining
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-handwritten.svg" alt="Handwritten: 6.3 Comparator Method Chaining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-diagram.svg" alt="Diagram: 6.3 Comparator Method Chaining" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-3-comparator-method-chaining-sticky.svg" alt="Sticky Note: 6.3 Comparator Method Chaining" width="30%">
+</a>
+
 
 The `Comparator` interface provides a rich set of static and default methods for building comparators.
 
@@ -1639,6 +1958,17 @@ public class ComparatorChainDemo {
 ```
 
 ### 6.4 Comparator Predefined Helpers
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-handwritten.svg" alt="Handwritten: 6.4 Comparator Predefined Helpers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-diagram.svg" alt="Diagram: 6.4 Comparator Predefined Helpers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/6-4-comparator-predefined-helpers-sticky.svg" alt="Sticky Note: 6.4 Comparator Predefined Helpers" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.compare;
@@ -1777,6 +2107,17 @@ public class CollectionsAlgorithmDemo {
 
 ### 7.1 Unmodifiable and Synchronized Wrappers
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-handwritten.svg" alt="Handwritten: 7.1 Unmodifiable and Synchronized Wrappers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-diagram.svg" alt="Diagram: 7.1 Unmodifiable and Synchronized Wrappers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/7-1-unmodifiable-and-synchronized-wrappers-sticky.svg" alt="Sticky Note: 7.1 Unmodifiable and Synchronized Wrappers" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.utility;
 
@@ -1827,6 +2168,17 @@ public class WrapperDemo {
 The **Stream API** (Java 8+) provides a functional approach to sequence operations on collections. A stream is a sequence of elements supporting sequential and parallel aggregate operations.
 
 ### 8.1 Stream Creation
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-handwritten.svg" alt="Handwritten: 8.1 Stream Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-diagram.svg" alt="Diagram: 8.1 Stream Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-1-stream-creation-sticky.svg" alt="Sticky Note: 8.1 Stream Creation" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.streams;
@@ -1881,6 +2233,17 @@ public class StreamCreationDemo {
 ```
 
 ### 8.2 Intermediate Operations
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-handwritten.svg" alt="Handwritten: 8.2 Intermediate Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-diagram.svg" alt="Diagram: 8.2 Intermediate Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-2-intermediate-operations-sticky.svg" alt="Sticky Note: 8.2 Intermediate Operations" width="30%">
+</a>
+
 
 Intermediate operations return a new stream. They are **lazy** → nothing is evaluated until a terminal operation is called.
 
@@ -1992,6 +2355,17 @@ public class IntermediateOpsDemo {
 
 ### 8.3 Terminal Operations
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-handwritten.svg" alt="Handwritten: 8.3 Terminal Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-diagram.svg" alt="Diagram: 8.3 Terminal Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-3-terminal-operations-sticky.svg" alt="Sticky Note: 8.3 Terminal Operations" width="30%">
+</a>
+
+
 Terminal operations produce a result or side-effect. After a terminal operation, the stream is consumed.
 
 ```java
@@ -2080,6 +2454,17 @@ public class TerminalOpsDemo {
 
 ### 8.4 Putting It All Together
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-handwritten.svg" alt="Handwritten: 8.4 Putting It All Together" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-diagram.svg" alt="Diagram: 8.4 Putting It All Together" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/8-4-putting-it-all-together-sticky.svg" alt="Sticky Note: 8.4 Putting It All Together" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.streams;
 
@@ -2150,6 +2535,17 @@ public class StreamPipelineDemo {
 `Collectors` utility class provides implementations of `Collector` for common reduction operations.
 
 ### 9.1 Basic Collectors
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-handwritten.svg" alt="Handwritten: 9.1 Basic Collectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-diagram.svg" alt="Diagram: 9.1 Basic Collectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-1-basic-collectors-sticky.svg" alt="Sticky Note: 9.1 Basic Collectors" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.collectors;
@@ -2227,6 +2623,17 @@ public class BasicCollectorsDemo {
 ```
 
 ### 9.2 toMap → Various Strategies
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-handwritten.svg" alt="Handwritten: 9.2 toMap → Various Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-diagram.svg" alt="Diagram: 9.2 toMap → Various Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-2-tomap-various-strategies-sticky.svg" alt="Sticky Note: 9.2 toMap → Various Strategies" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.collectors;
@@ -2337,6 +2744,17 @@ public class ToMapDemo {
 
 ### 9.3 Advanced Collectors
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-handwritten.svg" alt="Handwritten: 9.3 Advanced Collectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-diagram.svg" alt="Diagram: 9.3 Advanced Collectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-3-advanced-collectors-sticky.svg" alt="Sticky Note: 9.3 Advanced Collectors" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.collectors;
 
@@ -2403,6 +2821,17 @@ public class AdvancedCollectorsDemo {
 
 ### 9.4 Custom Collector
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-handwritten.svg" alt="Handwritten: 9.4 Custom Collector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-diagram.svg" alt="Diagram: 9.4 Custom Collector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/9-4-custom-collector-sticky.svg" alt="Sticky Note: 9.4 Custom Collector" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.collectors;
 
@@ -2463,6 +2892,17 @@ public class CustomCollectorDemo {
 
 ### 10.1 Creation
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-handwritten.svg" alt="Handwritten: 10.1 Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-diagram.svg" alt="Diagram: 10.1 Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-1-creation-sticky.svg" alt="Sticky Note: 10.1 Creation" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.optional;
 
@@ -2494,6 +2934,17 @@ public class OptionalCreationDemo {
 ```
 
 ### 10.2 Operations
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-handwritten.svg" alt="Handwritten: 10.2 Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-diagram.svg" alt="Diagram: 10.2 Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-2-operations-sticky.svg" alt="Sticky Note: 10.2 Operations" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.optional;
@@ -2590,6 +3041,17 @@ public class OptionalOperationsDemo {
 
 ### 10.3 OptionalInt, OptionalLong, OptionalDouble
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-handwritten.svg" alt="Handwritten: 10.3 OptionalInt, OptionalLong, OptionalDouble" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-diagram.svg" alt="Diagram: 10.3 OptionalInt, OptionalLong, OptionalDouble" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-3-optionalint-optionallong-optionaldouble-sticky.svg" alt="Sticky Note: 10.3 OptionalInt, OptionalLong, OptionalDouble" width="30%">
+</a>
+
+
 Primitive-specialized versions avoid boxing overhead.
 
 ```java
@@ -2635,6 +3097,17 @@ public class PrimitiveOptionalDemo {
 ```
 
 ### 10.4 Optional Best Practices
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-handwritten.svg" alt="Handwritten: 10.4 Optional Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-diagram.svg" alt="Diagram: 10.4 Optional Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/10-4-optional-best-practices-sticky.svg" alt="Sticky Note: 10.4 Optional Best Practices" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.optional;
@@ -2703,6 +3176,17 @@ Parallel streams leverage multiple CPU cores by splitting the workload across th
 
 ### 11.1 ForkJoinPool Architecture
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-handwritten.svg" alt="Handwritten: 11.1 ForkJoinPool Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-diagram.svg" alt="Diagram: 11.1 ForkJoinPool Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-1-forkjoinpool-architecture-sticky.svg" alt="Sticky Note: 11.1 ForkJoinPool Architecture" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.parallel;
 
@@ -2735,6 +3219,17 @@ public class ForkJoinPoolDemo {
 ```
 
 ### 11.2 Performance Considerations
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-handwritten.svg" alt="Handwritten: 11.2 Performance Considerations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-diagram.svg" alt="Diagram: 11.2 Performance Considerations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-2-performance-considerations-sticky.svg" alt="Sticky Note: 11.2 Performance Considerations" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.parallel;
@@ -2831,6 +3326,17 @@ public class ParallelPerformanceDemo {
 
 ### 11.3 Thread Safety and Shared State
 
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-handwritten.svg" alt="Handwritten: 11.3 Thread Safety and Shared State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-diagram.svg" alt="Diagram: 11.3 Thread Safety and Shared State" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-3-thread-safety-and-shared-state-sticky.svg" alt="Sticky Note: 11.3 Thread Safety and Shared State" width="30%">
+</a>
+
+
 ```java
 package com.pai.collections.parallel;
 
@@ -2880,6 +3386,17 @@ public class ThreadSafetyDemo {
 ```
 
 ### 11.4 unordered() for Performance
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-handwritten.svg" alt="Handwritten: 11.4 unordered() for Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-diagram.svg" alt="Diagram: 11.4 unordered() for Performance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-4-unordered-for-performance-sticky.svg" alt="Sticky Note: 11.4 unordered() for Performance" width="30%">
+</a>
+
 
 ```java
 package com.pai.collections.parallel;
@@ -2934,6 +3451,17 @@ public class UnorderedDemo {
 ```
 
 ### 11.5 Parallel Stream Decision Framework
+
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-handwritten.svg" alt="Handwritten: 11.5 Parallel Stream Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-diagram.svg" alt="Diagram: 11.5 Parallel Stream Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p3-java-collections/11-5-parallel-stream-decision-framework-sticky.svg" alt="Sticky Note: 11.5 Parallel Stream Decision Framework" width="30%">
+</a>
+
 
 **Use parallel streams when**:
 - Dataset is large (10,000+ elements)

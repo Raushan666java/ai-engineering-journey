@@ -57,6 +57,17 @@ flowchart LR
 
 ### The Analysis-Synthesis Model
 
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" alt="Handwritten: The Analysis-Synthesis Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" alt="Diagram: The Analysis-Synthesis Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" alt="Sticky Note: The Analysis-Synthesis Model" width="30%">
+</a>
+
+
 A **compiler** is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the **analysis phase** (front end) and the **synthesis phase** (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.
 
 The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring **N + M** development efforts rather than **N ? M**. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
@@ -66,6 +77,17 @@ The rationale for this division is modularity. The front end depends only on the
 > **Pro Tip:** When designing a new language, always plan for an intermediate representation. A well-designed IR lets you target multiple architectures with minimal additional effort.
 
 ### Phases of Compilation
+
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" alt="Handwritten: Phases of Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" alt="Diagram: Phases of Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" alt="Sticky Note: Phases of Compilation" width="30%">
+</a>
+
 
 A compiler operates as a pipeline of phases, each transforming one representation of the program into another. We walk through each phase using a concrete program:
 
@@ -130,6 +152,17 @@ movss   [result], xmm0
 ```
 
 ### Symbol Table Management
+
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" alt="Handwritten: Symbol Table Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" alt="Diagram: Symbol Table Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" alt="Sticky Note: Symbol Table Management" width="30%">
+</a>
+
 
 The symbol table is a data structure maintained throughout compilation that stores information about identifiers. Each entry contains the identifier's name, type, scope level, memory location, and possibly other attributes.
 
@@ -216,6 +249,17 @@ console.log(symtab.lookup("x")?.type); // "int" (restored)
 
 ### Interpreters vs Compilers vs JIT
 
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" alt="Handwritten: Interpreters vs Compilers vs JIT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" alt="Diagram: Interpreters vs Compilers vs JIT" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" alt="Sticky Note: Interpreters vs Compilers vs JIT" width="30%">
+</a>
+
+
 An **interpreter** performs the operations specified by the source program directly without first producing a target-language translation. Pure interpretation reanalyzes each statement on every encounter. A **compiler** translates the entire program ahead of time (AOT). A **just-in-time (JIT) compiler** translates intermediate code to native machine code at runtime, caching compiled code for repeated execution.
 
 **Performance analysis model:**
@@ -239,6 +283,17 @@ Typical ratios: `C_interpret ? 10-50 ? C_machine`, `C_jit_exec ? 1.5-3 ? C_machi
 Modern virtual machine implementations for Java (HotSpot) and .NET (RyuJIT) employ JIT compilation, combining portability with performance approaching AOT. JIT systems may also employ **adaptive optimization**, where frequently executed methods are recompiled at higher optimization levels.
 
 ### Bootstrapping and Cross-Compilation
+
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" alt="Handwritten: Bootstrapping and Cross-Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" alt="Diagram: Bootstrapping and Cross-Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" alt="Sticky Note: Bootstrapping and Cross-Compilation" width="30%">
+</a>
+
 
 **Bootstrapping** is the process of writing a compiler in the source language it compiles. A T-diagram visualizes this:
 
@@ -272,6 +327,17 @@ A **T-diagram** is a three-cornered notation: the top corner is the source langu
 
 ### Compiler Construction Tools
 
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" alt="Handwritten: Compiler Construction Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" alt="Diagram: Compiler Construction Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" alt="Sticky Note: Compiler Construction Tools" width="30%">
+</a>
+
+
 A variety of specialized tools automate the construction of compiler components:
 
 | Tool | Phase | Input | Output |
@@ -286,6 +352,17 @@ A variety of specialized tools automate the construction of compiler components:
 
 ### The Role of Formal Language Theory
 
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" alt="Handwritten: The Role of Formal Language Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" alt="Diagram: The Role of Formal Language Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" alt="Sticky Note: The Role of Formal Language Theory" width="30%">
+</a>
+
+
 Formal language theory provides the mathematical foundation for compilation.
 
 | Language Class | Automaton | Compiler Phase | Example |
@@ -298,6 +375,17 @@ Formal language theory provides the mathematical foundation for compilation.
 The **Chomsky hierarchy** situates these language classes within a broader theory of computation, establishing the limits of what each compiler phase can and cannot express. Regular languages describe tokens; context-free languages describe nesting structure. Context-sensitive properties like "declare before use" and type consistency require semantic analysis.
 
 ### The Evolution of Compiler Architecture
+
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" alt="Handwritten: The Evolution of Compiler Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" alt="Diagram: The Evolution of Compiler Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" alt="Sticky Note: The Evolution of Compiler Architecture" width="30%">
+</a>
+
 
 Early compilers in the 1950s and 1960s (FORTRAN I, 1957) were monolithic programs that translated directly from source to machine code without an explicit intermediate representation. The introduction of intermediate languages, attributed grammars, and formal parsing algorithms in the 1970s led to modern modular structure.
 
@@ -504,6 +592,17 @@ pipeline.run();
 ```
 
 ### Error Handling Strategies
+
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" alt="Handwritten: Error Handling Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" alt="Diagram: Error Handling Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" alt="Sticky Note: Error Handling Strategies" width="30%">
+</a>
+
 
 Compilers must handle errors gracefully, reporting them clearly without crashing. Four major strategies:
 

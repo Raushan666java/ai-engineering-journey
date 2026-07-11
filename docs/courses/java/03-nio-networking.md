@@ -54,6 +54,17 @@ Java NIO (New I/O, introduced in Java 1.4 and enhanced in Java 7 as NIO.2) provi
 
 ### 1.1 NIO vs. Traditional I/O
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-handwritten.svg" alt="Handwritten: 1.1 NIO vs. Traditional I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-diagram.svg" alt="Diagram: 1.1 NIO vs. Traditional I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-1-nio-vs-traditional-i-o-sticky.svg" alt="Sticky Note: 1.1 NIO vs. Traditional I/O" width="30%">
+</a>
+
+
 | Aspect | I/O (java.io) | NIO (java.nio) |
 |--------|---------------|-----------------|
 | Direction | Stream-oriented (one byte at a time) | Buffer-oriented (blocks of data) |
@@ -62,6 +73,17 @@ Java NIO (New I/O, introduced in Java 1.4 and enhanced in Java 7 as NIO.2) provi
 | Performance | Moderate | Higher (especially with direct buffers) |
 
 ### 1.2 Core Abstractions
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-handwritten.svg" alt="Handwritten: 1.2 Core Abstractions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-diagram.svg" alt="Diagram: 1.2 Core Abstractions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/1-2-core-abstractions-sticky.svg" alt="Sticky Note: 1.2 Core Abstractions" width="30%">
+</a>
+
 
 NIO is built on three core abstractions:
 
@@ -76,6 +98,17 @@ NIO is built on three core abstractions:
 A buffer is a fixed-capacity container for a specific primitive type. All buffers share a common set of properties and methods defined in the abstract `Buffer` class.
 
 ### 2.1 Buffer Types
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-handwritten.svg" alt="Handwritten: 2.1 Buffer Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-diagram.svg" alt="Diagram: 2.1 Buffer Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-1-buffer-types-sticky.svg" alt="Sticky Note: 2.1 Buffer Types" width="30%">
+</a>
+
 
 Each primitive type (except `boolean`) has a corresponding buffer:
 
@@ -111,6 +144,17 @@ public class BufferTypes {
 ```
 
 ### 2.2 Buffer Properties
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-handwritten.svg" alt="Handwritten: 2.2 Buffer Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-diagram.svg" alt="Diagram: 2.2 Buffer Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-2-buffer-properties-sticky.svg" alt="Sticky Note: 2.2 Buffer Properties" width="30%">
+</a>
+
 
 Every buffer tracks four key properties:
 
@@ -165,6 +209,17 @@ public class BufferProperties {
 ```
 
 ### 2.3 Essential Buffer Operations
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-handwritten.svg" alt="Handwritten: 2.3 Essential Buffer Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-diagram.svg" alt="Diagram: 2.3 Essential Buffer Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-3-essential-buffer-operations-sticky.svg" alt="Sticky Note: 2.3 Essential Buffer Operations" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -253,6 +308,17 @@ public class BufferOperations {
 
 ### 2.4 Direct vs. Heap Buffers
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-handwritten.svg" alt="Handwritten: 2.4 Direct vs. Heap Buffers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-diagram.svg" alt="Diagram: 2.4 Direct vs. Heap Buffers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-4-direct-vs-heap-buffers-sticky.svg" alt="Sticky Note: 2.4 Direct vs. Heap Buffers" width="30%">
+</a>
+
+
 - **Heap buffers** (`ByteBuffer.allocate(cap)`) → allocated on the JVM heap, subject to GC, may involve an extra copy during I/O operations.
 - **Direct buffers** (`ByteBuffer.allocateDirect(cap)`) → allocated outside the JVM heap, used directly by native I/O operations, avoiding intermediate copies. Allocation and deallocation are more expensive, so they should be reused.
 
@@ -320,6 +386,17 @@ public class DirectVsHeap {
 
 ### 2.5 Byte Order (Endianness)
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-handwritten.svg" alt="Handwritten: 2.5 Byte Order (Endianness)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-diagram.svg" alt="Diagram: 2.5 Byte Order (Endianness)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/2-5-byte-order-endianness-sticky.svg" alt="Sticky Note: 2.5 Byte Order (Endianness)" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -366,6 +443,17 @@ A `Channel` represents an open connection to an I/O source or sink. Channels are
 
 ### 3.1 Channel Hierarchy
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-handwritten.svg" alt="Handwritten: 3.1 Channel Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-diagram.svg" alt="Diagram: 3.1 Channel Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-1-channel-hierarchy-sticky.svg" alt="Sticky Note: 3.1 Channel Hierarchy" width="30%">
+</a>
+
+
 ```
 Channel (interface)
 ├── ReadableByteChannel
@@ -380,6 +468,17 @@ Channel (interface)
 ```
 
 ### 3.2 FileChannel
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-handwritten.svg" alt="Handwritten: 3.2 FileChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-diagram.svg" alt="Diagram: 3.2 FileChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-2-filechannel-sticky.svg" alt="Sticky Note: 3.2 FileChannel" width="30%">
+</a>
+
 
 `FileChannel` provides file read/write, position management, locking, and memory-mapped I/O.
 
@@ -674,6 +773,17 @@ public class MemoryMappedFile {
 
 ### 3.3 Scatter/Gather I/O
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-handwritten.svg" alt="Handwritten: 3.3 Scatter/Gather I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-diagram.svg" alt="Diagram: 3.3 Scatter/Gather I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/3-3-scatter-gather-i-o-sticky.svg" alt="Sticky Note: 3.3 Scatter/Gather I/O" width="30%">
+</a>
+
+
 Scatter/gather allows reading from a channel into multiple buffers (scatter) or writing from multiple buffers to a channel (gather). This is useful for fixed-length headers followed by variable-length payloads.
 
 ```java
@@ -753,6 +863,17 @@ A `Selector` allows a single thread to monitor multiple channels for readiness e
 
 ### 4.1 SelectionKey Operations
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-handwritten.svg" alt="Handwritten: 4.1 SelectionKey Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-diagram.svg" alt="Diagram: 4.1 SelectionKey Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-1-selectionkey-operations-sticky.svg" alt="Sticky Note: 4.1 SelectionKey Operations" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -785,6 +906,17 @@ public class SelectionKeyOps {
 ```
 
 ### 4.2 select(), selectNow(), select(timeout), wakeup()
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-handwritten.svg" alt="Handwritten: 4.2 select(), selectNow(), select(timeout), wakeup()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-diagram.svg" alt="Diagram: 4.2 select(), selectNow(), select(timeout), wakeup()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-2-select-selectnow-select-timeout-wakeup-sticky.svg" alt="Sticky Note: 4.2 select(), selectNow(), select(timeout), wakeup()" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -945,6 +1077,17 @@ public class NonBlockingEchoServer {
 
 ### 4.3 Client for the Non-Blocking Echo Server
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-handwritten.svg" alt="Handwritten: 4.3 Client for the Non-Blocking Echo Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-diagram.svg" alt="Diagram: 4.3 Client for the Non-Blocking Echo Server" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/4-3-client-for-the-non-blocking-echo-server-sticky.svg" alt="Sticky Note: 4.3 Client for the Non-Blocking Echo Server" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -1053,6 +1196,17 @@ public class NonBlockingEchoClient {
 
 ### 5.1 SocketChannel and ServerSocketChannel
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-handwritten.svg" alt="Handwritten: 5.1 SocketChannel and ServerSocketChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-diagram.svg" alt="Diagram: 5.1 SocketChannel and ServerSocketChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-1-socketchannel-and-serversocketchannel-sticky.svg" alt="Sticky Note: 5.1 SocketChannel and ServerSocketChannel" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -1135,6 +1289,17 @@ public class TcpBlockingExample {
 
 ### 5.2 Non-Blocking Connection with finishConnect()
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-handwritten.svg" alt="Handwritten: 5.2 Non-Blocking Connection with finishConnect()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-diagram.svg" alt="Diagram: 5.2 Non-Blocking Connection with finishConnect()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/5-2-non-blocking-connection-with-finishconnect-sticky.svg" alt="Sticky Note: 5.2 Non-Blocking Connection with finishConnect()" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -1210,6 +1375,17 @@ public class NonBlockingConnect {
 UDP is connectionless and unreliable. `DatagramChannel` provides NIO access to UDP sockets.
 
 ### 6.1 Basic UDP Send/Receive
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-handwritten.svg" alt="Handwritten: 6.1 Basic UDP Send/Receive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-diagram.svg" alt="Diagram: 6.1 Basic UDP Send/Receive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-1-basic-udp-send-receive-sticky.svg" alt="Sticky Note: 6.1 Basic UDP Send/Receive" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1292,6 +1468,17 @@ public class UdpExample {
 ```
 
 ### 6.2 UDP Multicast
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-handwritten.svg" alt="Handwritten: 6.2 UDP Multicast" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-diagram.svg" alt="Diagram: 6.2 UDP Multicast" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/6-2-udp-multicast-sticky.svg" alt="Sticky Note: 6.2 UDP Multicast" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1396,6 +1583,17 @@ Java 11 introduced a modern, fully asynchronous HTTP client in `java.net.http`.
 
 ### 7.1 Synchronous GET
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-handwritten.svg" alt="Handwritten: 7.1 Synchronous GET" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-diagram.svg" alt="Diagram: 7.1 Synchronous GET" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-1-synchronous-get-sticky.svg" alt="Sticky Note: 7.1 Synchronous GET" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -1436,6 +1634,17 @@ public class HttpGetSync {
 ```
 
 ### 7.2 Asynchronous GET
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-handwritten.svg" alt="Handwritten: 7.2 Asynchronous GET" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-diagram.svg" alt="Diagram: 7.2 Asynchronous GET" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-2-asynchronous-get-sticky.svg" alt="Sticky Note: 7.2 Asynchronous GET" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1486,6 +1695,17 @@ public class HttpGetAsync {
 ```
 
 ### 7.3 POST, PUT, DELETE
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-handwritten.svg" alt="Handwritten: 7.3 POST, PUT, DELETE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-diagram.svg" alt="Diagram: 7.3 POST, PUT, DELETE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-3-post-put-delete-sticky.svg" alt="Sticky Note: 7.3 POST, PUT, DELETE" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1554,6 +1774,17 @@ public class HttpMethods {
 ```
 
 ### 7.4 Custom Headers and Body Publishers
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-handwritten.svg" alt="Handwritten: 7.4 Custom Headers and Body Publishers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-diagram.svg" alt="Diagram: 7.4 Custom Headers and Body Publishers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-4-custom-headers-and-body-publishers-sticky.svg" alt="Sticky Note: 7.4 Custom Headers and Body Publishers" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1637,6 +1868,17 @@ public class HttpBodyPublishers {
 ```
 
 ### 7.5 WebSocket Support
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-handwritten.svg" alt="Handwritten: 7.5 WebSocket Support" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-diagram.svg" alt="Diagram: 7.5 WebSocket Support" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/7-5-websocket-support-sticky.svg" alt="Sticky Note: 7.5 WebSocket Support" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1740,6 +1982,17 @@ Java 7 introduced truly asynchronous channel operations with `AsynchronousFileCh
 
 ### 8.1 AsynchronousFileChannel
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-handwritten.svg" alt="Handwritten: 8.1 AsynchronousFileChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-diagram.svg" alt="Diagram: 8.1 AsynchronousFileChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-1-asynchronousfilechannel-sticky.svg" alt="Sticky Note: 8.1 AsynchronousFileChannel" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -1805,6 +2058,17 @@ public class AsyncFileChannelDemo {
 ```
 
 ### 8.2 AsynchronousSocketChannel
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-handwritten.svg" alt="Handwritten: 8.2 AsynchronousSocketChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-diagram.svg" alt="Diagram: 8.2 AsynchronousSocketChannel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-2-asynchronoussocketchannel-sticky.svg" alt="Sticky Note: 8.2 AsynchronousSocketChannel" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -1916,6 +2180,17 @@ public class AsyncEchoServer {
 
 ### 8.3 Async Client
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-handwritten.svg" alt="Handwritten: 8.3 Async Client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-diagram.svg" alt="Diagram: 8.3 Async Client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/8-3-async-client-sticky.svg" alt="Sticky Note: 8.3 Async Client" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2013,6 +2288,17 @@ Java 7's NIO.2 (`java.nio.file`) provides comprehensive filesystem operations.
 
 ### 9.1 Path and Files Basics
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-handwritten.svg" alt="Handwritten: 9.1 Path and Files Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-diagram.svg" alt="Diagram: 9.1 Path and Files Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-1-path-and-files-basics-sticky.svg" alt="Sticky Note: 9.1 Path and Files Basics" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2094,6 +2380,17 @@ public class PathAndFiles {
 
 ### 9.2 Directory Walking with Files.walk, Files.find, Files.list
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-handwritten.svg" alt="Handwritten: 9.2 Directory Walking with Files.walk, Files.find, Files.list" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-diagram.svg" alt="Diagram: 9.2 Directory Walking with Files.walk, Files.find, Files.list" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-2-directory-walking-with-files-walk-files-find-files-list-sticky.svg" alt="Sticky Note: 9.2 Directory Walking with Files.walk, Files.find, Files.list" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2169,6 +2466,17 @@ public class DirectoryWalking {
 ```
 
 ### 9.3 FileVisitor and walkFileTree
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-handwritten.svg" alt="Handwritten: 9.3 FileVisitor and walkFileTree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-diagram.svg" alt="Diagram: 9.3 FileVisitor and walkFileTree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-3-filevisitor-and-walkfiletree-sticky.svg" alt="Sticky Note: 9.3 FileVisitor and walkFileTree" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -2270,6 +2578,17 @@ class JavaFileFinder extends SimpleFileVisitor<Path> {
 
 ### 9.4 WatchService (File System Change Monitoring)
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-handwritten.svg" alt="Handwritten: 9.4 WatchService (File System Change Monitoring)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-diagram.svg" alt="Diagram: 9.4 WatchService (File System Change Monitoring)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/9-4-watchservice-file-system-change-monitoring-sticky.svg" alt="Sticky Note: 9.4 WatchService (File System Change Monitoring)" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2347,6 +2666,17 @@ public class WatchServiceDemo {
 
 ### 10.1 BasicFileAttributes
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-handwritten.svg" alt="Handwritten: 10.1 BasicFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-diagram.svg" alt="Diagram: 10.1 BasicFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-1-basicfileattributes-sticky.svg" alt="Sticky Note: 10.1 BasicFileAttributes" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2392,6 +2722,17 @@ public class FileAttributesDemo {
 ```
 
 ### 10.2 PosixFileAttributes
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-handwritten.svg" alt="Handwritten: 10.2 PosixFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-diagram.svg" alt="Diagram: 10.2 PosixFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-2-posixfileattributes-sticky.svg" alt="Sticky Note: 10.2 PosixFileAttributes" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -2446,6 +2787,17 @@ public class PosixAttributesDemo {
 
 ### 10.3 DosFileAttributes
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-handwritten.svg" alt="Handwritten: 10.3 DosFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-diagram.svg" alt="Diagram: 10.3 DosFileAttributes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-3-dosfileattributes-sticky.svg" alt="Sticky Note: 10.3 DosFileAttributes" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2494,6 +2846,17 @@ public class DosAttributesDemo {
 ```
 
 ### 10.4 UserDefinedFileAttributeView
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-handwritten.svg" alt="Handwritten: 10.4 UserDefinedFileAttributeView" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-diagram.svg" alt="Diagram: 10.4 UserDefinedFileAttributeView" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-4-userdefinedfileattributeview-sticky.svg" alt="Sticky Note: 10.4 UserDefinedFileAttributeView" width="30%">
+</a>
+
 
 ```java
 package chapter3;
@@ -2563,6 +2926,17 @@ public class UserDefinedAttributesDemo {
 
 ### 10.5 Reading Attributes by Name
 
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-handwritten.svg" alt="Handwritten: 10.5 Reading Attributes by Name" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-diagram.svg" alt="Diagram: 10.5 Reading Attributes by Name" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/10-5-reading-attributes-by-name-sticky.svg" alt="Sticky Note: 10.5 Reading Attributes by Name" width="30%">
+</a>
+
+
 ```java
 package chapter3;
 
@@ -2616,6 +2990,17 @@ public class AttributeByName {
 ## 11. Performance Considerations
 
 ### 11.1 Buffer Size Tuning
+
+<a href="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-handwritten.svg" alt="Handwritten: 11.1 Buffer Size Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-diagram.svg" alt="Diagram: 11.1 Buffer Size Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/03-nio-networking/11-1-buffer-size-tuning-sticky.svg" alt="Sticky Note: 11.1 Buffer Size Tuning" width="30%">
+</a>
+
 
 ```java
 package chapter3;

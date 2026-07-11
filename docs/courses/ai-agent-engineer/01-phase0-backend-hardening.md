@@ -26,6 +26,17 @@
 You use Redis in Laravel for cache and sessions. In agent engineering, Redis appears in two distinct roles:
 
 ### Redis as Cache
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-handwritten.svg" alt="Handwritten: Redis as Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-diagram.svg" alt="Diagram: Redis as Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-cache-sticky.svg" alt="Sticky Note: Redis as Cache" width="30%">
+</a>
+
 ```python
 # FastAPI + Redis cache example
 import redis.asyncio as aioredis
@@ -47,6 +58,17 @@ async def expensive(redis: aioredis.Redis = Depends(get_redis)):
 ```
 
 ### Redis as Queue/Broker
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-handwritten.svg" alt="Handwritten: Redis as Queue/Broker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-diagram.svg" alt="Diagram: Redis as Queue/Broker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-as-queue-broker-sticky.svg" alt="Sticky Note: Redis as Queue/Broker" width="30%">
+</a>
+
 
 Redis-backed job queues (RQ, Celery with Redis broker) solve a different problem: **durable async work that must survive server restarts**.
 
@@ -123,17 +145,50 @@ Pub/Sub (Publish/Subscribe) is a messaging pattern where publishers send message
 
 ### When to use Pub/Sub
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-handwritten.svg" alt="Handwritten: When to use Pub/Sub" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-diagram.svg" alt="Diagram: When to use Pub/Sub" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-use-pub-sub-sticky.svg" alt="Sticky Note: When to use Pub/Sub" width="30%">
+</a>
+
+
 - Real-time notifications (new document ingested, pipeline stage completed)
 - Broadcasting events to multiple consumers
 - Cross-service communication where delivery guarantee is not required
 
 ### When NOT to use Pub/Sub
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-handwritten.svg" alt="Handwritten: When NOT to use Pub/Sub" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-diagram.svg" alt="Diagram: When NOT to use Pub/Sub" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-use-pub-sub-sticky.svg" alt="Sticky Note: When NOT to use Pub/Sub" width="30%">
+</a>
+
+
 - When the receiver might be offline (use a queue instead)
 - When you need to replay messages (use a log/stream instead)
 - When delivery must be guaranteed
 
 ### Implementation
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-handwritten.svg" alt="Handwritten: Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-diagram.svg" alt="Diagram: Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sticky.svg" alt="Sticky Note: Implementation" width="30%">
+</a>
+
 
 ```python
 # publisher.py
@@ -177,6 +232,17 @@ FastAPI auto-generates OpenAPI docs. You need to be able to read and debug the g
 
 ### What FastAPI generates for you
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-handwritten.svg" alt="Handwritten: What FastAPI generates for you" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-diagram.svg" alt="Diagram: What FastAPI generates for you" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-fastapi-generates-for-you-sticky.svg" alt="Sticky Note: What FastAPI generates for you" width="30%">
+</a>
+
+
 ```python
 from pydantic import BaseModel, Field
 from fastapi import FastAPI, status
@@ -203,6 +269,17 @@ async def query(req: QueryRequest):
 
 ### What the generated `/docs` shows
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-handwritten.svg" alt="Handwritten: What the generated `/docs` shows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-diagram.svg" alt="Diagram: What the generated `/docs` shows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/what-the-generated-docs-shows-sticky.svg" alt="Sticky Note: What the generated `/docs` shows" width="30%">
+</a>
+
+
 Each Pydantic model becomes a schema. Each endpoint shows:
 - **Request body**: field names, types, descriptions, constraints (min_length, ge, le)
 - **Response body**: the `response_model` structure with all nested models
@@ -210,6 +287,17 @@ Each Pydantic model becomes a schema. Each endpoint shows:
 - **Examples**: added via `Field(..., example="...")` or model-level `Config` with `json_schema_extra`
 
 ### Key things to check when debugging
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-handwritten.svg" alt="Handwritten: Key things to check when debugging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-diagram.svg" alt="Diagram: Key things to check when debugging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/key-things-to-check-when-debugging-sticky.svg" alt="Sticky Note: Key things to check when debugging" width="30%">
+</a>
+
 
 1. **Response model matches actual return** — FastAPI serializes the `response_model`, not whatever you return. If they differ, you get a serialization error.
 2. **Validation constraints** — Add `Field(..., ge=1)` for integers, `min_length` for strings. Missing validation is the #1 OpenAPI bug.
@@ -227,6 +315,17 @@ You've implemented JWTs in Laravel. The gap is the **rotation pattern** — repl
 
 ### Flow
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-handwritten.svg" alt="Handwritten: Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-diagram.svg" alt="Diagram: Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/flow-sticky.svg" alt="Sticky Note: Flow" width="30%">
+</a>
+
+
 ```
 1. POST /auth/login → returns { access_token, refresh_token }
 2. POST /auth/refresh (with refresh_token) → returns NEW { access_token, refresh_token }
@@ -235,6 +334,17 @@ You've implemented JWTs in Laravel. The gap is the **rotation pattern** — repl
 ```
 
 ### Implementation sketch
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-handwritten.svg" alt="Handwritten: Implementation sketch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-diagram.svg" alt="Diagram: Implementation sketch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sketch-sticky.svg" alt="Sticky Note: Implementation sketch" width="30%">
+</a>
+
 
 ```python
 from fastapi import FastAPI, Depends, HTTPException
@@ -269,6 +379,17 @@ Diagram the above flow on paper or in a markdown file. Include: what happens whe
 
 ### Token Bucket
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-handwritten.svg" alt="Handwritten: Token Bucket" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-diagram.svg" alt="Diagram: Token Bucket" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-sticky.svg" alt="Sticky Note: Token Bucket" width="30%">
+</a>
+
+
 A bucket holds N tokens. Every request consumes 1 token. Tokens refill at a fixed rate (e.g., 10 tokens per minute). If the bucket is empty, the request is rejected.
 
 ```python
@@ -289,6 +410,17 @@ async def expensive():
 
 ### Sliding Window
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-handwritten.svg" alt="Handwritten: Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-diagram.svg" alt="Diagram: Sliding Window" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-sticky.svg" alt="Sticky Note: Sliding Window" width="30%">
+</a>
+
+
 Counts requests in a moving time window (e.g., last 60 seconds). If count exceeds threshold, reject.
 
 **Why sliding window for login endpoints:** More precise enforcement — a user doing 100 requests across the boundary of two token-bucket refill windows could technically send 200. Sliding window prevents this.
@@ -308,6 +440,17 @@ for ($i=0; $i -lt 12; $i++) { curl -s http://localhost:8000/expensive; "---"; St
 
 ### Modular Monolith
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-handwritten.svg" alt="Handwritten: Modular Monolith" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-diagram.svg" alt="Diagram: Modular Monolith" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/modular-monolith-sticky.svg" alt="Sticky Note: Modular Monolith" width="30%">
+</a>
+
+
 A single deployable unit with clear module boundaries. Each module has its own database schema, API surface (internal), and test suite, but they share the same process.
 
 **When it wins:**
@@ -318,6 +461,17 @@ A single deployable unit with clear module boundaries. Each module has its own d
 
 ### Microservices
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-handwritten.svg" alt="Handwritten: Microservices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-diagram.svg" alt="Diagram: Microservices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/microservices-sticky.svg" alt="Sticky Note: Microservices" width="30%">
+</a>
+
+
 Separate deployable units communicating over a network.
 
 **When it wins:**
@@ -327,6 +481,17 @@ Separate deployable units communicating over a network.
 - You need polyglot persistence (Postgres for transactions, vector DB for search, blob storage for media)
 
 ### Applied to ApexERP
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-handwritten.svg" alt="Handwritten: Applied to ApexERP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-diagram.svg" alt="Diagram: Applied to ApexERP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/applied-to-apexerp-sticky.svg" alt="Sticky Note: Applied to ApexERP" width="30%">
+</a>
+
 
 Your current architecture (monolithic Laravel with n8n for workflows) is a **modular monolith with an external orchestration layer** — a perfectly valid pattern. Moving individual modules to FastAPI microservices would make sense if:
 - The module needs GPU access (media pipeline)
@@ -346,6 +511,17 @@ Write a 1-page note arguing both sides for ApexERP's specific architecture. Whic
 **The fix:** Idempotency key — a unique identifier the client sends with every request. The server checks "have I already processed this key?" before doing any work.
 
 ### Implementation
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-handwritten.svg" alt="Handwritten: Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-diagram.svg" alt="Diagram: Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/implementation-sticky.svg" alt="Sticky Note: Implementation" width="30%">
+</a>
+
 
 ```python
 import hashlib
@@ -372,6 +548,17 @@ async def stripe_webhook(
 
 ### Why this matters for your real estate module
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-handwritten.svg" alt="Handwritten: Why this matters for your real estate module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-diagram.svg" alt="Diagram: Why this matters for your real estate module" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/why-this-matters-for-your-real-estate-module-sticky.svg" alt="Sticky Note: Why this matters for your real estate module" width="30%">
+</a>
+
+
 Your booking/payment module processes financial transactions. A webhook retry without idempotency creates double bookings or double payments. The Stripe SDK handles this on Stripe's side, but any custom webhook integration (WhatsApp payments, UPI callbacks) needs explicit idempotency.
 
 ### Exercise
@@ -386,6 +573,17 @@ API versioning matters for AI products because your agent endpoints evolve fast 
 
 ### Four common strategies
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-handwritten.svg" alt="Handwritten: Four common strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-diagram.svg" alt="Diagram: Four common strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/four-common-strategies-sticky.svg" alt="Sticky Note: Four common strategies" width="30%">
+</a>
+
+
 | Strategy | How | Pros | Cons |
 |----------|-----|------|------|
 | URL prefix | `/v1/query`, `/v2/query` | Obvious, easy to route | Pollutes URLs, violates REST purity |
@@ -394,6 +592,17 @@ API versioning matters for AI products because your agent endpoints evolve fast 
 | Content negotiation | `Content-Type: application/vnd.myapp.v1+json` | Most RESTful | Complex client logic |
 
 ### Recommendation: URL prefix for external APIs
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-handwritten.svg" alt="Handwritten: Recommendation: URL prefix for external APIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-diagram.svg" alt="Diagram: Recommendation: URL prefix for external APIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/recommendation-url-prefix-for-external-apis-sticky.svg" alt="Sticky Note: Recommendation: URL prefix for external APIs" width="30%">
+</a>
+
 
 ```python
 from fastapi import APIRouter
@@ -415,11 +624,33 @@ app.include_router(router_v2)
 
 ### When to bump version
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-handwritten.svg" alt="Handwritten: When to bump version" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-diagram.svg" alt="Diagram: When to bump version" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-to-bump-version-sticky.svg" alt="Sticky Note: When to bump version" width="30%">
+</a>
+
+
 1. Breaking schema change (response field removed)
 2. Behavior change (same input → different meaning)
 3. Endpoint removal
 
 ### When NOT to bump
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-handwritten.svg" alt="Handwritten: When NOT to bump" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-diagram.svg" alt="Diagram: When NOT to bump" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/when-not-to-bump-sticky.svg" alt="Sticky Note: When NOT to bump" width="30%">
+</a>
+
 
 1. Adding a field (clients ignore unknown fields)
 2. Performance improvement (opaque to client)
@@ -437,6 +668,17 @@ Agent pipelines often need real-time communication — streaming token output, l
 
 ### WebSocket vs HTTP
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-handwritten.svg" alt="Handwritten: WebSocket vs HTTP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-diagram.svg" alt="Diagram: WebSocket vs HTTP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-vs-http-sticky.svg" alt="Sticky Note: WebSocket vs HTTP" width="30%">
+</a>
+
+
 | HTTP | WebSocket |
 |------|-----------|
 | Request-response | Bidirectional |
@@ -446,6 +688,17 @@ Agent pipelines often need real-time communication — streaming token output, l
 | No server push | Server can push anytime |
 
 ### FastAPI WebSocket example
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-handwritten.svg" alt="Handwritten: FastAPI WebSocket example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-diagram.svg" alt="Diagram: FastAPI WebSocket example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/fastapi-websocket-example-sticky.svg" alt="Sticky Note: FastAPI WebSocket example" width="30%">
+</a>
+
 
 ```python
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
@@ -467,6 +720,17 @@ async def websocket_endpoint(websocket: WebSocket):
 ```
 
 ### WebSocket for agent streaming
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-handwritten.svg" alt="Handwritten: WebSocket for agent streaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-diagram.svg" alt="Diagram: WebSocket for agent streaming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/websocket-for-agent-streaming-sticky.svg" alt="Sticky Note: WebSocket for agent streaming" width="30%">
+</a>
+
 
 ```python
 from fastapi import WebSocket
@@ -504,6 +768,17 @@ Build a WebSocket echo server. Connect to it from a browser console (`new WebSoc
 The following TypeScript examples mirror the Python patterns taught in this phase. They are useful for Laravel developers who want to see familiar syntax while learning new concepts.
 
 ### Redis Wrapper with TypeScript Generics
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-handwritten.svg" alt="Handwritten: Redis Wrapper with TypeScript Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-diagram.svg" alt="Diagram: Redis Wrapper with TypeScript Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-wrapper-with-typescript-generics-sticky.svg" alt="Sticky Note: Redis Wrapper with TypeScript Generics" width="30%">
+</a>
+
 
 ```typescript
 // TypeScript: Redis cache + queue abstraction
@@ -566,6 +841,17 @@ const cached = await responseCache.get("prompt-hash-abc123");
 ```
 
 ### Token Bucket Rate Limiter
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-handwritten.svg" alt="Handwritten: Token Bucket Rate Limiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-diagram.svg" alt="Diagram: Token Bucket Rate Limiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/token-bucket-rate-limiter-sticky.svg" alt="Sticky Note: Token Bucket Rate Limiter" width="30%">
+</a>
+
 
 ```typescript
 // TypeScript: Token-bucket rate limiter for AI API cost control
@@ -633,6 +919,17 @@ async function callLlm(prompt: string): Promise<string | null> {
 
 ### Sliding Window Rate Limiter
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-handwritten.svg" alt="Handwritten: Sliding Window Rate Limiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-diagram.svg" alt="Diagram: Sliding Window Rate Limiter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/sliding-window-rate-limiter-sticky.svg" alt="Sticky Note: Sliding Window Rate Limiter" width="30%">
+</a>
+
+
 ```typescript
 // TypeScript: Sliding-window log for precise rate enforcement
 interface WindowEntry {
@@ -688,6 +985,17 @@ function checkRateLimit(apiKey: string): boolean {
 ```
 
 ### JWT Token Service with Rotation
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-handwritten.svg" alt="Handwritten: JWT Token Service with Rotation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-diagram.svg" alt="Diagram: JWT Token Service with Rotation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-token-service-with-rotation-sticky.svg" alt="Sticky Note: JWT Token Service with Rotation" width="30%">
+</a>
+
 
 ```typescript
 // TypeScript: Refresh-token rotation with invalidation tracking
@@ -766,6 +1074,17 @@ class JwtRotationService {
 
 ### API Versioning Strategy Pattern
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-handwritten.svg" alt="Handwritten: API Versioning Strategy Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-diagram.svg" alt="Diagram: API Versioning Strategy Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/api-versioning-strategy-pattern-sticky.svg" alt="Sticky Note: API Versioning Strategy Pattern" width="30%">
+</a>
+
+
 ```typescript
 // TypeScript: Express/Fastify-style versioned route registration
 import { Router, Request, Response } from "express";
@@ -820,6 +1139,17 @@ mgr.register({
 
 ### Redis Usage Patterns
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-handwritten.svg" alt="Handwritten: Redis Usage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-diagram.svg" alt="Diagram: Redis Usage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/redis-usage-patterns-sticky.svg" alt="Sticky Note: Redis Usage Patterns" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     subgraph Client["Client"]
@@ -840,6 +1170,17 @@ flowchart LR
 ```
 
 ### JWT Refresh-Token Rotation Flow
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-handwritten.svg" alt="Handwritten: JWT Refresh-Token Rotation Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-diagram.svg" alt="Diagram: JWT Refresh-Token Rotation Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/jwt-refresh-token-rotation-flow-sticky.svg" alt="Sticky Note: JWT Refresh-Token Rotation Flow" width="30%">
+</a>
+
 
 ```mermaid
 sequenceDiagram
@@ -869,6 +1210,17 @@ sequenceDiagram
 ```
 
 ### Rate Limiting Algorithms
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-handwritten.svg" alt="Handwritten: Rate Limiting Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-diagram.svg" alt="Diagram: Rate Limiting Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/01-phase0-backend-hardening/rate-limiting-algorithms-sticky.svg" alt="Sticky Note: Rate Limiting Algorithms" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TB

@@ -58,6 +58,17 @@ flowchart LR
 
 ### 1. I/O Hardware
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-handwritten.svg" alt="Handwritten: 1. I/O Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-diagram.svg" alt="Diagram: 1. I/O Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/1-i-o-hardware-sticky.svg" alt="Sticky Note: 1. I/O Hardware" width="30%">
+</a>
+
+
 I/O devices vary enormously in function, but they share common hardware interfaces. Every device connects through a **controller** that communicates with the CPU via **registers** (data, command, status) over a **bus**.
 
 #### Real-World Analogy
@@ -220,6 +231,17 @@ print(f"Device data: 0x{dev.read_data():02x}")
 - **Endianness mismatch**: Device uses big-endian, CPU is little-endian; byte-swap needed.
 ### 2. Polling (Programmed I/O)
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-handwritten.svg" alt="Handwritten: 2. Polling (Programmed I/O)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-diagram.svg" alt="Diagram: 2. Polling (Programmed I/O)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/2-polling-programmed-i-o-sticky.svg" alt="Sticky Note: 2. Polling (Programmed I/O)" width="30%">
+</a>
+
+
 Polling is the simplest I/O method: the CPU repeatedly checks a device's status register until the device signals readiness.
 
 #### Real-World Analogy
@@ -373,6 +395,17 @@ for i in range(5):
 - **Device ready flip-flop**: Device toggles ready faster than poll interval; missed data.
 - **Cache coherency**: Volatile qualifier required, otherwise compiler optimizes away the read.
 ### 3. Interrupts
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-handwritten.svg" alt="Handwritten: 3. Interrupts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-diagram.svg" alt="Diagram: 3. Interrupts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/3-interrupts-sticky.svg" alt="Sticky Note: 3. Interrupts" width="30%">
+</a>
+
 
 Interrupt-driven I/O lets the device notify the CPU when it needs attention, freeing the CPU to do useful work.
 
@@ -622,6 +655,17 @@ io.run()
 - **Shared IRQ**: Multiple devices share same IRQ line; ISR must probe each device.
 ### 4. DMA (Direct Memory Access)
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-handwritten.svg" alt="Handwritten: 4. DMA (Direct Memory Access)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-diagram.svg" alt="Diagram: 4. DMA (Direct Memory Access)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/4-dma-direct-memory-access-sticky.svg" alt="Sticky Note: 4. DMA (Direct Memory Access)" width="30%">
+</a>
+
+
 DMA allows a dedicated controller to transfer data directly between device and memory without CPU intervention for each byte.
 
 #### Real-World Analogy
@@ -834,6 +878,17 @@ print(f"[CPU] DMA finished. Transferred {4096} bytes.")
 - **DMA during power transitions**: Device suspended mid-transfer; abort and retry.
 ### 5. Polling vs Interrupt vs DMA - Comparison
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-handwritten.svg" alt="Handwritten: 5. Polling vs Interrupt vs DMA - Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-diagram.svg" alt="Diagram: 5. Polling vs Interrupt vs DMA - Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/5-polling-vs-interrupt-vs-dma-comparison-sticky.svg" alt="Sticky Note: 5. Polling vs Interrupt vs DMA - Comparison" width="30%">
+</a>
+
+
 | Dimension | Polling (PIO) | Interrupt-Driven | DMA |
 |-----------|-------------|-----------------|-----|
 | CPU role | Checks status loop | Starts I/O, handles IRQ | Programs DMA, handles completion |
@@ -865,6 +920,17 @@ Is the device very fast (microsecond-level response)?
 ```
 
 ### 6. I/O Software Layers (4-Layer Model)
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-handwritten.svg" alt="Handwritten: 6. I/O Software Layers (4-Layer Model)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-diagram.svg" alt="Diagram: 6. I/O Software Layers (4-Layer Model)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/6-i-o-software-layers-4-layer-model-sticky.svg" alt="Sticky Note: 6. I/O Software Layers (4-Layer Model)" width="30%">
+</a>
+
 
 The I/O software stack is organized into four layers that abstract hardware details progressively.
 
@@ -985,6 +1051,17 @@ static irqreturn_t ahci_interrupt(int irq, void *dev_id) {
 - **Priority inversion**: High-priority user thread blocked on low-priority driver.
 - **Mock device drivers**: Testing higher layers requires fake lower layers.
 ### 7. Device Drivers
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-handwritten.svg" alt="Handwritten: 7. Device Drivers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-diagram.svg" alt="Diagram: 7. Device Drivers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/7-device-drivers-sticky.svg" alt="Sticky Note: 7. Device Drivers" width="30%">
+</a>
+
 
 A device driver is kernel code that acts as a translator between the OS and specific hardware.
 
@@ -1221,6 +1298,17 @@ driver.shutdown_device()
 
 ### 8. Character vs Block Devices
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-handwritten.svg" alt="Handwritten: 8. Character vs Block Devices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-diagram.svg" alt="Diagram: 8. Character vs Block Devices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/8-character-vs-block-devices-sticky.svg" alt="Sticky Note: 8. Character vs Block Devices" width="30%">
+</a>
+
+
 | Criterion | Character Device | Block Device |
 |-----------|----------------|-------------|
 | Data unit | Byte stream | Fixed-size blocks (512B-4KB) |
@@ -1345,6 +1433,17 @@ int main() {
 ```
 ### 9. Kernel I/O Subsystem
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-handwritten.svg" alt="Handwritten: 9. Kernel I/O Subsystem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-diagram.svg" alt="Diagram: 9. Kernel I/O Subsystem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/9-kernel-i-o-subsystem-sticky.svg" alt="Sticky Note: 9. Kernel I/O Subsystem" width="30%">
+</a>
+
+
 The kernel I/O subsystem provides a unified framework for all I/O operations across devices.
 
 #### Components
@@ -1380,6 +1479,17 @@ The kernel I/O subsystem provides a unified framework for all I/O operations acr
 ---
 
 ### 10. I/O Scheduling
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-handwritten.svg" alt="Handwritten: 10. I/O Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-diagram.svg" alt="Diagram: 10. I/O Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/10-i-o-scheduling-sticky.svg" alt="Sticky Note: 10. I/O Scheduling" width="30%">
+</a>
+
 
 I/O scheduling reorders and merges pending I/O requests to improve throughput and fairness.
 
@@ -1590,6 +1700,17 @@ while not sched.empty():
 ---
 
 ### 11. Buffering
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-handwritten.svg" alt="Handwritten: 11. Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-diagram.svg" alt="Diagram: 11. Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/11-buffering-sticky.svg" alt="Sticky Note: 11. Buffering" width="30%">
+</a>
+
 
 A buffer is a memory region that holds data in transit between two devices or between device and application.
 
@@ -1889,6 +2010,17 @@ while not cb.empty():
 - **Cache line bouncing**: Head and tail on same cache line; false sharing. Pad to separate lines.
 ### 12. Caching
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-handwritten.svg" alt="Handwritten: 12. Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-diagram.svg" alt="Diagram: 12. Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/12-caching-sticky.svg" alt="Sticky Note: 12. Caching" width="30%">
+</a>
+
+
 A cache holds copies of frequently accessed data for faster access on subsequent requests.
 
 #### Real-World Analogy
@@ -2029,6 +2161,17 @@ print(f"Block 100 cached: {cache.get(100) is not None}")
 ---
 
 ### 13. Spooling
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-handwritten.svg" alt="Handwritten: 13. Spooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-diagram.svg" alt="Diagram: 13. Spooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/13-spooling-sticky.svg" alt="Sticky Note: 13. Spooling" width="30%">
+</a>
+
 
 A spool (Simultaneous Peripheral Operations On-Line) holds output for a device that cannot serve interleaved requests.
 
@@ -2226,6 +2369,17 @@ print("Done")
 
 ### 14. Error Handling
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-handwritten.svg" alt="Handwritten: 14. Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-diagram.svg" alt="Diagram: 14. Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/14-error-handling-sticky.svg" alt="Sticky Note: 14. Error Handling" width="30%">
+</a>
+
+
 I/O errors occur at many levels. The kernel I/O subsystem layers error handling.
 
 #### Error Classification
@@ -2291,6 +2445,17 @@ int main() {
 }
 ```
 ### 15. Interview Corner
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-handwritten.svg" alt="Handwritten: 15. Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-diagram.svg" alt="Diagram: 15. Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/15-interview-corner-sticky.svg" alt="Sticky Note: 15. Interview Corner" width="30%">
+</a>
+
 
 #### Q1: DMA vs PIO - When would you choose one over the other?
 
@@ -2462,6 +2627,17 @@ io_uring_cqe_seen(&ring, cqe);
 9. DMA: NVMe controller reads command via PCIe, DMAs data from memory.
 10. Interrupt: completion interrupt fires, driver completes BIO, page marked clean.
 ### 16. Applications in Real Systems
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-handwritten.svg" alt="Handwritten: 16. Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-diagram.svg" alt="Diagram: 16. Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/16-applications-in-real-systems-sticky.svg" alt="Sticky Note: 16. Applications in Real Systems" width="30%">
+</a>
+
 
 #### Linux I/O Stack - Full Diagram
 
@@ -2637,6 +2813,17 @@ Used in System V Unix for networking and terminal I/O. Linux does not use STREAM
 ```
 ### 17. I/O Models
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-handwritten.svg" alt="Handwritten: 17. I/O Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-diagram.svg" alt="Diagram: 17. I/O Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/17-i-o-models-sticky.svg" alt="Sticky Note: 17. I/O Models" width="30%">
+</a>
+
+
 | Model | Description | Pros | Cons |
 |-------|-------------|------|------|
 | **Blocking I/O** | Process sleeps until I/O completes | Simple | Process is blocked |
@@ -2722,6 +2909,17 @@ int main() {
 
 ### 18. Examples
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-handwritten.svg" alt="Handwritten: 18. Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-diagram.svg" alt="Diagram: 18. Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/18-examples-sticky.svg" alt="Sticky Note: 18. Examples" width="30%">
+</a>
+
+
 #### Example 1: Character Device - Reading Keyboard Input
 
 ```c
@@ -2805,6 +3003,17 @@ int main() {
 > Linux unifies the buffer cache and page cache into a single **page cache** since kernel 2.4. This avoids double-caching and simplifies memory management.
 
 ### 19. Concept Comparisons
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-handwritten.svg" alt="Handwritten: 19. Concept Comparisons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-diagram.svg" alt="Diagram: 19. Concept Comparisons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/19-concept-comparisons-sticky.svg" alt="Sticky Note: 19. Concept Comparisons" width="30%">
+</a>
+
 
 #### I/O Methods
 
@@ -3065,6 +3274,17 @@ analyzer.compare(scenarios);
 
 ### Summary
 
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+</a>
+
+
 - I/O devices communicate via ports, memory-mapped registers, or a hybrid approach
 - Polling wastes CPU; interrupts allow overlap of I/O and computation
 - DMA transfers data directly between device and memory without CPU involvement
@@ -3105,6 +3325,17 @@ analyzer.compare(scenarios);
 15. Create a DMA controller simulator in C++ with scatter-gather descriptor lists.
 
 ### Additional Exercises
+
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/13-io-systems/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+</a>
+
 
 16. **I/O method latency analyzer**: Extend the TypeScript IOSimulator to include: memory-mapped I/O (MMIO) with bus transaction overhead, port-mapped I/O with IN/OUT instruction overhead, and hybrid approaches. Compare all five methods across small (64B), medium (64KB), and large (64MB) transfers.
 

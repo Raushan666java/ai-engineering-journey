@@ -65,12 +65,34 @@ flowchart LR
 
 ### Real-World Analogy --- The Piano Keyboard
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-handwritten.svg" alt="Handwritten: Real-World Analogy --- The Piano Keyboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-diagram.svg" alt="Diagram: Real-World Analogy --- The Piano Keyboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-the-piano-keyboard-sticky.svg" alt="Sticky Note: Real-World Analogy --- The Piano Keyboard" width="30%">
+</a>
+
+
 Think of C++ operators like the keys on a piano. The key labeled "middle C" always plays middle C --- its position, feel, and behavior are fixed by the instrument's design. Operator overloading is like a synthesizer that changes *what sound* that key produces while keeping the key itself in the same place. You cannot:
 - Move the key to a different position on the keyboard (change precedence)
 - Make the key play two notes at once by pressing it alone (change arity)
 - Add a new key between two existing ones (invent a new operator)
 
 ### Fundamental Rules
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-handwritten.svg" alt="Handwritten: Fundamental Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-diagram.svg" alt="Diagram: Fundamental Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/fundamental-rules-sticky.svg" alt="Sticky Note: Fundamental Rules" width="30%">
+</a>
+
 
 **Rule 1 --- At Least One User-Defined Operand**
 You cannot redefine operators on built-in types alone. `int + int` is forever `int + int`.
@@ -89,6 +111,17 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | Overload resolution | O(k) where k = candidate functions | Compiler enumerates viable overloads and selects best match |
@@ -96,6 +129,17 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 | Cognitive cost for reader | O(n) where n = number of overloads | Each overload is a new contract the reader must learn |
 
 ### Golden Rule
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-handwritten.svg" alt="Handwritten: Golden Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-diagram.svg" alt="Diagram: Golden Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/golden-rule-sticky.svg" alt="Sticky Note: Golden Rule" width="30%">
+</a>
+
 
 > **"When in doubt, do as the ints do."** --- If your overloaded `+` does something surprising, you have violated the Principle of Least Surprise. An operator should mean what users expect it to mean based on its built-in behavior.
 
@@ -105,9 +149,31 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 
 ### Real-World Analogy --- Function with a Special Name
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-handwritten.svg" alt="Handwritten: Real-World Analogy --- Function with a Special Name" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-diagram.svg" alt="Diagram: Real-World Analogy --- Function with a Special Name" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-function-with-a-special-name-sticky.svg" alt="Sticky Note: Real-World Analogy --- Function with a Special Name" width="30%">
+</a>
+
+
 An operator is a function whose name is `operator` followed by the operator symbol. Think of it as a function that gets called with a special syntax. `a + b` is really `a.operator+(b)` or `operator+(a, b)`.
 
 ### Numbered Steps for Writing an Operator Overload
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-handwritten.svg" alt="Handwritten: Numbered Steps for Writing an Operator Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-diagram.svg" alt="Diagram: Numbered Steps for Writing an Operator Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-writing-an-operator-overload-sticky.svg" alt="Sticky Note: Numbered Steps for Writing an Operator Overload" width="30%">
+</a>
+
 
 1. **Identify the operator** you want to overload (e.g., `+`, `==`, `<<`)
 2. **Decide member or non-member**: If the operator must modify left operand or access its private data, prefer member. If left operand is not your class type, non-member is required
@@ -116,6 +182,17 @@ An operator is a function whose name is `operator` followed by the operator symb
 5. **Test with natural syntax**: Verify `a + b` compiles and produces correct results
 
 ### Generic Syntax Template
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-handwritten.svg" alt="Handwritten: Generic Syntax Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-diagram.svg" alt="Diagram: Generic Syntax Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/generic-syntax-template-sticky.svg" alt="Sticky Note: Generic Syntax Template" width="30%">
+</a>
+
 
 ```
 // Member function form
@@ -166,6 +243,17 @@ private:
 
 ### Dry Run --- Operator Resolution
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-handwritten.svg" alt="Handwritten: Dry Run --- Operator Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-diagram.svg" alt="Diagram: Dry Run --- Operator Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-sticky.svg" alt="Sticky Note: Dry Run --- Operator Resolution" width="30%">
+</a>
+
+
 | Expression | Resolved As | Return Type | Mechanism |
 |-----------|-------------|-------------|-----------|
 | `p1 + p2` | `p1.operator+(p2)` | `Point` by value | Member function, rhs as parameter |
@@ -180,9 +268,31 @@ private:
 
 ### Real-World Analogy --- Two Doors to the Same Room
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-handwritten.svg" alt="Handwritten: Real-World Analogy --- Two Doors to the Same Room" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-diagram.svg" alt="Diagram: Real-World Analogy --- Two Doors to the Same Room" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-two-doors-to-the-same-room-sticky.svg" alt="Sticky Note: Real-World Analogy --- Two Doors to the Same Room" width="30%">
+</a>
+
+
 A member operator is like a door in your own house --- you walk through it directly (your class, your control). A non-member operator is like a door in a shared building --- you need a key (friend declaration) to access private rooms.
 
 ### Comprehensive Comparison Table
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-handwritten.svg" alt="Handwritten: Comprehensive Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-diagram.svg" alt="Diagram: Comprehensive Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-comparison-table-sticky.svg" alt="Sticky Note: Comprehensive Comparison Table" width="30%">
+</a>
+
 
 | Criterion | Member Function | Non-Member Function |
 |-----------|----------------|---------------------|
@@ -199,6 +309,17 @@ A member operator is like a door in your own house --- you walk through it direc
 | Typical use | `+=`, `++`, `--`, `[]`, `()`, `->`, `=` | `<<`, `>>`, `+`, `-`, `==`, `<` |
 
 ### Code Example --- Symmetric Conversion
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-handwritten.svg" alt="Handwritten: Code Example --- Symmetric Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-diagram.svg" alt="Diagram: Code Example --- Symmetric Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-symmetric-conversion-sticky.svg" alt="Sticky Note: Code Example --- Symmetric Conversion" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -242,6 +363,17 @@ int main() {
 
 ### Decision Flowchart
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
+</a>
+
+
 ```
 Is the operator one of =, (), [], ->, T() ?
     -> YES -> Must be member
@@ -260,6 +392,17 @@ Use member (simpler, direct access)
 
 ### Dry Run --- Resolution for Mixed Types
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-handwritten.svg" alt="Handwritten: Dry Run --- Resolution for Mixed Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-diagram.svg" alt="Diagram: Dry Run --- Resolution for Mixed Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-resolution-for-mixed-types-sticky.svg" alt="Sticky Note: Dry Run --- Resolution for Mixed Types" width="30%">
+</a>
+
+
 | Expression | Candidates Considered | Best Match | Reason |
 |-----------|---------------------|------------|--------|
 | `m1 + m2` | `Meter::operator+(Meter)`, `operator+(Meter, Meter)` | Member | Exact match, no conversion needed |
@@ -274,9 +417,31 @@ Use member (simpler, direct access)
 
 ### Real-World Analogy --- A Cash Register
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Cash Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-diagram.svg" alt="Diagram: Real-World Analogy --- A Cash Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-cash-register-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Cash Register" width="30%">
+</a>
+
+
 Adding two prices on a cash register (`item1 + item2`) produces a new total without modifying either item. Adding an item to an existing total (`total += item`) modifies the register's running total. The first creates a new value; the second changes the existing one.
 
 ### Numbered Steps for Arithmetic Overloads
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-handwritten.svg" alt="Handwritten: Numbered Steps for Arithmetic Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-diagram.svg" alt="Diagram: Numbered Steps for Arithmetic Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-arithmetic-overloads-sticky.svg" alt="Sticky Note: Numbered Steps for Arithmetic Overloads" width="30%">
+</a>
+
 
 1. Decide which operators are meaningful (+, -, *, /, %)
 2. Implement compound assignment versions as members returning `T&`
@@ -285,6 +450,17 @@ Adding two prices on a cash register (`item1 + item2`) produces a new total with
 5. For mixed-type operations, provide overloads for both orderings
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -310,6 +486,17 @@ non-member operator-(T lhs, T rhs) -> T:
 ```
 
 ### Full Code --- Complex Number Arithmetic
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-handwritten.svg" alt="Handwritten: Full Code --- Complex Number Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-diagram.svg" alt="Diagram: Full Code --- Complex Number Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-complex-number-arithmetic-sticky.svg" alt="Sticky Note: Full Code --- Complex Number Arithmetic" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -419,6 +606,17 @@ c after +=: 3+3i
 
 ### Dry Run --- Operator Resolution for Complex Arithmetic
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-handwritten.svg" alt="Handwritten: Dry Run --- Operator Resolution for Complex Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-diagram.svg" alt="Diagram: Dry Run --- Operator Resolution for Complex Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-operator-resolution-for-complex-arithmetic-sticky.svg" alt="Sticky Note: Dry Run --- Operator Resolution for Complex Arithmetic" width="30%">
+</a>
+
+
 | Step | Expression | Resolved As | Intermediate State |
 |------|-----------|-------------|-------------------|
 | 1 | `a + b` | `operator+(a, b)` | lhs = copy of a |
@@ -429,6 +627,17 @@ c after +=: 3+3i
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|------------------|-----|
 | `operator+` (binary) | O(n) for container-like types; O(1) for simple types | O(1) extra (temporary) | Copy + compound; copy dominates for large objects |
@@ -437,6 +646,17 @@ c after +=: 3+3i
 | `operator/` (complex division) | O(1) arithmetic | O(1) | 6 multiplications, 3 additions, 1 division |
 
 ### WHY Complexity Matters
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-handwritten.svg" alt="Handwritten: WHY Complexity Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-diagram.svg" alt="Diagram: WHY Complexity Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-complexity-matters-sticky.svg" alt="Sticky Note: WHY Complexity Matters" width="30%">
+</a>
+
 
 Always prefer `+=` over `+` when modifying an existing object. The expression `a = a + b` creates a temporary (costly for large types like `std::string` or `std::vector`), while `a += b` modifies directly. For `std::string`, `+` allocates a new buffer (O(n) memory), while `+=` may reuse existing capacity.
 
@@ -448,9 +668,31 @@ Always prefer `+=` over `+` when modifying an existing object. The expression `a
 
 ### Real-World Analogy --- A Weighing Scale
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Weighing Scale" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-diagram.svg" alt="Diagram: Real-World Analogy --- A Weighing Scale" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-weighing-scale-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Weighing Scale" width="30%">
+</a>
+
+
 A weighing scale compares two objects and tells you their relationship: equal weight, heavier, lighter, heavier-or-equal, lighter-or-equal, or not-equal. Comparison operators are the six ways to read this relationship.
 
 ### Numbered Steps for Comparison Overloads
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-handwritten.svg" alt="Handwritten: Numbered Steps for Comparison Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-diagram.svg" alt="Diagram: Numbered Steps for Comparison Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-for-comparison-overloads-sticky.svg" alt="Sticky Note: Numbered Steps for Comparison Overloads" width="30%">
+</a>
+
 
 1. Define `operator==` --- the primary equality check
 2. Define `operator<` --- the primary ordering check
@@ -461,6 +703,17 @@ A weighing scale compares two objects and tells you their relationship: equal we
 7. (C++17) Use `<` and `==` for all six; (C++20) Use `<=>` for all six
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 non-member operator==(T lhs, T rhs) -> bool:
@@ -485,6 +738,17 @@ non-member operator>=(T lhs, T rhs) -> bool:
 ```
 
 ### Full Code --- Fraction with Comparisons
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-handwritten.svg" alt="Handwritten: Full Code --- Fraction with Comparisons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-diagram.svg" alt="Diagram: Full Code --- Fraction with Comparisons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-fraction-with-comparisons-sticky.svg" alt="Sticky Note: Full Code --- Fraction with Comparisons" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -576,6 +840,17 @@ Sorted: 1/3 1/2 3/4 5/6
 
 ### Dry Run --- Comparison of `1/2` and `3/4`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-handwritten.svg" alt="Handwritten: Dry Run --- Comparison of `1/2` and `3/4`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-diagram.svg" alt="Diagram: Dry Run --- Comparison of `1/2` and `3/4`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-comparison-of-1-2-and-3-4-sticky.svg" alt="Sticky Note: Dry Run --- Comparison of `1/2` and `3/4`" width="30%">
+</a>
+
+
 | Step | Expression | Resolved As | Computation | Result |
 |------|-----------|-------------|-------------|--------|
 | 1 | `f1 == f3` | `operator==(f1, f3)` | num=1==2? No; actually 1/2 vs 2/4 normalized = 1/2 == 1/2 -> true | true |
@@ -585,6 +860,17 @@ Sorted: 1/3 1/2 3/4 5/6
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator==` (Fraction) | O(1) | Two integer comparisons after normalization |
@@ -593,6 +879,17 @@ Sorted: 1/3 1/2 3/4 5/6
 | Derived operators (`!=`, `>`, `<=`, `>=`) | O(1) | Single negation of base comparison |
 
 ### WHY Derive `!=` from `==`
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-handwritten.svg" alt="Handwritten: WHY Derive `!=` from `==`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-diagram.svg" alt="Diagram: WHY Derive `!=` from `==`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-derive-from-sticky.svg" alt="Sticky Note: WHY Derive `!=` from `==`" width="30%">
+</a>
+
 
 Duplicating logic across all six operators violates DRY. If the equality check ever changes (e.g., adding epsilon-tolerance for floating-point fields), every operator would need updating. Deriving ensures consistency: change `==`, and all five others automatically follow.
 
@@ -604,9 +901,31 @@ Duplicating logic across all six operators violates DRY. If the equality check e
 
 ### Real-World Analogy --- Odometer vs Snapshot
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-handwritten.svg" alt="Handwritten: Real-World Analogy --- Odometer vs Snapshot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-diagram.svg" alt="Diagram: Real-World Analogy --- Odometer vs Snapshot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-odometer-vs-snapshot-sticky.svg" alt="Sticky Note: Real-World Analogy --- Odometer vs Snapshot" width="30%">
+</a>
+
+
 Prefix `++` is like a car odometer --- it advances and you see the new value immediately. Postfix `++` is like taking a photograph first, then advancing the odometer --- you keep the old value as a record.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. Prefix `++`: Take no parameters, increment, return `*this` by reference
 2. Postfix `++`: Take a dummy `int` parameter (unused), save a copy, increment via prefix, return the saved copy
@@ -614,6 +933,17 @@ Prefix `++` is like a car odometer --- it advances and you see the new value imm
 4. Postfix `--`: Same as postfix `++` but decrement
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -638,6 +968,17 @@ class T {
 ```
 
 ### Full Code --- Custom Iterator-Like Counter
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-handwritten.svg" alt="Handwritten: Full Code --- Custom Iterator-Like Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-diagram.svg" alt="Diagram: Full Code --- Custom Iterator-Like Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-custom-iterator-like-counter-sticky.svg" alt="Sticky Note: Full Code --- Custom Iterator-Like Counter" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -717,6 +1058,17 @@ Iterator style:
 
 ### Dry Run --- Prefix vs Postfix
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-handwritten.svg" alt="Handwritten: Dry Run --- Prefix vs Postfix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-diagram.svg" alt="Diagram: Dry Run --- Prefix vs Postfix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-prefix-vs-postfix-sticky.svg" alt="Sticky Note: Dry Run --- Prefix vs Postfix" width="30%">
+</a>
+
+
 | Step | Expression | What Happens | c.value() |
 |------|-----------|-------------|-----------|
 | 1 | Initial state | --- | 10 |
@@ -726,6 +1078,17 @@ Iterator style:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|------------------|-----|
 | Prefix `++` | O(1) | O(1) | Direct increment, no copy |
@@ -734,6 +1097,17 @@ Iterator style:
 | Postfix `--` | O(1) + copy | O(1) + sizeof(T) | Same as postfix `++` |
 
 ### WHY Prefer Prefix
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-handwritten.svg" alt="Handwritten: WHY Prefer Prefix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-diagram.svg" alt="Diagram: WHY Prefer Prefix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-prefer-prefix-sticky.svg" alt="Sticky Note: WHY Prefer Prefix" width="30%">
+</a>
+
 
 For a simple `int`, the cost difference is negligible. But for an iterator walking a `std::list` node-by-node, postfix `++` copies the iterator (a pointer + some state), while prefix does not. In tight loops, this matters.
 
@@ -747,15 +1121,48 @@ For a simple `int`, the cost difference is negligible. But for an iterator walki
 
 ### Real-World Analogy --- A Factory Assembly Line
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Factory Assembly Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-diagram.svg" alt="Diagram: Real-World Analogy --- A Factory Assembly Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-factory-assembly-line-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Factory Assembly Line" width="30%">
+</a>
+
+
 Think of `<<` as putting an object onto a conveyor belt (output stream) --- the belt keeps moving, and you can put more objects after it. `>>` is like taking raw materials off the belt to build an object --- the belt hands you pieces one at a time.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. **Output `<<`**: Accept `std::ostream&` and `const T&`; write to the stream; return `std::ostream&`
 2. **Input `>>`**: Accept `std::istream&` and `T&` (non-const); read from the stream into the object; return `std::istream&`
 3. **Friend declaration**: Declare both as `friend` inside the class if they need private member access
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 // Output
@@ -770,6 +1177,17 @@ non-member operator>>(istream& is, T& obj) -> istream&:
 ```
 
 ### Full Code --- Date with Stream I/O
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-handwritten.svg" alt="Handwritten: Full Code --- Date with Stream I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-diagram.svg" alt="Diagram: Full Code --- Date with Stream I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-date-with-stream-i-o-sticky.svg" alt="Sticky Note: Full Code --- Date with Stream I/O" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -839,6 +1257,17 @@ String: 2024-12-25
 
 ### Dry Run --- Stream Operations
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-handwritten.svg" alt="Handwritten: Dry Run --- Stream Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-diagram.svg" alt="Diagram: Dry Run --- Stream Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-stream-operations-sticky.svg" alt="Sticky Note: Dry Run --- Stream Operations" width="30%">
+</a>
+
+
 | Step | Expression | Stream State | Return Value |
 |------|-----------|-------------|--------------|
 | 1 | `std::cout << d` | Writes "2024-12-25" | `std::cout` (reference) |
@@ -849,6 +1278,17 @@ String: 2024-12-25
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator<<` (simple) | O(k) where k = output length | Formatted output per field |
@@ -856,6 +1296,17 @@ String: 2024-12-25
 | Chaining N operators | O(N*k) | Each op writes/reads independently |
 
 ### WHY Stream Operators Must Be Non-Members
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-handwritten.svg" alt="Handwritten: WHY Stream Operators Must Be Non-Members" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-diagram.svg" alt="Diagram: WHY Stream Operators Must Be Non-Members" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-stream-operators-must-be-non-members-sticky.svg" alt="Sticky Note: WHY Stream Operators Must Be Non-Members" width="30%">
+</a>
+
 
 The left operand of `<<` is `std::ostream&`, not your class type. If `operator<<` were a member of `Date`, the call would be `d << std::cout` --- backwards from the natural `std::cout << d`. Non-member form fixes the operand order.
 
@@ -867,9 +1318,31 @@ The left operand of `<<` is `std::ostream&`, not your class type. If `operator<<
 
 ### Real-World Analogy --- A Mailbox Array
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Mailbox Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-diagram.svg" alt="Diagram: Real-World Analogy --- A Mailbox Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-mailbox-array-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Mailbox Array" width="30%">
+</a>
+
+
 An apartment building has numbered mailboxes. You write `mailboxes[3]` to access mailbox #3. You can both read what's inside (`cout << mailboxes[3]`) and put something inside (`mailboxes[3] = "letter"`). This read-write duality is exactly what `operator[]` enables.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. Non-const version returns `T&` --- enables both reading and writing
 2. Const version returns `const T&` --- enables reading-only on const objects
@@ -877,6 +1350,17 @@ An apartment building has numbered mailboxes. You write `mailboxes[3]` to access
 4. For associative containers, `[]` may create entries on access (like `std::map`)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -891,6 +1375,17 @@ class T {
 ```
 
 ### Full Code --- SafeArray with Subscript
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-handwritten.svg" alt="Handwritten: Full Code --- SafeArray with Subscript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-diagram.svg" alt="Diagram: Full Code --- SafeArray with Subscript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safearray-with-subscript-sticky.svg" alt="Sticky Note: Full Code --- SafeArray with Subscript" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -977,6 +1472,17 @@ Exception: Index 100 out of range [0, 5)
 
 ### Dry Run --- Subscript Operator Resolution
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-handwritten.svg" alt="Handwritten: Dry Run --- Subscript Operator Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-diagram.svg" alt="Diagram: Dry Run --- Subscript Operator Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-subscript-operator-resolution-sticky.svg" alt="Sticky Note: Dry Run --- Subscript Operator Resolution" width="30%">
+</a>
+
+
 | Step | Expression | Overload Selected | Returns | Effect |
 |------|-----------|------------------|---------|--------|
 | 1 | `arr[i] = i*10` | `int& operator[](size_t)` | Reference to data_[i] | Write: modifies array |
@@ -986,6 +1492,17 @@ Exception: Index 100 out of range [0, 5)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator[]` (bounded) | O(1) | Single bounds check + pointer arithmetic |
@@ -993,6 +1510,17 @@ Exception: Index 100 out of range [0, 5)
 | Bounds check overhead | O(1) | Single integer comparison + conditional |
 
 ### WHY Return a Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-handwritten.svg" alt="Handwritten: WHY Return a Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-diagram.svg" alt="Diagram: WHY Return a Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-return-a-reference-sticky.svg" alt="Sticky Note: WHY Return a Reference" width="30%">
+</a>
+
 
 Without a reference return, `arr[i] = value` would modify a temporary copy. The expression `arr[i]` must be an *lvalue* (something that can appear on the left side of `=`). Returning `int&` makes it an lvalue; returning `int` makes it an rvalue.
 
@@ -1004,9 +1532,31 @@ Without a reference return, `arr[i] = value` would modify a temporary copy. The 
 
 ### Real-World Analogy --- A Coffee Machine with Presets
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Coffee Machine with Presets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-diagram.svg" alt="Diagram: Real-World Analogy --- A Coffee Machine with Presets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-coffee-machine-with-presets-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Coffee Machine with Presets" width="30%">
+</a>
+
+
 A coffee machine remembers your settings (strength, size, temperature). Every time you press the brew button `()`, it uses the stored settings to make coffee. The machine itself is a "function object" --- stateful, reusable, customizable.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. Define `operator()` with desired parameters and return type
 2. Store configuration in the object's member variables
@@ -1014,6 +1564,17 @@ A coffee machine remembers your settings (strength, size, temperature). Every ti
 4. Use with STL algorithms that accept callables
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -1024,6 +1585,17 @@ class T {
 ```
 
 ### Full Code --- Functor Examples
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-handwritten.svg" alt="Handwritten: Full Code --- Functor Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-diagram.svg" alt="Diagram: Full Code --- Functor Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-functor-examples-sticky.svg" alt="Sticky Note: Full Code --- Functor Examples" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1094,6 +1666,17 @@ Lambda: multiplier(6, 7) = 42
 
 ### Dry Run --- Adder Functor
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-handwritten.svg" alt="Handwritten: Dry Run --- Adder Functor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-diagram.svg" alt="Diagram: Dry Run --- Adder Functor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-adder-functor-sticky.svg" alt="Sticky Note: Dry Run --- Adder Functor" width="30%">
+</a>
+
+
 | Step | Expression | What Happens | Result |
 |------|-----------|-------------|--------|
 | 1 | `Adder add5(5)` | Constructor: increment_ = 5 | add5 object created |
@@ -1103,6 +1686,17 @@ Lambda: multiplier(6, 7) = 42
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator()(int)` (Adder) | O(1) | Single addition |
@@ -1110,6 +1704,17 @@ Lambda: multiplier(6, 7) = 42
 | Custom sort with comparator | O(N log N) | Comparator called for each comparison |
 
 ### WHY Functors Over Function Pointers
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-handwritten.svg" alt="Handwritten: WHY Functors Over Function Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-diagram.svg" alt="Diagram: WHY Functors Over Function Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-functors-over-function-pointers-sticky.svg" alt="Sticky Note: WHY Functors Over Function Pointers" width="30%">
+</a>
+
 
 Functors can store state (configuration, counters, cached values), while function pointers carry zero state. STL algorithms inline functor calls better because the compiler sees the complete type, not just a pointer. Lambdas in C++11+ are syntactic sugar that compile to anonymous functors.
 
@@ -1121,9 +1726,31 @@ Functors can store state (configuration, counters, cached values), while functio
 
 ### Real-World Analogy --- A Universal Adapter
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Universal Adapter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-diagram.svg" alt="Diagram: Real-World Analogy --- A Universal Adapter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-universal-adapter-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Universal Adapter" width="30%">
+</a>
+
+
 A universal power adapter converts the plug shape from one standard to another. It works automatically (implicitly) when you plug in, but you need a physical switch (`explicit`/`static_cast`) for dangerous conversions that could damage equipment.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. Decide which target types are safe for implicit conversion
 2. For safe targets, define `operator TargetType() const` --- implicit
@@ -1132,6 +1759,17 @@ A universal power adapter converts the plug shape from one standard to another. 
 5. Provide `static_cast` as the escape hatch for explicit conversions
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -1146,6 +1784,17 @@ class T {
 ```
 
 ### Full Code --- Safe Conversions
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-handwritten.svg" alt="Handwritten: Full Code --- Safe Conversions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-diagram.svg" alt="Diagram: Full Code --- Safe Conversions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-safe-conversions-sticky.svg" alt="Sticky Note: Full Code --- Safe Conversions" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1221,6 +1870,17 @@ Sum: 75
 
 ### Dry Run --- Conversion Resolution
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-handwritten.svg" alt="Handwritten: Dry Run --- Conversion Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-diagram.svg" alt="Diagram: Dry Run --- Conversion Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-conversion-resolution-sticky.svg" alt="Sticky Note: Dry Run --- Conversion Resolution" width="30%">
+</a>
+
+
 | Step | Expression | Conversion Path | Result | Why |
 |------|-----------|-----------------|--------|-----|
 | 1 | `double d = pct` | `operator double()` called | 75.3 | Implicit, safe |
@@ -1231,6 +1891,17 @@ Sum: 75
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator double()` | O(1) | Read member, return |
@@ -1239,6 +1910,17 @@ Sum: 75
 | Arithmetic via conversion | O(1) | Convert both operands, then built-in op |
 
 ### WHY Mark `operator bool()` Explicit
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-handwritten.svg" alt="Handwritten: WHY Mark `operator bool()` Explicit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-diagram.svg" alt="Diagram: WHY Mark `operator bool()` Explicit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-mark-operator-bool-explicit-sticky.svg" alt="Sticky Note: WHY Mark `operator bool()` Explicit" width="30%">
+</a>
+
 
 Without `explicit`, `operator bool()` enables a cascade of unintended promotions: `bool` -> `int` -> `float` -> `double`. This means `pct + 5` would compile (converting the object to bool, then to int), producing garbage. `explicit operator bool()` restricts usage to boolean contexts (conditions in `if`, `while`, `for`, `&&`, `||`, `!`).
 
@@ -1250,11 +1932,44 @@ Without `explicit`, `operator bool()` enables a cascade of unintended promotions
 
 ### 6.11.1 Assignment Operator `=`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-handwritten.svg" alt="Handwritten: 6.11.1 Assignment Operator `=`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-diagram.svg" alt="Diagram: 6.11.1 Assignment Operator `=`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-1-assignment-operator-sticky.svg" alt="Sticky Note: 6.11.1 Assignment Operator `=`" width="30%">
+</a>
+
+
 ### Real-World Analogy --- Copying a Document
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-handwritten.svg" alt="Handwritten: Real-World Analogy --- Copying a Document" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-diagram.svg" alt="Diagram: Real-World Analogy --- Copying a Document" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-copying-a-document-sticky.svg" alt="Sticky Note: Real-World Analogy --- Copying a Document" width="30%">
+</a>
+
 
 When you copy a document (a = b), you want the copy to be independent of the original --- changes to one should not affect the other. This is deep copying. Shallow copying (just sharing a pointer) is like giving someone a link to your Google Doc instead of an actual copy.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. **Self-assignment check**: Guard against `a = a`
 2. **Release old resources**: Delete existing allocated memory
@@ -1262,6 +1977,17 @@ When you copy a document (a = b), you want the copy to be independent of the ori
 4. **Return `*this`**: By reference for chaining (`a = b = c`)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 class T {
@@ -1274,6 +2000,17 @@ class T {
 ```
 
 ### Full Code --- String with Assignment
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-handwritten.svg" alt="Handwritten: Full Code --- String with Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-diagram.svg" alt="Diagram: Full Code --- String with Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-string-with-assignment-sticky.svg" alt="Sticky Note: Full Code --- String with Assignment" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1346,11 +2083,44 @@ Self-assignment: C++
 
 ### 6.11.2 Overloading `new` and `delete`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-handwritten.svg" alt="Handwritten: 6.11.2 Overloading `new` and `delete`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-diagram.svg" alt="Diagram: 6.11.2 Overloading `new` and `delete`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-11-2-overloading-new-and-delete-sticky.svg" alt="Sticky Note: 6.11.2 Overloading `new` and `delete`" width="30%">
+</a>
+
+
 ### Real-World Analogy --- A Custom Locker System
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-handwritten.svg" alt="Handwritten: Real-World Analogy --- A Custom Locker System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-diagram.svg" alt="Diagram: Real-World Analogy --- A Custom Locker System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-a-custom-locker-system-sticky.svg" alt="Sticky Note: Real-World Analogy --- A Custom Locker System" width="30%">
+</a>
+
 
 Instead of using the school's general storage room (global heap), a sports club installs its own lockers (custom pool) sized for sports equipment. Members (`operator new`) get a locker from this custom pool, and returning equipment (`operator delete`) puts the locker back.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 1. Declare `static void* operator new(size_t size)` --- allocates memory
 2. Declare `static void operator delete(void* ptr)` --- deallocates memory
@@ -1358,6 +2128,17 @@ Instead of using the school's general storage room (global heap), a sports club 
 4. Useful for memory pooling, alignment control, or tracking
 
 ### Full Code --- Class-Specific Allocator
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-handwritten.svg" alt="Handwritten: Full Code --- Class-Specific Allocator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-diagram.svg" alt="Diagram: Full Code --- Class-Specific Allocator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/full-code-class-specific-allocator-sticky.svg" alt="Sticky Note: Full Code --- Class-Specific Allocator" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1411,6 +2192,17 @@ Total deallocations: 2
 
 ### Dry Run --- Assignment Operator
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-handwritten.svg" alt="Handwritten: Dry Run --- Assignment Operator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-diagram.svg" alt="Diagram: Dry Run --- Assignment Operator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/dry-run-assignment-operator-sticky.svg" alt="Sticky Note: Dry Run --- Assignment Operator" width="30%">
+</a>
+
+
 | Step | Expression | State Before | Action | State After |
 |------|-----------|-------------|--------|-------------|
 | 1 | `s1 = s2` | s1="Hello", s2="World" | Self-check: `&s1 != &s2` true | --- |
@@ -1421,6 +2213,17 @@ Total deallocations: 2
 | 6 | `s1 = s1` | s1 = same | Self-check: `this == &other` true | No-op, safe |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
@@ -1433,6 +2236,17 @@ Total deallocations: 2
 
 ### WHY Assignment Returns `T&`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-handwritten.svg" alt="Handwritten: WHY Assignment Returns `T&`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-diagram.svg" alt="Diagram: WHY Assignment Returns `T&`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-assignment-returns-t-sticky.svg" alt="Sticky Note: WHY Assignment Returns `T&`" width="30%">
+</a>
+
+
 Returning a reference enables `a = b = c`, which evaluates right-to-left: `b = c` returns `T&` referring to `b`, then `a = b`. Returning by value would require an extra copy. Returning `void` would break the pattern entirely.
 ---
 
@@ -1442,9 +2256,31 @@ Returning a reference enables `a = b = c`, which evaluates right-to-left: `b = c
 
 ### Real-World Analogy --- Traffic Rules
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-handwritten.svg" alt="Handwritten: Real-World Analogy --- Traffic Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-diagram.svg" alt="Diagram: Real-World Analogy --- Traffic Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/real-world-analogy-traffic-rules-sticky.svg" alt="Sticky Note: Real-World Analogy --- Traffic Rules" width="30%">
+</a>
+
+
 You can customize your car (paint, wheels, sound system) --- that's operator overloading. But you cannot change the rules of the road: red means stop, you drive on the right side, speed limits apply. The language's operator rules are the rules of the road.
 
 ### Numbered Limitations
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-handwritten.svg" alt="Handwritten: Numbered Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-diagram.svg" alt="Diagram: Numbered Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/numbered-limitations-sticky.svg" alt="Sticky Note: Numbered Limitations" width="30%">
+</a>
+
 
 1. **Cannot change precedence**: `a + b * c` always multiplies first
 2. **Cannot change associativity**: `a - b - c` always groups left-to-right
@@ -1458,6 +2294,17 @@ You can customize your car (paint, wheels, sound system) --- that's operator ove
 10. **Cannot control implicit conversion sequences**: Conversion operators participate in standard rank-based overload resolution
 
 ### The Short-Circuit Trap
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-handwritten.svg" alt="Handwritten: The Short-Circuit Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-diagram.svg" alt="Diagram: The Short-Circuit Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/the-short-circuit-trap-sticky.svg" alt="Sticky Note: The Short-Circuit Trap" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1492,6 +2339,17 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Limitation | Impact | Mitigation |
 |-----------|--------|------------|
 | No new operators | Some domains (regex, matrix) lack natural syntax | Use named functions: `a.dot(b)` instead of `a * b` |
@@ -1506,6 +2364,17 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 > **One-Sentence Takeaway:** The operators `::`, `.`, `.*`, `?:`, `sizeof`, `typeid`, `alignof`, `static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`, and `noexcept` cannot be overloaded --- they preserve core language safety and identity semantics.
 
 ### Comprehensive Table with Reasons
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-handwritten.svg" alt="Handwritten: Comprehensive Table with Reasons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-diagram.svg" alt="Diagram: Comprehensive Table with Reasons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-with-reasons-sticky.svg" alt="Sticky Note: Comprehensive Table with Reasons" width="30%">
+</a>
+
 
 | Operator | Name | Reason It Cannot Be Overloaded |
 |----------|------|-------------------------------|
@@ -1525,6 +2394,17 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 | `.` (dot) | C++ member access | Unlike `->` (which can be overloaded), direct `.` access is an invariant of the language's type system. |
 
 ### Deep Reasoning for Each
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-handwritten.svg" alt="Handwritten: Deep Reasoning for Each" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-diagram.svg" alt="Diagram: Deep Reasoning for Each" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/deep-reasoning-for-each-sticky.svg" alt="Sticky Note: Deep Reasoning for Each" width="30%">
+</a>
+
 
 #### `::` --- Scope Resolution
 ```cpp
@@ -1560,6 +2440,17 @@ Template code universally assumes `sizeof(T)` is the actual object size. Overloa
 
 ### Code Example --- Dangerous Toys (If These Could Be Overloaded)
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-handwritten.svg" alt="Handwritten: Code Example --- Dangerous Toys (If These Could Be Overloaded)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-diagram.svg" alt="Diagram: Code Example --- Dangerous Toys (If These Could Be Overloaded)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/code-example-dangerous-toys-if-these-could-be-overloaded-sticky.svg" alt="Sticky Note: Code Example --- Dangerous Toys (If These Could Be Overloaded)" width="30%">
+</a>
+
+
 ```cpp
 // THIS CODE IS ILLUSTRATIVE --- overloads would NOT compile
 // Showing why the prohibition exists
@@ -1576,6 +2467,17 @@ struct Dangerous {
 ```
 
 ### When Attempting to Overload
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-handwritten.svg" alt="Handwritten: When Attempting to Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-diagram.svg" alt="Diagram: When Attempting to Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-attempting-to-overload-sticky.svg" alt="Sticky Note: When Attempting to Overload" width="30%">
+</a>
+
 
 ```cpp
 struct S {
@@ -1594,6 +2496,17 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 > **One-Sentence Takeaway:** Return type conventions signal intent --- references for lvalue semantics, values for rvalue semantics, `bool` for comparisons, `void` for side-effect-only operators.
 
 ### Comprehensive Table
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-handwritten.svg" alt="Handwritten: Comprehensive Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-diagram.svg" alt="Diagram: Comprehensive Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comprehensive-table-sticky.svg" alt="Sticky Note: Comprehensive Table" width="30%">
+</a>
+
 
 | Operator Category | Operators | Return Type Convention | Why |
 |------------------|-----------|----------------------|-----|
@@ -1619,6 +2532,17 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 
 ### Why These Conventions Exist
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-handwritten.svg" alt="Handwritten: Why These Conventions Exist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-diagram.svg" alt="Diagram: Why These Conventions Exist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-conventions-exist-sticky.svg" alt="Sticky Note: Why These Conventions Exist" width="30%">
+</a>
+
+
 **Returning `T&` (reference)** signals that the returned value is an *lvalue* --- it has an identity, an address, and can be assigned to. Used for operators that modify the object (`+=`, `=`, prefix `++`).
 
 **Returning `T` (value)** signals that the returned value is an *rvalue* --- a temporary that may be moved or copied. Used for operators that compute new values (`+`, postfix `++`).
@@ -1626,6 +2550,17 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 **Returning `bool`** signals a predicate --- the operator checks a condition but does not produce a meaningful value beyond true/false.
 
 ### Anti-Pattern --- Wrong Return Type
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-handwritten.svg" alt="Handwritten: Anti-Pattern --- Wrong Return Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-diagram.svg" alt="Diagram: Anti-Pattern --- Wrong Return Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/anti-pattern-wrong-return-type-sticky.svg" alt="Sticky Note: Anti-Pattern --- Wrong Return Type" width="30%">
+</a>
+
 
 ```cpp
 struct Bad {
@@ -1648,6 +2583,17 @@ struct Bad {
 
 ### Guideline 1 --- When in Doubt, Do as the Ints Do
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-handwritten.svg" alt="Handwritten: Guideline 1 --- When in Doubt, Do as the Ints Do" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-diagram.svg" alt="Diagram: Guideline 1 --- When in Doubt, Do as the Ints Do" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-1-when-in-doubt-do-as-the-ints-do-sticky.svg" alt="Sticky Note: Guideline 1 --- When in Doubt, Do as the Ints Do" width="30%">
+</a>
+
+
 If your `+` operator doesn't behave like built-in `+`, your users will be confused. The built-in operators define the contract.
 
 ```cpp
@@ -1661,6 +2607,17 @@ Money operator+(Money& a, const Money& b) { return a += b; }  // side effect!
 
 ### Guideline 2 --- Implement `+` in Terms of `+=`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-handwritten.svg" alt="Handwritten: Guideline 2 --- Implement `+` in Terms of `+=`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-diagram.svg" alt="Diagram: Guideline 2 --- Implement `+` in Terms of `+=`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-2-implement-in-terms-of-sticky.svg" alt="Sticky Note: Guideline 2 --- Implement `+` in Terms of `+=`" width="30%">
+</a>
+
+
 The binary version is a non-member that copies, applies compound, and returns the copy. This avoids code duplication and ensures consistent behavior.
 
 ```cpp
@@ -1673,6 +2630,17 @@ T operator+(T lhs, const T& rhs) { lhs += rhs; return lhs; }
 
 ### Guideline 3 --- Provide `const` and Non-`const` Overloads
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-handwritten.svg" alt="Handwritten: Guideline 3 --- Provide `const` and Non-`const` Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-diagram.svg" alt="Diagram: Guideline 3 --- Provide `const` and Non-`const` Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-3-provide-const-and-non-const-overloads-sticky.svg" alt="Sticky Note: Guideline 3 --- Provide `const` and Non-`const` Overloads" width="30%">
+</a>
+
+
 For subscript `[]` and dereference `*`, both versions are needed for full usability.
 
 ```cpp
@@ -1681,6 +2649,17 @@ const T& operator[](size_t i) const { return data_[i]; }
 ```
 
 ### Guideline 4 --- Prefer Non-Member for Symmetric Operators
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-handwritten.svg" alt="Handwritten: Guideline 4 --- Prefer Non-Member for Symmetric Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-diagram.svg" alt="Diagram: Guideline 4 --- Prefer Non-Member for Symmetric Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-4-prefer-non-member-for-symmetric-operators-sticky.svg" alt="Sticky Note: Guideline 4 --- Prefer Non-Member for Symmetric Operators" width="30%">
+</a>
+
 
 Operators with symmetric operands (`==`, `<`, `+` --- when both sides can convert) should be non-members to allow left-side conversions.
 
@@ -1694,11 +2673,33 @@ bool operator==(const String& a, const String& b);
 
 ### Guideline 5 --- Never Overload `&&`, `||`, or `,`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-handwritten.svg" alt="Handwritten: Guideline 5 --- Never Overload `&&`, `||`, or `,`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-diagram.svg" alt="Diagram: Guideline 5 --- Never Overload `&&`, `||`, or `,`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-5-never-overload-or-sticky.svg" alt="Sticky Note: Guideline 5 --- Never Overload `&&`, `||`, or `,`" width="30%">
+</a>
+
+
 These operators lose their special semantics when overloaded:
 - `&&` and `||` lose short-circuit evaluation
 - `,` loses left-to-right evaluation order
 
 ### Guideline 6 --- Always Handle Self-Assignment
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-handwritten.svg" alt="Handwritten: Guideline 6 --- Always Handle Self-Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-diagram.svg" alt="Diagram: Guideline 6 --- Always Handle Self-Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-6-always-handle-self-assignment-sticky.svg" alt="Sticky Note: Guideline 6 --- Always Handle Self-Assignment" width="30%">
+</a>
+
 
 ```cpp
 T& T::operator=(const T& other) {
@@ -1720,6 +2721,17 @@ T& T::operator=(T other) {  // copy passed by value
 
 ### Guideline 7 --- Keep `operator bool()` Explicit
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-handwritten.svg" alt="Handwritten: Guideline 7 --- Keep `operator bool()` Explicit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-diagram.svg" alt="Diagram: Guideline 7 --- Keep `operator bool()` Explicit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-7-keep-operator-bool-explicit-sticky.svg" alt="Sticky Note: Guideline 7 --- Keep `operator bool()` Explicit" width="30%">
+</a>
+
+
 ```cpp
 explicit operator bool() const { return valid_; }
 ```
@@ -1728,13 +2740,46 @@ This prevents unintended promotion to `int` while allowing boolean context usage
 
 ### Guideline 8 --- Don't Overload Operators for Unrelated Semantics
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-handwritten.svg" alt="Handwritten: Guideline 8 --- Don't Overload Operators for Unrelated Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-diagram.svg" alt="Diagram: Guideline 8 --- Don't Overload Operators for Unrelated Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-8-don-t-overload-operators-for-unrelated-semantics-sticky.svg" alt="Sticky Note: Guideline 8 --- Don't Overload Operators for Unrelated Semantics" width="30%">
+</a>
+
+
 Using `+` for string concatenation is fine (it's associative, commutative-adjacent). Using `+` for set union is questionable (union is more like `|`). Using `+` for database connection is wrong.
 
 ### Guideline 9 --- Provide `operator!=` Alongside `operator==`
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-handwritten.svg" alt="Handwritten: Guideline 9 --- Provide `operator!=` Alongside `operator==`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-diagram.svg" alt="Diagram: Guideline 9 --- Provide `operator!=` Alongside `operator==`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-9-provide-operator-alongside-operator-sticky.svg" alt="Sticky Note: Guideline 9 --- Provide `operator!=` Alongside `operator==`" width="30%">
+</a>
+
+
 Even with C++20's `<=>`, it's good practice to ensure `!=` is available and consistent with `==`.
 
 ### Guideline 10 --- Document Non-Standard Semantics
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-handwritten.svg" alt="Handwritten: Guideline 10 --- Document Non-Standard Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-diagram.svg" alt="Diagram: Guideline 10 --- Document Non-Standard Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/guideline-10-document-non-standard-semantics-sticky.svg" alt="Sticky Note: Guideline 10 --- Document Non-Standard Semantics" width="30%">
+</a>
+
 
 If your operator must deviate from built-in behavior, document it explicitly. Users reading `if (a == b)` assume equality, not approximate fuzzy matching.
 
@@ -1745,6 +2790,17 @@ If your operator must deviate from built-in behavior, document it explicitly. Us
 > **One-Sentence Takeaway:** The C++ standard library's core types (std::string, std::complex, std::vector) demonstrate operator overloading done right --- intuitive, consistent, and powerful.
 
 ### 6.16.1 `std::string` --- The Reference Model
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-handwritten.svg" alt="Handwritten: 6.16.1 `std::string` --- The Reference Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-diagram.svg" alt="Diagram: 6.16.1 `std::string` --- The Reference Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-1-std-string-the-reference-model-sticky.svg" alt="Sticky Note: 6.16.1 `std::string` --- The Reference Model" width="30%">
+</a>
+
 
 `std::string` is arguably the best example of operator overloading in the standard library. Every operator is intuitive:
 
@@ -1815,6 +2871,17 @@ hello, C++ rocks!
 
 ### 6.16.2 `std::complex` --- Mathematical Precision
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-handwritten.svg" alt="Handwritten: 6.16.2 `std::complex` --- Mathematical Precision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-diagram.svg" alt="Diagram: 6.16.2 `std::complex` --- Mathematical Precision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-2-std-complex-mathematical-precision-sticky.svg" alt="Sticky Note: 6.16.2 `std::complex` --- Mathematical Precision" width="30%">
+</a>
+
+
 `std::complex` demonstrates operator overloading for mathematical types where every arithmetic operator is defined with exact semantics.
 
 ```cpp
@@ -1878,6 +2945,17 @@ a + b * c;  // natural math notation
 ```
 
 ### 6.16.3 `std::vector` --- Container Access
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-handwritten.svg" alt="Handwritten: 6.16.3 `std::vector` --- Container Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-diagram.svg" alt="Diagram: 6.16.3 `std::vector` --- Container Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/6-16-3-std-vector-container-access-sticky.svg" alt="Sticky Note: 6.16.3 `std::vector` --- Container Access" width="30%">
+</a>
+
 
 `std::vector` demonstrates subscript `[]`, assignment, and comparison operators for containers.
 
@@ -1952,6 +3030,17 @@ public:
 
 ### Comparison Table --- std::string vs std::complex vs std::vector
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-handwritten.svg" alt="Handwritten: Comparison Table --- std::string vs std::complex vs std::vector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-diagram.svg" alt="Diagram: Comparison Table --- std::string vs std::complex vs std::vector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/comparison-table-std-string-vs-std-complex-vs-std-vector-sticky.svg" alt="Sticky Note: Comparison Table --- std::string vs std::complex vs std::vector" width="30%">
+</a>
+
+
 | Feature | `std::string` | `std::complex` | `std::vector` |
 |---------|---------------|----------------|---------------|
 | `+` | Concatenation | Complex addition | Not defined (use `insert`) |
@@ -1964,6 +3053,17 @@ public:
 | `->` | Via iterator | Via smart pointer? | Via iterator |
 
 ### Why These Types Succeed
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-handwritten.svg" alt="Handwritten: Why These Types Succeed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-diagram.svg" alt="Diagram: Why These Types Succeed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-these-types-succeed-sticky.svg" alt="Sticky Note: Why These Types Succeed" width="30%">
+</a>
+
 
 Each type asks: "Does this operator make intuitive sense for what this type represents?"
 
@@ -1978,6 +3078,17 @@ This is the Principle of Least Surprise in action.
 ## 6.17 Interview Corner
 
 ### Q1: When should you implement an operator as a member function vs a non-member function?
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-handwritten.svg" alt="Handwritten: When should you implement an operator as a member function vs a non-member function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-diagram.svg" alt="Diagram: When should you implement an operator as a member function vs a non-member function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/when-should-you-implement-an-operator-as-a-member-function-vs-a-non-member-function-sticky.svg" alt="Sticky Note: When should you implement an operator as a member function vs a non-member function?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2011,6 +3122,17 @@ public:
 
 ### Q2: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-handwritten.svg" alt="Handwritten: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-diagram.svg" alt="Diagram: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-sticky.svg" alt="Sticky Note: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
+</a>
+
+
 **Answer:** Because the left operand is `std::ostream&`, not your class type. If `<<` were a member, the call would be `myObj << std::cout`, which is backwards from natural usage `std::cout << myObj`. As a non-member, both operands are explicit parameters, so the natural order works. They typically need `friend` status to access private members.
 
 ```cpp
@@ -2026,6 +3148,17 @@ std::ostream& operator<<(std::ostream& os, const MyClass& obj) {
 ```
 
 ### Q3: Explain the difference between prefix and postfix `++` in terms of implementation and performance.
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-handwritten.svg" alt="Handwritten: Explain the difference between prefix and postfix `++` in terms of implementation and performance." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-diagram.svg" alt="Diagram: Explain the difference between prefix and postfix `++` in terms of implementation and performance." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/explain-the-difference-between-prefix-and-postfix-in-terms-of-implementation-and-performance-sticky.svg" alt="Sticky Note: Explain the difference between prefix and postfix `++` in terms of implementation and performance." width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2057,6 +3190,17 @@ for (auto it = v.begin(); it != v.end(); it++)  // works, but copies
 ```
 
 ### Q4: What is the copy-and-swap idiom and why is it useful for `operator=`?
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-handwritten.svg" alt="Handwritten: What is the copy-and-swap idiom and why is it useful for `operator=`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-diagram.svg" alt="Diagram: What is the copy-and-swap idiom and why is it useful for `operator=`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-copy-and-swap-idiom-and-why-is-it-useful-for-operator-sticky.svg" alt="Sticky Note: What is the copy-and-swap idiom and why is it useful for `operator=`?" width="30%">
+</a>
+
 
 **Answer:** Copy-and-swap is a technique that implements copy assignment by passing the source by value (creating a copy), then swapping the contents of `*this` with the copy. The copy's destructor then cleans up the old resources.
 
@@ -2097,6 +3241,17 @@ public:
 
 ### Q5: How do you decide which operators to overload for a custom class?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-handwritten.svg" alt="Handwritten: How do you decide which operators to overload for a custom class?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-diagram.svg" alt="Diagram: How do you decide which operators to overload for a custom class?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-do-you-decide-which-operators-to-overload-for-a-custom-class-sticky.svg" alt="Sticky Note: How do you decide which operators to overload for a custom class?" width="30%">
+</a>
+
+
 **Answer:** Use this decision framework:
 
 1. **Is the operator semantically meaningful?** Would a user naturally write `a + b` for this type? If not, don't overload. Use named functions instead.
@@ -2121,6 +3276,17 @@ Matrix Database::mergeWith(const Database& other);
 
 ### Q6: What is the problem with overloading `operator&` (address-of)?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-handwritten.svg" alt="Handwritten: What is the problem with overloading `operator&` (address-of)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-diagram.svg" alt="Diagram: What is the problem with overloading `operator&` (address-of)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/what-is-the-problem-with-overloading-operator-address-of-sticky.svg" alt="Sticky Note: What is the problem with overloading `operator&` (address-of)?" width="30%">
+</a>
+
+
 **Answer:** Overloading `operator&` changes the behavior of the unary `&` operator, which normally returns the address of the object. This can break templates and smart pointers that rely on `&` returning a raw pointer.
 
 ```cpp
@@ -2138,6 +3304,17 @@ Tricky* ptr = &t;  // ptr = 0xDEADBEEF, not actual address!
 This is why standard library smart pointers provide `std::addressof()` --- a helper that obtains the real address even when `operator&` is overloaded.
 
 ### Q7: How does C++20's `<=>` (spaceship operator) change operator overloading?
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-handwritten.svg" alt="Handwritten: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-diagram.svg" alt="Diagram: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-sticky.svg" alt="Sticky Note: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
+</a>
+
 
 **Answer:** C++20 introduces the three-way comparison operator `<=>` that can auto-generate all six comparison operators (`==`, `!=`, `<`, `<=`, `>`, `>=`).
 
@@ -2183,6 +3360,17 @@ struct Point {
 
 ### Q8: How does operator overloading affect move semantics?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-handwritten.svg" alt="Handwritten: How does operator overloading affect move semantics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-diagram.svg" alt="Diagram: How does operator overloading affect move semantics?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-operator-overloading-affect-move-semantics-sticky.svg" alt="Sticky Note: How does operator overloading affect move semantics?" width="30%">
+</a>
+
+
 **Answer:** Move semantics interact with operator overloading primarily through `operator=` and rvalue reference overloads.
 
 ```cpp
@@ -2220,6 +3408,17 @@ a = Buffer(100);  // move (prvalue)
 
 ### Q9: Why must `operator[]` return a reference? What happens if it returns by value?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-handwritten.svg" alt="Handwritten: Why must `operator[]` return a reference? What happens if it returns by value?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-diagram.svg" alt="Diagram: Why must `operator[]` return a reference? What happens if it returns by value?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-must-operator-return-a-reference-what-happens-if-it-returns-by-value-sticky.svg" alt="Sticky Note: Why must `operator[]` return a reference? What happens if it returns by value?" width="30%">
+</a>
+
+
 **Answer:** `operator[]` must return a reference to make `arr[i] = value` work. If it returned by value, the expression `arr[i] = value` would modify a temporary copy, not the actual array element.
 
 ```cpp
@@ -2240,6 +3439,17 @@ struct GoodArray {
 
 ### Q10: Should you overload `operator&&` and `operator||`? Why or why not?
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-handwritten.svg" alt="Handwritten: Should you overload `operator&&` and `operator||`? Why or why not?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-diagram.svg" alt="Diagram: Should you overload `operator&&` and `operator||`? Why or why not?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/should-you-overload-operator-and-operator-why-or-why-not-sticky.svg" alt="Sticky Note: Should you overload `operator&&` and `operator||`? Why or why not?" width="30%">
+</a>
+
+
 **Answer:** Generally no. The built-in `&&` and `||` have short-circuit semantics: if the left operand determines the result, the right operand is never evaluated. Overloaded versions always evaluate both operands before calling the operator function. This breaks expected behavior and can mask bugs.
 
 ```cpp
@@ -2258,6 +3468,17 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 
 ### Member vs Non-Member Decision Matrix
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-handwritten.svg" alt="Handwritten: Member vs Non-Member Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-diagram.svg" alt="Diagram: Member vs Non-Member Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/member-vs-non-member-decision-matrix-sticky.svg" alt="Sticky Note: Member vs Non-Member Decision Matrix" width="30%">
+</a>
+
+
 | Scenario | Member | Non-Member | Friend Needed? |
 |----------|--------|------------|---------------|
 | `operator=` | [Y] Required | [N] | N/A |
@@ -2272,6 +3493,17 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 | `operator<<` | [N] Wrong | [Y] Required | Usually yes |
 
 ### Return Type Quick Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-handwritten.svg" alt="Handwritten: Return Type Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-diagram.svg" alt="Diagram: Return Type Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/return-type-quick-reference-sticky.svg" alt="Sticky Note: Return Type Quick Reference" width="30%">
+</a>
+
 
 | Operator | Return Type | Category |
 |----------|------------|----------|
@@ -2288,6 +3520,17 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 | `operator T()` | `T` | Converted value |
 
 ### Can't Overload Summary
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-handwritten.svg" alt="Handwritten: Can't Overload Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-diagram.svg" alt="Diagram: Can't Overload Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/can-t-overload-summary-sticky.svg" alt="Sticky Note: Can't Overload Summary" width="30%">
+</a>
+
 
 | Operator | Name | Reason |
 |----------|------|--------|
@@ -2313,6 +3556,17 @@ Operator overloading integrates user-defined types into C++'s expression syntax 
 
 ### Key Takeaways
 
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
+</a>
+
+
 1. **Rules**: At least one user-defined operand; no new operators; fixed precedence/associativity/arity; `::`, `.`, `.*`, `?:`, `sizeof`, `typeid`, casts, and `alignof` cannot be overloaded.
 
 2. **Member vs Non-Member**: `=` `()` `[]` `->` `T()` must be members. Compound assignment (`+=`) should be members. Non-members enable symmetric conversion. Stream operators must be non-members.
@@ -2336,6 +3590,17 @@ Operator overloading integrates user-defined types into C++'s expression syntax 
 11. **Guidelines**: "When in doubt, do as the ints do." Implement `+` in terms of `+=`. Don't overload `&&`, `||`, or `,`. Document non-standard semantics.
 
 ### Why Operator Overloading Matters
+
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-handwritten.svg" alt="Handwritten: Why Operator Overloading Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-diagram.svg" alt="Diagram: Why Operator Overloading Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-operator-overloading-matters-sticky.svg" alt="Sticky Note: Why Operator Overloading Matters" width="30%">
+</a>
+
 
 Operator overloading transforms user-defined types from "data containers" into "types with meaning." `std::string` without `+` is just a character buffer; `std::complex` without `+` is just a pair of doubles. The operators are what make these types *feel* like language primitives. Judicious use produces elegant, readable code. Overuse produces confusion. The balance is the mark of an experienced C++ developer.
 

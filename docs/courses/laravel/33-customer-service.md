@@ -128,6 +128,17 @@ flowchart LR
 
 ### 33.1 Customer Service Data Models
 
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" alt="Handwritten: 33.1 Customer Service Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" alt="Diagram: 33.1 Customer Service Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" alt="Sticky Note: 33.1 Customer Service Data Models" width="30%">
+</a>
+
+
 Customer service domains revolve around the ticket lifecycle: a customer submits an inquiry, agents collaborate to resolve it, knowledge base articles help both parties, and satisfaction surveys close the loop. SLA policies govern response and resolution time commitments.
 
 #### Migrations
@@ -405,6 +416,17 @@ class SlaPolicy extends Model
 
 ### 33.2 Ticket Triage & Routing Agents
 
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" alt="Handwritten: 33.2 Ticket Triage & Routing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" alt="Diagram: 33.2 Ticket Triage & Routing Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" alt="Sticky Note: 33.2 Ticket Triage & Routing Agents" width="30%">
+</a>
+
+
 Every inbound support ticket needs rapid classification: what is the customer asking about, how urgent is it, and which team should handle it. The `TicketTriageAgent` uses an LLM to extract intent, compute a priority score, and map the result to a routing destination.
 
 ```php
@@ -538,6 +560,17 @@ class TicketTriageAgent
 ---
 
 ### 33.3 Sentiment Analysis Agents
+
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" alt="Handwritten: 33.3 Sentiment Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" alt="Diagram: 33.3 Sentiment Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" alt="Sticky Note: 33.3 Sentiment Analysis Agents" width="30%">
+</a>
+
 
 Customer messages carry emotional signals that indicate satisfaction, frustration, or churn risk. The `SentimentAnalysisAgent` scores each message and decides whether an escalation or empathetic response is needed.
 
@@ -748,6 +781,17 @@ class SentimentAnalysisAgent
 
 ### 33.4 Knowledge Base RAG
 
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" alt="Handwritten: 33.4 Knowledge Base RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" alt="Diagram: 33.4 Knowledge Base RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" alt="Sticky Note: 33.4 Knowledge Base RAG" width="30%">
+</a>
+
+
 A Retrieval-Augmented Generation agent searches knowledge base articles by vector similarity, then composes a contextual answer. This reduces agent lookup time and enables self-service accuracy.
 
 ```php
@@ -921,6 +965,17 @@ class KnowledgeBaseAgent
 ---
 
 ### 33.5 Escalation Automation
+
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" alt="Handwritten: 33.5 Escalation Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" alt="Diagram: 33.5 Escalation Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" alt="Sticky Note: 33.5 Escalation Automation" width="30%">
+</a>
+
 
 Support organizations escalate tickets when SLAs are breached, sentiment deteriorates, or complexity exceeds frontline capability. The `EscalationAgent` monitors these signals and walks the escalation chain.
 
@@ -1100,6 +1155,17 @@ class EscalationAgent
 ---
 
 ### 33.6 Multi-Channel Support Agents
+
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" alt="Handwritten: 33.6 Multi-Channel Support Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" alt="Diagram: 33.6 Multi-Channel Support Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" alt="Sticky Note: 33.6 Multi-Channel Support Agents" width="30%">
+</a>
+
 
 Customers reach support through email, live chat, social media, and phone. The `MultiChannelAgent` normalizes inbound messages from every channel into a unified `TicketMessage`, then routes the ticket appropriately.
 
@@ -1298,6 +1364,17 @@ class MultiChannelAgent
 
 ### 33.7 Customer Satisfaction Tracking
 
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" alt="Handwritten: 33.7 Customer Satisfaction Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" alt="Diagram: 33.7 Customer Satisfaction Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" alt="Sticky Note: 33.7 Customer Satisfaction Tracking" width="30%">
+</a>
+
+
 Post-resolution surveys measure Customer Satisfaction Score (CSAT) and First Contact Resolution (FCR). The `SatisfactionAgent` dispatches surveys, analyzes feedback text, and reports trends.
 
 ```php
@@ -1483,6 +1560,17 @@ class SatisfactionAgent
 ---
 
 ### 33.8 Self-Service Portal Agents
+
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" alt="Handwritten: 33.8 Self-Service Portal Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" alt="Diagram: 33.8 Self-Service Portal Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" alt="Sticky Note: 33.8 Self-Service Portal Agents" width="30%">
+</a>
+
 
 Self-service reduces ticket volume by guiding customers to answers before they reach an agent. The `SelfServiceAgent` matches FAQ queries, runs guided troubleshooting, and suggests relevant knowledge base articles.
 
@@ -1714,6 +1802,17 @@ class SelfServiceAgent
 ---
 
 ### 33.9 SLA Monitoring & Reporting
+
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" alt="Handwritten: 33.9 SLA Monitoring & Reporting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" alt="Diagram: 33.9 SLA Monitoring & Reporting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" alt="Sticky Note: 33.9 SLA Monitoring & Reporting" width="30%">
+</a>
+
 
 SLA compliance is a critical business metric. The `SlaMonitoringAgent` tracks every ticket against its policy, generates real-time breach alerts, and produces periodic compliance reports.
 

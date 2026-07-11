@@ -15,6 +15,17 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Weightage and Exam Pattern
 
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-handwritten.svg" alt="Handwritten: 3.1 Weightage and Exam Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-diagram.svg" alt="Diagram: 3.1 Weightage and Exam Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-1-weightage-and-exam-pattern-sticky.svg" alt="Sticky Note: 3.1 Weightage and Exam Pattern" width="30%">
+</a>
+
+
 Vocabulary and word usage accounts for **4–5 questions** in IBPS SO IT Officer Prelims. The topic overlaps with Reading Comprehension (vocabulary-in-context questions) and Cloze Tests.
 
 | Question Type | Frequency | Skill |
@@ -28,6 +39,17 @@ Vocabulary and word usage accounts for **4–5 questions** in IBPS SO IT Officer
 
 ### 3.2 How Vocabulary Is Tested in IBPS
 
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-handwritten.svg" alt="Handwritten: 3.2 How Vocabulary Is Tested in IBPS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-diagram.svg" alt="Diagram: 3.2 How Vocabulary Is Tested in IBPS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-2-how-vocabulary-is-tested-in-ibps-sticky.svg" alt="Sticky Note: 3.2 How Vocabulary Is Tested in IBPS" width="30%">
+</a>
+
+
 Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabulary** — words you would encounter in banking, technology, finance, and governance contexts. The words are typically of moderate difficulty (high school to undergraduate level), but their usage in specific contexts is what differentiates correct from incorrect answers.
 
 **Sources of vocabulary in IBPS exams:**
@@ -37,6 +59,17 @@ Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabu
 - Technology and cybersecurity articles
 
 ### 3.3 Synonyms and Antonyms
+
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-handwritten.svg" alt="Handwritten: 3.3 Synonyms and Antonyms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-diagram.svg" alt="Diagram: 3.3 Synonyms and Antonyms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-3-synonyms-and-antonyms-sticky.svg" alt="Sticky Note: 3.3 Synonyms and Antonyms" width="30%">
+</a>
+
 
 **Synonyms** are words with similar meanings. **Antonyms** are words with opposite meanings.
 
@@ -83,6 +116,17 @@ Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabu
 4. **Context matters** — the same word can have different synonyms in different contexts.
 
 ### 3.4 Idioms and Phrases
+
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-handwritten.svg" alt="Handwritten: 3.4 Idioms and Phrases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-diagram.svg" alt="Diagram: 3.4 Idioms and Phrases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-4-idioms-and-phrases-sticky.svg" alt="Sticky Note: 3.4 Idioms and Phrases" width="30%">
+</a>
+
 
 Idioms are fixed expressions whose meaning is not literal. IBPS exams typically test **5–6 commonly used idioms** per paper.
 
@@ -141,6 +185,17 @@ d) sit on the fence
 
 ### 3.5 Phrasal Verbs
 
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-handwritten.svg" alt="Handwritten: 3.5 Phrasal Verbs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-diagram.svg" alt="Diagram: 3.5 Phrasal Verbs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-5-phrasal-verbs-sticky.svg" alt="Sticky Note: 3.5 Phrasal Verbs" width="30%">
+</a>
+
+
 Phrasal verbs are combinations of a verb + one or more particles (prepositions/adverbs) that create a meaning different from the original verb.
 
 #### High-Frequency Phrasal Verbs for Exams
@@ -178,6 +233,17 @@ d) Propose
 **Answer:** c (call off = cancel)
 
 ### 3.6 One-Word Substitution
+
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-handwritten.svg" alt="Handwritten: 3.6 One-Word Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-diagram.svg" alt="Diagram: 3.6 One-Word Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-6-one-word-substitution-sticky.svg" alt="Sticky Note: 3.6 One-Word Substitution" width="30%">
+</a>
+
 
 One-word substitution questions test your ability to express a phrase or idea in a single word.
 
@@ -241,6 +307,17 @@ One-word substitution questions test your ability to express a phrase or idea in
 
 ### 3.7 Homophones and Commonly Confused Words
 
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-handwritten.svg" alt="Handwritten: 3.7 Homophones and Commonly Confused Words" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-diagram.svg" alt="Diagram: 3.7 Homophones and Commonly Confused Words" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-7-homophones-and-commonly-confused-words-sticky.svg" alt="Sticky Note: 3.7 Homophones and Commonly Confused Words" width="30%">
+</a>
+
+
 | Word | Meaning | Example |
 |------|---------|---------|
 | Accept | To receive | *I accept your proposal.* |
@@ -276,6 +353,17 @@ One-word substitution questions test your ability to express a phrase or idea in
 
 ### 3.8 Word Usage in Context (Cloze Test Integration)
 
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-handwritten.svg" alt="Handwritten: 3.8 Word Usage in Context (Cloze Test Integration)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-diagram.svg" alt="Diagram: 3.8 Word Usage in Context (Cloze Test Integration)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-8-word-usage-in-context-cloze-test-integration-sticky.svg" alt="Sticky Note: 3.8 Word Usage in Context (Cloze Test Integration)" width="30%">
+</a>
+
+
 In Cloze Tests, vocabulary is tested in context. The same word placed in different contexts may require different alternatives.
 
 **Example Context-Based Question:**
@@ -293,6 +381,17 @@ a) conflict   b) rivalry   c) friction   d) synergy
 **Answer:** d (synergy — positive result)
 
 ### 3.9 Expanding Vocabulary for Exams
+
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-handwritten.svg" alt="Handwritten: 3.9 Expanding Vocabulary for Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-diagram.svg" alt="Diagram: 3.9 Expanding Vocabulary for Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/english-language/03-vocabulary-word-usage/3-9-expanding-vocabulary-for-exams-sticky.svg" alt="Sticky Note: 3.9 Expanding Vocabulary for Exams" width="30%">
+</a>
+
 
 | Method | Description | Example |
 |--------|-------------|---------|

@@ -46,6 +46,17 @@
 ## Section A: General Aptitude (15 marks)
 
 ### Q1 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+
 If x + 1/x = 4, what is xÃƒâ€šÃ‚Â² + 1/xÃƒâ€šÃ‚Â²?
 
 (A) 12  
@@ -71,6 +82,17 @@ console.log(sumSquaresFromSum(4)); // 14
 </details>
 
 ### Q2 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+
 The smallest 3-digit number divisible by 6, 8, and 12 is:
 
 (A) 108  
@@ -89,6 +111,17 @@ LCM(6,8,12) = 24. Smallest 3-digit multiple of 24: 24ÃƒÆ’Ã¢â‚¬â€�
 </details>
 
 ### Q3 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+
 Choose the correct synonym of "BRIEF":
 
 (A) Long  
@@ -107,6 +140,17 @@ Choose the correct synonym of "BRIEF":
 </details>
 
 ### Q4 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+
 If Monday falls on the 5th of a month, what day is the 20th?
 
 (A) Monday  
@@ -125,6 +169,17 @@ If Monday falls on the 5th of a month, what day is the 20th?
 </details>
 
 ### Q5 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+
 A shirt costs ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹800. After a 20% discount, the selling price is:
 
 (A) ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹600  
@@ -143,6 +198,17 @@ Discount = 20% of 800 = 160. SP = 800 - 160 = 640.
 </details>
 
 ### Q6 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+
 A can do work in 10 days, B in 12 days, and C in 15 days. They work together for 3 days, then A leaves. How many more days for B and C to finish?
 
 (A) 2  
@@ -281,6 +347,17 @@ Let me use A=12, B=16, C=16 in the problem statement. Python-style: A can do wor
 </details>
 
 ### Q7 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+</a>
+
 The bar graph shows production of cars (in thousands) from 2015-2019: 2015=50, 2016=60, 2017=70, 2018=80, 2019=90. The percentage increase from 2015 to 2019 is:
 
 (A) 60%  
@@ -299,6 +376,17 @@ Increase = 90 - 50 = 40. % increase = 40/50 ÃƒÆ’Ã¢â‚¬â€� 100 = 8
 </details>
 
 ### Q8 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+</a>
+
 In a row of 30 students, A is 8th from the left and B is 12th from the right. How many students between A and B?
 
 (A) 8  
@@ -326,6 +414,17 @@ console.log(betweenCount(30, 8, 12)); // 10
 </details>
 
 ### Q9 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+</a>
+
 If three dice are rolled, the number of possible outcomes is:
 
 (A) 36  
@@ -344,6 +443,17 @@ Each die has 6 outcomes. Total = 6 ÃƒÆ’Ã¢â‚¬â€� 6 ÃƒÆ’Ã¢�
 </details>
 
 ### Q10 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+</a>
+
 Choose the correctly formed sentence:
 
 (A) She don't like coffee  
@@ -528,6 +638,17 @@ A compiler translates source code (high-level language) to machine code (or obje
 </details>
 
 ### Q10 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+</a>
+
 The base of the hexadecimal number system is:
 
 (A) 2  
@@ -1667,13 +1788,46 @@ pie title "Difficulty Distribution - GATE CS 2016"
 
 ### Paper Analysis
 
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
+</a>
+
+
 GATE 2016 Computer Science paper followed the 65-question format (10 GA + 55 Technical) with 100 total marks. This was the first year where the MSQ format was introduced in GATE CS, though in limited numbers (3 MSQs). The paper had 15 NAT questions, continuing the trend of emphasizing numerical precision. Subject-wise, Data Structures & Algorithms commanded the highest marks at 16, followed by Operating Systems (12 marks) and Engineering Mathematics (11 marks Ã¢â‚¬â€� higher than typical years). A notable feature was the strong presence of Engineering Mathematics, reflecting the committee's emphasis on mathematical foundations in CS. The GA section had an unconventional data sufficiency question requiring multiple-step reasoning, distinguishing it from the more straightforward GA sections of preceding years.
 
 ### Difficulty Trends
 
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
+</a>
+
+
 GATE 2016 had a difficulty distribution of approximately 30% Easy, 45% Medium, and 25% Hard, making it one of the more challenging papers of the mid-2010s. The high proportion of Hard questions was attributed to multi-step reasoning requirements and the novelty of the MSQ format. Data Structures introduced a tricky question on Catalan numbers and binary trees that required combinatorial insight beyond standard algorithms. Operating Systems had a complex question on semaphore ordering that required tracking multiple process states simultaneously. Computer Networks featured a question on CDMA/CD that required detailed mathematical analysis of collision detection timing. Theory of Computation had a challenging question on CFL closure properties that tested edge cases. Digital Logic included a question on 7-segment display logic design that required optimization beyond straightforward K-map minimization. The paper set a high bar for conceptual clarity.
 
 ### Key Concepts Tested
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
+</a>
+
 
 | Subject | Key Concepts |
 |---------|-------------|
@@ -1871,6 +2025,17 @@ Test your understanding of GATE 2016 concepts with these 5 questions.
 - d) v is a global variable
 
 ### Answer Key
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/32-gate-2016-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+</a>
+
 
 | Q | Answer | Explanation |
 |---|--------|-------------|

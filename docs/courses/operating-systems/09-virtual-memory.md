@@ -51,6 +51,17 @@ flowchart LR
 
 ### Virtual Memory Concept
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" alt="Handwritten: Virtual Memory Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" alt="Diagram: Virtual Memory Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" alt="Sticky Note: Virtual Memory Concept" width="30%">
+</a>
+
+
 Virtual memory separates the logical memory (address space) as seen by a process from physical memory. This allows:
 
 - Programs larger than physical memory to run (using demand paging)
@@ -63,6 +74,17 @@ The virtual address space is divided into pages. Only pages that are actively ne
 **Real-World Analogy:** A large library with a small reading desk. You cannot place all books on the desk at once. Instead, you bring books from the stacks to the desk only when you need them. When the desk is full and you need another book, you return one to the stacks. The desk is physical memory; the stacks are disk; your research paper is the process accessing data across many books.
 
 ### Demand Paging
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" alt="Handwritten: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" alt="Diagram: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" alt="Sticky Note: Demand Paging" width="30%">
+</a>
+
 
 In a **demand paging** system, pages are loaded into memory only when they are referenced (not in advance). This is like a paging system with **lazy loading**.
 
@@ -352,6 +374,17 @@ if __name__ == "__main__":
 
 ### Page Fault Handling - Detailed Flow
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" alt="Handwritten: Page Fault Handling - Detailed Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" alt="Diagram: Page Fault Handling - Detailed Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" alt="Sticky Note: Page Fault Handling - Detailed Flow" width="30%">
+</a>
+
+
 #### Real-World Analogy
 
 You are reading a textbook at a library desk. You realize the chapter you need is in a different book still on the shelf (page fault). You:
@@ -478,6 +511,17 @@ Systems must keep fault rate extremely low (< 0.001%).
 ```
 
 ### Copy-on-Write (COW)
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" alt="Handwritten: Copy-on-Write (COW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" alt="Diagram: Copy-on-Write (COW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" alt="Sticky Note: Copy-on-Write (COW)" width="30%">
+</a>
+
 
 When `fork()` is called, instead of copying all pages, the child **shares** the parent pages. Pages are marked as copy-on-write. When either process writes to a page, a trap occurs, and the page is duplicated.
 
@@ -630,11 +674,33 @@ sim.print_stats()
 - **WHY O(P) for fork:** Must duplicate every PTE for the child process page table. But actual physical pages are not copied - only meta-data. This is thousands of times faster than copying all pages.
 ### Page Replacement
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" alt="Handwritten: Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" alt="Diagram: Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" alt="Sticky Note: Page Replacement" width="30%">
+</a>
+
+
 When a page fault occurs and no free frames are available, the OS must **replace** an existing page to make room for the new one. The page replacement algorithm selects which page to evict.
 
 #### Page Replacement Algorithms
 
 ### FIFO (First-In, First-Out)
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" alt="Handwritten: FIFO (First-In, First-Out)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" alt="Diagram: FIFO (First-In, First-Out)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" alt="Sticky Note: FIFO (First-In, First-Out)" width="30%">
+</a>
+
 
 Replace the page that has been in memory the longest.
 
@@ -854,6 +920,17 @@ Ref str: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
 
 ### Optimal Page Replacement (OPT or MIN)
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" alt="Handwritten: Optimal Page Replacement (OPT or MIN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" alt="Diagram: Optimal Page Replacement (OPT or MIN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" alt="Sticky Note: Optimal Page Replacement (OPT or MIN)" width="30%">
+</a>
+
+
 Replace the page that will not be used for the longest time in the future.
 
 #### Real-World Analogy
@@ -1051,6 +1128,17 @@ class OptimalReplacement:
 
 ### LRU (Least Recently Used)
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" alt="Handwritten: LRU (Least Recently Used)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" alt="Diagram: LRU (Least Recently Used)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" alt="Sticky Note: LRU (Least Recently Used)" width="30%">
+</a>
+
+
 Replace the page that has not been used for the longest time. This approximates Optimal using past behavior.
 
 #### Real-World Analogy
@@ -1238,6 +1326,17 @@ class LRUReplacement:
 | Good temporal locality exploitation | Counter overflow in long-running systems |
 
 ### Second-Chance (Clock) Algorithm
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" alt="Handwritten: Second-Chance (Clock) Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" alt="Diagram: Second-Chance (Clock) Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" alt="Sticky Note: Second-Chance (Clock) Algorithm" width="30%">
+</a>
+
 
 A FIFO variant that uses the reference bit. Pages are arranged in a circular list with a hand pointer.
 
@@ -1446,6 +1545,17 @@ class ClockReplacement:
 | Used in real systems (Linux, BSD) | Not as good as true LRU for some workloads |
 ### MFU (Most Frequently Used) Page Replacement
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: MFU (Most Frequently Used) Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" alt="Diagram: MFU (Most Frequently Used) Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: MFU (Most Frequently Used) Page Replacement" width="30%">
+</a>
+
+
 Replace the most frequently used page. The rationale: a page that has been used many times may have already completed its purpose.
 
 #### Real-World Analogy
@@ -1595,6 +1705,17 @@ class MFUReplacement:
 ```
 
 ### LFU (Least Frequently Used) Page Replacement
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: LFU (Least Frequently Used) Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" alt="Diagram: LFU (Least Frequently Used) Page Replacement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: LFU (Least Frequently Used) Page Replacement" width="30%">
+</a>
+
 
 Replace the page that has been used the fewest number of times.
 
@@ -1774,6 +1895,17 @@ class LFUReplacement:
 
 ### LRU Approximation Algorithms
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" alt="Handwritten: LRU Approximation Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" alt="Diagram: LRU Approximation Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" alt="Sticky Note: LRU Approximation Algorithms" width="30%">
+</a>
+
+
 Exact LRU is expensive. Real systems approximate LRU with minimal hardware support.
 
 #### 1. Reference Bit Method
@@ -1851,6 +1983,17 @@ After 5 ticks, Page B (01001000 = 72) is older than Page A (01110000 = 112)
 
 ### Page Replacement Algorithms Comparison Table
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" alt="Handwritten: Page Replacement Algorithms Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" alt="Diagram: Page Replacement Algorithms Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" alt="Sticky Note: Page Replacement Algorithms Comparison Table" width="30%">
+</a>
+
+
 | Algorithm | Philosophy | Implementation Cost | Fault Rate | Belady Anomaly | Real-World Use |
 |-----------|-----------|-------------------|------------|----------------|----------------|
 | **FIFO** | Oldest page first | Very low (queue) | High | Yes | Rare (educational) |
@@ -1863,6 +2006,17 @@ After 5 ticks, Page B (01001000 = 72) is older than Page A (01110000 = 112)
 | **LFU** | Least frequently used | Medium (freq counter) | Moderate | No | Cache systems (Redis) |
 
 ### Frame Allocation
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" alt="Handwritten: Frame Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" alt="Diagram: Frame Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" alt="Sticky Note: Frame Allocation" width="30%">
+</a>
+
 
 How many frames should each process get? The allocation strategy directly impacts performance and thrashing behavior.
 
@@ -1944,6 +2098,17 @@ efficient from others monitoring
 ```
 
 ### Thrashing
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" alt="Handwritten: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" alt="Diagram: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" alt="Sticky Note: Thrashing" width="30%">
+</a>
+
 
 **Thrashing** occurs when a process spends more time paging than executing. The system is overcommitted - the working set of all processes exceeds physical memory.
 
@@ -2051,6 +2216,17 @@ Page Fault Rate
 
 ### Working Set Model
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" alt="Handwritten: Working Set Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" alt="Diagram: Working Set Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" alt="Sticky Note: Working Set Model" width="30%">
+</a>
+
+
 The **working set** is the set of pages a process is currently using. It represents the current locality.
 
 #### Formal Definition
@@ -2116,6 +2292,17 @@ IF total_working_set << physical_memory:
 
 ### Page Size
 
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" alt="Handwritten: Page Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" alt="Diagram: Page Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" alt="Sticky Note: Page Size" width="30%">
+</a>
+
+
 Choosing the page size involves trade-offs that impact multiple system components.
 
 #### Page Size Trade-offs Table
@@ -2154,6 +2341,17 @@ reducing TLB misses.
 Packing a suitcase. Small pages = many small boxes (lots of labels to manage, but tightly packed). Large pages = fewer big boxes (fewer labels, but wasted space inside each partially-filled box). For a trip (process), you pack items you need. If boxes are too big, you bring unnecessary items. If too small, you spend all day managing boxes.
 
 ### Modern Developments
+
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" alt="Handwritten: Modern Developments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" alt="Diagram: Modern Developments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" alt="Sticky Note: Modern Developments" width="30%">
+</a>
+
 
 **Transparent Huge Pages (THP):** Linux automatically promotes groups of 4 KB pages to 2 MB pages when they are frequently accessed together.
 

@@ -49,6 +49,17 @@ mindmap
 
 ### १.१ "जब तकनीक गिरती है, तब ध्यान होता है"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "मैंने तुम्हें ११२ तकनीकें दीं — ११२ दरवाज़े, ११२ रास्ते, ११२ उपाय। लेकिन अब मैं तुम्हें अंतिम सत्य बताता हूँ — और यह सुनने के लिए तैयार रहो, क्योंकि यह तुम्हें चौंका देगा।
 >
@@ -61,6 +72,17 @@ mindmap
 यह ओशो का सबसे क्रांतिकारी संदेश है। उन्होंने ११२ दिनों तक ११२ तकनीकों पर प्रवचन दिए — और फिर अंत में कहा — अब इन सबको भी छोड़ दो। तकनीकें नाव हैं — पार उतरने के बाद नाव को भी छोड़ना पड़ता है। जो नाव को लेकर चलता रहता है, वह कभी मुक्त नहीं हो सकता।
 
 ### १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "एक आदमी मेरे पास आया। उसने कहा, 'ओशो, मैंने आपकी सारी किताबें पढ़ लीं — ११२ तकनीकें, सब याद हैं। अब क्या करूँ?'
@@ -76,6 +98,17 @@ mindmap
 > मैंने कहा, 'अब समझे? ये तकनीकें केवल इसलिए हैं कि तुम यह देख सको — देखना ही काफ़ी है। जिस दिन तुम बस देखने लगोगे, उसी दिन सब हो जाएगा।'"
 
 ### १.३ ओशो का VBT को समझने का अनूठा ढंग
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" alt="Handwritten: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" alt="Diagram: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" alt="Sticky Note: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+</a>
+
 
 | पारंपरिक दृष्टि | ओशो की दृष्टि |
 |----------------|--------------|
@@ -94,6 +127,17 @@ mindmap
 ## २. ११२ तकनीकों का सम्पूर्ण संश्लेषण: ओशो की नज़र में
 
 ### २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+</a>
+
 
 ओशो ने अपने प्रवचनों में ११२ तकनीकों को पाँच श्रेणियों में बाँटा। हर श्रेणी एक अलग प्रकार के साधक के लिए है। लेकिन सबका लक्ष्य एक ही है — साक्षी।
 
@@ -157,6 +201,17 @@ flowchart TB
 
 ### २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "मैंने इन ११२ तकनीकों को पाँच श्रेणियों में इसलिए बाँटा कि तुम अपनी प्रकृति को पहचान सको। हर आदमी अलग है — एक श्वास से जुड़ता है, दूसरा शरीर से, तीसरा भावना से। कोई भी तकनीक सबके लिए नहीं है। लेकिन कोई भी व्यक्ति ऐसा नहीं जिसके लिए कोई तकनीक न हो।
 >
@@ -171,6 +226,17 @@ flowchart TB
 | **परम** (९०-११२) | चैतन्य, शून्य, उन्मनी | साहसी, गहरे, तैयार | "जब कुछ नहीं, तब सब कुछ है" |
 
 ### २.३ सभी मार्ग — एक ही शिखर
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+</a>
+
 
 ```mermaid
 flowchart RL
@@ -209,6 +275,17 @@ flowchart RL
 
 ### ३.१ मूल श्लोक — ओशो की व्याख्या में
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+</a>
+
+
 > *"अहं भैरव एवास्मि न मे भेदः परेण च।*
 > *य एवं वेत्ति तत्त्वेन स स्वतन्त्रो भवेदिह।।"*
 > — विज्ञान भैरव तंत्र, समापन श्लोक
@@ -228,6 +305,17 @@ flowchart RL
 
 ### ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "यह बहुत अजीब बात है — तुम वह हो जिसे तुम खोज रहे हो। और यही इस पूरे ग्रंथ का अंतिम संदेश है।
 >
@@ -238,6 +326,17 @@ flowchart RL
 > विज्ञान भैरव तंत्र की ११२ तकनीकें तुम्हें बस यह बताने के लिए हैं — अपनी जेब में हाथ डालो। वहाँ देखो। चाबियाँ वहीं हैं — हमेशा से थीं।"
 
 ### ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TB
@@ -269,6 +368,17 @@ flowchart TB
 > यही अंतिम सत्य है। यही समापन है।"
 
 ### ३.४ ओशो का मुक्ति मॉडल
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -747,6 +857,17 @@ export {
 
 ### १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+</a>
+
+
 **प्रश्न १**: ओशो के अनुसार, विज्ञान भैरव तंत्र की ११२ तकनीकों का अंतिम सार क्या है?
 
 - क) सभी तकनीकों का नियमित अभ्यास करना
@@ -883,6 +1004,17 @@ export {
 
 ### अभ्यास १: अपना ओशो-शैली प्रवचन लिखो
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+</a>
+
+
 **निर्देश:** कोई एक तकनीक चुनो (१ से ११२ में से) और उस पर ओशो की शैली में ५०० शब्दों का प्रवचन लिखो।
 
 ओशो की शैली याद रखो:
@@ -915,6 +1047,17 @@ function writeOshoDiscourse(techNum: number): OshoDiscourse {
 
 ### अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+</a>
+
+
 **निर्देश:** OshoPracticeRecommender का उपयोग करके अपने लिए ४० दिन का वैयक्तिकृत अभ्यास कार्यक्रम बनाओ।
 
 ```typescript
@@ -944,6 +1087,17 @@ function create40DayProgram(): void {
 
 ### अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+</a>
+
+
 **निर्देश:** ओशो की सबसे बड़ी चुनौती — एक पूरे दिन (२४ घंटे) हर क्रिया में साक्षी बने रहो।
 
 - सुबह उठते ही: पहली साँस से साक्षी शुरू करो
@@ -965,6 +1119,17 @@ function create40DayProgram(): void {
 | ... | ... | ... | ... |
 
 ### अभ्यास ४: किसी और को एक तकनीक सिखाओ
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+</a>
+
 
 **निर्देश:** जो तुमने सीखा, उसे कम से कम एक व्यक्ति को सिखाओ। ओशो कहते हैं — "सिखाने से ही समझ पक्की होती है।"
 
@@ -993,6 +1158,17 @@ function teachATechnique(): TeachingSession {
 
 ### अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+</a>
+
+
 **निर्देश:** इस पूरे पाठ्यक्रम के १८ अध्यायों की समीक्षा करो। हर अध्याय से एक ऐसी बात लिखो जो तुम्हारे जीवन में बदलाव ला सकती है।
 
 | अध्याय | एक बात जो मैं अपने जीवन में उतारूँगा/उतारूँगी |
@@ -1004,6 +1180,17 @@ function teachATechnique(): TeachingSession {
 | १८ | |
 
 ### अभ्यास ६: TypeScript OshoQuote Generator
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" alt="Handwritten: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" alt="Diagram: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" alt="Sticky Note: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+</a>
+
 
 **निर्देश:** एक फंक्शन बनाओ जो ओशो के VBT प्रवचनों में से यादृच्छिक कोटेशन दे — लेकिन हर बार कोटेशन के साथ एक नई व्याख्या भी जोड़े।
 
@@ -1036,6 +1223,17 @@ function generateDailyOshoWisdom(): OshoQuote {
 ```
 
 ### अभ्यास ७: ओशो को एक पत्र लिखो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+</a>
+
 
 **निर्देश:** ओशो को एक पत्र लिखो — जैसे तुम उनके सामने बैठे हो और उनसे बात कर रहे हो।
 

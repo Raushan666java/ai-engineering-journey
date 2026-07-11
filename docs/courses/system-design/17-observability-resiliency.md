@@ -64,6 +64,17 @@ flowchart LR
 
 ### 1. The Three Pillars of Observability
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 1. The Three Pillars of Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 1. The Three Pillars of Observability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 1. The Three Pillars of Observability" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -90,6 +101,17 @@ Observability is the ability to understand a system's internal state from its ex
 - **Saturation**: How "full" the system is. Queue depth, CPU utilization, memory pressure.
 
 ### 2. Prometheus
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" alt="Handwritten: 2. Prometheus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" alt="Diagram: 2. Prometheus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" alt="Sticky Note: 2. Prometheus" width="30%">
+</a>
+
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -144,6 +166,17 @@ groups:
 
 ### 3. Grafana
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" alt="Handwritten: 3. Grafana" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" alt="Diagram: 3. Grafana" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" alt="Sticky Note: 3. Grafana" width="30%">
+</a>
+
+
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
@@ -170,6 +203,17 @@ Dashboard structure:
 ```
 
 ### 4. Distributed Tracing
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" alt="Handwritten: 4. Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" alt="Diagram: 4. Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" alt="Sticky Note: 4. Distributed Tracing" width="30%">
+</a>
+
 
 **OpenTelemetry (OTel)**: Vendor-neutral standard for generating, collecting, and exporting telemetry data. SDKs exist for all major languages.
 
@@ -222,6 +266,17 @@ Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no 
 
 ### 5. Jaeger / Zipkin
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" alt="Handwritten: 5. Jaeger / Zipkin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" alt="Diagram: 5. Jaeger / Zipkin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" alt="Sticky Note: 5. Jaeger / Zipkin" width="30%">
+</a>
+
+
 **Jaeger**: Uber's open-source distributed tracing system. Components: agent (sidecar), collector, query service, UI. Supports OpenTelemetry protocol (OTLP). Visualization includes trace detail view, service dependency graph, and search/filter.
 
 **Zipkin**: Twitter's tracing system, similar capabilities. Uses Scribe or Kafka as transport. Simpler deployment (single JAR).
@@ -229,6 +284,17 @@ Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no 
 Both systems ingest spans, index by service/operation/tags/duration, and enable ad-hoc trace querying for debugging latency anomalies.
 
 ### 6. Structured Logging
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" alt="Handwritten: 6. Structured Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" alt="Diagram: 6. Structured Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" alt="Sticky Note: 6. Structured Logging" width="30%">
+</a>
+
 
 ```python
 import structlog
@@ -255,6 +321,17 @@ logger.info("order_placed",
 **Centralized aggregation**: ELK stack (Elasticsearch, Logstash, Kibana) or Loki (Grafana's log aggregation system, optimized for Prometheus-style label-based indexing).
 
 ### 7. Circuit Breaker Pattern
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 7. Circuit Breaker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" alt="Diagram: 7. Circuit Breaker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 7. Circuit Breaker Pattern" width="30%">
+</a>
+
 
 The circuit breaker protects downstream services from cascading failures. When error rate exceeds a threshold, the circuit "trips open" and subsequent requests fail fast (return error immediately) without calling the downstream service.
 
@@ -316,6 +393,17 @@ class CircuitBreaker:
 
 ### 8. Bulkhead Pattern
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" alt="Handwritten: 8. Bulkhead Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" alt="Diagram: 8. Bulkhead Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" alt="Sticky Note: 8. Bulkhead Pattern" width="30%">
+</a>
+
+
 Isolates resources so failure in one component doesn't exhaust shared resources. Two isolation models:
 
 **Thread pool isolation**: Each downstream service gets a dedicated thread pool. If the payment service thread pool is exhausted, the orders service is unaffected.
@@ -349,6 +437,17 @@ class Bulkhead:
 
 ### 9. Retry with Exponential Backoff and Jitter
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" alt="Handwritten: 9. Retry with Exponential Backoff and Jitter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" alt="Diagram: 9. Retry with Exponential Backoff and Jitter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" alt="Sticky Note: 9. Retry with Exponential Backoff and Jitter" width="30%">
+</a>
+
+
 Transient failures should be retried; permanent failures (4xx) should not. Exponential backoff with jitter prevents thundering herd:
 
 ```python
@@ -365,6 +464,17 @@ def retry_with_jitter(func, max_retries=3, base_delay=0.1, max_delay=10.0):
 **Jitter strategies**: Full jitter (AWS recommended): `random(0, cap)`. Equal jitter: `cap/2 + random(0, cap/2)`. Decorrelated: `min(cap, random(base, prev * 3))`. Typical config: base=200ms, 3 retries, 20s max backoff.
 
 ### 10. Rate Limiting
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" alt="Handwritten: 10. Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" alt="Diagram: 10. Rate Limiting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" alt="Sticky Note: 10. Rate Limiting" width="30%">
+</a>
+
 
 At the application layer, a token bucket (rate R, burst B) protects against quota abuse:
 
@@ -384,6 +494,17 @@ Exceeded quotas receive HTTP 429 with Retry-After header.
 
 ### 11. Graceful Degradation
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" alt="Handwritten: 11. Graceful Degradation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" alt="Diagram: 11. Graceful Degradation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" alt="Sticky Note: 11. Graceful Degradation" width="30%">
+</a>
+
+
 When dependencies fail, degrade rather than crash: fallbacks (cached data instead of live fetch), default responses, and feature flags to disable non-critical features under load.
 
 ```python
@@ -398,6 +519,17 @@ def get_recommendations(user_id):
 
 ### 12. Load Shedding
 
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" alt="Handwritten: 12. Load Shedding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" alt="Diagram: 12. Load Shedding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" alt="Sticky Note: 12. Load Shedding" width="30%">
+</a>
+
+
 Proactively reject work when overloaded: limit queue depth, prioritize critical requests (payments > analytics), and drop low-priority work at saturation thresholds (80%: batch jobs, 95%: all non-essential).
 
 ```python
@@ -405,6 +537,17 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 ```
 
 ### 13. Health Check API
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" alt="Handwritten: 13. Health Check API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" alt="Diagram: 13. Health Check API" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" alt="Sticky Note: 13. Health Check API" width="30%">
+</a>
+
 
 Standard endpoints: `GET /health` (liveness — process alive?) and `GET /ready` (readiness — dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
 
@@ -416,6 +559,17 @@ def readiness():
 ```
 
 ### 14. Chaos Engineering
+
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" alt="Handwritten: 14. Chaos Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" alt="Diagram: 14. Chaos Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" alt="Sticky Note: 14. Chaos Engineering" width="30%">
+</a>
+
 
 Principles defined by Principles of Chaos (2015, Netflix):
 

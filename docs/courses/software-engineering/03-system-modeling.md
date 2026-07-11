@@ -19,6 +19,17 @@
 
 ### The Purpose of System Modelling
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" alt="Handwritten: The Purpose of System Modelling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" alt="Diagram: The Purpose of System Modelling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" alt="Sticky Note: The Purpose of System Modelling" width="30%">
+</a>
+
+
 System modelling is the process of developing abstract representations of a system from different perspectives. Each model emphasises certain aspects while suppressing others, enabling stakeholders to understand, analyse, and communicate about the system.
 
 Models serve several purposes:
@@ -69,6 +80,17 @@ graph TD
 
 ### The Unified Modeling Language
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" alt="Handwritten: The Unified Modeling Language" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" alt="Diagram: The Unified Modeling Language" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" alt="Sticky Note: The Unified Modeling Language" width="30%">
+</a>
+
+
 The Unified Modeling Language (UML) is a general-purpose visual modelling language standardised by the Object Management Group (OMG). UML provides thirteen diagram types in two categories: **structure diagrams** (static structure) and **behaviour diagrams** (dynamic behaviour).
 
 UML is extensible through:
@@ -77,6 +99,17 @@ UML is extensible through:
 - **Constraints:** Add rules expressed in natural language or OCL
 
 ### Use Case Diagrams
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" alt="Handwritten: Use Case Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" alt="Diagram: Use Case Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" alt="Sticky Note: Use Case Diagrams" width="30%">
+</a>
+
 
 Use case diagrams show interactions between actors and the system. An **actor** is a role played by a user or another system. A **use case** represents a complete unit of functionality.
 
@@ -120,6 +153,17 @@ graph TD
 | **Generalisation** | Hollow triangle arrow | Child use case inherits from parent |
 
 ### Class Diagrams
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" alt="Handwritten: Class Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" alt="Diagram: Class Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" alt="Sticky Note: Class Diagrams" width="30%">
+</a>
+
 
 Class diagrams describe the static structure of a system by showing classes, attributes, operations, and relationships. They are the most widely used UML diagram type.
 
@@ -210,6 +254,17 @@ classDiagram
 
 ### Sequence Diagrams
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" alt="Handwritten: Sequence Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" alt="Diagram: Sequence Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" alt="Sticky Note: Sequence Diagrams" width="30%">
+</a>
+
+
 Sequence diagrams model interactions between objects over time, showing messages exchanged in chronological order. They are essential for understanding communication patterns and protocol design.
 
 ```mermaid
@@ -276,6 +331,17 @@ sequenceDiagram
 
 ### Activity Diagrams
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" alt="Handwritten: Activity Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" alt="Diagram: Activity Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" alt="Sticky Note: Activity Diagrams" width="30%">
+</a>
+
+
 Activity diagrams model the flow of control from one activity to another, supporting sequential, concurrent, and conditional behaviour. They are ideal for modelling business processes and workflows.
 
 ```mermaid
@@ -319,6 +385,17 @@ graph TD
 | **Swimlane** | Partition | Responsibilities by actor |
 
 ### State Machine Diagrams
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" alt="Handwritten: State Machine Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" alt="Diagram: State Machine Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" alt="Sticky Note: State Machine Diagrams" width="30%">
+</a>
+
 
 State machine diagrams model the behaviour of an object as it responds to events over its lifetime. They are particularly important for modelling systems with complex state-dependent behaviour.
 
@@ -366,6 +443,17 @@ stateDiagram-v2
 
 ### Component Diagrams
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" alt="Handwritten: Component Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" alt="Diagram: Component Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" alt="Sticky Note: Component Diagrams" width="30%">
+</a>
+
+
 Component diagrams show the organisation and dependencies among software components. A **component** is a modular, deployable, and replaceable part that encapsulates implementation and exposes interfaces.
 
 ```mermaid
@@ -405,6 +493,17 @@ graph TD
 - **Required interfaces:** Services needed from environment (socket notation)
 
 ### Deployment Diagrams
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" alt="Handwritten: Deployment Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" alt="Diagram: Deployment Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" alt="Sticky Note: Deployment Diagrams" width="30%">
+</a>
+
 
 Deployment diagrams show the physical deployment of software components on hardware nodes. They are essential for understanding the production architecture, network topology, and scalability.
 
@@ -460,6 +559,17 @@ graph TD
 
 ### Data Flow Diagrams
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" alt="Handwritten: Data Flow Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" alt="Diagram: Data Flow Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" alt="Sticky Note: Data Flow Diagrams" width="30%">
+</a>
+
+
 Data flow diagrams (DFDs) model the flow of data through a system. They are hierarchically organised from context level (Level 0) through increasingly detailed levels.
 
 **DFD Elements:**
@@ -472,6 +582,17 @@ Data flow diagrams (DFDs) model the flow of data through a system. They are hier
 | Rectangle | External entity | Source/destination outside system |
 
 ### Entity-Relationship Diagrams
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" alt="Handwritten: Entity-Relationship Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" alt="Diagram: Entity-Relationship Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" alt="Sticky Note: Entity-Relationship Diagrams" width="30%">
+</a>
+
 
 Entity-relationship (ER) diagrams model the data perspective, showing entity types, attributes, and relationships.
 
@@ -531,6 +652,17 @@ erDiagram
 
 ### Design Patterns in Modelling Context
 
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" alt="Handwritten: Design Patterns in Modelling Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" alt="Diagram: Design Patterns in Modelling Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" alt="Sticky Note: Design Patterns in Modelling Context" width="30%">
+</a>
+
+
 Design patterns can be represented in UML to document recurring architectural solutions:
 
 - **Singleton:** A class with a static `getInstance()` operation and a private constructor
@@ -540,6 +672,17 @@ Design patterns can be represented in UML to document recurring architectural so
 - **Adapter:** A class that adapts a target interface to an adaptee
 
 ### Object Constraint Language
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" alt="Handwritten: Object Constraint Language" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" alt="Diagram: Object Constraint Language" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" alt="Sticky Note: Object Constraint Language" width="30%">
+</a>
+
 
 OCL is a formal language for expressing constraints on UML models. It is declarative with no side effects.
 
@@ -563,6 +706,17 @@ OCL is a formal language for expressing constraints on UML models. It is declara
 ```
 
 ### Model-Driven Engineering
+
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" alt="Handwritten: Model-Driven Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" alt="Diagram: Model-Driven Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" alt="Sticky Note: Model-Driven Engineering" width="30%">
+</a>
+
 
 Model-driven engineering (MDE) elevates models from documentation to primary development artefacts. The Model-Driven Architecture (MDA) standard defines three levels:
 

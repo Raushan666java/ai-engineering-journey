@@ -66,6 +66,17 @@ A compiler translates a high-level source program into an equivalent target (mac
 ## 1. Lexical Analysis
 
 ### 1.1 Role of the Lexer
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-handwritten.svg" alt="Handwritten: 1.1 Role of the Lexer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-diagram.svg" alt="Diagram: 1.1 Role of the Lexer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-1-role-of-the-lexer-sticky.svg" alt="Sticky Note: 1.1 Role of the Lexer" width="30%">
+</a>
+
 
 The **lexer** (scanner) reads the source program character by character and groups them into **tokens** Ã¢â‚¬â€�Ã¢â‚¬Â� the smallest meaningful units of a language. It discards whitespace and comments.
 
@@ -80,6 +91,17 @@ Source char stream Ã¢â€ â€™ Lexer Ã¢â€ â€™ Token stream Ã
 - Macro expansion and file inclusion
 
 ### 1.2 Tokens, Lexemes, Patterns
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-handwritten.svg" alt="Handwritten: 1.2 Tokens, Lexemes, Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-diagram.svg" alt="Diagram: 1.2 Tokens, Lexemes, Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-2-tokens-lexemes-patterns-sticky.svg" alt="Sticky Note: 1.2 Tokens, Lexemes, Patterns" width="30%">
+</a>
+
 
 | Term | Definition | Example |
 |------|-----------|---------|
@@ -98,6 +120,17 @@ Source char stream Ã¢â€ â€™ Lexer Ã¢â€ â€™ Token stream Ã
 | `LPAREN`, `RPAREN` | `(`, `)` | `(`, `)` |
 
 ### 1.3 Regular Expressions to NFA
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-handwritten.svg" alt="Handwritten: 1.3 Regular Expressions to NFA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-diagram.svg" alt="Diagram: 1.3 Regular Expressions to NFA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-3-regular-expressions-to-nfa-sticky.svg" alt="Sticky Note: 1.3 Regular Expressions to NFA" width="30%">
+</a>
+
 
 **Thompson's Construction** converts any regular expression (RE) into an equivalent NFA:
 
@@ -116,6 +149,17 @@ Source char stream Ã¢â€ â€™ Lexer Ã¢â€ â€™ Token stream Ã
 3. Result: 11-state NFA (approx.)
 
 ### 1.4 NFA to DFA Ã¢â‚¬â€�Ã¢â‚¬Â� Subset Construction
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-handwritten.svg" alt="Handwritten: 1.4 NFA to DFA Ã¢â‚¬â€�Ã¢â‚¬Â� Subset Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-diagram.svg" alt="Diagram: 1.4 NFA to DFA Ã¢â‚¬â€�Ã¢â‚¬Â� Subset Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-4-nfa-to-dfa-subset-construction-sticky.svg" alt="Sticky Note: 1.4 NFA to DFA Ã¢â‚¬â€�Ã¢â‚¬Â� Subset Construction" width="30%">
+</a>
+
 
 For every set of NFA states reachable on a given symbol, create a DFA state.
 
@@ -136,6 +180,17 @@ while there is an unmarked state T {
 **ÃƒÅ½Ã‚Âµ-closure(s):** all states reachable from s via ÃƒÅ½Ã‚Âµ-transitions.
 
 ### 1.5 DFA Minimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-handwritten.svg" alt="Handwritten: 1.5 DFA Minimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-diagram.svg" alt="Diagram: 1.5 DFA Minimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-5-dfa-minimization-sticky.svg" alt="Sticky Note: 1.5 DFA Minimization" width="30%">
+</a>
+
 
 Minimize a DFA by merging indistinguishable states:
 
@@ -147,6 +202,17 @@ Minimize a DFA by merging indistinguishable states:
 **GATE tip:** For a DFA with n states, minimization takes O(k n log n) where k = alphabet size.
 
 ### 1.6 Lex Tool Concepts
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-handwritten.svg" alt="Handwritten: 1.6 Lex Tool Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-diagram.svg" alt="Diagram: 1.6 Lex Tool Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-6-lex-tool-concepts-sticky.svg" alt="Sticky Note: 1.6 Lex Tool Concepts" width="30%">
+</a>
+
 
 **Lex/Flex** automates lexer generation:
 
@@ -163,6 +229,17 @@ Minimize a DFA by merging indistinguishable states:
 - Tie-breaking: if equal-length, pick the pattern listed first.
 
 ### 1.7 Transition Diagrams
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-handwritten.svg" alt="Handwritten: 1.7 Transition Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-diagram.svg" alt="Diagram: 1.7 Transition Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-7-transition-diagrams-sticky.svg" alt="Sticky Note: 1.7 Transition Diagrams" width="30%">
+</a>
+
 
 A **transition diagram** for identifiers:
 
@@ -173,6 +250,17 @@ Start Ã¢â€ â€™ [letter] Ã¢â€ â€™ [letter or digit] Ã¢â�
 Formal: `{letter}({letter}|{digit})*`
 
 ### 1.8 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Lexical Analysis
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-handwritten.svg" alt="Handwritten: 1.8 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Lexical Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-diagram.svg" alt="Diagram: 1.8 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Lexical Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/1-8-gate-problems-lexical-analysis-sticky.svg" alt="Sticky Note: 1.8 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Lexical Analysis" width="30%">
+</a>
+
 
 **Problem 1:** How many tokens does the following C code produce?
 
@@ -259,6 +347,17 @@ printf("%d", &x + 1 ? 1 : 0);
 ## 2. Syntax Analysis
 
 ### 2.1 Context-Free Grammars
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-handwritten.svg" alt="Handwritten: 2.1 Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-diagram.svg" alt="Diagram: 2.1 Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-1-context-free-grammars-sticky.svg" alt="Sticky Note: 2.1 Context-Free Grammars" width="30%">
+</a>
+
 
 A **Context-Free Grammar (CFG)** is a 4-tuple `G = (V, T, P, S)` where:
 - `V` = finite set of non-terminals
@@ -279,6 +378,17 @@ F Ã¢â€ â€™ (E) | id
 - **Rightmost derivation:** Replace rightmost non-terminal first.
 
 ### 2.2 Parse Tree vs Syntax Tree
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-handwritten.svg" alt="Handwritten: 2.2 Parse Tree vs Syntax Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-diagram.svg" alt="Diagram: 2.2 Parse Tree vs Syntax Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-2-parse-tree-vs-syntax-tree-sticky.svg" alt="Sticky Note: 2.2 Parse Tree vs Syntax Tree" width="30%">
+</a>
+
 
 | Feature | Parse Tree | Syntax Tree (Abstract Syntax Tree) |
 |---------|------------|--------------------------------------|
@@ -312,6 +422,17 @@ Syntax tree:
 ```
 
 ### 2.3 Handling Ambiguity
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-handwritten.svg" alt="Handwritten: 2.3 Handling Ambiguity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-diagram.svg" alt="Diagram: 2.3 Handling Ambiguity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-3-handling-ambiguity-sticky.svg" alt="Sticky Note: 2.3 Handling Ambiguity" width="30%">
+</a>
+
 
 A grammar is **ambiguous** if there exists a string with two distinct parse trees (or two leftmost derivations).
 
@@ -327,6 +448,17 @@ For `if E1 then if E2 then S1 else S2`, two parse trees exist.
 **GATE note:** Inherently ambiguous languages (like `{a^n b^n c^m} ÃƒÂ¢Ã‹â€ Ã‚Âª {a^n b^m c^m}`) cannot have an unambiguous grammar.
 
 ### 2.4 Top-Down Parsing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-handwritten.svg" alt="Handwritten: 2.4 Top-Down Parsing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-diagram.svg" alt="Diagram: 2.4 Top-Down Parsing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-4-top-down-parsing-sticky.svg" alt="Sticky Note: 2.4 Top-Down Parsing" width="30%">
+</a>
+
 
 #### Recursive Descent
 
@@ -417,6 +549,17 @@ F  Ã¢â€ â€™ (E) | id
 | F | FÃ¢â€ â€™id | | | FÃ¢â€ â€™(E) | | |
 
 ### 2.5 Bottom-Up Parsing (Shift-Reduce)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-handwritten.svg" alt="Handwritten: 2.5 Bottom-Up Parsing (Shift-Reduce)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-diagram.svg" alt="Diagram: 2.5 Bottom-Up Parsing (Shift-Reduce)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-5-bottom-up-parsing-shift-reduce-sticky.svg" alt="Sticky Note: 2.5 Bottom-Up Parsing (Shift-Reduce)" width="30%">
+</a>
+
 
 **Idea:** Start from the input string and reduce to the start symbol using productions in reverse.
 
@@ -501,6 +644,17 @@ Merge LR(1) states whose LR(0) cores are identical.
 | CLR(1) | Most (10x) | Highest | Zero |
 
 ### 2.6 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Syntax Analysis
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-handwritten.svg" alt="Handwritten: 2.6 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Syntax Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-diagram.svg" alt="Diagram: 2.6 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Syntax Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/2-6-gate-problems-syntax-analysis-sticky.svg" alt="Sticky Note: 2.6 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Syntax Analysis" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2017):** Which of the following is the most powerful parsing technique?
 
@@ -597,6 +751,17 @@ Look at state with `A Ã¢â€ â€™ aÃƒâ€šÃ‚Â·A` and `A Ã¢â�
 ## 3. Semantic Analysis
 
 ### 3.1 Syntax-Directed Definitions (SDD)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-handwritten.svg" alt="Handwritten: 3.1 Syntax-Directed Definitions (SDD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-diagram.svg" alt="Diagram: 3.1 Syntax-Directed Definitions (SDD)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-1-syntax-directed-definitions-sdd-sticky.svg" alt="Sticky Note: 3.1 Syntax-Directed Definitions (SDD)" width="30%">
+</a>
+
 
 An **SDD** attaches semantic rules to grammar productions.
 
@@ -631,6 +796,17 @@ L Ã¢â€ â€™ id { addType(id.entry, L.in) }
 ```
 
 ### 3.2 Syntax-Directed Translation Schemes
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-handwritten.svg" alt="Handwritten: 3.2 Syntax-Directed Translation Schemes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-diagram.svg" alt="Diagram: 3.2 Syntax-Directed Translation Schemes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-2-syntax-directed-translation-schemes-sticky.svg" alt="Sticky Note: 3.2 Syntax-Directed Translation Schemes" width="30%">
+</a>
+
 
 A **translation scheme** embeds program fragments (actions) within productions:
 
@@ -643,6 +819,17 @@ T Ã¢â€ â€™ id     { print(id.name) }
 **Parsing action:** Actions execute when the parser reaches that position.
 
 ### 3.3 Type Checking
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-handwritten.svg" alt="Handwritten: 3.3 Type Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-diagram.svg" alt="Diagram: 3.3 Type Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-3-type-checking-sticky.svg" alt="Sticky Note: 3.3 Type Checking" width="30%">
+</a>
+
 
 #### Static vs Dynamic Typing
 
@@ -669,6 +856,17 @@ E Ã¢â€ â€™ E1 == E2 Ã¢â€¡â€™ if E1.type = E2.type then boo
 **Type coercion:** Implicit conversion (`int Ã¢â€ â€™ float` in `float + int`).
 
 ### 3.4 Symbol Table Implementation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-handwritten.svg" alt="Handwritten: 3.4 Symbol Table Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-diagram.svg" alt="Diagram: 3.4 Symbol Table Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-4-symbol-table-implementation-sticky.svg" alt="Sticky Note: 3.4 Symbol Table Implementation" width="30%">
+</a>
+
 
 **Symbol table:** Data structure holding information about identifiers (type, scope, memory location).
 
@@ -683,6 +881,17 @@ E Ã¢â€ â€™ E1 == E2 Ã¢â€¡â€™ if E1.type = E2.type then boo
 **GATE tip:** Most compiler questions assume a hash-table symbol table with chaining.
 
 ### 3.5 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Semantic Analysis
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-handwritten.svg" alt="Handwritten: 3.5 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Semantic Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-diagram.svg" alt="Diagram: 3.5 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Semantic Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/3-5-gate-problems-semantic-analysis-sticky.svg" alt="Sticky Note: 3.5 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Semantic Analysis" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2016):** Consider an SDD:
 
@@ -739,6 +948,17 @@ Here, `in` is an inherited attribute (passed left-to-right). **Answer: L-attribu
 ## 4. Intermediate Code Generation
 
 ### 4.1 Three-Address Code (TAC)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-handwritten.svg" alt="Handwritten: 4.1 Three-Address Code (TAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-diagram.svg" alt="Diagram: 4.1 Three-Address Code (TAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-1-three-address-code-tac-sticky.svg" alt="Sticky Note: 4.1 Three-Address Code (TAC)" width="30%">
+</a>
+
 
 **Three-address code** uses instructions of the form `x = y op z` (at most one operator, three addresses).
 
@@ -763,6 +983,17 @@ t2 = a + t1
 | `return x` | Return |
 
 ### 4.2 Quadruples
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-handwritten.svg" alt="Handwritten: 4.2 Quadruples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-diagram.svg" alt="Diagram: 4.2 Quadruples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-2-quadruples-sticky.svg" alt="Sticky Note: 4.2 Quadruples" width="30%">
+</a>
+
 
 A **quadruple** is a 4-field record: `(op, arg1, arg2, result)`
 
@@ -775,6 +1006,17 @@ A **quadruple** is a 4-field record: `(op, arg1, arg2, result)`
 | 2 | = | t2 | | a |
 
 ### 4.3 Triples
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-handwritten.svg" alt="Handwritten: 4.3 Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-diagram.svg" alt="Diagram: 4.3 Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-3-triples-sticky.svg" alt="Sticky Note: 4.3 Triples" width="30%">
+</a>
+
 
 A **triple** uses 3 fields: `(op, arg1, arg2)` Ã¢â‚¬â€�Ã¢â‚¬Â� results are implicitly the position number.
 
@@ -788,6 +1030,17 @@ A **triple** uses 3 fields: `(op, arg1, arg2)` Ã¢â‚¬â€�Ã¢â‚¬Â�
 **Disadvantage:** Reordering is hard (position references break).
 
 ### 4.4 Indirect Triples
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-handwritten.svg" alt="Handwritten: 4.4 Indirect Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-diagram.svg" alt="Diagram: 4.4 Indirect Triples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-4-indirect-triples-sticky.svg" alt="Sticky Note: 4.4 Indirect Triples" width="30%">
+</a>
+
 
 A list of pointers to triples Ã¢â‚¬â€�Ã¢â‚¬Â� makes reordering possible.
 
@@ -798,6 +1051,17 @@ A list of pointers to triples Ã¢â‚¬â€�Ã¢â‚¬Â� makes reorderi
 ```
 
 ### 4.5 Static Single Assignment (SSA)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-handwritten.svg" alt="Handwritten: 4.5 Static Single Assignment (SSA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-diagram.svg" alt="Diagram: 4.5 Static Single Assignment (SSA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-5-static-single-assignment-ssa-sticky.svg" alt="Sticky Note: 4.5 Static Single Assignment (SSA)" width="30%">
+</a>
+
 
 Each variable is assigned exactly once. Special **ÃƒÂ�Ã¢â‚¬Â  (phi) functions** merge values at control-flow joins.
 
@@ -815,6 +1079,17 @@ L3: y3 = ÃƒÂ�Ã¢â‚¬Â (y1, y2)
 **Benefits:** Simplifies optimization (constant propagation, dead code elimination).
 
 ### 4.6 Translation of Expressions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-handwritten.svg" alt="Handwritten: 4.6 Translation of Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-diagram.svg" alt="Diagram: 4.6 Translation of Expressions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-6-translation-of-expressions-sticky.svg" alt="Sticky Note: 4.6 Translation of Expressions" width="30%">
+</a>
+
 
 **Syntax-directed translation to TAC:**
 
@@ -832,6 +1107,17 @@ L3: y3 = ÃƒÂ�Ã¢â‚¬Â (y1, y2)
 ```
 
 ### 4.7 Translation of Control Flow
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-handwritten.svg" alt="Handwritten: 4.7 Translation of Control Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-diagram.svg" alt="Diagram: 4.7 Translation of Control Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-7-translation-of-control-flow-sticky.svg" alt="Sticky Note: 4.7 Translation of Control Flow" width="30%">
+</a>
+
 
 **Conditional and loop translation:**
 
@@ -868,6 +1154,17 @@ L3: ...
 ```
 
 ### 4.8 Type Conversion
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-handwritten.svg" alt="Handwritten: 4.8 Type Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-diagram.svg" alt="Diagram: 4.8 Type Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-8-type-conversion-sticky.svg" alt="Sticky Note: 4.8 Type Conversion" width="30%">
+</a>
+
 
 **Explicit vs Implicit conversion:**
 
@@ -884,6 +1181,17 @@ y = t2
 ```
 
 ### 4.9 Backpatching
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-handwritten.svg" alt="Handwritten: 4.9 Backpatching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-diagram.svg" alt="Diagram: 4.9 Backpatching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-9-backpatching-sticky.svg" alt="Sticky Note: 4.9 Backpatching" width="30%">
+</a>
+
 
 **Problem:** Forward jumps (e.g., `if` to `else`) need target addresses not yet known.
 
@@ -898,6 +1206,17 @@ patch(6, target=L2)        Ã¢â€ â€™ instruction 6 becomes: goto L2
 ```
 
 ### 4.10 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Intermediate Code
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-handwritten.svg" alt="Handwritten: 4.10 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Intermediate Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-diagram.svg" alt="Diagram: 4.10 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Intermediate Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/4-10-gate-problems-intermediate-code-sticky.svg" alt="Sticky Note: 4.10 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Intermediate Code" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2016):** Generate three-address code for `-a + b * c + d`.
 
@@ -969,6 +1288,17 @@ C) Constant propagation               D) All of the above
 ## 5. Code Optimization & Code Generation
 
 ### 5.1 Basic Blocks and Flow Graphs
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-handwritten.svg" alt="Handwritten: 5.1 Basic Blocks and Flow Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-diagram.svg" alt="Diagram: 5.1 Basic Blocks and Flow Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-1-basic-blocks-and-flow-graphs-sticky.svg" alt="Sticky Note: 5.1 Basic Blocks and Flow Graphs" width="30%">
+</a>
+
 
 A **basic block** is a sequence of consecutive TAC instructions with:
 - Single entry point (first instruction).
@@ -983,6 +1313,17 @@ A **basic block** is a sequence of consecutive TAC instructions with:
 **Flow graph:** Nodes = basic blocks. Edges = control flow between blocks.
 
 ### 5.2 Local Optimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-handwritten.svg" alt="Handwritten: 5.2 Local Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-diagram.svg" alt="Diagram: 5.2 Local Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-2-local-optimization-sticky.svg" alt="Sticky Note: 5.2 Local Optimization" width="30%">
+</a>
+
 
 Optimizations within a single basic block:
 
@@ -995,6 +1336,17 @@ Optimizations within a single basic block:
 | **Common subexpression elimination** | `a = b + c; d = b + c` | `a = b + c; d = a` |
 
 ### 5.3 Global Optimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-handwritten.svg" alt="Handwritten: 5.3 Global Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-diagram.svg" alt="Diagram: 5.3 Global Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-3-global-optimization-sticky.svg" alt="Sticky Note: 5.3 Global Optimization" width="30%">
+</a>
+
 
 #### Loop Optimization
 
@@ -1036,6 +1388,17 @@ Interference: `b, c` interfere with `a, d, e, f`. `a, d` interfere with each oth
 With 3 registers, possible coloring: `R1={b,c,g}, R2={a,d,f}, R3={e}`.
 
 ### 5.4 DAG Representation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-handwritten.svg" alt="Handwritten: 5.4 DAG Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-diagram.svg" alt="Diagram: 5.4 DAG Representation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-4-dag-representation-sticky.svg" alt="Sticky Note: 5.4 DAG Representation" width="30%">
+</a>
+
 
 A **Directed Acyclic Graph (DAG)** for a basic block has:
 - Leaves = identifiers/constants.
@@ -1061,6 +1424,17 @@ The DAG identifies common subexpressions (b + c computed once).
    - Attach `x` to the result node.
 
 ### 5.5 Code Generation from DAG
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-handwritten.svg" alt="Handwritten: 5.5 Code Generation from DAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-diagram.svg" alt="Diagram: 5.5 Code Generation from DAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-5-code-generation-from-dag-sticky.svg" alt="Sticky Note: 5.5 Code Generation from DAG" width="30%">
+</a>
+
 
 1. Traverse DAG in post-order.
 2. For each node, generate code to compute value into a register.
@@ -1079,6 +1453,17 @@ ST   d, R1       ; d = R1
 ```
 
 ### 5.6 Peephole Optimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-handwritten.svg" alt="Handwritten: 5.6 Peephole Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-diagram.svg" alt="Diagram: 5.6 Peephole Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-6-peephole-optimization-sticky.svg" alt="Sticky Note: 5.6 Peephole Optimization" width="30%">
+</a>
+
 
 Examine a small window (peephole) of target instructions for redundant patterns:
 
@@ -1090,6 +1475,17 @@ Examine a small window (peephole) of target instructions for redundant patterns:
 | `MUL R1, #2` | Replace with `ADD R1, R1` |
 
 ### 5.7 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Optimization
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-handwritten.svg" alt="Handwritten: 5.7 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-diagram.svg" alt="Diagram: 5.7 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/5-7-gate-problems-optimization-sticky.svg" alt="Sticky Note: 5.7 GATE Problems Ã¢â‚¬â€�Ã¢â‚¬Â� Optimization" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2016):** The DAG for the code `a = b + c; b = a - d; c = b + c; d = a - d` has how many nodes (excluding leaves)?
 
@@ -1189,6 +1585,17 @@ c = t1 * t1
 ## 6. Summary and Quick Reference
 
 ### Phases of Compiler
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-handwritten.svg" alt="Handwritten: Phases of Compiler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-diagram.svg" alt="Diagram: Phases of Compiler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/phases-of-compiler-sticky.svg" alt="Sticky Note: Phases of Compiler" width="30%">
+</a>
+
 
 ```
 Source Program
@@ -1207,6 +1614,17 @@ Code Generation (target code)
 ```
 
 ### Key Definitions for GATE
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-handwritten.svg" alt="Handwritten: Key Definitions for GATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-diagram.svg" alt="Diagram: Key Definitions for GATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/key-definitions-for-gate-sticky.svg" alt="Sticky Note: Key Definitions for GATE" width="30%">
+</a>
+
 
 | Concept | Definition |
 |---------|------------|
@@ -1222,6 +1640,17 @@ Code Generation (target code)
 | **SSA** | Each variable assigned exactly once |
 
 ### GATE Weightage Trends
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-handwritten.svg" alt="Handwritten: GATE Weightage Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-diagram.svg" alt="Diagram: GATE Weightage Trends" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-weightage-trends-sticky.svg" alt="Sticky Note: GATE Weightage Trends" width="30%">
+</a>
+
 
 | Topic | Approx Weight | Difficulty |
 |-------|--------------|------------|
@@ -1232,6 +1661,17 @@ Code Generation (target code)
 | Code Optimization (DAG, loops) | 2-3 marks | Medium |
 
 ### Answer Key for Practice Problems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-handwritten.svg" alt="Handwritten: Answer Key for Practice Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-diagram.svg" alt="Diagram: Answer Key for Practice Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/answer-key-for-practice-problems-sticky.svg" alt="Sticky Note: Answer Key for Practice Problems" width="30%">
+</a>
+
 
 | Problem | Answer |
 |---------|--------|
@@ -1269,6 +1709,17 @@ Code Generation (target code)
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Lexical Analysis (8 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-handwritten.svg" alt="Handwritten: Lexical Analysis (8 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-diagram.svg" alt="Diagram: Lexical Analysis (8 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-8-problems-sticky.svg" alt="Sticky Note: Lexical Analysis (8 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� Consider the regular expression `R = (a|b)*(aa|bb)(a|b)*`. Which of the following strings is NOT in L(R)?
 
@@ -1335,6 +1786,17 @@ A) `if`   B) `[a-z]+`   C) Error   D) Depends on order
 ---
 
 ### Parsing (15 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-handwritten.svg" alt="Handwritten: Parsing (15 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-diagram.svg" alt="Diagram: Parsing (15 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-15-problems-sticky.svg" alt="Sticky Note: Parsing (15 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� Which of the following grammars is LL(1)?
 
@@ -1536,6 +1998,17 @@ A) 20-30   B) 60-80   C) 120-140   D) 240 (same)
 ---
 
 ### Semantic Analysis (7 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-handwritten.svg" alt="Handwritten: Semantic Analysis (7 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-diagram.svg" alt="Diagram: Semantic Analysis (7 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-7-problems-sticky.svg" alt="Sticky Note: Semantic Analysis (7 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� An SDD uses the rule: `E Ã¢â€ â€™ E1 + T { E.val = E1.val + T.val }`. This attribute is:
 
@@ -1613,6 +2086,17 @@ A) Type error   B) Convert 2 to float Ã¢â€ â€™ 5.14   C) Convert 3.14
 ---
 
 ### Intermediate Code Generation (8 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-handwritten.svg" alt="Handwritten: Intermediate Code Generation (8 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-diagram.svg" alt="Diagram: Intermediate Code Generation (8 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-8-problems-sticky.svg" alt="Sticky Note: Intermediate Code Generation (8 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� The three-address code for `x = a * -b + c` is:
 
@@ -1763,6 +2247,17 @@ L4: (next)
 ---
 
 ### Code Optimization (7 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-handwritten.svg" alt="Handwritten: Code Optimization (7 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-diagram.svg" alt="Diagram: Code Optimization (7 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-7-problems-sticky.svg" alt="Sticky Note: Code Optimization (7 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� Consider the code:
 
@@ -1869,6 +2364,17 @@ A) Adding zero changes nothing   B) The instruction is unused   C) It is a dead 
 ---
 
 ### Code Generation (5 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-handwritten.svg" alt="Handwritten: Code Generation (5 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-diagram.svg" alt="Diagram: Code Generation (5 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-5-problems-sticky.svg" alt="Sticky Note: Code Generation (5 Problems)" width="30%">
+</a>
+
 
 **Problem 1 (GATE 2019)** Ã¢â‚¬â€�Ã¢â‚¬Â� Generate target code for `t = a + b` with registers R1, R2 available:
 
@@ -1930,6 +2436,17 @@ A) 0   B) 1   C) 2   D) 3
 ## Recommended Books & Resources
 
 ### Primary Textbooks
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-handwritten.svg" alt="Handwritten: Primary Textbooks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-diagram.svg" alt="Diagram: Primary Textbooks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/primary-textbooks-sticky.svg" alt="Sticky Note: Primary Textbooks" width="30%">
+</a>
+
 
 | # | Book | Author(s) | Coverage | GATE Relevance |
 |---|------|-----------|----------|----------------|
@@ -1938,6 +2455,17 @@ A) 0   B) 1   C) 2   D) 3
 | 3 | **Modern Compiler Implementation in C/Java/ML** Ã¢â‚¬â€�Ã¢â‚¬Â� The Tiger Book | Appel | Full implementation walk-through with a real language (Tiger). Lex/parse (Ch.2-3), semantic (Ch.4-5), IR (Ch.6-7), optimization (Ch.8-10), code gen (Ch.11) | Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦ Ã¢â‚¬â€�Ã¢â‚¬Â� Good for hands-on understanding but less GATE-focused. |
 
 ### GATE-Specific Resources
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-handwritten.svg" alt="Handwritten: GATE-Specific Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-diagram.svg" alt="Diagram: GATE-Specific Resources" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/gate-specific-resources-sticky.svg" alt="Sticky Note: GATE-Specific Resources" width="30%">
+</a>
+
 
 | # | Resource | Use Case |
 |---|----------|----------|
@@ -1948,6 +2476,17 @@ A) 0   B) 1   C) 2   D) 3
 | 5 | **Gate Overflow / GateOverflow.in** | Community-compiled GATE solutions with discussion. Search by topic/year for alternative approaches. |
 
 ### Chapter-to-Topic Mapping (Dragon Book)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-handwritten.svg" alt="Handwritten: Chapter-to-Topic Mapping (Dragon Book)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-diagram.svg" alt="Diagram: Chapter-to-Topic Mapping (Dragon Book)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/chapter-to-topic-mapping-dragon-book-sticky.svg" alt="Sticky Note: Chapter-to-Topic Mapping (Dragon Book)" width="30%">
+</a>
+
 
 | GATE Topic | Dragon Book Chapter | Key Sections | Practice Problems |
 |------------|-------------------|--------------|-------------------|
@@ -1961,6 +2500,17 @@ A) 0   B) 1   C) 2   D) 3
 | Code Generation | Ch.8 | 8.1-8.3 (issues), 8.6-8.8 (register allocation, peephole) | 8.6.1-8.8.4 |
 
 ### Quick Study Plan for GATE
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-handwritten.svg" alt="Handwritten: Quick Study Plan for GATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-diagram.svg" alt="Diagram: Quick Study Plan for GATE" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/quick-study-plan-for-gate-sticky.svg" alt="Sticky Note: Quick Study Plan for GATE" width="30%">
+</a>
+
 
 | Time | Focus | Activity |
 |------|-------|----------|
@@ -1971,12 +2521,34 @@ A) 0   B) 1   C) 2   D) 3
 | **Week 5** | Mixed Revision | Solve ALL compiler design questions from GATE 2019-2025. |
 
 ### Errata Awareness (Dragon Book 2nd Ed)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-handwritten.svg" alt="Handwritten: Errata Awareness (Dragon Book 2nd Ed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-diagram.svg" alt="Diagram: Errata Awareness (Dragon Book 2nd Ed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/errata-awareness-dragon-book-2nd-ed-sticky.svg" alt="Sticky Note: Errata Awareness (Dragon Book 2nd Ed)" width="30%">
+</a>
+
 
 - **Ch.4.7.4** (LALR parsing): The state-merging algorithm description can be confusing. Supplement with Cooper & Torczon Ch.4.6 for clarity.
 - **Ch.8.5** (DAG construction): The labeling scheme for DAG nodes is occasionally inconsistent across editions. Use the errata page at `dragonbook.stanford.edu` for the latest corrections.
 - **Ch.9.2** (Reaching definitions): The iterative algorithm presentation uses different notation than GATE preferred style. Cross-reference with NPTEL lectures.
 
 ### Online Reference Sheet Ã¢â‚¬â€�Ã¢â‚¬Â� Keep Handy During Revision
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-handwritten.svg" alt="Handwritten: Online Reference Sheet Ã¢â‚¬â€�Ã¢â‚¬Â� Keep Handy During Revision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-diagram.svg" alt="Diagram: Online Reference Sheet Ã¢â‚¬â€�Ã¢â‚¬Â� Keep Handy During Revision" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/online-reference-sheet-keep-handy-during-revision-sticky.svg" alt="Sticky Note: Online Reference Sheet Ã¢â‚¬â€�Ã¢â‚¬Â� Keep Handy During Revision" width="30%">
+</a>
+
 
 ```
 Ã¢â€�â‚¬Ã¢â€�â‚¬Ã¢â€�â‚¬ FAST REFERENCE: COMPILER DESIGN FOR GATE Ã¢â€�â‚¬Ã¢â€�â‚¬Ã¢â€�â‚¬
@@ -2003,6 +2575,17 @@ Code generation:
 ## Additional Previous Year Questions (GATE 2010-2018)
 
 ### Lexical Analysis (Q51Ã¢â‚¬â€�Ã¢â‚¬Å“Q58)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-handwritten.svg" alt="Handwritten: Lexical Analysis (Q51Ã¢â‚¬â€�Ã¢â‚¬Å“Q58)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-diagram.svg" alt="Diagram: Lexical Analysis (Q51Ã¢â‚¬â€�Ã¢â‚¬Å“Q58)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lexical-analysis-q51-q58-sticky.svg" alt="Sticky Note: Lexical Analysis (Q51Ã¢â‚¬â€�Ã¢â‚¬Å“Q58)" width="30%">
+</a>
+
 
 **Q51 (GATE 2010)** Ã¢â‚¬â€�Ã¢â‚¬Â� Which of the following regular expressions represents the set of all strings over alphabet `{0,1}` that have exactly two 1's?
 
@@ -2130,6 +2713,17 @@ How many states remain after minimization?
 ---
 
 ### Parsing (Q59Ã¢â‚¬â€�Ã¢â‚¬Å“Q73)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-handwritten.svg" alt="Handwritten: Parsing (Q59Ã¢â‚¬â€�Ã¢â‚¬Å“Q73)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-diagram.svg" alt="Diagram: Parsing (Q59Ã¢â‚¬â€�Ã¢â‚¬Å“Q73)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/parsing-q59-q73-sticky.svg" alt="Sticky Note: Parsing (Q59Ã¢â‚¬â€�Ã¢â‚¬Å“Q73)" width="30%">
+</a>
+
 
 **Q59 (GATE 2010)** Ã¢â‚¬â€�Ã¢â‚¬Â� Consider the grammar:
 ```
@@ -2425,6 +3019,17 @@ If the CLR(1) automaton has 12 states, how many states would the LALR(1) automat
 ---
 
 ### Semantic Analysis (Q74Ã¢â‚¬â€�Ã¢â‚¬Å“Q80)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-handwritten.svg" alt="Handwritten: Semantic Analysis (Q74Ã¢â‚¬â€�Ã¢â‚¬Å“Q80)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-diagram.svg" alt="Diagram: Semantic Analysis (Q74Ã¢â‚¬â€�Ã¢â‚¬Å“Q80)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/semantic-analysis-q74-q80-sticky.svg" alt="Sticky Note: Semantic Analysis (Q74Ã¢â‚¬â€�Ã¢â‚¬Å“Q80)" width="30%">
+</a>
+
 
 **Q74 (GATE 2010)** Ã¢â‚¬â€�Ã¢â‚¬Â� An SDD is S-attributed if all attributes are:
 
@@ -2538,6 +3143,17 @@ Which of the following SDD rules correctly adds type information to the symbol t
 ---
 
 ### Intermediate Code Generation (Q81Ã¢â‚¬â€�Ã¢â‚¬Å“Q88)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-handwritten.svg" alt="Handwritten: Intermediate Code Generation (Q81Ã¢â‚¬â€�Ã¢â‚¬Å“Q88)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-diagram.svg" alt="Diagram: Intermediate Code Generation (Q81Ã¢â‚¬â€�Ã¢â‚¬Å“Q88)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/intermediate-code-generation-q81-q88-sticky.svg" alt="Sticky Note: Intermediate Code Generation (Q81Ã¢â‚¬â€�Ã¢â‚¬Å“Q88)" width="30%">
+</a>
+
 
 **Q81 (GATE 2010)** Ã¢â‚¬â€�Ã¢â‚¬Â� The three-address code for the expression `a = b * c + d * e` is:
 
@@ -2695,6 +3311,17 @@ That's 6 instructions (goto L1 is implicit at end). Let me count: 1 (if), 2 (sub
 ---
 
 ### Code Optimization (Q89Ã¢â‚¬â€�Ã¢â‚¬Å“Q95)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-handwritten.svg" alt="Handwritten: Code Optimization (Q89Ã¢â‚¬â€�Ã¢â‚¬Å“Q95)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-diagram.svg" alt="Diagram: Code Optimization (Q89Ã¢â‚¬â€�Ã¢â‚¬Å“Q95)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-optimization-q89-q95-sticky.svg" alt="Sticky Note: Code Optimization (Q89Ã¢â‚¬â€�Ã¢â‚¬Å“Q95)" width="30%">
+</a>
+
 
 **Q89 (GATE 2011)** Ã¢â‚¬â€�Ã¢â‚¬Â� Consider the code:
 ```
@@ -2829,6 +3456,17 @@ Max live at any point: 3 registers.
 ---
 
 ### Code Generation (Q96Ã¢â‚¬â€�Ã¢â‚¬Å“Q100)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-handwritten.svg" alt="Handwritten: Code Generation (Q96Ã¢â‚¬â€�Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-diagram.svg" alt="Diagram: Code Generation (Q96Ã¢â‚¬â€�Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/code-generation-q96-q100-sticky.svg" alt="Sticky Note: Code Generation (Q96Ã¢â‚¬â€�Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+
 
 **Q96 (GATE 2011)** Ã¢â‚¬â€�Ã¢â‚¬Â� A register allocator using graph coloring with k registers can allocate registers if:
 
@@ -2905,6 +3543,17 @@ How many instructions can peephole optimization potentially eliminate?
 ## Common Traps, Tricks & Formula Cheat Sheet
 
 ### 15 Common Traps in GATE Compiler Design
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-handwritten.svg" alt="Handwritten: 15 Common Traps in GATE Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-diagram.svg" alt="Diagram: 15 Common Traps in GATE Compiler Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/15-common-traps-in-gate-compiler-design-sticky.svg" alt="Sticky Note: 15 Common Traps in GATE Compiler Design" width="30%">
+</a>
+
 
 **Trap 1: FIRST/FOLLOW Ã¢â‚¬â€�Ã¢â‚¬Â� Including ÃƒÅ½Ã‚Âµ in the wrong place**
 For `A Ã¢â€ â€™ ÃƒÅ½Ã‚Â± | ÃƒÅ½Ã‚Â²`, when computing FIRST(A), include ÃƒÅ½Ã‚Âµ ONLY if ALL of ÃƒÅ½Ã‚Â± and ÃƒÅ½Ã‚Â² can derive ÃƒÅ½Ã‚Âµ independently. Students often skip this check.
@@ -3018,6 +3667,17 @@ Students think chromatic number = number of nodes in the interference graph.
 ---
 
 ### FIRST/FOLLOW Computation Ã¢â‚¬â€�Ã¢â‚¬Â� Quick Algorithm with Example
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-handwritten.svg" alt="Handwritten: FIRST/FOLLOW Computation Ã¢â‚¬â€�Ã¢â‚¬Â� Quick Algorithm with Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-diagram.svg" alt="Diagram: FIRST/FOLLOW Computation Ã¢â‚¬â€�Ã¢â‚¬Â� Quick Algorithm with Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/first-follow-computation-quick-algorithm-with-example-sticky.svg" alt="Sticky Note: FIRST/FOLLOW Computation Ã¢â‚¬â€�Ã¢â‚¬Â� Quick Algorithm with Example" width="30%">
+</a>
+
 
 **FIRST(ÃƒÅ½Ã‚Â±) Algorithm:**
 ```
@@ -3070,6 +3730,17 @@ C Ã¢â€ â€™ c
 ---
 
 ### LR Item Set Construction Ã¢â‚¬â€�Ã¢â‚¬Â� Shortcuts
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-handwritten.svg" alt="Handwritten: LR Item Set Construction Ã¢â‚¬â€�Ã¢â‚¬Â� Shortcuts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-diagram.svg" alt="Diagram: LR Item Set Construction Ã¢â‚¬â€�Ã¢â‚¬Â� Shortcuts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/lr-item-set-construction-shortcuts-sticky.svg" alt="Sticky Note: LR Item Set Construction Ã¢â‚¬â€�Ã¢â‚¬Â� Shortcuts" width="30%">
+</a>
+
 
 **Constructing LR(0) Items:**
 
@@ -3093,6 +3764,17 @@ C Ã¢â€ â€™ c
 ---
 
 ### SDT/SDD Classification Table
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-handwritten.svg" alt="Handwritten: SDT/SDD Classification Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-diagram.svg" alt="Diagram: SDT/SDD Classification Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/sdt-sdd-classification-table-sticky.svg" alt="Sticky Note: SDT/SDD Classification Table" width="30%">
+</a>
+
 
 | Property | S-Attributed | L-Attributed |
 |----------|-------------|--------------|
@@ -3120,6 +3802,17 @@ C Ã¢â€ â€™ c
 ---
 
 ### Three-Address Code Representation Reference
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-handwritten.svg" alt="Handwritten: Three-Address Code Representation Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-diagram.svg" alt="Diagram: Three-Address Code Representation Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/three-address-code-representation-reference-sticky.svg" alt="Sticky Note: Three-Address Code Representation Reference" width="30%">
+</a>
+
 
 | Form | Structure | Example | Advantages |
 |------|-----------|---------|------------|
@@ -3143,6 +3836,17 @@ C Ã¢â€ â€™ c
 ---
 
 ### Optimization Legality Table
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-handwritten.svg" alt="Handwritten: Optimization Legality Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-diagram.svg" alt="Diagram: Optimization Legality Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/03-compiler-design/optimization-legality-table-sticky.svg" alt="Sticky Note: Optimization Legality Table" width="30%">
+</a>
+
 
 | Optimization | Scope | Always Legal? | Condition for Legality |
 |-------------|-------|---------------|----------------------|

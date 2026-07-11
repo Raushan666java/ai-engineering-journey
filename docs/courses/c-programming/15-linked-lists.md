@@ -17,6 +17,17 @@
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Node Structure | Each node contains data and pointer(s) to neighbor(s) | Define as `struct Node { int data; struct Node *next; };` |
@@ -47,9 +58,31 @@ flowchart LR
 
 ### Concept
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+</a>
+
+
 A linked list is a sequence of **nodes** where each node contains data and a pointer to the next node. The structure is **self-referential** — it contains a pointer to an instance of itself.
 
 ### Real-World Analogy: Treasure Hunt
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" alt="Handwritten: Real-World Analogy: Treasure Hunt" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" alt="Diagram: Real-World Analogy: Treasure Hunt" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" alt="Sticky Note: Real-World Analogy: Treasure Hunt" width="30%">
+</a>
+
 
 Imagine a treasure hunt where each clue card has:
 - A **treasure piece** (data)
@@ -58,6 +91,17 @@ Imagine a treasure hunt where each clue card has:
 You start at the first clue card (head). Read the piece of treasure, then follow the location to the next card. The last card says "End" instead of a location (`NULL`). To add a new clue at the beginning, you create a new card that points to what was previously the first card.
 
 ### Structure Definition
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" alt="Handwritten: Structure Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" alt="Diagram: Structure Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" alt="Sticky Note: Structure Definition" width="30%">
+</a>
+
 
 ```c
 /* Self-referential structure: the 'next' member
@@ -69,6 +113,17 @@ typedef struct node {
 ```
 
 ### Memory Layout
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
+</a>
+
 
 ```
 Node (16 bytes on 64-bit)
@@ -86,6 +141,17 @@ Node (16 bytes on 64-bit)
 
 ### Pointer Diagram
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+</a>
+
+
 ```
 head ───→ ┌────┬──────┐    ┌────┬──────┐    ┌────┬──────┐
           │ 10 │  ●───┼───→│ 20 │  ●───┼───→│ 30 │ NULL │
@@ -94,6 +160,17 @@ head ───→ ┌────┬──────┐    ┌────┬�
 
 ### Key Invariant
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" alt="Handwritten: Key Invariant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" alt="Diagram: Key Invariant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" alt="Sticky Note: Key Invariant" width="30%">
+</a>
+
+
 > The `head` pointer must always point to the first node. If `head` is `NULL`, the list is empty. **Never lose the head pointer** — if you lose it, the entire list becomes unreachable (memory leak).
 
 ---
@@ -101,6 +178,17 @@ head ───→ ┌────┬──────┐    ┌────┬�
 ## 15.2 Singly Linked List
 
 ### 15.2.1 Creating a Node
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" alt="Handwritten: 15.2.1 Creating a Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" alt="Diagram: 15.2.1 Creating a Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" alt="Sticky Note: 15.2.1 Creating a Node" width="30%">
+</a>
+
 
 #### Real-World Analogy: Manufacturing a Clue Card
 
@@ -177,6 +265,17 @@ Node *create_node(int value)
 
 ### 15.2.2 Traversal
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" alt="Handwritten: 15.2.2 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" alt="Diagram: 15.2.2 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" alt="Sticky Note: 15.2.2 Traversal" width="30%">
+</a>
+
+
 #### Real-World Analogy: Following the Treasure Hunt
 
 You start at the first clue (head). Read its treasure. Then follow the location pointer to the next clue. Keep going until you reach a clue that says "End" (NULL).
@@ -241,6 +340,17 @@ void print_list(const Node *head)
 ---
 
 ### 15.2.3 Insertion
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" alt="Handwritten: 15.2.3 Insertion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" alt="Diagram: 15.2.3 Insertion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" alt="Sticky Note: 15.2.3 Insertion" width="30%">
+</a>
+
 
 #### A) Insert at Beginning
 
@@ -542,6 +652,17 @@ Result: [10 → 20 → 25 → 30 → NULL]
 
 ### 15.2.4 Deletion
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" alt="Handwritten: 15.2.4 Deletion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" alt="Diagram: 15.2.4 Deletion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" alt="Sticky Note: 15.2.4 Deletion" width="30%">
+</a>
+
+
 #### A) Delete by Value
 
 ##### Real-World Analogy: Removing a Clue from the Trail
@@ -703,6 +824,17 @@ Node *delete_at(Node *head, int position)
 
 ### 15.2.5 Search
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" alt="Handwritten: 15.2.5 Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" alt="Diagram: 15.2.5 Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" alt="Sticky Note: 15.2.5 Search" width="30%">
+</a>
+
+
 #### Real-World Analogy: Looking for a Specific Treasure Value
 
 You walk the treasure trail, reading each clue's value. If you find the value you're looking for, you stop and say "Found it!" If you reach the end (NULL), you say "Not here."
@@ -776,6 +908,17 @@ Node *search_node(Node *head, int target)
 ---
 
 ### 15.2.6 Reverse (Iterative)
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" alt="Handwritten: 15.2.6 Reverse (Iterative)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" alt="Diagram: 15.2.6 Reverse (Iterative)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" alt="Sticky Note: 15.2.6 Reverse (Iterative)" width="30%">
+</a>
+
 
 #### Real-World Analogy: Flipping the Trail Direction
 
@@ -883,6 +1026,17 @@ Node *reverse_iterative(Node *head)
 
 ### 15.2.7 Reverse (Recursive)
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" alt="Handwritten: 15.2.7 Reverse (Recursive)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" alt="Diagram: 15.2.7 Reverse (Recursive)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" alt="Sticky Note: 15.2.7 Reverse (Recursive)" width="30%">
+</a>
+
+
 #### Real-World Analogy: Folding the Trail from the End
 
 You ask the person at the end of the trail to become the new start, then work backward. Each person tells the person behind them "Point to me instead of forward."
@@ -977,6 +1131,17 @@ Node *reverse_recursive(Node *head)
 
 ### 15.2.8 Find Middle (Slow/Fast Pointer)
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" alt="Handwritten: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" alt="Diagram: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" alt="Sticky Note: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+</a>
+
+
 #### Real-World Analogy: Two Runners
 
 You send two runners down the trail. The fast runner takes two steps for every one step the slow runner takes. When the fast runner reaches the end, the slow runner is exactly at the middle.
@@ -1057,6 +1222,17 @@ Node *find_middle(Node *head)
 ---
 
 ### 15.2.9 Detect Loop (Floyd's Cycle Detection)
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" alt="Handwritten: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" alt="Diagram: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" alt="Sticky Note: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+</a>
+
 
 #### Real-World Analogy: Tortoise and Hare on a Circular Track
 
@@ -1156,6 +1332,17 @@ Node *find_loop_start(Node *head)
 ---
 
 ### 15.2.10 Merge Two Sorted Lists
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: 15.2.10 Merge Two Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" alt="Diagram: 15.2.10 Merge Two Sorted Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: 15.2.10 Merge Two Sorted Lists" width="30%">
+</a>
+
 
 #### Real-World Analogy: Merging Two Sorted Decks
 
@@ -1269,6 +1456,17 @@ Node *merge_sorted_iterative(Node *a, Node *b)
 ---
 
 ### 15.2.11 Complete Singly Linked List Driver
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" alt="Handwritten: 15.2.11 Complete Singly Linked List Driver" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" alt="Diagram: 15.2.11 Complete Singly Linked List Driver" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" alt="Sticky Note: 15.2.11 Complete Singly Linked List Driver" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1406,6 +1604,17 @@ Middle: 20
 
 ### Singly Linked List — Operations Summary Table
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" alt="Handwritten: Singly Linked List — Operations Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" alt="Diagram: Singly Linked List — Operations Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" alt="Sticky Note: Singly Linked List — Operations Summary Table" width="30%">
+</a>
+
+
 | Operation | Time | Space | Code Complexity | Key Pointer Change |
 |-----------|------|-------|-----------------|-------------------|
 | Create Node | O(1) | O(1) | Trivial | malloc + assign |
@@ -1429,6 +1638,17 @@ Middle: 20
 
 ### Singly Linked List — Edge Cases Matrix
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" alt="Handwritten: Singly Linked List — Edge Cases Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" alt="Diagram: Singly Linked List — Edge Cases Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" alt="Sticky Note: Singly Linked List — Edge Cases Matrix" width="30%">
+</a>
+
+
 | Operation | Empty List | Single Node | Two Nodes | Duplicates |
 |-----------|-----------|-------------|-----------|------------|
 | Traverse | prints only NULL | works | works | works |
@@ -1446,13 +1666,46 @@ Middle: 20
 
 ### Concept
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+</a>
+
+
 Each node has two pointers: `prev` (previous node) and `next` (next node). This enables bidirectional traversal and O(1) deletion when given a pointer to the node.
 
 ### Real-World Analogy: Two-Way Street
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" alt="Handwritten: Real-World Analogy: Two-Way Street" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" alt="Diagram: Real-World Analogy: Two-Way Street" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" alt="Sticky Note: Real-World Analogy: Two-Way Street" width="30%">
+</a>
+
+
 A doubly linked list is like a street where each house has signs pointing both to the next house AND the previous house. You can walk from start to end OR from end to start.
 
 ### Structure
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
 
 ```c
 typedef struct dnode {
@@ -1464,6 +1717,17 @@ typedef struct dnode {
 
 ### Memory Layout
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
+</a>
+
+
 ```
 DNode (24 bytes on 64-bit)
 ┌──────────┬──────────────┬──────────────┐
@@ -1474,6 +1738,17 @@ DNode (24 bytes on 64-bit)
 
 ### Pointer Diagram
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+</a>
+
+
 ```
 NULL ←──┌────┬─────┬──────┐    ┌────┬─────┬──────┐    ┌────┬──────┬──────┐
         │ 10 │ ●  │  ●───┼───→│ 20 │ ●  │  ●───┼───→│ 30 │ ●   │ NULL │
@@ -1483,6 +1758,17 @@ NULL ←──┌────┬─────┬──────┐    ┌�
 ```
 
 ### 15.3.1 Create Node
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" alt="Handwritten: 15.3.1 Create Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" alt="Diagram: 15.3.1 Create Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" alt="Sticky Note: 15.3.1 Create Node" width="30%">
+</a>
+
 
 ```c
 DNode *create_dnode(int value)
@@ -1498,6 +1784,17 @@ DNode *create_dnode(int value)
 ```
 
 ### 15.3.2 Insert at Beginning
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" alt="Handwritten: 15.3.2 Insert at Beginning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" alt="Diagram: 15.3.2 Insert at Beginning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" alt="Sticky Note: 15.3.2 Insert at Beginning" width="30%">
+</a>
+
 
 #### Numbered Steps
 
@@ -1540,6 +1837,17 @@ Result: [5 &lt;-> 10 <-&gt; 20 &lt;-> NULL]
 
 ### 15.3.3 Insert at End
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" alt="Handwritten: 15.3.3 Insert at End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" alt="Diagram: 15.3.3 Insert at End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" alt="Sticky Note: 15.3.3 Insert at End" width="30%">
+</a>
+
+
 ```c
 DNode *insert_end(DNode *head, int value)
 {
@@ -1564,6 +1872,17 @@ DNode *insert_end(DNode *head, int value)
 ---
 
 ### 15.3.4 Delete Node
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" alt="Handwritten: 15.3.4 Delete Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" alt="Diagram: 15.3.4 Delete Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" alt="Sticky Note: 15.3.4 Delete Node" width="30%">
+</a>
+
 
 #### Real-World Analogy: Removing a House from a Two-Way Street
 
@@ -1674,6 +1993,17 @@ DNode *delete_node(DNode *head, int value)
 
 ### 15.3.5 Forward and Backward Traversal
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" alt="Handwritten: 15.3.5 Forward and Backward Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" alt="Diagram: 15.3.5 Forward and Backward Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" alt="Sticky Note: 15.3.5 Forward and Backward Traversal" width="30%">
+</a>
+
+
 ```c
 void print_forward(const DNode *head)
 {
@@ -1695,6 +2025,17 @@ void print_backward(const DNode *tail)
 ```
 
 ### 15.3.6 Complete Doubly Linked List Example
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" alt="Handwritten: 15.3.6 Complete Doubly Linked List Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" alt="Diagram: 15.3.6 Complete Doubly Linked List Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" alt="Sticky Note: 15.3.6 Complete Doubly Linked List Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1783,13 +2124,46 @@ After deleting 30: 5 <-> 10 <-> 20 <-> 40 <-> NULL
 
 ### Concept
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+</a>
+
+
 In a circular linked list, the last node's `next` pointer points back to the head instead of NULL. There is no natural end — you stop when you return to the head.
 
 ### Real-World Analogy: Roundabout
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout" width="30%">
+</a>
+
+
 Instead of a road that dead-ends, the road curves back to the start. You can keep going around forever. If you want to go around only once, you stop when you see the starting landmark again.
 
 ### Structure
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
 
 Same as singly linked list — only the tail's `next` differs.
 
@@ -1801,6 +2175,17 @@ head ───→ ┌────┬──────┐    ┌────┬�
 ```
 
 ### 15.4.1 Insert at End (Circular Trick)
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" alt="Handwritten: 15.4.1 Insert at End (Circular Trick)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" alt="Diagram: 15.4.1 Insert at End (Circular Trick)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" alt="Sticky Note: 15.4.1 Insert at End (Circular Trick)" width="30%">
+</a>
+
 
 A common trick: insert the new node after head, then swap data with head. The new node becomes the new head, so the "last" insertion order is preserved.
 
@@ -1877,6 +2262,17 @@ Result: [10 → 20 → 30 → (back to 10)]
 
 ### 15.4.2 Traversal
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" alt="Handwritten: 15.4.2 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" alt="Diagram: 15.4.2 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" alt="Sticky Note: 15.4.2 Traversal" width="30%">
+</a>
+
+
 ```c
 void print_circular(const Node *head)
 {
@@ -1897,6 +2293,17 @@ void print_circular(const Node *head)
 **Key**: Uses `do-while` instead of `while` because we need to enter the loop even when cur == head (for the first node).
 
 ### 15.4.3 Complete Example
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" alt="Handwritten: 15.4.3 Complete Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" alt="Diagram: 15.4.3 Complete Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" alt="Sticky Note: 15.4.3 Complete Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1961,6 +2368,17 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Insert at end (no tail ptr) | O(n) | Must traverse to find last node |
@@ -1969,6 +2387,17 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 | Delete by value | O(n) | Must find the node and its predecessor |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Empty list**: Check `head == NULL` before any operation.
 - **Single node**: The node points to itself (`n->next = n`). Traverse: do-while runs once.
@@ -1980,13 +2409,46 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 
 ### Concept
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+</a>
+
+
 Combines doubly linked list with circular linking. Head's `prev` points to the tail. Tail's `next` points to the head.
 
 ### Real-World Analogy: Roundabout with Two-Way Traffic
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+</a>
+
+
 A circular road where each house has signs pointing both to the previous and next house, AND the road itself loops. You can go forward or backward and never hit a dead end.
 
 ### Structure
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
 
 ```c
 typedef struct cdnode {
@@ -1997,6 +2459,17 @@ typedef struct cdnode {
 ```
 
 ### Pointer Diagram
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+</a>
+
 
 ```
        ┌────────────────────────────────────────┐
@@ -2010,6 +2483,17 @@ typedef struct cdnode {
 ```
 
 ### 15.5.1 Create Node
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" alt="Handwritten: 15.5.1 Create Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" alt="Diagram: 15.5.1 Create Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" alt="Sticky Note: 15.5.1 Create Node" width="30%">
+</a>
+
 
 ```c
 CDNode *create_cdnode(int value)
@@ -2025,6 +2509,17 @@ CDNode *create_cdnode(int value)
 ```
 
 ### 15.5.2 Insert at End
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" alt="Handwritten: 15.5.2 Insert at End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" alt="Diagram: 15.5.2 Insert at End" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" alt="Sticky Note: 15.5.2 Insert at End" width="30%">
+</a>
+
 
 ```c
 CDNode *insert_end(CDNode *head, int value)
@@ -2051,6 +2546,17 @@ CDNode *insert_end(CDNode *head, int value)
 | Insert at beginning | O(1) | Standard head insertion |
 
 ### 15.5.3 Delete Node
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" alt="Handwritten: 15.5.3 Delete Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" alt="Diagram: 15.5.3 Delete Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" alt="Sticky Note: 15.5.3 Delete Node" width="30%">
+</a>
+
 
 ```c
 CDNode *delete_node(CDNode *head, int value)
@@ -2084,6 +2590,17 @@ CDNode *delete_node(CDNode *head, int value)
 
 ### 15.5.4 Traversal
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" alt="Handwritten: 15.5.4 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" alt="Diagram: 15.5.4 Traversal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" alt="Sticky Note: 15.5.4 Traversal" width="30%">
+</a>
+
+
 ```c
 void print_forward(const CDNode *head)
 {
@@ -2109,6 +2626,17 @@ void print_backward(const CDNode *head)
 ```
 
 ### 15.5.5 Complete Example
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" alt="Handwritten: 15.5.5 Complete Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" alt="Diagram: 15.5.5 Complete Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" alt="Sticky Note: 15.5.5 Complete Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2186,6 +2714,17 @@ Head->prev (tail) data: 30
 
 ### When to Use Which
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
+</a>
+
+
 | Use Case | Best Type | Why |
 |----------|-----------|-----|
 | Stack | Singly | LIFO — only need head operations |
@@ -2219,6 +2758,17 @@ Head->prev (tail) data: 30
 
 ### When to Choose Array
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" alt="Handwritten: When to Choose Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" alt="Diagram: When to Choose Array" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" alt="Sticky Note: When to Choose Array" width="30%">
+</a>
+
+
 - **Random access needed**: You need `arr[i]` frequently.
 - **Cache-sensitive**: Tight loops over contiguous data are 10-100x faster.
 - **Fixed size known**: Number of elements won't change much.
@@ -2227,6 +2777,17 @@ Head->prev (tail) data: 30
 
 ### When to Choose Linked List
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" alt="Handwritten: When to Choose Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" alt="Diagram: When to Choose Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" alt="Sticky Note: When to Choose Linked List" width="30%">
+</a>
+
+
 - **Frequent insert/delete at front**: O(1) vs O(n) for array shift.
 - **Unknown size**: Can grow and shrink naturally.
 - **No random access needed**: Sequential processing only.
@@ -2234,6 +2795,17 @@ Head->prev (tail) data: 30
 - **Multiple data structures share nodes**: E.g., a node in both a list and a queue.
 
 ### Memory Visualization
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" alt="Handwritten: Memory Visualization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" alt="Diagram: Memory Visualization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" alt="Sticky Note: Memory Visualization" width="30%">
+</a>
+
 
 ```
 Array in memory (contiguous):
@@ -2264,9 +2836,31 @@ The array reads all 5 elements in ONE cache line (typically 64 bytes).
 
 ### Mathematical Intuition
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
+</a>
+
+
 Floyd's algorithm works because of modular arithmetic. In a list with a cycle of length L, the slow pointer moves 1 step at a time while the fast moves 2 steps. The fast pointer gains on the slow by 1 step per iteration. After k steps, the distance between them modulo L decreases by 1 each step. They MUST meet within L steps.
 
 ### Detailed Trace
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" alt="Handwritten: Detailed Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" alt="Diagram: Detailed Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" alt="Sticky Note: Detailed Trace" width="30%">
+</a>
+
 
 Consider: `1 → 2 → 3 → 4 → 5 → 6 → 3` (cycle starts at 3, length 4)
 
@@ -2288,6 +2882,17 @@ Distance reduces by 1 each step modulo the cycle length. When it hits 0, they're
 
 ### Finding the Start of the Cycle (Proof)
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" alt="Handwritten: Finding the Start of the Cycle (Proof)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" alt="Diagram: Finding the Start of the Cycle (Proof)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" alt="Sticky Note: Finding the Start of the Cycle (Proof)" width="30%">
+</a>
+
+
 After meeting at node M, we reset slow to head. Both pointers now move 1 step at a time.
 
 Let D = distance from head to cycle start.
@@ -2307,6 +2912,17 @@ When slow starts from head and fast from M, both at 1 step:
 They meet at the cycle start. QED.
 
 ### C Code
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" alt="Handwritten: C Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" alt="Diagram: C Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" alt="Sticky Note: C Code" width="30%">
+</a>
+
 
 ```c
 Node *detect_cycle(Node *head)
@@ -2335,6 +2951,17 @@ Node *find_cycle_start(Node *head)
 
 ### Complexity Proof
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" alt="Handwritten: Complexity Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" alt="Diagram: Complexity Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" alt="Sticky Note: Complexity Proof" width="30%">
+</a>
+
+
 | Metric | Value | Proof |
 |--------|-------|-------|
 | Time to detect | O(n) | Fast completes at most 2 full list traversals before meeting |
@@ -2342,6 +2969,17 @@ Node *find_cycle_start(Node *head)
 | Time to find start | O(n) | Additional linear walk from head to cycle start |
 
 ### Edge Cases for Floyd
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" alt="Handwritten: Edge Cases for Floyd" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" alt="Diagram: Edge Cases for Floyd" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" alt="Sticky Note: Edge Cases for Floyd" width="30%">
+</a>
+
 
 - **No cycle**: Fast reaches NULL — detect returns NULL.
 - **Full list is a cycle**: tail→head. Still detected. Start is head.
@@ -2353,6 +2991,17 @@ Node *find_cycle_start(Node *head)
 ## 15.9 Reverse — Iterative vs Recursive Deep Dive
 
 ### Iterative Reverse (Three-Pointer Technique)
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" alt="Handwritten: Iterative Reverse (Three-Pointer Technique)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" alt="Diagram: Iterative Reverse (Three-Pointer Technique)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" alt="Sticky Note: Iterative Reverse (Three-Pointer Technique)" width="30%">
+</a>
+
 
 **The idea**: Walk through the list with three pointers (`prev`, `current`, `next`). For each node, make it point backward instead of forward.
 
@@ -2387,6 +3036,17 @@ Return prev — D is new head.
 
 ### Recursive Reverse
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" alt="Handwritten: Recursive Reverse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" alt="Diagram: Recursive Reverse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" alt="Sticky Note: Recursive Reverse" width="30%">
+</a>
+
+
 **The idea**: Recurse to the last node, then on the way back, make each node's next node point to it.
 
 **Execution trace** on [A → B → C → D → NULL]:
@@ -2416,6 +3076,17 @@ Result: D → C → B → A → NULL
 
 ### Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+</a>
+
+
 | Criteria | Iterative | Recursive |
 |----------|-----------|-----------|
 | Code complexity | 5 lines (clear, no magic) | 4 lines (magic feeling) |
@@ -2433,6 +3104,17 @@ Result: D → C → B → A → NULL
 ## 15.10 Interview Corner
 
 ### Frequently Asked Linked List Questions
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" alt="Handwritten: Frequently Asked Linked List Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" alt="Diagram: Frequently Asked Linked List Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" alt="Sticky Note: Frequently Asked Linked List Questions" width="30%">
+</a>
+
 
 **Q1: Why are linked lists used when arrays are faster for access?**
 
@@ -2456,6 +3138,17 @@ Given a pointer to the node (not just the value), you can access the previous no
 
 ### Common Mistakes to Avoid
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Common Mistakes to Avoid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" alt="Diagram: Common Mistakes to Avoid" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Common Mistakes to Avoid" width="30%">
+</a>
+
+
 | Mistake | Consequence | Fix |
 |---------|-------------|-----|
 | Modifying head directly during traversal | Lose the entire list | Use a temp pointer for traversal |
@@ -2468,6 +3161,17 @@ Given a pointer to the node (not just the value), you can access the previous no
 | Stack overflow in recursive reverse | Crash on large lists | Use iterative for large lists |
 
 ### Whiteboard Checklist
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" alt="Handwritten: Whiteboard Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" alt="Diagram: Whiteboard Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" alt="Sticky Note: Whiteboard Checklist" width="30%">
+</a>
+
 
 When implementing any linked list operation on a whiteboard:
 
@@ -2485,6 +3189,17 @@ When implementing any linked list operation on a whiteboard:
 
 ### Operating Systems
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
+</a>
+
+
 | Application | List Type | Why |
 |-------------|-----------|-----|
 | Process scheduler (round-robin) | Circular | Each process gets a time slice; loop back to first |
@@ -2493,6 +3208,17 @@ When implementing any linked list operation on a whiteboard:
 | Task queue in kernel | Singly + tail | FIFO task dispatch |
 
 ### Programming Languages and Runtimes
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" alt="Handwritten: Programming Languages and Runtimes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" alt="Diagram: Programming Languages and Runtimes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" alt="Sticky Note: Programming Languages and Runtimes" width="30%">
+</a>
+
 
 | Application | List Type | Why |
 |-------------|-----------|-----|
@@ -2503,6 +3229,17 @@ When implementing any linked list operation on a whiteboard:
 
 ### Networking
 
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" alt="Handwritten: Networking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" alt="Diagram: Networking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" alt="Sticky Note: Networking" width="30%">
+</a>
+
+
 | Application | List Type | Why |
 |-------------|-----------|-----|
 | Router packet buffer | Singly + tail | FIFO queue of packets to forward |
@@ -2511,6 +3248,17 @@ When implementing any linked list operation on a whiteboard:
 | Connection pool | Singly | Simple list of available connections |
 
 ### Real-World Libraries
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" alt="Handwritten: Real-World Libraries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" alt="Diagram: Real-World Libraries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" alt="Sticky Note: Real-World Libraries" width="30%">
+</a>
+
 
 | Library / Component | Usage |
 |---------------------|-------|
@@ -2521,6 +3269,17 @@ When implementing any linked list operation on a whiteboard:
 | **Redis quicklist** | Doubly linked list of ziplists (compressed lists of nodes) for memory-efficient list storage. |
 
 ### Music Player Example
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" alt="Handwritten: Music Player Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" alt="Diagram: Music Player Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" alt="Sticky Note: Music Player Example" width="30%">
+</a>
+
 
 A music player with repeat mode uses a **circular doubly linked list**:
 - `next` → skip to next song (forward)
@@ -2725,6 +3484,17 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
 12. **Even-odd split**: Write `void split_alternate(Node *head, Node **even, Node **odd)` — separate even and odd position nodes into two lists.
 
 ### Challenge Problem: Polynomial Using Linked List
+
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" alt="Handwritten: Challenge Problem: Polynomial Using Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" alt="Diagram: Challenge Problem: Polynomial Using Linked List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" alt="Sticky Note: Challenge Problem: Polynomial Using Linked List" width="30%">
+</a>
+
 
 Implement a **polynomial** using a linked list where each node stores a coefficient and an exponent. Provide:
 

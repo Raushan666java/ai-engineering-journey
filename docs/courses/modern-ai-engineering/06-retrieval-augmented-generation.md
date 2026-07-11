@@ -22,6 +22,17 @@ Retrieval-Augmented Generation (RAG) combines a retrieval system with a generati
 
 ### 6.1.1 When RAG Beats Pure Prompting
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-handwritten.svg" alt="Handwritten: 6.1.1 When RAG Beats Pure Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-diagram.svg" alt="Diagram: 6.1.1 When RAG Beats Pure Prompting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-1-when-rag-beats-pure-prompting-sticky.svg" alt="Sticky Note: 6.1.1 When RAG Beats Pure Prompting" width="30%">
+</a>
+
+
 Pure prompting (providing all context in the prompt) has fundamental limitations:
 - **Context window size:** Most models have 4K-200K token context windows. Large knowledge bases cannot fit.
 - **Cost:** Longer prompts cost more in API calls and latency.
@@ -36,6 +47,17 @@ RAG is the preferred approach when:
 - The system needs to cite specific sources.
 
 ### 6.1.2 The RAG Pipeline
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-handwritten.svg" alt="Handwritten: 6.1.2 The RAG Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-diagram.svg" alt="Diagram: 6.1.2 The RAG Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-1-2-the-rag-pipeline-sticky.svg" alt="Sticky Note: 6.1.2 The RAG Pipeline" width="30%">
+</a>
+
 
 The standard RAG pipeline has three stages:
 
@@ -85,12 +107,34 @@ Chunking divides documents into retrievable units. The chunking strategy directl
 
 ### 6.2.1 Fixed-Size with Overlap
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-handwritten.svg" alt="Handwritten: 6.2.1 Fixed-Size with Overlap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-diagram.svg" alt="Diagram: 6.2.1 Fixed-Size with Overlap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-1-fixed-size-with-overlap-sticky.svg" alt="Sticky Note: 6.2.1 Fixed-Size with Overlap" width="30%">
+</a>
+
+
 The simplest strategy: split text into chunks of a fixed number of tokens (e.g., 512) with overlap (e.g., 128 tokens). Overlap ensures that sentences or concepts spanning chunk boundaries are not lost.
 
 **Pros:** Simple, deterministic, fast to compute.
 **Cons:** Splits mid-sentence, loses document structure, ignores semantic boundaries.
 
 ### 6.2.2 Semantic Chunking
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-handwritten.svg" alt="Handwritten: 6.2.2 Semantic Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-diagram.svg" alt="Diagram: 6.2.2 Semantic Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-2-semantic-chunking-sticky.svg" alt="Sticky Note: 6.2.2 Semantic Chunking" width="30%">
+</a>
+
 
 Semantic chunking uses embedding similarity to detect topic boundaries. Text is split at points where the semantic shift between adjacent sentences exceeds a threshold.
 
@@ -105,6 +149,17 @@ Semantic chunking uses embedding similarity to detect topic boundaries. Text is 
 
 ### 6.2.3 Recursive Splitting
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-handwritten.svg" alt="Handwritten: 6.2.3 Recursive Splitting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-diagram.svg" alt="Diagram: 6.2.3 Recursive Splitting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-3-recursive-splitting-sticky.svg" alt="Sticky Note: 6.2.3 Recursive Splitting" width="30%">
+</a>
+
+
 Recursive splitting applies increasingly fine-grained separators in order: paragraphs, sentences, clauses. If a chunk exceeds the maximum size, it is split at the next separator level.
 
 **Pros:** Respects document structure, produces natural break points.
@@ -112,12 +167,34 @@ Recursive splitting applies increasingly fine-grained separators in order: parag
 
 ### 6.2.4 Document-Aware Chunking
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-handwritten.svg" alt="Handwritten: 6.2.4 Document-Aware Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-diagram.svg" alt="Diagram: 6.2.4 Document-Aware Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-4-document-aware-chunking-sticky.svg" alt="Sticky Note: 6.2.4 Document-Aware Chunking" width="30%">
+</a>
+
+
 Document-aware chunking leverages document structure - headings, sections, tables, code blocks, and metadata. Chunks preserve structural context. Metadata is prepended to each chunk.
 
 **Pros:** Best for structured documents, preserves hierarchy, enables precise citation.
 **Cons:** Requires document parsing, format-specific.
 
 ### 6.2.5 Chunking Strategy Comparison
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-handwritten.svg" alt="Handwritten: 6.2.5 Chunking Strategy Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-diagram.svg" alt="Diagram: 6.2.5 Chunking Strategy Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-2-5-chunking-strategy-comparison-sticky.svg" alt="Sticky Note: 6.2.5 Chunking Strategy Comparison" width="30%">
+</a>
+
 
 | Strategy | Coherence | Precision | Speed | Best For |
 |----------|-----------|-----------|-------|----------|
@@ -134,6 +211,17 @@ Embedding models convert text into dense vector representations. The quality of 
 
 ### 6.3.1 OpenAI Embeddings
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-handwritten.svg" alt="Handwritten: 6.3.1 OpenAI Embeddings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-diagram.svg" alt="Diagram: 6.3.1 OpenAI Embeddings" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-1-openai-embeddings-sticky.svg" alt="Sticky Note: 6.3.1 OpenAI Embeddings" width="30%">
+</a>
+
+
 **text-embedding-3-small:** 1536 dimensions, optimized for speed and cost. Suitable for high-throughput applications.
 
 **text-embedding-3-large:** 3072 dimensions, highest accuracy. Can be truncated to 256 dimensions with minimal quality loss.
@@ -142,6 +230,17 @@ Embedding models convert text into dense vector representations. The quality of 
 
 ### 6.3.2 Embedding Quality Dimensions
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-handwritten.svg" alt="Handwritten: 6.3.2 Embedding Quality Dimensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-diagram.svg" alt="Diagram: 6.3.2 Embedding Quality Dimensions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-2-embedding-quality-dimensions-sticky.svg" alt="Sticky Note: 6.3.2 Embedding Quality Dimensions" width="30%">
+</a>
+
+
 - **Semantic similarity:** Do similar texts have similar embeddings?
 - **Cross-task generalization:** Does the model perform well across retrieval, clustering, classification?
 - **Language coverage:** How many languages does the model support?
@@ -149,6 +248,17 @@ Embedding models convert text into dense vector representations. The quality of 
 - **Dimensionality:** Higher dimensions capture more information but increase storage and search costs.
 
 ### 6.3.3 MTEB Benchmark
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-handwritten.svg" alt="Handwritten: 6.3.3 MTEB Benchmark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-diagram.svg" alt="Diagram: 6.3.3 MTEB Benchmark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-3-3-mteb-benchmark-sticky.svg" alt="Sticky Note: 6.3.3 MTEB Benchmark" width="30%">
+</a>
+
 
 The Massive Text Embedding Benchmark (MTEB) evaluates embedding models across 8 task types and 58 datasets:
 
@@ -170,12 +280,34 @@ Top models on MTEB (as of 2025): intfloat/e5-mistral-7b-instruct, BAAI/bge-large
 
 ### 6.4.1 Dense Retrieval
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-handwritten.svg" alt="Handwritten: 6.4.1 Dense Retrieval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-diagram.svg" alt="Diagram: 6.4.1 Dense Retrieval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-1-dense-retrieval-sticky.svg" alt="Sticky Note: 6.4.1 Dense Retrieval" width="30%">
+</a>
+
+
 Dense retrieval uses embedding models to represent both queries and documents as vectors. Search is performed by cosine similarity or dot product in vector space.
 
 **Strengths:** Captures semantic similarity, handles synonyms and paraphrasing.
 **Weaknesses:** Computationally expensive at scale, requires ANN indexing (HNSW, IVF), may miss exact keyword matches.
 
 ### 6.4.2 Sparse Retrieval (BM25)
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-handwritten.svg" alt="Handwritten: 6.4.2 Sparse Retrieval (BM25)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-diagram.svg" alt="Diagram: 6.4.2 Sparse Retrieval (BM25)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-2-sparse-retrieval-bm25-sticky.svg" alt="Sticky Note: 6.4.2 Sparse Retrieval (BM25)" width="30%">
+</a>
+
 
 BM25 is a bag-of-words retrieval algorithm that scores documents based on term frequency and inverse document frequency. It uses exact keyword matching.
 
@@ -184,6 +316,17 @@ BM25 is a bag-of-words retrieval algorithm that scores documents based on term f
 
 ### 6.4.3 Hybrid Retrieval
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-handwritten.svg" alt="Handwritten: 6.4.3 Hybrid Retrieval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-diagram.svg" alt="Diagram: 6.4.3 Hybrid Retrieval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-3-hybrid-retrieval-sticky.svg" alt="Sticky Note: 6.4.3 Hybrid Retrieval" width="30%">
+</a>
+
+
 Hybrid retrieval combines dense and sparse scores, typically with weighted reciprocal rank fusion (RRF). RRF normalizes scores from different systems before combining:
 
 RRF_score(d) = 1 / (k + rank_dense(d)) + 1 / (k + rank_sparse(d))
@@ -191,6 +334,17 @@ RRF_score(d) = 1 / (k + rank_dense(d)) + 1 / (k + rank_sparse(d))
 Hybrid retrieval consistently outperforms either method alone, especially for queries requiring both semantic understanding and exact term matching.
 
 ### 6.4.4 Re-Ranking
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-handwritten.svg" alt="Handwritten: 6.4.4 Re-Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-diagram.svg" alt="Diagram: 6.4.4 Re-Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-4-4-re-ranking-sticky.svg" alt="Sticky Note: 6.4.4 Re-Ranking" width="30%">
+</a>
+
 
 After initial retrieval (top-100 to top-1000), a cross-encoder re-ranker scores each retrieved document against the query. Cross-encoders are slower but more accurate than bi-encoders because they process query and document together through attention.
 
@@ -250,6 +404,17 @@ After retrieving relevant chunks, the system must combine them with the query in
 
 ### 6.5.1 Concatenation
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-handwritten.svg" alt="Handwritten: 6.5.1 Concatenation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-diagram.svg" alt="Diagram: 6.5.1 Concatenation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-1-concatenation-sticky.svg" alt="Sticky Note: 6.5.1 Concatenation" width="30%">
+</a>
+
+
 The simplest approach: concatenate all retrieved chunks into the prompt, separated by delimiters, with the query appended or prepended.
 
 **Pros:** Simple, preserves full information.
@@ -257,12 +422,34 @@ The simplest approach: concatenate all retrieved chunks into the prompt, separat
 
 ### 6.5.2 Summarization
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-handwritten.svg" alt="Handwritten: 6.5.2 Summarization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-diagram.svg" alt="Diagram: 6.5.2 Summarization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-2-summarization-sticky.svg" alt="Sticky Note: 6.5.2 Summarization" width="30%">
+</a>
+
+
 When the context is too large, summarize each chunk before concatenation. A smaller, faster model can summarize chunks in parallel, then the main LLM generates from the summaries.
 
 **Pros:** Reduces token usage, extracts key information.
 **Cons:** Summarization may lose detail, potential information loss.
 
 ### 6.5.3 Conditional Fusion
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-handwritten.svg" alt="Handwritten: 6.5.3 Conditional Fusion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-diagram.svg" alt="Diagram: 6.5.3 Conditional Fusion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-3-conditional-fusion-sticky.svg" alt="Sticky Note: 6.5.3 Conditional Fusion" width="30%">
+</a>
+
 
 Conditional fusion selects a synthesis strategy based on query characteristics:
 
@@ -272,6 +459,17 @@ Conditional fusion selects a synthesis strategy based on query characteristics:
 - **Aggregation queries:** Pass all chunks and ask for a summary.
 
 ### 6.5.4 Multi-Source Synthesis
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-handwritten.svg" alt="Handwritten: 6.5.4 Multi-Source Synthesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-diagram.svg" alt="Diagram: 6.5.4 Multi-Source Synthesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-5-4-multi-source-synthesis-sticky.svg" alt="Sticky Note: 6.5.4 Multi-Source Synthesis" width="30%">
+</a>
+
 
 When chunks come from different sources (web pages, PDFs, databases, APIs), include source metadata in the prompt. This enables the model to differentiate and cite sources, improving traceability and trust.
 
@@ -283,11 +481,33 @@ RAG evaluation requires specialized metrics beyond standard text generation metr
 
 ### 6.6.1 Faithfulness
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-handwritten.svg" alt="Handwritten: 6.6.1 Faithfulness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-diagram.svg" alt="Diagram: 6.6.1 Faithfulness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-1-faithfulness-sticky.svg" alt="Sticky Note: 6.6.1 Faithfulness" width="30%">
+</a>
+
+
 Faithfulness measures whether the generated response is factually supported by the retrieved context. This is distinct from factual accuracy in general - the response may be factually correct but unsupported by the provided context.
 
 **Evaluation approach:** Decompose the response into atomic claims. For each claim, verify whether it is supported by the retrieved chunks.
 
 ### 6.6.2 Answer Relevance
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-handwritten.svg" alt="Handwritten: 6.6.2 Answer Relevance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-diagram.svg" alt="Diagram: 6.6.2 Answer Relevance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-2-answer-relevance-sticky.svg" alt="Sticky Note: 6.6.2 Answer Relevance" width="30%">
+</a>
+
 
 Answer relevance measures whether the response addresses the user's query. An irrelevant response may be factually correct but off-topic.
 
@@ -295,11 +515,33 @@ Answer relevance measures whether the response addresses the user's query. An ir
 
 ### 6.6.3 Context Relevance
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-handwritten.svg" alt="Handwritten: 6.6.3 Context Relevance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-diagram.svg" alt="Diagram: 6.6.3 Context Relevance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-3-context-relevance-sticky.svg" alt="Sticky Note: 6.6.3 Context Relevance" width="30%">
+</a>
+
+
 Context relevance measures whether the retrieved chunks are relevant to the query. Irrelevant context not only wastes context window but may distract the model.
 
 **Evaluation approach:** Compute the percentage of retrieved chunks that are actually relevant to answering the query.
 
 ### 6.6.4 Retrieval Metrics
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-handwritten.svg" alt="Handwritten: 6.6.4 Retrieval Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-diagram.svg" alt="Diagram: 6.6.4 Retrieval Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-6-4-retrieval-metrics-sticky.svg" alt="Sticky Note: 6.6.4 Retrieval Metrics" width="30%">
+</a>
+
 
 **Hit Rate (Recall@k):** The proportion of queries for which at least one relevant document is in the top-k results.
 
@@ -369,11 +611,33 @@ flowchart LR
 
 ### 6.7.1 Self-RAG
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-handwritten.svg" alt="Handwritten: 6.7.1 Self-RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-diagram.svg" alt="Diagram: 6.7.1 Self-RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-1-self-rag-sticky.svg" alt="Sticky Note: 6.7.1 Self-RAG" width="30%">
+</a>
+
+
 Self-RAG introduces an internal reflection step where the model retrieves documents on demand, evaluates their relevance, and decides whether to use them. The model generates reflection tokens that signal retrieval need, relevance, and support level.
 
 **When to use:** Open-domain Q&A where retrieval is not always needed. Self-RAG can skip retrieval for simple questions, saving cost and latency.
 
 ### 6.7.2 HyDE (Hypothetical Document Embeddings)
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-handwritten.svg" alt="Handwritten: 6.7.2 HyDE (Hypothetical Document Embeddings)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-diagram.svg" alt="Diagram: 6.7.2 HyDE (Hypothetical Document Embeddings)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-2-hyde-hypothetical-document-embeddings-sticky.svg" alt="Sticky Note: 6.7.2 HyDE (Hypothetical Document Embeddings)" width="30%">
+</a>
+
 
 HyDE generates a hypothetical document that answers the query, then uses that document's embedding for retrieval. The intuition: embeddings of ideal answer documents are closer to relevant documents in vector space than the query itself.
 
@@ -386,11 +650,33 @@ HyDE generates a hypothetical document that answers the query, then uses that do
 
 ### 6.7.3 Agentic RAG
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-handwritten.svg" alt="Handwritten: 6.7.3 Agentic RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-diagram.svg" alt="Diagram: 6.7.3 Agentic RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-3-agentic-rag-sticky.svg" alt="Sticky Note: 6.7.3 Agentic RAG" width="30%">
+</a>
+
+
 Agentic RAG uses an LLM agent to plan and execute multi-step retrieval strategies. The agent can decide to reformulate the query, retrieve from different sources, perform iterative retrieval with feedback, or combine results from multiple search steps.
 
 **When to use:** Complex research questions requiring multiple rounds of retrieval and synthesis.
 
 ### 6.7.4 Multi-Hop RAG
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-handwritten.svg" alt="Handwritten: 6.7.4 Multi-Hop RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-diagram.svg" alt="Diagram: 6.7.4 Multi-Hop RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-4-multi-hop-rag-sticky.svg" alt="Sticky Note: 6.7.4 Multi-Hop RAG" width="30%">
+</a>
+
 
 Multi-hop RAG answers questions that require information from multiple documents connected through intermediate entities.
 
@@ -402,9 +688,31 @@ Multi-hop RAG routes each sub-question to the appropriate retriever and chains t
 
 ### 6.7.5 Graph RAG
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-handwritten.svg" alt="Handwritten: 6.7.5 Graph RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-diagram.svg" alt="Diagram: 6.7.5 Graph RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-5-graph-rag-sticky.svg" alt="Sticky Note: 6.7.5 Graph RAG" width="30%">
+</a>
+
+
 Graph RAG constructs a knowledge graph from documents, with entities as nodes and relationships as edges. Retrieval traverses the graph to find relevant information, capturing connections that vector similarity alone would miss.
 
 ### 6.7.6 Pattern Comparison Table
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-handwritten.svg" alt="Handwritten: 6.7.6 Pattern Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-diagram.svg" alt="Diagram: 6.7.6 Pattern Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/6-7-6-pattern-comparison-table-sticky.svg" alt="Sticky Note: 6.7.6 Pattern Comparison Table" width="30%">
+</a>
+
 
 | Pattern | Strengths | Weaknesses | Use Case |
 |---------|-----------|------------|----------|
@@ -419,6 +727,17 @@ Graph RAG constructs a knowledge graph from documents, with entities as nodes an
 ## TypeScript Implementation
 
 ### RAGPipeline Class
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-handwritten.svg" alt="Handwritten: RAGPipeline Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-diagram.svg" alt="Diagram: RAGPipeline Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragpipeline-class-sticky.svg" alt="Sticky Note: RAGPipeline Class" width="30%">
+</a>
+
 
 The RAGPipeline class implements the complete RAG pipeline: chunking, embedding, retrieval, and response synthesis with source citation.
 
@@ -794,6 +1113,17 @@ class RAGPipeline {
 }
 ### RAGEvaluator Class
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-handwritten.svg" alt="Handwritten: RAGEvaluator Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-diagram.svg" alt="Diagram: RAGEvaluator Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/ragevaluator-class-sticky.svg" alt="Sticky Note: RAGEvaluator Class" width="30%">
+</a>
+
+
 The RAGEvaluator class computes faithfulness, relevance, hit rate, MRR, and NDCG for RAG systems.
 
 ```typescript
@@ -984,6 +1314,17 @@ D) The generation model requires few-shot examples
 ---
 
 ### Answer Key
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/06-retrieval-augmented-generation/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+</a>
+
 
 | Question | Answer |
 |----------|--------|

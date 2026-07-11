@@ -38,17 +38,61 @@ flowchart LR
 
 ### Q1: What are the core data models in an EdTech platform, and how do they relate?
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" alt="Handwritten: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" alt="Diagram: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" alt="Sticky Note: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+</a>
+
+
 The five core models are **Student**, **Course**, **Enrollment**, **Assessment**, and **Grade**. A `Student` belongs to a `User` and has `enrollments()` and `grades()` has-many relationships. `Course` has `enrollments()` and `assessments()` has-many. `Enrollment` is the pivot linking `Student` and `Course` with semester, status, and waitlist-position fields. `Assessment` belongs to `Course` and stores questions, rubric, and adaptive-flag. `Grade` belongs to both `Student` and `Assessment` and holds the score, letter grade, feedback, and AI grading metadata. This relational spine supports every academic workflow from enrollment through assessment.
 
 ### Q2: How do you model academic terms, semesters, and academic years in a relational database?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" alt="Handwritten: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" alt="Diagram: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" alt="Sticky Note: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+</a>
+
 
 Create a `semesters` table with `id`, `name` (e.g., "Fall 2025"), `start_date`, `end_date`, and `is_current` boolean. The `enrollments` table references `semester_id` as a foreign key rather than storing a string. This lets you query current-term enrollments efficiently, archive past terms, and run term-based reports without string parsing. Add `academic_years` if you need multi-semester groupings → a year has-many semesters.
 
 ### Q3: What is a learning management system (LMS) from a developer's perspective?
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" alt="Handwritten: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" alt="Diagram: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" alt="Sticky Note: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+</a>
+
+
 An LMS is a centralized platform that manages the lifecycle of learning: course authoring, content delivery, student enrollment, assessment administration, grade tracking, and reporting. From a Laravel perspective, it maps to a set of Eloquent models with `BelongsTo`/`HasMany` relationships, event-driven workflows (enrollment confirmation emails, assignment-submission notifications), queue-backed grade calculation, and AI agents layered on top for personalization, grading, and recommendation.
 
 ### Q4: How do you handle prerequisite validation in an enrollment workflow?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" alt="Handwritten: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" alt="Diagram: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" alt="Sticky Note: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+</a>
+
 
 Store `prerequisites` as a JSON array of course codes on the `Course` model. Before enrolling, query the student's completed grades and match them against prerequisite courses with a minimum grade threshold. Use a FormRequest with a custom rule:
 
@@ -81,6 +125,17 @@ This keeps the logic in a single reusable rule class rather than scattered acros
 
 ### Q6: What student data privacy regulations apply to EdTech, and how do they affect development?
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" alt="Handwritten: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" alt="Diagram: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" alt="Sticky Note: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+</a>
+
+
 **FERPA** (Family Educational Rights and Privacy Act) in the US grants students control over their education records → encrypted storage, strict access controls, and audit logging are mandatory. **COPPA** (Children's Online Privacy Protection Act) applies when users are under 13, requiring parental consent for data collection and limiting what data you can store. **GDPR** applies to EU students and mandates data portability, right to deletion, and explicit consent. In Laravel, implement role-based access with Spatie Permission, encrypt PII columns using Laravel's `encrypted` cast, log all data access with a trait, and build data-export/deletion endpoints for compliance requests.
 
 ---
@@ -88,6 +143,17 @@ This keeps the logic in a single reusable rule class rather than scattered acros
 ## 2. Technical Implementation
 
 ### Q7: How would you build a personalized learning path agent in Laravel?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build a personalized learning path agent in Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" alt="Diagram: How would you build a personalized learning path agent in Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build a personalized learning path agent in Laravel?" width="30%">
+</a>
+
 
 Use the AI SDK to create an agent that analyzes a student's profile, academic history, and career goals to recommend an optimal course sequence:
 
@@ -114,6 +180,17 @@ The `CourseCatalogTool` queries available courses by department and difficulty. 
 
 ### Q8: Implement an AI-powered essay grading system with rubric-based scoring.
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" alt="Handwritten: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" alt="Diagram: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" alt="Sticky Note: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+</a>
+
+
 Create a `GradingAgent` that accepts a rubric and student submission, and returns structured scores:
 
 ```php
@@ -139,6 +216,17 @@ $structured = $result->structured(); // { scores, total, percentage, feedback, c
 The rubric JSON contains criteria like `{"clarity": {"max": 25, "descriptor": "..."}, "evidence": {"max": 25, ...}}`. Store the AI grading data in the `ai_grading_data` JSON column on the `Grade` model for auditability. Schedule a notification when confidence is low to flag the grade for instructor review.
 
 ### Q9: Design a content generation agent that produces quiz questions from a lesson plan.
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" alt="Handwritten: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" alt="Diagram: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" alt="Sticky Note: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+</a>
+
 
 ```php
 class QuizGeneratorAgent
@@ -170,6 +258,17 @@ PROMPT
 Store generated questions in an `assessment_questions` table with a `generated_by_ai` boolean flag and a `review_status` column → questions should be instructor-reviewed before going live.
 
 ### Q10: Build an adaptive quiz engine that adjusts difficulty in real time.
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" alt="Handwritten: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" alt="Diagram: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" alt="Sticky Note: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+</a>
+
 
 The adaptive engine tracks consecutive correct/incorrect answers and adjusts the difficulty selection:
 
@@ -212,6 +311,17 @@ class AdaptiveQuizEngine
 Store the session state in cache: `Cache::put("quiz:{$studentId}:{$assessmentId}", $engineState, $ttl)`. Pull questions from a bank filtered by the current difficulty level.
 
 ### Q11: How would you implement a student progress tracking agent with an early warning system?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" alt="Handwritten: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" alt="Diagram: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" alt="Sticky Note: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+</a>
+
 
 ```php
 class ProgressTrackingAgent
@@ -261,6 +371,17 @@ class ProgressTrackingAgent
 Schedule this via `app/Console/Kernel.php` to run weekly, and dispatch notifications when new flags are raised through a `StudentAtRisk` event with listeners for email, SMS, and dashboard alerts.
 
 ### Q12: How do you automate enrollment workflows with waitlist management in Laravel?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" alt="Handwritten: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" alt="Diagram: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" alt="Sticky Note: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+</a>
+
 
 ```php
 class EnrollmentAgent
@@ -315,6 +436,17 @@ Create an Artisan command `enrollments:promote-waitlisted` that checks daily for
 
 ### Q13: Build a curriculum recommendation system using vector similarity search.
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" alt="Handwritten: Build a curriculum recommendation system using vector similarity search." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" alt="Diagram: Build a curriculum recommendation system using vector similarity search." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" alt="Sticky Note: Build a curriculum recommendation system using vector similarity search." width="30%">
+</a>
+
+
 ```php
 class CurriculumRecommendationAgent
 {
@@ -348,6 +480,17 @@ Use pgvector with HNSW indexing on a `topics_embedding` column in the `courses` 
 
 ### Q14: How would you build an AI agent that generates personalized study plans for exam preparation?
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" alt="Handwritten: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" alt="Diagram: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" alt="Sticky Note: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+</a>
+
+
 ```php
 $agent = new Agent()
     ->withSystemPrompt(<<<PROMPT
@@ -376,6 +519,17 @@ The agent outputs a structured study plan with daily activities, estimated time,
 ## 3. Architecture & Design
 
 ### Q15: How do you architect a multi-tenant EdTech platform where each school has isolated data?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" alt="Handwritten: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" alt="Diagram: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" alt="Sticky Note: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+</a>
+
 
 Use Laravel's multi-tenancy patterns. For **database-per-tenant** isolation (strongest for compliance), each school gets its own database, and a central `tenants` table maps subdomains to database connections. A middleware resolves the tenant from the request hostname and dynamically sets the database connection:
 
@@ -422,6 +576,17 @@ Scale in three dimensions:
 **Database layer**: Use read replicas for report queries and dashboard analytics. For the primary database, use connection pooling (PgBouncer for PostgreSQL) to handle thousands of concurrent connections. Partition large tables → `grades` partitioned by semester, `enrollment_logs` by month. Add coverage indexes on `(student_id, semester_id)`, `(course_id, status)`, and `(assessment_id, student_id)`.
 
 ### Q17: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" alt="Handwritten: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" alt="Diagram: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" alt="Sticky Note: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+</a>
+
 
 Implement a multi-layered compliance strategy:
 
@@ -492,6 +657,17 @@ This keeps a unified API surface while allowing each education agent to evolve i
 
 ### Q19: What database indexing strategy would you use for an EdTech application with heavy read patterns?
 
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" alt="Handwritten: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" alt="Diagram: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" alt="Sticky Note: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+</a>
+
+
 Focus on the query patterns that execute most frequently:
 
 **Student dashboard queries** (read-heavy, every page load):
@@ -527,6 +703,17 @@ Include composite indexes that match the `WHERE` + `ORDER BY` clauses of your mo
 ## 4. Behavioral & Scenario
 
 ### Q20: "Design an AI-powered learning platform from scratch." Walk us through your approach.
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" alt="Handwritten: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" alt="Diagram: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" alt="Sticky Note: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+</a>
+
 
 I would start with the **data foundation**: Five core Eloquent models (Student, Course, Enrollment, Assessment, Grade) with proper migrations, relationships, and casts. Add `semesters` and `institutions` tables for multi-tenancy.
 
@@ -616,6 +803,17 @@ class EssayGradingJob implements ShouldQueue
 The key design decision is **confidence-based routing**: high-confidence AI grades are auto-approved; low-confidence ones require human review. This balances scalability with quality.
 
 ### Q22: "Describe an adaptive learning system architecture that personalizes content for each student."
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" alt="Handwritten: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" alt="Diagram: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" alt="Sticky Note: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+</a>
+
 
 The system has four layers:
 
@@ -755,6 +953,17 @@ class MigrateStudentsJob implements ShouldQueue
 **Phase 4 → Cutover**: Run a final delta migration for changes during the migration window. Set up the legacy system as read-only. Point all integrations (SSO, SIS sync, parent portal) to the new platform. Run the legacy and new systems in parallel for one semester as a safety net.
 
 ### Q25: "How do you handle course content versioning when instructors update lesson materials mid-semester?"
+
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" alt="Handwritten: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" alt="Diagram: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" alt="Sticky Note: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+</a>
+
 
 Implement a **versioned content model** using a separate table:
 

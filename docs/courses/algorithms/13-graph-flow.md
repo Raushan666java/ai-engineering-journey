@@ -67,6 +67,17 @@ flowchart LR
 
 ### 13.1 Flow Networks
 
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" alt="Handwritten: 13.1 Flow Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" alt="Diagram: 13.1 Flow Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" alt="Sticky Note: 13.1 Flow Networks" width="30%">
+</a>
+
+
 **Real-World Analogy:** A network of water pipes. The source is the reservoir, the sink is the city. Each pipe has a maximum flow rate (capacity). Water enters at the source, exits at the sink, and at every junction (vertex), the water flowing in equals the water flowing out (conservation).
 
 **Definition 13.1.** A **flow network** is a directed graph \( G = (V, E) \) with:
@@ -102,6 +113,17 @@ A forward edge holds remaining capacity; a backward edge allows "undoing" flow �
 
 ### 13.2 Max-Flow Min-Cut Theorem
 
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" alt="Handwritten: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" alt="Diagram: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" alt="Sticky Note: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+</a>
+
+
 **Definition 13.2.** An **s-t cut** \( (S, T) \) partitions \( V \) into \( S \ni s \) and \( T \ni t \). The **capacity** of the cut is:
 
 \[
@@ -123,6 +145,17 @@ c(S, T) = \sum_{u \in S, v \in T} c(u,v)
 **One-Sentence Takeaway:** The max-flow min-cut theorem states that the maximum flow value equals the minimum cut capacity, providing a duality between optimization and partitioning.
 
 ### 13.3 Ford-Fulkerson Method
+
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" alt="Handwritten: 13.3 Ford-Fulkerson Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" alt="Diagram: 13.3 Ford-Fulkerson Method" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" alt="Sticky Note: 13.3 Ford-Fulkerson Method" width="30%">
+</a>
+
 
 **Real-World Analogy:** Imagine finding a new route for water through a pipe network every day. Each day you pick any path from reservoir to city and push as much water as the narrowest pipe on that path allows. If a pipe fills up, you can later "undo" some flow by rerouting around it. You repeat until every path has a blocked pipe. That's Ford-Fulkerson.
 
@@ -331,6 +364,17 @@ Ford-Fulkerson runs in \( O(E \cdot |f^*|) \) where \( |f^*| \) is the maximum f
 - **Irrational capacities:** The algorithm may never terminate (infinite loop). Always use integer or rational capacities.
 
 ### 13.4 Edmonds-Karp Algorithm
+
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" alt="Handwritten: 13.4 Edmonds-Karp Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" alt="Diagram: 13.4 Edmonds-Karp Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" alt="Sticky Note: 13.4 Edmonds-Karp Algorithm" width="30%">
+</a>
+
 
 **Real-World Analogy:** Instead of picking an arbitrary route each day (Ford-Fulkerson), always take the route with the fewest pipes. This guarantees you'll never get stuck making unnecessary detours — you'll always saturate the shortest bottleneck first, and the overall process finishes in a predictable number of steps.
 
@@ -582,6 +626,17 @@ Edmonds-Karp runs in \( O(VE^2) \).
 - **Dense graphs:** With \( E = O(V^2) \), complexity becomes \( O(V^5) \) — impractical.
 
 ### 13.5 Dinic's Algorithm
+
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" alt="Handwritten: 13.5 Dinic's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" alt="Diagram: 13.5 Dinic's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" alt="Sticky Note: 13.5 Dinic's Algorithm" width="30%">
+</a>
+
 
 **Real-World Analogy:** Instead of sending one truckload along one route at a time, first build a map of all roads sorted by distance from the reservoir. Then send as many truckloads as possible along all shortest-distance routes simultaneously. When those routes are full, rebuild the map excluding saturated roads and repeat.
 
@@ -903,6 +958,17 @@ Dinic runs in \( O(V^2 E) \) general, \( O(E \sqrt{V}) \) for unit-capacity netw
 
 ### 13.6 Push-Relabel Algorithm
 
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" alt="Handwritten: 13.6 Push-Relabel Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" alt="Diagram: 13.6 Push-Relabel Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" alt="Sticky Note: 13.6 Push-Relabel Algorithm" width="30%">
+</a>
+
+
 **Real-World Analogy:** Instead of finding paths (Ford-Fulkerson) or level graphs (Dinic), imagine each junction in the pipe network storing temporary excess water. Water is "pushed" from higher junctions to lower junctions. If a junction has excess water and no downhill neighbor, its "height" is increased (relabeled) to create a downhill slope. Eventually, all excess water reaches the sink or flows back to the source.
 
 **Algorithm Steps:**
@@ -1108,6 +1174,17 @@ Push-Relabel runs in \( O(V^2 \sqrt{E}) \) with highest-label selection, \( O(V^
 
 ### 13.7 Min-Cut (Finding the Bottleneck)
 
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" alt="Handwritten: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" alt="Diagram: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" alt="Sticky Note: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+</a>
+
+
 **Real-World Analogy:** After computing the maximum flow in a water network, the min cut tells you which pipes are the bottleneck. Upgrading these pipes (increasing their capacity) directly increases the maximum flow. All other pipes have spare capacity — upgrading them is wasteful.
 
 **Algorithm to Find Min Cut:**
@@ -1193,6 +1270,17 @@ std::pair<int, std::vector<bool>> minCut(
 
 ### 13.8 Bipartite Matching via Max Flow
 
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" alt="Handwritten: 13.8 Bipartite Matching via Max Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" alt="Diagram: 13.8 Bipartite Matching via Max Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" alt="Sticky Note: 13.8 Bipartite Matching via Max Flow" width="30%">
+</a>
+
+
 **Problem:** Given a bipartite graph \( (U, V, E) \), find the largest set of edges with no shared endpoints.
 
 **Reduction to max flow:**
@@ -1214,6 +1302,17 @@ std::pair<int, std::vector<bool>> minCut(
 **One-Sentence Takeaway:** Maximum bipartite matching reduces to max flow by connecting source → left nodes → right nodes → sink with unit capacities.
 
 ### 13.9 Assignment Problem
+
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" alt="Handwritten: 13.9 Assignment Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" alt="Diagram: 13.9 Assignment Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" alt="Sticky Note: 13.9 Assignment Problem" width="30%">
+</a>
+
 
 **Problem:** Given \( n \) workers and \( n \) jobs with a cost \( c_{ij} \) for worker \( i \) to perform job \( j \), find the minimum-cost perfect matching.
 

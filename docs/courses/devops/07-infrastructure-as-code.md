@@ -50,6 +50,17 @@ flowchart LR
 
 ### What is Infrastructure as Code?
 
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-handwritten.svg" alt="Handwritten: What is Infrastructure as Code?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-diagram.svg" alt="Diagram: What is Infrastructure as Code?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/what-is-infrastructure-as-code-sticky.svg" alt="Sticky Note: What is Infrastructure as Code?" width="30%">
+</a>
+
+
 Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable definition files, rather than manual configuration or interactive tools.
 
 **Benefits:**
@@ -62,6 +73,17 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning infras
 
 ### Declarative vs Imperative
 
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-handwritten.svg" alt="Handwritten: Declarative vs Imperative" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-diagram.svg" alt="Diagram: Declarative vs Imperative" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/declarative-vs-imperative-sticky.svg" alt="Sticky Note: Declarative vs Imperative" width="30%">
+</a>
+
+
 | Aspect | Declarative | Imperative |
 |--------|-------------|------------|
 | Approach | Define desired state | Define step-by-step commands |
@@ -72,6 +94,17 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning infras
 | Flexibility | Constrained by provider | Unlimited |
 
 ### Terraform Architecture
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-handwritten.svg" alt="Handwritten: Terraform Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-diagram.svg" alt="Diagram: Terraform Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-architecture-sticky.svg" alt="Sticky Note: Terraform Architecture" width="30%">
+</a>
+
 
 Terraform uses a plugin-based architecture with providers for each infrastructure platform:
 
@@ -102,6 +135,17 @@ terraform state rm      # Remove resource from state
 ```
 
 ### Terraform Configuration
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-handwritten.svg" alt="Handwritten: Terraform Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-diagram.svg" alt="Diagram: Terraform Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/terraform-configuration-sticky.svg" alt="Sticky Note: Terraform Configuration" width="30%">
+</a>
+
 
 ```hcl
 # Configure the provider
@@ -151,6 +195,17 @@ output "vpc_cidr" {
 
 ### State Management
 
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-handwritten.svg" alt="Handwritten: State Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-diagram.svg" alt="Diagram: State Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/state-management-sticky.svg" alt="Sticky Note: State Management" width="30%">
+</a>
+
+
 Terraform state maps configuration to real-world resources. It's critical for correctness.
 
 **Remote state backends:**
@@ -176,6 +231,17 @@ terraform {
 **State isolation:** Separate state files per environment and per component.
 
 ### Modules
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-handwritten.svg" alt="Handwritten: Modules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-diagram.svg" alt="Diagram: Modules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/modules-sticky.svg" alt="Sticky Note: Modules" width="30%">
+</a>
+
 
 Modules are reusable, composable infrastructure components:
 
@@ -203,6 +269,17 @@ module "vpc" {
 
 ### Configuration Drift
 
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-handwritten.svg" alt="Handwritten: Configuration Drift" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-diagram.svg" alt="Diagram: Configuration Drift" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/configuration-drift-sticky.svg" alt="Sticky Note: Configuration Drift" width="30%">
+</a>
+
+
 Drift occurs when real-world infrastructure differs from the configuration:
 
 **Causes:** Manual changes via console, API, or CLI
@@ -215,6 +292,17 @@ terraform import aws_instance.web i-1234567890abcdef0
 ```
 
 ### IaC Security
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-handwritten.svg" alt="Handwritten: IaC Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-diagram.svg" alt="Diagram: IaC Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-security-sticky.svg" alt="Sticky Note: IaC Security" width="30%">
+</a>
+
 
 **Secrets in IaC:**
 - Never hardcode secrets in configuration files
@@ -249,6 +337,17 @@ main = rule {
 
 ### IaC Testing
 
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-handwritten.svg" alt="Handwritten: IaC Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-diagram.svg" alt="Diagram: IaC Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/iac-testing-sticky.svg" alt="Sticky Note: IaC Testing" width="30%">
+</a>
+
+
 **Terraform testing approaches:**
 
 1. **`terraform validate`** — Syntax checks
@@ -259,6 +358,17 @@ main = rule {
 6. **Plan review** — Manual review of `terraform plan` output in PRs
 
 ### CI/CD for IaC
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-handwritten.svg" alt="Handwritten: CI/CD for IaC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-diagram.svg" alt="Diagram: CI/CD for IaC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/ci-cd-for-iac-sticky.svg" alt="Sticky Note: CI/CD for IaC" width="30%">
+</a>
+
 
 ```yaml
 # GitHub Actions for Terraform
@@ -275,6 +385,17 @@ jobs:
 ```
 
 ### Multi-Environment Strategy
+
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-handwritten.svg" alt="Handwritten: Multi-Environment Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-diagram.svg" alt="Diagram: Multi-Environment Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/07-infrastructure-as-code/multi-environment-strategy-sticky.svg" alt="Sticky Note: Multi-Environment Strategy" width="30%">
+</a>
+
 
 ```hcl
 # environments/dev/main.tf

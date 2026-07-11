@@ -41,6 +41,17 @@ flowchart LR
 
 ### 4.1 Classification of Differential Equations
 
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-handwritten.svg" alt="Handwritten: 4.1 Classification of Differential Equations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-diagram.svg" alt="Diagram: 4.1 Classification of Differential Equations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-1-classification-of-differential-equations-sticky.svg" alt="Sticky Note: 4.1 Classification of Differential Equations" width="30%">
+</a>
+
+
 An **ordinary differential equation (ODE)** involves derivatives of a function of one variable. A **partial differential equation (PDE)** involves partial derivatives of a function of multiple variables.
 
 **Order:** The highest derivative present. $y' + y = 0$ is first-order; $y'' + 3y' + 2y = 0$ is second-order.
@@ -53,6 +64,17 @@ An **ordinary differential equation (ODE)** involves derivatives of a function o
 **Boundary Value Problem (BVP):** ODE plus conditions at two or more points.
 
 ### 4.2 First-Order ODEs
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-handwritten.svg" alt="Handwritten: 4.2 First-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-diagram.svg" alt="Diagram: 4.2 First-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-2-first-order-odes-sticky.svg" alt="Sticky Note: 4.2 First-Order ODEs" width="30%">
+</a>
+
 
 **General Form:** $\frac{dy}{dx} = f(x, y)$
 
@@ -103,6 +125,17 @@ Substitute $v = y/x$, giving $y = vx$, $dy/dx = v + x\,dv/dx$.
 
 ### 4.3 Applications of First-Order ODEs
 
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-handwritten.svg" alt="Handwritten: 4.3 Applications of First-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-diagram.svg" alt="Diagram: 4.3 Applications of First-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-3-applications-of-first-order-odes-sticky.svg" alt="Sticky Note: 4.3 Applications of First-Order ODEs" width="30%">
+</a>
+
+
 **Population Growth (Malthusian):** $\frac{dP}{dt} = kP \implies P(t) = P_0 e^{kt}$
 
 **Logistic Growth:** $\frac{dP}{dt} = kP\left(1 - \frac{P}{K}\right)$ where $K$ is carrying capacity.
@@ -116,6 +149,17 @@ Substitute $v = y/x$, giving $y = vx$, $dy/dx = v + x\,dv/dx$.
 **RC Circuit:** $R\frac{dQ}{dt} + \frac{Q}{C} = E(t)$
 
 ### 4.4 Higher-Order Linear ODEs
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-handwritten.svg" alt="Handwritten: 4.4 Higher-Order Linear ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-diagram.svg" alt="Diagram: 4.4 Higher-Order Linear ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-4-higher-order-linear-odes-sticky.svg" alt="Sticky Note: 4.4 Higher-Order Linear ODEs" width="30%">
+</a>
+
 
 #### 4.4.1 Homogeneous with Constant Coefficients
 
@@ -169,6 +213,17 @@ where $y_1, y_2$ are linearly independent homogeneous solutions and $W = y_1 y_2
 
 ### 4.5 Applications of Second-Order ODEs
 
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-handwritten.svg" alt="Handwritten: 4.5 Applications of Second-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-diagram.svg" alt="Diagram: 4.5 Applications of Second-Order ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-5-applications-of-second-order-odes-sticky.svg" alt="Sticky Note: 4.5 Applications of Second-Order ODEs" width="30%">
+</a>
+
+
 **Spring-Mass System (Undamped):** $m\frac{d^2 x}{dt^2} + kx = 0$
 $$x(t) = A\cos(\omega_0 t) + B\sin(\omega_0 t), \quad \omega_0 = \sqrt{k/m}$$
 
@@ -181,6 +236,17 @@ Three cases: overdamped ($c^2 > 4mk$), critically damped ($c^2 = 4mk$), underdam
 **RLC Circuit:** $L\frac{d^2 q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} = E(t)$
 
 ### 4.6 Systems of ODEs
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-handwritten.svg" alt="Handwritten: 4.6 Systems of ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-diagram.svg" alt="Diagram: 4.6 Systems of ODEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-6-systems-of-odes-sticky.svg" alt="Sticky Note: 4.6 Systems of ODEs" width="30%">
+</a>
+
 
 **General Form (First-Order Linear System):**
 
@@ -210,6 +276,17 @@ Assume $\mathbf{x} = \mathbf{v} e^{\lambda t}$, giving $A\mathbf{v} = \lambda\ma
 **Fundamental Matrix:** $\Phi(t) = [\mathbf{x}_1(t), \mathbf{x}_2(t), \ldots, \mathbf{x}_n(t)]$ where each $\mathbf{x}_i$ is a solution. Then $\Phi'(t) = A\Phi(t)$.
 
 ### 4.7 Laplace Transforms
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-handwritten.svg" alt="Handwritten: 4.7 Laplace Transforms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-diagram.svg" alt="Diagram: 4.7 Laplace Transforms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-7-laplace-transforms-sticky.svg" alt="Sticky Note: 4.7 Laplace Transforms" width="30%">
+</a>
+
 
 **Definition:** $\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st} f(t)\,dt$
 
@@ -251,6 +328,17 @@ $$\frac{N(s)}{(s-a)(s-b)} = \frac{A}{s-a} + \frac{B}{s-b}$$
 
 ### 4.8 Series Solutions
 
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-handwritten.svg" alt="Handwritten: 4.8 Series Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-diagram.svg" alt="Diagram: 4.8 Series Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-8-series-solutions-sticky.svg" alt="Sticky Note: 4.8 Series Solutions" width="30%">
+</a>
+
+
 For ODEs with variable coefficients, assume a power series solution:
 
 $$y(x) = \sum_{n=0}^\infty a_n (x - x_0)^n$$
@@ -274,6 +362,17 @@ Solutions are **Legendre polynomials** $P_n(x)$, orthogonal on $[-1,1]$.
 Solutions are Bessel functions $J_\nu(x)$ and $Y_\nu(x)$.
 
 ### 4.9 Introduction to PDEs
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-handwritten.svg" alt="Handwritten: 4.9 Introduction to PDEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-diagram.svg" alt="Diagram: 4.9 Introduction to PDEs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-9-introduction-to-pdes-sticky.svg" alt="Sticky Note: 4.9 Introduction to PDEs" width="30%">
+</a>
+
 
 **Classification of Second-Order Linear PDEs:**
 
@@ -326,6 +425,17 @@ Describes steady-state temperature, electrostatic potential, and incompressible 
 - **Harmonic functions** are smooth (infinitely differentiable)
 
 ### 4.10 Differential Equations in Machine Learning
+
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-handwritten.svg" alt="Handwritten: 4.10 Differential Equations in Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-diagram.svg" alt="Diagram: 4.10 Differential Equations in Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/04-differential-equations/4-10-differential-equations-in-machine-learning-sticky.svg" alt="Sticky Note: 4.10 Differential Equations in Machine Learning" width="30%">
+</a>
+
 
 **Neural ODEs (Chen et al., 2018):** The hidden state evolution in a residual network can be modeled as an ODE:
 

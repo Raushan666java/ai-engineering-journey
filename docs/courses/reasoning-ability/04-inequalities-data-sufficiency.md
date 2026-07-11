@@ -20,9 +20,31 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Inequalities and Data Sufficiency in IBPS SO IT Officer Prelims
 
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Inequalities and Data Sufficiency in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Inequalities and Data Sufficiency in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/1-importance-of-inequalities-and-data-sufficiency-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Inequalities and Data Sufficiency in IBPS SO IT Officer Prelims" width="30%">
+</a>
+
+
 Inequalities contribute approximately 4–5 questions in the IBPS SO Reasoning Ability section. Data sufficiency contributes another 4–5 questions. Together, they account for about 8–10 questions out of 25. Both topics are considered "scoring" because they require systematic application of rules rather than creative problem-solving.
 
 ### 2. Direct Inequalities
+
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-handwritten.svg" alt="Handwritten: 2. Direct Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-diagram.svg" alt="Diagram: 2. Direct Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/2-direct-inequalities-sticky.svg" alt="Sticky Note: 2. Direct Inequalities" width="30%">
+</a>
+
 
 #### 2.1 Basic Symbols and Their Meanings
 
@@ -102,6 +124,17 @@ In some exams (not common in IBPS SO), if neither conclusion follows but they fo
 | A ≥ B = C | A ≥ C | Yes |
 
 ### 3. Coded Inequalities
+
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-handwritten.svg" alt="Handwritten: 3. Coded Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-diagram.svg" alt="Diagram: 3. Coded Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/3-coded-inequalities-sticky.svg" alt="Sticky Note: 3. Coded Inequalities" width="30%">
+</a>
+
 
 In coded inequalities, symbols (like @, #, $, %, &) are used to represent mathematical inequality relations. The question provides a legend mapping symbols to their meanings.
 
@@ -208,6 +241,17 @@ flowchart TD
 ```
 
 ### 4. Data Sufficiency
+
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-handwritten.svg" alt="Handwritten: 4. Data Sufficiency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-diagram.svg" alt="Diagram: 4. Data Sufficiency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/04-inequalities-data-sufficiency/4-data-sufficiency-sticky.svg" alt="Sticky Note: 4. Data Sufficiency" width="30%">
+</a>
+
 
 #### 4.1 What is Data Sufficiency?
 

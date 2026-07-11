@@ -58,6 +58,17 @@ graph TD
 
 ### 8.1 Node.js Overview
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-handwritten.svg" alt="Handwritten: 8.1 Node.js Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-diagram.svg" alt="Diagram: 8.1 Node.js Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-1-node-js-overview-sticky.svg" alt="Sticky Note: 8.1 Node.js Overview" width="30%">
+</a>
+
+
 ![Request-Response Cycle Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/08-node-express.png)
 
 Node.js is a JavaScript runtime built on Chrome's V8 engine. It provides an event-driven, non-blocking I/O model that makes it efficient for data-intensive real-time applications.
@@ -89,6 +100,17 @@ console.log('6: End');
 ```
 
 ### 8.2 Node.js Modules
+
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-handwritten.svg" alt="Handwritten: 8.2 Node.js Modules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-diagram.svg" alt="Diagram: 8.2 Node.js Modules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-2-node-js-modules-sticky.svg" alt="Sticky Note: 8.2 Node.js Modules" width="30%">
+</a>
+
 
 **CommonJS** (default, `.js` or `.cjs` extension):
 
@@ -128,6 +150,17 @@ const module = await import('./heavy-module.mjs');
 
 ### 8.3 npm
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-handwritten.svg" alt="Handwritten: 8.3 npm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-diagram.svg" alt="Diagram: 8.3 npm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-3-npm-sticky.svg" alt="Sticky Note: 8.3 npm" width="30%">
+</a>
+
+
 ```bash
 # Initialize a project
 npm init -y
@@ -159,6 +192,17 @@ npm test
 
 ### 8.4 Express Fundamentals
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-handwritten.svg" alt="Handwritten: 8.4 Express Fundamentals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-diagram.svg" alt="Diagram: 8.4 Express Fundamentals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-4-express-fundamentals-sticky.svg" alt="Sticky Note: 8.4 Express Fundamentals" width="30%">
+</a>
+
+
 Express is a minimal, flexible web application framework for Node.js.
 
 ```javascript
@@ -183,6 +227,17 @@ app.listen(PORT, () => {
 ```
 
 ### 8.5 HTTP Methods and Routes
+
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-handwritten.svg" alt="Handwritten: 8.5 HTTP Methods and Routes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-diagram.svg" alt="Diagram: 8.5 HTTP Methods and Routes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-5-http-methods-and-routes-sticky.svg" alt="Sticky Note: 8.5 HTTP Methods and Routes" width="30%">
+</a>
+
 
 Express routes map HTTP methods and URL paths to handler functions.
 
@@ -237,6 +292,17 @@ app.delete('/api/users/:id', (req, res) => {
 
 ### 8.6 Request and Response Objects
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-handwritten.svg" alt="Handwritten: 8.6 Request and Response Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-diagram.svg" alt="Diagram: 8.6 Request and Response Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-6-request-and-response-objects-sticky.svg" alt="Sticky Note: 8.6 Request and Response Objects" width="30%">
+</a>
+
+
 **Request (`req`):**
 
 ```javascript
@@ -288,6 +354,17 @@ app.get('/example', (req, res) => {
 
 ### 8.7 Middleware
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-handwritten.svg" alt="Handwritten: 8.7 Middleware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-diagram.svg" alt="Diagram: 8.7 Middleware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-7-middleware-sticky.svg" alt="Sticky Note: 8.7 Middleware" width="30%">
+</a>
+
+
 Middleware functions are functions that have access to `req`, `res`, and `next`. They can execute code, modify request/response objects, end the request cycle, or call the next middleware.
 
 ```javascript
@@ -337,6 +414,17 @@ app.use((err, req, res, next) => {
 
 ### 8.8 Static Files
 
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-handwritten.svg" alt="Handwritten: 8.8 Static Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-diagram.svg" alt="Diagram: 8.8 Static Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-8-static-files-sticky.svg" alt="Sticky Note: 8.8 Static Files" width="30%">
+</a>
+
+
 Express serves static files from a directory:
 
 ```javascript
@@ -354,6 +442,17 @@ app.use(express.static('uploads'));
 ```
 
 ### 8.9 Template Engines
+
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-handwritten.svg" alt="Handwritten: 8.9 Template Engines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-diagram.svg" alt="Diagram: 8.9 Template Engines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-9-template-engines-sticky.svg" alt="Sticky Note: 8.9 Template Engines" width="30%">
+</a>
+
 
 Express supports template engines for server-side rendering:
 
@@ -386,6 +485,17 @@ app.get('/profile', (req, res) => {
 ```
 
 ### 8.10 Testing with curl
+
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-handwritten.svg" alt="Handwritten: 8.10 Testing with curl" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-diagram.svg" alt="Diagram: 8.10 Testing with curl" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/08-node-express/8-10-testing-with-curl-sticky.svg" alt="Sticky Note: 8.10 Testing with curl" width="30%">
+</a>
+
 
 ```bash
 # GET

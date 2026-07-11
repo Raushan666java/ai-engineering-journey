@@ -16,6 +16,17 @@ By the end of this chapter, you will be able to:
 
 ### 1. Introduction to Core Banking Solutions
 
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-handwritten.svg" alt="Handwritten: 1. Introduction to Core Banking Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-diagram.svg" alt="Diagram: 1. Introduction to Core Banking Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/1-introduction-to-core-banking-solutions-sticky.svg" alt="Sticky Note: 1. Introduction to Core Banking Solutions" width="30%">
+</a>
+
+
 Core Banking Solution (CBS) is the centralized software platform that enables customers to operate their accounts from any branch of the bank, regardless of where the account was opened. In India, CBS adoption began in the early 2000s under the financial sector reform initiatives led by RBI and IBA.
 
 The fundamental principle of CBS is "Anywhere, Anytime Banking" — a customer walks into Branch A in Mumbai but transacts on an account opened at Branch Z in Delhi. This is made possible by a centralized database and real-time transaction processing.
@@ -37,6 +48,17 @@ IBPS SO IT Officer exams test CBS knowledge because it is the backbone of bankin
 - Interface standards like ISO 8583 for ATM/POS messaging
 
 ### 2. CBS Architecture — Three-Tier Model
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-handwritten.svg" alt="Handwritten: 2. CBS Architecture — Three-Tier Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-diagram.svg" alt="Diagram: 2. CBS Architecture — Three-Tier Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/2-cbs-architecture-three-tier-model-sticky.svg" alt="Sticky Note: 2. CBS Architecture — Three-Tier Model" width="30%">
+</a>
+
 
 Most CBS platforms in India follow a three-tier architecture:
 
@@ -108,6 +130,17 @@ The back-end tier contains:
 - **Batch Processing Engine:** Runs EOD (End of Day), interest postings, standing instructions
 
 ### 3. CBS Platforms — T24, Finacle, BaNCS
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-handwritten.svg" alt="Handwritten: 3. CBS Platforms — T24, Finacle, BaNCS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-diagram.svg" alt="Diagram: 3. CBS Platforms — T24, Finacle, BaNCS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/3-cbs-platforms-t24-finacle-bancs-sticky.svg" alt="Sticky Note: 3. CBS Platforms — T24, Finacle, BaNCS" width="30%">
+</a>
+
 
 #### 3.1 Temenos T24 (now Temenos Transact)
 
@@ -194,6 +227,17 @@ BaNCS (Banking Network and Channel Systems) is from Tata Consultancy Services. U
 
 ### 4. Transaction Processing — NEFT, RTGS, IMPS
 
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-handwritten.svg" alt="Handwritten: 4. Transaction Processing — NEFT, RTGS, IMPS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-diagram.svg" alt="Diagram: 4. Transaction Processing — NEFT, RTGS, IMPS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/4-transaction-processing-neft-rtgs-imps-sticky.svg" alt="Sticky Note: 4. Transaction Processing — NEFT, RTGS, IMPS" width="30%">
+</a>
+
+
 #### 4.1 NEFT (National Electronic Funds Transfer)
 
 NEFT is a deferred net settlement (DNS) system — transactions are settled in batches at specific intervals. Operated by RBI.
@@ -274,6 +318,17 @@ Sender Bank -> RTGS System (RBI) -> Receiver Bank
 ```
 
 ### 5. ATM Switch Networking
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-handwritten.svg" alt="Handwritten: 5. ATM Switch Networking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-diagram.svg" alt="Diagram: 5. ATM Switch Networking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/5-atm-switch-networking-sticky.svg" alt="Sticky Note: 5. ATM Switch Networking" width="30%">
+</a>
+
 
 #### 5.1 ATM Switch Architecture
 
@@ -363,6 +418,17 @@ NFS is the domestic interbank ATM network operated by NPCI. It connects over 1.2
 - Secure key management (TMK, TAK, ZPK)
 
 ### 6. CBS Database Design — Partitioning and Sharding
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-handwritten.svg" alt="Handwritten: 6. CBS Database Design — Partitioning and Sharding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-diagram.svg" alt="Diagram: 6. CBS Database Design — Partitioning and Sharding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/6-cbs-database-design-partitioning-and-sharding-sticky.svg" alt="Sticky Note: 6. CBS Database Design — Partitioning and Sharding" width="30%">
+</a>
+
 
 High-volume CBS databases must handle millions of transactions daily. Key design strategies:
 
@@ -463,6 +529,17 @@ TRANSACTION_LOG:
 
 ### 7. Cheque Truncation System (CTS)
 
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-handwritten.svg" alt="Handwritten: 7. Cheque Truncation System (CTS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-diagram.svg" alt="Diagram: 7. Cheque Truncation System (CTS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/7-cheque-truncation-system-cts-sticky.svg" alt="Sticky Note: 7. Cheque Truncation System (CTS)" width="30%">
+</a>
+
+
 #### 7.1 What is CTS?
 
 CTS is a system where cheque images and electronic data are transmitted between banks instead of physically moving paper cheques. Implemented by RBI in 2008 (CTS-2010 standard).
@@ -515,6 +592,17 @@ Time: T+1 (1 day)
 - Archive period: 10 years
 
 ### 8. MICR, IFSC, and Indian Financial System Code
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-handwritten.svg" alt="Handwritten: 8. MICR, IFSC, and Indian Financial System Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-diagram.svg" alt="Diagram: 8. MICR, IFSC, and Indian Financial System Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/8-micr-ifsc-and-indian-financial-system-code-sticky.svg" alt="Sticky Note: 8. MICR, IFSC, and Indian Financial System Code" width="30%">
+</a>
+
 
 #### 8.1 MICR (Magnetic Ink Character Recognition)
 
@@ -588,6 +676,17 @@ IFSC_MASTER:
 RBI publishes the IFSC master database as a downloadable Excel file, updated periodically. Banks consume this for their CBS IFSC validation tables.
 
 ### 9. Architecture Diagrams
+
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-handwritten.svg" alt="Handwritten: 9. Architecture Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-diagram.svg" alt="Diagram: 9. Architecture Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/01-core-banking-solutions/9-architecture-diagrams-sticky.svg" alt="Sticky Note: 9. Architecture Diagrams" width="30%">
+</a>
+
 
 #### CBS High-Level Architecture
 

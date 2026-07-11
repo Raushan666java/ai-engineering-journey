@@ -16,6 +16,17 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 Important Banking and Financial Acts
 
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-handwritten.svg" alt="Handwritten: 5.1 Important Banking and Financial Acts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-diagram.svg" alt="Diagram: 5.1 Important Banking and Financial Acts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-1-important-banking-and-financial-acts-sticky.svg" alt="Sticky Note: 5.1 Important Banking and Financial Acts" width="30%">
+</a>
+
+
 #### A. Negotiable Instruments Act, 1881
 
 The **Negotiable Instruments (NI) Act, 1881** governs the use of **promissory notes, bills of exchange, and cheques** in India.
@@ -218,6 +229,17 @@ flowchart TD
 
 ### 5.2 Banking Terminology
 
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-handwritten.svg" alt="Handwritten: 5.2 Banking Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-diagram.svg" alt="Diagram: 5.2 Banking Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-2-banking-terminology-sticky.svg" alt="Sticky Note: 5.2 Banking Terminology" width="30%">
+</a>
+
+
 #### A. Non-Performing Assets (NPA)
 
 ```mermaid
@@ -311,6 +333,17 @@ CD Ratio = Total Advances / Total Deposits
 
 ### 5.3 Priority Sector Lending (PSL) Targets
 
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-handwritten.svg" alt="Handwritten: 5.3 Priority Sector Lending (PSL) Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-diagram.svg" alt="Diagram: 5.3 Priority Sector Lending (PSL) Targets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-3-priority-sector-lending-psl-targets-sticky.svg" alt="Sticky Note: 5.3 Priority Sector Lending (PSL) Targets" width="30%">
+</a>
+
+
 Banks must lend a specified percentage of Adjusted Net Bank Credit (ANBC) to **priority sectors** as defined by RBI.
 
 **Targets for domestic scheduled commercial banks:**
@@ -338,6 +371,17 @@ Banks must lend a specified percentage of Adjusted Net Bank Credit (ANBC) to **p
 **Penalty for shortfall:** Banks are required to contribute the shortfall amount to the **Rural Infrastructure Development Fund (RIDF)** established with NABARD, earning interest at prescribed rates.
 
 ### 5.4 Recent Banking Developments
+
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-handwritten.svg" alt="Handwritten: 5.4 Recent Banking Developments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-diagram.svg" alt="Diagram: 5.4 Recent Banking Developments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-financial-awareness/05-banking-terminology-acts/5-4-recent-banking-developments-sticky.svg" alt="Sticky Note: 5.4 Recent Banking Developments" width="30%">
+</a>
+
 
 #### A. PSB Mergers (2019-2020)
 The government consolidated 10 PSBs into 4:

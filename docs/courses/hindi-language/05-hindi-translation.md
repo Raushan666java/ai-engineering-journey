@@ -15,6 +15,17 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 Translation in Government Exams
 
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-handwritten.svg" alt="Handwritten: 5.1 Translation in Government Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-diagram.svg" alt="Diagram: 5.1 Translation in Government Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-1-translation-in-government-exams-sticky.svg" alt="Sticky Note: 5.1 Translation in Government Exams" width="30%">
+</a>
+
+
 Translation is a significant component in:
 - UPSC Mains: Hindi compulsory paper includes translation passages
 - SSC CGL Tier 2: Hindi section has English-to-Hindi translation
@@ -23,6 +34,17 @@ Translation is a significant component in:
 - Translation exams: Central Translation Bureau, Ministry of Home Affairs
 
 ### 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)
+
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-handwritten.svg" alt="Handwritten: 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-diagram.svg" alt="Diagram: 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-2-principles-of-translation-sticky.svg" alt="Sticky Note: 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD
@@ -47,6 +69,17 @@ flowchart TD
 | Context | Context-sensitive | Sandarbh ke anusaar shabdon ka chayan |
 
 ### 5.3 English-to-Hindi Translation Rules
+
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-handwritten.svg" alt="Handwritten: 5.3 English-to-Hindi Translation Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-diagram.svg" alt="Diagram: 5.3 English-to-Hindi Translation Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-3-english-to-hindi-translation-rules-sticky.svg" alt="Sticky Note: 5.3 English-to-Hindi Translation Rules" width="30%">
+</a>
+
 
 #### A. à¤¸à¤°à¥à¤µà¤¨à¤¾à¤® (Pronouns)
 
@@ -100,6 +133,17 @@ flowchart TD
 
 ### 5.4 Common Pitfalls (False Friends)
 
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-handwritten.svg" alt="Handwritten: 5.4 Common Pitfalls (False Friends)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-diagram.svg" alt="Diagram: 5.4 Common Pitfalls (False Friends)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-4-common-pitfalls-false-friends-sticky.svg" alt="Sticky Note: 5.4 Common Pitfalls (False Friends)" width="30%">
+</a>
+
+
 | English Word | Wrong Hindi Translation | Correct Hindi Translation |
 |-------------|------------------------|--------------------------|
 | Actual | Vastavik (not actual) | Asal / Vastavik |
@@ -118,6 +162,17 @@ flowchart TD
 | Saloon | Salon (not saloon) | Hair-cutting salon |
 
 ### 5.5 Translation of Technical/Banking Terminology
+
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-handwritten.svg" alt="Handwritten: 5.5 Translation of Technical/Banking Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-diagram.svg" alt="Diagram: 5.5 Translation of Technical/Banking Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-5-translation-of-technical-banking-terminology-sticky.svg" alt="Sticky Note: 5.5 Translation of Technical/Banking Terminology" width="30%">
+</a>
+
 
 | English Banking Term | Hindi Translation |
 |---------------------|------------------|
@@ -161,6 +216,17 @@ flowchart TD
 
 ### 5.6 Government/Official Translation Guidelines
 
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-handwritten.svg" alt="Handwritten: 5.6 Government/Official Translation Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-diagram.svg" alt="Diagram: 5.6 Government/Official Translation Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-6-government-official-translation-guidelines-sticky.svg" alt="Sticky Note: 5.6 Government/Official Translation Guidelines" width="30%">
+</a>
+
+
 | English Term | Official Hindi Equivalent |
 |-------------|--------------------------|
 | Department | Vibhag |
@@ -187,6 +253,17 @@ flowchart TD
 
 ### 5.7 Hindi-to-English Translation for Comprehension
 
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-handwritten.svg" alt="Handwritten: 5.7 Hindi-to-English Translation for Comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-diagram.svg" alt="Diagram: 5.7 Hindi-to-English Translation for Comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-7-hindi-to-english-translation-for-comprehension-sticky.svg" alt="Sticky Note: 5.7 Hindi-to-English Translation for Comprehension" width="30%">
+</a>
+
+
 | Hindi Structure | English Equivalent |
 |-----------------|-------------------|
 | Mujhe jana hai | I have to go |
@@ -201,6 +278,17 @@ flowchart TD
 | Avashyak karyvahi hetu | For necessary action |
 
 ### 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)
+
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-handwritten.svg" alt="Handwritten: 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-diagram.svg" alt="Diagram: 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8a-it-technical-translation-it-terms-sticky.svg" alt="Sticky Note: 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)" width="30%">
+</a>
+
 
 | English Term | Hindi Translation | Usage |
 |-------------|------------------|-------|
@@ -219,6 +307,17 @@ flowchart TD
 
 ### 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)
 
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-handwritten.svg" alt="Handwritten: 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-diagram.svg" alt="Diagram: 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8b-common-english-idioms-with-hindi-equivalents-sticky.svg" alt="Sticky Note: 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)" width="30%">
+</a>
+
+
 | English Idiom | Literal Translation | Hindi Equivalent |
 |---------------|-------------------|------------------|
 | A blessing in disguise | भेष में वरदान | नुकसान में भी लाभ |
@@ -233,6 +332,17 @@ flowchart TD
 | Where there is a will, there is a way | जहाँ चाह वहाँ राह | ठान लो तो राह निकल ही आती है |
 
 ### 5.8 Idioms Translation (Muhavaron ka Anuvad)
+
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-handwritten.svg" alt="Handwritten: 5.8 Idioms Translation (Muhavaron ka Anuvad)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-diagram.svg" alt="Diagram: 5.8 Idioms Translation (Muhavaron ka Anuvad)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/hindi-language/05-hindi-translation/5-8-idioms-translation-muhavaron-ka-anuvad-sticky.svg" alt="Sticky Note: 5.8 Idioms Translation (Muhavaron ka Anuvad)" width="30%">
+</a>
+
 
 | English Idiom | Hindi Equivalent |
 |---------------|------------------|

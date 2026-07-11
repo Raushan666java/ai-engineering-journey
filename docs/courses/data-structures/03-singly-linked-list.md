@@ -60,6 +60,17 @@ flowchart LR
 
 ### Node Anatomy
 
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-handwritten.svg" alt="Handwritten: Node Anatomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-diagram.svg" alt="Diagram: Node Anatomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/node-anatomy-sticky.svg" alt="Sticky Note: Node Anatomy" width="30%">
+</a>
+
+
 A singly linked list node has exactly two fields:
 
 ```
@@ -79,6 +90,17 @@ head → [10|●] → [20|●] → [30|●] → nullptr
 ```
 
 ### Why Not Always Use Arrays?
+
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-handwritten.svg" alt="Handwritten: Why Not Always Use Arrays?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-diagram.svg" alt="Diagram: Why Not Always Use Arrays?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/03-singly-linked-list/why-not-always-use-arrays-sticky.svg" alt="Sticky Note: Why Not Always Use Arrays?" width="30%">
+</a>
+
 
 | Operation | Singly Linked List | Dynamic Array | Winner |
 |-----------|-------------------|---------------|--------|

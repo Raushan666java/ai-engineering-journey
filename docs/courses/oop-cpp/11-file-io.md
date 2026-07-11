@@ -70,6 +70,17 @@ flowchart LR
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Think of file I/O like a **filing cabinet** in an office:
 
 | Concept | Filing Cabinet Analogy |
@@ -85,6 +96,17 @@ Think of file I/O like a **filing cabinet** in an office:
 
 ### What is File I/O?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-handwritten.svg" alt="Handwritten: What is File I/O?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-diagram.svg" alt="Diagram: What is File I/O?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-file-i-o-sticky.svg" alt="Sticky Note: What is File I/O?" width="30%">
+</a>
+
+
 File I/O (Input/Output) is the mechanism by which a program reads data from or writes data to files on persistent storage (hard drive, SSD, etc.). Unlike console I/O (cin/cout), file I/O persists across program executions.
 
 **Why File I/O Matters:**
@@ -95,6 +117,17 @@ File I/O (Input/Output) is the mechanism by which a program reads data from or w
 - **Logging** → Record program activity for debugging and auditing
 
 ### Types of Files
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-handwritten.svg" alt="Handwritten: Types of Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-diagram.svg" alt="Diagram: Types of Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/types-of-files-sticky.svg" alt="Sticky Note: Types of Files" width="30%">
+</a>
+
 
 | File Type | Content | Readability | Use Case |
 |-----------|---------|-------------|----------|
@@ -107,6 +140,17 @@ File I/O (Input/Output) is the mechanism by which a program reads data from or w
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 File streams are like **different types of doors** to a room:
 
 | Stream Class | Door Type | What You Can Do |
@@ -116,6 +160,17 @@ File streams are like **different types of doors** to a room:
 | `fstream` | Revolving door (both ways) | Read and write the same file |
 
 ### Class Hierarchy
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-handwritten.svg" alt="Handwritten: Class Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-diagram.svg" alt="Diagram: Class Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-sticky.svg" alt="Sticky Note: Class Hierarchy" width="30%">
+</a>
+
 
 ```
 <iostream>
@@ -129,6 +184,17 @@ File streams are like **different types of doors** to a room:
 
 ### Detailed Class Reference
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-handwritten.svg" alt="Handwritten: Detailed Class Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-diagram.svg" alt="Diagram: Detailed Class Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/detailed-class-reference-sticky.svg" alt="Sticky Note: Detailed Class Reference" width="30%">
+</a>
+
+
 | Class | Header | Base Class | Direction | Default Mode | When to Use |
 |-------|--------|------------|-----------|-------------|-------------|
 | `ifstream` | `<fstream>` | `istream` | Read only | `ios::in` | When you only need to read |
@@ -136,6 +202,17 @@ File streams are like **different types of doors** to a room:
 | `fstream` | `<fstream>` | `iostream` | Read and write | `ios::in \| ios::out` | When you need both read and write |
 
 ### Steps for File I/O
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-handwritten.svg" alt="Handwritten: Steps for File I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-diagram.svg" alt="Diagram: Steps for File I/O" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/steps-for-file-i-o-sticky.svg" alt="Sticky Note: Steps for File I/O" width="30%">
+</a>
+
 
 ```
 STEP 1: Include the header (#include <fstream>)
@@ -147,6 +224,17 @@ STEP 6: Close the file (close() or let destructor handle it)
 ```
 
 ### Opening a File → Constructor vs open()
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-handwritten.svg" alt="Handwritten: Opening a File → Constructor vs open()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-diagram.svg" alt="Diagram: Opening a File → Constructor vs open()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/opening-a-file-constructor-vs-open-sticky.svg" alt="Sticky Note: Opening a File → Constructor vs open()" width="30%">
+</a>
+
 
 ```cpp
 // Method 1: Constructor (preferred → RAII)
@@ -161,6 +249,17 @@ std::ofstream file3("log.txt", std::ios::app);
 ```
 
 ### Complete Example with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-handwritten.svg" alt="Handwritten: Complete Example with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-diagram.svg" alt="Diagram: Complete Example with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-example-with-output-sticky.svg" alt="Sticky Note: Complete Example with Output" width="30%">
+</a>
+
 
 **Program:**
 ```cpp
@@ -207,6 +306,17 @@ Read: Line 3: Pi â‰ˆ 3.14159
 
 ### Dry Run Trace Table → Writing Phase
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-handwritten.svg" alt="Handwritten: Dry Run Trace Table → Writing Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-diagram.svg" alt="Diagram: Dry Run Trace Table → Writing Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-writing-phase-sticky.svg" alt="Sticky Note: Dry Run Trace Table → Writing Phase" width="30%">
+</a>
+
+
 | Step | Line | out Stream State | File on Disk | Action |
 |------|------|-----------------|--------------|--------|
 | 1 | `ofstream out("example.txt")` | good=true, is_open=true | (empty, truncated) | File created/truncated |
@@ -217,6 +327,17 @@ Read: Line 3: Pi â‰ˆ 3.14159
 
 ### Dry Run Trace Table → Reading Phase
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-handwritten.svg" alt="Handwritten: Dry Run Trace Table → Reading Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-diagram.svg" alt="Diagram: Dry Run Trace Table → Reading Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-trace-table-reading-phase-sticky.svg" alt="Sticky Note: Dry Run Trace Table → Reading Phase" width="30%">
+</a>
+
+
 | Step | Line | in Stream State | `line` Value | `std::cout` Output |
 |------|------|----------------|-------------|-------------------|
 | 1 | `ifstream in("example.txt")` | good=true, eof=false | → | → |
@@ -226,6 +347,17 @@ Read: Line 3: Pi â‰ˆ 3.14159
 | 5 | `getline(in, line)` → call 4 | eof=true, fail=true | `""` | Loop exits (no output) |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
@@ -239,6 +371,17 @@ Read: Line 3: Pi â‰ˆ 3.14159
 **Why Not O(1) for N characters?** The disk is a mechanical device (HDD) or has limited write cycles (SSD). Each byte must physically alter the storage medium. The OS buffers writes to amortize this cost, but over N bytes, the total work is proportional to N.
 
 ### Edge Cases → Opening Files
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-handwritten.svg" alt="Handwritten: Edge Cases → Opening Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-diagram.svg" alt="Diagram: Edge Cases → Opening Files" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-opening-files-sticky.svg" alt="Sticky Note: Edge Cases → Opening Files" width="30%">
+</a>
+
 
 | Scenario | What Happens | How to Handle |
 |----------|-------------|---------------|
@@ -255,6 +398,17 @@ Read: Line 3: Pi â‰ˆ 3.14159
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Open modes are like **instructions you give a librarian** about how you want to use a book:
 
 | Mode Flag | Librarian Instruction |
@@ -268,6 +422,17 @@ Open modes are like **instructions you give a librarian** about how you want to 
 
 ### Complete Open Modes Table
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-handwritten.svg" alt="Handwritten: Complete Open Modes Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-diagram.svg" alt="Diagram: Complete Open Modes Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-open-modes-table-sticky.svg" alt="Sticky Note: Complete Open Modes Table" width="30%">
+</a>
+
+
 | Flag | Full Name | Effect | Default for ifstream | Default for ofstream | Default for fstream |
 |------|-----------|--------|---------------------|---------------------|---------------------|
 | `ios::in` | Input | Open for reading | âœ… Yes | âŒ No | âœ… Yes |
@@ -278,6 +443,17 @@ Open modes are like **instructions you give a librarian** about how you want to 
 | `ios::binary` | Binary | No newline translation; raw byte I/O | âŒ No | âŒ No | âŒ No |
 
 ### Combining Modes (Bitwise OR)
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-handwritten.svg" alt="Handwritten: Combining Modes (Bitwise OR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-diagram.svg" alt="Diagram: Combining Modes (Bitwise OR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/combining-modes-bitwise-or-sticky.svg" alt="Sticky Note: Combining Modes (Bitwise OR)" width="30%">
+</a>
+
 
 ```cpp
 // Read and write, no truncation (random access)
@@ -295,6 +471,17 @@ std::ifstream tail("large.bin", std::ios::ate | std::ios::binary);
 
 ### Default Modes by Stream Type
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-handwritten.svg" alt="Handwritten: Default Modes by Stream Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-diagram.svg" alt="Diagram: Default Modes by Stream Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/default-modes-by-stream-type-sticky.svg" alt="Sticky Note: Default Modes by Stream Type" width="30%">
+</a>
+
+
 | Stream Type | Constructor | Equivalent Mode Flags |
 |-------------|-------------|----------------------|
 | `ifstream fin("f.txt")` | `in` | `ios::in` |
@@ -309,6 +496,17 @@ std::ofstream log("log.txt", ios::app); // Appends safely
 ```
 
 ### Code Example → Different Open Modes
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-handwritten.svg" alt="Handwritten: Code Example → Different Open Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-diagram.svg" alt="Diagram: Code Example → Different Open Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/code-example-different-open-modes-sticky.svg" alt="Sticky Note: Code Example → Different Open Modes" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -347,6 +545,17 @@ Appended line
 
 ### Dry Run → Append Mode
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-handwritten.svg" alt="Handwritten: Dry Run → Append Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-diagram.svg" alt="Diagram: Dry Run → Append Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-append-mode-sticky.svg" alt="Sticky Note: Dry Run → Append Mode" width="30%">
+</a>
+
+
 | Step | Operation | File Content After | Comment |
 |------|-----------|-------------------|---------|
 | 1 | `ofstream f1("test.txt")` | (empty) | File truncated/created |
@@ -357,6 +566,17 @@ Appended line
 | 6 | Read via ifstream | → | Both lines visible |
 
 ### Edge Cases → Open Modes
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-handwritten.svg" alt="Handwritten: Edge Cases → Open Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-diagram.svg" alt="Diagram: Edge Cases → Open Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-open-modes-sticky.svg" alt="Sticky Note: Edge Cases → Open Modes" width="30%">
+</a>
+
 
 | Mode Combination | Behavior |
 |-----------------|----------|
@@ -372,6 +592,17 @@ Appended line
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Reading a text file is like **eating a sandwich**:
 
 | Method | How You Eat |
@@ -381,6 +612,17 @@ Reading a text file is like **eating a sandwich**:
 | `read()` | Blending the sandwich and drinking it as a smoothie |
 
 ### Method 1: Extraction Operator `>>`
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-handwritten.svg" alt="Handwritten: Method 1: Extraction Operator `>>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-diagram.svg" alt="Diagram: Method 1: Extraction Operator `>>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-extraction-operator-sticky.svg" alt="Sticky Note: Method 1: Extraction Operator `>>`" width="30%">
+</a>
+
 
 Reads **token by token** (whitespace-delimited).
 
@@ -422,6 +664,17 @@ Charlie scored 92
 
 ### Method 2: getline() → Line by Line
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-handwritten.svg" alt="Handwritten: Method 2: getline() → Line by Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-diagram.svg" alt="Diagram: Method 2: getline() → Line by Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-getline-line-by-line-sticky.svg" alt="Sticky Note: Method 2: getline() → Line by Line" width="30%">
+</a>
+
+
 Reads until newline (or custom delimiter).
 
 ```cpp
@@ -458,6 +711,17 @@ int main() {
 
 ### Dry Run → getline()
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-handwritten.svg" alt="Handwritten: Dry Run → getline()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-diagram.svg" alt="Diagram: Dry Run → getline()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-getline-sticky.svg" alt="Sticky Note: Dry Run → getline()" width="30%">
+</a>
+
+
 | Iteration | Buffer Before | `line` After | Stream State | Output |
 |-----------|--------------|-------------|-------------|--------|
 | 1 | `Roses are red,\nViolets...` | `"Roses are red,"` | good=true | `1: Roses are red,` |
@@ -467,6 +731,17 @@ int main() {
 | 5 | (empty) | `""` | eof=true | Loop exits |
 
 ### Method 3: Reading Entire File at Once
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-handwritten.svg" alt="Handwritten: Method 3: Reading Entire File at Once" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-diagram.svg" alt="Diagram: Method 3: Reading Entire File at Once" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-reading-entire-file-at-once-sticky.svg" alt="Sticky Note: Method 3: Reading Entire File at Once" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -500,6 +775,17 @@ int main() {
 
 ### Custom Delimiter with getline()
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-handwritten.svg" alt="Handwritten: Custom Delimiter with getline()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-diagram.svg" alt="Diagram: Custom Delimiter with getline()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/custom-delimiter-with-getline-sticky.svg" alt="Sticky Note: Custom Delimiter with getline()" width="30%">
+</a>
+
+
 ```cpp
 std::string token;
 while (std::getline(file, token, ',')) {   // comma-separated values
@@ -508,6 +794,17 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 ```
 
 ### Complexity Analysis → Reading Text
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-handwritten.svg" alt="Handwritten: Complexity Analysis → Reading Text" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-diagram.svg" alt="Diagram: Complexity Analysis → Reading Text" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-reading-text-sticky.svg" alt="Sticky Note: Complexity Analysis → Reading Text" width="30%">
+</a>
+
 
 | Method | Time | Space | Why |
 |--------|------|-------|-----|
@@ -519,6 +816,17 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 **Space Complexity Note:** Reading the entire file at once requires O(N) memory. For large files (gigabytes), line-by-line or token-by-token reading is preferred to avoid exhausting RAM.
 
 ### Edge Cases → Reading Text
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-handwritten.svg" alt="Handwritten: Edge Cases → Reading Text" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-diagram.svg" alt="Diagram: Edge Cases → Reading Text" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-reading-text-sticky.svg" alt="Sticky Note: Edge Cases → Reading Text" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -535,9 +843,31 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Writing to a text file is like **recording a voice memo** → everything you say (write) gets captured in order.
 
 ### Method 1: Insertion Operator `<<`
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-handwritten.svg" alt="Handwritten: Method 1: Insertion Operator `<<`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-diagram.svg" alt="Diagram: Method 1: Insertion Operator `<<`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-1-insertion-operator-sticky.svg" alt="Sticky Note: Method 1: Insertion Operator `<<`" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -579,6 +909,17 @@ Net Profit: $14030.5
 
 ### Method 2: put() → Write Single Character
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-handwritten.svg" alt="Handwritten: Method 2: put() → Write Single Character" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-diagram.svg" alt="Diagram: Method 2: put() → Write Single Character" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-2-put-write-single-character-sticky.svg" alt="Sticky Note: Method 2: put() → Write Single Character" width="30%">
+</a>
+
+
 ```cpp
 std::ofstream out("letters.txt");
 out.put('H');
@@ -592,6 +933,17 @@ out.put('\n');
 
 ### Method 3: write() → Write Raw Bytes
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-handwritten.svg" alt="Handwritten: Method 3: write() → Write Raw Bytes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-diagram.svg" alt="Diagram: Method 3: write() → Write Raw Bytes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/method-3-write-write-raw-bytes-sticky.svg" alt="Sticky Note: Method 3: write() → Write Raw Bytes" width="30%">
+</a>
+
+
 ```cpp
 std::ofstream out("data.bin", std::ios::binary);
 int numbers[] = {1, 2, 3, 4, 5};
@@ -600,6 +952,17 @@ out.write(reinterpret_cast<const char*>(numbers), sizeof(numbers));
 ```
 
 ### Formatting Output
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-handwritten.svg" alt="Handwritten: Formatting Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-diagram.svg" alt="Diagram: Formatting Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/formatting-output-sticky.svg" alt="Sticky Note: Formatting Output" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -646,6 +1009,17 @@ Bob       87
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 | Aspect | Text Mode | Binary Mode |
 |--------|-----------|-------------|
 | **Like** | Writing a letter | Taking a photocopy |
@@ -654,6 +1028,17 @@ Bob       87
 | **Result** | Human-readable, may lose some formatting | Not readable, but 100% accurate |
 
 ### Comparison Table
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+</a>
+
 
 | Criterion | Text Mode | Binary Mode |
 |-----------|-----------|-------------|
@@ -671,6 +1056,17 @@ Bob       87
 | **`<<` / `>>`** | The standard approach | Not meaningful |
 
 ### The Newline Translation Problem
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-handwritten.svg" alt="Handwritten: The Newline Translation Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-diagram.svg" alt="Diagram: The Newline Translation Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-newline-translation-problem-sticky.svg" alt="Sticky Note: The Newline Translation Problem" width="30%">
+</a>
+
 
 On Windows, text mode transforms:
 - **Write:** `\n` (LF, 0x0A) → `\r\n` (CRLF, 0x0D 0x0A)
@@ -715,6 +1111,17 @@ Binary mode size: 14 bytes
 **Why?** `Line 1\nLine 2\n` = 14 chars. Text mode writes `Line 1\r\nLine 2\r\n` = 16 chars.
 
 ### Binary I/O → read() and write()
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-handwritten.svg" alt="Handwritten: Binary I/O → read() and write()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-diagram.svg" alt="Diagram: Binary I/O → read() and write()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-i-o-read-and-write-sticky.svg" alt="Sticky Note: Binary I/O → read() and write()" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -764,6 +1171,17 @@ Read back: num=12345, pi=3.14159, text=Hello Binary!
 
 ### Why reinterpret_cast?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-handwritten.svg" alt="Handwritten: Why reinterpret_cast?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-diagram.svg" alt="Diagram: Why reinterpret_cast?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-reinterpret-cast-sticky.svg" alt="Sticky Note: Why reinterpret_cast?" width="30%">
+</a>
+
+
 `read()` and `write()` expect `char*` pointers (raw byte views). `reinterpret_cast` tells the compiler:
 > "Treat this `int*` / `double*` as a `char*` for byte-level access."
 
@@ -771,6 +1189,17 @@ Read back: num=12345, pi=3.14159, text=Hello Binary!
 **Better than C-style cast:** More explicit intention; harder to misuse accidentally.
 
 ### Binary File Size Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-handwritten.svg" alt="Handwritten: Binary File Size Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-diagram.svg" alt="Diagram: Binary File Size Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-file-size-analysis-sticky.svg" alt="Sticky Note: Binary File Size Analysis" width="30%">
+</a>
+
 
 | Data Type | Text Representation | Binary Representation | Savings |
 |-----------|-------------------|----------------------|---------|
@@ -781,6 +1210,17 @@ Read back: num=12345, pi=3.14159, text=Hello Binary!
 | `char[100]` ("Hello") | 5 bytes (`"Hello"`) | 100 bytes | Text wins |
 
 ### Portability Concerns → Binary Mode
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-handwritten.svg" alt="Handwritten: Portability Concerns → Binary Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-diagram.svg" alt="Diagram: Portability Concerns → Binary Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/portability-concerns-binary-mode-sticky.svg" alt="Sticky Note: Portability Concerns → Binary Mode" width="30%">
+</a>
+
 
 Binary files are **not portable** across platforms because:
 
@@ -804,6 +1244,17 @@ int x = 0x01020304;
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 File positioning is like using a **bookmark**:
 
 | Function | Bookmark Action |
@@ -816,6 +1267,17 @@ File positioning is like using a **bookmark**:
 
 ### Get Pointer vs Put Pointer
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-handwritten.svg" alt="Handwritten: Get Pointer vs Put Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-diagram.svg" alt="Diagram: Get Pointer vs Put Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/get-pointer-vs-put-pointer-sticky.svg" alt="Sticky Note: Get Pointer vs Put Pointer" width="30%">
+</a>
+
+
 | Pointer | Associated With | Access via | Purpose |
 |---------|----------------|------------|---------|
 | **get pointer** | Input operations | `tellg()` / `seekg()` | Tracks next byte to read |
@@ -824,6 +1286,17 @@ File positioning is like using a **bookmark**:
 
 ### Seeking Origins
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-handwritten.svg" alt="Handwritten: Seeking Origins" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-diagram.svg" alt="Diagram: Seeking Origins" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/seeking-origins-sticky.svg" alt="Sticky Note: Seeking Origins" width="30%">
+</a>
+
+
 | Origin | Meaning | Typical Use |
 |--------|---------|-------------|
 | `ios::beg` | Beginning of file | Jump to absolute position from start |
@@ -831,6 +1304,17 @@ File positioning is like using a **bookmark**:
 | `ios::end` | End of file | Jump to position relative to end |
 
 ### Complete seekg/seekp Reference
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-handwritten.svg" alt="Handwritten: Complete seekg/seekp Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-diagram.svg" alt="Diagram: Complete seekg/seekp Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-seekg-seekp-reference-sticky.svg" alt="Sticky Note: Complete seekg/seekp Reference" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -887,6 +1371,17 @@ Value at position 20: 5
 
 ### Dry Run → File Positioning
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-handwritten.svg" alt="Handwritten: Dry Run → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-diagram.svg" alt="Diagram: Dry Run → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-file-positioning-sticky.svg" alt="Sticky Note: Dry Run → File Positioning" width="30%">
+</a>
+
+
 Assume file initially contains: `[0][1][2][3][4][5][6][7][8][9]` (40 bytes, 4 bytes per int)
 
 | Step | Operation | get Pointer | put Pointer | Action |
@@ -903,6 +1398,17 @@ Assume file initially contains: `[0][1][2][3][4][5][6][7][8][9]` (40 bytes, 4 by
 | 9 | `read(&v, 4)` | 24 | 40 | Read int 5 → `v=5` |
 
 ### Random Access Example → CSV Indexing
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-handwritten.svg" alt="Handwritten: Random Access Example → CSV Indexing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-diagram.svg" alt="Diagram: Random Access Example → CSV Indexing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/random-access-example-csv-indexing-sticky.svg" alt="Sticky Note: Random Access Example → CSV Indexing" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -951,6 +1457,17 @@ Employee at index 2: Charlie (ID: 103, Salary: $82000)
 
 ### Complexity Analysis → File Positioning
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-handwritten.svg" alt="Handwritten: Complexity Analysis → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-diagram.svg" alt="Diagram: Complexity Analysis → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-file-positioning-sticky.svg" alt="Sticky Note: Complexity Analysis → File Positioning" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | `seekg(n)` | O(1) | O(1) | Just moves a file offset number in the OS file table |
@@ -962,6 +1479,17 @@ Employee at index 2: Charlie (ID: 103, Salary: $82000)
 **Why is seeking O(1)?** The OS maintains a file offset (a single 64-bit integer) for each open file descriptor. `seekg()` simply changes this number. No data is read during the seek → the actual I/O happens on the next `read()` or `write()`.
 
 ### Edge Cases → File Positioning
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-handwritten.svg" alt="Handwritten: Edge Cases → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-diagram.svg" alt="Diagram: Edge Cases → File Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-file-positioning-sticky.svg" alt="Sticky Note: Edge Cases → File Positioning" width="30%">
+</a>
+
 
 | Scenario | Behavior | Prevention |
 |----------|----------|------------|
@@ -978,6 +1506,17 @@ Employee at index 2: Charlie (ID: 103, Salary: $82000)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Stream state flags are like **dashboard warning lights** in a car:
 
 | Flag | Dashboard Light | Meaning |
@@ -989,6 +1528,17 @@ Stream state flags are like **dashboard warning lights** in a car:
 | `clear()` | Reset button | Turn off all warning lights |
 
 ### Stream State Flags
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-handwritten.svg" alt="Handwritten: Stream State Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-diagram.svg" alt="Diagram: Stream State Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-flags-sticky.svg" alt="Sticky Note: Stream State Flags" width="30%">
+</a>
+
 
 | Flag | Type | Description | Set When | Recoverable? |
 |------|------|-------------|----------|-------------|
@@ -1002,6 +1552,17 @@ Stream state flags are like **dashboard warning lights** in a car:
 | `eof()` | → | Returns true if eofbit set | → | → |
 
 ### Checking File Open
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-handwritten.svg" alt="Handwritten: Checking File Open" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-diagram.svg" alt="Diagram: Checking File Open" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-file-open-sticky.svg" alt="Sticky Note: Checking File Open" width="30%">
+</a>
+
 
 ```cpp
 std::ifstream file("data.txt");
@@ -1034,6 +1595,17 @@ if (!file.is_open()) {
 | File opened, then read hits EOF | true (`eofbit` + `failbit`) | false (still open) |
 
 ### Checking Read Operations
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-handwritten.svg" alt="Handwritten: Checking Read Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-diagram.svg" alt="Diagram: Checking Read Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/checking-read-operations-sticky.svg" alt="Sticky Note: Checking Read Operations" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -1077,6 +1649,17 @@ Skipped bad token: 'abc'
 
 ### The clear() Function
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-handwritten.svg" alt="Handwritten: The clear() Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-diagram.svg" alt="Diagram: The clear() Function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/the-clear-function-sticky.svg" alt="Sticky Note: The clear() Function" width="30%">
+</a>
+
+
 ```cpp
 // After a failure, clear() resets the error flags
 file.clear();            // Clear all error flags
@@ -1085,6 +1668,17 @@ file.setstate(std::ios::failbit);  // Set flag, keep others
 ```
 
 ### Exception Handling with exceptions()
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-handwritten.svg" alt="Handwritten: Exception Handling with exceptions()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-diagram.svg" alt="Diagram: Exception Handling with exceptions()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/exception-handling-with-exceptions-sticky.svg" alt="Sticky Note: Exception Handling with exceptions()" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -1116,6 +1710,17 @@ Error code: generic:2
 
 ### Complete Error Handling Checklist
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-handwritten.svg" alt="Handwritten: Complete Error Handling Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-diagram.svg" alt="Diagram: Complete Error Handling Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complete-error-handling-checklist-sticky.svg" alt="Sticky Note: Complete Error Handling Checklist" width="30%">
+</a>
+
+
 ```
 âœ“ Check if file opened (!file or file.fail())
 âœ“ Check is_open() for open-status (separate from state)
@@ -1128,6 +1733,17 @@ Error code: generic:2
 
 ### Complexity Analysis → Error Handling
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-handwritten.svg" alt="Handwritten: Complexity Analysis → Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-diagram.svg" alt="Diagram: Complexity Analysis → Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-error-handling-sticky.svg" alt="Sticky Note: Complexity Analysis → Error Handling" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Checking stream state | O(1) | Reading a bitmask |
@@ -1135,6 +1751,17 @@ Error code: generic:2
 | Throwing exception | O(1) + unwind | Throwing an exception object, stack unwinding (potentially O(stack depth)) |
 
 ### Common Mistakes
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-handwritten.svg" alt="Handwritten: Common Mistakes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-diagram.svg" alt="Diagram: Common Mistakes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/common-mistakes-sticky.svg" alt="Sticky Note: Common Mistakes" width="30%">
+</a>
+
 
 | Mistake | Wrong Code | Correct Code |
 |---------|-----------|-------------|
@@ -1149,6 +1776,17 @@ Error code: generic:2
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 String streams are like **using a whiteboard** instead of writing in a notebook:
 
 | Concept | Notebook (File) | Whiteboard (String Stream) |
@@ -1160,6 +1798,17 @@ String streams are like **using a whiteboard** instead of writing in a notebook:
 
 ### Class Hierarchy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-handwritten.svg" alt="Handwritten: Class Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-diagram.svg" alt="Diagram: Class Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/class-hierarchy-sticky.svg" alt="Sticky Note: Class Hierarchy" width="30%">
+</a>
+
+
 ```
 <iostream>
   |
@@ -1170,7 +1819,29 @@ String streams are like **using a whiteboard** instead of writing in a notebook:
 
 ### Header: `<sstream>`
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-handwritten.svg" alt="Handwritten: Header: `<sstream>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-diagram.svg" alt="Diagram: Header: `<sstream>`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/header-sstream-sticky.svg" alt="Sticky Note: Header: `<sstream>`" width="30%">
+</a>
+
+
 ### When to Use String Streams
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-handwritten.svg" alt="Handwritten: When to Use String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-diagram.svg" alt="Diagram: When to Use String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/when-to-use-string-streams-sticky.svg" alt="Sticky Note: When to Use String Streams" width="30%">
+</a>
+
 
 | Use Case | Why String Stream? |
 |----------|-------------------|
@@ -1182,6 +1853,17 @@ String streams are like **using a whiteboard** instead of writing in a notebook:
 | **Log message formatting** | Build log entries with timestamps, levels, and variables |
 
 ### istringstream → Reading from a String
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-handwritten.svg" alt="Handwritten: istringstream → Reading from a String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-diagram.svg" alt="Diagram: istringstream → Reading from a String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/istringstream-reading-from-a-string-sticky.svg" alt="Sticky Note: istringstream → Reading from a String" width="30%">
+</a>
+
 
 ```cpp
 #include <sstream>
@@ -1211,6 +1893,17 @@ Charlie → 92
 ```
 
 ### ostringstream → Writing to a String
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-handwritten.svg" alt="Handwritten: ostringstream → Writing to a String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-diagram.svg" alt="Diagram: ostringstream → Writing to a String" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/ostringstream-writing-to-a-string-sticky.svg" alt="Sticky Note: ostringstream → Writing to a String" width="30%">
+</a>
+
 
 ```cpp
 #include <sstream>
@@ -1246,6 +1939,17 @@ Salary: $75000.50
 
 ### stringstream → Bidirectional
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-handwritten.svg" alt="Handwritten: stringstream → Bidirectional" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-diagram.svg" alt="Diagram: stringstream → Bidirectional" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stringstream-bidirectional-sticky.svg" alt="Sticky Note: stringstream → Bidirectional" width="30%">
+</a>
+
+
 ```cpp
 #include <sstream>
 #include <iostream>
@@ -1273,6 +1977,17 @@ int main() {
 ```
 
 ### Application 1: Type Conversion (C++ Style)
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-handwritten.svg" alt="Handwritten: Application 1: Type Conversion (C++ Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-diagram.svg" alt="Diagram: Application 1: Type Conversion (C++ Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-1-type-conversion-c-style-sticky.svg" alt="Sticky Note: Application 1: Type Conversion (C++ Style)" width="30%">
+</a>
+
 
 ```cpp
 #include <sstream>
@@ -1325,6 +2040,17 @@ Double: 2.71828
 
 ### Application 2: Parsing CSV Line
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-handwritten.svg" alt="Handwritten: Application 2: Parsing CSV Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-diagram.svg" alt="Diagram: Application 2: Parsing CSV Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-2-parsing-csv-line-sticky.svg" alt="Sticky Note: Application 2: Parsing CSV Line" width="30%">
+</a>
+
+
 ```cpp
 #include <sstream>
 #include <iostream>
@@ -1363,6 +2089,17 @@ Alice | Age: 30 | Height: 5.7
 ```
 
 ### Application 3: Building SQL Queries
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-handwritten.svg" alt="Handwritten: Application 3: Building SQL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-diagram.svg" alt="Diagram: Application 3: Building SQL Queries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-3-building-sql-queries-sticky.svg" alt="Sticky Note: Application 3: Building SQL Queries" width="30%">
+</a>
+
 
 ```cpp
 #include <sstream>
@@ -1413,6 +2150,17 @@ SELECT name, salary FROM employees WHERE salary > 50000 ORDER BY salary DESC;
 
 ### Application 4: Log Message Builder
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-handwritten.svg" alt="Handwritten: Application 4: Log Message Builder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-diagram.svg" alt="Diagram: Application 4: Log Message Builder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/application-4-log-message-builder-sticky.svg" alt="Sticky Note: Application 4: Log Message Builder" width="30%">
+</a>
+
+
 ```cpp
 #include <sstream>
 #include <iostream>
@@ -1448,6 +2196,17 @@ int main() {
 
 ### Complexity Analysis → String Streams
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-handwritten.svg" alt="Handwritten: Complexity Analysis → String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-diagram.svg" alt="Diagram: Complexity Analysis → String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-string-streams-sticky.svg" alt="Sticky Note: Complexity Analysis → String Streams" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Create stringstream | O(1) | O(1) | Just initializes a buffer (no allocation yet) |
@@ -1457,6 +2216,17 @@ int main() {
 | Parse CSV line | O(N) | O(N) for tokens | Each character examined once |
 
 ### Edge Cases → String Streams
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-handwritten.svg" alt="Handwritten: Edge Cases → String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-diagram.svg" alt="Diagram: Edge Cases → String Streams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-string-streams-sticky.svg" alt="Sticky Note: Edge Cases → String Streams" width="30%">
+</a>
+
 
 | Scenario | Behavior | Solution |
 |----------|----------|----------|
@@ -1472,6 +2242,17 @@ int main() {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Serialization is like **freezing food**:
 
 | Concept | Freezing Food | Serialization |
@@ -1485,6 +2266,17 @@ Serialization is like **freezing food**:
 
 ### What is Serialization?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-handwritten.svg" alt="Handwritten: What is Serialization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-diagram.svg" alt="Diagram: What is Serialization?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-serialization-sticky.svg" alt="Sticky Note: What is Serialization?" width="30%">
+</a>
+
+
 Serialization is the process of converting an object's state into a format that can be stored or transmitted and later reconstructed. Deserialization is the reverse process.
 
 **Two main approaches:**
@@ -1495,6 +2287,17 @@ Serialization is the process of converting an object's state into a format that 
 | **Text Serialization** | Portable, human-readable, debuggable | Slower, larger file size | Config files, data exchange, human inspection |
 
 ### Binary Serialization → POD Types
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-handwritten.svg" alt="Handwritten: Binary Serialization → POD Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-diagram.svg" alt="Diagram: Binary Serialization → POD Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-pod-types-sticky.svg" alt="Sticky Note: Binary Serialization → POD Types" width="30%">
+</a>
+
 
 POD (Plain Old Data) types can be serialized directly:
 
@@ -1537,6 +2340,17 @@ Deserialized point: (10, 20, 30)
 **Warning:** `sizeof(Point)` may be 12 or 16 depending on alignment/padding.
 
 ### Binary Serialization → Handling std::string
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-handwritten.svg" alt="Handwritten: Binary Serialization → Handling std::string" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-diagram.svg" alt="Diagram: Binary Serialization → Handling std::string" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/binary-serialization-handling-std-string-sticky.svg" alt="Sticky Note: Binary Serialization → Handling std::string" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -1616,6 +2430,17 @@ Student: Bob (ID: 102, GPA: 3.5)
 
 ### Dry Run → Serializing Student
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-handwritten.svg" alt="Handwritten: Dry Run → Serializing Student" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-diagram.svg" alt="Diagram: Dry Run → Serializing Student" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/dry-run-serializing-student-sticky.svg" alt="Sticky Note: Dry Run → Serializing Student" width="30%">
+</a>
+
+
 **Write Phase:**
 
 | Step | Operation | File Position | Bytes Written | File Content |
@@ -1635,6 +2460,17 @@ Student: Bob (ID: 102, GPA: 3.5)
 | 4 | Read gpa | 8 | gpa_=3.9 | 13→21 |
 
 ### Text Serialization (CSV)
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-handwritten.svg" alt="Handwritten: Text Serialization (CSV)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-diagram.svg" alt="Diagram: Text Serialization (CSV)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/text-serialization-csv-sticky.svg" alt="Sticky Note: Text Serialization (CSV)" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -1723,6 +2559,17 @@ Doohickey,9.99,200
 
 ### Serialization → Handling Containers
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-handwritten.svg" alt="Handwritten: Serialization → Handling Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-diagram.svg" alt="Diagram: Serialization → Handling Containers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-handling-containers-sticky.svg" alt="Sticky Note: Serialization → Handling Containers" width="30%">
+</a>
+
+
 ```cpp
 #include <fstream>
 #include <iostream>
@@ -1806,6 +2653,17 @@ Employees: 101 102 103 104 105
 
 ### Serialization Versioning
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-handwritten.svg" alt="Handwritten: Serialization Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-diagram.svg" alt="Diagram: Serialization Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-versioning-sticky.svg" alt="Sticky Note: Serialization Versioning" width="30%">
+</a>
+
+
 Always include a **version number** at the start of serialized data:
 
 ```cpp
@@ -1876,6 +2734,17 @@ Payload: Hello, Future!
 
 ### Serialization Methods Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-handwritten.svg" alt="Handwritten: Serialization Methods Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-diagram.svg" alt="Diagram: Serialization Methods Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/serialization-methods-comparison-sticky.svg" alt="Sticky Note: Serialization Methods Comparison" width="30%">
+</a>
+
+
 | Method | Speed | Size (N bytes) | Portability | Complexity |
 |--------|-------|----------------|-------------|------------|
 | Raw struct dump | Fastest | `sizeof(T)` | None (same compiler/hardware) | Trivial |
@@ -1887,6 +2756,17 @@ Payload: Hello, Future!
 
 ### Complexity Analysis → Serialization
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-handwritten.svg" alt="Handwritten: Complexity Analysis → Serialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-diagram.svg" alt="Diagram: Complexity Analysis → Serialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/complexity-analysis-serialization-sticky.svg" alt="Sticky Note: Complexity Analysis → Serialization" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Serialize POD (N bytes) | O(N) | O(N) | Raw memory copy |
@@ -1897,6 +2777,17 @@ Payload: Hello, Future!
 | Text deserialization | O(N) | O(N) | Character parsing + conversion |
 
 ### Edge Cases → Serialization
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-handwritten.svg" alt="Handwritten: Edge Cases → Serialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-diagram.svg" alt="Diagram: Edge Cases → Serialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/edge-cases-serialization-sticky.svg" alt="Sticky Note: Edge Cases → Serialization" width="30%">
+</a>
+
 
 | Scenario | Problem | Solution |
 |----------|---------|----------|
@@ -1914,6 +2805,17 @@ Payload: Hello, Future!
 
 ### Q1: What is the difference between ifstream, ofstream, and fstream?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-handwritten.svg" alt="Handwritten: What is the difference between ifstream, ofstream, and fstream?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-diagram.svg" alt="Diagram: What is the difference between ifstream, ofstream, and fstream?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-ifstream-ofstream-and-fstream-sticky.svg" alt="Sticky Note: What is the difference between ifstream, ofstream, and fstream?" width="30%">
+</a>
+
+
 **Answer:**
 | Class | Direction | Use Case |
 |-------|-----------|----------|
@@ -1924,6 +2826,17 @@ Payload: Hello, Future!
 **Key Point:** `ofstream` truncates by default; `fstream` does not.
 
 ### Q2: How do you check if a file opened successfully?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-handwritten.svg" alt="Handwritten: How do you check if a file opened successfully?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-diagram.svg" alt="Diagram: How do you check if a file opened successfully?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-check-if-a-file-opened-successfully-sticky.svg" alt="Sticky Note: How do you check if a file opened successfully?" width="30%">
+</a>
+
 
 **Answer:**
 ```cpp
@@ -1937,12 +2850,34 @@ The `!` operator returns true if `failbit` or `badbit` is set. This catches both
 
 ### Q3: What happens if you try to open a non-existent file with ofstream?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-handwritten.svg" alt="Handwritten: What happens if you try to open a non-existent file with ofstream?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-diagram.svg" alt="Diagram: What happens if you try to open a non-existent file with ofstream?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-try-to-open-a-non-existent-file-with-ofstream-sticky.svg" alt="Sticky Note: What happens if you try to open a non-existent file with ofstream?" width="30%">
+</a>
+
+
 **Answer:** `ofstream` **creates** the file if it doesn't exist. If it does exist, it truncates (clears) it by default. To append instead:
 ```cpp
 std::ofstream file("log.txt", std::ios::app);
 ```
 
 ### Q4: What is the difference between text mode and binary mode on Windows?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-handwritten.svg" alt="Handwritten: What is the difference between text mode and binary mode on Windows?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-diagram.svg" alt="Diagram: What is the difference between text mode and binary mode on Windows?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-text-mode-and-binary-mode-on-windows-sticky.svg" alt="Sticky Note: What is the difference between text mode and binary mode on Windows?" width="30%">
+</a>
+
 
 **Answer:** In text mode:
 - Writing `\n` (0x0A) produces `\r\n` (0x0D 0x0A) on disk
@@ -1951,6 +2886,17 @@ std::ofstream file("log.txt", std::ios::app);
 Binary mode suppresses all translation. This is why binary files (images, executables) must be opened in binary mode → any byte with value 0x0A or 0x0D would be corrupted in text mode.
 
 ### Q5: Why is `while (!file.eof())` wrong?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-handwritten.svg" alt="Handwritten: Why is `while (!file.eof())` wrong?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-diagram.svg" alt="Diagram: Why is `while (!file.eof())` wrong?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/why-is-while-file-eof-wrong-sticky.svg" alt="Sticky Note: Why is `while (!file.eof())` wrong?" width="30%">
+</a>
+
 
 **Answer:** `eof()` returns true only AFTER a read attempt fails due to EOF. This means:
 1. The last successful read appears to fail (one extra iteration)
@@ -1964,6 +2910,17 @@ while (file >> value) {    // fails at EOF OR format error
 ```
 
 ### Q6: How do you read an entire file into a string?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-handwritten.svg" alt="Handwritten: How do you read an entire file into a string?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-diagram.svg" alt="Diagram: How do you read an entire file into a string?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-an-entire-file-into-a-string-sticky.svg" alt="Sticky Note: How do you read an entire file into a string?" width="30%">
+</a>
+
 
 **Answer:**
 ```cpp
@@ -1984,6 +2941,17 @@ std::string content2 = buffer.str();
 Method 1 is more idiomatic; Method 2 is more readable.
 
 ### Q7: How do you read a file backwards (last line first)?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-handwritten.svg" alt="Handwritten: How do you read a file backwards (last line first)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-diagram.svg" alt="Diagram: How do you read a file backwards (last line first)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-read-a-file-backwards-last-line-first-sticky.svg" alt="Sticky Note: How do you read a file backwards (last line first)?" width="30%">
+</a>
+
 
 **Answer:**
 ```cpp
@@ -2009,12 +2977,34 @@ Or read all lines into a vector and reverse.
 
 ### Q8: What is the purpose of tellg() and tellp()?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-handwritten.svg" alt="Handwritten: What is the purpose of tellg() and tellp()?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-diagram.svg" alt="Diagram: What is the purpose of tellg() and tellp()?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-purpose-of-tellg-and-tellp-sticky.svg" alt="Sticky Note: What is the purpose of tellg() and tellp()?" width="30%">
+</a>
+
+
 **Answer:** They return the current position of the get pointer (for reading) and put pointer (for writing) as a `std::streampos` value. Used to:
 - Remember a position for later seeking
 - Determine file size: `seekg(0, end); auto size = tellg();`
 - Verify positioning after seeks
 
 ### Q9: How do string streams differ from file streams?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-handwritten.svg" alt="Handwritten: How do string streams differ from file streams?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-diagram.svg" alt="Diagram: How do string streams differ from file streams?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-string-streams-differ-from-file-streams-sticky.svg" alt="Sticky Note: How do string streams differ from file streams?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2029,6 +3019,17 @@ Or read all lines into a vector and reverse.
 **Core insight:** String streams use the same interface as file streams, making them interchangeable for testing or when data sources change.
 
 ### Q10: How do you serialize a class with virtual functions?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-handwritten.svg" alt="Handwritten: How do you serialize a class with virtual functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-diagram.svg" alt="Diagram: How do you serialize a class with virtual functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/how-do-you-serialize-a-class-with-virtual-functions-sticky.svg" alt="Sticky Note: How do you serialize a class with virtual functions?" width="30%">
+</a>
+
 
 **Answer:** Classes with virtual functions have a **vtable pointer** as an implicit member. Serializing the raw memory includes this pointer, which is meaningless in a new process. Instead:
 1. Serialize only the data members (not the vtable)
@@ -2047,6 +3048,17 @@ void serialize(std::ofstream& out, const Base& b) {
 
 ### Q11: What is the difference between `read()`/`write()` and `<<`/`>>`?
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-handwritten.svg" alt="Handwritten: What is the difference between `read()`/`write()` and `<<`/`>>`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-diagram.svg" alt="Diagram: What is the difference between `read()`/`write()` and `<<`/`>>`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-is-the-difference-between-read-write-and-sticky.svg" alt="Sticky Note: What is the difference between `read()`/`write()` and `<<`/`>>`?" width="30%">
+</a>
+
+
 **Answer:**
 | Feature | `<<` / `>>` | `read()` / `write()` |
 |---------|-------------|---------------------|
@@ -2057,6 +3069,17 @@ void serialize(std::ofstream& out, const Base& b) {
 | **Use Case** | Human-readable data | Binary data, fixed-size records |
 
 ### Q12: What happens if you don't close a file?
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-handwritten.svg" alt="Handwritten: What happens if you don't close a file?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-diagram.svg" alt="Diagram: What happens if you don't close a file?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/what-happens-if-you-don-t-close-a-file-sticky.svg" alt="Sticky Note: What happens if you don't close a file?" width="30%">
+</a>
+
 
 **Answer:** The destructor calls `close()` automatically (RAII). However:
 - If the program crashes before destruction, buffered data may be lost
@@ -2072,6 +3095,17 @@ void serialize(std::ofstream& out, const Base& b) {
 ## 11.12 Real Systems Applications
 
 ### 1. Configuration File Parser (INI format)
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-handwritten.svg" alt="Handwritten: 1. Configuration File Parser (INI format)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-diagram.svg" alt="Diagram: 1. Configuration File Parser (INI format)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/1-configuration-file-parser-ini-format-sticky.svg" alt="Sticky Note: 1. Configuration File Parser (INI format)" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -2123,6 +3157,17 @@ public:
 ```
 
 ### 2. Game Save System
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-handwritten.svg" alt="Handwritten: 2. Game Save System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-diagram.svg" alt="Diagram: 2. Game Save System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/2-game-save-system-sticky.svg" alt="Sticky Note: 2. Game Save System" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -2199,6 +3244,17 @@ public:
 
 ### 3. Database Page Storage
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-handwritten.svg" alt="Handwritten: 3. Database Page Storage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-diagram.svg" alt="Diagram: 3. Database Page Storage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/3-database-page-storage-sticky.svg" alt="Sticky Note: 3. Database Page Storage" width="30%">
+</a>
+
+
 Real databases (SQLite, MySQL) use file I/O for persistent page storage:
 
 ```cpp
@@ -2270,6 +3326,17 @@ public:
 ```
 
 ### 4. Log Rotation System
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-handwritten.svg" alt="Handwritten: 4. Log Rotation System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-diagram.svg" alt="Diagram: 4. Log Rotation System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/4-log-rotation-system-sticky.svg" alt="Sticky Note: 4. Log Rotation System" width="30%">
+</a>
+
 
 ```cpp
 #include <fstream>
@@ -2356,6 +3423,17 @@ private:
 
 ### File I/O Operations Summary
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-handwritten.svg" alt="Handwritten: File I/O Operations Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-diagram.svg" alt="Diagram: File I/O Operations Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/file-i-o-operations-summary-sticky.svg" alt="Sticky Note: File I/O Operations Summary" width="30%">
+</a>
+
+
 | Operation | Text File | Binary File | Method |
 |-----------|-----------|-------------|--------|
 | Open for reading | `ifstream f("f.txt")` | `ifstream f("f.bin", ios::binary)` | Constructor |
@@ -2373,6 +3451,17 @@ private:
 
 ### Stream State After Common Operations
 
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-handwritten.svg" alt="Handwritten: Stream State After Common Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-diagram.svg" alt="Diagram: Stream State After Common Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/stream-state-after-common-operations-sticky.svg" alt="Sticky Note: Stream State After Common Operations" width="30%">
+</a>
+
+
 | Operation | good() | eof() | fail() | bad() |
 |-----------|--------|-------|--------|-------|
 | File opened successfully | true | false | false | false |
@@ -2383,6 +3472,17 @@ private:
 | After clear() | true | false | false | false |
 
 ### Error Handling Methods Comparison
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-handwritten.svg" alt="Handwritten: Error Handling Methods Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-diagram.svg" alt="Diagram: Error Handling Methods Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/error-handling-methods-comparison-sticky.svg" alt="Sticky Note: Error Handling Methods Comparison" width="30%">
+</a>
+
 
 | Method | Best For | Example |
 |--------|----------|---------|
@@ -2396,6 +3496,17 @@ private:
 ## Chapter Quiz
 
 ### Multiple Choice
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-handwritten.svg" alt="Handwritten: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-diagram.svg" alt="Diagram: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/multiple-choice-sticky.svg" alt="Sticky Note: Multiple Choice" width="30%">
+</a>
+
 
 1. **Which header must be included to use file streams?**
    A) `<iostream>`
@@ -2468,6 +3579,17 @@ private:
     <details><summary>Answer&lt;/summary&gt;**B)** A version number lets your code detect and handle different formats as the serialization evolves.</details>
 
 ### True or False
+
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-handwritten.svg" alt="Handwritten: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-diagram.svg" alt="Diagram: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/11-file-io/true-or-false-sticky.svg" alt="Sticky Note: True or False" width="30%">
+</a>
+
 
 11. **Binary mode files are always smaller than text mode files.**
     <details><summary>Answer&lt;/summary&gt;**False.** Small integers (0-9) take 1 byte in text but 4 bytes in binary. Text representation of small values may be smaller.</details>

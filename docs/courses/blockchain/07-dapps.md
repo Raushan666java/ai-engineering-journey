@@ -45,6 +45,39 @@ flowchart LR
 
 ### The dApp Stack
 
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" alt="Handwritten: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" alt="Diagram: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" alt="Sticky Note: The dApp Stack" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" alt="Handwritten: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" alt="Diagram: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" alt="Sticky Note: The dApp Stack" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-handwritten.svg" alt="Handwritten: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-diagram.svg" alt="Diagram: The dApp Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/the-dapp-stack-sticky.svg" alt="Sticky Note: The dApp Stack" width="30%">
+</a>
+
+
 A traditional app uses: `Frontend ? API ? Centralized Database`.
 A dApp uses: `Frontend ? Provider/Wallet ? Blockchain (Smart Contracts)`.
 
@@ -82,6 +115,39 @@ flowchart TB
 
 ### MetaMask Interaction Flow
 
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" alt="Handwritten: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" alt="Diagram: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" alt="Sticky Note: MetaMask Interaction Flow" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" alt="Handwritten: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" alt="Diagram: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" alt="Sticky Note: MetaMask Interaction Flow" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-handwritten.svg" alt="Handwritten: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-diagram.svg" alt="Diagram: MetaMask Interaction Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/metamask-interaction-flow-sticky.svg" alt="Sticky Note: MetaMask Interaction Flow" width="30%">
+</a>
+
+
 ```mermaid
 sequenceDiagram
     participant User as User
@@ -110,6 +176,39 @@ sequenceDiagram
 ```
 
 ### Web3 Libraries: ethers.js
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" alt="Handwritten: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" alt="Diagram: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" alt="Sticky Note: Web3 Libraries: ethers.js" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" alt="Handwritten: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" alt="Diagram: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" alt="Sticky Note: Web3 Libraries: ethers.js" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-handwritten.svg" alt="Handwritten: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-diagram.svg" alt="Diagram: Web3 Libraries: ethers.js" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/web3-libraries-ethers-js-sticky.svg" alt="Sticky Note: Web3 Libraries: ethers.js" width="30%">
+</a>
+
 
 `ethers.js` (preferred over `web3.js` for its smaller size and better TypeScript support) provides:
 
@@ -158,6 +257,39 @@ console.log("Transaction confirmed:", tx.hash);
 
 ### DApp vs Traditional App Comparison
 
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" alt="Handwritten: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" alt="Diagram: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" alt="Sticky Note: DApp vs Traditional App Comparison" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" alt="Handwritten: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" alt="Diagram: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" alt="Sticky Note: DApp vs Traditional App Comparison" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-handwritten.svg" alt="Handwritten: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-diagram.svg" alt="Diagram: DApp vs Traditional App Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/dapp-vs-traditional-app-comparison-sticky.svg" alt="Sticky Note: DApp vs Traditional App Comparison" width="30%">
+</a>
+
+
 | Aspect | Traditional App (Web2) | dApp (Web3) |
 |--------|----------------------|-------------|
 | **Backend** | Centralized server | Smart contracts on blockchain |
@@ -174,6 +306,39 @@ console.log("Transaction confirmed:", tx.hash);
 | **Speed** | Milliseconds | Seconds to minutes (block time) |
 
 ### Event-Driven Architecture
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" alt="Handwritten: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" alt="Diagram: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" alt="Sticky Note: Event-Driven Architecture" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" alt="Handwritten: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" alt="Diagram: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" alt="Sticky Note: Event-Driven Architecture" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-handwritten.svg" alt="Handwritten: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-diagram.svg" alt="Diagram: Event-Driven Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/event-driven-architecture-sticky.svg" alt="Sticky Note: Event-Driven Architecture" width="30%">
+</a>
+
 
 Smart contracts emit events that dApps can listen to in real-time:
 
@@ -216,6 +381,39 @@ const events = await contract.queryFilter(
 ```
 
 ### IPFS (InterPlanetary File System)
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" alt="Handwritten: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" alt="Diagram: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" alt="Sticky Note: IPFS (InterPlanetary File System)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" alt="Handwritten: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" alt="Diagram: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" alt="Sticky Note: IPFS (InterPlanetary File System)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-handwritten.svg" alt="Handwritten: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-diagram.svg" alt="Diagram: IPFS (InterPlanetary File System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ipfs-interplanetary-file-system-sticky.svg" alt="Sticky Note: IPFS (InterPlanetary File System)" width="30%">
+</a>
+
 
 IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their **CID (Content Identifier)** — a hash of the content itself, not a location URL.
 
@@ -272,6 +470,39 @@ async function uploadToIPFS(metadata: NFTMetadata): Promise<string> {
 
 ### Provider Comparison
 
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" alt="Handwritten: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" alt="Diagram: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" alt="Sticky Note: Provider Comparison" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" alt="Handwritten: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" alt="Diagram: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" alt="Sticky Note: Provider Comparison" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-handwritten.svg" alt="Handwritten: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-diagram.svg" alt="Diagram: Provider Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/provider-comparison-sticky.svg" alt="Sticky Note: Provider Comparison" width="30%">
+</a>
+
+
 | Provider | Free Tier | Paid Tier | WebSocket | Special Features |
 |----------|-----------|-----------|-----------|------------------|
 | Infura | 100K req/day | $50+/mo | Yes | Most mature, ETH/L2 support |
@@ -281,6 +512,39 @@ async function uploadToIPFS(metadata: NFTMetadata): Promise<string> {
 | Public RPC | Unlimited (rate limited) | Free | Limited | ethers.providers.JsonRpcProvider |
 
 ### ENS (Ethereum Name Service)
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" alt="Handwritten: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" alt="Diagram: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" alt="Sticky Note: ENS (Ethereum Name Service)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" alt="Handwritten: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" alt="Diagram: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" alt="Sticky Note: ENS (Ethereum Name Service)" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-handwritten.svg" alt="Handwritten: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-diagram.svg" alt="Diagram: ENS (Ethereum Name Service)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/07-dapps/ens-ethereum-name-service-sticky.svg" alt="Sticky Note: ENS (Ethereum Name Service)" width="30%">
+</a>
+
 
 ENS maps human-readable names (e.g., `vitalik.eth`) to Ethereum addresses:
 

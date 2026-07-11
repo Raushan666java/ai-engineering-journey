@@ -127,6 +127,17 @@ flowchart LR
 
 ### 35.1 Legal Data Models
 
+<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" alt="Handwritten: 35.1 Legal Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" alt="Diagram: 35.1 Legal Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" alt="Sticky Note: 35.1 Legal Data Models" width="30%">
+</a>
+
+
 Legal software must handle sensitive, confidential, and often court-mandated data with strict access controls, audit trails, and encryption. The core entities span cases, documents, contracts, clients, matters, and compliance records. Every model should support soft deletes, tenant scoping for law-firm multi-tenancy, and encrypted fields for attorney-client privileged content.
 
 #### Migration for Legal Domain Tables
@@ -357,6 +368,17 @@ class Contract extends Model
 ---
 
 ### 35.2 Contract Review & Analysis Agents
+
+<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" alt="Handwritten: 35.2 Contract Review & Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" alt="Diagram: 35.2 Contract Review & Analysis Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" alt="Sticky Note: 35.2 Contract Review & Analysis Agents" width="30%">
+</a>
+
 
 Contract review is a high-volume, high-stakes legal task. An AI-powered agent can scan contracts for risky clauses, extract key terms, and assign risk scores before a human attorney ever opens the document. The agent combines clause-detection patterns with LLM-powered analysis for nuanced understanding.
 
@@ -629,6 +651,17 @@ PROMPT;
 
 ### 35.3 Document Discovery Automation
 
+<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" alt="Handwritten: 35.3 Document Discovery Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" alt="Diagram: 35.3 Document Discovery Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" alt="Sticky Note: 35.3 Document Discovery Automation" width="30%">
+</a>
+
+
 E-discovery is the process of identifying, collecting, and producing electronically stored information (ESI) in response to a legal request. A DiscoveryAgent automates search, classification, privilege review, and tagging of documents across a matter.
 
 ```php
@@ -868,6 +901,17 @@ PROMPT;
 
 ### 35.4 Compliance Monitoring Agents
 
+<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" alt="Handwritten: 35.4 Compliance Monitoring Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" alt="Diagram: 35.4 Compliance Monitoring Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" alt="Sticky Note: 35.4 Compliance Monitoring Agents" width="30%">
+</a>
+
+
 Organizations must comply with a growing web of regulations → GDPR, HIPAA, SOX, FINRA, SEC rules. A `ComplianceMonitoringAgent` checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources.
 
 ```php
@@ -1106,6 +1150,17 @@ PROMPT;
 
 ### 35.5 Case Management Workflows
 
+<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" alt="Handwritten: 35.5 Case Management Workflows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" alt="Diagram: 35.5 Case Management Workflows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" alt="Sticky Note: 35.5 Case Management Workflows" width="30%">
+</a>
+
+
 A `CaseManagementAgent` tracks case timelines, critical deadlines, and task assignments across a law firm's docket. It automatically notifies attorneys of upcoming deadlines, generates daily docket reports, and manages task completion workflows.
 
 ```php
@@ -1293,6 +1348,17 @@ PROMPT;
 ---
 
 ### 35.6 Legal Research Agents
+
+<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" alt="Handwritten: 35.6 Legal Research Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" alt="Diagram: 35.6 Legal Research Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" alt="Sticky Note: 35.6 Legal Research Agents" width="30%">
+</a>
+
 
 Legal research is one of the most time-intensive tasks in law practice. A `LegalResearchAgent` searches case law databases, formulates search queries, retrieves relevant precedents, and produces summarized research memos. The agent can integrate with external APIs like CourtListener, Caselaw Access Project, or FastCase.
 
@@ -1599,6 +1665,17 @@ PROMPT;
 
 ### 35.7 E-Discovery Pipelines
 
+<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" alt="Handwritten: 35.7 E-Discovery Pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" alt="Diagram: 35.7 E-Discovery Pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" alt="Sticky Note: 35.7 E-Discovery Pipelines" width="30%">
+</a>
+
+
 E-discovery follows a strict lifecycle: Identification → Preservation → Collection → Processing → Review → Analysis → Production. An `EDiscoveryPipeline` orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel.
 
 ```php
@@ -1900,6 +1977,17 @@ class EDiscoveryPipeline
 ---
 
 ### 35.8 Automated Report Generation
+
+<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" alt="Handwritten: 35.8 Automated Report Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" alt="Diagram: 35.8 Automated Report Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" alt="Sticky Note: 35.8 Automated Report Generation" width="30%">
+</a>
+
 
 Legal professionals produce a constant stream of reports: compliance filings, case summaries, briefs, and client updates. A `LegalReportGenerationAgent` automates this by combining template filling, data aggregation from multiple models, and optional AI-assisted drafting for narrative sections.
 

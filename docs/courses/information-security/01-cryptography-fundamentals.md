@@ -25,6 +25,17 @@ After completing this chapter you will be able to:
 
 ### 1.1 Symmetric Encryption
 
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-handwritten.svg" alt="Handwritten: 1.1 Symmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-diagram.svg" alt="Diagram: 1.1 Symmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-1-symmetric-encryption-sticky.svg" alt="Sticky Note: 1.1 Symmetric Encryption" width="30%">
+</a>
+
+
 Symmetric encryption uses a **single shared secret key** for both encryption and decryption. Both sender and receiver must possess the same key, which must be securely distributed beforehand.
 
 #### 1.1.1 DES (Data Encryption Standard)
@@ -92,6 +103,17 @@ flowchart LR
 ```
 
 ### 1.2 Asymmetric Encryption
+
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-handwritten.svg" alt="Handwritten: 1.2 Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-diagram.svg" alt="Diagram: 1.2 Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-2-asymmetric-encryption-sticky.svg" alt="Sticky Note: 1.2 Asymmetric Encryption" width="30%">
+</a>
+
 
 Asymmetric (public-key) cryptography uses a **key pair**: a public key (shared openly) and a private key (kept secret). What one encrypts, only the other can decrypt.
 
@@ -170,6 +192,17 @@ flowchart TD
 
 ### 1.3 Stream Ciphers vs Block Ciphers
 
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-handwritten.svg" alt="Handwritten: 1.3 Stream Ciphers vs Block Ciphers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-diagram.svg" alt="Diagram: 1.3 Stream Ciphers vs Block Ciphers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-3-stream-ciphers-vs-block-ciphers-sticky.svg" alt="Sticky Note: 1.3 Stream Ciphers vs Block Ciphers" width="30%">
+</a>
+
+
 #### 1.3.1 Block Ciphers
 
 - Encrypt data in fixed-size blocks (64 or 128 bits)
@@ -195,6 +228,17 @@ flowchart TD
 | Use cases | Disk encryption, file encryption | Real-time audio/video, TLS |
 
 ### 1.4 Block Cipher Modes of Operation
+
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-handwritten.svg" alt="Handwritten: 1.4 Block Cipher Modes of Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-diagram.svg" alt="Diagram: 1.4 Block Cipher Modes of Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-4-block-cipher-modes-of-operation-sticky.svg" alt="Sticky Note: 1.4 Block Cipher Modes of Operation" width="30%">
+</a>
+
 
 #### 1.4.1 ECB (Electronic Codebook)
 
@@ -277,6 +321,17 @@ flowchart TD
 
 ### 1.5 Hash Functions
 
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-handwritten.svg" alt="Handwritten: 1.5 Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-diagram.svg" alt="Diagram: 1.5 Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-5-hash-functions-sticky.svg" alt="Sticky Note: 1.5 Hash Functions" width="30%">
+</a>
+
+
 A cryptographic hash function H maps an arbitrary-length message M to a fixed-length digest h = H(M) with these properties:
 
 | Property | Description | Exam Significance |
@@ -352,6 +407,17 @@ flowchart LR
 ```
 
 ### 1.6 Solved MCQs (Exam Style)
+
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 1.6 Solved MCQs (Exam Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 1.6 Solved MCQs (Exam Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/01-cryptography-fundamentals/1-6-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 1.6 Solved MCQs (Exam Style)" width="30%">
+</a>
+
 
 **Q1.** In CBC mode of AES, if one bit of the ciphertext block C₂ gets corrupted during transmission, which plaintext blocks will be affected during decryption?
 

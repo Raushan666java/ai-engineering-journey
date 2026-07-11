@@ -27,6 +27,17 @@ LangChain is the most popular LLM orchestration framework (400K+ GitHub stars) a
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Models & Prompts | Templates parameterize LLM calls; parsers enforce structured output | Always use prompt templates → never hardcode strings in application logic |
@@ -38,6 +49,17 @@ LangChain is the most popular LLM orchestration framework (400K+ GitHub stars) a
 | Orchestration | LangChain ties models, data, and tools into a composable pipeline | Every component snaps together with `\|` → design for interchangeability |
 
 ### Chapter Roadmap
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -82,6 +104,17 @@ LangChain is a framework for building LLM-powered applications. Its core abstrac
 > **Real-World Analogy:** A restaurant kitchen. The **model** is the chef → skilled, but needs clear instructions. The **prompt template** is the recipe card with blanks to fill (protein = chicken, sides = rice). The **output parser** is the plating checklist → "plate must have exactly one protein, two sides, one sauce."
 
 ### 2.2.1 Basic LLM Call
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" alt="Handwritten: 2.2.1 Basic LLM Call" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" alt="Diagram: 2.2.1 Basic LLM Call" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" alt="Sticky Note: 2.2.1 Basic LLM Call" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -134,6 +167,17 @@ print(response.content)
 | Token limit exceeded | `BadRequestError` | Truncate or chunk input messages |
 
 ### 2.2.2 Prompt Templates
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" alt="Handwritten: 2.2.2 Prompt Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" alt="Diagram: 2.2.2 Prompt Templates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" alt="Sticky Note: 2.2.2 Prompt Templates" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -202,6 +246,17 @@ print(prompt.messages)
 | Too many variables | Trivial → unused keys ignored | OK, but remove unused for clarity |
 
 ### 2.2.3 Output Parsers
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" alt="Handwritten: 2.2.3 Output Parsers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" alt="Diagram: 2.2.3 Output Parsers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" alt="Sticky Note: 2.2.3 Output Parsers" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -292,6 +347,17 @@ print(f"Sentiment: {result.sentiment}, Confidence: {result.confidence:.2f}")
 
 ### 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax
 
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" alt="Handwritten: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" alt="Diagram: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" alt="Sticky Note: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+</a>
+
+
 **Algorithm Steps:**
 
 1. Define a PromptTemplate with `{variable}` placeholders
@@ -338,6 +404,17 @@ print(result)
 
 ### 2.3.2 Sequential Chains
 
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" alt="Handwritten: 2.3.2 Sequential Chains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" alt="Diagram: 2.3.2 Sequential Chains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" alt="Sticky Note: 2.3.2 Sequential Chains" width="30%">
+</a>
+
+
 **Algorithm Steps:**
 
 1. Build first chain (e.g., joke generator)
@@ -380,6 +457,17 @@ FUNCTION joke_and_rate(topic):
 | Reusable sub-chains | Cannot parallelize dependent steps |
 
 ### 2.3.3 RunnablePassthrough for Data Flow
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" alt="Handwritten: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" alt="Diagram: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" alt="Sticky Note: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -433,6 +521,17 @@ print(f"Joke: {result['joke'].content}")
 > **Real-World Analogy:** An open-book exam. The student (LLM) has general knowledge from classes (training data), but during the exam they can open a textbook (your documents) to find specific facts. RAG is that open-book setup for AI → the model retrieves relevant passages, reads them, then answers. Without RAG, the model is taking a closed-book exam: it can only use what it memorized in training.
 
 ### 2.4.1 Document Loading & Chunking
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" alt="Handwritten: 2.4.1 Document Loading & Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" alt="Diagram: 2.4.1 Document Loading & Chunking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" alt="Sticky Note: 2.4.1 Document Loading & Chunking" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -500,6 +599,17 @@ print(f"Loaded {len(documents)} docs, split into {len(chunks)} chunks")
 
 ### 2.4.2 Vector Store with Chroma
 
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" alt="Handwritten: 2.4.2 Vector Store with Chroma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" alt="Diagram: 2.4.2 Vector Store with Chroma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" alt="Sticky Note: 2.4.2 Vector Store with Chroma" width="30%">
+</a>
+
+
 **Algorithm Steps:**
 
 1. Initialize embeddings model (e.g., OpenAIEmbeddings)
@@ -551,6 +661,17 @@ for r in results:
 ```
 
 ### 2.4.3 Complete RAG Chain
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" alt="Handwritten: 2.4.3 Complete RAG Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" alt="Diagram: 2.4.3 Complete RAG Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" alt="Sticky Note: 2.4.3 Complete RAG Chain" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -648,6 +769,17 @@ print(answer.content)
 
 ### 2.5.1 Custom Tools
 
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" alt="Handwritten: 2.5.1 Custom Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" alt="Diagram: 2.5.1 Custom Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" alt="Sticky Note: 2.5.1 Custom Tools" width="30%">
+</a>
+
+
 **Algorithm Steps:**
 
 1. Import the `@tool` decorator from `langchain_core.tools`
@@ -696,6 +828,17 @@ tools = [calculate, get_weather]
 ```
 
 ### 2.5.2 Creating an Agent
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" alt="Handwritten: 2.5.2 Creating an Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" alt="Diagram: 2.5.2 Creating an Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" alt="Sticky Note: 2.5.2 Creating an Agent" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -751,6 +894,17 @@ print(response)
 ```
 
 ### 2.5.3 Wikipedia Search Tool
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" alt="Handwritten: 2.5.3 Wikipedia Search Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" alt="Diagram: 2.5.3 Wikipedia Search Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" alt="Sticky Note: 2.5.3 Wikipedia Search Tool" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -821,6 +975,17 @@ response = agent_executor.invoke({
 > **Real-World Analogy:** A bartender who remembers regulars' names and usual orders. "Same as last time, Alice?" Without memory, every interaction starts from scratch → "Hi, my name is Alice." "Nice to meet you, Alice." → every single round. Memory makes the conversation flow naturally.
 
 ### 2.6.1 Conversation Buffer Memory
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" alt="Handwritten: 2.6.1 Conversation Buffer Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" alt="Diagram: 2.6.1 Conversation Buffer Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" alt="Sticky Note: 2.6.1 Conversation Buffer Memory" width="30%">
+</a>
+
 
 **Algorithm Steps:**
 
@@ -1185,26 +1350,81 @@ Defenses:
 ## Applications in Real Systems
 
 ### Chatbots & Conversational AI
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" alt="Handwritten: Chatbots & Conversational AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" alt="Diagram: Chatbots & Conversational AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" alt="Sticky Note: Chatbots & Conversational AI" width="30%">
+</a>
+
 - **Customer support chatbots** → RAG retrieves FAQ/knowledge base answers; memory tracks conversation state; agents escalate to human agents when needed
 - **AI tutors** → Chain generates lesson, then quiz, then evaluates answers; memory remembers student progress across sessions
 - **Therapy/coaching assistants** → Agents with careful prompt engineering maintain consistent persona and ethical boundaries
 
 ### Document Q&A Systems
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" alt="Handwritten: Document Q&A Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" alt="Diagram: Document Q&A Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" alt="Sticky Note: Document Q&A Systems" width="30%">
+</a>
+
 - **Enterprise knowledge base** → Employees ask natural language questions about internal policies, HR documents, engineering specs
 - **Legal document analysis** → RAG on legal contracts with strict chunking to preserve clause boundaries; output parsers extract dates, parties, obligations
 - **Academic research assistant** → RAG on arXiv papers; async processing for batch analysis of 100+ papers
 
 ### Code Assistants
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" alt="Handwritten: Code Assistants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" alt="Diagram: Code Assistants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" alt="Sticky Note: Code Assistants" width="30%">
+</a>
+
 - **AI-powered IDE plugins** → Chain: read current file context → generate code suggestion → format with AST parser
 - **Code review agents** → Agent: read diff → call static analysis tool → generate review comments → flag security issues
 - **Documentation generator** → Chain: read source code → extract signatures/docstrings → generate markdown docs
 
 ### Data Extraction & Processing
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" alt="Handwritten: Data Extraction & Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" alt="Diagram: Data Extraction & Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" alt="Sticky Note: Data Extraction & Processing" width="30%">
+</a>
+
 - **Invoice/Receipt parsing** → PydanticOutputParser extracts invoice number, date, total, line items from unstructured text
 - **Resume screening** → RAG on candidate resumes + output parser extracts skills, experience, education in structured format
 - **Social media monitoring** → Async batch processing of 1000s of posts with sentiment analysis chains
 
 ### Enterprise Search
+
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" alt="Handwritten: Enterprise Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" alt="Diagram: Enterprise Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" alt="Sticky Note: Enterprise Search" width="30%">
+</a>
+
 - **Internal wiki search** → RAG on Confluence/Notion exports with hybrid search (keyword + semantic)
 - **Product catalog** → RAG on product specs; agents with custom tools for inventory lookup, pricing, shipping estimates
 

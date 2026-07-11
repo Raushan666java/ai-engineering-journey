@@ -52,6 +52,17 @@ flowchart LR
 
 ### 29.1 Education Data Models
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" alt="Handwritten: 29.1 Education Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" alt="Diagram: 29.1 Education Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" alt="Sticky Note: 29.1 Education Data Models" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Education schemas cover students, courses, enrollments, assessments, submissions, and grades with proper relationships.
 
@@ -507,6 +518,17 @@ class Grade extends Model
 
 ### 29.2 Personalized Learning Path Agents
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" alt="Handwritten: 29.2 Personalized Learning Path Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" alt="Diagram: 29.2 Personalized Learning Path Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" alt="Sticky Note: 29.2 Personalized Learning Path Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Learning path agents analyze student performance and adapt curriculum recommendations in real time.
 
@@ -699,6 +721,17 @@ class LearningPathController extends Controller
 > **Remember:** Personalization improves outcomes, but students should always be able to override AI recommendations.
 
 ### 29.3 Assessment & Grading Automation
+
+<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" alt="Handwritten: 29.3 Assessment & Grading Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" alt="Diagram: 29.3 Assessment & Grading Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" alt="Sticky Note: 29.3 Assessment & Grading Automation" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Assessment agents grade submissions using AI and provide detailed feedback to students.
@@ -947,6 +980,17 @@ class GradingController extends Controller
 
 ### 29.4 Content Generation for Courses
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" alt="Handwritten: 29.4 Content Generation for Courses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" alt="Diagram: 29.4 Content Generation for Courses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" alt="Sticky Note: 29.4 Content Generation for Courses" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Content generation agents create lessons, quizzes, and study materials using AI.
 
@@ -1164,6 +1208,17 @@ class ContentGenerationController extends Controller
 ---
 
 ### 29.5 Adaptive Quiz Engines
+
+<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" alt="Handwritten: 29.5 Adaptive Quiz Engines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" alt="Diagram: 29.5 Adaptive Quiz Engines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" alt="Sticky Note: 29.5 Adaptive Quiz Engines" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Adaptive quiz engines adjust question difficulty based on student proficiency using IRT algorithms.
@@ -1504,6 +1559,17 @@ class AdaptiveQuizController extends Controller
 
 ### 29.6 Student Progress Tracking Agents
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" alt="Handwritten: 29.6 Student Progress Tracking Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" alt="Diagram: 29.6 Student Progress Tracking Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" alt="Sticky Note: 29.6 Student Progress Tracking Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Progress tracking agents monitor completion rates, grades, and engagement metrics for insights.
 
@@ -1826,6 +1892,17 @@ class MonitorStudentProgress extends Command
 
 ### 29.7 Enrollment Workflow Automation
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" alt="Handwritten: 29.7 Enrollment Workflow Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" alt="Diagram: 29.7 Enrollment Workflow Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" alt="Sticky Note: 29.7 Enrollment Workflow Automation" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Enrollment agents handle registration, prerequisites, waitlists, and notifications.
 
@@ -2119,6 +2196,17 @@ class EnrollmentController extends Controller
 
 ### 29.8 Recommendation Systems for Curricula
 
+<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" alt="Handwritten: 29.8 Recommendation Systems for Curricula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" alt="Diagram: 29.8 Recommendation Systems for Curricula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" alt="Sticky Note: 29.8 Recommendation Systems for Curricula" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Recommendation agents suggest courses and learning paths based on student history and goals.
 
@@ -2397,6 +2485,17 @@ class CurriculumRecommendationController extends Controller
 ---
 
 ### Summary
+
+<a href="../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+</a>
+
 
 This chapter demonstrated how to build a comprehensive AI-powered education platform within Laravel. The eight sections covered the complete EdTech stack:
 

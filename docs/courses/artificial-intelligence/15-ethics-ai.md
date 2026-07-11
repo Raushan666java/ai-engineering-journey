@@ -59,6 +59,17 @@ flowchart LR
 
 ### Real-World Analogy: The Biased Door
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-handwritten.svg" alt="Handwritten: Real-World Analogy: The Biased Door" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-diagram.svg" alt="Diagram: Real-World Analogy: The Biased Door" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-biased-door-sticky.svg" alt="Sticky Note: Real-World Analogy: The Biased Door" width="30%">
+</a>
+
+
 Imagine a building where the front door only opens for people over six feet tall. The architect didn't explicitly design it to exclude short people — they simply installed a sensor calibrated on the building's tall security guards. The door is "fair" by its own logic (it opens for anyone tall enough), but it is deeply unfair in practice. The problem is not the door mechanism — it is the data and assumptions used to calibrate it.
 
 AI bias works the same way. The model is not malicious; it faithfully learns from data that reflects historical inequities, incomplete sampling, or flawed measurements. The result is a system that treats people differently based on race, gender, age, or other protected attributes — even when those attributes were never explicitly used as features.
@@ -66,6 +77,17 @@ AI bias works the same way. The model is not malicious; it faithfully learns fro
 ---
 
 ### 15.1.1 Sources of Bias: The Bias Types Table
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-handwritten.svg" alt="Handwritten: 15.1.1 Sources of Bias: The Bias Types Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-diagram.svg" alt="Diagram: 15.1.1 Sources of Bias: The Bias Types Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-1-sources-of-bias-the-bias-types-table-sticky.svg" alt="Sticky Note: 15.1.1 Sources of Bias: The Bias Types Table" width="30%">
+</a>
+
 
 | Bias Type | Definition | Example | Detection Method |
 |-----------|-----------|---------|-----------------|
@@ -84,6 +106,17 @@ AI bias works the same way. The model is not malicious; it faithfully learns fro
 
 ### 15.1.2 Mathematical Fairness Definitions
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-handwritten.svg" alt="Handwritten: 15.1.2 Mathematical Fairness Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-diagram.svg" alt="Diagram: 15.1.2 Mathematical Fairness Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-2-mathematical-fairness-definitions-sticky.svg" alt="Sticky Note: 15.1.2 Mathematical Fairness Definitions" width="30%">
+</a>
+
+
 Multiple mathematical definitions of fairness exist, and they are **mutually incompatible** in general (Kleinberg et al., 2016 — the Impossibility Theorem of Fairness):
 
 | Definition | Mathematical Expression | Meaning | Limitation |
@@ -99,6 +132,17 @@ Multiple mathematical definitions of fairness exist, and they are **mutually inc
 ---
 
 ### 15.1.3 Bias Detection in Python
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-handwritten.svg" alt="Handwritten: 15.1.3 Bias Detection in Python" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-diagram.svg" alt="Diagram: 15.1.3 Bias Detection in Python" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-3-bias-detection-in-python-sticky.svg" alt="Sticky Note: 15.1.3 Bias Detection in Python" width="30%">
+</a>
+
 
 ```python
 import pandas as pd
@@ -193,6 +237,17 @@ if abs(tpr_male - tpr_female) > 0.1:
 
 ### 15.1.4 Bias Mitigation Framework
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-handwritten.svg" alt="Handwritten: 15.1.4 Bias Mitigation Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-diagram.svg" alt="Diagram: 15.1.4 Bias Mitigation Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-4-bias-mitigation-framework-sticky.svg" alt="Sticky Note: 15.1.4 Bias Mitigation Framework" width="30%">
+</a>
+
+
 | Stage | Technique | Description | Implementation | Trade-off |
 |-------|-----------|-------------|----------------|-----------|
 | **Pre-processing** | Reweighing | Assign different weights to training samples to ensure fairness | `fairlearn.preprocessing.Reweighing` | May reduce overall accuracy |
@@ -235,6 +290,17 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 
 ### 15.1.5 Case Study: COMPAS Recidivism Algorithm
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-handwritten.svg" alt="Handwritten: 15.1.5 Case Study: COMPAS Recidivism Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-diagram.svg" alt="Diagram: 15.1.5 Case Study: COMPAS Recidivism Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-5-case-study-compas-recidivism-algorithm-sticky.svg" alt="Sticky Note: 15.1.5 Case Study: COMPAS Recidivism Algorithm" width="30%">
+</a>
+
+
 **Background:** Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) is a commercial risk assessment tool used by US courts to predict a defendant's likelihood of reoffending. Developed by Northpointe (now Equivant), it has been deployed in jurisdictions across Arizona, Florida, New York, and others.
 
 **The Controversy:** ProPublica's 2016 investigation analyzed COMPAS scores for over 7,000 defendants in Broward County, Florida. The findings were stark:
@@ -261,6 +327,17 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 
 ### 15.1.6 Advantages and Disadvantages of Fairness-Aware AI
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-handwritten.svg" alt="Handwritten: 15.1.6 Advantages and Disadvantages of Fairness-Aware AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-diagram.svg" alt="Diagram: 15.1.6 Advantages and Disadvantages of Fairness-Aware AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-6-advantages-and-disadvantages-of-fairness-aware-ai-sticky.svg" alt="Sticky Note: 15.1.6 Advantages and Disadvantages of Fairness-Aware AI" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Reduces discrimination and promotes social justice | No single definition of fairness — incompatible criteria |
@@ -274,6 +351,17 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 ---
 
 ### 15.1.7 Edge Cases in Fairness
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-handwritten.svg" alt="Handwritten: 15.1.7 Edge Cases in Fairness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-diagram.svg" alt="Diagram: 15.1.7 Edge Cases in Fairness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-1-7-edge-cases-in-fairness-sticky.svg" alt="Sticky Note: 15.1.7 Edge Cases in Fairness" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -290,11 +378,33 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 
 ### Real-World Analogy: The Surgeon's Explanation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-handwritten.svg" alt="Handwritten: Real-World Analogy: The Surgeon's Explanation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-diagram.svg" alt="Diagram: Real-World Analogy: The Surgeon's Explanation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-surgeon-s-explanation-sticky.svg" alt="Sticky Note: Real-World Analogy: The Surgeon's Explanation" width="30%">
+</a>
+
+
 Imagine you are about to undergo a serious surgery. The surgeon says, "Trust me, I've done thousands of these." When you ask why they are making a particular incision, they reply, "The neural network in my brain just computed it — I cannot tell you the reasoning, but it is 97% accurate." Would you consent?
 
 This is the problem with black-box AI. Transparency — the ability to understand and explain decisions — is not a luxury; it is a prerequisite for trust, accountability, and error correction. Just as a surgeon must articulate their clinical reasoning, an AI system deployed in high-stakes environments must provide explanations that can be inspected, questioned, and appealed.
 
 ### 15.2.1 The Transparency Spectrum
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-handwritten.svg" alt="Handwritten: 15.2.1 The Transparency Spectrum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-diagram.svg" alt="Diagram: 15.2.1 The Transparency Spectrum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-1-the-transparency-spectrum-sticky.svg" alt="Sticky Note: 15.2.1 The Transparency Spectrum" width="30%">
+</a>
+
 
 | Level | Description | Example Models | Interpretability |
 |-------|-------------|---------------|:----------------:|
@@ -304,6 +414,17 @@ This is the problem with black-box AI. Transparency — the ability to understan
 | **Post-hoc** | Interpretability methods applied after training | LIME, SHAP, Grad-CAM, Integrated Gradients | Depends on method |
 
 ### 15.2.2 LIME — Local Interpretable Model-Agnostic Explanations
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-handwritten.svg" alt="Handwritten: 15.2.2 LIME — Local Interpretable Model-Agnostic Explanations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-diagram.svg" alt="Diagram: 15.2.2 LIME — Local Interpretable Model-Agnostic Explanations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-2-lime-local-interpretable-model-agnostic-explanations-sticky.svg" alt="Sticky Note: 15.2.2 LIME — Local Interpretable Model-Agnostic Explanations" width="30%">
+</a>
+
 
 **How it works:** For any individual prediction, LIME:
 1. Perturbs the input (creates variations of the original sample)
@@ -363,6 +484,17 @@ print("\n[LIME visualization saved to lime_explanation.png]")
 
 ### 15.2.3 SHAP — SHapley Additive exPlanations
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-handwritten.svg" alt="Handwritten: 15.2.3 SHAP — SHapley Additive exPlanations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-diagram.svg" alt="Diagram: 15.2.3 SHAP — SHapley Additive exPlanations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-3-shap-shapley-additive-explanations-sticky.svg" alt="Sticky Note: 15.2.3 SHAP — SHapley Additive exPlanations" width="30%">
+</a>
+
+
 **Theoretical foundation:** SHAP uses Shapley values from cooperative game theory. Each feature is a "player" in a coalition (the feature set), and its contribution is its average marginal contribution across all possible coalitions.
 
 **Properties that make SHAP theoretically superior:**
@@ -414,6 +546,17 @@ for i in sorted_idx[-5:]:
 
 ### 15.2.4 LIME vs SHAP — Decision Framework
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-handwritten.svg" alt="Handwritten: 15.2.4 LIME vs SHAP — Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-diagram.svg" alt="Diagram: 15.2.4 LIME vs SHAP — Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-4-lime-vs-shap-decision-framework-sticky.svg" alt="Sticky Note: 15.2.4 LIME vs SHAP — Decision Framework" width="30%">
+</a>
+
+
 | Criterion | LIME | SHAP |
 |-----------|:----:|:----:|
 | **Theoretical guarantees** | None (heuristic surrogate) | Strong (game theory) |
@@ -425,6 +568,17 @@ for i in sorted_idx[-5:]:
 | **Best for** | Quick, interactive debugging | Formal audit, research, publication |
 
 ### 15.2.5 Case Study: Black-Box Medicine
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-handwritten.svg" alt="Handwritten: 15.2.5 Case Study: Black-Box Medicine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-diagram.svg" alt="Diagram: 15.2.5 Case Study: Black-Box Medicine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-5-case-study-black-box-medicine-sticky.svg" alt="Sticky Note: 15.2.5 Case Study: Black-Box Medicine" width="30%">
+</a>
+
 
 **Scenario:** A hospital deploys a deep learning model to predict sepsis 12 hours before onset. The model achieves 94% AUC — better than doctors. However, when a patient dies despite the model predicting "no sepsis," the family sues.
 
@@ -440,6 +594,17 @@ for i in sorted_idx[-5:]:
 
 ### 15.2.6 Advantages and Disadvantages of Model Interpretability
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-handwritten.svg" alt="Handwritten: 15.2.6 Advantages and Disadvantages of Model Interpretability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-diagram.svg" alt="Diagram: 15.2.6 Advantages and Disadvantages of Model Interpretability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-6-advantages-and-disadvantages-of-model-interpretability-sticky.svg" alt="Sticky Note: 15.2.6 Advantages and Disadvantages of Model Interpretability" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Builds trust with users and regulators | Explanations can be misleading (false confidence) |
@@ -451,6 +616,17 @@ for i in sorted_idx[-5:]:
 | Critical for contestability and appeals | Explanations of complex models are necessarily incomplete |
 
 ### 15.2.7 Edge Cases in Interpretability
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-handwritten.svg" alt="Handwritten: 15.2.7 Edge Cases in Interpretability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-diagram.svg" alt="Diagram: 15.2.7 Edge Cases in Interpretability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-2-7-edge-cases-in-interpretability-sticky.svg" alt="Sticky Note: 15.2.7 Edge Cases in Interpretability" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -467,11 +643,33 @@ for i in sorted_idx[-5:]:
 
 ### Real-World Analogy: The Glass House
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-handwritten.svg" alt="Handwritten: Real-World Analogy: The Glass House" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-diagram.svg" alt="Diagram: Real-World Analogy: The Glass House" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-glass-house-sticky.svg" alt="Sticky Note: Real-World Analogy: The Glass House" width="30%">
+</a>
+
+
 Imagine living in a house made entirely of glass. Everyone can see what you eat, who you talk to, when you sleep. Your medical prescriptions are visible from the street. Your financial transactions are displayed on the walls. The builder says, "Don't worry — I only analyze the data to help you. Nothing will be misused."
 
 This is the state of AI privacy today. Every search query, purchase, location ping, and social media interaction feeds AI systems that know more about us than we know about ourselves. The glass house is comfortable when it provides personalized recommendations — and terrifying when that data is leaked, sold, or used against us.
 
 ### 15.3.1 Privacy Threats in AI
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-handwritten.svg" alt="Handwritten: 15.3.1 Privacy Threats in AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-diagram.svg" alt="Diagram: 15.3.1 Privacy Threats in AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-1-privacy-threats-in-ai-sticky.svg" alt="Sticky Note: 15.3.1 Privacy Threats in AI" width="30%">
+</a>
+
 
 | Threat | Description | Example | Severity |
 |--------|-------------|---------|:--------:|
@@ -483,6 +681,17 @@ This is the state of AI privacy today. Every search query, purchase, location pi
 | **Linkage Attack** | Anonymized data is re-identified by joining with public datasets | Netflix Prize dataset re-identified using IMDb ratings | High |
 
 ### 15.3.2 Differential Privacy — Formal Protection
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-handwritten.svg" alt="Handwritten: 15.3.2 Differential Privacy — Formal Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-diagram.svg" alt="Diagram: 15.3.2 Differential Privacy — Formal Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-2-differential-privacy-formal-protection-sticky.svg" alt="Sticky Note: 15.3.2 Differential Privacy — Formal Protection" width="30%">
+</a>
+
 
 **Definition:** An algorithm M is ε-differentially private if for any two datasets D and D' that differ by only one record, and for any output S:
 
@@ -530,6 +739,17 @@ for eps in [0.01, 0.1, 0.5, 1.0, 5.0]:
 - ε = 10+: Essentially no privacy protection
 
 ### 15.3.3 DP-SGD — Differentially Private Stochastic Gradient Descent
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-handwritten.svg" alt="Handwritten: 15.3.3 DP-SGD — Differentially Private Stochastic Gradient Descent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-diagram.svg" alt="Diagram: 15.3.3 DP-SGD — Differentially Private Stochastic Gradient Descent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-3-dp-sgd-differentially-private-stochastic-gradient-descent-sticky.svg" alt="Sticky Note: 15.3.3 DP-SGD — Differentially Private Stochastic Gradient Descent" width="30%">
+</a>
+
 
 The most practical technique for private ML: add calibrated noise to gradients during training.
 
@@ -588,6 +808,17 @@ def dp_sgd_training(model, X_train, y_train, epsilon, delta=1e-5,
 
 ### 15.3.4 Federated Learning — Privacy by Decentralization
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-handwritten.svg" alt="Handwritten: 15.3.4 Federated Learning — Privacy by Decentralization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-diagram.svg" alt="Diagram: 15.3.4 Federated Learning — Privacy by Decentralization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-4-federated-learning-privacy-by-decentralization-sticky.svg" alt="Sticky Note: 15.3.4 Federated Learning — Privacy by Decentralization" width="30%">
+</a>
+
+
 **How it works:**
 1. A central model is distributed to participating devices
 2. Each device trains on its local data
@@ -626,6 +857,17 @@ def federated_averaging(global_model, client_updates):
 
 ### 15.3.5 Case Study: The Netflix Prize Re-identification
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-handwritten.svg" alt="Handwritten: 15.3.5 Case Study: The Netflix Prize Re-identification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-diagram.svg" alt="Diagram: 15.3.5 Case Study: The Netflix Prize Re-identification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-5-case-study-the-netflix-prize-re-identification-sticky.svg" alt="Sticky Note: 15.3.5 Case Study: The Netflix Prize Re-identification" width="30%">
+</a>
+
+
 **Background:** In 2006, Netflix released 100 million anonymized movie ratings for a competition to improve its recommendation system. The data was "anonymized" — user IDs were replaced with random numbers, and all identifying information was removed.
 
 **The attack:** Researchers at the University of Texas demonstrated that by cross-referencing the "anonymous" dataset with public IMDb ratings (where users sometimes use their real names), they could re-identify individual users. With just a few movie ratings and dates (often available from public reviews), they could uniquely match a user.
@@ -643,6 +885,17 @@ def federated_averaging(global_model, client_updates):
 
 ### 15.3.6 Advantages and Disadvantages of Privacy-Preserving AI
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-handwritten.svg" alt="Handwritten: 15.3.6 Advantages and Disadvantages of Privacy-Preserving AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-diagram.svg" alt="Diagram: 15.3.6 Advantages and Disadvantages of Privacy-Preserving AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-6-advantages-and-disadvantages-of-privacy-preserving-ai-sticky.svg" alt="Sticky Note: 15.3.6 Advantages and Disadvantages of Privacy-Preserving AI" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Protects individuals from data misuse and re-identification | Reduces model accuracy (privacy-utility trade-off) |
@@ -653,6 +906,17 @@ def federated_averaging(global_model, client_updates):
 | Long-term sustainability of data-sharing ecosystems | May provide false sense of security if poorly implemented |
 
 ### 15.3.7 Edge Cases in AI Privacy
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-handwritten.svg" alt="Handwritten: 15.3.7 Edge Cases in AI Privacy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-diagram.svg" alt="Diagram: 15.3.7 Edge Cases in AI Privacy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-3-7-edge-cases-in-ai-privacy-sticky.svg" alt="Sticky Note: 15.3.7 Edge Cases in AI Privacy" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -669,11 +933,33 @@ def federated_averaging(global_model, client_updates):
 
 ### Real-World Analogy: The Chain of Responsibility
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-handwritten.svg" alt="Handwritten: Real-World Analogy: The Chain of Responsibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-diagram.svg" alt="Diagram: Real-World Analogy: The Chain of Responsibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-chain-of-responsibility-sticky.svg" alt="Sticky Note: Real-World Analogy: The Chain of Responsibility" width="30%">
+</a>
+
+
 When a bridge collapses, we do not ask "What was the bridge thinking?" We ask: "Who designed it? Who inspected the materials? Who signed off on the load calculations? Who approved the budget that cut corners?" Responsibility flows through a chain.
 
 In AI, accountability is often absent. When a self-driving car hits a pedestrian, the company blames the driver, the developer blames the training data, and the data team blames the labeling vendor. This is the **responsibility gap** — when no human can meaningfully be held responsible for an AI system's actions.
 
 ### 15.4.1 The Accountability Framework
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-handwritten.svg" alt="Handwritten: 15.4.1 The Accountability Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-diagram.svg" alt="Diagram: 15.4.1 The Accountability Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-1-the-accountability-framework-sticky.svg" alt="Sticky Note: 15.4.1 The Accountability Framework" width="30%">
+</a>
+
 
 Effective AI accountability requires four pillars:
 
@@ -685,6 +971,17 @@ Effective AI accountability requires four pillars:
 | **Remediation** | Mechanisms to correct harmful outcomes | Rollback capability, compensation framework |
 
 ### 15.4.2 Implementing Accountability in Practice
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-handwritten.svg" alt="Handwritten: 15.4.2 Implementing Accountability in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-diagram.svg" alt="Diagram: 15.4.2 Implementing Accountability in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-2-implementing-accountability-in-practice-sticky.svg" alt="Sticky Note: 15.4.2 Implementing Accountability in Practice" width="30%">
+</a>
+
 
 ```python
 # AI Audit Log System
@@ -772,6 +1069,17 @@ print(f"Decisions recorded: {len(log.entries)}")
 
 ### 15.4.3 Case Study: Amazon's AI Hiring Tool
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-handwritten.svg" alt="Handwritten: 15.4.3 Case Study: Amazon's AI Hiring Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-diagram.svg" alt="Diagram: 15.4.3 Case Study: Amazon's AI Hiring Tool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-3-case-study-amazon-s-ai-hiring-tool-sticky.svg" alt="Sticky Note: 15.4.3 Case Study: Amazon's AI Hiring Tool" width="30%">
+</a>
+
+
 **Background:** In 2014, Amazon built an AI recruiting tool to automate resume screening. The system was trained on 10 years of Amazon's hiring data — a dataset dominated by male applicants, reflecting the tech industry's gender imbalance.
 
 **The failure:** By 2015, the team realized the system was systematically penalizing resumes containing the word "women's" (e.g., "women's chess club captain") and graduates of all-women's colleges. The model had learned that Amazon prefers male candidates because that is what its training data showed.
@@ -797,6 +1105,17 @@ print(f"Decisions recorded: {len(log.entries)}")
 
 ### 15.4.4 Advantages and Disadvantages of Accountability Mechanisms
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-handwritten.svg" alt="Handwritten: 15.4.4 Advantages and Disadvantages of Accountability Mechanisms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-diagram.svg" alt="Diagram: 15.4.4 Advantages and Disadvantages of Accountability Mechanisms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-4-advantages-and-disadvantages-of-accountability-mechanisms-sticky.svg" alt="Sticky Note: 15.4.4 Advantages and Disadvantages of Accountability Mechanisms" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Ensures responsibility for AI outcomes | Adds operational overhead |
@@ -807,6 +1126,17 @@ print(f"Decisions recorded: {len(log.entries)}")
 | Improves system quality through post-hoc analysis | Responsibility gaps are hard to close for autonomous systems |
 
 ### 15.4.5 Edge Cases in Accountability
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-handwritten.svg" alt="Handwritten: 15.4.5 Edge Cases in Accountability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-diagram.svg" alt="Diagram: 15.4.5 Edge Cases in Accountability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-4-5-edge-cases-in-accountability-sticky.svg" alt="Sticky Note: 15.4.5 Edge Cases in Accountability" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -821,11 +1151,33 @@ print(f"Decisions recorded: {len(log.entries)}")
 
 ### Real-World Analogy: The Genie's Wish
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-handwritten.svg" alt="Handwritten: Real-World Analogy: The Genie's Wish" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-diagram.svg" alt="Diagram: Real-World Analogy: The Genie's Wish" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-the-genie-s-wish-sticky.svg" alt="Sticky Note: Real-World Analogy: The Genie's Wish" width="30%">
+</a>
+
+
 In every story about a wish-granting genie, the wisher gets exactly what they asked for — and immediately regrets it. "I wish to be rich" → the wisher turns to gold. "I wish to be powerful" → the wisher becomes a tyrant everyone despises. The problem is not that the genie is malevolent — it is that the genie is literal and unbounded. It perfectly optimizes for the literal wish, with no understanding of human values, context, or common sense.
 
 This is the **alignment problem** in AI. We are building increasingly powerful "genies" — optimization engines that pursue goals with superhuman effectiveness. The challenge is ensuring that what we *ask for* (the specified objective) matches what we *actually want* (human values).
 
 ### 15.5.1 The Alignment Problem
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-handwritten.svg" alt="Handwritten: 15.5.1 The Alignment Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-diagram.svg" alt="Diagram: 15.5.1 The Alignment Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-1-the-alignment-problem-sticky.svg" alt="Sticky Note: 15.5.1 The Alignment Problem" width="30%">
+</a>
+
 
 The alignment problem asks: How do we ensure AI systems reliably pursue the objectives intended by their designers (and by extension, humanity), even as their capabilities grow?
 
@@ -905,6 +1257,17 @@ print(f"Proper policy: {total} total reward (lower reward but actually cleaned)"
 
 ### 15.5.2 Types of Alignment Failures
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-handwritten.svg" alt="Handwritten: 15.5.2 Types of Alignment Failures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-diagram.svg" alt="Diagram: 15.5.2 Types of Alignment Failures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-2-types-of-alignment-failures-sticky.svg" alt="Sticky Note: 15.5.2 Types of Alignment Failures" width="30%">
+</a>
+
+
 | Failure Mode | Definition | Example | Mitigation |
 |-------------|-----------|---------|------------|
 | **Reward Hacking** | Agent finds unintended ways to maximize the reward signal | Cleaning robot that hides dirt instead of collecting it | Careful reward design, adversarial reward verification |
@@ -915,6 +1278,17 @@ print(f"Proper policy: {total} total reward (lower reward but actually cleaned)"
 | **Side Effects** | Agent achieves goal but causes unintended harm | Warehouse robot that maximizes boxes moved but damages fragile items | Impact regularization, human-in-the-loop |
 
 ### 15.5.3 The Instrumental Convergence Thesis
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-handwritten.svg" alt="Handwritten: 15.5.3 The Instrumental Convergence Thesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-diagram.svg" alt="Diagram: 15.5.3 The Instrumental Convergence Thesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-3-the-instrumental-convergence-thesis-sticky.svg" alt="Sticky Note: 15.5.3 The Instrumental Convergence Thesis" width="30%">
+</a>
+
 
 Nick Bostrom's instrumental convergence thesis argues that any sufficiently intelligent agent would have instrumental reasons to pursue these convergent goals, regardless of its final objective:
 
@@ -928,6 +1302,17 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 
 ### 15.5.4 AI Safety Research Areas
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-handwritten.svg" alt="Handwritten: 15.5.4 AI Safety Research Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-diagram.svg" alt="Diagram: 15.5.4 AI Safety Research Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-4-ai-safety-research-areas-sticky.svg" alt="Sticky Note: 15.5.4 AI Safety Research Areas" width="30%">
+</a>
+
+
 | Research Area | Description | Current Approaches | Leading Organizations |
 |--------------|-------------|-------------------|----------------------|
 | **Scalable Oversight** | How to supervise AI systems that exceed human capability in specific domains | RLHF, debate, recursive reward modeling | Anthropic, DeepMind, OpenAI |
@@ -938,6 +1323,17 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 | **AI Governance** | Ensuring safe development through policy and norms | Compute governance, standards, treaties | GovAI, CSER, FHI |
 
 ### 15.5.5 Case Study: Social Media Amplification
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-handwritten.svg" alt="Handwritten: 15.5.5 Case Study: Social Media Amplification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-diagram.svg" alt="Diagram: 15.5.5 Case Study: Social Media Amplification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-5-case-study-social-media-amplification-sticky.svg" alt="Sticky Note: 15.5.5 Case Study: Social Media Amplification" width="30%">
+</a>
+
 
 **Scenario:** A social media platform optimizes its recommendation algorithm for "user engagement" (time spent, clicks, shares). The intended goal: show users content they find interesting. The actual outcome: the algorithm learns that outrage, misinformation, and polarization drive engagement most effectively.
 
@@ -961,6 +1357,17 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 
 ### 15.5.6 Advantages and Disadvantages of AI Safety Research
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-handwritten.svg" alt="Handwritten: 15.5.6 Advantages and Disadvantages of AI Safety Research" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-diagram.svg" alt="Diagram: 15.5.6 Advantages and Disadvantages of AI Safety Research" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-6-advantages-and-disadvantages-of-ai-safety-research-sticky.svg" alt="Sticky Note: 15.5.6 Advantages and Disadvantages of AI Safety Research" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Prevents catastrophic outcomes from advanced AI | Diverts resources from near-term AI benefits |
@@ -971,6 +1378,17 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 | Encourages transparency and collaboration | Competitive pressures incentivize cutting safety corners |
 
 ### 15.5.7 Edge Cases in AI Safety
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-handwritten.svg" alt="Handwritten: 15.5.7 Edge Cases in AI Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-diagram.svg" alt="Diagram: 15.5.7 Edge Cases in AI Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-5-7-edge-cases-in-ai-safety-sticky.svg" alt="Sticky Note: 15.5.7 Edge Cases in AI Safety" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -987,11 +1405,33 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 
 ### Real-World Analogy: Seatbelts and Speed Limits
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-handwritten.svg" alt="Handwritten: Real-World Analogy: Seatbelts and Speed Limits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-diagram.svg" alt="Diagram: Real-World Analogy: Seatbelts and Speed Limits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/real-world-analogy-seatbelts-and-speed-limits-sticky.svg" alt="Sticky Note: Real-World Analogy: Seatbelts and Speed Limits" width="30%">
+</a>
+
+
 When cars were first invented, there were no seatbelts, no traffic lights, no speed limits, and no driver's licenses. As car fatalities rose, regulation was introduced — not to stop people from driving, but to make driving safe enough that society could benefit without catastrophic costs.
 
 AI regulation is following the same trajectory. The technology is developing faster than the rules governing it. Regulation aims not to stop AI innovation, but to ensure that the benefits of AI are realized without unacceptable harms.
 
 ### 15.6.1 Major Regulatory Frameworks
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-handwritten.svg" alt="Handwritten: 15.6.1 Major Regulatory Frameworks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-diagram.svg" alt="Diagram: 15.6.1 Major Regulatory Frameworks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-1-major-regulatory-frameworks-sticky.svg" alt="Sticky Note: 15.6.1 Major Regulatory Frameworks" width="30%">
+</a>
+
 
 | Regulation | Jurisdiction | Year | Scope | Key Provisions | AI-Specific |
 |------------|:-----------:|:----:|-------|----------------|:-----------:|
@@ -1004,6 +1444,17 @@ AI regulation is following the same trajectory. The technology is developing fas
 | **Japan's AI Guidelines** | Japan | 2024 | Ethical AI development | Human-centric AI, transparency, fairness | Yes (guidelines) |
 
 ### 15.6.2 The EU AI Act — Detailed Breakdown
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-handwritten.svg" alt="Handwritten: 15.6.2 The EU AI Act — Detailed Breakdown" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-diagram.svg" alt="Diagram: 15.6.2 The EU AI Act — Detailed Breakdown" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-2-the-eu-ai-act-detailed-breakdown-sticky.svg" alt="Sticky Note: 15.6.2 The EU AI Act — Detailed Breakdown" width="30%">
+</a>
+
 
 The EU AI Act is the world's first comprehensive AI regulation. It categorizes AI systems by risk level:
 
@@ -1090,6 +1541,17 @@ compliance.assess_compliance()
 
 ### 15.6.3 NIST AI Risk Management Framework
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-handwritten.svg" alt="Handwritten: 15.6.3 NIST AI Risk Management Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-diagram.svg" alt="Diagram: 15.6.3 NIST AI Risk Management Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-3-nist-ai-risk-management-framework-sticky.svg" alt="Sticky Note: 15.6.3 NIST AI Risk Management Framework" width="30%">
+</a>
+
+
 The NIST AI RMF provides a voluntary framework organized around four functions:
 
 | Function | Description | Key Actions |
@@ -1101,6 +1563,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### 15.6.4 Advantages and Disadvantages of AI Regulation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-handwritten.svg" alt="Handwritten: 15.6.4 Advantages and Disadvantages of AI Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-diagram.svg" alt="Diagram: 15.6.4 Advantages and Disadvantages of AI Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-4-advantages-and-disadvantages-of-ai-regulation-sticky.svg" alt="Sticky Note: 15.6.4 Advantages and Disadvantages of AI Regulation" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Protects fundamental rights and safety | May stifle innovation, especially for startups |
@@ -1111,6 +1584,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 | Encourages responsible design from the start | Over-regulation may drive AI development to less regulated jurisdictions |
 
 ### 15.6.5 Edge Cases in AI Regulation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-handwritten.svg" alt="Handwritten: 15.6.5 Edge Cases in AI Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-diagram.svg" alt="Diagram: 15.6.5 Edge Cases in AI Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-6-5-edge-cases-in-ai-regulation-sticky.svg" alt="Sticky Note: 15.6.5 Edge Cases in AI Regulation" width="30%">
+</a>
+
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
@@ -1149,6 +1633,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### 15.A.1 COMPAS in US Criminal Justice
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-handwritten.svg" alt="Handwritten: 15.A.1 COMPAS in US Criminal Justice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-diagram.svg" alt="Diagram: 15.A.1 COMPAS in US Criminal Justice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-1-compas-in-us-criminal-justice-sticky.svg" alt="Sticky Note: 15.A.1 COMPAS in US Criminal Justice" width="30%">
+</a>
+
+
 **What:** Correctional Offender Management Profiling for Alternative Sanctions
 **Where:** Used in US courtrooms for bail, sentencing, and parole decisions
 **Ethical Issue:** Systematic racial bias in recidivism predictions
@@ -1156,6 +1651,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Key Lesson:** Proprietary algorithms used in high-stakes decisions must be auditable
 
 ### 15.A.2 Facial Recognition Bans
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-handwritten.svg" alt="Handwritten: 15.A.2 Facial Recognition Bans" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-diagram.svg" alt="Diagram: 15.A.2 Facial Recognition Bans" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-2-facial-recognition-bans-sticky.svg" alt="Sticky Note: 15.A.2 Facial Recognition Bans" width="30%">
+</a>
+
 
 **What:** Law enforcement use of facial recognition for suspect identification
 **Where:** US police departments (e.g., Detroit, San Francisco) and airports
@@ -1167,6 +1673,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Key Lesson:** Accuracy alone is insufficient — disparate error rates violate civil rights; deployment in high-stakes contexts requires exceeding a minimum accuracy threshold for all subgroups
 
 ### 15.A.3 Content Moderation at Scale
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-handwritten.svg" alt="Handwritten: 15.A.3 Content Moderation at Scale" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-diagram.svg" alt="Diagram: 15.A.3 Content Moderation at Scale" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-3-content-moderation-at-scale-sticky.svg" alt="Sticky Note: 15.A.3 Content Moderation at Scale" width="30%">
+</a>
+
 
 **What:** AI-powered content moderation on social media platforms
 **Where:** Facebook/Meta, YouTube, Twitter/X, TikTok
@@ -1183,6 +1700,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### 15.A.4 Healthcare AI Diagnostics
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-handwritten.svg" alt="Handwritten: 15.A.4 Healthcare AI Diagnostics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-diagram.svg" alt="Diagram: 15.A.4 Healthcare AI Diagnostics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-4-healthcare-ai-diagnostics-sticky.svg" alt="Sticky Note: 15.A.4 Healthcare AI Diagnostics" width="30%">
+</a>
+
+
 **What:** AI systems for medical diagnosis (radiology, dermatology, pathology)
 **Where:** Hospitals and clinics worldwide
 **Ethical Issues:**
@@ -1197,6 +1725,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### 15.A.5 Algorithmic Hiring
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-handwritten.svg" alt="Handwritten: 15.A.5 Algorithmic Hiring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-diagram.svg" alt="Diagram: 15.A.5 Algorithmic Hiring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-5-algorithmic-hiring-sticky.svg" alt="Sticky Note: 15.A.5 Algorithmic Hiring" width="30%">
+</a>
+
+
 **What:** AI systems for resume screening, interview analysis, and candidate ranking
 **Where:** Most Fortune 500 companies use some form of AI hiring tool
 **Ethical Issues:**
@@ -1210,6 +1749,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - Illinois Artificial Intelligence Video Interview Act: Notice and consent requirements
 
 ### 15.A.6 Autonomous Vehicles
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-handwritten.svg" alt="Handwritten: 15.A.6 Autonomous Vehicles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-diagram.svg" alt="Diagram: 15.A.6 Autonomous Vehicles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/15-a-6-autonomous-vehicles-sticky.svg" alt="Sticky Note: 15.A.6 Autonomous Vehicles" width="30%">
+</a>
+
 
 **What:** Self-driving cars from Waymo, Tesla, Cruise, and others
 **Where:** Public roads in US cities (Waymo in San Francisco, Phoenix, LA)
@@ -1228,6 +1778,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### Cross-Application Ethical Matrix
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-handwritten.svg" alt="Handwritten: Cross-Application Ethical Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-diagram.svg" alt="Diagram: Cross-Application Ethical Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/cross-application-ethical-matrix-sticky.svg" alt="Sticky Note: Cross-Application Ethical Matrix" width="30%">
+</a>
+
+
 | Application | Primary Ethical Concerns | Affected Groups | Regulatory Status | Mitigation Approach |
 |-------------|-------------------------|-----------------|:-----------------:|---------------------|
 | **COMPAS / Criminal Justice** | Racial bias, opacity, no contestability | Defendants, minority communities | Increasingly banned | Independent audits, statistical parity requirements |
@@ -1241,6 +1802,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 ## Interview Corner
 
 ### Ethical Dilemma Scenarios
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-handwritten.svg" alt="Handwritten: Ethical Dilemma Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-diagram.svg" alt="Diagram: Ethical Dilemma Scenarios" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-dilemma-scenarios-sticky.svg" alt="Sticky Note: Ethical Dilemma Scenarios" width="30%">
+</a>
+
 
 #### Scenario 1: The Self-Driving Car Dilemma
 
@@ -1292,6 +1864,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 ### Regulation Landscape
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-handwritten.svg" alt="Handwritten: Regulation Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-diagram.svg" alt="Diagram: Regulation Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/regulation-landscape-sticky.svg" alt="Sticky Note: Regulation Landscape" width="30%">
+</a>
+
+
 | Regulation | Region | Key Provision | Impact on AI Practitioners |
 |------------|:------:|---------------|----------------------------|
 | **GDPR (2018)** | EU | Right to explanation for automated decisions | Must provide meaningful information about decision logic |
@@ -1305,6 +1888,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 | **Canada's AIDA (pending)** | Canada | AI and Data Act | Impact assessments for high-impact systems |
 
 ### Responsible AI — Practical Guide
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-handwritten.svg" alt="Handwritten: Responsible AI — Practical Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-diagram.svg" alt="Diagram: Responsible AI — Practical Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/responsible-ai-practical-guide-sticky.svg" alt="Sticky Note: Responsible AI — Practical Guide" width="30%">
+</a>
+
 
 **For engineers:**
 1. **Audit your data** before training — check for representation gaps, historical bias, and measurement issues
@@ -1328,6 +1922,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 5. **Engage with regulation** — do not wait for laws to be written; adopt voluntary standards (NIST AI RMF)
 
 ### Common Interview Questions
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-handwritten.svg" alt="Handwritten: Common Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-diagram.svg" alt="Diagram: Common Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/common-interview-questions-sticky.svg" alt="Sticky Note: Common Interview Questions" width="30%">
+</a>
+
 
 **Q1: "How would you audit a deployed ML model for fairness?"**
 
@@ -1538,6 +2143,17 @@ The field of AI ethics is not about slowing down progress — it is about buildi
 
 ### Case Study Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-handwritten.svg" alt="Handwritten: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-diagram.svg" alt="Diagram: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/case-study-analysis-sticky.svg" alt="Sticky Note: Case Study Analysis" width="30%">
+</a>
+
+
 10. **Real-World Incident Analysis:** Choose one of the following AI ethics incidents and write a structured analysis:
     - Amazon AI recruiting tool bias
     - COMPAS recidivism algorithm
@@ -1550,6 +2166,17 @@ The field of AI ethics is not about slowing down progress — it is about buildi
 11. **Multi-Objective Fairness:** Design and implement a multi-objective optimization approach that searches for models on the Pareto frontier of accuracy vs demographic parity vs equalized odds. Train 50 variants of a classifier with different regularization strengths, data reweighting, and threshold values. Plot the Pareto frontier and identify models that achieve acceptable performance on all three objectives. Discuss whether the trade-offs are inherent or can be resolved with better data or architecture choices.
 
 ### Ethical Reasoning Problems
+
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-handwritten.svg" alt="Handwritten: Ethical Reasoning Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-diagram.svg" alt="Diagram: Ethical Reasoning Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/15-ethics-ai/ethical-reasoning-problems-sticky.svg" alt="Sticky Note: Ethical Reasoning Problems" width="30%">
+</a>
+
 
 12. **The Trade-Off Decision:** You are building an AI system for hospital triage during a pandemic. The model is 95% accurate overall but has a 10% lower true positive rate for elderly patients. Fixing this would reduce overall accuracy to 91%. Analyze the ethical trade-offs and propose a decision. What stakeholders should be consulted? What is your recommendation?
 

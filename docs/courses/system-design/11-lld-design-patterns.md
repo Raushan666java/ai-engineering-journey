@@ -33,6 +33,17 @@ flowchart LR
 > **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### What Are Design Patterns?
 
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-handwritten.svg" alt="Handwritten: What Are Design Patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-diagram.svg" alt="Diagram: What Are Design Patterns?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/what-are-design-patterns-sticky.svg" alt="Sticky Note: What Are Design Patterns?" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -47,6 +58,17 @@ A pattern has four essential elements: a **name** (shared vocabulary), a **probl
 ![Design Patterns Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/11-design-patterns.png)
 
 ### Creational Patterns
+
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-handwritten.svg" alt="Handwritten: Creational Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-diagram.svg" alt="Diagram: Creational Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/creational-patterns-sticky.svg" alt="Sticky Note: Creational Patterns" width="30%">
+</a>
+
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -100,6 +122,17 @@ pizza = PizzaBuilder().set_size("large").add_cheese().add_topping("pepperoni").b
 
 ### Structural Patterns
 
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-handwritten.svg" alt="Handwritten: Structural Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-diagram.svg" alt="Diagram: Structural Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/structural-patterns-sticky.svg" alt="Sticky Note: Structural Patterns" width="30%">
+</a>
+
+
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
@@ -136,6 +169,17 @@ def compute(x: int) -> int:
 
 ### Behavioral Patterns
 
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-handwritten.svg" alt="Handwritten: Behavioral Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-diagram.svg" alt="Diagram: Behavioral Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/behavioral-patterns-sticky.svg" alt="Sticky Note: Behavioral Patterns" width="30%">
+</a>
+
+
 Behavioral patterns concern algorithms and the assignment of responsibilities between objects.
 
 **Observer** defines a one-to-many dependency between objects such that when one object changes state, all its dependents are notified and updated automatically. The publisher (subject) maintains a list of subscribers and broadcasts events to them.
@@ -169,6 +213,17 @@ class EventBus:
 
 ### Concurrency Patterns
 
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-handwritten.svg" alt="Handwritten: Concurrency Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-diagram.svg" alt="Diagram: Concurrency Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/concurrency-patterns-sticky.svg" alt="Sticky Note: Concurrency Patterns" width="30%">
+</a>
+
+
 Concurrency patterns address the complexities of coordinating multiple threads of execution.
 
 **Producer-Consumer**: One or more producer threads generate data and place it into a thread-safe queue; one or more consumer threads retrieve and process it. Python's `queue.Queue` handles the synchronization.
@@ -183,6 +238,17 @@ Concurrency patterns address the complexities of coordinating multiple threads o
 
 ### Anti-Patterns
 
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-handwritten.svg" alt="Handwritten: Anti-Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-diagram.svg" alt="Diagram: Anti-Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/anti-patterns-sticky.svg" alt="Sticky Note: Anti-Patterns" width="30%">
+</a>
+
+
 Anti-patterns are common but ineffective solutions that appear attractive at first but create long-term maintenance problems.
 
 **God Object** (aka Blob): A single class that knows too much or does too much. Symptoms include hundreds of methods and fields across dozens of responsibilities. Resolution: decompose by SRP.
@@ -194,6 +260,17 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 **Lava Flow**: Dead code, commented-out blocks, and abandoned experimental code left in the production codebase. Developers are afraid to remove it. Resolution: aggressively delete; source control preserves history.
 
 ### Pattern Comparison
+
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-handwritten.svg" alt="Handwritten: Pattern Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-diagram.svg" alt="Diagram: Pattern Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/11-lld-design-patterns/pattern-comparison-sticky.svg" alt="Sticky Note: Pattern Comparison" width="30%">
+</a>
+
 
 | Pattern | Category | When to Use |
 |---------|----------|-------------|

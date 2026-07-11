@@ -74,9 +74,31 @@ CSPs differ fundamentally from general search (DFS, BFS, A*):
 
 ### Real-World Analogy — Furniture Assembly
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" alt="Handwritten: Real-World Analogy — Furniture Assembly" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" alt="Diagram: Real-World Analogy — Furniture Assembly" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" alt="Sticky Note: Real-World Analogy — Furniture Assembly" width="30%">
+</a>
+
+
 You buy a bookshelf from IKEA. The instructions show 12 parts (variables), each can go into specific slots (domains), and the bolts must go into pre-drilled holes (unary constraints), the left panel must connect to the top panel (binary constraints), and all five shelves must be different heights (global constraint $Alldifferent$). You are not searching for the best sequence of assembly steps — you are searching for an assignment of each part to a slot such that everything fits. That is a CSP.
 
 ### Formal Definition
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
+</a>
+
 
 A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}, \mathcal{D}, \mathcal{C})$ where:
 
@@ -86,12 +108,34 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Key Definitions
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" alt="Handwritten: Key Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" alt="Diagram: Key Definitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" alt="Sticky Note: Key Definitions" width="30%">
+</a>
+
+
 - **Assignment:** A mapping from variables to values, e.g., $\{WA = red, NT = green\}$.
 - **Consistent assignment:** An assignment that does not violate any constraint.
 - **Complete assignment:** Every variable is assigned a value.
 - **Solution:** A complete and consistent assignment.
 
 ### Types of Constraints
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" alt="Handwritten: Types of Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" alt="Diagram: Types of Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" alt="Sticky Note: Types of Constraints" width="30%">
+</a>
+
 
 - **Unary constraints:** Restrict the value of a single variable ($X \neq red$).
 - **Binary constraints:** Relate two variables ($X \neq Y$).
@@ -108,6 +152,17 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Edge Cases in CSP Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" alt="Handwritten: Edge Cases in CSP Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" alt="Diagram: Edge Cases in CSP Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" alt="Sticky Note: Edge Cases in CSP Definition" width="30%">
+</a>
+
+
 | Edge Case | Example | Implication |
 |-----------|---------|-------------|
 | **Empty domain** | $D_{WA} = \{\}$ | No solution exists — CSP is unsatisfiable |
@@ -123,9 +178,31 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Real-World Analogy — Solving a Crossword Puzzle
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" alt="Handwritten: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" alt="Diagram: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" alt="Sticky Note: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+</a>
+
+
 You are filling in a crossword. You pick an empty word (variable), guess a candidate word from your vocabulary (domain), check whether it conflicts with already-filled crossing words (constraint check). If it fits, you move to the next empty word. If none of the remaining candidate words fit without contradiction, you erase the last word you filled and try a different one. This trial-and-error with undo is exactly backtracking search.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Select unassigned variable:** Pick a variable that has not yet been assigned a value.
 2. **Order domain values:** Decide the sequence in which to try values for the selected variable.
@@ -138,6 +215,17 @@ You are filling in a crossword. You pick an empty word (variable), guess a candi
 9. **Complete:** If all variables are assigned, return the solution.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function BACKTRACKING-SEARCH(csp) returns solution or failure
@@ -160,6 +248,17 @@ function BACKTRACK(assignment, csp) returns solution or failure
 
 ### Step-by-Step Dry Run — Australia Map Coloring (3 colors)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+</a>
+
+
 **Variables:** WA, NT, SA, Q, NSW, V, T
 **Domains:** {R, G, B} for all
 **Constraints:** Adjacent territories must differ
@@ -177,6 +276,17 @@ function BACKTRACK(assignment, csp) returns solution or failure
 If instead at Step 3 we had SA = R (conflict with WA), backtracking would try SA = G (conflict with NT), then SA = B (success). The trace above shows one path through the search tree.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 class CSP:
@@ -239,11 +349,33 @@ print("Solution:", sol)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 - **Time:** $O(d^n)$ in the worst case, where $d$ = maximum domain size and $n$ = number of variables. Each of the $n$ variables has up to $d$ choices, and the search tree has $O(d^n)$ leaf nodes. Without inference, backtracking explores all $d^n$ possible assignments in the worst case.
 - **Space:** $O(n)$ — the depth of the recursion stack is at most $n$. This is linear space, which is a key advantage over BFS.
 - **Why worst-case exponential:** Each variable must be assigned one of $d$ values, and constraints add pruning but do not reduce the exponential bound in adversarial cases (e.g., a CSP with no solutions).
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -254,6 +386,17 @@ print("Solution:", sol)
 | Simple to implement and debug | Ineffective on large, densely constrained CSPs |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
@@ -272,9 +415,31 @@ print("Solution:", sol)
 
 ### Real-World Analogy — Placing Dominoes
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" alt="Handwritten: Real-World Analogy — Placing Dominoes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" alt="Diagram: Real-World Analogy — Placing Dominoes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" alt="Sticky Note: Real-World Analogy — Placing Dominoes" width="30%">
+</a>
+
+
 You are placing dominoes on a board. When you place one domino, you eliminate all positions that would overlap with it from consideration. If at any point a remaining cell has zero possible placements, you immediately know your current partial layout is impossible and undo the last domino. This forward-looking elimination is forward checking.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Select and assign a variable:** Choose an unassigned variable and assign a tentative value.
 2. **Identify affected variables:** Find all unassigned variables that share a constraint with the assigned variable.
@@ -283,6 +448,17 @@ You are placing dominoes on a board. When you place one domino, you eliminate al
 5. **Propagate on next assignment:** Repeat steps 1-4 for each subsequent assignment.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function BACKTRACK-FC(assignment, csp) returns solution or failure
@@ -310,6 +486,17 @@ function FORWARD-CHECK(csp, var, value) returns boolean
 
 ### Step-by-Step Dry Run — Australia with Forward Checking
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+</a>
+
+
 **Setup:** Variables = {WA, NT, SA, Q, NSW, V, T}, Domains = {R, G, B} for all.
 
 | Step | Assign | Value | Forward Check Effect | Domains after | Backtrack? |
@@ -325,6 +512,17 @@ function FORWARD-CHECK(csp, var, value) returns boolean
 If at step 4 we had tried Q=G (conflict with NT), Q=B (conflict with SA), then Q=R is the only choice — forward checking's domain reduction made the choice obvious.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def forward_check(csp, var, value, assignment):
@@ -366,11 +564,33 @@ def backtrack_fc(csp, assignment):
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 - **Time:** $O(d \cdot n \cdot d) = O(n d^2)$ per assignment in the worst case. For each of $d$ values assigned, we check up to $n$ neighbors and compare against $d$ domain values. Across the entire search, this can be $O(n^2 d^3)$ total worst-case.
 - **Space:** $O(n d)$ — we save domain copies for each recursive level.
 - **Why forward checking helps:** Pure backtracking branches $d$ ways per variable and only discovers conflicts when a complete assignment violates a constraint. Forward checking detects dead ends as soon as a neighbor's domain empties, pruning the search tree at a much higher level. Empirical speedups of 10-1000x are common.
 
 ### Forward Checking vs Backtracking — Search Tree Nodes
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" alt="Handwritten: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" alt="Diagram: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" alt="Sticky Note: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+</a>
+
 
 | Problem | Pure Backtracking | Forward Checking | Reduction |
 |---------|:-----------------:|:----------------:|:---------:|
@@ -381,6 +601,17 @@ def backtrack_fc(csp, assignment):
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Detects dead ends early, pruning large subtrees | Does not detect all inconsistencies (only 1-step lookahead) |
@@ -390,6 +621,17 @@ def backtrack_fc(csp, assignment):
 | Intuitive — "what if" elimination | Fails to detect conflicts between non-neighbor variables |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
@@ -405,13 +647,46 @@ def backtrack_fc(csp, assignment):
 
 ### Real-World Analogy — Friends Planning a Dinner
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" alt="Handwritten: Real-World Analogy — Friends Planning a Dinner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" alt="Diagram: Real-World Analogy — Friends Planning a Dinner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" alt="Sticky Note: Real-World Analogy — Friends Planning a Dinner" width="30%">
+</a>
+
+
 Alice, Bob, and Charlie want to have dinner. Alice can come Monday or Tuesday. Bob can come Tuesday or Wednesday. Charlie can come Monday, Tuesday, or Wednesday. The constraint: Alice and Bob cannot come the same day. Before anyone commits, they think: "If Alice comes Monday, Bob cannot, so Bob would need Wednesday." Then: "If Bob comes Wednesday, is there still a day for Charlie?" Yes — Charlie can take Monday or Tuesday. Now reverse: "If Alice comes Tuesday, Bob cannot, so Bob would need Wednesday." They eliminate any option that leaves someone stranded. This bi-directional reasoning is arc consistency.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A binary constraint between variables $X_i$ and $X_j$ is **arc-consistent** if for every value $x \in D_i$, there exists at least one value $y \in D_j$ such that the constraint $(X_i, X_j)$ is satisfied. AC-3 (Mackworth, 1977) enforces arc consistency across the entire CSP.
 
 ### AC-3 Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" alt="Handwritten: AC-3 Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" alt="Diagram: AC-3 Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" alt="Sticky Note: AC-3 Algorithm Steps" width="30%">
+</a>
+
 
 1. **Initialize queue:** Add all directed arcs $(X_i, X_j)$ where $X_i$ and $X_j$ share a constraint.
 2. **Pop an arc:** Remove $(X_i, X_j)$ from the queue.
@@ -422,6 +697,17 @@ A binary constraint between variables $X_i$ and $X_j$ is **arc-consistent** if f
 7. **Return** the updated CSP with reduced domains.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function AC-3(csp) returns CSP or failure
@@ -444,6 +730,17 @@ function REVISE(csp, X_i, X_j) returns boolean
 ```
 
 ### Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+</a>
+
 
 **Initial Domains:** WA:{R,G,B}, NT:{R,G,B}, SA:{R,G,B}, Q:{R,G,B}, NSW:{R,G,B}, V:{R,G,B}, T:{R,G,B}
 **Arcs (all directed):** (WA,NT), (NT,WA), (WA,SA), (SA,WA), (NT,SA), (SA,NT), (NT,Q), (Q,NT), (SA,Q), (Q,SA), (SA,NSW), (NSW,SA), (SA,V), (V,SA), (Q,NSW), (NSW,Q), (NSW,V), (V,NSW), (V,T), (T,V) — 20 directed arcs.
@@ -472,6 +769,17 @@ Let WA=R be assigned, removing R from NT and SA domains:
 | 6 | (Q, SA) | {R,G,B} | Yes — if Q=R, SA has partner G or B; Q=G, SA has B; Q=B, SA has G | {R,G,B} | — |
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def ac_3(csp):
@@ -510,11 +818,33 @@ def revise(csp, Xi, Xj):
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 - **Time:** $O(n^2 d^3)$ worst-case, where $n$ = number of variables and $d$ = maximum domain size. Each of $O(n^2)$ directed arcs can be added to the queue at most $d$ times (each time a value is removed from $D_i$). Each REVISE check costs $O(d^2)$ since we compare each $x \in D_i$ against each $y \in D_j$. Therefore: $O(n^2) \times O(d) \times O(d^2) = O(n^2 d^3)$.
 - **Space:** $O(n^2)$ for the arc queue plus $O(n d)$ for domain storage.
 - **Why AC-3 is not $O(d^n)$:** Unlike search, AC-3 does not enumerate assignments — it removes provably impossible values from domains. Each value is removed at most once. The $d^3$ factor comes from iterating over pairs of values in the revise step, not from branching.
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -526,6 +856,17 @@ def revise(csp, Xi, Xj):
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
 | **No constraints** | Queue empty, no revision | All domains unchanged |
@@ -536,6 +877,17 @@ def revise(csp, Xi, Xj):
 | **Unary constraints via domain reduction** | Pre-processed before AC-3 | D_WA={R,G} after removing B |
 
 ### Maintaining Arc Consistency (MAC)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" alt="Handwritten: Maintaining Arc Consistency (MAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" alt="Diagram: Maintaining Arc Consistency (MAC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" alt="Sticky Note: Maintaining Arc Consistency (MAC)" width="30%">
+</a>
+
 
 MAC interleaves backtracking search with arc consistency propagation. After each assignment, AC-3 is run on the remaining variables. MAC dramatically reduces the search space compared to forward checking.
 
@@ -563,9 +915,31 @@ function MAC(assignment, csp) returns solution or failure
 
 ### Real-World Analogy — Emergency Room Triage
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" alt="Handwritten: Real-World Analogy — Emergency Room Triage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" alt="Diagram: Real-World Analogy — Emergency Room Triage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" alt="Sticky Note: Real-World Analogy — Emergency Room Triage" width="30%">
+</a>
+
+
 The ER doctor has 20 patients (variables) and limited resources (domains). **MRV (Minimum Remaining Values)** says: treat the patient with the fewest treatment options first — the one with a rare blood type or unique allergy — because if you delay them, they may become unsolvable. **LCV (Least Constraining Value)** says: when deciding which treatment to give a patient, choose the one that leaves the most resources for other patients — use the common blood type first, save the rare one.
 
 ### Minimum Remaining Values (MRV) Heuristic
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" alt="Handwritten: Minimum Remaining Values (MRV) Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" alt="Diagram: Minimum Remaining Values (MRV) Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" alt="Sticky Note: Minimum Remaining Values (MRV) Heuristic" width="30%">
+</a>
+
 
 Select the variable with the fewest legal values remaining in its domain. Also called "most constrained variable" or "fail-first" heuristic — it detects dead ends as early as possible.
 
@@ -577,6 +951,17 @@ Select the variable with the fewest legal values remaining in its domain. Also c
 **Why it works:** A variable with only 1 remaining value is forced — assign it immediately and either succeed or fail fast. Variables with large domains can wait.
 
 ### Least Constraining Value (LCV) Heuristic
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" alt="Handwritten: Least Constraining Value (LCV) Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" alt="Diagram: Least Constraining Value (LCV) Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" alt="Sticky Note: Least Constraining Value (LCV) Heuristic" width="30%">
+</a>
+
 
 Given a chosen variable, select the value that rules out the fewest choices for neighboring unassigned variables.
 
@@ -596,6 +981,17 @@ Given a chosen variable, select the value that rules out the fewest choices for 
 | Tie-breaker | Degree heuristic | — |
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def select_unassigned_variable_mrv(csp, assignment):
@@ -639,6 +1035,17 @@ def order_domain_values_lcv(csp, var, assignment):
 
 ### Dry Run — MRV on 4-Queens
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" alt="Handwritten: Dry Run — MRV on 4-Queens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" alt="Diagram: Dry Run — MRV on 4-Queens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" alt="Sticky Note: Dry Run — MRV on 4-Queens" width="30%">
+</a>
+
+
 **Variables:** Q1 (column 1), Q2 (column 2), Q3 (column 3), Q4 (column 4)
 **Domains:** Each queen can be in row {1, 2, 3, 4}
 **Constraints:** No two queens share the same row or diagonal.
@@ -655,11 +1062,33 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### Complexity Impact
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" alt="Handwritten: Complexity Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" alt="Diagram: Complexity Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" alt="Sticky Note: Complexity Impact" width="30%">
+</a>
+
+
 - **MRV:** Reduces branching factor at the top of the search tree, where pruning has the most impact. $O(n)$ per selection.
 - **LCV:** $O(n d^2)$ per value ordering — evaluating each value against all neighbors and their domains. The overhead is worthwhile when the search tree is deep.
 - **Combined effect:** MRV + LCV + forward checking can reduce search tree size by 10,000x on hard CSPs like N-Queens (N=50+).
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Heuristic | Advantages | Disadvantages |
 |-----------|------------|---------------|
@@ -668,6 +1097,17 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 | **Degree Heuristic** | Effective tie-breaker; simple to compute | Only useful when MRV ties; ignores domain sizes |
 
 ### Edge Cases for MRV/LCV
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" alt="Handwritten: Edge Cases for MRV/LCV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" alt="Diagram: Edge Cases for MRV/LCV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" alt="Sticky Note: Edge Cases for MRV/LCV" width="30%">
+</a>
+
 
 | Edge Case | Behavior |
 |-----------|----------|
@@ -683,6 +1123,17 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### 4.6.1 Tree-Structured CSPs
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" alt="Handwritten: 4.6.1 Tree-Structured CSPs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" alt="Diagram: 4.6.1 Tree-Structured CSPs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" alt="Sticky Note: 4.6.1 Tree-Structured CSPs" width="30%">
+</a>
+
+
 A CSP whose constraint graph is a tree can be solved in $O(n d^2)$ time, where $d$ is the maximum domain size. The algorithm:
 1. Choose a root variable and order variables from root to leaves (topological order).
 2. Apply backward arc consistency: for $j$ from $n$ down to 2, enforce arc consistency between $X_j$ and its parent $X_i$.
@@ -692,6 +1143,17 @@ A CSP whose constraint graph is a tree can be solved in $O(n d^2)$ time, where $
 
 ### 4.6.2 Reducing to Tree Structure
 
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" alt="Handwritten: 4.6.2 Reducing to Tree Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" alt="Diagram: 4.6.2 Reducing to Tree Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" alt="Sticky Note: 4.6.2 Reducing to Tree Structure" width="30%">
+</a>
+
+
 If the constraint graph has small treewidth, the CSP can be solved efficiently:
 
 - **Cutset conditioning:** Instantiate a subset of variables (the cycle cutset) such that the remaining CSP is tree-structured.
@@ -700,6 +1162,17 @@ If the constraint graph has small treewidth, the CSP can be solved efficiently:
 ## 4.7 Iterative Algorithms for CSPs
 
 ### 4.7.1 Min-Conflicts Heuristic
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" alt="Handwritten: 4.7.1 Min-Conflicts Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" alt="Diagram: 4.7.1 Min-Conflicts Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" alt="Sticky Note: 4.7.1 Min-Conflicts Heuristic" width="30%">
+</a>
+
 
 Local search for CSPs: start with a random assignment, then repeatedly select a violated constraint and change the value of one of its variables to minimize the number of remaining conflicts.
 
@@ -721,15 +1194,48 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 ## 4.8 Interview Corner
 
 ### Q1: Can you formulate Map Coloring as a CSP?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" alt="Handwritten: Can you formulate Map Coloring as a CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" alt="Diagram: Can you formulate Map Coloring as a CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" alt="Sticky Note: Can you formulate Map Coloring as a CSP?" width="30%">
+</a>
+
 **Answer:** Yes. Variables are the regions (territories, countries). Domains are the available colors (e.g., {red, green, blue}). Constraints are binary inequalities between every pair of adjacent regions: $Adjacent(A, B) \Rightarrow Color(A) \neq Color(B)$. The constraint graph mirrors the map's adjacency graph. This is a canonical CSP example because it maps cleanly to variables, domains, and binary constraints, and illustrates how constraint graphs capture problem structure.
 
 ### Q2: How would you solve N-Queens using CSP?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" alt="Handwritten: How would you solve N-Queens using CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" alt="Diagram: How would you solve N-Queens using CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" alt="Sticky Note: How would you solve N-Queens using CSP?" width="30%">
+</a>
+
 **Answer:** Variables are the N queens, one per column: $Q_1, Q_2, \ldots, Q_N$. Each variable's domain is the row number $\{1, 2, \ldots, N\}$. Constraints:
 - **Row constraint (binary):** $Q_i \neq Q_j$ for all $i \neq j$ — no two queens share a row.
 - **Diagonal constraint (binary):** $|Q_i - Q_j| \neq |i - j|$ for all $i \neq j$ — no two queens share a diagonal.
 This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and MRV, N-Queens up to N=1000 can be solved in seconds.
 
 ### Q3: How is Sudoku a CSP?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" alt="Handwritten: How is Sudoku a CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" alt="Diagram: How is Sudoku a CSP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" alt="Sticky Note: How is Sudoku a CSP?" width="30%">
+</a>
+
 **Answer:** Sudoku is a CSP with:
 - **Variables:** 81 cells $\{Cell_{1,1}, \ldots, Cell_{9,9}\}$.
 - **Domains:** For pre-filled cells, $D_{i,j} = \{given\_value\}$ (singleton). For empty cells, $D_{i,j} = \{1, \ldots, 9\}$.
@@ -737,15 +1243,48 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - **Solving:** AC-3 preprocesses heavily — after arc consistency, most cells have domains of 2-5 values. Backtracking with MRV then quickly finds the solution.
 
 ### Q4: AC-3 vs Backtracking — which is better?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" alt="Handwritten: AC-3 vs Backtracking — which is better?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" alt="Diagram: AC-3 vs Backtracking — which is better?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" alt="Sticky Note: AC-3 vs Backtracking — which is better?" width="30%">
+</a>
+
 **Answer:** They are complementary, not competing.
 - **AC-3** is a **preprocessing/inference** technique that runs in polynomial time $O(n^2 d^3)$. It eliminates values that cannot participate in any solution but does not find a solution itself (it may return with all domains non-empty even when no solution exists).
 - **Backtracking** is a **search** technique that finds the actual assignment. It is complete but worst-case exponential $O(d^n)$.
 - **Best practice:** Run AC-3 as preprocessing to prune domains, then run backtracking with MRV and forward checking to find the solution. This hybrid (AC-3 + Backtracking + MRV + FC) is the standard approach for medium-sized CSPs.
 
 ### Q5: What is the complexity of AC-3?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" alt="Handwritten: What is the complexity of AC-3?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" alt="Diagram: What is the complexity of AC-3?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" alt="Sticky Note: What is the complexity of AC-3?" width="30%">
+</a>
+
 **Answer:** $O(n^2 d^3)$ worst-case time, where $n$ is the number of variables and $d$ the maximum domain size. Explanation: There are $O(n^2)$ ordered arcs. Each arc can be added to the queue at most $d$ times (once per value removed from $D_i$). Each REVISE operation takes $O(d^2)$ to check all pairs of values. Therefore, $n^2 \times d \times d^2 = n^2 d^3$. Space is $O(n^2)$ for the queue.
 
 ### Q6: What is the difference between forward checking and AC-3?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" alt="Handwritten: What is the difference between forward checking and AC-3?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" alt="Diagram: What is the difference between forward checking and AC-3?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" alt="Sticky Note: What is the difference between forward checking and AC-3?" width="30%">
+</a>
+
 **Answer:** Forward checking is a 1-step lookahead applied after each assignment — it removes values from neighbors' domains that contradict the newly assigned value. AC-3 is a multi-step propagation that enforces arc consistency across all variables globally, recursively rechecking arcs when domains are revised. AC-3 is more powerful (detects more inconsistencies) but more expensive ($O(n^2 d^3)$ per invocation vs $O(n d^2)$ per assignment for forward checking). MAC (Maintaining Arc Consistency) interleaves AC-3 with backtracking, combining the best of both.
 
 ---

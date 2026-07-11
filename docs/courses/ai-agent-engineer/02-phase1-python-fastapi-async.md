@@ -33,6 +33,17 @@
 
 ### Basics
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-handwritten.svg" alt="Handwritten: Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-diagram.svg" alt="Diagram: Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basics-sticky.svg" alt="Sticky Note: Basics" width="30%">
+</a>
+
+
 ```python
 from typing import Optional, Union, Any
 from collections.abc import Sequence
@@ -45,6 +56,17 @@ def process_items(
 ```
 
 ### Generics
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-handwritten.svg" alt="Handwritten: Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-diagram.svg" alt="Diagram: Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generics-sticky.svg" alt="Sticky Note: Generics" width="30%">
+</a>
+
 
 ```python
 from typing import TypeVar
@@ -60,6 +82,17 @@ first(["a", "b"])      # str | None
 ```
 
 ### Complex nested types
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-handwritten.svg" alt="Handwritten: Complex nested types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-diagram.svg" alt="Diagram: Complex nested types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/complex-nested-types-sticky.svg" alt="Sticky Note: Complex nested types" width="30%">
+</a>
+
 
 ```python
 from pydantic import BaseModel
@@ -104,11 +137,33 @@ class APIRequest(BaseModel):
 
 ### When to use dataclasses
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-handwritten.svg" alt="Handwritten: When to use dataclasses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-diagram.svg" alt="Diagram: When to use dataclasses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-dataclasses-sticky.svg" alt="Sticky Note: When to use dataclasses" width="30%">
+</a>
+
+
 - Internal data structures that never cross an API boundary
 - Configuration objects loaded from code, not user input
 - You need mutable fields or `__slots__` for memory efficiency
 
 ### When to use Pydantic
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-handwritten.svg" alt="Handwritten: When to use Pydantic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-diagram.svg" alt="Diagram: When to use Pydantic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/when-to-use-pydantic-sticky.svg" alt="Sticky Note: When to use Pydantic" width="30%">
+</a>
+
 
 - API request/response models (validation + OpenAPI generation)
 - Settings loaded from `.env`
@@ -167,6 +222,17 @@ def safe_write(path: str):
 
 ### List comprehension
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-handwritten.svg" alt="Handwritten: List comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-diagram.svg" alt="Diagram: List comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/list-comprehension-sticky.svg" alt="Sticky Note: List comprehension" width="30%">
+</a>
+
+
 ```python
 # Instead of:
 squares = []
@@ -179,6 +245,17 @@ squares = [i * i for i in range(10)]
 
 ### Dict comprehension
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-handwritten.svg" alt="Handwritten: Dict comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-diagram.svg" alt="Diagram: Dict comprehension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/dict-comprehension-sticky.svg" alt="Sticky Note: Dict comprehension" width="30%">
+</a>
+
+
 ```python
 chunks = ["first", "second", "third"]
 chunk_map = {c: len(c) for c in chunks}
@@ -186,6 +263,17 @@ chunk_map = {c: len(c) for c in chunks}
 ```
 
 ### Generator expression (memory efficient)
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-handwritten.svg" alt="Handwritten: Generator expression (memory efficient)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-diagram.svg" alt="Diagram: Generator expression (memory efficient)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/generator-expression-memory-efficient-sticky.svg" alt="Sticky Note: Generator expression (memory efficient)" width="30%">
+</a>
+
 
 ```python
 # List — all in memory
@@ -208,6 +296,17 @@ Take 5 for-loops from your existing Python code or tutorials and rewrite them as
 You've used `@app.get()`, `@limiter.limit()`. Now write your own.
 
 ### `@retry(times=3)` — the one you'll actually reuse
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-handwritten.svg" alt="Handwritten: `@retry(times=3)` — the one you'll actually reuse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-diagram.svg" alt="Diagram: `@retry(times=3)` — the one you'll actually reuse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/retry-times-3-the-one-you-ll-actually-reuse-sticky.svg" alt="Sticky Note: `@retry(times=3)` — the one you'll actually reuse" width="30%">
+</a>
+
 
 ```python
 import time
@@ -237,6 +336,17 @@ def call_ace_step(prompt: str) -> str:
 ```
 
 ### `@log_duration`
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-handwritten.svg" alt="Handwritten: `@log_duration`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-diagram.svg" alt="Diagram: `@log_duration`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/log-duration-sticky.svg" alt="Sticky Note: `@log_duration`" width="30%">
+</a>
+
 
 ```python
 import time
@@ -454,6 +564,17 @@ Refactor your project to use `pydantic-settings`. Move everything from `os.envir
 
 ### The key insight
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-handwritten.svg" alt="Handwritten: The key insight" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-diagram.svg" alt="Diagram: The key insight" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/the-key-insight-sticky.svg" alt="Sticky Note: The key insight" width="30%">
+</a>
+
+
 Node.js uses an event loop. Python's asyncio uses an event loop. They are conceptually the same thing:
 
 | Node.js | Python |
@@ -464,6 +585,17 @@ Node.js uses an event loop. Python's asyncio uses an event loop. They are concep
 | Microtask queue | Callback queue |
 
 ### What `await` actually does
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-handwritten.svg" alt="Handwritten: What `await` actually does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-diagram.svg" alt="Diagram: What `await` actually does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/what-await-actually-does-sticky.svg" alt="Sticky Note: What `await` actually does" width="30%">
+</a>
+
 
 When you write `await some_async_fn()`, Python:
 1. Pauses the current coroutine at this line
@@ -569,6 +701,17 @@ Make 3 concurrent outbound API calls — one to OpenAI, one to a weather API, on
 
 ### Pitfall 1: Sync call inside async function
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-handwritten.svg" alt="Handwritten: Pitfall 1: Sync call inside async function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-diagram.svg" alt="Diagram: Pitfall 1: Sync call inside async function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-1-sync-call-inside-async-function-sticky.svg" alt="Sticky Note: Pitfall 1: Sync call inside async function" width="30%">
+</a>
+
+
 ```python
 import requests
 
@@ -585,6 +728,17 @@ async def good_route():
 ```
 
 ### Pitfall 2: Sync database driver in async route
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-handwritten.svg" alt="Handwritten: Pitfall 2: Sync database driver in async route" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-diagram.svg" alt="Diagram: Pitfall 2: Sync database driver in async route" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-2-sync-database-driver-in-async-route-sticky.svg" alt="Sticky Note: Pitfall 2: Sync database driver in async route" width="30%">
+</a>
+
 
 ```python
 import psycopg2  # Sync — blocks
@@ -607,6 +761,17 @@ async def good_query():
 
 ### Pitfall 3: CPU-bound work in async function
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-handwritten.svg" alt="Handwritten: Pitfall 3: CPU-bound work in async function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-diagram.svg" alt="Diagram: Pitfall 3: CPU-bound work in async function" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/pitfall-3-cpu-bound-work-in-async-function-sticky.svg" alt="Sticky Note: Pitfall 3: CPU-bound work in async function" width="30%">
+</a>
+
+
 ```python
 async def compute_something_heavy():
     # BAD: CPU-bound, blocks event loop for the duration
@@ -626,6 +791,17 @@ Write a FastAPI route that deliberately calls `time.sleep(3)` inside an async fu
 
 ### Spec
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-handwritten.svg" alt="Handwritten: Spec" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-diagram.svg" alt="Diagram: Spec" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/spec-sticky.svg" alt="Sticky Note: Spec" width="30%">
+</a>
+
+
 Take your existing real estate Booking/Payment/Document module (leads, demand letters, PDC, NOC, allotment letters, role/permission controls) and rebuild the core endpoints:
 
 ```
@@ -638,6 +814,17 @@ GET    /bookings/{id}/documents  List documents for a booking
 
 ### Constraints
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-handwritten.svg" alt="Handwritten: Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-diagram.svg" alt="Diagram: Constraints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/constraints-sticky.svg" alt="Sticky Note: Constraints" width="30%">
+</a>
+
+
 - Use SQLAlchemy 2.0 async ORM (not sync)
 - All endpoints gated with `Depends(get_current_user)`
 - Role-based permissions: `admin`, `agent`, `customer`
@@ -647,6 +834,17 @@ GET    /bookings/{id}/documents  List documents for a booking
 
 ### Done checkpoint
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-handwritten.svg" alt="Handwritten: Done checkpoint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-diagram.svg" alt="Diagram: Done checkpoint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/done-checkpoint-sticky.svg" alt="Sticky Note: Done checkpoint" width="30%">
+</a>
+
+
 - [ ] All 5 endpoints work against real Postgres
 - [ ] Role/permission checks enforced (agent cannot create bookings for another agent's lead)
 - [ ] Every async/await placement is explainable ("this is async because it waits on DB I/O; this is not because it's CPU-bound")
@@ -654,6 +852,17 @@ GET    /bookings/{id}/documents  List documents for a booking
 - [ ] Laravel-vs-FastAPI comparison README written
 
 ### Comparison README template
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-handwritten.svg" alt="Handwritten: Comparison README template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-diagram.svg" alt="Diagram: Comparison README template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/comparison-readme-template-sticky.svg" alt="Sticky Note: Comparison README template" width="30%">
+</a>
+
 
 ```markdown
 ## Laravel (Eloquent) vs FastAPI (SQLAlchemy 2.0)
@@ -677,6 +886,17 @@ GET    /bookings/{id}/documents  List documents for a booking
 Testing FastAPI requires more than unit tests — you need to test endpoints with real request/response cycles.
 
 ### Basic FastAPI test
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-handwritten.svg" alt="Handwritten: Basic FastAPI test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-diagram.svg" alt="Diagram: Basic FastAPI test" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/basic-fastapi-test-sticky.svg" alt="Sticky Note: Basic FastAPI test" width="30%">
+</a>
+
 
 ```python
 from fastapi.testclient import TestClient
@@ -702,6 +922,17 @@ def test_create_item():
 ```
 
 ### Mocking dependencies
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-handwritten.svg" alt="Handwritten: Mocking dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-diagram.svg" alt="Diagram: Mocking dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/mocking-dependencies-sticky.svg" alt="Sticky Note: Mocking dependencies" width="30%">
+</a>
+
 
 ```python
 import pytest
@@ -729,6 +960,17 @@ app.dependency_overrides.clear()
 
 ### Async tests with httpx
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-handwritten.svg" alt="Handwritten: Async tests with httpx" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-diagram.svg" alt="Diagram: Async tests with httpx" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/async-tests-with-httpx-sticky.svg" alt="Sticky Note: Async tests with httpx" width="30%">
+</a>
+
+
 ```python
 import pytest
 from httpx import AsyncClient, ASGITransport
@@ -748,6 +990,17 @@ async def test_async_endpoint():
 ```
 
 ### Test fixtures for database
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-handwritten.svg" alt="Handwritten: Test fixtures for database" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-diagram.svg" alt="Diagram: Test fixtures for database" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/test-fixtures-for-database-sticky.svg" alt="Sticky Note: Test fixtures for database" width="30%">
+</a>
+
 
 ```python
 import pytest
@@ -796,6 +1049,17 @@ Alembic is the SQLAlchemy equivalent of Laravel's migrations. You use it wheneve
 
 ### Setup
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-diagram.svg" alt="Diagram: Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
+</a>
+
+
 ```bash
 pip install alembic
 alembic init alembic
@@ -813,6 +1077,17 @@ config.set_main_option("sqlalchemy.url", settings.database_url)
 ```
 
 ### Creating a migration
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-handwritten.svg" alt="Handwritten: Creating a migration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-diagram.svg" alt="Diagram: Creating a migration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/creating-a-migration-sticky.svg" alt="Sticky Note: Creating a migration" width="30%">
+</a>
+
 
 ```bash
 alembic revision --autogenerate -m "add bookings table"
@@ -846,6 +1121,17 @@ def downgrade():
 
 ### Applying and rolling back
 
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-handwritten.svg" alt="Handwritten: Applying and rolling back" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-diagram.svg" alt="Diagram: Applying and rolling back" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/applying-and-rolling-back-sticky.svg" alt="Sticky Note: Applying and rolling back" width="30%">
+</a>
+
+
 ```bash
 alembic upgrade head   # Apply all pending
 alembic downgrade -1   # Roll back one step
@@ -853,6 +1139,17 @@ alembic history        # View migration history
 ```
 
 ### Best practices
+
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-handwritten.svg" alt="Handwritten: Best practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-diagram.svg" alt="Diagram: Best practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/ai-agent-engineer/02-phase1-python-fastapi-async/best-practices-sticky.svg" alt="Sticky Note: Best practices" width="30%">
+</a>
+
 
 1. **Always review autogenerated migrations** — Alembic misses some changes (table renames, column type changes)
 2. **Never edit a migration that's already been applied** — create a new one

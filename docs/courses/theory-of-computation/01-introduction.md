@@ -14,6 +14,17 @@
 
 ### Sets
 
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" alt="Handwritten: Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" alt="Diagram: Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" alt="Sticky Note: Sets" width="30%">
+</a>
+
+
 A **set** is an unordered collection of distinct elements, written with curly braces.
 
 ```text
@@ -35,6 +46,17 @@ const intersection = new Set([...A].filter(x => B.has(x))); // {2,3}
 
 ### Relations and Functions
 
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" alt="Handwritten: Relations and Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" alt="Diagram: Relations and Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" alt="Sticky Note: Relations and Functions" width="30%">
+</a>
+
+
 A **relation** R ? A × B is a set of ordered pairs. A **function** f: A ? B is a relation where each a ? A maps to exactly one b ? B.
 
 ```text
@@ -45,6 +67,17 @@ g: N ? N, g(n) = 1/n  // partial function (undefined at n=0)
 A function is **injective** (one-to-one), **surjective** (onto), or **bijective** (both). Bijections establish that two sets have the same **cardinality**. Countably infinite sets (N, Q) can be listed; uncountably infinite sets (R, ??(N)) cannot — this distinction drives undecidability.
 
 ### Graphs and Trees
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" alt="Handwritten: Graphs and Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" alt="Diagram: Graphs and Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" alt="Sticky Note: Graphs and Trees" width="30%">
+</a>
+
 
 A **directed graph** G = (V, E) consists of vertices V and edges E ? V × V. A **tree** is a connected acyclic graph. Automata are labeled directed graphs where vertices are states and edges are transitions.
 
@@ -57,6 +90,17 @@ graph LR
 ```
 
 ### Alphabets, Strings, and Languages
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" alt="Handwritten: Alphabets, Strings, and Languages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" alt="Diagram: Alphabets, Strings, and Languages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" alt="Sticky Note: Alphabets, Strings, and Languages" width="30%">
+</a>
+
 
 An **alphabet** S is a finite non-empty set of symbols. Examples:
 
@@ -128,6 +172,17 @@ graph BT
 
 ### Type 3: Regular Grammars
 
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" alt="Handwritten: Type 3: Regular Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" alt="Diagram: Type 3: Regular Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" alt="Sticky Note: Type 3: Regular Grammars" width="30%">
+</a>
+
+
 Productions are of the form A ? aB or A ? a where A, B are non-terminals and a is a terminal. These generate exactly the regular languages recognized by finite automata.
 
 ```text
@@ -137,6 +192,17 @@ S ? aA | bA, A ? a | b    // strings of length 1 or more
 
 ### Type 2: Context-Free Grammars
 
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" alt="Handwritten: Type 2: Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" alt="Diagram: Type 2: Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" alt="Sticky Note: Type 2: Context-Free Grammars" width="30%">
+</a>
+
+
 Productions are of the form A ? ? where ? is any string of terminals and non-terminals. Context-free grammars generate languages recognized by pushdown automata.
 
 ```text
@@ -144,6 +210,17 @@ S ? aSb | e    // {a^n b^n | n = 0}
 ```
 
 ### Type 1: Context-Sensitive Grammars
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" alt="Handwritten: Type 1: Context-Sensitive Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" alt="Diagram: Type 1: Context-Sensitive Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" alt="Sticky Note: Type 1: Context-Sensitive Grammars" width="30%">
+</a>
+
 
 Productions have the form aAß ? a?ß where ? ? e. A non-terminal A can be replaced only in the context of its surrounding strings a and ß. These correspond to linear bounded automata.
 
@@ -157,6 +234,17 @@ cC ? cc    // {a^n b^n c^n | n = 1}
 ```
 
 ### Type 0: Unrestricted Grammars
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" alt="Handwritten: Type 0: Unrestricted Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" alt="Diagram: Type 0: Unrestricted Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" alt="Sticky Note: Type 0: Unrestricted Grammars" width="30%">
+</a>
+
 
 Productions have the form a ? ß where |a| = |ß|. No restrictions. These correspond exactly to Turing machines in generative power.
 
@@ -425,27 +513,104 @@ console.log(classifyLanguage("aabbcc", new Set(["a", "b", "c"])));
 The Theory of Computation emerged from a remarkable confluence of intellectual breakthroughs in the 1930s:
 
 ### Kurt Gödel (1931)
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" alt="Handwritten: Kurt Gödel (1931)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" alt="Diagram: Kurt Gödel (1931)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" alt="Sticky Note: Kurt Gödel (1931)" width="30%">
+</a>
+
 Gödel's **Incompleteness Theorems** showed that any sufficiently powerful formal system contains statements that can neither be proved nor disproved within the system. This shattered Hilbert's dream of a complete, consistent axiomatization of all mathematics and laid the groundwork for undecidability.
 
 ### Alonzo Church (1936)
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" alt="Handwritten: Alonzo Church (1936)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" alt="Diagram: Alonzo Church (1936)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" alt="Sticky Note: Alonzo Church (1936)" width="30%">
+</a>
+
 Church introduced the **lambda calculus** as a formal model of computation and proved that there is no algorithmic procedure to determine whether two lambda expressions are equivalent (the Church-Turing theorem). He also formulated the **Church-Turing thesis**: any function computable by an effective procedure is computable by a Turing machine.
 
 ### Alan Turing (1936–1937)
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" alt="Handwritten: Alan Turing (1936–1937)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" alt="Diagram: Alan Turing (1936–1937)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" alt="Sticky Note: Alan Turing (1936–1937)" width="30%">
+</a>
+
 Turing's seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem" introduced the **Turing machine** as a model of computation. He proved the **undecidability of the halting problem** using a diagonalization argument. Turing also introduced the concept of a **universal Turing machine** — a single machine that can simulate any other Turing machine, which is the theoretical foundation of the stored-program computer.
 
 ### Stephen Kleene (1943–1956)
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" alt="Handwritten: Stephen Kleene (1943–1956)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" alt="Diagram: Stephen Kleene (1943–1956)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" alt="Sticky Note: Stephen Kleene (1943–1956)" width="30%">
+</a>
+
 Kleene developed **recursive function theory**, formalized **regular expressions** as a notation for regular languages, and proved Kleene's theorem establishing the equivalence of regular expressions and finite automata.
 
 ### Noam Chomsky (1956)
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" alt="Handwritten: Noam Chomsky (1956)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" alt="Diagram: Noam Chomsky (1956)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" alt="Sticky Note: Noam Chomsky (1956)" width="30%">
+</a>
+
 Chomsky introduced the **Chomsky hierarchy** in his work on formal grammars, connecting linguistics to automata theory. His classification system remains the foundational taxonomy of formal language theory.
 
 ### The Modern Era
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" alt="Handwritten: The Modern Era" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" alt="Diagram: The Modern Era" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" alt="Sticky Note: The Modern Era" width="30%">
+</a>
+
 - **1960s–70s:** Cook, Karp, and Levin develop NP-completeness theory.
 - **1970s–80s:** Hartmanis, Stearns, and others develop computational complexity theory.
 - **1990s–2000s:** Interactive proofs (Goldwasser, Micali, Rackoff), PCP theorem, quantum computation.
 - **2010s–present:** Deep learning, LLMs, and the renewed philosophical debate about what constitutes "understanding" in computation — echoing Turing's original questions.
 
 ### Mermaid: Timeline of Key Contributions
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" alt="Handwritten: Mermaid: Timeline of Key Contributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" alt="Diagram: Mermaid: Timeline of Key Contributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" alt="Sticky Note: Mermaid: Timeline of Key Contributions" width="30%">
+</a>
+
 
 ```mermaid
 timeline
@@ -466,6 +631,17 @@ timeline
 ```
 
 ### Philosophical Implications
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" alt="Handwritten: Philosophical Implications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" alt="Diagram: Philosophical Implications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" alt="Sticky Note: Philosophical Implications" width="30%">
+</a>
+
 
 The theory of computation forces us to confront deep questions:
 
@@ -804,6 +980,17 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ### Basic
 
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. Write a TypeScript function that checks whether a string belongs to the language L = {w ? {0,1}* | w starts with 0 and ends with 1}.
 
 2. For each of the following strings over S = {a, b}, determine the length: e, a, abba, aaaaa.
@@ -813,6 +1000,17 @@ The Theory of Computation provides the mathematical foundations for understandin
 4. Give three examples of decision problems encountered in everyday computing.
 
 ### Intermediate
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
 
 5. Prove that the set of all binary strings that are palindromes is a language. Write a TypeScript recognizer for it.
 
@@ -826,6 +1024,17 @@ The Theory of Computation provides the mathematical foundations for understandin
 8. Represent the SAT problem as a language encoding. What symbols would your alphabet need?
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 9. Prove that if a language L is decidable, then its complement L¯ is also decidable. What happens if L is only recognizable?
 

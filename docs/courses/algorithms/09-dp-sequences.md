@@ -53,6 +53,17 @@ flowchart LR
 
 ### 9.1 Longest Common Subsequence (LCS)
 
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: 9.1 Longest Common Subsequence (LCS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: 9.1 Longest Common Subsequence (LCS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: 9.1 Longest Common Subsequence (LCS)" width="30%">
+</a>
+
+
 **Problem:** Given two strings \( X \) and \( Y \), find the longest subsequence that appears in both. A subsequence is obtained by deleting characters (not necessarily contiguous).
 
 **Real-World Analogy:** Version control systems (git diff) compute the longest set of lines that remain unchanged between two file versions. The changed lines are everything else — insertions and deletions around the common core. Bioinformatics uses the same idea to compare DNA sequences: "ACTG" vs "ACG" shares the subsequence "ACG".
@@ -276,6 +287,17 @@ LCS_LENGTH_OPT(X, Y, m, n):
 ---
 
 ### 9.2 Longest Increasing Subsequence (LIS)
+
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" alt="Handwritten: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" alt="Diagram: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" alt="Sticky Note: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+</a>
+
 
 **Problem:** Given an array \( A \), find the length of the longest strictly increasing subsequence. Elements need not be contiguous.
 
@@ -522,6 +544,17 @@ For the O(n log n) approach, O(n) space is already optimal.
 
 ### 9.3 Edit Distance (Levenshtein Distance)
 
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" alt="Handwritten: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" alt="Diagram: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" alt="Sticky Note: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+</a>
+
+
 **Problem:** Given two strings \( X \) and \( Y \), find the minimum number of operations (insert, delete, replace) to transform \( X \) into \( Y \).
 
 **Real-World Analogy:** Spell checkers suggest "accommodate" when you type "acommodate" — the edit distance is 1 (insert one 'c'). Autocorrect on smartphones uses edit distance to rank candidate corrections. In computational biology, the Needleman-Wunsch algorithm generalizes edit distance to align DNA sequences with affine gap penalties, enabling scientists to quantify evolutionary divergence between species.
@@ -723,6 +756,17 @@ EDIT_DISTANCE_OPT(X, Y, m, n):
 
 ### 9.4 Matrix Chain Multiplication
 
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" alt="Handwritten: 9.4 Matrix Chain Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" alt="Diagram: 9.4 Matrix Chain Multiplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" alt="Sticky Note: 9.4 Matrix Chain Multiplication" width="30%">
+</a>
+
+
 **Problem:** Given matrices \( A_1, A_2, \ldots, A_n \) with dimensions \( p_0 \times p_1, p_1 \times p_2, \ldots, p_{n-1} \times p_n \), find the parenthesization that minimizes scalar multiplications.
 
 **Real-World Analogy:** When a deep learning framework multiplies a sequence of weight matrices and input tensors, the order of multiplication dramatically affects computation speed. For example, multiplying a 10×100 matrix by a 100×5 matrix by a 5×50 matrix costs 7500 multiplications if grouped as (10×100 × 100×5) × 5×50, but 75,000 if grouped as 10×100 × (100×5 × 5×50) — a 10× difference. Compilers use this optimization for tensor operations.
@@ -917,6 +961,17 @@ The dp table can't be compressed to O(n) easily because interval DP needs all su
 ---
 
 ### 9.5 Palindrome Partitioning
+
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" alt="Handwritten: 9.5 Palindrome Partitioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" alt="Diagram: 9.5 Palindrome Partitioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" alt="Sticky Note: 9.5 Palindrome Partitioning" width="30%">
+</a>
+
 
 **Problem:** Given a string \( S \), partition it into substrings such that every substring is a palindrome. Find the minimum number of cuts needed.
 

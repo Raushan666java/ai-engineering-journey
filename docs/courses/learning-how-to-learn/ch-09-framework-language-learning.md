@@ -29,6 +29,17 @@ Learning a new programming language or framework is a recurring challenge throug
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Universal Blueprint | Five phases: Docs ? Tutorial ? Build ? Refactor ? Teach | Follow the sequence for every new framework � never skip straight to building |
@@ -56,6 +67,17 @@ flowchart LR
 ---
 
 ### Q111: What is the universal framework learning blueprint?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-handwritten.svg" alt="Handwritten: What is the universal framework learning blueprint?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-diagram.svg" alt="Diagram: What is the universal framework learning blueprint?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-universal-framework-learning-blueprint-sticky.svg" alt="Sticky Note: What is the universal framework learning blueprint?" width="30%">
+</a>
+
 
 **Answer:** Five phases: Docs ? Tutorial ? Build ? Refactor ? Teach.
 
@@ -91,6 +113,17 @@ The 27 courses in this repo follow this blueprint: each starts with learning obj
 
 ### Q112: How do I learn Java from this repo?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Java from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-diagram.svg" alt="Diagram: How do I learn Java from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-java-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Java from this repo?" width="30%">
+</a>
+
+
 **Path:** `java/index.md` ? Chapters P1-P6 (foundations) ? Chapters 1-6 (core Java) ? Chapter 57 (Spring interview) ? Chapter 60 (microservices).
 
 The Java course (`java/index.md`) is organized into 13 parts with 66 chapters:
@@ -122,6 +155,17 @@ class UserService {
 ---
 
 ### Q113: How do I learn Python from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Python from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-diagram.svg" alt="Diagram: How do I learn Python from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-python-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Python from this repo?" width="30%">
+</a>
+
 
 **Path:** `python-programming/` ? `machine-learning/` ? `applied-ai/`.
 
@@ -163,6 +207,17 @@ def two_sum(nums, target):
 
 ### Q114: How do I learn DevOps from this repo?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn DevOps from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-diagram.svg" alt="Diagram: How do I learn DevOps from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-devops-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn DevOps from this repo?" width="30%">
+</a>
+
+
 **Path:** `devops/` ? `cloud-computing/` ? apply to deploy this repo.
 
 The DevOps course (`devops/index.md`) has 18 chapters covering the full lifecycle:
@@ -193,6 +248,17 @@ After Docker, learn Docker Compose (multi-container), then Kubernetes (chapter 6
 ---
 
 ### Q115: How do I learn Laravel from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Laravel from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-diagram.svg" alt="Diagram: How do I learn Laravel from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-laravel-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Laravel from this repo?" width="30%">
+</a>
+
 
 **Path:** The Laravel course (`laravel/index.md`) has 54 chapters across 10 parts.
 
@@ -230,6 +296,17 @@ After CRUD, add authentication (chapter 5 � Breeze/Jetstream), then API endpoi
 
 ### Q116: Why shouldn't I learn two new frameworks at once?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" alt="Handwritten: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" alt="Diagram: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" alt="Sticky Note: Why shouldn't I learn two new frameworks at once?" width="30%">
+</a>
+
+
 **Answer:** Learning a new framework rewires your mental model of how applications work. Two simultaneous models cause interference � you'll confuse Laravel's service container with Spring's DI container, or Eloquent's active record with JPA's entity manager.
 
 The 27 courses in this repo span Java, Python, PHP, JavaScript/TypeScript, and DevOps tools. If you're studying Java for placement and Laravel for a side project:
@@ -248,6 +325,17 @@ Evidence: After mastering the Spring chapter (57), learning Laravel's service co
 ---
 
 ### Q117: What is the Minimal Viable Project pattern for learning?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" alt="Handwritten: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" alt="Diagram: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" alt="Sticky Note: What is the Minimal Viable Project pattern for learning?" width="30%">
+</a>
+
 
 **Answer:** For any framework, build exactly one CRUD app first. The template is identical across all frameworks:
 
@@ -311,6 +399,17 @@ Build this one project in the new framework. Skip everything else until the CRUD
 
 ### Q118: How do I read documentation effectively vs tutorials?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" alt="Handwritten: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" alt="Diagram: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" alt="Sticky Note: How do I read documentation effectively vs tutorials?" width="30%">
+</a>
+
+
 **Answer:** Documentation tells you what's possible. Tutorials tell you one path. You need both � but extract different things from each.
 
 From the Spring chapter (`57-interview-spring.md`), the pattern for reading Spring docs:
@@ -344,6 +443,17 @@ The doc tells you *why* (immutability, testability). The code tells you *how*. R
 ---
 
 ### Q119: How do I debug using StackOverflow and systematic methods?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" alt="Handwritten: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" alt="Diagram: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" alt="Sticky Note: How do I debug using StackOverflow and systematic methods?" width="30%">
+</a>
+
 
 **Answer:** Reproduce ? Isolate ? Search ? Understand root cause. Never paste code without understanding it.
 
@@ -381,6 +491,17 @@ Always look for the *accepted* answer with the most upvotes. Read the explanatio
 
 ### Q120: How does "Building in Public" accelerate learning?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does "Building in Public" accelerate learning?" width="30%">
+</a>
+
+
 **Answer:** Building in public means sharing your work as you learn � open-source contributions, blog posts, or solving problems from this repo publicly.
 
 The learning accelerator:
@@ -401,6 +522,17 @@ Contributing workflow: fork ? clone ? branch ? commit ? PR. Even fixing a typo i
 ---
 
 ### Q121: How do I learn React from this repo?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn React from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-diagram.svg" alt="Diagram: How do I learn React from this repo?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-react-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn React from this repo?" width="30%">
+</a>
+
 
 **Answer:** React learning blueprint follows the same five phases but with a critical mental model shift: **UI = f(state)**. Unlike traditional frameworks where you manually manipulate the DOM, React re-renders the entire UI when state changes.
 
@@ -500,6 +632,17 @@ function ThemeToggle() {
 
 ### Q122: How do I learn Go/Golang effectively?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-handwritten.svg" alt="Handwritten: How do I learn Go/Golang effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-diagram.svg" alt="Diagram: How do I learn Go/Golang effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-go-golang-effectively-sticky.svg" alt="Sticky Note: How do I learn Go/Golang effectively?" width="30%">
+</a>
+
+
 **Answer:** Go is a systems language designed for concurrency, simplicity, and fast compilation. Its learning curve is shallow *if* you accept its opinionated choices.
 
 **The Goroutine Mental Model:** A goroutine is a lightweight thread managed by the Go runtime. You launch one by prefixing any function call with `go`. Channels connect goroutines � they are typed conduits that synchronize by default (sending blocks until someone receives). This is Hoare's Communicating Sequential Processes (CSP) made practical.
@@ -580,6 +723,17 @@ This example teaches four essential Go patterns: goroutines (`go fetchURL`), Wai
 
 ### Q123: How do I learn Rust effectively?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-handwritten.svg" alt="Handwritten: How do I learn Rust effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-diagram.svg" alt="Diagram: How do I learn Rust effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-rust-effectively-sticky.svg" alt="Sticky Note: How do I learn Rust effectively?" width="30%">
+</a>
+
+
 **Answer:** Rust is the hardest language in this chapter because it forces you to rethink how memory works. The payoff: zero-cost abstractions with C++-level performance and memory safety guaranteed at compile time.
 
 **The Ownership Mental Model (The Hardest Leap):**
@@ -640,6 +794,17 @@ fn calculate_length(s: &String) -> usize {
 ---
 
 ### Q124: How do I learn TypeScript effectively?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-handwritten.svg" alt="Handwritten: How do I learn TypeScript effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-diagram.svg" alt="Diagram: How do I learn TypeScript effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-typescript-effectively-sticky.svg" alt="Sticky Note: How do I learn TypeScript effectively?" width="30%">
+</a>
+
 
 **Answer:** TypeScript is JavaScript with a type system � but that type system is fundamentally different from Java's. Learning TypeScript is less about memorizing syntax and more about understanding *structural typing*.
 
@@ -752,6 +917,17 @@ const palette = {
 
 ### Q125: How do I learn Docker and Kubernetes effectively?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-handwritten.svg" alt="Handwritten: How do I learn Docker and Kubernetes effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-diagram.svg" alt="Diagram: How do I learn Docker and Kubernetes effectively?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-docker-and-kubernetes-effectively-sticky.svg" alt="Sticky Note: How do I learn Docker and Kubernetes effectively?" width="30%">
+</a>
+
+
 **Answer:** Learn Docker *first*, thoroughly, before touching Kubernetes. Trying to learn K8s without Docker fluency is like learning Spring before Java � the abstractions won't make sense.
 
 **Phase 1: Docker (2-3 weeks)**
@@ -853,6 +1029,17 @@ This single manifest declares: run 3 replicas, use this image, inject config, se
 
 ### Q126: How do I learn databases (SQL + NoSQL) systematically?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-handwritten.svg" alt="Handwritten: How do I learn databases (SQL + NoSQL) systematically?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-diagram.svg" alt="Diagram: How do I learn databases (SQL + NoSQL) systematically?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-databases-sql-nosql-systematically-sticky.svg" alt="Sticky Note: How do I learn databases (SQL + NoSQL) systematically?" width="30%">
+</a>
+
+
 **Answer:** Start with SQL � relational databases are the foundation of 90% of production systems. Only after SQL fluency should you explore NoSQL categories, each solving a specific problem that relational databases handle poorly.
 
 **Phase 1: SQL Fundamentals (3-4 weeks)**
@@ -911,6 +1098,17 @@ A missing index makes a query 1000x slower. An extra index slows writes by ~10%.
 
 ### Q127: How do I use AI coding assistants as learning tools (not crutches)?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-handwritten.svg" alt="Handwritten: How do I use AI coding assistants as learning tools (not crutches)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-diagram.svg" alt="Diagram: How do I use AI coding assistants as learning tools (not crutches)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-use-ai-coding-assistants-as-learning-tools-not-crutches-sticky.svg" alt="Sticky Note: How do I use AI coding assistants as learning tools (not crutches)?" width="30%">
+</a>
+
+
 **Answer:** AI coding assistants (Copilot, ChatGPT, Cursor, Claude) are the most powerful learning tools since StackOverflow � but they accelerate *bad* habits just as fast as good ones. The difference is *how* you prompt them.
 
 **Using AI as a Tutor (Good):**
@@ -967,6 +1165,17 @@ Then copy-paste without reading. The code compiles. You learned nothing. Next we
 ---
 
 ### Q128: How do I learn cloud platforms (AWS, GCP, Azure)?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-handwritten.svg" alt="Handwritten: How do I learn cloud platforms (AWS, GCP, Azure)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-diagram.svg" alt="Diagram: How do I learn cloud platforms (AWS, GCP, Azure)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-cloud-platforms-aws-gcp-azure-sticky.svg" alt="Sticky Note: How do I learn cloud platforms (AWS, GCP, Azure)?" width="30%">
+</a>
+
 
 **Answer:** Cloud platforms are vast � each has 200+ services. The trap is learning services in alphabetical order (EC2, ECS, EKS, ElastiCache, ...) without understanding the *categories* and the *shared responsibility model*.
 
@@ -1066,6 +1275,17 @@ Never click through the web console for infrastructure setup � it's not reprod
 
 ### Q129: How do I learn through open-source contributions?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-handwritten.svg" alt="Handwritten: How do I learn through open-source contributions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-diagram.svg" alt="Diagram: How do I learn through open-source contributions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-through-open-source-contributions-sticky.svg" alt="Sticky Note: How do I learn through open-source contributions?" width="30%">
+</a>
+
+
 **Answer:** Open-source contribution is the fastest way to learn production code, code review culture, and collaborative development � but the learning accelerates only if you follow a structured workflow instead of randomly submitting pull requests.
 
 **Step 1: Find the Right Project**
@@ -1141,6 +1361,17 @@ The Spring chapter (`57-interview-spring.md`) is 7297 lines with 50 Q&As. Each Q
 
 ### Q130: How do I learn multiple new technologies in parallel without getting overwhelmed?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-handwritten.svg" alt="Handwritten: How do I learn multiple new technologies in parallel without getting overwhelmed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-diagram.svg" alt="Diagram: How do I learn multiple new technologies in parallel without getting overwhelmed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-learn-multiple-new-technologies-in-parallel-without-getting-overwhelmed-sticky.svg" alt="Sticky Note: How do I learn multiple new technologies in parallel without getting overwhelmed?" width="30%">
+</a>
+
+
 **Answer:** The T-model: go deep on ONE primary technology (the vertical bar of the T) while learning breadth across others (the horizontal bar). The problem isn't learning multiple things � it's trying to go deep on multiple things simultaneously.
 
 **The 70-20-10 Rule for Time Allocation:**
@@ -1201,6 +1432,17 @@ flowchart TD
 ---
 
 ### Q131: How do I transition between programming paradigms (OOP ? Functional)?
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-handwritten.svg" alt="Handwritten: How do I transition between programming paradigms (OOP ? Functional)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-diagram.svg" alt="Diagram: How do I transition between programming paradigms (OOP ? Functional)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-do-i-transition-between-programming-paradigms-oop-functional-sticky.svg" alt="Sticky Note: How do I transition between programming paradigms (OOP ? Functional)?" width="30%">
+</a>
+
 
 **Answer:** Start with OOP (which you likely already know from Java/Python/PHP), then progressively incorporate functional concepts without fully abandoning OOP. Most modern code is a hybrid � the question is where to draw the line.
 
@@ -1307,6 +1549,17 @@ Rust isn't purely functional, but it borrows heavily: `Option` and `Result` mona
 
 ### Q132: How to handle the "tutorial trap" � watching videos without coding?
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-handwritten.svg" alt="Handwritten: How to handle the "tutorial trap" � watching videos without coding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-diagram.svg" alt="Diagram: How to handle the "tutorial trap" � watching videos without coding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/how-to-handle-the-tutorial-trap-watching-videos-without-coding-sticky.svg" alt="Sticky Note: How to handle the "tutorial trap" � watching videos without coding?" width="30%">
+</a>
+
+
 **Answer:** The tutorial trap is the most common reason self-taught developers fail to reach job readiness. You watch a 6-hour course, follow along in your IDE, and feel productive � but a week later you can't build anything from scratch because you never encoded the patterns into procedural memory.
 
 **What the Tutorial Trap Actually Is:**
@@ -1365,6 +1618,17 @@ Each Q&A in this repo is a self-contained tutorial snippet. The trap is reading 
 ---
 
 ### Self-Assessment Quiz
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+</a>
+
 
 **Q1:** What are the five phases of the universal framework learning blueprint?
 A) Read, Write, Test, Deploy, Maintain

@@ -55,6 +55,17 @@ flowchart TD
 
 ### 2.1.1 Overview & Lockbox Analogy
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-handwritten.svg" alt="Handwritten: 2.1.1 Overview & Lockbox Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-diagram.svg" alt="Diagram: 2.1.1 Overview & Lockbox Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-1-overview-lockbox-analogy-sticky.svg" alt="Sticky Note: 2.1.1 Overview & Lockbox Analogy" width="30%">
+</a>
+
+
 **Analogy:** A lockbox with a single key. Alice puts a message in the box, locks it with key K, and sends the box to Bob. Bob uses the same key K to open it. Anyone who copies key K can read all messages.
 
 **Definition:** A single secret key shared between sender and receiver is used for both encryption and decryption.
@@ -71,6 +82,17 @@ P = D(K, C)      Decryption: ciphertext C + key K → plaintext P
 - 128-bit key = 2Â¹Â²â¸ brute-force attempts (physically impossible with current hardware)
 
 ### 2.1.2 AES → Advanced Encryption Standard
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-handwritten.svg" alt="Handwritten: 2.1.2 AES → Advanced Encryption Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-diagram.svg" alt="Diagram: 2.1.2 AES → Advanced Encryption Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-2-aes-advanced-encryption-standard-sticky.svg" alt="Sticky Note: 2.1.2 AES → Advanced Encryption Standard" width="30%">
+</a>
+
 
 **History:** NIST competition 1997â€“2000. Winner: Rijndael (Daemen & Rijmen). Standardized as FIPS-197.
 
@@ -225,6 +247,17 @@ The avalanche effect is visible: changing 1 bit of plaintext produces ~64 change
 
 ### 2.1.3 AES Modes of Operation
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-handwritten.svg" alt="Handwritten: 2.1.3 AES Modes of Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-diagram.svg" alt="Diagram: 2.1.3 AES Modes of Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-3-aes-modes-of-operation-sticky.svg" alt="Sticky Note: 2.1.3 AES Modes of Operation" width="30%">
+</a>
+
+
 AES encrypts 128-bit blocks. A mode defines how to apply the block cipher to messages longer than 16 bytes.
 
 #### ECB (Electronic Codebook)
@@ -354,6 +387,17 @@ AuthTag = GHASH(H, AAD, C) XOR AES_Encrypt(K, Nonce || Counter_0)
 
 ### 2.1.4 ChaCha20
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-handwritten.svg" alt="Handwritten: 2.1.4 ChaCha20" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-diagram.svg" alt="Diagram: 2.1.4 ChaCha20" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-4-chacha20-sticky.svg" alt="Sticky Note: 2.1.4 ChaCha20" width="30%">
+</a>
+
+
 **History:** Designed by Daniel J. Bernstein (2008). Variant ChaCha20 (20 rounds) specified in RFC 8439. Used in TLS 1.3 cipher suites (TLS_CHACHA20_POLY1305_SHA256). Google's choice for Android HTTPS.
 
 **Analogy:** A cryptographic hash function repurposed as a stream cipher. Like a high-speed water hose → the key and nonce generate an endless stream of pseudo-random bytes that are XORed with plaintext.
@@ -474,6 +518,17 @@ If the message is "Hello ChaCha!" (12 bytes), the first 12 keystream bytes are X
 
 ### 2.1.5 Symmetric Encryption Summary
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-handwritten.svg" alt="Handwritten: 2.1.5 Symmetric Encryption Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-diagram.svg" alt="Diagram: 2.1.5 Symmetric Encryption Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-1-5-symmetric-encryption-summary-sticky.svg" alt="Sticky Note: 2.1.5 Symmetric Encryption Summary" width="30%">
+</a>
+
+
 | Algorithm | Type | Key Size | Block Size | Speed | Security |
 |-----------|------|----------|------------|-------|----------|
 | AES-128 | Block (ECB/CBC/GCM/CTR) | 128-bit | 128-bit | ~1 cpB (HW) | Excellent |
@@ -490,6 +545,17 @@ Cryptography is built on a few core mathematical concepts. Understanding these f
 
 ### Modular Arithmetic
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-handwritten.svg" alt="Handwritten: Modular Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-diagram.svg" alt="Diagram: Modular Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/modular-arithmetic-sticky.svg" alt="Sticky Note: Modular Arithmetic" width="30%">
+</a>
+
+
 **Definition:** `a mod n` is the remainder when a is divided by n. Example: `17 mod 5 = 2`.
 
 **Congruence:** `a â‰¡ b (mod n)` means a and b have the same remainder when divided by n. Example: `17 â‰¡ 2 (mod 5)`.
@@ -503,6 +569,17 @@ Cryptography is built on a few core mathematical concepts. Understanding these f
 
 ### Euler's Theorem
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-handwritten.svg" alt="Handwritten: Euler's Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-diagram.svg" alt="Diagram: Euler's Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/euler-s-theorem-sticky.svg" alt="Sticky Note: Euler's Theorem" width="30%">
+</a>
+
+
 **Totient function Ï†(n):** Count of integers between 1 and n that are coprime to n.
 - If n = p (prime), Ï†(p) = p - 1
 - If n = p Ã— q, Ï†(n) = (p-1)(q-1)
@@ -512,6 +589,17 @@ Cryptography is built on a few core mathematical concepts. Understanding these f
 **Why it matters:** RSA encryption/decryption works because `m^(ed) mod n = m` when `ed â‰¡ 1 mod Ï†(n)`. The theorem guarantees that encryption and decryption are inverses.
 
 ### Extended Euclidean Algorithm
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-handwritten.svg" alt="Handwritten: Extended Euclidean Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-diagram.svg" alt="Diagram: Extended Euclidean Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/extended-euclidean-algorithm-sticky.svg" alt="Sticky Note: Extended Euclidean Algorithm" width="30%">
+</a>
+
 
 Finds integers x and y such that `ax + ny = gcd(a, n)`. When gcd(a, n) = 1, x is the modular inverse of a: `ax â‰¡ 1 (mod n)`.
 
@@ -533,17 +621,50 @@ Therefore `17 Ã— 2753 = 46801 = 1 + 15Ã—3120`, so `17^(-1) mod 3120 = 2753
 
 ### Discrete Logarithm Problem
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-handwritten.svg" alt="Handwritten: Discrete Logarithm Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-diagram.svg" alt="Diagram: Discrete Logarithm Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/discrete-logarithm-problem-sticky.svg" alt="Sticky Note: Discrete Logarithm Problem" width="30%">
+</a>
+
+
 Given `g` and `g^a mod p`, find `a`. For large prime p (â‰¥2048 bits), no efficient algorithm exists.
 
 **Why it matters:** Security of Diffie-Hellman and DSA depends on this. The RSA equivalent is the factoring problem (given n = pÃ—q, find p and q). Both are believed to be hard for classical computers.
 
 ### Elliptic Curve Discrete Logarithm (ECDLP)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-handwritten.svg" alt="Handwritten: Elliptic Curve Discrete Logarithm (ECDLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-diagram.svg" alt="Diagram: Elliptic Curve Discrete Logarithm (ECDLP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/elliptic-curve-discrete-logarithm-ecdlp-sticky.svg" alt="Sticky Note: Elliptic Curve Discrete Logarithm (ECDLP)" width="30%">
+</a>
+
+
 Given points `P` and `kP` on an elliptic curve, find `k`. This is believed to be HARDER than integer factorization for equivalent key sizes.
 
 **Why it matters:** Security of ECDH, ECDSA, Ed25519. A 256-bit ECC key â‰ˆ 3072-bit RSA key for equivalent security.
 
 ### Finite Fields (Galois Fields)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-handwritten.svg" alt="Handwritten: Finite Fields (Galois Fields)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-diagram.svg" alt="Diagram: Finite Fields (Galois Fields)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/finite-fields-galois-fields-sticky.svg" alt="Sticky Note: Finite Fields (Galois Fields)" width="30%">
+</a>
+
 
 A finite field `GF(p)` contains p elements with addition and multiplication defined modulo p. `GF(2â¸)` is the field with 256 elements used in AES.
 
@@ -552,6 +673,17 @@ A finite field `GF(p)` contains p elements with addition and multiplication defi
 **Why it matters:** Finite fields provide the algebraic structure needed for the non-linearity and diffusion in AES and the group operations in ECC.
 
 ### Hash Function Security Foundations
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-handwritten.svg" alt="Handwritten: Hash Function Security Foundations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-diagram.svg" alt="Diagram: Hash Function Security Foundations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/hash-function-security-foundations-sticky.svg" alt="Sticky Note: Hash Function Security Foundations" width="30%">
+</a>
+
 
 **Birthday paradox:** With `âˆš(2^n)` â‰ˆ `2^(n/2)` random samples from an n-bit space, probability of collision exceeds 50%.
 
@@ -563,6 +695,17 @@ A finite field `GF(p)` contains p elements with addition and multiplication defi
 
 ### 2.2.1 Overview & Mail Slot Analogy
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-handwritten.svg" alt="Handwritten: 2.2.1 Overview & Mail Slot Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-diagram.svg" alt="Diagram: 2.2.1 Overview & Mail Slot Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-1-overview-mail-slot-analogy-sticky.svg" alt="Sticky Note: 2.2.1 Overview & Mail Slot Analogy" width="30%">
+</a>
+
+
 **Analogy:** A public mail slot. Anyone can drop a letter through the slot (encrypt with public key), but only the person with the key to the door (private key) can open it and read the letters. Conversely, the owner can sign a document with their private key (press their ring into wax), and anyone can verify the signature with the public key.
 
 **Definition:** Uses a mathematically linked key pair (public, private). One key encrypts, the other decrypts → and the private key cannot be derived from the public key (assumption of computational hardness).
@@ -570,6 +713,17 @@ A finite field `GF(p)` contains p elements with addition and multiplication defi
 **Why it matters:** Solves the key distribution problem. Alice doesn't need a pre-shared secret with Bob to send him an encrypted message. She just needs his public key, which can be transmitted in the clear.
 
 ### 2.2.2 RSA (Rivestâ€“Shamirâ€“Adleman)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-handwritten.svg" alt="Handwritten: 2.2.2 RSA (Rivestâ€“Shamirâ€“Adleman)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-diagram.svg" alt="Diagram: 2.2.2 RSA (Rivestâ€“Shamirâ€“Adleman)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-2-rsa-rivest-shamir-adleman-sticky.svg" alt="Sticky Note: 2.2.2 RSA (Rivestâ€“Shamirâ€“Adleman)" width="30%">
+</a>
+
 
 **Mathematical Foundation:** Based on the practical difficulty of factoring the product of two large prime numbers.
 
@@ -729,6 +883,17 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 
 ### 2.2.3 Diffie-Hellman Key Exchange
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-handwritten.svg" alt="Handwritten: 2.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-diagram.svg" alt="Diagram: 2.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-3-diffie-hellman-key-exchange-sticky.svg" alt="Sticky Note: 2.2.3 Diffie-Hellman Key Exchange" width="30%">
+</a>
+
+
 **Purpose:** Two parties establish a shared secret over an insecure channel without ever transmitting the secret itself.
 
 **Mathematical Foundation:** Discrete logarithm problem in a finite cyclic group. Given `g^a mod p`, it is computationally infeasible to find `a` (for large prime `p`).
@@ -780,6 +945,17 @@ Public: p = 23, g = 5
 | SNIFF (passive) | 768-bit DH | NSA-level capability | Use â‰¥2048-bit or ECDH |
 
 ### 2.2.4 Elliptic Curve Cryptography (ECC)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: 2.2.4 Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: 2.2.4 Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-4-elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: 2.2.4 Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+
 
 **Mathematical Foundation:** Elliptic curve discrete logarithm problem (ECDLP). Given points `P` and `kP` on an elliptic curve, find `k`. This is believed to be harder than integer factorization or finite-field discrete log for equivalent parameter sizes.
 
@@ -885,6 +1061,17 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, ve
 
 ### 2.2.5 Asymmetric Encryption Summary
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-handwritten.svg" alt="Handwritten: 2.2.5 Asymmetric Encryption Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-diagram.svg" alt="Diagram: 2.2.5 Asymmetric Encryption Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-2-5-asymmetric-encryption-summary-sticky.svg" alt="Sticky Note: 2.2.5 Asymmetric Encryption Summary" width="30%">
+</a>
+
+
 | Algorithm | Purpose | Key Size | Speed | Security Level |
 |-----------|---------|----------|-------|----------------|
 | RSA-2048 | Encrypt, Sign, Key exchange | 2048-bit | Slow (private ops) | 112-bit |
@@ -900,6 +1087,17 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, ve
 ## 2.3 Hash Functions
 
 ### 2.3.1 Properties of Cryptographic Hash Functions
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-handwritten.svg" alt="Handwritten: 2.3.1 Properties of Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-diagram.svg" alt="Diagram: 2.3.1 Properties of Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-1-properties-of-cryptographic-hash-functions-sticky.svg" alt="Sticky Note: 2.3.1 Properties of Cryptographic Hash Functions" width="30%">
+</a>
+
 
 A cryptographic hash function H maps an arbitrary-length input to a fixed-length output.
 
@@ -924,6 +1122,17 @@ H: {0,1}* → {0,1}^n
 **Analogy:** A fingerprint. Tiny, unique to each input, cannot be reversed to reconstruct the person.
 
 ### 2.3.2 SHA-256 (Secure Hash Algorithm 2)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-handwritten.svg" alt="Handwritten: 2.3.2 SHA-256 (Secure Hash Algorithm 2)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-diagram.svg" alt="Diagram: 2.3.2 SHA-256 (Secure Hash Algorithm 2)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-2-sha-256-secure-hash-algorithm-2-sticky.svg" alt="Sticky Note: 2.3.2 SHA-256 (Secure Hash Algorithm 2)" width="30%">
+</a>
+
 
 **Standard:** FIPS 180-4. Output: 256 bits (32 bytes). Part of the SHA-2 family (SHA-224, SHA-256, SHA-384, SHA-512).
 
@@ -973,6 +1182,17 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 
 ### 2.3.3 SHA-3 (Keccak)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-handwritten.svg" alt="Handwritten: 2.3.3 SHA-3 (Keccak)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-diagram.svg" alt="Diagram: 2.3.3 SHA-3 (Keccak)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-3-sha-3-keccak-sticky.svg" alt="Sticky Note: 2.3.3 SHA-3 (Keccak)" width="30%">
+</a>
+
+
 **Standard:** FIPS 202. Winner of NIST hash competition (2012).
 
 **Internal structure:** Sponge construction → absorbs input, squeezes output. Not based on Merkleâ€“DamgÃ¥rd.
@@ -995,6 +1215,17 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 
 ### 2.3.4 Blake2
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-handwritten.svg" alt="Handwritten: 2.3.4 Blake2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-diagram.svg" alt="Diagram: 2.3.4 Blake2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-4-blake2-sticky.svg" alt="Sticky Note: 2.3.4 Blake2" width="30%">
+</a>
+
+
 **Designers:** Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn, Christian Winnerlein.
 
 **Properties:**
@@ -1010,6 +1241,17 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 **Used in:** Zcash, Argon2 (password hashing winner), WireGuard VPN, RAR archives.
 
 ### 2.3.5 MD5 Collision Risk
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-handwritten.svg" alt="Handwritten: 2.3.5 MD5 Collision Risk" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-diagram.svg" alt="Diagram: 2.3.5 MD5 Collision Risk" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-5-md5-collision-risk-sticky.svg" alt="Sticky Note: 2.3.5 MD5 Collision Risk" width="30%">
+</a>
+
 
 **Status:** Broken. Cryptanalytic collision attack demonstrated in 2004 (Wang et al.). Practical collision in 2008 (CLé›†å›¢ fireworks).
 
@@ -1039,6 +1281,17 @@ Both have MD5: 79054025255fb1a26e4bc422aef54eb4
 
 ### 2.3.6 Hash Function Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-handwritten.svg" alt="Handwritten: 2.3.6 Hash Function Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-diagram.svg" alt="Diagram: 2.3.6 Hash Function Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-6-hash-function-comparison-sticky.svg" alt="Sticky Note: 2.3.6 Hash Function Comparison" width="30%">
+</a>
+
+
 | Algorithm | Output | Speed (SW) | Collision Resistance | Length Extension | Status |
 |-----------|--------|-----------|---------------------|-----------------|--------|
 | MD5 | 128-bit | Very fast | 2Â¹â¸ (broken) | Vulnerable | Deprecated |
@@ -1050,6 +1303,17 @@ Both have MD5: 79054025255fb1a26e4bc422aef54eb4
 | SHAKE256 | Variable | Moderate | â‰¥2Â¹Â²â¸ (secure) | Immune | Recommended (XOF) |
 
 ### 2.3.7 Applications of Hash Functions
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-handwritten.svg" alt="Handwritten: 2.3.7 Applications of Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-diagram.svg" alt="Diagram: 2.3.7 Applications of Hash Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-3-7-applications-of-hash-functions-sticky.svg" alt="Sticky Note: 2.3.7 Applications of Hash Functions" width="30%">
+</a>
+
 
 | Application | Why Hash? | Example |
 |-------------|-----------|---------|
@@ -1196,11 +1460,33 @@ Verification (Bob):
 
 ### 2.6.1 Purpose
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-handwritten.svg" alt="Handwritten: 2.6.1 Purpose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-diagram.svg" alt="Diagram: 2.6.1 Purpose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-1-purpose-sticky.svg" alt="Sticky Note: 2.6.1 Purpose" width="30%">
+</a>
+
+
 PKI binds public keys to identities through a trusted third party (Certificate Authority). Without PKI, an attacker could perform a man-in-the-middle attack on key exchange by substituting their own public key.
 
 **Analogy:** A passport office. The CA (passport office) verifies your identity and issues a certificate (passport) that binds your photograph (public key) to your name (identity). Anyone who trusts the passport office trusts the binding.
 
 ### 2.6.2 X.509 Certificate Structure (RFC 5280)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-handwritten.svg" alt="Handwritten: 2.6.2 X.509 Certificate Structure (RFC 5280)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-diagram.svg" alt="Diagram: 2.6.2 X.509 Certificate Structure (RFC 5280)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-2-x-509-certificate-structure-rfc-5280-sticky.svg" alt="Sticky Note: 2.6.2 X.509 Certificate Structure (RFC 5280)" width="30%">
+</a>
+
 
 ```
 Certificate:
@@ -1253,6 +1539,17 @@ Certificate:
 
 ### 2.6.3 CA Hierarchy & Certificate Chains
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-handwritten.svg" alt="Handwritten: 2.6.3 CA Hierarchy & Certificate Chains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-diagram.svg" alt="Diagram: 2.6.3 CA Hierarchy & Certificate Chains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-3-ca-hierarchy-certificate-chains-sticky.svg" alt="Sticky Note: 2.6.3 CA Hierarchy & Certificate Chains" width="30%">
+</a>
+
+
 ```
 Root CA (self-signed)
   └── Intermediate CA 1 (signed by Root)
@@ -1284,6 +1581,17 @@ For certificate C issued by issuer I:
 
 ### 2.6.4 CRL (Certificate Revocation List)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-handwritten.svg" alt="Handwritten: 2.6.4 CRL (Certificate Revocation List)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-diagram.svg" alt="Diagram: 2.6.4 CRL (Certificate Revocation List)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-4-crl-certificate-revocation-list-sticky.svg" alt="Sticky Note: 2.6.4 CRL (Certificate Revocation List)" width="30%">
+</a>
+
+
 A signed list of serial numbers of revoked certificates, published periodically by the CA.
 
 ```
@@ -1307,6 +1615,17 @@ CRL:
 
 ### 2.6.5 OCSP (Online Certificate Status Protocol)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-handwritten.svg" alt="Handwritten: 2.6.5 OCSP (Online Certificate Status Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-diagram.svg" alt="Diagram: 2.6.5 OCSP (Online Certificate Status Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-5-ocsp-online-certificate-status-protocol-sticky.svg" alt="Sticky Note: 2.6.5 OCSP (Online Certificate Status Protocol)" width="30%">
+</a>
+
+
 **RFC 6960:** Real-time certificate status check. Client sends OCSP request (certificate serial number) to OCSP responder and receives signed response (good/revoked/unknown).
 
 **Advantage over CRL:** Real-time (or near-real-time), smaller response, privacy-preserving (if using OCSP stapling).
@@ -1314,6 +1633,17 @@ CRL:
 **OCSP Stapling (TLS extension):** The server fetches a time-stamped OCSP response and "staples" it to the TLS handshake. Client verifies it without contacting the CA → solving the privacy and scalability problems of OCSP.
 
 ### 2.6.6 Trust Stores
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-handwritten.svg" alt="Handwritten: 2.6.6 Trust Stores" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-diagram.svg" alt="Diagram: 2.6.6 Trust Stores" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-6-trust-stores-sticky.svg" alt="Sticky Note: 2.6.6 Trust Stores" width="30%">
+</a>
+
 
 Operating systems and browsers ship with ~100-200 trusted root CA certificates. These are the "trust anchors."
 
@@ -1330,6 +1660,17 @@ Operating systems and browsers ship with ~100-200 trusted root CA certificates. 
 - **TrustCor (2022):** Links to surveillance company. Google/Mozilla distrusted.
 
 ### 2.6.7 Attack Vectors on PKI
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-handwritten.svg" alt="Handwritten: 2.6.7 Attack Vectors on PKI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-diagram.svg" alt="Diagram: 2.6.7 Attack Vectors on PKI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-6-7-attack-vectors-on-pki-sticky.svg" alt="Sticky Note: 2.6.7 Attack Vectors on PKI" width="30%">
+</a>
+
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
@@ -1348,6 +1689,17 @@ Operating systems and browsers ship with ~100-200 trusted root CA certificates. 
 
 ### 2.7.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-handwritten.svg" alt="Handwritten: 2.7.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-diagram.svg" alt="Diagram: 2.7.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-1-overview-sticky.svg" alt="Sticky Note: 2.7.1 Overview" width="30%">
+</a>
+
+
 TLS (Transport Layer Security) is the most widely deployed cryptographic protocol. TLS 1.3 (RFC 8446, 2018) is a major redesign → faster, simpler, more secure.
 
 **Goals:**
@@ -1356,6 +1708,17 @@ TLS (Transport Layer Security) is the most widely deployed cryptographic protoco
 - Authentication (server → mandatory; client → optional)
 
 ### 2.7.2 TLS 1.3 Full Handshake (1-RTT)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-handwritten.svg" alt="Handwritten: 2.7.2 TLS 1.3 Full Handshake (1-RTT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-diagram.svg" alt="Diagram: 2.7.2 TLS 1.3 Full Handshake (1-RTT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-2-tls-1-3-full-handshake-1-rtt-sticky.svg" alt="Sticky Note: 2.7.2 TLS 1.3 Full Handshake (1-RTT)" width="30%">
+</a>
+
 
 ```
 Client (Browser)                   Server (Website)
@@ -1407,6 +1770,17 @@ Client (Browser)                   Server (Website)
 
 ### 2.7.3 TLS 1.3 0-RTT (Early Data)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-handwritten.svg" alt="Handwritten: 2.7.3 TLS 1.3 0-RTT (Early Data)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-diagram.svg" alt="Diagram: 2.7.3 TLS 1.3 0-RTT (Early Data)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-3-tls-1-3-0-rtt-early-data-sticky.svg" alt="Sticky Note: 2.7.3 TLS 1.3 0-RTT (Early Data)" width="30%">
+</a>
+
+
 **Purpose:** Eliminates round trip for returning clients.
 
 **How:** Client remembers a pre-shared key (PSK) from a previous session and includes encrypted data in the first flight.
@@ -1414,6 +1788,17 @@ Client (Browser)                   Server (Website)
 **Risk:** Replay attack → 0-RTT data can be replayed by an attacker. Mitigated by server recording and refusing duplicate 0-RTT.
 
 ### 2.7.4 TLS 1.2 vs 1.3 Comparison
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-handwritten.svg" alt="Handwritten: 2.7.4 TLS 1.2 vs 1.3 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-diagram.svg" alt="Diagram: 2.7.4 TLS 1.2 vs 1.3 Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-4-tls-1-2-vs-1-3-comparison-sticky.svg" alt="Sticky Note: 2.7.4 TLS 1.2 vs 1.3 Comparison" width="30%">
+</a>
+
 
 | Feature | TLS 1.2 | TLS 1.3 |
 |---------|---------|---------|
@@ -1440,6 +1825,17 @@ Client (Browser)                   Server (Website)
 6. **Downgrade protection:** Special marker prevents forced version downgrade
 
 ### 2.7.5 Attack Vectors on TLS
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-handwritten.svg" alt="Handwritten: 2.7.5 Attack Vectors on TLS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-diagram.svg" alt="Diagram: 2.7.5 Attack Vectors on TLS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-7-5-attack-vectors-on-tls-sticky.svg" alt="Sticky Note: 2.7.5 Attack Vectors on TLS" width="30%">
+</a>
+
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
@@ -1663,6 +2059,17 @@ gpg --edit-key alice@ex.com                 # Interactive key management
 
 ### 2.10.1 OpenSSL: AES Encryption/Decryption
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-handwritten.svg" alt="Handwritten: 2.10.1 OpenSSL: AES Encryption/Decryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-diagram.svg" alt="Diagram: 2.10.1 OpenSSL: AES Encryption/Decryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-1-openssl-aes-encryption-decryption-sticky.svg" alt="Sticky Note: 2.10.1 OpenSSL: AES Encryption/Decryption" width="30%">
+</a>
+
+
 ```bash
 # Encrypt a file with AES-256-CBC
 openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 \
@@ -1687,6 +2094,17 @@ openssl enc -aes-256-gcm -pbkdf2 \
 ```
 
 ### 2.10.2 OpenSSL: RSA Keypair and Sign/Verify
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-handwritten.svg" alt="Handwritten: 2.10.2 OpenSSL: RSA Keypair and Sign/Verify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-diagram.svg" alt="Diagram: 2.10.2 OpenSSL: RSA Keypair and Sign/Verify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-2-openssl-rsa-keypair-and-sign-verify-sticky.svg" alt="Sticky Note: 2.10.2 OpenSSL: RSA Keypair and Sign/Verify" width="30%">
+</a>
+
 
 ```bash
 # Generate RSA private key (2048-bit)
@@ -1719,6 +2137,17 @@ openssl dgst -sha256 -verify ecdsa-public.pem \
 
 ### 2.10.3 OpenSSL: Self-Signed Certificate
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-handwritten.svg" alt="Handwritten: 2.10.3 OpenSSL: Self-Signed Certificate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-diagram.svg" alt="Diagram: 2.10.3 OpenSSL: Self-Signed Certificate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-3-openssl-self-signed-certificate-sticky.svg" alt="Sticky Note: 2.10.3 OpenSSL: Self-Signed Certificate" width="30%">
+</a>
+
+
 ```bash
 # Generate a self-signed certificate (RSA)
 openssl req -x509 -newkey rsa:2048 -keyout key.pem \
@@ -1744,6 +2173,17 @@ openssl x509 -req -in server.csr \
 
 ### 2.10.4 OpenSSL: Inspecting Real Certificates
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-handwritten.svg" alt="Handwritten: 2.10.4 OpenSSL: Inspecting Real Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-diagram.svg" alt="Diagram: 2.10.4 OpenSSL: Inspecting Real Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-4-openssl-inspecting-real-certificates-sticky.svg" alt="Sticky Note: 2.10.4 OpenSSL: Inspecting Real Certificates" width="30%">
+</a>
+
+
 ```bash
 # Fetch and display a website's certificate
 openssl s_client -connect google.com:443 -showcerts </dev/null
@@ -1765,6 +2205,17 @@ openssl ocsp -issuer ca.pem -cert server.pem \
 ```
 
 ### 2.10.5 GPG: Symmetric and Asymmetric Encryption
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-handwritten.svg" alt="Handwritten: 2.10.5 GPG: Symmetric and Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-diagram.svg" alt="Diagram: 2.10.5 GPG: Symmetric and Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-5-gpg-symmetric-and-asymmetric-encryption-sticky.svg" alt="Sticky Note: 2.10.5 GPG: Symmetric and Asymmetric Encryption" width="30%">
+</a>
+
 
 ```bash
 # Symmetric encryption (password-based)
@@ -1813,6 +2264,17 @@ gpg --keyserver keyserver.ubuntu.com --refresh-keys
 
 ### 2.10.6 Hash Collision Demo
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-handwritten.svg" alt="Handwritten: 2.10.6 Hash Collision Demo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-diagram.svg" alt="Diagram: 2.10.6 Hash Collision Demo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-6-hash-collision-demo-sticky.svg" alt="Sticky Note: 2.10.6 Hash Collision Demo" width="30%">
+</a>
+
+
 ```bash
 # Install collision tools (if available)
 # For MD5: https://www.win.tue.nl/hashclash/
@@ -1839,6 +2301,17 @@ echo -n "hellp" | sha256sum
 ```
 
 ### 2.10.7 TLS Handshake Capture with Wireshark
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-handwritten.svg" alt="Handwritten: 2.10.7 TLS Handshake Capture with Wireshark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-diagram.svg" alt="Diagram: 2.10.7 TLS Handshake Capture with Wireshark" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-7-tls-handshake-capture-with-wireshark-sticky.svg" alt="Sticky Note: 2.10.7 TLS Handshake Capture with Wireshark" width="30%">
+</a>
+
 
 **Steps to capture and analyze a TLS 1.3 handshake:**
 
@@ -1877,6 +2350,17 @@ tshark -r tls-capture.pcap -Y tls.handshake.type==11 -T fields \
 
 ### 2.10.8 Certificate Inspection with certigo / openssl s_client
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-handwritten.svg" alt="Handwritten: 2.10.8 Certificate Inspection with certigo / openssl s_client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-diagram.svg" alt="Diagram: 2.10.8 Certificate Inspection with certigo / openssl s_client" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-10-8-certificate-inspection-with-certigo-openssl-s-client-sticky.svg" alt="Sticky Note: 2.10.8 Certificate Inspection with certigo / openssl s_client" width="30%">
+</a>
+
+
 ```bash
 # Using openssl s_client to inspect real certificates
 openssl s_client -connect github.com:443 -showcerts 2>/dev/null | head -50
@@ -1904,6 +2388,17 @@ openssl x509 -in cert.pem -noout -text | grep "Signature Algorithm"
 ## 2.11 Case Studies
 
 ### 2.11.1 Heartbleed (CVE-2014-0160)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-handwritten.svg" alt="Handwritten: 2.11.1 Heartbleed (CVE-2014-0160)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-diagram.svg" alt="Diagram: 2.11.1 Heartbleed (CVE-2014-0160)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-1-heartbleed-cve-2014-0160-sticky.svg" alt="Sticky Note: 2.11.1 Heartbleed (CVE-2014-0160)" width="30%">
+</a>
+
 
 **Severity:** Critical (CVSS 7.5)
 **Affected:** OpenSSL 1.0.1 through 1.0.1f (2012â€“2014)
@@ -1964,6 +2459,17 @@ if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // ← bounds check
 
 ### 2.11.2 POODLE (CVE-2014-3566)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-handwritten.svg" alt="Handwritten: 2.11.2 POODLE (CVE-2014-3566)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-diagram.svg" alt="Diagram: 2.11.2 POODLE (CVE-2014-3566)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-2-poodle-cve-2014-3566-sticky.svg" alt="Sticky Note: 2.11.2 POODLE (CVE-2014-3566)" width="30%">
+</a>
+
+
 **Severity:** High (CVSS 6.8)
 **Affected:** SSL 3.0
 **Discovered:** October 2014 by Bodo MÃ¶ller, Thai Duong, Krzysztof Kotowicz
@@ -2012,6 +2518,17 @@ For each byte position i in the cookie:
 
 ### 2.11.3 SHA-1 Collision → SHAttered (2017)
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-handwritten.svg" alt="Handwritten: 2.11.3 SHA-1 Collision → SHAttered (2017)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-diagram.svg" alt="Diagram: 2.11.3 SHA-1 Collision → SHAttered (2017)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-3-sha-1-collision-shattered-2017-sticky.svg" alt="Sticky Note: 2.11.3 SHA-1 Collision → SHAttered (2017)" width="30%">
+</a>
+
+
 **Severity:** High
 **Affected:** SHA-1 hash function
 **Disclosed:** February 2017 by Google and CWI Amsterdam
@@ -2048,6 +2565,17 @@ One PDF shows a $1,000 invoice, the other shows the same hash but with a differe
 - Cryptographic transitions must start early (https://sha-mble.github.io/)
 
 ### 2.11.4 Logjam (CVE-2015-4000)
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-handwritten.svg" alt="Handwritten: 2.11.4 Logjam (CVE-2015-4000)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-diagram.svg" alt="Diagram: 2.11.4 Logjam (CVE-2015-4000)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-11-4-logjam-cve-2015-4000-sticky.svg" alt="Sticky Note: 2.11.4 Logjam (CVE-2015-4000)" width="30%">
+</a>
+
 
 **Severity:** High (CVSS 6.8)
 **Affected:** TLS DHE cipher suites using export-grade Diffie-Hellman
@@ -2097,6 +2625,17 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 
 ### 2.12.1 Symmetric vs Asymmetric Encryption
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-handwritten.svg" alt="Handwritten: 2.12.1 Symmetric vs Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-diagram.svg" alt="Diagram: 2.12.1 Symmetric vs Asymmetric Encryption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-1-symmetric-vs-asymmetric-encryption-sticky.svg" alt="Sticky Note: 2.12.1 Symmetric vs Asymmetric Encryption" width="30%">
+</a>
+
+
 | Property | Symmetric | Asymmetric |
 |----------|-----------|------------|
 | Keys | Single shared secret | Key pair (public + private) |
@@ -2124,6 +2663,17 @@ PGP email:
 
 ### 2.12.2 RSA vs ECC Key Size Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-handwritten.svg" alt="Handwritten: 2.12.2 RSA vs ECC Key Size Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-diagram.svg" alt="Diagram: 2.12.2 RSA vs ECC Key Size Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-2-rsa-vs-ecc-key-size-comparison-sticky.svg" alt="Sticky Note: 2.12.2 RSA vs ECC Key Size Comparison" width="30%">
+</a>
+
+
 | Security (bits) | RSA key size | ECC key size | Ratio | Broken by |
 |-----------------|--------------|--------------|-------|-----------|
 | 80 | 1024 | 160 | 6.4Ã— | Nation-states (factoring) |
@@ -2140,11 +2690,33 @@ PGP email:
 
 ### 2.12.3 TLS 1.2 vs 1.3
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-handwritten.svg" alt="Handwritten: 2.12.3 TLS 1.2 vs 1.3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-diagram.svg" alt="Diagram: 2.12.3 TLS 1.2 vs 1.3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-3-tls-1-2-vs-1-3-sticky.svg" alt="Sticky Note: 2.12.3 TLS 1.2 vs 1.3" width="30%">
+</a>
+
+
 (Refer to comprehensive table in section 2.7.4)
 
 **Key takeaway:** TLS 1.3 reduces handshake from 2 RTT to 1 RTT, removes all insecure options (CBC, RC4, static RSA), mandates forward secrecy (ECDHE only), and encrypts the entire handshake after ServerHello.
 
 ### 2.12.4 AES Mode Comparison
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-handwritten.svg" alt="Handwritten: 2.12.4 AES Mode Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-diagram.svg" alt="Diagram: 2.12.4 AES Mode Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-12-4-aes-mode-comparison-sticky.svg" alt="Sticky Note: 2.12.4 AES Mode Comparison" width="30%">
+</a>
+
 
 (Refer to section 2.1.3 table)
 
@@ -2204,6 +2776,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Mistake 1: Nonce/IV Reuse in GCM or CTR
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-handwritten.svg" alt="Handwritten: Mistake 1: Nonce/IV Reuse in GCM or CTR" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-diagram.svg" alt="Diagram: Mistake 1: Nonce/IV Reuse in GCM or CTR" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-1-nonce-iv-reuse-in-gcm-or-ctr-sticky.svg" alt="Sticky Note: Mistake 1: Nonce/IV Reuse in GCM or CTR" width="30%">
+</a>
+
+
 **The problem:** Encrypting two messages with the same key and nonce in GCM/CTR reveals `Câ‚ XOR Câ‚‚ = Pâ‚ XOR Pâ‚‚`, leaking both plaintexts. In GCM, nonce reuse also leaks the GHASH authentication key H, allowing universal forgery.
 
 **Real case:** In 2019, several WhatsApp forks reused nonces, allowing decryption of group messages.
@@ -2211,6 +2794,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 **Fix:** Use a monotonically increasing counter, or derive a unique nonce per message via HKDF. For GCM, use 96-bit nonce and enforce atomic key-nonce uniqueness.
 
 ### Mistake 2: Using ECB Mode
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-handwritten.svg" alt="Handwritten: Mistake 2: Using ECB Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-diagram.svg" alt="Diagram: Mistake 2: Using ECB Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-2-using-ecb-mode-sticky.svg" alt="Sticky Note: Mistake 2: Using ECB Mode" width="30%">
+</a>
+
 
 **The problem:** Identical plaintext blocks produce identical ciphertext blocks. Patterns in data survive encryption → the Tux penguin image remains recognizable.
 
@@ -2220,6 +2814,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Mistake 3: Hardcoded Cryptographic Keys
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-handwritten.svg" alt="Handwritten: Mistake 3: Hardcoded Cryptographic Keys" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-diagram.svg" alt="Diagram: Mistake 3: Hardcoded Cryptographic Keys" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-3-hardcoded-cryptographic-keys-sticky.svg" alt="Sticky Note: Mistake 3: Hardcoded Cryptographic Keys" width="30%">
+</a>
+
+
 **The problem:** Keys compiled into source code or stored in configuration files in plaintext can be extracted by anyone with file system access.
 
 **Real case:** The Sony PS3 master key was hardcoded → attackers extracted it, signed arbitrary code, and jailbroke the console permanently.
@@ -2227,6 +2832,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 **Fix:** Use hardware security modules (HSMs), key management services (AWS KMS, Azure Key Vault), or at minimum derive keys from user-supplied passphrases via PBKDF2/Argon2.
 
 ### Mistake 4: Weak Random Number Generation
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-handwritten.svg" alt="Handwritten: Mistake 4: Weak Random Number Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-diagram.svg" alt="Diagram: Mistake 4: Weak Random Number Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-4-weak-random-number-generation-sticky.svg" alt="Sticky Note: Mistake 4: Weak Random Number Generation" width="30%">
+</a>
+
 
 **The problem:** Cryptographic algorithms require unpredictable random numbers. Using `rand()`, `math.random()`, or similar PRNGs produces predictable keys.
 
@@ -2236,6 +2852,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Mistake 5: Padding Oracle Vulnerabilities
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-handwritten.svg" alt="Handwritten: Mistake 5: Padding Oracle Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-diagram.svg" alt="Diagram: Mistake 5: Padding Oracle Vulnerabilities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-5-padding-oracle-vulnerabilities-sticky.svg" alt="Sticky Note: Mistake 5: Padding Oracle Vulnerabilities" width="30%">
+</a>
+
+
 **The problem:** When the server responds differently to "invalid padding" vs "valid padding but bad MAC", the attacker can decrypt messages byte-by-byte.
 
 **Real case:** POODLE (CVE-2014-3566), Lucky13 (CVE-2013-0169), ROBOT (CVE-2017-17405) → all exploit subtle differences in error responses.
@@ -2243,6 +2870,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 **Fix:** Use AEAD modes (GCM, ChaCha20-Poly1305). If CBC is unavoidable, validate padding AND MAC atomically, returning a single error for any failure.
 
 ### Mistake 6: Self-Implemented Cryptography
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-handwritten.svg" alt="Handwritten: Mistake 6: Self-Implemented Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-diagram.svg" alt="Diagram: Mistake 6: Self-Implemented Cryptography" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-6-self-implemented-cryptography-sticky.svg" alt="Sticky Note: Mistake 6: Self-Implemented Cryptography" width="30%">
+</a>
+
 
 **The problem:** "Don't roll your own crypto" is the first rule of security. Custom implementations lack the years of analysis, testing, and side-channel hardening that standard libraries provide.
 
@@ -2252,6 +2890,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Mistake 7: Key Management Failures
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-handwritten.svg" alt="Handwritten: Mistake 7: Key Management Failures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-diagram.svg" alt="Diagram: Mistake 7: Key Management Failures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-7-key-management-failures-sticky.svg" alt="Sticky Note: Mistake 7: Key Management Failures" width="30%">
+</a>
+
+
 **The problem:** Even perfect algorithms are useless with poor key management: keys stored in world-readable files, transmitted over unencrypted channels, or never rotated.
 
 **Real case:** The 2011 RSA SecurID breach compromised the seed values for two-factor tokens → a key management failure that required replacing 40 million tokens.
@@ -2259,6 +2908,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 **Fix:** Implement a key lifecycle: generation, distribution, storage, rotation, and destruction. Use KMS for centralized management. Rotate keys regularly (NIST recommends 2-year interval for AES keys).
 
 ### Mistake 8: Timing Side-Channels
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-handwritten.svg" alt="Handwritten: Mistake 8: Timing Side-Channels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-diagram.svg" alt="Diagram: Mistake 8: Timing Side-Channels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-8-timing-side-channels-sticky.svg" alt="Sticky Note: Mistake 8: Timing Side-Channels" width="30%">
+</a>
+
 
 **The problem:** Operators that take different time depending on data (e.g., string comparison on first mismatch) leak information through timing.
 
@@ -2268,6 +2928,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Mistake 9: Failure to Validate Certificates
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-handwritten.svg" alt="Handwritten: Mistake 9: Failure to Validate Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-diagram.svg" alt="Diagram: Mistake 9: Failure to Validate Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-9-failure-to-validate-certificates-sticky.svg" alt="Sticky Note: Mistake 9: Failure to Validate Certificates" width="30%">
+</a>
+
+
 **The problem:** Code that skips certificate validation (e.g., `verify=False` in Python requests, accepting self-signed certs in production) defeats the entire PKI.
 
 **Real case:** Many mobile apps in early 2010s accepted any TLS certificate, allowing easy MITM attacks on public WiFi.
@@ -2275,6 +2946,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 **Fix:** Always validate certificate chains, hostnames, and expiry dates. Use platform trust stores. Never disable verification, even in testing.
 
 ### Mistake 10: Using Broken Algorithms
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-handwritten.svg" alt="Handwritten: Mistake 10: Using Broken Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-diagram.svg" alt="Diagram: Mistake 10: Using Broken Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/mistake-10-using-broken-algorithms-sticky.svg" alt="Sticky Note: Mistake 10: Using Broken Algorithms" width="30%">
+</a>
+
 
 **The problem:** Continuing to use MD5, SHA-1, RC4, DES, or 3DES after they've been broken.
 
@@ -2288,13 +2970,46 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Q1: Explain the difference between symmetric and asymmetric encryption.
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-handwritten.svg" alt="Handwritten: Explain the difference between symmetric and asymmetric encryption." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-diagram.svg" alt="Diagram: Explain the difference between symmetric and asymmetric encryption." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-symmetric-and-asymmetric-encryption-sticky.svg" alt="Sticky Note: Explain the difference between symmetric and asymmetric encryption." width="30%">
+</a>
+
+
 **Answer:** Symmetric encryption uses a single shared key for both encryption and decryption. It's fast (AES achieves ~1 GB/s with hardware acceleration) but suffers from the key distribution problem → both parties must securely share the key before communication. Asymmetric encryption uses a public/private key pair. The public key encrypts, the private key decrypts. It solves key distribution but is 100-1000Ã— slower. In practice, hybrid encryption combines both: asymmetric (e.g., ECDH) to exchange a session key, then symmetric (AES-GCM) for bulk data → as done in TLS.
 
 ### Q2: How does the TLS 1.3 handshake work?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-handwritten.svg" alt="Handwritten: How does the TLS 1.3 handshake work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-diagram.svg" alt="Diagram: How does the TLS 1.3 handshake work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-the-tls-1-3-handshake-work-sticky.svg" alt="Sticky Note: How does the TLS 1.3 handshake work?" width="30%">
+</a>
+
+
 **Answer:** TLS 1.3 achieves a 1-RTT handshake (or 0-RTT for returning clients). The client sends a ClientHello containing its ECDHE key share, supported cipher suites, and extensions (SNI, ALPN). The server responds with its ECDHE key share, encrypted extensions, certificate, CertificateVerify (signature of the handshake transcript), and Finished (MAC). The client verifies the server's certificate and signature, then sends its own Finished. Both sides derive the same application traffic keys from the ECDHE shared secret. The handshake is fully encrypted after ServerHello → no certificates or SNI are sent in the clear. Forward secrecy is mandatory because the ECDHE ephemeral keys are discarded after the session.
 
 ### Q3: What is the difference between AES-CBC and AES-GCM?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-handwritten.svg" alt="Handwritten: What is the difference between AES-CBC and AES-GCM?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-diagram.svg" alt="Diagram: What is the difference between AES-CBC and AES-GCM?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-aes-cbc-and-aes-gcm-sticky.svg" alt="Sticky Note: What is the difference between AES-CBC and AES-GCM?" width="30%">
+</a>
+
 
 **Answer:** CBC (Cipher Block Chaining) XORs each plaintext block with the previous ciphertext block before encryption. It requires padding (PKCS#7) and provides only confidentiality → not integrity. GCM (Galois/Counter Mode) uses CTR mode for encryption and GMAC for authentication. It provides authenticated encryption (AEAD): both confidentiality and integrity in a single pass. GCM is parallelizable, requires no padding, and is the recommended mode for TLS 1.3. CBC is vulnerable to padding oracle attacks (e.g., POODLE) and does not detect tampering.
 
@@ -2304,65 +3019,241 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ### Q5: What is forward secrecy and why does it matter?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is forward secrecy and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-diagram.svg" alt="Diagram: What is forward secrecy and why does it matter?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-forward-secrecy-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is forward secrecy and why does it matter?" width="30%">
+</a>
+
+
 **Answer:** Forward secrecy ensures that compromising the long-term private key does NOT allow an attacker to decrypt past sessions. In TLS 1.3, each session uses ephemeral Diffie-Hellman keys that are generated for that session only and then discarded. Even if the server's long-term private key is later stolen, the attacker cannot derive the session keys because the ephemeral keys are gone. TLS 1.2 with static RSA key exchange lacked forward secrecy → stealing the private key decrypted ALL past sessions. TLS 1.3 mandates forward secrecy.
 
 ### Q6: How does a digital signature provide non-repudiation?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-handwritten.svg" alt="Handwritten: How does a digital signature provide non-repudiation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-diagram.svg" alt="Diagram: How does a digital signature provide non-repudiation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-digital-signature-provide-non-repudiation-sticky.svg" alt="Sticky Note: How does a digital signature provide non-repudiation?" width="30%">
+</a>
+
 
 **Answer:** A digital signature binds the signer's identity to the signed message. Only the signer possesses their private key. When Alice signs a message, she hashes the message and encrypts the hash with her private key. Bob verifies by decrypting the signature with Alice's public key and comparing the hash. Since only Alice's private key could produce a signature that verifies with Alice's public key, Alice cannot later deny signing → assuming her private key was not compromised. This provides non-repudiation: Alice cannot repudiate (deny) the signature.
 
 ### Q7: What happens in a padding oracle attack?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-handwritten.svg" alt="Handwritten: What happens in a padding oracle attack?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-diagram.svg" alt="Diagram: What happens in a padding oracle attack?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-happens-in-a-padding-oracle-attack-sticky.svg" alt="Sticky Note: What happens in a padding oracle attack?" width="30%">
+</a>
+
+
 **Answer:** A padding oracle attack exploits a server that reveals whether decrypted data has valid padding. In CBC mode, the last block's padding must be valid (e.g., PKCS#7: if 5 bytes of padding, each byte = 0x05). By modifying ciphertext and observing the server's response (valid padding vs invalid padding), the attacker can decrypt the original plaintext byte-by-byte. Each byte requires up to 256 attempts. The POODLE attack on SSL 3.0 is a variant where SSL 3.0's permissive padding (only last byte checked) makes the attack easier (1/256 success rate per guess). Fix: use AEAD modes (GCM), or never reveal padding errors (always return generic error).
 
 ### Q8: How does RSA key generation work?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-handwritten.svg" alt="Handwritten: How does RSA key generation work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-diagram.svg" alt="Diagram: How does RSA key generation work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-rsa-key-generation-work-sticky.svg" alt="Sticky Note: How does RSA key generation work?" width="30%">
+</a>
+
 
 **Answer:** RSA key generation: (1) Choose two large primes p and q (at least 1024 bits each for 2048-bit RSA). (2) Compute n = p Ã— q (the modulus). (3) Compute Ï†(n) = (p-1)(q-1) (Euler's totient). (4) Choose public exponent e with gcd(e, Ï†(n)) = 1 (typically 65537 for fast verification and security). (5) Compute private exponent d = e^(-1) mod Ï†(n) using the Extended Euclidean Algorithm. Public key: (n, e). Private key: (n, d). Security depends on the practical impossibility of factoring n to recover p and q. Key generation is the slowest RSA operation because it requires finding large primes (probabilistic primality testing).
 
 ### Q9: What is the quantum threat to cryptography?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-handwritten.svg" alt="Handwritten: What is the quantum threat to cryptography?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-diagram.svg" alt="Diagram: What is the quantum threat to cryptography?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-quantum-threat-to-cryptography-sticky.svg" alt="Sticky Note: What is the quantum threat to cryptography?" width="30%">
+</a>
+
+
 **Answer:** Shor's algorithm solves integer factorization and discrete logarithm in polynomial time on a sufficiently large quantum computer. This would break RSA, ECC (ECDH, ECDSA), and Diffie-Hellman completely. Grover's algorithm provides a quadratic speedup for symmetric key search → AES-256 (2Â²âµâ¶ → 2Â¹Â²â¸) is still adequate. NIST has standardized post-quantum algorithms: CRYSTALS-Kyber (ML-KEM) for key exchange and CRYSTALS-Dilithium (ML-DSA) for signatures, both based on lattice problems. The "harvest now, decrypt later" threat means attackers are already collecting encrypted traffic to decrypt when quantum computers arrive.
 
 ### Q10: Explain the difference between CRL and OCSP.
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-handwritten.svg" alt="Handwritten: Explain the difference between CRL and OCSP." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-diagram.svg" alt="Diagram: Explain the difference between CRL and OCSP." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-difference-between-crl-and-ocsp-sticky.svg" alt="Sticky Note: Explain the difference between CRL and OCSP." width="30%">
+</a>
+
 
 **Answer:** CRL (Certificate Revocation List) is a periodically published list of revoked certificate serial numbers signed by the CA. The client fetches the CRL and checks if the certificate is listed. Problems: can be large (megabytes), introduces latency between revocation and CRL publication, and reveals which CAs the client trusts. OCSP (Online Certificate Status Protocol) provides real-time per-certificate status. The client sends the certificate's serial number to the OCSP responder and receives a signed "good/revoked/unknown" response. OCSP Stapling improves privacy: the server fetches a time-stamped OCSP response and appends it to the TLS handshake, so the client doesn't contact the CA directly. Modern practice: OCSP stapling with Certificate Transparency logs.
 
 ### Q11: What is the birthday attack on hash functions?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-handwritten.svg" alt="Handwritten: What is the birthday attack on hash functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-diagram.svg" alt="Diagram: What is the birthday attack on hash functions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-birthday-attack-on-hash-functions-sticky.svg" alt="Sticky Note: What is the birthday attack on hash functions?" width="30%">
+</a>
+
+
 **Answer:** The birthday paradox says that with 23 people in a room, there's a >50% chance two share a birthday → not because finding a match for a specific person is easy, but because of the number of pairwise comparisons. Applied to hash functions: finding any collision requires only 2^(n/2) attempts (not 2^n). For SHA-256 (n=256), collision resistance is 2Â¹Â²â¸ → still secure. For SHA-1 (n=160), collision resistance is 2â¸â° → the SHAttered attack achieved a collision at â‰ˆ2â¶Â³ due to cryptanalytic improvements, not pure birthday search. This is why hash output sizes must be double the desired security level.
 
 ### Q12: How does SSH public key authentication work?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-handwritten.svg" alt="Handwritten: How does SSH public key authentication work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-diagram.svg" alt="Diagram: How does SSH public key authentication work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-ssh-public-key-authentication-work-sticky.svg" alt="Sticky Note: How does SSH public key authentication work?" width="30%">
+</a>
+
 
 **Answer:** SSH key authentication involves four steps: (1) The server sends a challenge (random nonce) to the client requesting authentication. (2) The client signs the challenge with their private key (typically RSA, ECDSA, or Ed25519). (3) The server verifies the signature using the user's public key stored in `~/.ssh/authorized_keys`. (4) Access is granted if the signature is valid. The session then uses ephemeral DH keys for forward-secure symmetric encryption. The server's host key was verified during initial key exchange (TOFU → Trust On First Use, stored in `~/.ssh/known_hosts`).
 
 ### Q13: What is the difference between a hash function and HMAC?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-handwritten.svg" alt="Handwritten: What is the difference between a hash function and HMAC?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-diagram.svg" alt="Diagram: What is the difference between a hash function and HMAC?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-a-hash-function-and-hmac-sticky.svg" alt="Sticky Note: What is the difference between a hash function and HMAC?" width="30%">
+</a>
+
+
 **Answer:** A hash function (SHA-256) provides a deterministic fingerprint of data but no authentication → anyone can compute it. HMAC is a keyed-hash message authentication code: `HMAC(K, M) = H((K'âŠ•opad) || H((K'âŠ•ipad) || M))`. The key K ensures that only parties who share K can compute or verify the HMAC. HMAC provides both integrity (detect tampering) and authentication (verify sender knows the key). Without HMAC, an attacker who can modify data can also recompute the hash → the hash alone provides no security.
 
 ### Q14: Explain the concept of perfect forward secrecy.
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-handwritten.svg" alt="Handwritten: Explain the concept of perfect forward secrecy." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-diagram.svg" alt="Diagram: Explain the concept of perfect forward secrecy." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/explain-the-concept-of-perfect-forward-secrecy-sticky.svg" alt="Sticky Note: Explain the concept of perfect forward secrecy." width="30%">
+</a>
+
 
 **Answer:** Perfect forward secrecy (PFS) ensures that session keys are not derived from long-term secrets. In TLS with ECDHE, the server generates an ephemeral key pair for each session, signs the ephemeral public key with its long-term private key, and discards the ephemeral private key after the session. Even if the long-term signing key is later compromised, the attacker cannot recover the ephemeral private key (it was deleted) and therefore cannot decrypt past sessions. PFS contrasts with static RSA key exchange (TLS 1.2), where the session key is encrypted with the server's RSA public key → compromising the RSA private key decrypts ALL past sessions.
 
 ### Q15: How does hybrid encryption work in PGP?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-handwritten.svg" alt="Handwritten: How does hybrid encryption work in PGP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-diagram.svg" alt="Diagram: How does hybrid encryption work in PGP?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-hybrid-encryption-work-in-pgp-sticky.svg" alt="Sticky Note: How does hybrid encryption work in PGP?" width="30%">
+</a>
+
+
 **Answer:** PGP uses hybrid encryption: (1) Generate a random session key K (e.g., 256-bit AES key). (2) Encrypt the plaintext with AES-GCM using K. (3) Encrypt K with the recipient's RSA public key. (4) Send both the encrypted message and the encrypted session key. The recipient: (1) Decrypts the session key K with their RSA private key. (2) Decrypts the message with K using AES-GCM. This combines the speed of symmetric encryption (for the bulk message) with the convenience of asymmetric key management (no need to pre-share K). The same approach is used in TLS, Signal, and virtually all modern encrypted communication.
 
 ### Q16: What is a cryptographic salt and why is it used?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-handwritten.svg" alt="Handwritten: What is a cryptographic salt and why is it used?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-diagram.svg" alt="Diagram: What is a cryptographic salt and why is it used?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-a-cryptographic-salt-and-why-is-it-used-sticky.svg" alt="Sticky Note: What is a cryptographic salt and why is it used?" width="30%">
+</a>
+
 
 **Answer:** A salt is a random value concatenated with a password before hashing: `hash = SHA256(password + salt)`. The salt ensures that identical passwords produce different hashes. Without salts, attackers can precompute rainbow tables for all common passwords. With a unique salt per user (typically 16-32 random bytes), each password requires a separate brute-force attack. Salts also make it impossible to tell which users share the same password. Best practice: use Argon2id or bcrypt (not just SHA-256), which incorporate salts and are deliberately slow.
 
 ### Q17: What is the difference between SSL and TLS?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-handwritten.svg" alt="Handwritten: What is the difference between SSL and TLS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-diagram.svg" alt="Diagram: What is the difference between SSL and TLS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-the-difference-between-ssl-and-tls-sticky.svg" alt="Sticky Note: What is the difference between SSL and TLS?" width="30%">
+</a>
+
+
 **Answer:** SSL (Secure Sockets Layer) was developed by Netscape in the 1990s: SSLv1 (never released), SSLv2 (1995, broken), SSLv3 (1996, deprecated after POODLE). TLS (Transport Layer Security) is the standardized successor: TLS 1.0 (1999, RFC 2246), TLS 1.1 (2006), TLS 1.2 (2008), TLS 1.3 (2018). TLS 1.0 was effectively SSL 3.1. Key differences: TLS 1.3 removes all legacy algorithms (CBC, RC4, 3DES, static RSA), mandates forward secrecy, reduces handshake to 1-RTT, encrypts more of the handshake, and removes renegotiation. Today "SSL" is used colloquially for TLS → the actual SSL protocols are deprecated and should not be enabled anywhere.
 
 ### Q18: How does a Certificate Authority issue and manage certificates?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-handwritten.svg" alt="Handwritten: How does a Certificate Authority issue and manage certificates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-diagram.svg" alt="Diagram: How does a Certificate Authority issue and manage certificates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/how-does-a-certificate-authority-issue-and-manage-certificates-sticky.svg" alt="Sticky Note: How does a Certificate Authority issue and manage certificates?" width="30%">
+</a>
+
 
 **Answer:** The CA lifecycle involves: (1) Identity verification: the CA validates the certificate requester's domain control (DV), organization (OV), or legal identity (EV). For DV, the CA might check email at admin@domain.com or require DNS TXT record creation. (2) CSR processing: the requester generates a keypair and sends a Certificate Signing Request (CSR) containing the public key and identity details, signed by the private key. (3) Certificate issuance: the CA signs the CSR with its intermediate CA key, producing an X.509 certificate with a serial number, validity period, and extensions. (4) Publication: the certificate is made available, and the CA may submit it to Certificate Transparency logs. (5) Revocation: if compromised, the CA adds the serial number to its CRL and OCSP responder. (6) Renewal: before expiry (typically 90 days for Let's Encrypt, 1-3 years for others), the requester submits a new CSR. Let's Encrypt automates the entire process with the ACME protocol.
 
 ### Q19: What is Shamir's Secret Sharing and how does it work?
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Shamir's Secret Sharing and how does it work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-diagram.svg" alt="Diagram: What is Shamir's Secret Sharing and how does it work?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-shamir-s-secret-sharing-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Shamir's Secret Sharing and how does it work?" width="30%">
+</a>
+
+
 **Answer:** Shamir's Secret Sharing (SSS) splits a secret S into n shares, such that any k shares can reconstruct S, but k-1 shares reveal nothing. Based on polynomial interpolation: (1) To share S with threshold k, pick a random polynomial f(x) of degree k-1 where f(0) = S. (2) Evaluate f(x) at n non-zero points: share_i = (i, f(i)). (3) To reconstruct, pick any k shares and use Lagrange interpolation to find f(0). The security is information-theoretic: k-1 shares give zero information about S. Real-world uses: splitting master keys in HSMs, dividing cryptocurrency private keys (e.g., 3-of-5 multisig), and protecting nuclear launch codes (the original use case).
 
 ### Q20: What is HKDF and when is it used?
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-handwritten.svg" alt="Handwritten: What is HKDF and when is it used?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-diagram.svg" alt="Diagram: What is HKDF and when is it used?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/what-is-hkdf-and-when-is-it-used-sticky.svg" alt="Sticky Note: What is HKDF and when is it used?" width="30%">
+</a>
+
 
 **Answer:** HKDF (HMAC-based Key Derivation Function, RFC 5869) takes a source of initial keying material and produces cryptographically strong output keys. It has two stages: (1) Extract: `PRK = HMAC-Hash(salt, IKM)` where IKM is the input key material → this condenses entropy and removes biases. (2) Expand: `OKM = HKDF-Expand(PRK, info, L)` where info is application-specific context and L is the desired output length. HKDF is used in TLS 1.3 to derive handshake traffic keys, application traffic keys, and resumption keys from the ECDHE shared secret. It's also used in WireGuard, IPsec, and signal. Advantages: flexible output length, domain separation via info parameter, no need to pre-share salt.
 
@@ -2391,6 +3282,17 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ---
 
 ### 2.16.1 Cryptography Hardening Checklist
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-handwritten.svg" alt="Handwritten: 2.16.1 Cryptography Hardening Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-diagram.svg" alt="Diagram: 2.16.1 Cryptography Hardening Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/2-16-1-cryptography-hardening-checklist-sticky.svg" alt="Sticky Note: 2.16.1 Cryptography Hardening Checklist" width="30%">
+</a>
+
 
 | Component | Recommended | Avoid | Why |
 |-----------|-------------|-------|-----|
@@ -2561,6 +3463,17 @@ HMAC-SHA256("key", "The quick brown fox") = f7bc83f430538424b13298e6aa6fb143ef4d
 
 ### Case Study Analysis
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-handwritten.svg" alt="Handwritten: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-diagram.svg" alt="Diagram: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/case-study-analysis-sticky.svg" alt="Sticky Note: Case Study Analysis" width="30%">
+</a>
+
+
 7. **Heartbleed Analysis:** Explain why the heartbeat extension trust boundary was violated. How would a Rust implementation of OpenSSL prevent this class of bug?
 
 <details>
@@ -2576,6 +3489,17 @@ Phase 1: Inventory all systems using DHE. Phase 2: Configure servers to use DH g
 </details>
 
 ### Coding Challenges
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-handwritten.svg" alt="Handwritten: Coding Challenges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-diagram.svg" alt="Diagram: Coding Challenges" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/coding-challenges-sticky.svg" alt="Sticky Note: Coding Challenges" width="30%">
+</a>
+
 
 9. **AES-128 Implementation (Basic):** Implement AES-128 encryption in Python or Java without using crypto libraries. Implement the S-box, ShiftRows, MixColumns, AddRoundKey, and key expansion. Test by verifying against a known test vector.
 
@@ -2620,6 +3544,17 @@ Constant-time: XOR all bytes together, check if result is 0. Always processes al
 </details>
 
 ### Research Questions
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-handwritten.svg" alt="Handwritten: Research Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-diagram.svg" alt="Diagram: Research Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/research-questions-sticky.svg" alt="Sticky Note: Research Questions" width="30%">
+</a>
+
 
 15. **Post-Quantum Migration Plan:** Research the current state of NIST PQC standardization. Design a migration plan for a web application currently using RSA-2048 certificates and ECDHE key exchange. Consider: hybrid certificates, TLS library support, performance impact, and timeline.
 
@@ -2941,6 +3876,17 @@ runSignatureDemo();
 
 ### TLS 1.3 Handshake Sequence
 
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-handwritten.svg" alt="Handwritten: TLS 1.3 Handshake Sequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-diagram.svg" alt="Diagram: TLS 1.3 Handshake Sequence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/tls-1-3-handshake-sequence-sticky.svg" alt="Sticky Note: TLS 1.3 Handshake Sequence" width="30%">
+</a>
+
+
 The following sequence diagram illustrates the TLS 1.3 full handshake, achieving a 1-RTT connection with forward secrecy via ephemeral Diffie-Hellman key exchange.
 
 ```mermaid
@@ -2971,6 +3917,17 @@ sequenceDiagram
 ```
 
 ### PKI Certificate Chain
+
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-handwritten.svg" alt="Handwritten: PKI Certificate Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-diagram.svg" alt="Diagram: PKI Certificate Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/02-cryptography/pki-certificate-chain-sticky.svg" alt="Sticky Note: PKI Certificate Chain" width="30%">
+</a>
+
 
 This flowchart shows the X.509 certificate hierarchy from Root CA through Intermediate CAs to the end-entity server certificate, along with the validation checks performed during TLS certificate verification.
 

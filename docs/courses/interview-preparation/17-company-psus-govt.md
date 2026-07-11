@@ -62,6 +62,17 @@ pie showData
 
 ### Data Structures (5 Questions)
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-handwritten.svg" alt="Handwritten: Data Structures (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-diagram.svg" alt="Diagram: Data Structures (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/data-structures-5-questions-sticky.svg" alt="Sticky Note: Data Structures (5 Questions)" width="30%">
+</a>
+
+
 **Q1.** Explain the difference between an array and a linked list.
 
 <details>
@@ -164,6 +175,17 @@ Hashing is a technique that maps keys to array indices using a hash function, en
 </details>
 
 ### Algorithms (5 Questions)
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-handwritten.svg" alt="Handwritten: Algorithms (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-diagram.svg" alt="Diagram: Algorithms (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/algorithms-5-questions-sticky.svg" alt="Sticky Note: Algorithms (5 Questions)" width="30%">
+</a>
+
 
 **Q6.** Explain the difference between DFS and BFS.
 
@@ -333,6 +355,17 @@ function fibOptimal(n: number): number {
 
 ### Operating Systems (5 Questions)
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-handwritten.svg" alt="Handwritten: Operating Systems (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-diagram.svg" alt="Diagram: Operating Systems (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/operating-systems-5-questions-sticky.svg" alt="Sticky Note: Operating Systems (5 Questions)" width="30%">
+</a>
+
+
 **Q11.** Explain the difference between multiprogramming, multitasking, and multiprocessing.
 
 <details>
@@ -440,6 +473,17 @@ Physical Address = Frame Number × Page Size + Offset
 </details>
 
 ### Database Management Systems (5 Questions)
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-handwritten.svg" alt="Handwritten: Database Management Systems (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-diagram.svg" alt="Diagram: Database Management Systems (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/database-management-systems-5-questions-sticky.svg" alt="Sticky Note: Database Management Systems (5 Questions)" width="30%">
+</a>
+
 
 **Q16.** What is a transaction? Explain ACID properties.
 
@@ -564,6 +608,17 @@ DROP TABLE employees;
 
 ### Computer Networks (5 Questions)
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-handwritten.svg" alt="Handwritten: Computer Networks (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-diagram.svg" alt="Diagram: Computer Networks (5 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/computer-networks-5-questions-sticky.svg" alt="Sticky Note: Computer Networks (5 Questions)" width="30%">
+</a>
+
+
 **Q21.** Explain the OSI model layers in detail.
 
 <details>
@@ -685,6 +740,17 @@ A **firewall** is a network security device that monitors and controls incoming 
 ## Section 2: Aptitude — Quant + Reasoning (20 Questions)
 
 ### Quantitative Aptitude (10 Questions)
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-handwritten.svg" alt="Handwritten: Quantitative Aptitude (10 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-diagram.svg" alt="Diagram: Quantitative Aptitude (10 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/quantitative-aptitude-10-questions-sticky.svg" alt="Sticky Note: Quantitative Aptitude (10 Questions)" width="30%">
+</a>
+
 
 **Q1.** Find the average of first 20 natural numbers.
 
@@ -816,6 +882,17 @@ P(not blue) = 10/15 = 2/3
 
 ### Reasoning (10 Questions)
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-handwritten.svg" alt="Handwritten: Reasoning (10 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-diagram.svg" alt="Diagram: Reasoning (10 Questions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/reasoning-10-questions-sticky.svg" alt="Sticky Note: Reasoning (10 Questions)" width="30%">
+</a>
+
+
 **Q11.** Find the missing number: 2, 6, 12, 20, 30, ?
 
 <details>
@@ -936,6 +1013,17 @@ A pentagon has 5 vertices. With all diagonals, the number of triangles formed is
 
 ### Energy & Power Sector
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-handwritten.svg" alt="Handwritten: Energy & Power Sector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-diagram.svg" alt="Diagram: Energy & Power Sector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/energy-power-sector-sticky.svg" alt="Sticky Note: Energy & Power Sector" width="30%">
+</a>
+
+
 **Q1.** What is the installed power generation capacity of India (approximate as of 2025)?
 
 <details>
@@ -990,6 +1078,17 @@ India's renewable energy targets under the Ministry of New and Renewable Energy 
 
 ### Oil & Gas Sector
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-handwritten.svg" alt="Handwritten: Oil & Gas Sector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-diagram.svg" alt="Diagram: Oil & Gas Sector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/oil-gas-sector-sticky.svg" alt="Sticky Note: Oil & Gas Sector" width="30%">
+</a>
+
+
 **Q5.** What is the full form of ONGC and what is its significance?
 
 <details>
@@ -1038,6 +1137,17 @@ India's renewable energy targets under the Ministry of New and Renewable Energy 
 
 ### Steel & Heavy Industry
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-handwritten.svg" alt="Handwritten: Steel & Heavy Industry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-diagram.svg" alt="Diagram: Steel & Heavy Industry" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/steel-heavy-industry-sticky.svg" alt="Sticky Note: Steel & Heavy Industry" width="30%">
+</a>
+
+
 **Q8.** What is SAIL and what are its major plants?
 
 <details>
@@ -1075,6 +1185,17 @@ The Government of India classifies CPSEs (Central Public Sector Enterprises) bas
 </details>
 
 ### PSU-Specific General Knowledge
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-handwritten.svg" alt="Handwritten: PSU-Specific General Knowledge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-diagram.svg" alt="Diagram: PSU-Specific General Knowledge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/psu-specific-general-knowledge-sticky.svg" alt="Sticky Note: PSU-Specific General Knowledge" width="30%">
+</a>
+
 
 **Q10.** Who is the current Chairman & Managing Director of NTPC / ONGC / SAIL / IOCL (as applicable)?
 
@@ -1202,6 +1323,17 @@ The **National Electricity Policy** (2005, amended) sets the framework for India
 
 ### Q1: Why do you want to join the public sector / a PSU instead of a private company?
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-handwritten.svg" alt="Handwritten: Why do you want to join the public sector / a PSU instead of a private company?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-diagram.svg" alt="Diagram: Why do you want to join the public sector / a PSU instead of a private company?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-do-you-want-to-join-the-public-sector-a-psu-instead-of-a-private-company-sticky.svg" alt="Sticky Note: Why do you want to join the public sector / a PSU instead of a private company?" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1217,6 +1349,17 @@ PSU interview panels ask this to gauge your motivation. Strong answers include:
 
 ### Q2: Are you willing to work at any location in India, including remote areas?
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-handwritten.svg" alt="Handwritten: Are you willing to work at any location in India, including remote areas?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-diagram.svg" alt="Diagram: Are you willing to work at any location in India, including remote areas?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/are-you-willing-to-work-at-any-location-in-india-including-remote-areas-sticky.svg" alt="Sticky Note: Are you willing to work at any location in India, including remote areas?" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1228,6 +1371,17 @@ PSU jobs often require postings at plant locations (steel plants, power plants, 
 </details>
 
 ### Q3: Describe a challenge you faced during your engineering studies/project and how you overcame it.
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-handwritten.svg" alt="Handwritten: Describe a challenge you faced during your engineering studies/project and how you overcame it." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-diagram.svg" alt="Diagram: Describe a challenge you faced during your engineering studies/project and how you overcame it." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/describe-a-challenge-you-faced-during-your-engineering-studies-project-and-how-you-overcame-it-sticky.svg" alt="Sticky Note: Describe a challenge you faced during your engineering studies/project and how you overcame it." width="30%">
+</a>
+
 
 <details>
 <summary><b>Sample Response</b></summary>
@@ -1243,6 +1397,17 @@ PSU jobs often require postings at plant locations (steel plants, power plants, 
 
 ### Q4: Where do you see yourself in 5 years?
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: Where do you see yourself in 5 years?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: Where do you see yourself in 5 years?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: Where do you see yourself in 5 years?" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1255,6 +1420,17 @@ PSU panels expect structured ambition:
 </details>
 
 ### Q5: Tell us about a time you worked in a team to achieve a goal.
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-handwritten.svg" alt="Handwritten: Tell us about a time you worked in a team to achieve a goal." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-diagram.svg" alt="Diagram: Tell us about a time you worked in a team to achieve a goal." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-a-time-you-worked-in-a-team-to-achieve-a-goal-sticky.svg" alt="Sticky Note: Tell us about a time you worked in a team to achieve a goal." width="30%">
+</a>
+
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1269,6 +1445,17 @@ Use STAR format. Highlight:
 </details>
 
 ### Q6: How do you handle pressure and deadlines?
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-handwritten.svg" alt="Handwritten: How do you handle pressure and deadlines?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-diagram.svg" alt="Diagram: How do you handle pressure and deadlines?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/how-do-you-handle-pressure-and-deadlines-sticky.svg" alt="Sticky Note: How do you handle pressure and deadlines?" width="30%">
+</a>
+
 
 <details>
 <summary><b>Sample Response</b></summary>
@@ -1287,6 +1474,17 @@ I believe pressure brings out my best — it sharpens focus and eliminates procr
 
 ### Q7: Do you have any questions for us?
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-handwritten.svg" alt="Handwritten: Do you have any questions for us?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-diagram.svg" alt="Diagram: Do you have any questions for us?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/do-you-have-any-questions-for-us-sticky.svg" alt="Sticky Note: Do you have any questions for us?" width="30%">
+</a>
+
+
 <details>
 <summary><b>Strategy</b></summary>
 
@@ -1301,6 +1499,17 @@ Always have 2-3 thoughtful questions ready. Good questions for PSU interviews:
 </details>
 
 ### Q8: Tell us about your strengths and weaknesses.
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-handwritten.svg" alt="Handwritten: Tell us about your strengths and weaknesses." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-diagram.svg" alt="Diagram: Tell us about your strengths and weaknesses." width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/tell-us-about-your-strengths-and-weaknesses-sticky.svg" alt="Sticky Note: Tell us about your strengths and weaknesses." width="30%">
+</a>
+
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1319,6 +1528,17 @@ Always have 2-3 thoughtful questions ready. Good questions for PSU interviews:
 
 ### Q9: Why should we hire you over other candidates?
 
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-handwritten.svg" alt="Handwritten: Why should we hire you over other candidates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-diagram.svg" alt="Diagram: Why should we hire you over other candidates?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/why-should-we-hire-you-over-other-candidates-sticky.svg" alt="Sticky Note: Why should we hire you over other candidates?" width="30%">
+</a>
+
+
 <details>
 <summary><b>Sample Response</b></summary>
 
@@ -1334,6 +1554,17 @@ I'm not looking for a job — I'm looking for a career where I can grow with the
 </details>
 
 ### Q10: What do you know about our PSU?
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-handwritten.svg" alt="Handwritten: What do you know about our PSU?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-diagram.svg" alt="Diagram: What do you know about our PSU?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/what-do-you-know-about-our-psu-sticky.svg" alt="Sticky Note: What do you know about our PSU?" width="30%">
+</a>
+
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1363,6 +1594,17 @@ This is a test of your preparation. Research the PSU thoroughly:
 ## PSU Interview Preparation Summary
 
 ### Technical Preparation Priority
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-handwritten.svg" alt="Handwritten: Technical Preparation Priority" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-diagram.svg" alt="Diagram: Technical Preparation Priority" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/technical-preparation-priority-sticky.svg" alt="Sticky Note: Technical Preparation Priority" width="30%">
+</a>
+
 | Topic | Weight | Key Focus |
 |-------|--------|-----------|
 | **Data Structures** | High | Arrays, Linked Lists, Trees, Stacks/Queues |
@@ -1373,6 +1615,17 @@ This is a test of your preparation. Research the PSU thoroughly:
 | **OOPs** | Medium | Encapsulation, Inheritance, Polymorphism |
 
 ### General Awareness Strategy
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-handwritten.svg" alt="Handwritten: General Awareness Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-diagram.svg" alt="Diagram: General Awareness Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/general-awareness-strategy-sticky.svg" alt="Sticky Note: General Awareness Strategy" width="30%">
+</a>
+
 | Topic | Focus |
 |-------|-------|
 | **Your PSU** | History, leadership, products, financials, recent news |
@@ -1381,6 +1634,17 @@ This is a test of your preparation. Research the PSU thoroughly:
 | **Current affairs** | Last 6 months — national and international |
 
 ### Behavioral Strategy
+
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-handwritten.svg" alt="Handwritten: Behavioral Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-diagram.svg" alt="Diagram: Behavioral Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/17-company-psus-govt/behavioral-strategy-sticky.svg" alt="Sticky Note: Behavioral Strategy" width="30%">
+</a>
+
 | Theme | Key Message |
 |-------|-------------|
 | **Stability** | You want a long-term career, not a short-term job |

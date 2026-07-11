@@ -50,6 +50,17 @@ flowchart LR
 
 ### What is Site Reliability Engineering (SRE)?
 
+<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" alt="Handwritten: What is Site Reliability Engineering (SRE)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" alt="Diagram: What is Site Reliability Engineering (SRE)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" alt="Sticky Note: What is Site Reliability Engineering (SRE)?" width="30%">
+</a>
+
+
 SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. The main goals are to create scalable and highly reliable software systems. SRE is often described as "what happens when you ask a software engineer to design an operations function."
 
 **Origins:** Google developed SRE internally, formalized by Ben Treynor Sloss in 2003. The practice has since been adopted by technology companies worldwide. The core insight is that operations problems are engineering problems and should be solved with engineering rigor.
@@ -67,11 +78,33 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### Reliability Metrics
 
+<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" alt="Handwritten: Reliability Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" alt="Diagram: Reliability Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" alt="Sticky Note: Reliability Metrics" width="30%">
+</a>
+
+
 - **SLI (Service Level Indicator):** A quantitative measure of some aspect of the level of service that is provided (e.g., Latency, Throughput).
 - **SLO (Service Level Objective):** A target value or range of values for a service level that is measured by an SLI (e.g., "99.9% of requests must finish in less than 200ms").
 - **SLA (Service Level Agreement):** A legal contract between a service provider and a customer that includes consequences (usually financial) if SLOs are not met.
 
 ### The Four Golden Signals
+
+<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" alt="Handwritten: The Four Golden Signals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" alt="Diagram: The Four Golden Signals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" alt="Sticky Note: The Four Golden Signals" width="30%">
+</a>
+
 
 1. **Latency:** The time it takes to service a request. Distinguish between successful requests and failed requests—a failing service might return errors very quickly, masking the latency problem.
 2. **Traffic:** A measure of how much demand is being placed on the system (requests per second, active users, throughput).
@@ -79,6 +112,17 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 4. **Saturation:** How "full" your service is (CPU usage, memory utilization, queue depth). The most overloaded component determines the system's saturation point.
 
 ### Error Budgets
+
+<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" alt="Handwritten: Error Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" alt="Diagram: Error Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" alt="Sticky Note: Error Budgets" width="30%">
+</a>
+
 
 The error budget is the acceptable amount of unreliability. For a 99.9% SLO over 30 days:
 
@@ -97,6 +141,17 @@ Error Budget = (1 - SLO) × Time Window
 
 ### Toil Elimination
 
+<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" alt="Handwritten: Toil Elimination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" alt="Diagram: Toil Elimination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" alt="Sticky Note: Toil Elimination" width="30%">
+</a>
+
+
 Toil is operational work that is manual, repetitive, automatable, tactical, and devoid of enduring value.
 
 **Examples of toil:**
@@ -109,6 +164,17 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 **The 50% Rule:** SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects.
 
 ### Incident Management
+
+<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" alt="Handwritten: Incident Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" alt="Diagram: Incident Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" alt="Sticky Note: Incident Management" width="30%">
+</a>
+
 
 | Severity | Description | Response Time | Example |
 |----------|-------------|---------------|---------|
@@ -125,6 +191,17 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 5. Follow-up ? Blameless postmortem, preventive actions
 
 ### Monitoring Stack
+
+<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" alt="Handwritten: Monitoring Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" alt="Diagram: Monitoring Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" alt="Sticky Note: Monitoring Stack" width="30%">
+</a>
+
 
 - **Prometheus:** A time-series database and monitoring system that pulls metrics from applications via HTTP. Features a powerful query language (PromQL), built-in alerting, and service discovery.
 - **Grafana:** A visualization tool that connects to Prometheus (and other sources) to create interactive dashboards. Supports alerting, annotations, and team collaboration.

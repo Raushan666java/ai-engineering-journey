@@ -50,9 +50,31 @@ flowchart LR
 
 ### The Curse of Dimensionality
 
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" alt="Handwritten: The Curse of Dimensionality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" alt="Diagram: The Curse of Dimensionality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" alt="Sticky Note: The Curse of Dimensionality" width="30%">
+</a>
+
+
 As the number of features (dimensions) increases, the volume of the feature space grows exponentially. For a dataset with uniform distribution in $d$ dimensions, the fraction of points within a hypercube of side $\epsilon$ is only $\epsilon^d$ ? this vanishes exponentially as $d$ grows. Distances between any two points converge to the same value, making nearest-neighbor and distance-based algorithms unreliable. Dimensionality reduction mitigates this by projecting data into a lower-dimensional subspace that retains the most meaningful structure.
 
 ### Principal Component Analysis (PCA)
+
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" alt="Handwritten: Principal Component Analysis (PCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" alt="Diagram: Principal Component Analysis (PCA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" alt="Sticky Note: Principal Component Analysis (PCA)" width="30%">
+</a>
+
 
 PCA is a linear transformation technique used for feature extraction and dimensionality reduction. It identifies the directions (principal components) along which the variation in the data is maximal.
 
@@ -93,6 +115,17 @@ X_{\text{approx}} = X_{\text{reduced}} W_k^T = X W_k W_k^T
 $$
 
 ### Explained Variance Ratio
+
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" alt="Handwritten: Explained Variance Ratio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" alt="Diagram: Explained Variance Ratio" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" alt="Sticky Note: Explained Variance Ratio" width="30%">
+</a>
+
 
 The total variance in the data is the sum of all eigenvalues: $\sum_{j=1}^{d} \lambda_j = \text{tr}(\Sigma)$. The explained variance ratio of component $j$ is:
 
@@ -142,6 +175,17 @@ flowchart LR
 
 ### SVD for PCA
 
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" alt="Handwritten: SVD for PCA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" alt="Diagram: SVD for PCA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" alt="Sticky Note: SVD for PCA" width="30%">
+</a>
+
+
 Singular Value Decomposition (SVD) provides a computationally superior route to PCA. The centered data matrix $X$ (shape $n \times d$) is decomposed as:
 
 $$
@@ -169,6 +213,17 @@ Thus:
 - Truncated SVD (keeping only top $k$ singular values) is faster for large $d$
 
 ### t-SNE (t-Distributed Stochastic Neighbor Embedding)
+
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" alt="Handwritten: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" alt="Diagram: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" alt="Sticky Note: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+</a>
+
 
 t-SNE converts pairwise distances into probability distributions and minimizes the divergence between the high-dimensional and low-dimensional distributions.
 
@@ -221,6 +276,17 @@ flowchart TB
 
 ### UMAP (Uniform Manifold Approximation and Projection)
 
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" alt="Handwritten: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" alt="Diagram: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" alt="Sticky Note: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+</a>
+
+
 UMAP is built on three assumptions from manifold theory and topological data analysis:
 1. Data is uniformly sampled from a Riemannian manifold
 2. The manifold is locally connected
@@ -253,6 +319,17 @@ The first term encourages preserving the presence of edges (local structure), wh
 | Determinism | No ? multiple runs differ | Yes ? fixed seed gives same output |
 
 ### Feature Selection Methods
+
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" alt="Handwritten: Feature Selection Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" alt="Diagram: Feature Selection Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" alt="Sticky Note: Feature Selection Methods" width="30%">
+</a>
+
 
 Unlike feature extraction (PCA, autoencoders), feature selection retains the original features, preserving interpretability.
 
@@ -297,6 +374,17 @@ flowchart LR
 ```
 
 ### Autoencoders for Non-linear Dimensionality Reduction
+
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" alt="Handwritten: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" alt="Diagram: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" alt="Sticky Note: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+</a>
+
 
 An autoencoder is a neural network trained to reconstruct its input through a bottleneck layer of lower dimension.
 

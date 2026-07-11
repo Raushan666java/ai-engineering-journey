@@ -25,6 +25,17 @@ After completing this chapter you will be able to:
 
 ### 4.1 Digital Signatures
 
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" alt="Handwritten: 4.1 Digital Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" alt="Diagram: 4.1 Digital Signatures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" alt="Sticky Note: 4.1 Digital Signatures" width="30%">
+</a>
+
+
 A digital signature provides **integrity**, **authentication**, and **non-repudiation** for digital messages or documents.
 
 #### 4.1.1 Digital Signature Process — Signing
@@ -88,6 +99,17 @@ flowchart TD
 ```
 
 ### 4.2 PKI (Public Key Infrastructure)
+
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" alt="Handwritten: 4.2 PKI (Public Key Infrastructure)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" alt="Diagram: 4.2 PKI (Public Key Infrastructure)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" alt="Sticky Note: 4.2 PKI (Public Key Infrastructure)" width="30%">
+</a>
+
 
 PKI is the framework of policies, hardware, software, and procedures needed to create, manage, distribute, use, store, and revoke digital certificates.
 
@@ -170,6 +192,17 @@ flowchart TD
 
 ### 4.3 X.509 Digital Certificates
 
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" alt="Handwritten: 4.3 X.509 Digital Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" alt="Diagram: 4.3 X.509 Digital Certificates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" alt="Sticky Note: 4.3 X.509 Digital Certificates" width="30%">
+</a>
+
+
 X.509 is the standard defining the format of public key certificates. Version 3 (v3) is the current standard.
 
 #### 4.3.1 X.509 v3 Certificate Structure
@@ -203,6 +236,17 @@ X.509 is the standard defining the format of public key certificates. Version 3 
 | **Authority Key Identifier** | Links to issuing CA's Subject Key Identifier | For chain building |
 
 ### 4.4 OAuth 2.0
+
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" alt="Handwritten: 4.4 OAuth 2.0" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" alt="Diagram: 4.4 OAuth 2.0" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" alt="Sticky Note: 4.4 OAuth 2.0" width="30%">
+</a>
+
 
 OAuth 2.0 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service. It is **not** an authentication protocol (though often used for authentication via OpenID Connect).
 
@@ -238,6 +282,17 @@ OAuth 2.0 is an authorization framework that enables applications to obtain limi
 **PKCE (Proof Key for Code Exchange):** Mobile/SPA clients generate a random `code_verifier`, hash it to `code_challenge`, send challenge in authorize request, and send verifier in token request. Server verifies SHA-256(verifier) = challenge. This prevents authorization code interception attacks.
 
 ### 4.5 SAML (Security Assertion Markup Language)
+
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" alt="Handwritten: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" alt="Diagram: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" alt="Sticky Note: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+</a>
+
 
 SAML 2.0 is an XML-based framework for exchanging authentication and authorization data between an Identity Provider (IdP) and a Service Provider (SP).
 
@@ -276,6 +331,17 @@ SAML 2.0 is an XML-based framework for exchanging authentication and authorizati
 | Mobile friendly | Poor (XML parsing, browser redirect) | Excellent (native app support, PKCE) |
 
 ### 4.6 Kerberos
+
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" alt="Handwritten: 4.6 Kerberos" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" alt="Diagram: 4.6 Kerberos" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" alt="Sticky Note: 4.6 Kerberos" width="30%">
+</a>
+
 
 Kerberos is a network authentication protocol that uses **secret-key cryptography** (symmetric) and a **trusted third party** (Key Distribution Center — KDC) to authenticate clients to services without transmitting passwords over the network.
 
@@ -362,6 +428,17 @@ flowchart LR
 ```
 
 ### 4.7 Solved MCQs (Exam Style)
+
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 4.7 Solved MCQs (Exam Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 4.7 Solved MCQs (Exam Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 4.7 Solved MCQs (Exam Style)" width="30%">
+</a>
+
 
 **Q1.** In a digital signature scheme, which key does the signer use to create the signature?
 

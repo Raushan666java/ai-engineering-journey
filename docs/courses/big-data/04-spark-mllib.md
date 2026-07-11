@@ -60,6 +60,17 @@ An ML Pipeline chains multiple Transformers and Estimators into a single workflo
 
 ### 4.3.1 VectorAssembler
 
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-handwritten.svg" alt="Handwritten: 4.3.1 VectorAssembler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-diagram.svg" alt="Diagram: 4.3.1 VectorAssembler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-1-vectorassembler-sticky.svg" alt="Sticky Note: 4.3.1 VectorAssembler" width="30%">
+</a>
+
+
 Combines multiple numeric columns into a single feature vector.
 
 ```python
@@ -81,6 +92,17 @@ transformed.select("features").show(truncate=False)
 
 ### 4.3.2 StringIndexer & OneHotEncoder
 
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-handwritten.svg" alt="Handwritten: 4.3.2 StringIndexer & OneHotEncoder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-diagram.svg" alt="Diagram: 4.3.2 StringIndexer & OneHotEncoder" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-2-stringindexer-onehotencoder-sticky.svg" alt="Sticky Note: 4.3.2 StringIndexer & OneHotEncoder" width="30%">
+</a>
+
+
 ```python
 from pyspark.ml.feature import StringIndexer, OneHotEncoder
 
@@ -99,6 +121,17 @@ encoded.select("color", "color_index", "color_vector").show()
 ```
 
 ### 4.3.3 StandardScaler & MinMaxScaler
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-handwritten.svg" alt="Handwritten: 4.3.3 StandardScaler & MinMaxScaler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-diagram.svg" alt="Diagram: 4.3.3 StandardScaler & MinMaxScaler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-3-standardscaler-minmaxscaler-sticky.svg" alt="Sticky Note: 4.3.3 StandardScaler & MinMaxScaler" width="30%">
+</a>
+
 
 ```python
 from pyspark.ml.feature import StandardScaler, MinMaxScaler
@@ -124,6 +157,17 @@ normalized.select("value", "normalized").show()
 ```
 
 ### 4.3.4 Feature Hashing
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-handwritten.svg" alt="Handwritten: 4.3.4 Feature Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-diagram.svg" alt="Diagram: 4.3.4 Feature Hashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-3-4-feature-hashing-sticky.svg" alt="Sticky Note: 4.3.4 Feature Hashing" width="30%">
+</a>
+
 
 For high-cardinality categorical columns (millions of unique values):
 
@@ -151,6 +195,17 @@ hashed.select("hashed_features").show(truncate=False)
 ## 4.4 Training Models
 
 ### 4.4.1 Linear Regression
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-handwritten.svg" alt="Handwritten: 4.4.1 Linear Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-diagram.svg" alt="Diagram: 4.4.1 Linear Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-1-linear-regression-sticky.svg" alt="Sticky Note: 4.4.1 Linear Regression" width="30%">
+</a>
+
 
 ```python
 from pyspark.ml.regression import LinearRegression
@@ -185,6 +240,17 @@ print(f"Intercept: {lr_model.intercept:.4f}")
 ```
 
 ### 4.4.2 Random Forest Classifier
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-handwritten.svg" alt="Handwritten: 4.4.2 Random Forest Classifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-diagram.svg" alt="Diagram: 4.4.2 Random Forest Classifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-2-random-forest-classifier-sticky.svg" alt="Sticky Note: 4.4.2 Random Forest Classifier" width="30%">
+</a>
+
 
 ```python
 from pyspark.ml.classification import RandomForestClassifier
@@ -229,6 +295,17 @@ print(f"Feature importance: {importance}")
 ```
 
 ### 4.4.3 Logistic Regression
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-handwritten.svg" alt="Handwritten: 4.4.3 Logistic Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-diagram.svg" alt="Diagram: 4.4.3 Logistic Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-4-3-logistic-regression-sticky.svg" alt="Sticky Note: 4.4.3 Logistic Regression" width="30%">
+</a>
+
 
 ```python
 from pyspark.ml.classification import LogisticRegression
@@ -320,6 +397,17 @@ rf_model = rf.fit(df)  # 500 trees built in parallel across the cluster
 
 ### 4.7.1 Saving and Loading Models
 
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-handwritten.svg" alt="Handwritten: 4.7.1 Saving and Loading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-diagram.svg" alt="Diagram: 4.7.1 Saving and Loading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-1-saving-and-loading-models-sticky.svg" alt="Sticky Note: 4.7.1 Saving and Loading Models" width="30%">
+</a>
+
+
 ```python
 # Save trained model
 model.save("s3://bucket/models/random_forest_v1")
@@ -336,6 +424,17 @@ predictions.select("id", "prediction", "probability").show()
 
 ### 4.7.2 Exporting to PMML
 
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-handwritten.svg" alt="Handwritten: 4.7.2 Exporting to PMML" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-diagram.svg" alt="Diagram: 4.7.2 Exporting to PMML" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-2-exporting-to-pmml-sticky.svg" alt="Sticky Note: 4.7.2 Exporting to PMML" width="30%">
+</a>
+
+
 ```python
 # Not all MLlib models support PMML natively
 # Alternative: extract coefficients and deploy manually
@@ -351,6 +450,17 @@ with open("/tmp/model_params.json", "w") as f:
 ```
 
 ### 4.7.3 Converting to ONNX for production
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-handwritten.svg" alt="Handwritten: 4.7.3 Converting to ONNX for production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-diagram.svg" alt="Diagram: 4.7.3 Converting to ONNX for production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/4-7-3-converting-to-onnx-for-production-sticky.svg" alt="Sticky Note: 4.7.3 Converting to ONNX for production" width="30%">
+</a>
+
 
 ```python
 # MLlib ? ONNX requires intermediate conversion via sklearn
@@ -526,6 +636,17 @@ flowchart LR
 The following TypeScript classes simulate Spark MLlib's pipeline API ? Transformers, Estimators, Pipelines, and CrossValidator ? to demonstrate the concepts without a cluster.
 
 ### Transformer & Pipeline Classes
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-handwritten.svg" alt="Handwritten: Transformer & Pipeline Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-diagram.svg" alt="Diagram: Transformer & Pipeline Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/transformer-pipeline-classes-sticky.svg" alt="Sticky Note: Transformer & Pipeline Classes" width="30%">
+</a>
+
 
 ```typescript
 // Types
@@ -840,6 +961,17 @@ console.log(`Best params: ${JSON.stringify(cvResult.bestParams)}, AUC: ${Math.ma
 ```
 
 ### Feature Engineering Worked Example
+
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-handwritten.svg" alt="Handwritten: Feature Engineering Worked Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-diagram.svg" alt="Diagram: Feature Engineering Worked Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/big-data/04-spark-mllib/feature-engineering-worked-example-sticky.svg" alt="Sticky Note: Feature Engineering Worked Example" width="30%">
+</a>
+
 
 ```typescript
 interface FeaturePipeline {

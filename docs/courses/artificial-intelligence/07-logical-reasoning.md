@@ -38,6 +38,17 @@ In AI, logical reasoning is the engine that turns a static knowledge base into i
 
 ### Chapter Roadmap
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     A[Unification] --> B[Forward Chaining]
@@ -63,11 +74,33 @@ flowchart LR
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Unification is the process of finding a substitution $theta$ that makes two logical expressions identical. A substitution $theta = {v_1/t_1, v_2/t_2, ..., v_n/t_n}$ maps variables to terms. The application of $theta$ to expression $E$, written $Etheta$, replaces each variable $v_i$ with term $t_i$, with all occurrences replaced simultaneously.
 
 **Standardization apart** renames variables to avoid naming conflicts. The **most general unifier (MGU)** is the substitution that imposes the fewest constraints while achieving unification — any other unifier is a specialization of the MGU.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. If theta is already failure, return failure.
 2. If the two expressions are identical, return theta (success).
@@ -77,6 +110,17 @@ Unification is the process of finding a substitution $theta$ that makes two logi
 6. In all other cases, return failure.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function UNIFY(x, y, theta) returns substitution or failure
@@ -99,6 +143,17 @@ function UNIFY-VAR(var, x, theta) returns substitution
 
 ### Step-by-Step Dry Run
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
+
 **Example:** Unify P(f(x), y) and P(z, g(z))
 
 | Step | Expression 1 | Expression 2 | Current Theta | Action |
@@ -116,6 +171,17 @@ function UNIFY-VAR(var, x, theta) returns substitution
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | **Time worst-case** | O(n^2) | Each variable binding triggers recursive traversal; term size grows with substitution application |
@@ -125,6 +191,17 @@ function UNIFY-VAR(var, x, theta) returns substitution
 **Why O(n^2)?** In the worst case, each variable binds to increasingly larger terms. For example, unifying P(x_1, x_2, ..., x_n) with P(f(x_0), f(x_1), ..., f(x_n-1)) creates substitutions that grow each step, and each new binding scans the growing term.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def unify(x, y, theta=None):
@@ -188,6 +265,17 @@ print(f"MGU: {result}")
 
 ### C++ Implementation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -220,6 +308,17 @@ std::optional<std::map<std::string, std::string>> unify(
 ```
 
 ### Java Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+</a>
+
 
 ```java
 import java.util.*;
@@ -256,6 +355,17 @@ public class Unifier {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Foundation for all logical inference in AI | O(n^2) worst-case time complexity |
@@ -264,6 +374,17 @@ public class Unifier {
 | Enables pattern matching across complex expressions | Circular substitutions require careful detection |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Identical constants:** A unifies with A -> success, empty substitution.
 - **Circular substitution:** UNIFY(x, f(x)) -> failure (occur check catches circularity).
@@ -279,9 +400,31 @@ public class Unifier {
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Forward chaining applies inference rules to known facts, deriving new facts until the query is proved or no further inferences are possible. It is **data-driven**: reasoning proceeds from premises toward conclusions. For Horn clause knowledge bases, forward chaining is both sound and complete.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Start with the set of all atomic facts in the KB.
 2. For each rule whose antecedent (premise) is fully satisfied by current facts:
@@ -292,6 +435,17 @@ Forward chaining applies inference rules to known facts, deriving new facts unti
 5. If the goal appears in the fact set at any point, return TRUE.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function FORWARD-CHAIN(KB, rules) returns new facts
@@ -309,6 +463,17 @@ function FORWARD-CHAIN(KB, rules) returns new facts
 
 ### Step-by-Step Dry Run
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
+
 **KB:**
 - Facts: A, B
 - Rules: A ^ B => C, C ^ D => E, B => D
@@ -324,6 +489,17 @@ function FORWARD-CHAIN(KB, rules) returns new facts
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | **Time (propositional)** | O(n * m) | n facts * m rules; each iteration checks all rules |
@@ -334,6 +510,17 @@ function FORWARD-CHAIN(KB, rules) returns new facts
 **Why linear for propositional Horn?** With count-tracking (track how many antecedent literals remain unsatisfied per rule), each rule fires at most once per new fact. Total work = O(n * m).
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def forward_chain(kb_facts, kb_rules, goal=None):
@@ -376,6 +563,17 @@ print(f"Final facts: {final}")
 
 ### C++ Implementation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <set>
@@ -410,6 +608,17 @@ set<string> forwardChain(
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Sound and complete for Horn clause KBs | May derive many irrelevant facts |
@@ -419,6 +628,17 @@ set<string> forwardChain(
 | Naturally handles continuous fact arrival | Not suitable for large FOL KBs |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Empty KB (no facts):** No rules trigger; returns empty set immediately.
 - **Cyclic rules:** A => B, B => A. With A only — first iteration adds B; second finds nothing new (A already present) -> fixed point in 2 iterations.
@@ -433,9 +653,31 @@ set<string> forwardChain(
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Backward chaining starts from the query (goal) and works backward, attempting to find a chain of rules that supports the query. It is **goal-driven**: reasoning proceeds from conclusions toward premises. Backward chaining is depth-first, making it memory-efficient but potentially incomplete without loop detection.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Start with the query as the goal list.
 2. If the goal list is empty, return success with the current substitution.
@@ -448,6 +690,17 @@ Backward chaining starts from the query (goal) and works backward, attempting to
 5. If no sentence matches, return failure (backtrack).
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function BACKWARD-CHAIN(KB, query) returns set of substitutions
@@ -466,6 +719,17 @@ function BACKWARD-CHAIN-LIST(KB, goals, theta) returns set of substitutions
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 **KB:**
 - C => E  (if C then E)
@@ -488,6 +752,17 @@ function BACKWARD-CHAIN-LIST(KB, goals, theta) returns set of substitutions
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | **Time worst-case** | O(b^d) | Branching factor b (KB sentences per goal) and depth d of proof tree |
@@ -497,6 +772,17 @@ function BACKWARD-CHAIN-LIST(KB, goals, theta) returns set of substitutions
 **Why exponential?** Each goal may match multiple KB sentences, creating a branching search tree. Without heuristics, backward chaining explores the entire tree. With memoization for propositional Horn clauses, it becomes linear.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def backward_chain(kb, query, theta=None, depth=0, max_depth=100):
@@ -563,6 +849,17 @@ print(f"Result: {ok}")
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Goal-directed — only explores relevant rules | DFS can loop on recursive rules |
@@ -572,6 +869,17 @@ print(f"Result: {ok}")
 | Forms the basis of Prolog execution | Sensitive to rule ordering in KB |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Recursive rules without base case:** ancestor(X,Y) :- parent(X,Z), ancestor(Z,Y) without base fact -> infinite loop.
 - **Cyclic KB:** P :- Q and Q :- P — query loops forever without loop detection.
@@ -598,6 +906,17 @@ print(f"Result: {ok}")
 
 ### When to Use Which
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
+</a>
+
+
 - **Use forward chaining** when: facts arrive incrementally (sensor data, event streams), you need all possible conclusions (monitoring), or the number of potential goals is unknown.
 - **Use backward chaining** when: you have a specific question to answer (diagnosis), interactive why-explanation is needed, or the KB is large but queries are few.
 
@@ -607,9 +926,31 @@ print(f"Result: {ok}")
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Resolution is a **complete** inference method for first-order logic. Unlike forward/backward chaining (which work only for Horn clauses), resolution handles the full expressivity of FOL. It refutes the negation of the query by deriving a contradiction.
 
 ### 7.4.1 Conjunctive Normal Form (CNF)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-handwritten.svg" alt="Handwritten: 7.4.1 Conjunctive Normal Form (CNF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-diagram.svg" alt="Diagram: 7.4.1 Conjunctive Normal Form (CNF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-1-conjunctive-normal-form-cnf-sticky.svg" alt="Sticky Note: 7.4.1 Conjunctive Normal Form (CNF)" width="30%">
+</a>
+
 
 Resolution requires all formulas to be in Conjunctive Normal Form: a conjunction of clauses, where each clause is a disjunction of literals.
 
@@ -624,6 +965,17 @@ Resolution requires all formulas to be in Conjunctive Normal Form: a conjunction
 
 ### 7.4.2 Skolemization — Detailed Example
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-handwritten.svg" alt="Handwritten: 7.4.2 Skolemization — Detailed Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-diagram.svg" alt="Diagram: 7.4.2 Skolemization — Detailed Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-2-skolemization-detailed-example-sticky.svg" alt="Sticky Note: 7.4.2 Skolemization — Detailed Example" width="30%">
+</a>
+
+
 Skolemization removes existential quantifiers by introducing fresh function symbols.
 
 **Original:** for all x, exists y, Loves(x, y) — "Everyone loves someone."
@@ -636,11 +988,33 @@ Skolemization removes existential quantifiers by introducing fresh function symb
 
 ### 7.4.3 Resolution Rule
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-handwritten.svg" alt="Handwritten: 7.4.3 Resolution Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-diagram.svg" alt="Diagram: 7.4.3 Resolution Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/7-4-3-resolution-rule-sticky.svg" alt="Sticky Note: 7.4.3 Resolution Rule" width="30%">
+</a>
+
+
 For two clauses C_1 and C_2 with complementary literals l_1 in C_1 and not-l_2 in C_2 that unify under theta:
 
 Resolve(C_1, C_2) = (C_1 * theta - l_1 * theta) U (C_2 * theta - l_2 * theta)
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Convert KB U {not-alpha} to CNF — this is the clause set.
 2. Repeat:
@@ -652,6 +1026,17 @@ Resolve(C_1, C_2) = (C_1 * theta - l_1 * theta) U (C_2 * theta - l_2 * theta)
 3. If no new clauses can be generated and empty clause has not been found, return FALSE.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function RESOLUTION(KB, alpha) returns true if KB entails alpha
@@ -667,6 +1052,17 @@ function RESOLUTION(KB, alpha) returns true if KB entails alpha
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 **KB:** A => B, B => C, A
 
@@ -690,6 +1086,17 @@ function RESOLUTION(KB, alpha) returns true if KB entails alpha
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | **Time (propositional)** | O(2^n) worst-case | Clauses can grow exponentially with each resolution step |
@@ -700,6 +1107,17 @@ function RESOLUTION(KB, alpha) returns true if KB entails alpha
 **Why exponential?** Each pair of clauses can potentially be resolved. With n clauses, O(n^2) pairs per iteration, and each may add new clauses, leading to exponential growth.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def to_cnf(expr):
@@ -757,6 +1175,17 @@ print(resolution_prover(["A => B", "B => C", "A"], "C"))
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Complete for full first-order logic | Exponential worst-case complexity |
@@ -767,12 +1196,34 @@ print(resolution_prover(["A => B", "B => C", "A"], "C"))
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 - **Empty KB:** No clauses to resolve.
 - **Tautological query:** empty clause immediately.
 - **Contradictory KB:** Can prove any query.
 - **Infinite loops in FOL:** May never terminate if KB does not entail alpha.
 
 ### Resolution Strategies Comparison
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-handwritten.svg" alt="Handwritten: Resolution Strategies Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-diagram.svg" alt="Diagram: Resolution Strategies Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/resolution-strategies-comparison-sticky.svg" alt="Sticky Note: Resolution Strategies Comparison" width="30%">
+</a>
+
 
 | Strategy | Approach | Complete? | Efficiency |
 |---------|----------|:---------:|:----------:|
@@ -793,6 +1244,17 @@ print(resolution_prover(["A => B", "B => C", "A"], "C"))
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **Horn clause** is a clause with at most one positive literal. A **definite clause** has exactly one positive literal.
 
 - **Facts:** P (one positive, no negatives) — "It is raining."
@@ -800,6 +1262,17 @@ A **Horn clause** is a clause with at most one positive literal. A **definite cl
 - **Goal clauses:** not-P v not-Q (all negative) — "Prove P and Q."
 
 ### Why Horn Clauses Matter
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-handwritten.svg" alt="Handwritten: Why Horn Clauses Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-diagram.svg" alt="Diagram: Why Horn Clauses Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/why-horn-clauses-matter-sticky.svg" alt="Sticky Note: Why Horn Clauses Matter" width="30%">
+</a>
+
 
 | Property | Horn Clauses | General FOL |
 |----------|-------------|-------------|
@@ -810,6 +1283,17 @@ A **Horn clause** is a clause with at most one positive literal. A **definite cl
 | Prolog support | Core language feature | Not directly supported |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Non-Horn clause:** P v Q (two positive literals) — requires full resolution.
 - **Empty clause:** Represents contradiction/false.
@@ -823,9 +1307,31 @@ A **Horn clause** is a clause with at most one positive literal. A **definite cl
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Prolog (Programming in Logic) is a logic programming language based on Horn clauses. A Prolog program consists of facts, rules, and queries. Execution uses **SLD resolution** (Selective Linear Definite-clause resolution) — backward chaining with depth-first search.
 
 ### Structure
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+</a>
+
 
 - **Facts:** `parent(john, mary).` — unconditional truths.
 - **Rules:** `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).` — conditional truths.
@@ -853,6 +1359,17 @@ sibling(X, Y) :- parent(Z, X), parent(Z, Y), X \= Y.
 
 ### Prolog Execution Trace
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-handwritten.svg" alt="Handwritten: Prolog Execution Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-diagram.svg" alt="Diagram: Prolog Execution Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/prolog-execution-trace-sticky.svg" alt="Sticky Note: Prolog Execution Trace" width="30%">
+</a>
+
+
 For query `grandparent(john, ann)`:
 
 | Step | Goal Stack | Rule Applied | Bindings |
@@ -864,11 +1381,33 @@ For query `grandparent(john, ann)`:
 
 ### Limitations
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-handwritten.svg" alt="Handwritten: Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-diagram.svg" alt="Diagram: Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/limitations-sticky.svg" alt="Sticky Note: Limitations" width="30%">
+</a>
+
+
 - **No occur check:** X = f(X) succeeds, creating infinite terms.
 - **Depth-first search:** May miss solutions due to infinite left recursion.
 - **Cut operator (!):** Controls backtracking but breaks declarative semantics.
 
 ### Python Simulation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-handwritten.svg" alt="Handwritten: Python Simulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-diagram.svg" alt="Diagram: Python Simulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/python-simulation-sticky.svg" alt="Sticky Note: Python Simulation" width="30%">
+</a>
+
 
 ```python
 class PrologEngine:
@@ -927,6 +1466,17 @@ print(engine.query('grandparent', None, 'ann'))
 **Real-World Analogy:** Building an expert system is like writing an operations manual for a nuclear power plant. You must identify every decision the operator makes, encode the domain knowledge precisely, and verify the system handles all scenarios correctly.
 
 ### Methodology
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-handwritten.svg" alt="Handwritten: Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-diagram.svg" alt="Diagram: Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/methodology-sticky.svg" alt="Sticky Note: Methodology" width="30%">
+</a>
+
 
 1. **Identify the task:** Determine the questions the system must answer.
 2. **Assemble relevant knowledge:** Consult domain experts.
@@ -1013,6 +1563,17 @@ signal(Gate, Output, Value) :-
 
 ### Common Questions
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
+</a>
+
+
 1. **What is the difference between forward and backward chaining? When would you use each?**
 
    Forward chaining is data-driven (start from facts, derive conclusions). Backward chaining is goal-driven (start from query, work backward to facts). Use forward chaining for monitoring/real-time systems; use backward chaining for diagnosis/interactive Q&A.
@@ -1046,6 +1607,17 @@ signal(Gate, Output, Value) :-
    The cut (!) commits Prolog to current choices, pruning alternative branches. It makes programs more efficient but breaks declarative semantics.
 
 ### Common Pitfalls
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+</a>
+
 
 | Pitfall | Solution |
 |---------|----------|
@@ -1164,5 +1736,16 @@ signal(Gate, Output, Value) :-
 - **Knowledge engineering** provides a systematic methodology for building logic-based systems.
 
 ### Key Takeaway
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-logical-reasoning/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
+</a>
+
 
 Logical reasoning transforms a static knowledge base into an intelligent agent capable of answering questions, making decisions, and explaining its reasoning. Master unification, chaining, and resolution — these are the engine behind expert systems, theorem provers, and logic programming languages that power real-world AI applications.

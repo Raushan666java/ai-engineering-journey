@@ -49,6 +49,17 @@ Generics were introduced in Java 5 (JSR 14) to enable **type parameterization**.
 
 ### Generic Classes
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-handwritten.svg" alt="Handwritten: Generic Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-diagram.svg" alt="Diagram: Generic Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-classes-sticky.svg" alt="Sticky Note: Generic Classes" width="30%">
+</a>
+
+
 A generic class declares one or more **type parameters** in angle brackets after the class name. By convention, single uppercase letters are used:
 
 | Parameter | Convention              |
@@ -222,6 +233,17 @@ public class GenericsDemo {
 
 ### Raw Types and Compatibility
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-handwritten.svg" alt="Handwritten: Raw Types and Compatibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-diagram.svg" alt="Diagram: Raw Types and Compatibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/raw-types-and-compatibility-sticky.svg" alt="Sticky Note: Raw Types and Compatibility" width="30%">
+</a>
+
+
 A **raw type** is a generic class or interface used without its type parameters. Raw types exist only for backward compatibility with pre-Java-5 code.
 
 ```java
@@ -242,6 +264,17 @@ public class RawTypeDemo {
 The compiler emits an **unchecked warning** for any raw-type usage. You should never use raw types in new code.
 
 ### Generic Methods
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-handwritten.svg" alt="Handwritten: Generic Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-diagram.svg" alt="Diagram: Generic Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-methods-sticky.svg" alt="Sticky Note: Generic Methods" width="30%">
+</a>
+
 
 Methods can declare their own type parameters independently of the class-level parameters. A generic method declares type parameters **before the return type**.
 
@@ -310,6 +343,17 @@ public class GenericMethodDemo {
 ```
 
 ### Bounded Type Parameters
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-handwritten.svg" alt="Handwritten: Bounded Type Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-diagram.svg" alt="Diagram: Bounded Type Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bounded-type-parameters-sticky.svg" alt="Sticky Note: Bounded Type Parameters" width="30%">
+</a>
+
 
 A **bounded type parameter** restricts the types that can be used as type arguments. The bound is specified with the `extends` keyword (which includes both classes and interfaces).
 
@@ -384,6 +428,17 @@ public class BoundedTypeDemo {
 
 ### Multiple Bounds
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-handwritten.svg" alt="Handwritten: Multiple Bounds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-diagram.svg" alt="Diagram: Multiple Bounds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/multiple-bounds-sticky.svg" alt="Sticky Note: Multiple Bounds" width="30%">
+</a>
+
+
 A type parameter can have multiple bounds using the `&` operator. The class bound (if any) must come **first**; interface bounds follow.
 
 ```java
@@ -438,6 +493,17 @@ public class MultipleBoundsDemo {
 ```
 
 ### Type Inference and the Diamond Operator
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-handwritten.svg" alt="Handwritten: Type Inference and the Diamond Operator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-diagram.svg" alt="Diagram: Type Inference and the Diamond Operator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/type-inference-and-the-diamond-operator-sticky.svg" alt="Sticky Note: Type Inference and the Diamond Operator" width="30%">
+</a>
+
 
 Java 7 introduced the **diamond operator** (`<>`) to reduce verbosity when instantiating generic classes. The compiler infers the type arguments from the context.
 
@@ -516,6 +582,17 @@ Wildcards (`?`) introduce **usage-site variance**→the ability to specify how a
 
 ### Unbounded Wildcard (`?`)
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-handwritten.svg" alt="Handwritten: Unbounded Wildcard (`?`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-diagram.svg" alt="Diagram: Unbounded Wildcard (`?`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/unbounded-wildcard-sticky.svg" alt="Sticky Note: Unbounded Wildcard (`?`)" width="30%">
+</a>
+
+
 The unbounded wildcard represents **any type**. It is useful when the logic does not depend on the actual type parameter.
 
 ```java
@@ -575,6 +652,17 @@ You **cannot** add elements (except `null`) to a `Collection<?>` because the com
 
 ### Upper Bounded Wildcard (`? extends T`)
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-handwritten.svg" alt="Handwritten: Upper Bounded Wildcard (`? extends T`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-diagram.svg" alt="Diagram: Upper Bounded Wildcard (`? extends T`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/upper-bounded-wildcard-extends-t-sticky.svg" alt="Sticky Note: Upper Bounded Wildcard (`? extends T`)" width="30%">
+</a>
+
+
 An upper bounded wildcard restricts the unknown type to a **subtype** of `T`. This is used when you **produce** values from a structure.
 
 ```java
@@ -628,6 +716,17 @@ With `List<? extends Number>`, you can **read** `Number` values, but you cannot 
 
 ### Lower Bounded Wildcard (`? super T`)
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-handwritten.svg" alt="Handwritten: Lower Bounded Wildcard (`? super T`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-diagram.svg" alt="Diagram: Lower Bounded Wildcard (`? super T`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/lower-bounded-wildcard-super-t-sticky.svg" alt="Sticky Note: Lower Bounded Wildcard (`? super T`)" width="30%">
+</a>
+
+
 A lower bounded wildcard restricts the unknown type to a **supertype** of `T`. This is used when you **consume** (add) values into a structure.
 
 ```java
@@ -675,6 +774,17 @@ public class LowerBoundedWildcardDemo {
 With `List<? super Integer>`, you can safely **add** `Integer` instances, but when reading, you can only guarantee `Object`.
 
 ### The PECS Principle
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-handwritten.svg" alt="Handwritten: The PECS Principle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-diagram.svg" alt="Diagram: The PECS Principle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-pecs-principle-sticky.svg" alt="Sticky Note: The PECS Principle" width="30%">
+</a>
+
 
 **PECS** stands for **Producer Extends, Consumer Super**, formulated by Joshua Bloch in *Effective Java*. It is the rule for choosing which wildcard type to use:
 
@@ -770,6 +880,17 @@ Type erasure is the process by which the Java compiler removes generic type info
 
 ### How Erasure Works
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-handwritten.svg" alt="Handwritten: How Erasure Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-diagram.svg" alt="Diagram: How Erasure Works" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-erasure-works-sticky.svg" alt="Sticky Note: How Erasure Works" width="30%">
+</a>
+
+
 The compiler replaces type parameters with their **leftmost bound** (or `Object` if unbounded) and inserts appropriate casts where necessary.
 
 ```java
@@ -817,6 +938,17 @@ public class TypeErasureDemo {
 ```
 
 ### Bridge Methods
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-handwritten.svg" alt="Handwritten: Bridge Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-diagram.svg" alt="Diagram: Bridge Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/bridge-methods-sticky.svg" alt="Sticky Note: Bridge Methods" width="30%">
+</a>
+
 
 When erasure causes a type conflict in a subclass, the compiler generates a **bridge method**→a synthetic method with erased signatures that delegates to the typed method.
 
@@ -894,6 +1026,17 @@ Without the bridge method, calling `node.setData("world")` through the erased `N
 
 ### Heap Pollution
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-handwritten.svg" alt="Handwritten: Heap Pollution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-diagram.svg" alt="Diagram: Heap Pollution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/heap-pollution-sticky.svg" alt="Sticky Note: Heap Pollution" width="30%">
+</a>
+
+
 **Heap pollution** occurs when a variable of a parameterized type references an object of a different parameterized type. This creates an implicit type mismatch that may surface as a `ClassCastException` far from the actual error.
 
 ```java
@@ -924,6 +1067,17 @@ public class HeapPollutionDemo {
 ```
 
 ### @SafeVarargs
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-handwritten.svg" alt="Handwritten: @SafeVarargs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-diagram.svg" alt="Diagram: @SafeVarargs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/safevarargs-sticky.svg" alt="Sticky Note: @SafeVarargs" width="30%">
+</a>
+
 
 The `@SafeVarargs` annotation suppresses heap-pollution warnings on **varargs** methods with generic types. It asserts that the method does not perform unsafe operations on the varargs array.
 
@@ -988,6 +1142,17 @@ public class SafeVarargsDemo {
 
 ### Reifiable Types
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-handwritten.svg" alt="Handwritten: Reifiable Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-diagram.svg" alt="Diagram: Reifiable Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reifiable-types-sticky.svg" alt="Sticky Note: Reifiable Types" width="30%">
+</a>
+
+
 A type is **reifiable** if its type information is fully available at runtime. Non-reifiable types lose information through erasure.
 
 **Reifiable types:**
@@ -1031,6 +1196,17 @@ public class ReifiableTypesDemo {
 ```
 
 ### Limitations of Generics
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-handwritten.svg" alt="Handwritten: Limitations of Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-diagram.svg" alt="Diagram: Limitations of Generics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/limitations-of-generics-sticky.svg" alt="Sticky Note: Limitations of Generics" width="30%">
+</a>
+
 
 Generics in Java have several well-known limitations stemming from type erasure:
 
@@ -1088,6 +1264,17 @@ Annotations (also called metadata) provide a way to associate information with p
 
 ### Defining an Annotation
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-handwritten.svg" alt="Handwritten: Defining an Annotation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-diagram.svg" alt="Diagram: Defining an Annotation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/defining-an-annotation-sticky.svg" alt="Sticky Note: Defining an Annotation" width="30%">
+</a>
+
+
 Annotations are defined using the `@interface` keyword. Elements are declared as abstract methods.
 
 ```java
@@ -1110,6 +1297,17 @@ public @interface Loggable {
 ```
 
 ### Meta-Annotations
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-handwritten.svg" alt="Handwritten: Meta-Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-diagram.svg" alt="Diagram: Meta-Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-sticky.svg" alt="Sticky Note: Meta-Annotations" width="30%">
+</a>
+
 
 Meta-annotations annotate other annotations. The key meta-annotations in `java.lang.annotation`:
 
@@ -1196,6 +1394,17 @@ public class DailyReportJob {
 ```
 
 ### Complete Custom Annotation Example
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-handwritten.svg" alt="Handwritten: Complete Custom Annotation Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-diagram.svg" alt="Diagram: Complete Custom Annotation Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/complete-custom-annotation-example-sticky.svg" alt="Sticky Note: Complete Custom Annotation Example" width="30%">
+</a>
+
 
 ```java
 import java.lang.annotation.*;
@@ -1310,6 +1519,17 @@ public class User {
 ```
 
 ### Annotation Processing at Compile Time (APT)
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-handwritten.svg" alt="Handwritten: Annotation Processing at Compile Time (APT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-diagram.svg" alt="Diagram: Annotation Processing at Compile Time (APT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/annotation-processing-at-compile-time-apt-sticky.svg" alt="Sticky Note: Annotation Processing at Compile Time (APT)" width="30%">
+</a>
+
 
 The **Annotation Processing Tool** (APT), standardized via JSR 269 and available in `javax.annotation.processing`, generates code at compile time. Processors run in the compiler and can produce new source files, detect errors, or emit warnings.
 
@@ -1428,6 +1648,17 @@ The Reflection API, in `java.lang.reflect`, provides the ability to **introspect
 
 ### The Class Object
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-handwritten.svg" alt="Handwritten: The Class Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-diagram.svg" alt="Diagram: The Class Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-class-object-sticky.svg" alt="Sticky Note: The Class Object" width="30%">
+</a>
+
+
 Every type in Java has an instance of `java.lang.Class<T>` that represents its structure at runtime.
 
 ```java
@@ -1471,6 +1702,17 @@ public class ClassObjectDemo {
 ```
 
 ### Inspecting Constructors, Methods, and Fields
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-handwritten.svg" alt="Handwritten: Inspecting Constructors, Methods, and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-diagram.svg" alt="Diagram: Inspecting Constructors, Methods, and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/inspecting-constructors-methods-and-fields-sticky.svg" alt="Sticky Note: Inspecting Constructors, Methods, and Fields" width="30%">
+</a>
+
 
 ```java
 import java.lang.reflect.*;
@@ -1555,6 +1797,17 @@ public class ReflectionInspectionDemo {
 
 ### Invoking Constructors, Methods, and Fields
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-handwritten.svg" alt="Handwritten: Invoking Constructors, Methods, and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-diagram.svg" alt="Diagram: Invoking Constructors, Methods, and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/invoking-constructors-methods-and-fields-sticky.svg" alt="Sticky Note: Invoking Constructors, Methods, and Fields" width="30%">
+</a>
+
+
 ```java
 import java.lang.reflect.*;
 
@@ -1624,6 +1877,17 @@ public class ReflectionInvocationDemo {
 ```
 
 ### Runtime Annotation Access
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-handwritten.svg" alt="Handwritten: Runtime Annotation Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-diagram.svg" alt="Diagram: Runtime Annotation Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/runtime-annotation-access-sticky.svg" alt="Sticky Note: Runtime Annotation Access" width="30%">
+</a>
+
 
 Annotations with `@Retention(RetentionPolicy.RUNTIME)` can be inspected at runtime using the Reflection API.
 
@@ -1703,6 +1967,17 @@ public class RuntimeAnnotationAccessDemo {
 ## Reflection Patterns
 
 ### Dynamic Proxies
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-handwritten.svg" alt="Handwritten: Dynamic Proxies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-diagram.svg" alt="Diagram: Dynamic Proxies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dynamic-proxies-sticky.svg" alt="Sticky Note: Dynamic Proxies" width="30%">
+</a>
+
 
 A **dynamic proxy** implements one or more interfaces at runtime by delegating method calls to an `InvocationHandler`. This is the foundation of AOP in Spring (declarative transactions, caching, security).
 
@@ -1842,6 +2117,17 @@ public class DynamicProxyDemo {
 
 ### Dependency Injection via Reflection
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-handwritten.svg" alt="Handwritten: Dependency Injection via Reflection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-diagram.svg" alt="Diagram: Dependency Injection via Reflection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/dependency-injection-via-reflection-sticky.svg" alt="Sticky Note: Dependency Injection via Reflection" width="30%">
+</a>
+
+
 A minimal DI container that scans for annotated fields and injects dependencies:
 
 ```java
@@ -1956,6 +2242,17 @@ public class SimpleDiContainer {
 ```
 
 ### ORM Mapping via Reflection
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-handwritten.svg" alt="Handwritten: ORM Mapping via Reflection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-diagram.svg" alt="Diagram: ORM Mapping via Reflection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/orm-mapping-via-reflection-sticky.svg" alt="Sticky Note: ORM Mapping via Reflection" width="30%">
+</a>
+
 
 A simple ORM mapper that reads annotations and generates SQL:
 
@@ -2105,6 +2402,17 @@ Spring Boot makes extensive use of annotations for configuration, dependency inj
 
 ### Stereotype Annotations
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-handwritten.svg" alt="Handwritten: Stereotype Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-diagram.svg" alt="Diagram: Stereotype Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/stereotype-annotations-sticky.svg" alt="Sticky Note: Stereotype Annotations" width="30%">
+</a>
+
+
 ```java
 // @Component → generic stereotype for any Spring-managed bean
 @Component
@@ -2163,6 +2471,17 @@ public class UserController {
 
 ### @Autowired
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/autowired-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/autowired-handwritten.svg" alt="Handwritten: @Autowired" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/autowired-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/autowired-diagram.svg" alt="Diagram: @Autowired" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/autowired-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/autowired-sticky.svg" alt="Sticky Note: @Autowired" width="30%">
+</a>
+
+
 ```java
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -2209,6 +2528,17 @@ public class AutowiredDemoService {
 ```
 
 ### Meta-Annotations and Composed Annotations
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-handwritten.svg" alt="Handwritten: Meta-Annotations and Composed Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-diagram.svg" alt="Diagram: Meta-Annotations and Composed Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/meta-annotations-and-composed-annotations-sticky.svg" alt="Sticky Note: Meta-Annotations and Composed Annotations" width="30%">
+</a>
+
 
 Spring heavily uses **meta-annotations**→annotations that are themselves annotated with other annotations. This enables **composed annotations** where a single annotation encapsulates multiple behaviors.
 
@@ -2293,6 +2623,17 @@ public class DarkModeConfig {
 
 ### How Spring Processes Annotations
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-handwritten.svg" alt="Handwritten: How Spring Processes Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-diagram.svg" alt="Diagram: How Spring Processes Annotations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/how-spring-processes-annotations-sticky.svg" alt="Sticky Note: How Spring Processes Annotations" width="30%">
+</a>
+
+
 Spring uses the Reflection API combined with the `ASM` bytecode library to discover and process annotations:
 
 1. **Classpath scanning**: `ClassPathScanningCandidateComponentProvider` scans packages for classes annotated with `@Component` (and its meta-annotations).
@@ -2332,6 +2673,17 @@ Java 9 introduced the **Java Platform Module System** (JPMS), which adds strong 
 
 ### The `opens` Directive
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-handwritten.svg" alt="Handwritten: The `opens` Directive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-diagram.svg" alt="Diagram: The `opens` Directive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/the-opens-directive-sticky.svg" alt="Sticky Note: The `opens` Directive" width="30%">
+</a>
+
+
 A module must explicitly allow runtime access with the `opens` directive:
 
 ```java
@@ -2355,6 +2707,17 @@ module com.example.myapp {
 
 ### Command-Line Workaround: `--add-opens`
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-handwritten.svg" alt="Handwritten: Command-Line Workaround: `--add-opens`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-diagram.svg" alt="Diagram: Command-Line Workaround: `--add-opens`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/command-line-workaround-add-opens-sticky.svg" alt="Sticky Note: Command-Line Workaround: `--add-opens`" width="30%">
+</a>
+
+
 For frameworks that need to reflect on internal JDK types, use JVM flags:
 
 ```java
@@ -2366,6 +2729,17 @@ For frameworks that need to reflect on internal JDK types, use JVM flags:
 ```
 
 ### Reflection Under the Module System
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-handwritten.svg" alt="Handwritten: Reflection Under the Module System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-diagram.svg" alt="Diagram: Reflection Under the Module System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/reflection-under-the-module-system-sticky.svg" alt="Sticky Note: Reflection Under the Module System" width="30%">
+</a>
+
 
 ```java
 import java.lang.reflect.*;
@@ -2411,6 +2785,17 @@ public class ModuleReflectionDemo {
 Due to erasure, generic type information is lost at runtime. **Type tokens** capture that information as `Class<?>` references until you need a reified form. **Super type tokens** go further: they capture concrete parameterized types by exploiting the fact that the generic superclass information is stored in bytecode.
 
 ### Super Type Token Pattern (Gson `TypeToken`)
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-handwritten.svg" alt="Handwritten: Super Type Token Pattern (Gson `TypeToken`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-diagram.svg" alt="Diagram: Super Type Token Pattern (Gson `TypeToken`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/super-type-token-pattern-gson-typetoken-sticky.svg" alt="Sticky Note: Super Type Token Pattern (Gson `TypeToken`)" width="30%">
+</a>
+
 
 ```java
 import java.lang.reflect.*;
@@ -2523,6 +2908,17 @@ public class SuperTypeTokenDemo {
 
 ### Jackson's TypeReference
 
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-handwritten.svg" alt="Handwritten: Jackson's TypeReference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-diagram.svg" alt="Diagram: Jackson's TypeReference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/jackson-s-typereference-sticky.svg" alt="Sticky Note: Jackson's TypeReference" width="30%">
+</a>
+
+
 Jackson provides `com.fasterxml.jackson.core.type.TypeReference` with the same pattern:
 
 ```java
@@ -2587,6 +2983,17 @@ public class JacksonTypeReferenceDemo {
 ```
 
 ### Generic DAO with TypeReference
+
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-handwritten.svg" alt="Handwritten: Generic DAO with TypeReference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-diagram.svg" alt="Diagram: Generic DAO with TypeReference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/p5-generics-reflection/generic-dao-with-typereference-sticky.svg" alt="Sticky Note: Generic DAO with TypeReference" width="30%">
+</a>
+
 
 ```java
 import java.lang.reflect.*;

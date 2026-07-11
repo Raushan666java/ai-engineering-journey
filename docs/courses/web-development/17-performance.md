@@ -363,6 +363,17 @@ const inter = Inter({
 
 ### Performance Budgets
 
+<a href="../../assets/images/diagrams/web-development/17-performance/performance-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/performance-budgets-handwritten.svg" alt="Handwritten: Performance Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/performance-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/performance-budgets-diagram.svg" alt="Diagram: Performance Budgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/performance-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/performance-budgets-sticky.svg" alt="Sticky Note: Performance Budgets" width="30%">
+</a>
+
+
 A performance budget sets thresholds your app must not exceed.
 
 ```typescript
@@ -399,6 +410,17 @@ async function checkBundleSize(): Promise<boolean> {
 
 ### Lighthouse CI Budget
 
+<a href="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-handwritten.svg" alt="Handwritten: Lighthouse CI Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-diagram.svg" alt="Diagram: Lighthouse CI Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/lighthouse-ci-budget-sticky.svg" alt="Sticky Note: Lighthouse CI Budget" width="30%">
+</a>
+
+
 ```json
 {
   "ci": {
@@ -411,6 +433,17 @@ async function checkBundleSize(): Promise<boolean> {
 ```
 
 ### requestAnimationFrame and Frame Rate Optimization
+
+<a href="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-handwritten.svg" alt="Handwritten: requestAnimationFrame and Frame Rate Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-diagram.svg" alt="Diagram: requestAnimationFrame and Frame Rate Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/requestanimationframe-and-frame-rate-optimization-sticky.svg" alt="Sticky Note: requestAnimationFrame and Frame Rate Optimization" width="30%">
+</a>
+
 
 Smooth animations run at 60fps (16.6ms per frame). Avoid long tasks that push frame budget.
 
@@ -444,6 +477,17 @@ function batchUpdate(key: string, update: () => void) {
 ```
 
 ### Resource Hints for Faster Navigation
+
+<a href="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-handwritten.svg" alt="Handwritten: Resource Hints for Faster Navigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-diagram.svg" alt="Diagram: Resource Hints for Faster Navigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/resource-hints-for-faster-navigation-sticky.svg" alt="Sticky Note: Resource Hints for Faster Navigation" width="30%">
+</a>
+
 
 ```html
 <!-- DNS prefetch for cross-origin resources -->
@@ -863,6 +907,17 @@ Web performance optimization spans the entire stack. Core Web Vitals (LCP, FID, 
 
 ### Application Projects
 
+<a href="../../assets/images/diagrams/web-development/17-performance/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+</a>
+
+
 1. Add lazy loading to images in a photo gallery
 2. Implement virtual scrolling for a data table with 10,000+ rows
 3. Set up a service worker for offline-first caching
@@ -875,9 +930,31 @@ Web performance optimization spans the entire stack. Core Web Vitals (LCP, FID, 
 
 ### Challenge Project
 
+<a href="../../assets/images/diagrams/web-development/17-performance/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+</a>
+
+
 Optimize a web application achieving 95+ Lighthouse performance score by implementing: code splitting at route and component level, responsive images with WebP/AVIF, CDN caching with stale-while-revalidate, service worker for offline support, virtual scrolling for large lists, database query optimization with proper indexes, and real user monitoring (RUM) to track Core Web Vitals in production.
 
 ### Practical Takeaways
+
+<a href="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/17-performance/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+</a>
+
 
 1. **Measure before optimizing** — always profile with Lighthouse, React DevTools, or the Chrome Performance tab before adding complexity. Premature optimization is the root of all evil.
 2. **Reduce JavaScript bundle size first** — the single biggest performance win is shipping less JS. Analyze bundles regularly, use dynamic imports, and tree-shake unused exports.

@@ -130,6 +130,17 @@ In the filter chain, the ordering matters. Spring Security processes filters in 
 
 ### Q2: Explain the structure of a JSON Web Token. How are JWT signatures created and verified?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-handwritten.svg" alt="Handwritten: Explain the structure of a JSON Web Token. How are JWT signatures created and verified?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-diagram.svg" alt="Diagram: Explain the structure of a JSON Web Token. How are JWT signatures created and verified?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-structure-of-a-json-web-token-how-are-jwt-signatures-created-and-verified-sticky.svg" alt="Sticky Note: Explain the structure of a JSON Web Token. How are JWT signatures created and verified?" width="30%">
+</a>
+
+
 **Answer:**
 
 A JSON Web Token consists of three Base64url-encoded segments separated by dots: the header, the payload, and the signature. The full structure looks like this:
@@ -425,6 +436,17 @@ Best practices for refresh token storage:
 - Store a device fingerprint or user agent alongside the token to detect anomalous usage.
 
 ### Q4: What are the OAuth2 authorization code flow and the PKCE extension? When would you use each?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-handwritten.svg" alt="Handwritten: What are the OAuth2 authorization code flow and the PKCE extension? When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-diagram.svg" alt="Diagram: What are the OAuth2 authorization code flow and the PKCE extension? When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-are-the-oauth2-authorization-code-flow-and-the-pkce-extension-when-would-you-use-each-sticky.svg" alt="Sticky Note: What are the OAuth2 authorization code flow and the PKCE extension? When would you use each?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -778,6 +800,17 @@ Key points about this configuration:
 
 ### Q6: What is OpenID Connect and how does it extend OAuth2? What is the ID token?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-handwritten.svg" alt="Handwritten: What is OpenID Connect and how does it extend OAuth2? What is the ID token?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-diagram.svg" alt="Diagram: What is OpenID Connect and how does it extend OAuth2? What is the ID token?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-openid-connect-and-how-does-it-extend-oauth2-what-is-the-id-token-sticky.svg" alt="Sticky Note: What is OpenID Connect and how does it extend OAuth2? What is the ID token?" width="30%">
+</a>
+
+
 **Answer:**
 
 OpenID Connect (OIDC) is an identity layer built on top of OAuth2. While OAuth2 is an authorization framework that provides access tokens for accessing resources, OIDC adds authentication capabilities by introducing the ID token → a signed JWT that contains information about the authenticated user.
@@ -1065,6 +1098,17 @@ public MethodSecurityExpressionHandler methodSecurityExpressionHandler() {
 ```
 
 ### Q8: Explain CSRF, CORS, XSS, and SQL injection. How does Spring Security protect against each?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-handwritten.svg" alt="Handwritten: Explain CSRF, CORS, XSS, and SQL injection. How does Spring Security protect against each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-diagram.svg" alt="Diagram: Explain CSRF, CORS, XSS, and SQL injection. How does Spring Security protect against each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-csrf-cors-xss-and-sql-injection-how-does-spring-security-protect-against-each-sticky.svg" alt="Sticky Note: Explain CSRF, CORS, XSS, and SQL injection. How does Spring Security protect against each?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1371,6 +1415,17 @@ public class JpaUserDetailsService implements UserDetailsService {
 ```
 
 ### Q10: What is Keycloak? How do you configure a realm, client, roles, and identity brokering?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-handwritten.svg" alt="Handwritten: What is Keycloak? How do you configure a realm, client, roles, and identity brokering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-diagram.svg" alt="Diagram: What is Keycloak? How do you configure a realm, client, roles, and identity brokering?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-keycloak-how-do-you-configure-a-realm-client-roles-and-identity-brokering-sticky.svg" alt="Sticky Note: What is Keycloak? How do you configure a realm, client, roles, and identity brokering?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1680,6 +1735,17 @@ Summary Table:
 
 ### Q12: Explain the OAuth2 client credentials grant. When and why would you use it?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-handwritten.svg" alt="Handwritten: Explain the OAuth2 client credentials grant. When and why would you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-diagram.svg" alt="Diagram: Explain the OAuth2 client credentials grant. When and why would you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-client-credentials-grant-when-and-why-would-you-use-it-sticky.svg" alt="Sticky Note: Explain the OAuth2 client credentials grant. When and why would you use it?" width="30%">
+</a>
+
+
 **Answer:**
 
 The OAuth2 client credentials grant is a server-to-server authentication flow where the client application authenticates itself (not a user) to obtain an access token. It involves no user interaction, no redirects, and no browser involvement.
@@ -1950,6 +2016,17 @@ Key differences from the servlet stack:
 
 ### Q14: Implement a secure password hashing strategy using bcrypt and Argon2. Explain salt and pepper.
 
+<a href="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-handwritten.svg" alt="Handwritten: Implement a secure password hashing strategy using bcrypt and Argon2. Explain salt and pepper." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-diagram.svg" alt="Diagram: Implement a secure password hashing strategy using bcrypt and Argon2. Explain salt and pepper." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/implement-a-secure-password-hashing-strategy-using-bcrypt-and-argon2-explain-salt-and-pepper-sticky.svg" alt="Sticky Note: Implement a secure password hashing strategy using bcrypt and Argon2. Explain salt and pepper." width="30%">
+</a>
+
+
 **Answer:**
 
 Password hashing transforms a plaintext password into an irreversible, fixed-length string. The two primary modern algorithms are bcrypt and Argon2id. Both incorporate salts → random values unique per password → to prevent rainbow table attacks.
@@ -2131,6 +2208,17 @@ public class PasswordConfig {
 
 ### Q15: Explain the OAuth2 Device Authorization Grant. When would you use it?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-handwritten.svg" alt="Handwritten: Explain the OAuth2 Device Authorization Grant. When would you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-diagram.svg" alt="Diagram: Explain the OAuth2 Device Authorization Grant. When would you use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-device-authorization-grant-when-would-you-use-it-sticky.svg" alt="Sticky Note: Explain the OAuth2 Device Authorization Grant. When would you use it?" width="30%">
+</a>
+
+
 **Answer:**
 
 The OAuth2 Device Authorization Grant (Device Flow) is designed for devices that have no browser or limited input capabilities → smart TVs, game consoles, IoT devices, CLI tools.
@@ -2232,6 +2320,17 @@ public class DeviceAuthorizationService {
 ```
 
 ### Q16: Explain SSL/TLS, HTTPS, and certificate pinning. How does Spring Boot configure HTTPS?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-handwritten.svg" alt="Handwritten: Explain SSL/TLS, HTTPS, and certificate pinning. How does Spring Boot configure HTTPS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-diagram.svg" alt="Diagram: Explain SSL/TLS, HTTPS, and certificate pinning. How does Spring Boot configure HTTPS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-ssl-tls-https-and-certificate-pinning-how-does-spring-boot-configure-https-sticky.svg" alt="Sticky Note: Explain SSL/TLS, HTTPS, and certificate pinning. How does Spring Boot configure HTTPS?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2376,6 +2475,17 @@ http.headers(headers -> headers
 
 ### Q17: How do you implement a custom AuthenticationProvider in Spring Security?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-handwritten.svg" alt="Handwritten: How do you implement a custom AuthenticationProvider in Spring Security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-diagram.svg" alt="Diagram: How do you implement a custom AuthenticationProvider in Spring Security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-custom-authenticationprovider-in-spring-security-sticky.svg" alt="Sticky Note: How do you implement a custom AuthenticationProvider in Spring Security?" width="30%">
+</a>
+
+
 **Answer:**
 
 A custom `AuthenticationProvider` allows you to implement non-standard authentication mechanisms → OTP codes, hardware tokens, biometrics, MFA, or integration with legacy systems.
@@ -2518,6 +2628,17 @@ public class TotpService {
 
 ### Q18: Explain the OAuth2 authorization code flow with PKCE in detail. Show the complete implementation.
 
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-handwritten.svg" alt="Handwritten: Explain the OAuth2 authorization code flow with PKCE in detail. Show the complete implementation." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-diagram.svg" alt="Diagram: Explain the OAuth2 authorization code flow with PKCE in detail. Show the complete implementation." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-the-oauth2-authorization-code-flow-with-pkce-in-detail-show-the-complete-implementation-sticky.svg" alt="Sticky Note: Explain the OAuth2 authorization code flow with PKCE in detail. Show the complete implementation." width="30%">
+</a>
+
+
 **Answer:**
 
 The authorization code flow with PKCE (Proof Key for Code Exchange) is the recommended OAuth2 flow for public clients → single-page applications, mobile apps, and native desktop apps. PKCE prevents the authorization code interception attack by introducing a cryptographic challenge-verifier pair.
@@ -2627,6 +2748,17 @@ public record TokenResponse(@JsonProperty("access_token") String accessToken,
 
 ### Q19: How does Spring Security handle CORS preflight requests? What is the OPTIONS request handling?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-handwritten.svg" alt="Handwritten: How does Spring Security handle CORS preflight requests? What is the OPTIONS request handling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-diagram.svg" alt="Diagram: How does Spring Security handle CORS preflight requests? What is the OPTIONS request handling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-does-spring-security-handle-cors-preflight-requests-what-is-the-options-request-handling-sticky.svg" alt="Sticky Note: How does Spring Security handle CORS preflight requests? What is the OPTIONS request handling?" width="30%">
+</a>
+
+
 **Answer:**
 
 CORS preflight requests are `OPTIONS` requests sent by browsers before certain cross-origin requests. They check if the actual request is safe to send. Preflight triggers when:
@@ -2700,6 +2832,17 @@ Common CORS troubleshooting checklist:
 - For Spring Cloud Gateway or API gateways, ensure the gateway does not strip CORS headers.
 
 ### Q20: Explain secrets management in Spring Boot applications. How do you integrate with HashiCorp Vault?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-handwritten.svg" alt="Handwritten: Explain secrets management in Spring Boot applications. How do you integrate with HashiCorp Vault?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-diagram.svg" alt="Diagram: Explain secrets management in Spring Boot applications. How do you integrate with HashiCorp Vault?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/explain-secrets-management-in-spring-boot-applications-how-do-you-integrate-with-hashicorp-vault-sticky.svg" alt="Sticky Note: Explain secrets management in Spring Boot applications. How do you integrate with HashiCorp Vault?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2901,6 +3044,17 @@ spring:
 - Use Kubernetes external secrets operator to sync secrets from vault to pods.
 
 ### Q21: How do you implement encryption at rest and in transit in a Spring Boot application?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-handwritten.svg" alt="Handwritten: How do you implement encryption at rest and in transit in a Spring Boot application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-diagram.svg" alt="Diagram: How do you implement encryption at rest and in transit in a Spring Boot application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-encryption-at-rest-and-in-transit-in-a-spring-boot-application-sticky.svg" alt="Sticky Note: How do you implement encryption at rest and in transit in a Spring Boot application?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -3344,6 +3498,17 @@ Collection<? extends GrantedAuthority> roles = auth.getAuthorities();
 
 ### Q24: How do you implement a rate limiter in Spring Boot? Show both in-memory and distributed approaches.
 
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-handwritten.svg" alt="Handwritten: How do you implement a rate limiter in Spring Boot? Show both in-memory and distributed approaches." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-diagram.svg" alt="Diagram: How do you implement a rate limiter in Spring Boot? Show both in-memory and distributed approaches." width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/how-do-you-implement-a-rate-limiter-in-spring-boot-show-both-in-memory-and-distributed-approaches-sticky.svg" alt="Sticky Note: How do you implement a rate limiter in Spring Boot? Show both in-memory and distributed approaches." width="30%">
+</a>
+
+
 **Answer:**
 
 Rate limiting protects your APIs from abuse, brute-force attacks, and excessive usage. Two common approaches are in-memory (single instance) and distributed (Redis-backed).
@@ -3544,6 +3709,17 @@ public class RateLimitedController {
 
 ### Q25: What is the difference between authenticationEntryPoint and accessDeniedHandler in Spring Security?
 
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-handwritten.svg" alt="Handwritten: What is the difference between authenticationEntryPoint and accessDeniedHandler in Spring Security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-diagram.svg" alt="Diagram: What is the difference between authenticationEntryPoint and accessDeniedHandler in Spring Security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-difference-between-authenticationentrypoint-and-accessdeniedhandler-in-spring-security-sticky.svg" alt="Sticky Note: What is the difference between authenticationEntryPoint and accessDeniedHandler in Spring Security?" width="30%">
+</a>
+
+
 **Answer:**
 
 `AuthenticationEntryPoint` and `AccessDeniedHandler` handle two different security failure scenarios:
@@ -3644,6 +3820,17 @@ public class MethodSecurityConfig {
 ```
 
 ### Q26: What is the Spring Boot actuator security? How do you securely expose actuator endpoints?
+
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-handwritten.svg" alt="Handwritten: What is the Spring Boot actuator security? How do you securely expose actuator endpoints?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-diagram.svg" alt="Diagram: What is the Spring Boot actuator security? How do you securely expose actuator endpoints?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/61-interview-security/what-is-the-spring-boot-actuator-security-how-do-you-securely-expose-actuator-endpoints-sticky.svg" alt="Sticky Note: What is the Spring Boot actuator security? How do you securely expose actuator endpoints?" width="30%">
+</a>
+
 
 **Answer:**
 

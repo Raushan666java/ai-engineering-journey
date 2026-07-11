@@ -18,6 +18,17 @@
 
 ### The Nature of Software Evolution
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-handwritten.svg" alt="Handwritten: The Nature of Software Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-diagram.svg" alt="Diagram: The Nature of Software Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/the-nature-of-software-evolution-sticky.svg" alt="Sticky Note: The Nature of Software Evolution" width="30%">
+</a>
+
+
 Software evolution is the continuous process of adapting a software system after its initial deployment. Unlike hardware, software does not wear out in a physical sense, but it must evolve to remain useful. Changes in the operational environment, the emergence of new user needs, and the correction of latent defects all drive software evolution.
 
 Studies show that maintenance costs typically represent **60-80% of total lifecycle costs**. This economic reality makes software evolution a central concern of software engineering.
@@ -45,6 +56,17 @@ graph TD
 
 ### Categories of Maintenance
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-handwritten.svg" alt="Handwritten: Categories of Maintenance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-diagram.svg" alt="Diagram: Categories of Maintenance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/categories-of-maintenance-sticky.svg" alt="Sticky Note: Categories of Maintenance" width="30%">
+</a>
+
+
 | Category | Description | Example | Proportion |
 |----------|-------------|---------|------------|
 | **Corrective** | Fixing defects discovered after deployment | Logic errors, implementation deviations, security vulnerabilities | ~17% |
@@ -53,6 +75,17 @@ graph TD
 | **Preventive** | Making changes to prevent future problems | Refactoring, updating dependencies, adding defensive checks, improving documentation | ~10% |
 
 ### Lehman's Laws of Software Evolution
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-handwritten.svg" alt="Handwritten: Lehman's Laws of Software Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-diagram.svg" alt="Diagram: Lehman's Laws of Software Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/lehman-s-laws-of-software-evolution-sticky.svg" alt="Sticky Note: Lehman's Laws of Software Evolution" width="30%">
+</a>
+
 
 Lehman formulated eight laws based on empirical studies of large systems over decades:
 
@@ -68,6 +101,17 @@ Lehman formulated eight laws based on empirical studies of large systems over de
 | **VIII. Feedback System** | Evolution processes constitute multi-loop, multi-level feedback systems | Changes at one level affect all others | A database schema change cascades through API, UI, and reporting |
 
 ### Software Entropy
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-handwritten.svg" alt="Handwritten: Software Entropy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-diagram.svg" alt="Diagram: Software Entropy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/software-entropy-sticky.svg" alt="Sticky Note: Software Entropy" width="30%">
+</a>
+
 
 Software entropy is a measure of the disorder or degradation in a software system. Just as the second law of thermodynamics states that entropy in an isolated system tends to increase, software entropy inevitably increases unless deliberate effort (refactoring) is applied.
 
@@ -113,6 +157,17 @@ class EntropyCalculator {
 
 ### Reverse Engineering vs Reengineering vs Forward Engineering
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-handwritten.svg" alt="Handwritten: Reverse Engineering vs Reengineering vs Forward Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-diagram.svg" alt="Diagram: Reverse Engineering vs Reengineering vs Forward Engineering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/reverse-engineering-vs-reengineering-vs-forward-engineering-sticky.svg" alt="Sticky Note: Reverse Engineering vs Reengineering vs Forward Engineering" width="30%">
+</a>
+
+
 ```mermaid
 graph LR
     classDef forward fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
@@ -154,6 +209,17 @@ graph LR
 
 ### Technical Debt Quadrant
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-handwritten.svg" alt="Handwritten: Technical Debt Quadrant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-diagram.svg" alt="Diagram: Technical Debt Quadrant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quadrant-sticky.svg" alt="Sticky Note: Technical Debt Quadrant" width="30%">
+</a>
+
+
 The technical debt quadrant, proposed by Fowler, classifies debt by intent and prudence:
 
 ```mermaid
@@ -184,6 +250,17 @@ graph TD
 | Prudent & Inadvertent | Discovered better approach after implementing | Improve design on second iteration | Refactor when encountered naturally |
 
 ### Technical Debt Quantification
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-handwritten.svg" alt="Handwritten: Technical Debt Quantification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-diagram.svg" alt="Diagram: Technical Debt Quantification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/technical-debt-quantification-sticky.svg" alt="Sticky Note: Technical Debt Quantification" width="30%">
+</a>
+
 
 Technical debt can be quantified in terms of **principal** (effort to fix the problem now) and **interest** (additional effort incurred over time by not fixing it).
 
@@ -310,6 +387,17 @@ class TechnicalDebtCalculator {
 ```
 
 ### Refactoring Catalog
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-handwritten.svg" alt="Handwritten: Refactoring Catalog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-diagram.svg" alt="Diagram: Refactoring Catalog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/refactoring-catalog-sticky.svg" alt="Sticky Note: Refactoring Catalog" width="30%">
+</a>
+
 
 Refactoring is the process of restructuring existing code without changing its external behaviour.
 
@@ -470,6 +558,17 @@ class CompensationInfo {
 
 ### Legacy Systems
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-handwritten.svg" alt="Handwritten: Legacy Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-diagram.svg" alt="Diagram: Legacy Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/legacy-systems-sticky.svg" alt="Sticky Note: Legacy Systems" width="30%">
+</a>
+
+
 **Characteristics of legacy systems:**
 - Outdated technology platforms (no longer supported by vendors)
 - Poor or outdated documentation (or none at all)
@@ -512,6 +611,17 @@ graph TD
 ```
 
 ### Impact Analysis
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+</a>
+
 
 Impact analysis identifies the consequences of a proposed change. It answers: what will be affected, what is the ripple effect, and what is the estimated effort?
 
@@ -564,6 +674,17 @@ class ImpactAnalyzer {
 
 ### Modernization Strategies
 
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-handwritten.svg" alt="Handwritten: Modernization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-diagram.svg" alt="Diagram: Modernization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/modernization-strategies-sticky.svg" alt="Sticky Note: Modernization Strategies" width="30%">
+</a>
+
+
 | Strategy | Risk | Effort | Time | Description |
 |----------|------|--------|------|-------------|
 | **Strangler Fig** | Low | High | Long | Incrementally replace legacy components with new services, routing traffic between old and new |
@@ -573,6 +694,17 @@ class ImpactAnalyzer {
 | **API Encapsulation** | Low | Low | Short | Wrap legacy system behind modern REST/gRPC APIs |
 
 ### Version Migration and Semantic Versioning
+
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-handwritten.svg" alt="Handwritten: Version Migration and Semantic Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-diagram.svg" alt="Diagram: Version Migration and Semantic Versioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/07-software-evolution/version-migration-and-semantic-versioning-sticky.svg" alt="Sticky Note: Version Migration and Semantic Versioning" width="30%">
+</a>
+
 
 Semantic versioning (SemVer) provides a standardized way to communicate the impact of changes:
 

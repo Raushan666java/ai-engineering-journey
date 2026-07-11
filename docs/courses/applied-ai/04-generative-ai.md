@@ -34,6 +34,17 @@ Generative AI has moved from research curiosity to production infrastructure in 
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Overview of Generative Models | GANs, VAEs, and diffusion models use different strategies to learn data distributions | Choose diffusion for quality, VAE for interpolation, GAN for speed |
@@ -47,6 +58,17 @@ Generative AI has moved from research curiosity to production infrastructure in 
 | Responsible GenAI | Watermarking, safety filters, and bias auditing are production essentials | Log every generation request with prompt, user, and timestamp for audit trails |
 
 ### Chapter Roadmap
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -72,6 +94,17 @@ Generative models learn the probability distribution $$P(X)$$ of training data a
 
 ### The Generative Family Tree
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" alt="Handwritten: The Generative Family Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" alt="Diagram: The Generative Family Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" alt="Sticky Note: The Generative Family Tree" width="30%">
+</a>
+
+
 | Model | Core Idea | Training Signal | Sampling Speed | Output Quality |
 |-------|-----------|----------------|----------------|----------------|
 | **GAN** | Adversarial game between generator and discriminator | Discriminator loss | Fast (1 forward pass) | Sharp, high-freq detail |
@@ -80,6 +113,17 @@ Generative models learn the probability distribution $$P(X)$$ of training data a
 | **Autoregressive (GPT)** | Next-token prediction | Cross-entropy | Sequential per token | Excellent text, variable image |
 
 ### Mathematical Intuition
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
+</a>
+
 
 ```
 Maximum Likelihood:  argmax_θ  E_{x~P_data}[log P_θ(x)]
@@ -101,6 +145,17 @@ Autoregressive:     max  Σ log P(x_i | x_<i)
 
 ### Architecture
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
+
 A GAN consists of two neural networks competing in a zero-sum game:
 - **Generator (G):** Takes random noise $$z$$ and produces a fake sample $$G(z)$$
 - **Discriminator (D):** Takes a sample $$x$$ and outputs probability $$D(x)$$ that it is real
@@ -115,6 +170,17 @@ Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
 
 ### How GANs Work (Step by Step)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" alt="Handwritten: How GANs Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" alt="Diagram: How GANs Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" alt="Sticky Note: How GANs Work (Step by Step)" width="30%">
+</a>
+
+
 1. **Sample noise:** Draw a random latent vector $$z$$ from a simple distribution (e.g., uniform or normal)
 2. **Generate fake:** Pass $$z$$ through the Generator to produce a fake image $$G(z)$$
 3. **Sample real:** Draw a batch of real images from the training dataset
@@ -127,6 +193,17 @@ Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
 10. **Repeat:** Alternate steps 2-9 until equilibrium (D cannot distinguish)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
@@ -161,6 +238,17 @@ FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** z_dim=2, image=4 pixels, batch_size=2, epochs=1
 
 | Step | Operation | Input | Output | Loss | Layer Activations (G) |
@@ -185,6 +273,17 @@ FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
 After many epochs: D(G(z)) ≈ 0.5 (D cannot tell real from fake → Nash equilibrium)
 
 ### Python Implementation (PyTorch)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
+</a>
+
 
 ```python
 import torch
@@ -297,6 +396,17 @@ for epoch in range(EPOCHS):
 
 ### Generating Samples
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" alt="Handwritten: Generating Samples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" alt="Diagram: Generating Samples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" alt="Sticky Note: Generating Samples" width="30%">
+</a>
+
+
 ```python
 def generate_samples(generator, n_samples=16):
     z = torch.randn(n_samples, Z_DIM, device=device)
@@ -317,6 +427,17 @@ plt.savefig("output/gan_samples.png")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Training (per step)** | $$O((G_{params} + D_{params}) \cdot B)$$ | $$O((G_{params} + D_{params}) \cdot 2)$$ | Both networks forward+backward every step |
@@ -326,6 +447,17 @@ plt.savefig("output/gan_samples.png")
 **Why?** GAN training requires alternating updates of two networks, doubling compute per step. The generator alone is small compared to diffusion models, making inference fast. However, the adversarial training often needs 10-100K iterations to converge.
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -337,6 +469,17 @@ plt.savefig("output/gan_samples.png")
 | State-of-the-art in super-resolution | Training requires careful balancing of G/D |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Mode Collapse:** The generator finds a few "tricks" that fool the discriminator and produces nearly identical outputs regardless of input noise. Mitigation: minibatch discrimination, unrolled GANs, or spectral normalization.
 
@@ -360,6 +503,17 @@ plt.savefig("output/gan_samples.png")
 
 ### Architecture
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
+
 VAEs learn a probabilistic latent representation using an encoder-decoder structure with variational inference.
 
 ```
@@ -368,6 +522,17 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 ```
 
 ### How VAEs Work (Step by Step)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" alt="Handwritten: How VAEs Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" alt="Diagram: How VAEs Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" alt="Sticky Note: How VAEs Work (Step by Step)" width="30%">
+</a>
+
 
 1. **Encode:** Pass input $$x$$ through encoder to produce latent distribution parameters $$\mu$$ and $$\log\sigma^2$$
 2. **Reparameterize:** Sample $$\epsilon \sim N(0, I)$$ and compute $$z = \mu + \sigma \cdot \epsilon$$ (this trick keeps gradients flowing)
@@ -379,6 +544,17 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 8. **Generate:** To create new samples, skip the encoder — just sample $$z \sim N(0, I)$$ and decode
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
@@ -410,6 +586,17 @@ FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** input_dim=4, latent_dim=2, batch_size=1
 
 | Step | Operation | Input | Output | Values |
@@ -432,6 +619,17 @@ FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
 After training: the latent space becomes smooth and continuous. Interpolating between any two points produces meaningful intermediate samples.
 
 ### Python Implementation (PyTorch)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
+</a>
+
 
 ```python
 import torch
@@ -521,6 +719,17 @@ for epoch in range(EPOCHS):
 
 ### Latent Space Interpolation
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" alt="Handwritten: Latent Space Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" alt="Diagram: Latent Space Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" alt="Sticky Note: Latent Space Interpolation" width="30%">
+</a>
+
+
 ```python
 vae.eval()
 with torch.no_grad():
@@ -550,6 +759,17 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Training (per step)** | $$O((E_{params} + D_{params}) \cdot B)$$ | $$O((E_{params} + D_{params}) \cdot 2)$$ | Single forward + backward through encoder and decoder |
@@ -559,6 +779,17 @@ plt.savefig("output/vae_interpolation.png")
 **Why?** VAE training is a single objective (ELBO) unlike GAN's two-player game, making it more stable. Inference is extremely fast — just a decoder pass. The latent dimension is user-controlled, typically 20-200.
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -570,6 +801,17 @@ plt.savefig("output/vae_interpolation.png")
 | Easy to train (no adversarial dynamics) | Struggles with complex, high-dimensional data |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Posterior Collapse:** The KL term dominates and the latent variable becomes independent of the input (z carries no information). Mitigation: KL annealing (gradually increase β from 0 to 1), use free bits.
 
@@ -591,6 +833,17 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Architecture
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
+
 Diffusion models define a **forward process** that gradually adds Gaussian noise to data over $$T$$ timesteps, and learn a **reverse process** that denoises from pure noise back to data.
 
 ```
@@ -603,6 +856,17 @@ Reverse (p):  x_T → x_{T-1} → ... → x₁ → x₀ (generated sample)
 ```
 
 ### How Diffusion Models Work (Step by Step)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" alt="Handwritten: How Diffusion Models Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" alt="Diagram: How Diffusion Models Work (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" alt="Sticky Note: How Diffusion Models Work (Step by Step)" width="30%">
+</a>
+
 
 #### Forward Process (Fixed, No Learning)
 
@@ -621,6 +885,17 @@ Reverse (p):  x_T → x_{T-1} → ... → x₁ → x₀ (generated sample)
 10. **Text conditioning:** For text-to-image, the U-Net also receives text embeddings via cross-attention layers
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION train_diffusion(unet, dataset, T=1000):
@@ -656,6 +931,17 @@ FUNCTION sample_diffusion(unet, prompt_embeds, T=1000, scheduler):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** 4-pixel image, T=4 timesteps (simplified — real models use T=1000), β schedule = [0.1, 0.2, 0.3, 0.4]
 
 **Forward Process — Training:**
@@ -681,6 +967,17 @@ After training, the U-Net learns to predict the noise at each step. Starting fro
 
 ### Python Implementation (Stable Diffusion with Diffusers)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+</a>
+
+
 ```python
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 import torch
@@ -704,6 +1001,17 @@ pipe = pipe.to("cuda")
 
 ### Text-to-Image Generation
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" alt="Handwritten: Text-to-Image Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" alt="Diagram: Text-to-Image Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" alt="Sticky Note: Text-to-Image Generation" width="30%">
+</a>
+
+
 ```python
 prompt = (
     "A serene mountain lake at sunset, "
@@ -725,6 +1033,17 @@ image.save("output/mountain_lake.png")
 ```
 
 ### Image-to-Image (Img2Img)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" alt="Handwritten: Image-to-Image (Img2Img)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" alt="Diagram: Image-to-Image (Img2Img)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" alt="Sticky Note: Image-to-Image (Img2Img)" width="30%">
+</a>
+
 
 ```python
 from diffusers import StableDiffusionImg2ImgPipeline
@@ -748,6 +1067,17 @@ result.save("output/sketch_to_photo.png")
 ```
 
 ### Inpainting
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" alt="Handwritten: Inpainting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" alt="Diagram: Inpainting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" alt="Sticky Note: Inpainting" width="30%">
+</a>
+
 
 ```python
 from diffusers import StableDiffusionInpaintPipeline
@@ -774,6 +1104,17 @@ result.save("output/inpainted.png")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Training (per step)** | $$O(UNet_{params} \cdot B)$$ | $$O(UNet_{params} \cdot 2)$$ | Single U-Net forward+backward, but trained on random timesteps |
@@ -783,6 +1124,17 @@ result.save("output/inpainted.png")
 **Why training is relatively cheap per step:** The U-Net is trained on random timesteps — you don't run all T steps per training step. **Why inference is expensive:** You must run T sequential denoising steps. Modern schedulers (DDIM, DPM++) reduce T from 1000 to 25-50 with minimal quality loss.
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -794,6 +1146,17 @@ result.save("output/inpainted.png")
 | Easy to control (guidance scale, negative prompts) | Complex scheduler and sampling ecosystem |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Hallucination:** The model generates objects or details not implied by the prompt, especially with high guidance scales. Mitigation: reduce guidance_scale (5-7.5 range), use more inference steps.
 
@@ -816,6 +1179,17 @@ result.save("output/inpainted.png")
 > **Real-World Analogy:** Imagine an extremely well-read author who has memorized billions of sentences. When you give them a starting phrase ("Once upon a time..."), they predict the next most natural word, one at a time. Each new word becomes part of the context for predicting the next. Unlike our GAN/VAE artist who paints the whole image at once, this author writes sequentially — and the result can be novels, code, poems, or even musical scores depending on the training data.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 Transformers for generation use the decoder-only architecture: a stack of self-attention + feed-forward layers that predict the next token given all previous tokens.
 
@@ -844,6 +1218,17 @@ Input:  "The cat sat on the"
 
 ### How Autoregressive Generation Works (Step by Step)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" alt="Handwritten: How Autoregressive Generation Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" alt="Diagram: How Autoregressive Generation Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" alt="Sticky Note: How Autoregressive Generation Works (Step by Step)" width="30%">
+</a>
+
+
 1. **Tokenize:** Convert input text to token IDs using a vocabulary (e.g., GPT-2 has ~50K tokens)
 2. **Embed:** Map each token ID to a dense vector + add positional encoding
 3. **Self-attention:** Each token attends to itself and all previous tokens (masked attention prevents "cheating")
@@ -855,6 +1240,17 @@ Input:  "The cat sat on the"
 9. **Detokenize:** Convert the output token sequence back to text
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION generate(model, prompt, max_tokens, temperature):
@@ -889,6 +1285,17 @@ FUNCTION generate(model, prompt, max_tokens, temperature):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** Tiny transformer, vocab={the(0), cat(1), sat(2), on(3), mat(4), .(5)}, prompt="The cat"
 
 | Step | Input Tokens | Attn Weights (last token) | Logits (vocab) | Sampled | Output |
@@ -902,6 +1309,17 @@ FUNCTION generate(model, prompt, max_tokens, temperature):
 The attention weights show how the model learns that "cat" is the subject, "sat" is the action, "on" introduces the location, etc.
 
 ### Python Implementation (HuggingFace Transformers)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" alt="Handwritten: Python Implementation (HuggingFace Transformers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" alt="Diagram: Python Implementation (HuggingFace Transformers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" alt="Sticky Note: Python Implementation (HuggingFace Transformers)" width="30%">
+</a>
+
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -930,6 +1348,17 @@ print(generated_text)
 
 ### KV-Cache Optimization (Production Critical)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" alt="Handwritten: KV-Cache Optimization (Production Critical)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" alt="Diagram: KV-Cache Optimization (Production Critical)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" alt="Sticky Note: KV-Cache Optimization (Production Critical)" width="30%">
+</a>
+
+
 ```python
 # Without KV cache: re-compute all keys/values for every new token
 # With KV cache: cache keys and values from previous steps
@@ -955,6 +1384,17 @@ class CausalLMWithCache:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Training (per token)** | $$O(L^2 \cdot d)$$ per layer | $$O(L^2 + L \cdot d)$$ | Self-attention is quadratic in sequence length L |
@@ -966,6 +1406,17 @@ class CausalLMWithCache:
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Single architecture for text, code, audio | Quadratic attention cost limits context length |
@@ -976,6 +1427,17 @@ class CausalLMWithCache:
 | KV-cache and speculative decoding optimizations | No built-in source attribution |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Repetition:** The model gets stuck in repetitive loops ("I like apples. I like apples. I like apples..."). Mitigation: repetition_penalty (1.1-1.2), top-k sampling with k=40.
 
@@ -997,6 +1459,17 @@ class CausalLMWithCache:
 
 ### Prompt Structure (SCEQ Framework)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" alt="Handwritten: Prompt Structure (SCEQ Framework)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" alt="Diagram: Prompt Structure (SCEQ Framework)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" alt="Sticky Note: Prompt Structure (SCEQ Framework)" width="30%">
+</a>
+
+
 The standard prompt formula for text-to-image:
 
 ```
@@ -1013,6 +1486,17 @@ Negative: "blurry, low quality, distorted, ugly, extra limbs, bad anatomy"
 
 ### How Prompt Engineering Works (Step by Step)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" alt="Handwritten: How Prompt Engineering Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" alt="Diagram: How Prompt Engineering Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" alt="Sticky Note: How Prompt Engineering Works (Step by Step)" width="30%">
+</a>
+
+
 1. **Define subject:** Start with the main object, person, or scene
 2. **Add context:** What is the subject doing? What's the situation?
 3. **Set environment:** Where does the scene take place? What's the lighting?
@@ -1023,6 +1507,17 @@ Negative: "blurry, low quality, distorted, ugly, extra limbs, bad anatomy"
 8. **Test and iterate:** Generate, evaluate, refine — repeat
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION build_prompt(subject, context, environment, style, quality):
@@ -1047,6 +1542,17 @@ FUNCTION generate_with_prompt(pipe, positive, negative, steps, guidance):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 | Attempt | Prompt | Result | Issue | Fix |
 |---------|--------|--------|-------|-----|
 | 1 | "a cat" | Blurry shape, no detail | Too vague, no context | Add specifics |
@@ -1056,6 +1562,17 @@ FUNCTION generate_with_prompt(pipe, positive, negative, steps, guidance):
 | 5 | "gray tabby cat sitting on a wooden chair, cozy living room, (oil painting:1.2), (impasto:1.1), sharp focus" + negative | Oil painting style achieved | Excellent | Use this formula |
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def generate_with_prompt(
@@ -1113,6 +1630,17 @@ image, pos, neg = generate_with_prompt(
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Time Complexity | Space Complexity | Reason |
 |--------|----------------|------------------|--------|
 | **Prompt parsing** | $$O(L)$$ | $$O(L)$$ | Linear in prompt length |
@@ -1123,6 +1651,17 @@ image, pos, neg = generate_with_prompt(
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | No training required — works with any model | Results are inconsistent across seeds |
@@ -1132,6 +1671,17 @@ image, pos, neg = generate_with_prompt(
 | Weighted prompts focus generation | Cannot teach the model new concepts |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Token Limit Exceeded:** Stable Diffusion clips prompts beyond 77 tokens. Mitigation: use the most important words first, compress phrases.
 
@@ -1153,6 +1703,17 @@ image, pos, neg = generate_with_prompt(
 
 ### Overview
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 | Method | What It Does | Storage Overhead | Training Time | Data Required |
 |--------|-------------|------------------|---------------|---------------|
 | **Full Fine-Tune** | Updates all model weights | Full model (2-7GB per variant) | Days | 10K+ images |
@@ -1162,6 +1723,17 @@ image, pos, neg = generate_with_prompt(
 | **Adapter** | Adds small bottleneck layers | 5-20MB per adapter | Hours | 100-1000 images |
 
 ### How LoRA Works (Step by Step)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" alt="Handwritten: How LoRA Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" alt="Diagram: How LoRA Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" alt="Sticky Note: How LoRA Works (Step by Step)" width="30%">
+</a>
+
 
 1. **Freeze base model:** All original weights are frozen — no gradients computed
 2. **Inject adapters:** For each weight matrix $$W \in \mathbb{R}^{d \times k}$$, add a low-rank decomposition $$W' = W + BA$$ where $$B \in \mathbb{R}^{d \times r}$$, $$A \in \mathbb{R}^{r \times k}$$, and $$r \ll \min(d, k)$$
@@ -1177,6 +1749,17 @@ With LoRA:        y = Wx + BAx
 ```
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
@@ -1213,6 +1796,17 @@ FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** Fine-tuning Stable Diffusion to generate in "Van Gogh style", rank=4, 20 training images
 
 | Step | Operation | Weight Update | Memory | Model State |
@@ -1231,6 +1825,17 @@ FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
 **Why LoRA saves so much memory:** Instead of updating 1.7 billion parameters, you update only ~100K parameters. One adapter file is ~5MB instead of ~7GB.
 
 ### Python Implementation (LoRA with Diffusers)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (LoRA with Diffusers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (LoRA with Diffusers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (LoRA with Diffusers)" width="30%">
+</a>
+
 
 ```python
 from diffusers import StableDiffusionPipeline, UNet2DConditionModel
@@ -1285,6 +1890,17 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Method | Trainable Params | Storage | Training Time | Inference Cost |
 |--------|-----------------|---------|---------------|----------------|
 | Full fine-tune | 1.7B (100%) | 7GB | Days | Same as base |
@@ -1295,6 +1911,17 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Drastically reduces storage (GB → MB per variant) | Low rank may not capture complex concepts |
@@ -1304,6 +1931,17 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 | Works across modalities (image, text, audio) | LoRA on all layers increases adapter size |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Overfitting:** With too few images (3-5), the model memorizes rather than learns the concept. Mitigation: use regularization (prior preservation loss in DreamBooth), data augmentation.
 
@@ -1324,6 +1962,17 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 > **Real-World Analogy:** Imagine a brilliant but extremely forgetful professor. He knows a vast amount of general knowledge, but he can't remember specific details from his own recent lectures or private documents. If you ask him a question, he may confidently make up an incorrect answer (hallucination). The solution: give him an open-book exam. Whenever you ask a question, he first looks up relevant passages in his personal notebook (retrieval), reads them, and then answers based on what he found. Now his answers are always grounded in facts. This is RAG.
 
 ### Architecture
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+</a>
+
 
 RAG combines a retrieval system (search over a knowledge base) with a generative model (LLM) to produce grounded, up-to-date answers.
 
@@ -1357,6 +2006,17 @@ User Query
 
 ### How RAG Works (Step by Step)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" alt="Handwritten: How RAG Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" alt="Diagram: How RAG Works (Step by Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" alt="Sticky Note: How RAG Works (Step by Step)" width="30%">
+</a>
+
+
 #### Indexing Phase (One-Time Setup)
 
 1. **Chunk documents:** Split knowledge base documents into chunks (typically 256-1024 tokens each with overlap)
@@ -1373,6 +2033,17 @@ User Query
 9. **Return:** Return the LLM's response, optionally with citations to retrieved documents
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 // ── INDEXING ──
@@ -1413,6 +2084,17 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 
 ### Step-by-Step Dry Run (Trace Table)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+</a>
+
+
 **Setup:** Vector DB with 3 chunks about AI, embedding dim=4 (simplified), query="What is a transformer?"
 
 | Step | Operation | Detail | Result |
@@ -1431,6 +2113,17 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 | 12 | Return | Response + citations [Chunk1, Chunk3] | Final output |
 
 ### Python Implementation (RAG with LangChain + Chroma)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" alt="Handwritten: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" alt="Diagram: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" alt="Sticky Note: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+</a>
+
 
 ```python
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -1491,6 +2184,17 @@ print(f"Sources: {[d.metadata['source'] for d in result['source_documents']]}")
 
 ### Advanced: Hybrid Search (Dense + Sparse)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" alt="Handwritten: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" alt="Diagram: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" alt="Sticky Note: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+</a>
+
+
 ```python
 # BM25 (lexical) + Dense (semantic) hybrid retrieval
 from langchain.retrievers import EnsembleRetriever
@@ -1513,6 +2217,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Indexing** | $$O(N \cdot d \cdot L)$$ per doc | $$O(N \cdot d)$$ for vectors + $$O(N \cdot L)$$ for text | Embed each chunk through transformer |
@@ -1524,6 +2239,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Knowledge is always up-to-date (update index) | Retrieval quality depends on chunking strategy |
@@ -1534,6 +2260,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 | Scalable to millions of documents | Longer context = higher cost + latency |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Lost in the Middle:** When many chunks are retrieved, the LLM focuses on the first and last chunks, ignoring the middle. Mitigation: re-rank retrieved chunks, use fewer (3-5) but higher-quality chunks.
 
@@ -1570,6 +2307,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### When to Choose What
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
+</a>
+
+
 | Your Goal | Best Choice | Why |
 |-----------|-------------|-----|
 | Photorealistic text-to-image | Diffusion | Best quality, best text conditioning |
@@ -1587,6 +2335,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Prompt Engineering Tips
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" alt="Handwritten: Prompt Engineering Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" alt="Diagram: Prompt Engineering Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" alt="Sticky Note: Prompt Engineering Tips" width="30%">
+</a>
+
+
 | Question | Answer |
 |----------|--------|
 | **How do you write effective prompts for text-to-image models?** | Use the SCEQ framework: Subject + Context + Environment + Style + Quality. Always pair with a negative prompt removing common artifacts (blurry, distorted, extra limbs). Use weight syntax `(keyword:1.2)` to emphasize critical elements. Iterate — rarely does the first prompt give the perfect result. |
@@ -1596,6 +2355,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 | **How does temperature affect LLM text generation?** | Temperature controls randomness. Low temperature (0.0-0.3) = deterministic, factual, repetitive. Medium (0.5-0.7) = balanced creativity. High (0.8-1.5) = creative, diverse, sometimes incoherent. For factual tasks, use low temperature. For creative writing, use higher temperature. |
 
 ### Fine-Tuning vs RAG
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" alt="Handwritten: Fine-Tuning vs RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" alt="Diagram: Fine-Tuning vs RAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" alt="Sticky Note: Fine-Tuning vs RAG" width="30%">
+</a>
+
 
 | Aspect | Fine-Tuning | RAG | Hybrid |
 |--------|-------------|-----|--------|
@@ -1614,6 +2384,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Safety and Responsibility
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" alt="Handwritten: Safety and Responsibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" alt="Diagram: Safety and Responsibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" alt="Sticky Note: Safety and Responsibility" width="30%">
+</a>
+
+
 | Question | Answer |
 |----------|--------|
 | **What safety measures do generative models need in production?** | (1) NSFW content filtering on all outputs, (2) Rate limiting to prevent abuse, (3) Usage logging with prompt, user, timestamp for audit trails, (4) Watermarking generated content, (5) Bias auditing across demographic groups, (6) Prompt injection protections for LLMs. |
@@ -1623,6 +2404,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 | **How do you handle copyright concerns with generative AI?** | Use licensed training data, implement style blockers (prevent mimicking living artists), add invisible watermarks, have a takedown process, and follow platform terms of service. The legal landscape is still evolving. |
 
 ### Common Interview Questions
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" alt="Handwritten: Common Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" alt="Diagram: Common Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" alt="Sticky Note: Common Interview Questions" width="30%">
+</a>
+
 
 **Q: Explain the difference between GANs, VAEs, and diffusion models in one sentence each.**
 A: GANs pit two networks against each other for sharp outputs; VAEs learn smooth latent spaces via probabilistic encoding; diffusion models iteratively denoise random noise for state-of-the-art quality.
@@ -1645,6 +2437,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### DALL·E 3 (OpenAI)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" alt="Handwritten: DALL·E 3 (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" alt="Diagram: DALL·E 3 (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" alt="Sticky Note: DALL·E 3 (OpenAI)" width="30%">
+</a>
+
+
 - **Under the hood:** Diffusion model (unconfirmed details — likely a latent diffusion model with transformer text encoder)
 - **Key innovation:** Tight text-image alignment via image captioning during training
 - **API access:** Via OpenAI API (`dalle-3` model), integrates into ChatGPT Plus
@@ -1652,6 +2455,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 - **Use cases:** Marketing materials, concept art, product design, education
 
 ### ChatGPT / GPT-4 (OpenAI)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" alt="Handwritten: ChatGPT / GPT-4 (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" alt="Diagram: ChatGPT / GPT-4 (OpenAI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" alt="Sticky Note: ChatGPT / GPT-4 (OpenAI)" width="30%">
+</a>
+
 
 - **Under the hood:** Decoder-only transformer with RLHF (Reinforcement Learning from Human Feedback)
 - **Key innovation:** Instruction-following, multi-turn conversation, tool use (code interpreter, browsing, DALL·E)
@@ -1661,6 +2475,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### Midjourney
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" alt="Handwritten: Midjourney" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" alt="Diagram: Midjourney" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" alt="Sticky Note: Midjourney" width="30%">
+</a>
+
+
 - **Under the hood:** Modified diffusion model with proprietary architecture
 - **Key innovation:** Aesthetic quality optimization — outputs are consistently more "artistic" than competitors
 - **API access:** Discord-based, standalone web app (alpha)
@@ -1668,6 +2493,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 - **Use cases:** Concept art, game design, architectural visualization, branding
 
 ### GitHub Copilot
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" alt="Handwritten: GitHub Copilot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" alt="Diagram: GitHub Copilot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" alt="Sticky Note: GitHub Copilot" width="30%">
+</a>
+
 
 - **Under the hood:** Codex model (GPT architecture fine-tuned on public code repositories)
 - **Key innovation:** Fill-in-the-middle (FIM) training — predicts code in the middle of a file given surrounding context
@@ -1677,6 +2513,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### Stable Diffusion (Stability AI)
 
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" alt="Handwritten: Stable Diffusion (Stability AI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" alt="Diagram: Stable Diffusion (Stability AI)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" alt="Sticky Note: Stable Diffusion (Stability AI)" width="30%">
+</a>
+
+
 - **Under the hood:** Latent Diffusion Model (LDM) — diffusion in a compressed latent space
 - **Key innovation:** Open-source, runs on consumer GPUs, highly extensible (LoRA, ControlNet, DreamBooth)
 - **API access:** HuggingFace Diffusers, Replicate, Stability AI API, local inference
@@ -1684,6 +2531,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 - **Use cases:** Custom image generation, research, creative tools, game assets
 
 ### Comparison Table
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+</a>
+
 
 | System | Base Architecture | Strengths | Weaknesses | Open Source | API Cost |
 |--------|-------------------|-----------|------------|-------------|----------|
@@ -1698,6 +2556,17 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 ## 4.12 Evaluation of Generative Models
 
 ### 4.12.1 FID Score (Fréchet Inception Distance)
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" alt="Handwritten: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" alt="Diagram: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" alt="Sticky Note: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+</a>
+
 
 FID measures the distance between real and generated image distributions using Inception features. Lower is better.
 
@@ -1719,6 +2588,17 @@ def calculate_fid(real_features: np.ndarray, gen_features: np.ndarray) -> float:
 ```
 
 ### Other Metrics
+
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" alt="Handwritten: Other Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" alt="Diagram: Other Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" alt="Sticky Note: Other Metrics" width="30%">
+</a>
+
 
 | Metric | What It Measures | Range | Used For |
 |--------|-----------------|-------|----------|

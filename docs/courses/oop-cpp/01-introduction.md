@@ -52,6 +52,17 @@ flowchart LR
 
 ### 1.1.1 The Core Idea
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-handwritten.svg" alt="Handwritten: 1.1.1 The Core Idea" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-diagram.svg" alt="Diagram: 1.1.1 The Core Idea" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-1-the-core-idea-sticky.svg" alt="Sticky Note: 1.1.1 The Core Idea" width="30%">
+</a>
+
+
 Object-Oriented Programming (OOP) is a paradigm that models software as a collection of interacting objects rather than as a sequence of procedures. Each object represents a real-world entity→a user, a bank account, a GUI button, a game character→and holds both the data describing that entity and the operations that can be performed on it.
 
 In procedural programming, the unit of organisation is the **function**. Data flows into a function, gets transformed, and flows out. In OOP, the unit of organisation is the **object**→a self-contained unit that owns its data and exposes a controlled set of operations.
@@ -63,6 +74,17 @@ In procedural programming, the unit of organisation is the **function**. Data fl
 | "I need to draw a shape" | Switch on `shape_type` in a big function | Ask `shape.draw()` → each shape knows how |
 
 ### 1.1.2 The Three Dimensions of an Object
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-handwritten.svg" alt="Handwritten: 1.1.2 The Three Dimensions of an Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-diagram.svg" alt="Diagram: 1.1.2 The Three Dimensions of an Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-1-2-the-three-dimensions-of-an-object-sticky.svg" alt="Sticky Note: 1.1.2 The Three Dimensions of an Object" width="30%">
+</a>
+
 
 Every object has three essential dimensions:
 
@@ -147,6 +169,17 @@ A002 balance: 400
 
 ### 1.2.1 Procedural Style → Data and Functions Are Separate
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-handwritten.svg" alt="Handwritten: 1.2.1 Procedural Style → Data and Functions Are Separate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-diagram.svg" alt="Diagram: 1.2.1 Procedural Style → Data and Functions Are Separate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-1-procedural-style-data-and-functions-are-separate-sticky.svg" alt="Sticky Note: 1.2.1 Procedural Style → Data and Functions Are Separate" width="30%">
+</a>
+
+
 In procedural programming, data structures (structs) hold only data, and functions operate on those structures. The programmer must remember which function works with which struct.
 
 ```cpp
@@ -209,9 +242,31 @@ A002: 400
 
 ### 1.2.2 OOP Style → Data and Behaviour Are United
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-handwritten.svg" alt="Handwritten: 1.2.2 OOP Style → Data and Behaviour Are United" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-diagram.svg" alt="Diagram: 1.2.2 OOP Style → Data and Behaviour Are United" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-2-oop-style-data-and-behaviour-are-united-sticky.svg" alt="Sticky Note: 1.2.2 OOP Style → Data and Behaviour Are United" width="30%">
+</a>
+
+
 The same logic in OOP style (as shown in Â§1.1.2) groups data and behaviour inside the class. The object protects its data and exposes only intentional operations.
 
 ### 1.2.3 Deep Comparison Table
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-handwritten.svg" alt="Handwritten: 1.2.3 Deep Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-diagram.svg" alt="Diagram: 1.2.3 Deep Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-3-deep-comparison-table-sticky.svg" alt="Sticky Note: 1.2.3 Deep Comparison Table" width="30%">
+</a>
+
 
 | Dimension | Procedural Programming | Object-Oriented Programming |
 |-----------|----------------------|---------------------------|
@@ -233,6 +288,17 @@ The same logic in OOP style (as shown in Â§1.1.2) groups data and behaviour in
 
 ### 1.2.4 When Each Approach Shines
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-handwritten.svg" alt="Handwritten: 1.2.4 When Each Approach Shines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-diagram.svg" alt="Diagram: 1.2.4 When Each Approach Shines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-2-4-when-each-approach-shines-sticky.svg" alt="Sticky Note: 1.2.4 When Each Approach Shines" width="30%">
+</a>
+
+
 | Scenario | Use Procedural | Use OOP |
 |----------|---------------|---------|
 | Write a 50-line data-crunching script | âœ“ | Decent but overkill |
@@ -250,6 +316,17 @@ The same logic in OOP style (as shown in Â§1.1.2) groups data and behaviour in
 
 ### 1.3.1 The Blueprint Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-handwritten.svg" alt="Handwritten: 1.3.1 The Blueprint Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-diagram.svg" alt="Diagram: 1.3.1 The Blueprint Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-1-the-blueprint-analogy-sticky.svg" alt="Sticky Note: 1.3.1 The Blueprint Analogy" width="30%">
+</a>
+
+
 A **class** is a compile-time concept→it defines the structure (which data members exist) and the behaviour (which methods exist) but occupies no runtime memory by itself. An **object** is a runtime entity→a concrete instance of a class that has its own memory, its own copy of member variables, and a distinct identity.
 
 | Aspect | Class | Object |
@@ -265,6 +342,17 @@ A **class** is a compile-time concept→it defines the structure (which data mem
 | **C++ keyword** | `class` or `struct` | Variable name of the class type |
 
 ### 1.3.2 Why Distinguish?
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-handwritten.svg" alt="Handwritten: 1.3.2 Why Distinguish?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-diagram.svg" alt="Diagram: 1.3.2 Why Distinguish?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-2-why-distinguish-sticky.svg" alt="Sticky Note: 1.3.2 Why Distinguish?" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -306,6 +394,17 @@ Size of Car class (per object): 40 bytes
 
 ### 1.3.3 Class vs Object Comparison Table
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-handwritten.svg" alt="Handwritten: 1.3.3 Class vs Object Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-diagram.svg" alt="Diagram: 1.3.3 Class vs Object Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-3-class-vs-object-comparison-table-sticky.svg" alt="Sticky Note: 1.3.3 Class vs Object Comparison Table" width="30%">
+</a>
+
+
 | Criterion | Class | Object |
 |-----------|-------|--------|
 | Defined at | Compile time (source code) | Runtime (execution) |
@@ -318,6 +417,17 @@ Size of Car class (per object): 40 bytes
 | Access specifiers matter at | Compile-time access checking | Same rules apply to the instance |
 
 ### 1.3.4 Visualising Class vs Object in Memory
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-handwritten.svg" alt="Handwritten: 1.3.4 Visualising Class vs Object in Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-diagram.svg" alt="Diagram: 1.3.4 Visualising Class vs Object in Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-3-4-visualising-class-vs-object-in-memory-sticky.svg" alt="Sticky Note: 1.3.4 Visualising Class vs Object in Memory" width="30%">
+</a>
+
 
 ```
 CLASS (compile time)                OBJECTS (runtime)
@@ -361,6 +471,17 @@ CLASS (compile time)                OBJECTS (runtime)
 
 ### Key Observations from the Timeline
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-handwritten.svg" alt="Handwritten: Key Observations from the Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-diagram.svg" alt="Diagram: Key Observations from the Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-observations-from-the-timeline-sticky.svg" alt="Sticky Note: Key Observations from the Timeline" width="30%">
+</a>
+
+
 1. **OOP started with simulation** → Dahl and Nygaard needed to model real-world entities (ships, queues, cargo). Objects were the natural unit.
 2. **Smalltalk defined the vision** → Alan Kay coined "object-oriented programming" and imagined a world of communicating objects (inspired by biological cells and computers on the ARPANET).
 3. **C++ made OOP practical for systems programming** → Stroustrup's hybrid approach let programmers choose when to use OOP, enabling gradual adoption.
@@ -372,6 +493,17 @@ CLASS (compile time)                OBJECTS (runtime)
 ## 1.5 Real-World Analogies with C++ Code
 
 ### Analogy 1: The Car Blueprint (Class) and Actual Cars (Objects)
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-handwritten.svg" alt="Handwritten: Analogy 1: The Car Blueprint (Class) and Actual Cars (Objects)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-diagram.svg" alt="Diagram: Analogy 1: The Car Blueprint (Class) and Actual Cars (Objects)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-1-the-car-blueprint-class-and-actual-cars-objects-sticky.svg" alt="Sticky Note: Analogy 1: The Car Blueprint (Class) and Actual Cars (Objects)" width="30%">
+</a>
+
 
 | Real World | C++ Equivalent |
 |------------|---------------|
@@ -452,6 +584,17 @@ Blue car fuel: 4 L
 ---
 
 ### Analogy 2: Restaurant Kitchen → Chef, Orders, and Plates
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-handwritten.svg" alt="Handwritten: Analogy 2: Restaurant Kitchen → Chef, Orders, and Plates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-diagram.svg" alt="Diagram: Analogy 2: Restaurant Kitchen → Chef, Orders, and Plates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-2-restaurant-kitchen-chef-orders-and-plates-sticky.svg" alt="Sticky Note: Analogy 2: Restaurant Kitchen → Chef, Orders, and Plates" width="30%">
+</a>
+
 
 This analogy models **object collaboration** (message passing).
 
@@ -548,6 +691,17 @@ Serving "Steak Fries Salad " to table 7
 
 ### Analogy 3: ATM Machine → State, Behaviour, Encapsulation
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-handwritten.svg" alt="Handwritten: Analogy 3: ATM Machine → State, Behaviour, Encapsulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-diagram.svg" alt="Diagram: Analogy 3: ATM Machine → State, Behaviour, Encapsulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/analogy-3-atm-machine-state-behaviour-encapsulation-sticky.svg" alt="Sticky Note: Analogy 3: ATM Machine → State, Behaviour, Encapsulation" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -624,7 +778,29 @@ Remaining cash: $800
 
 ### Detailed Exploration of Each Pillar (Sections 1.6.1â€“1.6.4)
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-handwritten.svg" alt="Handwritten: Detailed Exploration of Each Pillar (Sections 1.6.1â€“1.6.4)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-diagram.svg" alt="Diagram: Detailed Exploration of Each Pillar (Sections 1.6.1â€“1.6.4)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/detailed-exploration-of-each-pillar-sections-1-6-1-1-6-4-sticky.svg" alt="Sticky Note: Detailed Exploration of Each Pillar (Sections 1.6.1â€“1.6.4)" width="30%">
+</a>
+
+
 ### 1.6.1 Encapsulation → The First Pillar
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-handwritten.svg" alt="Handwritten: 1.6.1 Encapsulation → The First Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-diagram.svg" alt="Diagram: 1.6.1 Encapsulation → The First Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-1-encapsulation-the-first-pillar-sticky.svg" alt="Sticky Note: 1.6.1 Encapsulation → The First Pillar" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Encapsulation wraps data and functions into a single unit and restricts direct access to an object's internal state.
 
@@ -721,6 +897,17 @@ Age remains: 30
 ---
 
 ### 1.6.2 Inheritance → The Second Pillar
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-handwritten.svg" alt="Handwritten: 1.6.2 Inheritance → The Second Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-diagram.svg" alt="Diagram: 1.6.2 Inheritance → The Second Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-2-inheritance-the-second-pillar-sticky.svg" alt="Sticky Note: 1.6.2 Inheritance → The Second Pillar" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Inheritance lets a class acquire properties and behaviour from a parent class, establishing an is-a relationship.
 
@@ -854,6 +1041,17 @@ Whiskers is purring.
 ---
 
 ### 1.6.3 Polymorphism → The Third Pillar
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-handwritten.svg" alt="Handwritten: 1.6.3 Polymorphism → The Third Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-diagram.svg" alt="Diagram: 1.6.3 Polymorphism → The Third Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-3-polymorphism-the-third-pillar-sticky.svg" alt="Sticky Note: 1.6.3 Polymorphism → The Third Pillar" width="30%">
+</a>
+
 
 > **One-Sentence Takeaway:** Polymorphism lets one interface work with multiple types → the same function call behaves differently depending on the object's actual type.
 
@@ -1047,6 +1245,17 @@ double totalAreaOOP(const std::vector<Shape*>& shapes) {
 
 ### 1.6.4 Abstraction → The Fourth Pillar
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-handwritten.svg" alt="Handwritten: 1.6.4 Abstraction → The Fourth Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-diagram.svg" alt="Diagram: 1.6.4 Abstraction → The Fourth Pillar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-6-4-abstraction-the-fourth-pillar-sticky.svg" alt="Sticky Note: 1.6.4 Abstraction → The Fourth Pillar" width="30%">
+</a>
+
+
 > **One-Sentence Takeaway:** Abstraction separates what something does from how it does it, letting users work with high-level concepts without managing low-level details.
 
 **Why it matters:** Without abstraction, every user of a component must understand its full internal complexity. With abstraction, complex systems become accessible and interchangeable.
@@ -1173,6 +1382,17 @@ Sales report: [PostgreSQL result set]
 
 ### 1.7.1 What is Message Passing?
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-handwritten.svg" alt="Handwritten: 1.7.1 What is Message Passing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-diagram.svg" alt="Diagram: 1.7.1 What is Message Passing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-1-what-is-message-passing-sticky.svg" alt="Sticky Note: 1.7.1 What is Message Passing?" width="30%">
+</a>
+
+
 Message passing is the process by which objects communicate. In OOP, one object sends a message to another object, and the receiving object decides how to respond (or if to respond at all). In C++, message passing is implemented as **method calls** on an object.
 
 **Key characteristics:**
@@ -1184,6 +1404,17 @@ Message passing is the process by which objects communicate. In OOP, one object 
 
 ### 1.7.2 Anatomy of a Message
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-handwritten.svg" alt="Handwritten: 1.7.2 Anatomy of a Message" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-diagram.svg" alt="Diagram: 1.7.2 Anatomy of a Message" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-2-anatomy-of-a-message-sticky.svg" alt="Sticky Note: 1.7.2 Anatomy of a Message" width="30%">
+</a>
+
+
 ```
 sender.message(arguments)
    |       |       |
@@ -1193,6 +1424,17 @@ sender.message(arguments)
 ```
 
 ### 1.7.3 Message Passing Example: Coffee Machine Simulation
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-handwritten.svg" alt="Handwritten: 1.7.3 Message Passing Example: Coffee Machine Simulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-diagram.svg" alt="Diagram: 1.7.3 Message Passing Example: Coffee Machine Simulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-3-message-passing-example-coffee-machine-simulation-sticky.svg" alt="Sticky Note: 1.7.3 Message Passing Example: Coffee Machine Simulation" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1313,6 +1555,17 @@ Bob()                           CoffeeMachine
 
 ### 1.7.4 Message Passing vs Function Calls
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-handwritten.svg" alt="Handwritten: 1.7.4 Message Passing vs Function Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-diagram.svg" alt="Diagram: 1.7.4 Message Passing vs Function Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-4-message-passing-vs-function-calls-sticky.svg" alt="Sticky Note: 1.7.4 Message Passing vs Function Calls" width="30%">
+</a>
+
+
 | Aspect | Pure Procedural Function Call | OOP Message Passing |
 |--------|------------------------------|---------------------|
 | **Who decides what happens?** | The function implementation | The receiving object |
@@ -1323,6 +1576,17 @@ Bob()                           CoffeeMachine
 | **Analogy** | "Execute steps 1-5 on this data" | "Please do what you do with this" |
 
 ### 1.7.5 Comparing Object Interaction Patterns
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-handwritten.svg" alt="Handwritten: 1.7.5 Comparing Object Interaction Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-diagram.svg" alt="Diagram: 1.7.5 Comparing Object Interaction Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-7-5-comparing-object-interaction-patterns-sticky.svg" alt="Sticky Note: 1.7.5 Comparing Object Interaction Patterns" width="30%">
+</a>
+
 
 | Pattern | Description | Example |
 |---------|-------------|---------|
@@ -1340,6 +1604,17 @@ Bob()                           CoffeeMachine
 
 ### 1.8.1 The Seven Key Benefits
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-handwritten.svg" alt="Handwritten: 1.8.1 The Seven Key Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-diagram.svg" alt="Diagram: 1.8.1 The Seven Key Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-1-the-seven-key-benefits-sticky.svg" alt="Sticky Note: 1.8.1 The Seven Key Benefits" width="30%">
+</a>
+
+
 | # | Benefit | Explanation | C++ Mechanism |
 |---|---------|-------------|---------------|
 | 1 | **Modularity** | Each object is a self-contained unit. Debug, test, and modify one object without affecting others. | Separate class per file; each class has a single responsibility |
@@ -1352,12 +1627,34 @@ Bob()                           CoffeeMachine
 
 ### 1.8.2 Empirical Advantages → What Studies Show
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-handwritten.svg" alt="Handwritten: 1.8.2 Empirical Advantages → What Studies Show" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-diagram.svg" alt="Diagram: 1.8.2 Empirical Advantages → What Studies Show" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-2-empirical-advantages-what-studies-show-sticky.svg" alt="Sticky Note: 1.8.2 Empirical Advantages → What Studies Show" width="30%">
+</a>
+
+
 - **Defect density**: OOP projects show 30-50% fewer defects compared to procedural projects of equivalent size (Capers Jones, "Applied Software Measurement").
 - **Productivity**: Reuse through inheritance can improve programmer productivity by 20-40% after the first release (Boehm, "Software Engineering Economics").
 - **Change impact**: Encapsulation reduces the ripple effect of changes: a change to a private field affects exactly one class, not every function that touches a struct.
 - **Time to market**: Frameworks (which are OOP-based) reduce development time by 50-70% for standard applications.
 
 ### 1.8.3 When OOP Benefits Are Moderate (Not Magic)
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-handwritten.svg" alt="Handwritten: 1.8.3 When OOP Benefits Are Moderate (Not Magic)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-diagram.svg" alt="Diagram: 1.8.3 When OOP Benefits Are Moderate (Not Magic)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-3-when-oop-benefits-are-moderate-not-magic-sticky.svg" alt="Sticky Note: 1.8.3 When OOP Benefits Are Moderate (Not Magic)" width="30%">
+</a>
+
 
 | Claim | Reality |
 |-------|---------|
@@ -1367,6 +1664,17 @@ Bob()                           CoffeeMachine
 | "Inheritance is always the right reuse mechanism" | Composition ("has-a") is often better than inheritance ("is-a"). Prefer composition over inheritance in most cases. |
 
 ### 1.8.4 Complexity Analysis of OOP Benefits
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-handwritten.svg" alt="Handwritten: 1.8.4 Complexity Analysis of OOP Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-diagram.svg" alt="Diagram: 1.8.4 Complexity Analysis of OOP Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-8-4-complexity-analysis-of-oop-benefits-sticky.svg" alt="Sticky Note: 1.8.4 Complexity Analysis of OOP Benefits" width="30%">
+</a>
+
 
 | Benefit | How it reduces complexity | Measurable metric |
 |---------|--------------------------|-------------------|
@@ -1383,6 +1691,17 @@ Bob()                           CoffeeMachine
 > **One-Sentence Takeaway:** Every major software system you interact with → from your phone's UI to the video game you played last night → is built on OOP principles.
 
 ### 1.9.1 GUI Frameworks (Qt, wxWidgets, MFC)
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-handwritten.svg" alt="Handwritten: 1.9.1 GUI Frameworks (Qt, wxWidgets, MFC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-diagram.svg" alt="Diagram: 1.9.1 GUI Frameworks (Qt, wxWidgets, MFC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-1-gui-frameworks-qt-wxwidgets-mfc-sticky.svg" alt="Sticky Note: 1.9.1 GUI Frameworks (Qt, wxWidgets, MFC)" width="30%">
+</a>
+
 
 GUI frameworks are perhaps the strongest argument for OOP. Every visual element is an object.
 
@@ -1523,6 +1842,17 @@ Button 'Cancel' pressed!
 ---
 
 ### 1.9.2 Game Engines (Unity, Unreal Engine)
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-handwritten.svg" alt="Handwritten: 1.9.2 Game Engines (Unity, Unreal Engine)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-diagram.svg" alt="Diagram: 1.9.2 Game Engines (Unity, Unreal Engine)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-2-game-engines-unity-unreal-engine-sticky.svg" alt="Sticky Note: 1.9.2 Game Engines (Unity, Unreal Engine)" width="30%">
+</a>
+
 
 Games are inherently object-oriented: every entity in a game world is an object with state and behaviour.
 
@@ -1715,6 +2045,17 @@ Coin collected! +100 points
 
 ### 1.9.3 Operating System Design
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-handwritten.svg" alt="Handwritten: 1.9.3 Operating System Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-diagram.svg" alt="Diagram: 1.9.3 Operating System Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-3-operating-system-design-sticky.svg" alt="Sticky Note: 1.9.3 Operating System Design" width="30%">
+</a>
+
+
 Operating systems use OOP extensively for abstracting hardware resources.
 
 | OS Component | OOP Concept | Example |
@@ -1889,6 +2230,17 @@ VFS: User read -> [Data from \Users\Admin\doc.txt]
 
 ### 1.9.4 Other Real-World Applications of OOP
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-handwritten.svg" alt="Handwritten: 1.9.4 Other Real-World Applications of OOP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-diagram.svg" alt="Diagram: 1.9.4 Other Real-World Applications of OOP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-9-4-other-real-world-applications-of-oop-sticky.svg" alt="Sticky Note: 1.9.4 Other Real-World Applications of OOP" width="30%">
+</a>
+
+
 | Domain | OOP Usage | Examples |
 |--------|-----------|----------|
 | **Web Frameworks** | Controllers, models, views as objects | ASP.NET MVC, Spring, Django, Ruby on Rails |
@@ -1908,6 +2260,17 @@ VFS: User read -> [Data from \Users\Admin\doc.txt]
 > Common OOP interview questions with detailed answers and code examples.
 
 ### Q1: What is the difference between a class and an object? Explain with a real-world analogy.
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-handwritten.svg" alt="Handwritten: What is the difference between a class and an object? Explain with a real-world analogy." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-diagram.svg" alt="Diagram: What is the difference between a class and an object? Explain with a real-world analogy." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-a-class-and-an-object-explain-with-a-real-world-analogy-sticky.svg" alt="Sticky Note: What is the difference between a class and an object? Explain with a real-world analogy." width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1943,6 +2306,17 @@ int main() {
 
 ### Q2: Explain the four pillars of OOP with a single real-world scenario.
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-handwritten.svg" alt="Handwritten: Explain the four pillars of OOP with a single real-world scenario." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-diagram.svg" alt="Diagram: Explain the four pillars of OOP with a single real-world scenario." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/explain-the-four-pillars-of-oop-with-a-single-real-world-scenario-sticky.svg" alt="Sticky Note: Explain the four pillars of OOP with a single real-world scenario." width="30%">
+</a>
+
+
 **Answer:**
 
 Let's use a **smartphone** as the unifying analogy:
@@ -1975,6 +2349,17 @@ public:
 ---
 
 ### Q3: How does C++ implement polymorphism? Explain the virtual table mechanism.
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-handwritten.svg" alt="Handwritten: How does C++ implement polymorphism? Explain the virtual table mechanism." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-diagram.svg" alt="Diagram: How does C++ implement polymorphism? Explain the virtual table mechanism." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/how-does-c-implement-polymorphism-explain-the-virtual-table-mechanism-sticky.svg" alt="Sticky Note: How does C++ implement polymorphism? Explain the virtual table mechanism." width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2025,6 +2410,17 @@ public:
 
 ### Q4: What is the difference between abstraction and encapsulation? Many beginners confuse them.
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-handwritten.svg" alt="Handwritten: What is the difference between abstraction and encapsulation? Many beginners confuse them." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-diagram.svg" alt="Diagram: What is the difference between abstraction and encapsulation? Many beginners confuse them." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-abstraction-and-encapsulation-many-beginners-confuse-them-sticky.svg" alt="Sticky Note: What is the difference between abstraction and encapsulation? Many beginners confuse them." width="30%">
+</a>
+
+
 **Answer:**
 
 | | Encapsulation | Abstraction |
@@ -2062,6 +2458,17 @@ public:
 ---
 
 ### Q5: What is the difference between "is-a" and "has-a" relationships? When should you use each?
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-handwritten.svg" alt="Handwritten: What is the difference between "is-a" and "has-a" relationships? When should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-diagram.svg" alt="Diagram: What is the difference between "is-a" and "has-a" relationships? When should you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-is-a-and-has-a-relationships-when-should-you-use-each-sticky.svg" alt="Sticky Note: What is the difference between "is-a" and "has-a" relationships? When should you use each?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2143,6 +2550,17 @@ public:
 
 ### Q6: Can you have OOP without inheritance? Explain.
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-handwritten.svg" alt="Handwritten: Can you have OOP without inheritance? Explain." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-diagram.svg" alt="Diagram: Can you have OOP without inheritance? Explain." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/can-you-have-oop-without-inheritance-explain-sticky.svg" alt="Sticky Note: Can you have OOP without inheritance? Explain." width="30%">
+</a>
+
+
 **Answer:**
 
 Yes. Encapsulation + polymorphism can exist without inheritance through **compile-time polymorphism** (templates / generics) and **duck typing**.
@@ -2182,6 +2600,17 @@ Alan Kay, who coined the term "object-oriented programming," considered **messag
 ---
 
 ### Q7: What is the diamond problem in inheritance, and how does C++ solve it?
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-handwritten.svg" alt="Handwritten: What is the diamond problem in inheritance, and how does C++ solve it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-diagram.svg" alt="Diagram: What is the diamond problem in inheritance, and how does C++ solve it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-diamond-problem-in-inheritance-and-how-does-c-solve-it-sticky.svg" alt="Sticky Note: What is the diamond problem in inheritance, and how does C++ solve it?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2232,6 +2661,17 @@ int main() {
 
 ### Q8: What is the difference between early binding and late binding?
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-handwritten.svg" alt="Handwritten: What is the difference between early binding and late binding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-diagram.svg" alt="Diagram: What is the difference between early binding and late binding?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-early-binding-and-late-binding-sticky.svg" alt="Sticky Note: What is the difference between early binding and late binding?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Aspect | Early Binding (Static Dispatch) | Late Binding (Dynamic Dispatch) |
@@ -2267,6 +2707,17 @@ int main() {
 ---
 
 ### Q9: What is the difference between public, protected, and private inheritance in C++?
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-handwritten.svg" alt="Handwritten: What is the difference between public, protected, and private inheritance in C++?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-diagram.svg" alt="Diagram: What is the difference between public, protected, and private inheritance in C++?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-the-difference-between-public-protected-and-private-inheritance-in-c-sticky.svg" alt="Sticky Note: What is the difference between public, protected, and private inheritance in C++?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -2310,6 +2761,17 @@ int main() {
 
 ### Q10: What is a pure virtual function? Why would you use one?
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-handwritten.svg" alt="Handwritten: What is a pure virtual function? Why would you use one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-diagram.svg" alt="Diagram: What is a pure virtual function? Why would you use one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/what-is-a-pure-virtual-function-why-would-you-use-one-sticky.svg" alt="Sticky Note: What is a pure virtual function? Why would you use one?" width="30%">
+</a>
+
+
 **Answer:**
 
 A **pure virtual function** is a virtual function declared with `= 0`. It has no implementation in the base class and forces all concrete derived classes to provide an implementation. A class containing at least one pure virtual function is **abstract** → you cannot instantiate it.
@@ -2347,6 +2809,17 @@ public:
 
 ### 1.11.1 God Object
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-handwritten.svg" alt="Handwritten: 1.11.1 God Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-diagram.svg" alt="Diagram: 1.11.1 God Object" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-1-god-object-sticky.svg" alt="Sticky Note: 1.11.1 God Object" width="30%">
+</a>
+
+
 A single class that knows too much or does too much.
 
 ```cpp
@@ -2370,6 +2843,17 @@ public:
 
 ### 1.11.2 Deep Inheritance Hierarchy
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-handwritten.svg" alt="Handwritten: 1.11.2 Deep Inheritance Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-diagram.svg" alt="Diagram: 1.11.2 Deep Inheritance Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-2-deep-inheritance-hierarchy-sticky.svg" alt="Sticky Note: 1.11.2 Deep Inheritance Hierarchy" width="30%">
+</a>
+
+
 ```cpp
 class A {};
 class B : public A {};
@@ -2384,6 +2868,17 @@ class F : public E {};  // 6 levels deep → WHY?
 **Rule of thumb:** Max 3-4 levels of inheritance. Prefer composition after that.
 
 ### 1.11.3 Ignoring the Liskov Substitution Principle (LSP)
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-handwritten.svg" alt="Handwritten: 1.11.3 Ignoring the Liskov Substitution Principle (LSP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-diagram.svg" alt="Diagram: 1.11.3 Ignoring the Liskov Substitution Principle (LSP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-3-ignoring-the-liskov-substitution-principle-lsp-sticky.svg" alt="Sticky Note: 1.11.3 Ignoring the Liskov Substitution Principle (LSP)" width="30%">
+</a>
+
 
 Derived classes must be substitutable for their base classes.
 
@@ -2424,6 +2919,17 @@ int main() {
 ```
 
 ### 1.11.4 Using Inheritance for Code Reuse Only
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-handwritten.svg" alt="Handwritten: 1.11.4 Using Inheritance for Code Reuse Only" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-diagram.svg" alt="Diagram: 1.11.4 Using Inheritance for Code Reuse Only" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/1-11-4-using-inheritance-for-code-reuse-only-sticky.svg" alt="Sticky Note: 1.11.4 Using Inheritance for Code Reuse Only" width="30%">
+</a>
+
 
 Just because two classes share some code doesn't mean one should inherit from the other.
 
@@ -2469,6 +2975,17 @@ Object-Oriented Programming is a paradigm that organises code around objects→b
 
 ### Key Design Guidelines
 
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-handwritten.svg" alt="Handwritten: Key Design Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-diagram.svg" alt="Diagram: Key Design Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/key-design-guidelines-sticky.svg" alt="Sticky Note: Key Design Guidelines" width="30%">
+</a>
+
+
 1. **Prefer composition over inheritance** → "has-a" is more flexible than "is-a" in most scenarios.
 2. **Keep inheritance shallow** → 3-4 levels maximum; deep hierarchies are brittle.
 3. **Use abstraction at module boundaries** → program to interfaces, not implementations.
@@ -2479,6 +2996,17 @@ Object-Oriented Programming is a paradigm that organises code around objects→b
 8. **Favour composition for behaviour reuse** → strategy pattern over deep inheritance.
 
 ### OOP is Not a Silver Bullet
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-handwritten.svg" alt="Handwritten: OOP is Not a Silver Bullet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-diagram.svg" alt="Diagram: OOP is Not a Silver Bullet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/oop-is-not-a-silver-bullet-sticky.svg" alt="Sticky Note: OOP is Not a Silver Bullet" width="30%">
+</a>
+
 
 OOP excels at modelling complex systems with many interacting entities. But for:
 - **Data-heavy transformation pipelines**: functional programming often works better.
@@ -2580,6 +3108,17 @@ The best programmers are **multi-paradigm** → they choose the right tool for t
 10. What are the benefits and drawbacks of using OOP?
 
 ### Coding Problems
+
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/01-introduction/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
+</a>
+
 
 1. **Design a Library System**: Create classes `Book`, `Member`, and `Librarian`. Use encapsulation (private ISBN, public borrow/return), inheritance (`Member` → `PremiumMember` with extra borrowing limit), and polymorphism (a `displayInfo()` virtual method).
 

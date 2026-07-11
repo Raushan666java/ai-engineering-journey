@@ -57,11 +57,33 @@ flowchart TD
 
 ### Overview
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Meta, Amazon, Netflix, Google, Apple) represent the pinnacle of software engineering compensation and prestige. These companies have hiring bars that rank among the highest in the industry.
 
 ![Company Tiers Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
 
 ### Common Threads Across All FAANG Interviews
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-handwritten.svg" alt="Handwritten: Common Threads Across All FAANG Interviews" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-diagram.svg" alt="Diagram: Common Threads Across All FAANG Interviews" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-across-all-faang-interviews-sticky.svg" alt="Sticky Note: Common Threads Across All FAANG Interviews" width="30%">
+</a>
+
 
 - **Resume screening** → top schools, prior FAANG, strong open-source contributions, or referral required for initial call
 - **Phone screen (45-60 min)** → one or two LeetCode Medium/Hard problems over shared editor (CoderPad, HackerRank)
@@ -70,6 +92,17 @@ FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Me
 - **Hiring committee** → debrief where all interviewers calibrate before extending offer
 
 ### Google
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/google-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/google-handwritten.svg" alt="Handwritten: Google" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/google-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/google-diagram.svg" alt="Diagram: Google" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/google-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/google-sticky.svg" alt="Sticky Note: Google" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -152,6 +185,17 @@ public class GroupAnagrams {
 ```
 
 ### Amazon
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-handwritten.svg" alt="Handwritten: Amazon" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-diagram.svg" alt="Diagram: Amazon" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/amazon-sticky.svg" alt="Sticky Note: Amazon" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -325,6 +369,17 @@ class TreeNode {
 
 ### Microsoft
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-handwritten.svg" alt="Handwritten: Microsoft" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-diagram.svg" alt="Diagram: Microsoft" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/microsoft-sticky.svg" alt="Sticky Note: Microsoft" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -446,6 +501,17 @@ public class LRUCache<K, V> {
 
 ### Meta
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-handwritten.svg" alt="Handwritten: Meta" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-diagram.svg" alt="Diagram: Meta" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/meta-sticky.svg" alt="Sticky Note: Meta" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -524,6 +590,17 @@ public class LowestCommonAncestor {
 ```
 
 ### Netflix
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-handwritten.svg" alt="Handwritten: Netflix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-diagram.svg" alt="Diagram: Netflix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/netflix-sticky.svg" alt="Sticky Note: Netflix" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -617,6 +694,17 @@ public class RecommendationEngine {
 ```
 
 ### 5 Sample Technical Problems with Company-Specific Twists
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-handwritten.svg" alt="Handwritten: 5 Sample Technical Problems with Company-Specific Twists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-diagram.svg" alt="Diagram: 5 Sample Technical Problems with Company-Specific Twists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/5-sample-technical-problems-with-company-specific-twists-sticky.svg" alt="Sticky Note: 5 Sample Technical Problems with Company-Specific Twists" width="30%">
+</a>
+
 
 **Problem 1: Google → Median of Two Sorted Arrays**
 
@@ -823,6 +911,17 @@ public class AdaptiveBitrateStreamer {
 
 ### Resume Tips for FAANG
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-handwritten.svg" alt="Handwritten: Resume Tips for FAANG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-diagram.svg" alt="Diagram: Resume Tips for FAANG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resume-tips-for-faang-sticky.svg" alt="Sticky Note: Resume Tips for FAANG" width="30%">
+</a>
+
+
 | Aspect | Recommendation |
 |--------|----------------|
 | Length | Exactly 1 page (2 pages max for 10+ YoE at Microsoft) |
@@ -853,9 +952,31 @@ public class AdaptiveBitrateStreamer {
 
 ### Overview
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 India's product ecosystem includes homegrown giants like Flipkart, Uber (engineering hub), Swiggy, Zomato, Ola, Paytm, MakeMyTrip, and others. These companies offer competitive compensation (20-60 LPA for SDE-2) and interview processes that rival FAANG in rigor.
 
 ### Common Patterns
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-handwritten.svg" alt="Handwritten: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-diagram.svg" alt="Diagram: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-sticky.svg" alt="Sticky Note: Common Patterns" width="30%">
+</a>
+
 
 - **Round structure:** Online assessment → 2-3 technical rounds → Hiring manager round → HR
 - **Focus areas:** DSA (Medium/Hard), system design (especially high-traffic scenarios), product sense, past experience deep-dive
@@ -863,6 +984,17 @@ India's product ecosystem includes homegrown giants like Flipkart, Uber (enginee
 - **Compensation:** 15-30 LPA fresher, 30-60 LPA SDE-2, 50-90 LPA Senior
 
 ### Flipkart
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-handwritten.svg" alt="Handwritten: Flipkart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-diagram.svg" alt="Diagram: Flipkart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/flipkart-sticky.svg" alt="Sticky Note: Flipkart" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -952,6 +1084,17 @@ public class ExpenseManager {
 
 ### Uber
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-handwritten.svg" alt="Handwritten: Uber" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-diagram.svg" alt="Diagram: Uber" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/uber-sticky.svg" alt="Sticky Note: Uber" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -1039,6 +1182,17 @@ public class RideMatchingService {
 
 ### Swiggy / Zomato
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-handwritten.svg" alt="Handwritten: Swiggy / Zomato" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-diagram.svg" alt="Diagram: Swiggy / Zomato" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/swiggy-zomato-sticky.svg" alt="Sticky Note: Swiggy / Zomato" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -1084,6 +1238,17 @@ LIMIT 10;
 
 ### Ola, Paytm, MakeMyTrip
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-handwritten.svg" alt="Handwritten: Ola, Paytm, MakeMyTrip" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-diagram.svg" alt="Diagram: Ola, Paytm, MakeMyTrip" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/ola-paytm-makemytrip-sticky.svg" alt="Sticky Note: Ola, Paytm, MakeMyTrip" width="30%">
+</a>
+
+
 #### Interview Process (Common Pattern)
 
 | Round | Duration | Focus |
@@ -1124,6 +1289,17 @@ LIMIT 10;
 
 ### Typical Compensation Ranges (India, 2024-2025)
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-handwritten.svg" alt="Handwritten: Typical Compensation Ranges (India, 2024-2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-diagram.svg" alt="Diagram: Typical Compensation Ranges (India, 2024-2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-india-2024-2025-sticky.svg" alt="Sticky Note: Typical Compensation Ranges (India, 2024-2025)" width="30%">
+</a>
+
+
 | Company | SDE-1 (Fresher) | SDE-2 | SDE-3 / Senior |
 |---------|-----------------|-------|----------------|
 | Flipkart | 20-30 LPA | 40-60 LPA | 60-90 LPA |
@@ -1148,9 +1324,31 @@ LIMIT 10;
 
 ### Overview
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 Service-based companies (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini, Tech Mahindra) hire in bulk through campus placements. They form the entry point for the majority of engineering graduates in India.
 
 ### Common Patterns
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-handwritten.svg" alt="Handwritten: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-diagram.svg" alt="Diagram: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-patterns-sticky.svg" alt="Sticky Note: Common Patterns" width="30%">
+</a>
+
 
 | Aspect | Details |
 |--------|---------|
@@ -1162,6 +1360,17 @@ Service-based companies (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini, T
 | Bond | 1-2 years (common → read terms carefully) |
 
 ### TCS (Tata Consultancy Services)
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-handwritten.svg" alt="Handwritten: TCS (Tata Consultancy Services)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-diagram.svg" alt="Diagram: TCS (Tata Consultancy Services)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tcs-tata-consultancy-services-sticky.svg" alt="Sticky Note: TCS (Tata Consultancy Services)" width="30%">
+</a>
+
 
 #### Hiring Programs
 
@@ -1237,6 +1446,17 @@ public class SecondLargest {
 
 ### Infosys
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-handwritten.svg" alt="Handwritten: Infosys" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-diagram.svg" alt="Diagram: Infosys" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/infosys-sticky.svg" alt="Sticky Note: Infosys" width="30%">
+</a>
+
+
 #### Hiring Programs
 
 **InfyTQ (Infosys Talent Quotient):**
@@ -1285,6 +1505,17 @@ public class LongestSubstring {
 
 ### Wipro
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-handwritten.svg" alt="Handwritten: Wipro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-diagram.svg" alt="Diagram: Wipro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/wipro-sticky.svg" alt="Sticky Note: Wipro" width="30%">
+</a>
+
+
 #### Hiring Programs
 
 **WILP (Wipro Integrated Learning Program):**
@@ -1319,6 +1550,17 @@ Neither = 60 - 50 = 10
 ```
 
 ### Accenture
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-handwritten.svg" alt="Handwritten: Accenture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-diagram.svg" alt="Diagram: Accenture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/accenture-sticky.svg" alt="Sticky Note: Accenture" width="30%">
+</a>
+
 
 #### Hiring Process
 
@@ -1363,6 +1605,17 @@ public class AnagramCheck {
 
 ### Cognizant
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-handwritten.svg" alt="Handwritten: Cognizant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-diagram.svg" alt="Diagram: Cognizant" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/cognizant-sticky.svg" alt="Sticky Note: Cognizant" width="30%">
+</a>
+
+
 #### Hiring Process
 
 | Stage | Details |
@@ -1388,6 +1641,17 @@ Or: +4, +6, +8, +10, +12
 
 ### Capgemini
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-handwritten.svg" alt="Handwritten: Capgemini" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-diagram.svg" alt="Diagram: Capgemini" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/capgemini-sticky.svg" alt="Sticky Note: Capgemini" width="30%">
+</a>
+
+
 #### Hiring Process
 
 | Stage | Details |
@@ -1410,6 +1674,17 @@ Or: +4, +6, +8, +10, +12
 
 ### Tech Mahindra
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-handwritten.svg" alt="Handwritten: Tech Mahindra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-diagram.svg" alt="Diagram: Tech Mahindra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/tech-mahindra-sticky.svg" alt="Sticky Note: Tech Mahindra" width="30%">
+</a>
+
+
 #### Hiring Process
 
 | Stage | Details |
@@ -1423,6 +1698,17 @@ Or: +4, +6, +8, +10, +12
 - **Software Engineer**: ~4.5-5.5 LPA
 
 ### Sample Aptitude Questions (Service-Based)
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-handwritten.svg" alt="Handwritten: Sample Aptitude Questions (Service-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-diagram.svg" alt="Diagram: Sample Aptitude Questions (Service-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-aptitude-questions-service-based-sticky.svg" alt="Sticky Note: Sample Aptitude Questions (Service-Based)" width="30%">
+</a>
+
 
 **Q1: Ratio and Proportion**
 ```
@@ -1455,6 +1741,17 @@ Solution: 5 letters with P repeated twice
 
 ### Typical Compensation Ranges (Service-Based, Fresher)
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-handwritten.svg" alt="Handwritten: Typical Compensation Ranges (Service-Based, Fresher)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-diagram.svg" alt="Diagram: Typical Compensation Ranges (Service-Based, Fresher)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/typical-compensation-ranges-service-based-fresher-sticky.svg" alt="Sticky Note: Typical Compensation Ranges (Service-Based, Fresher)" width="30%">
+</a>
+
+
 | Company | Role | CTC Range |
 |---------|------|-----------|
 | TCS Ninja | Trainee | 3.2 - 3.5 LPA |
@@ -1471,6 +1768,17 @@ Solution: 5 letters with P repeated twice
 
 ### Red Flags to Avoid (Service-Based)
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-handwritten.svg" alt="Handwritten: Red Flags to Avoid (Service-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-diagram.svg" alt="Diagram: Red Flags to Avoid (Service-Based)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-to-avoid-service-based-sticky.svg" alt="Sticky Note: Red Flags to Avoid (Service-Based)" width="30%">
+</a>
+
+
 | Red Flag | Why It Matters |
 |----------|----------------|
 | Bond agreement | Read the fine print → some have 2-year bonds with 1-2L penalty |
@@ -1481,6 +1789,17 @@ Solution: 5 letters with P repeated twice
 | No project guarantee | Some hires wait 3-6 months for project allocation |
 
 ### Resources for Service-Based Preparation
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-handwritten.svg" alt="Handwritten: Resources for Service-Based Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-diagram.svg" alt="Diagram: Resources for Service-Based Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-service-based-preparation-sticky.svg" alt="Sticky Note: Resources for Service-Based Preparation" width="30%">
+</a>
+
 
 - **Aptitude:** RS Aggarwal's Quantitative Aptitude, Indiabix (online practice)
 - **Coding:** HackerRank easy/medium problems, GeeksforGeeks basic DSA
@@ -1502,9 +1821,31 @@ Solution: 5 letters with P repeated twice
 
 ### Overview
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 Startups (early-stage to unicorn) offer a different interview experience than established product or service companies. They value versatility, speed, and ownership over depth in any single area.
 
 ### What Startups Look For
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-handwritten.svg" alt="Handwritten: What Startups Look For" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-diagram.svg" alt="Diagram: What Startups Look For" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/what-startups-look-for-sticky.svg" alt="Sticky Note: What Startups Look For" width="30%">
+</a>
+
 
 #### Versatility Over Specialization
 
@@ -1541,6 +1882,17 @@ Startup culture fit evaluation focuses on:
 
 ### How Startup Interviews Differ
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-handwritten.svg" alt="Handwritten: How Startup Interviews Differ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-diagram.svg" alt="Diagram: How Startup Interviews Differ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/how-startup-interviews-differ-sticky.svg" alt="Sticky Note: How Startup Interviews Differ" width="30%">
+</a>
+
+
 | Aspect | FAANG | Startup |
 |--------|-------|---------|
 | Focus | DSA depth + system design | Full-stack + product + pragmatism |
@@ -1552,6 +1904,17 @@ Startup culture fit evaluation focuses on:
 | Rounds | 5-6 | 3-4 |
 
 ### Identifying Good Startups
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-handwritten.svg" alt="Handwritten: Identifying Good Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-diagram.svg" alt="Diagram: Identifying Good Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/identifying-good-startups-sticky.svg" alt="Sticky Note: Identifying Good Startups" width="30%">
+</a>
+
 
 Not all startups are created equal. Here is how to evaluate them:
 
@@ -1566,6 +1929,17 @@ Not all startups are created equal. Here is how to evaluate them:
 | Liquidity | Path to exit (IPO, acquisition) | ESOPs that will never vest or be worthless |
 
 ### Negotiation Strategies for Startups
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-handwritten.svg" alt="Handwritten: Negotiation Strategies for Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-diagram.svg" alt="Diagram: Negotiation Strategies for Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/negotiation-strategies-for-startups-sticky.svg" alt="Sticky Note: Negotiation Strategies for Startups" width="30%">
+</a>
+
 
 #### ESOPs (Employee Stock Option Plans)
 
@@ -1608,6 +1982,17 @@ with a signing bonus or additional equity?"
 ```
 
 ### Sample Startup Interview Questions
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-handwritten.svg" alt="Handwritten: Sample Startup Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-diagram.svg" alt="Diagram: Sample Startup Interview Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/sample-startup-interview-questions-sticky.svg" alt="Sticky Note: Sample Startup Interview Questions" width="30%">
+</a>
+
 
 **Coding:**
 ```java
@@ -1674,6 +2059,17 @@ Framework:
 
 ### Startup Compensation Ranges (India)
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-handwritten.svg" alt="Handwritten: Startup Compensation Ranges (India)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-diagram.svg" alt="Diagram: Startup Compensation Ranges (India)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/startup-compensation-ranges-india-sticky.svg" alt="Sticky Note: Startup Compensation Ranges (India)" width="30%">
+</a>
+
+
 | Stage | Base Salary | Equity | Total Package |
 |-------|-------------|--------|---------------|
 | Pre-seed / Seed | 6-12 LPA | 0.5-2% | Lower base, high upside |
@@ -1682,6 +2078,17 @@ Framework:
 | Unicorn | 25-50 LPA | 0.01-0.1% | Competitive with product companies |
 
 ### Red Flags at Startups
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-handwritten.svg" alt="Handwritten: Red Flags at Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-diagram.svg" alt="Diagram: Red Flags at Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/red-flags-at-startups-sticky.svg" alt="Sticky Note: Red Flags at Startups" width="30%">
+</a>
+
 
 | Red Flag | What to Watch For |
 |----------|-------------------|
@@ -1696,6 +2103,17 @@ Framework:
 
 ### Preparation Strategy for Startups
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-handwritten.svg" alt="Handwritten: Preparation Strategy for Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-diagram.svg" alt="Diagram: Preparation Strategy for Startups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/preparation-strategy-for-startups-sticky.svg" alt="Sticky Note: Preparation Strategy for Startups" width="30%">
+</a>
+
+
 | Area | How to Prepare |
 |------|----------------|
 | Full-stack skills | Build and deploy a complete web app (React + Node.js + PostgreSQL) |
@@ -1707,6 +2125,17 @@ Framework:
 | Domain knowledge | Deep-dive into the startup's domain before the interview |
 
 ### Resources for Startup Preparation
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-handwritten.svg" alt="Handwritten: Resources for Startup Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-diagram.svg" alt="Diagram: Resources for Startup Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/resources-for-startup-preparation-sticky.svg" alt="Sticky Note: Resources for Startup Preparation" width="30%">
+</a>
+
 
 - **YC Startup School** → Free course on building startups (understanding context matters)
 - **Hacker News (news.ycombinator.com)** → Follow startup culture and discussions
@@ -1729,9 +2158,31 @@ Framework:
 
 ### Overview
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+</a>
+
+
 Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcomm, Texas Instruments) and enterprise software giants (Adobe, Salesforce, Oracle, LinkedIn) offer exceptional careers with unique interview patterns. These companies test deep domain knowledge → hardware-software co-design for chip companies, enterprise-scale architecture for software giants.
 
 ### Common Threads
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-handwritten.svg" alt="Handwritten: Common Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-diagram.svg" alt="Diagram: Common Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/common-threads-sticky.svg" alt="Sticky Note: Common Threads" width="30%">
+</a>
+
 
 - **Domain depth** → Chip companies test OS, computer architecture, C/C++ proficiency; enterprise companies test system design at scale
 - **Low-level coding** → Semiconductors ask pointer manipulation, memory management, bit manipulation
@@ -1742,6 +2193,17 @@ Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcom
 ---
 
 ### Apple
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-handwritten.svg" alt="Handwritten: Apple" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-diagram.svg" alt="Diagram: Apple" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/apple-sticky.svg" alt="Sticky Note: Apple" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -1845,6 +2307,17 @@ public class ReverseLinkedList {
 
 ### LinkedIn
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-handwritten.svg" alt="Handwritten: LinkedIn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-diagram.svg" alt="Diagram: LinkedIn" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/linkedin-sticky.svg" alt="Sticky Note: LinkedIn" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -1939,6 +2412,17 @@ public class ShortestConnectionPath {
 ---
 
 ### Adobe
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-handwritten.svg" alt="Handwritten: Adobe" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-diagram.svg" alt="Diagram: Adobe" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/adobe-sticky.svg" alt="Sticky Note: Adobe" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -2054,6 +2538,17 @@ public class MergeIntervals {
 
 ### Salesforce
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-handwritten.svg" alt="Handwritten: Salesforce" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-diagram.svg" alt="Diagram: Salesforce" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/salesforce-sticky.svg" alt="Sticky Note: Salesforce" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -2161,6 +2656,17 @@ public class ValidParentheses {
 ---
 
 ### Oracle
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-handwritten.svg" alt="Handwritten: Oracle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-diagram.svg" alt="Diagram: Oracle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/oracle-sticky.svg" alt="Sticky Note: Oracle" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -2286,6 +2792,17 @@ public class PersistentKVStore {
 
 ### NVIDIA
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-handwritten.svg" alt="Handwritten: NVIDIA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-diagram.svg" alt="Diagram: NVIDIA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/nvidia-sticky.svg" alt="Sticky Note: NVIDIA" width="30%">
+</a>
+
+
 #### Interview Process
 
 | Round | Duration | Focus |
@@ -2378,6 +2895,17 @@ public class MaxSubarraySum {
 ---
 
 ### Qualcomm
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-handwritten.svg" alt="Handwritten: Qualcomm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-diagram.svg" alt="Diagram: Qualcomm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/qualcomm-sticky.svg" alt="Sticky Note: Qualcomm" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -2494,6 +3022,17 @@ public class FirstNonRepeating {
 ---
 
 ### Texas Instruments
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-handwritten.svg" alt="Handwritten: Texas Instruments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-diagram.svg" alt="Diagram: Texas Instruments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/texas-instruments-sticky.svg" alt="Sticky Note: Texas Instruments" width="30%">
+</a>
+
 
 #### Interview Process
 
@@ -2658,6 +3197,17 @@ public class ReverseString {
 
 ### Before Applying to Any Company
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-handwritten.svg" alt="Handwritten: Before Applying to Any Company" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-diagram.svg" alt="Diagram: Before Applying to Any Company" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/before-applying-to-any-company-sticky.svg" alt="Sticky Note: Before Applying to Any Company" width="30%">
+</a>
+
+
 - [ ] Resume tailored and reviewed (1 page, quantifiable impact)
 - [ ] LeetCode solved: 150+ (FAANG), 75+ (Product India), 40+ (Service), 50+ (Startups)
 - [ ] CS fundamentals revised (OS, DBMS, Networks, OOP)
@@ -2668,6 +3218,17 @@ public class ReverseString {
 
 ### Interview Day Checklist
 
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-handwritten.svg" alt="Handwritten: Interview Day Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-diagram.svg" alt="Diagram: Interview Day Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/interview-day-checklist-sticky.svg" alt="Sticky Note: Interview Day Checklist" width="30%">
+</a>
+
+
 - [ ] Stable internet connection (backup hotspot ready)
 - [ ] Workspace clean, quiet, well-lit
 - [ ] Laptop charged, IDE ready, screenshare tested
@@ -2677,6 +3238,17 @@ public class ReverseString {
 - [ ] Mute phone, close unnecessary apps
 
 ### Post-Interview
+
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-handwritten.svg" alt="Handwritten: Post-Interview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-diagram.svg" alt="Diagram: Post-Interview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/04-company-specific/post-interview-sticky.svg" alt="Sticky Note: Post-Interview" width="30%">
+</a>
+
 
 - [ ] Send thank-you email within 24 hours
 - [ ] Note down questions you struggled with (study them immediately)

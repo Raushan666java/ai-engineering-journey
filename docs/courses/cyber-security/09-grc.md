@@ -24,6 +24,17 @@ By the end of this chapter, you will be able to:
 
 ### Chapter Map
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" alt="Handwritten: Chapter Map" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" alt="Diagram: Chapter Map" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" alt="Sticky Note: Chapter Map" width="30%">
+</a>
+
+
 | Section | Topics | Effort |
 |---------|--------|--------|
 | Governance | Org structure, policies, documentation hierarchy, policy templates | Medium |
@@ -42,6 +53,17 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Information Security Governance Defined
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" alt="Handwritten: 1.1 Information Security Governance Defined" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" alt="Diagram: 1.1 Information Security Governance Defined" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" alt="Sticky Note: 1.1 Information Security Governance Defined" width="30%">
+</a>
+
+
 **Real-world analogy:** A country's constitution defines the rights, responsibilities, and structure of government. Similarly, information security governance defines how an organization manages security → who decides, who enforces, and how success is measured.
 
 Governance answers the question: *"Are we doing the right things?"* while management asks *"Are we doing things right?"*
@@ -54,6 +76,17 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 - **Performance measurement:** KPIs and KRIs track whether governance objectives are met.
 
 ### 1.2 Organizational Structure
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" alt="Handwritten: 1.2 Organizational Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" alt="Diagram: 1.2 Organizational Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" alt="Sticky Note: 1.2 Organizational Structure" width="30%">
+</a>
+
 
 ```
 +---------------------------------------------------+
@@ -87,6 +120,17 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.3 Security Documentation Hierarchy
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" alt="Handwritten: 1.3 Security Documentation Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" alt="Diagram: 1.3 Security Documentation Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" alt="Sticky Note: 1.3 Security Documentation Hierarchy" width="30%">
+</a>
+
+
 | Document Type | Definition | Example | Enforcement |
 |--------------|------------|---------|-------------|
 | **Policy** | High-level statement of management intent | "All remote access must use MFA" | Mandatory |
@@ -113,6 +157,17 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.4 Policy Lifecycle
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" alt="Handwritten: 1.4 Policy Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" alt="Diagram: 1.4 Policy Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" alt="Sticky Note: 1.4 Policy Lifecycle" width="30%">
+</a>
+
+
 1. **Identify need** → regulatory requirement, risk finding, audit gap
 2. **Draft** → policy owner writes (typically GRC team or CISO office)
 3. **Review** → legal, HR, business stakeholders review for conflicts
@@ -125,6 +180,17 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 10. **Retire** → Archive superseded policies
 
 ### 1.5 Sample Policy: Acceptable Use Policy (AUP)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" alt="Handwritten: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" alt="Diagram: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" alt="Sticky Note: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+</a>
+
 
 > **Organization:** Acme Corp | **Owner:** CISO | **Approved:** 2025-01-15 | **Review:** 2026-01-15
 
@@ -180,6 +246,17 @@ All users must sign an acknowledgment form annually.
 
 ### 1.6 Governance vs Risk vs Compliance
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" alt="Handwritten: 1.6 Governance vs Risk vs Compliance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" alt="Diagram: 1.6 Governance vs Risk vs Compliance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" alt="Sticky Note: 1.6 Governance vs Risk vs Compliance" width="30%">
+</a>
+
+
 | Aspect | Governance | Risk Management | Compliance |
 |--------|-----------|-----------------|------------|
 | **Focus** | Direction & oversight | Uncertainty & decision-making | Rules & obligations |
@@ -197,6 +274,17 @@ All users must sign an acknowledgment form annually.
 
 ### 2.1 What is Risk?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" alt="Handwritten: 2.1 What is Risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" alt="Diagram: 2.1 What is Risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" alt="Sticky Note: 2.1 What is Risk?" width="30%">
+</a>
+
+
 **Risk = Likelihood * Impact**
 
 More completely:
@@ -209,6 +297,17 @@ More completely:
 - **Impact:** The magnitude of harm (financial, reputational, regulatory, operational)
 
 ### 2.2 Real-World Analogy: Home Security
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" alt="Handwritten: 2.2 Real-World Analogy: Home Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" alt="Diagram: 2.2 Real-World Analogy: Home Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" alt="Sticky Note: 2.2 Real-World Analogy: Home Security" width="30%">
+</a>
+
 
 | GRC Concept | Home Analogy |
 |-------------|-------------|
@@ -226,6 +325,17 @@ More completely:
 | BCP/DR | "If fire destroys house, we stay at hotel (RTO 4 hrs), file insurance claim, replace essentials within 7 days (RPO 7d)" |
 
 ### 2.3 Risk Management Process (NIST RMF)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" alt="Handwritten: 2.3 Risk Management Process (NIST RMF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" alt="Diagram: 2.3 Risk Management Process (NIST RMF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" alt="Sticky Note: 2.3 Risk Management Process (NIST RMF)" width="30%">
+</a>
+
 
 The NIST Risk Management Framework (RMF) has 7 steps:
 
@@ -245,6 +355,17 @@ The NIST Risk Management Framework (RMF) has 7 steps:
 ```
 
 ### 2.4 Risk Assessment Approaches
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" alt="Handwritten: 2.4 Risk Assessment Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" alt="Diagram: 2.4 Risk Assessment Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" alt="Sticky Note: 2.4 Risk Assessment Approaches" width="30%">
+</a>
+
 
 #### Qualitative Risk Assessment
 
@@ -338,6 +459,17 @@ ROSI of 340% means every $1 spent on controls saves $3.40 → a strong business 
 
 ### 2.5 Risk Register
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" alt="Handwritten: 2.5 Risk Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" alt="Diagram: 2.5 Risk Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" alt="Sticky Note: 2.5 Risk Register" width="30%">
+</a>
+
+
 A risk register is the central repository for all identified risks, their assessments, and treatment plans.
 
 **Risk Register Template:**
@@ -355,6 +487,17 @@ A risk register is the central repository for all identified risks, their assess
 
 ### 2.6 Risk Appetite and Risk Tolerance
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+</a>
+
+
 **Risk Appetite:** The amount of risk an organization is willing to accept in pursuit of value. *(Strategic, broad)*
 **Risk Tolerance:** The acceptable level of variation around risk appetite. *(Operational, specific)*
 
@@ -370,6 +513,17 @@ A risk register is the central repository for all identified risks, their assess
 | **Manufacturing** | Low-moderate | "Safety and IP protection have zero tolerance. Supply chain disruptions tolerated up to 48 hours." |
 
 ### 2.7 FAIR Model (Factor Analysis of Information Risk)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" alt="Handwritten: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" alt="Diagram: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" alt="Sticky Note: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+</a>
+
 
 FAIR is the leading quantitative risk analysis model (now FAIR-TM, maintained by The FAIR Institute).
 
@@ -421,6 +575,17 @@ FAIR is the leading quantitative risk analysis model (now FAIR-TM, maintained by
 
 ### 2.8 Business Impact Analysis (BIA)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" alt="Handwritten: 2.8 Business Impact Analysis (BIA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" alt="Diagram: 2.8 Business Impact Analysis (BIA)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" alt="Sticky Note: 2.8 Business Impact Analysis (BIA)" width="30%">
+</a>
+
+
 A BIA identifies critical business functions, the impact of their disruption, and the resources needed to recover them.
 
 **Key metrics:**
@@ -471,6 +636,17 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 ### 2.9 Risk Response Options
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" alt="Handwritten: 2.9 Risk Response Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" alt="Diagram: 2.9 Risk Response Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" alt="Sticky Note: 2.9 Risk Response Options" width="30%">
+</a>
+
+
 | Response | Definition | When To Use | Example |
 |----------|-----------|-------------|---------|
 | **Mitigate (Reduce)** | Implement controls to lower likelihood or impact | Risk exceeds appetite, controls are cost-effective | Patch management, MFA, EDR |
@@ -481,6 +657,17 @@ A BIA identifies critical business functions, the impact of their disruption, an
 ## Section 3: Compliance
 
 ### 3.1 What is Compliance?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" alt="Handwritten: 3.1 What is Compliance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" alt="Diagram: 3.1 What is Compliance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" alt="Sticky Note: 3.1 What is Compliance?" width="30%">
+</a>
+
 
 **Compliance** is the state of adhering to laws, regulations, standards, contractual obligations, and internal policies that apply to an organization's operations.
 
@@ -494,6 +681,17 @@ A BIA identifies critical business functions, the impact of their disruption, an
 - **Contractual:** Many contracts require compliance (e.g., PCI DSS for payment processing)
 
 ### 3.2 Major Regulations Overview
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" alt="Handwritten: 3.2 Major Regulations Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" alt="Diagram: 3.2 Major Regulations Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" alt="Sticky Note: 3.2 Major Regulations Overview" width="30%">
+</a>
+
 
 | Regulation | Jurisdiction | Sector | Key Focus | Max Fine |
 |-----------|-------------|--------|-----------|----------|
@@ -509,6 +707,17 @@ A BIA identifies critical business functions, the impact of their disruption, an
 | **APRA CPS 234** | Australia | Financial institutions | Information security management | Variable (regulatory action) |
 
 ### 3.3 GDPR → General Data Protection Regulation
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" alt="Handwritten: 3.3 GDPR → General Data Protection Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" alt="Diagram: 3.3 GDPR → General Data Protection Regulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" alt="Sticky Note: 3.3 GDPR → General Data Protection Regulation" width="30%">
+</a>
+
 
 **Effective:** May 25, 2018 | **Jurisdiction:** Any organization processing personal data of EU/EEA residents
 
@@ -625,6 +834,17 @@ Step 7: CLOSE
 
 ### 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+</a>
+
+
 **Effective:** PCI DSS v4.0 was released March 2022, with future-dated requirements effective March 2025.
 
 #### 12 Requirements of PCI DSS 4.0
@@ -682,6 +902,17 @@ Step 7: CLOSE
 
 ### 3.5 HIPAA → Health Insurance Portability and Accountability Act
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" alt="Handwritten: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" alt="Diagram: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" alt="Sticky Note: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+</a>
+
+
 **Who must comply:** Covered entities (healthcare providers, health plans, clearinghouses) and business associates.
 
 #### HIPAA Rules
@@ -722,6 +953,17 @@ Step 7: CLOSE
 
 ### 3.6 SOC 2 → Service Organization Control 2
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" alt="Handwritten: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" alt="Diagram: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" alt="Sticky Note: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+</a>
+
+
 **Published by:** AICPA | **Focus:** Controls at service organizations relevant to security, availability, processing integrity, confidentiality, privacy
 
 #### SOC 2 Trust Services Criteria (TSC)
@@ -751,6 +993,17 @@ Step 7: CLOSE
 
 ### 3.7 FedRAMP → Federal Risk and Authorization Management Program
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" alt="Handwritten: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" alt="Diagram: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" alt="Sticky Note: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+</a>
+
+
 **Jurisdiction:** US Federal Government | **Focus:** Cloud service authorization
 
 **FedRAMP Impact Levels:**
@@ -767,6 +1020,17 @@ Step 7: CLOSE
 3. **State Department Authorization:** Direct from Department of State for their use
 
 ### 3.8 SOX → Sarbanes-Oxley Act
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" alt="Handwritten: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" alt="Diagram: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" alt="Sticky Note: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+</a>
+
 
 **Jurisdiction:** US public companies (and their auditors) | **Year:** 2002
 
@@ -787,6 +1051,17 @@ Step 7: CLOSE
 
 ### 3.9 Breach Notification Laws → International Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" alt="Handwritten: 3.9 Breach Notification Laws → International Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" alt="Diagram: 3.9 Breach Notification Laws → International Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" alt="Sticky Note: 3.9 Breach Notification Laws → International Comparison" width="30%">
+</a>
+
+
 | Regulation | Notification Timeline | To Whom | Threshold |
 |-----------|---------------------|---------|-----------|
 | **GDPR (EU)** | 72 hours | DPA, data subjects (if high risk) | Personal data breach |
@@ -801,6 +1076,17 @@ Step 7: CLOSE
 | **Japan APPI** | As soon as possible | Commission (PPC), affected individuals | Breach involving sensitive data or identity theft risk |
 
 ### 3.10 Data Classification
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" alt="Handwritten: 3.10 Data Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" alt="Diagram: 3.10 Data Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" alt="Sticky Note: 3.10 Data Classification" width="30%">
+</a>
+
 
 Data classification is the process of categorizing data based on its sensitivity and criticality to determine appropriate handling and protection requirements.
 
@@ -825,6 +1111,17 @@ Data classification is the process of categorizing data based on its sensitivity
 7. **Audit** → Verify controls match classification level annually
 
 ### 3.11 Data Privacy (Beyond GDPR)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" alt="Handwritten: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" alt="Diagram: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" alt="Sticky Note: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+</a>
+
 
 **Privacy by Design (PbD) → 7 Foundational Principles (Ann Cavoukian):**
 
@@ -854,6 +1151,17 @@ Data classification is the process of categorizing data based on its sensitivity
 ## Section 4: Security Frameworks
 
 ### 4.1 NIST CSF 2.0 (Cybersecurity Framework)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" alt="Handwritten: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" alt="Diagram: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" alt="Sticky Note: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+</a>
+
 
 **Released:** February 2024 (updated from v1.1) | **Publisher:** National Institute of Standards and Technology
 
@@ -952,6 +1260,17 @@ Data classification is the process of categorizing data based on its sensitivity
 | Tier 4: Adaptive | Real-time, continuous improvement | Adaptive, real-time data-driven | Continuous, org-wide, cross-functional | Real-time intel feeds, automated response |
 
 ### 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" alt="Handwritten: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" alt="Diagram: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" alt="Sticky Note: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+</a>
+
 
 **Latest version:** ISO/IEC 27001:2022 | **Publisher:** International Organization for Standardization
 
@@ -1089,6 +1408,17 @@ ISMS context    operate controls  review ISMS        improve ISMS
 
 ### 4.3 COBIT → Control Objectives for Information and Related Technologies
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" alt="Handwritten: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" alt="Diagram: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" alt="Sticky Note: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+</a>
+
+
 **Publisher:** ISACA | **Current version:** COBIT 2019
 
 **COBIT Framework Principles:**
@@ -1117,6 +1447,17 @@ ISMS context    operate controls  review ISMS        improve ISMS
 | **MEA** → Monitor, Evaluate and Assess | Performance monitoring | 3 | MEA01 Performance monitoring, MEA02 Internal control, MEA03 Regulatory compliance |
 
 ### 4.4 CIS Controls
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" alt="Handwritten: 4.4 CIS Controls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" alt="Diagram: 4.4 CIS Controls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" alt="Sticky Note: 4.4 CIS Controls" width="30%">
+</a>
+
 
 **Publisher:** Center for Internet Security | **Current version:** CIS Controls v8 (updated 2021)
 
@@ -1155,6 +1496,17 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 
 ### 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" alt="Handwritten: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" alt="Diagram: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" alt="Sticky Note: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+</a>
+
+
 | Criteria | NIST CSF 2.0 | ISO 27001 | CIS Controls v8 | PCI DSS 4.0 |
 |----------|-------------|-----------|-----------------|-------------|
 | **Type** | Framework (voluntary) | Standard (certifiable) | Controls (guidance) | Regulation (mandatory for card processing) |
@@ -1172,6 +1524,17 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 
 ### 4.6 Framework Selection → Decision Tree
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" alt="Handwritten: 4.6 Framework Selection → Decision Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" alt="Diagram: 4.6 Framework Selection → Decision Tree" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" alt="Sticky Note: 4.6 Framework Selection → Decision Tree" width="30%">
+</a>
+
+
 ```
 Q: Do you need certification? (customer requirement, RFP)
 |-- YES -> ISO 27001 (global), SOC 2 (US service orgs), FedRAMP (US federal cloud)
@@ -1188,6 +1551,17 @@ Q: Do you need certification? (customer requirement, RFP)
 
 ### 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" alt="Handwritten: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" alt="Diagram: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" alt="Sticky Note: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+</a>
+
+
 | Aspect | NIST CSF 2.0 | ISO 27001 |
 |--------|-------------|-----------|
 | **Philosophy** | "Identify gaps, set priorities" | "Establish, maintain, improve ISMS" |
@@ -1202,6 +1576,17 @@ Q: Do you need certification? (customer requirement, RFP)
 ## Section 5: Business Continuity & Disaster Recovery
 
 ### 5.1 BCP vs DR → Comparison
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" alt="Handwritten: 5.1 BCP vs DR → Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" alt="Diagram: 5.1 BCP vs DR → Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" alt="Sticky Note: 5.1 BCP vs DR → Comparison" width="30%">
+</a>
+
 
 Real-world analogy: **BCP** is the escape plan you keep in your nightstand → where to meet, what to grab, who to call if fire breaks out. **DR** is what happens after the fire trucks leave → drying out photos, filing insurance, rebuilding rooms.
 
@@ -1219,6 +1604,17 @@ Real-world analogy: **BCP** is the escape plan you keep in your nightstand → w
 | **Typical scenario** | "Supplier can't deliver raw materials, find alternate supplier" | "Primary data center flooded, failover to DR site" |
 
 ### 5.2 BCP Process
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" alt="Handwritten: 5.2 BCP Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" alt="Diagram: 5.2 BCP Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" alt="Sticky Note: 5.2 BCP Process" width="30%">
+</a>
+
 
 ```
 Phase 1: Project Initiation
@@ -1250,6 +1646,17 @@ Phase 7: Testing & Maintenance
 
 ### 5.3 DR Strategies
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" alt="Handwritten: 5.3 DR Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" alt="Diagram: 5.3 DR Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" alt="Sticky Note: 5.3 DR Strategies" width="30%">
+</a>
+
+
 | Strategy | RTO | RPO | Cost | Description |
 |----------|-----|-----|------|-------------|
 | **Active-Active (Multi-site)** | Near-zero | Near-zero | Very high | All sites running production simultaneously. Load balanced across sites. |
@@ -1261,6 +1668,17 @@ Phase 7: Testing & Maintenance
 
 ### 5.4 DR Plan Structure (NIST SP 800-34)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" alt="Handwritten: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" alt="Diagram: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" alt="Sticky Note: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+</a>
+
+
 1. **Plan Overview** → Purpose, scope, assumptions, RTO/RPO summary
 2. **Roles and Responsibilities** → DR team org chart, call tree, escalation contacts
 3. **Incident Response** → Detection, declaration criteria, activation procedures
@@ -1271,6 +1689,17 @@ Phase 7: Testing & Maintenance
 8. **Plan Maintenance** → Review cycle, version control, distribution
 
 ### 5.5 DR Testing Types
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" alt="Handwritten: 5.5 DR Testing Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" alt="Diagram: 5.5 DR Testing Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" alt="Sticky Note: 5.5 DR Testing Types" width="30%">
+</a>
+
 
 | Test Type | Effort | Value | Description |
 |-----------|--------|-------|-------------|
@@ -1286,6 +1715,17 @@ Phase 7: Testing & Maintenance
 ## Section 6: Third-Party Risk Management (TPRM)
 
 ### 6.1 TPRM Lifecycle
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" alt="Handwritten: 6.1 TPRM Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" alt="Diagram: 6.1 TPRM Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" alt="Sticky Note: 6.1 TPRM Lifecycle" width="30%">
+</a>
+
 
 ```
 Phase 1: Identify & Categorize
@@ -1321,6 +1761,17 @@ Phase 5: Offboarding
 ```
 
 ### 6.2 Vendor Risk Assessment Questionnaire Template
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" alt="Handwritten: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" alt="Diagram: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" alt="Sticky Note: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+</a>
+
 
 | Category | Question | Finding | Risk Score |
 |----------|----------|---------|------------|
@@ -1373,9 +1824,31 @@ Phase 5: Offboarding
 
 ### 7.1 Why Security Awareness?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" alt="Handwritten: 7.1 Why Security Awareness?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" alt="Diagram: 7.1 Why Security Awareness?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" alt="Sticky Note: 7.1 Why Security Awareness?" width="30%">
+</a>
+
+
 Humans are the #1 attack vector → 74% of breaches involve the human element (Verizon DBIR 2024). Security awareness training reduces phishing click rates from 25% to &lt;5% on average.
 
 ### 7.2 Training Plan Outline
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" alt="Handwritten: 7.2 Training Plan Outline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" alt="Diagram: 7.2 Training Plan Outline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" alt="Sticky Note: 7.2 Training Plan Outline" width="30%">
+</a>
+
 
 **Quarterly Security Awareness Program:**
 
@@ -1409,6 +1882,17 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 7.3 Phishing Simulation Results Analysis
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" alt="Handwritten: 7.3 Phishing Simulation Results Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" alt="Diagram: 7.3 Phishing Simulation Results Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" alt="Sticky Note: 7.3 Phishing Simulation Results Analysis" width="30%">
+</a>
+
+
 **Sample Campaign Results:**
 
 | Campaign | Emails Sent | Clicked | Click Rate | Reported | Reporting Rate | Avg Time to Report |
@@ -1435,6 +1919,17 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 8.1 Internal vs External Audits
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" alt="Handwritten: 8.1 Internal vs External Audits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" alt="Diagram: 8.1 Internal vs External Audits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" alt="Sticky Note: 8.1 Internal vs External Audits" width="30%">
+</a>
+
+
 | Aspect | Internal Audit | External Audit |
 |--------|---------------|----------------|
 | **Performed by** | Internal audit department | Third-party firm (QSA, CPA, certification body) |
@@ -1446,6 +1941,17 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 | **Cost** | Lower (internal resources) | Higher ($30Kâ€“$150K per engagement) |
 
 ### 8.2 Audit Process
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" alt="Handwritten: 8.2 Audit Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" alt="Diagram: 8.2 Audit Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" alt="Sticky Note: 8.2 Audit Process" width="30%">
+</a>
+
 
 ```
 Phase 1: Planning
@@ -1478,6 +1984,17 @@ Phase 4: Remediation Verification
 
 ### 8.3 Internal Audit Checklist Example
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" alt="Handwritten: 8.3 Internal Audit Checklist Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" alt="Diagram: 8.3 Internal Audit Checklist Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" alt="Sticky Note: 8.3 Internal Audit Checklist Example" width="30%">
+</a>
+
+
 **Audit Area: Identity and Access Management (IAM)**
 
 | # | Control Question | Evidence | Result | Finding |
@@ -1509,6 +2026,17 @@ Phase 4: Remediation Verification
 
 ### 9.1 Metrics Framework (SMART)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" alt="Handwritten: 9.1 Metrics Framework (SMART)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" alt="Diagram: 9.1 Metrics Framework (SMART)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" alt="Sticky Note: 9.1 Metrics Framework (SMART)" width="30%">
+</a>
+
+
 **Good metrics are:**
 - **S**pecific → clearly defined, unambiguous
 - **M**easurable → quantifiable, objective data source
@@ -1517,6 +2045,17 @@ Phase 4: Remediation Verification
 - **T**imely → measured at appropriate frequency
 
 ### 9.2 Key Performance Indicators (KPIs)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" alt="Handwritten: 9.2 Key Performance Indicators (KPIs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" alt="Diagram: 9.2 Key Performance Indicators (KPIs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" alt="Sticky Note: 9.2 Key Performance Indicators (KPIs)" width="30%">
+</a>
+
 
 | KPI | Formula | Target | Frequency | Owner |
 |-----|---------|--------|-----------|-------|
@@ -1535,6 +2074,17 @@ Phase 4: Remediation Verification
 
 ### 9.3 Key Risk Indicators (KRIs)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" alt="Handwritten: 9.3 Key Risk Indicators (KRIs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" alt="Diagram: 9.3 Key Risk Indicators (KRIs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" alt="Sticky Note: 9.3 Key Risk Indicators (KRIs)" width="30%">
+</a>
+
+
 KRIs are leading indicators that predict an increased risk of a negative event.
 
 | KRI | What It Indicates | Threshold | Action |
@@ -1548,6 +2098,17 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 | IT budget spent on security vs plan | Underfunding risk | <80% after 9 months | Flag to Board for budget reallocation |
 
 ### 9.4 Board-Level Dashboard (Sample)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" alt="Handwritten: 9.4 Board-Level Dashboard (Sample)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" alt="Diagram: 9.4 Board-Level Dashboard (Sample)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" alt="Sticky Note: 9.4 Board-Level Dashboard (Sample)" width="30%">
+</a>
+
 
 | Category | Metric | Q1 | Q2 | Q3 | Q4 | Target | Status |
 |----------|--------|----|----|----|----|--------|--------|
@@ -1566,6 +2127,17 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 ## Section 10: Case Studies
 
 ### Case Study 1: Equifax (2017) → GRC Failure on Every Front
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" alt="Handwritten: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" alt="Diagram: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" alt="Sticky Note: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+</a>
+
 
 **Background:** Equifax, one of the three major US credit bureaus, suffered a breach exposing 147M records of PII (SSN, DOB, addresses, driver's license numbers, credit card numbers).
 
@@ -1612,6 +2184,17 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 ### Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" alt="Handwritten: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" alt="Diagram: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" alt="Sticky Note: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+</a>
+
+
 **Background:** Marriott International acquired Starwood hotels in 2016. Starwood's reservation database had been compromised since 2014. After acquisition integration, Marriott discovered the breach in 2018 → 339 million guest records exposed.
 
 **Timeline:**
@@ -1653,6 +2236,17 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 ### Case Study 3: TikTok (2023) → GDPR Children's Data Violations
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" alt="Handwritten: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" alt="Diagram: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" alt="Sticky Note: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+</a>
+
+
 **Background:** TikTok (TikTok Technology Limited, Ireland) fined 345 million euros by Irish Data Protection Commission (DPC) for violations related to children's data processing.
 
 **Violations:**
@@ -1679,6 +2273,17 @@ TikTok's **Data Protection Impact Assessment (DPIA)** was inadequate → it iden
 ---
 
 ### Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" alt="Handwritten: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" alt="Diagram: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" alt="Sticky Note: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+</a>
+
 
 **Background:** Wells Fargo employees created 3.5 million unauthorized bank and credit card accounts to meet aggressive sales quotas. While primarily a consumer fraud case, it's the definitive case study in **governance failure** with cascading consequences.
 
@@ -1718,6 +2323,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Case Study Summary Matrix
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" alt="Handwritten: Case Study Summary Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" alt="Diagram: Case Study Summary Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" alt="Sticky Note: Case Study Summary Matrix" width="30%">
+</a>
+
+
 | Case | Primary GRC Failure | Root Cause | Penalty | Key Takeaway |
 |------|-------------------|------------|---------|--------------|
 | **Equifax 2017** | Risk Management | No asset inventory, no patching SLA, expired cert | $1.4B | You can't protect what you don't know you have |
@@ -1730,6 +2346,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 ## Section 11: Comparison Tables
 
 ### 11.1 GDPR vs CCPA vs LGPD vs PIPEDA
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" alt="Handwritten: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" alt="Diagram: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" alt="Sticky Note: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+</a>
+
 
 | Aspect | GDPR | CCPA/CPRA | LGPD | PIPEDA |
 |--------|------|-----------|------|--------|
@@ -1746,6 +2373,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 11.2 Data Classification Levels (Enterprise)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" alt="Handwritten: 11.2 Data Classification Levels (Enterprise)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" alt="Diagram: 11.2 Data Classification Levels (Enterprise)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" alt="Sticky Note: 11.2 Data Classification Levels (Enterprise)" width="30%">
+</a>
+
+
 | Level | Examples | Access | Encryption | Retention | Disposal |
 |-------|----------|--------|------------|-----------|----------|
 | **Public** | Press releases, marketing content | No auth | Optional | Indefinite | N/A |
@@ -1755,6 +2393,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 | **Regulatory** | Data subject to specific regulation (HIPAA, PCI) | Role-based + auditing + PAM | Field-level encryption | 6 years (HIPAA), 3 years (PCI) | NIST SP 800-88 clear/purge/destroy |
 
 ### 11.3 BCP vs DR (Detailed)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" alt="Handwritten: 11.3 BCP vs DR (Detailed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" alt="Diagram: 11.3 BCP vs DR (Detailed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" alt="Sticky Note: 11.3 BCP vs DR (Detailed)" width="30%">
+</a>
+
 
 | Dimension | BCP | DR |
 |-----------|-----|----|
@@ -1775,61 +2424,226 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q1: What is GRC and why is it important?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is GRC and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" alt="Diagram: What is GRC and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is GRC and why is it important?" width="30%">
+</a>
+
+
 **A:** GRC stands for Governance, Risk, and Compliance. It's an integrated approach to managing an organization's security posture. **Governance** sets the rules (policies, org structure, oversight), **Risk Management** identifies and quantifies threats (risk assessments, risk registers, treatment plans), and **Compliance** ensures adherence to laws and standards (GDPR, HIPAA, PCI DSS, SOX). It's important because it connects security to business outcomes → without GRC, security is reactive and disconnected from business strategy.
 
 ### Q2: What is the difference between a security policy, a standard, a procedure, and a guideline?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" alt="Handwritten: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" alt="Diagram: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" alt="Sticky Note: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+</a>
+
 
 **A:** A **policy** is a high-level management intent (e.g., "All data must be encrypted at rest"). It's mandatory. A **standard** defines specific mandatory requirements (e.g., "AES-256 encryption for all databases"). A **procedure** is step-by-step instructions (e.g., "How to encrypt a database using AWS KMS"). A **guideline** is advisory (e.g., "Consider using AWS KMS automatic key rotation"). Think of policy as "what," standard as "how well," procedure as "how exactly," and guideline as "what else to consider."
 
 ### Q3: Explain the NIST CSF 2.0 functions.
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" alt="Handwritten: Explain the NIST CSF 2.0 functions." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" alt="Diagram: Explain the NIST CSF 2.0 functions." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" alt="Sticky Note: Explain the NIST CSF 2.0 functions." width="30%">
+</a>
+
+
 **A:** NIST CSF 2.0 has six core functions: **Govern** (new in 2.0 → org context, risk management strategy, roles, policies), **Identify** (asset management, risk assessment, improvement), **Protect** (identity management, awareness, data security, platform security, resilience), **Detect** (continuous monitoring, anomaly detection, event analysis), **Respond** (incident management, analysis, mitigation, communications), and **Recover** (recovery planning, improvements, communications). These functions are performed in parallel, not sequentially → an organization should always be identifying, protecting, and detecting simultaneously.
 
 ### Q4: What is the difference between qualitative and quantitative risk assessment?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" alt="Handwritten: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" alt="Diagram: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" alt="Sticky Note: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+
 
 **A:** **Qualitative** uses descriptive scales (Low, Medium, High) for likelihood and impact → fast, subjective, good for initial triage. **Quantitative** uses monetary values (ALE = SLE x ARO) and statistical models → data-driven, precise, but slow and resource-intensive. Most mature organizations use a hybrid: qualitative for most risks, quantitative for critical risks that require budget decisions or insurance. Example: Qualitative says "High risk," but the CFO asks "How much?" → that's when you need quantitative.
 
 ### Q5: What is a risk register and what should it contain?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" alt="Handwritten: What is a risk register and what should it contain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" alt="Diagram: What is a risk register and what should it contain?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" alt="Sticky Note: What is a risk register and what should it contain?" width="30%">
+</a>
+
+
 **A:** A risk register is the central repository of all identified risks. Minimum fields: Risk ID, date identified, risk description (threat + vulnerability + asset), likelihood, impact, inherent risk score, controls, residual likelihood/impact/score, risk response (mitigate/accept/transfer/avoid), treatment plan, owner, review date, status. The risk register should be a living document → reviewed quarterly and updated when new risks emerge or controls change.
 
 ### Q6: What is the difference between risk appetite and risk tolerance?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: What is the difference between risk appetite and risk tolerance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: What is the difference between risk appetite and risk tolerance?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: What is the difference between risk appetite and risk tolerance?" width="30%">
+</a>
+
 
 **A:** **Risk appetite** is the broad level of risk an organization is willing to accept to achieve its objectives (e.g., "We accept moderate security risk because we're a fast-moving startup"). **Risk tolerance** is the acceptable deviation from appetite for specific risks (e.g., "We accept up to 48 hours downtime for non-critical systems, but zero tolerance for PII breaches"). Appetite is strategic and board-level; tolerance is operational and can be set by management within the appetite boundaries.
 
 ### Q7: How does GDPR define a personal data breach and what are the notification requirements?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" alt="Handwritten: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" alt="Diagram: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" alt="Sticky Note: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+</a>
+
+
 **A:** GDPR defines a personal data breach as "a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data" (Article 4(12)). Notification requirements: (1) Notify the DPA within **72 hours** of becoming aware (Article 33) → unless the breach is unlikely to result in risk to individuals. (2) Notify the data subjects **without undue delay** if the breach is likely to result in high risk to their rights and freedoms (Article 34). (3) Maintain a record of all breaches, including those not notified (Article 33(5)).
 
 ### Q8: What is the difference between NIST CSF and ISO 27001?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" alt="Handwritten: What is the difference between NIST CSF and ISO 27001?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" alt="Diagram: What is the difference between NIST CSF and ISO 27001?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" alt="Sticky Note: What is the difference between NIST CSF and ISO 27001?" width="30%">
+</a>
+
 
 **A:** NIST CSF is a **framework** → it provides guidance and best practices but is not certifiable. ISO 27001 is a **standard** → you can achieve third-party certification. NIST CSF is more flexible (any controls can map to its functions), while ISO 27001 has specific required controls (Annex A). NIST CSF is stronger for Board communication (the five functions translate well to non-technical audiences), while ISO 27001 is stronger for operational rigor (mandatory risk assessment, SoA, internal audit). Many orgs use both: NIST CSF at strategic level, ISO 27001 at operational level.
 
 ### Q9: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" alt="Handwritten: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" alt="Diagram: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" alt="Sticky Note: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+</a>
+
+
 **A:** A BIA identifies critical business functions, the impact of their disruption, and recovery requirements. **RTO** (Recovery Time Objective) is the target time to restore a function after disruption → determined by asking "How long can we afford to be down before the business is irreparably harmed?" **RPO** (Recovery Point Objective) is the maximum acceptable data loss → determined by asking "How much data can we afford to lose?" Both are derived from the **MTD** (Maximum Tolerable Downtime), which is the absolute outer limit. The BIA interviews business process owners who define these thresholds based on financial, regulatory, operational, and reputational impact over time.
 
 ### Q10: What is the FAIR model?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" alt="Handwritten: What is the FAIR model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" alt="Diagram: What is the FAIR model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" alt="Sticky Note: What is the FAIR model?" width="30%">
+</a>
+
 
 **A:** FAIR (Factor Analysis of Information Risk) is a quantitative risk analysis model that decomposes risk into Loss Event Frequency (LEF) and Loss Magnitude (LM). LEF is broken into Threat Event Frequency (TEF) and Vulnerability (V). LM is broken into Primary Loss (direct) and Secondary Risk (indirect). FAIR produces risk expressed in monetary terms with confidence intervals → e.g., "We have 80% confidence that the annualized risk of ransomware is between $50K and $200K." It uses Monte Carlo simulation to account for uncertainty and produces probability distributions rather than point estimates.
 
 ### Q11: What are the 12 PCI DSS 4.0 requirements?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" alt="Handwritten: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" alt="Diagram: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" alt="Sticky Note: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+</a>
+
+
 **A:** PCI DSS 4.0 has 12 requirements organized into 6 goals: **Goal 1** → Build and Maintain a Secure Network (1: Install firewalls, 2: Secure configurations). **Goal 2** → Protect Cardholder Data (3: Protect stored data, 4: Encrypt transmission). **Goal 3** → Maintain Vulnerability Management Program (5: Anti-malware, 6: Secure systems and apps). **Goal 4** → Implement Strong Access Control (7: Need-to-know access, 8: Identify and authenticate, 9: Restrict physical access). **Goal 5** → Monitor and Test Networks (10: Log and monitor, 11: Test security). **Goal 6** → Maintain Policy (12: Information security policy). Each requirement has detailed testing procedures that QSAs verify.
 
 ### Q12: What is a DPIA and when is it mandatory under GDPR?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" alt="Handwritten: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" alt="Diagram: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" alt="Sticky Note: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+</a>
+
 
 **A:** A DPIA (Data Protection Impact Assessment) is a process to identify and minimize data protection risks of a project or processing activity. It's mandatory under GDPR Article 35 when processing is "likely to result in high risk" to individuals. Triggers include: (1) Systematic profiling with significant effects, (2) Large-scale processing of special categories (health, biometric, genetic, criminal), (3) Systematic monitoring of publicly accessible areas (CCTV), (4) Large-scale processing of children's data, (5) Use of innovative technology (AI, IoT, facial recognition, behavioral tracking). The DPIA must describe processing, assess necessity, identify risks, and document mitigation measures.
 
 ### Q13: What is the difference between SOC 2 Type I and Type II?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" alt="Handwritten: What is the difference between SOC 2 Type I and Type II?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" alt="Diagram: What is the difference between SOC 2 Type I and Type II?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" alt="Sticky Note: What is the difference between SOC 2 Type I and Type II?" width="30%">
+</a>
+
+
 **A:** **SOC 2 Type I** evaluates whether controls are **suitably designed** at a **point in time** (e.g., "As of March 15, 2024, the controls were designed appropriately"). **SOC 2 Type II** evaluates whether controls are **suitably designed** AND **operating effectively** over a **period of time** (e.g., "For the period January 1 to December 31, 2024, the controls were designed and operating effectively"). Type II is far more rigorous and what customers typically demand because it provides evidence that controls actually work in practice, not just on paper.
 
 ### Q14: How do you calculate ROSI (Return on Security Investment)?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" alt="Handwritten: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" alt="Diagram: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" alt="Sticky Note: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+</a>
+
+
 **A:** ROSI = (ALE_before - ALE_after - Cost_of_control) / Cost_of_control x 100%. Example: Before EDR, ALE is $240K/year. EDR costs $50K/year. After EDR, ALE drops to $20K/year. ROSI = ($240K - $20K - $50K) / $50K = 340%. This means every dollar spent on the control saves $3.40. ROSI is essential for making the business case for security investments to CFOs and boards.
 
 ### Q15: What are the key elements of an effective security awareness program?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" alt="Handwritten: What are the key elements of an effective security awareness program?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" alt="Diagram: What are the key elements of an effective security awareness program?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" alt="Sticky Note: What are the key elements of an effective security awareness program?" width="30%">
+</a>
+
 
 **A:** An effective program has five pillars: (1) **Ongoing engagement** → monthly (not annual) training modules, quarterly phishing simulations, regular security newsletters. (2) **Role-based content** → generic training for all, specialized training for developers (secure coding), executives (whaling), HR (data handling). (3) **Measurable outcomes** → phishing click rate (<5%), training completion (100%), reporting rate (>50%), time to report (<5 min). (4) **Positive reinforcement** → reward reporting real phishing emails, gamify completion rates, recognize "security champions" in each department. (5) **Accountability** → repeat clickers get retraining, 3+ clicks escalate to manager, persistent non-compliance has consequences.
 
@@ -1838,6 +2652,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 ## Section 13: Applications in Real Systems
 
 ### 13.1 GRC in Cloud Environments
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" alt="Handwritten: 13.1 GRC in Cloud Environments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" alt="Diagram: 13.1 GRC in Cloud Environments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" alt="Sticky Note: 13.1 GRC in Cloud Environments" width="30%">
+</a>
+
 
 | Cloud Provider | Compliance Certifications | Shared Responsibility Model |
 |----------------|--------------------------|---------------------------|
@@ -1853,6 +2678,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.2 GRC in Application Security (DevSecOps)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" alt="Handwritten: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" alt="Diagram: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" alt="Sticky Note: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+</a>
+
+
 | SDLC Phase | GRC Activity | Tooling |
 |------------|-------------|---------|
 | **Plan** | Threat modeling (STRIDE), risk assessment | OWASP Threat Dragon, Microsoft TMT |
@@ -1864,6 +2700,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.3 GRC in Healthcare
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" alt="Handwritten: 13.3 GRC in Healthcare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" alt="Diagram: 13.3 GRC in Healthcare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" alt="Sticky Note: 13.3 GRC in Healthcare" width="30%">
+</a>
+
+
 | Regulation | Implementation Example | GRC Process |
 |-----------|----------------------|-------------|
 | **HIPAA Security Rule** | Risk analysis every 2 years, annual security awareness training | Risk Management |
@@ -1872,6 +2719,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 | **FDA Pre-market Cybersecurity** (2023) | Threat model, SBOM, vulnerability disclosure process for connected medical devices | Governance / Risk |
 
 ### 13.4 GRC in Financial Services
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" alt="Handwritten: 13.4 GRC in Financial Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" alt="Diagram: 13.4 GRC in Financial Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" alt="Sticky Note: 13.4 GRC in Financial Services" width="30%">
+</a>
+
 
 | Regulation | Implementation Example | GRC Process |
 |-----------|----------------------|-------------|
@@ -1883,6 +2741,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.5 GRC in Government / Defense
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" alt="Handwritten: 13.5 GRC in Government / Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" alt="Diagram: 13.5 GRC in Government / Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" alt="Sticky Note: 13.5 GRC in Government / Defense" width="30%">
+</a>
+
+
 | Framework | Implementation Example | GRC Process |
 |-----------|----------------------|-------------|
 | **NIST RMF** | Categorize system -> Select controls (800-53) -> Implement -> Assess -> Authorize -> Monitor | Risk Management |
@@ -1892,6 +2761,17 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 | **ITAR / EAR** | Export-controlled data handling, access controls for non-US persons, data residency | Compliance |
 
 ### 13.6 GRC Tools Landscape
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" alt="Handwritten: 13.6 GRC Tools Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" alt="Diagram: 13.6 GRC Tools Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" alt="Sticky Note: 13.6 GRC Tools Landscape" width="30%">
+</a>
+
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -1997,19 +2877,74 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 15.1 Expanded Interview Corner → Additional 15 Q&As
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" alt="Handwritten: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" alt="Diagram: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" alt="Sticky Note: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+</a>
+
+
 ### Q16: What is the principle of "Privacy by Design" and how do you implement it?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+</a>
+
 
 **A:** Privacy by Design (PbD) is a framework developed by Ann Cavoukian that embeds privacy into the design specifications of technology, business practices, and infrastructure → rather than adding it as an afterthought. The seven principles: (1) Proactive not reactive → anticipate privacy issues before they occur, (2) Privacy as default → no action required from the user, (3) Privacy embedded into design → system architecture includes privacy controls, (4) Full functionality → privacy and security are not trade-offs, (5) End-to-end security → data protected from collection to deletion, (6) Visibility and transparency → processes are open and documented, (7) Respect for user privacy → user-centric controls and granular notifications. Implementation: Conduct a DPIA before building any new system, minimize data collection by default, encrypt data at rest and in transit by default, provide users with granular consent controls, and log all access to personal data.
 
 ### Q17: Explain the difference between a vulnerability, a threat, and a risk.
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" alt="Handwritten: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" alt="Diagram: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" alt="Sticky Note: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+</a>
+
+
 **A:** A **vulnerability** is a weakness (unpatched software, open S3 bucket, weak password). A **threat** is something that could exploit that weakness (hacker, malware, insider). **Risk** is the combination: the likelihood that the threat exploits the vulnerability, times the impact. Analogy: A broken lock on your door is a **vulnerability**. A burglar walking down your street is a **threat**. The chance that the burglar tries your door and enters your house, and what you lose if that happens, is **risk**. You fix the lock (mitigate) to reduce risk.
 
 ### Q18: What is a "Statement of Applicability" (SoA) in ISO 27001?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" alt="Handwritten: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" alt="Diagram: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" alt="Sticky Note: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+</a>
+
+
 **A:** The SoA is a mandatory document in ISO 27001 (Clause 6.1.3) that lists all 93 Annex A controls and for each one states: (a) whether it is applicable or not, and (b) justification for inclusion or exclusion. For applicable controls, the SoA cross-references to the specific policies, procedures, and controls that address each requirement. The SoA bridges the risk assessment and the control implementation → it proves that the organization has systematically considered every Annex A control and made a risk-based decision about each one. Excluding controls requires specific justification (e.g., "Control 8.19 (installation of software) is not applicable because the organization uses only SaaS applications and no software installation is permitted on endpoints").
 
 ### Q19: What is the "shared responsibility model" in cloud security?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" alt="Handwritten: What is the "shared responsibility model" in cloud security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" alt="Diagram: What is the "shared responsibility model" in cloud security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" alt="Sticky Note: What is the "shared responsibility model" in cloud security?" width="30%">
+</a>
+
 
 **A:** The shared responsibility model defines which security controls are managed by the cloud provider vs the customer. The provider is responsible for **security OF the cloud** → physical security, hardware, hypervisor, network infrastructure, and (for SaaS) the application itself. The customer is responsible for **security IN the cloud** → data classification, encryption, IAM configuration, network ACLs, OS patching (in IaaS), application security (in PaaS), and compliance. The exact split depends on the service model:
 
@@ -2025,29 +2960,106 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q20: How does SOX Section 404 apply to IT?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" alt="Handwritten: How does SOX Section 404 apply to IT?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" alt="Diagram: How does SOX Section 404 apply to IT?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" alt="Sticky Note: How does SOX Section 404 apply to IT?" width="30%">
+</a>
+
+
 **A:** SOX Section 404 requires management to assess and report on the effectiveness of internal controls over financial reporting (ICFR). IT controls are relevant because financial systems (ERP, accounting software, payment systems) are IT systems. The IT General Controls (ITGC) that support financial reporting integrity must be documented, tested, and proven effective. Key ITGC domains: (1) Access Management → who can create, modify, and delete financial records; (2) Change Management → changes to financial systems are authorized, tested, and approved before deployment; (3) Computer Operations → batch jobs run correctly, error handling, backup/restore; (4) Program Development → new financial systems follow secure SDLC. The external auditor tests ITGCs as part of the financial statement audit.
 
 ### Q21: What is a "control objective" and give an example?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" alt="Handwritten: What is a "control objective" and give an example?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" alt="Diagram: What is a "control objective" and give an example?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" alt="Sticky Note: What is a "control objective" and give an example?" width="30%">
+</a>
+
 
 **A:** A control objective is a statement of the desired outcome that a control or group of controls is designed to achieve. It defines WHAT must be accomplished, not HOW. Example: "Only authorized users can access the production database." The controls that achieve this objective include: (1) Database authentication (username/password or IAM), (2) Network ACLs restricting source IPs, (3) MFA for database access, (4) Access review every 90 days, (5) Audit logging of all database queries. Control objectives are used in frameworks (COBIT, ISO 27001), audit programs, and SOX compliance to define what "good" looks like without prescribing specific technology.
 
 ### Q22: What are compensating controls in PCI DSS?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" alt="Handwritten: What are compensating controls in PCI DSS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" alt="Diagram: What are compensating controls in PCI DSS?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" alt="Sticky Note: What are compensating controls in PCI DSS?" width="30%">
+</a>
+
+
 **A:** Compensating controls are alternative security measures that mitigate the risk of a PCI DSS requirement that cannot be met due to legitimate technical or business constraints. They must: (1) Meet the intent and rigor of the original requirement, (2) Provide a similar level of defense, (3) Be "above and beyond" other PCI DSS requirements, (4) Be commensurate with the additional risk imposed. Example: If an organization cannot use point-to-point encryption (P2PE) for cardholder data at a legacy POS terminal, they might implement network segmentation (isolate the POS from the rest of the network), plus file integrity monitoring on the POS, plus physical security controls over the terminal. All compensating controls must be documented in the SAQ and validated by the QSA.
 
 ### Q23: What is the role of the Data Protection Officer (DPO) under GDPR?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" alt="Handwritten: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" alt="Diagram: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" alt="Sticky Note: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+</a>
+
 
 **A:** The DPO is a mandatory role under GDPR Article 37 for: (1) Public authorities, (2) Organizations that systematically monitor individuals on a large scale, (3) Organizations that process special categories of data (health, criminal, biometric) on a large scale. DPO responsibilities (Article 39): (a) Inform and advise the organization and its employees of GDPR obligations, (b) Monitor compliance → including awareness-raising, training, and audits, (c) Provide advice on DPIAs, (d) Cooperate with the supervisory authority, (e) Act as contact point for the supervisory authority and data subjects. The DPO must have independence → cannot be dismissed or penalized for performing duties, must report to the highest management level, and must have adequate resources. The DPO cannot hold a position that creates a conflict of interest (e.g., cannot be both DPO and CIO).
 
 ### Q24: What is the difference between a Security Incident and a Security Event?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" alt="Handwritten: What is the difference between a Security Incident and a Security Event?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" alt="Diagram: What is the difference between a Security Incident and a Security Event?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" alt="Sticky Note: What is the difference between a Security Incident and a Security Event?" width="30%">
+</a>
+
+
 **A:** A **security event** is any observable occurrence in a system or network (a log entry, an alert, a user login). Most events are benign. A **security incident** is a confirmed or suspected violation of security policy that could harm the organization. All incidents are events, but not all events are incidents. Example: A failed login attempt is an **event**. 100 failed login attempts from the same IP in 5 minutes is an **event** that might trigger an alert. If investigation confirms a brute-force attack that successfully compromised an account, that's now an **incident**. The incident response plan is activated for incidents, not events. This distinction is critical for SOC operations to avoid alert fatigue.
 
 ### Q25: Explain the concept of "defense in depth" and how it maps to GRC.
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" alt="Handwritten: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" alt="Diagram: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" alt="Sticky Note: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+</a>
+
+
 **A:** Defense in depth is a layered security strategy where multiple independent controls protect the same asset, so if one fails, another still provides protection. In GRC terms, each layer is a control that corresponds to a policy requirement, risk mitigation, or compliance mandate. Layers typically include: (1) Physical security (fences, locks, guards) → policy: Physical Security Policy, (2) Network security (firewalls, IDS/IPS, segmentation) → standard: Network Security Standard, (3) Endpoint security (EDR, antivirus, patch management) → baseline: Endpoint Security Baseline, (4) Application security (WAF, input validation, secure coding) → procedure: Secure SDLC Procedure, (5) Data security (encryption, DLP, access controls) → standard: Data Protection Standard, (6) Identity security (MFA, RBAC, PAM) → policy: Access Control Policy, (7) Administrative controls (awareness training, background checks) → procedure: Onboarding Procedure. GRC ensures each layer has a documented owner, is tested periodically, and has compensating controls for known gaps.
 
 ### Q26: What is the "three lines of defense" model?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" alt="Handwritten: What is the "three lines of defense" model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" alt="Diagram: What is the "three lines of defense" model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" alt="Sticky Note: What is the "three lines of defense" model?" width="30%">
+</a>
+
 
 **A:** The Three Lines of Defense model defines how risk and control responsibilities are distributed:
 
@@ -2061,21 +3073,76 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### Q27: What is a "materiality threshold" in the context of risk?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" alt="Handwritten: What is a "materiality threshold" in the context of risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" alt="Diagram: What is a "materiality threshold" in the context of risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" alt="Sticky Note: What is a "materiality threshold" in the context of risk?" width="30%">
+</a>
+
+
 **A:** Materiality threshold is the level at which a risk becomes significant enough to require disclosure to the board, regulators, shareholders, or the public. It's borrowed from financial auditing (SEC defines materiality as information that would influence a reasonable investor's decision). In cybersecurity: (1) **Financial materiality** → breach costs exceeding X% of revenue (e.g., 3% for SEC proposed rules), (2) **Operational materiality** → downtime exceeding MTD, (3) **Regulatory materiality** → breach volume exceeding GDPR notification thresholds, (4) **Reputational materiality** → breach affecting VIP customers or causing national news coverage. SEC's 2023 cybersecurity disclosure rules require public companies to disclose material cybersecurity incidents within 4 business days. The CISO and CFO must agree on materiality assessment criteria before an incident occurs.
 
 ### Q28: How do you build a business case for security investment?
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" alt="Handwritten: How do you build a business case for security investment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" alt="Diagram: How do you build a business case for security investment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" alt="Sticky Note: How do you build a business case for security investment?" width="30%">
+</a>
+
 
 **A:** A security business case must speak the language of the CFO → ROI and risk reduction. Framework: (1) **Identify the risk** → what could happen (ransomware encrypting 500 servers), probability (20% annual), impact ($5M). (2) **Quantify the current ALE** → $5M x 0.2 = $1M/year. (3) **Propose controls** → EDR + immutable backups + IR retainer = $200K/year. (4) **Quantify residual ALE** → after controls, likelihood drops to 5%, impact drops to $500K. New ALE = $25K/year. (5) **Calculate ROSI** → ($1M - $25K - $200K) / $200K = 387%. (6) **Include qualitative factors** → regulatory fines, reputational damage, customer trust. (7) **Compare to alternatives** → cyber insurance ($150K/year with $500K deductible) vs self-insuring vs accepting risk. (8) **Request specific budget** → with clear deliverables, timeline, and success metrics.
 
 ### Q29: What is the difference between an Information Security Policy and an ISMS Scope?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" alt="Handwritten: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" alt="Diagram: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" alt="Sticky Note: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+</a>
+
+
 **A:** The **Information Security Policy** (ISO 27001 Clause 5.2) is a high-level document that states management's commitment to information security, defines high-level objectives, and assigns responsibilities. It's typically 2-5 pages and applies to the entire organization. The **ISMS Scope** (Clause 4.3) defines the boundaries of the Information Security Management System → which systems, departments, locations, and data are covered by ISO 27001 certification. The scope might be narrower than the entire organization (e.g., "The ISMS covers the production data center in Frankfurt and all customer data processing systems. Corporate HR systems are out of scope."). The scope is determined by: organizational context, stakeholder requirements, interfaces and dependencies with external organizations, and excluded systems with justification.
 
 ### Q30: What are the key considerations for international data transfers under GDPR?
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" alt="Handwritten: What are the key considerations for international data transfers under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" alt="Diagram: What are the key considerations for international data transfers under GDPR?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" alt="Sticky Note: What are the key considerations for international data transfers under GDPR?" width="30%">
+</a>
+
+
 **A:** GDPR Chapter V restricts transfers of personal data outside the EU/EEA unless one of the following "transfer mechanisms" is in place: (1) **Adequacy decision** → European Commission determines the destination country has "adequate" data protection (currently: Andorra, Argentina, Canada (commercial), Faroe Islands, Guernsey, Israel, Isle of Man, Japan, Jersey, New Zealand, Republic of Korea, Switzerland, UK, United States (Data Privacy Framework), Uruguay). (2) **Standard Contractual Clauses (SCCs)** → pre-approved contractual clauses between data exporter and importer. Updated in 2021 (Module 1-4). Must conduct Transfer Impact Assessment (TIA). (3) **Binding Corporate Rules (BCRs)** → approved internal data protection policies for multinational groups. (4) **Derogations** → explicit consent, contract necessity, vital interests, public interest, legal claims, or legitimate interests (must notify and document). Key consideration post-Schrems II (CJEU 2020): even with SCCs, you must assess whether the destination country's laws provide "essentially equivalent" protection → if not, you need supplementary measures (technical encryption, contractual enforcement, data minimization).
 
 ### 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" alt="Handwritten: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" alt="Diagram: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" alt="Sticky Note: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+</a>
+
 
 **Scenario:** Mid-size healthcare SaaS company (200 employees) preparing for SOC 2 Type II audit. They process PHI for 50+ US hospitals.
 
@@ -2171,6 +3238,17 @@ Risk reduction: 66%
 
 ### 15.3 Expanded Privacy: DSAR Response Template
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" alt="Handwritten: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" alt="Diagram: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" alt="Sticky Note: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+</a>
+
+
 **DSAR Response Letter Template:**
 
 ```
@@ -2223,6 +3301,17 @@ Data Protection Officer
 ```
 
 ### 15.4 Expanded Metrics: Security Scorecard
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" alt="Handwritten: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" alt="Diagram: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" alt="Sticky Note: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+</a>
+
 
 **Executive Security Scorecard (Monthly):**
 
@@ -2279,6 +3368,17 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 
 ### 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" alt="Handwritten: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" alt="Diagram: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" alt="Sticky Note: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+</a>
+
+
 **EDM01 → Ensure Governance Framework Setting and Maintenance:**
 
 | Management Practice | Description | Key Activities |
@@ -2296,6 +3396,17 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 | EDM03.03 | Monitor risk management | Review risk exposure reports quarterly; monitor risk treatment; assess emerging risks |
 
 ### 15.6 Expanded Regulations: Key Compliance Deadlines Calendar
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" alt="Handwritten: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" alt="Diagram: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" alt="Sticky Note: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+</a>
+
 
 | Regulation | Requirement | Deadline Type | Frequency | Responsible |
 |-----------|-------------|---------------|-----------|-------------|
@@ -2318,6 +3429,17 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 
 ### 15.7 Expanded Exercises: Additional Challenge Problems
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" alt="Handwritten: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" alt="Diagram: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" alt="Sticky Note: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+</a>
+
+
 **Challenge 4: Incident Response Plan Design**
 Design an incident response plan for a publicly traded e-commerce company that processes credit cards (PCI DSS) and collects customer PII from EU customers (GDPR). Include: team roles, escalation criteria, breach notification procedures (PCI DSS + GDPR timelines), communication templates, evidence collection procedures, and post-incident review process. Minimum 5 pages.
 
@@ -2328,6 +3450,17 @@ You've completed a security assessment of a new cloud-based HR SaaS vendor (Work
 Your organization needs to achieve PCI DSS 4.0 compliance for the first time (moving from SAQ A to SAQ D). Current state: 50 employees, custom e-commerce platform, AWS-hosted, Stripe for payments, shared hosting with other applications in same AWS account. Identify minimum 15 gaps and create a 6-month remediation roadmap with estimated effort and cost.
 
 ### 15.8 Expanded Applications: GRC in Emerging Technologies
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" alt="Handwritten: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" alt="Diagram: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" alt="Sticky Note: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+</a>
+
 
 **AI/ML Governance:**
 - EU AI Act (2025) → risk-based classification of AI systems (minimal, limited, high, unacceptable risk)
@@ -2356,6 +3489,17 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.9 Common GRC Pitfalls and How to Avoid Them
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" alt="Diagram: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+</a>
+
+
 | Pitfall | Description | Prevention |
 |---------|-------------|------------|
 | **Checklist compliance** | Implementing controls to pass an audit without actually improving security | Focus on risk-based outcomes, not checkbox completion. Test controls annually. |
@@ -2369,6 +3513,17 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 | **BCP/DR never tested** | Plan exists on paper but hasn't been tested in 3 years | Mandate annual full-scale test with pass/fail criteria. Tabletop exercises quarterly. |
 | **Shadow IT unknown** | SaaS apps and cloud resources outside IT's visibility | CASB discovery, cloud access inventory, security champion program in each business unit. |
 ### 15.10 GRC Implementation Roadmap (12-Month Example)
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" alt="Handwritten: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" alt="Diagram: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" alt="Sticky Note: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+</a>
+
 
 | Month | Phase | Key Activities | Deliverables |
 |-------|-------|---------------|--------------|
@@ -2386,6 +3541,17 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 | **M12** | Review & Plan | Annual risk assessment refresh, lessons learned, Year 2 roadmap | Year 2 Roadmap, Updated Risk Register, Board Report |
 
 ### 15.11 Glossary of Key GRC Terms
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" alt="Handwritten: 15.11 Glossary of Key GRC Terms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" alt="Diagram: 15.11 Glossary of Key GRC Terms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" alt="Sticky Note: 15.11 Glossary of Key GRC Terms" width="30%">
+</a>
+
 
 | Term | Definition |
 |------|-----------|
@@ -2435,6 +3601,17 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.12 Exam Tips & Tricks
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" alt="Handwritten: 15.12 Exam Tips & Tricks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" alt="Diagram: 15.12 Exam Tips & Tricks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" alt="Sticky Note: 15.12 Exam Tips & Tricks" width="30%">
+</a>
+
+
 **For CISSP (Domain 1 → Security and Risk Management):**
 - Know the difference between governance and management
 - Memorize NIST RMF 7 steps in order
@@ -2471,6 +3648,17 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 - ISMS scope can be narrower than entire organization (important for ISO 27001 exam questions)
 
 ### 15.13 Case Study: Quick Reference Checklist
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" alt="Handwritten: 15.13 Case Study: Quick Reference Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" alt="Diagram: 15.13 Case Study: Quick Reference Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" alt="Sticky Note: 15.13 Case Study: Quick Reference Checklist" width="30%">
+</a>
+
 
 **Post-incident GRC Checklist (for incident response team leads):**
 
@@ -2553,6 +3741,17 @@ The four case studies (Equifax, Marriott, TikTok, Wells Fargo) demonstrate that 
 ## TypeScript Implementations
 
 ### Compliance Checker Engine
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" alt="Handwritten: Compliance Checker Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" alt="Diagram: Compliance Checker Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" alt="Sticky Note: Compliance Checker Engine" width="30%">
+</a>
+
 
 The following TypeScript implementation provides a programmatic compliance checking engine that validates system configurations against GRC frameworks (GDPR, ISO 27001, PCI DSS). This can be integrated into CI/CD pipelines for continuous compliance monitoring.
 
@@ -2814,6 +4013,17 @@ console.log(`Passed: ${isoReport.passed}/${isoReport.totalControls}`);
 
 ### Policy Document Analyzer
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" alt="Handwritten: Policy Document Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" alt="Diagram: Policy Document Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" alt="Sticky Note: Policy Document Analyzer" width="30%">
+</a>
+
+
 This TypeScript implementation analyzes security policy documents for structural completeness, checks for required elements (purpose, scope, roles, enforcement, exceptions, review cycle), and validates compliance against framework-specific requirements.
 
 ```typescript
@@ -3074,6 +4284,17 @@ gdprChecks.forEach(c =>
 
 ### Governance Framework Hierarchy
 
+<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" alt="Handwritten: Governance Framework Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" alt="Diagram: Governance Framework Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" alt="Sticky Note: Governance Framework Hierarchy" width="30%">
+</a>
+
+
 This diagram illustrates the hierarchical relationship between laws, regulations, policies, standards, procedures, and guidelines in a GRC program.
 
 ```mermaid
@@ -3100,6 +4321,17 @@ flowchart TD
 ```
 
 ### Risk Treatment Process
+
+<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" alt="Handwritten: Risk Treatment Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" alt="Diagram: Risk Treatment Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" alt="Sticky Note: Risk Treatment Process" width="30%">
+</a>
+
 
 This flowchart shows the complete risk management lifecycle from identification through treatment and monitoring, aligned with the NIST RMF and ISO 31000 frameworks.
 

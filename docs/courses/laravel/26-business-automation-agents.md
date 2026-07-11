@@ -54,6 +54,17 @@ flowchart LR
 
 ### 26.1 Introduction to Business Automation with AI
 
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-handwritten.svg" alt="Handwritten: 26.1 Introduction to Business Automation with AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-diagram.svg" alt="Diagram: 26.1 Introduction to Business Automation with AI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-1-introduction-to-business-automation-with-ai-sticky.svg" alt="Sticky Note: 26.1 Introduction to Business Automation with AI" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Business automation uses AI agents triggered by schedules, events, or webhooks to execute business processes autonomously.
 
@@ -87,6 +98,17 @@ Trigger Ã¢â€ â€™ Agent Ã¢â€ â€™ Decision Ã¢â€ â€�
 ---
 
 ### 26.2 Setting Up an Automation Framework in Laravel
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-handwritten.svg" alt="Handwritten: 26.2 Setting Up an Automation Framework in Laravel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-diagram.svg" alt="Diagram: 26.2 Setting Up an Automation Framework in Laravel" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-2-setting-up-an-automation-framework-in-laravel-sticky.svg" alt="Sticky Note: 26.2 Setting Up an Automation Framework in Laravel" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** The framework defines agent types, triggers, queues, approval workflows, and audit logging in a unified system.
@@ -321,6 +343,17 @@ PROMPT;
 ---
 
 ### 26.3 Scheduled (Cron-Driven) Automation Agents
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-handwritten.svg" alt="Handwritten: 26.3 Scheduled (Cron-Driven) Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-diagram.svg" alt="Diagram: 26.3 Scheduled (Cron-Driven) Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-3-scheduled-cron-driven-automation-agents-sticky.svg" alt="Sticky Note: 26.3 Scheduled (Cron-Driven) Automation Agents" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Cron agents run on defined schedules using Laravel scheduler for periodic tasks like report generation and data cleanup.
@@ -592,6 +625,17 @@ class Kernel extends ConsoleKernel
 > **Remember:** Use withoutOverlapping on cron agents that process batches to prevent duplicate execution.
 
 ### 26.4 Event-Triggered Automation Agents
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-handwritten.svg" alt="Handwritten: 26.4 Event-Triggered Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-diagram.svg" alt="Diagram: 26.4 Event-Triggered Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-4-event-triggered-automation-agents-sticky.svg" alt="Sticky Note: 26.4 Event-Triggered Automation Agents" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Event agents fire in response to model events or domain events, enabling reactive automation.
@@ -874,6 +918,17 @@ class AutomationWorkflowSeeder extends Seeder
 
 ### 26.5 Webhook-Driven Automation Agents
 
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-handwritten.svg" alt="Handwritten: 26.5 Webhook-Driven Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-diagram.svg" alt="Diagram: 26.5 Webhook-Driven Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-5-webhook-driven-automation-agents-sticky.svg" alt="Sticky Note: 26.5 Webhook-Driven Automation Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Webhook agents process incoming webhooks with HMAC verification before dispatching agent jobs.
 
@@ -1115,6 +1170,17 @@ PROMPT;
 ---
 
 ### 26.6 Approval Workflows with Human-in-the-Loop
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-handwritten.svg" alt="Handwritten: 26.6 Approval Workflows with Human-in-the-Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-diagram.svg" alt="Diagram: 26.6 Approval Workflows with Human-in-the-Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-6-approval-workflows-with-human-in-the-loop-sticky.svg" alt="Sticky Note: 26.6 Approval Workflows with Human-in-the-Loop" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Pending agent decisions create approval tokens with expiry, sent to human approvers via notification.
@@ -1473,6 +1539,17 @@ class ApprovalController extends Controller
 
 ### 26.7 Agent-Based Data Pipelines
 
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-handwritten.svg" alt="Handwritten: 26.7 Agent-Based Data Pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-diagram.svg" alt="Diagram: 26.7 Agent-Based Data Pipelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-7-agent-based-data-pipelines-sticky.svg" alt="Sticky Note: 26.7 Agent-Based Data Pipelines" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** ETL pipelines chain extraction, transformation, and loading agents for automated data processing.
 
@@ -1747,6 +1824,17 @@ class EtlPipelineController extends Controller
 ```
 
 ### 26.8 Notification & Escalation Agents
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-handwritten.svg" alt="Handwritten: 26.8 Notification & Escalation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-diagram.svg" alt="Diagram: 26.8 Notification & Escalation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-8-notification-escalation-agents-sticky.svg" alt="Sticky Note: 26.8 Notification & Escalation Agents" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Notification agents send alerts through channels; escalation agents elevate unhandled issues.
@@ -2034,6 +2122,17 @@ class ProcessEscalations extends Command
 
 ### 26.9 Audit Logging for Agent Decisions
 
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-handwritten.svg" alt="Handwritten: 26.9 Audit Logging for Agent Decisions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-diagram.svg" alt="Diagram: 26.9 Audit Logging for Agent Decisions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-9-audit-logging-for-agent-decisions-sticky.svg" alt="Sticky Note: 26.9 Audit Logging for Agent Decisions" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Every agent action is logged with who, what, when, and why for compliance and debugging.
 
@@ -2263,6 +2362,17 @@ Route::middleware('auth:sanctum')->prefix('audit')->group(function () {
 > **Warning:** Audit logs are subject to compliance requirements. Ensure logs are immutable and cannot be deleted or altered by agents.
 
 ### 26.10 End-to-End Example: Customer Support Inbox Agent
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-handwritten.svg" alt="Handwritten: 26.10 End-to-End Example: Customer Support Inbox Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-diagram.svg" alt="Diagram: 26.10 End-to-End Example: Customer Support Inbox Agent" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/26-10-end-to-end-example-customer-support-inbox-agent-sticky.svg" alt="Sticky Note: 26.10 End-to-End Example: Customer Support Inbox Agent" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** A complete example shows automated customer support: classify, respond, escalate, and log.
@@ -2542,6 +2652,17 @@ class SupportWeeklySummary extends Command
 ---
 
 ### Summary
+
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/26-business-automation-agents/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+</a>
+
 
 Business automation agents bring AI decision-making into the operational backbone of a Laravel application. This chapter covered:
 

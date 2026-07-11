@@ -60,6 +60,17 @@ flowchart LR
 
 ### The Bias-Variance Tradeoff
 
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" alt="Handwritten: The Bias-Variance Tradeoff" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" alt="Diagram: The Bias-Variance Tradeoff" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" alt="Sticky Note: The Bias-Variance Tradeoff" width="30%">
+</a>
+
+
 The performance of a machine learning model is governed by two sources of error:
 1. **Bias**: Error due to overly simplistic assumptions in the learning algorithm. High bias can cause the model to miss relevant relations between features and target (Underfitting).
 2. **Variance**: Error due to excessive sensitivity to small fluctuations in the training set. High variance can cause the model to model the random noise in the training data (Overfitting).
@@ -67,6 +78,17 @@ The performance of a machine learning model is governed by two sources of error:
 The goal of model selection is to find the "sweet spot" that minimizes the total error.
 
 ### Bias-Variance Decomposition
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" alt="Handwritten: Bias-Variance Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" alt="Diagram: Bias-Variance Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" alt="Sticky Note: Bias-Variance Decomposition" width="30%">
+</a>
+
 
 Let $y = f(x) + \epsilon$ where $\epsilon \sim \mathcal{N}(0, \sigma^2)$ is irreducible noise. Let $\hat{f}(x)$ be our model's prediction at a fixed point $x$. The expected squared error at $x$ decomposes as:
 
@@ -102,6 +124,17 @@ xychart-beta
 **Key insight:** The total error is U-shaped. At low complexity, bias dominates. At high complexity, variance dominates. The minimum total error sits at the crossing point.
 
 ### Cross-Validation
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" alt="Handwritten: Cross-Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" alt="Diagram: Cross-Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" alt="Sticky Note: Cross-Validation" width="30%">
+</a>
+
 
 Evaluating a model on the same data it was trained on gives a biased estimate of performance. Cross-validation solves this by partitioning the data into multiple sets.
 
@@ -141,11 +174,33 @@ flowchart TD
 
 ### Stratified Cross-Validation
 
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" alt="Handwritten: Stratified Cross-Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" alt="Diagram: Stratified Cross-Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" alt="Sticky Note: Stratified Cross-Validation" width="30%">
+</a>
+
+
 In standard K-fold cross-validation, each fold is created by random sampling without regard to class distribution. For imbalanced datasets, a fold might end up with zero samples from the minority class, making evaluation meaningless.
 
 **Stratified K-fold** ensures each fold maintains the same class proportions as the original dataset. This is the default choice for classification tasks.
 
 ### Performance Metrics for Classification
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" alt="Handwritten: Performance Metrics for Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" alt="Diagram: Performance Metrics for Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" alt="Sticky Note: Performance Metrics for Classification" width="30%">
+</a>
+
 
 - **Accuracy**: $(TP+TN) / (TP+TN+FP+FN)$. Simple but misleading for imbalanced datasets.
 - **Precision**: $TP / (TP+FP)$. "Of all predicted positives, how many were actually positive?"
@@ -154,6 +209,17 @@ In standard K-fold cross-validation, each fold is created by random sampling wit
 - **ROC-AUC**: The Area Under the Receiver Operating Characteristic Curve. It measures the model's ability to distinguish between classes across all possible thresholds.
 
 ### Multi-Class Classification Metrics
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" alt="Handwritten: Multi-Class Classification Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" alt="Diagram: Multi-Class Classification Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" alt="Sticky Note: Multi-Class Classification Metrics" width="30%">
+</a>
+
 
 For problems with more than two classes, metrics are averaged across classes:
 
@@ -173,6 +239,17 @@ For problems with more than two classes, metrics are averaged across classes:
 | Weighted | Class imbalance exists but you want a balanced single number (default in most libraries) |
 
 ### Regression Metrics
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" alt="Handwritten: Regression Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" alt="Diagram: Regression Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" alt="Sticky Note: Regression Metrics" width="30%">
+</a>
+
 
 Regression problems require different evaluation metrics because there are no "positive" or "negative" predictions.
 
@@ -196,6 +273,17 @@ flowchart TD
 ```
 
 ### Learning Curves
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" alt="Handwritten: Learning Curves" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" alt="Diagram: Learning Curves" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" alt="Sticky Note: Learning Curves" width="30%">
+</a>
+
 
 A learning curve plots training and validation error as a function of training set size. It is a powerful diagnostic tool:
 
@@ -221,6 +309,17 @@ xychart-beta
 
 ### Validation Curves
 
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" alt="Handwritten: Validation Curves" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" alt="Diagram: Validation Curves" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" alt="Sticky Note: Validation Curves" width="30%">
+</a>
+
+
 A validation curve plots training and validation error as a function of a single hyperparameter. It helps identify the optimal hyperparameter value and detect overfitting regions.
 
 ```mermaid
@@ -239,6 +338,17 @@ xychart-beta
 The optimal depth is where validation error is lowest (around 5-6 in this example). After that, training error continues to drop but validation error rises ? classic overfitting.
 
 ### Hyperparameter Tuning
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" alt="Handwritten: Hyperparameter Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" alt="Diagram: Hyperparameter Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" alt="Sticky Note: Hyperparameter Tuning" width="30%">
+</a>
+
 
 Hyperparameters are parameters set before training (e.g., learning rate, max depth).
 
@@ -267,6 +377,17 @@ flowchart TD
 
 ### Imbalanced Classification
 
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" alt="Handwritten: Imbalanced Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" alt="Diagram: Imbalanced Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" alt="Sticky Note: Imbalanced Classification" width="30%">
+</a>
+
+
 When one class significantly outnumbers another, standard metrics and training procedures break down.
 
 **Techniques:**
@@ -282,6 +403,17 @@ When one class significantly outnumbers another, standard metrics and training p
 4. **Threshold Moving**: After training, adjust the decision threshold (default 0.5) to favor the minority class based on Precision-Recall curves.
 
 ### Statistical Comparison of Models
+
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" alt="Handwritten: Statistical Comparison of Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" alt="Diagram: Statistical Comparison of Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" alt="Sticky Note: Statistical Comparison of Models" width="30%">
+</a>
+
 
 Running a single cross-validation and picking the model with the higher mean score is not sufficient ? we need to test whether the difference is statistically significant.
 

@@ -50,6 +50,17 @@ flowchart LR
 
 ### 1.1 Definition of a Set
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" alt="Handwritten: 1.1 Definition of a Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" alt="Diagram: 1.1 Definition of a Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" alt="Sticky Note: 1.1 Definition of a Set" width="30%">
+</a>
+
+
 A **set** is an unordered collection of distinct objects, called its **elements** or **members**. If $x$ is an element of the set $S$, we write $x \in S$. If $x$ is not an element of $S$, we write $x \notin S$.
 
 A set may be specified by listing its elements in roster notation:
@@ -76,6 +87,17 @@ The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal 
 
 ### 1.2 Subsets
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" alt="Handwritten: 1.2 Subsets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" alt="Diagram: 1.2 Subsets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" alt="Sticky Note: 1.2 Subsets" width="30%">
+</a>
+
+
 $A$ is a **subset** of $B$, written $A \subseteq B$, if every element of $A$ is also an element of $B$:
 $$A \subseteq B \iff \forall x\,(x \in A \implies x \in B)$$
 
@@ -88,6 +110,17 @@ $A$ is a **proper subset** of $B$, written $A \subset B$, if $A \subseteq B$ and
 > **One-Sentence Takeaway:** Subset inclusion ($\subseteq$) is the fundamental ordering relation on sets, and proving $A \subseteq B$ and $B \subseteq A$ is how we prove $A = B$.
 
 ### 1.3 Cardinality
+
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" alt="Handwritten: 1.3 Cardinality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" alt="Diagram: 1.3 Cardinality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" alt="Sticky Note: 1.3 Cardinality" width="30%">
+</a>
+
 
 The **cardinality** of a finite set $S$, denoted $|S|$, is the number of distinct elements in $S$. For example, $|\{a, b, c\}| = 3$ and $|\emptyset| = 0$.
 
@@ -105,6 +138,17 @@ The **cardinality** of a finite set $S$, denoted $|S|$, is the number of distinc
 
 ### 1.4 Power Set
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" alt="Handwritten: 1.4 Power Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" alt="Diagram: 1.4 Power Set" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" alt="Sticky Note: 1.4 Power Set" width="30%">
+</a>
+
+
 The **power set** of $S$, denoted $\mathcal{P}(S)$ or $2^S$, is the set of all subsets of $S$:
 $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 
@@ -115,6 +159,17 @@ $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 > **One-Sentence Takeaway:** A set of size $n$ has $2^n$ subsets ? the power set grows exponentially.
 
 ### 1.5 Set Operations
+
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" alt="Handwritten: 1.5 Set Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" alt="Diagram: 1.5 Set Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" alt="Sticky Note: 1.5 Set Operations" width="30%">
+</a>
+
 
 Let $A$ and $B$ be sets.
 
@@ -138,6 +193,17 @@ graph TD
 
 ### 1.6 Set Identities
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" alt="Handwritten: 1.6 Set Identities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" alt="Diagram: 1.6 Set Identities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" alt="Sticky Note: 1.6 Set Identities" width="30%">
+</a>
+
+
 For sets $A, B, C$ under universal set $U$:
 
 | Identity | Expression |
@@ -158,6 +224,17 @@ For sets $A, B, C$ under universal set $U$:
 
 ### 1.7 Venn Diagrams
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" alt="Handwritten: 1.7 Venn Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" alt="Diagram: 1.7 Venn Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" alt="Sticky Note: 1.7 Venn Diagrams" width="30%">
+</a>
+
+
 Venn diagrams represent sets as overlapping regions in a plane. The universal set $U$ is a rectangle; sets are circles (or ovals) inside it. Shaded regions indicate the result of operations.
 
 ```mermaid
@@ -176,6 +253,17 @@ graph TD
 
 ### 1.8 Cartesian Product
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" alt="Handwritten: 1.8 Cartesian Product" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" alt="Diagram: 1.8 Cartesian Product" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" alt="Sticky Note: 1.8 Cartesian Product" width="30%">
+</a>
+
+
 The **Cartesian product** of sets $A$ and $B$, written $A \times B$, is the set of all ordered pairs $(a, b)$ with $a \in A$ and $b \in B$:
 $$A \times B = \{(a, b) \mid a \in A,\; b \in B\}$$
 
@@ -188,6 +276,17 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 > **One-Sentence Takeaway:** The Cartesian product builds ordered pairs from sets, and its size is the product of the individual set sizes ? the foundation of relations and functions.
 
 ### 1.9 Characteristic Functions
+
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" alt="Handwritten: 1.9 Characteristic Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" alt="Diagram: 1.9 Characteristic Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" alt="Sticky Note: 1.9 Characteristic Functions" width="30%">
+</a>
+
 
 The **characteristic function** (indicator function) of a set $A \subseteq U$ is:
 $$\chi_A(x) = \begin{cases} 1 & \text{if } x \in A \\ 0 & \text{if } x \notin A \end{cases}$$
@@ -208,6 +307,17 @@ console.log(characteristic(A, U)); // [1, 0, 1, 0, 1]
 ```
 
 ### 1.10 Multisets (Bags)
+
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" alt="Handwritten: 1.10 Multisets (Bags)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" alt="Diagram: 1.10 Multisets (Bags)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" alt="Sticky Note: 1.10 Multisets (Bags)" width="30%">
+</a>
+
 
 A **multiset** allows elements to appear multiple times. The count of element $x$ in multiset $M$ is $m_M(x)$.
 
@@ -235,6 +345,17 @@ console.log(Object.fromEntries(add(bag1, bag2))); // {a: 3, b: 1, c: 3}
 
 ### 1.11 Fuzzy Sets
 
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" alt="Handwritten: 1.11 Fuzzy Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" alt="Diagram: 1.11 Fuzzy Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" alt="Sticky Note: 1.11 Fuzzy Sets" width="30%">
+</a>
+
+
 A **fuzzy set** assigns a membership degree in $[0,1]$ to each element, capturing partial membership:
 $$\mu_A: U \to [0,1]$$
 
@@ -246,6 +367,17 @@ Operations:
 > **One-Sentence Takeaway:** Fuzzy sets generalize classical sets by allowing partial membership values between 0 and 1, useful for handling uncertainty and vagueness.
 
 ### 1.12 Inclusion-Exclusion Principle
+
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" alt="Handwritten: 1.12 Inclusion-Exclusion Principle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" alt="Diagram: 1.12 Inclusion-Exclusion Principle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" alt="Sticky Note: 1.12 Inclusion-Exclusion Principle" width="30%">
+</a>
+
 
 For two sets: $|A \cup B| = |A| + |B| - |A \cap B|$.
 

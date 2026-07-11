@@ -21,6 +21,17 @@ By the end of this chapter, you will be able to:
 
 ### 20.1.1 The Perimeter Security Paradigm
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-handwritten.svg" alt="Handwritten: 20.1.1 The Perimeter Security Paradigm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-diagram.svg" alt="Diagram: 20.1.1 The Perimeter Security Paradigm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-1-the-perimeter-security-paradigm-sticky.svg" alt="Sticky Note: 20.1.1 The Perimeter Security Paradigm" width="30%">
+</a>
+
+
 For decades, enterprise security followed the **castle-and-moat** model. A hardened perimeter (firewalls, VPNs, IDS/IPS) protected internal resources, while anything inside the network was implicitly trusted. Once an attacker breached the perimeter—through a phishing email, a compromised VPN credential, or an insider threat—they could move laterally with little resistance.
 
 This model collapsed under three converging pressures:
@@ -33,6 +44,17 @@ This model collapsed under three converging pressures:
 
 ### 20.1.2 John Kindervag and Forrester (2010)
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-handwritten.svg" alt="Handwritten: 20.1.2 John Kindervag and Forrester (2010)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-diagram.svg" alt="Diagram: 20.1.2 John Kindervag and Forrester (2010)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-2-john-kindervag-and-forrester-2010-sticky.svg" alt="Sticky Note: 20.1.2 John Kindervag and Forrester (2010)" width="30%">
+</a>
+
+
 The term **Zero Trust** was coined in 2010 by **John Kindervag**, then a principal analyst at Forrester Research. In his seminal report *"No More Chewy Centers: Introducing The Zero Trust Model Of Information Security"*, Kindervag argued that organizations must eliminate the concept of trust from their networks entirely.
 
 > *"Zero Trust is not about making the network trust users and devices; it is about eliminating trust altogether."* — John Kindervag
@@ -40,6 +62,17 @@ The term **Zero Trust** was coined in 2010 by **John Kindervag**, then a princip
 Kindervag's original model centered on the **Zero Trust network** concept, which used next-generation firewalls (NGFWs) as the primary enforcement point. All traffic—regardless of source—had to pass through inspection, logging, and policy evaluation.
 
 ### 20.1.3 Google BeyondCorp (2011–2014)
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-handwritten.svg" alt="Handwritten: 20.1.3 Google BeyondCorp (2011–2014)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-diagram.svg" alt="Diagram: 20.1.3 Google BeyondCorp (2011–2014)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-3-google-beyondcorp-2011-2014-sticky.svg" alt="Sticky Note: 20.1.3 Google BeyondCorp (2011–2014)" width="30%">
+</a>
+
 
 In 2011, Google began developing **BeyondCorp**, an internal initiative to enable employees to work from any untrusted network without a traditional VPN. The project was motivated by a sophisticated attack (Operation Aurora) that exploited VPN trust.
 
@@ -54,6 +87,17 @@ Google published a series of papers between 2014 and 2018 detailing their archit
 
 ### 20.1.4 NIST SP 800-207 (2020)
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-handwritten.svg" alt="Handwritten: 20.1.4 NIST SP 800-207 (2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-diagram.svg" alt="Diagram: 20.1.4 NIST SP 800-207 (2020)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-4-nist-sp-800-207-2020-sticky.svg" alt="Sticky Note: 20.1.4 NIST SP 800-207 (2020)" width="30%">
+</a>
+
+
 The **National Institute of Standards and Technology (NIST)** published Special Publication **800-207: Zero Trust Architecture** in August 2020. This document standardized Zero Trust terminology and provided a logical architecture that vendors and enterprises could implement.
 
 Key NIST SP 800-207 contributions:
@@ -64,6 +108,17 @@ Key NIST SP 800-207 contributions:
 - Deployment scenario guidance: macro-segmentation, micro-segmentation, and agent-based models
 
 ### 20.1.5 CISA Zero Trust Maturity Model (2021–2023)
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-handwritten.svg" alt="Handwritten: 20.1.5 CISA Zero Trust Maturity Model (2021–2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-diagram.svg" alt="Diagram: 20.1.5 CISA Zero Trust Maturity Model (2021–2023)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-1-5-cisa-zero-trust-maturity-model-2021-2023-sticky.svg" alt="Sticky Note: 20.1.5 CISA Zero Trust Maturity Model (2021–2023)" width="30%">
+</a>
+
 
 The **Cybersecurity and Infrastructure Security Agency (CISA)** published its **Zero Trust Maturity Model** in 2021 (updated 2023), providing a government-focused roadmap.
 
@@ -87,6 +142,17 @@ The model defines five pillars across three maturity levels:
 ## 20.2 Zero Trust Core Principles
 
 ### 20.2.1 Never Trust, Always Verify
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-handwritten.svg" alt="Handwritten: 20.2.1 Never Trust, Always Verify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-diagram.svg" alt="Diagram: 20.2.1 Never Trust, Always Verify" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-1-never-trust-always-verify-sticky.svg" alt="Sticky Note: 20.2.1 Never Trust, Always Verify" width="30%">
+</a>
+
 
 No entity—user, device, application, or network—is trusted by default. Every access request must be authenticated, authorized, and validated before granting access. Verification occurs continuously throughout the session, not just at login.
 
@@ -163,6 +229,17 @@ function calculateTrustScore(request: AccessRequest): number {
 
 ### 20.2.2 Assume Breach
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-handwritten.svg" alt="Handwritten: 20.2.2 Assume Breach" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-diagram.svg" alt="Diagram: 20.2.2 Assume Breach" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-2-assume-breach-sticky.svg" alt="Sticky Note: 20.2.2 Assume Breach" width="30%">
+</a>
+
+
 Zero Trust architectures operate under the assumption that the network is already compromised. Every request is treated as potentially malicious, and lateral movement is aggressively contained.
 
 **Implications of assume breach:**
@@ -173,6 +250,17 @@ Zero Trust architectures operate under the assumption that the network is alread
 - Continuous logging and monitoring are mandatory.
 
 ### 20.2.3 Least Privilege Access
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-handwritten.svg" alt="Handwritten: 20.2.3 Least Privilege Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-diagram.svg" alt="Diagram: 20.2.3 Least Privilege Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-3-least-privilege-access-sticky.svg" alt="Sticky Note: 20.2.3 Least Privilege Access" width="30%">
+</a>
+
 
 Users and devices receive only the minimum permissions needed to perform their functions. Unlike traditional role-based access control (RBAC), Zero Trust adds **contextual** and **temporal** constraints.
 
@@ -281,9 +369,31 @@ class ZeroTrustLeastPrivilegeEngine implements LeastPrivilegeEngine {
 
 ### 20.2.4 Microsegmentation
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-handwritten.svg" alt="Handwritten: 20.2.4 Microsegmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-diagram.svg" alt="Diagram: 20.2.4 Microsegmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-4-microsegmentation-sticky.svg" alt="Sticky Note: 20.2.4 Microsegmentation" width="30%">
+</a>
+
+
 Microsegmentation divides the network into isolated zones, each with its own security controls. This prevents lateral movement: even if an attacker compromises one segment, they cannot access others.
 
 ### 20.2.5 Continuous Validation
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-handwritten.svg" alt="Handwritten: 20.2.5 Continuous Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-diagram.svg" alt="Diagram: 20.2.5 Continuous Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-2-5-continuous-validation-sticky.svg" alt="Sticky Note: 20.2.5 Continuous Validation" width="30%">
+</a>
+
 
 Trust is never permanent. A user who passes authentication at 9:00 AM may exhibit suspicious behavior at 9:15 AM. Zero Trust systems continuously re-evaluate trust based on:
 
@@ -298,6 +408,17 @@ Trust is never permanent. A user who passes authentication at 9:00 AM may exhibi
 
 ### 20.3.1 The Seven Logical Components
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-handwritten.svg" alt="Handwritten: 20.3.1 The Seven Logical Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-diagram.svg" alt="Diagram: 20.3.1 The Seven Logical Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-1-the-seven-logical-components-sticky.svg" alt="Sticky Note: 20.3.1 The Seven Logical Components" width="30%">
+</a>
+
+
 NIST SP 800-207 defines seven logical components that together form a Zero Trust architecture:
 
 | Component | Abbreviation | Function |
@@ -311,6 +432,17 @@ NIST SP 800-207 defines seven logical components that together form a Zero Trust
 | SIEM / Logging | — | Collects and analyzes telemetry for continuous validation |
 
 ### 20.3.2 Policy Engine, Administrator, and Enforcement Point
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-handwritten.svg" alt="Handwritten: 20.3.2 Policy Engine, Administrator, and Enforcement Point" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-diagram.svg" alt="Diagram: 20.3.2 Policy Engine, Administrator, and Enforcement Point" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-2-policy-engine-administrator-and-enforcement-point-sticky.svg" alt="Sticky Note: 20.3.2 Policy Engine, Administrator, and Enforcement Point" width="30%">
+</a>
+
 
 The **policy decision continuum** is the heart of NIST ZTA:
 
@@ -347,6 +479,17 @@ sequenceDiagram
 ```
 
 ### 20.3.3 Control Plane vs. Data Plane Separation
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-handwritten.svg" alt="Handwritten: 20.3.3 Control Plane vs. Data Plane Separation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-diagram.svg" alt="Diagram: 20.3.3 Control Plane vs. Data Plane Separation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-3-3-control-plane-vs-data-plane-separation-sticky.svg" alt="Sticky Note: 20.3.3 Control Plane vs. Data Plane Separation" width="30%">
+</a>
+
 
 A fundamental architectural requirement of ZTA is the **separation of the control plane from the data plane**.
 
@@ -438,6 +581,17 @@ class PolicyEnforcementPoint {
 
 ### 20.4.1 The SASE Framework
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-handwritten.svg" alt="Handwritten: 20.4.1 The SASE Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-diagram.svg" alt="Diagram: 20.4.1 The SASE Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-1-the-sase-framework-sticky.svg" alt="Sticky Note: 20.4.1 The SASE Framework" width="30%">
+</a>
+
+
 **Secure Access Service Edge (SASE)** was introduced by Gartner in 2019. It converges wide-area networking (WAN) with network security services into a single, cloud-delivered platform.
 
 ```
@@ -457,6 +611,17 @@ class PolicyEnforcementPoint {
 
 ### 20.4.2 SD-WAN (Software-Defined WAN)
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-handwritten.svg" alt="Handwritten: 20.4.2 SD-WAN (Software-Defined WAN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-diagram.svg" alt="Diagram: 20.4.2 SD-WAN (Software-Defined WAN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-2-sd-wan-software-defined-wan-sticky.svg" alt="Sticky Note: 20.4.2 SD-WAN (Software-Defined WAN)" width="30%">
+</a>
+
+
 SD-WAN decouples the network control plane from the hardware, enabling:
 
 - Dynamic traffic routing based on application requirements
@@ -464,6 +629,17 @@ SD-WAN decouples the network control plane from the hardware, enabling:
 - Centralized policy management across all branch locations
 
 ### 20.4.3 SSE (Security Service Edge)
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-handwritten.svg" alt="Handwritten: 20.4.3 SSE (Security Service Edge)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-diagram.svg" alt="Diagram: 20.4.3 SSE (Security Service Edge)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-3-sse-security-service-edge-sticky.svg" alt="Sticky Note: 20.4.3 SSE (Security Service Edge)" width="30%">
+</a>
+
 
 SSE is the security half of SASE, comprising four core services:
 
@@ -516,6 +692,17 @@ flowchart TB
 ```
 
 ### 20.4.4 SASE Policy Enforcer Implementation
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-handwritten.svg" alt="Handwritten: 20.4.4 SASE Policy Enforcer Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-diagram.svg" alt="Diagram: 20.4.4 SASE Policy Enforcer Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-4-4-sase-policy-enforcer-implementation-sticky.svg" alt="Sticky Note: 20.4.4 SASE Policy Enforcer Implementation" width="30%">
+</a>
+
 
 ```typescript
 interface SasePolicy {
@@ -675,9 +862,31 @@ class SasePolicyEnforcer {
 
 ### 20.5.1 What is ZTNA?
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-handwritten.svg" alt="Handwritten: 20.5.1 What is ZTNA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-diagram.svg" alt="Diagram: 20.5.1 What is ZTNA?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-1-what-is-ztna-sticky.svg" alt="Sticky Note: 20.5.1 What is ZTNA?" width="30%">
+</a>
+
+
 **Zero Trust Network Access (ZTNA)** is the technology that replaces traditional VPNs. Instead of placing users on the network, ZTNA creates per-session, encrypted connections to individual applications. The user never gets network-level access.
 
 ### 20.5.2 Client-to-Service vs. Service-Initiated ZTNA
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-handwritten.svg" alt="Handwritten: 20.5.2 Client-to-Service vs. Service-Initiated ZTNA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-diagram.svg" alt="Diagram: 20.5.2 Client-to-Service vs. Service-Initiated ZTNA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-2-client-to-service-vs-service-initiated-ztna-sticky.svg" alt="Sticky Note: 20.5.2 Client-to-Service vs. Service-Initiated ZTNA" width="30%">
+</a>
+
 
 | Feature | Client-Initiated ZTNA | Service-Initiated ZTNA |
 |---------|----------------------|----------------------|
@@ -687,6 +896,17 @@ class SasePolicyEnforcer {
 | **Examples** | Cloudflare Access (WARP), Zscaler ZPA | Appgate, Twingate |
 
 ### 20.5.3 Identity-Aware Proxy
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-handwritten.svg" alt="Handwritten: 20.5.3 Identity-Aware Proxy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-diagram.svg" alt="Diagram: 20.5.3 Identity-Aware Proxy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-3-identity-aware-proxy-sticky.svg" alt="Sticky Note: 20.5.3 Identity-Aware Proxy" width="30%">
+</a>
+
 
 The core of ZTNA is the **identity-aware proxy**—a reverse proxy that authenticates every request before routing it to the application.
 
@@ -813,6 +1033,17 @@ class IdentityAwareProxy {
 
 ### 20.5.4 ZTNA Vendor Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-handwritten.svg" alt="Handwritten: 20.5.4 ZTNA Vendor Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-diagram.svg" alt="Diagram: 20.5.4 ZTNA Vendor Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-5-4-ztna-vendor-comparison-sticky.svg" alt="Sticky Note: 20.5.4 ZTNA Vendor Comparison" width="30%">
+</a>
+
+
 | Vendor | ZTNA Product | Model | Key Differentiator |
 |--------|-------------|-------|-------------------|
 | **Zscaler** | Zscaler Private Access (ZPA) | Client-initiated | App connector in data center; user never touches the network |
@@ -827,9 +1058,31 @@ class IdentityAwareProxy {
 
 ### 20.6.1 The Problem with Flat Networks
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-handwritten.svg" alt="Handwritten: 20.6.1 The Problem with Flat Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-diagram.svg" alt="Diagram: 20.6.1 The Problem with Flat Networks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-1-the-problem-with-flat-networks-sticky.svg" alt="Sticky Note: 20.6.1 The Problem with Flat Networks" width="30%">
+</a>
+
+
 In a traditional flat network, an attacker who compromises a single web server can use that server as a pivot point to reach database servers, Active Directory, or backup systems—all on the same L2/L3 network segment.
 
 ### 20.6.2 Microsegmentation Approaches
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-handwritten.svg" alt="Handwritten: 20.6.2 Microsegmentation Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-diagram.svg" alt="Diagram: 20.6.2 Microsegmentation Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-2-microsegmentation-approaches-sticky.svg" alt="Sticky Note: 20.6.2 Microsegmentation Approaches" width="30%">
+</a>
+
 
 | Approach | Mechanism | Example | Granularity |
 |----------|-----------|---------|-------------|
@@ -865,6 +1118,17 @@ flowchart LR
 ```
 
 ### 20.6.3 Microsegmentation Policy Generator
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-handwritten.svg" alt="Handwritten: 20.6.3 Microsegmentation Policy Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-diagram.svg" alt="Diagram: 20.6.3 Microsegmentation Policy Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-6-3-microsegmentation-policy-generator-sticky.svg" alt="Sticky Note: 20.6.3 Microsegmentation Policy Generator" width="30%">
+</a>
+
 
 ```typescript
 interface ServiceDependency {
@@ -999,6 +1263,17 @@ console.log(JSON.stringify(rules, null, 2));
 
 ### 20.7.1 Identity Federation: SAML and OIDC
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-handwritten.svg" alt="Handwritten: 20.7.1 Identity Federation: SAML and OIDC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-diagram.svg" alt="Diagram: 20.7.1 Identity Federation: SAML and OIDC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-1-identity-federation-saml-and-oidc-sticky.svg" alt="Sticky Note: 20.7.1 Identity Federation: SAML and OIDC" width="30%">
+</a>
+
+
 Zero Trust requires **federated identity** so that access decisions can be made without siloed credentials.
 
 | Protocol | Standard | Token Format | Use Case |
@@ -1008,6 +1283,17 @@ Zero Trust requires **federated identity** so that access decisions can be made 
 
 ### 20.7.2 Continuous Authentication
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-handwritten.svg" alt="Handwritten: 20.7.2 Continuous Authentication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-diagram.svg" alt="Diagram: 20.7.2 Continuous Authentication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-2-continuous-authentication-sticky.svg" alt="Sticky Note: 20.7.2 Continuous Authentication" width="30%">
+</a>
+
+
 Unlike traditional "authenticate once" models, Zero Trust continuously verifies:
 
 - **Keyboard/mouse dynamics**: Behavioral biometrics
@@ -1016,6 +1302,17 @@ Unlike traditional "authenticate once" models, Zero Trust continuously verifies:
 - **Transaction signing**: Step-up authentication for high-risk operations
 
 ### 20.7.3 Risk-Based Conditional Access
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-handwritten.svg" alt="Handwritten: 20.7.3 Risk-Based Conditional Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-diagram.svg" alt="Diagram: 20.7.3 Risk-Based Conditional Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-7-3-risk-based-conditional-access-sticky.svg" alt="Sticky Note: 20.7.3 Risk-Based Conditional Access" width="30%">
+</a>
+
 
 ```typescript
 interface RiskAssessment {
@@ -1183,6 +1480,17 @@ console.log("Actions:", actions.map((a) => `${a.name} -> ${a.action}`).join(", "
 
 ### 20.8.1 Architecture Overview
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-handwritten.svg" alt="Handwritten: 20.8.1 Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-diagram.svg" alt="Diagram: 20.8.1 Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-1-architecture-overview-sticky.svg" alt="Sticky Note: 20.8.1 Architecture Overview" width="30%">
+</a>
+
+
 Google's BeyondCorp architecture consists of four core components:
 
 1. **Device Inventory Service (DIS)**: Tracks every managed device, its state, and its user assignments.
@@ -1223,6 +1531,17 @@ flowchart TB
 
 ### 20.8.2 Full BeyondCorp Setup Guide Reference
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-handwritten.svg" alt="Handwritten: 20.8.2 Full BeyondCorp Setup Guide Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-diagram.svg" alt="Diagram: 20.8.2 Full BeyondCorp Setup Guide Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-2-full-beyondcorp-setup-guide-reference-sticky.svg" alt="Sticky Note: 20.8.2 Full BeyondCorp Setup Guide Reference" width="30%">
+</a>
+
+
 | Step | Action | Details |
 |------|--------|---------|
 | 1 | **Device inventory** | Deploy fleet management (Google Endpoint Management, JAMF, Intune). Catalog every device with unique ID. |
@@ -1235,6 +1554,17 @@ flowchart TB
 | 8 | **Continuous monitoring** | Deploy SIEM integration. Monitor access patterns. Alert on device health degradation during a session. |
 
 ### 20.8.3 BeyondCorp Trust Engine Implementation
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-handwritten.svg" alt="Handwritten: 20.8.3 BeyondCorp Trust Engine Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-diagram.svg" alt="Diagram: 20.8.3 BeyondCorp Trust Engine Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-8-3-beyondcorp-trust-engine-implementation-sticky.svg" alt="Sticky Note: 20.8.3 BeyondCorp Trust Engine Implementation" width="30%">
+</a>
+
 
 ```typescript
 interface DeviceRecord {
@@ -1345,6 +1675,17 @@ class BeyondCorpTrustEngine {
 ## 20.9 NIST SP 800-207 Trust Algorithm
 
 ### 20.9.1 Continuous Trust Scoring
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-handwritten.svg" alt="Handwritten: 20.9.1 Continuous Trust Scoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-diagram.svg" alt="Diagram: 20.9.1 Continuous Trust Scoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-9-1-continuous-trust-scoring-sticky.svg" alt="Sticky Note: 20.9.1 Continuous Trust Scoring" width="30%">
+</a>
+
 
 The NIST SP 800-207 trust algorithm combines multiple attribute sources into a continuous score that evolves over time.
 
@@ -1566,6 +1907,17 @@ console.log("Session TTL:", result.sessionTtlSeconds, "seconds");
 
 ### 20.10.1 Device Health Attestation
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-handwritten.svg" alt="Handwritten: 20.10.1 Device Health Attestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-diagram.svg" alt="Diagram: 20.10.1 Device Health Attestation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-1-device-health-attestation-sticky.svg" alt="Sticky Note: 20.10.1 Device Health Attestation" width="30%">
+</a>
+
+
 Before granting access, Zero Trust systems must verify device health. This goes beyond simple antivirus checks to include hardware-level verification.
 
 ```typescript
@@ -1740,6 +2092,17 @@ class DeviceHealthAttestationVerifier {
 
 ### 20.10.2 TPM and Confidential Computing
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-handwritten.svg" alt="Handwritten: 20.10.2 TPM and Confidential Computing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-diagram.svg" alt="Diagram: 20.10.2 TPM and Confidential Computing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-2-tpm-and-confidential-computing-sticky.svg" alt="Sticky Note: 20.10.2 TPM and Confidential Computing" width="30%">
+</a>
+
+
 Modern Zero Trust leverages hardware security features:
 
 - **TPM 2.0**: Measured boot ensures the OS hasn't been tampered with.
@@ -1747,6 +2110,17 @@ Modern Zero Trust leverages hardware security features:
 - **Confidential Computing**: Encrypts data in use (not just at rest and in transit), ensuring that even the host OS cannot access application memory.
 
 ### 20.10.3 Access Token Validation and Introspection
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-handwritten.svg" alt="Handwritten: 20.10.3 Access Token Validation and Introspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-diagram.svg" alt="Diagram: 20.10.3 Access Token Validation and Introspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-10-3-access-token-validation-and-introspection-sticky.svg" alt="Sticky Note: 20.10.3 Access Token Validation and Introspection" width="30%">
+</a>
+
 
 ```typescript
 interface AccessToken {
@@ -1868,6 +2242,17 @@ class TokenValidationService {
 ## 20.11 Security Policy as Code
 
 ### 20.11.1 OPA-Style Policy Engine
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-handwritten.svg" alt="Handwritten: 20.11.1 OPA-Style Policy Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-diagram.svg" alt="Diagram: 20.11.1 OPA-Style Policy Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-11-1-opa-style-policy-engine-sticky.svg" alt="Sticky Note: 20.11.1 OPA-Style Policy Engine" width="30%">
+</a>
+
 
 Zero Trust policies must be machine-readable, version-controlled, and automatically testable. **Policy as code** (pioneered by Open Policy Agent / OPA) enables this.
 
@@ -2136,6 +2521,17 @@ console.log("Matched Rule:", result.matchedRule);
 
 ### 20.12.1 Major Zero Trust Vendors
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-handwritten.svg" alt="Handwritten: 20.12.1 Major Zero Trust Vendors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-diagram.svg" alt="Diagram: 20.12.1 Major Zero Trust Vendors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-1-major-zero-trust-vendors-sticky.svg" alt="Sticky Note: 20.12.1 Major Zero Trust Vendors" width="30%">
+</a>
+
+
 | Capability | **Zscaler** | **Palo Alto Networks** | **Cloudflare** | **Microsoft** |
 |-----------|-------------|------------------------|----------------|---------------|
 | **ZTNA** | ZPA (App Connector) | Prisma Access (GP Client) | Cloudflare Access (WARP) | Entra App Proxy |
@@ -2149,6 +2545,17 @@ console.log("Matched Rule:", result.matchedRule);
 | **Key differentiator** | Largest SASE footprint (150+ PoPs) | ML-powered threat prevention | Global edge network (310+ cities) | Deep Microsoft ecosystem integration |
 
 ### 20.12.2 Decision Framework
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-handwritten.svg" alt="Handwritten: 20.12.2 Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-diagram.svg" alt="Diagram: 20.12.2 Decision Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-12-2-decision-framework-sticky.svg" alt="Sticky Note: 20.12.2 Decision Framework" width="30%">
+</a>
+
 
 | Use Case | Recommended Vendor |
 |----------|-------------------|
@@ -2165,6 +2572,17 @@ console.log("Matched Rule:", result.matchedRule);
 
 ### Phase 1: Foundation (Months 1–3)
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-handwritten.svg" alt="Handwritten: Phase 1: Foundation (Months 1–3)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-diagram.svg" alt="Diagram: Phase 1: Foundation (Months 1–3)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-1-foundation-months-1-3-sticky.svg" alt="Sticky Note: Phase 1: Foundation (Months 1–3)" width="30%">
+</a>
+
+
 | Activity | Deliverable |
 |----------|-------------|
 | Inventory all users, devices, and applications | Asset register |
@@ -2174,6 +2592,17 @@ console.log("Matched Rule:", result.matchedRule);
 | Define data classification tiers | Data sensitivity matrix |
 
 ### Phase 2: Access Control (Months 4–6)
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-handwritten.svg" alt="Handwritten: Phase 2: Access Control (Months 4–6)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-diagram.svg" alt="Diagram: Phase 2: Access Control (Months 4–6)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-2-access-control-months-4-6-sticky.svg" alt="Sticky Note: Phase 2: Access Control (Months 4–6)" width="30%">
+</a>
+
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2185,6 +2614,17 @@ console.log("Matched Rule:", result.matchedRule);
 
 ### Phase 3: Continuous Validation (Months 7–9)
 
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-handwritten.svg" alt="Handwritten: Phase 3: Continuous Validation (Months 7–9)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-diagram.svg" alt="Diagram: Phase 3: Continuous Validation (Months 7–9)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-3-continuous-validation-months-7-9-sticky.svg" alt="Sticky Note: Phase 3: Continuous Validation (Months 7–9)" width="30%">
+</a>
+
+
 | Activity | Deliverable |
 |----------|-------------|
 | Deploy UEBA (User and Entity Behavior Analytics) | Behavioral baselines |
@@ -2194,6 +2634,17 @@ console.log("Matched Rule:", result.matchedRule);
 | Conduct Zero Trust penetration test | Security validation |
 
 ### Phase 4: Optimization (Months 10–12)
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-handwritten.svg" alt="Handwritten: Phase 4: Optimization (Months 10–12)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-diagram.svg" alt="Diagram: Phase 4: Optimization (Months 10–12)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/phase-4-optimization-months-10-12-sticky.svg" alt="Sticky Note: Phase 4: Optimization (Months 10–12)" width="30%">
+</a>
+
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2207,6 +2658,17 @@ console.log("Matched Rule:", result.matchedRule);
 ## 20.14 CISA Zero Trust Maturity Model Assessment
 
 ### 20.14.1 Self-Assessment Questionnaire
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-handwritten.svg" alt="Handwritten: 20.14.1 Self-Assessment Questionnaire" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-diagram.svg" alt="Diagram: 20.14.1 Self-Assessment Questionnaire" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-1-self-assessment-questionnaire-sticky.svg" alt="Sticky Note: 20.14.1 Self-Assessment Questionnaire" width="30%">
+</a>
+
 
 Rate each capability as **Traditional (T)**, **Advanced (A)**, or **Optimal (O)**:
 
@@ -2236,6 +2698,17 @@ Rate each capability as **Traditional (T)**, **Advanced (A)**, or **Optimal (O)*
 - [ ] O: Full data discovery + classification, encryption at rest/transit/use, automated DLP
 
 ### 20.14.2 Scoring
+
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-handwritten.svg" alt="Handwritten: 20.14.2 Scoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-diagram.svg" alt="Diagram: 20.14.2 Scoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/20-zero-trust-architecture/20-14-2-scoring-sticky.svg" alt="Sticky Note: 20.14.2 Scoring" width="30%">
+</a>
+
 
 ```
 Traditional = 1 point per item

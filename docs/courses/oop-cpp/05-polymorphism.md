@@ -51,6 +51,17 @@ We study both in this chapter, starting with compile-time.
 
 ### 5.2.1 What Is Function Overloading?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-handwritten.svg" alt="Handwritten: 5.2.1 What Is Function Overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-diagram.svg" alt="Diagram: 5.2.1 What Is Function Overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-1-what-is-function-overloading-sticky.svg" alt="Sticky Note: 5.2.1 What Is Function Overloading?" width="30%">
+</a>
+
+
 **Function overloading** means defining multiple functions with the **same name** but **different parameter lists** (different number, types, or order of parameters). The compiler selects the correct function at compile time based on the arguments passed.
 
 **Real-World Analogy — The Coffee Machine**
@@ -63,6 +74,17 @@ A coffee machine has one button labelled "Brew". But:
 Same command ("Brew"), different behaviour based on *what you give it*.
 
 ### 5.2.2 Function Overloading — Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-handwritten.svg" alt="Handwritten: 5.2.2 Function Overloading — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-diagram.svg" alt="Diagram: 5.2.2 Function Overloading — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-2-function-overloading-numbered-steps-sticky.svg" alt="Sticky Note: 5.2.2 Function Overloading — Numbered Steps" width="30%">
+</a>
+
 
 1. Compiler sees the function call and collects the argument types.
 2. Compiler builds a candidate set of all functions with the matching name.
@@ -84,6 +106,17 @@ CALL print(255, 16)      → Step 5: match #4 selected (two ints)
 ```
 
 ### 5.2.3 C++ Code — Function Overloading
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-handwritten.svg" alt="Handwritten: 5.2.3 C++ Code — Function Overloading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-diagram.svg" alt="Diagram: 5.2.3 C++ Code — Function Overloading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-3-c-code-function-overloading-sticky.svg" alt="Sticky Note: 5.2.3 C++ Code — Function Overloading" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -140,6 +173,17 @@ Integer: 65
 
 ### 5.2.4 Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-handwritten.svg" alt="Handwritten: 5.2.4 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-diagram.svg" alt="Diagram: 5.2.4 Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-2-4-complexity-analysis-sticky.svg" alt="Sticky Note: 5.2.4 Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why? |
 |-----------|------|-------|------|
 | Overload resolution | O(N) candidates | O(1) | Compiler examines N overloads once per call; no runtime cost |
@@ -151,6 +195,17 @@ Integer: 65
 ## 5.3 Function Overloading Rules
 
 ### 5.3.1 Allowed Overloads
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-handwritten.svg" alt="Handwritten: 5.3.1 Allowed Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-diagram.svg" alt="Diagram: 5.3.1 Allowed Overloads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-1-allowed-overloads-sticky.svg" alt="Sticky Note: 5.3.1 Allowed Overloads" width="30%">
+</a>
+
 
 A function can be overloaded if its signature differs in any of:
 
@@ -164,6 +219,17 @@ A function can be overloaded if its signature differs in any of:
 
 ### 5.3.2 NOT Allowed — These Do NOT Overload
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-handwritten.svg" alt="Handwritten: 5.3.2 NOT Allowed — These Do NOT Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-diagram.svg" alt="Diagram: 5.3.2 NOT Allowed — These Do NOT Overload" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-2-not-allowed-these-do-not-overload-sticky.svg" alt="Sticky Note: 5.3.2 NOT Allowed — These Do NOT Overload" width="30%">
+</a>
+
+
 | Attempt | Why It Fails |
 |---------|-------------|
 | Same name, same params, different return type | Return type is NOT part of the signature |
@@ -172,6 +238,17 @@ A function can be overloaded if its signature differs in any of:
 | `f(int)` vs `f(int&)` | Call `f(x)` — both viable; ambiguity unless exact distinction |
 
 ### 5.3.3 Overload Resolution Ranking
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-handwritten.svg" alt="Handwritten: 5.3.3 Overload Resolution Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-diagram.svg" alt="Diagram: 5.3.3 Overload Resolution Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-3-3-overload-resolution-ranking-sticky.svg" alt="Sticky Note: 5.3.3 Overload Resolution Ranking" width="30%">
+</a>
+
 
 The compiler ranks viable functions by conversion quality:
 
@@ -226,6 +303,17 @@ int
 
 ### 5.4.1 What Is Operator Overloading?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-handwritten.svg" alt="Handwritten: 5.4.1 What Is Operator Overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-diagram.svg" alt="Diagram: 5.4.1 What Is Operator Overloading?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-1-what-is-operator-overloading-sticky.svg" alt="Sticky Note: 5.4.1 What Is Operator Overloading?" width="30%">
+</a>
+
+
 Operator overloading allows user-defined types to use C++ operators (`+`, `-`, `*`, `<<`, `[]`, etc.) with natural syntax. It is a form of **compile-time polymorphism** — the compiler selects the correct `operator@` function based on operand types.
 
 **Real-World Analogy — The Matrix Calculator**
@@ -233,6 +321,17 @@ Operator overloading allows user-defined types to use C++ operators (`+`, `-`, `
 A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overloads `+` so that `matrixA + matrixB` performs element-wise addition. The `+` symbol *means different things* depending on what it operates on — just like function overloading.
 
 ### 5.4.2 Which Operators Can Be Overloaded?
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-handwritten.svg" alt="Handwritten: 5.4.2 Which Operators Can Be Overloaded?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-diagram.svg" alt="Diagram: 5.4.2 Which Operators Can Be Overloaded?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-2-which-operators-can-be-overloaded-sticky.svg" alt="Sticky Note: 5.4.2 Which Operators Can Be Overloaded?" width="30%">
+</a>
+
 
 | Category | Operators | Overloadable? |
 |----------|-----------|---------------|
@@ -248,6 +347,17 @@ A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overlo
 
 ### 5.4.3 Operators That CANNOT Be Overloaded
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-handwritten.svg" alt="Handwritten: 5.4.3 Operators That CANNOT Be Overloaded" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-diagram.svg" alt="Diagram: 5.4.3 Operators That CANNOT Be Overloaded" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-3-operators-that-cannot-be-overloaded-sticky.svg" alt="Sticky Note: 5.4.3 Operators That CANNOT Be Overloaded" width="30%">
+</a>
+
+
 | Operator | Name | Why Not? |
 |----------|------|----------|
 | `::` | Scope resolution | Cannot change fundamental scoping rules |
@@ -260,6 +370,17 @@ A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overlo
 
 ### 5.4.4 Operator Overloading Guidelines (The Golden Rules)
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-handwritten.svg" alt="Handwritten: 5.4.4 Operator Overloading Guidelines (The Golden Rules)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-diagram.svg" alt="Diagram: 5.4.4 Operator Overloading Guidelines (The Golden Rules)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-4-operator-overloading-guidelines-the-golden-rules-sticky.svg" alt="Sticky Note: 5.4.4 Operator Overloading Guidelines (The Golden Rules)" width="30%">
+</a>
+
+
 1. **Preserve natural semantics.** `operator+` should add, `operator==` should compare equality. Never make `+` do subtraction.
 2. **Preserve expected arity and precedence.** You cannot change precedence, associativity, or arity.
 3. **Provide compound assignment from the arithmetic version.** Implement `+=` then implement `+` in terms of `+=`.
@@ -270,6 +391,17 @@ A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overlo
 6. **`<<` and `>>` for I/O MUST be non-member functions** — the left operand is `std::ostream&`, not your class.
 
 ### 5.4.5 Code — Complex Number with Operator Overloading
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-handwritten.svg" alt="Handwritten: 5.4.5 Code — Complex Number with Operator Overloading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-diagram.svg" alt="Diagram: 5.4.5 Code — Complex Number with Operator Overloading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-5-code-complex-number-with-operator-overloading-sticky.svg" alt="Sticky Note: 5.4.5 Code — Complex Number with Operator Overloading" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -338,6 +470,17 @@ a * b = (-5 + 10i)
 
 ### 5.4.6 Operator Overloading — Complexity
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-handwritten.svg" alt="Handwritten: 5.4.6 Operator Overloading — Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-diagram.svg" alt="Diagram: 5.4.6 Operator Overloading — Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-4-6-operator-overloading-complexity-sticky.svg" alt="Sticky Note: 5.4.6 Operator Overloading — Complexity" width="30%">
+</a>
+
+
 | Operation | Space | Time | Why? |
 |-----------|-------|------|------|
 | `operator+=` | O(1) per op | O(1) | Direct field arithmetic |
@@ -367,6 +510,17 @@ a * b = (-5 + 10i)
 ## 5.6 Virtual Functions
 
 ### 5.6.1 The Problem Virtual Functions Solve
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-handwritten.svg" alt="Handwritten: 5.6.1 The Problem Virtual Functions Solve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-diagram.svg" alt="Diagram: 5.6.1 The Problem Virtual Functions Solve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-1-the-problem-virtual-functions-solve-sticky.svg" alt="Sticky Note: 5.6.1 The Problem Virtual Functions Solve" width="30%">
+</a>
+
 
 Without virtual functions, calling a function through a base pointer always invokes the **base class version**:
 
@@ -422,6 +576,17 @@ Derived
 
 ### 5.6.2 Real-World Analogy — The Shape Drawer
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-handwritten.svg" alt="Handwritten: 5.6.2 Real-World Analogy — The Shape Drawer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-diagram.svg" alt="Diagram: 5.6.2 Real-World Analogy — The Shape Drawer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-2-real-world-analogy-the-shape-drawer-sticky.svg" alt="Sticky Note: 5.6.2 Real-World Analogy — The Shape Drawer" width="30%">
+</a>
+
+
 A graphic editor has a list of shapes. When you click "Render All", the editor calls `draw()` on each shape. A **Circle** draws an arc. A **Square** draws four lines. A **Triangle** draws three lines. The editor does not care what each shape is — it just says "draw yourself". Each shape *knows* how to draw itself.
 
 ```
@@ -431,6 +596,17 @@ Editor: "Shape #3, draw()"   → Triangle draws △
 ```
 
 ### 5.6.3 Virtual Functions — Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-handwritten.svg" alt="Handwritten: 5.6.3 Virtual Functions — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-diagram.svg" alt="Diagram: 5.6.3 Virtual Functions — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-3-virtual-functions-numbered-steps-sticky.svg" alt="Sticky Note: 5.6.3 Virtual Functions — Numbered Steps" width="30%">
+</a>
+
 
 1. Base class declares `virtual void f();`.
 2. Derived class overrides with `void f() override;`.
@@ -443,6 +619,17 @@ Editor: "Shape #3, draw()"   → Triangle draws △
 9. If `Derived` did not override `f`, the vtable slot points to `Base::f`.
 
 ### 5.6.4 Pseudocode — Virtual Dispatch
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-handwritten.svg" alt="Handwritten: 5.6.4 Pseudocode — Virtual Dispatch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-diagram.svg" alt="Diagram: 5.6.4 Pseudocode — Virtual Dispatch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-4-pseudocode-virtual-dispatch-sticky.svg" alt="Sticky Note: 5.6.4 Pseudocode — Virtual Dispatch" width="30%">
+</a>
+
 
 ```
 CLASS Shape
@@ -469,6 +656,17 @@ FUNCTION main()
 ```
 
 ### 5.6.5 C++ Code — Complete Virtual Function Example
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-handwritten.svg" alt="Handwritten: 5.6.5 C++ Code — Complete Virtual Function Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-diagram.svg" alt="Diagram: 5.6.5 C++ Code — Complete Virtual Function Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-6-5-c-code-complete-virtual-function-example-sticky.svg" alt="Sticky Note: 5.6.5 C++ Code — Complete Virtual Function Example" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -556,6 +754,17 @@ Triangle(base=3, height=4)
 
 ### 5.7.1 Why `override`?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-handwritten.svg" alt="Handwritten: 5.7.1 Why `override`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-diagram.svg" alt="Diagram: 5.7.1 Why `override`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-1-why-override-sticky.svg" alt="Sticky Note: 5.7.1 Why `override`?" width="30%">
+</a>
+
+
 Before C++11, if you attempted to override a virtual function but mistyped the signature, you silently created a **new function**:
 
 ```cpp
@@ -586,6 +795,17 @@ error: 'Derived::draw' marked 'override' but does not override any member functi
 
 ### 5.7.2 `override` — Rules
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-handwritten.svg" alt="Handwritten: 5.7.2 `override` — Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-diagram.svg" alt="Diagram: 5.7.2 `override` — Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-7-2-override-rules-sticky.svg" alt="Sticky Note: 5.7.2 `override` — Rules" width="30%">
+</a>
+
+
 | Rule | Explanation |
 |------|-------------|
 | Placement | After the parameter list (and after `const`/`&`/`&&`) |
@@ -599,6 +819,17 @@ error: 'Derived::draw' marked 'override' but does not override any member functi
 ## 5.8 The `final` Specifier
 
 ### 5.8.1 What `final` Does
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-handwritten.svg" alt="Handwritten: 5.8.1 What `final` Does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-diagram.svg" alt="Diagram: 5.8.1 What `final` Does" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-1-what-final-does-sticky.svg" alt="Sticky Note: 5.8.1 What `final` Does" width="30%">
+</a>
+
 
 `final` prevents further overriding of a virtual function, or prevents a class from being used as a base:
 
@@ -630,6 +861,17 @@ class Fail : public Sealed { };  // ERROR
 
 ### 5.8.2 `final` — Benefits
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-handwritten.svg" alt="Handwritten: 5.8.2 `final` — Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-diagram.svg" alt="Diagram: 5.8.2 `final` — Benefits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-8-2-final-benefits-sticky.svg" alt="Sticky Note: 5.8.2 `final` — Benefits" width="30%">
+</a>
+
+
 | Benefit | Explanation |
 |---------|-------------|
 | Design intent | Communicates "this behaviour is definitive" |
@@ -642,13 +884,46 @@ class Fail : public Sealed { };  // ERROR
 
 ### 5.9.1 What Is the vtable?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-handwritten.svg" alt="Handwritten: 5.9.1 What Is the vtable?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-diagram.svg" alt="Diagram: 5.9.1 What Is the vtable?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-1-what-is-the-vtable-sticky.svg" alt="Sticky Note: 5.9.1 What Is the vtable?" width="30%">
+</a>
+
+
 The **vtable** (virtual table) is a compiler-generated array of function pointers. Each class that has (or inherits) virtual functions has exactly one vtable, stored in static memory (read-only data segment).
 
 ### 5.9.2 What Is the vptr?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-handwritten.svg" alt="Handwritten: 5.9.2 What Is the vptr?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-diagram.svg" alt="Diagram: 5.9.2 What Is the vptr?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-2-what-is-the-vptr-sticky.svg" alt="Sticky Note: 5.9.2 What Is the vptr?" width="30%">
+</a>
+
+
 The **vptr** (virtual pointer) is a hidden pointer member inside each object of a polymorphic class. It points to the class's vtable. The vptr is typically at offset 0 in the object layout.
 
 ### 5.9.3 vtable/vptr — Numbered Steps
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-handwritten.svg" alt="Handwritten: 5.9.3 vtable/vptr — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-diagram.svg" alt="Diagram: 5.9.3 vtable/vptr — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-3-vtable-vptr-numbered-steps-sticky.svg" alt="Sticky Note: 5.9.3 vtable/vptr — Numbered Steps" width="30%">
+</a>
+
 
 1. Compiler encounters a class with any virtual function.
 2. Compiler generates a static vtable for that class containing pointers to all virtual functions.
@@ -659,6 +934,17 @@ The **vptr** (virtual pointer) is a hidden pointer member inside each object of 
 7. A virtual function call `ptr->f()` compiles to: read vptr → follow to vtable → index to slot → indirect call.
 
 ### 5.9.4 Memory Layout — ASCII Visualization
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-handwritten.svg" alt="Handwritten: 5.9.4 Memory Layout — ASCII Visualization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-diagram.svg" alt="Diagram: 5.9.4 Memory Layout — ASCII Visualization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-4-memory-layout-ascii-visualization-sticky.svg" alt="Sticky Note: 5.9.4 Memory Layout — ASCII Visualization" width="30%">
+</a>
+
 
 ```
 CLASS HIERARCHY:
@@ -705,6 +991,17 @@ MEMORY LAYOUT (64-bit):
 
 ### 5.9.5 Vtable Dispatch — Detailed Trace
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-handwritten.svg" alt="Handwritten: 5.9.5 Vtable Dispatch — Detailed Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-diagram.svg" alt="Diagram: 5.9.5 Vtable Dispatch — Detailed Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-5-vtable-dispatch-detailed-trace-sticky.svg" alt="Sticky Note: 5.9.5 Vtable Dispatch — Detailed Trace" width="30%">
+</a>
+
+
 ```cpp
 Shape* s = new Circle(5.0);
 s->draw();   // How does the compiler execute this?
@@ -734,6 +1031,17 @@ s->draw();   // How does the compiler execute this?
 **Key insight:** Virtual calls are not expensive per se (~5 ns on modern hardware). The real cost is that the compiler **cannot inline** across the indirection, losing optimisation opportunities that may be 10-100x more significant.
 
 ### 5.9.6 Vtable During Construction — The Trap
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-handwritten.svg" alt="Handwritten: 5.9.6 Vtable During Construction — The Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-diagram.svg" alt="Diagram: 5.9.6 Vtable During Construction — The Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-6-vtable-during-construction-the-trap-sticky.svg" alt="Sticky Note: 5.9.6 Vtable During Construction — The Trap" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -776,6 +1084,17 @@ After ctor: Derived
 
 ### 5.9.7 vtable Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-handwritten.svg" alt="Handwritten: 5.9.7 vtable Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-diagram.svg" alt="Diagram: 5.9.7 vtable Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-9-7-vtable-complexity-analysis-sticky.svg" alt="Sticky Note: 5.9.7 vtable Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why? |
 |--------|------|------|
 | Per-class vtable memory | O(V) where V = number of virtual functions | One function pointer per virtual function |
@@ -790,6 +1109,17 @@ After ctor: Derived
 
 ### 5.10.1 What Is a Pure Virtual Function?
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-handwritten.svg" alt="Handwritten: 5.10.1 What Is a Pure Virtual Function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-diagram.svg" alt="Diagram: 5.10.1 What Is a Pure Virtual Function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-1-what-is-a-pure-virtual-function-sticky.svg" alt="Sticky Note: 5.10.1 What Is a Pure Virtual Function?" width="30%">
+</a>
+
+
 A pure virtual function is a virtual function that has **no implementation** in the declaring class. It is declared with `= 0`:
 
 ```cpp
@@ -799,6 +1129,17 @@ virtual void draw() const = 0;  // Pure virtual
 Any class containing at least one pure virtual function is **abstract** — you cannot instantiate it.
 
 ### 5.10.2 Real-World Analogy — The USB Standard
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-handwritten.svg" alt="Handwritten: 5.10.2 Real-World Analogy — The USB Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-diagram.svg" alt="Diagram: 5.10.2 Real-World Analogy — The USB Standard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-2-real-world-analogy-the-usb-standard-sticky.svg" alt="Sticky Note: 5.10.2 Real-World Analogy — The USB Standard" width="30%">
+</a>
+
 
 The USB specification defines what every USB device must do:
 - Transfer data
@@ -811,6 +1152,17 @@ In C++: `USBDevice` is the abstract class. `Keyboard`, `Mouse`, `FlashDrive` are
 
 ### 5.10.3 Pure Virtual Functions — Numbered Steps
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-handwritten.svg" alt="Handwritten: 5.10.3 Pure Virtual Functions — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-diagram.svg" alt="Diagram: 5.10.3 Pure Virtual Functions — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-3-pure-virtual-functions-numbered-steps-sticky.svg" alt="Sticky Note: 5.10.3 Pure Virtual Functions — Numbered Steps" width="30%">
+</a>
+
+
 1. Designer identifies a behaviour that every derived type must provide.
 2. Base class declares `virtual void doit() = 0;`
 3. Base cannot be instantiated — compile-time enforcement.
@@ -818,6 +1170,17 @@ In C++: `USBDevice` is the abstract class. `Keyboard`, `Mouse`, `FlashDrive` are
 5. If a derived class does NOT override all pure virtuals, it too is abstract.
 
 ### 5.10.4 Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-handwritten.svg" alt="Handwritten: 5.10.4 Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-diagram.svg" alt="Diagram: 5.10.4 Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-4-pseudocode-sticky.svg" alt="Sticky Note: 5.10.4 Pseudocode" width="30%">
+</a>
+
 
 ```
 ABSTRACT CLASS Vehicle
@@ -838,6 +1201,17 @@ Vehicle* w = new Vehicle()  // ERROR: abstract
 ```
 
 ### 5.10.5 C++ Code — Abstract Shape
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-handwritten.svg" alt="Handwritten: 5.10.5 C++ Code — Abstract Shape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-diagram.svg" alt="Diagram: 5.10.5 C++ Code — Abstract Shape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-5-c-code-abstract-shape-sticky.svg" alt="Sticky Note: 5.10.5 C++ Code — Abstract Shape" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -905,6 +1279,17 @@ Rectangle(3×4) → Area: 12
 
 ### 5.10.6 Pure Virtual Functions with Bodies
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-handwritten.svg" alt="Handwritten: 5.10.6 Pure Virtual Functions with Bodies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-diagram.svg" alt="Diagram: 5.10.6 Pure Virtual Functions with Bodies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-10-6-pure-virtual-functions-with-bodies-sticky.svg" alt="Sticky Note: 5.10.6 Pure Virtual Functions with Bodies" width="30%">
+</a>
+
+
 C++ allows a pure virtual function to have a body:
 
 ```cpp
@@ -933,6 +1318,17 @@ This is useful when you want to provide a **default implementation** that derive
 ## 5.11 Virtual Destructors
 
 ### 5.11.1 The Problem
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-handwritten.svg" alt="Handwritten: 5.11.1 The Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-diagram.svg" alt="Diagram: 5.11.1 The Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-1-the-problem-sticky.svg" alt="Sticky Note: 5.11.1 The Problem" width="30%">
+</a>
+
 
 When you delete a derived object through a base pointer, the destructor resolution follows virtual dispatch. If the base destructor is NOT virtual, the derived destructor never runs:
 
@@ -966,6 +1362,17 @@ int main() {
 
 ### 5.11.2 The Fix
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-handwritten.svg" alt="Handwritten: 5.11.2 The Fix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-diagram.svg" alt="Diagram: 5.11.2 The Fix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-2-the-fix-sticky.svg" alt="Sticky Note: 5.11.2 The Fix" width="30%">
+</a>
+
+
 Make the base destructor virtual:
 
 ```cpp
@@ -992,6 +1399,17 @@ int main() {
 
 ### 5.11.3 Virtual Destructors — Numbered Steps
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-handwritten.svg" alt="Handwritten: 5.11.3 Virtual Destructors — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-diagram.svg" alt="Diagram: 5.11.3 Virtual Destructors — Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-3-virtual-destructors-numbered-steps-sticky.svg" alt="Sticky Note: 5.11.3 Virtual Destructors — Numbered Steps" width="30%">
+</a>
+
+
 1. `delete p;` triggers the destructor call.
 2. Compiler reads vptr from `*p` (virtual dispatch).
 3. vptr points to `Derived`'s vtable → `Derived::~Derived()` is called.
@@ -1001,6 +1419,17 @@ int main() {
 7. Memory deallocation happens (via `operator delete`).
 
 ### 5.11.4 Rules of Thumb
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-handwritten.svg" alt="Handwritten: 5.11.4 Rules of Thumb" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-diagram.svg" alt="Diagram: 5.11.4 Rules of Thumb" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-11-4-rules-of-thumb-sticky.svg" alt="Sticky Note: 5.11.4 Rules of Thumb" width="30%">
+</a>
+
 
 | Situation | Recommendation |
 |-----------|---------------|
@@ -1014,6 +1443,17 @@ int main() {
 ## 5.12 Runtime Type Identification (RTTI)
 
 ### 5.12.1 `dynamic_cast`
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-handwritten.svg" alt="Handwritten: 5.12.1 `dynamic_cast`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-diagram.svg" alt="Diagram: 5.12.1 `dynamic_cast`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-1-dynamic-cast-sticky.svg" alt="Sticky Note: 5.12.1 `dynamic_cast`" width="30%">
+</a>
+
 
 `dynamic_cast` performs a **safe downcast** at runtime. It returns `nullptr` for pointers (or throws `std::bad_cast` for references) if the cast fails:
 
@@ -1036,6 +1476,17 @@ Everyone in the security line is a "Passenger". Most are "Economy". Some are "Fi
 
 ### 5.12.2 `typeid`
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-handwritten.svg" alt="Handwritten: 5.12.2 `typeid`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-diagram.svg" alt="Diagram: 5.12.2 `typeid`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-2-typeid-sticky.svg" alt="Sticky Note: 5.12.2 `typeid`" width="30%">
+</a>
+
+
 `typeid` returns a `const std::type_info&` that identifies the dynamic type:
 
 ```cpp
@@ -1050,6 +1501,17 @@ void identify(const Shape& s) {
 ```
 
 ### 5.12.3 Code — RTTI in Action
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-handwritten.svg" alt="Handwritten: 5.12.3 Code — RTTI in Action" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-diagram.svg" alt="Diagram: 5.12.3 Code — RTTI in Action" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-3-code-rtti-in-action-sticky.svg" alt="Sticky Note: 5.12.3 Code — RTTI in Action" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1107,6 +1569,17 @@ Purring...
 
 ### 5.12.4 `dynamic_cast` — Performance Cost
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-handwritten.svg" alt="Handwritten: 5.12.4 `dynamic_cast` — Performance Cost" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-diagram.svg" alt="Diagram: 5.12.4 `dynamic_cast` — Performance Cost" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-12-4-dynamic-cast-performance-cost-sticky.svg" alt="Sticky Note: 5.12.4 `dynamic_cast` — Performance Cost" width="30%">
+</a>
+
+
 | Operation | Relative Cost | Why? |
 |-----------|--------------|------|
 | `dynamic_cast<T*>(p)` | O(depth) | Must walk the class hierarchy to verify cast validity |
@@ -1134,9 +1607,31 @@ Purring...
 
 ### 5.14.1 The "Interface" Concept in C++
 
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-handwritten.svg" alt="Handwritten: 5.14.1 The "Interface" Concept in C++" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-diagram.svg" alt="Diagram: 5.14.1 The "Interface" Concept in C++" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-1-the-interface-concept-in-c-sticky.svg" alt="Sticky Note: 5.14.1 The "Interface" Concept in C++" width="30%">
+</a>
+
+
 Unlike Java/C#, C++ has no `interface` keyword. The equivalent is a class with **all pure virtual functions** and no data members.
 
 ### 5.14.2 Comparison Table
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-handwritten.svg" alt="Handwritten: 5.14.2 Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-diagram.svg" alt="Diagram: 5.14.2 Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-2-comparison-table-sticky.svg" alt="Sticky Note: 5.14.2 Comparison Table" width="30%">
+</a>
+
 
 | Aspect | Abstract Class (Mixed) | Pure Interface (All-Pure) |
 |--------|----------------------|--------------------------|
@@ -1149,6 +1644,17 @@ Unlike Java/C#, C++ has no `interface` keyword. The equivalent is a class with *
 | Use case | Share common state + behaviour | Define pure contract |
 
 ### 5.14.3 Example — Pure Interface
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-handwritten.svg" alt="Handwritten: 5.14.3 Example — Pure Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-diagram.svg" alt="Diagram: 5.14.3 Example — Pure Interface" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-14-3-example-pure-interface-sticky.svg" alt="Sticky Note: 5.14.3 Example — Pure Interface" width="30%">
+</a>
+
 
 ```cpp
 class ILogger {
@@ -1178,6 +1684,17 @@ public:
 ## 5.15 Object Slicing
 
 ### 5.15.1 What Is Object Slicing?
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-handwritten.svg" alt="Handwritten: 5.15.1 What Is Object Slicing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-diagram.svg" alt="Diagram: 5.15.1 What Is Object Slicing?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-1-what-is-object-slicing-sticky.svg" alt="Sticky Note: 5.15.1 What Is Object Slicing?" width="30%">
+</a>
+
 
 When you assign a derived object to a base object **by value**, the derived part is "sliced off":
 
@@ -1210,6 +1727,17 @@ Derived
 ```
 
 ### 5.15.2 Why Slicing Happens
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-handwritten.svg" alt="Handwritten: 5.15.2 Why Slicing Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-diagram.svg" alt="Diagram: 5.15.2 Why Slicing Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/5-15-2-why-slicing-happens-sticky.svg" alt="Sticky Note: 5.15.2 Why Slicing Happens" width="30%">
+</a>
+
 
 When you copy a `Derived` into a `Base`, the compiler:
 1. Allocates `sizeof(Base)` bytes (not `sizeof(Derived)`).
@@ -1251,6 +1779,17 @@ When you copy a `Derived` into a `Base`, the compiler:
 | `final` | Derived class or class name | Prevents further overrides (function) or inheritance (class) | `void draw() final;` / `class Sealed final {};` |
 
 ### Combination Rules
+
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-handwritten.svg" alt="Handwritten: Combination Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-diagram.svg" alt="Diagram: Combination Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/05-polymorphism/combination-rules-sticky.svg" alt="Sticky Note: Combination Rules" width="30%">
+</a>
+
 
 | Combination | Validity | Meaning |
 |-------------|----------|---------|

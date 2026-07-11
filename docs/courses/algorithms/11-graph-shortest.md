@@ -59,6 +59,17 @@ flowchart LR
 
 ### 11.1 Dijkstra's Algorithm
 
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" alt="Handwritten: 11.1 Dijkstra's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" alt="Diagram: 11.1 Dijkstra's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" alt="Sticky Note: 11.1 Dijkstra's Algorithm" width="30%">
+</a>
+
+
 **Problem:** Find the shortest paths from a source vertex \( s \) to all other vertices in a weighted graph with non-negative edge weights.
 
 **Real-world analogy:** Your GPS calculates the shortest route from your current location to a destination. Each intersection is a vertex, each road segment is an edge with weight = travel time. The GPS maintains a list of "best known travel time" for each intersection. It always explores the intersection with the shortest current estimate first — you wouldn't drive 10 minutes in the wrong direction just to save 30 seconds later. This greedy approach works because travel times are never negative (you can't arrive before you left).
@@ -244,6 +255,17 @@ public class Dijkstra {
 
 ### 11.2 Bellman-Ford Algorithm
 
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 11.2 Bellman-Ford Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" alt="Diagram: 11.2 Bellman-Ford Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 11.2 Bellman-Ford Algorithm" width="30%">
+</a>
+
+
 **Problem:** Find shortest paths when edge weights may be negative. Also detects negative cycles reachable from the source.
 
 **Real-world analogy:** Suppose you are trading currencies. Converting USD → EUR → GBP might cost you 0.2% each hop, but a rare triangular arbitrage opportunity exists: USD → JPY → EUR → USD yields a net profit of 0.1% — a negative-weight cycle. You could keep trading in this loop and accumulate infinite profit. Bellman-Ford detects exactly such pathological situations.
@@ -419,6 +441,17 @@ public class BellmanFord {
 ---
 
 ### 11.3 Floyd-Warshall Algorithm
+
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" alt="Handwritten: 11.3 Floyd-Warshall Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" alt="Diagram: 11.3 Floyd-Warshall Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" alt="Sticky Note: 11.3 Floyd-Warshall Algorithm" width="30%">
+</a>
+
 
 **Problem:** Find the shortest paths between all pairs of vertices. Handles negative weights but not negative cycles.
 
@@ -601,6 +634,17 @@ public class FloydWarshall {
 ---
 
 ### 11.4 Shortest Path in DAG
+
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" alt="Handwritten: 11.4 Shortest Path in DAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" alt="Diagram: 11.4 Shortest Path in DAG" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" alt="Sticky Note: 11.4 Shortest Path in DAG" width="30%">
+</a>
+
 
 **Problem:** Find shortest paths in a directed acyclic graph (DAG). The absence of cycles allows a linear-time solution.
 
@@ -795,6 +839,17 @@ public class DAGShortest {
 ---
 
 ### 11.5 A* Search
+
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" alt="Handwritten: 11.5 A* Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" alt="Diagram: 11.5 A* Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" alt="Sticky Note: 11.5 A* Search" width="30%">
+</a>
+
 
 **Problem:** Find the shortest path from a single source s to a specific target t. A* uses domain knowledge (a heuristic) to explore fewer vertices than Dijkstra.
 

@@ -127,6 +127,17 @@ flowchart LR
 
 ### 36.1 Manufacturing Data Models
 
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" alt="Handwritten: 36.1 Manufacturing Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" alt="Diagram: 36.1 Manufacturing Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" alt="Sticky Note: 36.1 Manufacturing Data Models" width="30%">
+</a>
+
+
 Modern manufacturing operations generate data across six core domains: the equipment that produces goods, the production orders that drive work, the quality checks that verify output, the maintenance logs that track repairs, the inventory that feeds production, and the IoT sensors that monitor everything. These models form the relational backbone upon which all AI agents operate.
 
 #### Migrations
@@ -539,6 +550,17 @@ class IoTReading extends Model
 
 ### 36.2 Predictive Maintenance Agents
 
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" alt="Handwritten: 36.2 Predictive Maintenance Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" alt="Diagram: 36.2 Predictive Maintenance Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" alt="Sticky Note: 36.2 Predictive Maintenance Agents" width="30%">
+</a>
+
+
 Equipment failure is the single largest source of unplanned downtime in manufacturing. Predictive maintenance uses AI to analyze sensor trends, vibration patterns, temperature fluctuations, and operational history to forecast failures before they happen. The agent schedules corrective maintenance during planned windows rather than reacting to breakdowns.
 
 ```php
@@ -821,6 +843,17 @@ class PredictiveMaintenanceAgent
 
 ### 36.3 Quality Control Automation
 
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" alt="Handwritten: 36.3 Quality Control Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" alt="Diagram: 36.3 Quality Control Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" alt="Sticky Note: 36.3 Quality Control Automation" width="30%">
+</a>
+
+
 Quality control in manufacturing generates enormous volumes of inspection data. A QualityControlAgent automates the analysis of this data, detecting defect patterns that human inspectors would miss, tracking drift in production parameters, and triggering corrective actions when quality deviates from specification.
 
 ```php
@@ -1056,6 +1089,17 @@ class QualityControlAgent
 ---
 
 ### 36.4 IoT Data Ingestion & Processing
+
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" alt="Handwritten: 36.4 IoT Data Ingestion & Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" alt="Diagram: 36.4 IoT Data Ingestion & Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" alt="Sticky Note: 36.4 IoT Data Ingestion & Processing" width="30%">
+</a>
+
 
 Industrial IoT sensors generate millions of data points per day → temperature, vibration, pressure, RPM, energy consumption, and dozens of other metrics. The IoTDataIngestionAgent handles the ingestion pipeline: parsing raw sensor payloads, validating against thresholds, detecting statistical anomalies, and routing alerts to the appropriate teams.
 
@@ -1294,6 +1338,17 @@ class IoTDataIngestionAgent
 ---
 
 ### 36.5 Production Scheduling Agents
+
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" alt="Handwritten: 36.5 Production Scheduling Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" alt="Diagram: 36.5 Production Scheduling Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" alt="Sticky Note: 36.5 Production Scheduling Agents" width="30%">
+</a>
+
 
 Production scheduling is a constrained optimization problem: assign production orders to machines and time slots while respecting capacity limits, material availability, maintenance windows, and delivery deadlines. A ProductionSchedulingAgent applies heuristic optimization to generate feasible schedules and reschedules dynamically when disruptions occur.
 
@@ -1552,6 +1607,17 @@ class ProductionSchedulingAgent
 
 ### 36.6 Safety Compliance Monitoring
 
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" alt="Handwritten: 36.6 Safety Compliance Monitoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" alt="Diagram: 36.6 Safety Compliance Monitoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" alt="Sticky Note: 36.6 Safety Compliance Monitoring" width="30%">
+</a>
+
+
 Manufacturing facilities operate under strict safety regulations → OSHA, ISO 45001, and industry-specific standards. A SafetyComplianceAgent monitors incident reports, tracks safety metrics, analyzes near-miss patterns, and generates compliance documentation automatically.
 
 ```php
@@ -1782,6 +1848,17 @@ class SafetyComplianceAgent
 
 ### 36.7 Inventory Automation
 
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" alt="Handwritten: 36.7 Inventory Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" alt="Diagram: 36.7 Inventory Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" alt="Sticky Note: 36.7 Inventory Automation" width="30%">
+</a>
+
+
 Manufacturing inventory is complex → raw materials, work-in-progress, finished goods, and consumables each have different reorder patterns. An InventoryAutomationAgent monitors stock levels across all categories, calculates reorder quantities using demand forecasts, and generates purchase orders automatically when stock falls below threshold.
 
 ```php
@@ -1977,6 +2054,17 @@ class InventoryAutomationAgent
 ---
 
 ### 36.8 Equipment Lifecycle Management
+
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" alt="Handwritten: 36.8 Equipment Lifecycle Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" alt="Diagram: 36.8 Equipment Lifecycle Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" alt="Sticky Note: 36.8 Equipment Lifecycle Management" width="30%">
+</a>
+
 
 Industrial equipment represents a significant capital investment that must be managed across its entire lifecycle → from purchase and commissioning through maintenance, calibration, and eventual retirement. An EquipmentLifecycleAgent tracks depreciation, warranty status, calibration schedules, and total cost of ownership to optimize replacement timing and budget planning.
 

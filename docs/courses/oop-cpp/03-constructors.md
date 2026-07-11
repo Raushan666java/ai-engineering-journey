@@ -79,13 +79,46 @@ flowchart LR
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A default constructor is like a **blank birth certificate**. When a baby is born in a hospital, the staff fills out a form with default values — date of birth, place, weight. These defaults are sensible starting points even without any custom input.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **default constructor** is a constructor that can be called with **no arguments**. It is used when creating arrays of objects, STL containers, or when using `new` without initialisers.
 
 ### Key Rules
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
+</a>
+
 
 1. If a class declares **no constructors at all**, the compiler generates a default constructor that default-initialises all members.
 2. If **any** user-defined constructor exists, the compiler-supplied default is **suppressed**.
@@ -93,6 +126,17 @@ A **default constructor** is a constructor that can be called with **no argument
 4. Built-in types (int, double, pointer) remain **uninitialised** in compiler-generated default constructors — reading them is undefined behaviour.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 CLASS ClassName
@@ -103,6 +147,17 @@ END CLASS
 ```
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -151,6 +206,17 @@ Default constructor called for Unknown
 
 ### Dry Run Trace: Default Constructor
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Default Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Default Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Default Constructor" width="30%">
+</a>
+
+
 | Step | Action | Object | name_ | id_ | gpa_ |
 |------|--------|--------|-------|-----|------|
 | 1 | `Student s1;` | s1 | Raw memory | Raw memory | Raw memory |
@@ -166,6 +232,17 @@ Default constructor called for Unknown
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Trivial default ctor (compiler-generated, no work) | O(1) | No members need construction |
@@ -174,6 +251,17 @@ Default constructor called for Unknown
 | Heap allocation + default ctor | O(N * m) + alloc overhead | Same as array but with dynamic memory overhead |
 
 ### When the Compiler Suppresses the Default Constructor
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" alt="Handwritten: When the Compiler Suppresses the Default Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" alt="Diagram: When the Compiler Suppresses the Default Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" alt="Sticky Note: When the Compiler Suppresses the Default Constructor" width="30%">
+</a>
+
 
 ```cpp
 class Widget {
@@ -203,6 +291,17 @@ Widget arr[10];     // OK
 
 ### Default Member Initialisers (C++11)
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" alt="Handwritten: Default Member Initialisers (C++11)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" alt="Diagram: Default Member Initialisers (C++11)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" alt="Sticky Note: Default Member Initialisers (C++11)" width="30%">
+</a>
+
+
 Provide per-member defaults:
 
 ```cpp
@@ -222,13 +321,46 @@ private:
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A parameterised constructor is like a **custom order at a restaurant**. Instead of getting the chef's special (default), you specify exactly what you want — medium-rare steak, extra mushrooms, no onions. The kitchen (constructor) receives your parameters and prepares your specific dish.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **parameterised constructor** accepts arguments that customise the object's initial state. It bypasses the all-defaults state and establishes a caller-specified invariant.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 CLASS ClassName
@@ -239,6 +371,17 @@ END CLASS
 ```
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -282,6 +425,17 @@ Parameterised ctor: "Dune" by Frank Herbert
 
 ### Dry Run Trace: Parameterised Constructor
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Parameterised Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Parameterised Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Parameterised Constructor" width="30%">
+</a>
+
+
 | Step | Action | Object | title_ | author_ | year_ |
 |------|--------|--------|--------|---------|-------|
 | 1 | `Book b1("1984", "George Orwell", 1949)` | b1 | Raw memory | Raw memory | Raw memory |
@@ -293,6 +447,17 @@ Parameterised ctor: "Dune" by Frank Herbert
 | 7 | `b1.display()` | b1 | Output printed | — | — |
 
 ### Parameterised with Default Arguments
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" alt="Handwritten: Parameterised with Default Arguments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" alt="Diagram: Parameterised with Default Arguments" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" alt="Sticky Note: Parameterised with Default Arguments" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -330,6 +495,17 @@ Config(timeout=60, retries=5, logging=0)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Parameterised ctor for POD types | O(1) | Simple member-wise initialisation |
@@ -343,13 +519,46 @@ Config(timeout=60, retries=5, logging=0)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Constructor overloading is like a **multi-function remote control**. The same remote can control the TV, the soundbar, and the AC — you press different button sequences (different parameter lists) to achieve different results. Similarly, a class can have multiple constructors, each with a distinct parameter list.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 **Constructor overloading** allows a class to have **multiple constructors with different signatures** (different number or types of parameters). The compiler selects the appropriate constructor based on the arguments provided, following **overload resolution** rules.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 CLASS ClassName
@@ -361,6 +570,17 @@ END CLASS
 ```
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -445,6 +665,17 @@ Message(initializer_list)
 
 ### Overload Resolution Table
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" alt="Handwritten: Overload Resolution Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" alt="Diagram: Overload Resolution Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" alt="Sticky Note: Overload Resolution Table" width="30%">
+</a>
+
+
 | Call | Viable Ctors | Selected | Reason |
 |------|-------------|----------|--------|
 | `Message()` | (1) | (1) | Exact match — no args |
@@ -454,6 +685,17 @@ Message(initializer_list)
 | `Message({"A","B","C"})` | (5) | (5) | initializer_list exact match |
 
 ### Ambiguity Example
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" alt="Handwritten: Ambiguity Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" alt="Diagram: Ambiguity Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" alt="Sticky Note: Ambiguity Example" width="30%">
+</a>
+
 
 ```cpp
 struct Ambiguous {
@@ -468,6 +710,17 @@ Ambiguous a3(1.0, 2);       // OK: second ctor
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Overload resolution | Compile-time | No runtime cost |
@@ -479,13 +732,46 @@ Ambiguous a3(1.0, 2);       // OK: second ctor
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 An initialiser list is like **filling out passport details at issuance** — not later. When you get a passport, your name, DOB, and place of birth are set right then. You cannot "update" your place of birth later (like a `const` member). The initialiser list is the only chance to set certain values.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 The **initialiser list** is the part of a constructor after the parameter list, preceded by a colon. It directly initialises members before the constructor body executes.
 
 ### Syntax and Rules
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" alt="Handwritten: Syntax and Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" alt="Diagram: Syntax and Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" alt="Sticky Note: Syntax and Rules" width="30%">
+</a>
+
 
 ```cpp
 class ClassName {
@@ -509,6 +795,17 @@ public:
 5. Members not listed are default-initialised.
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -553,6 +850,17 @@ Alice | ID: 1001 | $75000 | Min: $30000
 
 ### What Happens Without Initialiser List?
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" alt="Handwritten: What Happens Without Initialiser List?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" alt="Diagram: What Happens Without Initialiser List?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" alt="Sticky Note: What Happens Without Initialiser List?" width="30%">
+</a>
+
+
 ```cpp
 class Broken {
 public:
@@ -567,6 +875,17 @@ private:
 ```
 
 ### Performance Impact
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" alt="Handwritten: Performance Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" alt="Diagram: Performance Impact" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" alt="Sticky Note: Performance Impact" width="30%">
+</a>
+
 
 Without init list, members are **constructed twice**:
 
@@ -592,6 +911,17 @@ private:
 `Slow`: One default construction + one assignment (potential second allocation). `Fast`: One direct construction — optimal.
 
 ### Declaration Order Trap
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" alt="Handwritten: Declaration Order Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" alt="Diagram: Declaration Order Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" alt="Sticky Note: Declaration Order Trap" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -628,6 +958,17 @@ x_ = 32767, y_ = 10
 
 ### Initialiser List vs Assignment Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" alt="Diagram: Initialiser List vs Assignment Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment Comparison" width="30%">
+</a>
+
+
 | Aspect | Initialiser List | Body Assignment |
 |--------|-----------------|-----------------|
 | When it runs | Before body | Inside body |
@@ -641,6 +982,17 @@ x_ = 32767, y_ = 10
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Init list with POD | O(1) | Direct memory write |
@@ -653,13 +1005,46 @@ x_ = 32767, y_ = 10
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 The `explicit` keyword is like a **bouncer checking ID**. Without a bouncer, anyone who looks old enough can walk in — that is implicit conversion. With a bouncer (explicit), only people with valid ID are allowed. The `explicit` keyword prevents the compiler from using a constructor for **implicit conversions**.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 The `explicit` keyword prevents single-argument constructors (and multi-argument ones in C++11) from being used for **implicit conversions** or **copy-initialisation**.
 
 ### The Problem: Implicit Conversion
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" alt="Handwritten: The Problem: Implicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" alt="Diagram: The Problem: Implicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" alt="Sticky Note: The Problem: Implicit Conversion" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -686,6 +1071,17 @@ int main() {
 ```
 
 ### The Solution: `explicit`
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" alt="Handwritten: The Solution: `explicit`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" alt="Diagram: The Solution: `explicit`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" alt="Sticky Note: The Solution: `explicit`" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -714,6 +1110,17 @@ int main() {
 
 ### `explicit` on Multi-Argument Constructors (C++11)
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" alt="Handwritten: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" alt="Diagram: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" alt="Sticky Note: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+</a>
+
+
 ```cpp
 struct Point {
     explicit Point(double x, double y) : x_(x), y_(y) {}
@@ -726,6 +1133,17 @@ Point p1(3.0, 4.0);     // OK
 
 ### When to Use `explicit`
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" alt="Handwritten: When to Use `explicit`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" alt="Diagram: When to Use `explicit`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" alt="Sticky Note: When to Use `explicit`" width="30%">
+</a>
+
+
 | Scenario | Recommendation | Rationale |
 |----------|---------------|-----------|
 | Single-argument constructor | Always `explicit` | Prevents accidental conversions |
@@ -734,6 +1152,17 @@ Point p1(3.0, 4.0);     // OK
 | Conversion operator | Usually explicit | Prevents boolean-context surprises |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -747,13 +1176,46 @@ Point p1(3.0, 4.0);     // OK
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Delegating constructors are like a **call center escalation system**. A junior agent handles what they can, then **delegates** to a senior agent with more authority who completes the resolution. In C++, one constructor can delegate core initialisation work to another constructor.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **delegating constructor** calls another constructor of the same class from its initialiser list, eliminating code duplication when multiple constructors share common logic.
 
 ### Rules
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" alt="Handwritten: Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" alt="Diagram: Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" alt="Sticky Note: Rules" width="30%">
+</a>
+
 
 1. Delegation occurs in the initialiser list, not the body.
 2. The **target constructor** runs **first**.
@@ -762,6 +1224,17 @@ A **delegating constructor** calls another constructor of the same class from it
 5. A delegating constructor cannot have its own member initialiser list.
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -853,6 +1326,17 @@ Charlie | ID: 1002 | $75000
 
 ### Dry Run Trace: Delegation
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" alt="Handwritten: Dry Run Trace: Delegation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" alt="Diagram: Dry Run Trace: Delegation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" alt="Sticky Note: Dry Run Trace: Delegation" width="30%">
+</a>
+
+
 For `Employee e2("Alice")`:
 
 | Step | Constructor | Action | name_ | id_ | salary_ |
@@ -869,6 +1353,17 @@ For `Employee e2("Alice")`:
 
 ### Cycle Detection
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" alt="Handwritten: Cycle Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" alt="Diagram: Cycle Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" alt="Sticky Note: Cycle Detection" width="30%">
+</a>
+
+
 ```cpp
 struct Cycle {
     Cycle() : Cycle(0) {}       // Delegates
@@ -878,6 +1373,17 @@ struct Cycle {
 ```
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -891,6 +1397,17 @@ struct Cycle {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A copy constructor is like a **photocopy machine**.
 
 - **Shallow copy**: Like giving someone a photocopy of a map that just says "look at my map" — both people think they have the map, but they are actually sharing the same physical paper. If one person draws on it, the other sees it too.
@@ -898,11 +1415,33 @@ A copy constructor is like a **photocopy machine**.
 
 ### Definition
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 The **copy constructor** creates a new object as a **copy** of an existing object. It takes a single argument of type `const T&` (or `T&`).
 
 **Signature:** `ClassName(const ClassName& other);`
 
 ### When the Copy Constructor Is Called
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" alt="Handwritten: When the Copy Constructor Is Called" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" alt="Diagram: When the Copy Constructor Is Called" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" alt="Sticky Note: When the Copy Constructor Is Called" width="30%">
+</a>
+
 
 1. **Pass by value**: `void func(MyClass obj);` called with `func(existing);`
 2. **Return by value**: `MyClass func() { MyClass obj; return obj; }`
@@ -911,6 +1450,17 @@ The **copy constructor** creates a new object as a **copy** of an existing objec
 5. **Throw/catch exceptions**: Throwing or catching by value copies.
 
 ### The Shallow Copy Problem
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" alt="Handwritten: The Shallow Copy Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" alt="Diagram: The Shallow Copy Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" alt="Sticky Note: The Shallow Copy Problem" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -960,6 +1510,17 @@ Dtor: deleting 0x1a2b3c4d
 ```
 
 ### The Deep Copy Solution
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" alt="Handwritten: The Deep Copy Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" alt="Diagram: The Deep Copy Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" alt="Sticky Note: The Deep Copy Solution" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1028,6 +1589,17 @@ Dtor: deleting 0x1a2b3c4d [Hello]
 
 ### Memory Diagram: Deep vs Shallow Copy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Memory Diagram: Deep vs Shallow Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" alt="Diagram: Memory Diagram: Deep vs Shallow Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Memory Diagram: Deep vs Shallow Copy" width="30%">
+</a>
+
+
 **Shallow Copy:**
 ```
 s1.data_ ──> [ H | e | l | l | o | \0 ]  ←── s2.data_ (SAME block)
@@ -1043,6 +1615,17 @@ Each object owns its own memory block. Destructors delete independent blocks —
 
 ### Dry Run Trace: Deep Copy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" alt="Handwritten: Dry Run Trace: Deep Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" alt="Diagram: Dry Run Trace: Deep Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" alt="Sticky Note: Dry Run Trace: Deep Copy" width="30%">
+</a>
+
+
 | Step | Action | Object | data_ points to | Notes |
 |------|--------|--------|-----------------|-------|
 | 1 | `DeepString s1("Hello")` | s1 | 0x100 (alloc) | Ctor runs, allocates |
@@ -1056,6 +1639,17 @@ Each object owns its own memory block. Destructors delete independent blocks —
 **Total allocations: 3. Total deletions: 3. No double free.**
 
 ### Copy Elision and RVO / NRVO
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" alt="Handwritten: Copy Elision and RVO / NRVO" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" alt="Diagram: Copy Elision and RVO / NRVO" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" alt="Sticky Note: Copy Elision and RVO / NRVO" width="30%">
+</a>
+
 
 C++ compilers are allowed to **elide** (skip) copy constructor calls even if the copy constructor has side effects.
 
@@ -1115,6 +1709,17 @@ Dtor
 
 ### `= delete` — Prohibiting Copy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" alt="Handwritten: `= delete` — Prohibiting Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" alt="Diagram: `= delete` — Prohibiting Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" alt="Sticky Note: `= delete` — Prohibiting Copy" width="30%">
+</a>
+
+
 ```cpp
 class NonCopyable {
 public:
@@ -1127,6 +1732,17 @@ public:
 ```
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1142,9 +1758,31 @@ public:
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A move constructor is like a **moving truck**. Instead of copying all your furniture to a new house (expensive — like a deep copy), the truck picks up your furniture and leaves your old house empty. The new house now has all the furniture; the old house is empty. That is exactly what the move constructor does — it **transfers ownership** of resources, leaving the source in a **valid-but-empty** state.
 
 ### Definition
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
 
 The **move constructor** transfers resources from a source (temporary) object to a newly constructed object, avoiding expensive deep copies. It takes an rvalue reference parameter.
 
@@ -1152,12 +1790,34 @@ The **move constructor** transfers resources from a source (temporary) object to
 
 ### Key Properties
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
+</a>
+
+
 1. **Steals resources** from the source (copies the pointer, does not allocate new memory).
 2. **Leaves source in valid-but-empty state** (source pointer set to nullptr).
 3. **Must be `noexcept`** — critical for STL containers to use move instead of copy during reallocation.
 4. **Automatically used** when the argument is an rvalue (temporary) or when `std::move()` is applied.
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1250,6 +1910,17 @@ Dtor: empty (nullptr)    [~b1 — was moved-from]
 
 ### Move vs Copy: Performance Comparison
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" alt="Handwritten: Move vs Copy: Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" alt="Diagram: Move vs Copy: Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" alt="Sticky Note: Move vs Copy: Performance Comparison" width="30%">
+</a>
+
+
 | Aspect | Copy Constructor | Move Constructor |
 |--------|-----------------|-----------------|
 | Allocation | Allocates new memory | No allocation |
@@ -1259,6 +1930,17 @@ Dtor: empty (nullptr)    [~b1 — was moved-from]
 | Speed (N = 1MB) | ~1ms (copy 1MB) | ~1ns (copy pointer) |
 
 ### Why `noexcept` Matters for Move
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" alt="Handwritten: Why `noexcept` Matters for Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" alt="Diagram: Why `noexcept` Matters for Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" alt="Sticky Note: Why `noexcept` Matters for Move" width="30%">
+</a>
+
 
 STL containers like `std::vector` check `std::is_nothrow_move_constructible`. If move is `noexcept`, the vector uses move during reallocation. If not, it falls back to copy, which is much slower.
 
@@ -1275,6 +1957,17 @@ v.push_back(MaybeMove{});  // May copy instead of move during reallocation!
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Move ctor (pointer + size) | O(1) | Copies two integers (pointer, size) |
@@ -1288,15 +1981,48 @@ v.push_back(MaybeMove{});  // May copy instead of move during reallocation!
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A destructor is like the **hotel cleaning crew after checkout**. When you leave a hotel room, the cleaning crew automatically strips the beds, empties the trash, and secures the room. You do not need to call them — they come automatically. Similarly, a C++ destructor runs **automatically** when an object's lifetime ends, releasing any resources the object acquired.
 
 ### Definition
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
 
 The **destructor** is a special member function called when an object is destroyed — when it goes out of scope (stack), when `delete` is invoked (heap), or when a container is destroyed. Its name is `~ClassName`, it takes no parameters, returns nothing, and must be `noexcept`.
 
 **Signature:** `~ClassName() noexcept;`
 
 ### Key Properties
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
+</a>
+
 
 1. **Deterministic**: Runs at a well-defined point (end of scope, `delete` call).
 2. **Automatic**: Called implicitly for stack objects; called by `delete` for heap objects.
@@ -1305,6 +2031,17 @@ The **destructor** is a special member function called when an object is destroy
 5. **Reverse order**: Members and base classes are destroyed in **reverse order** of construction.
 
 ### C++ Code with Output
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1378,6 +2115,17 @@ Logger [main.inner1] destroyed
 
 ### Destruction Order Trace
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" alt="Handwritten: Destruction Order Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" alt="Diagram: Destruction Order Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" alt="Sticky Note: Destruction Order Trace" width="30%">
+</a>
+
+
 | Step | Action | What Happens |
 |------|--------|-------------|
 | 1 | Construct c | Logger inner1, Logger inner2, Container body |
@@ -1387,6 +2135,17 @@ Logger [main.inner1] destroyed
 | 5 | Destroy members | ~Logger(inner2), ~Logger(inner1) — **reverse** order |
 
 ### RAII — Resource Acquisition Is Initialisation
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" alt="Handwritten: RAII — Resource Acquisition Is Initialisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" alt="Diagram: RAII — Resource Acquisition Is Initialisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" alt="Sticky Note: RAII — Resource Acquisition Is Initialisation" width="30%">
+</a>
+
 
 RAII is the most important idiom in C++. It binds resource lifetime to object lifetime: acquire in constructor, release in destructor.
 
@@ -1451,6 +2210,17 @@ void threadSafeOp(std::mutex& m) {
 
 ### When Destructors Must Be `noexcept`
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" alt="Handwritten: When Destructors Must Be `noexcept`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" alt="Diagram: When Destructors Must Be `noexcept`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" alt="Sticky Note: When Destructors Must Be `noexcept`" width="30%">
+</a>
+
+
 If a destructor throws during normal execution, the program can catch the exception. But if it throws **during stack unwinding** (while another exception is active), `std::terminate()` is called.
 
 ```cpp
@@ -1469,6 +2239,17 @@ void demo() {
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | Trivial destructor (compiler-generated) | O(1) | No members need cleanup |
@@ -1482,9 +2263,31 @@ void demo() {
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A virtual destructor is like a **universal fire alarm**. Whether you are in a library, a factory, or an apartment building, the fire alarm must work correctly for that specific building type. If the alarm system only works for "buildings" but not for "libraries" (the specific type), people in the library would burn. Similarly, if you delete a derived object through a base pointer and the destructor is not virtual, only the base destructor runs — the derived part leaks.
 
 ### The Problem: Non-Virtual Destructor
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" alt="Handwritten: The Problem: Non-Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" alt="Diagram: The Problem: Non-Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" alt="Sticky Note: The Problem: Non-Virtual Destructor" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1527,6 +2330,17 @@ Base DESTROYED
 
 ### The Solution: Virtual Destructor
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" alt="Handwritten: The Solution: Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" alt="Diagram: The Solution: Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" alt="Sticky Note: The Solution: Virtual Destructor" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 
@@ -1566,6 +2380,17 @@ Base DESTROYED
 
 ### Virtual Destructor Dry Run
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" alt="Handwritten: Virtual Destructor Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" alt="Diagram: Virtual Destructor Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" alt="Sticky Note: Virtual Destructor Dry Run" width="30%">
+</a>
+
+
 | Step | Action | What Runs | Result |
 |------|--------|-----------|--------|
 | 1 | `Base* ptr = new Derived()` | Base ctor, then Derived ctor | Object fully constructed |
@@ -1577,6 +2402,17 @@ Base DESTROYED
 Without virtual: step 2 calls ~Base() directly — ~Derived() is never reached.
 
 ### Pure Virtual Destructor
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" alt="Handwritten: Pure Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" alt="Diagram: Pure Virtual Destructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" alt="Sticky Note: Pure Virtual Destructor" width="30%">
+</a>
+
 
 A destructor can be **pure virtual**, but it **must still have a body** because derived class destructors call it:
 
@@ -1614,6 +2450,17 @@ AbstractBase destructor
 
 ### When to Make Destructors Virtual
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" alt="Handwritten: When to Make Destructors Virtual" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" alt="Diagram: When to Make Destructors Virtual" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" alt="Sticky Note: When to Make Destructors Virtual" width="30%">
+</a>
+
+
 | Scenario | Virtual? | Rationale |
 |----------|----------|-----------|
 | Polymorphic base class | **YES** | Deleting through base ptr must call derived dtor |
@@ -1624,9 +2471,31 @@ AbstractBase destructor
 
 ### Rule of Thumb
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" alt="Handwritten: Rule of Thumb" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" alt="Diagram: Rule of Thumb" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" alt="Sticky Note: Rule of Thumb" width="30%">
+</a>
+
+
 > If a class has any virtual function, it should have a virtual destructor. If a class is intended as a base class, it should have a virtual destructor.
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1640,6 +2509,17 @@ AbstractBase destructor
 ## 3.11 Rule of Three / Rule of Five
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 The Rule of Three/Five is like a **three-legged stool**. If your class manages a resource (heap memory, file handle, socket), you need all the legs:
 
@@ -1655,17 +2535,50 @@ With C++11, two more legs were added (Rule of Five):
 
 ### Rule of Three
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" alt="Handwritten: Rule of Three" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" alt="Diagram: Rule of Three" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" alt="Sticky Note: Rule of Three" width="30%">
+</a>
+
+
 **Statement:** If a class requires a user-defined destructor, copy constructor, or copy assignment operator, it likely requires **all three**.
 
 **Why:** If you have a resource (raw pointer, FILE*, HANDLE, socket), the compiler-generated copy operations perform **member-wise copy** — they copy the pointer, not the resource. Both objects end up pointing to the same resource. When one object is destroyed, the resource is freed. When the other object is destroyed, it tries to free the same resource again — **double free**.
 
 ### Rule of Five
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" alt="Handwritten: Rule of Five" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" alt="Diagram: Rule of Five" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" alt="Sticky Note: Rule of Five" width="30%">
+</a>
+
+
 **Statement:** With C++11, add the move constructor and move assignment operator to the Rule of Three.
 
 **Why:** Move operations provide efficient transfer of resources. When a temporary is moved instead of copied, no deep copy is needed — just pointer swaps. STL containers check for `noexcept` move constructors to use move during reallocation.
 
 ### Complete Rule of Five Example
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" alt="Handwritten: Complete Rule of Five Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" alt="Diagram: Complete Rule of Five Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" alt="Sticky Note: Complete Rule of Five Example" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1800,6 +2713,17 @@ Dtor: ""
 
 ### Copy-and-Swap Idiom
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" alt="Handwritten: Copy-and-Swap Idiom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" alt="Diagram: Copy-and-Swap Idiom" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" alt="Sticky Note: Copy-and-Swap Idiom" width="30%">
+</a>
+
+
 The copy assignment operator in the example uses **copy-and-swap**:
 
 1. Create a temporary copy of the source.
@@ -1813,6 +2737,17 @@ The copy assignment operator in the example uses **copy-and-swap**:
 
 ### Guidelines for Defaulting / Deleting
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" alt="Handwritten: Guidelines for Defaulting / Deleting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" alt="Diagram: Guidelines for Defaulting / Deleting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" alt="Sticky Note: Guidelines for Defaulting / Deleting" width="30%">
+</a>
+
+
 | Situation | What to Do |
 |-----------|-----------|
 | Class with no resources | Let compiler generate all (Rule of Zero) |
@@ -1822,6 +2757,17 @@ The copy assignment operator in the example uses **copy-and-swap**:
 | Base class with virtual dtor | Implement or default all five |
 
 ### Rule of Zero
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" alt="Handwritten: Rule of Zero" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" alt="Diagram: Rule of Zero" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" alt="Sticky Note: Rule of Zero" width="30%">
+</a>
+
 
 If your class does **not** manage resources directly, let the compiler generate all special member functions. Use smart pointers and STL containers instead of raw pointers.
 
@@ -1835,6 +2781,17 @@ class Student {
 ```
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1850,6 +2807,17 @@ class Student {
 
 ### Default vs Parameterised vs Copy vs Move Constructor
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" alt="Handwritten: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" alt="Diagram: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" alt="Sticky Note: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+</a>
+
+
 | Aspect | Default Constructor | Parameterised Ctor | Copy Constructor | Move Constructor |
 |--------|-------------------|-------------------|-----------------|-----------------|
 | Signature | `T()` | `T(int, double)` | `T(const T&)` | `T(T&&) noexcept` |
@@ -1864,6 +2832,17 @@ class Student {
 | Compiler elision | Never | Never | RVO/NRVO can elide | Can be elided |
 
 ### Deep vs Shallow Copy
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Deep vs Shallow Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" alt="Diagram: Deep vs Shallow Copy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Deep vs Shallow Copy" width="30%">
+</a>
+
 
 | Aspect | Shallow Copy | Deep Copy |
 |--------|------------|-----------|
@@ -1899,6 +2878,17 @@ obj2.data  ──> ┌───┬───┬───┬───┬───�
 
 ### Initialiser List vs Assignment
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" alt="Diagram: Initialiser List vs Assignment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment" width="30%">
+</a>
+
+
 | Aspect | Initialiser List | Body Assignment |
 |--------|-----------------|-----------------|
 | **Timing** | Before constructor body | Inside constructor body |
@@ -1916,6 +2906,17 @@ obj2.data  ──> ┌───┬───┬───┬───┬───�
 ## Interview Corner
 
 ### Q1: What is the difference between shallow copy and deep copy?
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" alt="Handwritten: What is the difference between shallow copy and deep copy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" alt="Diagram: What is the difference between shallow copy and deep copy?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" alt="Sticky Note: What is the difference between shallow copy and deep copy?" width="30%">
+</a>
+
 
 **Answer:** A shallow copy copies the pointer value, making two objects share the same resource. A deep copy allocates new memory and copies the content, giving each object independent ownership.
 
@@ -1935,6 +2936,17 @@ DynamicArray(const DynamicArray& other)
 ```
 
 ### Q2: What is copy elision? What are RVO and NRVO?
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" alt="Handwritten: What is copy elision? What are RVO and NRVO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" alt="Diagram: What is copy elision? What are RVO and NRVO?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" alt="Sticky Note: What is copy elision? What are RVO and NRVO?" width="30%">
+</a>
+
 
 **Answer:** Copy elision is a compiler optimisation that eliminates unnecessary copy (and move) constructor calls, even if those constructors have side effects.
 
@@ -1958,6 +2970,17 @@ T func() {
 
 ### Q3: Why must destructors be virtual in polymorphic base classes?
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" alt="Handwritten: Why must destructors be virtual in polymorphic base classes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" alt="Diagram: Why must destructors be virtual in polymorphic base classes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" alt="Sticky Note: Why must destructors be virtual in polymorphic base classes?" width="30%">
+</a>
+
+
 **Answer:** When you delete a derived object through a base class pointer, the destructor must be virtual to ensure the correct destructor (the most-derived one) is called. Without virtual, only the base destructor runs, and the derived part leaks.
 
 This is **undefined behaviour** (UB) per the C++ standard, not just a leak. The entire program state becomes unreliable after UB occurs.
@@ -1968,6 +2991,17 @@ delete p; // Without virtual ~Base(): ~Derived() never called → UB + leak
 ```
 
 ### Q4: What is the Rule of Three / Rule of Five?
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" alt="Handwritten: What is the Rule of Three / Rule of Five?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" alt="Diagram: What is the Rule of Three / Rule of Five?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" alt="Sticky Note: What is the Rule of Three / Rule of Five?" width="30%">
+</a>
+
 
 **Answer:** 
 
@@ -1988,6 +3022,17 @@ public:
 
 ### Q5: Explain the `explicit` keyword.
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" alt="Handwritten: Explain the `explicit` keyword." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" alt="Diagram: Explain the `explicit` keyword." width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" alt="Sticky Note: Explain the `explicit` keyword." width="30%">
+</a>
+
+
 **Answer:** The `explicit` keyword prevents single-argument constructors from being used for implicit conversions. It forces the caller to explicitly construct the object.
 
 ```cpp
@@ -2007,6 +3052,17 @@ navigate(URL(s)); // OK — explicit construction
 
 ### Q6: When should you use initialiser lists over assignment?
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" alt="Handwritten: When should you use initialiser lists over assignment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" alt="Diagram: When should you use initialiser lists over assignment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" alt="Sticky Note: When should you use initialiser lists over assignment?" width="30%">
+</a>
+
+
 **Answer:** Always prefer initialiser lists over body assignment because:
 
 1. **Required for const/reference members** — they cannot be assigned, only initialised.
@@ -2023,6 +3079,17 @@ Bad() { str_ = "hello"; vec_ = std::vector<int>(100, 42); }
 ```
 
 ### Q7: What is a delegating constructor?
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" alt="Handwritten: What is a delegating constructor?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" alt="Diagram: What is a delegating constructor?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" alt="Sticky Note: What is a delegating constructor?" width="30%">
+</a>
+
 
 **Answer:** A delegating constructor calls another constructor of the same class from its initialiser list. This reduces code duplication when multiple constructors share common initialisation logic.
 
@@ -2044,6 +3111,17 @@ The target constructor runs first, then the delegating constructor's body. Cycle
 ## Applications in Real Systems
 
 ### RAII in `std::vector`
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" alt="Handwritten: RAII in `std::vector`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" alt="Diagram: RAII in `std::vector`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" alt="Sticky Note: RAII in `std::vector`" width="30%">
+</a>
+
 
 `std::vector` is a classic RAII class. It manages a dynamic array:
 
@@ -2088,6 +3166,17 @@ public:
 
 ### RAII in `std::string`
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" alt="Handwritten: RAII in `std::string`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" alt="Diagram: RAII in `std::string`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" alt="Sticky Note: RAII in `std::string`" width="30%">
+</a>
+
+
 `std::string` is another RAII class managing a dynamic character buffer:
 
 - **Constructor**: Allocates buffer, copies or moves the content.
@@ -2102,6 +3191,17 @@ std::string s3 = std::move(s1);   // Move: transfer buffer, s1 now SSO-empty
 ```
 
 ### RAII in `std::fstream`
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" alt="Handwritten: RAII in `std::fstream`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" alt="Diagram: RAII in `std::fstream`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" alt="Sticky Note: RAII in `std::fstream`" width="30%">
+</a>
+
 
 File streams use RAII to manage file handles:
 
@@ -2122,6 +3222,17 @@ void processFile() {
 
 ### RAII in Smart Pointers
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" alt="Handwritten: RAII in Smart Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" alt="Diagram: RAII in Smart Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" alt="Sticky Note: RAII in Smart Pointers" width="30%">
+</a>
+
+
 ```cpp
 #include <memory>
 
@@ -2141,6 +3252,17 @@ void demonstrateRAII() {
 
 ### RAII in `std::lock_guard`
 
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" alt="Handwritten: RAII in `std::lock_guard`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" alt="Diagram: RAII in `std::lock_guard`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" alt="Sticky Note: RAII in `std::lock_guard`" width="30%">
+</a>
+
+
 ```cpp
 #include <mutex>
 
@@ -2158,6 +3280,17 @@ void threadSafeFunction() {
 ```
 
 ### RAII With Network Sockets
+
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" alt="Handwritten: RAII With Network Sockets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" alt="Diagram: RAII With Network Sockets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" alt="Sticky Note: RAII With Network Sockets" width="30%">
+</a>
+
 
 ```cpp
 #ifdef _WIN32

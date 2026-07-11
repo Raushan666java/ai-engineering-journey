@@ -19,6 +19,17 @@ By the end of this chapter, you will be able to:
 
 ### 8.1 Sports Tournaments — Major Events
 
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-handwritten.svg" alt="Handwritten: 8.1 Sports Tournaments — Major Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-diagram.svg" alt="Diagram: 8.1 Sports Tournaments — Major Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-1-sports-tournaments-major-events-sticky.svg" alt="Sticky Note: 8.1 Sports Tournaments — Major Events" width="30%">
+</a>
+
+
 #### 8.1.1 Olympics
 
 The Olympic Games are the world's foremost multi-sport event, held every four years in Summer and Winter formats.
@@ -99,6 +110,17 @@ The Olympic Games are the world's foremost multi-sport event, held every four ye
 
 ### 8.2 National Awards
 
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-handwritten.svg" alt="Handwritten: 8.2 National Awards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-diagram.svg" alt="Diagram: 8.2 National Awards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-2-national-awards-sticky.svg" alt="Sticky Note: 8.2 National Awards" width="30%">
+</a>
+
+
 #### 8.2.1 Bharat Ratna
 
 India's highest civilian award, awarded for exceptional service in any field.
@@ -152,6 +174,17 @@ India's highest civilian award, awarded for exceptional service in any field.
 
 ### 8.3 International Awards
 
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-handwritten.svg" alt="Handwritten: 8.3 International Awards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-diagram.svg" alt="Diagram: 8.3 International Awards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-3-international-awards-sticky.svg" alt="Sticky Note: 8.3 International Awards" width="30%">
+</a>
+
+
 #### 8.3.1 Nobel Prize (2024)
 
 | Category | Winner(s) | Work / Contribution |
@@ -190,6 +223,17 @@ India's highest civilian award, awarded for exceptional service in any field.
 | Man Booker International | Translated Fiction | 2024: "Kairos" by Jenny Erpenbeck (tr. Michael Hofmann) |
 
 ### 8.4 United Nations
+
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-handwritten.svg" alt="Handwritten: 8.4 United Nations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-diagram.svg" alt="Diagram: 8.4 United Nations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-4-united-nations-sticky.svg" alt="Sticky Note: 8.4 United Nations" width="30%">
+</a>
+
 
 #### 8.4.1 Structure of the UN
 
@@ -265,6 +309,17 @@ flowchart TD
 
 ### 8.5 International Financial Institutions
 
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-handwritten.svg" alt="Handwritten: 8.5 International Financial Institutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-diagram.svg" alt="Diagram: 8.5 International Financial Institutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-5-international-financial-institutions-sticky.svg" alt="Sticky Note: 8.5 International Financial Institutions" width="30%">
+</a>
+
+
 #### 8.5.1 International Monetary Fund (IMF)
 
 | Aspect | Detail |
@@ -326,6 +381,17 @@ flowchart TD
 - India has successfully defended its patent laws (2013) and solar mission (2016) at WTO Dispute Settlement
 
 ### 8.6 Regional Organisations
+
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-handwritten.svg" alt="Handwritten: 8.6 Regional Organisations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-diagram.svg" alt="Diagram: 8.6 Regional Organisations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-6-regional-organisations-sticky.svg" alt="Sticky Note: 8.6 Regional Organisations" width="30%">
+</a>
+
 
 #### 8.6.1 NATO (North Atlantic Treaty Organization)
 
@@ -405,6 +471,17 @@ flowchart TD
 
 ### 8.7 Major Global Reports & Indices
 
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-handwritten.svg" alt="Handwritten: 8.7 Major Global Reports & Indices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-diagram.svg" alt="Diagram: 8.7 Major Global Reports & Indices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-7-major-global-reports-indices-sticky.svg" alt="Sticky Note: 8.7 Major Global Reports & Indices" width="30%">
+</a>
+
+
 | Report | Published by | Purpose | India's Rank (2024) |
 |--------|--------------|---------|---------------------|
 | Human Development Index (HDI) | UNDP | Health, education, income | 134th (Medium Human Development) |
@@ -429,6 +506,17 @@ flowchart TD
 - Gender Gap: India ranks low due to low female labour force participation (~37% in 2024)
 
 ### 8.8 International Days & Themes
+
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-handwritten.svg" alt="Handwritten: 8.8 International Days & Themes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-diagram.svg" alt="Diagram: 8.8 International Days & Themes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/08-sports-awards-international/8-8-international-days-themes-sticky.svg" alt="Sticky Note: 8.8 International Days & Themes" width="30%">
+</a>
+
 
 | Date | Day | 2024 Theme |
 |------|-----|------------|

@@ -50,6 +50,17 @@ A **transaction** is a logical unit of work that accesses and possibly modifies 
 
 ### Real-World Analogy: Bank Transfer
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-handwritten.svg" alt="Handwritten: Real-World Analogy: Bank Transfer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-diagram.svg" alt="Diagram: Real-World Analogy: Bank Transfer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/real-world-analogy-bank-transfer-sticky.svg" alt="Sticky Note: Real-World Analogy: Bank Transfer" width="30%">
+</a>
+
+
 Alice transfers $500 from Account A (balance: $1000) to Account B (balance: $500). This involves:
 
 - Account A: 1000 â†’ 500 (debit $500)
@@ -58,6 +69,17 @@ Alice transfers $500 from Account A (balance: $1000) to Account B (balance: $500
 If the system crashes after debiting A but before crediting B, $500 vanishes from the system. A transaction ensures either both steps happen or neither does.
 
 ### Numbered Steps of a Transaction Lifecycle
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-handwritten.svg" alt="Handwritten: Numbered Steps of a Transaction Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-diagram.svg" alt="Diagram: Numbered Steps of a Transaction Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/numbered-steps-of-a-transaction-lifecycle-sticky.svg" alt="Sticky Note: Numbered Steps of a Transaction Lifecycle" width="30%">
+</a>
+
 
 | Step | Operation | Description | SQL Equivalent |
 |------|-----------|-------------|----------------|
@@ -69,6 +91,17 @@ If the system crashes after debiting A but before crediting B, $500 vanishes fro
 | 6 | COMMIT | Make all changes permanent | `COMMIT;` |
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```text
 PROCEDURE TransferFunds(from_acct, to_acct, amount):
@@ -88,6 +121,17 @@ END PROCEDURE
 ```
 
 ### Dry Run Trace Table
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+</a>
+
 
 **Initial State:** A = 1000, B = 500, Transfer amount = 500
 
@@ -109,6 +153,17 @@ END PROCEDURE
 | After Recovery | ROLLBACK | - | - | **1000** | 500 | A reverted to original |
 
 ### C++ Implementation: Transaction Scheduler
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-handwritten.svg" alt="Handwritten: C++ Implementation: Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-diagram.svg" alt="Diagram: C++ Implementation: Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-transaction-scheduler-sticky.svg" alt="Sticky Note: C++ Implementation: Transaction Scheduler" width="30%">
+</a>
+
 
 \`\`\`cpp
 #include &lt;iostream&gt;
@@ -205,6 +260,17 @@ int main() {
 
 ### Python Implementation: Transaction Scheduler
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-handwritten.svg" alt="Handwritten: Python Implementation: Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-diagram.svg" alt="Diagram: Python Implementation: Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-transaction-scheduler-sticky.svg" alt="Sticky Note: Python Implementation: Transaction Scheduler" width="30%">
+</a>
+
+
 \`\`\`python
 from dataclasses import dataclass
 from typing import Dict, Optional
@@ -288,6 +354,17 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Analysis | Why |
 |--------|----------|-----|
 | **Time (per operation)** | O(1) amortized | Hash table lookups for read/write buffer; O(1) commit per item |
@@ -298,6 +375,17 @@ if __name__ == "__main__":
 
 ### Advantages and Disadvantages
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
+
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
 | **Atomicity** | Prevents partial updates; data stays consistent | Requires write-ahead logging overhead |
@@ -307,6 +395,17 @@ if __name__ == "__main__":
 | **Performance** | Optimistic concurrency works well with low contention | High contention degrades to serial execution |
 
 ### Edge Cases in Transactions
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-handwritten.svg" alt="Handwritten: Edge Cases in Transactions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-diagram.svg" alt="Diagram: Edge Cases in Transactions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-transactions-sticky.svg" alt="Sticky Note: Edge Cases in Transactions" width="30%">
+</a>
+
 
 | Edge Case | Description | Consequence | Mitigation |
 |-----------|-------------|-------------|------------|
@@ -325,6 +424,17 @@ ACID is an acronym for Atomicity, Consistency, Isolation, Durability â€” th
 
 ### Atomicity
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-handwritten.svg" alt="Handwritten: Atomicity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-diagram.svg" alt="Diagram: Atomicity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/atomicity-sticky.svg" alt="Sticky Note: Atomicity" width="30%">
+</a>
+
+
 **Definition:** A transaction executes completely or not at all. There is no partial execution.
 
 **Implementation Mechanism:** Write-Ahead Logging (WAL). Before any change is applied to the database, a log record describing the change is written to stable storage. If the system crashes, the recovery manager uses the log to UNDO uncommitted transactions (rollback) and REDO committed transactions whose results were not yet flushed.
@@ -340,6 +450,17 @@ With atomicity (WAL undo): A is restored to its original value.
 **Complexity:** O(1) overhead per write operation for log record creation. O(n) for crash recovery scan of log.
 
 ### Consistency
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-handwritten.svg" alt="Handwritten: Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-diagram.svg" alt="Diagram: Consistency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/consistency-sticky.svg" alt="Sticky Note: Consistency" width="30%">
+</a>
+
 
 **Definition:** A transaction brings the database from one valid state to another valid state. All integrity constraints (primary keys, foreign keys, CHECK constraints, unique constraints, triggers) must be satisfied when the transaction commits.
 
@@ -357,6 +478,17 @@ UPDATE accounts SET balance = balance - 1000 WHERE id = 'A';
 **Complexity:** O(1) per constraint check. Deferred mode checks all constraints at commit in O(c) where c = number of constraints.
 
 ### Isolation
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-handwritten.svg" alt="Handwritten: Isolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-diagram.svg" alt="Diagram: Isolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-sticky.svg" alt="Sticky Note: Isolation" width="30%">
+</a>
+
 
 **Definition:** Concurrent transactions should not interfere with each other. Each transaction executes as if it were the only transaction in the system.
 
@@ -377,6 +509,17 @@ Final value: A = 800. Lost $300 from T1's update. With SERIALIZABLE isolation, T
 
 ### Durability
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/durability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/durability-handwritten.svg" alt="Handwritten: Durability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/durability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/durability-diagram.svg" alt="Diagram: Durability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/durability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/durability-sticky.svg" alt="Sticky Note: Durability" width="30%">
+</a>
+
+
 **Definition:** Once a transaction commits, its changes persist even if the system crashes immediately after. Committed data must be recoverable from non-volatile storage.
 
 **Implementation Mechanism:** Write-Ahead Logging (REDO log). When a transaction commits, its log records are forced to stable storage (fsync). The actual data pages may be written later (steal/no-force policy). On recovery, the REDO log replays committed transactions whose data was not yet flushed.
@@ -396,6 +539,17 @@ T1: COMMIT (log record written to disk)
 
 ### ACID Properties Comparison Table
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-handwritten.svg" alt="Handwritten: ACID Properties Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-diagram.svg" alt="Diagram: ACID Properties Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-comparison-table-sticky.svg" alt="Sticky Note: ACID Properties Comparison Table" width="30%">
+</a>
+
+
 | Property | What It Prevents | Implementation | Cost | Failure Scenario |
 |----------|-----------------|----------------|------|------------------|
 | **Atomicity** | Partial updates | UNDO log (WAL) | Log write per operation | Crash during transaction |
@@ -404,6 +558,17 @@ T1: COMMIT (log record written to disk)
 | **Durability** | Data loss after commit | REDO log (WAL) + fsync | fsync latency (2-10ms) | Crash after commit acknowledged |
 
 ### Edge Cases for ACID
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-handwritten.svg" alt="Handwritten: Edge Cases for ACID" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-diagram.svg" alt="Diagram: Edge Cases for ACID" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-for-acid-sticky.svg" alt="Sticky Note: Edge Cases for ACID" width="30%">
+</a>
+
 
 | Edge Case | Affected Property | Description |
 |-----------|------------------|-------------|
@@ -420,6 +585,17 @@ A transaction passes through a well-defined set of states during its lifecycle. 
 
 ### State Diagram
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-handwritten.svg" alt="Handwritten: State Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-diagram.svg" alt="Diagram: State Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-diagram-sticky.svg" alt="Sticky Note: State Diagram" width="30%">
+</a>
+
+
 \`\`\`mermaid
 stateDiagram-v2
     [*] --> ACTIVE : BEGIN TRANSACTION
@@ -434,6 +610,17 @@ stateDiagram-v2
 
 ### Detailed State Descriptions
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-handwritten.svg" alt="Handwritten: Detailed State Descriptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-diagram.svg" alt="Diagram: Detailed State Descriptions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/detailed-state-descriptions-sticky.svg" alt="Sticky Note: Detailed State Descriptions" width="30%">
+</a>
+
+
 | State | Description | What Happens | Duration | Can We Recover? |
 |-------|-------------|-------------|----------|-----------------|
 | **ACTIVE** | Initial state; transaction is executing operations | Reads/writes performed; variables modified in memory or buffer | Variable (microseconds to hours) | Possible â€” rollback is straightforward |
@@ -444,6 +631,17 @@ stateDiagram-v2
 
 ### State Transition Table
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-handwritten.svg" alt="Handwritten: State Transition Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-diagram.svg" alt="Diagram: State Transition Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/state-transition-table-sticky.svg" alt="Sticky Note: State Transition Table" width="30%">
+</a>
+
+
 | From State | To State | Trigger | Action Required |
 |------------|----------|---------|-----------------|
 | ACTIVE | PARTIALLY_COMMITTED | Final operation completes | Prepare log for commit |
@@ -453,6 +651,17 @@ stateDiagram-v2
 | FAILED | ABORTED | Rollback completes | Clean up resources |
 
 ### Dry Run: Transaction State Transitions
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-handwritten.svg" alt="Handwritten: Dry Run: Transaction State Transitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-diagram.svg" alt="Diagram: Dry Run: Transaction State Transitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-transaction-state-transitions-sticky.svg" alt="Sticky Note: Dry Run: Transaction State Transitions" width="30%">
+</a>
+
 
 **Scenario 1: Successful Transaction**
 
@@ -479,6 +688,17 @@ stateDiagram-v2
 
 ### Complexity of State Management
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-handwritten.svg" alt="Handwritten: Complexity of State Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-diagram.svg" alt="Diagram: Complexity of State Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-of-state-management-sticky.svg" alt="Sticky Note: Complexity of State Management" width="30%">
+</a>
+
+
 | Operation | Complexity | Why |
 |-----------|------------|-----|
 | State transition | O(1) | Simple state variable update |
@@ -495,11 +715,33 @@ A **schedule** (or history) is a sequence of operations from one or more transac
 
 ### Formal Definition
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
+</a>
+
+
 A schedule S over a set of transactions T = {T1, T2, ..., Tn} is a sequence of operations where:
 - The operations of each transaction Ti appear in S in the same order they appear in Ti
 - S contains exactly the union of all operations from all transactions
 
 ### Types of Schedules
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-handwritten.svg" alt="Handwritten: Types of Schedules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-diagram.svg" alt="Diagram: Types of Schedules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/types-of-schedules-sticky.svg" alt="Sticky Note: Types of Schedules" width="30%">
+</a>
+
 
 **Serial Schedule:** Transactions execute one after another with no interleaving. T1 runs completely, then T2 runs completely.
 
@@ -527,6 +769,17 @@ T2: R(B) W(A)
 
 ### Schedule Types Comparison Table
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-handwritten.svg" alt="Handwritten: Schedule Types Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-diagram.svg" alt="Diagram: Schedule Types Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-comparison-table-sticky.svg" alt="Sticky Note: Schedule Types Comparison Table" width="30%">
+</a>
+
+
 | Property | Serial | Serializable | Non-Serializable |
 |----------|--------|-------------|------------------|
 | **Interleaving** | None | Yes | Yes |
@@ -538,6 +791,17 @@ T2: R(B) W(A)
 | **Example** | T1 then T2 | Interleaved but equivalent to serial | T1:R(A) W(B), T2:R(B) W(A) |
 
 ### Dry Run: Schedule Execution
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-handwritten.svg" alt="Handwritten: Dry Run: Schedule Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-diagram.svg" alt="Diagram: Dry Run: Schedule Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-schedule-execution-sticky.svg" alt="Sticky Note: Dry Run: Schedule Execution" width="30%">
+</a>
+
 
 **Transactions:**
 \`\`\`text
@@ -598,6 +862,17 @@ Note: Different serial orders produce different (but consistent) results. Both a
 
 ### Complete Schedule
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-handwritten.svg" alt="Handwritten: Complete Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-diagram.svg" alt="Diagram: Complete Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complete-schedule-sticky.svg" alt="Sticky Note: Complete Schedule" width="30%">
+</a>
+
+
 A **complete schedule** contains a commit (or abort) operation for every transaction. An incomplete schedule (one where a transaction has not yet committed or aborted) cannot be analyzed for serializability because the transaction may still execute additional operations.
 
 \`\`\`text
@@ -625,6 +900,17 @@ T2:      R(A) W(A) R(B) W(B) C2
 
 ### Key Insight
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-handwritten.svg" alt="Handwritten: Key Insight" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-diagram.svg" alt="Diagram: Key Insight" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-insight-sticky.svg" alt="Sticky Note: Key Insight" width="30%">
+</a>
+
+
 Serial schedules are **correct by definition** but **impractical** (they waste concurrency). Serializable schedules are **correct by proof** and **practical**. The entire field of concurrency control aims to produce serializable schedules while maximizing interleaving.
 ---
 
@@ -637,6 +923,17 @@ Two operations **conflict** if they satisfy three conditions:
 
 ### Conflict Types
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-handwritten.svg" alt="Handwritten: Conflict Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-diagram.svg" alt="Diagram: Conflict Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-types-sticky.svg" alt="Sticky Note: Conflict Types" width="30%">
+</a>
+
+
 | Operation Pair | Conflict? | Reason |
 |---------------|-----------|--------|
 | R(A) and R(A) from different Txs | **No** | Both read â€” no modification |
@@ -645,6 +942,17 @@ Two operations **conflict** if they satisfy three conditions:
 | W(A) and W(A) from different Txs | **Yes** | WRITE-WRITE conflict (lost update) |
 
 ### Algorithm for Conflict Serializability Testing
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-handwritten.svg" alt="Handwritten: Algorithm for Conflict Serializability Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-diagram.svg" alt="Diagram: Algorithm for Conflict Serializability Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/algorithm-for-conflict-serializability-testing-sticky.svg" alt="Sticky Note: Algorithm for Conflict Serializability Testing" width="30%">
+</a>
+
 
 \`\`\`text
 INPUT: Schedule S as sequence of (Transaction, Operation, DataItem)
@@ -671,6 +979,17 @@ END FUNCTION
 \`\`\`
 
 ### Precedence Graph â€” Step-by-Step Construction
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-handwritten.svg" alt="Handwritten: Precedence Graph â€” Step-by-Step Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-diagram.svg" alt="Diagram: Precedence Graph â€” Step-by-Step Construction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/precedence-graph-step-by-step-construction-sticky.svg" alt="Sticky Note: Precedence Graph â€” Step-by-Step Construction" width="30%">
+</a>
+
 
 **Problem:** Determine if this schedule is conflict-serializable:
 
@@ -731,6 +1050,17 @@ Start DFS from T2: visit T3. No cycles.
 **Equivalent serial schedule:** T1 â†’ T2 â†’ T3
 
 ### C++ Implementation: Conflict Serializability Checker
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-handwritten.svg" alt="Handwritten: C++ Implementation: Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-diagram.svg" alt="Diagram: C++ Implementation: Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/c-implementation-conflict-serializability-checker-sticky.svg" alt="Sticky Note: C++ Implementation: Conflict Serializability Checker" width="30%">
+</a>
+
 
 \`\`\`cpp
 #include &lt;iostream&gt;
@@ -875,6 +1205,17 @@ int main() {
 \`\`\`
 
 ### Python Implementation: Conflict Serializability Checker
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-handwritten.svg" alt="Handwritten: Python Implementation: Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-diagram.svg" alt="Diagram: Python Implementation: Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/python-implementation-conflict-serializability-checker-sticky.svg" alt="Sticky Note: Python Implementation: Conflict Serializability Checker" width="30%">
+</a>
+
 
 \`\`\`python
 from typing import List, Tuple, Set, Dict
@@ -1025,6 +1366,17 @@ if __name__ == "__main__":
 
 ### Complexity Analysis of Conflict Serializability Checker
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-handwritten.svg" alt="Handwritten: Complexity Analysis of Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-diagram.svg" alt="Diagram: Complexity Analysis of Conflict Serializability Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/complexity-analysis-of-conflict-serializability-checker-sticky.svg" alt="Sticky Note: Complexity Analysis of Conflict Serializability Checker" width="30%">
+</a>
+
+
 | Operation | Complexity | Why |
 |-----------|------------|-----|
 | **Conflict detection** | O(nÂ²) where n = number of operations | Every pair of operations is compared (nested loop) |
@@ -1035,6 +1387,17 @@ if __name__ == "__main__":
 
 ### Advantages and Disadvantages
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
+
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
 | **Decidability** | Efficiently testable in O(nÂ²) | - |
@@ -1044,6 +1407,17 @@ if __name__ == "__main__":
 | **Precision** | Only considers conflicting operations | Non-conflicting reorderings are ignored |
 
 ### Edge Cases in Conflict Serializability
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-handwritten.svg" alt="Handwritten: Edge Cases in Conflict Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-diagram.svg" alt="Diagram: Edge Cases in Conflict Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/edge-cases-in-conflict-serializability-sticky.svg" alt="Sticky Note: Edge Cases in Conflict Serializability" width="30%">
+</a>
+
 
 | Edge Case | Schedule | Issue | Resolution |
 |-----------|----------|-------|------------|
@@ -1059,6 +1433,17 @@ if __name__ == "__main__":
 A schedule is **view-serializable** if it is view-equivalent to some serial schedule. View equivalence is a weaker condition than conflict equivalence.
 
 ### Conditions for View Equivalence
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-handwritten.svg" alt="Handwritten: Conditions for View Equivalence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-diagram.svg" alt="Diagram: Conditions for View Equivalence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conditions-for-view-equivalence-sticky.svg" alt="Sticky Note: Conditions for View Equivalence" width="30%">
+</a>
+
 
 Two schedules S and S'"'"' are view-equivalent if:
 
@@ -1094,6 +1479,17 @@ Despite the cycle, S IS view-equivalent to T1 â†’ T2!
 
 ### View Serializability vs Conflict Serializability Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-handwritten.svg" alt="Handwritten: View Serializability vs Conflict Serializability Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-diagram.svg" alt="Diagram: View Serializability vs Conflict Serializability Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/view-serializability-vs-conflict-serializability-comparison-sticky.svg" alt="Sticky Note: View Serializability vs Conflict Serializability Comparison" width="30%">
+</a>
+
+
 | Aspect | Conflict Serializability | View Serializability |
 |--------|------------------------|---------------------|
 | **Test complexity** | O(nÂ²) â€” polynomial | NP-complete (theoretically harder) |
@@ -1106,9 +1502,31 @@ Despite the cycle, S IS view-equivalent to T1 â†’ T2!
 
 ### Theorem
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-handwritten.svg" alt="Handwritten: Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-diagram.svg" alt="Diagram: Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/theorem-sticky.svg" alt="Sticky Note: Theorem" width="30%">
+</a>
+
+
 Every conflict-serializable schedule is view-serializable, but the converse is NOT true.
 
 ### Why View Serializability Is Not Used in Practice
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-handwritten.svg" alt="Handwritten: Why View Serializability Is Not Used in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-diagram.svg" alt="Diagram: Why View Serializability Is Not Used in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/why-view-serializability-is-not-used-in-practice-sticky.svg" alt="Sticky Note: Why View Serializability Is Not Used in Practice" width="30%">
+</a>
+
 
 1. **Testing is harder:** The view equivalence test (polygraph) has exponential worst-case complexity
 2. **Blind writes are rare:** Most real transactions read before writing
@@ -1119,6 +1537,17 @@ Every conflict-serializable schedule is view-serializable, but the converse is N
 ## 9.8 Recoverable and Cascadeless Schedules
 
 ### Recoverable Schedule
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-handwritten.svg" alt="Handwritten: Recoverable Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-diagram.svg" alt="Diagram: Recoverable Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/recoverable-schedule-sticky.svg" alt="Sticky Note: Recoverable Schedule" width="30%">
+</a>
+
 
 A schedule is **recoverable** if, whenever a transaction Tj reads data written by transaction Ti, then Ti'"'"'s commit appears before Tj'"'"'s commit.
 
@@ -1131,6 +1560,17 @@ T1: W(A)  T2: R(A)  T2: COMMIT  T1: ABORT
 T2 commits after reading T1'"'"'s uncommitted write. When T1 aborts, T2 has already committed with invalid data. This is a **non-recoverable** schedule â€” it should never be allowed.
 
 ### Cascadeless Schedule
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-handwritten.svg" alt="Handwritten: Cascadeless Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-diagram.svg" alt="Diagram: Cascadeless Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/cascadeless-schedule-sticky.svg" alt="Sticky Note: Cascadeless Schedule" width="30%">
+</a>
+
 
 A schedule is **cascadeless** if transactions only read data written by transactions that have already committed. This prevents **cascading rollbacks** â€” where one transaction'"'"'s abort forces a chain of aborts.
 
@@ -1149,6 +1589,17 @@ T1: W(A)  T1: COMMIT  T2: R(A) W(B)  T2: COMMIT  T3: R(B)  T3: COMMIT
 \`\`\`
 
 ### Schedule Type Hierarchy
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-handwritten.svg" alt="Handwritten: Schedule Type Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-diagram.svg" alt="Diagram: Schedule Type Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-type-hierarchy-sticky.svg" alt="Sticky Note: Schedule Type Hierarchy" width="30%">
+</a>
+
 
 \`\`\`text
 All Schedules
@@ -1212,6 +1663,17 @@ Concurrency anomalies (or "phenomena") are consistency problems that arise when 
 
 ### Anomaly Comparison Table
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-handwritten.svg" alt="Handwritten: Anomaly Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-diagram.svg" alt="Diagram: Anomaly Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/anomaly-comparison-table-sticky.svg" alt="Sticky Note: Anomaly Comparison Table" width="30%">
+</a>
+
+
 | Anomaly | Description | Isolation Needed | Example |
 |---------|-------------|-----------------|---------|
 | **Dirty Read** | Reading uncommitted data from another transaction | READ COMMITTED | T2 reads A=900 before T1 commits (or aborts) |
@@ -1221,6 +1683,17 @@ Concurrency anomalies (or "phenomena") are consistency problems that arise when 
 | **Write Skew** | Two transactions read overlapping data, write non-overlapping, violating a constraint | SERIALIZABLE / predicate locking | Doctor on-call constraint violated |
 
 ### Dry Run: Dirty Read
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-handwritten.svg" alt="Handwritten: Dry Run: Dirty Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-diagram.svg" alt="Diagram: Dry Run: Dirty Read" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-dirty-read-sticky.svg" alt="Sticky Note: Dry Run: Dirty Read" width="30%">
+</a>
+
 
 \`\`\`text
 Initial: A = 1000
@@ -1239,6 +1712,17 @@ T2: continues with value 500 â€” which never existed
 | 5 | - | Uses A=500 | 1000 | 500 â† WRONG |
 
 ### Dry Run: Lost Update
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-handwritten.svg" alt="Handwritten: Dry Run: Lost Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-diagram.svg" alt="Diagram: Dry Run: Lost Update" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/dry-run-lost-update-sticky.svg" alt="Sticky Note: Dry Run: Lost Update" width="30%">
+</a>
+
 
 \`\`\`text
 Initial: A = 1000
@@ -1270,6 +1754,17 @@ The SQL standard defines four isolation levels that control which concurrency an
 
 ### Isolation Level Matrix
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-handwritten.svg" alt="Handwritten: Isolation Level Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-diagram.svg" alt="Diagram: Isolation Level Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-level-matrix-sticky.svg" alt="Sticky Note: Isolation Level Matrix" width="30%">
+</a>
+
+
 | Isolation Level | Dirty Read | Non-Repeatable Read | Phantom Read | Lost Update |
 |----------------|-----------|-------------------|--------------|-------------|
 | **READ UNCOMMITTED** | Possible | Possible | Possible | Possible |
@@ -1278,6 +1773,17 @@ The SQL standard defines four isolation levels that control which concurrency an
 | **SERIALIZABLE** | Prevented | Prevented | Prevented | Prevented |
 
 ### Deep Dive per Level
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-handwritten.svg" alt="Handwritten: Deep Dive per Level" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-diagram.svg" alt="Diagram: Deep Dive per Level" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/deep-dive-per-level-sticky.svg" alt="Sticky Note: Deep Dive per Level" width="30%">
+</a>
+
 
 **READ UNCOMMITTED:**
 - Implementation: No read locks; writes use short duration locks
@@ -1305,6 +1811,17 @@ The SQL standard defines four isolation levels that control which concurrency an
 - Use Case: Financial reconciliation, inventory, money-related workloads
 
 ### SQL Syntax
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-handwritten.svg" alt="Handwritten: SQL Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-diagram.svg" alt="Diagram: SQL Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/sql-syntax-sticky.svg" alt="Sticky Note: SQL Syntax" width="30%">
+</a>
+
 
 \`\`\`sql
 -- Set isolation level for a transaction
@@ -1349,6 +1866,17 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### Key Trade-Off
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-handwritten.svg" alt="Handwritten: Key Trade-Off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-diagram.svg" alt="Diagram: Key Trade-Off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/key-trade-off-sticky.svg" alt="Sticky Note: Key Trade-Off" width="30%">
+</a>
+
+
 - **ACID systems** provide strong guarantees but sacrifice availability during partitions
 - **BASE systems** stay available during partitions but may return stale data
 - **Hybrid approach:** Use ACID for critical data (ledger, inventory counts) and BASE for non-critical data (user profiles, session data)
@@ -1359,9 +1887,31 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### Q1: What happens if a transaction fails after writing some data but before commit?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-handwritten.svg" alt="Handwritten: What happens if a transaction fails after writing some data but before commit?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-diagram.svg" alt="Diagram: What happens if a transaction fails after writing some data but before commit?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-happens-if-a-transaction-fails-after-writing-some-data-but-before-commit-sticky.svg" alt="Sticky Note: What happens if a transaction fails after writing some data but before commit?" width="30%">
+</a>
+
+
 **Answer:** The DBMS uses the UNDO log. Before any write, a "before image" is written to the log. On failure detection, the recovery manager reads the log and restores all before-images for the failed transaction. This restores the database to the state before the transaction began.
 
 ### Q2: What is the difference between dirty read, non-repeatable read, and phantom read?
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-handwritten.svg" alt="Handwritten: What is the difference between dirty read, non-repeatable read, and phantom read?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-diagram.svg" alt="Diagram: What is the difference between dirty read, non-repeatable read, and phantom read?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-dirty-read-non-repeatable-read-and-phantom-read-sticky.svg" alt="Sticky Note: What is the difference between dirty read, non-repeatable read, and phantom read?" width="30%">
+</a>
+
 
 | Anomaly | What Happens | Prevention |
 |---------|-------------|------------|
@@ -1371,13 +1921,46 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### Q3: Can a schedule be both conflict-serializable and view-serializable?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-handwritten.svg" alt="Handwritten: Can a schedule be both conflict-serializable and view-serializable?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-diagram.svg" alt="Diagram: Can a schedule be both conflict-serializable and view-serializable?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/can-a-schedule-be-both-conflict-serializable-and-view-serializable-sticky.svg" alt="Sticky Note: Can a schedule be both conflict-serializable and view-serializable?" width="30%">
+</a>
+
+
 **Answer:** Yes. Every conflict-serializable schedule is also view-serializable. The reverse is not true: schedules with blind writes can be view-serializable but not conflict-serializable.
 
 ### Q4: What is a cascading rollback and why is it bad?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-handwritten.svg" alt="Handwritten: What is a cascading rollback and why is it bad?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-diagram.svg" alt="Diagram: What is a cascading rollback and why is it bad?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-cascading-rollback-and-why-is-it-bad-sticky.svg" alt="Sticky Note: What is a cascading rollback and why is it bad?" width="30%">
+</a>
+
+
 **Answer:** A cascading rollback occurs when one transaction'"'"'s abort forces other transactions (which read its uncommitted data) to also abort. It is bad because it can cascade through many transactions, wasting all their work. Cascadeless schedules prevent this by only allowing reads of committed data.
 
 ### Q5: What is the difference between a serial schedule and a serializable schedule?
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-handwritten.svg" alt="Handwritten: What is the difference between a serial schedule and a serializable schedule?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-diagram.svg" alt="Diagram: What is the difference between a serial schedule and a serializable schedule?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-a-serial-schedule-and-a-serializable-schedule-sticky.svg" alt="Sticky Note: What is the difference between a serial schedule and a serializable schedule?" width="30%">
+</a>
+
 
 | Serial | Serializable |
 |--------|-------------|
@@ -1388,21 +1971,76 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### Q6: How do you test for conflict serializability?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-handwritten.svg" alt="Handwritten: How do you test for conflict serializability?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-diagram.svg" alt="Diagram: How do you test for conflict serializability?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/how-do-you-test-for-conflict-serializability-sticky.svg" alt="Sticky Note: How do you test for conflict serializability?" width="30%">
+</a>
+
+
 **Answer:** Build a precedence graph where nodes are transactions and directed edges represent conflicting operations (Ti â†’ Tj if Ti'"'"'s conflicting operation occurs before Tj'"'"'s). If the graph has a cycle, the schedule is not conflict-serializable. If acyclic, it is conflict-serializable, and any topological order gives an equivalent serial schedule.
 
 ### Q7: What is the difference between conflict and view serializability?
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-handwritten.svg" alt="Handwritten: What is the difference between conflict and view serializability?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-diagram.svg" alt="Diagram: What is the difference between conflict and view serializability?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-the-difference-between-conflict-and-view-serializability-sticky.svg" alt="Sticky Note: What is the difference between conflict and view serializability?" width="30%">
+</a>
+
 
 **Answer:** Conflict serializability is based on the order of conflicting operations (read-write, write-read, write-write) and is tested via precedence graphs in O(nÂ²). View serializability is based on initial reads, read-from relationships, and final writes â€” it allows blind writes that conflict serializability rejects. View serializability is harder to test (NP-complete in general) and is mainly a theoretical concept.
 
 ### Q8: What isolation level should you use for a banking application?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-handwritten.svg" alt="Handwritten: What isolation level should you use for a banking application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-diagram.svg" alt="Diagram: What isolation level should you use for a banking application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-isolation-level-should-you-use-for-a-banking-application-sticky.svg" alt="Sticky Note: What isolation level should you use for a banking application?" width="30%">
+</a>
+
+
 **Answer:** SERIALIZABLE. Financial transactions must not experience any anomalies. The performance cost is justified by the correctness guarantee. In practice, many banking systems use REPEATABLE READ with careful application-level locking, but SERIALIZABLE is the safest choice.
 
 ### Q9: What is a lost update? How do you prevent it?
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-handwritten.svg" alt="Handwritten: What is a lost update? How do you prevent it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-diagram.svg" alt="Diagram: What is a lost update? How do you prevent it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-a-lost-update-how-do-you-prevent-it-sticky.svg" alt="Sticky Note: What is a lost update? How do you prevent it?" width="30%">
+</a>
+
+
 **Answer:** A lost update occurs when two concurrent transactions read the same value, modify it independently, and the second write overwrites the first without incorporating the first'"'"'s modification. Prevention: use pessimistic locking (SELECT ... FOR UPDATE), SERIALIZABLE isolation, or optimistic concurrency control with version numbers.
 
 ### Q10: What is write skew?
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-handwritten.svg" alt="Handwritten: What is write skew?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-diagram.svg" alt="Diagram: What is write skew?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/what-is-write-skew-sticky.svg" alt="Sticky Note: What is write skew?" width="30%">
+</a>
+
 
 **Answer:** Write skew occurs when two transactions read overlapping data, make decisions based on that data, and write non-overlapping data â€” but the combined result violates a constraint. Example: A hospital requires at least one doctor on call. T1 sets Doctor A to "not on call" (after reading Doctor B is on call). T2 sets Doctor B to "not on call" (after reading Doctor A is on call). Result: zero doctors on call. Prevention: SERIALIZABLE isolation or predicate locking.
 
@@ -1411,6 +2049,17 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 ## 9.14 Applications in Real Systems
 
 ### MySQL InnoDB
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-handwritten.svg" alt="Handwritten: MySQL InnoDB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-diagram.svg" alt="Diagram: MySQL InnoDB" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/mysql-innodb-sticky.svg" alt="Sticky Note: MySQL InnoDB" width="30%">
+</a>
+
 
 | Feature | Implementation |
 |---------|---------------|
@@ -1423,6 +2072,17 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### PostgreSQL
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-handwritten.svg" alt="Handwritten: PostgreSQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-diagram.svg" alt="Diagram: PostgreSQL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/postgresql-sticky.svg" alt="Sticky Note: PostgreSQL" width="30%">
+</a>
+
+
 | Feature | Implementation |
 |---------|---------------|
 | **Default isolation** | READ COMMITTED |
@@ -1434,6 +2094,17 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 
 ### Oracle
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-handwritten.svg" alt="Handwritten: Oracle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-diagram.svg" alt="Diagram: Oracle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/oracle-sticky.svg" alt="Sticky Note: Oracle" width="30%">
+</a>
+
+
 | Feature | Implementation |
 |---------|---------------|
 | **Default isolation** | READ COMMITTED |
@@ -1444,6 +2115,17 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 | **Flashback queries** | Uses UNDO data to query past states |
 
 ### Comparison of DBMS Transaction Support
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-handwritten.svg" alt="Handwritten: Comparison of DBMS Transaction Support" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-diagram.svg" alt="Diagram: Comparison of DBMS Transaction Support" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/comparison-of-dbms-transaction-support-sticky.svg" alt="Sticky Note: Comparison of DBMS Transaction Support" width="30%">
+</a>
+
 
 | Feature | MySQL InnoDB | PostgreSQL | Oracle |
 |---------|-------------|------------|--------|
@@ -1566,6 +2248,17 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 
 ### ACID Properties
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-handwritten.svg" alt="Handwritten: ACID Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-diagram.svg" alt="Diagram: ACID Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/acid-properties-sticky.svg" alt="Sticky Note: ACID Properties" width="30%">
+</a>
+
+
 | ACID Property | Meaning | Implementation | Failure Scenario | Complexity |
 |--------------|---------|----------------|-----------------|------------|
 | **Atomicity** | All-or-nothing execution | UNDO log (Write-Ahead Logging) | Crash during transaction | O(log write per op) |
@@ -1574,6 +2267,17 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 | **Durability** | Committed changes persist after failure | REDO log (WAL + fsync) | Crash after commit | O(fsync per commit) |
 
 ### Isolation Levels
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-handwritten.svg" alt="Handwritten: Isolation Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-diagram.svg" alt="Diagram: Isolation Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/isolation-levels-sticky.svg" alt="Sticky Note: Isolation Levels" width="30%">
+</a>
+
 
 | Isolation Level | Dirty Read | Non-repeatable Read | Phantom Read | Lost Update | Write Skew |
 |----------------|-----------|-------------------|--------------|-------------|------------|
@@ -1584,6 +2288,17 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 
 ### Schedule Types
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-handwritten.svg" alt="Handwritten: Schedule Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-diagram.svg" alt="Diagram: Schedule Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/schedule-types-sticky.svg" alt="Sticky Note: Schedule Types" width="30%">
+</a>
+
+
 | Property | Serial | Serializable | Non-Serializable | Recoverable | Cascadeless | Strict |
 |----------|--------|-------------|-----------------|-------------|-------------|--------|
 | **Interleaving** | None | Yes | Yes | Yes | Yes | Yes |
@@ -1593,6 +2308,17 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 | **Concurrency** | None | Good | Good | Good | Moderate | Least |
 
 ### Conflict vs View Serializability
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-handwritten.svg" alt="Handwritten: Conflict vs View Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-diagram.svg" alt="Diagram: Conflict vs View Serializability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/conflict-vs-view-serializability-sticky.svg" alt="Sticky Note: Conflict vs View Serializability" width="30%">
+</a>
+
 
 | Aspect | Conflict Serializability | View Serializability |
 |--------|------------------------|---------------------|
@@ -1652,6 +2378,17 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 ---
 
 ### 9.15 TypeScript Transaction Scheduler
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-handwritten.svg" alt="Handwritten: 9.15 TypeScript Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-diagram.svg" alt="Diagram: 9.15 TypeScript Transaction Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/9-15-typescript-transaction-scheduler-sticky.svg" alt="Sticky Note: 9.15 TypeScript Transaction Scheduler" width="30%">
+</a>
+
 
 The TypeScript implementation below simulates transaction scheduling â€” testing conflict serializability via precedence graphs.
 
@@ -1795,6 +2532,17 @@ stateDiagram-v2
 
 ### Additional Chapter Quiz Questions
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
+
 11. Which of the following schedules is conflict-serializable?
     a) T1:R(A), T2:W(A), T1:W(A)
     b) T1:R(A), T1:W(A), T2:R(A), T2:W(A)
@@ -1909,6 +2657,17 @@ stateDiagram-v2
 
 ### Basic
 
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. Define ACID. Explain each property with a banking example.
 
 2. What is the difference between COMMIT and ROLLBACK? When would each be used?
@@ -1924,6 +2683,17 @@ T2: WRITE(A), READ(B), WRITE(B)
 5. Explain the difference between a serial schedule and a serializable schedule with an example of each.
 
 ### Intermediate
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
 
 6. Given the schedule:
 \`\`\`text
@@ -1942,6 +2712,17 @@ Draw the precedence graph and determine if the schedule is conflict-serializable
 10. For each isolation level (READ UNCOMMITTED through SERIALIZABLE), give a scenario where the isolation level allows an anomaly, and explain which anomaly it is.
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/09-transactions/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 11. For the following schedule, determine:
     a) Is it conflict-serializable?

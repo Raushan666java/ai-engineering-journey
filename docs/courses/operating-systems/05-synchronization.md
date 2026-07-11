@@ -45,6 +45,17 @@ A **race condition** occurs when multiple processes or threads access shared dat
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Bank Account Withdrawal by Two ATMs**: Imagine a joint bank account with a balance of $1000. Two ATMs process simultaneous withdrawals of $800 each.
 
 ```
@@ -59,6 +70,17 @@ ATM 1 (left)                    ATM 2 (right)
 
 ### Numbered Steps of a Race Condition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" alt="Handwritten: Numbered Steps of a Race Condition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" alt="Diagram: Numbered Steps of a Race Condition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" alt="Sticky Note: Numbered Steps of a Race Condition" width="30%">
+</a>
+
+
 1. Thread A loads shared variable `counter` from memory into register (value = 5)
 2. Thread A increments register (value = 6)
 3. **Context switch** → Thread B loads `counter` from memory (value = 5 — stale!)
@@ -69,6 +91,17 @@ ATM 1 (left)                    ATM 2 (right)
 **Final value**: 6 instead of 7. One increment is lost.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 shared int counter = 0
@@ -81,6 +114,17 @@ function increment():
 ```
 
 ### C++ Implementation
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -111,6 +155,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import threading
 import sys
@@ -136,6 +191,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Dry Run Trace Table
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+</a>
+
+
 | Step | Thread | Action | Register (local) | counter (shared) | Notes |
 |------|--------|--------|-----------------:|-----------------:|-------|
 | 1 | A | LOAD counter | 5 | 5 | |
@@ -153,6 +219,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Single increment (unsafe) | O(1) | O(1) | One RMW sequence, no synchronization overhead |
@@ -163,6 +240,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Zero synchronization overhead (when race doesn't trigger) | Non-deterministic results |
@@ -172,6 +260,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 | | Security risk — race windows can be exploited |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -203,6 +302,17 @@ These terms are often confused but are technically distinct:
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Bathroom Stall**: A single-occupancy bathroom has one stall. Multiple people need to use it. Rules:
 1. Only one person can be inside at any time (**mutual exclusion**)
 2. If no one is inside and someone wants to go, they should eventually get in (**progress**)
@@ -210,9 +320,31 @@ These terms are often confused but are technically distinct:
 
 ### Formal Definition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
+</a>
+
+
 Consider a system with n processes {P₀, P₁, ..., Pₙ₋₁}. Each process has a segment of code called the **critical section** (CS) where it accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
 
 ### Requirements for a Valid Solution
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" alt="Handwritten: Requirements for a Valid Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" alt="Diagram: Requirements for a Valid Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" alt="Sticky Note: Requirements for a Valid Solution" width="30%">
+</a>
+
 
 A valid solution must satisfy three requirements:
 
@@ -221,6 +353,17 @@ A valid solution must satisfy three requirements:
 3. **Bounded Waiting (BW)**: There exists a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter
 
 ### Numbered Steps of Critical Section Protocol
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" alt="Handwritten: Numbered Steps of Critical Section Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" alt="Diagram: Numbered Steps of Critical Section Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" alt="Sticky Note: Numbered Steps of Critical Section Protocol" width="30%">
+</a>
+
 
 ```
 entry_section:     // Request permission to enter CS
@@ -238,6 +381,17 @@ remainder_section: // Non-critical code
 
 ### Pseudocode
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
+
 ```
 shared data protected by some synchronization mechanism
 
@@ -251,6 +405,17 @@ process(i):
 
 ### Complexity Analysis of Critical Section Problem
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" alt="Handwritten: Complexity Analysis of Critical Section Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" alt="Diagram: Complexity Analysis of Critical Section Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" alt="Sticky Note: Complexity Analysis of Critical Section Problem" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | Entry section (worst-case wait) | O(n) for some solutions | May need to wait for n-1 other processes |
@@ -260,6 +425,17 @@ process(i):
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Provides a structured way to reason about concurrency | Adds overhead even when uncontended |
@@ -267,6 +443,17 @@ process(i):
 | Foundation for all higher-level synchronization | Poorly designed solutions lead to deadlock/starvation |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Issue | Solution |
 |----------|-------|----------|
@@ -280,12 +467,34 @@ process(i):
 
 ### Mutual Exclusion — Formal Proof Structure
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" alt="Handwritten: Mutual Exclusion — Formal Proof Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" alt="Diagram: Mutual Exclusion — Formal Proof Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" alt="Sticky Note: Mutual Exclusion — Formal Proof Structure" width="30%">
+</a>
+
+
 To prove mutual exclusion, show:
 - At most one process can have `flag[self] = true AND turn == self`
 - If P₀ is in CS, then `flag[0] == true AND turn == 0`
 - P₁ cannot enter because `flag[0] == true AND turn == 0` makes P₁ spin-wait
 
 ### Progress — Formal Statement
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" alt="Handwritten: Progress — Formal Statement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" alt="Diagram: Progress — Formal Statement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" alt="Sticky Note: Progress — Formal Statement" width="30%">
+</a>
+
 
 If:
 1. No process is executing in its CS
@@ -296,6 +505,17 @@ Then:
 - The decision cannot be postponed indefinitely
 
 ### Bounded Waiting — Formal Statement
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" alt="Handwritten: Bounded Waiting — Formal Statement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" alt="Diagram: Bounded Waiting — Formal Statement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" alt="Sticky Note: Bounded Waiting — Formal Statement" width="30%">
+</a>
+
 
 After process Pᵢ makes a request to enter its CS, there exists a bound on the number of times other processes may enter their CS before Pᵢ's request is granted.
 
@@ -309,6 +529,17 @@ After process Pᵢ makes a request to enter its CS, there exists a bound on the 
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Two People at a Single-Lock Door**: Alice and Bob share an office with a single key. When Alice wants to enter:
 1. Alice puts her hand on the key (sets `flag[Alice] = true`)
 2. Alice says "Bob can go first" (sets `turn = Bob`)
@@ -316,6 +547,17 @@ After process Pᵢ makes a request to enter its CS, there exists a bound on the 
 4. Otherwise Alice enters
 
 ### Numbered Steps of Peterson's Algorithm
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" alt="Handwritten: Numbered Steps of Peterson's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" alt="Diagram: Numbered Steps of Peterson's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" alt="Sticky Note: Numbered Steps of Peterson's Algorithm" width="30%">
+</a>
+
 
 ```
 Pᵢ wants to enter critical section:
@@ -327,6 +569,17 @@ Step 5: flag[i] = false         // Done; allow other to enter
 ```
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 shared bool flag[2] = {false, false}
@@ -345,6 +598,17 @@ process(i):
 ```
 
 ### C++ Implementation
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -399,6 +663,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import threading
 
@@ -443,6 +718,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" alt="Handwritten: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" alt="Diagram: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" alt="Sticky Note: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+</a>
+
+
 | Step | Process | Action | flag[0] | flag[1] | turn | Who is in CS? | Explanation |
 |------|---------|--------|:-------:|:-------:|:----:|:------------:|-------------|
 | 0 | — | Initial state | F | F | 0 | None | Nobody wants CS |
@@ -457,6 +743,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 | 9 | P₁ | `flag[1] = false` (exits CS) | F | **F** | 0 | None | P₁ releases |
 
 ### Scenario: Both P₀ and P₁ want CS simultaneously
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" alt="Handwritten: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" alt="Diagram: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" alt="Sticky Note: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+</a>
+
 
 | Step | Process | Action | flag[0] | flag[1] | turn | Who is in CS? | Explanation |
 |------|---------|--------|:-------:|:-------:|:----:|:------------:|-------------|
@@ -477,6 +774,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Mutual Exclusion Proof
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" alt="Handwritten: Mutual Exclusion Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" alt="Diagram: Mutual Exclusion Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" alt="Sticky Note: Mutual Exclusion Proof" width="30%">
+</a>
+
+
 Assume P₀ and P₁ are both in CS simultaneously. Then:
 - P₀ entered CS only when `flag[1] == false OR turn == 0`
 - P₁ entered CS only when `flag[0] == false OR turn == 1`
@@ -488,6 +796,17 @@ By contradiction, both cannot be in CS simultaneously. **ME holds.**
 
 ### Progress Proof
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" alt="Handwritten: Progress Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" alt="Diagram: Progress Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" alt="Sticky Note: Progress Proof" width="30%">
+</a>
+
+
 If P₀ is in its remainder section (`flag[0] == false`) and P₁ wants CS:
 - P₁'s while condition: `flag[0] == false` → loop skipped immediately
 - P₁ enters CS without waiting
@@ -498,6 +817,17 @@ If P₁ is waiting (`flag[1] == true`) and P₀ is in remainder section:
 - **Progress holds.**
 
 ### Bounded Waiting Proof
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" alt="Handwritten: Bounded Waiting Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" alt="Diagram: Bounded Waiting Proof" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" alt="Sticky Note: Bounded Waiting Proof" width="30%">
+</a>
+
 
 If P₀ wants CS and P₁ is in CS:
 - P₀ sets `flag[0] = true`, `turn = 1`
@@ -547,9 +877,31 @@ Modern hardware provides atomic (non-interruptible) instructions that allow lock
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **The Cash Register "Total" Button**: When a cashier presses "Total" on a register, the machine atomically reads all item prices, computes the sum, and displays it — all in one uninterruptible operation. Another cashier cannot interfere mid-computation. This is exactly what a hardware atomic instruction does: read-modify-write as one indivisible step.
 
 ### Why Hardware Support?
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" alt="Handwritten: Why Hardware Support?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" alt="Diagram: Why Hardware Support?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" alt="Sticky Note: Why Hardware Support?" width="30%">
+</a>
+
 
 Peterson's algorithm fails on modern CPUs because:
 1. Compilers can reorder memory operations for optimization
@@ -562,12 +914,34 @@ Hardware atomic instructions solve this by guaranteeing that no other core can m
 
 ### Definition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 `test_and_set(target)` atomically:
 1. Reads the current value of `target`
 2. Sets `target` to 1
 3. Returns the original value
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 **Airline Seat Reservation**: When two agents try to book the last seat:
 - Agent 1: "Is seat 14A available?" (read)
@@ -577,6 +951,17 @@ Hardware atomic instructions solve this by guaranteeing that no other core can m
 The check-and-mark must happen as one atomic operation, which is exactly what test-and-set provides.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 ```
 acquire(lock):
@@ -590,6 +975,17 @@ release(lock):
 ```
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 // Atomic hardware instruction — executes as one uninterruptible step
@@ -610,6 +1006,17 @@ function release(Spinlock *lock):
 ```
 
 ### C/C++ Implementation (GCC atomic builtins)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" alt="Handwritten: C/C++ Implementation (GCC atomic builtins)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" alt="Diagram: C/C++ Implementation (GCC atomic builtins)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" alt="Sticky Note: C/C++ Implementation (GCC atomic builtins)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -654,6 +1061,17 @@ int main() {
 
 ### Python Implementation (simulated)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" alt="Handwritten: Python Implementation (simulated)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" alt="Diagram: Python Implementation (simulated)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" alt="Sticky Note: Python Implementation (simulated)" width="30%">
+</a>
+
+
 ```python
 import threading
 import ctypes
@@ -697,6 +1115,17 @@ def worker():
 
 ### Dry Run Trace Table
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+</a>
+
+
 | Step | Thread | Action | lock->flag | Return value | Who holds lock? |
 |------|--------|--------|:----------:|:------------:|:---------------:|
 | 0 | — | Initial | 0 | — | None |
@@ -710,6 +1139,17 @@ def worker():
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | Lock (uncontended) | O(1) | One atomic instruction, ~10-30ns on modern CPU |
@@ -721,6 +1161,17 @@ def worker():
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Works on all modern CPUs | Busy-waiting wastes CPU cycles |
@@ -730,6 +1181,17 @@ def worker():
 | Fast uncontended acquisition | Not fair — later threads may acquire before earlier ones |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -743,6 +1205,17 @@ def worker():
 
 ### Definition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 `compare_and_swap(value, expected, new_value)` atomically:
 1. Reads the current value of `*value`
 2. If `*value == expected`, sets `*value = new_value`
@@ -750,9 +1223,31 @@ def worker():
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Vending Machine Coin Slot**: The machine checks: "Is the coin exactly $1? If yes, accept it and dispense a soda. If not, reject it." The check-and-accept must be atomic — otherwise someone could trick it with a half-accepted coin.
 
 ### Numbered Steps
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
 
 ```
 compare_and_swap(int *value, int expected, int new_value):
@@ -764,6 +1259,17 @@ Step 3: return old
 
 ### Pseudocode
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
+
 ```
 // Atomic — implemented as a single CPU instruction (CMPXCHG on x86)
 function compare_and_swap(int *value, int expected, int new_value) -> int:
@@ -774,6 +1280,17 @@ function compare_and_swap(int *value, int expected, int new_value) -> int:
 ```
 
 ### C/C++ Implementation
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" alt="Handwritten: C/C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" alt="Diagram: C/C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" alt="Sticky Note: C/C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -810,6 +1327,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import threading
 import ctypes
@@ -839,6 +1367,17 @@ class CASLock:
 
 ### Dry Run Trace Table (Lock-free Increment)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Lock-free Increment)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" alt="Diagram: Dry Run Trace Table (Lock-free Increment)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Lock-free Increment)" width="30%">
+</a>
+
+
 | Step | Thread | Action | counter (shared) | expected (local) | CAS success? |
 |------|--------|--------|:----------------:|:----------------:|:------------:|
 | 0 | — | Initial | 5 | — | — |
@@ -850,6 +1389,17 @@ class CASLock:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | CAS instruction | O(1) | Single CPU cycle on x86 (CMPXCHG), ~10-40ns |
@@ -860,6 +1410,17 @@ class CASLock:
 **Why CAS enables lock-free programming**: Unlike TAS, CAS can be retried on failure without holding any lock. This means a thread can help another thread complete its operation rather than blocking. This is the foundation of lock-free data structures.
 
 ### CAS vs TAS — Key Difference
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" alt="Handwritten: CAS vs TAS — Key Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" alt="Diagram: CAS vs TAS — Key Difference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" alt="Sticky Note: CAS vs TAS — Key Difference" width="30%">
+</a>
+
 
 | Property | TAS | CAS |
 |----------|-----|-----|
@@ -873,13 +1434,46 @@ class CASLock:
 
 ### Definition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **memory barrier** is a CPU instruction that enforces ordering constraints on memory operations before and after the barrier. It prevents the CPU and compiler from reordering memory accesses across the barrier.
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Bridge Toll Booth**: Cars (memory operations) approach a bridge. Cars from both directions can cross in any order normally. A toll booth (memory barrier) forces all cars on one side to finish crossing before any car from the other side can start.
 
 ### Types of Memory Barriers
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" alt="Handwritten: Types of Memory Barriers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" alt="Diagram: Types of Memory Barriers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" alt="Sticky Note: Types of Memory Barriers" width="30%">
+</a>
+
 
 | Barrier | Effect | When Used |
 |---------|--------|-----------|
@@ -889,6 +1483,17 @@ A **memory barrier** is a CPU instruction that enforces ordering constraints on 
 | `data-dependency` | Order dependent loads | RCU (Read-Copy-Update) |
 
 ### C++ Memory Order Usage
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" alt="Handwritten: C++ Memory Order Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" alt="Diagram: C++ Memory Order Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" alt="Sticky Note: C++ Memory Order Usage" width="30%">
+</a>
+
 
 ```cpp
 std::atomic<int> data;
@@ -914,6 +1519,17 @@ A **mutex** (mutual exclusion) is a synchronization primitive that protects a cr
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Library Study Room Checkout**: A library has one study room with a key at the front desk.
 1. You take the key (acquire the mutex)
 2. You use the room (critical section)
@@ -921,6 +1537,17 @@ A **mutex** (mutual exclusion) is a synchronization primitive that protects a cr
 4. If the room is taken, you **wait in a queue** (blocking), not standing outside the door spinning
 
 ### Numbered Steps of Mutex Operation
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" alt="Handwritten: Numbered Steps of Mutex Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" alt="Diagram: Numbered Steps of Mutex Operation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" alt="Sticky Note: Numbered Steps of Mutex Operation" width="30%">
+</a>
+
 
 ```
 acquire(mutex):
@@ -935,6 +1562,17 @@ Step 2: If any threads are in wait queue → move one to ready queue (wake up)
 ```
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 struct Mutex:
@@ -957,6 +1595,17 @@ function release(Mutex *m):
 ```
 
 ### C++ Implementation (pthreads wrapper)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" alt="Handwritten: C++ Implementation (pthreads wrapper)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" alt="Diagram: C++ Implementation (pthreads wrapper)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" alt="Sticky Note: C++ Implementation (pthreads wrapper)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -985,6 +1634,17 @@ int main() {
 ```
 
 ### Raw pthread Mutex (C-style)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" alt="Handwritten: Raw pthread Mutex (C-style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" alt="Diagram: Raw pthread Mutex (C-style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" alt="Sticky Note: Raw pthread Mutex (C-style)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1018,6 +1678,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import threading
 
@@ -1045,6 +1716,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Dry Run Trace Table (Two Threads Using Mutex)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" alt="Diagram: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+</a>
+
+
 | Step | Thread | Action | mutex value | Waiting queue | Notes |
 |------|--------|--------|:-----------:|:-------------:|-------|
 | 0 | — | Initial | 1 | empty | Lock is free |
@@ -1057,6 +1739,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 | 7 | B | Exit CS → release → value++ | **0** | empty | |
 
 ### Spinlock vs Mutex — Detailed Comparison
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" alt="Handwritten: Spinlock vs Mutex — Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" alt="Diagram: Spinlock vs Mutex — Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" alt="Sticky Note: Spinlock vs Mutex — Detailed Comparison" width="30%">
+</a>
+
 
 | Property | Spinlock | Blocking Mutex |
 |----------|----------|---------------|
@@ -1073,6 +1766,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 **Decision rule**: If the critical section is shorter than the time to do two context switches (~1-5µs), use a spinlock. Otherwise, use a blocking mutex.
 
 ### Recursive Mutex
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" alt="Handwritten: Recursive Mutex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" alt="Diagram: Recursive Mutex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" alt="Sticky Note: Recursive Mutex" width="30%">
+</a>
+
 
 A **recursive mutex** allows the same thread to acquire the same mutex multiple times without deadlocking. Each acquire must be matched with a release.
 
@@ -1101,6 +1805,17 @@ int main() {
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | acquire (uncontended) | O(1) | O(1) | Atomic CAS on flag |
@@ -1111,6 +1826,17 @@ int main() {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Clean acquire/release semantics | Risk of deadlock if order is wrong |
@@ -1119,6 +1845,17 @@ int main() {
 | RAII wrappers prevent leaks | Overhead even when uncontested |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -1138,6 +1875,17 @@ A **semaphore** (Edsger Dijkstra, 1965) is an integer variable accessed only thr
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Valet Parking Ticket Machine**: A restaurant has 10 parking spots. The valet takes a ticket from the machine:
 - **wait() / P**: Take a ticket. If no tickets left (counter = 0), wait until someone returns theirs
 - **signal() / V**: Return a ticket. If someone is waiting for a ticket, they can now take one
@@ -1146,13 +1894,46 @@ The ticket counter IS the semaphore value -- it represents the number of availab
 
 ### Type 1: Binary Semaphore (value 0 or 1)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" alt="Handwritten: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" alt="Diagram: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" alt="Sticky Note: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+</a>
+
+
 Used like a mutex -- protects one resource.
 
 ### Type 2: Counting Semaphore (value >= 0)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" alt="Handwritten: Type 2: Counting Semaphore (value >= 0)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" alt="Diagram: Type 2: Counting Semaphore (value >= 0)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" alt="Sticky Note: Type 2: Counting Semaphore (value >= 0)" width="30%">
+</a>
+
+
 Used to manage a pool of identical resources (e.g., 5 database connections, 10 printer queues).
 
 ### Numbered Steps -- Semaphore Operations
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" alt="Handwritten: Numbered Steps -- Semaphore Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" alt="Diagram: Numbered Steps -- Semaphore Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" alt="Sticky Note: Numbered Steps -- Semaphore Operations" width="30%">
+</a>
+
 
 ```
 // wait() / P() -- "proberen" (to test)
@@ -1169,6 +1950,17 @@ Step 2: if s->value <= 0:
 ```
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 struct Semaphore:
@@ -1189,6 +1981,17 @@ function signal(Semaphore *s):
 ```
 
 ### C/C++ Implementation (POSIX Semaphores)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" alt="Handwritten: C/C++ Implementation (POSIX Semaphores)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" alt="Diagram: C/C++ Implementation (POSIX Semaphores)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" alt="Sticky Note: C/C++ Implementation (POSIX Semaphores)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1224,6 +2027,17 @@ int main() {
 
 ### Counting Semaphore -- Resource Pool (C++)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" alt="Handwritten: Counting Semaphore -- Resource Pool (C++)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" alt="Diagram: Counting Semaphore -- Resource Pool (C++)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" alt="Sticky Note: Counting Semaphore -- Resource Pool (C++)" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <thread>
@@ -1258,6 +2072,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import threading
 import time
@@ -1286,6 +2111,17 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Python Counting Semaphore -- Resource Pool
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" alt="Handwritten: Python Counting Semaphore -- Resource Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" alt="Diagram: Python Counting Semaphore -- Resource Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" alt="Sticky Note: Python Counting Semaphore -- Resource Pool" width="30%">
+</a>
+
+
 ```python
 import threading
 import time
@@ -1312,6 +2148,17 @@ for t in threads:
 
 ### Dry Run Trace Table -- Binary Semaphore (value=1)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" alt="Diagram: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+</a>
+
+
 | Step | Thread | Action | sem value | Waiting queue | Notes |
 |------|--------|--------|:---------:|:-------------:|-------|
 | 0 | -- | Initial (init = 1) | 1 | empty | Resource available |
@@ -1327,6 +2174,17 @@ for t in threads:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | wait (uncontended) | O(1) | O(1) | One atomic decrement + check |
@@ -1338,6 +2196,17 @@ for t in threads:
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Generalizes mutex to N resources | No ownership -- any thread can signal |
@@ -1346,6 +2215,17 @@ for t in threads:
 | Well-understood, decades of practice | Binary sem != mutex (no ownership) |
 
 ### Binary Semaphore vs Mutex
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" alt="Handwritten: Binary Semaphore vs Mutex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" alt="Diagram: Binary Semaphore vs Mutex" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" alt="Sticky Note: Binary Semaphore vs Mutex" width="30%">
+</a>
+
 
 | Property | Binary Semaphore | Mutex |
 |----------|-----------------|-------|
@@ -1358,6 +2238,17 @@ for t in threads:
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | Signal before wait (signaling use) | Value becomes 2, second signal lost | Always init at 0 for signaling |
@@ -1368,6 +2259,17 @@ for t in threads:
 ## 5.2 Classic Problems Using Semaphores
 
 ### 5.2.1 Producer-Consumer (Bounded Buffer)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" alt="Handwritten: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" alt="Diagram: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" alt="Sticky Note: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1426,6 +2328,17 @@ int main() {
 ```
 
 ### 5.2.2 Readers-Writers
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" alt="Handwritten: 5.2.2 Readers-Writers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" alt="Diagram: 5.2.2 Readers-Writers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" alt="Sticky Note: 5.2.2 Readers-Writers" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1490,6 +2403,17 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Hotel Room Key System**: A hotel has rooms (shared resources). The front desk (monitor) controls all access:
 - You request a room key from the front desk -- you get exclusive access
 - You return the key when done
@@ -1499,17 +2423,50 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Key Characteristics
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" alt="Handwritten: Key Characteristics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" alt="Diagram: Key Characteristics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" alt="Sticky Note: Key Characteristics" width="30%">
+</a>
+
+
 1. **Mutual Exclusion**: Only one thread can be active inside the monitor at any time
 2. **Condition Variables**: Enable threads to wait for specific conditions and be notified
 3. **Data Encapsulation**: Shared data is private to the monitor -- only accessible through monitor procedures
 
 ### Condition Variables
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" alt="Handwritten: Condition Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" alt="Diagram: Condition Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" alt="Sticky Note: Condition Variables" width="30%">
+</a>
+
+
 - **wait(c)**: Release monitor lock, block on condition c. When re-acquired, re-acquire lock
 - **signal(c)**: Wake one thread waiting on condition c (Hoare semantics: waiter runs immediately; Mesa semantics: waiter becomes ready and competes for lock)
 - **broadcast(c)**: Wake ALL threads waiting on condition c
 
 ### Numbered Steps -- Monitor Wait/Signal
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" alt="Handwritten: Numbered Steps -- Monitor Wait/Signal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" alt="Diagram: Numbered Steps -- Monitor Wait/Signal" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" alt="Sticky Note: Numbered Steps -- Monitor Wait/Signal" width="30%">
+</a>
+
 
 ```
 // Thread A inside monitor -- needs to wait for condition
@@ -1527,6 +2484,17 @@ Step 4: A wakes, re-acquires monitor lock, returns from wait()
 
 ### Pseudocode
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
+
 ```
 monitor SharedResource:
     data: shared_data
@@ -1542,6 +2510,17 @@ monitor SharedResource:
 ```
 
 ### C++ Implementation (std::condition_variable)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" alt="Handwritten: C++ Implementation (std::condition_variable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" alt="Diagram: C++ Implementation (std::condition_variable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" alt="Sticky Note: C++ Implementation (std::condition_variable)" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1600,6 +2579,17 @@ int main() {
 
 ### Python Implementation (threading.Condition)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" alt="Handwritten: Python Implementation (threading.Condition)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" alt="Diagram: Python Implementation (threading.Condition)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" alt="Sticky Note: Python Implementation (threading.Condition)" width="30%">
+</a>
+
+
 ```python
 import threading
 import time
@@ -1651,6 +2641,17 @@ t2.join()
 
 ### Dry Run Trace Table -- Monitor with CV
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Monitor with CV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" alt="Diagram: Dry Run Trace Table -- Monitor with CV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Monitor with CV" width="30%">
+</a>
+
+
 | Step | Thread | Action | Buffer size | Cond queue | Lock holder | Notes |
 |------|--------|--------|:-----------:|:----------:|:-----------:|-------|
 | 0 | -- | Initial | 0 | empty | none | |
@@ -1668,6 +2669,17 @@ t2.join()
 
 ### Hoare vs Mesa Semantics
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" alt="Handwritten: Hoare vs Mesa Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" alt="Diagram: Hoare vs Mesa Semantics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" alt="Sticky Note: Hoare vs Mesa Semantics" width="30%">
+</a>
+
+
 | Property | Hoare | Mesa |
 |----------|-------|------|
 | Signaled thread runs | **Immediately** | Later (competes for lock) |
@@ -1680,6 +2692,17 @@ t2.join()
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Enter monitor (uncontended) | O(1) | O(1) | Acquire underlying mutex |
@@ -1690,6 +2713,17 @@ t2.join()
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|--------------|
 | Structured -- code is sequential | May be overkill for simple ME |
@@ -1699,6 +2733,17 @@ t2.join()
 | Encapsulation of data + sync | Complex with many CVs |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -1727,6 +2772,17 @@ t2.join()
 
 ### Q1: Find the race condition
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" alt="Handwritten: Find the race condition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" alt="Diagram: Find the race condition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" alt="Sticky Note: Find the race condition" width="30%">
+</a>
+
+
 ```cpp
 int balance = 100;
 void withdraw(int amount) {
@@ -1739,6 +2795,17 @@ void withdraw(int amount) {
 **Answer**: T1 and T2 both read `balance` before either writes. T1 sees balance=100, amount=200 -> skip. T2 sees balance=100, amount=50 -> balance=50. If T2 debited first, T1 would see 50 and skip -- but timing makes outcomes non-deterministic. **Solution**: Use a mutex or CAS.
 
 ### Q2: Is this thread-safe?
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" alt="Handwritten: Is this thread-safe?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" alt="Diagram: Is this thread-safe?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" alt="Sticky Note: Is this thread-safe?" width="30%">
+</a>
+
 
 ```cpp
 std::vector<int> vec;
@@ -1753,6 +2820,17 @@ void add(int x) {
 **Answer**: No. `vector::push_back` is not thread-safe -- concurrent calls cause data corruption. Even the `empty()` check has a race. Use `std::mutex` for all accesses.
 
 ### Q3: Why is this lock incorrect?
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" alt="Handwritten: Why is this lock incorrect?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" alt="Diagram: Why is this lock incorrect?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" alt="Sticky Note: Why is this lock incorrect?" width="30%">
+</a>
+
 
 ```cpp
 std::mutex mtx;
@@ -1773,13 +2851,46 @@ void update() {
 
 ### Q1: When use spinlock instead of mutex?
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" alt="Handwritten: When use spinlock instead of mutex?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" alt="Diagram: When use spinlock instead of mutex?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" alt="Sticky Note: When use spinlock instead of mutex?" width="30%">
+</a>
+
+
 **Answer**: In kernel interrupt handlers (where sleeping is not allowed) or for very short CS (~<2us) where context switch cost exceeds busy-wait. Examples: per-CPU variable protection, device register update.
 
 ### Q2: 100ms CS with 50 threads contending on spinlock?
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" alt="Handwritten: 100ms CS with 50 threads contending on spinlock?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" alt="Diagram: 100ms CS with 50 threads contending on spinlock?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" alt="Sticky Note: 100ms CS with 50 threads contending on spinlock?" width="30%">
+</a>
+
+
 **Answer**: 49 CPU cores waste 100ms spinning. Power spikes. Throughput collapses. **Design error** -- use blocking mutex.
 
 ### Q3: Overhead comparison
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" alt="Handwritten: Overhead comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" alt="Diagram: Overhead comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" alt="Sticky Note: Overhead comparison" width="30%">
+</a>
+
 
 | Scenario | Spinlock | Mutex |
 |----------|----------|-------|
@@ -1788,6 +2899,17 @@ void update() {
 | Heavy contention, long CS | **Very high** | ~10-50 us per wake |
 
 ### Q4: What is a ticket lock?
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" alt="Handwritten: What is a ticket lock?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" alt="Diagram: What is a ticket lock?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" alt="Sticky Note: What is a ticket lock?" width="30%">
+</a>
+
 
 **Answer**: Fair spinlock guaranteeing FIFO. Each thread takes a ticket number, waits until called.
 
@@ -1829,6 +2951,17 @@ struct TicketLock {
 
 ### Deadlock (4 Coffman Conditions)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" alt="Handwritten: Deadlock (4 Coffman Conditions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" alt="Diagram: Deadlock (4 Coffman Conditions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" alt="Sticky Note: Deadlock (4 Coffman Conditions)" width="30%">
+</a>
+
+
 1. **Mutual exclusion**: Resource held by one
 2. **Hold and wait**: Holder waits for another resource
 3. **No preemption**: Resource can't be taken away
@@ -1836,15 +2969,48 @@ struct TicketLock {
 
 ### Livelock
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" alt="Handwritten: Livelock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" alt="Diagram: Livelock" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" alt="Sticky Note: Livelock" width="30%">
+</a>
+
+
 Threads keep yielding to each other without progress. Like two people in a hallway who keep stepping the same direction.
 
 ### Priority Inversion
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" alt="Handwritten: Priority Inversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" alt="Diagram: Priority Inversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" alt="Sticky Note: Priority Inversion" width="30%">
+</a>
+
 
 High-priority thread waits for low-priority thread holding a lock, while medium-priority threads preempt the low-priority holder.
 
 **Real example**: Mars Pathfinder 1997 -- high-priority bus task blocked by low-priority meteo task holding mutex; medium-priority comms kept preempting. **Fixed with priority inheritance**.
 
 ### ABA Problem
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" alt="Handwritten: ABA Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" alt="Diagram: ABA Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" alt="Sticky Note: ABA Problem" width="30%">
+</a>
+
 
 Thread reads A, computes, CAS(A, C). Between read and CAS, another changed A->B->A. CAS succeeds but state is wrong.
 
@@ -1872,6 +3038,17 @@ void example_function(void) {
 
 ### Variants
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" alt="Handwritten: Variants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" alt="Diagram: Variants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" alt="Sticky Note: Variants" width="30%">
+</a>
+
+
 | Variant | Disables preemption? | Disables IRQs? | Used when |
 |---------|:--------------------:|:--------------:|-----------|
 | `spin_lock()` | Y | N | Process context, no IRQ sharing |
@@ -1880,6 +3057,17 @@ void example_function(void) {
 | `spin_lock_bh()` | Y | N (blocks softirqs) | Bottom-half context |
 
 ### Raw Spinlock (x86 asm)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" alt="Handwritten: Raw Spinlock (x86 asm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" alt="Diagram: Raw Spinlock (x86 asm)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" alt="Sticky Note: Raw Spinlock (x86 asm)" width="30%">
+</a>
+
 
 ```c
 static __always_inline void arch_spin_lock(arch_spinlock_t *lock) {
@@ -1896,6 +3084,17 @@ static __always_inline void arch_spin_lock(arch_spinlock_t *lock) {
 ```
 
 ### MCS Lock (Linux v5+)
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" alt="Handwritten: MCS Lock (Linux v5+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" alt="Diagram: MCS Lock (Linux v5+)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" alt="Sticky Note: MCS Lock (Linux v5+)" width="30%">
+</a>
+
 
 Linux migrated from ticket locks to MCS locks for scalability. Each spinning thread spins on its own local cache line.
 
@@ -1952,6 +3151,17 @@ int __pthread_mutex_lock(pthread_mutex_t *mutex) {
 ```
 
 ### Linux Futex Design
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" alt="Handwritten: Linux Futex Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" alt="Diagram: Linux Futex Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" alt="Sticky Note: Linux Futex Design" width="30%">
+</a>
+
 
 Futex (Fast Userspace Mutex) avoids syscalls in the uncontended case:
 
@@ -2015,17 +3225,50 @@ Windows critical sections use a two-level strategy similar to futexes.
 
 ### Case 1: Therac-25 Radiation Overdose (1985-1987)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" alt="Handwritten: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" alt="Diagram: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" alt="Sticky Note: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+</a>
+
+
 **Root cause**: Race condition in concurrent task controlling electron beam. A flag was set and checked without synchronization, allowing the beam to fire at full power without target positioned.
 
 **Lesson**: Life-critical systems need formal verification of synchronization.
 
 ### Case 2: Mars Pathfinder Priority Inversion (1997)
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" alt="Handwritten: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" alt="Diagram: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" alt="Sticky Note: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+</a>
+
+
 **Root cause**: Low-priority meteo task held mutex while high-priority bus task waited. Medium-priority comms tasks preempted the low-priority holder, making high-priority task miss its deadline. System reset.
 
 **Fix**: Priority inheritance -- holder temporarily inherits the waiting thread's priority.
 
 ### Case 3: Northeast Blackout 2003
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" alt="Handwritten: Case 3: Northeast Blackout 2003" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" alt="Diagram: Case 3: Northeast Blackout 2003" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" alt="Sticky Note: Case 3: Northeast Blackout 2003" width="30%">
+</a>
+
 
 **Root cause**: Race condition in alarm logging system caused alarms to be lost during cascade. Operators were unaware of developing failure.
 
@@ -2338,6 +3581,17 @@ console.log(benchmarkLocks(10000)); // Long CS → mutex
 
 ### Memory Barriers and Instruction Reordering
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" alt="Handwritten: Memory Barriers and Instruction Reordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" alt="Diagram: Memory Barriers and Instruction Reordering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" alt="Sticky Note: Memory Barriers and Instruction Reordering" width="30%">
+</a>
+
+
 Modern CPUs and compilers reorder instructions for performance. This breaks Peterson's algorithm and naive lock implementations without memory barriers:
 
 | Reordering Type | Effect | Example |
@@ -2355,6 +3609,17 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 - `atomic_thread_fence(memory_order_seq_cst)` (C++): Sequential consistency fence
 
 ### Additional Chapter Quiz Questions
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
 
 10. What is the key difference between a race condition and a data race?
     - a) They are the same thing
@@ -2390,6 +3655,17 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Additional Exercises
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+</a>
+
+
 #### Basic
 10. Use TypeScript to implement Peterson's solution for mutual exclusion between two async functions. Show that without proper memory barriers, the lock fails on weakly-ordered architectures.
 
@@ -2418,17 +3694,50 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Basic
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. What is a race condition? Provide an example beyond counter increment.
 2. Explain the three requirements for a solution to the critical section problem.
 3. What is the difference between a mutex and a binary semaphore?
 
 ### Intermediate
 
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
+
 4. Prove that Peterson's solution satisfies mutual exclusion, progress, and bounded waiting.
 5. Implement a **ticket lock**, where each thread takes a number and waits until its number is called. Demonstrate that it provides FIFO fairness (bounded waiting).
 6. Compare spinlocks and mutexes. Write a benchmark that measures the performance of each for a critical section that takes (a) 10ns, (b) 10us, (c) 10ms.
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 7. Implement a lock-free stack using compare-and-swap (CAS). The stack should support push() and pop() without locks. Handle the ABA problem.
 8. The **Dekker algorithm** is another software-based two-process mutual exclusion solution from 1965. Implement it, prove its correctness, and compare it to Peterson's solution.

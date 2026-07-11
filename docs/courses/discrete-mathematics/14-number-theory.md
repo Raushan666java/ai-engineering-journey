@@ -57,6 +57,17 @@ flowchart LR
 
 ### 14.1 Divisibility
 
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" alt="Handwritten: 14.1 Divisibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" alt="Diagram: 14.1 Divisibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" alt="Sticky Note: 14.1 Divisibility" width="30%">
+</a>
+
+
 For integers $a$ and $b$ with $a \neq 0$, $a$ **divides** $b$ (written $a \mid b$) if there is an integer $k$ such that $b = a \cdot k$.
 
 **Theorem 14.1 (Properties of divisibility).**
@@ -70,6 +81,17 @@ For integers $a$ and $b$ with $a \neq 0$, $a$ **divides** $b$ (written $a \mid b
 
 ### 14.2 Division Algorithm
 
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" alt="Handwritten: 14.2 Division Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" alt="Diagram: 14.2 Division Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" alt="Sticky Note: 14.2 Division Algorithm" width="30%">
+</a>
+
+
 **Theorem 14.2 (Division algorithm).** For integers $a$ and $m > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that:
 $$a = q \cdot m + r,\quad 0 \leq r &lt; m$$
 
@@ -78,6 +100,17 @@ We write $r = a \bmod m$ and $q = \lfloor a/m \rfloor$.
 > **One-Sentence Takeaway:** Every integer $a$ can be uniquely expressed as $a = qm + r$ with $0 \leq r &lt; m$; the remainder is the basis of modular arithmetic.
 
 ### 14.3 GCD and LCM
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" alt="Handwritten: 14.3 GCD and LCM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" alt="Diagram: 14.3 GCD and LCM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" alt="Sticky Note: 14.3 GCD and LCM" width="30%">
+</a>
+
 
 The **greatest common divisor** $\gcd(a,b)$ is the largest integer dividing both $a$ and $b$.
 
@@ -92,6 +125,17 @@ Two integers are **relatively prime** (coprime) if $\gcd(a,b) = 1$.
 > **One-Sentence Takeaway:** Every common divisor divides the GCD; the GCD is the smallest positive linear combination of $a$ and $b$.
 
 ### 14.4 Euclidean Algorithm
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" alt="Handwritten: 14.4 Euclidean Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" alt="Diagram: 14.4 Euclidean Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" alt="Sticky Note: 14.4 Euclidean Algorithm" width="30%">
+</a>
+
 
 **Theorem 14.5 (Euclidean algorithm).** For $a \geq b > 0$:
 $$\gcd(a,b) = \gcd(b, a \bmod b)$$
@@ -129,6 +173,17 @@ console.log(extendedGcd(252, 198)); // { gcd: 18, x: 4, y: -5 }
 
 ### 14.5 Modular Arithmetic
 
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" alt="Handwritten: 14.5 Modular Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" alt="Diagram: 14.5 Modular Arithmetic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" alt="Sticky Note: 14.5 Modular Arithmetic" width="30%">
+</a>
+
+
 **Congruence:** $a \equiv b \pmod{m}$ means $m \mid (a - b)$.
 
 **Theorem 14.6 (Properties of congruences).** If $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$, then:
@@ -142,6 +197,17 @@ console.log(extendedGcd(252, 198)); // { gcd: 18, x: 4, y: -5 }
 > **One-Sentence Takeaway:** Congruence modulo $m$ is an equivalence relation compatible with addition, subtraction, and multiplication; cancellation requires the multiplier to be coprime to $m$.
 
 ### 14.6 Modular Inverses
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" alt="Handwritten: 14.6 Modular Inverses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" alt="Diagram: 14.6 Modular Inverses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" alt="Sticky Note: 14.6 Modular Inverses" width="30%">
+</a>
+
 
 The **modular inverse** of $a$ modulo $m$ is an integer $a^{-1}$ such that $a \cdot a^{-1} \equiv 1 \pmod{m}$.
 
@@ -164,6 +230,17 @@ console.log(modInverse(2, 4));  // null (gcd(2,4) ? 1)
 
 ### 14.7 Linear Congruences
 
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" alt="Handwritten: 14.7 Linear Congruences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" alt="Diagram: 14.7 Linear Congruences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" alt="Sticky Note: 14.7 Linear Congruences" width="30%">
+</a>
+
+
 A **linear congruence** is of the form $ax \equiv b \pmod{m}$.
 
 **Theorem 14.9 (Solving linear congruences).** $ax \equiv b \pmod{m}$ has a solution if and only if $\gcd(a,m) \mid b$. If solutions exist, there are exactly $\gcd(a,m)$ distinct solutions modulo $m$.
@@ -173,6 +250,17 @@ A **linear congruence** is of the form $ax \equiv b \pmod{m}$.
 > **One-Sentence Takeaway:** Solve $ax \equiv b \pmod{m}$ by dividing through by $\gcd(a,m)$ and multiplying by the modular inverse of the reduced coefficient.
 
 ### 14.8 Chinese Remainder Theorem
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+
 
 **Theorem 14.10 (Chinese Remainder Theorem).** Let $m_1, m_2, \dots, m_n$ be pairwise coprime positive integers. The system:
 $$x \equiv a_1 \pmod{m_1},\; x \equiv a_2 \pmod{m_2},\; \dots,\; x \equiv a_n \pmod{m_n}$$
@@ -206,6 +294,17 @@ console.log(chineseRemainder([2, 3, 2], [3, 5, 7])); // 23
 
 ### 14.9 Prime Numbers
 
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" alt="Handwritten: 14.9 Prime Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" alt="Diagram: 14.9 Prime Numbers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" alt="Sticky Note: 14.9 Prime Numbers" width="30%">
+</a>
+
+
 A **prime number** is an integer $p \geq 2$ whose only positive divisors are $1$ and $p$. A **composite** number has other divisors.
 
 **Theorem 14.11 (Fundamental Theorem of Arithmetic).** Every integer $n \geq 2$ can be expressed uniquely as a product of primes up to order:
@@ -237,6 +336,17 @@ console.log(sieveOfEratosthenes(30)); // [2,3,5,7,11,13,17,19,23,29]
 > **One-Sentence Takeaway:** Primes are the building blocks of integers (unique factorization); there are infinitely many, and the sieve of Eratosthenes finds them efficiently.
 
 ### 14.10 Fermat's Little Theorem and Euler's Theorem
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" alt="Handwritten: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" alt="Diagram: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" alt="Sticky Note: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+</a>
+
 
 **Theorem 14.14 (Fermat's Little Theorem).** If $p$ is prime and $p \nmid a$, then:
 $$a^{p-1} \equiv 1 \pmod{p}$$
@@ -273,6 +383,17 @@ console.log(totient(100)); // 40
 > **One-Sentence Takeaway:** Fermat's Little Theorem gives $a^{p-1} \equiv 1 \pmod{p}$ for primes; Euler's theorem extends this to composite moduli via $\phi(m)$.
 
 ### 14.11 Public-Key Cryptography: RSA
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" alt="Handwritten: 14.11 Public-Key Cryptography: RSA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" alt="Diagram: 14.11 Public-Key Cryptography: RSA" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" alt="Sticky Note: 14.11 Public-Key Cryptography: RSA" width="30%">
+</a>
+
 
 **RSA key generation:**
 1. Choose two large distinct primes $p$ and $q$.
@@ -767,6 +888,17 @@ console.log(modExp(7, 2023, 11)); // 7^2023 mod 11 using FLT
 ```
 
 ### 14.8 Chinese Remainder Theorem
+
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
+</a>
+
 
 **Theorem 14.5 (Chinese Remainder Theorem).** If $m_1, m_2, \ldots, m_k$ are pairwise coprime, the system $x \equiv a_i \pmod{m_i}$ has a unique solution modulo $M = m_1 m_2 \cdots m_k$.
 

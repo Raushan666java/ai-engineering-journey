@@ -42,11 +42,33 @@ When you open a file, the OS gives you a **file descriptor** (an integer handle)
 
 ### Prototype
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
+
 ```c
 FILE *fopen(const char *restrict filename, const char *restrict mode);
 ```
 
 ### What is FILE*?
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" alt="Handwritten: What is FILE*?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" alt="Diagram: What is FILE*?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" alt="Sticky Note: What is FILE*?" width="30%">
+</a>
+
 
 `FILE` is an opaque structure defined in `<stdio.h>`. You never need to look inside it; you just use pointers to it. Every file operation takes a `FILE*` as its first or second argument.
 
@@ -59,9 +81,31 @@ FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 The `FILE*` pointer is like your **library card + bookmark**. You hand it to the librarian (`fopen`) and get back a card that remembers which book, what page you are on, and whether you have had any trouble reading it.
 
 ### Steps to Use a File
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" alt="Handwritten: Steps to Use a File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" alt="Diagram: Steps to Use a File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" alt="Sticky Note: Steps to Use a File" width="30%">
+</a>
+
 
 1. **Declare** a `FILE*` pointer: `FILE *fp;`
 2. **Open** the file with `fopen`: `fp = fopen("data.txt", "r");`
@@ -70,6 +114,17 @@ The `FILE*` pointer is like your **library card + bookmark**. You hand it to the
 5. **Close** with `fclose(fp)` → this flushes buffers and frees the handle
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 DECLARE fp AS FILE POINTER
@@ -85,6 +140,17 @@ RETURN success
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -104,6 +170,17 @@ int main(void)
 
 ### Dry Run Trace
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+</a>
+
+
 Assume `example.txt` exists:
 
 | Step | Code | fp Value | File State |
@@ -115,6 +192,17 @@ Assume `example.txt` exists:
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | `fopen` | O(1) *amortized* | System call overhead dominates; path resolution is O(path length) but treated as O(1) for typical use |
@@ -123,6 +211,17 @@ Assume `example.txt` exists:
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Opaque pointer hides OS details; same interface across platforms; supports buffering |
@@ -130,6 +229,17 @@ Assume `example.txt` exists:
 | Best Use | All file I/O in C; the only way to access files via standard library |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -145,11 +255,33 @@ Assume `example.txt` exists:
 
 ### Prototype
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
+
 ```c
 FILE *fopen(const char *restrict filename, const char *restrict mode);
 ```
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 Opening a file with different modes is like checking out a library book under different **access rules**:
 - **r** = "I only want to read this book"
@@ -161,6 +293,17 @@ Opening a file with different modes is like checking out a library book under di
 - **b** suffix = "Treat it as a photo album (don't translate newlines)"
 
 ### fopen Modes → Complete Reference Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" alt="Handwritten: fopen Modes → Complete Reference Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" alt="Diagram: fopen Modes → Complete Reference Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" alt="Sticky Note: fopen Modes → Complete Reference Table" width="30%">
+</a>
+
 
 | Mode | Read | Write | Append | Create? | Truncate? | Position Start | Notes |
 |------|------|-------|--------|---------|-----------|----------------|-------|
@@ -179,6 +322,17 @@ Opening a file with different modes is like checking out a library book under di
 
 ### Critical Detail: Text vs Binary on Windows
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Critical Detail: Text vs Binary on Windows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Critical Detail: Text vs Binary on Windows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Critical Detail: Text vs Binary on Windows" width="30%">
+</a>
+
+
 On Windows, text mode (`"r"`, `"w"`, `"a"`, etc.) translates:
 - `\n` (LF) → `\r\n` (CRLF) on **write**
 - `\r\n` → `\n` on **read**
@@ -190,6 +344,17 @@ On Linux/macOS, text and binary modes are identical → no translation occurs.
 
 ### Steps to Open a File
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" alt="Handwritten: Steps to Open a File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" alt="Diagram: Steps to Open a File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" alt="Sticky Note: Steps to Open a File" width="30%">
+</a>
+
+
 1. Choose the filename and mode string
 2. Call `fopen(filename, mode)`
 3. **Immediately** check if return is NULL
@@ -197,6 +362,17 @@ On Linux/macOS, text and binary modes are identical → no translation occurs.
 5. Close with `fclose`
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION openFile(name, mode)
@@ -210,6 +386,17 @@ END FUNCTION
 ```
 
 ### Code Example → All Modes Demonstrated
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" alt="Handwritten: Code Example → All Modes Demonstrated" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" alt="Diagram: Code Example → All Modes Demonstrated" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" alt="Sticky Note: Code Example → All Modes Demonstrated" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -257,6 +444,17 @@ int main(void)
 
 ### Dry Run Trace → fopen("data.txt", "r+")
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" alt="Handwritten: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" alt="Diagram: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" alt="Sticky Note: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+</a>
+
+
 | Step | Code | File on Disk | fp | Position |
 |------|------|-------------|----|----------|
 | 1 | `fopen("data.txt", "r+")` | data.txt exists, 100 bytes | FILE* handle | 0 |
@@ -266,6 +464,17 @@ int main(void)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time | O(path_length) in kernel | Directory traversal + permission check + inode lookup |
@@ -274,6 +483,17 @@ int main(void)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Rich mode support; text/binary distinction; cross-platform API |
@@ -281,6 +501,17 @@ int main(void)
 | Best Use | All file opening needs; prefer binary mode for non-text data |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -297,6 +528,17 @@ int main(void)
 
 ### Prototype
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
+
 ```c
 int fclose(FILE *fp);
 ```
@@ -305,9 +547,31 @@ Returns 0 on success, `EOF` on error.
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Closing a file is like **returning a library book**. If you don't return it, the library runs out of books (resource leak). The librarian also makes sure all your notes (buffered data) are properly saved before you leave.
 
 ### What Happens Inside fclose
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" alt="Handwritten: What Happens Inside fclose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" alt="Diagram: What Happens Inside fclose" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" alt="Sticky Note: What Happens Inside fclose" width="30%">
+</a>
+
 
 1. **Flushes** any unwritten buffered data to disk
 2. **Discards** any unread buffered data
@@ -317,11 +581,33 @@ Closing a file is like **returning a library book**. If you don't return it, the
 
 ### Steps
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
+
 1. Ensure all pending writes are done (fclose does this automatically)
 2. Call `fclose(fp)`
 3. **Do NOT** use `fp` after fclose → it is a dangling pointer
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION closeFile(fp)
@@ -337,6 +623,17 @@ END FUNCTION
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -361,6 +658,17 @@ int main(void)
 
 ### Dry Run Trace
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+</a>
+
+
 | Step | Code | fp | Disk file | Buffers |
 |------|------|----|-----------|---------|
 | 1 | `fopen` | valid | test.txt created | 0 bytes |
@@ -368,6 +676,17 @@ int main(void)
 | 3 | `fclose(fp)` | invalidated | "Hello" written | flushed, freed |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -377,6 +696,17 @@ int main(void)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Ensures data integrity; frees resources; portable |
@@ -384,6 +714,17 @@ int main(void)
 | Best Use | Always close files; always check return value |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -399,7 +740,29 @@ int main(void)
 
 ### 12.4.1 Character Reading → fgetc
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" alt="Handwritten: 12.4.1 Character Reading → fgetc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" alt="Diagram: 12.4.1 Character Reading → fgetc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" alt="Sticky Note: 12.4.1 Character Reading → fgetc" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 int fgetc(FILE *fp);
@@ -409,13 +772,46 @@ Returns the next character as `unsigned char` cast to `int`, or `EOF` on error/e
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Reading a file character by character is like **reading a scroll one letter at a time**, rolling it forward as you go. You can only see one character at your current position, and after reading it, the scroll advances.
 
 ### Why Return int?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" alt="Handwritten: Why Return int?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" alt="Diagram: Why Return int?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" alt="Sticky Note: Why Return int?" width="30%">
+</a>
+
+
 `fgetc` returns `int` (not `char` or `unsigned char`) so it can represent all 256 possible byte values (0â€“255) PLUS the special value `EOF` (typically -1). If it returned `char`, you could never distinguish EOF from the byte 0xFF.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Call `int c = fgetc(fp);`
 2. Check if `c == EOF` → if so, use `feof(fp)` or `ferror(fp)` to determine why
@@ -423,6 +819,17 @@ Reading a file character by character is like **reading a scroll one letter at a
 4. Repeat until EOF
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 SET fp = fopen("file.txt", "r")
@@ -440,6 +847,17 @@ fclose(fp)
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -477,6 +895,17 @@ byte 25: 'Z' (0x5A)
 
 ### Dry Run Trace → fgetc Loop on "ABC"
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" alt="Handwritten: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" alt="Diagram: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" alt="Sticky Note: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+</a>
+
+
 Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 | Iteration | `c = fgetc(fp)` | Returns | Position After | Loop Continues? |
@@ -489,12 +918,34 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time per call | O(1) *amortized* | Usually just reads from buffer; actual disk read only when buffer empty |
 | Memory | sizeof(FILE) + BUFSIZ | Buffer allocated per open file |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Aspect | Analysis |
 |--------|----------|
@@ -503,6 +954,17 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 | Best Use | Text parsing where you need per-character logic; copying files |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -516,7 +978,29 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### 12.4.2 Line Reading → fgets
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" alt="Handwritten: 12.4.2 Line Reading → fgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" alt="Diagram: 12.4.2 Line Reading → fgets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" alt="Sticky Note: 12.4.2 Line Reading → fgets" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 char *fgets(char *restrict s, int size, FILE *restrict fp);
@@ -526,9 +1010,31 @@ Returns `s` on success, `NULL` on EOF or error.
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Reading a line with `fgets` is like **tearing off a receipt** from a machine: you get everything up to the newline (the tear point), but no more than the paper width (buffer size). If the receipt is too long, you only get the first `size-1` characters → the rest stays in the machine for the next read.
 
 ### Key Behaviors
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" alt="Handwritten: Key Behaviors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" alt="Diagram: Key Behaviors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" alt="Sticky Note: Key Behaviors" width="30%">
+</a>
+
 
 - Reads up to `size - 1` characters
 - Stops at newline (which is **included** in the buffer)
@@ -537,6 +1043,17 @@ Reading a line with `fgets` is like **tearing off a receipt** from a machine: yo
 
 ### Steps
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
+
 1. Declare a char buffer: `char line[256];`
 2. Call `fgets(line, sizeof(line), fp);`
 3. Check if return is NULL (EOF/error)
@@ -544,6 +1061,17 @@ Reading a line with `fgets` is like **tearing off a receipt** from a machine: yo
 5. Optionally strip trailing newline: `line[strcspn(line, "\n")] = '\0';`
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 DECLARE buffer[BUFFER_SIZE]
@@ -554,6 +1082,17 @@ END WHILE
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -596,6 +1135,17 @@ Line 3 (21 chars): "Line 3: C Programming"
 
 ### Dry Run Trace → fgets with buffer size 8
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" alt="Handwritten: Dry Run Trace → fgets with buffer size 8" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" alt="Diagram: Dry Run Trace → fgets with buffer size 8" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" alt="Sticky Note: Dry Run Trace → fgets with buffer size 8" width="30%">
+</a>
+
+
 File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 | Call | Buffer After | Returns | Position After | Notes |
@@ -608,6 +1158,17 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time per call | O(k) where k = bytes read | Must scan for newline, copy to buffer |
@@ -616,6 +1177,17 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Safe (bounds-checked); includes newline; null-terminated; prevents overflow |
@@ -623,6 +1195,17 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 | Best Use | Reading text files line by line; configuration files; log parsing |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -636,7 +1219,29 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### 12.4.3 Formatted Reading → fscanf
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" alt="Handwritten: 12.4.3 Formatted Reading → fscanf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" alt="Diagram: 12.4.3 Formatted Reading → fscanf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" alt="Sticky Note: 12.4.3 Formatted Reading → fscanf" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 int fscanf(FILE *restrict fp, const char *restrict format, ...);
@@ -646,15 +1251,48 @@ Returns number of input items successfully matched and assigned, or EOF on input
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 `fscanf` is like a **customs declaration form**: you tell the officer (format string) what types of data you expect ("a number, then a word, then a float"), and the officer extracts those items from the stream. If the data doesn't match the expected format, you get fewer items than expected.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Call `fscanf(fp, format, &var1, &var2, ...)`
 2. Check the return value → compare against expected number of items
 3. If return &lt; expected, check `feof` or `ferror`
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 WHILE (items = fscanf(fp, "%d %s %f", &id, name, &gpa)) == 3 DO
@@ -668,6 +1306,17 @@ END IF
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -714,6 +1363,17 @@ Total: 3 records read successfully
 
 ### Dry Run Trace → fscanf Malformed Input
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" alt="Handwritten: Dry Run Trace → fscanf Malformed Input" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" alt="Diagram: Dry Run Trace → fscanf Malformed Input" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" alt="Sticky Note: Dry Run Trace → fscanf Malformed Input" width="30%">
+</a>
+
+
 File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 | Iteration | Format | Reads | Return | Position After |
@@ -726,6 +1386,17 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time per call | O(input_length) | Format parsing + character classification + conversion |
@@ -734,6 +1405,17 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Powerful parsing; type-safe (sort of); automatic whitespace skipping (for most specifiers) |
@@ -741,6 +1423,17 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 | Best Use | Known-format text files; simple CSV/whitespace data; **not** for untrusted input |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -754,7 +1447,29 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### 12.4.4 Binary Reading → fread
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" alt="Handwritten: 12.4.4 Binary Reading → fread" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" alt="Diagram: 12.4.4 Binary Reading → fread" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" alt="Sticky Note: 12.4.4 Binary Reading → fread" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 size_t fread(void *restrict ptr, size_t element_size, size_t count, FILE *restrict fp);
@@ -764,9 +1479,31 @@ Returns the number of complete elements successfully read (may be less than `cou
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Reading binary data is like **photocopying pages** from a book: you specify the number of pages (`count`) and the page size (`element_size`), and `fread` copies the exact raw bytes into your memory. No translation, no formatting → just raw bits.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Allocate a buffer large enough: `buffer_size = element_size * count`
 2. Call `fread(buffer, element_size, count, fp)`
@@ -774,6 +1511,17 @@ Reading binary data is like **photocopying pages** from a book: you specify the 
 4. Process raw data in buffer
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 DECLARE buffer[ELEMENT_SIZE * MAX_COUNT]
@@ -788,6 +1536,17 @@ END IF
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -840,6 +1599,17 @@ Read 4 employees
 
 ### Dry Run Trace → fread with sizeof(Employee) = 40
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" alt="Handwritten: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" alt="Diagram: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" alt="Sticky Note: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+</a>
+
+
 File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 | Iteration | ptr | element_size | count | Returns | Position After |
@@ -852,6 +1622,17 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time (buffered) | O(total_bytes) | Memcpy from internal buffer to user buffer |
@@ -860,6 +1641,17 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Raw binary access; fast bulk read; no formatting overhead; ideal for struct persistence |
@@ -867,6 +1659,17 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 | Best Use | Database files, image data, serialized objects, performance-critical I/O |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -880,6 +1683,17 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Read Functions Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" alt="Handwritten: Read Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" alt="Diagram: Read Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" alt="Sticky Note: Read Functions Comparison Table" width="30%">
+</a>
+
+
 | Function | Input | Stops At | Returns | Includes Delimiter? | Buffer Safe? | Best For |
 |----------|-------|----------|---------|-------------------|-------------|----------|
 | `fgetc` | Character | Every call | `int` (byte or EOF) | N/A | N/A | Char-by-char parsing |
@@ -888,6 +1702,17 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 | `fread` | Binary blocks | End of file or count | Items read | N/A | Yes (sizeÃ—count) | Binary data, structs |
 
 ### Read Functions → Complexity Comparison
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Read Functions → Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" alt="Diagram: Read Functions → Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Read Functions → Complexity Comparison" width="30%">
+</a>
+
 
 | Function | Time Complexity | Space Complexity | Why |
 |----------|----------------|-----------------|-----|
@@ -900,7 +1725,29 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### 12.5.1 Character Writing → fputc
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" alt="Handwritten: 12.5.1 Character Writing → fputc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" alt="Diagram: 12.5.1 Character Writing → fputc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" alt="Sticky Note: 12.5.1 Character Writing → fputc" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 int fputc(int c, FILE *fp);
@@ -910,15 +1757,48 @@ Writes the character `c` (converted to `unsigned char`) to the file. Returns the
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Writing a character with `fputc` is like **stamping one letter at a time** onto a page. Each stamp advances the position by one letter. If the stamp pad is dry (buffer full), the stamp mechanism must re-ink (flush to disk) before continuing.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Get your character (from a variable, literal, or `fgetc`)
 2. Call `fputc(ch, fp);`
 3. Check if return is `EOF` (write failed)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 WHILE more characters to write DO
@@ -931,6 +1811,17 @@ END WHILE
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -974,6 +1865,17 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 ### Dry Run Trace → fputc Writing "Hi\n"
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" alt="Handwritten: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" alt="Diagram: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" alt="Sticky Note: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+</a>
+
+
 File initially empty. Buffer size = 512 (typical default). All writes are buffered initially.
 
 | Call | Character | Return | Buffer State | Disk State |
@@ -985,12 +1887,34 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time per call | O(1) *amortized* | Usually just writes to buffer; flush only when buffer full |
 | System calls | 0 per write (typically) | Data batched; syscall per buffer-full | 
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Aspect | Analysis |
 |--------|----------|
@@ -999,6 +1923,17 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 | Best Use | Text generation char-by-char; implementing custom text transforms |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1012,7 +1947,29 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### 12.5.2 String Writing → fputs
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" alt="Handwritten: 12.5.2 String Writing → fputs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" alt="Diagram: 12.5.2 String Writing → fputs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" alt="Sticky Note: 12.5.2 String Writing → fputs" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 int fputs(const char *restrict s, FILE *restrict fp);
@@ -1022,15 +1979,48 @@ Writes the string `s` to the file. Does **not** append a newline. Returns non-ne
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Writing with `fputs` is like **pasting a pre-written paragraph** into a document. The paragraph goes exactly as-is → no extra line break, no formatting. You get exactly what you put in.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Prepare a null-terminated string
 2. Call `fputs(str, fp)`
 3. Add `\n` explicitly if you want a newline
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION writeLines(fp, linesArray, count)
@@ -1044,6 +2034,17 @@ END FUNCTION
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1092,12 +2093,34 @@ Eggs
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time | O(strlen(s)) | Must copy entire string to buffer |
 | Memory | O(strlen(s)) (string) + buffer | String stored in caller's memory |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Aspect | Analysis |
 |--------|----------|
@@ -1106,6 +2129,17 @@ Eggs
 | Best Use | Writing pre-formatted or static strings; log messages |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1118,7 +2152,29 @@ Eggs
 
 ### 12.5.3 Formatted Writing → fprintf
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" alt="Handwritten: 12.5.3 Formatted Writing → fprintf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" alt="Diagram: 12.5.3 Formatted Writing → fprintf" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" alt="Sticky Note: 12.5.3 Formatted Writing → fprintf" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 int fprintf(FILE *restrict fp, const char *restrict format, ...);
@@ -1128,9 +2184,31 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 `fprintf` is like a **mail-merge printer**: you design a template (`"Employee: %s (ID: %d)"`) and feed it data values. The printer fills in the blanks and produces the formatted output. It handles all the alignment, padding, and type conversion for you.
 
 ### Format Specifier Quick Ref
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" alt="Handwritten: Format Specifier Quick Ref" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" alt="Diagram: Format Specifier Quick Ref" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" alt="Sticky Note: Format Specifier Quick Ref" width="30%">
+</a>
+
 
 | Specifier | Type | Example | Output |
 |-----------|------|---------|--------|
@@ -1143,12 +2221,34 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Steps
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
+
 1. Write a format string with conversion specifiers
 2. Provide matching arguments
 3. Call `fprintf(fp, format, arg1, arg2, ...)`
 4. Check return (optional, but wise)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION writeReport(fp, employees[], n)
@@ -1161,6 +2261,17 @@ END FUNCTION
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1225,6 +2336,17 @@ ID     Name          Score  Grade
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time | O(format_length + total_output) | Format parsing + number-to-string conversion + buffering |
@@ -1234,6 +2356,17 @@ ID     Name          Score  Grade
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Rich formatting; type-safe conversions; alignment/padding; locale-aware |
@@ -1241,6 +2374,17 @@ ID     Name          Score  Grade
 | Best Use | Text reports, log files, CSV generation, any structured text output |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1253,7 +2397,29 @@ ID     Name          Score  Grade
 
 ### 12.5.4 Binary Writing → fwrite
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" alt="Handwritten: 12.5.4 Binary Writing → fwrite" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" alt="Diagram: 12.5.4 Binary Writing → fwrite" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" alt="Sticky Note: 12.5.4 Binary Writing → fwrite" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 size_t fwrite(const void *restrict ptr, size_t element_size, size_t count, FILE *restrict fp);
@@ -1263,9 +2429,31 @@ Writes `count` elements, each `element_size` bytes, from `ptr` to the file. Retu
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Writing with `fwrite` is like **pouring a mold** of your data structure directly onto the page. Every byte of the struct → including padding holes → is cast exactly as it exists in memory. What you see in memory is what you get on disk.
 
 ### Important: Endianness and Portability
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" alt="Handwritten: Important: Endianness and Portability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" alt="Diagram: Important: Endianness and Portability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" alt="Sticky Note: Important: Endianness and Portability" width="30%">
+</a>
+
 
 Binary files written with `fwrite` are **not portable** across platforms with different:
 - **Endianness** (x86 is little-endian; network data is big-endian)
@@ -1279,11 +2467,33 @@ For portable binary data, use:
 
 ### Steps
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
+
 1. Prepare data in memory
 2. Call `fwrite(ptr, element_size, count, fp)`
 3. Check return value == count
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION saveArray(fp, array, elementSize, count)
@@ -1296,6 +2506,17 @@ END FUNCTION
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1362,6 +2583,17 @@ data[3] = 4.0
 
 ### Dry Run Trace → fwrite Array of 3 Integers
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" alt="Handwritten: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" alt="Diagram: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" alt="Sticky Note: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+</a>
+
+
 Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 | Call | ptr | element_size | count | Returns | File Bytes Written | Position After |
@@ -1369,6 +2601,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | fwrite(arr, 4, 3, fp) | arr | 4 | 3 | 3 | 2A 00 00 00 9C FF FF FF 10 00 00 00 | 12 |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Aspect | Cost | Why |
 |--------|------|-----|
@@ -1378,6 +2621,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Fastest output method; direct memory dump; perfect for struct persistence |
@@ -1385,6 +2639,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | Best Use | Performance-critical output; intermediate data files; snapshots/cache files |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1398,6 +2663,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Write Functions Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" alt="Handwritten: Write Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" alt="Diagram: Write Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" alt="Sticky Note: Write Functions Comparison Table" width="30%">
+</a>
+
+
 | Function | Output | Adds Newline? | Type Safe? | Formatting? | Best For |
 |----------|--------|---------------|-----------|-------------|----------|
 | `fputc` | Single char | No | Yes (int) | None | Byte-by-byte output |
@@ -1406,6 +2682,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | `fwrite` | Raw bytes | N/A | No (void*) | None | Binary data, structs |
 
 ### Write Functions → Complexity Comparison
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Write Functions → Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" alt="Diagram: Write Functions → Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Write Functions → Complexity Comparison" width="30%">
+</a>
+
 
 | Function | Time Complexity | Space Complexity | Syscalls (typical) |
 |----------|----------------|-----------------|-------------------|
@@ -1420,6 +2707,17 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Prototype
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
+
 ```c
 int feof(FILE *fp);
 ```
@@ -1428,9 +2726,31 @@ Returns non-zero if the end-of-file indicator for the stream is set, 0 otherwise
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 `feof` is like a **"LAST PAGE" stamp** in a library book. The stamp is applied only **after** you have tried to read past the last page, not when you land on it. In other words, `feof` tells you that a previous read operation has already failed because it hit EOF.
 
 ### Critical: feof is NOT a Lookahead
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" alt="Handwritten: Critical: feof is NOT a Lookahead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" alt="Diagram: Critical: feof is NOT a Lookahead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" alt="Sticky Note: Critical: feof is NOT a Lookahead" width="30%">
+</a>
+
 
 ```c
 /* WRONG → don't do this */
@@ -1450,6 +2770,17 @@ while (!feof(fp)) {           /* <--- BUG */
 
 ### Correct Pattern: Check Return Value
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" alt="Handwritten: Correct Pattern: Check Return Value" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" alt="Diagram: Correct Pattern: Check Return Value" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" alt="Sticky Note: Correct Pattern: Check Return Value" width="30%">
+</a>
+
+
 ```c
 /* CORRECT */
 FILE *fp = fopen("file.txt", "r");
@@ -1467,11 +2798,33 @@ if (feof(fp)) {
 
 ### Steps
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
+
 1. Never use `feof` as a loop condition
 2. Check the return value of the read function instead
 3. After the loop, use `feof` to determine **why** the read stopped
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 // Correct EOF checking
@@ -1488,6 +2841,17 @@ END IF
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1530,6 +2894,17 @@ EOF reached after 5 numbers
 
 ### Dry Run Trace → Correct feof Usage
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" alt="Handwritten: Dry Run Trace → Correct feof Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" alt="Diagram: Dry Run Trace → Correct feof Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" alt="Sticky Note: Dry Run Trace → Correct feof Usage" width="30%">
+</a>
+
+
 File: `"10\n20\n30\n"` (9 bytes)
 
 | Loop Step | fscanf Return | num | feof(fp) | ferror(fp) | Action |
@@ -1542,12 +2917,34 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time | O(1) | Simple flag check |
 | Memory | O(1) | Single bit in FILE struct |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Aspect | Analysis |
 |--------|----------|
@@ -1556,6 +2953,17 @@ File: `"10\n20\n30\n"` (9 bytes)
 | Best Use | Post-loop diagnosis of why reading stopped |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1570,6 +2978,17 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### Prototypes
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+</a>
+
+
 ```c
 int ferror(FILE *fp);       /* non-zero if error indicator is set */
 void clearerr(FILE *fp);    /* clears both EOF and error indicators */
@@ -1578,11 +2997,33 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **ferror** is like a **"DAMAGED" sticker** on a library book → once a page is torn, the sticker stays until a librarian (clearerr) removes it.
 
 **perror** is like the librarian **explaining** exactly what went wrong: "The book has a torn page" (errno message).
 
 ### Error Handling Flow
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" alt="Handwritten: Error Handling Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" alt="Diagram: Error Handling Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" alt="Sticky Note: Error Handling Flow" width="30%">
+</a>
+
 
 ```
                      ┌─────────┐
@@ -1615,6 +3056,17 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 ```
 
 ### Code Example → Comprehensive Error Handling
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" alt="Handwritten: Code Example → Comprehensive Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" alt="Diagram: Code Example → Comprehensive Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" alt="Sticky Note: Code Example → Comprehensive Error Handling" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1655,6 +3107,17 @@ int main(void)
 
 ### Dry Run Trace → File Opens But Read Fails (e.g., USB removed)
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" alt="Handwritten: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" alt="Diagram: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" alt="Sticky Note: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+</a>
+
+
 | Step | Operation | Return | ferror() | errno | Action |
 |------|-----------|--------|----------|-------|--------|
 | 1 | fopen("config.txt", "r") | FILE* | 0 | 0 | OK |
@@ -1666,6 +3129,17 @@ int main(void)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Function | Time | Why |
 |----------|------|-----|
 | ferror | O(1) | Simple flag check |
@@ -1675,6 +3149,17 @@ int main(void)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Clear error diagnosis; errno gives specific system error; perror is convenient |
@@ -1682,6 +3167,17 @@ int main(void)
 | Best Use | Check ferror after every I/O operation; use perror immediately after failure |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1697,7 +3193,29 @@ int main(void)
 
 ### 12.8.1 fseek and ftell
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" alt="Handwritten: 12.8.1 fseek and ftell" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" alt="Diagram: 12.8.1 fseek and ftell" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" alt="Sticky Note: 12.8.1 fseek and ftell" width="30%">
+</a>
+
+
 ### Prototypes
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+</a>
+
 
 ```c
 int fseek(FILE *fp, long offset, int whence);
@@ -1709,6 +3227,17 @@ long ftell(FILE *fp);
 
 ### whence Constants
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" alt="Handwritten: whence Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" alt="Diagram: whence Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" alt="Sticky Note: whence Constants" width="30%">
+</a>
+
+
 | Constant | Value | Meaning |
 |----------|-------|---------|
 | `SEEK_SET` | 0 | From the beginning of the file |
@@ -1716,6 +3245,17 @@ long ftell(FILE *fp);
 | `SEEK_END` | 2 | From the end of the file |
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 `fseek` is like **flipping to a specific page** in a book:
 - `SEEK_SET` = "Go to page 50" (from the start)
@@ -1725,6 +3265,17 @@ long ftell(FILE *fp);
 `ftell` is looking at the **page number** to see where you are.
 
 ### Common Idiom: Get File Size
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" alt="Handwritten: Common Idiom: Get File Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" alt="Diagram: Common Idiom: Get File Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" alt="Sticky Note: Common Idiom: Get File Size" width="30%">
+</a>
+
 
 ```c
 fseek(fp, 0L, SEEK_END);
@@ -1736,12 +3287,34 @@ This is the standard portable way to determine a file's size in C.
 
 ### Steps for Random Access
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" alt="Handwritten: Steps for Random Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" alt="Diagram: Steps for Random Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" alt="Sticky Note: Steps for Random Access" width="30%">
+</a>
+
+
 1. Call `fseek(fp, offset, whence)` to move to desired position
 2. Check return value (0 = success, -1 = error)
 3. Read or write at the new position
 4. Use `ftell(fp)` to confirm position if needed
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION readRecord(fp, recordNumber, recordSize)
@@ -1756,6 +3329,17 @@ END FUNCTION
 ```
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1820,6 +3404,17 @@ Current position: 200 (end of file = 200)
 
 ### Dry Run Trace → fseek/ftell on 200-byte File
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" alt="Handwritten: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" alt="Diagram: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" alt="Sticky Note: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+</a>
+
+
 | Call | whence | offset | Position Before | Position After | ftell Returns |
 |------|--------|--------|-----------------|----------------|---------------|
 | fseek(fp, 0, SEEK_SET) | SEEK_SET | 0 | 200 | 0 | 0 |
@@ -1830,6 +3425,17 @@ Current position: 200 (end of file = 200)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Why |
 |-----------|------|-----|
 | fseek (buffered stream) | O(1) typical | Just adjusts the buffer position indicator; may flush if switching read→write |
@@ -1839,6 +3445,17 @@ Current position: 200 (end of file = 200)
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Enables random access; file size idiom; both absolute and relative positioning |
@@ -1846,6 +3463,17 @@ Current position: 200 (end of file = 200)
 | Best Use | Binary record access; file size determination; jumping to specific data regions |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -1857,7 +3485,29 @@ Current position: 200 (end of file = 200)
 
 ### 12.8.2 rewind
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" alt="Handwritten: 12.8.2 rewind" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" alt="Diagram: 12.8.2 rewind" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" alt="Sticky Note: 12.8.2 rewind" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 void rewind(FILE *fp);
@@ -1867,6 +3517,17 @@ Equivalent to `fseek(fp, 0L, SEEK_SET)` but also clears the error and EOF indica
 
 ### Key Difference from fseek(fp, 0, SEEK_SET)
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" alt="Handwritten: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" alt="Diagram: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" alt="Sticky Note: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+</a>
+
+
 | Feature | `rewind(fp)` | `fseek(fp, 0, SEEK_SET)` |
 |---------|-------------|--------------------------|
 | Position | Sets to 0 | Sets to 0 |
@@ -1875,6 +3536,17 @@ Equivalent to `fseek(fp, 0L, SEEK_SET)` but also clears the error and EOF indica
 | Return value | None (void) | Returns 0 on success, -1 on error |
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1909,7 +3581,29 @@ After rewind: Line 1
 
 ### 12.8.3 fgetpos and fsetpos (Large File Support)
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" alt="Handwritten: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" alt="Diagram: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" alt="Sticky Note: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+</a>
+
+
 ### Prototypes
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+</a>
+
 
 ```c
 int fgetpos(FILE *restrict fp, fpos_t *restrict pos);
@@ -1920,6 +3614,17 @@ int fsetpos(FILE *fp, const fpos_t *pos);
 
 ### Why Use fgetpos/fsetpos Instead of ftell/fseek?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" alt="Handwritten: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" alt="Diagram: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" alt="Sticky Note: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+</a>
+
+
 | Limitation of ftell/fseek | Solution with fgetpos/fsetpos |
 |--------------------------|-------------------------------|
 | `long` is 32-bit on many platforms → max 2GB file | `fpos_t` can be 64-bit or larger |
@@ -1927,6 +3632,17 @@ int fsetpos(FILE *fp, const fpos_t *pos);
 | Not all implementations support SEEK_END properly on binary streams | Works reliably on all standard-conforming implementations |
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1981,6 +3697,17 @@ Value: 0
 
 ### Complexity Analysis → All Positioning Functions
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" alt="Handwritten: Complexity Analysis → All Positioning Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" alt="Diagram: Complexity Analysis → All Positioning Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" alt="Sticky Note: Complexity Analysis → All Positioning Functions" width="30%">
+</a>
+
+
 | Function | Time | Space | Notes |
 |----------|------|-------|-------|
 | fseek | O(1) | O(1) | May flush buffer (O(buffer_size)) |
@@ -1990,6 +3717,17 @@ Value: 0
 | fsetpos | O(1) | → | Restores from fpos_t |
 
 ### Positioning Functions Comparison Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" alt="Handwritten: Positioning Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" alt="Diagram: Positioning Functions Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" alt="Sticky Note: Positioning Functions Comparison Table" width="30%">
+</a>
+
 
 | Function | Return | Sets Position? | Gets Position? | Clears Flags? | Large File? |
 |----------|--------|---------------|---------------|---------------|-------------|
@@ -2005,10 +3743,32 @@ Value: 0
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 - **Text file** = A handwritten letter. You can read it, it has lines and paragraphs, and it uses special characters (newlines) to separate sections. On Windows, the mailroom converts `\n` (your line break) to `\r\n` (the standard "end of line" for letters).
 - **Binary file** = A computer's raw memory dump. Every byte is pristine and untranslated. There are no "lines" → just a sequence of bytes that some program knows how to interpret.
 
 ### Key Differences
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
+</a>
+
 
 | Property | Text Mode | Binary Mode |
 |----------|-----------|-------------|
@@ -2022,6 +3782,17 @@ Value: 0
 
 ### Text vs Binary → Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" alt="Handwritten: Text vs Binary → Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" alt="Diagram: Text vs Binary → Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" alt="Sticky Note: Text vs Binary → Comparison Table" width="30%">
+</a>
+
+
 | Criterion | Text | Binary |
 |-----------|------|--------|
 | Extension convention | .txt, .csv, .json, .xml, .html | .bin, .dat, .exe, .jpg, .mp3 |
@@ -2034,6 +3805,17 @@ Value: 0
 | Performance | Slower (conversion, scanning) | Faster (bulk copy) |
 
 ### Code Example → Demonstrating Text vs Binary on Windows
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2090,10 +3872,32 @@ Text size:   10 bytes (no translation on Linux)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 - **Sequential access** = Reading a **scroll**. You unroll forward, read, unroll more. You cannot skip ahead easily. To re-read something, you must roll the entire scroll back to the start.
 - **Random access** = Reading a **book with an index**. You can flip directly to any chapter, read a specific page, then jump to another section.
 
 ### Sequential Access
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" alt="Handwritten: Sequential Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" alt="Diagram: Sequential Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" alt="Sticky Note: Sequential Access" width="30%">
+</a>
+
 
 **Characteristics:**
 - File is read/written from beginning to end
@@ -2116,6 +3920,17 @@ for (int i = 0; i < 100; i++)
 
 ### Random Access
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" alt="Handwritten: Random Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" alt="Diagram: Random Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" alt="Sticky Note: Random Access" width="30%">
+</a>
+
+
 **Characteristics:**
 - Can jump to any byte position instantly
 - Uses `fseek`/`ftell`/`rewind`
@@ -2136,6 +3951,17 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 
 ### Sequential vs Random Access → Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" alt="Handwritten: Sequential vs Random Access → Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" alt="Diagram: Sequential vs Random Access → Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" alt="Sticky Note: Sequential vs Random Access → Comparison Table" width="30%">
+</a>
+
+
 | Aspect | Sequential | Random |
 |--------|-----------|--------|
 | Access pattern | Linear from start | Arbitrary positions |
@@ -2149,6 +3975,17 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 
 ### Performance Comparison
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" alt="Handwritten: Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" alt="Diagram: Performance Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" alt="Sticky Note: Performance Comparison" width="30%">
+</a>
+
+
 | Operation | Sequential (10â¶ records) | Random (10â¶ records) |
 |-----------|------------------------|---------------------|
 | Read time | ~0.2s (SSD) | ~2-5s (SSD) |
@@ -2157,6 +3994,17 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 | Disk seek overhead | None (contiguous reads) | Significant (HDD especially) |
 
 ### Code Example → Sequential vs Random Performance Demo
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" alt="Handwritten: Code Example → Sequential vs Random Performance Demo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" alt="Diagram: Code Example → Sequential vs Random Performance Demo" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" alt="Sticky Note: Code Example → Sequential vs Random Performance Demo" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2223,7 +4071,29 @@ Random:     10000 queries in 0.0085s (0.9 micros/query)
 
 ### 12.11.1 tmpfile
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" alt="Handwritten: 12.11.1 tmpfile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" alt="Diagram: 12.11.1 tmpfile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" alt="Sticky Note: 12.11.1 tmpfile" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 FILE *tmpfile(void);
@@ -2233,9 +4103,31 @@ Creates a temporary file opened in `"wb+"` mode (binary read/write). The file is
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 `tmpfile` is like **scratch paper**: you jot down intermediate calculations, use them, then throw the paper away. The trash bin empties itself automatically when you leave the room.
 
 ### Steps
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+</a>
+
 
 1. Call `FILE *fp = tmpfile();`
 2. Check for NULL (allocation failure)
@@ -2243,6 +4135,17 @@ Creates a temporary file opened in `"wb+"` mode (binary read/write). The file is
 4. Either `fclose(fp)` or let program exit clean it up
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2282,7 +4185,29 @@ Primes from temp file: 2 3 5 7 11 13 17 19
 
 ### 12.11.2 tmpnam (Deprecated/Security Warning)
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" alt="Handwritten: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" alt="Diagram: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" alt="Sticky Note: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+</a>
+
+
 ### Prototype
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+</a>
+
 
 ```c
 char *tmpnam(char *s);
@@ -2291,6 +4216,17 @@ char *tmpnam(char *s);
 Generates a unique filename. **Warning:** There is a race condition between `tmpnam` returning the name and your program opening the file → another process could create a file with that name first (TOCTOU vulnerability).
 
 ### Safer Alternative: mkstemp (POSIX)
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" alt="Handwritten: Safer Alternative: mkstemp (POSIX)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" alt="Diagram: Safer Alternative: mkstemp (POSIX)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" alt="Sticky Note: Safer Alternative: mkstemp (POSIX)" width="30%">
+</a>
+
 
 ```c
 /* POSIX only → not in C standard */
@@ -2305,6 +4241,17 @@ remove(template);  /* manual cleanup needed */
 
 ### Temporary Files Comparison
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" alt="Handwritten: Temporary Files Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" alt="Diagram: Temporary Files Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" alt="Sticky Note: Temporary Files Comparison" width="30%">
+</a>
+
+
 | Function | Standard | Auto-delete | Named? | Security | Best For |
 |----------|----------|-------------|--------|----------|----------|
 | `tmpfile()` | C89+ | âœ“ | No (temp name) | Safe | Short-lived scratch data |
@@ -2313,6 +4260,17 @@ remove(template);  /* manual cleanup needed */
 | Manual naming | → | âœ— | Yes | Depends on precautions | When you need a named temp file |
 
 ### Complexity Analysis
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
 
 | Function | Time | Notes |
 |----------|------|-------|
@@ -2325,6 +4283,17 @@ remove(template);  /* manual cleanup needed */
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Buffering is like **using a tray** to carry multiple dishes at once instead of walking each dish individually from the kitchen to the table.
 
 - **Fully buffered**: Fill a large tray (buffer), serve a full tray at once. Best for file I/O.
@@ -2333,6 +4302,17 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 
 ### Stream Buffering Modes
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" alt="Handwritten: Stream Buffering Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" alt="Diagram: Stream Buffering Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" alt="Sticky Note: Stream Buffering Modes" width="30%">
+</a>
+
+
 | Mode | setvbuf Constant | Behavior | Typical Buffer Size | Used For |
 |------|-----------------|----------|-------------------|----------|
 | Fully buffered | `_IOFBF` | Read/write only when buffer is full | 4096 or 8192 bytes | Disk files |
@@ -2340,6 +4320,17 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 | Unbuffered | `_IONBF` | No buffering; immediate I/O | 0 | stderr |
 
 ### Default Buffering Behavior
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" alt="Handwritten: Default Buffering Behavior" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" alt="Diagram: Default Buffering Behavior" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" alt="Sticky Note: Default Buffering Behavior" width="30%">
+</a>
+
 
 | Stream | Default Mode | Reason |
 |--------|-------------|--------|
@@ -2350,6 +4341,17 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 
 ### Prototypes
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+</a>
+
+
 ```c
 int setvbuf(FILE *restrict fp, char *restrict buf, int mode, size_t size);
 void setbuf(FILE *restrict fp, char *restrict buf);
@@ -2359,12 +4361,34 @@ void setbuf(FILE *restrict fp, char *restrict buf);
 
 ### Steps for Custom Buffering
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" alt="Handwritten: Steps for Custom Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" alt="Diagram: Steps for Custom Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" alt="Sticky Note: Steps for Custom Buffering" width="30%">
+</a>
+
+
 1. Decide on buffer mode and size
 2. Optionally allocate a buffer (or let setvbuf allocate internally)
 3. Call `setvbuf(fp, buf, mode, size)` **after fopen but before any I/O**
 4. If you provided `buf`, it must remain valid until fclose
 
 ### Code Example
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2405,6 +4429,17 @@ int main(void)
 
 ### Dry Run Trace → Default Buffered Write (BUFSIZ=4096)
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" alt="Handwritten: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" alt="Diagram: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" alt="Sticky Note: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+</a>
+
+
 File: 100 bytes of output.
 
 | Write Call | Position in Buffer | Buffer State | Disk State |
@@ -2418,6 +4453,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Buffer Size Trade-off
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" alt="Handwritten: Buffer Size Trade-off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" alt="Diagram: Buffer Size Trade-off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" alt="Sticky Note: Buffer Size Trade-off" width="30%">
+</a>
+
+
 | Buffer Size | Memory Cost | Write Cost (1000 small writes) | Best For |
 |------------|-------------|-------------------------------|----------|
 | 0 (unbuffered) | 0 bytes | 1000 syscalls | Stderr, real-time logging |
@@ -2427,6 +4473,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Mode | Time per small write | Syscalls for 1000 writes | Why |
 |------|---------------------|------------------------|-----|
 | Unbuffered | O(syscall) | 1000 | Every write = system call |
@@ -2435,6 +4492,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Aspect | Analysis |
 |--------|----------|
 | Advantages | Dramatic performance improvement; configurable per-stream; custom buffer support |
@@ -2442,6 +4510,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 | Best Use | Default buffered for files; unbuffered for stderr; line buffered for interactive stdout |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Case | Behavior |
 |------|----------|
@@ -2452,6 +4531,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 | setbuf(fp, NULL) | Makes stream unbuffered |
 
 ### Stream Buffering → Mode Comparison Table
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" alt="Handwritten: Stream Buffering → Mode Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" alt="Diagram: Stream Buffering → Mode Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" alt="Sticky Note: Stream Buffering → Mode Comparison Table" width="30%">
+</a>
+
 
 | Property | `_IOFBF` (Full) | `_IOLBF` (Line) | `_IONBF` (None) |
 |----------|----------------|-----------------|-----------------|
@@ -2553,6 +4643,17 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Q1: What happens when you read past EOF?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" alt="Handwritten: What happens when you read past EOF?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" alt="Diagram: What happens when you read past EOF?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" alt="Sticky Note: What happens when you read past EOF?" width="30%">
+</a>
+
+
 Once EOF is reached, every subsequent read function returns its failure indicator (EOF for `fgetc`/`fscanf`, NULL for `fgets`, 0 for `fread`). The EOF flag stays set until `clearerr` or `rewind`. The file position indicator does NOT advance past the end.
 
 ```c
@@ -2566,6 +4667,17 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 
 ### Q2: What is the difference between fgets and fscanf?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" alt="Handwritten: What is the difference between fgets and fscanf?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" alt="Diagram: What is the difference between fgets and fscanf?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" alt="Sticky Note: What is the difference between fgets and fscanf?" width="30%">
+</a>
+
+
 | Aspect | fgets | fscanf |
 |--------|-------|--------|
 | Reads | Raw characters until newline or size-1 | Formatted tokens according to format |
@@ -2575,6 +4687,17 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 | Overflow safe | Yes (size parameter) | No (unless width given for %s) |
 
 ### Q3: Why does fgetc return int instead of char?
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" alt="Handwritten: Why does fgetc return int instead of char?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" alt="Diagram: Why does fgetc return int instead of char?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" alt="Sticky Note: Why does fgetc return int instead of char?" width="30%">
+</a>
+
 
 To distinguish EOF (-1, typically) from the 256 possible byte values (0â€“255). If `fgetc` returned `unsigned char`, it could never signal EOF. If it returned `char`, byte 0xFF (255) would be indistinguishable from -1 (EOF) on platforms where char is signed.
 
@@ -2589,6 +4712,17 @@ while ((c = fgetc(fp)) != EOF) { /* works for all 256 byte values */ }
 ```
 
 ### Q4: What happens in binary mode vs text mode on Windows?
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" alt="Handwritten: What happens in binary mode vs text mode on Windows?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" alt="Diagram: What happens in binary mode vs text mode on Windows?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" alt="Sticky Note: What happens in binary mode vs text mode on Windows?" width="30%">
+</a>
+
 
 - **Text mode**: `\n` (LF, 0x0A) written → translated to `\r\n` (CRLF, 0x0D 0x0A). On read, `\r\n` → `\n`. Also, byte 0x1A (Ctrl+Z) is treated as EOF on read.
 - **Binary mode**: No translation. All bytes read/written verbatim.
@@ -2608,12 +4742,34 @@ fclose(fp);
 
 ### Q5: What are the limitations of fseek and ftell?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" alt="Handwritten: What are the limitations of fseek and ftell?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" alt="Diagram: What are the limitations of fseek and ftell?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" alt="Sticky Note: What are the limitations of fseek and ftell?" width="30%">
+</a>
+
+
 1. **32-bit long**: On 32-bit systems, `long` is 4 bytes → max file size of 2GB. Use `fgetpos`/`fsetpos` for larger files.
 2. **Text streams**: `ftell` returns values that may not correspond to byte offsets due to `\r\n` translation. Only valid for seeking with `fseek(fp, offset, SEEK_SET)` where `offset` came from a previous `ftell`.
 3. **Non-seekable streams**: Pipes, sockets, and stdin are not seekable → `fseek` returns -1.
 4. **Binary streams with trailing `\r\n` on Windows**: `ftell` may give positions that don't match byte offsets for `fseek`.
 
 ### Q6: Should I use feof in loop conditions?
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" alt="Handwritten: Should I use feof in loop conditions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" alt="Diagram: Should I use feof in loop conditions?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" alt="Sticky Note: Should I use feof in loop conditions?" width="30%">
+</a>
+
 
 **No.** Always check the return value of the read function instead.
 
@@ -2633,12 +4789,34 @@ while (fgets(buf, sizeof(buf), fp)) {
 
 ### Q7: What is the difference between r+ and w+?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" alt="Handwritten: What is the difference between r+ and w+?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" alt="Diagram: What is the difference between r+ and w+?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" alt="Sticky Note: What is the difference between r+ and w+?" width="30%">
+</a>
+
+
 | Mode | File exists? | File missing? | Position start | Content |
 |------|-------------|---------------|----------------|---------|
 | `"r+"` | Opens | Returns NULL | Beginning | Preserves existing content |
 | `"w+"` | Opens (truncates) | Creates | Beginning | Destroys existing content |
 
 ### Q8: How do you handle binary data portably?
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" alt="Handwritten: How do you handle binary data portably?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" alt="Diagram: How do you handle binary data portably?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" alt="Sticky Note: How do you handle binary data portably?" width="30%">
+</a>
+
 
 1. Use fixed-width types (`int32_t`, `uint64_t` from `<stdint.h>`)
 2. Serialize byte-by-byte with explicit endian conversion
@@ -2659,6 +4837,17 @@ void write_int32(FILE *fp, int32_t val) {
 
 ### Q9: What is the safest way to read a string with fscanf?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" alt="Handwritten: What is the safest way to read a string with fscanf?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" alt="Diagram: What is the safest way to read a string with fscanf?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" alt="Sticky Note: What is the safest way to read a string with fscanf?" width="30%">
+</a>
+
+
 Always specify a maximum width to prevent buffer overflow:
 
 ```c
@@ -2671,6 +4860,17 @@ name[strcspn(name, "\n")] = '\0';  /* strip newline */
 
 ### Q10: What does fflush(stdin) do?
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" alt="Handwritten: What does fflush(stdin) do?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" alt="Diagram: What does fflush(stdin) do?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" alt="Sticky Note: What does fflush(stdin) do?" width="30%">
+</a>
+
+
 By the C standard, `fflush` is defined only for output streams. `fflush(stdin)` is **undefined behavior** per the C standard, though some implementations (Microsoft) define it as discarding unread input. For portable code, do NOT use `fflush(stdin)`.
 
 ---
@@ -2678,6 +4878,17 @@ By the C standard, `fflush` is defined only for output streams. `fflush(stdin)` 
 ## Applications in Real Systems
 
 ### 1. Web Server Logging
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" alt="Handwritten: 1. Web Server Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" alt="Diagram: 1. Web Server Logging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" alt="Sticky Note: 1. Web Server Logging" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2708,6 +4919,17 @@ void log_request(const char *client_ip, const char *method,
 ```
 
 ### 2. Configuration File Parser
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" alt="Handwritten: 2. Configuration File Parser" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" alt="Diagram: 2. Configuration File Parser" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" alt="Sticky Note: 2. Configuration File Parser" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2762,6 +4984,17 @@ int main(void)
 ```
 
 ### 3. Binary Database Engine (Simple Record Manager)
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" alt="Handwritten: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" alt="Diagram: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" alt="Sticky Note: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2894,6 +5127,17 @@ After deletion:
 
 ### 4. File Copy Utility
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" alt="Handwritten: 4. File Copy Utility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" alt="Diagram: 4. File Copy Utility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" alt="Sticky Note: 4. File Copy Utility" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -2937,6 +5181,17 @@ int main(int argc, char *argv[])
 ```
 
 ### 5. Checksum/Hashing a File Line-by-Line
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" alt="Handwritten: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" alt="Diagram: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" alt="Sticky Note: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2982,6 +5237,17 @@ int main(int argc, char *argv[])
 ## Chapter Quiz
 
 ### Multiple Choice
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" alt="Handwritten: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" alt="Diagram: Multiple Choice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" alt="Sticky Note: Multiple Choice" width="30%">
+</a>
+
 
 1. What does `fopen` return when it cannot open a file?
    A) EOF
@@ -3065,6 +5331,17 @@ int main(int argc, char *argv[])
 
 ### True or False
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" alt="Handwritten: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" alt="Diagram: True or False" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" alt="Sticky Note: True or False" width="30%">
+</a>
+
+
 11. `fscanf(fp, "%s", buf)` is always safe to use.
     <details><summary>Answer&lt;/summary&gt;**False.** Without a width specifier, `%s` can overflow the buffer. Always use `"%Ns"` where N is one less than the buffer size.</details>
 
@@ -3086,12 +5363,34 @@ int main(int argc, char *argv[])
 
 ### Core Concepts
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" alt="Handwritten: Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" alt="Diagram: Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" alt="Sticky Note: Core Concepts" width="30%">
+</a>
+
+
 - **FILE\*** is the opaque handle for all file operations in C. It holds the file position, buffer, and error/EOF flags.
 - **fopen** opens a file in a specified mode. Always check for NULL return.
 - **fclose** closes a file, flushing buffers. Always close files to avoid resource leaks.
 - **Access modes** control read/write/append permissions and text/binary behavior.
 
 ### Reading
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" alt="Handwritten: Reading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" alt="Diagram: Reading" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" alt="Sticky Note: Reading" width="30%">
+</a>
+
 
 | Function | Best For | Key Point |
 |----------|----------|-----------|
@@ -3102,6 +5401,17 @@ int main(int argc, char *argv[])
 
 ### Writing
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" alt="Handwritten: Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" alt="Diagram: Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" alt="Sticky Note: Writing" width="30%">
+</a>
+
+
 | Function | Best For | Key Point |
 |----------|----------|-----------|
 | `fputc` | Character output | Slow for bulk, simple |
@@ -3111,11 +5421,33 @@ int main(int argc, char *argv[])
 
 ### Positioning
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" alt="Handwritten: Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" alt="Diagram: Positioning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" alt="Sticky Note: Positioning" width="30%">
+</a>
+
+
 - **fseek/ftell**: Standard random access, limited to 2GB on 32-bit systems
 - **rewind**: Go to beginning + clear flags
 - **fgetpos/fsetpos**: Large file support with opaque fpos_t type
 
 ### Error Handling
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" alt="Handwritten: Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" alt="Diagram: Error Handling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" alt="Sticky Note: Error Handling" width="30%">
+</a>
+
 
 - **feof**: Check after failed read to see if EOF was the cause
 - **ferror**: Check after failed I/O to see if an error occurred
@@ -3124,11 +5456,33 @@ int main(int argc, char *argv[])
 
 ### Buffering
 
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" alt="Handwritten: Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" alt="Diagram: Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" alt="Sticky Note: Buffering" width="30%">
+</a>
+
+
 - **Fully buffered (_IOFBF)**: Default for disk files. Best performance.
 - **Line buffered (_IOLBF)**: Default for stdout (terminal). Flush on newline.
 - **Unbuffered (_IONBF)**: Default for stderr. Immediate output.
 
 ### Key Rules
+
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
+</a>
+
 
 1. Always check `fopen` return value for NULL
 2. Never use `feof` as a loop condition → check the read function's return value

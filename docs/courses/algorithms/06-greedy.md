@@ -61,6 +61,17 @@ flowchart LR
 
 ### 6.1 The Greedy Paradigm
 
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" alt="Handwritten: 6.1 The Greedy Paradigm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" alt="Diagram: 6.1 The Greedy Paradigm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" alt="Sticky Note: 6.1 The Greedy Paradigm" width="30%">
+</a>
+
+
 A greedy algorithm makes the locally optimal choice at each step, hoping that local optima lead to a global optimum. For many problems this approach fails, but for problems that exhibit **optimal substructure** and the **greedy-choice property**, it yields optimal solutions.
 
 **Greedy-choice property:** A globally optimal solution can be reached by making a locally optimal (greedy) choice.
@@ -76,6 +87,17 @@ A greedy algorithm makes the locally optimal choice at each step, hoping that lo
 ---
 
 ### 6.2 Activity Selection
+
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" alt="Handwritten: 6.2 Activity Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" alt="Diagram: 6.2 Activity Selection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" alt="Sticky Note: 6.2 Activity Selection" width="30%">
+</a>
+
 
 **Real-World Analogy:** A conference room can host only one meeting at a time. You have a list of meeting requests with start and end times. How do you schedule the maximum number of meetings? The greedy strategy: always pick the meeting that ends the earliest, because it leaves the most room for subsequent meetings.
 
@@ -238,6 +260,17 @@ public static List<Integer> activitySelection(List<Activity> acts) {
 ---
 
 ### 6.3 Huffman Coding
+
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" alt="Handwritten: 6.3 Huffman Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" alt="Diagram: 6.3 Huffman Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" alt="Sticky Note: 6.3 Huffman Coding" width="30%">
+</a>
+
 
 **Real-World Analogy:** Imagine you are writing a secret language where common letters like 'E' should be quick to write (short code) and rare letters like 'Z' can be longer. If you assign the shortest codes to the most frequent characters, your average message length shrinks. Huffman coding automates this intuition to produce provably optimal prefix codes.
 
@@ -438,6 +471,17 @@ static void encode(HuffmanNode n, String s, Map<Character, String> codes) {
 
 ### 6.4 Fractional Knapsack
 
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" alt="Handwritten: 6.4 Fractional Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" alt="Diagram: 6.4 Fractional Knapsack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" alt="Sticky Note: 6.4 Fractional Knapsack" width="30%">
+</a>
+
+
 **Real-World Analogy:** You are at a bulk candy store with a container that holds 5 lbs. You see gummy bears ($8/lb), chocolate truffles ($15/lb), and licorice ($5/lb). Since you can take any amount of each, the optimal strategy is clear: fill your container starting with the most expensive-per-pound candy, taking as much as you can. If truffles run out, move to gummy bears. This is the fractional knapsack strategy — always take the best value-per-unit first.
 
 **Problem:** Given items with weights and values, and a knapsack capacity \( W \), maximize the value of items placed in the knapsack. Items can be taken fractionally.
@@ -598,6 +642,17 @@ public static double fractionalKnapsack(Item[] items, double W) {
 ---
 
 ### 6.5 Job Sequencing with Deadlines
+
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" alt="Handwritten: 6.5 Job Sequencing with Deadlines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" alt="Diagram: 6.5 Job Sequencing with Deadlines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" alt="Sticky Note: 6.5 Job Sequencing with Deadlines" width="30%">
+</a>
+
 
 **Real-World Analogy:** You are a freelancer with five tasks due this week. Each task pays a different amount and has a different deadline. You can only work on one task per day. The greedy approach: sort by payment (highest first) and schedule each task as late as possible before its deadline without conflicting with higher-paying tasks already scheduled.
 
@@ -761,6 +816,17 @@ public static int jobSequencing(Job[] jobs) {
 
 ### 6.6 Canonical Coin Change
 
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" alt="Handwritten: 6.6 Canonical Coin Change" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" alt="Diagram: 6.6 Canonical Coin Change" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" alt="Sticky Note: 6.6 Canonical Coin Change" width="30%">
+</a>
+
+
 **Real-World Analogy:** A cashier needs to give you 67 cents in change. The drawer has quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). Instinctively, you take 2 quarters (50¢), 1 dime (60¢), 1 nickel (65¢), and 2 pennies (67¢) — 6 coins. This greedy approach works perfectly for US currency. But if a fictional country had coins of 1, 3, and 4 units, greedy would fail.
 
 **Problem:** Given coin denominations \( d_1 > d_2 > \cdots > d_k = 1 \), make change for amount \( A \) using the minimum number of coins.
@@ -894,6 +960,17 @@ public static int coinChange(int[] denoms, int amount) {
 
 ### 6.7 Greedy vs. Dynamic Programming
 
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" alt="Handwritten: 6.7 Greedy vs. Dynamic Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" alt="Diagram: 6.7 Greedy vs. Dynamic Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" alt="Sticky Note: 6.7 Greedy vs. Dynamic Programming" width="30%">
+</a>
+
+
 The most common confusion in algorithm design is when to use greedy vs. dynamic programming. Both rely on **optimal substructure**, but they differ fundamentally.
 
 | Aspect | Greedy | Dynamic Programming |
@@ -926,6 +1003,17 @@ The most common confusion in algorithm design is when to use greedy vs. dynamic 
 ---
 
 ### 6.8 Exchange Argument — The Proof Technique
+
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" alt="Handwritten: 6.8 Exchange Argument — The Proof Technique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" alt="Diagram: 6.8 Exchange Argument — The Proof Technique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" alt="Sticky Note: 6.8 Exchange Argument — The Proof Technique" width="30%">
+</a>
+
 
 The **exchange argument** is the standard method for proving greedy algorithms are optimal. The idea: take any optimal solution, and show you can transform it step-by-step into the greedy solution without decreasing its quality.
 
@@ -968,6 +1056,17 @@ An exchange argument must show the swap does not break feasibility. This is the 
 
 ### 6.9 Interview Corner
 
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" alt="Handwritten: 6.9 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" alt="Diagram: 6.9 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" alt="Sticky Note: 6.9 Interview Corner" width="30%">
+</a>
+
+
 Greedy algorithms are a favorite interview topic because they test whether a candidate can recognize the structural properties that make an optimization problem solvable efficiently.
 
 #### When Greedy Fails — Classic Counterexamples
@@ -999,6 +1098,17 @@ Greedy algorithms are a favorite interview topic because they test whether a can
 ---
 
 ### 6.10 Applications in Real Systems
+
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 6.10 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" alt="Diagram: 6.10 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 6.10 Applications in Real Systems" width="30%">
+</a>
+
 
 Greedy algorithms are not just academic — they power critical infrastructure.
 

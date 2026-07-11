@@ -32,6 +32,17 @@ graph LR
 
 ### 6.1.1 Sequential Circuit Model
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-handwritten.svg" alt="Handwritten: 6.1.1 Sequential Circuit Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-diagram.svg" alt="Diagram: 6.1.1 Sequential Circuit Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-1-sequential-circuit-model-sticky.svg" alt="Sticky Note: 6.1.1 Sequential Circuit Model" width="30%">
+</a>
+
+
 A sequential circuit is defined by:
 - **Next-state function:** `S? = f(X, S)`
 - **Output function:** `Y = g(X, S)` (Mealy) or `Y = g(S)` (Moore)
@@ -39,6 +50,17 @@ A sequential circuit is defined by:
 Where `S` is the current state, `S?` is the next state, and `X` are the primary inputs.
 
 ### 6.1.2 Classification
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-handwritten.svg" alt="Handwritten: 6.1.2 Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-diagram.svg" alt="Diagram: 6.1.2 Classification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-1-2-classification-sticky.svg" alt="Sticky Note: 6.1.2 Classification" width="30%">
+</a>
+
 
 | Type | Clocked? | Output Depends On | Example |
 |------|----------|-------------------|---------|
@@ -51,6 +73,17 @@ Where `S` is the current state, `S?` is the next state, and `X` are the primary 
 A **latch** is a level-sensitive memory element ? it follows its inputs while the enable signal is asserted and holds its value when the enable is de-asserted.
 
 ### 6.2.1 SR Latch (NOR Implementation)
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-handwritten.svg" alt="Handwritten: 6.2.1 SR Latch (NOR Implementation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-diagram.svg" alt="Diagram: 6.2.1 SR Latch (NOR Implementation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-1-sr-latch-nor-implementation-sticky.svg" alt="Sticky Note: 6.2.1 SR Latch (NOR Implementation)" width="30%">
+</a>
+
 
 ```mermaid
 graph TD
@@ -85,6 +118,17 @@ function srLatch(S: number, R: number, prev: LatchState): LatchState {
 **Critical constraint:** The SR = 11 input combination is forbidden because it forces both outputs low, and when both inputs return to 0 simultaneously, the latch enters a **race condition** where the final state is unpredictable.
 
 ### 6.2.2 D Latch
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-handwritten.svg" alt="Handwritten: 6.2.2 D Latch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-diagram.svg" alt="Diagram: 6.2.2 D Latch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-2-2-d-latch-sticky.svg" alt="Sticky Note: 6.2.2 D Latch" width="30%">
+</a>
+
 
 The D latch (transparent latch) eliminates the SR invalid state by adding an inverter between S and R.
 
@@ -127,6 +171,17 @@ timeline
 
 ### 6.3.1 Edge Detection
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-handwritten.svg" alt="Handwritten: 6.3.1 Edge Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-diagram.svg" alt="Diagram: 6.3.1 Edge Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-1-edge-detection-sticky.svg" alt="Sticky Note: 6.3.1 Edge Detection" width="30%">
+</a>
+
+
 ```typescript
 type EdgeType = 'rising' | 'falling' | 'none';
 
@@ -138,6 +193,17 @@ function detectEdge(clk: number, prevClk: number): EdgeType {
 ```
 
 ### 6.3.2 D Flip-Flop
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-handwritten.svg" alt="Handwritten: 6.3.2 D Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-diagram.svg" alt="Diagram: 6.3.2 D Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-2-d-flip-flop-sticky.svg" alt="Sticky Note: 6.3.2 D Flip-Flop" width="30%">
+</a>
+
 
 The D flip-flop is the most widely used storage element in digital design. On each clock edge, it copies the D input to the Q output.
 
@@ -185,6 +251,17 @@ for (const [clk, D] of [[0,0],[1,0],[0,0],[1,1],[0,1],[1,0],[0,0]]) {
 
 ### 6.3.3 JK Flip-Flop
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-handwritten.svg" alt="Handwritten: 6.3.3 JK Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-diagram.svg" alt="Diagram: 6.3.3 JK Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-3-jk-flip-flop-sticky.svg" alt="Sticky Note: 6.3.3 JK Flip-Flop" width="30%">
+</a>
+
+
 The JK flip-flop is a universal flip-flop that combines the behaviour of all other types.
 
 | J | K | Q?     | Mode    |
@@ -211,6 +288,17 @@ class JKFlipFlop implements FlipFlop {
 
 ### 6.3.4 T Flip-Flop
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-handwritten.svg" alt="Handwritten: 6.3.4 T Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-diagram.svg" alt="Diagram: 6.3.4 T Flip-Flop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-4-t-flip-flop-sticky.svg" alt="Sticky Note: 6.3.4 T Flip-Flop" width="30%">
+</a>
+
+
 The T flip-flop toggles its state whenever T=1 on a clock edge.
 
 ```
@@ -233,6 +321,17 @@ class TFlipFlop implements FlipFlop {
 
 ### 6.3.5 Flip-Flop Conversion
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-handwritten.svg" alt="Handwritten: 6.3.5 Flip-Flop Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-diagram.svg" alt="Diagram: 6.3.5 Flip-Flop Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-3-5-flip-flop-conversion-sticky.svg" alt="Sticky Note: 6.3.5 Flip-Flop Conversion" width="30%">
+</a>
+
+
 Any flip-flop type can be converted to another by deriving the appropriate input equations.
 
 ```typescript
@@ -254,6 +353,17 @@ function jkToD(J: number, K: number): number {
 
 ### 6.4.1 Characteristic Table
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-handwritten.svg" alt="Handwritten: 6.4.1 Characteristic Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-diagram.svg" alt="Diagram: 6.4.1 Characteristic Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-1-characteristic-table-sticky.svg" alt="Sticky Note: 6.4.1 Characteristic Table" width="30%">
+</a>
+
+
 Describes the next state `Q?` as a function of current state `Q` and inputs.
 
 | Flip-Flop | Characteristic Equation |
@@ -264,6 +374,17 @@ Describes the next state `Q?` as a function of current state `Q` and inputs.
 | T         | Q? = Q ? T             |
 
 ### 6.4.2 Excitation Table
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-handwritten.svg" alt="Handwritten: 6.4.2 Excitation Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-diagram.svg" alt="Diagram: 6.4.2 Excitation Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-4-2-excitation-table-sticky.svg" alt="Sticky Note: 6.4.2 Excitation Table" width="30%">
+</a>
+
 
 Describes the required input to produce a desired state transition. Essential for sequential circuit design.
 
@@ -310,6 +431,17 @@ console.log(`Register value: ${reg.value.toString(2).padStart(8, '0')}`);
 ```
 
 ### 6.5.1 Register with Enable
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-handwritten.svg" alt="Handwritten: 6.5.1 Register with Enable" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-diagram.svg" alt="Diagram: 6.5.1 Register with Enable" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-5-1-register-with-enable-sticky.svg" alt="Sticky Note: 6.5.1 Register with Enable" width="30%">
+</a>
+
 
 Many designs require conditional loading. An enable signal gates the clock or the data.
 
@@ -399,6 +531,17 @@ console.log(`SIPO: ${sr.value.toString(2).padStart(4, '0')}`); // 1101 (LSB firs
 
 ### 6.6.1 Universal Shift Register
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-handwritten.svg" alt="Handwritten: 6.6.1 Universal Shift Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-diagram.svg" alt="Diagram: 6.6.1 Universal Shift Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-6-1-universal-shift-register-sticky.svg" alt="Sticky Note: 6.6.1 Universal Shift Register" width="30%">
+</a>
+
+
 A universal shift register supports parallel load, shift left, shift right, and hold ? controlled by mode select lines S1, S0.
 
 | S1 | S0 | Operation     |
@@ -457,6 +600,17 @@ A **counter** is a sequential circuit that cycles through a predetermined sequen
 
 ### 6.7.1 Binary Ripple Counter
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-handwritten.svg" alt="Handwritten: 6.7.1 Binary Ripple Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-diagram.svg" alt="Diagram: 6.7.1 Binary Ripple Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-1-binary-ripple-counter-sticky.svg" alt="Sticky Note: 6.7.1 Binary Ripple Counter" width="30%">
+</a>
+
+
 The simplest counter: T flip-flops with each output driving the clock of the next stage.
 
 ```mermaid
@@ -511,6 +665,17 @@ for (let step = 0; step < 16; step++) {
 
 ### 6.7.2 Synchronous Binary Counter
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-handwritten.svg" alt="Handwritten: 6.7.2 Synchronous Binary Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-diagram.svg" alt="Diagram: 6.7.2 Synchronous Binary Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-2-synchronous-binary-counter-sticky.svg" alt="Sticky Note: 6.7.2 Synchronous Binary Counter" width="30%">
+</a>
+
+
 All flip-flops share a common clock. The T input of each stage is the AND of all lower-order bits.
 
 ```
@@ -549,6 +714,17 @@ class SyncCounter {
 
 ### 6.7.3 Up/Down Counter
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-handwritten.svg" alt="Handwritten: 6.7.3 Up/Down Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-diagram.svg" alt="Diagram: 6.7.3 Up/Down Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-3-up-down-counter-sticky.svg" alt="Sticky Note: 6.7.3 Up/Down Counter" width="30%">
+</a>
+
+
 ```typescript
 class UpDownCounter {
     private flops: TFlipFlop[];
@@ -581,6 +757,17 @@ class UpDownCounter {
 
 ### 6.7.4 Ring Counter
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-handwritten.svg" alt="Handwritten: 6.7.4 Ring Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-diagram.svg" alt="Diagram: 6.7.4 Ring Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-7-4-ring-counter-sticky.svg" alt="Sticky Note: 6.7.4 Ring Counter" width="30%">
+</a>
+
+
 A ring counter is a shift register with the serial output fed back to the serial input. It produces a single 1 that circulates through the register.
 
 ```typescript
@@ -609,6 +796,17 @@ class RingCounter {
 ## 6.8 Timing Analysis
 
 ### 6.8.1 Setup and Hold Time
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-handwritten.svg" alt="Handwritten: 6.8.1 Setup and Hold Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-diagram.svg" alt="Diagram: 6.8.1 Setup and Hold Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-1-setup-and-hold-time-sticky.svg" alt="Sticky Note: 6.8.1 Setup and Hold Time" width="30%">
+</a>
+
 
 **Setup time (t??):** the minimum time data must be stable **before** the clock edge.
 **Hold time (t?):** the minimum time data must be stable **after** the clock edge.
@@ -650,6 +848,17 @@ console.log(checkTiming(9.5, 10, 2, 1)); // false (0.5ns setup violation)
 
 ### 6.8.2 Clock Skew
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-handwritten.svg" alt="Handwritten: 6.8.2 Clock Skew" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-diagram.svg" alt="Diagram: 6.8.2 Clock Skew" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-2-clock-skew-sticky.svg" alt="Sticky Note: 6.8.2 Clock Skew" width="30%">
+</a>
+
+
 Clock skew is the difference in arrival time of the clock at different flip-flops. It can causehold violations if the destination flip-flop receives the clock later than the source.
 
 ```
@@ -667,6 +876,17 @@ graph LR
 ```
 
 ### 6.8.3 Maximum Clock Frequency
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-handwritten.svg" alt="Handwritten: 6.8.3 Maximum Clock Frequency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-diagram.svg" alt="Diagram: 6.8.3 Maximum Clock Frequency" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-8-3-maximum-clock-frequency-sticky.svg" alt="Sticky Note: 6.8.3 Maximum Clock Frequency" width="30%">
+</a>
+
 
 The minimum clock period is determined by:
 
@@ -706,6 +926,17 @@ graph LR
 
 ### 6.9.1 Mean Time Between Failures (MTBF)
 
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-handwritten.svg" alt="Handwritten: 6.9.1 Mean Time Between Failures (MTBF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-diagram.svg" alt="Diagram: 6.9.1 Mean Time Between Failures (MTBF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-1-mean-time-between-failures-mtbf-sticky.svg" alt="Sticky Note: 6.9.1 Mean Time Between Failures (MTBF)" width="30%">
+</a>
+
+
 ```
 MTBF = exp(t_res / t) / (f_clk ? f_data ? t_W)
 ```
@@ -722,6 +953,17 @@ console.log(`${mtbf(2e-9, 0.1e-9, 100e6, 10e6, 0.05e-9)} seconds`); // ? 5.4e7 s
 ```
 
 ### 6.9.2 Synchroniser Chain
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-handwritten.svg" alt="Handwritten: 6.9.2 Synchroniser Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-diagram.svg" alt="Diagram: 6.9.2 Synchroniser Chain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/6-9-2-synchroniser-chain-sticky.svg" alt="Sticky Note: 6.9.2 Synchroniser Chain" width="30%">
+</a>
+
 
 To mitigate metastability when crossing clock domains, cascade two (or more) flip-flops:
 
@@ -890,6 +1132,17 @@ c) The XOR of all lower bits
 d) Always 1
 
 ### Answers
+
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/06-sequential-circuits/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+</a>
+
 
 Q1: c | Q2: a | Q3: b | Q4: b | Q5: a
 

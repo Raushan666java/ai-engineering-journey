@@ -14,6 +14,17 @@ By the end of this chapter, you will be able to:
 
 ### Introduction
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-handwritten.svg" alt="Handwritten: Introduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-diagram.svg" alt="Diagram: Introduction" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/introduction-sticky.svg" alt="Sticky Note: Introduction" width="30%">
+</a>
+
+
 Number Series questions test your ability to identify patterns in sequences of numbers. In IBPS SO Prelims, 5 questions typically appear from this topic.
 
 **Types of Series:**
@@ -23,7 +34,29 @@ Number Series questions test your ability to identify patterns in sequences of n
 
 ### Common Patterns
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-handwritten.svg" alt="Handwritten: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-diagram.svg" alt="Diagram: Common Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/common-patterns-sticky.svg" alt="Sticky Note: Common Patterns" width="30%">
+</a>
+
+
 ### 1. Arithmetic Progression (AP)
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-handwritten.svg" alt="Handwritten: 1. Arithmetic Progression (AP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-diagram.svg" alt="Diagram: 1. Arithmetic Progression (AP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/1-arithmetic-progression-ap-sticky.svg" alt="Sticky Note: 1. Arithmetic Progression (AP)" width="30%">
+</a>
+
 
 A sequence where the difference between consecutive terms is constant.
 
@@ -37,6 +70,17 @@ a, a+d, a+2d, a+3d, ...
 
 ### 2. Geometric Progression (GP)
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-handwritten.svg" alt="Handwritten: 2. Geometric Progression (GP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-diagram.svg" alt="Diagram: 2. Geometric Progression (GP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/2-geometric-progression-gp-sticky.svg" alt="Sticky Note: 2. Geometric Progression (GP)" width="30%">
+</a>
+
+
 A sequence where each term is obtained by multiplying the previous term by a constant ratio.
 
 ```
@@ -49,12 +93,34 @@ a, ar, ar², ar³, ...
 
 ### 3. Difference Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-handwritten.svg" alt="Handwritten: 3. Difference Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-diagram.svg" alt="Diagram: 3. Difference Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/3-difference-pattern-sticky.svg" alt="Sticky Note: 3. Difference Pattern" width="30%">
+</a>
+
+
 The differences between consecutive terms follow a pattern (which could be an AP, GP, or other sequence).
 
 **Example:** 2, 5, 10, 17, 26, ...
 Differences: 3, 5, 7, 9 (AP with d=2)
 
 ### 4. Double Difference Pattern
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-handwritten.svg" alt="Handwritten: 4. Double Difference Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-diagram.svg" alt="Diagram: 4. Double Difference Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/4-double-difference-pattern-sticky.svg" alt="Sticky Note: 4. Double Difference Pattern" width="30%">
+</a>
+
 
 The differences of differences follow a pattern.
 
@@ -64,12 +130,34 @@ Second differences: 3, 4, 5 (AP with d=1)
 
 ### 5. Multiplication/Addition Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-handwritten.svg" alt="Handwritten: 5. Multiplication/Addition Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-diagram.svg" alt="Diagram: 5. Multiplication/Addition Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/5-multiplication-addition-pattern-sticky.svg" alt="Sticky Note: 5. Multiplication/Addition Pattern" width="30%">
+</a>
+
+
 Each term is obtained by multiplying the previous term by a number and then adding/subtracting something.
 
 **Example:** 2, 5, 11, 23, 47, ...
 Pattern: ×2, +1 → 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47
 
 ### 6. Square/Cube Pattern
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-handwritten.svg" alt="Handwritten: 6. Square/Cube Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-diagram.svg" alt="Diagram: 6. Square/Cube Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/6-square-cube-pattern-sticky.svg" alt="Sticky Note: 6. Square/Cube Pattern" width="30%">
+</a>
+
 
 Terms are related to perfect squares or cubes.
 
@@ -78,17 +166,50 @@ Pattern: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1, 6²+1
 
 ### 7. Prime Number Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-handwritten.svg" alt="Handwritten: 7. Prime Number Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-diagram.svg" alt="Diagram: 7. Prime Number Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/7-prime-number-pattern-sticky.svg" alt="Sticky Note: 7. Prime Number Pattern" width="30%">
+</a>
+
+
 Series based on prime numbers.
 
 **Example:** 2, 3, 5, 7, 11, 13, 17, 19, ...
 
 ### 8. Fibonacci Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-handwritten.svg" alt="Handwritten: 8. Fibonacci Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-diagram.svg" alt="Diagram: 8. Fibonacci Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/8-fibonacci-pattern-sticky.svg" alt="Sticky Note: 8. Fibonacci Pattern" width="30%">
+</a>
+
+
 Each term is the sum of the two preceding terms.
 
 **Example:** 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
 ### 9. Alternating Pattern
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-handwritten.svg" alt="Handwritten: 9. Alternating Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-diagram.svg" alt="Diagram: 9. Alternating Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/9-alternating-pattern-sticky.svg" alt="Sticky Note: 9. Alternating Pattern" width="30%">
+</a>
+
 
 Two separate series interleaved.
 
@@ -98,6 +219,17 @@ Even positions: 8, 16, 32, 64 (GP with r=2)
 
 ### 10. Factorial Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-handwritten.svg" alt="Handwritten: 10. Factorial Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-diagram.svg" alt="Diagram: 10. Factorial Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/10-factorial-pattern-sticky.svg" alt="Sticky Note: 10. Factorial Pattern" width="30%">
+</a>
+
+
 Series involving factorials (n!).
 
 **Example:** 1, 2, 6, 24, 120, 720, ...
@@ -105,9 +237,31 @@ Pattern: 1!, 2!, 3!, 4!, 5!, 6!
 
 ### 11. Digit Sum Pattern
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-handwritten.svg" alt="Handwritten: 11. Digit Sum Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-diagram.svg" alt="Diagram: 11. Digit Sum Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/11-digit-sum-pattern-sticky.svg" alt="Sticky Note: 11. Digit Sum Pattern" width="30%">
+</a>
+
+
 Each term depends on the sum of digits or some digit property.
 
 ### 12. Mixed Operations
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-handwritten.svg" alt="Handwritten: 12. Mixed Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-diagram.svg" alt="Diagram: 12. Mixed Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/04-number-series/12-mixed-operations-sticky.svg" alt="Sticky Note: 12. Mixed Operations" width="30%">
+</a>
+
 
 Multiple operations applied in sequence (add, multiply, subtract, divide in a loop).
 

@@ -15,6 +15,17 @@
 
 ### What is Software Configuration Management?
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" alt="Handwritten: What is Software Configuration Management?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" alt="Diagram: What is Software Configuration Management?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" alt="Sticky Note: What is Software Configuration Management?" width="30%">
+</a>
+
+
 Software Configuration Management (SCM) is the discipline of controlling the evolution of software systems throughout their lifecycle. It answers the questions: *what changed, who changed it, when, why, and what else was affected?*
 
 SCM is critical for:
@@ -60,6 +71,17 @@ graph TD
 
 ### Configuration Items
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" alt="Handwritten: Configuration Items" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" alt="Diagram: Configuration Items" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" alt="Sticky Note: Configuration Items" width="30%">
+</a>
+
+
 A **Configuration Item (CI)** is any software artifact that is placed under configuration control. CIs are typically versioned, reviewed, and auditable.
 
 | CI Category | Examples | Version Strategy | Storage |
@@ -74,6 +96,17 @@ A **Configuration Item (CI)** is any software artifact that is placed under conf
 | **Infrastructure** | Terraform, CloudFormation | Module versioning | Git, module registry |
 
 ### Baselines
+
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" alt="Handwritten: Baselines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" alt="Diagram: Baselines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" alt="Sticky Note: Baselines" width="30%">
+</a>
+
 
 A **baseline** is a formally reviewed and agreed-upon version of a CI that serves as a foundation for further development. Once baselined, changes require formal change control.
 
@@ -102,6 +135,17 @@ graph LR
 4. Baseline contents are auditable at any time
 
 ### Version Control Strategies
+
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" alt="Handwritten: Version Control Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" alt="Diagram: Version Control Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" alt="Sticky Note: Version Control Strategies" width="30%">
+</a>
+
 
 Modern version control systems (Git) form the backbone of SCM.
 
@@ -194,6 +238,17 @@ sequenceDiagram
 
 ### Change Control
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" alt="Handwritten: Change Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" alt="Diagram: Change Control" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" alt="Sticky Note: Change Control" width="30%">
+</a>
+
+
 Change control ensures that every change is evaluated, approved, implemented, and verified systematically.
 
 ```mermaid
@@ -252,6 +307,17 @@ Submitted → Under Review → Approved / Rejected → Implemented → Verified 
 
 ### Build Management
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" alt="Handwritten: Build Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" alt="Diagram: Build Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" alt="Sticky Note: Build Management" width="30%">
+</a>
+
+
 Build management ensures that software can be built consistently and reproducibly.
 
 **Key build management concepts:**
@@ -288,6 +354,17 @@ Example: auth-service-release-1.0-45-a1b2c3d
 - **Hotfix releases:** `1.0.1`
 
 ### Release Management
+
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" alt="Handwritten: Release Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" alt="Diagram: Release Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" alt="Sticky Note: Release Management" width="30%">
+</a>
+
 
 Release management coordinates the deployment of software to production.
 
@@ -328,6 +405,17 @@ Release management coordinates the deployment of software to production.
 
 ### Status Accounting
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" alt="Handwritten: Status Accounting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" alt="Diagram: Status Accounting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" alt="Sticky Note: Status Accounting" width="30%">
+</a>
+
+
 Status accounting tracks the state of all CIs throughout the project lifecycle.
 
 **Status for each CI:**
@@ -348,6 +436,17 @@ Status accounting tracks the state of all CIs throughout the project lifecycle.
 
 ### Configuration Auditing
 
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" alt="Handwritten: Configuration Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" alt="Diagram: Configuration Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" alt="Sticky Note: Configuration Auditing" width="30%">
+</a>
+
+
 A **configuration audit** verifies that the product matches its documentation and that all CIs are properly managed.
 
 | Audit Type | Focus | Frequency | Outcomes |
@@ -358,6 +457,17 @@ A **configuration audit** verifies that the product matches its documentation an
 | **In-Progress Audit** | SCM activities on active work | Per milestone | Anomalies identified and resolved |
 
 ### CI/CD Integration for Configuration Management
+
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" alt="Handwritten: CI/CD Integration for Configuration Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" alt="Diagram: CI/CD Integration for Configuration Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" alt="Sticky Note: CI/CD Integration for Configuration Management" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TD

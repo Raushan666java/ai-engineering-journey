@@ -18,6 +18,17 @@ After completing this chapter, the student will be able to:
 
 ### The CIA Triad
 
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" alt="Handwritten: The CIA Triad" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" alt="Diagram: The CIA Triad" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" alt="Sticky Note: The CIA Triad" width="30%">
+</a>
+
+
 Security engineering rests on three fundamental principles:
 
 ```mermaid
@@ -43,6 +54,17 @@ graph TD
 | **Availability** | System is accessible when needed | DDoS | Rate limiting, CDN |
 
 ### Threat Modelling Methodologies
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" alt="Handwritten: Threat Modelling Methodologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" alt="Diagram: Threat Modelling Methodologies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" alt="Sticky Note: Threat Modelling Methodologies" width="30%">
+</a>
+
 
 Threat modelling is a structured approach to identifying, quantifying, and addressing security threats. Four major methodologies are widely used:
 
@@ -128,6 +150,17 @@ graph TD
 ```
 
 ### The OWASP Top 10 (2025)
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" alt="Handwritten: The OWASP Top 10 (2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" alt="Diagram: The OWASP Top 10 (2025)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" alt="Sticky Note: The OWASP Top 10 (2025)" width="30%">
+</a>
+
 
 The Open Web Application Security Project publishes the Top 10 Web Application Security Risks. Below is the full 2025 edition with explanations and code examples:
 
@@ -358,6 +391,17 @@ graph LR
 
 ### Security in the SDLC (SSDLC)
 
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" alt="Handwritten: Security in the SDLC (SSDLC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" alt="Diagram: Security in the SDLC (SSDLC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" alt="Sticky Note: Security in the SDLC (SSDLC)" width="30%">
+</a>
+
+
 Secure Software Development Lifecycle integrates security into every phase:
 
 | Phase | Security Activities | Deliverables |
@@ -397,6 +441,17 @@ graph LR
 
 ### Security Testing Comparison
 
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" alt="Handwritten: Security Testing Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" alt="Diagram: Security Testing Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" alt="Sticky Note: Security Testing Comparison" width="30%">
+</a>
+
+
 | Type | Full Name | What It Does | When | Pros | Cons |
 |------|-----------|-------------|------|------|------|
 | **SAST** | Static Application Security Testing | Analyzes source code for vulnerabilities | During development | Fast, identifies root cause | False positives, no runtime context |
@@ -407,6 +462,17 @@ graph LR
 
 ### Authentication vs Authorisation
 
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" alt="Handwritten: Authentication vs Authorisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" alt="Diagram: Authentication vs Authorisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" alt="Sticky Note: Authentication vs Authorisation" width="30%">
+</a>
+
+
 | Aspect | Authentication | Authorisation |
 |--------|----------------|---------------|
 | **Question** | Who are you? | What can you do? |
@@ -416,6 +482,17 @@ graph LR
 | **Protocol** | OAuth 2.0, OpenID Connect | RBAC, ABAC, PBAC |
 
 ### Authentication Protocols
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" alt="Handwritten: Authentication Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" alt="Diagram: Authentication Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" alt="Sticky Note: Authentication Protocols" width="30%">
+</a>
+
 
 #### JWT (JSON Web Tokens)
 
@@ -452,6 +529,17 @@ Passwordless authentication using public-key cryptography. User registers a devi
 | **WebAuthn** | Public-key | Passwordless | Phishing-resistant | Device dependency |
 
 ### Authorisation Models
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" alt="Handwritten: Authorisation Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" alt="Diagram: Authorisation Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" alt="Sticky Note: Authorisation Models" width="30%">
+</a>
+
 
 #### RBAC (Role-Based Access Control)
 
@@ -503,6 +591,17 @@ function abacCheck(context: ABACContext): boolean {
 Uses a policy engine (e.g., OPA - Open Policy Agent) to evaluate access decisions declaratively.
 
 ### Common Attack Vectors
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" alt="Handwritten: Common Attack Vectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" alt="Diagram: Common Attack Vectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" alt="Sticky Note: Common Attack Vectors" width="30%">
+</a>
+
 
 #### SQL Injection
 
@@ -565,6 +664,17 @@ CSRF tricks authenticated users into performing unintended actions.
 
 ### Secure Coding Principles
 
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" alt="Handwritten: Secure Coding Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" alt="Diagram: Secure Coding Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" alt="Sticky Note: Secure Coding Principles" width="30%">
+</a>
+
+
 1. **Least Privilege:** Every component operates with the minimum permissions needed.
 2. **Defence in Depth:** Multiple independent security layers.
 3. **Fail Secure:** When something fails, it should fail in a secure state.
@@ -575,6 +685,17 @@ CSRF tricks authenticated users into performing unintended actions.
 8. **Psychological Acceptability:** Security should not make the system difficult to use.
 
 ### Cryptographic Primitives
+
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" alt="Handwritten: Cryptographic Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" alt="Diagram: Cryptographic Primitives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" alt="Sticky Note: Cryptographic Primitives" width="30%">
+</a>
+
 
 ```mermaid
 graph TD

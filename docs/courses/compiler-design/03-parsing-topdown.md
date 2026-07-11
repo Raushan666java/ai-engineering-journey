@@ -40,6 +40,17 @@ flowchart LR
 
 ### Context-Free Grammars
 
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-handwritten.svg" alt="Handwritten: Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-diagram.svg" alt="Diagram: Context-Free Grammars" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/context-free-grammars-sticky.svg" alt="Sticky Note: Context-Free Grammars" width="30%">
+</a>
+
+
 A **context-free grammar** (CFG) is a four-tuple `G = (V, T, P, S)`, where:
 
 - `V` is a finite set of **nonterminal** symbols
@@ -62,6 +73,17 @@ This grammar has `V = {expr, term, factor}`, `T = {id, +, *, (, )}`, and `S = ex
 > **One-Sentence Takeaway:** A CFG is to syntax what regular expressions are to lexemes ? the formal notation for describing hierarchical structure.
 
 ### Derivations and Parse Trees
+
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-handwritten.svg" alt="Handwritten: Derivations and Parse Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-diagram.svg" alt="Diagram: Derivations and Parse Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/derivations-and-parse-trees-sticky.svg" alt="Sticky Note: Derivations and Parse Trees" width="30%">
+</a>
+
 
 A **derivation** is a sequence of replacement steps transforming the start symbol into a terminal string. A **leftmost derivation** replaces the leftmost nonterminal at each step; a **rightmost derivation** replaces the rightmost nonterminal at each step.
 
@@ -95,6 +117,17 @@ The parse tree records every derivation step (including intermediate nonterminal
 
 ### Ambiguity
 
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-handwritten.svg" alt="Handwritten: Ambiguity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-diagram.svg" alt="Diagram: Ambiguity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ambiguity-sticky.svg" alt="Sticky Note: Ambiguity" width="30%">
+</a>
+
+
 A grammar is **ambiguous** if there exists a terminal string that has more than one distinct parse tree (equivalently, more than one leftmost or rightmost derivation). Ambiguity is undesirable because it leads to multiple possible interpretations of a program.
 
 Consider the grammar:
@@ -121,6 +154,17 @@ stmt ? if expr then stmt | if expr then stmt else stmt | other
 For input `if e1 then if e2 then s1 else s2`, two parse trees exist: the `else` can attach to either `if`. Most languages resolve this by associating `else` with the nearest unmatched `if`.
 
 ### Left Recursion Elimination
+
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-handwritten.svg" alt="Handwritten: Left Recursion Elimination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-diagram.svg" alt="Diagram: Left Recursion Elimination" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-recursion-elimination-sticky.svg" alt="Sticky Note: Left Recursion Elimination" width="30%">
+</a>
+
 
 A grammar is **left-recursive** if a nonterminal `A` derives a string beginning with `A`. **Immediate left recursion**, where `A ? Aa | ?`, is eliminated by rewriting as:
 
@@ -169,6 +213,17 @@ Transformed:
 
 ### Left Factoring
 
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-handwritten.svg" alt="Handwritten: Left Factoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-diagram.svg" alt="Diagram: Left Factoring" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/left-factoring-sticky.svg" alt="Sticky Note: Left Factoring" width="30%">
+</a>
+
+
 When two or more productions for the same nonterminal share a common prefix, predictive parsing cannot choose among them without lookahead. **Left factoring** delays the choice by extracting the common prefix:
 
 ```
@@ -200,6 +255,17 @@ S' ? eS | e
 Here, the common prefix is `iEtS`. After factoring, the parser shifts past `iEtS`, then uses the lookahead to decide between the two branches of `S'`.
 
 ### FIRST and FOLLOW Sets
+
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-handwritten.svg" alt="Handwritten: FIRST and FOLLOW Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-diagram.svg" alt="Diagram: FIRST and FOLLOW Sets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/first-and-follow-sets-sticky.svg" alt="Sticky Note: FIRST and FOLLOW Sets" width="30%">
+</a>
+
 
 The **FIRST** set of a string `a`, denoted `FIRST(a)`, is the set of terminals that can begin strings derivable from `a`. If `a ?* e`, then `e ? FIRST(a)`.
 
@@ -262,6 +328,17 @@ while any FOLLOW set changes:
 
 ### LL(1) Parsing Tables
 
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-handwritten.svg" alt="Handwritten: LL(1) Parsing Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-diagram.svg" alt="Diagram: LL(1) Parsing Tables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/ll-1-parsing-tables-sticky.svg" alt="Sticky Note: LL(1) Parsing Tables" width="30%">
+</a>
+
+
 An **LL(1) parser** reads input left-to-right, produces a leftmost derivation, and uses one token of lookahead. A grammar is **LL(1)** if for every pair of productions `A ? a | ?`:
 
 1. `FIRST(a) n FIRST(?) = ?`
@@ -302,6 +379,17 @@ while stack is not empty:
 ```
 
 ### Complete LL(1) Parser Generator in TypeScript
+
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-handwritten.svg" alt="Handwritten: Complete LL(1) Parser Generator in TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-diagram.svg" alt="Diagram: Complete LL(1) Parser Generator in TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/complete-ll-1-parser-generator-in-typescript-sticky.svg" alt="Sticky Note: Complete LL(1) Parser Generator in TypeScript" width="30%">
+</a>
+
 
 ```typescript
 type Symbol = string;
@@ -499,6 +587,17 @@ console.log(`Result: ${result2 ? "ACCEPT" : "REJECT"}`);
 
 ### Recursive-Descent Parsing with Backtracking
 
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-handwritten.svg" alt="Handwritten: Recursive-Descent Parsing with Backtracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-diagram.svg" alt="Diagram: Recursive-Descent Parsing with Backtracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/recursive-descent-parsing-with-backtracking-sticky.svg" alt="Sticky Note: Recursive-Descent Parsing with Backtracking" width="30%">
+</a>
+
+
 Recursive-descent parsing implements each nonterminal as a procedure. For LL(1) grammars, no backtracking is needed. For non-LL(1) grammars, backtracking can be added:
 
 ```typescript
@@ -571,6 +670,17 @@ console.log("RD Parse:", rdp.parse()); // true
 ```
 
 ### Error Recovery in LL Parsing
+
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-handwritten.svg" alt="Handwritten: Error Recovery in LL Parsing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-diagram.svg" alt="Diagram: Error Recovery in LL Parsing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/compiler-design/03-parsing-topdown/error-recovery-in-ll-parsing-sticky.svg" alt="Sticky Note: Error Recovery in LL Parsing" width="30%">
+</a>
+
 
 LL(1) parsers use **panic-mode recovery**: on encountering an error (blank table entry), the parser discards input tokens until it finds a token in FOLLOW(A) (the set of synchronizing tokens for the current nonterminal), then pops the stack and continues. This prevents cascading errors while still reporting the mistake clearly.
 

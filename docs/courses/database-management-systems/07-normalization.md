@@ -46,6 +46,17 @@ flowchart LR
 
 ### 7.1 The Problem: Anomalies in Unnormalized Data
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" alt="Handwritten: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" alt="Diagram: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" alt="Sticky Note: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+</a>
+
+
 #### Real-World Analogy: The Address Book
 
 Imagine a single paper address book where you write a person's name, phone number, and every address they have ever lived at in one row. If they move, you must erase and rewrite. If you tear out the last row for a friend who moved away, you lose their name and phone number too. If you want to add a new address for someone who isn't yet in the book, you cannot â€” each row needs a name. This is exactly the problem unnormalized databases face.
@@ -82,6 +93,17 @@ This single table stores all information about students, courses, instructors, a
 **Normalization** is a systematic, theory-backed process of decomposing tables to eliminate these anomalies while preserving all information. It is not optional â€” it is a foundational discipline of relational database design.
 
 ### 7.2 Functional Dependencies
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" alt="Handwritten: 7.2 Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" alt="Diagram: 7.2 Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" alt="Sticky Note: 7.2 Functional Dependencies" width="30%">
+</a>
+
 
 #### Real-World Analogy: Recipe Ingredients
 
@@ -132,6 +154,17 @@ If this condition fails for any two tuples, the FD does NOT hold.
 | **Trivial FD** | Y is a subset of X | {A, B} -> A |
 
 ### 7.3 Armstrong's Axioms (FD Inference Rules)
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" alt="Handwritten: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" alt="Diagram: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" alt="Sticky Note: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+</a>
+
 
 #### FD Inference Rules Table
 
@@ -196,6 +229,17 @@ Armstrong's axioms are a complete and sound set of inference rules for deriving 
 | **Disadvantage: Redundancy** | Derived set F+ can be exponentially larger than original F |
 
 ### 7.4 Attribute Closure
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" alt="Handwritten: 7.4 Attribute Closure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" alt="Diagram: 7.4 Attribute Closure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" alt="Sticky Note: 7.4 Attribute Closure" width="30%">
+</a>
+
 
 #### Real-World Analogy: Finding Connections
 
@@ -317,6 +361,17 @@ FUNCTION ComputeClosure(X, F):
 
 ### 7.5 Finding Candidate Keys from Functional Dependencies
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" alt="Handwritten: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" alt="Diagram: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" alt="Sticky Note: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+</a>
+
+
 #### Real-World Analogy: Minimal ID Card
 
 A candidate key is like the minimal set of ID documents you need to uniquely identify a person. If a passport alone works, you do not need passport + driver's license. If neither passport nor license alone works (some people have neither), you might need name + birthdate + address. The candidate key is the minimal "sufficient identifier."
@@ -425,6 +480,17 @@ Compute closure(C+) with F:
 
 ### 7.6 First Normal Form (1NF)
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" alt="Handwritten: 7.6 First Normal Form (1NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" alt="Diagram: 7.6 First Normal Form (1NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" alt="Sticky Note: 7.6 First Normal Form (1NF)" width="30%">
+</a>
+
+
 #### Real-World Analogy: One Fact Per Cell
 
 Think of a spreadsheet where a cell should contain exactly one value. If a "courses" column contains "CS101, CS102, CS201" as a comma-separated string, you cannot sort by course, join on course, or efficiently search for a course. 1NF says: one value per cell, period.
@@ -531,6 +597,17 @@ CREATE TABLE enrollment (
 
 
 ### 7.7 Second Normal Form (2NF)
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" alt="Handwritten: 7.7 Second Normal Form (2NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" alt="Diagram: 7.7 Second Normal Form (2NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" alt="Sticky Note: 7.7 Second Normal Form (2NF)" width="30%">
+</a>
+
 
 #### Real-World Analogy: Library Catalog
 
@@ -669,6 +746,17 @@ R3: ENROLLMENT
 **All-Key Relation:** If ALL attributes form the key (no non-key attributes), the relation is automatically in 2NF, 3NF, and BCNF because there are no non-key attributes to have partial dependencies.
 
 ### 7.8 Third Normal Form (3NF)
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" alt="Handwritten: 7.8 Third Normal Form (3NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" alt="Diagram: 7.8 Third Normal Form (3NF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" alt="Sticky Note: 7.8 Third Normal Form (3NF)" width="30%">
+</a>
+
 
 #### Real-World Analogy: The Department Office
 
@@ -881,6 +969,17 @@ CREATE TABLE order_line (
 
 ### 7.9 Boyce-Codd Normal Form (BCNF)
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" alt="Handwritten: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" alt="Diagram: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" alt="Sticky Note: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+</a>
+
+
 #### Real-World Analogy: The One-Subject Teacher Rule
 
 A school has: (student_id, teacher_id, subject). Rules: each teacher teaches one subject (teacher_id -> subject). Each student has one teacher per subject (student_id, subject -> teacher_id). The key is (student_id, subject). But teacher_id -> subject violates BCNF because teacher_id is not a superkey. The fix: (teacher_id, subject) and (student_id, teacher_id). But now (student_id, subject -> teacher_id) is lost â€” you cannot enforce it without a join.
@@ -1022,6 +1121,17 @@ BCNF decomposition by this method ALWAYS produces lossless joins.
 
 ### 7.10 Lossless Join Decomposition
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" alt="Handwritten: 7.10 Lossless Join Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" alt="Diagram: 7.10 Lossless Join Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" alt="Sticky Note: 7.10 Lossless Join Decomposition" width="30%">
+</a>
+
+
 #### Real-World Analogy: Puzzle Pieces
 
 A lossless decomposition is like cutting a photograph into puzzle pieces â€” when you put them back together, you get the original photograph, nothing more and nothing less. A lossy decomposition is like shredding â€” you cannot reconstruct the original.
@@ -1104,6 +1214,17 @@ FUNCTION IsLossless(R, decomposition, F):
 
 ### 7.11 Dependency Preservation
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" alt="Handwritten: 7.11 Dependency Preservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" alt="Diagram: 7.11 Dependency Preservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" alt="Sticky Note: 7.11 Dependency Preservation" width="30%">
+</a>
+
+
 #### Real-World Analogy: Local Enforcement
 
 Dependency preservation is like traffic laws that can be enforced by local police in each town, versus laws that require a federal investigation spanning multiple states. If you can check each FD within a single table, enforcement is cheap. If an FD spans multiple tables, enforcement requires expensive joins.
@@ -1158,6 +1279,17 @@ FUNCTION IsDependencyPreserving(R, decomposition, F):
 
 
 ### 7.12 C++ Implementation â€” FD Closure Calculator
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" alt="Handwritten: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" alt="Diagram: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" alt="Sticky Note: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1342,6 +1474,17 @@ Candidate keys:
 
 ### 7.13 C++ Implementation â€” BCNF Decomposition
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+</a>
+
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -1431,6 +1574,17 @@ int main() {
 ```
 
 ### 7.14 Python Implementation â€” Attribute Closure and Normalization Checker
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" alt="Handwritten: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" alt="Diagram: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" alt="Sticky Note: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+</a>
+
 
 ```python
 """
@@ -1656,6 +1810,17 @@ if __name__ == "__main__":
 
 ### 7.15 Python Implementation â€” 3NF Synthesis
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" alt="Handwritten: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" alt="Diagram: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" alt="Sticky Note: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+</a>
+
+
 ```python
 """
 3NF Synthesis Algorithm â€” produces lossless, dependency-preserving 3NF decomposition
@@ -1756,6 +1921,17 @@ if __name__ == "__main__":
 
 ### 7.16 Python Implementation â€” BCNF Decomposition
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+</a>
+
+
 ```python
 """
 BCNF Decomposition Algorithm
@@ -1840,6 +2016,17 @@ if __name__ == "__main__":
 ```
 
 ### 7.17 Python Implementation â€” Normalization Analyzer
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" alt="Handwritten: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" alt="Diagram: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" alt="Sticky Note: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+</a>
+
 
 ```python
 """
@@ -1955,6 +2142,17 @@ if __name__ == "__main__":
 
 ### 7.18 Multiple Candidate Keys in Normalization
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" alt="Handwritten: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" alt="Diagram: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" alt="Sticky Note: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+</a>
+
+
 #### Real-World Scenario
 
 Consider R(ssn, student_id, name, address, major) where both ssn and student_id uniquely identify a student. FDs:
@@ -1997,6 +2195,17 @@ CREATE TABLE employee (
 
 
 ### 7.19 Interview Corner
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" alt="Handwritten: 7.19 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" alt="Diagram: 7.19 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" alt="Sticky Note: 7.19 Interview Corner" width="30%">
+</a>
+
 
 #### Q1: What is the difference between 3NF and BCNF?
 
@@ -2073,6 +2282,17 @@ The principle: normalize first, then denormalize with purpose. Document WHY and 
 **Interview Answer:** "A minimal cover is a minimal set of FDs that implies the original set. Conditions: every RHS is a single attribute, no LHS attribute is redundant, no FD is redundant. A canonical cover is essentially the same concept â€” the terms are often used interchangeably. The minimal cover is the starting point for 3NF synthesis."
 
 ### 7.20 Applications in Real Database Systems
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" alt="Handwritten: 7.20 Applications in Real Database Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" alt="Diagram: 7.20 Applications in Real Database Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" alt="Sticky Note: 7.20 Applications in Real Database Systems" width="30%">
+</a>
+
 
 #### MySQL Normalization Practices
 
@@ -2185,6 +2405,17 @@ GROUP BY c.customer_id, c.name;
 
 ### 7.21 Normal Forms Comparison Summary
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" alt="Handwritten: 7.21 Normal Forms Comparison Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" alt="Diagram: 7.21 Normal Forms Comparison Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" alt="Sticky Note: 7.21 Normal Forms Comparison Summary" width="30%">
+</a>
+
+
 | Normal Form | Condition | Eliminates | May Still Have | Algorithm | Complexity |
 |------------|-----------|------------|----------------|-----------|------------|
 | **1NF** | Atomic values, no repeating groups | Multi-valued attributes | All other redundancy | Flatten or separate table | O(k*n) |
@@ -2225,6 +2456,17 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 ```
 
 ### 7.22 Chapter Quiz
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" alt="Handwritten: 7.22 Chapter Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" alt="Diagram: 7.22 Chapter Quiz" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" alt="Sticky Note: 7.22 Chapter Quiz" width="30%">
+</a>
+
 
 1. An update anomaly occurs when:
    a) A query returns incorrect results
@@ -2290,6 +2532,17 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 
 ### 7.23 Exercises
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" alt="Handwritten: 7.23 Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" alt="Diagram: 7.23 Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" alt="Sticky Note: 7.23 Exercises" width="30%">
+</a>
+
+
 #### Basic
 
 1. Given R(A, B, C, D) with FDs {A -> B, B -> C, C -> D}:
@@ -2337,6 +2590,17 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 
 ### 7.24 Quick Reference Cards
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" alt="Handwritten: 7.24 Quick Reference Cards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" alt="Diagram: 7.24 Quick Reference Cards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" alt="Sticky Note: 7.24 Quick Reference Cards" width="30%">
+</a>
+
+
 #### Armstrong's Axioms Quick Reference
 
 | Rule | Name | Premise | Conclusion |
@@ -2381,6 +2645,17 @@ Usage:
 ```
 
 ### 7.25 TypeScript Functional Dependency Analyzer
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" alt="Handwritten: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" alt="Diagram: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" alt="Sticky Note: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+</a>
+
 
 The TypeScript implementation below computes attribute closure, finds candidate keys, checks normal forms, and suggests decompositions.
 
@@ -2552,6 +2827,17 @@ analyzer.printReport();
 
 ### Additional Chapter Quiz Questions
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
+
 11. Given R(A, B, C, D) with FDs {A -> B, B -> C, C -> D}, what is A+?
     a) {A}
     b) {A, B}
@@ -2586,6 +2872,17 @@ analyzer.printReport();
 
 ### Additional Exercises
 
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+</a>
+
+
 12. Given R(A, B, C, D, E, F) with FDs {AB -> C, C -> D, D -> E, E -> F, F -> AB}:
     a) Find all candidate keys.
     b) What normal form is this in?
@@ -2596,6 +2893,17 @@ analyzer.printReport();
 ---
 
 ### Summary
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+</a>
+
 
 - Functional dependencies are fundamental constraints expressing that X determines Y. They are the mathematical foundation of all normalization.
 - Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete inference system for deriving implied FDs.
@@ -2613,6 +2921,17 @@ analyzer.printReport();
 - In MySQL and PostgreSQL, use FK constraints, unique constraints, and materialized views to manage the normalization/performance tradeoff.
 
 ### One-Sentence Takeaways
+
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
+</a>
+
 
 - **7.1:** Unnormalized tables suffer from insertion, update, and deletion anomalies caused by data redundancy â€” the address book analogy illustrates why separation of concerns matters.
 - **7.2:** Functional dependencies (X -> Y) are constraints that one set of attributes uniquely determines another â€” like recipe ingredients uniquely determined by dish name.

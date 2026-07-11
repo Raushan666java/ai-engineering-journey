@@ -41,6 +41,17 @@ The GPS never tries every street — it uses **domain knowledge** (heuristics) t
 
 ### Chapter Roadmap
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     A[Start: Heuristic Functions] --> B[Greedy Best-First Search]
@@ -68,11 +79,33 @@ flowchart TD
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **heuristic function** $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Unlike the cost-so-far $g(n)$ (which is exact), $h(n)$ is an estimate — domain knowledge injected into the search to prune unpromising branches.
 
 $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 
 ### Algorithm Steps — Designing a Heuristic
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" alt="Handwritten: Algorithm Steps — Designing a Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" alt="Diagram: Algorithm Steps — Designing a Heuristic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" alt="Sticky Note: Algorithm Steps — Designing a Heuristic" width="30%">
+</a>
+
 
 1. Identify the state space and goal condition.
 2. Choose an abstract representation that drops some problem constraints (**relaxation**).
@@ -82,6 +115,17 @@ $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 6. Compare against a baseline heuristic to confirm **dominance** ($h_2(n) \geq h_1(n)$ for all $n$).
 
 ### Pseudocode — Heuristic Function Template
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" alt="Handwritten: Pseudocode — Heuristic Function Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" alt="Diagram: Pseudocode — Heuristic Function Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" alt="Sticky Note: Pseudocode — Heuristic Function Template" width="30%">
+</a>
+
 
 ```
 function HEURISTIC(state, goal):
@@ -94,6 +138,17 @@ function HEURISTIC(state, goal):
 ```
 
 ### Step-by-Step Dry Run — 8-Puzzle Heuristic Computation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" alt="Diagram: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+</a>
+
 
 **State:**
 ```
@@ -147,6 +202,17 @@ Notice $h_2(n) \geq h_1(n)$: Manhattan distance **dominates** misplaced tiles (g
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 # Heuristic functions for the 8-puzzle
 def misplaced_tiles(state, goal):
@@ -182,6 +248,17 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | Evaluation time per call | $O(N)$ | N = number of elements (tiles, variables). Each element contributes a constant-time distance computation. |
@@ -192,6 +269,17 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Advantages & Disadvantages of Heuristic Functions
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Heuristic Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" alt="Diagram: Advantages & Disadvantages of Heuristic Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Heuristic Functions" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Dramatically reduces search space — exponential speedup possible | Requires domain expertise to design well |
@@ -200,6 +288,17 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 | Multiple heuristics can be combined (max, sum for disjoint) | Memory overhead for pattern databases |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Zero heuristic (h(n) = 0):** A* degenerates to uniform-cost search (Dijkstra's). Admissible but completely uninformed — no pruning.
 - **Overestimating heuristic:** Destroys optimality. If h(n) > h*(n), A* may return a suboptimal solution.
@@ -215,11 +314,33 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 Greedy best-first search expands the node with the **lowest heuristic value** $h(n)$ at each step. It completely ignores the cost already incurred ($g(n)$). The frontier is a priority queue ordered by $h(n)$ alone.
 
 **Evaluation function:** $f(n) = h(n)$
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Initialize the frontier with the start node. Priority: lowest h(n).
 2. Initialize an empty explored set.
@@ -233,6 +354,17 @@ Greedy best-first search expands the node with the **lowest heuristic value** $h
 4. If the frontier empties, return failure.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function GREEDY-BEST-FIRST-SEARCH(problem, h) returns solution or failure
@@ -252,6 +384,17 @@ function GREEDY-BEST-FIRST-SEARCH(problem, h) returns solution or failure
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 **Problem Graph:**
 
@@ -294,6 +437,17 @@ Greedy found path S->B->E->G (cost = 2+3+2 = 7), but the **optimal** path is S->
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import heapq
 
@@ -335,6 +489,17 @@ print("Greedy path:", path)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Case | Time | Space | Explanation |
 |:----:|:----:|:-----:|-------------|
 | Worst | $O(b^m)$ | $O(b^m)$ | Same as DFS/BFS if heuristic is uninformed; b = branching factor, m = max depth |
@@ -345,6 +510,17 @@ print("Greedy path:", path)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Very fast when heuristic is accurate | **Not optimal** — may return suboptimal path |
@@ -353,6 +529,17 @@ print("Greedy path:", path)
 | Useful subroutine in complex algorithms | Performance entirely heuristic-dependent |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Misleading heuristic:** If h(n) wrongly favors a region with no goal, greedy explores that area exhaustively.
 - **Cyclic graphs without explored set:** Greedy may loop indefinitely between two nodes with low h-values.
@@ -367,6 +554,17 @@ print("Greedy path:", path)
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A* search (Hart, Nilsson, and Raphael, 1968) combines the **cost-so-far** $g(n)$ with the **estimated cost-to-go** $h(n)$:
 
 $$f(n) = g(n) + h(n)$$
@@ -379,6 +577,17 @@ where:
 A* expands nodes in order of increasing $f$, making it both **complete** and **optimal** (with an admissible heuristic).
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Initialize the frontier as a priority queue keyed by f(n) = g(n) + h(n). Add the start node with g=0.
 2. Initialize an explored (closed) set.
@@ -394,6 +603,17 @@ A* expands nodes in order of increasing $f$, making it both **complete** and **o
 4. If the frontier empties, return failure.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function A*-SEARCH(problem, h) returns solution or failure
@@ -417,6 +637,17 @@ function A*-SEARCH(problem, h) returns solution or failure
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Using the same graph and heuristic as the greedy example.
 
@@ -451,6 +682,17 @@ All heuristics are admissible AND consistent (verified against triangle inequali
 **Comparison with Greedy:** Greedy found S->B->E->G (cost 7) because it ignored g. A* found S->B->F->G (cost 6) because it considered B->F=4 vs B->E=5, even though both had the same h. The g value broke the tie correctly.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 import heapq
@@ -500,6 +742,17 @@ print("A* path:", path)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Case | Time | Space | Explanation |
 |:----:|:----:|:-----:|-------------|
 | Worst | $O(b^d)$ | $O(b^d)$ | If h is uninformed (close to 0), A* expands all nodes like UCS |
@@ -512,6 +765,17 @@ print("A* path:", path)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | **Optimal** — guarantees cheapest solution with admissible h | **Exponential space** — stores all generated nodes |
@@ -520,6 +784,17 @@ print("A* path:", path)
 | Works on any graph (directed, undirected, weighted) | Requires admissible heuristic for optimality |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Zero heuristic (h=0):** A* becomes uniform-cost search (Dijkstra's). Complete and optimal, but explores in all directions equally.
 - **Overestimating heuristic:** A* may return suboptimal solution. Optimality guarantee lost.
@@ -531,6 +806,17 @@ print("A* path:", path)
 ---
 
 ### 3.3.1 Admissibility
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" alt="Handwritten: 3.3.1 Admissibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" alt="Diagram: 3.3.1 Admissibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" alt="Sticky Note: 3.3.1 Admissibility" width="30%">
+</a>
+
 
 **Real-World Analogy:** A taxi driver tells you the fare will be "at most $25". When you arrive, the meter reads $22. The estimate was **admissible** — it never overestimated. If they'd said "at most $20" and the meter read $22, they would have underestimated, and you'd be short on cash.
 
@@ -558,6 +844,17 @@ where $h^*(n)$ is the true optimal cost from $n$ to the nearest goal. In other w
 ---
 
 ### 3.3.2 Consistency (Monotonicity)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" alt="Handwritten: 3.3.2 Consistency (Monotonicity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" alt="Diagram: 3.3.2 Consistency (Monotonicity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" alt="Sticky Note: 3.3.2 Consistency (Monotonicity)" width="30%">
+</a>
+
 
 **Real-World Analogy:** In a well-designed trip, each step brings you strictly closer to your destination. If you're driving from New York to Boston, every mile north should reduce your estimated remaining distance by at most one mile. Consistency formalizes this with the triangle inequality.
 
@@ -592,6 +889,17 @@ This means A* **never re-opens nodes** from the explored set — when a node is 
 
 ### 3.3.3 Optimality of A*
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" alt="Handwritten: 3.3.3 Optimality of A*" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" alt="Diagram: 3.3.3 Optimality of A*" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" alt="Sticky Note: 3.3.3 Optimality of A*" width="30%">
+</a>
+
+
 **Theorem:** If $h$ is admissible, then A* using **tree search** returns an optimal solution. If $h$ is consistent, then A* using **graph search** returns an optimal solution.
 
 **Proof Sketch (Tree Search):** Suppose A* returns a suboptimal goal G with cost C > C*, where C* is the optimal cost. Let n be a node on the optimal path that remains on the frontier when A* terminates. Since h is admissible:
@@ -620,9 +928,31 @@ Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 IDA* combines iterative deepening depth-first search (IDDFS) with A*'s f-cost evaluation. Instead of using depth as the cutoff, IDA* uses an **f-cost bound**. Each iteration performs a depth-first search, pruning any branch whose f(n) = g(n) + h(n) > bound. If no solution is found, the bound increases to the minimum f-value that exceeded the previous bound.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Set bound = h(start).
 2. Perform a depth-first search where each node's f(n) = g(n) + h(n) is computed.
@@ -633,6 +963,17 @@ IDA* combines iterative deepening depth-first search (IDDFS) with A*'s f-cost ev
 7. Set bound = next_bound and go to step 2.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function IDA*(problem, h) returns solution or failure
@@ -658,6 +999,17 @@ function DFS-CONTOUR(node, g, bound) returns (solution or cutoff, new_bound)
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Same graph. Heuristic: S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0.
 
@@ -688,6 +1040,17 @@ Min pruned f = 6. New bound = 6. No solution found in iteration 1.
 **Result:** Path S->B->F->G, cost = 6. Found in 2 iterations.
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def ida_star_search(graph, start, goal, heuristic):
@@ -722,6 +1085,17 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Explanation |
 |--------|:----------:|-------------|
 | Time (worst) | $O(b^d)$ | In worst case, same as A*; each iteration re-explores many nodes |
@@ -733,6 +1107,17 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | **Linear memory** — O(bd) vs A* exponential O(b^d) | **Re-expands nodes** — nodes visited in every iteration |
@@ -741,6 +1126,17 @@ print("IDA* path:", path)   # S -> B -> F -> G
 | No priority queue overhead | Struggles when many nodes share the same f-cost |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Large f-value range:** If f-costs range from 10 to 10,000, IDA* may require hundreds of iterations.
 - **Real-valued costs:** IDA* requires successive cost increments. With real values, the algorithm may loop forever. Use incremental bounding.
@@ -754,9 +1150,31 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Definition
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 RBFS performs a recursive depth-first search while tracking the **best alternative path** f-value. It only switches to an alternative branch when the current path's f-value exceeds the stored alternative. This gives it A*-like behavior with O(bd) memory.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Start at the root with f-limit = infinity.
 2. Evaluate all successors and compute their f-values.
@@ -766,6 +1184,17 @@ RBFS performs a recursive depth-first search while tracking the **best alternati
 6. Each successor's f = max(own f, parent f) to propagate information up the tree.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function RBFS(problem, node, f_limit) returns solution or failure
@@ -786,6 +1215,17 @@ function RBFS(problem, node, f_limit) returns solution or failure
 
 ### Step-by-Step Dry Run
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
+
 Same graph and heuristic.
 
 | Step | Current | f | Best | Second-Best | f-limit | Action |
@@ -796,6 +1236,17 @@ Same graph and heuristic.
 | 4 | **G** | 6 | - | - | 7 | **Goal! S->B->F->G** |
 
 ### Python Implementation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
 
 ```python
 def rbfs(graph, start, goal, heuristic):
@@ -837,6 +1288,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Aspect | Complexity | Explanation |
 |--------|:----------:|-------------|
 | Time (worst) | $O(b^d)$ | In worst case, same as A*; may re-explore nodes |
@@ -846,6 +1308,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | **Linear memory** — O(bd) vs A* exponential | **Re-explores nodes** — can revisit previously explored regions |
@@ -854,6 +1327,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 | Works on graphs and trees | Degrades when h is not informative |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Admissible but not consistent:** RBFS remains optimal because it uses tree-search semantics with backtracking, not an explored set.
 - **One child per node:** RBFS degenerates to DFS with a simple bound check. No alternative path to switch to.
@@ -876,6 +1360,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 | **Landmark (ALT)** | Precomputed distances via landmarks | Yes | $O(1)$ per landmark | Road networks (GPS) |
 
 ### Informedness and Dominance
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" alt="Handwritten: Informedness and Dominance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" alt="Diagram: Informedness and Dominance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" alt="Sticky Note: Informedness and Dominance" width="30%">
+</a>
+
 
 **Definition:** Heuristic $h_2$ **dominates** $h_1$ if $h_2(n) \geq h_1(n)$ for all nodes $n$ and both are admissible. A* with $h_2$ expands a subset of the nodes expanded by A* with $h_1$.
 
@@ -905,12 +1400,34 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q1: What conditions guarantee A* is optimal?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" alt="Handwritten: What conditions guarantee A* is optimal?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" alt="Diagram: What conditions guarantee A* is optimal?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" alt="Sticky Note: What conditions guarantee A* is optimal?" width="30%">
+</a>
+
+
 **Answer:** A* is optimal if:
 1. The heuristic h is **admissible** (h(n) &lt;= h*(n) for all n) for tree search.
 2. The heuristic h is **consistent** (h(n) &lt;= c(n,a,n') + h(n')) for graph search.
 3. All step costs are non-negative (required for any shortest-path algorithm).
 
 ### Q2: How do you design an admissible heuristic?
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" alt="Handwritten: How do you design an admissible heuristic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" alt="Diagram: How do you design an admissible heuristic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" alt="Sticky Note: How do you design an admissible heuristic?" width="30%">
+</a>
+
 
 **Answer:** The most common technique is **relaxation**:
 1. Start with the original problem constraints.
@@ -924,9 +1441,31 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q3: Can an inadmissible heuristic ever be useful?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" alt="Handwritten: Can an inadmissible heuristic ever be useful?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" alt="Diagram: Can an inadmissible heuristic ever be useful?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" alt="Sticky Note: Can an inadmissible heuristic ever be useful?" width="30%">
+</a>
+
+
 **Answer:** Yes. Inadmissible heuristics (which overestimate) can find solutions faster if you accept near-optimal solutions. **Weighted A*** uses f(n) = g(n) + eps*h(n) with eps > 1. This biases search toward the goal, often finding a solution 2-5x faster that is within eps of optimal (bounded suboptimal search).
 
 ### Q4: Compare A*, IDA*, and RBFS.
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" alt="Handwritten: Compare A*, IDA*, and RBFS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" alt="Diagram: Compare A*, IDA*, and RBFS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" alt="Sticky Note: Compare A*, IDA*, and RBFS." width="30%">
+</a>
+
 
 | Algorithm | Memory | Node Re-expansion | Complexity |
 |:---------:|:------:|:-----------------:|:----------:|
@@ -938,6 +1477,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q5: What is the difference between tree search and graph search in A*?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" alt="Handwritten: What is the difference between tree search and graph search in A*?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" alt="Diagram: What is the difference between tree search and graph search in A*?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" alt="Sticky Note: What is the difference between tree search and graph search in A*?" width="30%">
+</a>
+
+
 **Answer:**
 - **Tree search:** No explored set. Requires only admissibility for optimality, but may loop infinitely on cyclic graphs.
 - **Graph search:** Maintains an explored set. Requires consistency for optimality. Handles cycles correctly.
@@ -947,6 +1497,17 @@ print("RBFS path:", path)   # S -> B -> F -> G
 ## Applications in Real Systems
 
 ### GPS Navigation (A*)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" alt="Handwritten: GPS Navigation (A*)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" alt="Diagram: GPS Navigation (A*)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" alt="Sticky Note: GPS Navigation (A*)" width="30%">
+</a>
+
 
 Major GPS platforms (Google Maps, Waze, Apple Maps) use A*-like algorithms augmented with:
 - **Landmark heuristics (ALT):** Precomputed distances to landmark nodes provide tight lower bounds — often within 1% of true distance.
@@ -958,6 +1519,17 @@ Modern GPS computes optimal routes across 50 million nodes in **milliseconds** �
 
 ### Video Game Pathfinding (A* on Navigation Meshes)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" alt="Handwritten: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" alt="Diagram: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" alt="Sticky Note: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+</a>
+
+
 Popular game engines (Unreal Engine, Unity) use A* variants:
 - **Navigation meshes (NavMesh):** The game world is abstracted into a graph of convex polygons. A* searches over polygons rather than pixels.
 - **Hierarchical A* (HNA*):** A coarse search identifies which region the path traverses, then fine-grained search fills in details.
@@ -966,6 +1538,17 @@ Popular game engines (Unreal Engine, Unity) use A* variants:
 
 ### Robotics (D* Lite)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" alt="Handwritten: Robotics (D* Lite)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" alt="Diagram: Robotics (D* Lite)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" alt="Sticky Note: Robotics (D* Lite)" width="30%">
+</a>
+
+
 Robots use **D* Lite** (A* variant with incremental replanning):
 - **Initial path:** A* computes the optimal route.
 - **Sensor feedback:** As the robot moves, sensors discover new obstacles.
@@ -973,6 +1556,17 @@ Robots use **D* Lite** (A* variant with incremental replanning):
 - **Real-world use:** Mars rovers (Opportunity, Curiosity) use D* Lite for autonomous navigation.
 
 ### Other Domains
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" alt="Handwritten: Other Domains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" alt="Diagram: Other Domains" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" alt="Sticky Note: Other Domains" width="30%">
+</a>
+
 
 | Domain | Algorithm | Heuristic | Why |
 |--------|:---------:|:---------:|:----|

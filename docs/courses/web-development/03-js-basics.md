@@ -58,6 +58,17 @@ graph TD
 
 ### 3.1 Variables
 
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-handwritten.svg" alt="Handwritten: 3.1 Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-diagram.svg" alt="Diagram: 3.1 Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-1-variables-sticky.svg" alt="Sticky Note: 3.1 Variables" width="30%">
+</a>
+
+
 JavaScript provides three variable declaration keywords, each with distinct scoping rules.
 
 ```javascript
@@ -97,6 +108,17 @@ Rule: Prefer `const` by default, use `let` when reassignment is necessary, never
 
 ### 3.2 Types
 
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-handwritten.svg" alt="Handwritten: 3.2 Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-diagram.svg" alt="Diagram: 3.2 Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-2-types-sticky.svg" alt="Sticky Note: 3.2 Types" width="30%">
+</a>
+
+
 JavaScript has seven primitive types and one reference type (Object).
 
 ```javascript
@@ -134,6 +156,17 @@ parseInt('42px', 10); // 42
 ```
 
 ### 3.3 Operators
+
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-handwritten.svg" alt="Handwritten: 3.3 Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-diagram.svg" alt="Diagram: 3.3 Operators" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-3-operators-sticky.svg" alt="Sticky Note: 3.3 Operators" width="30%">
+</a>
+
 
 **Equality:** Always use `===` and `!==` to avoid type coercion.
 
@@ -187,6 +220,17 @@ sum(1, 2, 3, 4); // 10
 
 ### 3.4 Control Flow
 
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-handwritten.svg" alt="Handwritten: 3.4 Control Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-diagram.svg" alt="Diagram: 3.4 Control Flow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-4-control-flow-sticky.svg" alt="Sticky Note: 3.4 Control Flow" width="30%">
+</a>
+
+
 ```javascript
 // if / else if / else
 const score = 85;
@@ -239,6 +283,17 @@ do {
 
 ### 3.5 Functions
 
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-handwritten.svg" alt="Handwritten: 3.5 Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-diagram.svg" alt="Diagram: 3.5 Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-5-functions-sticky.svg" alt="Sticky Note: 3.5 Functions" width="30%">
+</a>
+
+
 **Function declaration** (hoisted):
 
 ```javascript
@@ -286,6 +341,17 @@ function createUser(name, role = 'user', isActive = true) {
 
 ### 3.6 Objects
 
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-handwritten.svg" alt="Handwritten: 3.6 Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-diagram.svg" alt="Diagram: 3.6 Objects" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-6-objects-sticky.svg" alt="Sticky Note: 3.6 Objects" width="30%">
+</a>
+
+
 Objects are collections of key-value pairs.
 
 ```javascript
@@ -323,6 +389,17 @@ Object.defineProperty(user, 'id', {
 ```
 
 ### 3.7 Promises and Async/Await
+
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-handwritten.svg" alt="Handwritten: 3.7 Promises and Async/Await" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-diagram.svg" alt="Diagram: 3.7 Promises and Async/Await" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-7-promises-and-async-await-sticky.svg" alt="Sticky Note: 3.7 Promises and Async/Await" width="30%">
+</a>
+
 
 JavaScript handles asynchronous operations via Promises and async/await.
 
@@ -390,6 +467,17 @@ const failed = results.filter((r) => r.status === "rejected").map((r) => r.reaso
 ```
 
 ### 3.8 Arrays
+
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-handwritten.svg" alt="Handwritten: 3.8 Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-diagram.svg" alt="Diagram: 3.8 Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/web-development/03-js-basics/3-8-arrays-sticky.svg" alt="Sticky Note: 3.8 Arrays" width="30%">
+</a>
+
 
 Arrays are ordered, zero-indexed collections.
 

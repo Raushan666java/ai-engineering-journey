@@ -27,6 +27,17 @@
 
 ### गलती १: प्रयास और तनाव (Effort & Tension)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" alt="Handwritten: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" alt="Diagram: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" alt="Sticky Note: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+</a>
+
+
 **समस्या:** साधक ध्यान को बहुत गंभीरता से लेते हैं — भौंहें तान लेते हैं, शरीर में तनाव पैदा कर लेते हैं, और जबरदस्ती ध्यान करने की कोशिश करते हैं।
 
 **ओशो का सुधार:**
@@ -37,6 +48,17 @@
 ---
 
 ### गलती २: परिणाम की अपेक्षा (Expectation of Results)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" alt="Handwritten: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" alt="Diagram: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" alt="Sticky Note: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+</a>
+
 
 **समस्या:** साधक सोचते हैं — "मैंने दस दिन ध्यान किया, मुझे कुछ अनुभव क्यों नहीं हुआ?" वे तुरंत परिणाम चाहते हैं।
 
@@ -49,6 +71,17 @@
 
 ### गलती ३: विचारों से लड़ना (Fighting Thoughts)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" alt="Handwritten: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" alt="Diagram: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" alt="Sticky Note: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+</a>
+
+
 **समस्या:** ध्यान करते समय विचार आते हैं — और साधक उनसे लड़ने लगते हैं। वे सोचते हैं — "विचार आ रहे हैं, मैं ध्यान में असफल हूँ।"
 
 **ओशो का सुधार:**
@@ -59,6 +92,17 @@
 ---
 
 ### गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" alt="Handwritten: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" alt="Diagram: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" alt="Sticky Note: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+</a>
+
 
 **समस्या:** साधक एक तकनीक को दो-चार दिन करते हैं — और काम न करने पर दूसरी तकनीक पर चले जाते हैं।
 
@@ -71,6 +115,17 @@
 
 ### गलती ५: यांत्रिक दोहराव (Mechanical Repetition)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" alt="Handwritten: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" alt="Diagram: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" alt="Sticky Note: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+</a>
+
+
 **समस्या:** साधक ध्यान को एक आदत बना लेते हैं — रोज़ एक ही समय, एक ही तरीके से — लेकिन बिना जागरूकता के। वे यांत्रिक हो जाते हैं।
 
 **ओशो का सुधार:**
@@ -81,6 +136,17 @@
 ---
 
 ### गलती ६: संसार से भागना (Escaping from the World)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" alt="Handwritten: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" alt="Diagram: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" alt="Sticky Note: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+</a>
+
 
 **समस्या:** बहुत से साधक सोचते हैं — "मैं ध्यान करूँगा तो संसार छोड़ दूँगा। परिवार, नौकरी, सब छोड़कर हिमालय चला जाऊँगा।"
 
@@ -93,6 +159,17 @@
 
 ### गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" alt="Handwritten: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" alt="Diagram: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" alt="Sticky Note: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+</a>
+
+
 **समस्या:** साधक गुरु को भगवान मान लेते हैं — उनकी हर बात को बिना समझे मान लेते हैं — अपनी बुद्धि का उपयोग नहीं करते।
 
 **ओशो का सुधार:**
@@ -103,6 +180,17 @@
 ---
 
 ### गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" alt="Handwritten: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" alt="Diagram: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" alt="Sticky Note: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+</a>
+
 
 **समस्या:** साधक विज्ञान भैरव तंत्र को एक दार्शनिक ग्रंथ की तरह पढ़ते हैं — उस पर चिंतन करते हैं, चर्चा करते हैं — लेकिन अभ्यास नहीं करते।
 
@@ -115,6 +203,17 @@
 
 ### गलती ९: दूसरों से तुलना (Comparing with Others)
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" alt="Handwritten: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" alt="Diagram: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" alt="Sticky Note: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+</a>
+
+
 **समस्या:** साधक दूसरों के अनुभवों को सुनते हैं — और सोचते हैं — "मुझे यह अनुभव क्यों नहीं हो रहा?"
 
 **ओशो का सुधार:**
@@ -125,6 +224,17 @@
 ---
 
 ### गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" alt="Handwritten: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" alt="Diagram: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" alt="Sticky Note: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+</a>
+
 
 **समस्या:** साधक सोचते हैं — "मुझे ध्यानी बनना है। मुझे महासमाधि प्राप्त करनी है।" वे ध्यान को एक लक्ष्य बना लेते हैं।
 
@@ -141,12 +251,34 @@
 
 ### प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "सुबह — जब चारों ओर शांति हो — वह अच्छा है। रात — जब दिन की भागदौड़ खत्म हो — वह भी अच्छा है। लेकिन असली सवाल यह नहीं है — 'कब?' — असली सवाल है — 'कैसे?' अगर सही ढंग से ध्यान करोगे — तो कोई भी समय अच्छा है।"
 
 ---
 
 ### प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "नींद आना एक अच्छा संकेत है — इसका मतलब है कि तुम विश्राम कर रहे हो। लेकिन हमें ध्यान चाहिए — नींद नहीं। अगर नींद आए — तो आँखें खोल लो। खड़े हो जाओ। या कोई ऐसी तकनीक करो जिसमें शरीर सक्रिय हो — जैसे चलना या नृत्य।"
@@ -155,12 +287,34 @@
 
 ### प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "हाँ — लेकिन याद रखो — मंत्र कोई जादू नहीं है। मंत्र एक उपकरण है — मन को एक सूत्र पर रखने के लिए। ॐ का जप करो — लेकिन यांत्रिक मत बनो। हर उच्चारण को सुनो — उसके कंपन को महसूस करो। और जब मंत्र गायब हो जाए — तो उस मौन में ठहरो।"
 
 ---
 
 ### प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "अगर ध्यान का असर तुम्हारी रोज़मर्रा की ज़िंदगी में नहीं दिखता — तो समझो कि तुम सही ढंग से ध्यान नहीं कर रहे। सच्चा ध्यान तुम्हें बदल देता है — तुम कम गुस्सा करते हो, ज़्यादा प्रेम करते हो, कम परेशान होते हो, ज़्यादा शांत रहते हो।"
@@ -169,12 +323,34 @@
 
 ### प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "कम से कम २० मिनट — और अधिक से अधिक — कोई सीमा नहीं। लेकिन २० मिनट से कम मत करो — क्योंकि चित्त को स्थिर होने में कम से कम १०-१५ मिनट लगते हैं। उसके बाद ही असली ध्यान शुरू होता है।"
 
 ---
 
 ### प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "कोई विशेष आसन ज़रूरी नहीं है। तंत्र योग से अलग है — तंत्र में शरीर को जबरदस्ती नहीं किया जाता। सुखासन में बैठो — जो भी आरामदायक हो। रीढ़ सीधी रहे — बस इतना ध्यान रखो।"
@@ -183,12 +359,34 @@
 
 ### प्रश्न ७: विचारों को कैसे रोकूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "विचारों को रोकने की कोशिश मत करो — यह सबसे बड़ी गलती है। विचारों को रोकने की कोशिश में — तुम और विचार पैदा करोगे। बस देखो — जैसे तुम फिल्म देखते हो — विचार स्क्रीन पर आ रहे हैं, जा रहे हैं। तुम देखने वाले हो — स्क्रीन नहीं।"
 
 ---
 
 ### प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "बिल्कुल नहीं। तंत्र ब्रह्मचर्य को ज़रूरी नहीं मानता। तंत्र कहता है — कामवासना को दबाओ मत — उसे समझो। दमन से कोई मुक्ति नहीं मिलती — दमन से विकृतियाँ पैदा होती हैं। सेक्स को ध्यान में बदलो — उसे जागरूकता से भर दो।"
@@ -197,12 +395,34 @@
 
 ### प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "अकेला ध्यान करना बहुत अच्छा है — लेकिन कभी-कभी साथ में भी करो। अकेले में तुम अपनी गहराई में जाते हो — साथ में तुम दूसरे की ऊर्जा का अनुभव करते हो। दोनों का अपना महत्व है।"
 
 ---
 
 ### प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "दोनों। आँखें बंद करने से भीतर जाना आसान होता है — लेकिन नींद का खतरा है। आँखें खुली रखने से जागरूकता बनी रहती है — लेकिन बाहरी दुनिया का ध्यान भटकता है। प्रयोग करो — जो तुम्हें सूट करे — वह करो।"
@@ -211,12 +431,34 @@
 
 ### प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "हाँ — लेकिन संगीत को ध्यान का सहायक बनाओ — बाधा नहीं। अगर संगीत तुम्हें शांति देता है — तो उसका उपयोग करो। लेकिन अंततः — तुम्हें बिना किसी सहारे के ध्यान करना आना चाहिए।"
 
 ---
 
 ### प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "साक्षी बनने की कोशिश मत करो — बस देखो। जब तुम यह कहते हो — 'मुझे साक्षी बनना है' — तो यह एक विचार है। साक्षी होना कोई क्रिया नहीं — यह एक समझ है। तुम पहले से ही साक्षी हो — बस भूल गए हो।"
@@ -225,12 +467,34 @@
 
 ### प्रश्न १३: क्या ध्यान करने से कोई खतरा है?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "ध्यान में कोई खतरा नहीं है — लेकिन सावधानी चाहिए। अगर तुम गलत तरीके से करोगे — तो परेशानी हो सकती है। बहुत ज़ोर से मत करो — कोमल रहो। शरीर की सुनो — उसे जबरदस्ती मत करो।"
 
 ---
 
 ### प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "एकाग्रता में संकुचन है — ध्यान में विस्तार है। एकाग्रता में तुम एक बिंदु पर केंद्रित होते हो — बाकी सब को छोड़कर। ध्यान में तुम सब को शामिल करते हो — बिना किसी चयन के। एकाग्रता तनाव पैदा करती है — ध्यान विश्राम देता है।"
@@ -239,12 +503,34 @@
 
 ### प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "सोने से पहले ध्यान करना बहुत अच्छा है। दिन भर के तनाव को छोड़ने का यह सबसे अच्छा समय है। लेकिन सोने से पहले — गहन ध्यान मत करो — हल्का ध्यान करो। श्वास को देखो — शरीर को ढीला छोड़ दो — और धीरे-धीरे नींद में चले जाओ।"
 
 ---
 
 ### प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "नहीं — कम से कम एक घंटा बाद करो। खाने के बाद शरीर की सारी ऊर्जा पाचन में लग जाती है — तब ध्यान करना मुश्किल है। हल्का खाना खाओ — और थोड़ी देर बाद ध्यान करो।"
@@ -253,12 +539,34 @@
 
 ### प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "हाँ — जैसे-जैसे ध्यान गहरा होता है — नींद की ज़रूरत कम हो सकती है। लेकिन यह धीरे-धीरे होता है — जबरदस्ती नहीं। जब तुम ध्यान में गहरे विश्राम का अनुभव करते हो — तो वह नींद की जगह ले सकता है।"
 
 ---
 
 ### प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "हिल सकते हो — लेकिन जागरूकता से हिलो। अगर शरीर में खुजली हो — तो बिना सोचे मत हिलो — पहले खुजली को देखो — फिर धीरे-से हिलो। हर क्रिया को जागरूकता से करो।"
@@ -267,12 +575,34 @@
 
 ### प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "शुरुआत में — एक ही तकनीक को ४० दिन करो — उसे गहराई दो। फिर — दूसरी तकनीक आज़माओ। अलग-अलग तकनीकें अलग-अलग पहलुओं को खोलती हैं। जैसे एक घर में अलग-अलग खिड़कियाँ होती हैं।"
 
 ---
 
 ### प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "ध्यान का उद्देश्य याददाश्त बढ़ाना नहीं है — लेकिन हाँ, एक साइड इफ़ेक्ट के रूप में याददाश्त बेहतर हो सकती है। क्योंकि ध्यान से तुम अधिक जागरूक हो जाते हो — और जागरूक व्यक्ति बेहतर याद रखता है।"
@@ -281,12 +611,34 @@
 
 ### प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "लेट सकते हो — लेकिन नींद का खतरा है। अगर तुम लेटोगे — तो शरीर को नींद का संकेत मिलेगा। इसलिए शुरुआत में बैठकर करना बेहतर है। लेकिन अगर तुम बीमार हो — तो लेटकर करो — लेकिन सतर्क रहो।"
 
 ---
 
 ### प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "जो तुम्हें सबसे सरल लगे — वही चुनो। जो तुम्हें सबसे आकर्षित करे — वही चुनो। तुम्हारा आकर्षण कोई संयोग नहीं है — वह बताता है कि तुम्हारे लिए क्या सही है। श्वास तकनीक से शुरू करो — वह सबसे सरल है।"
@@ -295,12 +647,34 @@
 
 ### प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "पैर सुन्न होना आम बात है — खासकर शुरुआत में। चिंता मत करो। थोड़ी देर बाद अपने पैरों को हल्का स्ट्रेच करो — जागरूकता से। तकिए का उपयोग करो — नीचे तकिया रखकर बैठो।"
 
 ---
 
 ### प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "बिल्कुल। अगर भावनाएँ आएँ — तो उन्हें आने दो। रोना आए — तो रो लो। हँसी आए — तो हँस लो। ध्यान में कोई दमन नहीं है — सब कुछ स्वीकार है। लेकिन भावना में बह मत जाओ — उसे देखते रहो।"
@@ -309,12 +683,34 @@
 
 ### प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "डर लगना स्वाभाविक है — क्योंकि ध्यान में तुम अज्ञात में कदम रख रहे हो। तुम अपनी पुरानी पहचान को छोड़ रहे हो — और यह डरावना है। यह छोटी मौत है — अहंकार की मौत। लेकिन इस डर से मत भागो — इस डर को देखो।"
 
 ---
 
 ### प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "अलग कमरा हो तो अच्छा है — लेकिन ज़रूरी नहीं। जहाँ भी तुम्हें शांति मिले — वहीं करो। एक कोना चुन लो — वहाँ नियमित रूप से ध्यान करो — तो वह कोना ऊर्जा से भर जाएगा।"
@@ -323,12 +719,34 @@
 
 ### प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "अनुभव न करना भी एक अनुभव है। खालीपन — शून्यता — यह भी एक अवस्था है। सबसे बड़ा अनुभव वह है जहाँ कोई अनुभव नहीं है — वह शुद्ध चेतना है। कोई रोशनी दिखे — कोई आवाज़ सुनाई दे — यह सब लक्ष्य नहीं है।"
 
 ---
 
 ### प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "मैं कहता हूँ — प्रयास करो — लेकिन जानते हुए कि प्रयास से कुछ नहीं होगा। प्रयास एक उपकरण है — एक चाल है। प्रयास से तुम शुरू करते हो — और धीरे-धीरे प्रयास छूट जाता है। जैसे तुम सीढ़ी चढ़ते हो — सीढ़ी की ज़रूरत है — लेकिन एक बार ऊपर पहुँच जाओ — तो सीढ़ी को छोड़ देना पड़ता है।"
@@ -337,12 +755,34 @@
 
 ### प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "बच्चों को ध्यान मत सिखाओ — उन्हें ध्यान का वातावरण दो। बच्चे अनुकरण करते हैं — वे तुम्हें देखेंगे — और अगर तुम ध्यान करते हो — तो वे भी करेंगे। लेकिन उन पर ध्यान थोपो मत।"
 
 ---
 
 ### प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "दस मिनट भी काफ़ी हैं — अगर वे पूरी जागरूकता से भरे हों। दस जागरूक मिनट एक घंटे की निंद्रा से बेहतर हैं। लेकिन धीरे-धीरे समय बढ़ाओ। बीस मिनट — फिर तीस — फिर एक घंटा।"
@@ -351,12 +791,34 @@
 
 ### प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "यह सबसे आम बहाना है — 'समय नहीं है'। लेकिन सच यह है — जब तुम्हें कुछ सच में करना होता है — तो समय निकल ही आता है। प्रतिदिन २० मिनट — यह बहुत नहीं है। जल्दी उठो — २० मिनट पहले — और करो।"
 
 ---
 
 ### प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "प्रार्थना में तुम किसी से बात करते हो — ध्यान में तुम सुनते हो। प्रार्थना में तुम माँगते हो — ध्यान में तुम मौन हो। प्रार्थना में तुम परमात्मा को संबोधित करते हो — ध्यान में तुम परमात्मा को सुनते हो।"
@@ -365,12 +827,34 @@
 
 ### प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "ध्यान तुम्हारे स्वभाव को नहीं बदलता — ध्यान तुम्हारी चेतना को बदलता है। स्वभाव तो वही रहेगा — लेकिन उसके प्रति तुम्हारा दृष्टिकोण बदल जाएगा। ध्यान तुम्हें तुम्हारे स्वभाव का मालिक बनाता है — गुलाम नहीं।"
 
 ---
 
 ### प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "बहुत अच्छा है — गुस्सा आ रहा है तो वह बाहर आ रहा है। अंदर दबा हुआ गुस्सा ध्यान में निकलता है — यह शुद्धिकरण है। उसे आने दो — उसे देखो — वह शुद्धिकरण है। जैसे कोई ज़ख्म हो — और उसमें से मवाद निकल रहा हो — वह दर्द देता है — लेकिन ज़रूरी है।"
@@ -379,12 +863,34 @@
 
 ### प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "बिल्कुल सही है। जब हृदय खुलता है — तो आँसू अपने आप आते हैं। यह उदासी के आँसू नहीं हैं — ये आनंद के आँसू हैं। इन्हें रोको मत — इन्हें बहने दो। यह शरीर की अपनी भाषा है — जब शब्द काफ़ी नहीं होते — तो आँसू बोलते हैं।"
 
 ---
 
 ### प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "हाँ — तंत्र में कल्पना का बहुत उपयोग है। कल्पना एक उपकरण है — जैसे बीज। सही कल्पना सही वास्तविकता को जन्म दे सकती है। जब तुम कल्पना करते हो कि 'मैं प्रकाश हूँ' — तो यह कल्पना एक दिन वास्तविकता बन जाती है। लेकिन याद रखो — कल्पना साधन है, साध्य नहीं।"
@@ -393,12 +899,34 @@
 
 ### प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "कार्यालय में भी ध्यान संभव है। बस दो-तीन गहरी साँसें लो — और उन साँसों को पूरी जागरूकता से देखो। कोई बैठने की ज़रूरत नहीं — कोई आँखें बंद करने की ज़रूरत नहीं। काम करते हुए भी — अपनी श्वास के प्रति जागरूक रहो। यह छोटा-सा ध्यान तुम्हें पूरे दिन तरोताज़ा रखेगा।"
 
 ---
 
 ### प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "ध्यान का रिश्तों पर बहुत अच्छा असर पड़ता है। जब तुम ध्यानी बनते हो — तो तुम कम प्रतिक्रियाशील होते हो, अधिक समझदार होते हो। तुम दूसरों को वैसे ही स्वीकार करने लगते हो जैसे वे हैं — बिना उन्हें बदलने की कोशिश किए। और यही सच्चे प्रेम की नींव है।"
@@ -407,12 +935,34 @@
 
 ### प्रश्न ४०: ध्यान और नींद में क्या अंतर है?
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+</a>
+
+
 **ओशो का उत्तर:**
 > "नींद में जागरूकता खो जाती है — ध्यान में जागरूकता बनी रहती है। नींद में तुम अचेतन होते हो — ध्यान में तुम अतिचेतन होते हो। नींद शरीर का विश्राम है — ध्यान चेतना का विस्तार है। दोनों ज़रूरी हैं — लेकिन ध्यान अधिक गहरा है क्योंकि उसमें जागरूकता है।"
 
 ---
 
 ### प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+</a>
+
 
 **ओशो का उत्तर:**
 > "ध्यान से कई तरह की शक्तियाँ प्रकट हो सकती हैं — लेकिन उनसे मत चिपको। वे रास्ते में मिलने वाले फूल हैं — मंज़िल नहीं। अगर तुम शक्तियों में उलझ गए — तो तुम रास्ते में ही रह जाओगे। मंज़िल तो चेतना का विस्तार है — शक्तियाँ नहीं।"
@@ -447,12 +997,34 @@
 
 ### सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "तुम वह नहीं हो जो तुम सोचते हो — तुम वह हो जो सोच को देखता है। यही एक ज्ञान — साक्षी का ज्ञान — तुम्हें मुक्त कर देगा। विचार आते हैं और जाते हैं — तुम रहते हो। तुम वह मौन साक्षी हो जिसमें यह सब हो रहा है।"
 
 ---
 
 ### सूत्र २: कोमल रहो — जबरदस्ती मत करो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "ध्यान में कोमलता सबसे बड़ी शक्ति है। जबरदस्ती से कुछ नहीं होता — कोमलता से सब कुछ होता है। जैसे पानी — वह कोमल है — लेकिन पत्थर को भी काट देता है। वैसे ही ध्यान — वह कोमल है — लेकिन अहंकार को काट देता है।"
@@ -461,12 +1033,34 @@
 
 ### सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "चालीस दिन — यह एक महत्वपूर्ण संख्या है। चालीस दिन लगातार अभ्यास — और तकनीक तुम्हारे रक्त में उतर जाती है। वह यांत्रिक नहीं रहती — वह जैविक हो जाती है। नियमितता से ही गहराई आती है।"
 
 ---
 
 ### सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "श्वास हमेशा तुम्हारे साथ है — जन्म से मृत्यु तक। वह तुम्हारा सबसे करीबी मित्र है — लेकिन तुम उसे भूल गए हो। श्वास पर ध्यान दो — वह तुम्हें वर्तमान में लाएगी। श्वास ही पुल है — शरीर से आत्मा तक।"
@@ -475,12 +1069,34 @@
 
 ### सूत्र ५: धैर्य रखो — जल्दबाजी मत करो
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "अनंत काल तुम्हारा है — जल्दी क्या है? ध्यान में धैर्य सबसे बड़ा गुण है। जैसे एक बीज को धरती में बोया जाता है — वह चुपचाप बढ़ता है — तुम उसे खोदकर मत देखो कि 'अंकुर आया या नहीं'। वह अपने समय पर आएगा।"
 
 ---
 
 ### सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "अनुभव आएँ — उनका स्वागत करो — लेकिन उनसे चिपको मत। कल का अनुभव आज बाधा बन सकता है। हर पल नया है — नई आँखों से देखो। पुराने अनुभवों को जाने दो — वे सीढ़ी के पायदान थे, अब उनकी ज़रूरत नहीं।"
@@ -489,12 +1105,34 @@
 
 ### सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "२० मिनट प्रतिदिन — २ घंटे रविवार को नहीं। नियमितता गहराई लाती है। जैसे पानी की बूँदें — वे एक साथ गिरें — तो पत्थर भी छिद जाता है। वैसे ही नियमित ध्यान — अहंकार के पत्थर को छेद देता है।"
 
 ---
 
 ### सूत्र ८: संदेह करो — अंधविश्वास मत करो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "मेरी बात मत मानो — प्रयोग करो, जाँच करो, अनुभव करो। सत्य कोई विश्वास नहीं — यह एक अनुभव है। विश्वास तो अज्ञानियों का सहारा है — तुम सच्चाई की खोज करो। संदेह करो — यही ज्ञान का पहला कदम है।"
@@ -503,12 +1141,34 @@
 
 ### सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+</a>
+
+
 **ओशो वाणी:**
 > "जब तुम बैठकर ध्यान करते हो — तो यह अच्छा है — लेकिन असली ध्यान तो जीवन में है। चलते हुए — खाते हुए — बात करते हुए — जागरूक रहो। ध्यान कोई अलग चीज़ नहीं — यह जीने का एक तरीका है। पूरा जीवन ध्यान बन जाए — यही तंत्र का लक्ष्य है।"
 
 ---
 
 ### सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+</a>
+
 
 **ओशो वाणी:**
 > "स्वयं पर बहुत कठोर मत बनो। अगर कभी ध्यान छूट जाए — तो अपने को कोसो मत। कल फिर करो। ध्यान कोई परीक्षा नहीं है — यह तो घर वापसी है। अपने प्रति दयालु रहो — कोमल रहो। हँसो — मुस्कुराओ — ध्यान को उत्सव बनाओ, कर्तव्य नहीं।"

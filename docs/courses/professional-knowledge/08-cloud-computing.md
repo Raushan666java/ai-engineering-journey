@@ -58,6 +58,17 @@ graph TD
 | **Scalability** | Manual/auto scaling instances | Auto-scaling built-in | Handled by provider |
 
 ### NIST Definition (5 Essential Characteristics)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-handwritten.svg" alt="Handwritten: NIST Definition (5 Essential Characteristics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-diagram.svg" alt="Diagram: NIST Definition (5 Essential Characteristics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nist-definition-5-essential-characteristics-sticky.svg" alt="Sticky Note: NIST Definition (5 Essential Characteristics)" width="30%">
+</a>
+
 1. **On-demand self-service** — provision resources without human interaction
 2. **Broad network access** — accessible via standard protocols
 3. **Resource pooling** — multi-tenant, location independent
@@ -76,6 +87,17 @@ graph TD
 | **Community Cloud** | Shared by several organizations | Shared cost, compliance | Limited provider options | Government cloud |
 
 ### Hybrid Cloud Use Case
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-handwritten.svg" alt="Handwritten: Hybrid Cloud Use Case" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-diagram.svg" alt="Diagram: Hybrid Cloud Use Case" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hybrid-cloud-use-case-sticky.svg" alt="Sticky Note: Hybrid Cloud Use Case" width="30%">
+</a>
+
 - **Normal load:** Private cloud (sensitive data)
 - **Peak load:** Burst to public cloud (encrypted data)
 - **DR:** Public cloud as backup
@@ -92,6 +114,17 @@ graph TD
 | **Hardware-Assisted** | Uses CPU extensions (Intel VT-x, AMD-V) for VM operations | KVM, Hyper-V |
 
 ### Hypervisor Types
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-handwritten.svg" alt="Handwritten: Hypervisor Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-diagram.svg" alt="Diagram: Hypervisor Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-types-sticky.svg" alt="Sticky Note: Hypervisor Types" width="30%">
+</a>
+
 
 | Type | Architecture | Example | Latency |
 |------|-------------|---------|---------|
@@ -128,6 +161,17 @@ Type 2: [Hardware] → [Host OS] → [Hypervisor] → [VMs]
 | **Monitoring** | CloudWatch | Monitoring &amp; logging | Azure Monitor |
 
 ### AWS Regions &amp; Availability Zones
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-handwritten.svg" alt="Handwritten: AWS Regions &amp; Availability Zones" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-diagram.svg" alt="Diagram: AWS Regions &amp; Availability Zones" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-regions-amp-availability-zones-sticky.svg" alt="Sticky Note: AWS Regions &amp; Availability Zones" width="30%">
+</a>
+
 - **Region:** Geographic area (us-east-1, eu-west-1)
 - **AZ:** One or more data centers within a region
 - Multi-AZ deployment → high availability
@@ -144,6 +188,17 @@ Type 2: [Hardware] → [Host OS] → [Hypervisor] → [VMs]
 | **File Storage** | Hierarchical, shared across VMs | NFS, SMB | Moderate | Shared configs, home dirs |
 
 ### S3 Storage Classes (AWS)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-handwritten.svg" alt="Handwritten: S3 Storage Classes (AWS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-diagram.svg" alt="Diagram: S3 Storage Classes (AWS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/s3-storage-classes-aws-sticky.svg" alt="Sticky Note: S3 Storage Classes (AWS)" width="30%">
+</a>
+
 | Class | Durability | Availability | Min Duration | Retrieval Cost |
 |-------|-----------|-------------|-------------|----------------|
 | S3 Standard | 99.999999999% (11 9s) | 99.99% | None | Instant |
@@ -166,6 +221,17 @@ Type 2: [Hardware] → [Host OS] → [Hypervisor] → [VMs]
 | **Cloud-specific** | Yes (elastic = cloud native) | Also applies to on-prem |
 
 ### Scalability Types
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-handwritten.svg" alt="Handwritten: Scalability Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-diagram.svg" alt="Diagram: Scalability Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/scalability-types-sticky.svg" alt="Sticky Note: Scalability Types" width="30%">
+</a>
+
 - **Vertical scaling (Scale up):** Bigger instance (more CPU/RAM) — limited by hardware max
 - **Horizontal scaling (Scale out):** More instances — theoretically unlimited
 
@@ -190,6 +256,17 @@ Type 2: [Hardware] → [Host OS] → [Hypervisor] → [VMs]
 **SaaS:** Customer secures data + user access
 
 ### Cloud Security Threats
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-handwritten.svg" alt="Handwritten: Cloud Security Threats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-diagram.svg" alt="Diagram: Cloud Security Threats" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-security-threats-sticky.svg" alt="Sticky Note: Cloud Security Threats" width="30%">
+</a>
+
 1. **Data breaches** — unauthorized access to stored data
 2. **Misconfiguration** — open S3 buckets, overly permissive IAM
 3. **Insecure APIs** — weak authentication on cloud management APIs
@@ -212,6 +289,17 @@ In a distributed data store, at most **two** of these three can be guaranteed si
 
 ### CAP Combinations
 
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-handwritten.svg" alt="Handwritten: CAP Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-diagram.svg" alt="Diagram: CAP Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cap-combinations-sticky.svg" alt="Sticky Note: CAP Combinations" width="30%">
+</a>
+
+
 | System Type | C | A | P | Example |
 |-------------|---|---|---|---------|
 | **CP** | ✅ | ❌ | ✅ | HBase, MongoDB (with consistency preference) |
@@ -221,6 +309,17 @@ In a distributed data store, at most **two** of these three can be guaranteed si
 **Note:** In distributed systems, partitions are inevitable, so **P is mandatory**. You choose between CP and AP.
 
 ### NoSQL Database Types (by CAP)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-handwritten.svg" alt="Handwritten: NoSQL Database Types (by CAP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-diagram.svg" alt="Diagram: NoSQL Database Types (by CAP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/nosql-database-types-by-cap-sticky.svg" alt="Sticky Note: NoSQL Database Types (by CAP)" width="30%">
+</a>
+
 
 | Type | CAP | Description | Examples |
 |------|-----|-------------|----------|
@@ -234,6 +333,17 @@ In a distributed data store, at most **two** of these three can be guaranteed si
 ## 9. Cloud Deployment Patterns
 
 ### Infrastructure as Code (IaC)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-handwritten.svg" alt="Handwritten: Infrastructure as Code (IaC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-diagram.svg" alt="Diagram: Infrastructure as Code (IaC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/infrastructure-as-code-iac-sticky.svg" alt="Sticky Note: Infrastructure as Code (IaC)" width="30%">
+</a>
+
 ```yaml
 # AWS CloudFormation / Terraform snippet
 Resources:
@@ -247,11 +357,33 @@ Resources:
 ```
 
 ### Microservices on Cloud
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-handwritten.svg" alt="Handwritten: Microservices on Cloud" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-diagram.svg" alt="Diagram: Microservices on Cloud" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/microservices-on-cloud-sticky.svg" alt="Sticky Note: Microservices on Cloud" width="30%">
+</a>
+
 - Each service deployed independently (containers/Lambda)
 - Service discovery, API gateway, circuit breakers
 - Benefits: independent scaling, deployment, technology diversity
 
 ### Serverless Architecture
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-handwritten.svg" alt="Handwritten: Serverless Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-diagram.svg" alt="Diagram: Serverless Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-architecture-sticky.svg" alt="Sticky Note: Serverless Architecture" width="30%">
+</a>
+
 - No server management — just code
 - Event-driven: function triggered by HTTP, queue, DB change
 - Cold start: first invocation latency (container initialization)
@@ -306,6 +438,17 @@ Resources:
 ## 10. Kubernetes (Container Orchestration) Basics
 
 ### Core Concepts
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-handwritten.svg" alt="Handwritten: Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-diagram.svg" alt="Diagram: Core Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/core-concepts-sticky.svg" alt="Sticky Note: Core Concepts" width="30%">
+</a>
+
 | Concept | Description |
 |---------|-------------|
 | **Pod** | Smallest deployable unit — one or more containers sharing network/storage |
@@ -317,6 +460,17 @@ Resources:
 | **Namespace** | Virtual cluster for isolation |
 
 ### Control Plane Components
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-handwritten.svg" alt="Handwritten: Control Plane Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-diagram.svg" alt="Diagram: Control Plane Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/control-plane-components-sticky.svg" alt="Sticky Note: Control Plane Components" width="30%">
+</a>
+
 ```
 kube-apiserver (API gateway) → etcd (cluster state)
        ↓
@@ -328,6 +482,17 @@ cloud-controller-manager (cloud provider integration)
 ```
 
 ### Pod Lifecycle
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-handwritten.svg" alt="Handwritten: Pod Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-diagram.svg" alt="Diagram: Pod Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pod-lifecycle-sticky.svg" alt="Sticky Note: Pod Lifecycle" width="30%">
+</a>
+
 ```
 Pending → ContainerCreating → Running → Succeeded (or Failed)
 ```
@@ -336,6 +501,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 ## 11. Cloud Cost Models
 
 ### Pricing Models Comparison
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-handwritten.svg" alt="Handwritten: Pricing Models Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-diagram.svg" alt="Diagram: Pricing Models Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/pricing-models-comparison-sticky.svg" alt="Sticky Note: Pricing Models Comparison" width="30%">
+</a>
+
 | Model | Commitment | Discount | Use Case |
 |-------|-----------|----------|----------|
 | **On-Demand** | None (pay per hour/second) | 0% | Variable workloads, testing |
@@ -344,6 +520,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 | **Savings Plan** | $/hr commitment (flexible) | 30-60% | Mix of instance types |
 
 ### Cost Optimization Strategies
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-handwritten.svg" alt="Handwritten: Cost Optimization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-diagram.svg" alt="Diagram: Cost Optimization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cost-optimization-strategies-sticky.svg" alt="Sticky Note: Cost Optimization Strategies" width="30%">
+</a>
+
 1. **Right-sizing:** Match instance type to workload requirements
 2. **Auto-scaling:** Scale down during low demand
 3. **Use Spot for non-critical workloads**
@@ -355,6 +542,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 ## 12. Multi-Cloud &amp; Disaster Recovery
 
 ### Multi-Cloud Strategies
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-handwritten.svg" alt="Handwritten: Multi-Cloud Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-diagram.svg" alt="Diagram: Multi-Cloud Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/multi-cloud-strategies-sticky.svg" alt="Sticky Note: Multi-Cloud Strategies" width="30%">
+</a>
+
 | Strategy | Description | Pros |
 |----------|-------------|------|
 | **Active-Passive** | Primary cloud active, backup cloud idle | Cost-effective |
@@ -362,12 +560,34 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 | **Cloud-agnostic** | Abstraction layer (Terraform, Kubernetes) | No vendor lock-in |
 
 ### Disaster Recovery Metrics
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-handwritten.svg" alt="Handwritten: Disaster Recovery Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-diagram.svg" alt="Diagram: Disaster Recovery Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/disaster-recovery-metrics-sticky.svg" alt="Sticky Note: Disaster Recovery Metrics" width="30%">
+</a>
+
 | Metric | Description | Target |
 |--------|-------------|--------|
 | **RTO (Recovery Time Objective)** | Max acceptable downtime | Minutes to hours |
 | **RPO (Recovery Point Objective)** | Max acceptable data loss | Seconds to minutes |
 
 ### DR Strategies (in order of cost/complexity)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-handwritten.svg" alt="Handwritten: DR Strategies (in order of cost/complexity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-diagram.svg" alt="Diagram: DR Strategies (in order of cost/complexity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/dr-strategies-in-order-of-cost-complexity-sticky.svg" alt="Sticky Note: DR Strategies (in order of cost/complexity)" width="30%">
+</a>
+
 1. **Backup &amp; Restore:** S3 backup → restore in new region (RPO: hours, RTO: days)
 2. **Pilot Light:** Replicate critical data, spin up infra on failover (RPO: minutes)
 3. **Warm Standby:** Reduced-capacity replica running (RPO: seconds)
@@ -376,6 +596,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 ## 13. Serverless Frameworks &amp; Event-Driven Architecture
 
 ### AWS Lambda Triggers
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-handwritten.svg" alt="Handwritten: AWS Lambda Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-diagram.svg" alt="Diagram: AWS Lambda Triggers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-lambda-triggers-sticky.svg" alt="Sticky Note: AWS Lambda Triggers" width="30%">
+</a>
+
 | Trigger | Use Case |
 |---------|----------|
 | API Gateway | HTTP REST API |
@@ -386,6 +617,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 | Cognito | User authentication workflows |
 
 ### Serverless Pros &amp; Cons
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-handwritten.svg" alt="Handwritten: Serverless Pros &amp; Cons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-diagram.svg" alt="Diagram: Serverless Pros &amp; Cons" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/serverless-pros-amp-cons-sticky.svg" alt="Sticky Note: Serverless Pros &amp; Cons" width="30%">
+</a>
+
 | Pros | Cons |
 |------|------|
 | No server management | Cold start latency (50ms-5s) |
@@ -395,6 +637,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 | Quick deployment | Limited runtime environments |
 
 ### State Machine (AWS Step Functions)
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-handwritten.svg" alt="Handwritten: State Machine (AWS Step Functions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-diagram.svg" alt="Diagram: State Machine (AWS Step Functions)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/state-machine-aws-step-functions-sticky.svg" alt="Sticky Note: State Machine (AWS Step Functions)" width="30%">
+</a>
+
 ```
 [Order Received] → [Validate Payment] → [Check Inventory]
                      ↓ fail                    ↓ fail
@@ -410,6 +663,17 @@ Pending → ContainerCreating → Running → Succeeded (or Failed)
 ## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
 ### Cloud Cost Calculator — TypeScript
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-handwritten.svg" alt="Handwritten: Cloud Cost Calculator — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-diagram.svg" alt="Diagram: Cloud Cost Calculator — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/cloud-cost-calculator-typescript-sticky.svg" alt="Sticky Note: Cloud Cost Calculator — TypeScript" width="30%">
+</a>
+
 
 ```typescript
 interface InstanceType {
@@ -472,6 +736,17 @@ const awsPrices: InstanceType[] = [
 
 ### Deployment Model Comparison — Extended
 
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-handwritten.svg" alt="Handwritten: Deployment Model Comparison — Extended" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-diagram.svg" alt="Diagram: Deployment Model Comparison — Extended" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/deployment-model-comparison-extended-sticky.svg" alt="Sticky Note: Deployment Model Comparison — Extended" width="30%">
+</a>
+
+
 ```mermaid
 graph TD
     subgraph "Public Cloud"
@@ -496,6 +771,17 @@ graph TD
 
 ### Service Model Scenarios — Decision Matrix
 
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-handwritten.svg" alt="Handwritten: Service Model Scenarios — Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-diagram.svg" alt="Diagram: Service Model Scenarios — Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/service-model-scenarios-decision-matrix-sticky.svg" alt="Sticky Note: Service Model Scenarios — Decision Matrix" width="30%">
+</a>
+
+
 | Scenario | Best Model | Why |
 |----------|-----------|-----|
 | Startup deploying web app without DevOps team | PaaS (Heroku, Elastic Beanstalk) | No OS/runtime management |
@@ -506,6 +792,17 @@ graph TD
 | Media company encoding videos on demand | FaaS (Lambda, Cloud Functions) | Event-driven, pay-per-execution |
 
 ### Hypervisor Scheduler — TypeScript
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-handwritten.svg" alt="Handwritten: Hypervisor Scheduler — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-diagram.svg" alt="Diagram: Hypervisor Scheduler — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/hypervisor-scheduler-typescript-sticky.svg" alt="Sticky Note: Hypervisor Scheduler — TypeScript" width="30%">
+</a>
+
 
 ```typescript
 interface VirtualMachine {
@@ -562,6 +859,17 @@ class HypervisorScheduler {
 
 ### AWS vs Azure vs GCP — Service Mapping
 
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-handwritten.svg" alt="Handwritten: AWS vs Azure vs GCP — Service Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-diagram.svg" alt="Diagram: AWS vs Azure vs GCP — Service Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/aws-vs-azure-vs-gcp-service-mapping-sticky.svg" alt="Sticky Note: AWS vs Azure vs GCP — Service Mapping" width="30%">
+</a>
+
+
 | Category | AWS | Azure | GCP |
 |----------|-----|-------|-----|
 | Virtual Machines | EC2 | Virtual Machines | Compute Engine |
@@ -581,6 +889,17 @@ class HypervisorScheduler {
 | Big Data | EMR | HDInsight | Dataproc |
 
 ### Auto-Scaling with TypeScript
+
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-handwritten.svg" alt="Handwritten: Auto-Scaling with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-diagram.svg" alt="Diagram: Auto-Scaling with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/08-cloud-computing/auto-scaling-with-typescript-sticky.svg" alt="Sticky Note: Auto-Scaling with TypeScript" width="30%">
+</a>
+
 
 ```typescript
 interface ScalingMetrics {

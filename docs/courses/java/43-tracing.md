@@ -43,6 +43,17 @@ By the end of this chapter, you will be able to:
 
 ### Distributed Tracing
 
+<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" alt="Handwritten: Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" alt="Diagram: Distributed Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" alt="Sticky Note: Distributed Tracing" width="30%">
+</a>
+
+
 Distributed tracing tracks requests as they flow through multiple microservices. Each request is assigned a **traceId** that propagates across service boundaries. Within each service, units of work are represented as **spans** with their own **spanId** and optional **parentId**.
 
 **Core Concepts:**
@@ -53,6 +64,17 @@ Distributed tracing tracks requests as they flow through multiple microservices.
 
 ### Micrometer Tracing
 
+<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" alt="Handwritten: Micrometer Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" alt="Diagram: Micrometer Tracing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" alt="Sticky Note: Micrometer Tracing" width="30%">
+</a>
+
+
 Micrometer Tracing is the modern replacement for Spring Cloud Sleuth. It provides:
 
 - **Tracer**: Creates and manages spans
@@ -61,6 +83,17 @@ Micrometer Tracing is the modern replacement for Spring Cloud Sleuth. It provide
 - **Bridge**: Supports OpenTelemetry and Zipkin Brave backends
 
 ### Observability Tools
+
+<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" alt="Handwritten: Observability Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" alt="Diagram: Observability Tools" width="30%">
+</a>
+<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" alt="Sticky Note: Observability Tools" width="30%">
+</a>
+
 
 - **Zipkin**: Distributed tracing system for collecting, storing, and visualizing spans
 - **Grafana Tempo**: High-scale, cost-effective trace storage backend

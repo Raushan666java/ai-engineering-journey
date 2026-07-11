@@ -73,6 +73,17 @@ flowchart LR
 Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ quick practice.
 
 ### 1.1 Matrix Operations Ã¢â€ â€™ Key Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-handwritten.svg" alt="Handwritten: 1.1 Matrix Operations Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-diagram.svg" alt="Diagram: 1.1 Matrix Operations Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-1-matrix-operations-key-formulas-sticky.svg" alt="Sticky Note: 1.1 Matrix Operations Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+
 
 | Concept | Formula / Rule |
 |---------|---------------|
@@ -83,6 +94,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Orthogonal Matrix** | `A^T A = I`, so `A^{-1} = A^T` and `|det(A)| = 1` |
 
 ### 1.2 Determinant Ã¢â€ â€™ Key Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-handwritten.svg" alt="Handwritten: 1.2 Determinant Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-diagram.svg" alt="Diagram: 1.2 Determinant Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-2-determinant-key-formulas-sticky.svg" alt="Sticky Note: 1.2 Determinant Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|--------|
@@ -93,6 +115,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Triangular matrix** | `det` = product of diagonal entries |
 
 ### 1.3 Inverse Ã¢â€ â€™ Key Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-handwritten.svg" alt="Handwritten: 1.3 Inverse Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-diagram.svg" alt="Diagram: 1.3 Inverse Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-3-inverse-key-formulas-sticky.svg" alt="Sticky Note: 1.3 Inverse Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|--------|
@@ -102,6 +135,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Using adjoint** | `A^{-1} = adj(A) / det(A)` |
 
 ### 1.4 Rank of a Matrix
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-handwritten.svg" alt="Handwritten: 1.4 Rank of a Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-diagram.svg" alt="Diagram: 1.4 Rank of a Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-4-rank-of-a-matrix-sticky.svg" alt="Sticky Note: 1.4 Rank of a Matrix" width="30%">
+</a>
+
 
 | Concept | Rule |
 |---------|------|
@@ -112,6 +156,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **rank(AB)** | `rank(AB) <= min(rank(A), rank(B))` |
 
 ### 1.5 Systems of Linear Equations
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-handwritten.svg" alt="Handwritten: 1.5 Systems of Linear Equations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-diagram.svg" alt="Diagram: 1.5 Systems of Linear Equations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-5-systems-of-linear-equations-sticky.svg" alt="Sticky Note: 1.5 Systems of Linear Equations" width="30%">
+</a>
+
 
 | System `Ax = b` | Condition | Solution |
 |-----------------|-----------|----------|
@@ -120,6 +175,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Homogeneous** `Ax = 0` | Always consistent | Trivial `x = 0` if `rank = n`; non-trivial if `rank < n` |
 
 ### 1.6 Eigenvalues and Eigenvectors
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-handwritten.svg" alt="Handwritten: 1.6 Eigenvalues and Eigenvectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-diagram.svg" alt="Diagram: 1.6 Eigenvalues and Eigenvectors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-6-eigenvalues-and-eigenvectors-sticky.svg" alt="Sticky Note: 1.6 Eigenvalues and Eigenvectors" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|--------|
@@ -132,6 +198,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Cayley-Hamilton** | Every matrix satisfies its own characteristic equation |
 
 ### 1.7 LU Decomposition
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-handwritten.svg" alt="Handwritten: 1.7 LU Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-diagram.svg" alt="Diagram: 1.7 LU Decomposition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-7-lu-decomposition-sticky.svg" alt="Sticky Note: 1.7 LU Decomposition" width="30%">
+</a>
+
 
 - `A = LU`, where `L` = lower triangular, `U` = upper triangular
 - Used to solve `Ax = b` in `O(n^2)` after `O(n^3)` factorization
@@ -140,6 +217,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Solved GATE Problems Ã¢â€ â€™ Linear Algebra
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-handwritten.svg" alt="Handwritten: Solved GATE Problems Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-diagram.svg" alt="Diagram: Solved GATE Problems Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-linear-algebra-sticky.svg" alt="Sticky Note: Solved GATE Problems Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+
 
 ---
 
@@ -199,6 +287,17 @@ For what condition on `a, b, c` is the system consistent?
 ---
 
 ### Quick Practice Ã¢â€ â€™ Linear Algebra
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-handwritten.svg" alt="Handwritten: Quick Practice Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-diagram.svg" alt="Diagram: Quick Practice Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-linear-algebra-sticky.svg" alt="Sticky Note: Quick Practice Ã¢â€ â€™ Linear Algebra" width="30%">
+</a>
+
 
 | # | Problem | Answer |
 |---|---------|--------|
@@ -215,6 +314,17 @@ For what condition on `a, b, c` is the system consistent?
 Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ quick practice.
 
 ### 2.1 Limits Ã¢â€ â€™ Key Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-handwritten.svg" alt="Handwritten: 2.1 Limits Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-diagram.svg" alt="Diagram: 2.1 Limits Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-1-limits-key-formulas-sticky.svg" alt="Sticky Note: 2.1 Limits Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+
 
 | Concept | Rule |
 |---------|------|
@@ -225,6 +335,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Squeeze theorem** | If `g(x) <= f(x) <= h(x)` and `lim g = lim h = L`, then `lim f = L` |
 
 ### 2.2 Continuity & Differentiability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-handwritten.svg" alt="Handwritten: 2.2 Continuity & Differentiability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-diagram.svg" alt="Diagram: 2.2 Continuity & Differentiability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-2-continuity-differentiability-sticky.svg" alt="Sticky Note: 2.2 Continuity & Differentiability" width="30%">
+</a>
+
 
 | Concept | Condition |
 |---------|-----------|
@@ -233,6 +354,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Differentiable => Continuous** | Converse is FALSE (e.g., `|x|` at `x=0`) |
 
 ### 2.3 Mean Value Theorems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-handwritten.svg" alt="Handwritten: 2.3 Mean Value Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-diagram.svg" alt="Diagram: 2.3 Mean Value Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-3-mean-value-theorems-sticky.svg" alt="Sticky Note: 2.3 Mean Value Theorems" width="30%">
+</a>
+
 
 | Theorem | Statement |
 |---------|-----------|
@@ -241,6 +373,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Cauchy's MVT** | `exists c: (f(b)-f(a))/(g(b)-g(a)) = f'(c)/g'(c)` where `g'(x) != 0` |
 
 ### 2.4 Maxima and Minima
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-handwritten.svg" alt="Handwritten: 2.4 Maxima and Minima" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-diagram.svg" alt="Diagram: 2.4 Maxima and Minima" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-4-maxima-and-minima-sticky.svg" alt="Sticky Note: 2.4 Maxima and Minima" width="30%">
+</a>
+
 
 | Concept | Condition |
 |---------|-----------|
@@ -251,6 +394,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Global extrema** | Check critical points + interval endpoints |
 
 ### 2.5 Integration Ã¢â€ â€™ Key Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-handwritten.svg" alt="Handwritten: 2.5 Integration Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-diagram.svg" alt="Diagram: 2.5 Integration Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-5-integration-key-formulas-sticky.svg" alt="Sticky Note: 2.5 Integration Ã¢â€ â€™ Key Formulas" width="30%">
+</a>
+
 
 | Formula | Result |
 |---------|--------|
@@ -265,6 +419,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Solved GATE Problems Ã¢â€ â€™ Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-handwritten.svg" alt="Handwritten: Solved GATE Problems Ã¢â€ â€™ Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-diagram.svg" alt="Diagram: Solved GATE Problems Ã¢â€ â€™ Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-calculus-sticky.svg" alt="Sticky Note: Solved GATE Problems Ã¢â€ â€™ Calculus" width="30%">
+</a>
+
 
 ---
 
@@ -322,6 +487,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Quick Practice Ã¢â€ â€™ Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-handwritten.svg" alt="Handwritten: Quick Practice Ã¢â€ â€™ Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-diagram.svg" alt="Diagram: Quick Practice Ã¢â€ â€™ Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-calculus-sticky.svg" alt="Sticky Note: Quick Practice Ã¢â€ â€™ Calculus" width="30%">
+</a>
+
 
 | # | Problem | Answer |
 |---|---------|--------|
@@ -338,6 +514,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ quick practice.
 
 ### 3.1 Basic Probability
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-handwritten.svg" alt="Handwritten: 3.1 Basic Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-diagram.svg" alt="Diagram: 3.1 Basic Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-1-basic-probability-sticky.svg" alt="Sticky Note: 3.1 Basic Probability" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -350,6 +537,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Inclusion-Exclusion** | `P(A ÃƒÂ¢Ã‹â€ Ã‚Âª B) = P(A) + P(B) - P(A ÃƒÂ¢Ã‹â€ Ã‚Â© B)` |
 
 ### 3.2 Random Variables
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-handwritten.svg" alt="Handwritten: 3.2 Random Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-diagram.svg" alt="Diagram: 3.2 Random Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-2-random-variables-sticky.svg" alt="Sticky Note: 3.2 Random Variables" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -361,6 +559,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Moments** | `r-th moment = E[X^r]` |
 
 ### 3.3 Standard Distributions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-handwritten.svg" alt="Handwritten: 3.3 Standard Distributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-diagram.svg" alt="Diagram: 3.3 Standard Distributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-3-standard-distributions-sticky.svg" alt="Sticky Note: 3.3 Standard Distributions" width="30%">
+</a>
+
 
 | Distribution | PMF/PDF | Mean | Variance |
 |-------------|---------|------|----------|
@@ -371,6 +580,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Exponential** `Exp(lambda)` | `lambda e^{-lambda x}`, `x >= 0` | `1/lambda` | `1/lambda^2` |
 
 ### 3.4 Correlation and Regression
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-handwritten.svg" alt="Handwritten: 3.4 Correlation and Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-diagram.svg" alt="Diagram: 3.4 Correlation and Regression" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-4-correlation-and-regression-sticky.svg" alt="Sticky Note: 3.4 Correlation and Regression" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -380,6 +600,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Properties** | `rho = +1` Ã¢â€ â€™ perfect positive, `-1` Ã¢â€ â€™ perfect negative, `0` Ã¢â€ â€™ no linear |
 
 ### 3.5 Key Inequalities
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-handwritten.svg" alt="Handwritten: 3.5 Key Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-diagram.svg" alt="Diagram: 3.5 Key Inequalities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-5-key-inequalities-sticky.svg" alt="Sticky Note: 3.5 Key Inequalities" width="30%">
+</a>
+
 
 | Inequality | Statement |
 |------------|-----------|
@@ -390,6 +621,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Solved GATE Problems Ã¢â€ â€™ Probability & Statistics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-handwritten.svg" alt="Handwritten: Solved GATE Problems Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-diagram.svg" alt="Diagram: Solved GATE Problems Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-probability-statistics-sticky.svg" alt="Sticky Note: Solved GATE Problems Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+
 
 ---
 
@@ -444,6 +686,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Quick Practice Ã¢â€ â€™ Probability & Statistics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-handwritten.svg" alt="Handwritten: Quick Practice Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-diagram.svg" alt="Diagram: Quick Practice Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-probability-statistics-sticky.svg" alt="Sticky Note: Quick Practice Ã¢â€ â€™ Probability & Statistics" width="30%">
+</a>
+
 
 | # | Problem | Answer |
 |---|---------|--------|
@@ -460,6 +713,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ quick practice.
 
 ### 4.1 Set Theory
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-handwritten.svg" alt="Handwritten: 4.1 Set Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-diagram.svg" alt="Diagram: 4.1 Set Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-1-set-theory-sticky.svg" alt="Sticky Note: 4.1 Set Theory" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -470,6 +734,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Cartesian product** | `|A x B| = |A| * |B|` |
 
 ### 4.2 Relations
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-handwritten.svg" alt="Handwritten: 4.2 Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-diagram.svg" alt="Diagram: 4.2 Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-2-relations-sticky.svg" alt="Sticky Note: 4.2 Relations" width="30%">
+</a>
+
 
 | Concept | Definition |
 |---------|-----------|
@@ -482,6 +757,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Equivalence relations** | Bell numbers `B_n`: `B_0=1, B_1=1, B_2=2, B_3=5, B_4=15` |
 
 ### 4.3 Functions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-handwritten.svg" alt="Handwritten: 4.3 Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-diagram.svg" alt="Diagram: 4.3 Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-3-functions-sticky.svg" alt="Sticky Note: 4.3 Functions" width="30%">
+</a>
+
 
 | Concept | Condition |
 |---------|-----------|
@@ -492,6 +778,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Pigeonhole principle** | If `n` items in `m` boxes, `n > m`, at least one box has `>= ceil(n/m)` |
 
 ### 4.4 Graph Theory
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-handwritten.svg" alt="Handwritten: 4.4 Graph Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-diagram.svg" alt="Diagram: 4.4 Graph Theory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-4-graph-theory-sticky.svg" alt="Sticky Note: 4.4 Graph Theory" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -509,6 +806,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Hall's marriage theorem** | Bipartite `G=(X,Y,E)` has matching covering `X` iff for every `S ÃƒÂ¢Ã…Â Ã¢â‚¬Â  X`: `|N(S)| >= |S|` |
 
 ### 4.5 Counting Principles
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-handwritten.svg" alt="Handwritten: 4.5 Counting Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-diagram.svg" alt="Diagram: 4.5 Counting Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-5-counting-principles-sticky.svg" alt="Sticky Note: 4.5 Counting Principles" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -520,6 +828,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Stars and bars** | Number of non-negative solutions to `x_1 + ... + x_n = r` = `C(n+r-1, r)` |
 
 ### 4.6 Generating Functions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-handwritten.svg" alt="Handwritten: 4.6 Generating Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-diagram.svg" alt="Diagram: 4.6 Generating Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-6-generating-functions-sticky.svg" alt="Sticky Note: 4.6 Generating Functions" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|
@@ -529,6 +848,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Exponential** | `e^x = sum_{n >= 0} x^n/n!` |
 
 ### 4.7 Recurrence Relations
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-handwritten.svg" alt="Handwritten: 4.7 Recurrence Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-diagram.svg" alt="Diagram: 4.7 Recurrence Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-7-recurrence-relations-sticky.svg" alt="Sticky Note: 4.7 Recurrence Relations" width="30%">
+</a>
+
 
 | Type | Form | Solution Approach |
 |------|------|-----------------|
@@ -540,6 +870,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Solved GATE Problems Ã¢â€ â€™ Discrete Math
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-handwritten.svg" alt="Handwritten: Solved GATE Problems Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-diagram.svg" alt="Diagram: Solved GATE Problems Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-discrete-math-sticky.svg" alt="Sticky Note: Solved GATE Problems Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+
 
 ---
 
@@ -596,6 +937,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Quick Practice Ã¢â€ â€™ Discrete Math
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-handwritten.svg" alt="Handwritten: Quick Practice Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-diagram.svg" alt="Diagram: Quick Practice Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-discrete-math-sticky.svg" alt="Sticky Note: Quick Practice Ã¢â€ â€™ Discrete Math" width="30%">
+</a>
+
 
 | # | Problem | Answer |
 |---|---------|--------|
@@ -612,6 +964,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ quick practice.
 
 ### 5.1 Root Finding Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-handwritten.svg" alt="Handwritten: 5.1 Root Finding Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-diagram.svg" alt="Diagram: 5.1 Root Finding Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-1-root-finding-methods-sticky.svg" alt="Sticky Note: 5.1 Root Finding Methods" width="30%">
+</a>
+
 
 | Method | Formula | Notes |
 |--------|---------|-------|
@@ -625,6 +988,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 - Secant: order ~1.618
 
 ### 5.2 Interpolation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-handwritten.svg" alt="Handwritten: 5.2 Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-diagram.svg" alt="Diagram: 5.2 Interpolation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-2-interpolation-sticky.svg" alt="Sticky Note: 5.2 Interpolation" width="30%">
+</a>
+
 
 | Method | Formula |
 |--------|---------|
@@ -633,6 +1007,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Newton backward** | `P(x) = y_n + u*ÃƒÂ¢Ã‹â€ Ã¢â‚¬Â¡y_n + u(u+1)/2! * ÃƒÂ¢Ã‹â€ Ã¢â‚¬Â¡^2y_n + ...` where `u = (x - x_n)/h` |
 
 ### 5.3 Numerical Integration
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-handwritten.svg" alt="Handwritten: 5.3 Numerical Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-diagram.svg" alt="Diagram: 5.3 Numerical Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-3-numerical-integration-sticky.svg" alt="Sticky Note: 5.3 Numerical Integration" width="30%">
+</a>
+
 
 | Method | Formula | Error |
 |--------|---------|-------|
@@ -641,6 +1026,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 | **Simpson's 3/8** | `int_a^b f(x)dx ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  3h/8 * [f(x_0) + 3*sum_{non-multiples} + 2*sum_{multiples of 3} + f(x_n)]` | `O(h^4)` |
 
 ### 5.4 Error Analysis
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-handwritten.svg" alt="Handwritten: 5.4 Error Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-diagram.svg" alt="Diagram: 5.4 Error Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-4-error-analysis-sticky.svg" alt="Sticky Note: 5.4 Error Analysis" width="30%">
+</a>
+
 
 | Term | Definition |
 |------|-----------|
@@ -652,6 +1048,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Solved GATE Problems Ã¢â€ â€™ Numerical Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-handwritten.svg" alt="Handwritten: Solved GATE Problems Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-diagram.svg" alt="Diagram: Solved GATE Problems Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/solved-gate-problems-numerical-methods-sticky.svg" alt="Sticky Note: Solved GATE Problems Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+
 
 ---
 
@@ -717,6 +1124,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ---
 
 ### Quick Practice Ã¢â€ â€™ Numerical Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-handwritten.svg" alt="Handwritten: Quick Practice Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-diagram.svg" alt="Diagram: Quick Practice Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/quick-practice-numerical-methods-sticky.svg" alt="Sticky Note: Quick Practice Ã¢â€ â€™ Numerical Methods" width="30%">
+</a>
+
 
 | # | Problem | Answer |
 |---|---------|--------|
@@ -731,6 +1149,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ## Answer Key Ã¢â€ â€™ Quick Practice
 
 ### Linear Algebra
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-handwritten.svg" alt="Handwritten: Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-diagram.svg" alt="Diagram: Linear Algebra" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-sticky.svg" alt="Sticky Note: Linear Algebra" width="30%">
+</a>
+
 1. `+/- 1`
 2. `2`
 3. Inconsistent
@@ -738,6 +1167,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 5. `2`
 
 ### Calculus
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-handwritten.svg" alt="Handwritten: Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-diagram.svg" alt="Diagram: Calculus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-sticky.svg" alt="Sticky Note: Calculus" width="30%">
+</a>
+
 1. `1/2`
 2. No
 3. `1`
@@ -745,6 +1185,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 5. `e^2`
 
 ### Probability & Statistics
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-handwritten.svg" alt="Handwritten: Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-diagram.svg" alt="Diagram: Probability & Statistics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-sticky.svg" alt="Sticky Note: Probability & Statistics" width="30%">
+</a>
+
 1. `1/6`
 2. `16`
 3. `~0.288`
@@ -752,6 +1203,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 5. Uncorrelated (not necessarily independent)
 
 ### Discrete Math
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-handwritten.svg" alt="Handwritten: Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-diagram.svg" alt="Diagram: Discrete Math" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-sticky.svg" alt="Sticky Note: Discrete Math" width="30%">
+</a>
+
 1. `64`
 2. No
 3. `a_n = 2^n`
@@ -759,6 +1221,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 5. `3`
 
 ### Numerical Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-handwritten.svg" alt="Handwritten: Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-diagram.svg" alt="Diagram: Numerical Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-sticky.svg" alt="Sticky Note: Numerical Methods" width="30%">
+</a>
+
 1. `2.25`
 2. `2.75`
 3. `0.5`
@@ -791,6 +1264,17 @@ Formula summary Ã¢â€ â€™ solved GATE problems Ã¢â€ â€™ qui
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Linear Algebra (12 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-handwritten.svg" alt="Handwritten: Linear Algebra (12 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-diagram.svg" alt="Diagram: Linear Algebra (12 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-12-problems-sticky.svg" alt="Sticky Note: Linear Algebra (12 Problems)" width="30%">
+</a>
+
 
 ---
 
@@ -940,6 +1424,17 @@ x + y + z = 1
 ---
 
 ### Calculus (10 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-handwritten.svg" alt="Handwritten: Calculus (10 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-diagram.svg" alt="Diagram: Calculus (10 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-10-problems-sticky.svg" alt="Sticky Note: Calculus (10 Problems)" width="30%">
+</a>
+
 
 ---
 
@@ -1055,6 +1550,17 @@ x + y + z = 1
 ---
 
 ### Probability & Statistics (12 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-handwritten.svg" alt="Handwritten: Probability & Statistics (12 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-diagram.svg" alt="Diagram: Probability & Statistics (12 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-statistics-12-problems-sticky.svg" alt="Sticky Note: Probability & Statistics (12 Problems)" width="30%">
+</a>
+
 
 ---
 
@@ -1185,6 +1691,17 @@ x + y + z = 1
 ---
 
 ### Discrete Mathematics (10 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-handwritten.svg" alt="Handwritten: Discrete Mathematics (10 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-diagram.svg" alt="Diagram: Discrete Mathematics (10 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-mathematics-10-problems-sticky.svg" alt="Sticky Note: Discrete Mathematics (10 Problems)" width="30%">
+</a>
+
 
 ---
 
@@ -1300,6 +1817,17 @@ x + y + z = 1
 ---
 
 ### Numerical Methods (6 Problems)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-handwritten.svg" alt="Handwritten: Numerical Methods (6 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-diagram.svg" alt="Diagram: Numerical Methods (6 Problems)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-6-problems-sticky.svg" alt="Sticky Note: Numerical Methods (6 Problems)" width="30%">
+</a>
+
 
 ---
 
@@ -1395,6 +1923,17 @@ x + y + 4z = 6
 ## Recommended Books & Resources
 
 ### 1. Advanced Engineering Mathematics Ã¢â€ â€™ Erwin Kreyszig (10th Ed.)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-handwritten.svg" alt="Handwritten: 1. Advanced Engineering Mathematics Ã¢â€ â€™ Erwin Kreyszig (10th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-diagram.svg" alt="Diagram: 1. Advanced Engineering Mathematics Ã¢â€ â€™ Erwin Kreyszig (10th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/1-advanced-engineering-mathematics-erwin-kreyszig-10th-ed-sticky.svg" alt="Sticky Note: 1. Advanced Engineering Mathematics Ã¢â€ â€™ Erwin Kreyszig (10th Ed.)" width="30%">
+</a>
+
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1408,6 +1947,17 @@ x + y + 4z = 6
 ---
 
 ### 2. Introduction to Linear Algebra Ã¢â€ â€™ Gilbert Strang (5th Ed.)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-handwritten.svg" alt="Handwritten: 2. Introduction to Linear Algebra Ã¢â€ â€™ Gilbert Strang (5th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-diagram.svg" alt="Diagram: 2. Introduction to Linear Algebra Ã¢â€ â€™ Gilbert Strang (5th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/2-introduction-to-linear-algebra-gilbert-strang-5th-ed-sticky.svg" alt="Sticky Note: 2. Introduction to Linear Algebra Ã¢â€ â€™ Gilbert Strang (5th Ed.)" width="30%">
+</a>
+
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1423,6 +1973,17 @@ x + y + 4z = 6
 ---
 
 ### 3. A First Course in Probability Ã¢â€ â€™ Sheldon Ross (10th Ed.)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-handwritten.svg" alt="Handwritten: 3. A First Course in Probability Ã¢â€ â€™ Sheldon Ross (10th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-diagram.svg" alt="Diagram: 3. A First Course in Probability Ã¢â€ â€™ Sheldon Ross (10th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/3-a-first-course-in-probability-sheldon-ross-10th-ed-sticky.svg" alt="Sticky Note: 3. A First Course in Probability Ã¢â€ â€™ Sheldon Ross (10th Ed.)" width="30%">
+</a>
+
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1438,6 +1999,17 @@ x + y + 4z = 6
 ---
 
 ### 4. Discrete Mathematics and Its Applications Ã¢â€ â€™ Kenneth Rosen (8th Ed.)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-handwritten.svg" alt="Handwritten: 4. Discrete Mathematics and Its Applications Ã¢â€ â€™ Kenneth Rosen (8th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-diagram.svg" alt="Diagram: 4. Discrete Mathematics and Its Applications Ã¢â€ â€™ Kenneth Rosen (8th Ed.)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/4-discrete-mathematics-and-its-applications-kenneth-rosen-8th-ed-sticky.svg" alt="Sticky Note: 4. Discrete Mathematics and Its Applications Ã¢â€ â€™ Kenneth Rosen (8th Ed.)" width="30%">
+</a>
+
 
 | GATE Topic | Relevant Chapters |
 |------------|-------------------|
@@ -1455,6 +2027,17 @@ x + y + 4z = 6
 ---
 
 ### 5. Supplementary References
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-handwritten.svg" alt="Handwritten: 5. Supplementary References" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-diagram.svg" alt="Diagram: 5. Supplementary References" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/5-supplementary-references-sticky.svg" alt="Sticky Note: 5. Supplementary References" width="30%">
+</a>
+
 
 | Book | Best For |
 |------|----------|
@@ -1465,6 +2048,17 @@ x + y + 4z = 6
 | **Higher Engineering Mathematics** Ã¢â€ â€™ B.V. Ramana | Topic-wise organization matching GATE syllabus closely |
 
 ### Recommended Study Plan
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-handwritten.svg" alt="Handwritten: Recommended Study Plan" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-diagram.svg" alt="Diagram: Recommended Study Plan" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/recommended-study-plan-sticky.svg" alt="Sticky Note: Recommended Study Plan" width="30%">
+</a>
+
 
 | Phase | Focus | Resources |
 |-------|-------|-----------|
@@ -1484,6 +2078,17 @@ x + y + 4z = 6
 ---
 
 ### Linear Algebra (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q62)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-handwritten.svg" alt="Handwritten: Linear Algebra (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q62)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-diagram.svg" alt="Diagram: Linear Algebra (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q62)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/linear-algebra-q51-q62-sticky.svg" alt="Sticky Note: Linear Algebra (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q62)" width="30%">
+</a>
+
 
 ---
 
@@ -1629,6 +2234,17 @@ x + y + 4z = 6
 ---
 
 ### Calculus (Q63ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q72)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-handwritten.svg" alt="Handwritten: Calculus (Q63ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q72)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-diagram.svg" alt="Diagram: Calculus (Q63ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q72)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-q63-q72-sticky.svg" alt="Sticky Note: Calculus (Q63ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q72)" width="30%">
+</a>
+
 
 ---
 
@@ -1738,6 +2354,17 @@ x + y + 4z = 6
 ---
 
 ### Probability (Q73ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q84)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-handwritten.svg" alt="Handwritten: Probability (Q73ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q84)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-diagram.svg" alt="Diagram: Probability (Q73ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q84)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-q73-q84-sticky.svg" alt="Sticky Note: Probability (Q73ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q84)" width="30%">
+</a>
+
 
 ---
 
@@ -1856,6 +2483,17 @@ x + y + 4z = 6
 ---
 
 ### Discrete Math (Q85ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q94)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-handwritten.svg" alt="Handwritten: Discrete Math (Q85ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q94)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-diagram.svg" alt="Diagram: Discrete Math (Q85ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q94)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/discrete-math-q85-q94-sticky.svg" alt="Sticky Note: Discrete Math (Q85ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q94)" width="30%">
+</a>
+
 
 ---
 
@@ -1959,6 +2597,17 @@ x + y + 4z = 6
 ---
 
 ### Numerical Methods (Q95ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-handwritten.svg" alt="Handwritten: Numerical Methods (Q95ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-diagram.svg" alt="Diagram: Numerical Methods (Q95ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-q95-q100-sticky.svg" alt="Sticky Note: Numerical Methods (Q95ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
+</a>
+
 
 ---
 
@@ -2031,6 +2680,17 @@ x + y + 4z = 6
 ---
 
 ### Common Traps & Pitfalls
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-handwritten.svg" alt="Handwritten: Common Traps & Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-diagram.svg" alt="Diagram: Common Traps & Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/common-traps-pitfalls-sticky.svg" alt="Sticky Note: Common Traps & Pitfalls" width="30%">
+</a>
+
 
 | # | Trap | Explanation & How to Avoid |
 |---|------|---------------------------|
@@ -2053,6 +2713,17 @@ x + y + 4z = 6
 ---
 
 ### Matrix Operations Quick Reference
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-handwritten.svg" alt="Handwritten: Matrix Operations Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-diagram.svg" alt="Diagram: Matrix Operations Quick Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/matrix-operations-quick-reference-sticky.svg" alt="Sticky Note: Matrix Operations Quick Reference" width="30%">
+</a>
+
 
 **Determinant Shortcuts:**
 
@@ -2089,6 +2760,17 @@ x + y + 4z = 6
 ---
 
 ### Probability Distribution Comparison
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-handwritten.svg" alt="Handwritten: Probability Distribution Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-diagram.svg" alt="Diagram: Probability Distribution Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/probability-distribution-comparison-sticky.svg" alt="Sticky Note: Probability Distribution Comparison" width="30%">
+</a>
+
 
 | Property | Binomial | Poisson | Normal |
 |----------|----------|---------|--------|
@@ -2111,6 +2793,17 @@ x + y + 4z = 6
 ---
 
 ### Calculus Formula Sheet
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-handwritten.svg" alt="Handwritten: Calculus Formula Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-diagram.svg" alt="Diagram: Calculus Formula Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/calculus-formula-sheet-sticky.svg" alt="Sticky Note: Calculus Formula Sheet" width="30%">
+</a>
+
 
 **Differentiation:**
 
@@ -2173,6 +2866,17 @@ x + y + 4z = 6
 ---
 
 ### Numerical Methods Convergence
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-handwritten.svg" alt="Handwritten: Numerical Methods Convergence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-diagram.svg" alt="Diagram: Numerical Methods Convergence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/numerical-methods-convergence-sticky.svg" alt="Sticky Note: Numerical Methods Convergence" width="30%">
+</a>
+
 
 | Method | Convergence Order | Error Type | Notes |
 |--------|-------------------|------------|-------|
@@ -2196,6 +2900,17 @@ x + y + 4z = 6
 ---
 
 ### Graph Theory Formula Summary
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-handwritten.svg" alt="Handwritten: Graph Theory Formula Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-diagram.svg" alt="Diagram: Graph Theory Formula Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics/graph-theory-formula-summary-sticky.svg" alt="Sticky Note: Graph Theory Formula Summary" width="30%">
+</a>
+
 
 | Concept | Formula |
 |---------|---------|

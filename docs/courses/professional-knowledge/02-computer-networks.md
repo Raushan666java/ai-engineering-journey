@@ -32,6 +32,17 @@
 
 ### Classful Addressing
 
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-handwritten.svg" alt="Handwritten: Classful Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-diagram.svg" alt="Diagram: Classful Addressing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classful-addressing-sticky.svg" alt="Sticky Note: Classful Addressing" width="30%">
+</a>
+
+
 | Class | Leading Bits | Range | NID Bits | HID Bits | Max Networks | Max Hosts/Network |
 |-------|-------------|-------|----------|----------|-------------|-------------------|
 | A | 0 | 1.0.0.0 – 126.255.255.255 | 8 | 24 | 126 | 2^24 − 2 = 16,777,214 |
@@ -41,17 +52,50 @@
 | E | 1111 | 240.0.0.0 – 255.255.255.255 | — | — | Reserved | — |
 
 ### Classless Addressing (CIDR)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-handwritten.svg" alt="Handwritten: Classless Addressing (CIDR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-diagram.svg" alt="Diagram: Classless Addressing (CIDR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/classless-addressing-cidr-sticky.svg" alt="Sticky Note: Classless Addressing (CIDR)" width="30%">
+</a>
+
 - Format: `IP_address/PrefixLength` — e.g., `192.168.10.0/24`
 - Prefix length = number of bits in network portion
 - **Subnet mask:** `255.255.255.0` or `11111111.11111111.11111111.00000000`
 
 ### Special Addresses
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-handwritten.svg" alt="Handwritten: Special Addresses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-diagram.svg" alt="Diagram: Special Addresses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/special-addresses-sticky.svg" alt="Sticky Note: Special Addresses" width="30%">
+</a>
+
 - **127.0.0.0/8:** Loopback (localhost)
 - **0.0.0.0/8:** "This network" — default route
 - **255.255.255.255:** Limited broadcast (all hosts on local net)
 - **10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16:** Private (non-routable on internet)
 
 ### Solved Subnetting Numerical
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-handwritten.svg" alt="Handwritten: Solved Subnetting Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-diagram.svg" alt="Diagram: Solved Subnetting Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/solved-subnetting-numerical-sticky.svg" alt="Sticky Note: Solved Subnetting Numerical" width="30%">
+</a>
+
 
 **Problem:** You have the block `200.100.10.0/24`. Create 4 equal-sized subnets.
 
@@ -90,6 +134,17 @@
 
 ### Key Protocol Operations
 
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-handwritten.svg" alt="Handwritten: Key Protocol Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-diagram.svg" alt="Diagram: Key Protocol Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/key-protocol-operations-sticky.svg" alt="Sticky Note: Key Protocol Operations" width="30%">
+</a>
+
+
 | Protocol | Operation Summary |
 |----------|------------------|
 | **ARP** | Broadcast "Who has IP X?" → Host with IP X replies with MAC address. Cached in ARP table. |
@@ -122,6 +177,17 @@
 ## 5. TCP Connection Management
 
 ### 3-Way Handshake (Establishment)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-handwritten.svg" alt="Handwritten: 3-Way Handshake (Establishment)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-diagram.svg" alt="Diagram: 3-Way Handshake (Establishment)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/3-way-handshake-establishment-sticky.svg" alt="Sticky Note: 3-Way Handshake (Establishment)" width="30%">
+</a>
+
 ```
 Client (SYN=1, seq=100) ---------------→ Server
 Client ←------ (SYN=1, ACK=1, seq=300, ack=101) Server
@@ -132,6 +198,17 @@ Client (ACK=1, seq=101, ack=301) -----→ Server
 **Step 3:** Client sends ACK confirming server ISN+1
 
 ### Connection Termination (4-Way)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-handwritten.svg" alt="Handwritten: Connection Termination (4-Way)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-diagram.svg" alt="Diagram: Connection Termination (4-Way)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/connection-termination-4-way-sticky.svg" alt="Sticky Note: Connection Termination (4-Way)" width="30%">
+</a>
+
 ```
 Client (FIN=1, seq=x) ----→ Server
 Client ←--- (ACK=1, ack=x+1) ---- Server
@@ -175,6 +252,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 ```
 
 ### Congestion Control Algorithms
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-handwritten.svg" alt="Handwritten: Congestion Control Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-diagram.svg" alt="Diagram: Congestion Control Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/congestion-control-algorithms-sticky.svg" alt="Sticky Note: Congestion Control Algorithms" width="30%">
+</a>
+
 | Algorithm | Trigger | Response |
 |-----------|---------|----------|
 | Slow Start | Connection start / timeout | CWND = 1, double each RTT until ssthresh |
@@ -187,6 +275,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 ## 8. Routing Algorithms
 
 ### Distance Vector (RIP)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-handwritten.svg" alt="Handwritten: Distance Vector (RIP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-diagram.svg" alt="Diagram: Distance Vector (RIP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/distance-vector-rip-sticky.svg" alt="Sticky Note: Distance Vector (RIP)" width="30%">
+</a>
+
 - Each router shares its full routing table with **neighbors only**
 - Uses Bellman-Ford algorithm
 - **Metric:** Hop count (max 15 — infinity)
@@ -195,6 +294,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 - **Hold-down timer:** 180 seconds
 
 ### Link State (OSPF)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-handwritten.svg" alt="Handwritten: Link State (OSPF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-diagram.svg" alt="Diagram: Link State (OSPF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/link-state-ospf-sticky.svg" alt="Sticky Note: Link State (OSPF)" width="30%">
+</a>
+
 - Each router floods its **local link state** to all routers in the area
 - All routers build the complete network topology (LSDB)
 - **Dijkstra's algorithm** computes shortest path tree
@@ -203,6 +313,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 - **Hierarchical:** Areas (Backbone area 0, normal areas)
 
 ### Comparison
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-handwritten.svg" alt="Handwritten: Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-diagram.svg" alt="Diagram: Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/comparison-sticky.svg" alt="Sticky Note: Comparison" width="30%">
+</a>
+
 
 | Feature | Distance Vector (RIP-2) | Link State (OSPF) |
 |---------|------------------------|-------------------|
@@ -214,6 +335,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 | VLSM/CIDR | Supported (RIP-2) | Supported |
 
 ### BGP (Border Gateway Protocol)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-handwritten.svg" alt="Handwritten: BGP (Border Gateway Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-diagram.svg" alt="Diagram: BGP (Border Gateway Protocol)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/bgp-border-gateway-protocol-sticky.svg" alt="Sticky Note: BGP (Border Gateway Protocol)" width="30%">
+</a>
+
 - **Path vector protocol** — exchanges reachability information between ASes
 - Uses TCP (port 179)
 - **Attributes:** AS_PATH, NEXT_HOP, LOCAL_PREF, MED
@@ -253,16 +385,49 @@ Client (ACK=1, ack=y+1) ---→ Server
 ## 9. Error Detection Methods
 
 ### Parity Check
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-handwritten.svg" alt="Handwritten: Parity Check" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-diagram.svg" alt="Diagram: Parity Check" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/parity-check-sticky.svg" alt="Sticky Note: Parity Check" width="30%">
+</a>
+
 - **Simple parity:** Add single bit to make total 1s even/odd
 - **Detects:** Odd number of bit errors
 - **Fails:** Even number of bit errors
 
 ### Checksum (Internet Checksum)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-handwritten.svg" alt="Handwritten: Checksum (Internet Checksum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-diagram.svg" alt="Diagram: Checksum (Internet Checksum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/checksum-internet-checksum-sticky.svg" alt="Sticky Note: Checksum (Internet Checksum)" width="30%">
+</a>
+
 - Sum all 16-bit words, take 1's complement
 - Used in: TCP, UDP, IP headers
 - **Detects:** Most common transmission errors
 
 ### Cyclic Redundancy Check (CRC)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-handwritten.svg" alt="Handwritten: Cyclic Redundancy Check (CRC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-diagram.svg" alt="Diagram: Cyclic Redundancy Check (CRC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/cyclic-redundancy-check-crc-sticky.svg" alt="Sticky Note: Cyclic Redundancy Check (CRC)" width="30%">
+</a>
+
 - Treat data as binary polynomial; divide by generator polynomial G(x)
 - Append remainder (CRC) to data
 - **Detects:** All single-bit errors, all double-bit errors, odd number of errors, burst errors &lt; degree of G(x)
@@ -274,6 +439,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 | CRC-32 | x^32 + x^26 + x^23 + x^22 + x^16 + x^12 + x^11 + x^10 + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1 | 32 bits | Ethernet, PNG, ZIP |
 
 ### Hamming Code
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-handwritten.svg" alt="Handwritten: Hamming Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-diagram.svg" alt="Diagram: Hamming Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/hamming-code-sticky.svg" alt="Sticky Note: Hamming Code" width="30%">
+</a>
+
 - **Single error correction (SEC):** Add parity bits at positions 2^k
 - **Hamming distance:** Minimum bit flips between valid codewords
 - **Detection:** d+1. **Correction:** 2d+1 (where d = distance to detect)
@@ -281,6 +457,17 @@ Client (ACK=1, ack=y+1) ---→ Server
 ## 10. CSMA/CD &amp; CSMA/CA
 
 ### CSMA/CD (Carrier Sense Multiple Access / Collision Detection)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-handwritten.svg" alt="Handwritten: CSMA/CD (Carrier Sense Multiple Access / Collision Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-diagram.svg" alt="Diagram: CSMA/CD (Carrier Sense Multiple Access / Collision Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-cd-carrier-sense-multiple-access-collision-detection-sticky.svg" alt="Sticky Note: CSMA/CD (Carrier Sense Multiple Access / Collision Detection)" width="30%">
+</a>
+
 Used in: **Ethernet (802.3)**
 
 ```
@@ -294,6 +481,17 @@ Used in: **Ethernet (802.3)**
 **Minimum frame size** requirement: Must be &gt; 2 × propagation delay × bandwidth (to detect all collisions)
 
 ### CSMA/CA (Collision Avoidance)
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-handwritten.svg" alt="Handwritten: CSMA/CA (Collision Avoidance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-diagram.svg" alt="Diagram: CSMA/CA (Collision Avoidance)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/csma-ca-collision-avoidance-sticky.svg" alt="Sticky Note: CSMA/CA (Collision Avoidance)" width="30%">
+</a>
+
 Used in: **Wi-Fi (802.11)**
 
 - **Virtual carrier sensing:** RTS/CTS (Request to Send / Clear to Send)
@@ -311,6 +509,17 @@ Used in: **Wi-Fi (802.11)**
 ## 11. IPv6 Essentials
 
 ### IPv4 vs IPv6
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-handwritten.svg" alt="Handwritten: IPv4 vs IPv6" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-diagram.svg" alt="Diagram: IPv4 vs IPv6" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv4-vs-ipv6-sticky.svg" alt="Sticky Note: IPv4 vs IPv6" width="30%">
+</a>
+
 | Aspect | IPv4 | IPv6 |
 |--------|------|------|
 | Address size | 32 bits | 128 bits |
@@ -323,12 +532,34 @@ Used in: **Wi-Fi (802.11)**
 | Broadcast | Yes | No (uses multicast/anycast) |
 
 ### IPv6 Address Types
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-handwritten.svg" alt="Handwritten: IPv6 Address Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-diagram.svg" alt="Diagram: IPv6 Address Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-address-types-sticky.svg" alt="Sticky Note: IPv6 Address Types" width="30%">
+</a>
+
 - **Unicast:** One-to-one communication
 - **Multicast:** One-to-many (prefix FF00::/8)
 - **Anycast:** One-to-nearest (multiple nodes share address)
 - **No broadcast** in IPv6 — replaced by multicast
 
 ### IPv6 Header Simplification
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-handwritten.svg" alt="Handwritten: IPv6 Header Simplification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-diagram.svg" alt="Diagram: IPv6 Header Simplification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ipv6-header-simplification-sticky.svg" alt="Sticky Note: IPv6 Header Simplification" width="30%">
+</a>
+
 - No checksum (end-to-end reliability delegated to transport)
 - No fragmentation fields (path MTU discovery only)
 - Flow label for QoS
@@ -353,6 +584,17 @@ Used in: **Wi-Fi (802.11)**
 ## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
 ### TCP State Machine — Full Diagram
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-handwritten.svg" alt="Handwritten: TCP State Machine — Full Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-diagram.svg" alt="Diagram: TCP State Machine — Full Diagram" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-state-machine-full-diagram-sticky.svg" alt="Sticky Note: TCP State Machine — Full Diagram" width="30%">
+</a>
+
 
 ```mermaid
 graph TD
@@ -430,6 +672,17 @@ function calculateSubnet(ip: string, prefix: number, subnets: number): SubnetInf
 
 ### Routing Algorithm Simulator — Dijkstra's for OSPF
 
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-handwritten.svg" alt="Handwritten: Routing Algorithm Simulator — Dijkstra's for OSPF" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-diagram.svg" alt="Diagram: Routing Algorithm Simulator — Dijkstra's for OSPF" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/routing-algorithm-simulator-dijkstra-s-for-ospf-sticky.svg" alt="Sticky Note: Routing Algorithm Simulator — Dijkstra's for OSPF" width="30%">
+</a>
+
+
 ```typescript
 interface Router {
   id: string;
@@ -478,6 +731,17 @@ function dijkstra(routers: Map<string, Router>, source: string): Map<string, {di
 
 ### OSI Model Deep-Dive with Real-World Examples
 
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-handwritten.svg" alt="Handwritten: OSI Model Deep-Dive with Real-World Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-diagram.svg" alt="Diagram: OSI Model Deep-Dive with Real-World Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/osi-model-deep-dive-with-real-world-examples-sticky.svg" alt="Sticky Note: OSI Model Deep-Dive with Real-World Examples" width="30%">
+</a>
+
+
 | Layer | Function | Real-World Example | Attack Vector | Protocol Data Unit |
 |-------|----------|-------------------|---------------|-------------------|
 | Application (7) | User interface, resource sharing | Web browser, email client | SQL injection, XSS | Data/Message |
@@ -489,6 +753,17 @@ function dijkstra(routers: Map<string, Router>, source: string): Map<string, {di
 | Physical (1) | Bit transmission, encoding | Cables, hubs, radio | Eavesdropping, jamming | Bits |
 
 ### TCP Congestion Control — CWND Evolution with TypeScript
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-handwritten.svg" alt="Handwritten: TCP Congestion Control — CWND Evolution with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-diagram.svg" alt="Diagram: TCP Congestion Control — CWND Evolution with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/tcp-congestion-control-cwnd-evolution-with-typescript-sticky.svg" alt="Sticky Note: TCP Congestion Control — CWND Evolution with TypeScript" width="30%">
+</a>
+
 
 ```typescript
 interface CWNDEvent {
@@ -530,6 +805,17 @@ function simulateTCP(cwndInitial: number, ssthreshInitial: number, rttCount: num
 
 ### VLAN and Subnetting — Advanced Numerical
 
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-handwritten.svg" alt="Handwritten: VLAN and Subnetting — Advanced Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-diagram.svg" alt="Diagram: VLAN and Subnetting — Advanced Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/vlan-and-subnetting-advanced-numerical-sticky.svg" alt="Sticky Note: VLAN and Subnetting — Advanced Numerical" width="30%">
+</a>
+
+
 > **PYQ 2025:** An organization needs 6 subnets from network 172.16.0.0/16. The largest subnet needs 5000 hosts. Design the subnet scheme.
 
 **Solution:**
@@ -544,6 +830,17 @@ function simulateTCP(cwndInitial: number, ssthreshInitial: number, rttCount: num
 - Each subnet has 2^13 − 2 = 8190 usable hosts ✓
 
 ### IP Fragmentation Numerical
+
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-handwritten.svg" alt="Handwritten: IP Fragmentation Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-diagram.svg" alt="Diagram: IP Fragmentation Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/02-computer-networks/ip-fragmentation-numerical-sticky.svg" alt="Sticky Note: IP Fragmentation Numerical" width="30%">
+</a>
+
 
 **Problem:** A 4000-byte IP packet (20-byte header, 3980-byte payload) must traverse a link with MTU 1500 bytes.
 

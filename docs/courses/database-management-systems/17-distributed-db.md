@@ -48,6 +48,17 @@ flowchart LR
 
 ### 17.1 Distributed Database Concepts
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-handwritten.svg" alt="Handwritten: 17.1 Distributed Database Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-diagram.svg" alt="Diagram: 17.1 Distributed Database Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-1-distributed-database-concepts-sticky.svg" alt="Sticky Note: 17.1 Distributed Database Concepts" width="30%">
+</a>
+
+
 A **distributed database** is a collection of logically related databases distributed across a computer network, appearing as a single system to the user.
 
 #### Real-World Analogy: Retail Chain Branches
@@ -103,6 +114,17 @@ This is exactly how a distributed database works â†’ each node (store) has 
 ---
 
 ### 17.2 Data Fragmentation
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-handwritten.svg" alt="Handwritten: 17.2 Data Fragmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-diagram.svg" alt="Diagram: 17.2 Data Fragmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-2-data-fragmentation-sticky.svg" alt="Sticky Note: 17.2 Data Fragmentation" width="30%">
+</a>
+
 
 Fragmentation splits a table into smaller pieces (fragments) stored at different sites. The goal is to place data physically close to where it's most frequently accessed.
 
@@ -614,6 +636,17 @@ CREATE VIEW eng_sensitive AS SELECT id, salary, ssn FROM eng_emp;
 
 ### 17.3 Data Replication
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-handwritten.svg" alt="Handwritten: 17.3 Data Replication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-diagram.svg" alt="Diagram: 17.3 Data Replication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-3-data-replication-sticky.svg" alt="Sticky Note: 17.3 Data Replication" width="30%">
+</a>
+
+
 Replication maintains copies of the same data across multiple sites for availability, performance, and fault tolerance.
 
 #### Real-World Analogy: Library Book Copies
@@ -757,6 +790,17 @@ END PROCEDURE
 
 ### 17.4 Transparency in Distributed Databases
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-handwritten.svg" alt="Handwritten: 17.4 Transparency in Distributed Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-diagram.svg" alt="Diagram: 17.4 Transparency in Distributed Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-4-transparency-in-distributed-databases-sticky.svg" alt="Sticky Note: 17.4 Transparency in Distributed Databases" width="30%">
+</a>
+
+
 Transparency hides the complexities of distribution from the user, making a distributed database appear as a single logical database.
 
 #### Real-World Analogy: The Internet
@@ -822,6 +866,17 @@ SELECT * FROM orders;  -- System detects failed node, reroutes
 ---
 
 ### 17.5 Distributed Transactions
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-handwritten.svg" alt="Handwritten: 17.5 Distributed Transactions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-diagram.svg" alt="Diagram: 17.5 Distributed Transactions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-5-distributed-transactions-sticky.svg" alt="Sticky Note: 17.5 Distributed Transactions" width="30%">
+</a>
+
 
 A distributed transaction accesses and updates data stored at multiple sites while preserving ACID properties globally.
 
@@ -1335,6 +1390,17 @@ UPON TIMEOUT:
 
 ### 17.6 Distributed Query Processing
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-handwritten.svg" alt="Handwritten: 17.6 Distributed Query Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-diagram.svg" alt="Diagram: 17.6 Distributed Query Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-6-distributed-query-processing-sticky.svg" alt="Sticky Note: 17.6 Distributed Query Processing" width="30%">
+</a>
+
+
 A global query must be decomposed into site-local sub-queries, executed in parallel, and the results combined.
 
 #### Real-World Analogy: Package Delivery Network
@@ -1650,6 +1716,17 @@ if __name__ == "__main__":
 
 ### 17.7 Homogeneous vs Heterogeneous Distributed Databases
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-handwritten.svg" alt="Handwritten: 17.7 Homogeneous vs Heterogeneous Distributed Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-diagram.svg" alt="Diagram: 17.7 Homogeneous vs Heterogeneous Distributed Databases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-7-homogeneous-vs-heterogeneous-distributed-databases-sticky.svg" alt="Sticky Note: 17.7 Homogeneous vs Heterogeneous Distributed Databases" width="30%">
+</a>
+
+
 | Criterion | Homogeneous DDB | Heterogeneous DDB |
 |-----------|-----------------|-------------------|
 | **DBMS software** | Same at all sites (e.g., all PostgreSQL) | Different per site (Oracle, MySQL, MongoDB) |
@@ -1684,6 +1761,17 @@ WHERE e.salary > 100000;
 
 ### 17.8 Distributed vs Centralized Database Comparison
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-handwritten.svg" alt="Handwritten: 17.8 Distributed vs Centralized Database Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-diagram.svg" alt="Diagram: 17.8 Distributed vs Centralized Database Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-8-distributed-vs-centralized-database-comparison-sticky.svg" alt="Sticky Note: 17.8 Distributed vs Centralized Database Comparison" width="30%">
+</a>
+
+
 | Criterion | Centralized Database | Distributed Database |
 |-----------|---------------------|--------------------|
 | **Architecture** | Single system with local/remote clients | Multiple interconnected sites |
@@ -1704,6 +1792,17 @@ WHERE e.salary > 100000;
 ---
 
 ### 17.9 Distributed Database Design
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-handwritten.svg" alt="Handwritten: 17.9 Distributed Database Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-diagram.svg" alt="Diagram: 17.9 Distributed Database Design" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-9-distributed-database-design-sticky.svg" alt="Sticky Note: 17.9 Distributed Database Design" width="30%">
+</a>
+
 
 #### Fragmentation Criteria
 
@@ -1735,6 +1834,17 @@ Factors influencing replication:
 
 ### 17.10 CAP Theorem in Practice
 
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-handwritten.svg" alt="Handwritten: 17.10 CAP Theorem in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-diagram.svg" alt="Diagram: 17.10 CAP Theorem in Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-10-cap-theorem-in-practice-sticky.svg" alt="Sticky Note: 17.10 CAP Theorem in Practice" width="30%">
+</a>
+
+
 | Database | Style | CAP | Notes |
 |----------|-------|-----|-------|
 | PostgreSQL (single) | RDBMS | CA | Not distributed |
@@ -1753,6 +1863,17 @@ Factors influencing replication:
 ---
 
 ### 17.11 Consistency in Distributed Systems
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-handwritten.svg" alt="Handwritten: 17.11 Consistency in Distributed Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-diagram.svg" alt="Diagram: 17.11 Consistency in Distributed Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-11-consistency-in-distributed-systems-sticky.svg" alt="Sticky Note: 17.11 Consistency in Distributed Systems" width="30%">
+</a>
+
 
 **Strong Consistency (Linearizability)**: Every read sees the latest write.
 
@@ -1783,6 +1904,17 @@ Stronger â† ---------------------------------------------------------------
 ---
 
 ### 17.12 Interview Corner
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-handwritten.svg" alt="Handwritten: 17.12 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-diagram.svg" alt="Diagram: 17.12 Interview Corner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-12-interview-corner-sticky.svg" alt="Sticky Note: 17.12 Interview Corner" width="30%">
+</a>
+
 
 #### Q1: Why is 2PC called a blocking protocol?
 
@@ -1856,6 +1988,17 @@ Centralized WFG:
 ---
 
 ### 17.13 Applications in Real Systems
+
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-handwritten.svg" alt="Handwritten: 17.13 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-diagram.svg" alt="Diagram: 17.13 Applications in Real Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/17-distributed-db/17-13-applications-in-real-systems-sticky.svg" alt="Sticky Note: 17.13 Applications in Real Systems" width="30%">
+</a>
+
 
 #### Google Spanner
 

@@ -72,6 +72,17 @@ flowchart LR
 
 ### The Problem of Uncertainty
 
+<a href="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-handwritten.svg" alt="Handwritten: The Problem of Uncertainty" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-diagram.svg" alt="Diagram: The Problem of Uncertainty" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/08-uncertainty/the-problem-of-uncertainty-sticky.svg" alt="Sticky Note: The Problem of Uncertainty" width="30%">
+</a>
+
+
 In real-world environments, agents rarely have access to the complete state of the world. Uncertainty arises from:
 - **Partial Observability**: Missing information.
 - **Stochasticity**: Randomness in outcomes.

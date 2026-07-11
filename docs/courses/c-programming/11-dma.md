@@ -25,6 +25,17 @@
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Static vs Dynamic | Static: fixed at compile time; Dynamic: runtime-controlled | Stack for small/fixed; Heap for large/variable |
@@ -64,6 +75,17 @@ flowchart LR
 
 ### Real-World Analogy: Library vs Warehouse
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-handwritten.svg" alt="Handwritten: Real-World Analogy: Library vs Warehouse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-diagram.svg" alt="Diagram: Real-World Analogy: Library vs Warehouse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-vs-warehouse-sticky.svg" alt="Sticky Note: Real-World Analogy: Library vs Warehouse" width="30%">
+</a>
+
+
 Think of a **library** (static allocation) vs a **warehouse** (dynamic allocation).
 
 A **library** has fixed shelves built into the walls. Before the library opens, the architect decides exactly how many shelves are needed, where they go, and what they hold. You cannot add a new shelf in the middle of the day → the entire structure is fixed at construction time. This is **static memory**: the compiler (the architect) decides the size and lifetime of every variable before the program runs.
@@ -71,6 +93,17 @@ A **library** has fixed shelves built into the walls. Before the library opens, 
 A **warehouse** is different. When inventory arrives, you call the warehouse manager, reserve a pallet location, use it, and return it when done. If more inventory arrives tomorrow, you reserve a different spot. The warehouse can handle arbitrary amounts of material → as long as space exists. This is **dynamic memory**: you request memory at runtime, use it, and release it explicitly.
 
 ### What Is Static Allocation?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-handwritten.svg" alt="Handwritten: What Is Static Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-diagram.svg" alt="Diagram: What Is Static Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-static-allocation-sticky.svg" alt="Sticky Note: What Is Static Allocation?" width="30%">
+</a>
+
 
 Static allocation means the compiler determines the size and lifetime of a variable at compile time. Global variables and `static` local variables are statically allocated. Their memory is reserved in the data or BSS segment for the entire program lifetime.
 
@@ -104,6 +137,17 @@ Called 3 times
 
 ### What Is Automatic Allocation?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-handwritten.svg" alt="Handwritten: What Is Automatic Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-diagram.svg" alt="Diagram: What Is Automatic Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-automatic-allocation-sticky.svg" alt="Sticky Note: What Is Automatic Allocation?" width="30%">
+</a>
+
+
 Local variables (declared inside a function without `static`) are **automatic**. Memory is allocated on the stack when the function is entered and freed when the function returns. The size must be known at compile time.
 
 ```c
@@ -114,6 +158,17 @@ void example(void) {
 ```
 
 ### What Is Dynamic Allocation?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-handwritten.svg" alt="Handwritten: What Is Dynamic Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-diagram.svg" alt="Diagram: What Is Dynamic Allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-dynamic-allocation-sticky.svg" alt="Sticky Note: What Is Dynamic Allocation?" width="30%">
+</a>
+
 
 Dynamic allocation requests memory from the **heap** at runtime using `malloc`, `calloc`, or `realloc`. The programmer controls when memory is allocated and freed. The size does not need to be known at compile time.
 
@@ -148,6 +203,17 @@ Last element: 9
 
 ### Numbered Steps for Dynamic Memory Management
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-handwritten.svg" alt="Handwritten: Numbered Steps for Dynamic Memory Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-diagram.svg" alt="Diagram: Numbered Steps for Dynamic Memory Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-for-dynamic-memory-management-sticky.svg" alt="Sticky Note: Numbered Steps for Dynamic Memory Management" width="30%">
+</a>
+
+
 **Step 1:** Determine the size needed (use `sizeof` to remain portable).
 **Step 2:** Call `malloc`/`calloc`/`realloc` with the computed size.
 **Step 3:** Check the return value → NULL means allocation failed.
@@ -156,6 +222,17 @@ Last element: 9
 **Step 6:** Set the pointer to NULL to prevent use-after-free.
 
 ### Pseudocode for Dynamic Allocation
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-handwritten.svg" alt="Handwritten: Pseudocode for Dynamic Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-diagram.svg" alt="Diagram: Pseudocode for Dynamic Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-for-dynamic-allocation-sticky.svg" alt="Sticky Note: Pseudocode for Dynamic Allocation" width="30%">
+</a>
+
 
 ```
 FUNCTION allocate_array(count):
@@ -180,6 +257,17 @@ END FUNCTION
 
 ### Dry Run: Dynamic Array Lifecycle
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-handwritten.svg" alt="Handwritten: Dry Run: Dynamic Array Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-diagram.svg" alt="Diagram: Dry Run: Dynamic Array Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-lifecycle-sticky.svg" alt="Sticky Note: Dry Run: Dynamic Array Lifecycle" width="30%">
+</a>
+
+
 ```
 Initial state:
   heap: [empty]
@@ -202,6 +290,17 @@ Step 4 → free(arr); arr = NULL;
 
 ### Static vs Dynamic Allocation → Comparison
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-handwritten.svg" alt="Handwritten: Static vs Dynamic Allocation → Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-diagram.svg" alt="Diagram: Static vs Dynamic Allocation → Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/static-vs-dynamic-allocation-comparison-sticky.svg" alt="Sticky Note: Static vs Dynamic Allocation → Comparison" width="30%">
+</a>
+
+
 | Aspect | Static Allocation | Automatic (Stack) Allocation | Dynamic (Heap) Allocation |
 |--------|------------------|------------------------------|---------------------------|
 | **When allocated** | Compile time | Function entry | Runtime (explicit call) |
@@ -216,6 +315,17 @@ Step 4 → free(arr); arr = NULL;
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | Static allocation | O(1) compile-time | O(1) | No runtime cost |
@@ -224,6 +334,17 @@ Step 4 → free(arr); arr = NULL;
 | Dynamic deallocation (free) | O(1) amortized | O(1) | Returns block to freelist; may coalesce |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Aspect | Static/Automatic | Dynamic |
 |--------|-----------------|---------|
@@ -234,6 +355,17 @@ Step 4 → free(arr); arr = NULL;
 | **Control** | None → compiler manages everything | Full control over lifetime |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -249,11 +381,33 @@ Step 4 → free(arr); arr = NULL;
 
 ### Real-World Analogy: Hotel vs Warehouse
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-handwritten.svg" alt="Handwritten: Real-World Analogy: Hotel vs Warehouse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-diagram.svg" alt="Diagram: Real-World Analogy: Hotel vs Warehouse" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-hotel-vs-warehouse-sticky.svg" alt="Sticky Note: Real-World Analogy: Hotel vs Warehouse" width="30%">
+</a>
+
+
 The **stack** is like a **hotel**. Guests (functions) check in (are called), occupy a room (stack frame), and check out (return). The front desk knows exactly who is in which room at any moment. Rooms are assigned in strict order → the last guest to check out frees the newest room. Everything is neat, predictable, and automatic.
 
 The **heap** is like a **warehouse**. You reserve a pallet slot (allocate), use it for as long as you need, and tell the warehouse manager when you are done (free). Different parts of the warehouse are used at different times, possibly in any order. Keeping track of what is reserved and what is free is the programmer's job.
 
 ### Stack: Fast, Automatic, Fixed-Size
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-handwritten.svg" alt="Handwritten: Stack: Fast, Automatic, Fixed-Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-diagram.svg" alt="Diagram: Stack: Fast, Automatic, Fixed-Size" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-fast-automatic-fixed-size-sticky.svg" alt="Sticky Note: Stack: Fast, Automatic, Fixed-Size" width="30%">
+</a>
+
 
 The stack is a LIFO (Last-In-First-Out) data structure. Each function call pushes a **stack frame** containing local variables, return address, and saved registers. Returning pops the frame.
 
@@ -296,6 +450,17 @@ main() returns:    (empty)
 
 ### Heap: Flexible, Manual, Potentially Large
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-handwritten.svg" alt="Handwritten: Heap: Flexible, Manual, Potentially Large" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-diagram.svg" alt="Diagram: Heap: Flexible, Manual, Potentially Large" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-flexible-manual-potentially-large-sticky.svg" alt="Sticky Note: Heap: Flexible, Manual, Potentially Large" width="30%">
+</a>
+
+
 The heap is a pool of memory managed by the allocator (`malloc`/`free`). Blocks can be allocated and freed in any order.
 
 ```c
@@ -325,6 +490,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 ### Stack vs Heap → Full Comparison
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-handwritten.svg" alt="Handwritten: Stack vs Heap → Full Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-diagram.svg" alt="Diagram: Stack vs Heap → Full Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-vs-heap-full-comparison-sticky.svg" alt="Sticky Note: Stack vs Heap → Full Comparison" width="30%">
+</a>
+
+
 | Aspect | Stack | Heap |
 |--------|-------|------|
 | **Size** | Small (1â€“8 MB default per thread on Linux/Windows) | Large (up to virtual address space → GB on 64-bit) |
@@ -340,6 +516,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 ### Stack Allocation: Numbered Steps
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-handwritten.svg" alt="Handwritten: Stack Allocation: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-diagram.svg" alt="Diagram: Stack Allocation: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/stack-allocation-numbered-steps-sticky.svg" alt="Sticky Note: Stack Allocation: Numbered Steps" width="30%">
+</a>
+
+
 **Step 1:** Function is called.
 **Step 2:** Stack pointer (SP) decrements by frame size.
 **Step 3:** Return address and saved registers are pushed.
@@ -348,6 +535,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 **Step 6:** Function returns → SP is restored to pre-call value (all locals freed instantly).
 
 ### Heap Allocation: Numbered Steps
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-handwritten.svg" alt="Handwritten: Heap Allocation: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-diagram.svg" alt="Diagram: Heap Allocation: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-allocation-numbered-steps-sticky.svg" alt="Sticky Note: Heap Allocation: Numbered Steps" width="30%">
+</a>
+
 
 **Step 1:** Call `malloc(n)`.
 **Step 2:** Allocator searches freelist for a block >= n bytes.
@@ -359,6 +557,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 ### Dry Run: Stack vs Heap Timeline
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-handwritten.svg" alt="Handwritten: Dry Run: Stack vs Heap Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-diagram.svg" alt="Diagram: Dry Run: Stack vs Heap Timeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-stack-vs-heap-timeline-sticky.svg" alt="Sticky Note: Dry Run: Stack vs Heap Timeline" width="30%">
+</a>
+
+
 | Time | Stack State | Heap State | Code |
 |------|-------------|------------|------|
 | T0 | `[main()]` | empty | |
@@ -369,6 +578,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Stack Time | Heap Time |
 |-----------|------------|-----------|
 | Allocate | O(1) → SP adjustment | O(1) amortized → freelist best-fit/worst-fit search |
@@ -376,6 +596,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 | Access | O(1) → SP + offset | O(1) → pointer dereference |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Aspect | Stack | Heap |
 |--------|-------|------|
@@ -387,6 +618,17 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 | **Memory locality** | Excellent (contiguous, cached) | Poor (scattered blocks) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Stack Behavior | Heap Behavior |
 |----------|---------------|---------------|
@@ -422,6 +664,17 @@ High address (0xFFFFFFFF on 32-bit / 0x7FFFFFFF on Linux x86-64)
 
 ### Segment Details
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/segment-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/segment-details-handwritten.svg" alt="Handwritten: Segment Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/segment-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/segment-details-diagram.svg" alt="Diagram: Segment Details" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/segment-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/segment-details-sticky.svg" alt="Sticky Note: Segment Details" width="30%">
+</a>
+
+
 | Segment | Contents | Read/Write? | Lifetime | Example |
 |---------|----------|-------------|----------|---------|
 | **Text (Code)** | Machine instructions | Read-only (usually) | Program lifetime | `int main(void) { ... }` compiled code |
@@ -431,6 +684,17 @@ High address (0xFFFFFFFF on 32-bit / 0x7FFFFFFF on Linux x86-64)
 | **Stack** | Local variables, function frames, return addresses | Read/write | Function scope | `int local;` `double d;` |
 
 ### Code Example: Observing the Memory Layout
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-handwritten.svg" alt="Handwritten: Code Example: Observing the Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-diagram.svg" alt="Diagram: Code Example: Observing the Memory Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-example-observing-the-memory-layout-sticky.svg" alt="Sticky Note: Code Example: Observing the Memory Layout" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -493,6 +757,17 @@ Observe the pattern:
 
 ### Why the Separation Matters
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-handwritten.svg" alt="Handwritten: Why the Separation Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-diagram.svg" alt="Diagram: Why the Separation Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-the-separation-matters-sticky.svg" alt="Sticky Note: Why the Separation Matters" width="30%">
+</a>
+
+
 | Why | Explanation |
 |-----|-------------|
 | **Prevent code corruption** | Text is read-only → accidental writes to code cause segfaults immediately |
@@ -502,6 +777,17 @@ Observe the pattern:
 | **Buffer overflow detection** | Stack canaries and guard pages protect against writes beyond local arrays |
 
 ### Dry Run: Address Verification
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-handwritten.svg" alt="Handwritten: Dry Run: Address Verification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-diagram.svg" alt="Diagram: Dry Run: Address Verification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-address-verification-sticky.svg" alt="Sticky Note: Dry Run: Address Verification" width="30%">
+</a>
+
 
 Assume a Linux process with this approximate layout:
 
@@ -527,11 +813,33 @@ Assume a Linux process with this approximate layout:
 
 ### Real-World Analogy: Warehouse Pallet Reservation
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-handwritten.svg" alt="Handwritten: Real-World Analogy: Warehouse Pallet Reservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-diagram.svg" alt="Diagram: Real-World Analogy: Warehouse Pallet Reservation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-warehouse-pallet-reservation-sticky.svg" alt="Sticky Note: Real-World Analogy: Warehouse Pallet Reservation" width="30%">
+</a>
+
+
 You walk into a warehouse and tell the manager: "I need a pallet that can hold 400 kg." The manager finds an empty spot, writes the address on a slip of paper, and hands it to you. The pallet may have leftover scraps from the last shipment → it is **not cleaned**. You must clear it yourself before putting your items on it. When you are done, you return the slip and the manager marks the spot as available again.
 
 `malloc` is that manager. It finds a free block, returns its address, and does **not** clean (initialize) the memory.
 
 ### Signature
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" alt="Handwritten: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" alt="Diagram: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" alt="Sticky Note: Signature" width="30%">
+</a>
+
 
 ```c
 void *malloc(size_t size);
@@ -543,6 +851,17 @@ void *malloc(size_t size);
 
 ### Numbered Steps to Use malloc
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-handwritten.svg" alt="Handwritten: Numbered Steps to Use malloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-diagram.svg" alt="Diagram: Numbered Steps to Use malloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-malloc-sticky.svg" alt="Sticky Note: Numbered Steps to Use malloc" width="30%">
+</a>
+
+
 **Step 1:** Compute the total bytes needed using `sizeof(type) * count`.
 **Step 2:** Call `malloc(total_bytes)`.
 **Step 3:** Check if the return is NULL → if so, handle the error.
@@ -551,6 +870,17 @@ void *malloc(size_t size);
 **Step 6:** Call `free(ptr)` when done.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION malloc_safe(size):
@@ -564,6 +894,17 @@ END FUNCTION
 ```
 
 ### Basic Example
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" alt="Handwritten: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" alt="Diagram: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" alt="Sticky Note: Basic Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -600,6 +941,17 @@ Array contents: 10 20 30 40 50
 ```
 
 ### Allocating for Any Type
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-handwritten.svg" alt="Handwritten: Allocating for Any Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-diagram.svg" alt="Diagram: Allocating for Any Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/allocating-for-any-type-sticky.svg" alt="Sticky Note: Allocating for Any Type" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -645,6 +997,17 @@ points[2]: (10, 20)
 
 ### malloc(0) → What Happens?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-handwritten.svg" alt="Handwritten: malloc(0) → What Happens?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-diagram.svg" alt="Diagram: malloc(0) → What Happens?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/malloc-0-what-happens-sticky.svg" alt="Sticky Note: malloc(0) → What Happens?" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -667,6 +1030,17 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 ### Dry Run: malloc Tracking
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-handwritten.svg" alt="Handwritten: Dry Run: malloc Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-diagram.svg" alt="Diagram: Dry Run: malloc Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-malloc-tracking-sticky.svg" alt="Sticky Note: Dry Run: malloc Tracking" width="30%">
+</a>
+
+
 | Step | Code | Heap State | Note |
 |------|------|------------|------|
 | 0 | → | [FREE: 0x1000â€“0x1FFF (4 KB available)] | Empty heap |
@@ -679,6 +1053,17 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Notes |
 |-----------|----------------|------------------|-------|
 | `malloc(n)` | O(1) amortized | O(n) + O(1) header overhead | Freelist search; may trigger `brk` syscall |
@@ -687,6 +1072,17 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 | Allocation from freelist | O(freelist size) worst-case | → | Best-fit may scan entire freelist; segregated lists are O(1) |
 
 ### Advantages and Disadvantages of malloc
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of malloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-diagram.svg" alt="Diagram: Advantages and Disadvantages of malloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-of-malloc-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of malloc" width="30%">
+</a>
+
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
@@ -697,6 +1093,17 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 | **Alignment** | Returns pointers aligned for any type | Wasted space if you allocate many tiny objects (each has header) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -709,6 +1116,17 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 | **Reading uninitialized memory** | Garbage values (undefined behavior) | Initialize after malloc (or use calloc) |
 
 ### Integer Overflow Prevention
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-handwritten.svg" alt="Handwritten: Integer Overflow Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-diagram.svg" alt="Diagram: Integer Overflow Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integer-overflow-prevention-sticky.svg" alt="Sticky Note: Integer Overflow Prevention" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -750,9 +1168,31 @@ Note: `calloc` performs this overflow check internally → another reason to pre
 
 ### Real-World Analogy: Clean Pallet
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-handwritten.svg" alt="Handwritten: Real-World Analogy: Clean Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-diagram.svg" alt="Diagram: Real-World Analogy: Clean Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-clean-pallet-sticky.svg" alt="Sticky Note: Real-World Analogy: Clean Pallet" width="30%">
+</a>
+
+
 `malloc` is like getting a pallet that still has dirt from the previous shipment → you must sweep it before use. `calloc` is like requesting a **clean pallet** → the warehouse manager washes it before giving it to you. You pay a small time penalty for the cleaning, but you know exactly what you are getting.
 
 ### Signature
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" alt="Handwritten: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" alt="Diagram: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" alt="Sticky Note: Signature" width="30%">
+</a>
+
 
 ```c
 void *calloc(size_t count, size_t element_size);
@@ -765,6 +1205,17 @@ void *calloc(size_t count, size_t element_size);
 
 ### Numbered Steps to Use calloc
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-handwritten.svg" alt="Handwritten: Numbered Steps to Use calloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-diagram.svg" alt="Diagram: Numbered Steps to Use calloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-calloc-sticky.svg" alt="Sticky Note: Numbered Steps to Use calloc" width="30%">
+</a>
+
+
 **Step 1:** Decide how many elements of a given type you need.
 **Step 2:** Call `calloc(count, sizeof(type))`.
 **Step 3:** Check if the return is NULL.
@@ -773,6 +1224,17 @@ void *calloc(size_t count, size_t element_size);
 **Step 6:** Call `free(ptr)` when done.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION calloc_safe(count, element_size):
@@ -786,6 +1248,17 @@ END FUNCTION
 ```
 
 ### Basic Example
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" alt="Handwritten: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" alt="Diagram: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" alt="Sticky Note: Basic Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -835,6 +1308,17 @@ arr[4] = 25
 
 ### calloc vs malloc + memset
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-handwritten.svg" alt="Handwritten: calloc vs malloc + memset" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-diagram.svg" alt="Diagram: calloc vs malloc + memset" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-vs-malloc-memset-sticky.svg" alt="Sticky Note: calloc vs malloc + memset" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -871,6 +1355,17 @@ arr1[0] = 0, arr2[0] = 0
 
 ### Why Zero-Initialization Matters
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-handwritten.svg" alt="Handwritten: Why Zero-Initialization Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-diagram.svg" alt="Diagram: Why Zero-Initialization Matters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-zero-initialization-matters-sticky.svg" alt="Sticky Note: Why Zero-Initialization Matters" width="30%">
+</a>
+
+
 1. **Predictability** → No garbage values to surprise you.
 2. **Security** → Sensitive data left by previous allocations is wiped.
 3. **Default values** → Structs with zero defaults work correctly.
@@ -878,6 +1373,17 @@ arr1[0] = 0, arr2[0] = 0
 5. **Bitmaps and flags** → All bits start cleared.
 
 ### calloc for Struct Arrays
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-handwritten.svg" alt="Handwritten: calloc for Struct Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-diagram.svg" alt="Diagram: calloc for Struct Arrays" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/calloc-for-struct-arrays-sticky.svg" alt="Sticky Note: calloc for Struct Arrays" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -938,6 +1444,17 @@ Before assignment:
 
 ### Dry Run: calloc Allocation
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-handwritten.svg" alt="Handwritten: Dry Run: calloc Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-diagram.svg" alt="Diagram: Dry Run: calloc Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-calloc-allocation-sticky.svg" alt="Sticky Note: Dry Run: calloc Allocation" width="30%">
+</a>
+
+
 | Step | Code | Heap Content | Note |
 |------|------|-------------|------|
 | 1 | `int *a = calloc(3, 4)` | Allocates 12 bytes | Zeroing pass sets all 12 bytes to 0 |
@@ -948,12 +1465,34 @@ Before assignment:
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | `calloc(n, size)` | O(n) (zeroing) + O(1) (allocation) | O(n * size) | Zeroing is O(n) → visible for large allocations |
 | calloc vs malloc + memset | Equal asymptotically | Equal | calloc may be faster for large blocks (OS-level zero pages) |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
@@ -963,6 +1502,17 @@ Before assignment:
 | **OS optimization** | Large calloc gets zero pages from OS without touching them | Small calloc still zeros memory the same way |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -978,11 +1528,33 @@ Before assignment:
 
 ### Real-World Analogy: Expanding a Warehouse Pallet
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-handwritten.svg" alt="Handwritten: Real-World Analogy: Expanding a Warehouse Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-diagram.svg" alt="Diagram: Real-World Analogy: Expanding a Warehouse Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-a-warehouse-pallet-sticky.svg" alt="Sticky Note: Real-World Analogy: Expanding a Warehouse Pallet" width="30%">
+</a>
+
+
 You have a pallet that holds 10 boxes. Suddenly you need space for 20 boxes. You call the warehouse manager: "I need to expand my pallet." The manager checks if there is empty space **right after** your pallet. If yes, he extends the same pallet. If no, he finds a larger spot elsewhere, moves all your boxes to the new spot, and tells you the new address. The old spot is freed automatically.
 
 **Key insight:** After `realloc`, the old pointer may be dead → always use the new pointer returned by `realloc`.
 
 ### Signature
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" alt="Handwritten: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" alt="Diagram: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" alt="Sticky Note: Signature" width="30%">
+</a>
+
 
 ```c
 void *realloc(void *ptr, size_t new_size);
@@ -996,6 +1568,17 @@ void *realloc(void *ptr, size_t new_size);
 - If `realloc` fails (returns NULL), **the original block is still valid**.
 
 ### The Critical Rule: Always Use a Temporary Pointer
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-handwritten.svg" alt="Handwritten: The Critical Rule: Always Use a Temporary Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-diagram.svg" alt="Diagram: The Critical Rule: Always Use a Temporary Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-critical-rule-always-use-a-temporary-pointer-sticky.svg" alt="Sticky Note: The Critical Rule: Always Use a Temporary Pointer" width="30%">
+</a>
+
 
 ```c
 /* WRONG → leaks original block if realloc fails */
@@ -1013,6 +1596,17 @@ arr = temp;
 
 ### Numbered Steps to Use realloc
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-handwritten.svg" alt="Handwritten: Numbered Steps to Use realloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-diagram.svg" alt="Diagram: Numbered Steps to Use realloc" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-realloc-sticky.svg" alt="Sticky Note: Numbered Steps to Use realloc" width="30%">
+</a>
+
+
 **Step 1:** Compute the new size.
 **Step 2:** Call `realloc(ptr, new_size)` and assign the result to a **temporary** pointer.
 **Step 3:** Check if the temporary is NULL → original block is still intact.
@@ -1021,6 +1615,17 @@ arr = temp;
 **Step 6:** Continue using the resized block.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION safe_realloc(ptr, new_size):
@@ -1034,6 +1639,17 @@ END FUNCTION
 ```
 
 ### Basic Example: Growing and Shrinking
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-handwritten.svg" alt="Handwritten: Basic Example: Growing and Shrinking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-diagram.svg" alt="Diagram: Basic Example: Growing and Shrinking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-growing-and-shrinking-sticky.svg" alt="Sticky Note: Basic Example: Growing and Shrinking" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1097,6 +1713,17 @@ Shrunk (4 elements): 10 20 30 40
 
 ### realloc with NULL (Acts Like malloc)
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-handwritten.svg" alt="Handwritten: realloc with NULL (Acts Like malloc)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-diagram.svg" alt="Diagram: realloc with NULL (Acts Like malloc)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/realloc-with-null-acts-like-malloc-sticky.svg" alt="Sticky Note: realloc with NULL (Acts Like malloc)" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1121,6 +1748,17 @@ int main(void) {
 ```
 
 ### Dry Run: realloc In-Place vs Move
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-handwritten.svg" alt="Handwritten: Dry Run: realloc In-Place vs Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-diagram.svg" alt="Diagram: Dry Run: realloc In-Place vs Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-realloc-in-place-vs-move-sticky.svg" alt="Sticky Note: Dry Run: realloc In-Place vs Move" width="30%">
+</a>
+
 
 **Case 1: In-place expansion (no move needed)**
 
@@ -1153,6 +1791,17 @@ realloc(A, 64):
 
 ### Dry Run Trace Table
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+</a>
+
+
 | Step | Operation | Heap State | arr value |
 |------|-----------|------------|-----------|
 | 0 | `arr = malloc(12)` | [arr: 12 bytes at 0x1000] [FREE] | 0x1000 |
@@ -1164,6 +1813,17 @@ realloc(A, 64):
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | realloc (in-place expansion) | O(1) | O(new_size) | No data copying |
@@ -1173,6 +1833,17 @@ realloc(A, 64):
 
 ### Advantages and Disadvantages
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
+
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Convenience** | Single call resizes and preserves data | Hides complexity → programmer may forget old pointer is dead |
@@ -1181,6 +1852,17 @@ realloc(A, 64):
 | **Memory savings** | Shrinking releases unused memory | May not actually release to OS (held in process heap) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -1193,6 +1875,17 @@ realloc(A, 64):
 | **realloc of freed pointer** | Undefined behavior (double free equivalent) | Never realloc after free |
 
 ### Detecting realloc Move
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-handwritten.svg" alt="Handwritten: Detecting realloc Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-diagram.svg" alt="Diagram: Detecting realloc Move" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-realloc-move-sticky.svg" alt="Sticky Note: Detecting realloc Move" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1229,11 +1922,33 @@ Moved at capacity 4: 0x5555555592a0 -> 0x555555559600
 
 ### Real-World Analogy: Returning the Warehouse Pallet
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-handwritten.svg" alt="Handwritten: Real-World Analogy: Returning the Warehouse Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-diagram.svg" alt="Diagram: Real-World Analogy: Returning the Warehouse Pallet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-returning-the-warehouse-pallet-sticky.svg" alt="Sticky Note: Real-World Analogy: Returning the Warehouse Pallet" width="30%">
+</a>
+
+
 You have finished using your warehouse pallet. You call the manager and say: "I'm done with pallet at location A12." The manager marks the spot as available and may merge it with adjacent empty spots. If you try to use the pallet after returning it, you may find someone else's boxes there → or the spot may have been reassigned entirely.
 
 `free` tells the heap manager: "I'm done with this block." After calling `free`, the pointer is **dangling** → dereferencing it is undefined behavior.
 
 ### Signature
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-handwritten.svg" alt="Handwritten: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-diagram.svg" alt="Diagram: Signature" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/signature-sticky.svg" alt="Sticky Note: Signature" width="30%">
+</a>
+
 
 ```c
 void free(void *ptr);
@@ -1245,12 +1960,34 @@ void free(void *ptr);
 
 ### Numbered Steps to Use free
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-handwritten.svg" alt="Handwritten: Numbered Steps to Use free" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-diagram.svg" alt="Diagram: Numbered Steps to Use free" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/numbered-steps-to-use-free-sticky.svg" alt="Sticky Note: Numbered Steps to Use free" width="30%">
+</a>
+
+
 **Step 1:** Ensure `ptr` is non-NULL (safe → free(NULL) is a no-op).
 **Step 2:** Call `free(ptr)`.
 **Step 3:** Set `ptr = NULL` to prevent accidental reuse (use-after-free prevention).
 **Step 4:** Do NOT use `ptr` after freeing.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION safe_free(ptr_pointer):
@@ -1263,6 +2000,17 @@ END FUNCTION
 ```
 
 ### Basic Example
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-handwritten.svg" alt="Handwritten: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-diagram.svg" alt="Diagram: Basic Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-example-sticky.svg" alt="Sticky Note: Basic Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1297,6 +2045,17 @@ Before free: 42
 
 ### Safe Free Macro
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-handwritten.svg" alt="Handwritten: Safe Free Macro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-diagram.svg" alt="Diagram: Safe Free Macro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/safe-free-macro-sticky.svg" alt="Sticky Note: Safe Free Macro" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1329,6 +2088,17 @@ Freed successfully
 
 ### What Happens Inside free?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-handwritten.svg" alt="Handwritten: What Happens Inside free?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-diagram.svg" alt="Diagram: What Happens Inside free?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-inside-free-sticky.svg" alt="Sticky Note: What Happens Inside free?" width="30%">
+</a>
+
+
 When you call `free(ptr)`, the heap manager:
 
 1. Looks up the block metadata (stored just before the returned pointer).
@@ -1338,6 +2108,17 @@ When you call `free(ptr)`, the heap manager:
 5. (Optionally) releases large free blocks at the end of the heap back to the OS via `sbrk` or `munmap`.
 
 ### Memory Header Layout
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-handwritten.svg" alt="Handwritten: Memory Header Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-diagram.svg" alt="Diagram: Memory Header Layout" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/memory-header-layout-sticky.svg" alt="Sticky Note: Memory Header Layout" width="30%">
+</a>
+
 
 ```
   Pointer returned to caller →► +----------+
@@ -1354,6 +2135,17 @@ When you call `free(ptr)`, the heap manager:
 This is why `free` does not need a size parameter → the size is stored in the metadata header before the returned pointer.
 
 ### Dry Run: Free and Coalesce
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-handwritten.svg" alt="Handwritten: Dry Run: Free and Coalesce" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-diagram.svg" alt="Diagram: Dry Run: Free and Coalesce" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-free-and-coalesce-sticky.svg" alt="Sticky Note: Dry Run: Free and Coalesce" width="30%">
+</a>
+
 
 **Before free:**
 ```
@@ -1378,6 +2170,17 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | `free(ptr)` | O(1) amortized | O(1) | + O(1) for coalescing adjacent free blocks |
@@ -1385,6 +2188,17 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 | `free(NULL)` | O(1) | O(1) | No-op → safe to call |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
@@ -1394,6 +2208,17 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 | **Performance** | O(1) amortized | Frequent free + malloc causes fragmentation |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -1406,6 +2231,17 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 | **Free in signal handler** | Generally unsafe (malloc is not async-signal-safe) | Avoid; set a flag instead |
 
 ### Common Mistakes
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-handwritten.svg" alt="Handwritten: Common Mistakes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-diagram.svg" alt="Diagram: Common Mistakes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-mistakes-sticky.svg" alt="Sticky Note: Common Mistakes" width="30%">
+</a>
+
 
 ```c
 /* Mistake 1: Double free */
@@ -1449,6 +2285,17 @@ void memory_leak(void) {
 
 ### Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+</a>
+
+
 | Feature | `malloc` | `calloc` | `realloc` |
 |---------|----------|----------|-----------|
 | **Purpose** | Allocate raw memory | Allocate + zero-initialize | Resize existing allocation |
@@ -1465,6 +2312,17 @@ void memory_leak(void) {
 
 ### Decision Flowchart
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
+</a>
+
+
 ```
 Need dynamic memory?
 ├── Need zero-initialization?
@@ -1477,6 +2335,17 @@ Need dynamic memory?
 ```
 
 ### Code: Three Functions Side by Side
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-handwritten.svg" alt="Handwritten: Code: Three Functions Side by Side" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-diagram.svg" alt="Diagram: Code: Three Functions Side by Side" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/code-three-functions-side-by-side-sticky.svg" alt="Sticky Note: Code: Three Functions Side by Side" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1528,6 +2397,17 @@ Note: `a[5]` through `a[9]` are 0 because `realloc` zeroes the **new** bytes (no
 
 ### When to Use What
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-handwritten.svg" alt="Handwritten: When to Use What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-diagram.svg" alt="Diagram: When to Use What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/when-to-use-what-sticky.svg" alt="Sticky Note: When to Use What" width="30%">
+</a>
+
+
 | Situation | Recommended | Why |
 |-----------|-------------|-----|
 | Array of unknown size at compile time | `malloc` | Fast, no unnecessary zeroing |
@@ -1541,6 +2421,17 @@ Note: `a[5]` through `a[9]` are 0 because `realloc` zeroes the **new** bytes (no
 
 ### Complexity Comparison
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-handwritten.svg" alt="Handwritten: Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-diagram.svg" alt="Diagram: Complexity Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-comparison-sticky.svg" alt="Sticky Note: Complexity Comparison" width="30%">
+</a>
+
+
 | Function | Time | Space | Notes |
 |----------|------|-------|-------|
 | `malloc(n)` | O(1) amortized | O(n) + metadata | Fastest allocation |
@@ -1549,6 +2440,17 @@ Note: `a[5]` through `a[9]` are 0 because `realloc` zeroes the **new** bytes (no
 | `realloc(p, n)` move | O(old_size) + O(1) | O(n) | Must memcpy old data |
 
 ### Advantages and Disadvantages Summary
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-handwritten.svg" alt="Handwritten: Advantages and Disadvantages Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-diagram.svg" alt="Diagram: Advantages and Disadvantages Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-summary-sticky.svg" alt="Sticky Note: Advantages and Disadvantages Summary" width="30%">
+</a>
+
 
 | Function | Pros | Cons |
 |----------|------|------|
@@ -1562,11 +2464,33 @@ Note: `a[5]` through `a[9]` are 0 because `realloc` zeroes the **new** bytes (no
 
 ### Real-World Analogy: Library Book Never Returned
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Book Never Returned" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-diagram.svg" alt="Diagram: Real-World Analogy: Library Book Never Returned" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-library-book-never-returned-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Book Never Returned" width="30%">
+</a>
+
+
 You borrow a book from the library (malloc). You read it, put it on your shelf, and forget about it. When you move out, the book stays behind. Nobody knows you have it, so nobody can return it. Over time, the library loses all its books.
 
 In programming terms: you allocate memory, lose all references to it, and can never call `free`. That memory is gone until the program exits.
 
 ### What Is a Memory Leak?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-handwritten.svg" alt="Handwritten: What Is a Memory Leak?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-diagram.svg" alt="Diagram: What Is a Memory Leak?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-memory-leak-sticky.svg" alt="Sticky Note: What Is a Memory Leak?" width="30%">
+</a>
+
 
 A memory leak occurs when dynamically allocated memory is no longer reachable (no pointer points to it), so it can never be freed. The memory remains allocated for the program's lifetime → it is "leaked."
 
@@ -1580,6 +2504,17 @@ void leak_example(void) {
 
 ### Causes of Memory Leaks
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-handwritten.svg" alt="Handwritten: Causes of Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-diagram.svg" alt="Diagram: Causes of Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/causes-of-memory-leaks-sticky.svg" alt="Sticky Note: Causes of Memory Leaks" width="30%">
+</a>
+
+
 | Cause | Example | Explanation |
 |-------|---------|-------------|
 | **Lost pointer** | `p = malloc(100); p = malloc(200);` | First allocation has no remaining reference |
@@ -1591,6 +2526,17 @@ void leak_example(void) {
 | **Global accumulator** | Accumulating data in a global linked list without cleanup | Memory grows unbounded |
 
 ### Leak Example: Every Call Loses Memory
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-handwritten.svg" alt="Handwritten: Leak Example: Every Call Loses Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-diagram.svg" alt="Diagram: Leak Example: Every Call Loses Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-example-every-call-loses-memory-sticky.svg" alt="Sticky Note: Leak Example: Every Call Loses Memory" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1614,6 +2560,17 @@ int main(void) {
 ```
 
 ### Leak Detection via Free List Tracking
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-handwritten.svg" alt="Handwritten: Leak Detection via Free List Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-diagram.svg" alt="Diagram: Leak Detection via Free List Tracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leak-detection-via-free-list-tracking-sticky.svg" alt="Sticky Note: Leak Detection via Free List Tracking" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1673,6 +2630,17 @@ No leaks detected
 
 ### Impact of Memory Leaks
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-handwritten.svg" alt="Handwritten: Impact of Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-diagram.svg" alt="Diagram: Impact of Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/impact-of-memory-leaks-sticky.svg" alt="Sticky Note: Impact of Memory Leaks" width="30%">
+</a>
+
+
 | Impact | Description |
 |--------|-------------|
 | **Reduced available memory** | Leaked memory reduces the pool for other allocations |
@@ -1683,6 +2651,17 @@ No leaks detected
 
 ### How to Prevent Memory Leaks
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-handwritten.svg" alt="Handwritten: How to Prevent Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-diagram.svg" alt="Diagram: How to Prevent Memory Leaks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-to-prevent-memory-leaks-sticky.svg" alt="Sticky Note: How to Prevent Memory Leaks" width="30%">
+</a>
+
+
 1. **Match every malloc with a free** → create a mental pair.
 2. **Use RAII-like patterns** → allocate in constructor, free in destructor (in C++).
 3. **Initialize pointers to NULL** → only free if non-NULL.
@@ -1692,6 +2671,17 @@ No leaks detected
 7. **Use tools** → `-fsanitize=address` for Clang/GCC.
 
 ### Detecting Leaks with Address Sanitizer
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-handwritten.svg" alt="Handwritten: Detecting Leaks with Address Sanitizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-diagram.svg" alt="Diagram: Detecting Leaks with Address Sanitizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-leaks-with-address-sanitizer-sticky.svg" alt="Sticky Note: Detecting Leaks with Address Sanitizer" width="30%">
+</a>
+
 
 ```bash
 gcc -g -fsanitize=address -o program program.c
@@ -1706,15 +2696,48 @@ AddressSanitizer (ASan) reports leaks at program exit with stack traces for unfr
 
 ### Real-World Analogy: Expired Library Card
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-handwritten.svg" alt="Handwritten: Real-World Analogy: Expired Library Card" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-diagram.svg" alt="Diagram: Real-World Analogy: Expired Library Card" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expired-library-card-sticky.svg" alt="Sticky Note: Real-World Analogy: Expired Library Card" width="30%">
+</a>
+
+
 You return a book to the library (free). But you still have the checkout slip that says "Book at shelf A12." If you go to shelf A12, the book may be gone. Another patron may have borrowed it. If you write your name in that spot, you are corrupting someone else's book.
 
 The checkout slip is a **dangling pointer** → a pointer that holds an address to memory that has been freed.
 
 ### What Is a Dangling Pointer?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-handwritten.svg" alt="Handwritten: What Is a Dangling Pointer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-diagram.svg" alt="Diagram: What Is a Dangling Pointer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-sticky.svg" alt="Sticky Note: What Is a Dangling Pointer?" width="30%">
+</a>
+
+
 A dangling pointer is a pointer that references memory that has been freed. Dereferencing a dangling pointer causes **undefined behavior**.
 
 ### Three Ways to Create a Dangling Pointer
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-handwritten.svg" alt="Handwritten: Three Ways to Create a Dangling Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-diagram.svg" alt="Diagram: Three Ways to Create a Dangling Pointer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/three-ways-to-create-a-dangling-pointer-sticky.svg" alt="Sticky Note: Three Ways to Create a Dangling Pointer" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1754,6 +2777,17 @@ int main(void) {
 
 ### Types of Dangling Pointers
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-handwritten.svg" alt="Handwritten: Types of Dangling Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-diagram.svg" alt="Diagram: Types of Dangling Pointers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-dangling-pointers-sticky.svg" alt="Sticky Note: Types of Dangling Pointers" width="30%">
+</a>
+
+
 | Type | How Created | Danger Level |
 |------|-------------|--------------|
 | **Free-and-use** | `free(p); *p = x;` | Very high → immediate corruption |
@@ -1763,6 +2797,17 @@ int main(void) {
 | **Double-free** | `free(p); free(p);` | Very high → heap corruption |
 
 ### Prevention Techniques
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-handwritten.svg" alt="Handwritten: Prevention Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-diagram.svg" alt="Diagram: Prevention Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-techniques-sticky.svg" alt="Sticky Note: Prevention Techniques" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1809,6 +2854,17 @@ int main(void) {
 
 ### Dry Run: Dangling Pointer Lifecycle
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-handwritten.svg" alt="Handwritten: Dry Run: Dangling Pointer Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-diagram.svg" alt="Diagram: Dry Run: Dangling Pointer Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dangling-pointer-lifecycle-sticky.svg" alt="Sticky Note: Dry Run: Dangling Pointer Lifecycle" width="30%">
+</a>
+
+
 | Step | Code | Memory State | Pointer State |
 |------|------|-------------|---------------|
 | 1 | `int *p = malloc(4)` | Heap: [BLOCK at 0x1000: ??] | p = 0x1000 (valid) |
@@ -1819,6 +2875,17 @@ int main(void) {
 
 ### Complexity
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+</a>
+
+
 | Operation | Time | Space |
 |-----------|------|-------|
 | NULL-after-free | O(1) | O(1) |
@@ -1826,6 +2893,17 @@ int main(void) {
 | Use-after-free exploit | → | Can lead to arbitrary code execution |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Technique | Pros | Cons |
 |-----------|------|------|
@@ -1836,6 +2914,17 @@ int main(void) {
 | Pool/arena allocator | Freed all at once → no individual dangling | Requires architectural change |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -1851,11 +2940,33 @@ int main(void) {
 
 ### Real-World Analogy: Writing in the Wrong Ledger
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-handwritten.svg" alt="Handwritten: Real-World Analogy: Writing in the Wrong Ledger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-diagram.svg" alt="Diagram: Real-World Analogy: Writing in the Wrong Ledger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-writing-in-the-wrong-ledger-sticky.svg" alt="Sticky Note: Real-World Analogy: Writing in the Wrong Ledger" width="30%">
+</a>
+
+
 An accountant has 10 ledgers in a cabinet. You ask for ledger 3. The accountant opens ledger 3, and you write in it. But if you write past page 100 (the ledger only has 100 pages), you start writing in ledger 4. The accountant does not check your page number → that is your responsibility.
 
 Memory corruption is when you write data past the allocated boundary and overwrite adjacent memory (metadata, other allocations, or even code).
 
 ### Types of Memory Corruption
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-handwritten.svg" alt="Handwritten: Types of Memory Corruption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-diagram.svg" alt="Diagram: Types of Memory Corruption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/types-of-memory-corruption-sticky.svg" alt="Sticky Note: Types of Memory Corruption" width="30%">
+</a>
+
 
 | Type | Description | Example |
 |------|-------------|---------|
@@ -1869,6 +2980,17 @@ Memory corruption is when you write data past the allocated boundary and overwri
 | **Off-by-one** | One element past the end | `for (i = 0; i <= n; i++) arr[i]` |
 
 ### Buffer Overflow Example
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-handwritten.svg" alt="Handwritten: Buffer Overflow Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-diagram.svg" alt="Diagram: Buffer Overflow Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/buffer-overflow-example-sticky.svg" alt="Sticky Note: Buffer Overflow Example" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1893,6 +3015,17 @@ int main(void) {
 
 ### Heap Metadata Corruption
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-handwritten.svg" alt="Handwritten: Heap Metadata Corruption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-diagram.svg" alt="Diagram: Heap Metadata Corruption" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/heap-metadata-corruption-sticky.svg" alt="Sticky Note: Heap Metadata Corruption" width="30%">
+</a>
+
+
 Each malloc'd block has a metadata header (typically 8â€“16 bytes) just before the returned pointer. Overwriting this header corrupts the heap:
 
 ```
@@ -1911,6 +3044,17 @@ free() then reads corrupted metadata:
 ```
 
 ### Double Free Exploitation
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-handwritten.svg" alt="Handwritten: Double Free Exploitation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-diagram.svg" alt="Diagram: Double Free Exploitation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/double-free-exploitation-sticky.svg" alt="Sticky Note: Double Free Exploitation" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1943,6 +3087,17 @@ int main(void) {
 
 ### Detecting Memory Corruption at Free Time
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-handwritten.svg" alt="Handwritten: Detecting Memory Corruption at Free Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-diagram.svg" alt="Diagram: Detecting Memory Corruption at Free Time" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-memory-corruption-at-free-time-sticky.svg" alt="Sticky Note: Detecting Memory Corruption at Free Time" width="30%">
+</a>
+
+
 Many allocators (glibc, jemalloc, tcmalloc) attempt to detect corruption when `free` is called:
 
 ```c
@@ -1969,6 +3124,17 @@ Aborted (core dumped)
 
 ### Prevention and Detection
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-handwritten.svg" alt="Handwritten: Prevention and Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-diagram.svg" alt="Diagram: Prevention and Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/prevention-and-detection-sticky.svg" alt="Sticky Note: Prevention and Detection" width="30%">
+</a>
+
+
 | Method | Description | Effectiveness |
 |--------|-------------|---------------|
 | **Bounds checking** | Always verify indices before accessing arrays | High → prevents overflow at source |
@@ -1979,6 +3145,17 @@ Aborted (core dumped)
 | **Safe allocators** | ElectricFence, Guard pages around allocations | High → immediate segfault on overflow |
 
 ### Using Address Sanitizer
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-handwritten.svg" alt="Handwritten: Using Address Sanitizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-diagram.svg" alt="Diagram: Using Address Sanitizer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/using-address-sanitizer-sticky.svg" alt="Sticky Note: Using Address Sanitizer" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2017,11 +3194,33 @@ allocated by thread T0 here:
 
 ### Real-World Analogy: Expanding Waiting List
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-handwritten.svg" alt="Handwritten: Real-World Analogy: Expanding Waiting List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-diagram.svg" alt="Diagram: Real-World Analogy: Expanding Waiting List" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/real-world-analogy-expanding-waiting-list-sticky.svg" alt="Sticky Note: Real-World Analogy: Expanding Waiting List" width="30%">
+</a>
+
+
 A restaurant has a waiting list. They start with a small clipboard that holds 10 names. When the list fills up, they get a bigger clipboard that holds 20 names and copy all the names over. They throw away the old clipboard.
 
 A dynamic array works the same way: start with a small capacity, double when full, and copy elements to the new buffer.
 
 ### Dynamic Array Implementation
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-handwritten.svg" alt="Handwritten: Dynamic Array Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-diagram.svg" alt="Diagram: Dynamic Array Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dynamic-array-implementation-sticky.svg" alt="Sticky Note: Dynamic Array Implementation" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2115,6 +3314,17 @@ After set: arr[5] = 999
 
 ### Dry Run: Dynamic Array Growth
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-handwritten.svg" alt="Handwritten: Dry Run: Dynamic Array Growth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-diagram.svg" alt="Diagram: Dry Run: Dynamic Array Growth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/dry-run-dynamic-array-growth-sticky.svg" alt="Sticky Note: Dry Run: Dynamic Array Growth" width="30%">
+</a>
+
+
 | Step | Capacity | Size | Data | Realloc? |
 |------|----------|------|------|----------|
 | 0 | 0 | 0 | NULL | → |
@@ -2131,6 +3341,17 @@ After set: arr[5] = 999
 
 ### Complexity of Dynamic Array Operations
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-handwritten.svg" alt="Handwritten: Complexity of Dynamic Array Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-diagram.svg" alt="Diagram: Complexity of Dynamic Array Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/complexity-of-dynamic-array-operations-sticky.svg" alt="Sticky Note: Complexity of Dynamic Array Operations" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Amortized Time | Notes |
 |-----------|----------------|----------------|-------|
 | Append (no resize) | O(1) | O(1) | Simple write and increment |
@@ -2142,6 +3363,17 @@ After set: arr[5] = 999
 | Free | O(1) | O(1) | Single free call |
 
 ### Advantages and Disadvantages
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+</a>
+
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
@@ -2155,9 +3387,31 @@ After set: arr[5] = 999
 
 ### What Is Valgrind?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-handwritten.svg" alt="Handwritten: What Is Valgrind?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-diagram.svg" alt="Diagram: What Is Valgrind?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-valgrind-sticky.svg" alt="Sticky Note: What Is Valgrind?" width="30%">
+</a>
+
+
 Valgrind is a programming tool for memory debugging, memory leak detection, and profiling. It runs your program on a synthetic CPU and intercepts every memory allocation and deallocation.
 
 ### Installation
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/installation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/installation-handwritten.svg" alt="Handwritten: Installation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/installation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/installation-diagram.svg" alt="Diagram: Installation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/installation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/installation-sticky.svg" alt="Sticky Note: Installation" width="30%">
+</a>
+
 
 ```bash
 # Ubuntu/Debian
@@ -2175,6 +3429,17 @@ valgrind --version
 
 ### Basic Usage
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-usage-handwritten.svg" alt="Handwritten: Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-usage-diagram.svg" alt="Diagram: Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/basic-usage-sticky.svg" alt="Sticky Note: Basic Usage" width="30%">
+</a>
+
+
 ```bash
 # Compile with debug symbols (-g)
 gcc -g -o program program.c
@@ -2184,6 +3449,17 @@ valgrind --leak-check=full ./program
 ```
 
 ### Leaky Program Example
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-handwritten.svg" alt="Handwritten: Leaky Program Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-diagram.svg" alt="Diagram: Leaky Program Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/leaky-program-example-sticky.svg" alt="Sticky Note: Leaky Program Example" width="30%">
+</a>
+
 
 ```c
 /* leaky.c → intentionally leaks memory */
@@ -2241,6 +3517,17 @@ valgrind --leak-check=full --show-leak-kinds=all ./leaky
 
 ### Clean Program (No Leaks)
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-handwritten.svg" alt="Handwritten: Clean Program (No Leaks)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-diagram.svg" alt="Diagram: Clean Program (No Leaks)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/clean-program-no-leaks-sticky.svg" alt="Sticky Note: Clean Program (No Leaks)" width="30%">
+</a>
+
+
 ```c
 /* clean.c → no leaks */
 #include <stdio.h>
@@ -2273,6 +3560,17 @@ int main(void) {
 ```
 
 ### Detecting Use-After-Free with Valgrind
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-handwritten.svg" alt="Handwritten: Detecting Use-After-Free with Valgrind" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-diagram.svg" alt="Diagram: Detecting Use-After-Free with Valgrind" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/detecting-use-after-free-with-valgrind-sticky.svg" alt="Sticky Note: Detecting Use-After-Free with Valgrind" width="30%">
+</a>
+
 
 ```c
 /* uaf.c → use-after-free */
@@ -2324,6 +3622,17 @@ valgrind ./uaf
 
 ### Valgrind Options
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-handwritten.svg" alt="Handwritten: Valgrind Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-diagram.svg" alt="Diagram: Valgrind Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/valgrind-options-sticky.svg" alt="Sticky Note: Valgrind Options" width="30%">
+</a>
+
+
 | Option | Effect |
 |--------|--------|
 | `--leak-check=full` | Show details of each leaked block |
@@ -2337,6 +3646,17 @@ valgrind ./uaf
 
 ### Understanding Leak Types
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-handwritten.svg" alt="Handwritten: Understanding Leak Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-diagram.svg" alt="Diagram: Understanding Leak Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/understanding-leak-types-sticky.svg" alt="Sticky Note: Understanding Leak Types" width="30%">
+</a>
+
+
 | Leak Type | Meaning | Action |
 |-----------|---------|--------|
 | **Definitely lost** | No pointer to the block exists → cannot be freed | Must fix → add missing free |
@@ -2346,6 +3666,17 @@ valgrind ./uaf
 | **Suppressed** | Suppressed by user's suppression file | Verify suppression is appropriate |
 
 ### Integrating Valgrind into Your Workflow
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-handwritten.svg" alt="Handwritten: Integrating Valgrind into Your Workflow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-diagram.svg" alt="Diagram: Integrating Valgrind into Your Workflow" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/integrating-valgrind-into-your-workflow-sticky.svg" alt="Sticky Note: Integrating Valgrind into Your Workflow" width="30%">
+</a>
+
 
 ```bash
 # Quick check
@@ -2367,6 +3698,17 @@ valgrind --vgdb=yes --vgdb-error=0 ./program
 
 ### The Golden Rules of Dynamic Memory
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-handwritten.svg" alt="Handwritten: The Golden Rules of Dynamic Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-diagram.svg" alt="Diagram: The Golden Rules of Dynamic Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/the-golden-rules-of-dynamic-memory-sticky.svg" alt="Sticky Note: The Golden Rules of Dynamic Memory" width="30%">
+</a>
+
+
 1. **Always check return values** → `malloc`, `calloc`, and `realloc` can fail.
 2. **Every malloc has a matching free** → create mental pairs.
 3. **NULL after free** → prevents use-after-free and double-free.
@@ -2379,6 +3721,17 @@ valgrind --vgdb=yes --vgdb-error=0 ./program
 10. **Avoid void* arithmetic** → not allowed in standard C (GCC extension allows it).
 
 ### Best Practice Examples
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-handwritten.svg" alt="Handwritten: Best Practice Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-diagram.svg" alt="Diagram: Best Practice Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/best-practice-examples-sticky.svg" alt="Sticky Note: Best Practice Examples" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2474,6 +3827,17 @@ int main(void) {
 
 ### Practice Checklist
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-handwritten.svg" alt="Handwritten: Practice Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-diagram.svg" alt="Diagram: Practice Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/practice-checklist-sticky.svg" alt="Sticky Note: Practice Checklist" width="30%">
+</a>
+
+
 | Rule | Check |
 |------|-------|
 | Every allocation checked for NULL? | |
@@ -2493,6 +3857,17 @@ int main(void) {
 
 ### 11.15.1 malloc vs calloc vs realloc vs free
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-handwritten.svg" alt="Handwritten: 11.15.1 malloc vs calloc vs realloc vs free" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-diagram.svg" alt="Diagram: 11.15.1 malloc vs calloc vs realloc vs free" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-1-malloc-vs-calloc-vs-realloc-vs-free-sticky.svg" alt="Sticky Note: 11.15.1 malloc vs calloc vs realloc vs free" width="30%">
+</a>
+
+
 | Feature | `malloc` | `calloc` | `realloc` | `free` |
 |---------|----------|----------|-----------|--------|
 | **Header** | `<stdlib.h>` | `<stdlib.h>` | `<stdlib.h>` | `<stdlib.h>` |
@@ -2507,6 +3882,17 @@ int main(void) {
 | **Memory overhead** | Header per block | Header per block | Header + copy buffer | → |
 
 ### 11.15.2 Static vs Automatic vs Dynamic Allocation
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-handwritten.svg" alt="Handwritten: 11.15.2 Static vs Automatic vs Dynamic Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-diagram.svg" alt="Diagram: 11.15.2 Static vs Automatic vs Dynamic Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-2-static-vs-automatic-vs-dynamic-allocation-sticky.svg" alt="Sticky Note: 11.15.2 Static vs Automatic vs Dynamic Allocation" width="30%">
+</a>
+
 
 | Aspect | Static | Automatic | Dynamic |
 |--------|--------|-----------|---------|
@@ -2523,6 +3909,17 @@ int main(void) {
 
 ### 11.15.3 Stack vs Heap → Detailed
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-handwritten.svg" alt="Handwritten: 11.15.3 Stack vs Heap → Detailed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-diagram.svg" alt="Diagram: 11.15.3 Stack vs Heap → Detailed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-3-stack-vs-heap-detailed-sticky.svg" alt="Sticky Note: 11.15.3 Stack vs Heap → Detailed" width="30%">
+</a>
+
+
 | Aspect | Stack | Heap |
 |--------|-------|------|
 | **Typical size** | 1â€“8 MB per thread | GB (virtual address space) |
@@ -2538,6 +3935,17 @@ int main(void) {
 | **Risk** | Deep recursion | Memory leaks |
 
 ### 11.15.4 Memory Error Types
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-handwritten.svg" alt="Handwritten: 11.15.4 Memory Error Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-diagram.svg" alt="Diagram: 11.15.4 Memory Error Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-15-4-memory-error-types-sticky.svg" alt="Sticky Note: 11.15.4 Memory Error Types" width="30%">
+</a>
+
 
 | Error | Cause | Consequence | Detection |
 |-------|-------|-------------|-----------|
@@ -2557,61 +3965,226 @@ int main(void) {
 
 ### Q1: What is the difference between `malloc` and `calloc`?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-handwritten.svg" alt="Handwritten: What is the difference between `malloc` and `calloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-diagram.svg" alt="Diagram: What is the difference between `malloc` and `calloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-malloc-and-calloc-sticky.svg" alt="Sticky Note: What is the difference between `malloc` and `calloc`?" width="30%">
+</a>
+
+
 **Answer:** `malloc(size)` allocates `size` bytes of uninitialized memory. `calloc(count, size)` allocates `count * size` bytes and initializes every byte to zero. `calloc` also checks for integer overflow in the multiplication `count * size`. In terms of performance, `malloc` is faster because it skips the zeroing pass. For large allocations, `calloc` can be faster than `malloc` + `memset` because the OS can provide already-zeroed pages without actually touching them (demand-paging optimization). Use `malloc` when you will immediately overwrite the memory; use `calloc` when you need a predictable zero state.
 
 ### Q2: Why must you use a temporary pointer with `realloc`?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-handwritten.svg" alt="Handwritten: Why must you use a temporary pointer with `realloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-diagram.svg" alt="Diagram: Why must you use a temporary pointer with `realloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/why-must-you-use-a-temporary-pointer-with-realloc-sticky.svg" alt="Sticky Note: Why must you use a temporary pointer with `realloc`?" width="30%">
+</a>
+
 
 **Answer:** If `realloc` fails (returns NULL), the original memory block is still valid and unmodified. If you assign directly → `ptr = realloc(ptr, new_size)` → and realloc fails, `ptr` becomes NULL and you lose the reference to the original block, causing a memory leak. Always use: `int *temp = realloc(ptr, new_size); if (temp) ptr = temp; else handle_error();`.
 
 ### Q3: What causes a memory leak? How do you prevent one?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-handwritten.svg" alt="Handwritten: What causes a memory leak? How do you prevent one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-diagram.svg" alt="Diagram: What causes a memory leak? How do you prevent one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-causes-a-memory-leak-how-do-you-prevent-one-sticky.svg" alt="Sticky Note: What causes a memory leak? How do you prevent one?" width="30%">
+</a>
+
+
 **Answer:** A memory leak occurs when dynamically allocated memory has no remaining pointer reference, making it impossible to free. Common causes: losing the pointer through reassignment (`p = malloc(100); p = malloc(200);`), returning from a function without freeing, and forgetting to free in error paths. Prevention: match every `malloc` with a `free`, use tools like Valgrind, set pointers to NULL after freeing, use RAII in C++ (smart pointers), and establish ownership conventions in C (document who allocates and who frees).
 
 ### Q4: What is a dangling pointer and how do you prevent it?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-handwritten.svg" alt="Handwritten: What is a dangling pointer and how do you prevent it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-diagram.svg" alt="Diagram: What is a dangling pointer and how do you prevent it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-dangling-pointer-and-how-do-you-prevent-it-sticky.svg" alt="Sticky Note: What is a dangling pointer and how do you prevent it?" width="30%">
+</a>
+
 
 **Answer:** A dangling pointer is a pointer that references memory that has been freed. Dereferencing it is undefined behavior. Three common causes: (1) freeing memory and not nullifying the pointer, (2) returning the address of a stack-allocated local variable, and (3) using the old pointer after `realloc` moved the block. Prevention: set `ptr = NULL` immediately after `free`, never return `&local_var` from a function, and use the pointer returned by `realloc`, not the old one.
 
 ### Q5: How does `realloc` handle failure?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-handwritten.svg" alt="Handwritten: How does `realloc` handle failure?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-diagram.svg" alt="Diagram: How does `realloc` handle failure?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-realloc-handle-failure-sticky.svg" alt="Sticky Note: How does `realloc` handle failure?" width="30%">
+</a>
+
+
 **Answer:** On failure, `realloc` returns NULL and **preserves the original block unchanged**. This is why using a temporary pointer is critical → the original pointer remains valid and can be freed or retried with a smaller size. Never do `ptr = realloc(ptr, n)` → that loses the original on failure.
 
 ### Q6: Can you do pointer arithmetic on `void*`?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-handwritten.svg" alt="Handwritten: Can you do pointer arithmetic on `void*`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-diagram.svg" alt="Diagram: Can you do pointer arithmetic on `void*`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/can-you-do-pointer-arithmetic-on-void-sticky.svg" alt="Sticky Note: Can you do pointer arithmetic on `void*`?" width="30%">
+</a>
+
 
 **Answer:** In standard C, no → pointer arithmetic requires the size of the pointed-to type, and `void` has no size. GCC and some compilers allow it as an extension (treating `void*` as byte-sized). For portable code, cast to `char*` before arithmetic: `(char*)ptr + offset`.
 
 ### Q7: What is the memory layout of a C program?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-handwritten.svg" alt="Handwritten: What is the memory layout of a C program?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-diagram.svg" alt="Diagram: What is the memory layout of a C program?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-memory-layout-of-a-c-program-sticky.svg" alt="Sticky Note: What is the memory layout of a C program?" width="30%">
+</a>
+
+
 **Answer:** From low to high address: **Text** (read-only machine code), **Data** (initialized global/static variables), **BSS** (uninitialized global/static → zero-filled at load), **Heap** (grows upward → dynamic allocations), **Stack** (grows downward → local variables, function frames). The heap and stack grow toward each other; if they collide, the program runs out of memory.
 
 ### Q8: What is the difference between stack and heap allocation?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-handwritten.svg" alt="Handwritten: What is the difference between stack and heap allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-diagram.svg" alt="Diagram: What is the difference between stack and heap allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-stack-and-heap-allocation-sticky.svg" alt="Sticky Note: What is the difference between stack and heap allocation?" width="30%">
+</a>
+
 
 **Answer:** Stack allocation is fast (single instruction to adjust stack pointer), automatic (compiler manages), and limited in size (~1â€“8 MB). Heap allocation is slower (freelist search, potential syscall), manual (programmer must free), and can be very large (up to virtual address limits). Stack variables are LIFO and have function scope; heap variables have arbitrary lifetime.
 
 ### Q9: What happens when `free` is called with a pointer that was not returned by `malloc`?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-handwritten.svg" alt="Handwritten: What happens when `free` is called with a pointer that was not returned by `malloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-diagram.svg" alt="Diagram: What happens when `free` is called with a pointer that was not returned by `malloc`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-happens-when-free-is-called-with-a-pointer-that-was-not-returned-by-malloc-sticky.svg" alt="Sticky Note: What happens when `free` is called with a pointer that was not returned by `malloc`?" width="30%">
+</a>
+
+
 **Answer:** Undefined behavior. The allocator's metadata lookup will read garbage, likely causing heap corruption and a crash. The only safe pointer to pass to `free` is one returned by `malloc`, `calloc`, or `realloc` (or NULL, which is a safe no-op).
 
 ### Q10: How do you detect memory leaks at runtime?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-handwritten.svg" alt="Handwritten: How do you detect memory leaks at runtime?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-diagram.svg" alt="Diagram: How do you detect memory leaks at runtime?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-detect-memory-leaks-at-runtime-sticky.svg" alt="Sticky Note: How do you detect memory leaks at runtime?" width="30%">
+</a>
+
 
 **Answer:** Use **Valgrind** (runs on synthetic CPU, intercepts all alloc/free → 2â€“20x slowdown) or **AddressSanitizer** (compiler instrumentation via `-fsanitize=address` → ~2x slowdown, ~2x memory). Valgrind catches leaks, use-after-free, and uninitialized reads. ASan catches buffer overflows, use-after-free, and leaks. For production, you can implement a simple wrapper that tracks outstanding allocations (see 11.9.3).
 
 ### Q11: What is memory fragmentation? Why is it bad?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-handwritten.svg" alt="Handwritten: What is memory fragmentation? Why is it bad?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-diagram.svg" alt="Diagram: What is memory fragmentation? Why is it bad?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-memory-fragmentation-why-is-it-bad-sticky.svg" alt="Sticky Note: What is memory fragmentation? Why is it bad?" width="30%">
+</a>
+
+
 **Answer:** Fragmentation occurs when freed blocks of memory are scattered among in-use blocks, so the total free memory is sufficient but no single free block can satisfy a large allocation. Example: after malloc(100), free(ptr) interleaved with smaller allocations can leave the heap with many small free gaps. This is **external fragmentation**. Types: external (holes between blocks) and internal (wasted space within a block due to alignment/padding).
 
 ### Q12: How does `malloc` manage memory internally?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-handwritten.svg" alt="Handwritten: How does `malloc` manage memory internally?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-diagram.svg" alt="Diagram: How does `malloc` manage memory internally?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-malloc-manage-memory-internally-sticky.svg" alt="Sticky Note: How does `malloc` manage memory internally?" width="30%">
+</a>
+
 
 **Answer:** `malloc` typically uses a **freelist** of free blocks. When you call `malloc(n)`, it searches for a free block >= n bytes (first-fit, best-fit, or segregated-fit depending on implementation). The block is split if it is much larger than n. Each block has a **metadata header** (size, flags, sometimes linked-list pointers) stored just before the returned pointer. When you call `free`, the block is returned to the freelist and adjacent free blocks are **coalesced** into a larger free block. Large allocations (>= 128 KB on glibc) use `mmap` instead of `brk`.
 
 ### Q13: What is the difference between `free` and `delete`?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-handwritten.svg" alt="Handwritten: What is the difference between `free` and `delete`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-diagram.svg" alt="Diagram: What is the difference between `free` and `delete`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-free-and-delete-sticky.svg" alt="Sticky Note: What is the difference between `free` and `delete`?" width="30%">
+</a>
+
+
 **Answer:** `free` is a C library function that deallocates memory allocated by `malloc`/`calloc`/`realloc`. `delete` is a C++ operator that calls the destructor of an object and then deallocates memory allocated by `new`. In C++, you must `delete` what was `new`'d and `free` what was `malloc`'d → mixing them is undefined behavior.
 
 ### Q14: What does `sizeof(*ptr)` vs `sizeof(type)` give you when `ptr` is a `NULL` pointer?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-handwritten.svg" alt="Handwritten: What does `sizeof(*ptr)` vs `sizeof(type)` give you when `ptr` is a `NULL` pointer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-diagram.svg" alt="Diagram: What does `sizeof(*ptr)` vs `sizeof(type)` give you when `ptr` is a `NULL` pointer?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-does-sizeof-ptr-vs-sizeof-type-give-you-when-ptr-is-a-null-pointer-sticky.svg" alt="Sticky Note: What does `sizeof(*ptr)` vs `sizeof(type)` give you when `ptr` is a `NULL` pointer?" width="30%">
+</a>
+
+
 **Answer:** `sizeof(*ptr)` evaluates the size of the pointed-to type at compile time without dereferencing the pointer. Even if `ptr` is NULL, `sizeof(*ptr)` is safe and returns the correct size. This is the recommended pattern for malloc: `ptr = malloc(sizeof(*ptr))` → it survives changes to the type of `ptr`.
 
 ### Q15: Implement a safe `malloc` wrapper with error reporting.
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-handwritten.svg" alt="Handwritten: Implement a safe `malloc` wrapper with error reporting." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-diagram.svg" alt="Diagram: Implement a safe `malloc` wrapper with error reporting." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/implement-a-safe-malloc-wrapper-with-error-reporting-sticky.svg" alt="Sticky Note: Implement a safe `malloc` wrapper with error reporting." width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2639,13 +4212,46 @@ int main(void) {
 
 ### Q16: How do you implement a dynamically growing array in C?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-handwritten.svg" alt="Handwritten: How do you implement a dynamically growing array in C?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-diagram.svg" alt="Diagram: How do you implement a dynamically growing array in C?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-do-you-implement-a-dynamically-growing-array-in-c-sticky.svg" alt="Sticky Note: How do you implement a dynamically growing array in C?" width="30%">
+</a>
+
+
 **Answer:** Use a struct with `data` pointer, `size` (elements used), and `capacity` (elements allocated). On append, if `size >= capacity`, double capacity using `realloc`. Doubling achieves O(1) amortized append time. Example: see section 11.12.
 
 ### Q17: What is the difference between `int *p = malloc(10 * sizeof(int))` and `int p[10]`?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-handwritten.svg" alt="Handwritten: What is the difference between `int *p = malloc(10 * sizeof(int))` and `int p[10]`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-diagram.svg" alt="Diagram: What is the difference between `int *p = malloc(10 * sizeof(int))` and `int p[10]`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-difference-between-int-p-malloc-10-sizeof-int-and-int-p-10-sticky.svg" alt="Sticky Note: What is the difference between `int *p = malloc(10 * sizeof(int))` and `int p[10]`?" width="30%">
+</a>
+
+
 **Answer:** `int p[10]` allocates 10 ints on the **stack** → memory is freed automatically when the function returns. `int *p = malloc(10 * sizeof(int))` allocates 10 ints on the **heap** → memory persists until `free` is called. The array version (`p[10]`) cannot be resized and cannot be returned from the function (it is automatic). The malloc version can be resized with `realloc` and can be safely returned.
 
 ### Q18: What is the "N+1" problem with dynamic string allocation?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-handwritten.svg" alt="Handwritten: What is the "N+1" problem with dynamic string allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-diagram.svg" alt="Diagram: What is the "N+1" problem with dynamic string allocation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-the-n-1-problem-with-dynamic-string-allocation-sticky.svg" alt="Sticky Note: What is the "N+1" problem with dynamic string allocation?" width="30%">
+</a>
+
 
 **Answer:** When allocating memory for a string, you must allocate `strlen(s) + 1` bytes → the +1 is for the null terminator. Forgetting the +1 is the most common string memory bug and leads to buffer overflow when the terminator is written past the allocated region.
 
@@ -2657,9 +4263,31 @@ strcpy(copy, s);  /* safe */
 
 ### Q19: How does the OS handle a `malloc` request for a very large block?
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-handwritten.svg" alt="Handwritten: How does the OS handle a `malloc` request for a very large block?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-diagram.svg" alt="Diagram: How does the OS handle a `malloc` request for a very large block?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/how-does-the-os-handle-a-malloc-request-for-a-very-large-block-sticky.svg" alt="Sticky Note: How does the OS handle a `malloc` request for a very large block?" width="30%">
+</a>
+
+
 **Answer:** For large allocations (typically >= 128 KB on glibc), `malloc` uses `mmap` to allocate a new anonymous memory mapping instead of extending the heap via `brk`. This has two benefits: (1) the memory is released back to the OS when `free` is called (not just returned to the process heap), and (2) it reduces heap fragmentation since large blocks are isolated. The downside is a higher per-allocation overhead (syscall cost, page-aligned).
 
 ### Q20: What is a pool (arena) allocator and why use one?
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-handwritten.svg" alt="Handwritten: What is a pool (arena) allocator and why use one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-diagram.svg" alt="Diagram: What is a pool (arena) allocator and why use one?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/what-is-a-pool-arena-allocator-and-why-use-one-sticky.svg" alt="Sticky Note: What is a pool (arena) allocator and why use one?" width="30%">
+</a>
+
 
 **Answer:** A pool allocator pre-allocates a large block of memory (an arena) and serves smaller allocations by incrementing a pointer within that block. It is extremely fast (O(1) allocation, no freelist search) and eliminates fragmentation for same-sized objects. The downside: individual objects cannot be freed independently → the entire pool is freed at once. Pool allocators are common in real-time systems, game engines, and embedded systems where allocation speed and predictability matter more than individual deallocation. See the challenge problem in section 11.18 for an implementation.
 
@@ -2668,6 +4296,17 @@ strcpy(copy, s);  /* safe */
 ## 11.17 Applications in Real Systems
 
 ### 11.17.1 Linux Kernel `kmalloc`
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-handwritten.svg" alt="Handwritten: 11.17.1 Linux Kernel `kmalloc`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-diagram.svg" alt="Diagram: 11.17.1 Linux Kernel `kmalloc`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-1-linux-kernel-kmalloc-sticky.svg" alt="Sticky Note: 11.17.1 Linux Kernel `kmalloc`" width="30%">
+</a>
+
 
 The Linux kernel provides `kmalloc` for allocating physically contiguous memory in kernel space. It is similar to `malloc` but uses the kernel's slab allocator:
 
@@ -2684,6 +4323,17 @@ void kfree(const void *ptr);
 - The kernel uses **slab allocators** → caches of fixed-size objects (e.g., `kmalloc-32`, `kmalloc-64`) to avoid fragmentation and speed up allocation.
 
 ### 11.17.2 Embedded `malloc` Implementations
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-handwritten.svg" alt="Handwritten: 11.17.2 Embedded `malloc` Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-diagram.svg" alt="Diagram: 11.17.2 Embedded `malloc` Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-2-embedded-malloc-implementations-sticky.svg" alt="Sticky Note: 11.17.2 Embedded `malloc` Implementations" width="30%">
+</a>
+
 
 Embedded systems often use custom allocators optimized for limited memory:
 
@@ -2745,6 +4395,17 @@ a=hello b=embedded world
 
 ### 11.17.3 Dynamic String Duplication
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-handwritten.svg" alt="Handwritten: 11.17.3 Dynamic String Duplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-diagram.svg" alt="Diagram: 11.17.3 Dynamic String Duplication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-3-dynamic-string-duplication-sticky.svg" alt="Sticky Note: 11.17.3 Dynamic String Duplication" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -2788,6 +4449,17 @@ Original:  "Hello, Dynamic World!"
 ```
 
 ### 11.17.4 Dynamic Array of Strings (e.g., Reading File Lines)
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-handwritten.svg" alt="Handwritten: 11.17.4 Dynamic Array of Strings (e.g., Reading File Lines)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-diagram.svg" alt="Diagram: 11.17.4 Dynamic Array of Strings (e.g., Reading File Lines)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-4-dynamic-array-of-strings-e-g-reading-file-lines-sticky.svg" alt="Sticky Note: 11.17.4 Dynamic Array of Strings (e.g., Reading File Lines)" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -2871,6 +4543,17 @@ Read 4 lines:
 
 ### 11.17.5 Linked List Node Allocation
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-handwritten.svg" alt="Handwritten: 11.17.5 Linked List Node Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-diagram.svg" alt="Diagram: 11.17.5 Linked List Node Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-5-linked-list-node-allocation-sticky.svg" alt="Sticky Note: 11.17.5 Linked List Node Allocation" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -2918,6 +4601,17 @@ List: 10 20 30
 ```
 
 ### 11.17.6 Resizable Hash Table (Chaining)
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-handwritten.svg" alt="Handwritten: 11.17.6 Resizable Hash Table (Chaining)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-diagram.svg" alt="Diagram: 11.17.6 Resizable Hash Table (Chaining)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/11-17-6-resizable-hash-table-chaining-sticky.svg" alt="Sticky Note: 11.17.6 Resizable Hash Table (Chaining)" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -3041,6 +4735,17 @@ grape -> not found
 
 ### Summary
 
+<a href="../../assets/images/diagrams/c-programming/11-dma/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+</a>
+
+
 1. **Static memory** is allocated at compile time, lives for the program duration, and is zero-initialized. **Automatic memory** (stack) is allocated at function entry, freed at function exit, and is not initialized. **Dynamic memory** (heap) is allocated at runtime via `malloc`/`calloc`/`realloc`, persists until `free`, and must be managed manually.
 
 2. **Memory layout** of a C program: Text (code), Data (initialized globals), BSS (uninitialized globals), Heap (dynamic → grows up), Stack (locals → grows down).
@@ -3062,6 +4767,17 @@ grape -> not found
 10. **Dynamic arrays** achieve O(1) amortized append by doubling capacity. They are the foundation of growable collections.
 
 ### Common Pitfalls Checklist
+
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-handwritten.svg" alt="Handwritten: Common Pitfalls Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-diagram.svg" alt="Diagram: Common Pitfalls Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/11-dma/common-pitfalls-checklist-sticky.svg" alt="Sticky Note: Common Pitfalls Checklist" width="30%">
+</a>
+
 
 | Pitfall | Symptom | Prevention |
 |---------|---------|------------|

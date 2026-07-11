@@ -41,6 +41,17 @@ flowchart LR
 
 ### 2.1 Limits and Continuity
 
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-handwritten.svg" alt="Handwritten: 2.1 Limits and Continuity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-diagram.svg" alt="Diagram: 2.1 Limits and Continuity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-1-limits-and-continuity-sticky.svg" alt="Sticky Note: 2.1 Limits and Continuity" width="30%">
+</a>
+
+
 **Informal Definition:** $\lim_{x \to a} f(x) = L$ means that as $x$ gets arbitrarily close to $a$ (from either side), $f(x)$ gets arbitrarily close to $L$.
 
 **Formal ($\epsilon$-$\delta$) Definition:** $\lim_{x \to a} f(x) = L$ if for every $\epsilon > 0$, there exists $\delta > 0$ such that $0 &lt; |x - a| < \delta$ implies $|f(x) - L| < \epsilon$.
@@ -80,6 +91,17 @@ $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
 (provided the limit on the right exists or is $\pm\infty$)
 
 ### 2.2 Derivatives
+
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-handwritten.svg" alt="Handwritten: 2.2 Derivatives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-diagram.svg" alt="Diagram: 2.2 Derivatives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-2-derivatives-sticky.svg" alt="Sticky Note: 2.2 Derivatives" width="30%">
+</a>
+
 
 **Definition:** The derivative of $f$ at $x$ is:
 
@@ -127,6 +149,17 @@ This guarantees a point where the instantaneous rate equals the average rate.
 
 ### 2.3 Applications of Derivatives
 
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-handwritten.svg" alt="Handwritten: 2.3 Applications of Derivatives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-diagram.svg" alt="Diagram: 2.3 Applications of Derivatives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-3-applications-of-derivatives-sticky.svg" alt="Sticky Note: 2.3 Applications of Derivatives" width="30%">
+</a>
+
+
 **Critical Points:** $c$ is a critical point if $f'(c) = 0$ or $f'(c)$ does not exist.
 
 **First Derivative Test:**
@@ -148,6 +181,17 @@ This guarantees a point where the instantaneous rate equals the average rate.
 **Related Rates:** Given a relationship between variables that change with time, differentiate with respect to time to find the rate of change of one variable in terms of others.
 
 ### 2.4 Integration
+
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-handwritten.svg" alt="Handwritten: 2.4 Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-diagram.svg" alt="Diagram: 2.4 Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-4-integration-sticky.svg" alt="Sticky Note: 2.4 Integration" width="30%">
+</a>
+
 
 **Antiderivative:** $F$ is an antiderivative of $f$ if $F'(x) = f(x)$. The general antiderivative is $F(x) + C$ where $C$ is the constant of integration.
 
@@ -183,6 +227,17 @@ where $\Delta x = (b-a)/n$ and $x_i^*$ is a sample point in the $i$th subinterva
 $$\int [c_1 f(x) + c_2 g(x)]\,dx = c_1 \int f(x)\,dx + c_2 \int g(x)\,dx$$
 
 ### 2.5 Integration Techniques
+
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-handwritten.svg" alt="Handwritten: 2.5 Integration Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-diagram.svg" alt="Diagram: 2.5 Integration Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-5-integration-techniques-sticky.svg" alt="Sticky Note: 2.5 Integration Techniques" width="30%">
+</a>
+
 
 **Substitution (u-substitution):** If $u = g(x)$, then $du = g'(x)dx$ and:
 
@@ -231,6 +286,17 @@ $$\int \sin^n x\,dx = -\frac{1}{n} \sin^{n-1}x \cos x + \frac{n-1}{n} \int \sin^
 
 ### 2.6 Applications of Integration
 
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-handwritten.svg" alt="Handwritten: 2.6 Applications of Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-diagram.svg" alt="Diagram: 2.6 Applications of Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-6-applications-of-integration-sticky.svg" alt="Sticky Note: 2.6 Applications of Integration" width="30%">
+</a>
+
+
 **Area Between Curves:**
 
 $$A = \int_a^b [f(x) - g(x)]\,dx$$
@@ -265,6 +331,17 @@ $$f_{\text{avg}} = \frac{1}{b-a} \int_a^b f(x)\,dx$$
 
 ### 2.7 Improper Integrals
 
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-handwritten.svg" alt="Handwritten: 2.7 Improper Integrals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-diagram.svg" alt="Diagram: 2.7 Improper Integrals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-7-improper-integrals-sticky.svg" alt="Sticky Note: 2.7 Improper Integrals" width="30%">
+</a>
+
+
 **Type 1 (Infinite Limits):**
 
 $$\int_a^\infty f(x)\,dx = \lim_{t \to \infty} \int_a^t f(x)\,dx$$
@@ -279,6 +356,17 @@ $$\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int
 - **p-Test:** $\int_1^\infty \frac{1}{x^p}\,dx$ converges iff $p > 1$; $\int_0^1 \frac{1}{x^p}\,dx$ converges iff $p &lt; 1$
 
 ### 2.8 Sequences and Series
+
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-handwritten.svg" alt="Handwritten: 2.8 Sequences and Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-diagram.svg" alt="Diagram: 2.8 Sequences and Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-8-sequences-and-series-sticky.svg" alt="Sticky Note: 2.8 Sequences and Series" width="30%">
+</a>
+
 
 **Sequence:** A function $a_n$ defined on positive integers. $\lim_{n \to \infty} a_n = L$ means terms approach $L$ as $n \to \infty$.
 
@@ -315,6 +403,17 @@ An alternating series $\sum (-1)^n a_n$ converges if:
 
 ### 2.9 Power Series
 
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-handwritten.svg" alt="Handwritten: 2.9 Power Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-diagram.svg" alt="Diagram: 2.9 Power Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-9-power-series-sticky.svg" alt="Sticky Note: 2.9 Power Series" width="30%">
+</a>
+
+
 A **power series** centered at $c$ is:
 
 $$\sum_{n=0}^\infty a_n (x - c)^n = a_0 + a_1(x-c) + a_2(x-c)^2 + \cdots$$
@@ -330,6 +429,17 @@ $$\sum_{n=0}^\infty a_n (x - c)^n = a_0 + a_1(x-c) + a_2(x-c)^2 + \cdots$$
 **Differentiation and Integration of Power Series:** Within the radius of convergence, power series can be differentiated and integrated term-by-term.
 
 ### 2.10 Taylor and Maclaurin Series
+
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-handwritten.svg" alt="Handwritten: 2.10 Taylor and Maclaurin Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-diagram.svg" alt="Diagram: 2.10 Taylor and Maclaurin Series" width="30%">
+</a>
+<a href="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/engineering-mathematics/02-calculus-i/2-10-taylor-and-maclaurin-series-sticky.svg" alt="Sticky Note: 2.10 Taylor and Maclaurin Series" width="30%">
+</a>
+
 
 **Taylor Series:** The representation of a function $f$ as a power series centered at $c$:
 

@@ -44,6 +44,17 @@
 
 ### 1.1 The OSI Model Security Map
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" alt="Handwritten: 1.1 The OSI Model Security Map" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" alt="Diagram: 1.1 The OSI Model Security Map" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" alt="Sticky Note: 1.1 The OSI Model Security Map" width="30%">
+</a>
+
+
 Network security must be applied at every layer of the OSI model. Each layer has distinct threats and corresponding countermeasures.
 
 | OSI Layer | Protocol Example | Common Threats | Security Controls |
@@ -58,11 +69,33 @@ Network security must be applied at every layer of the OSI model. Each layer has
 
 ### 1.2 CIA Triad in Network Context
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" alt="Handwritten: 1.2 CIA Triad in Network Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" alt="Diagram: 1.2 CIA Triad in Network Context" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" alt="Sticky Note: 1.2 CIA Triad in Network Context" width="30%">
+</a>
+
+
 - **Confidentiality** → Encryption (TLS, IPsec), VPNs
 - **Integrity** → Hashing, digital signatures, HMAC
 - **Availability** → DDoS mitigation, redundant paths, load balancing
 
 ### 1.3 Defense-in-Depth (Layered Security)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" alt="Handwritten: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" alt="Diagram: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" alt="Sticky Note: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+</a>
+
 
 ```
 Internet
@@ -92,11 +125,33 @@ Internet
 
 ### 2.1 What Is a Firewall?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" alt="Handwritten: 2.1 What Is a Firewall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" alt="Diagram: 2.1 What Is a Firewall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" alt="Sticky Note: 2.1 What Is a Firewall?" width="30%">
+</a>
+
+
 A firewall is a network security device that monitors and controls incoming and outgoing traffic based on predetermined security rules. It acts as a barrier between trusted internal networks and untrusted external networks.
 
 **Real-World Analogy:** A firewall is like a security guard at a building entrance. The guard checks every person's ID (packet header), verifies they are expected (connection state), inspects their bag (deep packet inspection), and decides whether to allow entry based on rules.
 
 ### 2.2 Packet Filter Firewall (Stateless)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" alt="Handwritten: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" alt="Diagram: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" alt="Sticky Note: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+</a>
+
 
 **How it works:** Examines each packet in isolation. Decisions are based solely on header fields:
 - Source IP, Destination IP
@@ -161,6 +216,17 @@ Rule 5: -p tcp --dport 80? Yes → ACCEPT
 - **UDP flooding:** Stateless firewalls cannot distinguish legitimate UDP from flood traffic
 
 ### 2.3 Stateful Firewall
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" alt="Handwritten: 2.3 Stateful Firewall" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" alt="Diagram: 2.3 Stateful Firewall" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" alt="Sticky Note: 2.3 Stateful Firewall" width="30%">
+</a>
+
 
 **How it works:** Maintains a connection state table. Decisions consider the entire session context, not individual packets.
 
@@ -244,6 +310,17 @@ conntrack -D -s 10.0.0.5
 
 ### 2.4 Proxy Firewall (Application Gateway)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" alt="Handwritten: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" alt="Diagram: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" alt="Sticky Note: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+</a>
+
+
 **How it works:** Acts as an intermediary. Clients connect to the proxy, which creates a separate connection to the destination. The proxy inspects application-layer data.
 
 **Types:**
@@ -299,6 +376,17 @@ http_port 3128
 
 ### 2.5 Next-Generation Firewall (NGFW)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" alt="Handwritten: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" alt="Diagram: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" alt="Sticky Note: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+</a>
+
+
 **How it works:** Combines traditional firewall capabilities with:
 - Deep Packet Inspection (DPI) → inspects payload beyond headers
 - Application Identification → recognizes apps regardless of port/protocol
@@ -343,6 +431,17 @@ An NGFW identifies Facebook traffic even if it uses port 443 (HTTPS):
 - **False positives:** DPI may flag legitimate traffic as malicious
 
 ### 2.6 Web Application Firewall (WAF)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" alt="Handwritten: 2.6 Web Application Firewall (WAF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" alt="Diagram: 2.6 Web Application Firewall (WAF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" alt="Sticky Note: 2.6 Web Application Firewall (WAF)" width="30%">
+</a>
+
 
 **How it works:** Specifically protects web applications from Layer 7 attacks: SQL injection, XSS, CSRF, RFI/LFI, etc. Can be deployed as:
 - Network-based appliance
@@ -392,6 +491,17 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 
 ### 2.7 Firewall Types Comparison Table
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" alt="Handwritten: 2.7 Firewall Types Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" alt="Diagram: 2.7 Firewall Types Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" alt="Sticky Note: 2.7 Firewall Types Comparison Table" width="30%">
+</a>
+
+
 | Feature | Packet Filter | Stateful | Proxy | NGFW | WAF |
 |---------|--------------|----------|-------|------|-----|
 | OSI Layer | 3/4 | 3/4 | 7 | 3-7 | 7 |
@@ -409,12 +519,34 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 
 ### 3.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
+</a>
+
+
 **IDS (Intrusion Detection System):** Passive monitoring → generates alerts but does not block traffic.
 **IPS (Intrusion Prevention System):** Inline → automatically blocks malicious traffic.
 
 **Real-World Analogy:** IDS is like a security camera that records everything and alerts when it sees something suspicious but cannot stop the event. IPS is like a security guard who stands at the door and physically stops threats from entering.
 
 ### 3.2 Detection Methods
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" alt="Handwritten: 3.2 Detection Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" alt="Diagram: 3.2 Detection Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" alt="Sticky Note: 3.2 Detection Methods" width="30%">
+</a>
+
 
 **Signature-Based Detection:**
 
@@ -453,6 +585,17 @@ Anomaly Alert:
 **Cons:** Higher false positive rate, requires baseline training period.
 
 ### 3.3 Snort Rule Writing
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" alt="Handwritten: 3.3 Snort Rule Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" alt="Diagram: 3.3 Snort Rule Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" alt="Sticky Note: 3.3 Snort Rule Writing" width="30%">
+</a>
+
 
 **Snort Rule Structure:**
 
@@ -528,6 +671,17 @@ alert udp $EXTERNAL_NET 53 -> $HOME_NET any
 
 ### 3.4 Suricata Rule Writing
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" alt="Handwritten: 3.4 Suricata Rule Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" alt="Diagram: 3.4 Suricata Rule Writing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" alt="Sticky Note: 3.4 Suricata Rule Writing" width="30%">
+</a>
+
+
 Suricata is a modern, multi-threaded IDS/IPS that supports Snort-compatible rules plus advanced features.
 
 ```yaml
@@ -586,6 +740,17 @@ snort -T -c /etc/snort/snort.conf
 
 ### 3.5 IDS vs IPS Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" alt="Handwritten: 3.5 IDS vs IPS Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" alt="Diagram: 3.5 IDS vs IPS Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" alt="Sticky Note: 3.5 IDS vs IPS Comparison" width="30%">
+</a>
+
+
 | Aspect | IDS | IPS |
 |--------|-----|-----|
 | Deployment | Passive (mirror port / network tap) | Inline (between firewall and switch) |
@@ -609,6 +774,17 @@ Do you need to block attacks in real time?
 
 ### 3.6 HIDS vs NIDS
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" alt="Handwritten: 3.6 HIDS vs NIDS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" alt="Diagram: 3.6 HIDS vs NIDS" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" alt="Sticky Note: 3.6 HIDS vs NIDS" width="30%">
+</a>
+
+
 | Aspect | NIDS (Network IDS) | HIDS (Host IDS) |
 |--------|-------------------|-----------------|
 | Monitoring Scope | Network segment | Single host |
@@ -619,6 +795,17 @@ Do you need to block attacks in real time?
 | Blind Spots | Encrypted traffic | Network-level attacks |
 
 ### 3.7 Snort/Suricata → Live Detection Dry Run
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" alt="Handwritten: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" alt="Diagram: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" alt="Sticky Note: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+</a>
+
 
 Scenario: A machine on the internal network attempts to connect to a known malware C2 domain (winmalware[.]xyz) on port 443.
 
@@ -655,6 +842,17 @@ Scenario: A machine on the internal network attempts to connect to a known malwa
 
 ### 4.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" alt="Handwritten: 4.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" alt="Diagram: 4.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" alt="Sticky Note: 4.1 Overview" width="30%">
+</a>
+
+
 A VPN creates an encrypted tunnel between two endpoints over an untrusted network (the internet). It provides:
 - **Confidentiality:** Encryption prevents eavesdropping
 - **Integrity:** HMAC ensures data not tampered
@@ -664,6 +862,17 @@ A VPN creates an encrypted tunnel between two endpoints over an untrusted networ
 **Real-World Analogy:** A VPN is like an armored tunnel through a dangerous neighborhood. You enter at your house, travel through the armored tunnel, and emerge inside your office. People outside cannot see what you're carrying or where you're going.
 
 ### 4.2 VPN Types
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" alt="Handwritten: 4.2 VPN Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" alt="Diagram: 4.2 VPN Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" alt="Sticky Note: 4.2 VPN Types" width="30%">
+</a>
+
 
 **Site-to-Site VPN:**
 
@@ -688,6 +897,17 @@ Individual users connect to corporate network.
 ```
 
 ### 4.3 IPsec VPN
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" alt="Handwritten: 4.3 IPsec VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" alt="Diagram: 4.3 IPsec VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" alt="Sticky Note: 4.3 IPsec VPN" width="30%">
+</a>
+
 
 **IPsec operates at Layer 3** and can encrypt any IP traffic (not just TCP/UDP).
 
@@ -759,6 +979,17 @@ ipsec statusall
 
 ### 4.4 WireGuard VPN
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" alt="Handwritten: 4.4 WireGuard VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" alt="Diagram: 4.4 WireGuard VPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" alt="Sticky Note: 4.4 WireGuard VPN" width="30%">
+</a>
+
+
 **WireGuard** is a modern, high-performance VPN protocol. Key design principles:
 - Minimal codebase (~4,000 lines vs ~400,000 for OpenVPN+IPsec)
 - Uses modern cryptography (Curve25519, ChaCha20, Poly1305, BLAKE2s, HKDF)
@@ -818,6 +1049,17 @@ wg show wg0 transfer
 
 ### 4.5 OpenVPN Setup
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" alt="Handwritten: 4.5 OpenVPN Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" alt="Diagram: 4.5 OpenVPN Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" alt="Sticky Note: 4.5 OpenVPN Setup" width="30%">
+</a>
+
+
 ```bash
 # Install OpenVPN
 apt install openvpn easy-rsa
@@ -858,6 +1100,17 @@ systemctl enable openvpn@server
 
 ### 4.6 IPsec vs WireGuard vs OpenVPN Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" alt="Handwritten: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" alt="Diagram: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" alt="Sticky Note: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+</a>
+
+
 | Feature | IPsec (IKEv2) | WireGuard | OpenVPN |
 |---------|---------------|-----------|---------|
 | Code Size | ~400K lines | ~4K lines | ~150K lines |
@@ -880,6 +1133,17 @@ systemctl enable openvpn@server
 
 ### 5.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" alt="Handwritten: 5.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" alt="Diagram: 5.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" alt="Sticky Note: 5.1 Overview" width="30%">
+</a>
+
+
 Network segmentation divides a network into smaller logical or physical segments to:
 - Contain breaches (limit lateral movement)
 - Isolate sensitive systems
@@ -889,6 +1153,17 @@ Network segmentation divides a network into smaller logical or physical segments
 **Real-World Analogy:** Network segmentation is like a ship with watertight compartments. If one compartment floods (breach), the ship stays afloat because the water does not spread to other compartments.
 
 ### 5.2 VLANs (Virtual LANs)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" alt="Handwritten: 5.2 VLANs (Virtual LANs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" alt="Diagram: 5.2 VLANs (Virtual LANs)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" alt="Sticky Note: 5.2 VLANs (Virtual LANs)" width="30%">
+</a>
+
 
 **How it works:** VLANs segment a switched network at Layer 2 without requiring separate physical switches.
 
@@ -927,6 +1202,17 @@ vlan access-map BLOCK-VLAN20 10
 
 ### 5.3 DMZ (Demilitarized Zone)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" alt="Handwritten: 5.3 DMZ (Demilitarized Zone)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" alt="Diagram: 5.3 DMZ (Demilitarized Zone)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" alt="Sticky Note: 5.3 DMZ (Demilitarized Zone)" width="30%">
+</a>
+
+
 A DMZ is a buffer network between the internet and internal network. Public-facing servers (web, email, DNS) are placed in the DMZ.
 
 ```
@@ -948,6 +1234,17 @@ DMZ → Internet: Allow updates (apt, yum)
 ```
 
 ### 5.4 Micro-Segmentation
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" alt="Handwritten: 5.4 Micro-Segmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" alt="Diagram: 5.4 Micro-Segmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" alt="Sticky Note: 5.4 Micro-Segmentation" width="30%">
+</a>
+
 
 **How it works:** Further divides segments into per-workload or per-application security zones, typically using:
 - Software-defined networking (SDN)
@@ -1000,6 +1297,17 @@ This ensures ONLY pods labeled `api-server` can connect to `database` pods on po
 
 ### 6.1 DNS Security
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" alt="Handwritten: 6.1 DNS Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" alt="Diagram: 6.1 DNS Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" alt="Sticky Note: 6.1 DNS Security" width="30%">
+</a>
+
+
 **Threats:**
 - **DNS Cache Poisoning (Kaminsky):** Inject fake DNS records into recursive resolver's cache
 - **DNS Tunneling:** Encode data in DNS queries for exfiltration/C2
@@ -1050,6 +1358,17 @@ options {
 
 ### 6.2 DHCP Security
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" alt="Handwritten: 6.2 DHCP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" alt="Diagram: 6.2 DHCP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" alt="Sticky Note: 6.2 DHCP Security" width="30%">
+</a>
+
+
 **Threats:**
 - **DHCP Starvation:** Exhaust IP pool with fake requests
 - **Rogue DHCP Server:** Attacker assigns malicious gateway/DNS
@@ -1077,6 +1396,17 @@ ip dhcp snooping information option
 ```
 
 ### 6.3 BGP Security
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" alt="Handwritten: 6.3 BGP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" alt="Diagram: 6.3 BGP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" alt="Sticky Note: 6.3 BGP Security" width="30%">
+</a>
+
 
 **Threats:**
 - **BGP Hijacking:** Malicious AS announces prefixes it does not own
@@ -1113,6 +1443,17 @@ route-map RPKI-FILTER permit 10
 ```
 
 ### 6.4 SNMP Security
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" alt="Handwritten: 6.4 SNMP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" alt="Diagram: 6.4 SNMP Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" alt="Sticky Note: 6.4 SNMP Security" width="30%">
+</a>
+
 
 **Threats:**
 - **SNMP Community String Brute Force:** Default strings "public"/"private"
@@ -1174,6 +1515,17 @@ access MyUserGroup "" any noauth exact system-only none none
 
 ### 7.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" alt="Handwritten: 7.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" alt="Diagram: 7.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" alt="Sticky Note: 7.1 Overview" width="30%">
+</a>
+
+
 Wireless networks use radio waves, which propagate through walls and are inherently vulnerable to:
 - Eavesdropping (packet sniffing)
 - Unauthorized access (wardriving)
@@ -1183,6 +1535,17 @@ Wireless networks use radio waves, which propagate through walls and are inheren
 **Real-World Analogy:** Wireless communication is like two people talking in a crowded room → anyone can listen. You need encryption (a secret language) and authentication (voice recognition) to keep conversations private.
 
 ### 7.2 WPA2 vs WPA3
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 7.2 WPA2 vs WPA3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 7.2 WPA2 vs WPA3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 7.2 WPA2 vs WPA3" width="30%">
+</a>
+
 
 | Feature | WPA2 | WPA3 |
 |---------|------|------|
@@ -1198,6 +1561,17 @@ Wireless networks use radio waves, which propagate through walls and are inheren
 | Password Guessing | 4-way handshake captured offline | SAE requires online interaction per guess |
 
 ### 7.3 802.1X / EAP
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" alt="Handwritten: 7.3 802.1X / EAP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" alt="Diagram: 7.3 802.1X / EAP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" alt="Sticky Note: 7.3 802.1X / EAP" width="30%">
+</a>
+
 
 **Enterprise Wireless Authentication:**
 
@@ -1241,6 +1615,17 @@ eap {
 
 ### 7.4 Rogue AP Detection
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" alt="Handwritten: 7.4 Rogue AP Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" alt="Diagram: 7.4 Rogue AP Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" alt="Sticky Note: 7.4 Rogue AP Detection" width="30%">
+</a>
+
+
 **Methods to detect rogue access points:**
 
 ```bash
@@ -1266,6 +1651,17 @@ kismet -c wlan0
 ```
 
 ### 7.5 Wireless Attacks
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" alt="Handwritten: 7.5 Wireless Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" alt="Diagram: 7.5 Wireless Attacks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" alt="Sticky Note: 7.5 Wireless Attacks" width="30%">
+</a>
+
 
 **Deauthentication Attack:**
 
@@ -1299,6 +1695,17 @@ aircrack-ng -w rockyou.txt capture-01.cap
 
 ### 7.6 WPA3 Security
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" alt="Handwritten: 7.6 WPA3 Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" alt="Diagram: 7.6 WPA3 Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" alt="Sticky Note: 7.6 WPA3 Security" width="30%">
+</a>
+
+
 **SAE (Simultaneous Authentication of Equals):**
 
 ```
@@ -1323,6 +1730,17 @@ For public Wi-Fi: each client gets a unique per-connection encryption key withou
 ## Section 8: Network Access Control (NAC)
 
 ### 8.1 Overview
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" alt="Handwritten: 8.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" alt="Diagram: 8.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" alt="Sticky Note: 8.1 Overview" width="30%">
+</a>
+
 
 NAC controls which devices can access the network based on policy compliance.
 
@@ -1371,6 +1789,17 @@ normal = 1
 
 ### 8.2 NAC Edge Cases
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" alt="Handwritten: 8.2 NAC Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" alt="Diagram: 8.2 NAC Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" alt="Sticky Note: 8.2 NAC Edge Cases" width="30%">
+</a>
+
+
 - **Spoofed MAC address:** NAC that relies solely on MAC can be bypassed easily
 - **Printers/IoT:** Devices that do not support 802.1X need MAB (MAC Authentication Bypass)
 - **Voice VLAN:** IP phones need special handling (LLDP-MED, CDP for VLAN assignment)
@@ -1383,11 +1812,33 @@ normal = 1
 
 ### 9.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" alt="Handwritten: 9.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" alt="Diagram: 9.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" alt="Sticky Note: 9.1 Overview" width="30%">
+</a>
+
+
 A Distributed Denial of Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users.
 
 **Real-World Analogy:** A DDoS is like 10,000 people trying to enter a store with a single door simultaneously. No legitimate customer can get in.
 
 ### 9.2 DDoS Attack Types
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" alt="Handwritten: 9.2 DDoS Attack Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" alt="Diagram: 9.2 DDoS Attack Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" alt="Sticky Note: 9.2 DDoS Attack Types" width="30%">
+</a>
+
 
 | Layer | Attack Type | Mechanism | Volume |
 |-------|-------------|-----------|--------|
@@ -1401,6 +1852,17 @@ A Distributed Denial of Service (DDoS) attack overwhelms a target with traffic f
 | L7 | API Abuse | Expensive endpoint calls | ~1-50k RPS |
 
 ### 9.3 Mitigation Strategies
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" alt="Handwritten: 9.3 Mitigation Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" alt="Diagram: 9.3 Mitigation Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" alt="Sticky Note: 9.3 Mitigation Strategies" width="30%">
+</a>
+
 
 **1. Network-Level (volumetric):**
 
@@ -1460,6 +1922,17 @@ Always-on detection + on-demand mitigation:
 
 ### 9.4 DDoS Mitigation Comparison Table
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" alt="Handwritten: 9.4 DDoS Mitigation Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" alt="Diagram: 9.4 DDoS Mitigation Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" alt="Sticky Note: 9.4 DDoS Mitigation Comparison Table" width="30%">
+</a>
+
+
 | Strategy | Effectiveness | Cost | Complexity | False Positive Risk |
 |----------|--------------|------|------------|-------------------|
 | ISP-level blackhole | L3 only | Low | Low | Very high (blocks all traffic) |
@@ -1475,6 +1948,17 @@ Always-on detection + on-demand mitigation:
 
 ### 10.1 Overview
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" alt="Handwritten: 10.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" alt="Diagram: 10.1 Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" alt="Sticky Note: 10.1 Overview" width="30%">
+</a>
+
+
 **Zero Trust:** "Never trust, always verify." No entity is trusted by default, regardless of location (inside or outside the network).
 
 **Core Principles (NIST SP 800-207):**
@@ -1489,6 +1973,17 @@ Always-on detection + on-demand mitigation:
 
 ### 10.2 Zero Trust Architecture Components
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" alt="Handwritten: 10.2 Zero Trust Architecture Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" alt="Diagram: 10.2 Zero Trust Architecture Components" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" alt="Sticky Note: 10.2 Zero Trust Architecture Components" width="30%">
+</a>
+
+
 | Component | Function | Example |
 |-----------|----------|---------|
 | Policy Engine | Makes access decisions | OpenPolicyAgent (OPA) |
@@ -1499,6 +1994,17 @@ Always-on detection + on-demand mitigation:
 | Data Plane | Encrypts all traffic | mTLS, WireGuard |
 
 ### 10.3 Zero Trust Implementation: BeyondCorp (Google)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" alt="Handwritten: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" alt="Diagram: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" alt="Sticky Note: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+</a>
+
 
 ```
 User → Device Check → Identity Authentication → Context Evaluation → App Access
@@ -1525,6 +2031,17 @@ Step 7: Monitor continuously (logs, anomaly detection)
 
 ### 10.4 Zero Trust Edge Cases
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" alt="Handwritten: 10.4 Zero Trust Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" alt="Diagram: 10.4 Zero Trust Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" alt="Sticky Note: 10.4 Zero Trust Edge Cases" width="30%">
+</a>
+
+
 - **Legacy applications:** Cannot support modern auth (Kerberos/NTLM only) → need bastion/jump host
 - **Offline access:** Mobile users without connectivity need cached tokens with TTL limits
 - **Privileged access:** Admins need JIT (Just-In-Time) access with approval workflows
@@ -1536,6 +2053,17 @@ Step 7: Monitor continuously (logs, anomaly detection)
 ## Section 11: Case Studies
 
 ### 11.1 WannaCry Ransomware (May 2017)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" alt="Handwritten: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" alt="Diagram: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" alt="Sticky Note: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+</a>
+
 
 **Impact:**
 - 230,000+ computers across 150 countries
@@ -1590,6 +2118,17 @@ alert tcp $HOME_NET 445 -> $EXTERNAL_NET any
 
 ### 11.2 Mirai Botnet (October 2016)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" alt="Handwritten: 11.2 Mirai Botnet (October 2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" alt="Diagram: 11.2 Mirai Botnet (October 2016)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" alt="Sticky Note: 11.2 Mirai Botnet (October 2016)" width="30%">
+</a>
+
+
 **Impact:**
 - 600,000+ IoT devices infected
 - KrebsOnSecurity DDoS: 620 Gbps
@@ -1643,6 +2182,17 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 23
 - DDoS mitigation requires cloud-scale filtering
 
 ### 11.3 Stuxnet (2010)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" alt="Handwritten: 11.3 Stuxnet (2010)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" alt="Diagram: 11.3 Stuxnet (2010)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" alt="Sticky Note: 11.3 Stuxnet (2010)" width="30%">
+</a>
+
 
 **Impact:**
 - First known cyber weapon
@@ -1706,9 +2256,31 @@ Phase 4 → PLC sabotage:
 
 ### 12.1 Lab Setup
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" alt="Handwritten: 12.1 Lab Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" alt="Diagram: 12.1 Lab Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" alt="Sticky Note: 12.1 Lab Setup" width="30%">
+</a>
+
+
 All labs below assume a Kali Linux or Ubuntu system. For Windows users, use WSL2 with Ubuntu.
 
 ### 12.2 iptables/nftables → Basic Firewall Implementation
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" alt="Handwritten: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" alt="Diagram: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" alt="Sticky Note: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+</a>
+
 
 **Scenario:** Build a stateful firewall for a web server that allows SSH from management, HTTP/HTTPS to everyone, and blocks all other traffic.
 
@@ -1816,6 +2388,17 @@ curl -I http://192.168.1.1
 
 ### 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" alt="Handwritten: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" alt="Diagram: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" alt="Sticky Note: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+</a>
+
+
 ```bash
 # 1. Basic port scan
 nmap -sS 192.168.1.1
@@ -1889,6 +2472,17 @@ Cisco IOS: TTL=255, Window=4128, No TS, No WS
 
 ### 12.4 Wireshark/tshark → Deep Packet Inspection
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" alt="Handwritten: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" alt="Diagram: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" alt="Sticky Note: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+</a>
+
+
 ```bash
 # 1. Capture HTTP traffic on port 80
 tshark -i eth0 -f "tcp port 80" -c 100
@@ -1931,6 +2525,17 @@ tshark -r capture.pcap -Y "tls.handshake.type == 1" -T fields -e tls.handshake.e
 ```
 
 ### 12.5 tcpdump → Packet Capture and Analysis
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" alt="Handwritten: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" alt="Diagram: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" alt="Sticky Note: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+</a>
+
 
 ```bash
 # 1. Capture all traffic on interface
@@ -1986,6 +2591,17 @@ tcpdump -i eth0 -n "tcp[13] & 2 != 0 and tcp[13] & 16 == 0"
 ```
 
 ### 12.6 OpenVPN Setup
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" alt="Handwritten: 12.6 OpenVPN Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" alt="Diagram: 12.6 OpenVPN Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" alt="Sticky Note: 12.6 OpenVPN Setup" width="30%">
+</a>
+
 
 ```bash
 # Install OpenVPN and Easy-RSA
@@ -2061,6 +2677,17 @@ journalctl -u openvpn@server
 
 ### 12.7 WireGuard Quick Setup
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" alt="Handwritten: 12.7 WireGuard Quick Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" alt="Diagram: 12.7 WireGuard Quick Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" alt="Sticky Note: 12.7 WireGuard Quick Setup" width="30%">
+</a>
+
+
 ```bash
 # Install WireGuard
 apt install wireguard
@@ -2108,6 +2735,17 @@ wg show
 ```
 
 ### 12.8 ZAP Proxy → Web Traffic Inspection
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" alt="Handwritten: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" alt="Diagram: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" alt="Sticky Note: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+</a>
+
 
 ```bash
 # Install ZAP
@@ -2165,6 +2803,17 @@ python3 zap-scan.py
 
 ### 12.9 BetterCAP → ARP Spoofing Detection
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" alt="Handwritten: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" alt="Diagram: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" alt="Sticky Note: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+</a>
+
+
 ```bash
 # Install BetterCAP
 apt install bettercap
@@ -2198,6 +2847,17 @@ arp -s 192.168.1.1 00:11:22:33:44:55
 ```
 
 ### 12.10 Airodump/aireplay → Wireless Testing
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" alt="Handwritten: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" alt="Diagram: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" alt="Sticky Note: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+</a>
+
 
 ```bash
 # Step 1: Enable monitor mode
@@ -2235,6 +2895,17 @@ aircrack-ng capture-01.cap
 
 ### 13.1 Firewall Type Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" alt="Handwritten: 13.1 Firewall Type Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" alt="Diagram: 13.1 Firewall Type Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" alt="Sticky Note: 13.1 Firewall Type Comparison" width="30%">
+</a>
+
+
 | Aspect | Packet Filter | Stateful | Proxy Firewall | NGFW | WAF |
 |--------|--------------|----------|---------------|------|-----|
 | OSI Layers | 3, 4 | 3, 4 | 7 | 3-7 (all layers) | 7 only |
@@ -2250,6 +2921,17 @@ aircrack-ng capture-01.cap
 
 ### 13.2 IDS vs IPS vs WAF
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" alt="Handwritten: 13.2 IDS vs IPS vs WAF" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" alt="Diagram: 13.2 IDS vs IPS vs WAF" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" alt="Sticky Note: 13.2 IDS vs IPS vs WAF" width="30%">
+</a>
+
+
 | Aspect | IDS | IPS | WAF |
 |--------|-----|-----|-----|
 | Position | Out-of-band (mirror port) | Inline | Inline (reverse proxy) |
@@ -2260,6 +2942,17 @@ aircrack-ng capture-01.cap
 | Common Bypass | Encryption (if blind) | Encryption | Encoding evasion |
 
 ### 13.3 IPsec vs WireGuard vs OpenVPN
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" alt="Handwritten: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" alt="Diagram: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" alt="Sticky Note: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+</a>
+
 
 | Feature | IPsec (IKEv2) | WireGuard | OpenVPN |
 |---------|---------------|-----------|---------|
@@ -2275,6 +2968,17 @@ aircrack-ng capture-01.cap
 | Audit History | Many CVEs | Zero CVEs (young) | Few CVEs |
 
 ### 13.4 WPA2 vs WPA3
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 13.4 WPA2 vs WPA3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 13.4 WPA2 vs WPA3" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 13.4 WPA2 vs WPA3" width="30%">
+</a>
+
 
 | Feature | WPA2 | WPA3 |
 |---------|------|------|
@@ -2292,6 +2996,17 @@ aircrack-ng capture-01.cap
 ## Section 14: Applications in Real Systems
 
 ### 14.1 AWS Security Groups (Cloud Firewall)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" alt="Handwritten: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" alt="Diagram: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" alt="Sticky Note: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+</a>
+
 
 AWS Security Groups act as stateful virtual firewalls for EC2 instances and other AWS resources.
 
@@ -2324,6 +3039,17 @@ AWS Security Groups act as stateful virtual firewalls for EC2 instances and othe
 
 ### 14.2 Cisco Firepower (NGFW)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" alt="Handwritten: 14.2 Cisco Firepower (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" alt="Diagram: 14.2 Cisco Firepower (NGFW)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" alt="Sticky Note: 14.2 Cisco Firepower (NGFW)" width="30%">
+</a>
+
+
 Enterprise NGFW with:
 - Application Visibility and Control (AVC)
 - Next-Generation IPS (NGIPS)
@@ -2332,6 +3058,17 @@ Enterprise NGFW with:
 - SSL/TLS Decryption
 
 ### 14.3 Cloudflare DDoS Protection
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: 14.3 Cloudflare DDoS Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" alt="Diagram: 14.3 Cloudflare DDoS Protection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: 14.3 Cloudflare DDoS Protection" width="30%">
+</a>
+
 
 ```
 Client → Cloudflare Edge (Anycast) → Origin Server
@@ -2344,6 +3081,17 @@ At edge:
 ```
 
 ### 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" alt="Handwritten: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" alt="Diagram: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" alt="Sticky Note: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+</a>
+
 
 ```
 User → Device Check → Identity Provider → Context Policy → App Access
@@ -2359,6 +3107,17 @@ Zero Trust Exchange (Zscaler):
 ```
 
 ### 14.5 Open Source Security Onion
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" alt="Handwritten: 14.5 Open Source Security Onion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" alt="Diagram: 14.5 Open Source Security Onion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" alt="Sticky Note: 14.5 Open Source Security Onion" width="30%">
+</a>
+
 
 Security Onion is a free Linux distribution for:
 - Elasticsearch, Logstash, Kibana (ELK) for log management
@@ -2391,61 +3150,226 @@ so-status
 
 ### Q1: What is the difference between a stateful and stateless firewall?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" alt="Handwritten: What is the difference between a stateful and stateless firewall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" alt="Diagram: What is the difference between a stateful and stateless firewall?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" alt="Sticky Note: What is the difference between a stateful and stateless firewall?" width="30%">
+</a>
+
+
 **A1:** A stateless firewall (packet filter) examines each packet in isolation based only on header fields (IP, port, protocol). It has no knowledge of connection state. A stateful firewall maintains a connection tracking table that records the state of each session (SYN, SYN-ACK, ESTABLISHED). For example, a stateless firewall would allow an inbound ACK packet even if no corresponding SYN was sent, while a stateful firewall would drop it because no matching connection exists in the table.
 
 ### Q2: How does a stateful firewall handle FTP traffic?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" alt="Handwritten: How does a stateful firewall handle FTP traffic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" alt="Diagram: How does a stateful firewall handle FTP traffic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" alt="Sticky Note: How does a stateful firewall handle FTP traffic?" width="30%">
+</a>
+
 
 **A2:** FTP uses two connections: a control channel (port 21) and a data channel (dynamic port). In active FTP, the server connects back to the client on a random port. A stateful firewall inspects the FTP PORT command on the control channel, extracts the data port number, and dynamically opens that port for the data connection. This is called a "conntrack helper" (nf_conntrack_ftp). nftables equivalent: `ct helper "ftp"`.
 
 ### Q3: Explain the difference between IDS and IPS.
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" alt="Handwritten: Explain the difference between IDS and IPS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" alt="Diagram: Explain the difference between IDS and IPS." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" alt="Sticky Note: Explain the difference between IDS and IPS." width="30%">
+</a>
+
+
 **A3:** IDS (Intrusion Detection System) monitors traffic passively via a mirror port or network tap. It generates alerts but cannot block traffic. IPS (Intrusion Prevention System) sits inline between the source and destination and can actively block malicious traffic by dropping packets, sending TCP RST, or updating firewall rules. IDS has no failure impact on traffic; IPS must handle fail-open (traffic bypasses if IPS fails) or fail-close (traffic blocked if IPS fails). IDS is better for forensics and compliance; IPS is better for active prevention.
 
 ### Q4: What are the advantages of anomaly-based detection over signature-based detection?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" alt="Handwritten: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" alt="Diagram: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" alt="Sticky Note: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+</a>
+
 
 **A4:** Signature-based detection matches traffic against known attack patterns (signatures). It has low false positives but cannot detect unknown attacks, variants, or zero-days. Anomaly-based detection establishes a baseline of normal behavior and flags deviations. It can detect novel attacks and zero-days but has higher false positives and requires a learning period. Example: a signature-based system misses a zero-day exploit that evades all existing signatures. An anomaly-based system flags it because the traffic pattern (e.g., large SMB packet to a server that never uses SMB) deviates from baseline.
 
 ### Q5: What is the WPA3-Personal improvement over WPA2-Personal?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" alt="Handwritten: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" alt="Diagram: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" alt="Sticky Note: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+</a>
+
+
 **A5:** WPA2 uses a 4-Way Handshake with PSK. An attacker can capture this handshake and crack the password offline. WPA3 uses SAE (Simultaneous Authentication of Equals, based on Dragonfly handshake). SAE provides forward secrecy and requires the attacker to interact with a real Wi-Fi AP for each password guess → offline brute-force is not possible. WPA3 also mandates Protected Management Frames (802.11w) to prevent deauthentication attacks, uses 256-bit AES-GCMP encryption, and provides OWE for public Wi-Fi encryption without a password.
 
 ### Q6: What is the KRACK attack?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" alt="Handwritten: What is the KRACK attack?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" alt="Diagram: What is the KRACK attack?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" alt="Sticky Note: What is the KRACK attack?" width="30%">
+</a>
+
 
 **A6:** KRACK (Key Reinstallation Attack, CVE-2017-13077) exploits a vulnerability in the WPA2 4-Way Handshake. The attacker forces the victim to reinstall an already-in-use encryption key by replaying the third message of the handshake. This causes nonce reuse, breaking encryption and allowing packet decryption and injection. WPA3 is resistant because SAE derives unique keys per session. Mitigation: patch all Wi-Fi clients and APs (Stagefright-level urgency).
 
 ### Q7: How does DNSSEC prevent cache poisoning?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
+</a>
+
+
 **A7:** DNSSEC adds cryptographic digital signatures to DNS records. Each DNS record has an associated RRSIG (Resource Record Signature) signed by the zone's private key. The resolver validates the signature using the zone's public key (DNSKEY), which is signed by the parent zone's private key (DS record). This creates a chain of trust from the root zone down to the domain. If an attacker injects a fake DNS record, the resolver detects the signature mismatch and discards the record. Without the private key, the attacker cannot forge valid RRSIGs.
 
 ### Q8: What is BGP hijacking and how can it be mitigated?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" alt="Handwritten: What is BGP hijacking and how can it be mitigated?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" alt="Diagram: What is BGP hijacking and how can it be mitigated?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" alt="Sticky Note: What is BGP hijacking and how can it be mitigated?" width="30%">
+</a>
+
 
 **A8:** BGP hijacking occurs when an attacker's AS advertises IP prefixes it does not own, causing traffic to be rerouted through the attacker's network. In the 2008 YouTube hijacking, Pakistan Telecom announced YouTube's /24 prefix, causing global traffic to be routed to Pakistan. Mitigation: prefix filtering (only accept prefixes the peer should advertise), max-prefix limits (protect against route leaks), TTL security check (GTSM ensures BGP packets came from directly connected peer), and RPKI (validates AS authorization to originate prefixes via signed ROAs).
 
 ### Q9: How does a SYN flood work and what are mitigation techniques?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" alt="Handwritten: How does a SYN flood work and what are mitigation techniques?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" alt="Diagram: How does a SYN flood work and what are mitigation techniques?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" alt="Sticky Note: How does a SYN flood work and what are mitigation techniques?" width="30%">
+</a>
+
+
 **A9:** A SYN flood sends a large number of TCP SYN packets with spoofed source IPs to a target server. The server allocates memory for each half-open connection (backlog queue) and sends SYN-ACK. Since the SYN-ACKs go to spoofed IPs, they never receive ACKs, so the connections stay in SYN_RCVD state. The backlog queue fills, and legitimate connections are rejected. Mitigation: SYN cookies (kernel encodes connection info in SYN-ACK sequence number, no memory allocated until ACK received), increase tcp_max_syn_backlog, reduce tcp_synack_retries, and use iptables rate limiting.
 
 ### Q10: What is the difference between VLAN and VXLAN?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" alt="Handwritten: What is the difference between VLAN and VXLAN?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" alt="Diagram: What is the difference between VLAN and VXLAN?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" alt="Sticky Note: What is the difference between VLAN and VXLAN?" width="30%">
+</a>
+
 
 **A10:** VLAN (802.1Q) provides up to 4,094 VLANs (12-bit ID) and operates at Layer 2. It is limited by the 12-bit tag and is typically confined to a single switch or small network. VXLAN (Virtual Extensible LAN) uses a 24-bit VNI (16M segments) and encapsulates Layer 2 frames in UDP (port 4789) for transport over Layer 3 networks. VXLAN enables network virtualization across data centers and is widely used in cloud environments (e.g., Kubernetes Calico, VMware NSX).
 
 ### Q11: Describe the WannaCry infection chain.
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" alt="Handwritten: Describe the WannaCry infection chain." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" alt="Diagram: Describe the WannaCry infection chain." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" alt="Sticky Note: Describe the WannaCry infection chain." width="30%">
+</a>
+
+
 **A11:** (1) Initial infection via phishing or internal propagation. (2) EternalBlue exploit (MS17-010) targets SMBv1 buffer overflow → attacker crafts a malformed SMB TRANS2 request, overwrites kernel memory, and gains remote code execution. (3) DoublePulsar backdoor installed via the EternalBlue shellcode. (4) WannaCry ransomware delivered through DoublePulsar. (5) Each file encrypted with AES-128 key, then AES key encrypted with RSA-2048 public key. (6) Propagation: WannaCry scans LAN IPs for SMBv1 hosts and repeats EternalBlue exploitation. (7) Exponential spread across flat networks (NHS worst affected). (8) Kill switch: checked malwaredomain[.]com → when Marcus Hutchins registered the domain, the malware stopped spreading.
 
 ### Q12: How does Mirai infect IoT devices?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" alt="Handwritten: How does Mirai infect IoT devices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" alt="Diagram: How does Mirai infect IoT devices?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" alt="Sticky Note: How does Mirai infect IoT devices?" width="30%">
+</a>
+
 
 **A12:** Mirai continuously scans the internet for IoT devices (DVRs, cameras, routers) with open telnet (port 23) or SSH (port 22). It attempts 62 hardcoded default credentials like "root:root", "admin:admin", "support:support". On successful login, it downloads and executes the bot binary via wget or tftp. The bot connects to a CNC server for commands. For attack, the bot can generate SYN floods, UDP floods, HTTP floods, and GRE tunnels. The bot continues scanning random /8 and /16 network ranges for new victims.
 
 ### Q13: How is micro-segmentation different from traditional VLAN segmentation?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" alt="Handwritten: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" alt="Diagram: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" alt="Sticky Note: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+</a>
+
+
 **A13:** VLAN segmentation divides the network into broadcast domains at Layer 2, with ACLs for inter-VLAN traffic. It is limited to 4,094 VLANs and requires switch configuration per segment. Micro-segmentation implements per-workload, per-application security policies at the hypervisor or container level (e.g., Kubernetes NetworkPolicy, VMware NSX). It supports unlimited segments (16M VXLAN VNIs), dynamic policy updates without physical reconfiguration, and enforces default-deny for all traffic between workloads. Micro-segmentation is essential for zero trust networking.
 
 ### Q14: What is the best practice for deploying wireless in an enterprise?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" alt="Handwritten: What is the best practice for deploying wireless in an enterprise?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" alt="Diagram: What is the best practice for deploying wireless in an enterprise?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" alt="Sticky Note: What is the best practice for deploying wireless in an enterprise?" width="30%">
+</a>
+
+
 **A14:** (1) Use 802.1X/EAP-TLS with certificate authentication for all enterprise devices. (2) WPA3-Enterprise with SAE. (3) Separate SSIDs for corporate, guest, and IoT (with VLAN isolation). (4) Enable Protected Management Frames (802.11w). (5) Deploy WIPS for rogue AP detection. (6) NAC integration for device compliance check. (7) Daily wireless survey to detect interference and rogue APs. (8) Disable unnecessary features (WPS, SSID broadcast.  (9) Use FreeRADIUS with AD/LDAP integration. (10) Certificate enforcement for all client devices.
 
 ### Q15: How does zero trust differ from traditional perimeter security?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" alt="Handwritten: How does zero trust differ from traditional perimeter security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" alt="Diagram: How does zero trust differ from traditional perimeter security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" alt="Sticky Note: How does zero trust differ from traditional perimeter security?" width="30%">
+</a>
+
 
 **A15:** Traditional perimeter security operates on "trust but verify" → once inside the network, users and devices are trusted. This leads to flat networks where lateral movement is easy after initial compromise. Zero Trust operates on "never trust, always verify" → no entity is trusted by default regardless of location. Every access request is authenticated, authorized, and encrypted. Key differences: micro-segmentation replaces VLANs, identity replaces IP addresses as the security primitive, device posture is checked before access, and all traffic is encrypted regardless of network boundary.
 
@@ -2573,6 +3497,17 @@ Default: deny all inter-VLAN
 
 ### Case Study Analysis
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" alt="Handwritten: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" alt="Diagram: Case Study Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" alt="Sticky Note: Case Study Analysis" width="30%">
+</a>
+
+
 1. **WannaCry:** A hospital with a flat network. An employee plugs in an infected USB. Trace the infection path and identify the network architectural changes needed to prevent recurrence.
 
 <details>
@@ -2649,6 +3584,17 @@ table inet filter {
 
 ### 17.1 Netfilter Hooks (Linux Kernel)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" alt="Handwritten: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" alt="Diagram: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" alt="Sticky Note: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+</a>
+
+
 Linux netfilter provides five hook points in the kernel networking stack:
 
 ```
@@ -2688,6 +3634,17 @@ table inet filter {
 ```
 
 ### 17.2 Connection Tracking Internals
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" alt="Handwritten: 17.2 Connection Tracking Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" alt="Diagram: 17.2 Connection Tracking Internals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" alt="Sticky Note: 17.2 Connection Tracking Internals" width="30%">
+</a>
+
 
 The conntrack subsystem tracks `struct nf_conn` entries in a hash table.
 
@@ -2733,6 +3690,17 @@ Client (10.0.0.5:50000)          Server (93.184.216.34:80)
 
 ### 17.3 BPF-based Firewalls (eBPF/XDP)
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" alt="Handwritten: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" alt="Diagram: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" alt="Sticky Note: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+</a>
+
+
 Modern firewalls use eBPF at the XDP (eXpress Data Path) hook, which runs before skb allocation → the fastest possible packet processing:
 
 ```c
@@ -2767,6 +3735,17 @@ int xdp_drop_prog(struct xdp_md *ctx) {
 ## Section 18: Advanced IDS/IPS → Deep Dive
 
 ### 18.1 Suricata Multi-Threading Architecture
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" alt="Handwritten: 18.1 Suricata Multi-Threading Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" alt="Diagram: 18.1 Suricata Multi-Threading Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" alt="Sticky Note: 18.1 Suricata Multi-Threading Architecture" width="30%">
+</a>
+
 
 Suricata uses a "runmode" packet processing pipeline:
 
@@ -2803,6 +3782,17 @@ flow_bypass: yes
 
 ### 18.2 PCRE Rules → Advanced Pattern Matching
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" alt="Handwritten: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" alt="Diagram: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" alt="Sticky Note: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+</a>
+
+
 Suricata/Snort use PCRE (Perl Compatible Regular Expressions) for complex pattern matching:
 
 ```bash
@@ -2824,6 +3814,17 @@ alert http $EXTERNAL_NET any -> $HOME_NET any
 ```
 
 ### 18.3 Zeek (formerly Bro) Scripting
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" alt="Handwritten: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" alt="Diagram: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" alt="Sticky Note: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+</a>
+
 
 Zeek is an event-based network monitoring system:
 
@@ -2875,6 +3876,17 @@ cat notice.log | zeek-cut ts note msg
 
 ### 19.1 How DPI Identifies VPN Traffic
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" alt="Handwritten: 19.1 How DPI Identifies VPN Traffic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" alt="Diagram: 19.1 How DPI Identifies VPN Traffic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" alt="Sticky Note: 19.1 How DPI Identifies VPN Traffic" width="30%">
+</a>
+
+
 Deep Packet Inspection can identify VPN protocols:
 
 **IPsec ESP detection:**
@@ -2907,6 +3919,17 @@ tcpdump -i eth0 port 1194
 
 ### 19.2 VPN Detection Evasion
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" alt="Handwritten: 19.2 VPN Detection Evasion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" alt="Diagram: 19.2 VPN Detection Evasion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" alt="Sticky Note: 19.2 VPN Detection Evasion" width="30%">
+</a>
+
+
 Techniques used to bypass DPI:
 
 1. **Protocol Obfuscation:** Wrap VPN in TLS (stunnel, obfsproxy)
@@ -2930,6 +3953,17 @@ PSKsecrets = /etc/stunnel/psk.txt
 ## Section 20: Advanced DDoS → Amplification Attacks
 
 ### 20.1 DNS Amplification Attack
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" alt="Handwritten: 20.1 DNS Amplification Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" alt="Diagram: 20.1 DNS Amplification Attack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" alt="Sticky Note: 20.1 DNS Amplification Attack" width="30%">
+</a>
+
 
 ```
 Attacker (spoofs victim IP: 1.2.3.4)
@@ -2980,6 +4014,17 @@ sysctl -w net.ipv4.conf.default.rp_filter=1
 
 ### 21.1 802.1X Full Deployment Topology
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" alt="Handwritten: 21.1 802.1X Full Deployment Topology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" alt="Diagram: 21.1 802.1X Full Deployment Topology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" alt="Sticky Note: 21.1 802.1X Full Deployment Topology" width="30%">
+</a>
+
+
 ```
                  ┌──────────────┐
                  │  FreeRADIUS  │
@@ -3026,6 +4071,17 @@ Supplicant                     AP (Authz)              RADIUS Server
 
 ### 21.2 RADIUS Server Logs
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" alt="Handwritten: 21.2 RADIUS Server Logs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" alt="Diagram: 21.2 RADIUS Server Logs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" alt="Sticky Note: 21.2 RADIUS Server Logs" width="30%">
+</a>
+
+
 ```bash
 # Monitor FreeRADIUS authentication
 tail -f /var/log/freeradius/radius.log
@@ -3048,6 +4104,17 @@ tail -f /var/log/freeradius/radius.log
 ## Section 22: Advanced Zero Trust → Google's BeyondCorp Model
 
 ### 22.1 BeyondCorp Principles
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" alt="Handwritten: 22.1 BeyondCorp Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" alt="Diagram: 22.1 BeyondCorp Principles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" alt="Sticky Note: 22.1 BeyondCorp Principles" width="30%">
+</a>
+
 
 Google's BeyondCorp (2010, public 2014) is the canonical zero trust implementation:
 
@@ -3095,6 +4162,17 @@ allow {
 ```
 
 ### 22.2 BeyondCorp Implementation (Step CA + Pomerium)
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" alt="Handwritten: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" alt="Diagram: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" alt="Sticky Note: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+</a>
+
 
 ```yaml
 # pomerium-config.yaml
@@ -3150,6 +4228,17 @@ curl --cert api.crt --key api.key \
 ## Section 23: Advanced Protocol Attacks
 
 ### 23.1 DHCP Starvation Attack → Full Walkthrough
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" alt="Handwritten: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" alt="Diagram: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" alt="Sticky Note: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+</a>
+
 
 **Goal:** Exhaust all DHCP pool addresses so new clients cannot connect.
 
@@ -3210,6 +4299,17 @@ ip dhcp snooping log mismatch
 
 ### 23.2 ARP Spoofing Detection → Detailed
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" alt="Handwritten: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" alt="Diagram: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" alt="Sticky Note: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+</a>
+
+
 ```bash
 # 1. Passive detection using arpwatch
 arpwatch -i eth0 -f /var/arpwatch/arp.dat
@@ -3262,6 +4362,17 @@ interface GigabitEthernet0/1
 
 ### 24.1 Full NSM Architecture
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" alt="Handwritten: 24.1 Full NSM Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" alt="Diagram: 24.1 Full NSM Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" alt="Sticky Note: 24.1 Full NSM Architecture" width="30%">
+</a>
+
+
 ```
 [Network TAP / Mirror Port]
         │
@@ -3300,6 +4411,17 @@ softflowd -i eth0 -n collector.local:2055 -t maxlife=3600
 
 ### 24.2 Security Onion → All-in-One NSM
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" alt="Handwritten: 24.2 Security Onion → All-in-One NSM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" alt="Diagram: 24.2 Security Onion → All-in-One NSM" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" alt="Sticky Note: 24.2 Security Onion → All-in-One NSM" width="30%">
+</a>
+
+
 ```bash
 # Install Security Onion
 # https://docs.securityonion.org/en/latest/installation/
@@ -3327,6 +4449,17 @@ sudo so-pcap -d 'host 10.0.0.5 and port 443'
 
 ### Q16: How does IPsec tunnel mode differ from transport mode? Show packet structure.
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" alt="Handwritten: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" alt="Diagram: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" alt="Sticky Note: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+</a>
+
+
 **A16:** In transport mode, only the payload (TCP segment, UDP datagram) is encrypted. The original IP header is visible. In tunnel mode, the entire original IP packet is encrypted and encapsulated in a new IP packet with new IP headers. Tunnel mode is used for site-to-site VPNs (gateway-to-gateway). Transport mode is used for end-to-end (host-to-host).
 
 Transport mode packet:
@@ -3343,9 +4476,31 @@ Tunnel mode packet:
 
 ### Q17: What is the difference between a reverse proxy and a forward proxy in network security?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" alt="Handwritten: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" alt="Diagram: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" alt="Sticky Note: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+</a>
+
+
 **A17:** A forward proxy sits between clients and the internet. Clients configure their browser/app to use the proxy. The proxy fetches content on behalf of clients, providing anonymity, content filtering, and caching. Used for outbound traffic control (employees → internet). A reverse proxy sits between the internet and servers. Clients connect to the reverse proxy which forwards to backend servers. Used for inbound traffic control (internet → web servers), providing load balancing, SSL termination, WAF, and server anonymity. Nginx is commonly used as both.
 
 ### Q18: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2.
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" alt="Handwritten: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" alt="Diagram: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" alt="Sticky Note: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+</a>
+
 
 **A18:** TLS 1.3 handshake (1-RTT for new, 0-RTT for resumed):
 
@@ -3374,6 +4529,17 @@ Improvements over TLS 1.2:
 
 ### Q19: What is the role of entropy in detecting DNS tunneling?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" alt="Handwritten: What is the role of entropy in detecting DNS tunneling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" alt="Diagram: What is the role of entropy in detecting DNS tunneling?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" alt="Sticky Note: What is the role of entropy in detecting DNS tunneling?" width="30%">
+</a>
+
+
 **A19:** DNS tunneling encodes data in DNS query subdomains. Normal DNS queries have subdomains matching dictionary words or predictable patterns (e.g., "www", "mail", "api"). Tunneling tools encode binary data as base32/base64, producing high-entropy subdomain labels (e.g., "3f7a2b9c1d5e8f0a.evil.com"). Shannon entropy for normal subdomains: 2.0-3.5 bits/char. For tunneling: 4.5-5.5 bits/char. Detection threshold: entropy > 4.0 for subdomains > 30 characters. Example using Python:
 
 ```python
@@ -3388,17 +4554,61 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 ### Q20: How does SQL injection bypass a packet filter firewall but not a WAF?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" alt="Handwritten: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" alt="Diagram: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" alt="Sticky Note: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+</a>
+
+
 **A20:** A packet filter inspects Layer 3/4 headers only (IP, port, protocol). It never looks at the HTTP payload. A SQL injection payload like `' OR 1=1 --` is inside the HTTP request body, invisible to a packet filter. A WAF inspects the full HTTP request (URI, headers, body). It can detect SQL injection patterns using regex rules (e.g., ModSecurity rule 942100 matching `(?i:(?:select|union|insert|delete|update|drop|alter).*)`) and block the request before it reaches the web application server.
 
 ### Q21: Describe the full flow of a DDoS mitigation using Cloudflare.
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" alt="Handwritten: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" alt="Diagram: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" alt="Sticky Note: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+</a>
+
 
 **A21:** (1) Traffic arrives at Cloudflare's nearest data center (anycast). (2) Layer 3/4 mitigation drops packets with invalid headers, SYN floods are challenged, and amplification attacks are scrubbed. (3) Layer 7 mitigation: JS challenge verifies browser support, CAPTCHA challenges suspicious IPs, rate limiting per IP/ASN/country, WAF checks HTTP requests for attack signatures, bot management scores each request (1 = human, 100 = automated). (4) Clean traffic is proxied to the origin server over a dedicated tunnel (Argo Tunnel/Cloudflare Tunnel) → the origin IP is never exposed. (5) Analytics provide real-time visibility into dropped vs passed traffic. (6) Under extreme attack (>1 Tbps), Cloudflare's global network distributes the load across 300+ data centers.
 
 ### Q22: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" alt="Handwritten: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" alt="Diagram: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" alt="Sticky Note: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+</a>
+
+
 **A22:** 802.1X is a standard for port-based authentication using EAP. The supplicant (client) must support 802.1X (built into modern OS). The client presents credentials (user/password, certificate) to the authenticator (switch/AP), which forwards to RADIUS. MAB is a fallback for devices that do not support 802.1X (printers, IoT sensors, cameras). The switch authenticates based on the device's MAC address against a MAC whitelist on the RADIUS server. MAB is significantly less secure: MAC addresses can be spoofed trivially, and there is no encryption or credential verification.
 
 ### Q23: Explain the NIST SP 800-207 zero trust architecture core components.
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" alt="Handwritten: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" alt="Diagram: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" alt="Sticky Note: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+</a>
+
 
 **A23:** NIST SP 800-207 defines:
 1. **Policy Engine (PE):** The brain → makes allow/deny decisions based on identity, device health, and context. Uses OPA or custom policy.
@@ -3412,9 +4622,31 @@ Communication flow: User → PEP (requests access) → PE evaluates (identity + 
 
 ### Q24: How does the WPA3 SAE handshake prevent offline dictionary attacks?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" alt="Handwritten: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" alt="Diagram: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" alt="Sticky Note: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+</a>
+
+
 **A24:** WPA2 uses a 4-Way Handshake where the PMK is directly derived from the PSK. An attacker captures the 4 messages and cracks the PSK offline. WPA3 SAE (Dragonfly handshake) uses a zero-knowledge proof: both parties prove knowledge of the password without revealing it. The sequence: (1) Both parties derive a password element from the password using a hash-to-curve function. (2) Each generates an ephemeral private key and sends a commitment (hash of scalar + element). (3) Each sends a confirm value (proof of knowledge). (4) Both parties independently derive the same PMK. Without the password, an attacker cannot compute the correct confirm value. Each guess requires a fresh SAE exchange with the real AP → offline brute force is impossible.
 
 ### Q25: What is the TCP three-way handshake and how does it enable SYN flood attacks?
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" alt="Handwritten: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" alt="Diagram: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" alt="Sticky Note: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+</a>
+
 
 **A25:** The TCP three-way handshake establishes a connection:
 1. Client sends SYN (seq=x)
@@ -3425,6 +4657,17 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 
 ### Q26: Compare Snort and Suricata rule languages. When would you use each?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" alt="Diagram: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+</a>
+
+
 **A26:** Both support the same rule syntax (Snort rules work in Suricata). Key differences:
 - **Performance:** Suricata is multi-threaded, Snort is single-threaded. Suricata handles 10+ Gbps on modern hardware; Snort struggles above 2-3 Gbps.
 - **Protocol parsing:** Suricata has built-in HTTP, TLS, DNS, SMB, SSH protocol parsers (application-layer events). Snort relies on PCRE for application detection.
@@ -3434,9 +4677,31 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 
 ### Q27: Explain how BGP route leaks happen and the difference from BGP hijacking.
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" alt="Handwritten: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" alt="Diagram: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" alt="Sticky Note: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+</a>
+
+
 **A27:** BGP hijacking is malicious → an unauthorized AS deliberately announces prefixes it does not own (e.g., Pakistan Telecom announcing YouTube's prefix). BGP route leaks are accidental → a misconfigured AS announces learned routes to other peers when it should only announce its own. Example: AS A learns route to prefix P from its upstream, then announces P to AS B (its other peer) as if AS A owns P. AS B propagates P, causing traffic destined for P to be routed through AS A first. Route leaks are typically unintentional configuration errors. Both are mitigated by prefix filtering, max-prefix limits, and RPKI.
 
 ### Q28: Describe the contents of the Snort/Suricata rule header and options.
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" alt="Handwritten: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" alt="Diagram: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" alt="Sticky Note: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+</a>
+
 
 **A28:** Snort rule header: `[action] [protocol] [src_ip] [src_port] -> [dst_ip] [dst_port]`
 
@@ -3459,6 +4724,17 @@ Options (partial list):
 
 ### Q29: What network security controls would you implement at each layer of the OSI model?
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" alt="Handwritten: What network security controls would you implement at each layer of the OSI model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" alt="Diagram: What network security controls would you implement at each layer of the OSI model?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" alt="Sticky Note: What network security controls would you implement at each layer of the OSI model?" width="30%">
+</a>
+
+
 **A29:**
 - **L1 (Physical):** Locked server rooms, CCTV, port security, tamper-proof cabling
 - **L2 (Data Link):** 802.1X, DHCP snooping, Dynamic ARP Inspection, MAC port security, VLANs, STP BPDU guard
@@ -3469,6 +4745,17 @@ Options (partial list):
 
 ### Q30: Explain the full Stuxnet attack chain and why it was so significant.
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" alt="Handwritten: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" alt="Diagram: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" alt="Sticky Note: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+</a>
+
+
 **A30:** Stuxnet (2010) was the first known cyber weapon → a nation-state (US/Israel) attack on Iranian nuclear centrifuges. Attack chain: (1) USB infection via social engineering or supply chain compromise. (2) Exploit MS10-046 (LNK vulnerability) for auto-execution. (3) MS10-061 print spooler escalation for SYSTEM privileges. (4) MS08-067 (Server Service) for network propagation. (5) Spread across air-gapped network via USB and network shares. (6) Target discovery: looks for Siemens Step 7 software on Windows. (7) Rootkit: hides modified PLC code from operators. (8) PLC sabotage: two attack profiles → rapid frequency oscillation destroys centrifuges; long-duration frequency changes accelerate bearing wear. (9) Man-in-the-middle: replays normal sensor data while centrifuges self-destruct. Operators see "normal operations" as IR-1 centrifuges tear themselves apart. Four zero-day exploits used (unprecedented). Significance: proved air-gaps are not absolute, changed international cyber warfare policy, demonstrated kinetic effects via cyber means, led to NIST SP 800-82 for industrial control system security.
 
 ---
@@ -3476,6 +4763,17 @@ Options (partial list):
 ## Section 26: Final Comprehensive Reference → All Tools in One Lab
 
 ### 26.1 Complete Network Security Test Lab
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" alt="Handwritten: 26.1 Complete Network Security Test Lab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" alt="Diagram: 26.1 Complete Network Security Test Lab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" alt="Sticky Note: 26.1 Complete Network Security Test Lab" width="30%">
+</a>
+
 
 ```bash
 # Test lab architecture:
@@ -3523,6 +4821,17 @@ tshark -r capture.pcap -Y "dns.qry.name" -T fields -e dns.qry.name | awk '{print
 ## TypeScript Implementations
 
 ### 1. Firewall Rule Analyzer
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" alt="Handwritten: 1. Firewall Rule Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" alt="Diagram: 1. Firewall Rule Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" alt="Sticky Note: 1. Firewall Rule Analyzer" width="30%">
+</a>
+
 
 The following TypeScript class implements a firewall rule analyzer that identifies security misconfigurations including shadowed rules, overly permissive rules, and duplicate entries.
 
@@ -3626,6 +4935,17 @@ result.recommendations.forEach(r => console.log(`  • ${r}`));
 ```
 
 ### 2. IDS/IPS Rule Engine
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" alt="Handwritten: 2. IDS/IPS Rule Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" alt="Diagram: 2. IDS/IPS Rule Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" alt="Sticky Note: 2. IDS/IPS Rule Engine" width="30%">
+</a>
+
 
 This TypeScript engine simulates an intrusion detection/prevention system with rules for SYN flood detection, port scan detection, and SQL injection detection in packet payloads.
 
@@ -3801,6 +5121,17 @@ alerts.forEach(a => console.log(`  [${a.severity}] ${a.description} → action: 
 
 ### 1. Firewall Architecture — DMZ with Layered Defense
 
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" alt="Handwritten: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" alt="Diagram: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" alt="Sticky Note: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+</a>
+
+
 The diagram below illustrates a typical enterprise firewall architecture with a perimeter firewall, DMZ segment, internal firewall, and management network. Traffic flows from the external internet through multiple inspection layers before reaching sensitive internal resources.
 
 ```mermaid
@@ -3856,6 +5187,17 @@ flowchart TB
 ```
 
 ### 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode
+
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" alt="Handwritten: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" alt="Diagram: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" alt="Sticky Note: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+</a>
+
 
 This sequence diagram details the two-phase IPSec tunnel establishment process. Phase 1 (Main Mode) sets up a secure ISAKMP control channel using Diffie-Hellman key exchange. Phase 2 (Quick Mode) negotiates the actual IPSec security associations for data protection.
 

@@ -55,6 +55,17 @@ flowchart LR
 
 ### What is an Operating System?
 
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" alt="Handwritten: What is an Operating System?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" alt="Diagram: What is an Operating System?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" alt="Sticky Note: What is an Operating System?" width="30%">
+</a>
+
+
 **Analogy:** The OS is like a **hotel manager**. The manager doesn't cook food (that's the restaurant app), clean rooms (that's the cleaning staff subsystem), or fix plumbing (that's the device driver), but the manager coordinates everything: assigns rooms (memory), handles guest requests (system calls), ensures security (keycard access), and resolves conflicts (two guests wanting the same conference room).
 
 #### Definition
@@ -254,6 +265,17 @@ if __name__ == "__main__":
 ---
 
 ### Operating System Functions
+
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" alt="Handwritten: Operating System Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" alt="Diagram: Operating System Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" alt="Sticky Note: Operating System Functions" width="30%">
+</a>
+
 
 **Analogy:** An OS is like a **hospital administration**. The administration doesn't perform surgery (that's the doctor), but it manages bed allocation (memory), schedules operating rooms (CPU scheduling), maintains patient records (file system), controls visitor access (security), and coordinates departments (IPC).
 
@@ -526,6 +548,17 @@ if __name__ == "__main__":
 
 ### History of Operating Systems
 
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" alt="Handwritten: History of Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" alt="Diagram: History of Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" alt="Sticky Note: History of Operating Systems" width="30%">
+</a>
+
+
 #### Phase 1: Batch Systems (1940s-1950s)
 
 Early computers (ENIAC, UNIVAC) had no OS. Programmers interacted directly with the hardware using switches and paper tape. The first OS appeared in the 1950s with the GM-NAA I/O system for the IBM 701.
@@ -555,6 +588,17 @@ Linux (Linus Torvalds, 1991) brought Unix-like power to PCs as free software. Wi
 ---
 
 ### Types of Operating Systems
+
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" alt="Handwritten: Types of Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" alt="Diagram: Types of Operating Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" alt="Sticky Note: Types of Operating Systems" width="30%">
+</a>
+
 
 **Analogy:** OS types are like **vehicle types**. A batch OS is a cargo ship (load once, process, unload → no interaction mid-voyage). A time-sharing OS is a city bus (many passengers share the ride, each gets a turn). A real-time OS is an ambulance (must reach destination within a guaranteed time). A distributed OS is a fleet of delivery trucks (coordinated to appear as one system). An embedded OS is a car's ECU (single-purpose, resource-constrained).
 
@@ -618,6 +662,17 @@ Designed for devices with limited resources → sensors, smart appliances, IoT d
 ---
 
 ### System Calls
+
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" alt="Handwritten: System Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" alt="Diagram: System Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" alt="Sticky Note: System Calls" width="30%">
+</a>
+
 
 **Analogy:** A system call is like **ordering food at a restaurant**. You (the user program) sit at the table and look at the menu (API). You tell the waiter (the standard library) what you want. The waiter goes to the kitchen (kernel) through the kitchen door (the trap instruction), where the chef (kernel service routine) prepares your order. The waiter brings it back to your table (returns to user mode). You never enter the kitchen yourself → that would violate the health code (security restriction).
 
@@ -847,6 +902,17 @@ Most programs use an **API** rather than invoking system calls directly. The C s
 
 ### Operating System Structures
 
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" alt="Handwritten: Operating System Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" alt="Diagram: Operating System Structures" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" alt="Sticky Note: Operating System Structures" width="30%">
+</a>
+
+
 **Analogy:** OS structures are like **building architectures**:
 - **Monolithic** = A single-room warehouse → everything is together, fast to move around, but a fire in any area destroys everything
 - **Microkernel** = A campus of small buildings → each function is isolated, a fire in one doesn't spread, but moving between buildings takes time
@@ -953,6 +1019,17 @@ Modern kernels combine monolithic and microkernel ideas. The kernel is a core wi
 ---
 
 ### Kernel Types Comparison
+
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" alt="Handwritten: Kernel Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" alt="Diagram: Kernel Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" alt="Sticky Note: Kernel Types Comparison" width="30%">
+</a>
+
 
 | Feature | Monolithic | Microkernel | Hybrid (Modular) | Exokernel |
 |---------|-----------|-------------|------------------|-----------|

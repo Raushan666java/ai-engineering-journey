@@ -68,6 +68,17 @@ flowchart LR
 
 ### Propositional Logic vs First-Order Logic
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" alt="Handwritten: Propositional Logic vs First-Order Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" alt="Diagram: Propositional Logic vs First-Order Logic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" alt="Sticky Note: Propositional Logic vs First-Order Logic" width="30%">
+</a>
+
+
 | Feature | Propositional Logic | First-Order Logic |
 |---------|-------------------|-------------------|
 | **Atomic Unit** | Propositions (A, B, C) | Predicates applied to terms |
@@ -83,6 +94,17 @@ flowchart LR
 
 ### Why First-Order Logic?
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" alt="Handwritten: Why First-Order Logic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" alt="Diagram: Why First-Order Logic?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" alt="Sticky Note: Why First-Order Logic?" width="30%">
+</a>
+
+
 While Propositional Logic assumes the world contains facts, **First-Order Logic (FOL)** assumes the world contains:
 
 - **Objects**: People, houses, numbers, colors, days of the week.
@@ -94,6 +116,17 @@ This allows for much more expressive power, especially when combined with **quan
 ---
 
 ### Syntax of FOL
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" alt="Handwritten: Syntax of FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" alt="Diagram: Syntax of FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" alt="Sticky Note: Syntax of FOL" width="30%">
+</a>
+
 
 **Real-World Analogy (Grammar of a Language):** Just as English grammar defines how nouns, verbs, and adjectives combine into valid sentences, FOL syntax defines how terms, predicates, and quantifiers combine into well-formed formulas (WFFs). You cannot write "Runs quickly John" in English; likewise, you cannot write `∀P(x)` in FOL — quantifiers range over objects, not predicates in first-order logic.
 
@@ -194,6 +227,17 @@ print(is_wff("∀ ∀x Px"))
 
 ### Semantics of FOL
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" alt="Handwritten: Semantics of FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" alt="Diagram: Semantics of FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" alt="Sticky Note: Semantics of FOL" width="30%">
+</a>
+
+
 **Real-World Analogy (Interpretation in Court):** A contract clause means nothing until a judge interprets it against a specific situation. "The vehicle must be registered" — does "vehicle" mean cars only, or bicycles too? In FOL, a **model** (or interpretation) assigns real meaning to symbols: constants pick out objects, predicates pick out sets of tuples, functions pick out mappings. Only then does a formula become true or false.
 
 **Formal Definition:**
@@ -229,6 +273,17 @@ An **interpretation** (model) *M* consists of:
 
 ### Quantifiers: Universal and Existential
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" alt="Handwritten: Quantifiers: Universal and Existential" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" alt="Diagram: Quantifiers: Universal and Existential" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" alt="Sticky Note: Quantifiers: Universal and Existential" width="30%">
+</a>
+
+
 **Real-World Analogy (Employee Handbook):** A company policy might say "Every employee must complete the training" (∀) — this applies universally across all employees. Or "There exists a backup server in case of failure" (∃) — there is at least one, but it does not have to be every server. Mix them: "Every department has at least one manager who approves expense reports" — ∀x (Department(x) → ∃y (Manager(y) ∧ ApprovesExpense(y,x))).
 
 | Quantifier | Meaning | True When | False When |
@@ -253,6 +308,17 @@ An **interpretation** (model) *M* consists of:
 ---
 
 ### Substitution
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" alt="Handwritten: Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" alt="Diagram: Substitution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" alt="Sticky Note: Substitution" width="30%">
+</a>
+
 
 **Real-World Analogy (Mail Merge):** A form letter says "Dear {Name}, your order #{OrderID} has shipped." The substitution `{Name/John, OrderID/1024}` fills in the blanks. In FOL, substitution is the same idea — replace variables with terms before applying inference rules.
 
@@ -329,6 +395,17 @@ print(result)
 
 
 ### Unification
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" alt="Handwritten: Unification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" alt="Diagram: Unification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" alt="Sticky Note: Unification" width="30%">
+</a>
+
 
 **Real-World Analogy (Marriage Registration):** Two incomplete forms say "Bride: Alice Smith" and "Groom: X" and another form says "Bride: Y" and "Groom: Bob Jones." A registrar matches them by finding the substitution {X/Bob Jones, Y/Alice Smith} that makes both forms describe the same couple. Unification is finding a substitution that makes two logical expressions identical.
 
@@ -481,6 +558,17 @@ print(f"MGU: {result}")
 
 ### Skolemization
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" alt="Handwritten: Skolemization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" alt="Diagram: Skolemization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" alt="Sticky Note: Skolemization" width="30%">
+</a>
+
+
 **Real-World Analogy (Witness in Court):** The claim "Someone committed the crime" (∃x Criminal(x)). To prove it, the prosecutor does not say "Let us call the unknown person X" — they find a specific person, say "John Doe," and argue "John Doe committed the crime." Skolemization is the same idea: replace "there exists" with a specific (new) constant or function that serves as a concrete witness.
 
 **Definition:** Skolemization eliminates existential quantifiers from an FOL sentence by replacing existentially quantified variables with **Skolem constants** (when no universal quantifier precedes) or **Skolem functions** (when universals precede the existential).
@@ -602,6 +690,17 @@ print(f"Skolemized: {skolemize(f2)}")
 
 ### CNF Conversion (Conjunctive Normal Form)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" alt="Handwritten: CNF Conversion (Conjunctive Normal Form)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" alt="Diagram: CNF Conversion (Conjunctive Normal Form)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" alt="Sticky Note: CNF Conversion (Conjunctive Normal Form)" width="30%">
+</a>
+
+
 **Real-World Analogy (Legal Requirements Checklist):** A contract must meet multiple independent conditions, each of which is a set of alternative ways to satisfy it. For example: "The tenant must (pay rent OR provide service) AND (give notice OR waive rights)." This is CNF — a conjunction of disjunctions. Resolution theorem provers require all FOL formulas in this standard form.
 
 **Definition:** Conjunctive Normal Form (CNF) is a conjunction of **clauses**, where each clause is a disjunction of **literals** (atomic formulas or their negations). Example: `(¬P(x) ∨ Q(x)) ∧ (R(y) ∨ ¬S(y))`.
@@ -709,6 +808,17 @@ def to_cnf(formula):
 
 ### FOL Inference Methods
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" alt="Handwritten: FOL Inference Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" alt="Diagram: FOL Inference Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" alt="Sticky Note: FOL Inference Methods" width="30%">
+</a>
+
+
 **Real-World Analogy (Detective Reasoning):** A detective collects clues (facts) and general rules ("all thieves leave fingerprints"). Two approaches: (1) Forward Chaining — start with every clue, apply all rules, see what conclusions follow. (2) Backward Chaining — start with a hypothesis ("Smith is guilty"), check evidence that supports it. (3) Resolution — when two witnesses contradict each other, deduce that one must be lying.
 
 | Method | Sound? | Complete? | Direction | Data Structure | Best For | Complexity |
@@ -725,6 +835,17 @@ def to_cnf(formula):
 
 ### Lifting Lemma
 
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" alt="Handwritten: Lifting Lemma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" alt="Diagram: Lifting Lemma" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" alt="Sticky Note: Lifting Lemma" width="30%">
+</a>
+
+
 The **Lifting Lemma** states that any inference made at the ground (propositional) level can be "lifted" to the first-order level by using unification instead of brute-force instantiation. This is the theoretical foundation for efficient FOL inference:
 
 - Instead of grounding every variable to every possible constant (which is infinite in general),
@@ -732,6 +853,17 @@ The **Lifting Lemma** states that any inference made at the ground (propositiona
 - Generalized Modus Ponens: From `∀x (P(x) → Q(x))` and `P(A)`, we directly infer `Q(A)` via substitution `{x/A}` — no need to ground all x first.
 
 ### Resolution Principle in FOL
+
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" alt="Handwritten: Resolution Principle in FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" alt="Diagram: Resolution Principle in FOL" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" alt="Sticky Note: Resolution Principle in FOL" width="30%">
+</a>
+
 
 **Algorithm: Resolution in FOL**
 

@@ -16,6 +16,17 @@
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Preprocessor Overview | Textual transformation before compilation | Understand the 4-phase translation model |
@@ -53,6 +64,17 @@ The preprocessor runs as the first stage of compilation. It processes directives
 
 ### Real-World Analogy: Kitchen Prep Station
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" alt="Handwritten: Real-World Analogy: Kitchen Prep Station" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" alt="Diagram: Real-World Analogy: Kitchen Prep Station" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" alt="Sticky Note: Real-World Analogy: Kitchen Prep Station" width="30%">
+</a>
+
+
 A chef does not cook raw ingredients directly. First, vegetables are washed and chopped, spices are measured, and meat is marinated. These prep steps happen before any cooking begins. The preprocessor is the **prep station** of compilation — it arranges, substitutes, and conditions the source text before the compiler (the chef) starts cooking (compiling).
 
 | Kitchen Prep | Preprocessor Equivalent |
@@ -65,6 +87,17 @@ A chef does not cook raw ingredients directly. First, vegetables are washed and 
 
 ### Numbered Steps of Preprocessing
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" alt="Handwritten: Numbered Steps of Preprocessing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" alt="Diagram: Numbered Steps of Preprocessing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" alt="Sticky Note: Numbered Steps of Preprocessing" width="30%">
+</a>
+
+
 1. **Trigraph replacement** — Replace trigraph sequences (deprecated in C17).
 2. **Line splicing** — Join lines ending with `\` (backslash-newline).
 3. **Tokenization** — Split source into preprocessing tokens.
@@ -72,6 +105,17 @@ A chef does not cook raw ingredients directly. First, vegetables are washed and 
 5. **Whitespace stripping** — Remove comment tokens, trim whitespace.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function preprocess(sourceText):
@@ -122,6 +166,17 @@ function preprocess(sourceText):
 
 ### Dry Run Trace Table
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+</a>
+
+
 Consider this input:
 ```c
 #define PI 3.14159
@@ -165,6 +220,17 @@ double c = ((r) * 2) * 3.14159;
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity |
 |-----------|-----------------|------------------|
 | Line splicing | O(n) | O(n) |
@@ -176,6 +242,17 @@ double c = ((r) * 2) * 3.14159;
 | Conditional compilation | O(n) | O(d) for d nesting depth |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Advantage | Disadvantage |
 |-----------|--------------|
@@ -189,6 +266,17 @@ double c = ((r) * 2) * 3.14159;
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 1. **Trigraphs** (removed in C17): `??=` becomes `#`, `??/` becomes `\`. Rare but can confuse old code.
 2. **Backslash-newline splicing**: A `\` at end of line joins with next line. Inside `//` comments, this can swallow the next line.
 3. **Empty macro**: `#define EMPTY` — expands to nothing. Useful for conditional checks without value.
@@ -199,9 +287,31 @@ double c = ((r) * 2) * 3.14159;
 
 ### Real-World Analogy: Copy-Paste from Reference Book
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" alt="Handwritten: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" alt="Diagram: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" alt="Sticky Note: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+</a>
+
+
 Imagine writing a report and needing the definition of "binary search tree." Instead of rewriting it by hand, you photocopy the page from a textbook and paste it into your report. `#include` does exactly this — it copies the entire contents of a file and pastes them into your source file at the exact point of the `#include` directive.
 
 ### Search Path Rules
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" alt="Handwritten: Search Path Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" alt="Diagram: Search Path Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" alt="Sticky Note: Search Path Rules" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>      /* system header — searches standard include paths */
@@ -215,6 +325,17 @@ Imagine writing a report and needing the definition of "binary search tree." Ins
 
 ### Numbered Steps
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
+
 1. Preprocessor encounters `#include` directive.
 2. Extracts the filename between `<>` or `""`.
 3. For `""`: search current source directory first.
@@ -224,6 +345,17 @@ Imagine writing a report and needing the definition of "binary search tree." Ins
 7. Process the included file recursively (nested includes).
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function handle_include(directive, filename):
@@ -245,6 +377,17 @@ function handle_include(directive, filename):
 ```
 
 ### Dry Run Trace
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+</a>
+
 
 Source file `main.c`:
 ```c
@@ -276,6 +419,17 @@ Header file `config.h`:
 
 ### Nested Include Resolution
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" alt="Handwritten: Nested Include Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" alt="Diagram: Nested Include Resolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" alt="Sticky Note: Nested Include Resolution" width="30%">
+</a>
+
+
 ```c
 /* a.h */ #include "b.h"  → finds b.h → processes → returns
 /* b.h */ #include "c.h"  → finds c.h → processes → returns
@@ -304,6 +458,17 @@ Hello from mydefs!
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 1. **Circular includes**: `a.h` includes `b.h` which includes `a.h` — causes infinite recursion without header guards. The preprocessor would stack-overflow or hit file-descriptor limits.
 2. **Missing file**: `#include "nonexistent.h"` → compilation error.
 3. **Non-header files**: `#include "data.txt"` — valid but poor practice. The preprocessor doesn't care about file extension.
@@ -313,6 +478,17 @@ Hello from mydefs!
 ## 13.3 `#define` — Object-like Macros
 
 ### Real-World Analogy: Find-and-Replace All
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" alt="Handwritten: Real-World Analogy: Find-and-Replace All" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" alt="Diagram: Real-World Analogy: Find-and-Replace All" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" alt="Sticky Note: Real-World Analogy: Find-and-Replace All" width="30%">
+</a>
+
 
 Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Every time you hear "device," you automatically substitute "mobile phone" in your notes. This is an **object-like macro** — wherever the preprocessor sees the macro name, it replaces it with the replacement text.
 
@@ -325,6 +501,17 @@ Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Ev
 
 ### Numbered Steps
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
+
 1. Preprocessor encounters `#define MACRO replacement`.
 2. Stores `MACRO` as a key in the macro table with `replacement` as value.
 3. For every subsequent token matching `MACRO`, replace it with `replacement`.
@@ -332,6 +519,17 @@ Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Ev
 5. If `#undef MACRO` is encountered, remove the entry from the table.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 function handle_define_OBJECT_LIKE(token_stream):
@@ -350,6 +548,17 @@ function expand_macro(name):
 ```
 
 ### Dry Run Trace
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+</a>
+
 
 Source:
 ```c
@@ -399,6 +608,17 @@ Area = 78.54
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Complexity |
 |-----------|------------|
 | Macro definition | O(1) insertion into hash table |
@@ -407,6 +627,17 @@ Area = 78.54
 | Memory per macro | O(r) where r = characters in replacement text |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Advantage | Disadvantage |
 |-----------|--------------|
@@ -418,6 +649,17 @@ Area = 78.54
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 1. **Recursive macro (stopped)**: `#define REC REC` — the preprocessor will not expand `REC` recursively. It marks it as "currently expanding" and stops. No infinite loop.
 2. **Redefinition**: `#define X 1` then `#define X 2` — most compilers warn unless the definition is identical.
 3. **Empty definition**: `#define FLAG` — defines FLAG as empty. Useful with `#ifdef` for feature detection.
@@ -427,6 +669,17 @@ Area = 78.54
 ## 13.4 `#define` — Function-like Macros
 
 ### Real-World Analogy: Recipe Template with Blanks
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" alt="Handwritten: Real-World Analogy: Recipe Template with Blanks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" alt="Diagram: Real-World Analogy: Recipe Template with Blanks" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" alt="Sticky Note: Real-World Analogy: Recipe Template with Blanks" width="30%">
+</a>
+
 
 A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks: "Bake at 350 degrees for 30 minutes." The recipe is a **function-like macro** — it has parameters (blanks) that get filled in with actual arguments each time the macro is used.
 
@@ -438,6 +691,17 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 ### Numbered Steps
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
+
 1. Preprocessor encounters `#define MACRO(params) replacement`.
 2. Parses the parameter list; spaces before `(` matter — `#define MACRO (x)` is an object-like macro named `MACRO` with expansion `(x)`.
 3. Stores macro with parameter list and replacement text.
@@ -447,12 +711,34 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 ### Critical: The Space-Before-Paren Trap
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" alt="Handwritten: Critical: The Space-Before-Paren Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" alt="Diagram: Critical: The Space-Before-Paren Trap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" alt="Sticky Note: Critical: The Space-Before-Paren Trap" width="30%">
+</a>
+
+
 ```c
 #define FOO (x)  /* object-like macro: FOO expands to (x) */
 #define BAR(x)   /* function-like macro: BAR takes parameter x */
 ```
 
 ### Why Parentheses Matter
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" alt="Handwritten: Why Parentheses Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" alt="Diagram: Why Parentheses Matter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" alt="Sticky Note: Why Parentheses Matter" width="30%">
+</a>
+
 
 Without parentheses:
 ```c
@@ -467,6 +753,17 @@ SQUARE(2 + 3)  /* expands to: ((2 + 3) * (2 + 3)) = 25 */
 ```
 
 ### Dry Run Trace — With vs Without Parentheses
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" alt="Handwritten: Dry Run Trace — With vs Without Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" alt="Diagram: Dry Run Trace — With vs Without Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" alt="Sticky Note: Dry Run Trace — With vs Without Parentheses" width="30%">
+</a>
+
 
 **Without parentheses:**
 ```c
@@ -521,6 +818,17 @@ MAX(10, 20) = 20
 
 ### Multi-Statement Macros
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" alt="Handwritten: Multi-Statement Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" alt="Diagram: Multi-Statement Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" alt="Sticky Note: Multi-Statement Macros" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -561,6 +869,17 @@ if (x < y)
 
 ### Variadic Macros (C99)
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" alt="Handwritten: Variadic Macros (C99)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" alt="Diagram: Variadic Macros (C99)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" alt="Sticky Note: Variadic Macros (C99)" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -585,6 +904,17 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Complexity |
 |-----------|------------|
 | Parameter collection | O(p) where p = chars in argument list |
@@ -593,6 +923,17 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 | Nested macro expansion | O(m) total for m expansions |
 
 ### A&D Table
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
 
 | Advantage | Disadvantage |
 |-----------|--------------|
@@ -603,6 +944,17 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 | `do { } while (0)` pattern works in all contexts | Cannot return a value from inside a statement expr |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 1. **Side effects — the classic bug:**
    ```c
@@ -636,6 +988,17 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 **Macro** is like having a personal assistant who, every time you say "double-check," physically does the two checks right there, writing them down in your notebook. **Function** is like having a reference desk — you go there, ask, get an answer, and return.
 
 | Aspect | Macro | Function |
@@ -657,6 +1020,17 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Decision Guide
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" alt="Handwritten: Decision Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" alt="Diagram: Decision Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" alt="Sticky Note: Decision Guide" width="30%">
+</a>
+
+
 ```c
 /* USE MACRO when: */
 #define IS_DIGIT(c) ((c) >= '0' && (c) <= '9')      /* Type-agnostic, hot path */
@@ -672,6 +1046,17 @@ void sort(int* arr, size_t n);                                 /* Multi-statemen
 ## 13.6 `#define` vs `const` vs `enum` — Comparison
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 - `#define`: A sticky note on your desk that says "PI = 3.14" — you have to rewrite it everywhere you need it.
 - `const`: A document in a filing cabinet labeled "PI = 3.14" — you look it up when needed.
@@ -716,6 +1101,17 @@ int main(void)
 
 ### When to Use What
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" alt="Handwritten: When to Use What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" alt="Diagram: When to Use What" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" alt="Sticky Note: When to Use What" width="30%">
+</a>
+
+
 | Use Case | Best Choice |
 |----------|-------------|
 | Floating-point constant | `const double` |
@@ -729,6 +1125,17 @@ int main(void)
 ## 13.7 `#undef`
 
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 You told your assistant "whenever I say 'current', write '2024'." Later you say "I changed my mind — stop doing that." `#undef` cancels a previous `#define`.
 
@@ -751,6 +1158,17 @@ int main(void)
 
 ### Use Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+</a>
+
+
 1. **Temporary redefinition**: undefine then redefine with a different value.
 2. **Cleaning up**: prevent macro name from leaking to other files.
 3. **Avoiding conflicts**: undefine a library macro before defining your own.
@@ -765,6 +1183,17 @@ int main(void)
 ```
 
 ### Dry Run Trace
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+</a>
+
 
 ```c
 #define MAX 10
@@ -785,6 +1214,17 @@ int b = MAX;     /* b = 20 */
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 - `#undef` on an undefined macro is **safe** — no error.
 - After `#undef`, `#ifdef MACRO` evaluates to false.
 
@@ -792,9 +1232,31 @@ int b = MAX;     /* b = 20 */
 
 ### Real-World Analogy: Light Switch / Router Configuration
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" alt="Handwritten: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" alt="Diagram: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" alt="Sticky Note: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+</a>
+
+
 A factory assembly line can produce slightly different products depending on which switches are toggled. If SWITCH_A is on, include feature A. If SWITCH_B is on, include feature B. The factory doesn't build both features and then choose — it only builds what the switches allow. Conditional compilation works the same way: only the code that passes the condition is compiled.
 
 ### 13.8.1 Directives Overview
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" alt="Handwritten: 13.8.1 Directives Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" alt="Diagram: 13.8.1 Directives Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" alt="Sticky Note: 13.8.1 Directives Overview" width="30%">
+</a>
+
 
 | Directive | Meaning | Example |
 |-----------|---------|---------|
@@ -808,6 +1270,17 @@ A factory assembly line can produce slightly different products depending on whi
 
 ### Numbered Steps
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+</a>
+
+
 1. Preprocessor evaluates the condition in `#if`, `#ifdef`, `#ifndef`.
 2. If true: keep following code until next conditional directive.
 3. If false: skip (discard) following code until `#else`, `#elif`, or `#endif`.
@@ -817,6 +1290,17 @@ A factory assembly line can produce slightly different products depending on whi
 7. `#endif` ends the conditional block and returns to normal processing.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 condition_stack = []  // stack of booleans
@@ -860,6 +1344,17 @@ function process_conditional(directive, condition):
 
 ### 13.8.2 `#ifdef` and `#ifndef`
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" alt="Handwritten: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" alt="Diagram: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" alt="Sticky Note: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -887,6 +1382,17 @@ Release mode is NOT defined — using debug settings
 
 ### Dry Run Trace — `#ifdef`/`#ifndef`
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" alt="Handwritten: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" alt="Diagram: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" alt="Sticky Note: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+</a>
+
+
 | Step | Directive | Macro Table | Keep? | Output |
 |------|-----------|-------------|-------|--------|
 | 1 | `#define DEBUG` | DEBUG | — | — |
@@ -898,6 +1404,17 @@ Release mode is NOT defined — using debug settings
 | 7 | `#endif` | — | End conditional | — |
 
 ### 13.8.3 `#if` and `#elif`
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" alt="Handwritten: 13.8.3 `#if` and `#elif`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" alt="Diagram: 13.8.3 `#if` and `#elif`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" alt="Sticky Note: 13.8.3 `#if` and `#elif`" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -925,6 +1442,17 @@ Version 2
 
 ### Dry Run Trace — `#if`/`#elif`/`#else`
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" alt="Handwritten: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" alt="Diagram: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" alt="Sticky Note: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+</a>
+
+
 | Step | Directive | Evaluation | Keep? | Output |
 |------|-----------|------------|-------|--------|
 | 1 | `#if VERSION >= 3` | `2 >= 3` = 0 | NO | — |
@@ -933,6 +1461,17 @@ Version 2
 | 4 | `#endif` | — | End | — |
 
 ### 13.8.4 `#if defined(...)`
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" alt="Handwritten: 13.8.4 `#if defined(...)`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" alt="Diagram: 13.8.4 `#if defined(...)`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" alt="Sticky Note: 13.8.4 `#if defined(...)`" width="30%">
+</a>
+
 
 The `defined()` operator works inside `#if`, enabling logical combinations:
 
@@ -956,6 +1495,17 @@ int main(void)
 ```
 
 ### 13.8.5 Use Cases
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" alt="Handwritten: 13.8.5 Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" alt="Diagram: 13.8.5 Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" alt="Sticky Note: 13.8.5 Use Cases" width="30%">
+</a>
+
 
 #### Platform Detection
 
@@ -997,6 +1547,17 @@ int main(void)
 
 ### 13.8.6 `#pragma once` vs `#ifndef` — Comparison
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" alt="Handwritten: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" alt="Diagram: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" alt="Sticky Note: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+</a>
+
+
 | Aspect | `#pragma once` | `#ifndef` Guard |
 |--------|----------------|-----------------|
 | **Standard** | Non-standard (but widely supported) | Standard C89+ |
@@ -1020,6 +1581,17 @@ int main(void)
 **Recommendation:** Use `#pragma once` for new projects (every major compiler supports it). Use `#ifndef` guards when maximum portability is required (embedded systems, legacy compilers).
 
 ### 13.8.7 Nested Conditional Compilation
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" alt="Handwritten: 13.8.7 Nested Conditional Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" alt="Diagram: 13.8.7 Nested Conditional Compilation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" alt="Sticky Note: 13.8.7 Nested Conditional Compilation" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1052,6 +1624,17 @@ int main(void)
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 1. **`#ifdef` vs `#if defined()`**: Functionally identical for single conditions. `#if defined()` allows `||` and `&&`.
 2. **Empty `#if`**: `#if 0` ... `#endif` — classic comment-out block (works even when comments nest poorly).
 3. **Evaluating undefined macro in `#if`**: `#if UNDEFINED > 0` — undefined macros evaluate to `0`.
@@ -1062,11 +1645,33 @@ int main(void)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A recipe might include a note: "If using a convection oven, reduce temperature by 25°F." This is a **compiler-specific instruction** — it only applies if you're using a convection oven (specific compiler). Other ovens (other compilers) may ignore it.
 
 `#pragma` provides compiler-specific instructions. Unrecognized pragmas are silently ignored.
 
 ### Common Pragmas
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" alt="Handwritten: Common Pragmas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" alt="Diagram: Common Pragmas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" alt="Sticky Note: Common Pragmas" width="30%">
+</a>
+
 
 ```c
 #pragma once                     /* include guard (alternative to #ifndef) */
@@ -1091,6 +1696,17 @@ struct PackedData {
 ```
 
 ### `_Pragma()` Operator (C99)
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" alt="Handwritten: `_Pragma()` Operator (C99)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" alt="Diagram: `_Pragma()` Operator (C99)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" alt="Sticky Note: `_Pragma()` Operator (C99)" width="30%">
+</a>
+
 
 `_Pragma()` allows pragmas to be used inside macro definitions:
 
@@ -1135,6 +1751,17 @@ Normal struct: 8 bytes
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Advantage | Disadvantage |
 |-----------|--------------|
 | Access to compiler-specific optimizations | Non-portable — code may not compile on other compilers |
@@ -1146,9 +1773,31 @@ Normal struct: 8 bytes
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A factory assembly line has a security checkpoint. If a part doesn't meet specifications, the line stops immediately with an alarm. `#error` is that alarm — it halts compilation with a message.
 
 ### Syntax and Example
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" alt="Handwritten: Syntax and Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" alt="Diagram: Syntax and Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" alt="Sticky Note: Syntax and Example" width="30%">
+</a>
+
 
 ```c
 #ifndef __STDC__
@@ -1165,6 +1814,17 @@ A factory assembly line has a security checkpoint. If a part doesn't meet specif
 ```
 
 ### Use Cases
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+</a>
+
 
 1. **Platform requirements**: Ensure compilation on supported platforms only.
 2. **Version requirements**: Check compiler or C standard version.
@@ -1196,6 +1856,17 @@ error: #error "REQUIRED_FEATURE must be defined to compile this program"
 
 ### A&D Table
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+</a>
+
+
 | Advantage | Disadvantage |
 |-----------|--------------|
 | Catches configuration errors at compile time | Crude — unconditional halt only |
@@ -1206,9 +1877,31 @@ error: #error "REQUIRED_FEATURE must be defined to compile this program"
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 You're editing a document and the page numbers are wrong. You insert a sticky note saying "The next page should be numbered page 100." `#line` resets the line numbering that `__LINE__` and `__FILE__` report.
 
 ### Syntax
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+</a>
+
 
 ```c
 #line 100 "newfile.c"
@@ -1243,6 +1936,17 @@ Line: 76, File: generated.c
 
 ### Use Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+</a>
+
+
 1. **Generated code**: Tools like `yacc`, `flex`, and code generators use `#line` to point errors back to the original source file.
 2. **Source transformation**: If a tool transforms C code, `#line` preserves the mapping back to the original.
 3. **Error reporting**: Custom preprocessors can use `#line` so compiler errors reference the correct file.
@@ -1253,7 +1957,29 @@ These operators are only meaningful inside function-like macro definitions.
 
 ### 13.12.1 Stringification (`#`)
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" alt="Handwritten: 13.12.1 Stringification (`#`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" alt="Diagram: 13.12.1 Stringification (`#`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" alt="Sticky Note: 13.12.1 Stringification (`#`)" width="30%">
+</a>
+
+
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 You're filling out a form. The blank says "Name: _____." The `#` operator is like writing the label "Name" onto the form — it takes the field name and turns it into a printed label.
 
@@ -1281,6 +2007,17 @@ value + 1 = 43
 
 ### Detailed Expansion
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" alt="Handwritten: Detailed Expansion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" alt="Diagram: Detailed Expansion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" alt="Sticky Note: Detailed Expansion" width="30%">
+</a>
+
+
 ```c
 #define STR(x) #x
 
@@ -1295,6 +2032,17 @@ STR(FOO)          → "FOO"   /* NOT "123" — # prevents expansion of the param
 ```
 
 ### Dry Run Trace — Stringification
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" alt="Handwritten: Dry Run Trace — Stringification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" alt="Diagram: Dry Run Trace — Stringification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" alt="Sticky Note: Dry Run Trace — Stringification" width="30%">
+</a>
+
 
 ```c
 #define SHOW(var) printf(#var " = %d\n", var)
@@ -1314,6 +2062,17 @@ SHOW(count);
 
 ### Stringification with Spaces
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" alt="Handwritten: Stringification with Spaces" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" alt="Diagram: Stringification with Spaces" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" alt="Sticky Note: Stringification with Spaces" width="30%">
+</a>
+
+
 ```c
 #define STR(x) #x
 STR(  hello   world  )    → "hello   world"
@@ -1323,7 +2082,29 @@ Multiple spaces between tokens in the argument are collapsed to a single space, 
 
 ### 13.12.2 Token Pasting (`##`)
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" alt="Handwritten: 13.12.2 Token Pasting (`##`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" alt="Diagram: 13.12.2 Token Pasting (`##`)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" alt="Sticky Note: 13.12.2 Token Pasting (`##`)" width="30%">
+</a>
+
+
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 You have two pieces of a shipping label: "apt-" and "3B." You tape them together to make "apt-3B." The `##` operator concatenates two tokens into one.
 
@@ -1348,6 +2129,17 @@ x1 = 10, x2 = 20
 ```
 
 ### Practical Examples
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" alt="Handwritten: Practical Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" alt="Diagram: Practical Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" alt="Sticky Note: Practical Examples" width="30%">
+</a>
+
 
 #### Type-Generic Operations (Before C11 `_Generic`)
 
@@ -1418,6 +2210,17 @@ WHITE = #FFFFFF
 
 ### Combining `#` and `##`
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" alt="Handwritten: Combining `#` and `##`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" alt="Diagram: Combining `#` and `##`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" alt="Sticky Note: Combining `#` and `##`" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -1445,6 +2248,17 @@ Name:  x
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 1. **Invalid token result**: `#define CAT(a, b) a ## b` — `CAT(1, 2)` produces `12` (valid). But `CAT(1, 2x)` produces `12x` (valid); `CAT(+, =)` produces `+=` (valid). `CAT(1, 2.3)` produces `12.3` (valid). However, `CAT(., 2)` produces `.2` which might not be valid depending on context.
 2. **Empty macro argument**: `#define F(x) #x` — `F()` produces `""`.
 3. **`##` with empty argument**: `#define CAT(a, b) a ## b` — `CAT(prefix, )` produces `prefix` (empty argument yields just the other token). This behavior is compiler-dependent.
@@ -1455,9 +2269,31 @@ Name:  x
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A factory stamps each product with the date, time, and machine ID. `__DATE__`, `__TIME__`, and `__FILE__` are automatic stamps the compiler adds to let you know when, where, and in what context your code was compiled.
 
 ### Complete Table
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" alt="Handwritten: Complete Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" alt="Diagram: Complete Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" alt="Sticky Note: Complete Table" width="30%">
+</a>
+
 
 | Macro | Type | Description | Example Value |
 |-------|------|-------------|---------------|
@@ -1512,6 +2348,17 @@ Line:       10
 
 ### Use Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+</a>
+
+
 #### Debug Logging
 
 ```c
@@ -1562,6 +2409,17 @@ void c_function(int x);
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 - `__LINE__` changes after `#line` directive.
 - `__FILE__` is the current file name, not the `#include`'ing file.
 - `__DATE__` and `__TIME__` reflect when compilation started, not the current time.
@@ -1571,6 +2429,17 @@ void c_function(int x);
 ## 13.14 Macro Pitfalls
 
 ### 1. Side Effects from Double Evaluation
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" alt="Handwritten: 1. Side Effects from Double Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" alt="Diagram: 1. Side Effects from Double Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" alt="Sticky Note: 1. Side Effects from Double Evaluation" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1592,6 +2461,17 @@ int main(void)
 
 ### 2. Missing Parentheses
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" alt="Handwritten: 2. Missing Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" alt="Diagram: 2. Missing Parentheses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" alt="Sticky Note: 2. Missing Parentheses" width="30%">
+</a>
+
+
 ```c
 #define BAD_MULTIPLY(a, b) a * b
 BAD_MULTIPLY(2 + 3, 4)   /* 2 + 3 * 4 = 14, not 20 */
@@ -1600,6 +2480,17 @@ BAD_MULTIPLY(2 + 3, 4)   /* 2 + 3 * 4 = 14, not 20 */
 **Fix:** `#define MULTIPLY(a, b) ((a) * (b))`
 
 ### 3. Semicolon Swallowing
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" alt="Handwritten: 3. Semicolon Swallowing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" alt="Diagram: 3. Semicolon Swallowing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" alt="Sticky Note: 3. Semicolon Swallowing" width="30%">
+</a>
+
 
 ```c
 #define BAD_SWAP(a, b)  int temp = a; a = b; b = temp
@@ -1622,12 +2513,34 @@ y = temp;           /* error: temp not in scope */
 
 ### 4. No Type Safety
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" alt="Handwritten: 4. No Type Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" alt="Diagram: 4. No Type Safety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" alt="Sticky Note: 4. No Type Safety" width="30%">
+</a>
+
+
 ```c
 #define SQUARE(x) ((x) * (x))
 SQUARE("hello")    /* compiles! "hello" * "hello" → garbage error */
 ```
 
 ### 5. Debugging Difficulty
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" alt="Handwritten: 5. Debugging Difficulty" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" alt="Diagram: 5. Debugging Difficulty" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" alt="Sticky Note: 5. Debugging Difficulty" width="30%">
+</a>
+
 
 Error messages refer to the **expanded** code, not the macro invocation:
 
@@ -1637,6 +2550,17 @@ int y = BUGGY(5);  /* compiler error points to expanded: 5 + 5 * 2 */
 ```
 
 ### 6. Dangling Else
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" alt="Handwritten: 6. Dangling Else" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" alt="Diagram: 6. Dangling Else" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" alt="Sticky Note: 6. Dangling Else" width="30%">
+</a>
+
 
 ```c
 #define IF_BIG(x) if ((x) > 100)
@@ -1650,12 +2574,34 @@ else
 
 ### 7. Name Collisions
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" alt="Handwritten: 7. Name Collisions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" alt="Diagram: 7. Name Collisions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" alt="Sticky Note: 7. Name Collisions" width="30%">
+</a>
+
+
 ```c
 #include "some_lib.h"    /* some_lib.h might define MIN, MAX */
 #define MIN(a, b) ...    /* redefinition warning/error — or worse, silent override */
 ```
 
 ### Pitfalls at a Glance
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" alt="Handwritten: Pitfalls at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" alt="Diagram: Pitfalls at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" alt="Sticky Note: Pitfalls at a Glance" width="30%">
+</a>
+
 
 | Pitfall | Example | Consequence | Fix |
 |---------|---------|-------------|-----|
@@ -1669,6 +2615,17 @@ else
 ## 13.15 Interview Corner
 
 ### Q1: What is the difference between a macro and an inline function?
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" alt="Handwritten: What is the difference between a macro and an inline function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" alt="Diagram: What is the difference between a macro and an inline function?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" alt="Sticky Note: What is the difference between a macro and an inline function?" width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1688,6 +2645,17 @@ else
 - Use **inline function** for type safety, side-effect protection, readability, and debugger support.
 
 ### Q2: What are macro side effects and how do you prevent them?
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" alt="Handwritten: What are macro side effects and how do you prevent them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" alt="Diagram: What are macro side effects and how do you prevent them?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" alt="Sticky Note: What are macro side effects and how do you prevent them?" width="30%">
+</a>
+
 
 ```c
 #define SQUARE(x) ((x) * (x))
@@ -1711,6 +2679,17 @@ int result = SQUARE(++i);
 4. In C11, use `_Generic` for type-safe macros.
 
 ### Q3: Explain the `#` and `##` preprocessor operators with examples.
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" alt="Handwritten: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" alt="Diagram: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" alt="Sticky Note: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+</a>
+
 
 **`#` (Stringification):**
 ```c
@@ -1743,6 +2722,17 @@ MAKE_VAR(int, counter)
 
 ### Q4: Is `#pragma once` portable? Should I use it?
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" alt="Handwritten: Is `#pragma once` portable? Should I use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" alt="Diagram: Is `#pragma once` portable? Should I use it?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" alt="Sticky Note: Is `#pragma once` portable? Should I use it?" width="30%">
+</a>
+
+
 `#pragma once` is supported by all major compilers (GCC, Clang, MSVC, ICC, etc.) but is **not ISO C standard**. It is safe for most projects because:
 - Every modern compiler supports it.
 - It eliminates naming collisions that `#ifndef` guards suffer from.
@@ -1751,6 +2741,17 @@ MAKE_VAR(int, counter)
 **Recommendation:** Use `#pragma once` for new projects. Use `#ifndef` guards only if you need to support obscure or legacy compilers.
 
 ### Q5: What are X macros? Provide an example.
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" alt="Handwritten: What are X macros? Provide an example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" alt="Diagram: What are X macros? Provide an example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" alt="Sticky Note: What are X macros? Provide an example." width="30%">
+</a>
+
 
 X macros are a technique where a single list of data drives multiple code generation passes using `#define` and `#undef`:
 
@@ -1781,6 +2782,17 @@ int fruit_prices[] = { FRUIT_TABLE };
 
 ### Q6: Can macros be recursive?
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" alt="Handwritten: Can macros be recursive?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" alt="Diagram: Can macros be recursive?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" alt="Sticky Note: Can macros be recursive?" width="30%">
+</a>
+
+
 No. The C preprocessor has an **expansion barrier** — when a macro is currently being expanded, it is marked and not expanded again. This prevents infinite recursion:
 
 ```c
@@ -1795,6 +2807,17 @@ A   /* Expands: A → B → A (stops here) */
 ```
 
 ### Q7: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" alt="Handwritten: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" alt="Diagram: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" alt="Sticky Note: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+</a>
+
 
 Functionally identical for a single condition. The difference:
 
@@ -1813,6 +2836,17 @@ Functionally identical for a single condition. The difference:
 
 ### Q8: How do you create a debug print macro that includes file and line info?
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" alt="Handwritten: How do you create a debug print macro that includes file and line info?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" alt="Diagram: How do you create a debug print macro that includes file and line info?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" alt="Sticky Note: How do you create a debug print macro that includes file and line info?" width="30%">
+</a>
+
+
 ```c
 #ifdef DEBUG
     #define DBG_PRINT(fmt, ...) \
@@ -1829,6 +2863,17 @@ DBG_PRINT("x = %d, y = %s", x, "hello");
 The `##` before `__VA_ARGS__` is a GNU extension that removes the trailing comma when the variadic argument is empty.
 
 ### Q9: Explain the `do { ... } while (0)` pattern.
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" alt="Handwritten: Explain the `do { ... } while (0)` pattern." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" alt="Diagram: Explain the `do { ... } while (0)` pattern." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" alt="Sticky Note: Explain the `do { ... } while (0)` pattern." width="30%">
+</a>
+
 
 This pattern ensures multi-statement macros work correctly in all syntactic contexts:
 
@@ -1850,6 +2895,17 @@ The `do { } while (0)` requires a semicolon, consumes it, and wraps all statemen
 
 ### Q10: What is the purpose of `#line` directive?
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" alt="Handwritten: What is the purpose of `#line` directive?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" alt="Diagram: What is the purpose of `#line` directive?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" alt="Sticky Note: What is the purpose of `#line` directive?" width="30%">
+</a>
+
+
 `#line` resets the line number and optionally the filename reported by `__LINE__` and `__FILE__`. It is primarily used by:
 - **Code generators** (yacc, lex, IDL compilers) to map generated C code back to the original source.
 - **Source-to-source transforms** to preserve original line numbers for debugging.
@@ -1858,6 +2914,17 @@ The `do { } while (0)` requires a semicolon, consumes it, and wraps all statemen
 ## 13.16 Applications in Real Systems
 
 ### 13.16.1 The Linux Kernel — `container_of` Macro
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" alt="Handwritten: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" alt="Diagram: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" alt="Sticky Note: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+</a>
+
 
 One of the most famous macros in systems programming:
 
@@ -1883,6 +2950,17 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.2 Assertion Macros
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" alt="Handwritten: 13.16.2 Assertion Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" alt="Diagram: 13.16.2 Assertion Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" alt="Sticky Note: 13.16.2 Assertion Macros" width="30%">
+</a>
+
+
 ```c
 #ifdef NDEBUG
     #define ASSERT(cond) ((void)0)
@@ -1899,6 +2977,17 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 ```
 
 ### 13.16.3 Debug Logging Infrastructure
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" alt="Handwritten: 13.16.3 Debug Logging Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" alt="Diagram: 13.16.3 Debug Logging Infrastructure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" alt="Sticky Note: 13.16.3 Debug Logging Infrastructure" width="30%">
+</a>
+
 
 ```c
 /* log.h */
@@ -1941,6 +3030,17 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.4 Platform-Specific Code
 
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" alt="Handwritten: 13.16.4 Platform-Specific Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" alt="Diagram: 13.16.4 Platform-Specific Code" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" alt="Sticky Note: 13.16.4 Platform-Specific Code" width="30%">
+</a>
+
+
 ```c
 /* platform.h */
 #ifndef PLATFORM_H
@@ -1970,6 +3070,17 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 ```
 
 ### 13.16.5 Unit Test Framework
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" alt="Handwritten: 13.16.5 Unit Test Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" alt="Diagram: 13.16.5 Unit Test Framework" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" alt="Sticky Note: 13.16.5 Unit Test Framework" width="30%">
+</a>
+
 
 A compact testing framework using macros:
 
@@ -2039,6 +3150,17 @@ int main(void)
 ```
 
 ### 13.16.6 API Export/Import Macros
+
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" alt="Handwritten: 13.16.6 API Export/Import Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" alt="Diagram: 13.16.6 API Export/Import Macros" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" alt="Sticky Note: 13.16.6 API Export/Import Macros" width="30%">
+</a>
+
 
 ```c
 /* dll_export.h */

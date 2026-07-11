@@ -71,6 +71,17 @@ This chapter covers the algorithms that make modern large-scale systems possible
 
 ### 18.1 Online Algorithms
 
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" alt="Handwritten: 18.1 Online Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" alt="Diagram: 18.1 Online Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" alt="Sticky Note: 18.1 Online Algorithms" width="30%">
+</a>
+
+
 **Real-world analogy:** You are day-trading stocks. You must decide whether to buy or sell now, without knowing tomorrow's price. Every decision is irrevocable. If you sell too early, you miss gains; if you hold too long, you lose everything. This is the essence of online algorithms — make decisions without future knowledge and accept that you will never match the optimal hindsight strategy.
 
 **Definition 18.1.** An **online algorithm** processes input in sequence, making irrevocable decisions without knowledge of future inputs.
@@ -210,6 +221,17 @@ SkiRental(B, days_unknown):
 - **Very large B:** Ratio approaches 2 for deterministic, e/(e-1) for randomized.
 
 ### 18.2 Bloom Filters
+
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" alt="Handwritten: 18.2 Bloom Filters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" alt="Diagram: 18.2 Bloom Filters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" alt="Sticky Note: 18.2 Bloom Filters" width="30%">
+</a>
+
 
 **Real-world analogy:** You are at a festival with 10,000 attendees. You want to check if a person is a VIP. Instead of carrying a full list of 500 VIP names, you give each VIP a colored wristband — but there are only 100 colors, so some non-VIPs might accidentally get a matching wristband (false positive). However, anyone without the correct color combination is guaranteed not to be a VIP (no false negatives).
 
@@ -379,6 +401,17 @@ public class BloomFilter {
 
 ### 18.3 Skip Lists
 
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" alt="Handwritten: 18.3 Skip Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" alt="Diagram: 18.3 Skip Lists" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" alt="Sticky Note: 18.3 Skip Lists" width="30%">
+</a>
+
+
 **Real-world analogy:** Imagine a multi-level highway system. On the ground level, you drive through every small town. On the express lane above, you skip every other town. On the top-level express, you skip most towns entirely. When you need to reach a specific town, you take the highest expressway that does not overshoot, then drop to lower levels for fine-grained navigation. This is exactly how skip lists work — multiple levels of "express lanes" over a sorted linked list.
 
 **Problem:** Implement a sorted dictionary with O(log n) expected search, insert, and delete.
@@ -505,6 +538,17 @@ class SkipList:
 
 ### 18.4 Streaming Algorithms
 
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" alt="Handwritten: 18.4 Streaming Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" alt="Diagram: 18.4 Streaming Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" alt="Sticky Note: 18.4 Streaming Algorithms" width="30%">
+</a>
+
+
 Streaming algorithms process a sequence of elements using sublinear memory (typically \( O(\log^c n) \) or \( O(n^\alpha) \) for \( \alpha &lt; 1 \)).
 
 **Real-world analogy:** You stand at the entrance of a stadium counting attendees as they enter. You have only a small notepad (limited memory) and cannot remember every person who walks by. Yet you still need to answer: "How many distinct people have entered?" (distinct count), "How many times has person X entered?" (frequency estimation), or "Pick a random person from those who entered" (random sampling).
@@ -608,6 +652,17 @@ CountMinSketch:
 
 ### 18.5 External Memory Algorithms
 
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" alt="Handwritten: 18.5 External Memory Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" alt="Diagram: 18.5 External Memory Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" alt="Sticky Note: 18.5 External Memory Algorithms" width="30%">
+</a>
+
+
 **Real-world analogy:** You need to sort a shipping warehouse's worth of packages but your conveyor belt (RAM) can only hold 10 boxes at a time. You must repeatedly bring batches onto the belt, sort them, return them to the warehouse shelves, then merge sorted batches. The bottleneck is the time spent moving boxes between belt and shelves (I/O), not the sorting itself.
 
 **Problem:** Process data too large to fit in RAM, minimizing disk I/O.
@@ -643,6 +698,17 @@ where B = block size, M = RAM size, N = total data size, k = merge fan-in.
 - **Deletes:** B-tree deletion requires merging underfull nodes.
 
 ### 18.6 Parallel Algorithms
+
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" alt="Handwritten: 18.6 Parallel Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" alt="Diagram: 18.6 Parallel Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" alt="Sticky Note: 18.6 Parallel Algorithms" width="30%">
+</a>
+
 
 **Work-depth model:** For a parallel algorithm:
 - **Work** \( W(n) \): total number of operations.
@@ -685,6 +751,17 @@ T_P \le \frac{W}{P} + D.
 ---
 
 ### 18.7 Algorithmic Paradigms Summary
+
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" alt="Handwritten: 18.7 Algorithmic Paradigms Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" alt="Diagram: 18.7 Algorithmic Paradigms Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" alt="Sticky Note: 18.7 Algorithmic Paradigms Summary" width="30%">
+</a>
+
 
 This table connects all 18 chapters of the algorithms course:
 
@@ -751,6 +828,17 @@ This table connects all 18 chapters of the algorithms course:
 ---
 
 ### Online and Streaming Summary Table
+
+<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" alt="Handwritten: Online and Streaming Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" alt="Diagram: Online and Streaming Summary Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" alt="Sticky Note: Online and Streaming Summary Table" width="30%">
+</a>
+
 
 | Algorithm | Problem | Space | Guarantee |
 |-----------|---------|-------|-----------|

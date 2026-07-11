@@ -33,6 +33,17 @@ Originally developed by Intel in 1999, OpenCV has become the backbone of compute
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Image I/O Basics | OpenCV reads images in BGR format by default | Always convert BGR to RGB before displaying with matplotlib |
@@ -45,6 +56,17 @@ Originally developed by Intel in 1999, OpenCV has become the backbone of compute
 | YOLO Object Detection | DNN module runs YOLO models natively in OpenCV | Use NMSBoxes to filter overlapping detections |
 
 ### Chapter Roadmap
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR
@@ -64,9 +86,31 @@ flowchart LR
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Think of an image as a giant spreadsheet where every cell stores a number representing brightness (grayscale) or a triplet of numbers for color. A 4K TV screen has roughly 8.3 million such cells — each one a pixel. When you read an image into OpenCV, you are literally loading that spreadsheet into a NumPy array.
 
 ### What Is a Digital Image?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-handwritten.svg" alt="Handwritten: What Is a Digital Image?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-diagram.svg" alt="Diagram: What Is a Digital Image?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-a-digital-image-sticky.svg" alt="Sticky Note: What Is a Digital Image?" width="30%">
+</a>
+
 
 | Concept | Description |
 |---------|-------------|
@@ -78,6 +122,17 @@ Think of an image as a giant spreadsheet where every cell stores a number repres
 
 ### Algorithm Steps
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
+
 1. **Read file** — `cv2.imread()` decodes the image file into a NumPy array
 2. **Check validity** — verify `img is not None` (file may be missing or corrupt)
 3. **Inspect shape** — `img.shape` returns `(height, width, channels)`
@@ -85,6 +140,17 @@ Think of an image as a giant spreadsheet where every cell stores a number repres
 5. **Write file** — `cv2.imwrite()` encodes and saves to disk
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION read_and_show(path):
@@ -106,6 +172,17 @@ FUNCTION read_and_show(path):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Consider a 4×4 grayscale image where each cell = pixel intensity (0–255):
 
@@ -138,6 +215,17 @@ row3 │  90   105   120   130   │
 | `img[0,0]` | `[120, 110, 100]` — Blue=120, Green=110, Red=100 |
 
 ### C++ Implementation
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <opencv2/opencv.hpp>
@@ -175,6 +263,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -203,6 +302,17 @@ cv2.imwrite("output/blue.png", blank)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|------------------|------|
 | Read/Write | O(H × W × C) | O(H × W × C) | Every pixel must be loaded/saved; the array occupies H×W×C bytes |
@@ -213,6 +323,17 @@ Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Blazing fast C++ backend with SIMD optimizations | BGR default catches beginners off guard |
@@ -222,6 +343,17 @@ Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 | Mature, battle-tested library (25+ years) | Limited animated image support (GIF frames only) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Missing file:** `cv2.imread` returns `None` silently — always check with `if img is None`
 - **Corrupted file:** Returns `None` or partial decode — validate with shape check
@@ -239,9 +371,31 @@ Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Describing color is like describing location: you can use street addresses (RGB — how much Red, Green, Blue), coordinates on a map (HSV — Hue, Saturation, Value), or just "downtown" (grayscale — single intensity). Different navigation systems work better for different tasks. HSV, for instance, is like saying "find all red cars" — you just need the hue range, regardless of how bright or faded the color is.
 
 ### Color Space Types in OpenCV
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-handwritten.svg" alt="Handwritten: Color Space Types in OpenCV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-diagram.svg" alt="Diagram: Color Space Types in OpenCV" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/color-space-types-in-opencv-sticky.svg" alt="Sticky Note: Color Space Types in OpenCV" width="30%">
+</a>
+
 
 | Color Space | Channels | OpenCV Code | Best For |
 |-------------|----------|-------------|----------|
@@ -254,6 +408,17 @@ Describing color is like describing location: you can use street addresses (RGB 
 
 ### Algorithm Steps (HSV Segmentation)
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-handwritten.svg" alt="Handwritten: Algorithm Steps (HSV Segmentation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-diagram.svg" alt="Diagram: Algorithm Steps (HSV Segmentation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-hsv-segmentation-sticky.svg" alt="Sticky Note: Algorithm Steps (HSV Segmentation)" width="30%">
+</a>
+
+
 1. **Convert** image from BGR to HSV using `cv2.cvtColor`
 2. **Define** lower and upper bounds for the target color in HSV space
 3. **Create mask** using `cv2.inRange()` — binary image where white = in range
@@ -261,6 +426,17 @@ Describing color is like describing location: you can use street addresses (RGB 
 5. **(Optional)** Clean mask with morphological operations (erode/dilate)
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION segment_color(img, lower_hsv, upper_hsv):
@@ -276,6 +452,17 @@ result, mask ← segment_color(img, lower, upper)
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Consider a single pixel from a blue object:
 
@@ -308,6 +495,17 @@ V=200 ∈ [50,255]  ✓
 
 ### C++ Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
+
 ```cpp
 #include <opencv2/opencv.hpp>
 #include <iostream>
@@ -336,6 +534,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -363,6 +572,17 @@ cv2.imwrite("output/blue_objects.png", result)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Color conversion | O(H × W × C) | O(1) extra | Each pixel undergoes a matrix multiplication (3×3) |
@@ -373,6 +593,17 @@ cv2.imwrite("output/blue_objects.png", result)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | HSV separates color from brightness — robust to lighting changes | HSV ranges in OpenCV differ from standard (H=0–179 not 360) |
@@ -381,6 +612,17 @@ cv2.imwrite("output/blue_objects.png", result)
 | LAB space is perceptually uniform (Euclidean distance ≈ color difference) | Three-channel processing increases memory usage |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Low saturation:** Very desaturated colors (near-gray) have unstable H values — increase S threshold
 - **Low brightness:** Very dark pixels (V &lt; 30) have noisy H — preprocess with histogram equalization
@@ -398,9 +640,31 @@ cv2.imwrite("output/blue_objects.png", result)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine holding a printed photo in front of you. You can move it left/right (translation), make it bigger/smaller (scale), tilt it (rotation), or fold a corner (perspective warp). Geometric transformations mathematically model all these physical manipulations so you can correct, augment, or analyze image geometry.
 
 ### 3.3.1 Resize, Rotate, Crop
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-handwritten.svg" alt="Handwritten: 3.3.1 Resize, Rotate, Crop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-diagram.svg" alt="Diagram: 3.3.1 Resize, Rotate, Crop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-1-resize-rotate-crop-sticky.svg" alt="Sticky Note: 3.3.1 Resize, Rotate, Crop" width="30%">
+</a>
+
 
 ```python
 h, w = img.shape[:2]
@@ -421,6 +685,17 @@ cv2.imwrite("output/cropped.png", cropped)
 ```
 
 ### 3.3.2 Perspective Transform
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-handwritten.svg" alt="Handwritten: 3.3.2 Perspective Transform" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-diagram.svg" alt="Diagram: 3.3.2 Perspective Transform" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-3-2-perspective-transform-sticky.svg" alt="Sticky Note: 3.3.2 Perspective Transform" width="30%">
+</a>
+
 
 ```python
 # Four source points (corners of a document)
@@ -443,11 +718,44 @@ cv2.imwrite("output/warped.png", warped)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine you are drawing with a charcoal pencil on textured paper. If you rub your thumb across the drawing, the sharp lines blur and blend together — that is a blurring filter. Now imagine tracing just the outlines of the drawing with a fine pen — that is edge detection. Filters are mathematical operations that transform each pixel based on its neighbors.
 
 ### 3.4.1 Blurring (Smoothing)
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-handwritten.svg" alt="Handwritten: 3.4.1 Blurring (Smoothing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-diagram.svg" alt="Diagram: 3.4.1 Blurring (Smoothing)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-1-blurring-smoothing-sticky.svg" alt="Sticky Note: 3.4.1 Blurring (Smoothing)" width="30%">
+</a>
+
+
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Define kernel** — a small matrix (e.g., 5×5) of weights
 2. **Slide kernel** across every pixel (convolution)
@@ -455,6 +763,17 @@ Imagine you are drawing with a charcoal pencil on textured paper. If you rub you
 4. **Store result** at center position
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION gaussian_blur(img, kernel_size, sigma):
@@ -472,6 +791,17 @@ FUNCTION gaussian_blur(img, kernel_size, sigma):
 ```
 
 ### Step-by-Step Dry Run (3×3 Box Filter)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (3×3 Box Filter)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-diagram.svg" alt="Diagram: Step-by-Step Dry Run (3×3 Box Filter)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-3-3-box-filter-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (3×3 Box Filter)" width="30%">
+</a>
+
 
 Original 5×5 grayscale region (center pixel at row=2, col=2):
 
@@ -530,6 +860,17 @@ row4:  14   16   19   22   24
 
 ### C++ Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
+
 ```cpp
 #include <opencv2/opencv.hpp>
 
@@ -555,6 +896,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -574,6 +926,17 @@ bilateral = cv2.bilateralFilter(img, 9, 75, 75)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Filter | Time Complexity | Space | Why |
 |--------|----------------|-------|-----|
 | Gaussian Blur | O(H × W × K²) | O(H × W) | K×K kernel convolution; separable (O(H×W×K) in practice) |
@@ -584,6 +947,17 @@ For a 5×5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms 
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Filter | Advantages | Disadvantages |
 |--------|------------|---------------|
 | Gaussian | Fast, separable, smooth rolloff | Blurs edges along with noise |
@@ -592,6 +966,17 @@ For a 5×5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms 
 
 ### Edge Cases
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
+
 - **Salt-and-pepper noise:** Median filter is the best choice (impulse noise removal)
 - **Gaussian noise:** Gaussian blur is optimal (matches noise distribution)
 - **Large kernels:** Kernel size above 31×31 becomes very slow — use downsampling first
@@ -599,6 +984,17 @@ For a 5×5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms 
 - **Border handling:** Default = replicate edge pixels; can cause artifacts at image boundaries
 
 ### 3.4.2 Thresholding
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-handwritten.svg" alt="Handwritten: 3.4.2 Thresholding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-diagram.svg" alt="Diagram: 3.4.2 Thresholding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-2-thresholding-sticky.svg" alt="Sticky Note: 3.4.2 Thresholding" width="30%">
+</a>
+
 
 ```python
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -616,11 +1012,44 @@ cv2.imwrite("output/adaptive_thresh.png", adaptive)
 
 ### 3.4.3 Edge Detection (Canny)
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-handwritten.svg" alt="Handwritten: 3.4.3 Edge Detection (Canny)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-diagram.svg" alt="Diagram: 3.4.3 Edge Detection (Canny)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-4-3-edge-detection-canny-sticky.svg" alt="Sticky Note: 3.4.3 Edge Detection (Canny)" width="30%">
+</a>
+
+
 ### Real-World Analogy
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
 
 Imagine tracing the outline of a leaf with a pencil — you capture only the boundary where the leaf meets the background, ignoring the internal texture. Canny edge detection does exactly this: it finds pixels where image brightness changes sharply, producing thin, clean outlines.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Smooth** with Gaussian filter to reduce noise
 2. **Compute gradient** magnitude and direction using Sobel operators
@@ -629,6 +1058,17 @@ Imagine tracing the outline of a leaf with a pencil — you capture only the bou
 5. **Hysteresis** — keep weak edges only if connected to strong edges
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION canny_edge(img, low_thresh, high_thresh):
@@ -661,6 +1101,17 @@ FUNCTION canny_edge(img, low_thresh, high_thresh):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Consider a 1D horizontal edge in a 5×5 patch (transition from dark to bright):
 
@@ -707,6 +1158,17 @@ Magnitude at edge pixels (col2→col3 boundary) = **190** (strong edge).
 
 ### C++ Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
+
 ```cpp
 #include <opencv2/opencv.hpp>
 
@@ -724,6 +1186,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -738,6 +1211,17 @@ cv2.imwrite("output/edges.png", edges)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Stage | Time | Why |
 |-------|------|-----|
 | Gaussian smoothing | O(H × W × K²) | Convolution with K×K kernel |
@@ -749,6 +1233,17 @@ cv2.imwrite("output/edges.png", edges)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Produces thin, clean 1-pixel edges | Threshold-sensitive — needs tuning per dataset |
@@ -757,6 +1252,17 @@ cv2.imwrite("output/edges.png", edges)
 | Well-understood, widely benchmarked | Single-scale — misses fine + coarse edges simultaneously |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Noisy images:** Increase Gaussian sigma (e.g., 3–5) to suppress noise before Canny
 - **Low contrast:** Decrease thresholds (e.g., 30, 90) or use histogram equalization first
@@ -774,9 +1280,31 @@ cv2.imwrite("output/edges.png", edges)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 Imagine you and a friend each have a photo of the same landmark taken from different angles. To prove they are the same place, you find distinctive landmarks — the clock tower, the fountain, the large oak tree — and match them between the photos. SIFT keypoints are those distinctive landmarks in image space: corners, blobs, and texture-rich patches that are easy to recognize from any angle or scale.
 
 ### 3.5.1 Harris Corner Detection
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-handwritten.svg" alt="Handwritten: 3.5.1 Harris Corner Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-diagram.svg" alt="Diagram: 3.5.1 Harris Corner Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-1-harris-corner-detection-sticky.svg" alt="Sticky Note: 3.5.1 Harris Corner Detection" width="30%">
+</a>
+
 
 ```python
 gray = np.float32(gray)
@@ -790,7 +1318,29 @@ cv2.imwrite("output/corners.png", img_corners)
 
 ### 3.5.2 SIFT (Scale-Invariant Feature Transform)
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-handwritten.svg" alt="Handwritten: 3.5.2 SIFT (Scale-Invariant Feature Transform)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-diagram.svg" alt="Diagram: 3.5.2 SIFT (Scale-Invariant Feature Transform)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-5-2-sift-scale-invariant-feature-transform-sticky.svg" alt="Sticky Note: 3.5.2 SIFT (Scale-Invariant Feature Transform)" width="30%">
+</a>
+
+
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Scale-space extrema detection** — find keypoint candidates across scales (Difference of Gaussians)
 2. **Keypoint localization** — refine positions, reject low-contrast and edge points
@@ -798,6 +1348,17 @@ cv2.imwrite("output/corners.png", img_corners)
 4. **Descriptor computation** — build 128-dimensional vector from gradient histograms in 16×16 neighborhood
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION detect_and_match_sift(img1, img2):
@@ -820,6 +1381,17 @@ FUNCTION detect_and_match_sift(img1, img2):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 **Keypoint detection on a 16×16 image patch:**
 
@@ -856,6 +1428,17 @@ Lowe's ratio:  0.41 / 0.44 = 0.93  >  0.7  →  REJECTED (ambiguous)
 **Final result:** 18 good matches out of 31 → sufficient for homography estimation.
 
 ### C++ Implementation
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <opencv2/opencv.hpp>
@@ -900,6 +1483,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -939,6 +1533,17 @@ cv2.imwrite("output/matches.png", matched_img)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Stage | Time Complexity | Why |
 |-------|----------------|-----|
 | Scale-space pyramid | O(H × W × log(min(H,W))) | Multiple octaves, each half resolution |
@@ -950,6 +1555,17 @@ cv2.imwrite("output/matches.png", matched_img)
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |------------|---------------|
 | Scale-invariant — matches objects at different sizes | Slower than ORB/BRIEF (~10×) |
@@ -958,6 +1574,17 @@ cv2.imwrite("output/matches.png", matched_img)
 | Distinctive descriptors — low false-positive rate | Texture-less regions yield few keypoints |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Low-texture images:** Blank walls, sky, smooth surfaces → few or no keypoints detected — use template matching instead
 - **Repetitive patterns:** Brick walls, grids → high false match rate — tighten Lowe's ratio to 0.6
@@ -975,11 +1602,44 @@ cv2.imwrite("output/matches.png", matched_img)
 
 ### Real-World Analogy
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+</a>
+
+
 A security guard scanning a crowd looks for specific patterns: two eyes, a nose, a mouth arranged in a particular spatial configuration. Haar cascade face detection works the same way — it slides a window across the image and checks whether each region matches the learned "face pattern" using simple rectangular features computed in milliseconds.
 
 ### 3.6.1 Haar Cascade Face Detection
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-handwritten.svg" alt="Handwritten: 3.6.1 Haar Cascade Face Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-diagram.svg" alt="Diagram: 3.6.1 Haar Cascade Face Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-1-haar-cascade-face-detection-sticky.svg" alt="Sticky Note: 3.6.1 Haar Cascade Face Detection" width="30%">
+</a>
+
+
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. **Convert** image to grayscale (Haar features work on intensity)
 2. **Load** pre-trained cascade XML classifier
@@ -989,6 +1649,17 @@ A security guard scanning a crowd looks for specific patterns: two eyes, a nose,
 6. **Group** overlapping detections and return bounding boxes
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 FUNCTION detect_faces(img):
@@ -1010,6 +1681,17 @@ FUNCTION detect_faces(img):
 
 ### Step-by-Step Dry Run
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
+
 **Setup:** Image = 640×480 grayscale, min face size = 30×30, scaleFactor = 1.1
 
 | Stage | Window Size | Scale | Positions Scanned | Faces Found |
@@ -1029,6 +1711,17 @@ FUNCTION detect_faces(img):
 **Output:** 1 face detected at (x=210, y=150, w=180, h=180).
 
 ### C++ Implementation
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+</a>
+
 
 ```cpp
 #include <opencv2/opencv.hpp>
@@ -1062,6 +1755,17 @@ int main() {
 
 ### Python Implementation
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+</a>
+
+
 ```python
 import cv2
 import numpy as np
@@ -1094,6 +1798,17 @@ cv2.imwrite("output/faces.png", img_faces)
 
 ### 3.6.2 Face Detection with Deep Learning (DNN)
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-handwritten.svg" alt="Handwritten: 3.6.2 Face Detection with Deep Learning (DNN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-diagram.svg" alt="Diagram: 3.6.2 Face Detection with Deep Learning (DNN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-6-2-face-detection-with-deep-learning-dnn-sticky.svg" alt="Sticky Note: 3.6.2 Face Detection with Deep Learning (DNN)" width="30%">
+</a>
+
+
 ```python
 # OpenCV DNN with Caffe model
 net = cv2.dnn.readNetFromCaffe(
@@ -1119,6 +1834,17 @@ cv2.imwrite("output/faces_dnn.png", img_dnn)
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Method | Time | Memory | Why |
 |--------|------|--------|-----|
 | Haar Cascade | O(H × W × S) | Low (XML model ~1 MB) | S = scale levels; simple feature computation |
@@ -1127,6 +1853,17 @@ cv2.imwrite("output/faces_dnn.png", img_dnn)
 Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob at 3–50 FPS depending on hardware.
 
 ### Advantages & Disadvantages
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
 
 | Haar Cascades | DNN Face Detection |
 |---------------|-------------------|
@@ -1137,6 +1874,17 @@ Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob
 | **Con:** False positives on face-like patterns | **Con:** Larger model (~10 MB) |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Profile/side faces:** Haar cascade trained mainly on frontal faces — use DNN or multi-view cascades
 - **Faces with glasses/masks:** Reduces feature visibility — DNN handles better than Haar
@@ -1154,6 +1902,17 @@ Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob
 ## 3.7 Video Processing
 
 ### 3.7.1 Reading Video Frames
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-handwritten.svg" alt="Handwritten: 3.7.1 Reading Video Frames" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-diagram.svg" alt="Diagram: 3.7.1 Reading Video Frames" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-1-reading-video-frames-sticky.svg" alt="Sticky Note: 3.7.1 Reading Video Frames" width="30%">
+</a>
+
 
 ```python
 cap = cv2.VideoCapture("input/video.mp4")
@@ -1176,6 +1935,17 @@ print(f"Total frames: {frame_count}")
 ```
 
 ### 3.7.2 Real-Time Face Detection (Webcam)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-handwritten.svg" alt="Handwritten: 3.7.2 Real-Time Face Detection (Webcam)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-diagram.svg" alt="Diagram: 3.7.2 Real-Time Face Detection (Webcam)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-2-real-time-face-detection-webcam-sticky.svg" alt="Sticky Note: 3.7.2 Real-Time Face Detection (Webcam)" width="30%">
+</a>
+
 
 ```python
 cap = cv2.VideoCapture(0)  # 0 = default webcam
@@ -1200,6 +1970,17 @@ cv2.destroyAllWindows()
 ```
 
 ### 3.7.3 Writing Video Output
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-handwritten.svg" alt="Handwritten: 3.7.3 Writing Video Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-diagram.svg" alt="Diagram: 3.7.3 Writing Video Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/3-7-3-writing-video-output-sticky.svg" alt="Sticky Note: 3.7.3 Writing Video Output" width="30%">
+</a>
+
 
 ```python
 cap = cv2.VideoCapture("input/video.mp4")
@@ -1363,12 +2144,45 @@ cv2.imwrite("output/yolo_detection.png", img)
 Common image processing interview problems and discussion topics:
 
 ### Q1: Why does OpenCV use BGR instead of RGB?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-handwritten.svg" alt="Handwritten: Why does OpenCV use BGR instead of RGB?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-diagram.svg" alt="Diagram: Why does OpenCV use BGR instead of RGB?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/why-does-opencv-use-bgr-instead-of-rgb-sticky.svg" alt="Sticky Note: Why does OpenCV use BGR instead of RGB?" width="30%">
+</a>
+
 BGR was chosen when Intel developed the library because early camera hardware and video codecs (like Windows BMP, which OpenCV was designed to work with) natively used BGR byte order. It is a historical convention that persists for backward compatibility — switching now would break 25+ years of existing code.
 
 ### Q2: How does Canny edge detection differ from Sobel?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-handwritten.svg" alt="Handwritten: How does Canny edge detection differ from Sobel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-diagram.svg" alt="Diagram: How does Canny edge detection differ from Sobel?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-does-canny-edge-detection-differ-from-sobel-sticky.svg" alt="Sticky Note: How does Canny edge detection differ from Sobel?" width="30%">
+</a>
+
 Sobel computes a gradient magnitude at every pixel — producing thick edges proportional to the transition width. Canny applies Sobel, then non-maximum suppression to thin edges to 1-pixel width, and hysteresis thresholding to connect broken edges. **Canny = Sobel + thinning + hysteresis.**
 
 ### Q3: Explain the trade-off between Haar cascades, HOG + SVM, and DNN-based face detection.
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-handwritten.svg" alt="Handwritten: Explain the trade-off between Haar cascades, HOG + SVM, and DNN-based face detection." width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-diagram.svg" alt="Diagram: Explain the trade-off between Haar cascades, HOG + SVM, and DNN-based face detection." width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/explain-the-trade-off-between-haar-cascades-hog-svm-and-dnn-based-face-detection-sticky.svg" alt="Sticky Note: Explain the trade-off between Haar cascades, HOG + SVM, and DNN-based face detection." width="30%">
+</a>
+
 
 | Method | Speed | Accuracy | Pose Handling | Model Size |
 |--------|-------|----------|---------------|------------|
@@ -1379,15 +2193,48 @@ Sobel computes a gradient magnitude at every pixel — producing thick edges pro
 **Interview tip:** Start with HOG+SVM for mobile/embedded (small model, good accuracy), Haar for CPU real-time, DNN for server-side accuracy-critical applications.
 
 ### Q4: What is non-maximum suppression and why is it needed?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-handwritten.svg" alt="Handwritten: What is non-maximum suppression and why is it needed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-diagram.svg" alt="Diagram: What is non-maximum suppression and why is it needed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-non-maximum-suppression-and-why-is-it-needed-sticky.svg" alt="Sticky Note: What is non-maximum suppression and why is it needed?" width="30%">
+</a>
+
 Object detectors often produce multiple overlapping bounding boxes for the same object. NMS greedily selects the box with highest confidence, then suppresses all other boxes with IoU (Intersection over Union) above a threshold (typically 0.4–0.5). This ensures one detection per object.
 
 ### Q5: How would you handle face detection in poor lighting?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-handwritten.svg" alt="Handwritten: How would you handle face detection in poor lighting?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-diagram.svg" alt="Diagram: How would you handle face detection in poor lighting?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/how-would-you-handle-face-detection-in-poor-lighting-sticky.svg" alt="Sticky Note: How would you handle face detection in poor lighting?" width="30%">
+</a>
+
 1. Apply histogram equalization (CLAHE) to normalize illumination
 2. Use gamma correction to brighten underexposed regions
 3. Switch from Haar to DNN-based detector (trained on augmented low-light data)
 4. If video, use temporal averaging across frames to stabilize detections
 
 ### Q6: What is IoU and how is it computed?
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-handwritten.svg" alt="Handwritten: What is IoU and how is it computed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-diagram.svg" alt="Diagram: What is IoU and how is it computed?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/what-is-iou-and-how-is-it-computed-sticky.svg" alt="Sticky Note: What is IoU and how is it computed?" width="30%">
+</a>
+
 IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding boxes. It is the standard metric for evaluating object detection accuracy and is used in NMS to filter overlapping detections.
 
 ---
@@ -1395,35 +2242,101 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 ## Applications in Real Systems
 
 ### Face Unlock (Smartphone Biometrics)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-handwritten.svg" alt="Handwritten: Face Unlock (Smartphone Biometrics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-diagram.svg" alt="Diagram: Face Unlock (Smartphone Biometrics)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/face-unlock-smartphone-biometrics-sticky.svg" alt="Sticky Note: Face Unlock (Smartphone Biometrics)" width="30%">
+</a>
+
 - **Pipeline:** Camera capture → face detection → landmark alignment → feature embedding → similarity match
 - **OpenCV role:** Haar/DNN detection stage, eye alignment via affine transform
 - **Challenges:** Spoofing (photo/video attacks), varying lighting, accessories (masks, glasses)
 - **Production:** Apple Face ID uses structured light (not 2D); Android uses HOG + CNN hybrid
 
 ### Optical Character Recognition (OCR)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-handwritten.svg" alt="Handwritten: Optical Character Recognition (OCR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-diagram.svg" alt="Diagram: Optical Character Recognition (OCR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/optical-character-recognition-ocr-sticky.svg" alt="Sticky Note: Optical Character Recognition (OCR)" width="30%">
+</a>
+
 - **Pipeline:** Image → preprocessing (grayscale, denoise, deskew) → text region detection → character recognition
 - **OpenCV role:** Adaptive thresholding, morphological ops, contour detection for text regions, perspective correction
 - **Production:** Tesseract (open-source OCR) uses OpenCV internally for preprocessing; Google Docs OCR uses custom CNN pipeline
 
 ### AR Filters (Snapchat, Instagram, TikTok)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-handwritten.svg" alt="Handwritten: AR Filters (Snapchat, Instagram, TikTok)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-diagram.svg" alt="Diagram: AR Filters (Snapchat, Instagram, TikTok)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/ar-filters-snapchat-instagram-tiktok-sticky.svg" alt="Sticky Note: AR Filters (Snapchat, Instagram, TikTok)" width="30%">
+</a>
+
 - **Pipeline:** Face detection → 68-point landmark detection → 3D mesh overlay → render virtual object
 - **OpenCV role:** Real-time face detection, landmark detection via LBF (Local Binary Features)
 - **Challenges:** Real-time 30+ FPS performance, occlusion handling, expression tracking
 - **Production:** Snapchat uses custom ML models; early filters were pure OpenCV + Dlib
 
 ### Medical Imaging (X-Ray, MRI, CT)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-handwritten.svg" alt="Handwritten: Medical Imaging (X-Ray, MRI, CT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-diagram.svg" alt="Diagram: Medical Imaging (X-Ray, MRI, CT)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/medical-imaging-x-ray-mri-ct-sticky.svg" alt="Sticky Note: Medical Imaging (X-Ray, MRI, CT)" width="30%">
+</a>
+
 - **Pipeline:** DICOM import → preprocessing → segmentation → measurement → diagnosis
 - **OpenCV role:** CLAHE for X-ray enhancement, watershed for tumor segmentation, edge detection for bone measurement
 - **Challenges:** Regulatory compliance (FDA), 16-bit depth images (high precision), 3D volume data
 - **Production:** 3D Slicer and ITK for 3D; OpenCV for 2D slice preprocessing in research pipelines
 
 ### Autonomous Vehicles (Lane Detection, Object Detection)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-handwritten.svg" alt="Handwritten: Autonomous Vehicles (Lane Detection, Object Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-diagram.svg" alt="Diagram: Autonomous Vehicles (Lane Detection, Object Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/autonomous-vehicles-lane-detection-object-detection-sticky.svg" alt="Sticky Note: Autonomous Vehicles (Lane Detection, Object Detection)" width="30%">
+</a>
+
 - **Pipeline:** Camera → perspective transform (bird's-eye view) → thresholding → lane line fitting → vehicle detection
 - **OpenCV role:** Canny + Hough transform for lane lines, YOLO via DNN for vehicle/pedestrian detection
 - **Challenges:** Real-time 30+ FPS, adverse weather, varying road conditions
 - **Production:** Waymo/Tesla use custom deep learning; OpenCV is used in ADAS prototyping and research
 
 ### Industrial Inspection (Defect Detection)
+
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-handwritten.svg" alt="Handwritten: Industrial Inspection (Defect Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-diagram.svg" alt="Diagram: Industrial Inspection (Defect Detection)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/applied-ai/03-opencv/industrial-inspection-defect-detection-sticky.svg" alt="Sticky Note: Industrial Inspection (Defect Detection)" width="30%">
+</a>
+
 - **Pipeline:** Camera capture → alignment → difference from reference → defect classification
 - **OpenCV role:** Template matching, image subtraction, blob analysis for defect sizing
 - **Challenges:** Precision requirements (sub-pixel alignment), varying lighting, high throughput

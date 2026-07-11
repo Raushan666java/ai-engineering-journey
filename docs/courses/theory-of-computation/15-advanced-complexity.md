@@ -44,6 +44,17 @@ flowchart LR
 
 ### 14.1 The BQP Complexity Class
 
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" alt="Handwritten: 14.1 The BQP Complexity Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" alt="Diagram: 14.1 The BQP Complexity Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" alt="Sticky Note: 14.1 The BQP Complexity Class" width="30%">
+</a>
+
+
 **BQP** (Bounded-error Quantum Polynomial Time) is the class of problems solvable by a quantum computer in polynomial time with error probability = 1/3.
 
 **Relationships:**
@@ -57,6 +68,17 @@ flowchart LR
 
 ### 14.3 Log-Space Reductions and Completeness
 
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" alt="Handwritten: 14.3 Log-Space Reductions and Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" alt="Diagram: 14.3 Log-Space Reductions and Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" alt="Sticky Note: 14.3 Log-Space Reductions and Completeness" width="30%">
+</a>
+
+
 A **log-space reduction** (A =_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).
 
 **Properties:**
@@ -67,6 +89,17 @@ A **log-space reduction** (A =_L B) is a reduction computable in O(log n) space 
 **PATH** is NL-complete under log-space reductions.
 
 ### 14.4 The Polynomial Hierarchy (PH)
+
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" alt="Handwritten: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" alt="Diagram: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" alt="Sticky Note: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+</a>
+
 
 The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle machines** with alternating quantifiers.
 
@@ -98,6 +131,17 @@ The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle
 
 ### 14.5 co-NP
 
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" alt="Handwritten: 14.5 co-NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" alt="Diagram: 14.5 co-NP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" alt="Sticky Note: 14.5 co-NP" width="30%">
+</a>
+
+
 **co-NP** = { L | LÌ… âˆˆ NP }.
 
 A problem is in co-NP if "no" instances have short proofs (certificates for rejection).
@@ -112,6 +156,17 @@ A problem is in co-NP if "no" instances have short proofs (certificates for reje
 - For the complement of an NP-complete problem, we don't expect short proofs.
 
 ### 14.6 Circuit Complexity
+
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" alt="Handwritten: 14.6 Circuit Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" alt="Diagram: 14.6 Circuit Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" alt="Sticky Note: 14.6 Circuit Complexity" width="30%">
+</a>
+
 
 A **Boolean circuit** is a directed acyclic graph (DAG) where:
 - Leaves = input variables (xâ‚, â€¦, xâ‚™).
@@ -139,6 +194,17 @@ Proving that certain functions require large circuits is notoriously difficult.
 
 ### 14.7 Interactive Proofs (IP)
 
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" alt="Handwritten: 14.7 Interactive Proofs (IP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" alt="Diagram: 14.7 Interactive Proofs (IP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" alt="Sticky Note: 14.7 Interactive Proofs (IP)" width="30%">
+</a>
+
+
 An **interactive proof system** consists of a prover (P, unbounded computational power) and a verifier (V, probabilistic polynomial time). V exchanges messages with P and decides whether to accept the input.
 
 **Class IP:** Languages with interactive proof systems.
@@ -152,6 +218,17 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 
 ### 14.8 Probabilistic Complexity (BPP)
 
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" alt="Handwritten: 14.8 Probabilistic Complexity (BPP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" alt="Diagram: 14.8 Probabilistic Complexity (BPP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" alt="Sticky Note: 14.8 Probabilistic Complexity (BPP)" width="30%">
+</a>
+
+
 **BPP** (Bounded-error Probabilistic Polynomial time): Languages decidable by a probabilistic TM with error probability â‰¤ 1/3 on every input.
 
 **Important facts:**
@@ -161,6 +238,17 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 - **Sipser-GÃ¡cs theorem:** BPP âŠ† Î£â‚‚ âˆ© Î â‚‚ (BPP is in the second level of the polynomial hierarchy).
 
 ### 14.9 Probabilistically Checkable Proofs (PCP)
+
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" alt="Handwritten: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" alt="Diagram: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" alt="Sticky Note: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+</a>
+
 
 **PCP theorem** (Arora, Lund, Motwani, Sudan, Szegedy, 1992):
 
@@ -174,6 +262,17 @@ NP = PCP(log n, 1)
 - Used to prove hardness of approximation for MAX-3SAT, MAX-CUT, etc.
 
 ### 14.10 The Landscape of Complexity Classes
+
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" alt="Handwritten: 14.10 The Landscape of Complexity Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" alt="Diagram: 14.10 The Landscape of Complexity Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" alt="Sticky Note: 14.10 The Landscape of Complexity Classes" width="30%">
+</a>
+
 
 ```
 EXPSPACE
@@ -198,6 +297,17 @@ L
 Note: Many containments are not known to be strict.
 
 ### 14.11 MA and AM: Merlin-Arthur Games
+
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" alt="Handwritten: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" alt="Diagram: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+</a>
+<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" alt="Sticky Note: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+</a>
+
 
 **MA** (Merlin-Arthur): Languages with a proof system where Merlin (unbounded) sends a single message, and Arthur (BPP verifier) decides.
 

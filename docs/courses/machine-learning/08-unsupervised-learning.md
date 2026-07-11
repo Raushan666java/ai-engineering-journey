@@ -65,9 +65,31 @@ flowchart LR
 ## Theory
 
 ### What is Unsupervised Learning?
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" alt="Handwritten: What is Unsupervised Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" alt="Diagram: What is Unsupervised Learning?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" alt="Sticky Note: What is Unsupervised Learning?" width="30%">
+</a>
+
 Unsupervised Learning involves training models on data that does not have explicit labels or targets. The goal is to discover underlying structures, patterns, or groupings within the data. Unlike supervised learning, there is no "correct" answer to compare against; instead, we look for data-driven insights. Common use cases include customer segmentation, anomaly detection, dimensionality reduction, and exploratory data analysis.
 
 ### K-means Clustering
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" alt="Handwritten: K-means Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" alt="Diagram: K-means Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" alt="Sticky Note: K-means Clustering" width="30%">
+</a>
+
 K-means is a popular centroid-based clustering algorithm. It partitions $n$ observations into $K$ clusters, where each observation belongs to the cluster with the nearest mean (centroid).
 
 **The Algorithm**:
@@ -79,6 +101,17 @@ K-means is a popular centroid-based clustering algorithm. It partitions $n$ obse
 **Choosing K**: The "Elbow Method" is often used, where we plot the Within-Cluster Sum of Squares (WCSS) against different values of $K$ and look for the "elbow" point where adding more clusters provides diminishing returns.
 
 ### K-means++ Initialization
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" alt="Handwritten: K-means++ Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" alt="Diagram: K-means++ Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" alt="Sticky Note: K-means++ Initialization" width="30%">
+</a>
+
 
 Standard K-means initializes centroids randomly, which can lead to poor convergence or suboptimal local minima. K-means++ provides a smarter initialization that spreads out the initial centroids:
 
@@ -101,6 +134,17 @@ flowchart TD
 ```
 
 ### DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" alt="Handwritten: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" alt="Diagram: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" alt="Sticky Note: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+</a>
+
 
 DBSCAN groups points that are closely packed together, marking points in low-density regions as noise. It does **not** require specifying K in advance and can discover arbitrarily shaped clusters.
 
@@ -145,6 +189,17 @@ flowchart LR
 
 ### Gaussian Mixture Models (GMM)
 
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" alt="Handwritten: Gaussian Mixture Models (GMM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" alt="Diagram: Gaussian Mixture Models (GMM)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" alt="Sticky Note: Gaussian Mixture Models (GMM)" width="30%">
+</a>
+
+
 GMM assumes the data is generated from a mixture of $K$ Gaussian distributions, each with its own mean $\mu_k$ and covariance $\Sigma_k$. Unlike K-means, GMM performs **soft clustering** ? each point has a probability of belonging to each cluster.
 
 **The EM Algorithm**:
@@ -167,6 +222,17 @@ GMM assumes the data is generated from a mixture of $K$ Gaussian distributions, 
 | Outlier Handling | Forces assignment to nearest cluster | Can have low probability for all clusters |
 
 ### Cluster Validation
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" alt="Handwritten: Cluster Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" alt="Diagram: Cluster Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" alt="Sticky Note: Cluster Validation" width="30%">
+</a>
+
 
 When ground truth labels are unavailable (the usual case in unsupervised learning), we rely on **internal validation metrics**.
 
@@ -213,6 +279,17 @@ flowchart LR
 
 ### Feature Scaling for Clustering
 
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" alt="Handwritten: Feature Scaling for Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" alt="Diagram: Feature Scaling for Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" alt="Sticky Note: Feature Scaling for Clustering" width="30%">
+</a>
+
+
 Distance-based clustering algorithms (K-means, DBSCAN, hierarchical) are highly sensitive to the scale of features. If one feature has a range 100x larger than another, it will dominate the distance calculation.
 
 **Example effect**:
@@ -233,6 +310,17 @@ Distance-based clustering algorithms (K-means, DBSCAN, hierarchical) are highly 
 - Correlation distance ? unaffected (uses centered data)
 
 ### Curse of Dimensionality for Clustering
+
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" alt="Handwritten: Curse of Dimensionality for Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" alt="Diagram: Curse of Dimensionality for Clustering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" alt="Sticky Note: Curse of Dimensionality for Clustering" width="30%">
+</a>
+
 
 As dimensionality increases, distance metrics become less meaningful ? a phenomenon known as the **curse of dimensionality**. This severely impacts clustering algorithms.
 

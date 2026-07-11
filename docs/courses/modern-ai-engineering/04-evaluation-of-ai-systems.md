@@ -57,11 +57,33 @@ Automatic metrics provide a reproducible, low-cost signal for model evaluation. 
 
 ### 4.2.1 Classification Metrics
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" alt="Handwritten: 4.2.1 Classification Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" alt="Diagram: 4.2.1 Classification Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" alt="Sticky Note: 4.2.1 Classification Metrics" width="30%">
+</a>
+
+
 **Accuracy** measures the proportion of correct predictions. It is simple and intuitive but fails for imbalanced classes. **Precision** (true positives / predicted positives) measures how many selected items are relevant. **Recall** (true positives / actual positives) measures how many relevant items are selected. **F1 score** is the harmonic mean of precision and recall, providing a single balanced measure.
 
 For generative tasks, these metrics apply when the output is categorical — for example, classifying whether a generated response contains harmful content (yes/no) or whether it correctly follows an instruction (pass/fail).
 
 ### 4.2.2 Text Generation Metrics
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" alt="Handwritten: 4.2.2 Text Generation Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" alt="Diagram: 4.2.2 Text Generation Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" alt="Sticky Note: 4.2.2 Text Generation Metrics" width="30%">
+</a>
+
 
 **BLEU** (Bilingual Evaluation Understudy) measures n-gram precision between generated and reference texts, with a brevity penalty to discourage short outputs. It was designed for machine translation and correlates poorly with human judgment for creative text.
 
@@ -74,6 +96,17 @@ For generative tasks, these metrics apply when the output is categorical — for
 **chrF** (character n-gram F-score) operates at the character level, making it robust for morphologically rich languages. It is language-agnostic and captures sub-word-level quality.
 
 ### 4.2.3 Metric Comparison Table
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" alt="Handwritten: 4.2.3 Metric Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" alt="Diagram: 4.2.3 Metric Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" alt="Sticky Note: 4.2.3 Metric Comparison Table" width="30%">
+</a>
+
 
 | Metric | Best For | Strengths | Weaknesses |
 |--------|----------|-----------|------------|
@@ -93,6 +126,17 @@ Using a strong language model to evaluate the outputs of another model has becom
 
 ### 4.3.1 G-Eval
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" alt="Handwritten: 4.3.1 G-Eval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" alt="Diagram: 4.3.1 G-Eval" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" alt="Sticky Note: 4.3.1 G-Eval" width="30%">
+</a>
+
+
 G-Eval uses chain-of-thought reasoning and a rubric to score model outputs. The evaluator LLM follows a step-by-step process:
 
 1. **Understand the rubric** — The judge reads the evaluation criteria (e.g., "coherence: logical flow and structure").
@@ -102,6 +146,17 @@ G-Eval uses chain-of-thought reasoning and a rubric to score model outputs. The 
 G-Eval achieves higher correlation with human judgment than automatic metrics, especially for coherence, consistency, and relevance.
 
 ### 4.3.2 Prometheus
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" alt="Handwritten: 4.3.2 Prometheus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" alt="Diagram: 4.3.2 Prometheus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" alt="Sticky Note: 4.3.2 Prometheus" width="30%">
+</a>
+
 
 Prometheus is a specialized evaluation model fine-tuned to act as a judge. It uses a "reference-based" approach where the evaluator compares the generated output against a reference answer. Prometheus can also evaluate without a reference when none is available.
 
@@ -113,9 +168,31 @@ Key features:
 
 ### 4.3.3 MT-Bench
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" alt="Handwritten: 4.3.3 MT-Bench" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" alt="Diagram: 4.3.3 MT-Bench" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" alt="Sticky Note: 4.3.3 MT-Bench" width="30%">
+</a>
+
+
 MT-Bench is a multi-turn benchmark with 80 questions across 8 categories (writing, roleplay, reasoning, math, coding, extraction, STEM, humanities). Each conversation is scored by an LLM judge on a 1-10 scale. MT-Bench has become a standard for comparing chat models.
 
 ### 4.3.4 Rubric-Based Evaluation
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" alt="Handwritten: 4.3.4 Rubric-Based Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" alt="Diagram: 4.3.4 Rubric-Based Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" alt="Sticky Note: 4.3.4 Rubric-Based Evaluation" width="30%">
+</a>
+
 
 Rather than asking "rate this response from 1-10", rubric-based evaluation decomposes quality into specific, measurable criteria:
 
@@ -128,6 +205,17 @@ Rather than asking "rate this response from 1-10", rubric-based evaluation decom
 Each dimension is scored independently, allowing fine-grained analysis of model strengths and weaknesses.
 
 ### 4.3.5 Calibration and Bias Mitigation
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" alt="Handwritten: 4.3.5 Calibration and Bias Mitigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" alt="Diagram: 4.3.5 Calibration and Bias Mitigation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" alt="Sticky Note: 4.3.5 Calibration and Bias Mitigation" width="30%">
+</a>
+
 
 LLM judges exhibit several biases that must be mitigated:
 
@@ -178,6 +266,17 @@ Human evaluation remains the gold standard for assessing generative AI quality, 
 
 ### 4.4.1 Annotation Guidelines
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" alt="Handwritten: 4.4.1 Annotation Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" alt="Diagram: 4.4.1 Annotation Guidelines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" alt="Sticky Note: 4.4.1 Annotation Guidelines" width="30%">
+</a>
+
+
 Effective human evaluation requires detailed annotation guidelines that define:
 
 - **Task description:** What evaluators should assess and why.
@@ -189,6 +288,17 @@ A well-constructed guideline includes annotated examples at each score level to 
 
 ### 4.4.2 Likert Scales
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" alt="Handwritten: 4.4.2 Likert Scales" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" alt="Diagram: 4.4.2 Likert Scales" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" alt="Sticky Note: 4.4.2 Likert Scales" width="30%">
+</a>
+
+
 Likert scales (e.g., 1-5 or 1-7) are the most common rating format. The scale should be balanced with an odd number of options to allow a neutral midpoint. Each point must have a clear verbal anchor:
 
 - 1: Completely unsatisfactory
@@ -199,11 +309,33 @@ Likert scales (e.g., 1-5 or 1-7) are the most common rating format. The scale sh
 
 ### 4.4.3 Pairwise Comparison
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" alt="Handwritten: 4.4.3 Pairwise Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" alt="Diagram: 4.4.3 Pairwise Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" alt="Sticky Note: 4.4.3 Pairwise Comparison" width="30%">
+</a>
+
+
 Pairwise comparison (A vs. B) often produces more reliable results than absolute scoring. Raters see two responses side by side and choose which is better (or declare a tie). This is simpler than assigning absolute scores and produces ordinal rankings.
 
 Pairwise comparisons can be aggregated using the Bradley-Terry model or Elo scoring to produce a global ranking of model outputs.
 
 ### 4.4.4 Inter-Annotator Agreement
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" alt="Handwritten: 4.4.4 Inter-Annotator Agreement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" alt="Diagram: 4.4.4 Inter-Annotator Agreement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" alt="Sticky Note: 4.4.4 Inter-Annotator Agreement" width="30%">
+</a>
+
 
 Inter-annotator agreement measures how consistently different raters evaluate the same outputs. Common metrics include:
 
@@ -214,6 +346,17 @@ Inter-annotator agreement measures how consistently different raters evaluate th
 A Kappa above 0.6 is considered substantial agreement. Low agreement indicates that guidelines need refinement or the evaluation criteria are too subjective.
 
 ### 4.4.5 Crowdsourcing
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" alt="Handwritten: 4.4.5 Crowdsourcing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" alt="Diagram: 4.4.5 Crowdsourcing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" alt="Sticky Note: 4.4.5 Crowdsourcing" width="30%">
+</a>
+
 
 Platforms like Amazon Mechanical Turk, Surge AI, and Scale AI enable large-scale human evaluation. Best practices include:
 - Using qualification tests to select competent raters
@@ -229,6 +372,17 @@ Different AI tasks require different evaluation approaches. A single metric rare
 
 ### 4.5.1 Question Answering
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" alt="Handwritten: 4.5.1 Question Answering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" alt="Diagram: 4.5.1 Question Answering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" alt="Sticky Note: 4.5.1 Question Answering" width="30%">
+</a>
+
+
 **Exact Match (EM):** The proportion of generated answers that exactly match the reference answer. EM is strict — a single character difference counts as incorrect.
 
 **F1 Score:** Token-level overlap between the generated and reference answers, averaged across all examples. F1 is more forgiving than EM and captures partial correctness.
@@ -236,6 +390,17 @@ Different AI tasks require different evaluation approaches. A single metric rare
 For open-domain QA, evaluation must also consider **answer coverage** (does the response address all implicit questions?) and **attribution** (are claims supported by the provided context?).
 
 ### 4.5.2 Summarization
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" alt="Handwritten: 4.5.2 Summarization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" alt="Diagram: 4.5.2 Summarization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" alt="Sticky Note: 4.5.2 Summarization" width="30%">
+</a>
+
 
 **ROUGE** remains the standard automatic metric, but it has significant limitations:
 - It cannot detect factual hallucinations.
@@ -246,6 +411,17 @@ For open-domain QA, evaluation must also consider **answer coverage** (does the 
 
 ### 4.5.3 Code Generation
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" alt="Handwritten: 4.5.3 Code Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" alt="Diagram: 4.5.3 Code Generation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" alt="Sticky Note: 4.5.3 Code Generation" width="30%">
+</a>
+
+
 **pass@k:** The probability that at least one of k generated samples passes unit tests. pass@1 is standard for correctness; pass@k (with k > 1) measures the model's ability to generate diverse correct solutions.
 
 **Functional correctness:** Whether generated code compiles, runs without errors, and produces correct outputs for held-out test cases.
@@ -253,6 +429,17 @@ For open-domain QA, evaluation must also consider **answer coverage** (does the 
 Code evaluation also considers **style and efficiency**, though these are harder to automate. Static analysis tools can enforce style guidelines, and algorithmic complexity can be verified against known optimal solutions.
 
 ### 4.5.4 Machine Translation
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" alt="Handwritten: 4.5.4 Machine Translation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" alt="Diagram: 4.5.4 Machine Translation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" alt="Sticky Note: 4.5.4 Machine Translation" width="30%">
+</a>
+
 
 **BLEU** is the most reported metric, despite its flaws. **COMET** (a neural metric using cross-lingual embeddings) correlates significantly better with human judgment. COMET-WMT (the version trained on WMT data) is the current state-of-the-art for translation evaluation.
 
@@ -275,6 +462,17 @@ A high-quality evaluation dataset is the foundation of trustworthy evaluation. P
 
 ### 4.6.1 Golden Dataset Creation
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" alt="Handwritten: 4.6.1 Golden Dataset Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" alt="Diagram: 4.6.1 Golden Dataset Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" alt="Sticky Note: 4.6.1 Golden Dataset Creation" width="30%">
+</a>
+
+
 A "golden" evaluation dataset is a curated collection of input-output pairs that represent the full spectrum of real-world usage. Creation steps:
 
 1. **Collect real user queries** from logs, beta testers, or domain experts.
@@ -285,6 +483,17 @@ A "golden" evaluation dataset is a curated collection of input-output pairs that
 
 ### 4.6.2 Stratification
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" alt="Handwritten: 4.6.2 Stratification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" alt="Diagram: 4.6.2 Stratification" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" alt="Sticky Note: 4.6.2 Stratification" width="30%">
+</a>
+
+
 Stratified sampling ensures the evaluation dataset reflects the distribution of real-world queries:
 
 - **Topic stratification:** Equal representation of each domain category.
@@ -294,6 +503,17 @@ Stratified sampling ensures the evaluation dataset reflects the distribution of 
 
 ### 4.6.3 Coverage
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" alt="Handwritten: 4.6.3 Coverage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" alt="Diagram: 4.6.3 Coverage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" alt="Sticky Note: 4.6.3 Coverage" width="30%">
+</a>
+
+
 Coverage measures how well the dataset represents the space of possible inputs. Coverage gaps can lead to overestimation of model quality. Techniques for improving coverage:
 
 - **Taxonomy-based sampling:** Create a hierarchical taxonomy of query types and sample from each leaf node.
@@ -301,6 +521,17 @@ Coverage measures how well the dataset represents the space of possible inputs. 
 - **Distributional coverage:** Match the statistical properties of the production distribution.
 
 ### 4.6.4 Difficulty Tiers
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" alt="Handwritten: 4.6.4 Difficulty Tiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" alt="Diagram: 4.6.4 Difficulty Tiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" alt="Sticky Note: 4.6.4 Difficulty Tiers" width="30%">
+</a>
+
 
 Organizing evaluation examples by difficulty enables more nuanced analysis:
 
@@ -318,6 +549,17 @@ Evaluation is not a one-time activity. Models degrade over time due to data drif
 
 ### 4.7.1 Evaluation in Production
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" alt="Handwritten: 4.7.1 Evaluation in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" alt="Diagram: 4.7.1 Evaluation in Production" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" alt="Sticky Note: 4.7.1 Evaluation in Production" width="30%">
+</a>
+
+
 Production evaluation pipelines score every model response against automatic metrics and sample a subset for human or LLM-as-judge evaluation. Key components:
 
 - **Real-time metric computation:** Track response latency, length, detected refusals, and safety scores.
@@ -325,6 +567,17 @@ Production evaluation pipelines score every model response against automatic met
 - **Feedback loop:** Incorporate explicit user feedback (thumbs up/down) and implicit signals (conversation length, rephrasing, abandonment).
 
 ### 4.7.2 Monitoring Drift
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" alt="Handwritten: 4.7.2 Monitoring Drift" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" alt="Diagram: 4.7.2 Monitoring Drift" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" alt="Sticky Note: 4.7.2 Monitoring Drift" width="30%">
+</a>
+
 
 Drift detection compares current evaluation scores against historical baselines:
 
@@ -336,6 +589,17 @@ Statistical tests (Kolmogorov-Smirnov, chi-squared, Z-tests) trigger alerts when
 
 ### 4.7.3 A/B Testing
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" alt="Handwritten: 4.7.3 A/B Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" alt="Diagram: 4.7.3 A/B Testing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" alt="Sticky Note: 4.7.3 A/B Testing" width="30%">
+</a>
+
+
 A/B testing compares two model versions (or prompt strategies) on live traffic:
 
 - **Random assignment:** Users are randomly assigned to control (current) and treatment (new) groups.
@@ -345,6 +609,17 @@ A/B testing compares two model versions (or prompt strategies) on live traffic:
 
 ### 4.7.4 Canary Evaluation
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" alt="Handwritten: 4.7.4 Canary Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" alt="Diagram: 4.7.4 Canary Evaluation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" alt="Sticky Note: 4.7.4 Canary Evaluation" width="30%">
+</a>
+
+
 Canary releases route a small percentage of traffic (e.g., 1-5%) to a new model version before full rollout. Canary evaluation monitors all metrics for a defined observation period. If no regressions are detected, traffic is gradually increased. This minimizes blast radius from quality regressions.
 
 ---
@@ -352,6 +627,17 @@ Canary releases route a small percentage of traffic (e.g., 1-5%) to a new model 
 ## TypeScript Implementation
 
 ### EvaluationPipeline Class
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" alt="Handwritten: EvaluationPipeline Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" alt="Diagram: EvaluationPipeline Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" alt="Sticky Note: EvaluationPipeline Class" width="30%">
+</a>
+
 
 The `EvaluationPipeline` class orchestrates metric computation, LLM-as-judge scoring, and results aggregation into a single pipeline. It supports multiple metrics simultaneously and produces structured evaluation reports.
 
@@ -612,6 +898,17 @@ class EvaluationPipeline {
 
 ### EvalDataset Class
 
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" alt="Handwritten: EvalDataset Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" alt="Diagram: EvalDataset Class" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" alt="Sticky Note: EvalDataset Class" width="30%">
+</a>
+
+
 The `EvalDataset` class manages golden evaluation datasets with stratified sampling, difficulty tiering, and coverage analysis.
 
 ```typescript
@@ -799,6 +1096,17 @@ D) Question answering accuracy
 ---
 
 ### Answer Key
+
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+</a>
+<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+</a>
+
 
 | Question | Answer |
 |----------|--------|

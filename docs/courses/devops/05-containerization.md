@@ -50,6 +50,17 @@ flowchart LR
 
 ### Containers vs Virtual Machines
 
+<a href="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-handwritten.svg" alt="Handwritten: Containers vs Virtual Machines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-diagram.svg" alt="Diagram: Containers vs Virtual Machines" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/containers-vs-virtual-machines-sticky.svg" alt="Sticky Note: Containers vs Virtual Machines" width="30%">
+</a>
+
+
 The fundamental difference is kernel architecture:
 
 ```mermaid
@@ -85,6 +96,17 @@ flowchart TD
 
 ### OCI Standards
 
+<a href="../../assets/images/diagrams/devops/05-containerization/oci-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/oci-standards-handwritten.svg" alt="Handwritten: OCI Standards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/oci-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/oci-standards-diagram.svg" alt="Diagram: OCI Standards" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/oci-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/oci-standards-sticky.svg" alt="Sticky Note: OCI Standards" width="30%">
+</a>
+
+
 The Open Container Initiative defines two core specifications:
 
 **Image Specification (image-spec):**
@@ -104,6 +126,17 @@ The Open Container Initiative defines two core specifications:
 - Kata Containers (VM-based isolation)
 
 ### Container Image Layers
+
+<a href="../../assets/images/diagrams/devops/05-containerization/container-image-layers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-image-layers-handwritten.svg" alt="Handwritten: Container Image Layers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-image-layers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-image-layers-diagram.svg" alt="Diagram: Container Image Layers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-image-layers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-image-layers-sticky.svg" alt="Sticky Note: Container Image Layers" width="30%">
+</a>
+
 
 Container images are built as a stack of read-only layers on top of a union filesystem (OverlayFS):
 
@@ -129,6 +162,17 @@ Each Dockerfile instruction creates a new layer. Layers are cached and reused ac
 - Place frequently changing instructions last (application code)
 
 ### Multi-Stage Builds
+
+<a href="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-handwritten.svg" alt="Handwritten: Multi-Stage Builds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-diagram.svg" alt="Diagram: Multi-Stage Builds" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/multi-stage-builds-sticky.svg" alt="Sticky Note: Multi-Stage Builds" width="30%">
+</a>
+
 
 Multi-stage builds use multiple FROM statements to separate the build environment from the runtime environment:
 
@@ -158,6 +202,17 @@ flowchart LR
 
 ### Container Security
 
+<a href="../../assets/images/diagrams/devops/05-containerization/container-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-security-handwritten.svg" alt="Handwritten: Container Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-security-diagram.svg" alt="Diagram: Container Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-security-sticky.svg" alt="Sticky Note: Container Security" width="30%">
+</a>
+
+
 **Principle of least privilege:**
 - Run as non-root user (never as root inside container)
 - Drop unnecessary Linux capabilities
@@ -177,6 +232,17 @@ flowchart LR
 - Disable privilege escalation (`--security-opt no-new-privileges`)
 
 ### Container Networking and Communication
+
+<a href="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-handwritten.svg" alt="Handwritten: Container Networking and Communication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-diagram.svg" alt="Diagram: Container Networking and Communication" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-networking-and-communication-sticky.svg" alt="Sticky Note: Container Networking and Communication" width="30%">
+</a>
+
 
 Containers communicate through various network models:
 
@@ -213,6 +279,17 @@ flowchart LR
 
 ### Container Runtime Deep Dive
 
+<a href="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-handwritten.svg" alt="Handwritten: Container Runtime Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-diagram.svg" alt="Diagram: Container Runtime Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-runtime-deep-dive-sticky.svg" alt="Sticky Note: Container Runtime Deep Dive" width="30%">
+</a>
+
+
 Container runtimes implement the OCI runtime specification and can be categorized by isolation level:
 
 | Runtime | Type | Isolation | Performance | Use Case |
@@ -232,6 +309,17 @@ Container runtimes implement the OCI runtime specification and can be categorize
 
 ### Container Storage Patterns
 
+<a href="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-handwritten.svg" alt="Handwritten: Container Storage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-diagram.svg" alt="Diagram: Container Storage Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-storage-patterns-sticky.svg" alt="Sticky Note: Container Storage Patterns" width="30%">
+</a>
+
+
 Container storage follows ephemeral-by-default with options for persistence:
 
 | Pattern | Description | Persistence | Use Case |
@@ -250,6 +338,17 @@ Container storage follows ephemeral-by-default with options for persistence:
 - Use ReadWriteMany volumes for shared file access across replicas
 
 ### Container Registries
+
+<a href="../../assets/images/diagrams/devops/05-containerization/container-registries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-registries-handwritten.svg" alt="Handwritten: Container Registries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-registries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-registries-diagram.svg" alt="Diagram: Container Registries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/devops/05-containerization/container-registries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/devops/05-containerization/container-registries-sticky.svg" alt="Sticky Note: Container Registries" width="30%">
+</a>
+
 
 Registries store and distribute container images:
 

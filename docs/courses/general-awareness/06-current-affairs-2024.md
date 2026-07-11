@@ -17,6 +17,17 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 National Affairs — Major Events
 
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" alt="Handwritten: 6.1 National Affairs — Major Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" alt="Diagram: 6.1 National Affairs — Major Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" alt="Sticky Note: 6.1 National Affairs — Major Events" width="30%">
+</a>
+
+
 ```mermaid
 timeline
     title Major Events in India 2024
@@ -88,6 +99,17 @@ timeline
 
 ### 6.2 International Affairs
 
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" alt="Handwritten: 6.2 International Affairs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" alt="Diagram: 6.2 International Affairs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" alt="Sticky Note: 6.2 International Affairs" width="30%">
+</a>
+
+
 #### 6.2.1 International Summits & Meetings 2024
 
 ```mermaid
@@ -150,6 +172,17 @@ mindmap
 
 ### 6.3 Economic Affairs 2024
 
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" alt="Handwritten: 6.3 Economic Affairs 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" alt="Diagram: 6.3 Economic Affairs 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" alt="Sticky Note: 6.3 Economic Affairs 2024" width="30%">
+</a>
+
+
 | Indicator | Performance |
 |-----------|-------------|
 | GDP Growth (2023-24) | 8.2% (provisional estimate) |
@@ -172,6 +205,17 @@ mindmap
 - IPO market boomed with record filings and mega IPOs (Hyundai India IPO ₹27,870 crore — largest ever)
 
 ### 6.4 Science & Technology 2024
+
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" alt="Handwritten: 6.4 Science & Technology 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" alt="Diagram: 6.4 Science & Technology 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" alt="Sticky Note: 6.4 Science & Technology 2024" width="30%">
+</a>
+
 
 #### 6.4.1 ISRO & Space Achievements
 
@@ -216,6 +260,17 @@ mindmap
 
 ### 6.5 Sports Events 2024
 
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" alt="Handwritten: 6.5 Sports Events 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" alt="Diagram: 6.5 Sports Events 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" alt="Sticky Note: 6.5 Sports Events 2024" width="30%">
+</a>
+
+
 | Event | Venue | Winner | Runner-Up | Indian Performance |
 |-------|-------|--------|-----------|-------------------|
 | ICC T20 World Cup | USA/West Indies | India | South Africa | India won after 11 years (29 June 2024) |
@@ -240,6 +295,17 @@ mindmap
 | Lovlina Borgohain | Boxing | Bronze | Women's 75kg |
 
 ### 6.6 Awards & Honours 2024
+
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" alt="Handwritten: 6.6 Awards & Honours 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" alt="Diagram: 6.6 Awards & Honours 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" alt="Sticky Note: 6.6 Awards & Honours 2024" width="30%">
+</a>
+
 
 #### 6.6.1 Indian National Awards
 
@@ -275,6 +341,17 @@ mindmap
 | Dronacharya Award | Coaches honoured (including for T20 World Cup-winning team) |
 
 ### 6.7 Obituaries 2024
+
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" alt="Handwritten: 6.7 Obituaries 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" alt="Diagram: 6.7 Obituaries 2024" width="30%">
+</a>
+<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" alt="Sticky Note: 6.7 Obituaries 2024" width="30%">
+</a>
+
 
 | Personality | Profession | Significance |
 |-------------|------------|--------------|

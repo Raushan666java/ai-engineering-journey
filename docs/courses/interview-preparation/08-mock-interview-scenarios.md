@@ -107,6 +107,17 @@ Candidate: Thank you, sir. Thank you, ma'am. It was a pleasure.
 
 ### Evaluation Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" alt="Handwritten: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" alt="Diagram: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" alt="Sticky Note: Evaluation Rubric" width="30%">
+</a>
+
+
 | Criteria | Excellent (80-100%) | Good (60-80%) | Average (40-60%) | Poor (&lt;40%) |
 |----------|-------------------|---------------|-------------------|---------------|
 | Technical depth | Deep, connects concepts, real-world examples | Good fundamentals, some depth | Basic answers, no depth | Incorrect or confused |
@@ -207,6 +218,17 @@ the most common type of production issue you encounter?
 
 ### Evaluation Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" alt="Handwritten: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" alt="Diagram: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" alt="Sticky Note: Evaluation Rubric" width="30%">
+</a>
+
+
 | Criteria | Excellent | Good | Average | Poor |
 |----------|-----------|------|---------|------|
 | Coding correctness | Correct, handles edge cases | Works for main cases | Partial solution | Wrong |
@@ -281,6 +303,17 @@ Candidate: Thank you, ma'am. I look forward to hearing from TCS.
 ```
 
 ### Evaluation Rubric
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" alt="Handwritten: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" alt="Diagram: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" alt="Sticky Note: Evaluation Rubric" width="30%">
+</a>
+
 
 | Criteria | Excellent | Good | Average | Poor |
 |----------|-----------|------|---------|------|
@@ -399,6 +432,17 @@ what's the observability stack you use?
 
 ### Evaluation Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-handwritten.svg" alt="Handwritten: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-diagram.svg" alt="Diagram: Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/evaluation-rubric-sticky.svg" alt="Sticky Note: Evaluation Rubric" width="30%">
+</a>
+
+
 | Criteria | Excellent | Good | Average | Poor |
 |----------|-----------|------|---------|------|
 | Requirements | Clarifies scope before diving | Some clarification | Jumps to solution | Missing key requirements |
@@ -416,6 +460,17 @@ what's the observability stack you use?
 **Duration:** 90 minutes total
 
 ### Coding Round 1
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-handwritten.svg" alt="Handwritten: Coding Round 1" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-diagram.svg" alt="Diagram: Coding Round 1" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-1-sticky.svg" alt="Sticky Note: Coding Round 1" width="30%">
+</a>
+
 
 ```
 Interviewer: Let's start. Given a 2D grid of '1's (land) and '0's (water),
@@ -492,6 +547,17 @@ function numIslandsUnionFind(grid: string[][]): number {
 ```
 
 ### Coding Round 2
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-handwritten.svg" alt="Handwritten: Coding Round 2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-diagram.svg" alt="Diagram: Coding Round 2" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-round-2-sticky.svg" alt="Sticky Note: Coding Round 2" width="30%">
+</a>
+
 
 ```
 Interviewer: Design a data structure that supports insert, delete, search,
@@ -612,6 +678,17 @@ Candidate A (Summarizes): Let me summarize what we've discussed:
 ```
 
 ### GD Evaluation Criteria
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-handwritten.svg" alt="Handwritten: GD Evaluation Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-diagram.svg" alt="Diagram: GD Evaluation Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/gd-evaluation-criteria-sticky.svg" alt="Sticky Note: GD Evaluation Criteria" width="30%">
+</a>
+
 
 | Criteria | What They Look For | Weight |
 |----------|-------------------|--------|
@@ -873,6 +950,17 @@ This balances speed (managed services) with competitive advantage
 
 ### TL Promotion Evaluation Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-handwritten.svg" alt="Handwritten: TL Promotion Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-diagram.svg" alt="Diagram: TL Promotion Evaluation Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/tl-promotion-evaluation-rubric-sticky.svg" alt="Sticky Note: TL Promotion Evaluation Rubric" width="30%">
+</a>
+
+
 | Criteria | What They Assess |
 |----------|-----------------|
 | Technical depth | Understanding of patterns, trade-offs |
@@ -889,6 +977,17 @@ This balances speed (managed services) with competitive advantage
 ## Section 2: Additional Micro-Scenarios for Self-Practice
 
 ### Micro-Scenario 1: Phone Screen (15 min)
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-handwritten.svg" alt="Handwritten: Micro-Scenario 1: Phone Screen (15 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-diagram.svg" alt="Diagram: Micro-Scenario 1: Phone Screen (15 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-1-phone-screen-15-min-sticky.svg" alt="Sticky Note: Micro-Scenario 1: Phone Screen (15 min)" width="30%">
+</a>
+
 
 ```
 Recruiter: Hi, this is [Name] from Google. I've looked at your resume and
@@ -913,6 +1012,17 @@ for in terms of technical depth for this role?
 
 ### Micro-Scenario 2: Take-Home Assignment Review (45 min)
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-handwritten.svg" alt="Handwritten: Micro-Scenario 2: Take-Home Assignment Review (45 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-diagram.svg" alt="Diagram: Micro-Scenario 2: Take-Home Assignment Review (45 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-2-take-home-assignment-review-45-min-sticky.svg" alt="Sticky Note: Micro-Scenario 2: Take-Home Assignment Review (45 min)" width="30%">
+</a>
+
+
 ```
 Interviewer: We've reviewed your take-home assignment — an event booking
 API. Walk me through your architecture decisions.
@@ -929,6 +1039,17 @@ Key points to cover:
 ```
 
 ### Micro-Scenario 3: Debugging Round (30 min)
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-handwritten.svg" alt="Handwritten: Micro-Scenario 3: Debugging Round (30 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-diagram.svg" alt="Diagram: Micro-Scenario 3: Debugging Round (30 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-3-debugging-round-30-min-sticky.svg" alt="Sticky Note: Micro-Scenario 3: Debugging Round (30 min)" width="30%">
+</a>
+
 
 ```
 Interviewer: Here's a function that's supposed to reverse a linked list.
@@ -947,6 +1068,17 @@ You: [Systematic approach]
 ```
 
 ### Micro-Scenario 4: Estimation Round (10 min)
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-handwritten.svg" alt="Handwritten: Micro-Scenario 4: Estimation Round (10 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-diagram.svg" alt="Diagram: Micro-Scenario 4: Estimation Round (10 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-4-estimation-round-10-min-sticky.svg" alt="Sticky Note: Micro-Scenario 4: Estimation Round (10 min)" width="30%">
+</a>
+
 
 ```
 Interviewer: How many WhatsApp messages are sent globally per day?
@@ -967,6 +1099,17 @@ messages daily.
 ```
 
 ### Micro-Scenario 5: Cultural Fit / Values Round (20 min)
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-handwritten.svg" alt="Handwritten: Micro-Scenario 5: Cultural Fit / Values Round (20 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-diagram.svg" alt="Diagram: Micro-Scenario 5: Cultural Fit / Values Round (20 min)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/micro-scenario-5-cultural-fit-values-round-20-min-sticky.svg" alt="Sticky Note: Micro-Scenario 5: Cultural Fit / Values Round (20 min)" width="30%">
+</a>
+
 
 ```
 Interviewer: Tell me about a time you had to push back on a decision
@@ -994,6 +1137,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 
 ### Coding Interview Self-Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-handwritten.svg" alt="Handwritten: Coding Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-diagram.svg" alt="Diagram: Coding Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/coding-interview-self-rubric-sticky.svg" alt="Sticky Note: Coding Interview Self-Rubric" width="30%">
+</a>
+
+
 | Criterion | Unsatisfactory (0) | Developing (1) | Competent (2) | Excellent (3) |
 |-----------|-------------------|---------------|---------------|----------------|
 | Understanding | Jumps to code without clarifying | Asks basic questions | Clarifies inputs/outputs/edge cases | Clarifies + discusses constraints |
@@ -1008,6 +1162,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 
 ### Behavioral Interview Self-Rubric
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-handwritten.svg" alt="Handwritten: Behavioral Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-diagram.svg" alt="Diagram: Behavioral Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/behavioral-interview-self-rubric-sticky.svg" alt="Sticky Note: Behavioral Interview Self-Rubric" width="30%">
+</a>
+
+
 | Criterion | Unsatisfactory (0) | Developing (1) | Competent (2) | Excellent (3) |
 |-----------|-------------------|---------------|---------------|----------------|
 | Structure | Rambling story | Mentions STAR but vague | Clear STAR format | Tight STAR with appropriate level of detail |
@@ -1018,6 +1183,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 | Reflection | No learning mentioned | Superficial learning | Specific learning | Learning + behavior change |
 
 ### System Design Interview Self-Rubric
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-handwritten.svg" alt="Handwritten: System Design Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-diagram.svg" alt="Diagram: System Design Interview Self-Rubric" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/system-design-interview-self-rubric-sticky.svg" alt="Sticky Note: System Design Interview Self-Rubric" width="30%">
+</a>
+
 
 | Criterion | Unsatisfactory (0) | Developing (1) | Competent (2) | Excellent (3) |
 |-----------|-------------------|---------------|---------------|----------------|
@@ -1034,6 +1210,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 
 ### Non-Verbal Communication in Interviews
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-handwritten.svg" alt="Handwritten: Non-Verbal Communication in Interviews" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-diagram.svg" alt="Diagram: Non-Verbal Communication in Interviews" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/non-verbal-communication-in-interviews-sticky.svg" alt="Sticky Note: Non-Verbal Communication in Interviews" width="30%">
+</a>
+
+
 | Element | Positive | Negative |
 |---------|----------|----------|
 | Eye contact | Steady, natural (70% of time) | Staring, looking down, wandering |
@@ -1045,6 +1232,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 
 ### Voice Modulation Tips
 
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-handwritten.svg" alt="Handwritten: Voice Modulation Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-diagram.svg" alt="Diagram: Voice Modulation Tips" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/voice-modulation-tips-sticky.svg" alt="Sticky Note: Voice Modulation Tips" width="30%">
+</a>
+
+
 | Situation | Technique |
 |-----------|-----------|
 | Explaining complex concept | Slow down, pause after key points |
@@ -1054,6 +1252,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 | Asking questions | Enthusiastic tone, slight upward inflection |
 
 ### Managing Interview Anxiety
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-handwritten.svg" alt="Handwritten: Managing Interview Anxiety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-diagram.svg" alt="Diagram: Managing Interview Anxiety" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/managing-interview-anxiety-sticky.svg" alt="Sticky Note: Managing Interview Anxiety" width="30%">
+</a>
+
 
 | Technique | How It Works |
 |-----------|-------------|
@@ -1065,6 +1274,17 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 | First question strategy | Prepare a strong answer to "Tell me about yourself" — getting the first answer right builds momentum |
 
 ### The STAR Delivery Technique
+
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-handwritten.svg" alt="Handwritten: The STAR Delivery Technique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-diagram.svg" alt="Diagram: The STAR Delivery Technique" width="30%">
+</a>
+<a href="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/interview-preparation/08-mock-interview-scenarios/the-star-delivery-technique-sticky.svg" alt="Sticky Note: The STAR Delivery Technique" width="30%">
+</a>
+
 
 When delivering a STAR answer:
 1. **Situation** — 15 seconds. Set context concisely.

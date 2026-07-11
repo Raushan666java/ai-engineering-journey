@@ -46,6 +46,17 @@ flowchart LR
 
 ### 2.1 Boolean Postulates
 
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-handwritten.svg" alt="Handwritten: 2.1 Boolean Postulates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-diagram.svg" alt="Diagram: 2.1 Boolean Postulates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-1-boolean-postulates-sticky.svg" alt="Sticky Note: 2.1 Boolean Postulates" width="30%">
+</a>
+
+
 Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and ? (AND), and complement (NOT).
 
 The fundamental postulates are as follows:
@@ -59,6 +70,17 @@ The fundamental postulates are as follows:
 | Complement | x + x' = 1 | x ? x' = 0 |
 
 ### 2.2 Fundamental Theorems
+
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-handwritten.svg" alt="Handwritten: 2.2 Fundamental Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-diagram.svg" alt="Diagram: 2.2 Fundamental Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-2-fundamental-theorems-sticky.svg" alt="Sticky Note: 2.2 Fundamental Theorems" width="30%">
+</a>
+
 
 | Theorem | OR Form | AND Form |
 |---------|---------|----------|
@@ -93,6 +115,17 @@ x?y + x'?z + y?z = x?y + x'?z + y?z?(x + x') (Complement)
 
 ### 2.3 De Morgan's Theorems
 
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-handwritten.svg" alt="Handwritten: 2.3 De Morgan's Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-diagram.svg" alt="Diagram: 2.3 De Morgan's Theorems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-3-de-morgan-s-theorems-sticky.svg" alt="Sticky Note: 2.3 De Morgan's Theorems" width="30%">
+</a>
+
+
 Augustus De Morgan formulated two transformation rules of singular importance:
 
 **Theorem 1**: (x?y)' = x' + y'
@@ -117,6 +150,17 @@ De Morgan's theorems are essential for converting AND-OR networks to NAND-NAND o
 The columns for (x?y)' and x' + y' match for all four input combinations, proving equivalence.
 
 ### 2.4 Canonical Forms
+
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-handwritten.svg" alt="Handwritten: 2.4 Canonical Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-diagram.svg" alt="Diagram: 2.4 Canonical Forms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-4-canonical-forms-sticky.svg" alt="Sticky Note: 2.4 Canonical Forms" width="30%">
+</a>
+
 
 #### 2.4.1 Minterms and Maxterms
 
@@ -158,6 +202,17 @@ Any Boolean function can be expressed in both forms. To convert:
 
 ### 2.5 NAND and NOR as Universal Gates
 
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-handwritten.svg" alt="Handwritten: 2.5 NAND and NOR as Universal Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-diagram.svg" alt="Diagram: 2.5 NAND and NOR as Universal Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-5-nand-and-nor-as-universal-gates-sticky.svg" alt="Sticky Note: 2.5 NAND and NOR as Universal Gates" width="30%">
+</a>
+
+
 NAND and NOR are termed universal gates because either alone suffices to implement any Boolean expression.
 
 **NAND as universal gate**:
@@ -184,6 +239,17 @@ graph TD
 
 ### 2.6 XOR Applications
 
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-handwritten.svg" alt="Handwritten: 2.6 XOR Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-diagram.svg" alt="Diagram: 2.6 XOR Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-6-xor-applications-sticky.svg" alt="Sticky Note: 2.6 XOR Applications" width="30%">
+</a>
+
+
 The XOR (exclusive-OR) function produces 1 when inputs differ: A ? B = A'B + AB'.
 
 **Applications**:
@@ -204,6 +270,17 @@ function magnitudeEqual(a: boolean[], b: boolean[]): boolean {
 ```
 
 ### 2.7 Function Completeness
+
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-handwritten.svg" alt="Handwritten: 2.7 Function Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-diagram.svg" alt="Diagram: 2.7 Function Completeness" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-7-function-completeness-sticky.svg" alt="Sticky Note: 2.7 Function Completeness" width="30%">
+</a>
+
 
 A set of logic operators is **functionally complete** if any Boolean function can be expressed using only operators from that set.
 
@@ -229,6 +306,17 @@ A set of logic operators is **functionally complete** if any Boolean function ca
 - OR: A + B = (A'?B')' = ((A?A)'?(B?B)')'
 
 ### 2.8 Boolean Expression Minimisation
+
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-handwritten.svg" alt="Handwritten: 2.8 Boolean Expression Minimisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-diagram.svg" alt="Diagram: 2.8 Boolean Expression Minimisation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/02-boolean-algebra/2-8-boolean-expression-minimisation-sticky.svg" alt="Sticky Note: 2.8 Boolean Expression Minimisation" width="30%">
+</a>
+
 
 ```typescript
 interface TruthTableEntry {

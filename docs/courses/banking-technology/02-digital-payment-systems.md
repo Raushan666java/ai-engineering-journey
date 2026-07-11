@@ -16,6 +16,17 @@ By the end of this chapter, you will be able to:
 
 ### 1. Introduction to Digital Payment Systems
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-handwritten.svg" alt="Handwritten: 1. Introduction to Digital Payment Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-diagram.svg" alt="Diagram: 1. Introduction to Digital Payment Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/1-introduction-to-digital-payment-systems-sticky.svg" alt="Sticky Note: 1. Introduction to Digital Payment Systems" width="30%">
+</a>
+
+
 India's digital payment ecosystem has undergone a paradigm shift since 2016, driven by the Unified Payments Interface (UPI), regulatory support from RBI, and the infrastructure built by NPCI. Digital payments in India are categorized into:
 
 - **Retail Payment Systems:** UPI, IMPS, NEFT, RTGS, BBPS
@@ -26,6 +37,17 @@ India's digital payment ecosystem has undergone a paradigm shift since 2016, dri
 The key driver of this ecosystem is the **National Payments Corporation of India (NPCI)** — an umbrella organization for operating retail payment and settlement systems in India, established by RBI and IBA in 2008.
 
 ### 2. UPI Architecture
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-handwritten.svg" alt="Handwritten: 2. UPI Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-diagram.svg" alt="Diagram: 2. UPI Architecture" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/2-upi-architecture-sticky.svg" alt="Sticky Note: 2. UPI Architecture" width="30%">
+</a>
+
 
 #### 2.1 UPI Overview
 
@@ -146,6 +168,17 @@ User enters UPI PIN -> PSP App -> Encrypted with PSP Key
 
 ### 3. IMPS vs NEFT vs RTGS — Technical Comparison
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-handwritten.svg" alt="Handwritten: 3. IMPS vs NEFT vs RTGS — Technical Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-diagram.svg" alt="Diagram: 3. IMPS vs NEFT vs RTGS — Technical Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/3-imps-vs-neft-vs-rtgs-technical-comparison-sticky.svg" alt="Sticky Note: 3. IMPS vs NEFT vs RTGS — Technical Comparison" width="30%">
+</a>
+
+
 #### 3.1 IMPS (Immediate Payment Service)
 
 IMPS is an instant interbank electronic fund transfer service available 24x7x365. Operated by NPCI. It is the underlying real-time settlement system that also powers UPI.
@@ -220,6 +253,17 @@ Sender -> Sender Bank CBS -> IMPS Switch (NPCI) -> Receiver Bank CBS -> Receiver
 
 ### 4. RuPay Card Processing
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-handwritten.svg" alt="Handwritten: 4. RuPay Card Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-diagram.svg" alt="Diagram: 4. RuPay Card Processing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/4-rupay-card-processing-sticky.svg" alt="Sticky Note: 4. RuPay Card Processing" width="30%">
+</a>
+
+
 #### 4.1 RuPay Overview
 
 RuPay is an Indian domestic card payment network launched by NPCI in 2012. It is the most widely used card in India, especially under the Pradhan Mantri Jan Dhan Yojana (PMJDY) and RuPay-Jana Dhan-Aadhaar (JAM) trinity.
@@ -273,6 +317,17 @@ For Indian banks, RuPay is significantly cheaper than Visa/Mastercard:
 - **Settlement:** RuPay settles in INR (no forex risk); Visa/MC settles in USD
 
 ### 5. FASTag and NETC
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-handwritten.svg" alt="Handwritten: 5. FASTag and NETC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-diagram.svg" alt="Diagram: 5. FASTag and NETC" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/5-fastag-and-netc-sticky.svg" alt="Sticky Note: 5. FASTag and NETC" width="30%">
+</a>
+
 
 #### 5.1 FASTag Overview
 
@@ -343,6 +398,17 @@ sequenceDiagram
 
 ### 6. Aadhaar Payments Bridge System (APBS)
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-handwritten.svg" alt="Handwritten: 6. Aadhaar Payments Bridge System (APBS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-diagram.svg" alt="Diagram: 6. Aadhaar Payments Bridge System (APBS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/6-aadhaar-payments-bridge-system-apbs-sticky.svg" alt="Sticky Note: 6. Aadhaar Payments Bridge System (APBS)" width="30%">
+</a>
+
+
 #### 6.1 APBS Architecture
 
 APBS enables the transfer of government subsidies/benefits directly to beneficiaries' bank accounts using Aadhaar as the financial address. Implemented by NPCI under the DBT (Direct Benefit Transfer) program.
@@ -386,6 +452,17 @@ Step 9:  Response back to NPCI -> Sponsor Bank -> PFMS -> Government
 - **Destination Bank:** Bank where beneficiary holds the account
 
 ### 7. BBPS (Bharat Bill Payment System)
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-handwritten.svg" alt="Handwritten: 7. BBPS (Bharat Bill Payment System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-diagram.svg" alt="Diagram: 7. BBPS (Bharat Bill Payment System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/7-bbps-bharat-bill-payment-system-sticky.svg" alt="Sticky Note: 7. BBPS (Bharat Bill Payment System)" width="30%">
+</a>
+
 
 #### 7.1 BBPS Architecture
 
@@ -441,6 +518,17 @@ Bill Pay: Customer -> BPU -> BBPS Central -> RBI Settlement -> Biller -> Confirm
 
 ### 8. AePS (Aadhaar-enabled Payment System)
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-handwritten.svg" alt="Handwritten: 8. AePS (Aadhaar-enabled Payment System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-diagram.svg" alt="Diagram: 8. AePS (Aadhaar-enabled Payment System)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/8-aeps-aadhaar-enabled-payment-system-sticky.svg" alt="Sticky Note: 8. AePS (Aadhaar-enabled Payment System)" width="30%">
+</a>
+
+
 #### 8.1 AePS Architecture
 
 AePS allows Aadhaar-based financial transactions using a micro-ATM device. Operated by NPCI.
@@ -471,6 +559,17 @@ AePS allows Aadhaar-based financial transactions using a micro-ATM device. Opera
 
 ### 9. NACH (National Automated Clearing House)
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-handwritten.svg" alt="Handwritten: 9. NACH (National Automated Clearing House)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-diagram.svg" alt="Diagram: 9. NACH (National Automated Clearing House)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/9-nach-national-automated-clearing-house-sticky.svg" alt="Sticky Note: 9. NACH (National Automated Clearing House)" width="30%">
+</a>
+
+
 NACH is a web-based solution to facilitate bulk transactions (salaries, dividends, subsidies). Replaced the legacy ECS (Electronic Clearing Service).
 
 **NACH Types:**
@@ -500,6 +599,17 @@ Modification/Cancellation (if needed) -> Deactivation
 ```
 
 ### 10. Tokenization
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-handwritten.svg" alt="Handwritten: 10. Tokenization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-diagram.svg" alt="Diagram: 10. Tokenization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/10-tokenization-sticky.svg" alt="Sticky Note: 10. Tokenization" width="30%">
+</a>
+
 
 Tokenization replaces sensitive card data (Primary Account Number / PAN) with a unique token that can be used for transactions without exposing the actual card number.
 
@@ -537,6 +647,17 @@ Used in mobile wallets (Apple Pay, Google Pay, Samsung Pay) where the token is s
 
 ### 11. Recurring Payments — eMandate
 
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-handwritten.svg" alt="Handwritten: 11. Recurring Payments — eMandate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-diagram.svg" alt="Diagram: 11. Recurring Payments — eMandate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/11-recurring-payments-emandate-sticky.svg" alt="Sticky Note: 11. Recurring Payments — eMandate" width="30%">
+</a>
+
+
 #### 11.1 UPI eMandate
 
 eMandate enables recurring payments (subscriptions, SIPs, insurance premiums) through UPI.
@@ -569,6 +690,17 @@ eMandate enables recurring payments (subscriptions, SIPs, insurance premiums) th
 | High value | Above Rs. 1,00,000 | AFA on each transaction |
 
 ### 12. UPI Lite and UPI123Pay
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-handwritten.svg" alt="Handwritten: 12. UPI Lite and UPI123Pay" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-diagram.svg" alt="Diagram: 12. UPI Lite and UPI123Pay" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/12-upi-lite-and-upi123pay-sticky.svg" alt="Sticky Note: 12. UPI Lite and UPI123Pay" width="30%">
+</a>
+
 
 #### 12.1 UPI Lite
 
@@ -618,6 +750,17 @@ UPI123Pay Methods:
 ```
 
 ### 13. Architecture Diagrams
+
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-handwritten.svg" alt="Handwritten: 13. Architecture Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-diagram.svg" alt="Diagram: 13. Architecture Diagrams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/banking-technology/02-digital-payment-systems/13-architecture-diagrams-sticky.svg" alt="Sticky Note: 13. Architecture Diagrams" width="30%">
+</a>
+
 
 #### Complete UPI Transaction Flow
 

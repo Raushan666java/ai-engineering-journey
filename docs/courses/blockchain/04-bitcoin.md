@@ -46,6 +46,39 @@ flowchart LR
 
 ### The UTXO Model
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" alt="Handwritten: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" alt="Diagram: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" alt="Sticky Note: The UTXO Model" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" alt="Handwritten: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" alt="Diagram: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" alt="Sticky Note: The UTXO Model" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-handwritten.svg" alt="Handwritten: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-diagram.svg" alt="Diagram: The UTXO Model" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/the-utxo-model-sticky.svg" alt="Sticky Note: The UTXO Model" width="30%">
+</a>
+
+
 Bitcoin does not use "accounts" or "balances" in the way a bank does. Instead, it tracks **UTXOs (Unspent Transaction Outputs)**.
 
 ```mermaid
@@ -78,6 +111,39 @@ flowchart LR
 
 ### UTXO Lifecycle
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" alt="Handwritten: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" alt="Diagram: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" alt="Sticky Note: UTXO Lifecycle" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" alt="Handwritten: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" alt="Diagram: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" alt="Sticky Note: UTXO Lifecycle" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-handwritten.svg" alt="Handwritten: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-diagram.svg" alt="Diagram: UTXO Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/utxo-lifecycle-sticky.svg" alt="Sticky Note: UTXO Lifecycle" width="30%">
+</a>
+
+
 ```mermaid
 stateDiagram-v2
     [*] --> Unspent: Block containing output is mined
@@ -96,6 +162,39 @@ stateDiagram-v2
 - **Coinbase maturity:** Coinbase transaction outputs cannot be spent for 100 blocks.
 
 ### Transaction Structure
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" alt="Handwritten: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" alt="Diagram: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" alt="Sticky Note: Transaction Structure" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" alt="Handwritten: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" alt="Diagram: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" alt="Sticky Note: Transaction Structure" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-handwritten.svg" alt="Handwritten: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-diagram.svg" alt="Diagram: Transaction Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/transaction-structure-sticky.svg" alt="Sticky Note: Transaction Structure" width="30%">
+</a>
+
 
 A Bitcoin transaction consists of:
 
@@ -131,6 +230,39 @@ const TX_VERSION_2 = 2;  // BIP-68 relative timelocks
 
 ### Bitcoin Script
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" alt="Handwritten: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" alt="Diagram: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" alt="Sticky Note: Bitcoin Script" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" alt="Handwritten: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" alt="Diagram: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" alt="Sticky Note: Bitcoin Script" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-handwritten.svg" alt="Handwritten: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-diagram.svg" alt="Diagram: Bitcoin Script" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/bitcoin-script-sticky.svg" alt="Sticky Note: Bitcoin Script" width="30%">
+</a>
+
+
 Bitcoin uses a stack-based, **non-Turing complete** language called **Script**. It is intentionally limited to prevent infinite loops (denial of service). There are no loops, no recursion, and no complex control flow.
 
 **Key properties:**
@@ -157,6 +289,39 @@ Bitcoin uses a stack-based, **non-Turing complete** language called **Script**. 
 | OP_SIZE | 0x82 | Push size of top item onto stack |
 
 ### P2PKH Script Execution
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" alt="Handwritten: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" alt="Diagram: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" alt="Sticky Note: P2PKH Script Execution" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" alt="Handwritten: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" alt="Diagram: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" alt="Sticky Note: P2PKH Script Execution" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-handwritten.svg" alt="Handwritten: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-diagram.svg" alt="Diagram: P2PKH Script Execution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/p2pkh-script-execution-sticky.svg" alt="Sticky Note: P2PKH Script Execution" width="30%">
+</a>
+
 
 The most common Bitcoin transaction type is **Pay-to-Public-Key-Hash (P2PKH)**.
 
@@ -190,6 +355,39 @@ flowchart TB
 
 ### Mempool Mechanics
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" alt="Handwritten: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" alt="Diagram: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" alt="Sticky Note: Mempool Mechanics" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" alt="Handwritten: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" alt="Diagram: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" alt="Sticky Note: Mempool Mechanics" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-handwritten.svg" alt="Handwritten: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-diagram.svg" alt="Diagram: Mempool Mechanics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mempool-mechanics-sticky.svg" alt="Sticky Note: Mempool Mechanics" width="30%">
+</a>
+
+
 The **mempool** (memory pool) is where pending transactions wait to be included in a block:
 
 ```mermaid
@@ -218,6 +416,39 @@ flowchart TB
 - **Mempool limits:** Default ~300 MB on Bitcoin Core nodes.
 
 ### Mining and Block Structure
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" alt="Handwritten: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" alt="Diagram: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" alt="Sticky Note: Mining and Block Structure" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" alt="Handwritten: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" alt="Diagram: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" alt="Sticky Note: Mining and Block Structure" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-handwritten.svg" alt="Handwritten: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-diagram.svg" alt="Diagram: Mining and Block Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-and-block-structure-sticky.svg" alt="Sticky Note: Mining and Block Structure" width="30%">
+</a>
+
 
 ```mermaid
 flowchart TB
@@ -251,6 +482,39 @@ flowchart TB
 
 ### Mining Hardware Evolution
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" alt="Handwritten: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" alt="Diagram: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" alt="Sticky Note: Mining Hardware Evolution" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" alt="Handwritten: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" alt="Diagram: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" alt="Sticky Note: Mining Hardware Evolution" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-handwritten.svg" alt="Handwritten: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-diagram.svg" alt="Diagram: Mining Hardware Evolution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/mining-hardware-evolution-sticky.svg" alt="Sticky Note: Mining Hardware Evolution" width="30%">
+</a>
+
+
 | Era | Year | Hardware | Hash Rate | Power | When |
 |-----|------|----------|-----------|-------|------|
 | CPU Mining | 2009 | Standard CPUs | ~10 MH/s | ~100W | Early days |
@@ -260,6 +524,39 @@ flowchart TB
 | ASIC Modern | 2023+ | Antminer S21 | ~200 TH/s | ~3500W | Current gen |
 
 ### Halving Schedule
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" alt="Handwritten: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" alt="Diagram: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" alt="Sticky Note: Halving Schedule" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" alt="Handwritten: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" alt="Diagram: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" alt="Sticky Note: Halving Schedule" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-handwritten.svg" alt="Handwritten: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-diagram.svg" alt="Diagram: Halving Schedule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/halving-schedule-sticky.svg" alt="Sticky Note: Halving Schedule" width="30%">
+</a>
+
 
 ```typescript
 function calculateBlockReward(height: number): number {
@@ -301,6 +598,39 @@ flowchart LR
 
 ### Difficulty Adjustment Algorithm
 
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" alt="Handwritten: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" alt="Diagram: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" alt="Sticky Note: Difficulty Adjustment Algorithm" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" alt="Handwritten: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" alt="Diagram: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" alt="Sticky Note: Difficulty Adjustment Algorithm" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-handwritten.svg" alt="Handwritten: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-diagram.svg" alt="Diagram: Difficulty Adjustment Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/difficulty-adjustment-algorithm-sticky.svg" alt="Sticky Note: Difficulty Adjustment Algorithm" width="30%">
+</a>
+
+
 Bitcoin recalculates difficulty every 2016 blocks:
 
 ```typescript
@@ -322,6 +652,39 @@ function calculateDifficulty(
 ```
 
 ### Orphan Blocks and Reorgs
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" alt="Handwritten: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" alt="Diagram: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" alt="Sticky Note: Orphan Blocks and Reorgs" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" alt="Handwritten: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" alt="Diagram: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" alt="Sticky Note: Orphan Blocks and Reorgs" width="30%">
+</a>
+
+
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-handwritten.svg" alt="Handwritten: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-diagram.svg" alt="Diagram: Orphan Blocks and Reorgs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/blockchain/04-bitcoin/orphan-blocks-and-reorgs-sticky.svg" alt="Sticky Note: Orphan Blocks and Reorgs" width="30%">
+</a>
+
 
 **Orphan blocks:** Valid blocks that are not part of the main chain because another block was found first.
 

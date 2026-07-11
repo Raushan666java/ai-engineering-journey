@@ -54,6 +54,17 @@ flowchart LR
 
 ### 11.1 Binary Operations
 
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" alt="Handwritten: 11.1 Binary Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" alt="Diagram: 11.1 Binary Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" alt="Sticky Note: 11.1 Binary Operations" width="30%">
+</a>
+
+
 A **binary operation** on a set $S$ is a function $* : S \times S \rightarrow S$. For $a, b \in S$, $a * b$ denotes the result.
 
 **Properties:**
@@ -67,6 +78,17 @@ A **binary operation** on a set $S$ is a function $* : S \times S \rightarrow S$
 
 ### 11.2 Semigroups and Monoids
 
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" alt="Handwritten: 11.2 Semigroups and Monoids" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" alt="Diagram: 11.2 Semigroups and Monoids" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" alt="Sticky Note: 11.2 Semigroups and Monoids" width="30%">
+</a>
+
+
 **Semigroup:** A set $S$ with an associative binary operation $*$.
 - Example: $(\mathbb{Z}^+, +)$ is a semigroup.
 - Example: Strings under concatenation form a semigroup.
@@ -79,6 +101,17 @@ A **binary operation** on a set $S$ is a function $* : S \times S \rightarrow S$
 > **One-Sentence Takeaway:** A semigroup requires associativity; a monoid adds an identity element.
 
 ### 11.3 Groups
+
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" alt="Handwritten: 11.3 Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" alt="Diagram: 11.3 Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" alt="Sticky Note: 11.3 Groups" width="30%">
+</a>
+
 
 A **group** $(G, *)$ is a set $G$ with a binary operation $*$ satisfying:
 1. **Closure:** $a * b \in G$ for all $a, b$.
@@ -103,6 +136,17 @@ A **group** $(G, *)$ is a set $G$ with a binary operation $*$ satisfying:
 > **One-Sentence Takeaway:** A group is a set with an associative operation that has an identity and inverses; groups are the central objects of algebraic study.
 
 ### 11.4 Examples of Groups
+
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" alt="Handwritten: 11.4 Examples of Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" alt="Diagram: 11.4 Examples of Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" alt="Sticky Note: 11.4 Examples of Groups" width="30%">
+</a>
+
 
 **$(\mathbb{Z}, +)$:** Integers under addition. Identity 0. Inverse of $n$ is $-n$. Infinite abelian group.
 
@@ -136,6 +180,17 @@ const swap: Permutation = [1, 0, 2];
 
 ### 11.5 Cyclic Groups
 
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" alt="Handwritten: 11.5 Cyclic Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" alt="Diagram: 11.5 Cyclic Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" alt="Sticky Note: 11.5 Cyclic Groups" width="30%">
+</a>
+
+
 A group $G$ is **cyclic** if there exists an element $g \in G$ (a **generator**) such that every element of $G$ equals $g^k$ for some integer $k$. In additive notation: every element equals $k \cdot g$.
 
 **Theorem 11.4 (Structure of cyclic groups).**
@@ -152,6 +207,17 @@ A group $G$ is **cyclic** if there exists an element $g \in G$ (a **generator**)
 
 ### 11.6 Permutation Groups
 
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" alt="Handwritten: 11.6 Permutation Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" alt="Diagram: 11.6 Permutation Groups" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" alt="Sticky Note: 11.6 Permutation Groups" width="30%">
+</a>
+
+
 A **permutation** of a set $X$ is a bijection $f: X \rightarrow X$. The set of all permutations of $X$ forms the **symmetric group** $S_X$.
 
 **Cycle notation:** $(a_1\;a_2\;\dots\;a_k)$ means $a_1 \rightarrow a_2 \rightarrow \dots \rightarrow a_k \rightarrow a_1$.
@@ -165,6 +231,17 @@ A **permutation** of a set $X$ is a bijection $f: X \rightarrow X$. The set of a
 > **One-Sentence Takeaway:** Permutations are bijections on a set; every permutation decomposes into disjoint cycles, and the parity (even/odd) is well-defined.
 
 ### 11.7 Rings and Fields
+
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" alt="Handwritten: 11.7 Rings and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" alt="Diagram: 11.7 Rings and Fields" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" alt="Sticky Note: 11.7 Rings and Fields" width="30%">
+</a>
+
 
 **Ring** $(R, +, \cdot)$: A set with two operations such that:
 1. $(R, +)$ is an abelian group.
@@ -214,6 +291,17 @@ function isPrime(n: number): boolean {
 > **One-Sentence Takeaway:** A ring has addition and multiplication; a field adds multiplicative inverses (making division possible); finite fields exist exactly for prime power orders.
 
 ### 11.8 Homomorphisms and Isomorphisms
+
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" alt="Handwritten: 11.8 Homomorphisms and Isomorphisms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" alt="Diagram: 11.8 Homomorphisms and Isomorphisms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" alt="Sticky Note: 11.8 Homomorphisms and Isomorphisms" width="30%">
+</a>
+
 
 **Group homomorphism:** $\phi: G \rightarrow H$ such that $\phi(a * b) = \phi(a) \cdot \phi(b)$ for all $a, b \in G$.
 

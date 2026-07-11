@@ -287,6 +287,17 @@ print(circle.description())  # Circle (area=78.54)
 
 ### 13.6.1 Abstract Properties
 
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-handwritten.svg" alt="Handwritten: 13.6.1 Abstract Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-diagram.svg" alt="Diagram: 13.6.1 Abstract Properties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-1-abstract-properties-sticky.svg" alt="Sticky Note: 13.6.1 Abstract Properties" width="30%">
+</a>
+
+
 ```python
 class DataSource(ABC):
     @property
@@ -301,6 +312,17 @@ class PostgresSource(DataSource):
 ```
 
 ### 13.6.2 Virtual Subclasses
+
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-handwritten.svg" alt="Handwritten: 13.6.2 Virtual Subclasses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-diagram.svg" alt="Diagram: 13.6.2 Virtual Subclasses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/13-6-2-virtual-subclasses-sticky.svg" alt="Sticky Note: 13.6.2 Virtual Subclasses" width="30%">
+</a>
+
 
 ABCs can register unrelated classes as virtual subclasses using `.register()`:
 
@@ -578,6 +600,17 @@ function playAll(items: Playable[]): void {
 ```
 
 ### Python vs TypeScript Inheritance
+
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-handwritten.svg" alt="Handwritten: Python vs TypeScript Inheritance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-diagram.svg" alt="Diagram: Python vs TypeScript Inheritance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/python-programming/13-inheritance/python-vs-typescript-inheritance-sticky.svg" alt="Sticky Note: Python vs TypeScript Inheritance" width="30%">
+</a>
+
 
 | Concept | Python | TypeScript |
 |---------|--------|------------|

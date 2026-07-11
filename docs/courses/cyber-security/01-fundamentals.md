@@ -41,6 +41,17 @@ The CIA triad is the foundational model for information security policy. Every s
 
 ### 1.1 Real-World Analogy: The Bank Vault
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-handwritten.svg" alt="Handwritten: 1.1 Real-World Analogy: The Bank Vault" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-diagram.svg" alt="Diagram: 1.1 Real-World Analogy: The Bank Vault" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-1-real-world-analogy-the-bank-vault-sticky.svg" alt="Sticky Note: 1.1 Real-World Analogy: The Bank Vault" width="30%">
+</a>
+
+
 Think of a **bank vault** in a secure facility:
 
 | CIA Element | Bank Analogy | Security Counterpart |
@@ -52,6 +63,17 @@ Think of a **bank vault** in a secure facility:
 A failure in any one dimension compromises the entire system. If the vault is always open (availability) but anyone can walk in (confidentiality), the bank fails. If the vault is impenetrable but never opens (no availability), the bank also fails.
 
 ### 1.2 Confidentiality — Keeping Secrets
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-handwritten.svg" alt="Handwritten: 1.2 Confidentiality — Keeping Secrets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-diagram.svg" alt="Diagram: 1.2 Confidentiality — Keeping Secrets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-2-confidentiality-keeping-secrets-sticky.svg" alt="Sticky Note: 1.2 Confidentiality — Keeping Secrets" width="30%">
+</a>
+
 
 **Definition:** Ensuring that information is accessible only to those authorized to see it.
 
@@ -80,6 +102,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 
 ### 1.3 Integrity — Trusting the Data
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-handwritten.svg" alt="Handwritten: 1.3 Integrity — Trusting the Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-diagram.svg" alt="Diagram: 1.3 Integrity — Trusting the Data" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-3-integrity-trusting-the-data-sticky.svg" alt="Sticky Note: 1.3 Integrity — Trusting the Data" width="30%">
+</a>
+
+
 **Definition:** Safeguarding the accuracy and completeness of data and processing methods.
 
 **Mechanisms:**
@@ -105,6 +138,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 ```
 
 ### 1.4 Availability — Keeping the Lights On
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-handwritten.svg" alt="Handwritten: 1.4 Availability — Keeping the Lights On" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-diagram.svg" alt="Diagram: 1.4 Availability — Keeping the Lights On" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-4-availability-keeping-the-lights-on-sticky.svg" alt="Sticky Note: 1.4 Availability — Keeping the Lights On" width="30%">
+</a>
+
 
 **Definition:** Ensuring timely and reliable access to information and systems by authorized users.
 
@@ -134,6 +178,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 
 ### 1.5 CIA Triad — Complexities & Trade-offs
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-handwritten.svg" alt="Handwritten: 1.5 CIA Triad — Complexities & Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-diagram.svg" alt="Diagram: 1.5 CIA Triad — Complexities & Trade-offs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/1-5-cia-triad-complexities-trade-offs-sticky.svg" alt="Sticky Note: 1.5 CIA Triad — Complexities & Trade-offs" width="30%">
+</a>
+
+
 | Scenario | Confidentiality | Integrity | Availability | Resolution |
 |----------|----------------|-----------|--------------|------------|
 | Encrypt database = slower reads | ✅ Strong | ✅ Same | ❌ Slower queries | Use hardware acceleration (AES-NI) |
@@ -142,6 +197,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 | Too many authentication factors | ✅ Strong | ✅ Same | ❌ User lockout | Implement risk-based (adaptive) auth |
 
 ### CIA Triad — Advantages & Disadvantages Summary
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-handwritten.svg" alt="Handwritten: CIA Triad — Advantages & Disadvantages Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-diagram.svg" alt="Diagram: CIA Triad — Advantages & Disadvantages Summary" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/cia-triad-advantages-disadvantages-summary-sticky.svg" alt="Sticky Note: CIA Triad — Advantages & Disadvantages Summary" width="30%">
+</a>
+
 
 | Element | Advantages | Disadvantages |
 |---------|------------|---------------|
@@ -155,6 +221,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 
 ### 2.1 Real-World Analogy: Airport Security
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-handwritten.svg" alt="Handwritten: 2.1 Real-World Analogy: Airport Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-diagram.svg" alt="Diagram: 2.1 Real-World Analogy: Airport Security" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-1-real-world-analogy-airport-security-sticky.svg" alt="Sticky Note: 2.1 Real-World Analogy: Airport Security" width="30%">
+</a>
+
+
 | AAA Component | Airport Equivalent | Security Purpose |
 |---------------|--------------------|------------------|
 | **Authentication** | Show passport + boarding pass | "Are you who you say you are?" |
@@ -162,6 +239,17 @@ A failure in any one dimension compromises the entire system. If the vault is al
 | **Accounting** | Flight manifest + departure logs | "What did you do? Where did you go?" |
 
 ### 2.2 Authentication — Proving Identity
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-handwritten.svg" alt="Handwritten: 2.2 Authentication — Proving Identity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-diagram.svg" alt="Diagram: 2.2 Authentication — Proving Identity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-2-authentication-proving-identity-sticky.svg" alt="Sticky Note: 2.2 Authentication — Proving Identity" width="30%">
+</a>
+
 
 **Three Authentication Factors:**
 
@@ -189,6 +277,17 @@ Step 7: Service decrypts and grants access — mutual authentication complete.
 
 ### 2.3 Authorization — Granting Access
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-handwritten.svg" alt="Handwritten: 2.3 Authorization — Granting Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-diagram.svg" alt="Diagram: 2.3 Authorization — Granting Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-3-authorization-granting-access-sticky.svg" alt="Sticky Note: 2.3 Authorization — Granting Access" width="30%">
+</a>
+
+
 **Authorization Models:**
 
 | Model | Description | Example |
@@ -214,6 +313,17 @@ Else
 
 ### 2.4 Accounting — Keeping Records
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-handwritten.svg" alt="Handwritten: 2.4 Accounting — Keeping Records" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-diagram.svg" alt="Diagram: 2.4 Accounting — Keeping Records" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-4-accounting-keeping-records-sticky.svg" alt="Sticky Note: 2.4 Accounting — Keeping Records" width="30%">
+</a>
+
+
 **Key Data Collected:**
 - User/process identifier
 - Login/logout timestamps
@@ -229,6 +339,17 @@ Else
 - **Linux auditd:** `ausearch`, `aureport` for comprehensive system call accounting.
 
 ### 2.5 AAA Protocol Comparison
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-handwritten.svg" alt="Handwritten: 2.5 AAA Protocol Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-diagram.svg" alt="Diagram: 2.5 AAA Protocol Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/2-5-aaa-protocol-comparison-sticky.svg" alt="Sticky Note: 2.5 AAA Protocol Comparison" width="30%">
+</a>
+
 
 | Feature | RADIUS | TACACS+ | Kerberos |
 |---------|--------|---------|----------|
@@ -246,6 +367,17 @@ Else
 Seven timeless principles from Saltzer & Schroeder's 1975 paper "The Protection of Information in Computer Systems," augmented with modern additions.
 
 ### 3.1 Principle 1: Least Privilege
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-handwritten.svg" alt="Handwritten: 3.1 Principle 1: Least Privilege" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-diagram.svg" alt="Diagram: 3.1 Principle 1: Least Privilege" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-1-principle-1-least-privilege-sticky.svg" alt="Sticky Note: 3.1 Principle 1: Least Privilege" width="30%">
+</a>
+
 
 **Definition:** Every entity (user, process, service) should operate with the minimum set of permissions necessary to perform its function.
 
@@ -271,6 +403,17 @@ Seven timeless principles from Saltzer & Schroeder's 1975 paper "The Protection 
 **Violation Example — Target 2013:** HVAC vendor had network access reaching the POS system. The vendor's badge was too permissive — see Case Study 2.
 
 ### 3.2 Principle 2: Defense in Depth (Layered Security)
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-handwritten.svg" alt="Handwritten: 3.2 Principle 2: Defense in Depth (Layered Security)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-diagram.svg" alt="Diagram: 3.2 Principle 2: Defense in Depth (Layered Security)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-2-principle-2-defense-in-depth-layered-security-sticky.svg" alt="Sticky Note: 3.2 Principle 2: Defense in Depth (Layered Security)" width="30%">
+</a>
+
 
 **Definition:** Multiple layers of security controls ensure that if one layer fails, the next layer contains the threat.
 
@@ -301,6 +444,17 @@ LAYER 9 — Backup & DR:           Point-in-time recovery, 3-2-1 backup rule.
 
 ### 3.3 Principle 3: Economy of Mechanism (Keep It Simple)
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-handwritten.svg" alt="Handwritten: 3.3 Principle 3: Economy of Mechanism (Keep It Simple)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-diagram.svg" alt="Diagram: 3.3 Principle 3: Economy of Mechanism (Keep It Simple)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-3-principle-3-economy-of-mechanism-keep-it-simple-sticky.svg" alt="Sticky Note: 3.3 Principle 3: Economy of Mechanism (Keep It Simple)" width="30%">
+</a>
+
+
 **Definition:** Security mechanisms should be as simple as possible. Complexity hides vulnerabilities.
 
 **Real-World Analogy: A single deadbolt lock** is more reliable than a 12-gear combination lock that jams when dust enters.
@@ -314,6 +468,17 @@ LAYER 9 — Backup & DR:           Point-in-time recovery, 3-2-1 backup rule.
 | Firewall rules | `deny all; allow port 80,443` | 600 rules with overlapping subnets, port ranges, and time-based exceptions |
 
 ### 3.4 Principle 4: Fail-Safe Defaults
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-handwritten.svg" alt="Handwritten: 3.4 Principle 4: Fail-Safe Defaults" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-diagram.svg" alt="Diagram: 3.4 Principle 4: Fail-Safe Defaults" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-4-principle-4-fail-safe-defaults-sticky.svg" alt="Sticky Note: 3.4 Principle 4: Fail-Safe Defaults" width="30%">
+</a>
+
 
 **Definition:** When a system fails, it should default to a secure state (deny access) rather than an insecure state (allow access).
 
@@ -338,6 +503,17 @@ LAYER 9 — Backup & DR:           Point-in-time recovery, 3-2-1 backup rule.
 
 ### 3.5 Principle 5: Complete Mediation
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-handwritten.svg" alt="Handwritten: 3.5 Principle 5: Complete Mediation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-diagram.svg" alt="Diagram: 3.5 Principle 5: Complete Mediation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-5-principle-5-complete-mediation-sticky.svg" alt="Sticky Note: 3.5 Principle 5: Complete Mediation" width="30%">
+</a>
+
+
 **Definition:** Every access to every object must be checked for authority — not just the first time, but every single time.
 
 **Real-World Analogy: A security guard** at a building entrance who checks every person's badge every time they enter, not just the first time they arrive in the morning.
@@ -358,6 +534,17 @@ SECURE:
 
 ### 3.6 Principle 6: Open Design (No Security Through Obscurity)
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-handwritten.svg" alt="Handwritten: 3.6 Principle 6: Open Design (No Security Through Obscurity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-diagram.svg" alt="Diagram: 3.6 Principle 6: Open Design (No Security Through Obscurity)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-6-principle-6-open-design-no-security-through-obscurity-sticky.svg" alt="Sticky Note: 3.6 Principle 6: Open Design (No Security Through Obscurity)" width="30%">
+</a>
+
+
 **Definition:** The security of a mechanism should not depend on the secrecy of its design or implementation. Secrets are keys and passwords, not algorithms.
 
 **Real-World Analogy: A lock** works because of the key, not because the lock mechanism is hidden. If everyone knows how a pin tumbler lock works, it still requires the correct key to open.
@@ -372,6 +559,17 @@ SECURE:
 
 ### 3.7 Principle 7: Separation of Duties
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-handwritten.svg" alt="Handwritten: 3.7 Principle 7: Separation of Duties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-diagram.svg" alt="Diagram: 3.7 Principle 7: Separation of Duties" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/3-7-principle-7-separation-of-duties-sticky.svg" alt="Sticky Note: 3.7 Principle 7: Separation of Duties" width="30%">
+</a>
+
+
 **Definition:** No single entity should have complete control over a critical process. Split critical operations across multiple parties.
 
 **Real-World Analogy: A bank** requires two signatures on checks over $10,000. One employee cannot unilaterally move large sums.
@@ -385,6 +583,17 @@ SECURE:
 | Crypto key management | One person generates, stores, and uses the key | Key custodian (store) ≠ key operator (use) ≠ key auditor (log review) |
 
 ### Security Principles — Comparison Table
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-handwritten.svg" alt="Handwritten: Security Principles — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-diagram.svg" alt="Diagram: Security Principles — Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/security-principles-comparison-table-sticky.svg" alt="Sticky Note: Security Principles — Comparison Table" width="30%">
+</a>
+
 
 | Principle | Focus | Key Question | Obvious When Missing |
 |-----------|-------|-------------|---------------------|
@@ -407,9 +616,31 @@ Threat modeling is a structured approach to identifying, enumerating, and priori
 
 ### 4.1 Real-World Analogy: Architectural Blueprint Review
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-handwritten.svg" alt="Handwritten: 4.1 Real-World Analogy: Architectural Blueprint Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-diagram.svg" alt="Diagram: 4.1 Real-World Analogy: Architectural Blueprint Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-1-real-world-analogy-architectural-blueprint-review-sticky.svg" alt="Sticky Note: 4.1 Real-World Analogy: Architectural Blueprint Review" width="30%">
+</a>
+
+
 Before building a house, an architect reviews the blueprints for structural weaknesses. A threat model is the security equivalent → reviewing system architecture diagrams for security weaknesses before writing code.
 
 ### 4.2 STRIDE (Microsoft)
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-handwritten.svg" alt="Handwritten: 4.2 STRIDE (Microsoft)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-diagram.svg" alt="Diagram: 4.2 STRIDE (Microsoft)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-2-stride-microsoft-sticky.svg" alt="Sticky Note: 4.2 STRIDE (Microsoft)" width="30%">
+</a>
+
 
 Developed by Microsoft in 1999. Six threat categories mapped to security properties.
 
@@ -454,6 +685,17 @@ Developed by Microsoft in 1999. Six threat categories mapped to security propert
 | Password reset | Attacker gains admin access via weak token generation | Elevation of Privilege | Full compromise | Cryptographically random tokens, expiry, single-use |
 
 ### 4.3 PASTA (Process for Attack Simulation and Threat Analysis)
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-handwritten.svg" alt="Handwritten: 4.3 PASTA (Process for Attack Simulation and Threat Analysis)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-diagram.svg" alt="Diagram: 4.3 PASTA (Process for Attack Simulation and Threat Analysis)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-3-pasta-process-for-attack-simulation-and-threat-analysis-sticky.svg" alt="Sticky Note: 4.3 PASTA (Process for Attack Simulation and Threat Analysis)" width="30%">
+</a>
+
 
 Created by Tony UcedaVÃ©lez (VerSprite). Seven-stage risk-centric methodology. Unlike STRIDE which categorizes threats bottom-up, PASTA starts with business objectives and works down.
 
@@ -507,6 +749,17 @@ Threat Agent Profile: Insider (Disgruntled Employee)
 
 ### 4.4 LINDDUN → Privacy Threat Modeling
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-handwritten.svg" alt="Handwritten: 4.4 LINDDUN → Privacy Threat Modeling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-diagram.svg" alt="Diagram: 4.4 LINDDUN → Privacy Threat Modeling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-4-linddun-privacy-threat-modeling-sticky.svg" alt="Sticky Note: 4.4 LINDDUN → Privacy Threat Modeling" width="30%">
+</a>
+
+
 LINDDUN focuses specifically on privacy threats → an evolution of STRIDE for the privacy domain. Developed by DistriNet Research Group, KU Leuven.
 
 **Seven Privacy Threat Categories:**
@@ -543,6 +796,17 @@ LINDDUN focuses specifically on privacy threats → an evolution of STRIDE for t
 | Data retention policy | Configuration | Non-compliance → retains data beyond GDPR limit | Auto-delete records after legal retention period |
 
 ### 4.5 Attack Trees
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-handwritten.svg" alt="Handwritten: 4.5 Attack Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-diagram.svg" alt="Diagram: 4.5 Attack Trees" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-5-attack-trees-sticky.svg" alt="Sticky Note: 4.5 Attack Trees" width="30%">
+</a>
+
 
 Introduced by Bruce Schneier in 1999. Hierarchical representation of attack goals and sub-goals using AND/OR logic.
 
@@ -594,6 +858,17 @@ Mitigation priority: Phishing awareness > credential protection > SQLi preventio
 
 ### 4.6 Threat Modeling Frameworks Comparison
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-handwritten.svg" alt="Handwritten: 4.6 Threat Modeling Frameworks Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-diagram.svg" alt="Diagram: 4.6 Threat Modeling Frameworks Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/4-6-threat-modeling-frameworks-comparison-sticky.svg" alt="Sticky Note: 4.6 Threat Modeling Frameworks Comparison" width="30%">
+</a>
+
+
 | Dimension | STRIDE | PASTA | LINDDUN | Attack Trees |
 |-----------|--------|-------|---------|--------------|
 | Primary Focus | Security threats | Risk-driven analysis | Privacy threats | Attack paths |
@@ -613,9 +888,31 @@ Mitigation priority: Phishing awareness > credential protection > SQLi preventio
 
 ### 5.1 Real-World Analogy: Homeowners Insurance
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-handwritten.svg" alt="Handwritten: 5.1 Real-World Analogy: Homeowners Insurance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-diagram.svg" alt="Diagram: 5.1 Real-World Analogy: Homeowners Insurance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-1-real-world-analogy-homeowners-insurance-sticky.svg" alt="Sticky Note: 5.1 Real-World Analogy: Homeowners Insurance" width="30%">
+</a>
+
+
 You assess what could damage your house (fire, flood, theft), estimate the probability and cost, then decide: buy insurance (transfer), install a fire alarm (mitigate), accept the risk of small thefts (accept), or move to a safer neighborhood (avoid).
 
 ### 5.2 Risk Management Terminology
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-handwritten.svg" alt="Handwritten: 5.2 Risk Management Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-diagram.svg" alt="Diagram: 5.2 Risk Management Terminology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-2-risk-management-terminology-sticky.svg" alt="Sticky Note: 5.2 Risk Management Terminology" width="30%">
+</a>
+
 
 | Term | Definition | Example |
 |------|------------|---------|
@@ -635,6 +932,17 @@ Risk = (Probability of Threat) x (Probability Vulnerability is Exploitable) x (I
 ```
 
 ### 5.3 Qualitative Risk Assessment
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-handwritten.svg" alt="Handwritten: 5.3 Qualitative Risk Assessment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-diagram.svg" alt="Diagram: 5.3 Qualitative Risk Assessment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-3-qualitative-risk-assessment-sticky.svg" alt="Sticky Note: 5.3 Qualitative Risk Assessment" width="30%">
+</a>
+
 
 Uses descriptive scales (Low, Medium, High) rather than monetary values. Best when precise data is unavailable.
 
@@ -678,6 +986,17 @@ H = High (12-16)       C = Critical (16-25)
 
 ### 5.4 Quantitative Risk Assessment
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-handwritten.svg" alt="Handwritten: 5.4 Quantitative Risk Assessment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-diagram.svg" alt="Diagram: 5.4 Quantitative Risk Assessment" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-4-quantitative-risk-assessment-sticky.svg" alt="Sticky Note: 5.4 Quantitative Risk Assessment" width="30%">
+</a>
+
+
 Uses monetary values, statistical probabilities, and actuarial math.
 
 **Core Formulas:**
@@ -720,6 +1039,17 @@ Decision:                  IMPLEMENT → positive ROSI + critical asset protecti
 
 ### 5.5 NIST Risk Management Framework (RMF)
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-handwritten.svg" alt="Handwritten: 5.5 NIST Risk Management Framework (RMF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-diagram.svg" alt="Diagram: 5.5 NIST Risk Management Framework (RMF)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-5-nist-risk-management-framework-rmf-sticky.svg" alt="Sticky Note: 5.5 NIST Risk Management Framework (RMF)" width="30%">
+</a>
+
+
 NIST SP 800-37, Revision 2. Seven-step framework for integrating security and risk into the system development lifecycle. Mandatory for US federal agencies, widely adopted in regulated industries.
 
 **NIST RMF Seven Steps:**
@@ -744,6 +1074,17 @@ NIST SP 800-37, Revision 2. Seven-step framework for integrating security and ri
 
 ### 5.6 Risk Treatment Options
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-handwritten.svg" alt="Handwritten: 5.6 Risk Treatment Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-diagram.svg" alt="Diagram: 5.6 Risk Treatment Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-6-risk-treatment-options-sticky.svg" alt="Sticky Note: 5.6 Risk Treatment Options" width="30%">
+</a>
+
+
 | Option | Action | When to Use | Example |
 |--------|--------|-------------|---------|
 | **Mitigate** | Implement controls to reduce likelihood or impact | Cost-effective control exists; cost &lt; risk | Patch critical vulnerability |
@@ -753,6 +1094,17 @@ NIST SP 800-37, Revision 2. Seven-step framework for integrating security and ri
 | **Escalate** | Kick to higher authority | Risk exceeds your acceptance authority level | AO/CISO makes the call |
 
 ### 5.7 Risk Assessment Report Template
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-handwritten.svg" alt="Handwritten: 5.7 Risk Assessment Report Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-diagram.svg" alt="Diagram: 5.7 Risk Assessment Report Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/5-7-risk-assessment-report-template-sticky.svg" alt="Sticky Note: 5.7 Risk Assessment Report Template" width="30%">
+</a>
+
 
 ```
 RISK ASSESSMENT REPORT
@@ -785,6 +1137,17 @@ OVERALL ASSESSMENT:
 
 ### 6.1 Policy Hierarchy
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-handwritten.svg" alt="Handwritten: 6.1 Policy Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-diagram.svg" alt="Diagram: 6.1 Policy Hierarchy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-1-policy-hierarchy-sticky.svg" alt="Sticky Note: 6.1 Policy Hierarchy" width="30%">
+</a>
+
+
 Security policies exist at multiple levels of abstraction, from strategic to implementation.
 
 | Level | Document Type | Scope | Example Statement |
@@ -795,6 +1158,17 @@ Security policies exist at multiple levels of abstraction, from strategic to imp
 | **Implementation** | Guideline (recommended) | Advisory | "Recommended cipher suites for TLS 1.3 configuration" |
 
 ### 6.2 Common Security Policies
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-handwritten.svg" alt="Handwritten: 6.2 Common Security Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-diagram.svg" alt="Diagram: 6.2 Common Security Policies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-2-common-security-policies-sticky.svg" alt="Sticky Note: 6.2 Common Security Policies" width="30%">
+</a>
+
 
 | Policy | Purpose | Key Requirements |
 |--------|---------|-----------------|
@@ -809,6 +1183,17 @@ Security policies exist at multiple levels of abstraction, from strategic to imp
 
 ### 6.3 Policy Key Elements Template:
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-handwritten.svg" alt="Handwritten: 6.3 Policy Key Elements Template:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-diagram.svg" alt="Diagram: 6.3 Policy Key Elements Template:" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-3-policy-key-elements-template-sticky.svg" alt="Sticky Note: 6.3 Policy Key Elements Template:" width="30%">
+</a>
+
+
 ```
 1. PURPOSE → Why this policy exists.
 2. SCOPE → Who and what it applies to.
@@ -821,6 +1206,17 @@ Security policies exist at multiple levels of abstraction, from strategic to imp
 ```
 
 ### 6.4 Policy Lifecycle
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-handwritten.svg" alt="Handwritten: 6.4 Policy Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-diagram.svg" alt="Diagram: 6.4 Policy Lifecycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/6-4-policy-lifecycle-sticky.svg" alt="Sticky Note: 6.4 Policy Lifecycle" width="30%">
+</a>
+
 
 ```
 1. IDENTIFY NEED → Triggered by: new regulation, post-incident lesson, audit finding, technology change.
@@ -838,6 +1234,17 @@ Security policies exist at multiple levels of abstraction, from strategic to imp
 ## 7. Security vs Usability Trade-Off
 
 ### 7.1 The Fundamental Tension
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-handwritten.svg" alt="Handwritten: 7.1 The Fundamental Tension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-diagram.svg" alt="Diagram: 7.1 The Fundamental Tension" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-the-fundamental-tension-sticky.svg" alt="Sticky Note: 7.1 The Fundamental Tension" width="30%">
+</a>
+
 
 Security and usability are inherently in tension. Every additional security control adds friction for the user, reducing adoption and productivity.
 
@@ -858,6 +1265,17 @@ Usability |           /
 
 ### 7.2 Real-World Examples
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-handwritten.svg" alt="Handwritten: 7.2 Real-World Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-diagram.svg" alt="Diagram: 7.2 Real-World Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-real-world-examples-sticky.svg" alt="Sticky Note: 7.2 Real-World Examples" width="30%">
+</a>
+
+
 | Scenario | High Security (Low Usability) | Balanced | High Usability (Low Security) |
 |----------|------------------------------|----------|-------------------------------|
 | Authentication | 4-factor: password + TOTP + YubiKey + fingerprint every time | Password + MFA push notification | Password only (no MFA) |
@@ -869,6 +1287,17 @@ Usability |           /
 
 ### 7.3 Achieving Balance → Strategies
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-handwritten.svg" alt="Handwritten: 7.3 Achieving Balance → Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-diagram.svg" alt="Diagram: 7.3 Achieving Balance → Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-achieving-balance-strategies-sticky.svg" alt="Sticky Note: 7.3 Achieving Balance → Strategies" width="30%">
+</a>
+
+
 | Strategy | How It Works | Example |
 |----------|-------------|---------|
 | **Risk-based (adaptive) authentication** | Increase security only when risk factors are elevated | No MFA from home IP; MFA + step-up from unknown VPN location |
@@ -879,6 +1308,17 @@ Usability |           /
 | **Just-in-time (JIT) access** | Grant elevated privileges only for a limited window | AWS IAM Identity Center JIT, Azure PIM |
 
 ### 7.4 The Cost of Poor Usability
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-handwritten.svg" alt="Handwritten: 7.4 The Cost of Poor Usability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-diagram.svg" alt="Diagram: 7.4 The Cost of Poor Usability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-the-cost-of-poor-usability-sticky.svg" alt="Sticky Note: 7.4 The Cost of Poor Usability" width="30%">
+</a>
+
 
 | Problem | Security Impact | Example |
 |---------|----------------|---------|
@@ -895,6 +1335,17 @@ Usability |           /
 All examples assume a Linux environment (Kali, Ubuntu, or similar). Adapt paths and package names for your distribution.
 
 ### 8.1 OSSEC / Wazuh Agent → Host Intrusion Detection
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-handwritten.svg" alt="Handwritten: 8.1 OSSEC / Wazuh Agent → Host Intrusion Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-diagram.svg" alt="Diagram: 8.1 OSSEC / Wazuh Agent → Host Intrusion Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-ossec-wazuh-agent-host-intrusion-detection-sticky.svg" alt="Sticky Note: 8.1 OSSEC / Wazuh Agent → Host Intrusion Detection" width="30%">
+</a>
+
 
 **What it does:** File integrity monitoring (FIM), log analysis, rootkit detection, and real-time alerting. Wazuh is the modern fork of OSSEC with additional features (agent enrollment, centralized management, SIEM integration).
 
@@ -933,6 +1384,17 @@ systemctl enable wazuh-agent
 | PCI DSS Compliance | Pre-built rule set for PCI Requirement 11.5 | Automated FIM reporting for audit evidence |
 
 ### 8.2 Nmap → Network Scanning and Discovery
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-handwritten.svg" alt="Handwritten: 8.2 Nmap → Network Scanning and Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-diagram.svg" alt="Diagram: 8.2 Nmap → Network Scanning and Discovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-nmap-network-scanning-and-discovery-sticky.svg" alt="Sticky Note: 8.2 Nmap → Network Scanning and Discovery" width="30%">
+</a>
+
 
 **What it does:** Discovers live hosts, open ports, running services, operating systems, and potential vulnerabilities across a network.
 
@@ -1002,6 +1464,17 @@ Analysis:
 
 ### 8.3 Wireshark → Packet Capture and Protocol Analysis
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-handwritten.svg" alt="Handwritten: 8.3 Wireshark → Packet Capture and Protocol Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-diagram.svg" alt="Diagram: 8.3 Wireshark → Packet Capture and Protocol Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-wireshark-packet-capture-and-protocol-analysis-sticky.svg" alt="Sticky Note: 8.3 Wireshark → Packet Capture and Protocol Analysis" width="30%">
+</a>
+
+
 **What it does:** Capture and inspect network packets in real-time or from saved pcap files. Essential for network forensics and protocol debugging.
 
 **Essential Display Filters:**
@@ -1052,6 +1525,17 @@ tshark -r /tmp/http_capture.pcap -Y "http.request.method == POST" \
 | TLS version issues | `tls.handshake.version` | Version &lt; 1.2 indicates weak/outdated TLS |
 
 ### 8.4 John the Ripper and hashcat → Password Cracking
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-handwritten.svg" alt="Handwritten: 8.4 John the Ripper and hashcat → Password Cracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-diagram.svg" alt="Diagram: 8.4 John the Ripper and hashcat → Password Cracking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-john-the-ripper-and-hashcat-password-cracking-sticky.svg" alt="Sticky Note: 8.4 John the Ripper and hashcat → Password Cracking" width="30%">
+</a>
+
 
 **What it does:** Recover plaintext passwords from stored hashes using dictionary, brute-force, and rule-based attacks. Essential for assessing password policy strength.
 
@@ -1129,6 +1613,17 @@ hashcat -m 0 --show hashes.txt
 
 ### 8.5 Lynis → System Security Auditing
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-handwritten.svg" alt="Handwritten: 8.5 Lynis → System Security Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-diagram.svg" alt="Diagram: 8.5 Lynis → System Security Auditing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-lynis-system-security-auditing-sticky.svg" alt="Sticky Note: 8.5 Lynis → System Security Auditing" width="30%">
+</a>
+
+
 **What it does:** Automated security audit for Linux/Unix systems. Scans for misconfigurations, outdated software, weak permissions, and compliance gaps.
 
 **Basic Usage:**
@@ -1195,6 +1690,17 @@ Interpretation:
 ## 9. Case Studies → Real Breach Anatomy
 
 ### 9.1 Equifax 2017 → The $1.4 Billion Patch Failure
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-handwritten.svg" alt="Handwritten: 9.1 Equifax 2017 → The $1.4 Billion Patch Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-diagram.svg" alt="Diagram: 9.1 Equifax 2017 → The $1.4 Billion Patch Failure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-1-equifax-2017-the-1-4-billion-patch-failure-sticky.svg" alt="Sticky Note: 9.1 Equifax 2017 → The $1.4 Billion Patch Failure" width="30%">
+</a>
+
 
 **Overview:**
 - **Date:** May-July 2017 (detected July 29, disclosed September 7)
@@ -1274,6 +1780,17 @@ Interpretation:
 ---
 
 ### 9.2 Target 2013 → The HVAC Vendor That Cost $202M
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-handwritten.svg" alt="Handwritten: 9.2 Target 2013 → The HVAC Vendor That Cost $202M" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-diagram.svg" alt="Diagram: 9.2 Target 2013 → The HVAC Vendor That Cost $202M" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-2-target-2013-the-hvac-vendor-that-cost-202m-sticky.svg" alt="Sticky Note: 9.2 Target 2013 → The HVAC Vendor That Cost $202M" width="30%">
+</a>
+
 
 **Overview:**
 - **Date:** Nov 27 - Dec 15, 2013 (detected Dec 12, disclosed Dec 19)
@@ -1361,6 +1878,17 @@ CEO Gregg Steinhart resigns in May 2014
 ---
 
 ### 9.3 Capital One 2019 → SSRF + IAM Misconfiguration = 106M Records
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-handwritten.svg" alt="Handwritten: 9.3 Capital One 2019 → SSRF + IAM Misconfiguration = 106M Records" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-diagram.svg" alt="Diagram: 9.3 Capital One 2019 → SSRF + IAM Misconfiguration = 106M Records" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/9-3-capital-one-2019-ssrf-iam-misconfiguration-106m-records-sticky.svg" alt="Sticky Note: 9.3 Capital One 2019 → SSRF + IAM Misconfiguration = 106M Records" width="30%">
+</a>
+
 
 **Overview:**
 - **Date:** March 22-23, 2019 (detected July 17, disclosed July 29)
@@ -1528,6 +2056,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### Case Study Comparison Matrix
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-handwritten.svg" alt="Handwritten: Case Study Comparison Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-diagram.svg" alt="Diagram: Case Study Comparison Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/case-study-comparison-matrix-sticky.svg" alt="Sticky Note: Case Study Comparison Matrix" width="30%">
+</a>
+
+
 | Dimension | Equifax 2017 | Target 2013 | Capital One 2019 |
 |-----------|-------------|-------------|-------------------|
 | Root Cause | Unpatched CVE-2017-5638 | Vendor phishing + flat network | SSRF + IAM misconfiguration |
@@ -1549,6 +2088,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### 10.1 Banking and Financial Services
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-handwritten.svg" alt="Handwritten: 10.1 Banking and Financial Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-diagram.svg" alt="Diagram: 10.1 Banking and Financial Services" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-1-banking-and-financial-services-sticky.svg" alt="Sticky Note: 10.1 Banking and Financial Services" width="30%">
+</a>
+
+
 | Security Principle | Application | Regulatory Driver |
 |-------------------|-------------|------------------|
 | CIA Triad | All three are critical. Confidentiality protects account data. Integrity ensures balances are accurate. Availability ensures 24/7 access. | SOX, PCI DSS, GLBA |
@@ -1560,6 +2110,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### 10.2 Healthcare
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-handwritten.svg" alt="Handwritten: 10.2 Healthcare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-diagram.svg" alt="Diagram: 10.2 Healthcare" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-2-healthcare-sticky.svg" alt="Sticky Note: 10.2 Healthcare" width="30%">
+</a>
+
+
 | Security Principle | Application | Regulatory Driver |
 |-------------------|-------------|------------------|
 | CIA Triad | Confidentiality is paramount (medical records). Integrity ensures correct diagnosis/treatment. Availability is life-critical (hospital systems). | HIPAA |
@@ -1570,6 +2131,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 | Audit Logging | Every access to patient records logged: who, when, which record, purpose (treatment/payment/operations). | HIPAA Audit Control |
 
 ### 10.3 Government and Defense
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-handwritten.svg" alt="Handwritten: 10.3 Government and Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-diagram.svg" alt="Diagram: 10.3 Government and Defense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/10-3-government-and-defense-sticky.svg" alt="Sticky Note: 10.3 Government and Defense" width="30%">
+</a>
+
 
 | Security Principle | Application | Regulatory Driver |
 |-------------------|-------------|------------------|
@@ -1586,61 +2158,226 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### Q1: What is the CIA triad and why is it the foundation of information security?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-handwritten.svg" alt="Handwritten: What is the CIA triad and why is it the foundation of information security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-diagram.svg" alt="Diagram: What is the CIA triad and why is it the foundation of information security?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-cia-triad-and-why-is-it-the-foundation-of-information-security-sticky.svg" alt="Sticky Note: What is the CIA triad and why is it the foundation of information security?" width="30%">
+</a>
+
+
 **Answer:** The CIA triad is Confidentiality, Integrity, and Availability → the three pillars that define information security goals. Confidentiality ensures data is accessible only to authorized parties (via encryption, access controls). Integrity ensures data is accurate and unmodified (via hashing, digital signatures). Availability ensures systems are accessible when needed (via redundancy, load balancing). Every security control maps to at least one CIA element. A breach in any one element is a security incident.
 
 ### Q2: Explain the difference between authentication and authorization.
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-handwritten.svg" alt="Handwritten: Explain the difference between authentication and authorization." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-diagram.svg" alt="Diagram: Explain the difference between authentication and authorization." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-difference-between-authentication-and-authorization-sticky.svg" alt="Sticky Note: Explain the difference between authentication and authorization." width="30%">
+</a>
+
 
 **Answer:** Authentication answers "Who are you?" → proving identity via something you know (password), have (token), or are (biometric). Authorization answers "What can you do?" → determining permissions after identity is proven. Example: Presenting your passport at airport security is authentication. The gate agent checking your boarding pass for the correct flight is authorization. In systems, authentication happens first (login), then authorization is checked for every subsequent action.
 
 ### Q3: What is the principle of least privilege and why is it important?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is the principle of least privilege and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-diagram.svg" alt="Diagram: What is the principle of least privilege and why is it important?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-principle-of-least-privilege-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is the principle of least privilege and why is it important?" width="30%">
+</a>
+
+
 **Answer:** Least privilege means every entity (user, process, service) should have only the minimum permissions necessary to perform its function. It limits blast radius → if an account is compromised, the attacker can only do what that account can do. Target's 2013 breach is a textbook violation: HVAC vendor accounts had network access reaching POS systems. Implementation: start with zero permissions, add only what's needed, review quarterly, revoke stale permissions immediately.
 
 ### Q4: How would you implement defense in depth for a web application?
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-handwritten.svg" alt="Handwritten: How would you implement defense in depth for a web application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-diagram.svg" alt="Diagram: How would you implement defense in depth for a web application?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-implement-defense-in-depth-for-a-web-application-sticky.svg" alt="Sticky Note: How would you implement defense in depth for a web application?" width="30%">
+</a>
+
 
 **Answer:** Defense in depth means multiple independent security layers so that if one fails, another catches the threat. For a web application: Layer 1 → Firewall (block all ports except 80/443). Layer 2 → WAF (detect SQLi, XSS, CSRF). Layer 3 → Rate limiting (prevent brute force). Layer 4 → MFA authentication. Layer 5 → RBAC authorization. Layer 6 → Input validation + prepared statements. Layer 7 → TLS 1.3 in transit, AES-256 at rest. Layer 8 → SIEM monitoring with real-time alerting. Layer 9 → Backups with 3-2-1 rule. Each control must be from an independent failure domain.
 
 ### Q5: Walk me through a STRIDE threat model for an e-commerce checkout system.
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-handwritten.svg" alt="Handwritten: Walk me through a STRIDE threat model for an e-commerce checkout system." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-diagram.svg" alt="Diagram: Walk me through a STRIDE threat model for an e-commerce checkout system." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-me-through-a-stride-threat-model-for-an-e-commerce-checkout-system-sticky.svg" alt="Sticky Note: Walk me through a STRIDE threat model for an e-commerce checkout system." width="30%">
+</a>
+
+
 **Answer:** I decompose the system into DFD elements: External entity (customer), process (checkout handler), data store (orders database), data flow (payment info over HTTPS). STRIDE per element: Spoofing → attacker impersonates customer via stolen session cookie (mitigation: session tokens + HTTPS). Tampering → attacker modifies order total via man-in-the-middle (mitigation: TLS + HMAC signature on payload). Repudiation → customer claims they didn't place the order (mitigation: immutable audit log). Information Disclosure → attacker views other orders via IDOR (mitigation: user-scoped authorization). DoS → attacker floods checkout endpoint (mitigation: rate limiting + CDN). Elevation of Privilege → attacker escalates from customer to admin (mitigation: strict RBAC + input validation).
 
 ### Q6: What's the difference between qualitative and quantitative risk assessment?
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" alt="Handwritten: What's the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" alt="Diagram: What's the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" alt="Sticky Note: What's the difference between qualitative and quantitative risk assessment?" width="30%">
+</a>
+
 
 **Answer:** Qualitative uses descriptive scales (Low/Medium/High) for likelihood and impact, combined in a risk matrix. It's faster, good for initial triage, but subjective. Quantitative uses monetary values and statistical formulas: SLE = AV x EF, ALE = SLE x ARO. It produces harder numbers but requires accurate historical data. Example: Qualitative might rate a ransomware risk as "High." Quantitative would say "ALE = $160,000/year, and a $30K backup solution would reduce that to $16K/year with 380% ROSI." Use qualitative for speed, quantitative for budget justification.
 
 ### Q7: Explain the concept of fail-safe defaults with a real example.
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-handwritten.svg" alt="Handwritten: Explain the concept of fail-safe defaults with a real example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-diagram.svg" alt="Diagram: Explain the concept of fail-safe defaults with a real example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/explain-the-concept-of-fail-safe-defaults-with-a-real-example-sticky.svg" alt="Sticky Note: Explain the concept of fail-safe defaults with a real example." width="30%">
+</a>
+
+
 **Answer:** Fail-safe defaults means when a system fails, it should default to a secure state (deny access) rather than an insecure state (allow access). Rule: all ACLs end with explicit deny; all try/catch blocks fail securely; all authentication failures return the same error message. Real example: A firewall should drop all traffic when it crashes (fails closed), not pass traffic (fails open). Exception: Fire doors must fail open (unlock) for life safety during a fire. The principle requires understanding what "safe" means in each context.
 
 ### Q8: How would you handle the security vs usability trade-off in a corporate environment?
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-handwritten.svg" alt="Handwritten: How would you handle the security vs usability trade-off in a corporate environment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-diagram.svg" alt="Diagram: How would you handle the security vs usability trade-off in a corporate environment?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-would-you-handle-the-security-vs-usability-trade-off-in-a-corporate-environment-sticky.svg" alt="Sticky Note: How would you handle the security vs usability trade-off in a corporate environment?" width="30%">
+</a>
+
 
 **Answer:** Three strategies: (1) Risk-based authentication → enforce MFA only when behavior is anomalous (new device, new location), not on every login. (2) SSO → reduce password fatigue by having one authentication point for all applications. (3) Passwordless → implement FIDO2/WebAuthn with biometrics; users prefer Face ID over typing complex passwords. The goal is to find the minimal friction that achieves acceptable risk. Measure user friction (support tickets, login time) and adjust controls accordingly.
 
 ### Q9: What is the most important lesson from the Equifax breach?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-handwritten.svg" alt="Handwritten: What is the most important lesson from the Equifax breach?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-diagram.svg" alt="Diagram: What is the most important lesson from the Equifax breach?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-is-the-most-important-lesson-from-the-equifax-breach-sticky.svg" alt="Sticky Note: What is the most important lesson from the Equifax breach?" width="30%">
+</a>
+
+
 **Answer:** That a single missed patch should not lead to a national-scale breach. Equifax had all the right tools (vulnerability scanner, security team, patch process) but failed because: (1) They didn't verify the patch was actually applied. (2) They had no defense in depth → once the web server was compromised, the attacker could reach databases with no segmentation. (3) They had no egress monitoring for 76 days of exfiltration. The lesson is that patch management is not just "deploy the patch" but "verify deployment and assume the patch will fail in some cases."
 
 ### Q10: Describe the complete mediation principle.
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-handwritten.svg" alt="Handwritten: Describe the complete mediation principle." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-diagram.svg" alt="Diagram: Describe the complete mediation principle." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/describe-the-complete-mediation-principle-sticky.svg" alt="Sticky Note: Describe the complete mediation principle." width="30%">
+</a>
+
 
 **Answer:** Complete mediation means every access to every object must be checked for authority every single time → not cached, not assumed. Violations lead to TOCTOU (Time of Check, Time of Use) vulnerabilities. Example: A user requests file access; system checks permissions and approves; but between check and use, the user replaces the file with a symlink to /etc/passwd. The fix is to make the permission check and the file access an atomic operation (open syscall checks permissions at the moment of access, not before).
 
 ### Q11: How does open design differ from security through obscurity?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-handwritten.svg" alt="Handwritten: How does open design differ from security through obscurity?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-diagram.svg" alt="Diagram: How does open design differ from security through obscurity?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-does-open-design-differ-from-security-through-obscurity-sticky.svg" alt="Sticky Note: How does open design differ from security through obscurity?" width="30%">
+</a>
+
+
 **Answer:** Open design means the security of a system depends on the secrecy of its keys, not the secrecy of its design. AES, RSA, TLS are all published, peer-reviewed standards → they work because keys are secret, not because the algorithm is hidden. Security through obscurity (hiding the algorithm, using non-standard ports, custom encryption) provides no real security → once the design is discovered (and it will be), the system is completely vulnerable. Kerckhoffs's Principle (1883): "A cryptosystem should be secure even if everything about the system, except the key, is public knowledge."
 
 ### Q12: Walk through the NIST Risk Management Framework steps.
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-handwritten.svg" alt="Handwritten: Walk through the NIST Risk Management Framework steps." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-diagram.svg" alt="Diagram: Walk through the NIST Risk Management Framework steps." width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/walk-through-the-nist-risk-management-framework-steps-sticky.svg" alt="Sticky Note: Walk through the NIST Risk Management Framework steps." width="30%">
+</a>
+
 
 **Answer:** The NIST RMF has seven steps: (1) Prepare → establish risk management roles, risk tolerance, and strategy. (2) Categorize → classify the system as Low/Moderate/High impact using FIPS 199. (3) Select → choose security controls from NIST SP 800-53 baseline for the categorization level. (4) Implement → deploy the controls in system design and configuration. (5) Assess → evaluate whether controls are effectively implemented (testing, documentation review). (6) Authorize → a designated authorizing official accepts residual risk and issues an Authority to Operate (ATO). (7) Monitor → continuous monitoring, periodic reassessment, and change management.
 
 ### Q13: What's the difference between a vulnerability, a threat, and a risk?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" alt="Handwritten: What's the difference between a vulnerability, a threat, and a risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" alt="Diagram: What's the difference between a vulnerability, a threat, and a risk?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/what-s-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" alt="Sticky Note: What's the difference between a vulnerability, a threat, and a risk?" width="30%">
+</a>
+
+
 **Answer:** A vulnerability is a weakness (unpatched software, weak password). A threat is what exploits that weakness (hacker, malware, insider). Risk is the combination: the likelihood that a threat will exploit a vulnerability, multiplied by the impact. Formula: Risk = Threat x Vulnerability x Impact. Example: A missing security patch (vulnerability) + an attacker scanning for that CVE (threat) = high risk that the system will be compromised (risk). You fix vulnerabilities to reduce risk; you can't eliminate threats.
 
 ### Q14: How do you implement separation of duties in a DevSecOps pipeline?
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-handwritten.svg" alt="Handwritten: How do you implement separation of duties in a DevSecOps pipeline?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-diagram.svg" alt="Diagram: How do you implement separation of duties in a DevSecOps pipeline?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/how-do-you-implement-separation-of-duties-in-a-devsecops-pipeline-sticky.svg" alt="Sticky Note: How do you implement separation of duties in a DevSecOps pipeline?" width="30%">
+</a>
+
+
 **Answer:** Separation of duties means no single person controls a critical process from start to finish. In CI/CD: Developer writes code -> QA tests (separate person) -> Security scans (automated, gated) -> Lead approves PR (different person) -> CI runs tests (automated) -> Release manager (separate person) deploys to production. No developer can unilaterally push code to production. For infrastructure: Who creates the change vs who approves it vs who implements it vs who audits the change should be different people.
 
 ### Q15: Compare STRIDE and PASTA threat modeling approaches. When would you use each?
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare STRIDE and PASTA threat modeling approaches. When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-diagram.svg" alt="Diagram: Compare STRIDE and PASTA threat modeling approaches. When would you use each?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/compare-stride-and-pasta-threat-modeling-approaches-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare STRIDE and PASTA threat modeling approaches. When would you use each?" width="30%">
+</a>
+
 
 **Answer:** STRIDE is a threat-centric approach from Microsoft → six categories (Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Elevation of Privilege). Fast, lightweight, good for design-phase threat identification. Best for early-stage projects with limited time. PASTA is a risk-centric approach from VerSprite → seven stages starting with business objectives and ending with quantified risk. Comprehensive but resource-intensive (weeks vs hours). Best for complex enterprise applications where security investment needs business justification. Use STRIDE for sprint-level threat modeling; use PASTA for annual application security assessments.
 
@@ -1683,6 +2420,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### Tool Practice
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-handwritten.svg" alt="Handwritten: Tool Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-diagram.svg" alt="Diagram: Tool Practice" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/tool-practice-sticky.svg" alt="Sticky Note: Tool Practice" width="30%">
+</a>
+
+
 1. Install and configure a Wazuh agent on a test machine. Verify it communicates with the manager by checking agent status. Generate a test alert by creating a new file in /tmp and confirm the alert appears in the Wazuh dashboard.
 
 2. Run `nmap -sV -A 192.168.1.1` against your router. Identify any unexpected open ports. Research what each open service does and whether it should be exposed.
@@ -1698,6 +2446,17 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 ## 14. Supplementary Depth → Extended Topics
 
 ### 14.1 CIA Triad → Detailed Control Mapping
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-handwritten.svg" alt="Handwritten: 14.1 CIA Triad → Detailed Control Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-diagram.svg" alt="Diagram: 14.1 CIA Triad → Detailed Control Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-1-cia-triad-detailed-control-mapping-sticky.svg" alt="Sticky Note: 14.1 CIA Triad → Detailed Control Mapping" width="30%">
+</a>
+
 
 Every security control maps to one or more CIA elements. Understanding which CIA element a control serves helps prioritize investment.
 
@@ -1720,6 +2479,17 @@ Every security control maps to one or more CIA elements. Understanding which CIA
 
 ### 14.2 CIA Attacks → Detailed Breakdown by Attack Type
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-handwritten.svg" alt="Handwritten: 14.2 CIA Attacks → Detailed Breakdown by Attack Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-diagram.svg" alt="Diagram: 14.2 CIA Attacks → Detailed Breakdown by Attack Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-2-cia-attacks-detailed-breakdown-by-attack-type-sticky.svg" alt="Sticky Note: 14.2 CIA Attacks → Detailed Breakdown by Attack Type" width="30%">
+</a>
+
+
 | Attack Type | CIA Element | How It Works | Real-World Example |
 |-------------|:-----------:|--------------|-------------------|
 | Eavesdropping | C | Passive interception of communications | Packet capture on public Wi-Fi |
@@ -1736,6 +2506,17 @@ Every security control maps to one or more CIA elements. Understanding which CIA
 | Password Spraying | C | Trying common passwords across many accounts | Testing "Spring2024!" against 10K accounts |
 
 ### 14.3 AAA Protocols → Detailed Comparison
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-handwritten.svg" alt="Handwritten: 14.3 AAA Protocols → Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-diagram.svg" alt="Diagram: 14.3 AAA Protocols → Detailed Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-3-aaa-protocols-detailed-comparison-sticky.svg" alt="Sticky Note: 14.3 AAA Protocols → Detailed Comparison" width="30%">
+</a>
+
 
 | Feature | RADIUS | TACACS+ | Kerberos | LDAP |
 |---------|--------|---------|----------|------|
@@ -1782,6 +2563,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 
 ### 14.4 Security Principles → Extended Edge Cases
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-handwritten.svg" alt="Handwritten: 14.4 Security Principles → Extended Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-diagram.svg" alt="Diagram: 14.4 Security Principles → Extended Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-4-security-principles-extended-edge-cases-sticky.svg" alt="Sticky Note: 14.4 Security Principles → Extended Edge Cases" width="30%">
+</a>
+
+
 | Principle | Edge Case | Resolution |
 |-----------|-----------|------------|
 | Least Privilege | Service account needs to read /etc/shadow for authentication | Use PAM with dedicated auth service; do not give web app direct shadow access |
@@ -1793,6 +2585,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 | Separation of Duties | Startup with 3-person team → one person must wear multiple hats | Use compensating controls: mandatory PR review, break-glass procedures with audit, quarterly access reviews |
 
 ### 14.5 Security Design Patterns
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-handwritten.svg" alt="Handwritten: 14.5 Security Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-diagram.svg" alt="Diagram: 14.5 Security Design Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-5-security-design-patterns-sticky.svg" alt="Sticky Note: 14.5 Security Design Patterns" width="30%">
+</a>
+
 
 | Pattern | Description | CIA Focus | Example |
 |---------|-------------|:---------:|---------|
@@ -1806,6 +2609,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 | **Sandbox** | Isolated execution environment | C + I | Container, jail, VM, seccomp |
 
 ### 14.6 Security Standards and Regulations
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-handwritten.svg" alt="Handwritten: 14.6 Security Standards and Regulations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-diagram.svg" alt="Diagram: 14.6 Security Standards and Regulations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-6-security-standards-and-regulations-sticky.svg" alt="Sticky Note: 14.6 Security Standards and Regulations" width="30%">
+</a>
+
 
 | Standard/Regulation | Scope | Key Requirements | Jurisdiction |
 |--------------------|-------|-----------------|--------------|
@@ -1822,6 +2636,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 
 ### 14.7 NIST Cybersecurity Framework (CSF) 2.0
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-handwritten.svg" alt="Handwritten: 14.7 NIST Cybersecurity Framework (CSF) 2.0" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-diagram.svg" alt="Diagram: 14.7 NIST Cybersecurity Framework (CSF) 2.0" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-7-nist-cybersecurity-framework-csf-2-0-sticky.svg" alt="Sticky Note: 14.7 NIST Cybersecurity Framework (CSF) 2.0" width="30%">
+</a>
+
+
 | Function | Category | Example Controls |
 |----------|----------|-----------------|
 | **Govern** | Context, risk management strategy, roles, policies | Establish cybersecurity oversight, define risk appetite |
@@ -1832,6 +2657,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 | **Recover** | Recovery planning, improvements, communications | Backup restoration, lessons learned, public relations |
 
 ### 14.8 Security Metrics and KPIs
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-handwritten.svg" alt="Handwritten: 14.8 Security Metrics and KPIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-diagram.svg" alt="Diagram: 14.8 Security Metrics and KPIs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-8-security-metrics-and-kpis-sticky.svg" alt="Sticky Note: 14.8 Security Metrics and KPIs" width="30%">
+</a>
+
 
 | Metric | Definition | Target | Why It Matters |
 |--------|-----------|--------|----------------|
@@ -1845,6 +2681,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 | Patching Coverage | % of systems with latest critical patches | > 99% | Measures patch deployment completeness |
 
 ### 14.9 Threat Modeling → Attack Tree Security Controls Integration
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-handwritten.svg" alt="Handwritten: 14.9 Threat Modeling → Attack Tree Security Controls Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-diagram.svg" alt="Diagram: 14.9 Threat Modeling → Attack Tree Security Controls Integration" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-9-threat-modeling-attack-tree-security-controls-integration-sticky.svg" alt="Sticky Note: 14.9 Threat Modeling → Attack Tree Security Controls Integration" width="30%">
+</a>
+
 
 **Practical Approach → Integrating Attack Trees with Controls:**
 
@@ -1880,6 +2727,17 @@ Priority ranking: Mitigate what can be exploited for least cost AND is cheapest 
 
 ### 14.10 Password Cracking → Defense Strategies
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-handwritten.svg" alt="Handwritten: 14.10 Password Cracking → Defense Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-diagram.svg" alt="Diagram: 14.10 Password Cracking → Defense Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-10-password-cracking-defense-strategies-sticky.svg" alt="Sticky Note: 14.10 Password Cracking → Defense Strategies" width="30%">
+</a>
+
+
 **How Password Hashes Are Stolen:**
 1. SQL injection extracting database tables
 2. Compromised server reading /etc/shadow (Linux) or SAM (Windows)
@@ -1901,6 +2759,17 @@ Priority ranking: Mitigate what can be exploited for least cost AND is cheapest 
 
 ### 14.11 Defense in Depth → Failure Mode Analysis
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-handwritten.svg" alt="Handwritten: 14.11 Defense in Depth → Failure Mode Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-diagram.svg" alt="Diagram: 14.11 Defense in Depth → Failure Mode Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-11-defense-in-depth-failure-mode-analysis-sticky.svg" alt="Sticky Note: 14.11 Defense in Depth → Failure Mode Analysis" width="30%">
+</a>
+
+
 For each layer in a defense-in-depth strategy, define:
 1. How can this layer fail?
 2. What does the next layer do when this one fails?
@@ -1920,6 +2789,17 @@ For each layer in a defense-in-depth strategy, define:
 | 9 | Backups | Backup corrupted or encrypted by ransomware | Immutable/offline backups (3-2-1 rule) survive |
 
 ### 14.12 Risk Management → Advanced ROSI Calculation
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-handwritten.svg" alt="Handwritten: 14.12 Risk Management → Advanced ROSI Calculation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-diagram.svg" alt="Diagram: 14.12 Risk Management → Advanced ROSI Calculation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-12-risk-management-advanced-rosi-calculation-sticky.svg" alt="Sticky Note: 14.12 Risk Management → Advanced ROSI Calculation" width="30%">
+</a>
+
 
 **Multi-Control ROSI Example:**
 
@@ -1953,6 +2833,17 @@ Conclusion: Strong positive ROI. Every $1 spent on security saves $4.39 in expec
 ```
 
 ### 14.13 Qualitative Risk Assessment → Detailed Walkthrough
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-handwritten.svg" alt="Handwritten: 14.13 Qualitative Risk Assessment → Detailed Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-diagram.svg" alt="Diagram: 14.13 Qualitative Risk Assessment → Detailed Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/14-13-qualitative-risk-assessment-detailed-walkthrough-sticky.svg" alt="Sticky Note: 14.13 Qualitative Risk Assessment → Detailed Walkthrough" width="30%">
+</a>
+
 
 **Scenario: Assess risk of ransomware for a small law firm.**
 
@@ -2117,6 +3008,17 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 
 ### 17.1 Tool Classification by Security Domain
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-handwritten.svg" alt="Handwritten: 17.1 Tool Classification by Security Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-diagram.svg" alt="Diagram: 17.1 Tool Classification by Security Domain" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-1-tool-classification-by-security-domain-sticky.svg" alt="Sticky Note: 17.1 Tool Classification by Security Domain" width="30%">
+</a>
+
+
 | Domain | Tools | Purpose |
 |--------|-------|---------|
 | **Network Scanning** | Nmap, Masscan, Zmap, Angry IP Scanner | Host discovery, port enumeration, service detection |
@@ -2135,6 +3037,17 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 | **Compliance** | Lynis, OpenSCAP, Inspec, Chef Compliance, Wazuh | Security auditing, compliance checking |
 
 ### 17.2 NMAP Scripting Engine (NSE) → Advanced Usage
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-handwritten.svg" alt="Handwritten: 17.2 NMAP Scripting Engine (NSE) → Advanced Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-diagram.svg" alt="Diagram: 17.2 NMAP Scripting Engine (NSE) → Advanced Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-2-nmap-scripting-engine-nse-advanced-usage-sticky.svg" alt="Sticky Note: 17.2 NMAP Scripting Engine (NSE) → Advanced Usage" width="30%">
+</a>
+
 
 **NSE Script Categories:**
 
@@ -2176,6 +3089,17 @@ end
 
 ### 17.3 Wireshark Display Filter Cheat Sheet
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-handwritten.svg" alt="Handwritten: 17.3 Wireshark Display Filter Cheat Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-diagram.svg" alt="Diagram: 17.3 Wireshark Display Filter Cheat Sheet" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-3-wireshark-display-filter-cheat-sheet-sticky.svg" alt="Sticky Note: 17.3 Wireshark Display Filter Cheat Sheet" width="30%">
+</a>
+
+
 | Category | Filter | Description |
 |----------|--------|-------------|
 | **Address** | `ip.addr == 10.0.0.1` | Traffic to/from 10.0.0.1 |
@@ -2207,6 +3131,17 @@ end
 
 ### 17.4 Common Nmap Scan Patterns
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-handwritten.svg" alt="Handwritten: 17.4 Common Nmap Scan Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-diagram.svg" alt="Diagram: 17.4 Common Nmap Scan Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-4-common-nmap-scan-patterns-sticky.svg" alt="Sticky Note: 17.4 Common Nmap Scan Patterns" width="30%">
+</a>
+
+
 | Pattern | Command | Use Case |
 |---------|---------|----------|
 | Quick scan (top ports) | `nmap -sT 192.168.1.1` | Fast check of common ports |
@@ -2221,6 +3156,17 @@ end
 | Output all formats | `nmap -oA scan_output 192.168.1.0/24` | Output in .nmap, .gnmap, .xml |
 
 ### 17.5 John the Ripper → Modes Deep Dive
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-handwritten.svg" alt="Handwritten: 17.5 John the Ripper → Modes Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-diagram.svg" alt="Diagram: 17.5 John the Ripper → Modes Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-5-john-the-ripper-modes-deep-dive-sticky.svg" alt="Sticky Note: 17.5 John the Ripper → Modes Deep Dive" width="30%">
+</a>
+
 
 | Mode | Flag | Description | Speed | Crack Rate |
 |------|------|-------------|-------|------------|
@@ -2248,6 +3194,17 @@ so0 si1 se3 sa4 ss5 sg9 st7 sb8
 ```
 
 ### 17.6 Hashcat Attack Modes
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-handwritten.svg" alt="Handwritten: 17.6 Hashcat Attack Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-diagram.svg" alt="Diagram: 17.6 Hashcat Attack Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/17-6-hashcat-attack-modes-sticky.svg" alt="Sticky Note: 17.6 Hashcat Attack Modes" width="30%">
+</a>
+
 
 | Attack Mode | Flag | Example | Use Case |
 |-------------|------|---------|----------|
@@ -2285,6 +3242,17 @@ hashcat -m 0 -a 3 -1 ?l?d hashes.txt ?1?1?1?1?1?1?1?1
 ## 18. Extended Lab Exercises → Step-by-Step Walkthroughs
 
 ### Lab 1: Build a Defense-in-Depth Home Lab
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-handwritten.svg" alt="Handwritten: Lab 1: Build a Defense-in-Depth Home Lab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-diagram.svg" alt="Diagram: Lab 1: Build a Defense-in-Depth Home Lab" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-1-build-a-defense-in-depth-home-lab-sticky.svg" alt="Sticky Note: Lab 1: Build a Defense-in-Depth Home Lab" width="30%">
+</a>
+
 
 **Objective:** Set up a small home lab with multiple security layers to practice defense in depth.
 
@@ -2350,6 +3318,17 @@ sudo lynis audit system
 
 ### Lab 2: Password Policy Enforcement → Crack Your Own Passwords
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-handwritten.svg" alt="Handwritten: Lab 2: Password Policy Enforcement → Crack Your Own Passwords" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-diagram.svg" alt="Diagram: Lab 2: Password Policy Enforcement → Crack Your Own Passwords" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-2-password-policy-enforcement-crack-your-own-passwords-sticky.svg" alt="Sticky Note: Lab 2: Password Policy Enforcement → Crack Your Own Passwords" width="30%">
+</a>
+
+
 **Objective:** Understand password strength by cracking hashes of known passwords. NEVER crack passwords you don't own.
 
 ```bash
@@ -2381,6 +3360,17 @@ time john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes_md
 ```
 
 ### Lab 3: Forensic Analysis with Wireshark → Detect Credential Theft
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-handwritten.svg" alt="Handwritten: Lab 3: Forensic Analysis with Wireshark → Detect Credential Theft" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-diagram.svg" alt="Diagram: Lab 3: Forensic Analysis with Wireshark → Detect Credential Theft" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-3-forensic-analysis-with-wireshark-detect-credential-theft-sticky.svg" alt="Sticky Note: Lab 3: Forensic Analysis with Wireshark → Detect Credential Theft" width="30%">
+</a>
+
 
 **Objective:** Capture HTTP traffic and identify cleartext credentials.
 
@@ -2425,6 +3415,17 @@ The username and password would not be visible in the capture."
 ```
 
 ### Lab 4: Risk Assessment → Small Business Case Study
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-handwritten.svg" alt="Handwritten: Lab 4: Risk Assessment → Small Business Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-diagram.svg" alt="Diagram: Lab 4: Risk Assessment → Small Business Case Study" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-4-risk-assessment-small-business-case-study-sticky.svg" alt="Sticky Note: Lab 4: Risk Assessment → Small Business Case Study" width="30%">
+</a>
+
 
 **Scenario:** You are hired to perform a risk assessment for "BookNest," a small independent bookstore with:
 - 1 Windows Server (files, inventory)
@@ -2480,6 +3481,17 @@ ASSET: POS Terminal
 ```
 
 ### Lab 5: Complete Security Audit with Lynis → Remediation Walkthrough
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-handwritten.svg" alt="Handwritten: Lab 5: Complete Security Audit with Lynis → Remediation Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-diagram.svg" alt="Diagram: Lab 5: Complete Security Audit with Lynis → Remediation Walkthrough" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/lab-5-complete-security-audit-with-lynis-remediation-walkthrough-sticky.svg" alt="Sticky Note: Lab 5: Complete Security Audit with Lynis → Remediation Walkthrough" width="30%">
+</a>
+
 
 ```bash
 # Step 1: Run initial audit
@@ -2871,6 +3883,17 @@ A professional cyber security lab is mandatory for hands-on learning. You cannot
 
 ### 7.1 Lab Architecture Overview
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-handwritten.svg" alt="Handwritten: 7.1 Lab Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-diagram.svg" alt="Diagram: 7.1 Lab Architecture Overview" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-1-lab-architecture-overview-sticky.svg" alt="Sticky Note: 7.1 Lab Architecture Overview" width="30%">
+</a>
+
+
 ```
 PROFESSIONAL SECURITY LAB — NETWORK TOPOLOGY
 ═════════════════════════════════════════════════════════════════
@@ -2901,6 +3924,17 @@ PROFESSIONAL SECURITY LAB — NETWORK TOPOLOGY
 
 ### 7.2 Hardware Recommendations
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-handwritten.svg" alt="Handwritten: 7.2 Hardware Recommendations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-diagram.svg" alt="Diagram: 7.2 Hardware Recommendations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-2-hardware-recommendations-sticky.svg" alt="Sticky Note: 7.2 Hardware Recommendations" width="30%">
+</a>
+
+
 | Tier | Hardware | Cost | Capabilities |
 |------|----------|------|--------------|
 | **Minimal** | 8GB RAM laptop, 256GB SSD | $0 (what you have) | Run Kali Linux VM, basic nmap, Wireshark |
@@ -2917,6 +3951,17 @@ PROFESSIONAL SECURITY LAB — NETWORK TOPOLOGY
 - [ ] Spare router (TP-Link or used enterprise switch for VLAN lab)
 
 ### 7.3 Virtualization Platform Setup
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-handwritten.svg" alt="Handwritten: 7.3 Virtualization Platform Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-diagram.svg" alt="Diagram: 7.3 Virtualization Platform Setup" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-3-virtualization-platform-setup-sticky.svg" alt="Sticky Note: 7.3 Virtualization Platform Setup" width="30%">
+</a>
+
 
 | Platform | Best For | Cost | Notes |
 |----------|----------|------|-------|
@@ -3054,6 +4099,17 @@ echo "════════════════════════�
 
 ### 7.4 Essential Lab Software Stack
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-handwritten.svg" alt="Handwritten: 7.4 Essential Lab Software Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-diagram.svg" alt="Diagram: 7.4 Essential Lab Software Stack" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-4-essential-lab-software-stack-sticky.svg" alt="Sticky Note: 7.4 Essential Lab Software Stack" width="30%">
+</a>
+
+
 | Category | Tools | Purpose |
 |----------|-------|---------|
 | **Operating Systems** | Kali Linux, Parrot OS, Commando VM (Windows for offensive) | Attack platforms |
@@ -3070,6 +4126,17 @@ echo "════════════════════════�
 | **AI/ML Security** | Adversarial Robustness Toolbox, SecML, Counterfit | AI security testing |
 
 ### 7.5 Lab Progression Path — Basic to Advanced
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-handwritten.svg" alt="Handwritten: 7.5 Lab Progression Path — Basic to Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-diagram.svg" alt="Diagram: 7.5 Lab Progression Path — Basic to Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-5-lab-progression-path-basic-to-advanced-sticky.svg" alt="Sticky Note: 7.5 Lab Progression Path — Basic to Advanced" width="30%">
+</a>
+
 
 ```
 SECURITY LAB PROGRESSION — BASIC TO ADVANCED
@@ -3153,6 +4220,17 @@ Key Skills Gained:
 ```
 
 ### 7.6 Lab Management Best Practices
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-handwritten.svg" alt="Handwritten: 7.6 Lab Management Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-diagram.svg" alt="Diagram: 7.6 Lab Management Best Practices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-6-lab-management-best-practices-sticky.svg" alt="Sticky Note: 7.6 Lab Management Best Practices" width="30%">
+</a>
+
 
 ```typescript
 // lab-management.ts — Security Lab Maintenance and Hygiene
@@ -3248,6 +4326,17 @@ TIME SPENT: [hours]
 ```
 
 ### 7.7 Sample Lab Project — First Day Setup Guide
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-handwritten.svg" alt="Handwritten: 7.7 Sample Lab Project — First Day Setup Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-diagram.svg" alt="Diagram: 7.7 Sample Lab Project — First Day Setup Guide" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/7-7-sample-lab-project-first-day-setup-guide-sticky.svg" alt="Sticky Note: 7.7 Sample Lab Project — First Day Setup Guide" width="30%">
+</a>
+
 
 **Step-by-step: Set up your first professional security lab in 2 hours:**
 
@@ -3346,6 +4435,17 @@ AI has transformed cybersecurity from reactive to predictive. Security analysts 
 
 ### 8.1 The AI-Security Landscape
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-handwritten.svg" alt="Handwritten: 8.1 The AI-Security Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-diagram.svg" alt="Diagram: 8.1 The AI-Security Landscape" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-1-the-ai-security-landscape-sticky.svg" alt="Sticky Note: 8.1 The AI-Security Landscape" width="30%">
+</a>
+
+
 ```
 AI IN CYBERSECURITY — ECOSYSTEM OVERVIEW
 ═════════════════════════════════════════════════════════════════
@@ -3375,6 +4475,17 @@ AI IN CYBERSECURITY — ECOSYSTEM OVERVIEW
 ```
 
 ### 8.2 AI-Enhanced Defense (Blue Team)
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-handwritten.svg" alt="Handwritten: 8.2 AI-Enhanced Defense (Blue Team)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-diagram.svg" alt="Diagram: 8.2 AI-Enhanced Defense (Blue Team)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-2-ai-enhanced-defense-blue-team-sticky.svg" alt="Sticky Note: 8.2 AI-Enhanced Defense (Blue Team)" width="30%">
+</a>
+
 
 | AI Technique | Application | Example Tool | How It Works |
 |-------------|------------|-------------|--------------|
@@ -3496,6 +4607,17 @@ class AIMalwareDetector {
 ```
 
 ### 8.3 AI-Enhanced Attack (Red Team)
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-handwritten.svg" alt="Handwritten: 8.3 AI-Enhanced Attack (Red Team)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-diagram.svg" alt="Diagram: 8.3 AI-Enhanced Attack (Red Team)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-3-ai-enhanced-attack-red-team-sticky.svg" alt="Sticky Note: 8.3 AI-Enhanced Attack (Red Team)" width="30%">
+</a>
+
 
 AI is also used offensively. Security professionals must understand these techniques to defend against them.
 
@@ -3629,6 +4751,17 @@ ${this.generateFromName(target)}`;
 ```
 
 ### 8.4 AI Security Operations Center (SOC) — The AI Analyst
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-handwritten.svg" alt="Handwritten: 8.4 AI Security Operations Center (SOC) — The AI Analyst" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-diagram.svg" alt="Diagram: 8.4 AI Security Operations Center (SOC) — The AI Analyst" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-4-ai-security-operations-center-soc-the-ai-analyst-sticky.svg" alt="Sticky Note: 8.4 AI Security Operations Center (SOC) — The AI Analyst" width="30%">
+</a>
+
 
 Modern SOCs use AI to augment human analysts. The AI handles Level 1 triage (80% of alerts are false positives), freeing humans for Level 2+ deep investigations.
 
@@ -3855,6 +4988,17 @@ class AISOCAnalyst {
 
 ### 8.5 AI Security Challenges — Adversarial Machine Learning
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-handwritten.svg" alt="Handwritten: 8.5 AI Security Challenges — Adversarial Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-diagram.svg" alt="Diagram: 8.5 AI Security Challenges — Adversarial Machine Learning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-5-ai-security-challenges-adversarial-machine-learning-sticky.svg" alt="Sticky Note: 8.5 AI Security Challenges — Adversarial Machine Learning" width="30%">
+</a>
+
+
 While AI enhances security, AI systems themselves are vulnerable to attacks.
 
 **Attack Surface of ML Systems:**
@@ -3898,6 +5042,17 @@ AI SECURITY — ML ATTACK SURFACE
 | **Gradient Leakage** | Attacker recovers training data from shared gradients | Federated learning privacy breach | Gradient perturbation, secure aggregation |
 
 ### 8.6 Building an AI Security System — End-to-End Example
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-handwritten.svg" alt="Handwritten: 8.6 Building an AI Security System — End-to-End Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-diagram.svg" alt="Diagram: 8.6 Building an AI Security System — End-to-End Example" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-6-building-an-ai-security-system-end-to-end-example-sticky.svg" alt="Sticky Note: 8.6 Building an AI Security System — End-to-End Example" width="30%">
+</a>
+
 
 ```typescript
 // ai-security-system.ts — Complete AI Security Pipeline
@@ -4044,6 +5199,17 @@ interface AnalysisResult {
 ```
 
 ### 8.7 Recommended AI Security Tools & Learning Path
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-handwritten.svg" alt="Handwritten: 8.7 Recommended AI Security Tools & Learning Path" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-diagram.svg" alt="Diagram: 8.7 Recommended AI Security Tools & Learning Path" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/8-7-recommended-ai-security-tools-learning-path-sticky.svg" alt="Sticky Note: 8.7 Recommended AI Security Tools & Learning Path" width="30%">
+</a>
+
 
 | Tool | Purpose | Type | Cost | Skill Level |
 |------|---------|------|------|-------------|
@@ -4237,6 +5403,17 @@ interface AnalysisResult {
 
 ### Practical Exercises
 
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
+</a>
+
+
 1. **Set Up Your First Security Lab:** Follow the First Day Lab Setup guide in Section 7.7. Install VMware/VirtualBox, Kali Linux, and Metasploitable 2. Successfully exploit vsFTPd backdoor and capture the traffic in Wireshark. Document every step in your lab journal.
 
 2. **Threat Model a Web Application:** Choose a simple web application (e.g., a todo app, note-taking app). Draw a Data Flow Diagram (DFD) with at least 4 external entities, 4 processes, 3 data stores, and 5 data flows. Apply STRIDE to each element and identify at least 10 threats. Document mitigations for each threat.
@@ -4386,6 +5563,17 @@ flowchart LR
 ```
 
 ### STRIDE Per-Element Mapping
+
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-handwritten.svg" alt="Handwritten: STRIDE Per-Element Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-diagram.svg" alt="Diagram: STRIDE Per-Element Mapping" width="30%">
+</a>
+<a href="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/cyber-security/01-fundamentals/stride-per-element-mapping-sticky.svg" alt="Sticky Note: STRIDE Per-Element Mapping" width="30%">
+</a>
+
 
 This diagram maps each DFD element type (External Entity, Process, Data Store, Data Flow) to the STRIDE categories that apply during threat modeling, based on Microsoft's official STRIDE per-element methodology.
 

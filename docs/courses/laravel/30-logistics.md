@@ -54,6 +54,17 @@ flowchart LR
 
 ### 30.1 Logistics Data Models
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-handwritten.svg" alt="Handwritten: 30.1 Logistics Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-diagram.svg" alt="Diagram: 30.1 Logistics Data Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-1-logistics-data-models-sticky.svg" alt="Sticky Note: 30.1 Logistics Data Models" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Logistics schemas cover inventory, shipments, routes, suppliers, warehouses, and carriers with proper tracking.
 
@@ -899,6 +910,17 @@ return new class extends Migration
 
 ### 30.2 Inventory Prediction Agents
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-handwritten.svg" alt="Handwritten: 30.2 Inventory Prediction Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-diagram.svg" alt="Diagram: 30.2 Inventory Prediction Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-2-inventory-prediction-agents-sticky.svg" alt="Sticky Note: 30.2 Inventory Prediction Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Inventory prediction agents forecast demand using historical sales data, seasonality, and market trends.
 
@@ -1139,6 +1161,17 @@ class InventoryPrediction
 > **Pro Tip:** Combine historical data with external factors like weather, holidays, and economic indicators for more accurate demand forecasts.
 
 ### 30.3 Route Optimization Agents
+
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-handwritten.svg" alt="Handwritten: 30.3 Route Optimization Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-diagram.svg" alt="Diagram: 30.3 Route Optimization Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-3-route-optimization-agents-sticky.svg" alt="Sticky Note: 30.3 Route Optimization Agents" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Route optimization agents calculate optimal delivery routes considering distance, traffic, and time windows.
@@ -1459,6 +1492,17 @@ class OptimizedRoute
 
 ### 30.4 Shipment Tracking Automation
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-handwritten.svg" alt="Handwritten: 30.4 Shipment Tracking Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-diagram.svg" alt="Diagram: 30.4 Shipment Tracking Automation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-4-shipment-tracking-automation-sticky.svg" alt="Sticky Note: 30.4 Shipment Tracking Automation" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Shipment tracking agents monitor shipments across carriers and provide real-time status updates.
 
@@ -1764,6 +1808,17 @@ class TrackingUpdate
 
 ### 30.5 Supplier Management Agents
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-handwritten.svg" alt="Handwritten: 30.5 Supplier Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-diagram.svg" alt="Diagram: 30.5 Supplier Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-5-supplier-management-agents-sticky.svg" alt="Sticky Note: 30.5 Supplier Management Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Supplier agents evaluate supplier performance against KPIs and automate procurement workflows.
 
@@ -2066,6 +2121,17 @@ class EvaluationResult
 
 ### 30.6 Warehouse Automation Agents
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-handwritten.svg" alt="Handwritten: 30.6 Warehouse Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-diagram.svg" alt="Diagram: 30.6 Warehouse Automation Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-6-warehouse-automation-agents-sticky.svg" alt="Sticky Note: 30.6 Warehouse Automation Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Warehouse agents optimize picking routes, slotting, and inventory placement for efficiency.
 
@@ -2349,6 +2415,17 @@ class PicklistOptimization
 > **Remember:** Warehouse slotting optimization reduces picking time. Review slot assignments monthly as order patterns change.
 
 ### 30.7 Demand Forecasting Agents
+
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-handwritten.svg" alt="Handwritten: 30.7 Demand Forecasting Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-diagram.svg" alt="Diagram: 30.7 Demand Forecasting Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-7-demand-forecasting-agents-sticky.svg" alt="Sticky Note: 30.7 Demand Forecasting Agents" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** Demand forecasting agents use ML models to predict future demand at SKU and location granularity.
@@ -2643,6 +2720,17 @@ class DemandForecast
 
 ### 30.8 Fleet Management Agents
 
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-handwritten.svg" alt="Handwritten: 30.8 Fleet Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-diagram.svg" alt="Diagram: 30.8 Fleet Management Agents" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-8-fleet-management-agents-sticky.svg" alt="Sticky Note: 30.8 Fleet Management Agents" width="30%">
+</a>
+
+
 
 > **One-Sentence Takeaway:** Fleet agents manage vehicle maintenance schedules, fuel efficiency, and driver assignments.
 
@@ -2906,6 +2994,17 @@ class FleetVehicleAssessment
 ---
 
 ### 30.9 Supply Chain Visibility Dashboard
+
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-handwritten.svg" alt="Handwritten: 30.9 Supply Chain Visibility Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-diagram.svg" alt="Diagram: 30.9 Supply Chain Visibility Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/30-logistics/30-9-supply-chain-visibility-dashboard-sticky.svg" alt="Sticky Note: 30.9 Supply Chain Visibility Dashboard" width="30%">
+</a>
+
 
 
 > **One-Sentence Takeaway:** The visibility dashboard aggregates real-time data from all agents for end-to-end supply chain monitoring.

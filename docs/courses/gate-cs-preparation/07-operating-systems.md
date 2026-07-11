@@ -89,6 +89,17 @@ flowchart LR
 ## Formula Cheat Sheet Ã¢â€ â€™ Quick Reference
 
 ### CPU Scheduling Formulas
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-handwritten.svg" alt="Handwritten: CPU Scheduling Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-diagram.svg" alt="Diagram: CPU Scheduling Formulas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/cpu-scheduling-formulas-sticky.svg" alt="Sticky Note: CPU Scheduling Formulas" width="30%">
+</a>
+
 
 | Metric | Formula |
 |--------|---------|
@@ -101,6 +112,17 @@ flowchart LR
 | Throughput | Processes completed / Time unit |
 
 ### Page Replacement Ã¢â€ â€™ Fault Count
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-handwritten.svg" alt="Handwritten: Page Replacement Ã¢â€ â€™ Fault Count" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-diagram.svg" alt="Diagram: Page Replacement Ã¢â€ â€™ Fault Count" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-fault-count-sticky.svg" alt="Sticky Note: Page Replacement Ã¢â€ â€™ Fault Count" width="30%">
+</a>
+
 
 | Algorithm | Characteristics | Belady's Anomaly? |
 |-----------|----------------|-------------------|
@@ -110,6 +132,17 @@ flowchart LR
 | Clock (NRU) | Approximates LRU with reference bit | No |
 
 ### Deadlock Ã¢â€ â€™ Necessary Conditions (must hold simultaneously)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-handwritten.svg" alt="Handwritten: Deadlock Ã¢â€ â€™ Necessary Conditions (must hold simultaneously)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-diagram.svg" alt="Diagram: Deadlock Ã¢â€ â€™ Necessary Conditions (must hold simultaneously)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-necessary-conditions-must-hold-simultaneously-sticky.svg" alt="Sticky Note: Deadlock Ã¢â€ â€™ Necessary Conditions (must hold simultaneously)" width="30%">
+</a>
+
 
 1. **Mutual Exclusion** Ã¢â€ â€™ at least one resource is non-sharable
 2. **Hold and Wait** Ã¢â€ â€™ process holding a resource waits for another
@@ -117,6 +150,17 @@ flowchart LR
 4. **Circular Wait** Ã¢â€ â€™ circular chain of processes, each holding a resource needed by the next
 
 ### Disk Scheduling Ã¢â€ â€™ Which is optimal for what?
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-handwritten.svg" alt="Handwritten: Disk Scheduling Ã¢â€ â€™ Which is optimal for what?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-diagram.svg" alt="Diagram: Disk Scheduling Ã¢â€ â€™ Which is optimal for what?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-which-is-optimal-for-what-sticky.svg" alt="Sticky Note: Disk Scheduling Ã¢â€ â€™ Which is optimal for what?" width="30%">
+</a>
+
 
 | Algorithm | Direction | Starvation? | Best for |
 |-----------|-----------|-------------|----------|
@@ -128,6 +172,17 @@ flowchart LR
 | C-LOOK | One direction, stop, wrap | No | Best throughput |
 
 ### Semaphore Ã¢â€ â€™ Key Invariants
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-handwritten.svg" alt="Handwritten: Semaphore Ã¢â€ â€™ Key Invariants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-diagram.svg" alt="Diagram: Semaphore Ã¢â€ â€™ Key Invariants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphore-key-invariants-sticky.svg" alt="Sticky Note: Semaphore Ã¢â€ â€™ Key Invariants" width="30%">
+</a>
+
 
 - `Wait(S)` or `P(S)` Ã¢â€ â€™ if S > 0 then S-- else block
 - `Signal(S)` or `V(S)` Ã¢â€ â€™ if processes blocked then wake else S++
@@ -141,10 +196,32 @@ flowchart LR
 ## 1. Process Management
 
 ### Process Concept
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-handwritten.svg" alt="Handwritten: Process Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-diagram.svg" alt="Diagram: Process Concept" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-concept-sticky.svg" alt="Sticky Note: Process Concept" width="30%">
+</a>
+
 
 A **process** is a program in execution. It includes: program counter, stack, data section, heap, and PCB.
 
 ### Process Control Block (PCB)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-handwritten.svg" alt="Handwritten: Process Control Block (PCB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-diagram.svg" alt="Diagram: Process Control Block (PCB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-control-block-pcb-sticky.svg" alt="Sticky Note: Process Control Block (PCB)" width="30%">
+</a>
+
 
 Each process has a PCB containing:
 - Process ID (PID)
@@ -156,6 +233,17 @@ Each process has a PCB containing:
 - CPU scheduling info
 
 ### Process States
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-handwritten.svg" alt="Handwritten: Process States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-diagram.svg" alt="Diagram: Process States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-states-sticky.svg" alt="Sticky Note: Process States" width="30%">
+</a>
+
 
 ```
 NEW Ã¢â€ â€™ READY Ã¢â€ â€™ RUNNING Ã¢â€ â€™ WAITING Ã¢â€ â€™ TERMINATED
@@ -170,10 +258,32 @@ NEW Ã¢â€ â€™ READY Ã¢â€ â€™ RUNNING Ã¢â€ â€™ WA
 - **TERMINATED** Ã¢â€ â€™ finished execution
 
 ### Context Switch
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-handwritten.svg" alt="Handwritten: Context Switch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-diagram.svg" alt="Diagram: Context Switch" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/context-switch-sticky.svg" alt="Sticky Note: Context Switch" width="30%">
+</a>
+
 
 The OS saves the state of the current process and loads the saved state of another. **Context switch time** is overhead Ã¢â€ â€™ pure waste. GATE often asks: "What is NOT saved during context switch?" Answer: Memory contents are usually not saved (page tables remain).
 
 ### Process Creation Ã¢â€ â€™ fork() and exec()
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-handwritten.svg" alt="Handwritten: Process Creation Ã¢â€ â€™ fork() and exec()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-diagram.svg" alt="Diagram: Process Creation Ã¢â€ â€™ fork() and exec()" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-creation-fork-and-exec-sticky.svg" alt="Sticky Note: Process Creation Ã¢â€ â€™ fork() and exec()" width="30%">
+</a>
+
 
 | Call | Effect |
 |------|--------|
@@ -186,12 +296,34 @@ The OS saves the state of the current process and loads the saved state of anoth
 **Orphan process:** Parent terminated before child. init (PID 1) adopts the child.
 
 ### Process Scheduling Ã¢â€ â€™ Queues
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-handwritten.svg" alt="Handwritten: Process Scheduling Ã¢â€ â€™ Queues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-diagram.svg" alt="Diagram: Process Scheduling Ã¢â€ â€™ Queues" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-scheduling-queues-sticky.svg" alt="Sticky Note: Process Scheduling Ã¢â€ â€™ Queues" width="30%">
+</a>
+
 
 - **Job Queue** Ã¢â€ â€™ all processes in system
 - **Ready Queue** Ã¢â€ â€™ processes in main memory, ready to run
 - **Device Queue** Ã¢â€ â€™ processes waiting for I/O device
 
 ### Schedulers
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-handwritten.svg" alt="Handwritten: Schedulers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-diagram.svg" alt="Diagram: Schedulers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/schedulers-sticky.svg" alt="Sticky Note: Schedulers" width="30%">
+</a>
+
 
 | Scheduler | What it does | Frequency |
 |-----------|-------------|-----------|
@@ -204,6 +336,17 @@ The OS saves the state of the current process and loads the saved state of anoth
 ## 2. CPU Scheduling
 
 ### GATE-Ready Scheduling Criteria
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-handwritten.svg" alt="Handwritten: GATE-Ready Scheduling Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-diagram.svg" alt="Diagram: GATE-Ready Scheduling Criteria" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/gate-ready-scheduling-criteria-sticky.svg" alt="Sticky Note: GATE-Ready Scheduling Criteria" width="30%">
+</a>
+
 
 - **CPU utilization** Ã¢â€ â€™ keep CPU busy
 - **Throughput** Ã¢â€ â€™ processes completed per unit time
@@ -212,17 +355,50 @@ The OS saves the state of the current process and loads the saved state of anoth
 - **Response time** Ã¢â€ â€™ time from submission to first response
 
 ### FCFS (First-Come, First-Served)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-handwritten.svg" alt="Handwritten: FCFS (First-Come, First-Served)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-diagram.svg" alt="Diagram: FCFS (First-Come, First-Served)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/fcfs-first-come-first-served-sticky.svg" alt="Sticky Note: FCFS (First-Come, First-Served)" width="30%">
+</a>
+
 
 - Non-preemptive
 - Convoy effect: short processes wait behind long ones
 
 ### SJF (Shortest Job First)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-handwritten.svg" alt="Handwritten: SJF (Shortest Job First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-diagram.svg" alt="Diagram: SJF (Shortest Job First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/sjf-shortest-job-first-sticky.svg" alt="Sticky Note: SJF (Shortest Job First)" width="30%">
+</a>
+
 
 - Can be preemptive (SRTF) or non-preemptive
 - **Minimum average waiting time** Ã¢â€ â€™ provably optimal
 - Problem: starvation of long jobs, requires future knowledge
 
 ### Round Robin
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-handwritten.svg" alt="Handwritten: Round Robin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-diagram.svg" alt="Diagram: Round Robin" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/round-robin-sticky.svg" alt="Sticky Note: Round Robin" width="30%">
+</a>
+
 
 - Preemptive, time quantum q
 - If q Ã¢â€ â€™ ÃƒÂ¢Ã‹â€ Ã…Â¾, behaves like FCFS
@@ -231,12 +407,34 @@ The OS saves the state of the current process and loads the saved state of anoth
 - **Turnaround time depends heavily on q**
 
 ### Priority Scheduling
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-handwritten.svg" alt="Handwritten: Priority Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-diagram.svg" alt="Diagram: Priority Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/priority-scheduling-sticky.svg" alt="Sticky Note: Priority Scheduling" width="30%">
+</a>
+
 
 - Preemptive or non-preemptive
 - Can lead to **starvation** (low priority processes never run)
 - **Aging** Ã¢â€ â€™ gradually increase priority of waiting processes
 
 ### Multilevel Queue
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-handwritten.svg" alt="Handwritten: Multilevel Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-diagram.svg" alt="Diagram: Multilevel Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-queue-sticky.svg" alt="Sticky Note: Multilevel Queue" width="30%">
+</a>
+
 
 - Ready queue partitioned into separate queues (foreground, background)
 - Each queue has its own scheduling algorithm
@@ -244,6 +442,17 @@ The OS saves the state of the current process and loads the saved state of anoth
 - Or time-slice between queues
 
 ### Multilevel Feedback Queue (MLFQ)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-handwritten.svg" alt="Handwritten: Multilevel Feedback Queue (MLFQ)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-diagram.svg" alt="Diagram: Multilevel Feedback Queue (MLFQ)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multilevel-feedback-queue-mlfq-sticky.svg" alt="Sticky Note: Multilevel Feedback Queue (MLFQ)" width="30%">
+</a>
+
 
 - Processes can move between queues
 - Prevents starvation by allowing priority demotion/promotion
@@ -254,6 +463,17 @@ The OS saves the state of the current process and loads the saved state of anoth
 ## 3. Process Synchronization
 
 ### Critical Section Problem
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-handwritten.svg" alt="Handwritten: Critical Section Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-diagram.svg" alt="Diagram: Critical Section Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/critical-section-problem-sticky.svg" alt="Sticky Note: Critical Section Problem" width="30%">
+</a>
+
 
 A section of code where shared variables are accessed. Requirements:
 1. **Mutual Exclusion** Ã¢â€ â€™ only one process in critical section
@@ -261,6 +481,17 @@ A section of code where shared variables are accessed. Requirements:
 3. **Bounded Waiting** Ã¢â€ â€™ bound on number of times others can enter after a process requests entry
 
 ### Peterson's Solution
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-handwritten.svg" alt="Handwritten: Peterson's Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-diagram.svg" alt="Diagram: Peterson's Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/peterson-s-solution-sticky.svg" alt="Sticky Note: Peterson's Solution" width="30%">
+</a>
+
 
 ```c
 int turn;
@@ -280,6 +511,17 @@ do {
 Works for 2 processes. Solves critical section in software.
 
 ### Semaphores
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-handwritten.svg" alt="Handwritten: Semaphores" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-diagram.svg" alt="Diagram: Semaphores" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/semaphores-sticky.svg" alt="Sticky Note: Semaphores" width="30%">
+</a>
+
 
 ```c
 wait(S) {      // P(S)
@@ -296,6 +538,17 @@ signal(S) {    // V(S)
 - **Binary semaphore (mutex):** values 0 or 1
 
 ### Classical Synchronization Problems
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-handwritten.svg" alt="Handwritten: Classical Synchronization Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-diagram.svg" alt="Diagram: Classical Synchronization Problems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/classical-synchronization-problems-sticky.svg" alt="Sticky Note: Classical Synchronization Problems" width="30%">
+</a>
+
 
 #### Bounded Buffer (Producer-Consumer)
 
@@ -338,6 +591,17 @@ do {
 - Solutions: pick up both chopsticks only if both available; odd-even ordering; monitor-based
 
 ### Monitors
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-handwritten.svg" alt="Handwritten: Monitors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-diagram.svg" alt="Diagram: Monitors" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/monitors-sticky.svg" alt="Sticky Note: Monitors" width="30%">
+</a>
+
 
 - High-level synchronization construct
 - Only one process can be active in the monitor at a time
@@ -349,6 +613,17 @@ do {
 ## 4. Deadlocks
 
 ### Necessary Conditions
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-handwritten.svg" alt="Handwritten: Necessary Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-diagram.svg" alt="Diagram: Necessary Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/necessary-conditions-sticky.svg" alt="Sticky Note: Necessary Conditions" width="30%">
+</a>
+
 
 1. **Mutual exclusion**
 2. **Hold and wait**
@@ -356,6 +631,17 @@ do {
 4. **Circular wait**
 
 ### Resource Allocation Graph (RAG)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-handwritten.svg" alt="Handwritten: Resource Allocation Graph (RAG)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-diagram.svg" alt="Diagram: Resource Allocation Graph (RAG)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/resource-allocation-graph-rag-sticky.svg" alt="Sticky Note: Resource Allocation Graph (RAG)" width="30%">
+</a>
+
 
 - Process Ã¢â€ â€™ Resource: request edge
 - Resource Ã¢â€ â€™ Process: assignment edge
@@ -363,6 +649,17 @@ do {
 - **Cycle in RAG + multiple instances Ã¢â€¡â€™ possible deadlock** (need further check)
 
 ### Deadlock Prevention
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-handwritten.svg" alt="Handwritten: Deadlock Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-diagram.svg" alt="Diagram: Deadlock Prevention" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-prevention-sticky.svg" alt="Sticky Note: Deadlock Prevention" width="30%">
+</a>
+
 
 Eliminate at least one necessary condition:
 
@@ -374,6 +671,17 @@ Eliminate at least one necessary condition:
 | Circular Wait | Impose total ordering on resource types |
 
 ### Deadlock Avoidance Ã¢â€ â€™ Banker's Algorithm
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-handwritten.svg" alt="Handwritten: Deadlock Avoidance Ã¢â€ â€™ Banker's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-diagram.svg" alt="Diagram: Deadlock Avoidance Ã¢â€ â€™ Banker's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-avoidance-banker-s-algorithm-sticky.svg" alt="Sticky Note: Deadlock Avoidance Ã¢â€ â€™ Banker's Algorithm" width="30%">
+</a>
+
 
 Data structures:
 - `Available[m]` Ã¢â€ â€™ available instances of each resource type
@@ -388,11 +696,33 @@ Data structures:
 4. If all Finish[i] = true, system is in safe state
 
 ### Deadlock Detection
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-handwritten.svg" alt="Handwritten: Deadlock Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-diagram.svg" alt="Diagram: Deadlock Detection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-detection-sticky.svg" alt="Sticky Note: Deadlock Detection" width="30%">
+</a>
+
 
 - Single instance: wait-for graph (cycle Ã¢â€¡â€™ deadlock)
 - Multiple instances: detection algorithm (like Banker's but with Request matrix)
 
 ### Deadlock Recovery
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-handwritten.svg" alt="Handwritten: Deadlock Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-diagram.svg" alt="Diagram: Deadlock Recovery" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/deadlock-recovery-sticky.svg" alt="Sticky Note: Deadlock Recovery" width="30%">
+</a>
+
 
 - Process termination (abort all, or abort one by one)
 - Resource preemption (select victim based on cost, consider rollback, starvation)
@@ -402,18 +732,51 @@ Data structures:
 ## 5. Memory Management
 
 ### Logical vs Physical Address
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-handwritten.svg" alt="Handwritten: Logical vs Physical Address" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-diagram.svg" alt="Diagram: Logical vs Physical Address" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/logical-vs-physical-address-sticky.svg" alt="Sticky Note: Logical vs Physical Address" width="30%">
+</a>
+
 
 - **Logical/virtual address** Ã¢â€ â€™ generated by CPU
 - **Physical address** Ã¢â€ â€™ actual memory location
 - **MMU** Ã¢â€ â€™ hardware that maps virtual to physical addresses
 
 ### Contiguous Allocation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-handwritten.svg" alt="Handwritten: Contiguous Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-diagram.svg" alt="Diagram: Contiguous Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/contiguous-allocation-sticky.svg" alt="Sticky Note: Contiguous Allocation" width="30%">
+</a>
+
 
 - Fixed partition: internal fragmentation
 - Dynamic partition: external fragmentation
 - **Compaction** Ã¢â€ â€™ rearrange memory to eliminate external fragmentation
 
 ### Paging
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-handwritten.svg" alt="Handwritten: Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-diagram.svg" alt="Diagram: Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/paging-sticky.svg" alt="Sticky Note: Paging" width="30%">
+</a>
+
 
 - Physical memory divided into **frames**
 - Logical memory divided into **pages**
@@ -423,6 +786,17 @@ Data structures:
 **Page table entry:** frame number + valid/invalid bit + protection bits + dirty bit + reference bit
 
 ### Translation Lookaside Buffer (TLB)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-handwritten.svg" alt="Handwritten: Translation Lookaside Buffer (TLB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-diagram.svg" alt="Diagram: Translation Lookaside Buffer (TLB)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/translation-lookaside-buffer-tlb-sticky.svg" alt="Sticky Note: Translation Lookaside Buffer (TLB)" width="30%">
+</a>
+
 
 - Cache for page table entries
 - TLB hit: memory access in one memory cycle
@@ -435,6 +809,17 @@ EMAT = hit_ratio ÃƒÆ’Ã¢â‚¬â€� (TLB_lookup + memory_access)
 ```
 
 ### Segmentation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-handwritten.svg" alt="Handwritten: Segmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-diagram.svg" alt="Diagram: Segmentation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-sticky.svg" alt="Sticky Note: Segmentation" width="30%">
+</a>
+
 
 - Logical address space divided into segments
 - Segment table: base + limit
@@ -442,21 +827,65 @@ EMAT = hit_ratio ÃƒÆ’Ã¢â‚¬â€� (TLB_lookup + memory_access)
 - Logical address: (segment_number, offset)
 
 ### Segmentation with Paging
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-handwritten.svg" alt="Handwritten: Segmentation with Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-diagram.svg" alt="Diagram: Segmentation with Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/segmentation-with-paging-sticky.svg" alt="Sticky Note: Segmentation with Paging" width="30%">
+</a>
+
 
 - Segment table entry points to page table base
 - Combines advantages of both
 
 ### Virtual Memory
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-handwritten.svg" alt="Handwritten: Virtual Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-diagram.svg" alt="Diagram: Virtual Memory" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/virtual-memory-sticky.svg" alt="Sticky Note: Virtual Memory" width="30%">
+</a>
+
 
 Allows execution of processes not entirely in memory.
 
 ### Demand Paging
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-handwritten.svg" alt="Handwritten: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-diagram.svg" alt="Diagram: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/demand-paging-sticky.svg" alt="Sticky Note: Demand Paging" width="30%">
+</a>
+
 
 - Page loaded only when accessed
 - **Page fault** Ã¢â€ â€™ trap to OS; load page from disk
 - Pure demand paging: start with no pages in memory
 
 ### Page Replacement Algorithms
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-handwritten.svg" alt="Handwritten: Page Replacement Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-diagram.svg" alt="Diagram: Page Replacement Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/page-replacement-algorithms-sticky.svg" alt="Sticky Note: Page Replacement Algorithms" width="30%">
+</a>
+
 
 #### FIFO
 Replace the oldest page. **Belady's anomaly** possible.
@@ -474,6 +903,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - Also called **NRU (Not Recently Used)**
 
 ### Thrashing
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-handwritten.svg" alt="Handwritten: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-diagram.svg" alt="Diagram: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thrashing-sticky.svg" alt="Sticky Note: Thrashing" width="30%">
+</a>
+
 
 - Excessive paging activity
 - Cause: insufficient frames per process
@@ -482,6 +922,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - **Page Fault Frequency** control Ã¢â€ â€™ allocate more frames if fault rate too high, take away if too low
 
 ### Frame Allocation
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-handwritten.svg" alt="Handwritten: Frame Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-diagram.svg" alt="Diagram: Frame Allocation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/frame-allocation-sticky.svg" alt="Sticky Note: Frame Allocation" width="30%">
+</a>
+
 
 - Equal allocation
 - Proportional allocation (based on process size)
@@ -492,22 +943,66 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 ## 6. File Systems
 
 ### File Concepts
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-handwritten.svg" alt="Handwritten: File Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-diagram.svg" alt="Diagram: File Concepts" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-concepts-sticky.svg" alt="Sticky Note: File Concepts" width="30%">
+</a>
+
 
 - **File** Ã¢â€ â€™ named collection of related information
 - **File attributes:** name, identifier, type, location, size, protection, timestamps
 - **File operations:** create, open, read, write, close, delete, truncate
 
 ### File Access Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-handwritten.svg" alt="Handwritten: File Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-diagram.svg" alt="Diagram: File Access Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-access-methods-sticky.svg" alt="Sticky Note: File Access Methods" width="30%">
+</a>
+
 
 - Sequential
 - Direct (random) Ã¢â€ â€™ based on block number
 - Indexed Ã¢â€ â€™ index block contains pointers to data blocks
 
 ### Directory Structure
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-handwritten.svg" alt="Handwritten: Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-diagram.svg" alt="Diagram: Directory Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/directory-structure-sticky.svg" alt="Sticky Note: Directory Structure" width="30%">
+</a>
+
 
 - Single-level, two-level, tree-structured, acyclic-graph, general graph
 
 ### File Allocation Methods
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-handwritten.svg" alt="Handwritten: File Allocation Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-diagram.svg" alt="Diagram: File Allocation Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/file-allocation-methods-sticky.svg" alt="Sticky Note: File Allocation Methods" width="30%">
+</a>
+
 
 | Method | Pros | Cons |
 |--------|------|------|
@@ -517,6 +1012,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 | Combined (Unix inode) | Scalable, handles all sizes | Complex |
 
 ### Unix inode structure
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-handwritten.svg" alt="Handwritten: Unix inode structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-diagram.svg" alt="Diagram: Unix inode structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/unix-inode-structure-sticky.svg" alt="Sticky Note: Unix inode structure" width="30%">
+</a>
+
 
 - Direct blocks (12 blocks)
 - Single indirect
@@ -524,6 +1030,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - Triple indirect
 
 ### Free Space Management
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-handwritten.svg" alt="Handwritten: Free Space Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-diagram.svg" alt="Diagram: Free Space Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/free-space-management-sticky.svg" alt="Sticky Note: Free Space Management" width="30%">
+</a>
+
 
 - **Bit vector** (bitmap) Ã¢â€ â€™ efficient, compact
 - **Linked list** Ã¢â€ â€™ not efficient for contiguous allocation
@@ -531,6 +1048,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - **Counting** Ã¢â€ â€™ tracks (first free block, count of contiguous free blocks)
 
 ### Disk Structure
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-handwritten.svg" alt="Handwritten: Disk Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-diagram.svg" alt="Diagram: Disk Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-structure-sticky.svg" alt="Sticky Note: Disk Structure" width="30%">
+</a>
+
 
 - Platters, tracks, sectors, cylinders
 - **Seek time** Ã¢â€ â€™ time to move arm to cylinder
@@ -538,6 +1066,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - **Transfer time** Ã¢â€ â€™ time to read/write data
 
 ### Disk Scheduling Algorithms
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-handwritten.svg" alt="Handwritten: Disk Scheduling Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-diagram.svg" alt="Diagram: Disk Scheduling Algorithms" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/disk-scheduling-algorithms-sticky.svg" alt="Sticky Note: Disk Scheduling Algorithms" width="30%">
+</a>
+
 
 **FCFS** Ã¢â€ â€™ First come, first served
 **SSTF** Ã¢â€ â€™ Shortest seek time first (may starve)
@@ -547,6 +1086,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 **C-LOOK** Ã¢â€ â€™ Wrap after last request in one direction
 
 ### RAID Levels
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-handwritten.svg" alt="Handwritten: RAID Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-diagram.svg" alt="Diagram: RAID Levels" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/raid-levels-sticky.svg" alt="Sticky Note: RAID Levels" width="30%">
+</a>
+
 
 | Level | Description | Min Disks |
 |-------|-------------|-----------|
@@ -562,29 +1112,84 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 ## 7. I/O Management
 
 ### I/O Hardware
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-handwritten.svg" alt="Handwritten: I/O Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-diagram.svg" alt="Diagram: I/O Hardware" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-hardware-sticky.svg" alt="Sticky Note: I/O Hardware" width="30%">
+</a>
+
 
 - Port, bus, controller
 - Memory-mapped vs port-mapped I/O
 
 ### I/O Techniques
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-handwritten.svg" alt="Handwritten: I/O Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-diagram.svg" alt="Diagram: I/O Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/i-o-techniques-sticky.svg" alt="Sticky Note: I/O Techniques" width="30%">
+</a>
+
 
 1. **Programmed I/O** Ã¢â€ â€™ CPU busy-waits. Poor CPU utilization.
 2. **Interrupt-driven I/O** Ã¢â€ â€™ device interrupts CPU when ready. Better.
 3. **DMA (Direct Memory Access)** Ã¢â€ â€™ transfers data without CPU intervention. Best for bulk transfers.
 
 ### DMA Modes
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-handwritten.svg" alt="Handwritten: DMA Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-diagram.svg" alt="Diagram: DMA Modes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/dma-modes-sticky.svg" alt="Sticky Note: DMA Modes" width="30%">
+</a>
+
 
 - **Burst mode** Ã¢â€ â€™ DMA controls bus for entire transfer; blocks CPU
 - **Cycle stealing** Ã¢â€ â€™ DMA takes one bus cycle at a time
 - **Transparent mode** Ã¢â€ â€™ DMA transfers only when CPU not using bus
 
 ### Buffering
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-handwritten.svg" alt="Handwritten: Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-diagram.svg" alt="Diagram: Buffering" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/buffering-sticky.svg" alt="Sticky Note: Buffering" width="30%">
+</a>
+
 
 - **Single buffer** Ã¢â€ â€™ OS reads into buffer, then copies to user space
 - **Double buffering** Ã¢â€ â€™ while one buffer is being processed, another is being filled
 - **Circular buffer** Ã¢â€ â€™ multiple buffers in ring
 
 ### Spooling
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-handwritten.svg" alt="Handwritten: Spooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-diagram.svg" alt="Diagram: Spooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/spooling-sticky.svg" alt="Sticky Note: Spooling" width="30%">
+</a>
+
 
 - Simultaneous Peripheral Operations On-Line
 - Queues data for slow devices (e.g., printer)
@@ -595,6 +1200,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 ## 8. Threads
 
 ### User-Level Threads
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-handwritten.svg" alt="Handwritten: User-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-diagram.svg" alt="Diagram: User-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/user-level-threads-sticky.svg" alt="Sticky Note: User-Level Threads" width="30%">
+</a>
+
 
 - Managed without kernel support
 - Thread library (POSIX Pthreads, Java threads) in user space
@@ -602,12 +1218,34 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - **Blocking problem** Ã¢â€ â€™ if one thread blocks, entire process blocks
 
 ### Kernel-Level Threads
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-handwritten.svg" alt="Handwritten: Kernel-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-diagram.svg" alt="Diagram: Kernel-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/kernel-level-threads-sticky.svg" alt="Sticky Note: Kernel-Level Threads" width="30%">
+</a>
+
 
 - Managed directly by OS
 - **Slower creation/switch** Ã¢â€ â€™ need system call
 - **Blocking is fine** Ã¢â€ â€™ kernel schedules other threads in same process
 
 ### Multithreading Models
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-handwritten.svg" alt="Handwritten: Multithreading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-diagram.svg" alt="Diagram: Multithreading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/multithreading-models-sticky.svg" alt="Sticky Note: Multithreading Models" width="30%">
+</a>
+
 
 | Model | User : Kernel | Pros | Cons |
 |-------|--------------|------|------|
@@ -616,6 +1254,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 | Many-to-Many | Many U Ã¢â€ â€™ Many K | Both benefits | Complex to implement |
 
 ### Thread Libraries
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-handwritten.svg" alt="Handwritten: Thread Libraries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-diagram.svg" alt="Diagram: Thread Libraries" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/thread-libraries-sticky.svg" alt="Sticky Note: Thread Libraries" width="30%">
+</a>
+
 
 - **POSIX Pthreads** Ã¢â€ â€™ `pthread_create`, `pthread_join`, `pthread_mutex_lock`
 - **Java threads** Ã¢â€ â€™ JVM threads (typically one-to-one on modern JVMs)
@@ -625,6 +1274,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 ## 9. Linux / Unix Concepts
 
 ### System Calls
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-handwritten.svg" alt="Handwritten: System Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-diagram.svg" alt="Diagram: System Calls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/system-calls-sticky.svg" alt="Sticky Note: System Calls" width="30%">
+</a>
+
 
 - `fork()` Ã¢â€ â€™ create child process
 - `exec()` Ã¢â€ â€™ replace process image
@@ -635,6 +1295,17 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - `signal()` Ã¢â€ â€™ register signal handler
 
 ### Process in Unix
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-handwritten.svg" alt="Handwritten: Process in Unix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-diagram.svg" alt="Diagram: Process in Unix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/process-in-unix-sticky.svg" alt="Sticky Note: Process in Unix" width="30%">
+</a>
+
 
 ```
 fork() Ã¢â€ â€™ child continues with PC after fork
@@ -655,12 +1326,34 @@ int main() {
 ```
 
 ### Signals
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-handwritten.svg" alt="Handwritten: Signals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-diagram.svg" alt="Diagram: Signals" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/signals-sticky.svg" alt="Sticky Note: Signals" width="30%">
+</a>
+
 
 - Software interrupts: `SIGINT` (Ctrl+C), `SIGKILL` (cannot be caught), `SIGSEGV` (segmentation fault)
 - `signal(SIGINT, handler)` Ã¢â€ â€™ register handler
 - `kill(pid, SIGTERM)` Ã¢â€ â€™ send signal
 
 ### Inter-process Communication (IPC)
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-handwritten.svg" alt="Handwritten: Inter-process Communication (IPC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-diagram.svg" alt="Diagram: Inter-process Communication (IPC)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/inter-process-communication-ipc-sticky.svg" alt="Sticky Note: Inter-process Communication (IPC)" width="30%">
+</a>
+
 
 - **Shared memory** Ã¢â€ â€™ fastest (no kernel mediation)
 - **Message passing** Ã¢â€ â€™ `send()` / `receive()` (system calls)
@@ -674,6 +1367,17 @@ int main() {
 ---
 
 ### G1: Process States [GATE 2010, 1M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-handwritten.svg" alt="Handwritten: G1: Process States [GATE 2010, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-diagram.svg" alt="Diagram: G1: Process States [GATE 2010, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g1-process-states-gate-2010-1m-process-management-sticky.svg" alt="Sticky Note: G1: Process States [GATE 2010, 1M, Process Management]" width="30%">
+</a>
+
 
 One of the following transitions is NOT possible for a process:
 **(A)** Running Ã¢â€ â€™ Ready  
@@ -687,6 +1391,17 @@ One of the following transitions is NOT possible for a process:
 ---
 
 ### G2: SJF Scheduling [GATE 2010, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-handwritten.svg" alt="Handwritten: G2: SJF Scheduling [GATE 2010, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-diagram.svg" alt="Diagram: G2: SJF Scheduling [GATE 2010, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g2-sjf-scheduling-gate-2010-2m-scheduling-sticky.svg" alt="Sticky Note: G2: SJF Scheduling [GATE 2010, 2M, Scheduling]" width="30%">
+</a>
+
 
 Consider the following processes with arrival time 0 and burst times:
 
@@ -707,6 +1422,17 @@ Avg WT = (0 + 2 + 5 + 10) / 4 = 17 / 4 = 3.75
 ---
 
 ### G3: Deadlock Conditions [GATE 2010, 1M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-handwritten.svg" alt="Handwritten: G3: Deadlock Conditions [GATE 2010, 1M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-diagram.svg" alt="Diagram: G3: Deadlock Conditions [GATE 2010, 1M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g3-deadlock-conditions-gate-2010-1m-deadlock-sticky.svg" alt="Sticky Note: G3: Deadlock Conditions [GATE 2010, 1M, Deadlock]" width="30%">
+</a>
+
 
 Which of the following is NOT a necessary condition for deadlock?
 **(A)** Mutual exclusion  
@@ -720,6 +1446,17 @@ Which of the following is NOT a necessary condition for deadlock?
 ---
 
 ### G4: Page Size [GATE 2010, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-handwritten.svg" alt="Handwritten: G4: Page Size [GATE 2010, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-diagram.svg" alt="Diagram: G4: Page Size [GATE 2010, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g4-page-size-gate-2010-2m-memory-management-sticky.svg" alt="Sticky Note: G4: Page Size [GATE 2010, 2M, Memory Management]" width="30%">
+</a>
+
 
 A system uses 32-bit logical address and 4 KB page size. What is the number of entries needed in a single-level page table?
 
@@ -729,6 +1466,17 @@ A system uses 32-bit logical address and 4 KB page size. What is the number of e
 ---
 
 ### G5: Banker's Algorithm [GATE 2011, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-handwritten.svg" alt="Handwritten: G5: Banker's Algorithm [GATE 2011, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-diagram.svg" alt="Diagram: G5: Banker's Algorithm [GATE 2011, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g5-banker-s-algorithm-gate-2011-2m-deadlock-sticky.svg" alt="Sticky Note: G5: Banker's Algorithm [GATE 2011, 2M, Deadlock]" width="30%">
+</a>
+
 
 A system has 12 tape drives with processes P0, P1, P2:
 
@@ -750,6 +1498,17 @@ P2 can finish (Need 7 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ Avail 10). Safe sequence:
 ---
 
 ### G6: Context Switch [GATE 2011, 1M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-handwritten.svg" alt="Handwritten: G6: Context Switch [GATE 2011, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-diagram.svg" alt="Diagram: G6: Context Switch [GATE 2011, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g6-context-switch-gate-2011-1m-process-management-sticky.svg" alt="Sticky Note: G6: Context Switch [GATE 2011, 1M, Process Management]" width="30%">
+</a>
+
 
 Which of the following is NOT typically stored in the PCB during a context switch?
 **(A)** Program counter  
@@ -763,6 +1522,17 @@ Which of the following is NOT typically stored in the PCB during a context switc
 ---
 
 ### G7: Page Replacement FIFO [GATE 2011, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-handwritten.svg" alt="Handwritten: G7: Page Replacement FIFO [GATE 2011, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-diagram.svg" alt="Diagram: G7: Page Replacement FIFO [GATE 2011, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g7-page-replacement-fifo-gate-2011-2m-memory-management-sticky.svg" alt="Sticky Note: G7: Page Replacement FIFO [GATE 2011, 2M, Memory Management]" width="30%">
+</a>
+
 
 Consider reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 frames. How many page faults using FIFO?
 
@@ -787,6 +1557,17 @@ Total = 9 faults
 ---
 
 ### G8: Semaphore Operation [GATE 2012, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-handwritten.svg" alt="Handwritten: G8: Semaphore Operation [GATE 2012, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-diagram.svg" alt="Diagram: G8: Semaphore Operation [GATE 2012, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g8-semaphore-operation-gate-2012-2m-synchronization-sticky.svg" alt="Sticky Note: G8: Semaphore Operation [GATE 2012, 2M, Synchronization]" width="30%">
+</a>
+
 
 What does the following code ensure?
 
@@ -808,6 +1589,17 @@ V(s);
 ---
 
 ### G9: Dining Philosophers [GATE 2012, 1M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-handwritten.svg" alt="Handwritten: G9: Dining Philosophers [GATE 2012, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-diagram.svg" alt="Diagram: G9: Dining Philosophers [GATE 2012, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g9-dining-philosophers-gate-2012-1m-synchronization-sticky.svg" alt="Sticky Note: G9: Dining Philosophers [GATE 2012, 1M, Synchronization]" width="30%">
+</a>
+
 
 In the dining philosophers problem, if all philosophers pick up their left chopstick simultaneously, this leads to:
 **(A)** Starvation  
@@ -821,6 +1613,17 @@ In the dining philosophers problem, if all philosophers pick up their left chops
 ---
 
 ### G10: Virtual Memory [GATE 2012, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-handwritten.svg" alt="Handwritten: G10: Virtual Memory [GATE 2012, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-diagram.svg" alt="Diagram: G10: Virtual Memory [GATE 2012, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g10-virtual-memory-gate-2012-2m-memory-management-sticky.svg" alt="Sticky Note: G10: Virtual Memory [GATE 2012, 2M, Memory Management]" width="30%">
+</a>
+
 
 Consider a system with 3-level page table: outer page table (PT1), page middle directory (PT2), and page table (PT3). A logical address is 48 bits. Page size = 4 KB. If each level uses 10 bits, how many bits for the offset?
 
@@ -832,6 +1635,17 @@ Consider a system with 3-level page table: outer page table (PT1), page middle d
 ---
 
 ### G11: LRU Page Replacement [GATE 2013, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-handwritten.svg" alt="Handwritten: G11: LRU Page Replacement [GATE 2013, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-diagram.svg" alt="Diagram: G11: LRU Page Replacement [GATE 2013, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g11-lru-page-replacement-gate-2013-2m-memory-management-sticky.svg" alt="Sticky Note: G11: LRU Page Replacement [GATE 2013, 2M, Memory Management]" width="30%">
+</a>
+
 
 Consider reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1 with 3 frames. How many page faults using LRU?
 
@@ -864,6 +1678,17 @@ Total = 12 faults.
 ---
 
 ### G12: Process State Transition [GATE 2013, 1M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-handwritten.svg" alt="Handwritten: G12: Process State Transition [GATE 2013, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-diagram.svg" alt="Diagram: G12: Process State Transition [GATE 2013, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g12-process-state-transition-gate-2013-1m-process-management-sticky.svg" alt="Sticky Note: G12: Process State Transition [GATE 2013, 1M, Process Management]" width="30%">
+</a>
+
 
 Which of the following is always TRUE about a process in the RUNNING state?
 **(A)** It has the CPU  
@@ -877,6 +1702,17 @@ Which of the following is always TRUE about a process in the RUNNING state?
 ---
 
 ### G13: Disk Scheduling SCAN [GATE 2013, 2M, Disk]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-handwritten.svg" alt="Handwritten: G13: Disk Scheduling SCAN [GATE 2013, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-diagram.svg" alt="Diagram: G13: Disk Scheduling SCAN [GATE 2013, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g13-disk-scheduling-scan-gate-2013-2m-disk-sticky.svg" alt="Sticky Note: G13: Disk Scheduling SCAN [GATE 2013, 2M, Disk]" width="30%">
+</a>
+
 
 A disk has 200 cylinders (0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“199). Request queue: 98, 183, 37, 122, 14, 124, 65, 67. Head starts at 53, moving towards 0. Which requests are served in order under SCAN?
 
@@ -886,6 +1722,17 @@ A disk has 200 cylinders (0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“199). Request 
 ---
 
 ### G14: FCFS vs SJF [GATE 2014, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-handwritten.svg" alt="Handwritten: G14: FCFS vs SJF [GATE 2014, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-diagram.svg" alt="Diagram: G14: FCFS vs SJF [GATE 2014, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g14-fcfs-vs-sjf-gate-2014-2m-scheduling-sticky.svg" alt="Sticky Note: G14: FCFS vs SJF [GATE 2014, 2M, Scheduling]" width="30%">
+</a>
+
 
 Which of the following schedulers always gives the minimum average waiting time?
 **(A)** FCFS  
@@ -899,6 +1746,17 @@ Which of the following schedulers always gives the minimum average waiting time?
 ---
 
 ### G15: Mutex vs Semaphore [GATE 2014, 1M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-handwritten.svg" alt="Handwritten: G15: Mutex vs Semaphore [GATE 2014, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-diagram.svg" alt="Diagram: G15: Mutex vs Semaphore [GATE 2014, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g15-mutex-vs-semaphore-gate-2014-1m-synchronization-sticky.svg" alt="Sticky Note: G15: Mutex vs Semaphore [GATE 2014, 1M, Synchronization]" width="30%">
+</a>
+
 
 A binary semaphore can be used as a mutex. True or False?
 
@@ -908,6 +1766,17 @@ A binary semaphore can be used as a mutex. True or False?
 ---
 
 ### G16: Thrashing [GATE 2014, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-handwritten.svg" alt="Handwritten: G16: Thrashing [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-diagram.svg" alt="Diagram: G16: Thrashing [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g16-thrashing-gate-2014-2m-memory-management-sticky.svg" alt="Sticky Note: G16: Thrashing [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+
 
 Thrashing occurs when:
 **(A)** CPU utilization is high and throughput is low  
@@ -921,6 +1790,17 @@ Thrashing occurs when:
 ---
 
 ### G17: TLB and EMAT [GATE 2014, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-handwritten.svg" alt="Handwritten: G17: TLB and EMAT [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-diagram.svg" alt="Diagram: G17: TLB and EMAT [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g17-tlb-and-emat-gate-2014-2m-memory-management-sticky.svg" alt="Sticky Note: G17: TLB and EMAT [GATE 2014, 2M, Memory Management]" width="30%">
+</a>
+
 
 A system has TLB hit ratio of 90%. TLB access time = 10 ns, memory access = 100 ns. What is EMAT?
 
@@ -931,6 +1811,17 @@ A system has TLB hit ratio of 90%. TLB access time = 10 ns, memory access = 100 
 ---
 
 ### G18: Banker's Algorithm Safety [GATE 2014, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-handwritten.svg" alt="Handwritten: G18: Banker's Algorithm Safety [GATE 2014, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-diagram.svg" alt="Diagram: G18: Banker's Algorithm Safety [GATE 2014, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g18-banker-s-algorithm-safety-gate-2014-2m-deadlock-sticky.svg" alt="Sticky Note: G18: Banker's Algorithm Safety [GATE 2014, 2M, Deadlock]" width="30%">
+</a>
+
 
 Consider 5 processes (P0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“P4) and 3 resource types A (10 inst), B (5 inst), C (7 inst).
 
@@ -956,6 +1847,17 @@ Safe: P1, P3, P4, P2, P0.
 ---
 
 ### G19: Fork System Call [GATE 2015, 2M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-handwritten.svg" alt="Handwritten: G19: Fork System Call [GATE 2015, 2M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-diagram.svg" alt="Diagram: G19: Fork System Call [GATE 2015, 2M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g19-fork-system-call-gate-2015-2m-process-management-sticky.svg" alt="Sticky Note: G19: Fork System Call [GATE 2015, 2M, Process Management]" width="30%">
+</a>
+
 
 ```c
 int main() {
@@ -974,6 +1876,17 @@ How many times is "GATE" printed?
 ---
 
 ### G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-handwritten.svg" alt="Handwritten: G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-diagram.svg" alt="Diagram: G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g20-logical-to-physical-address-gate-2015-2m-memory-management-sticky.svg" alt="Sticky Note: G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+
 
 A system has page size = 1 KB. Page table (for process) has entries: 0Ã¢â€ â€™5, 1Ã¢â€ â€™8, 2Ã¢â€ â€™10, 3Ã¢â€ â€™15. What physical address corresponds to logical address 2500?
 
@@ -987,6 +1900,17 @@ Wait Ã¢â€ â€™ let me recalculate: 10 * 1024 = 10240, + 452 = 10692.
 ---
 
 ### G21: Deadlock Detection [GATE 2015, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-handwritten.svg" alt="Handwritten: G21: Deadlock Detection [GATE 2015, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-diagram.svg" alt="Diagram: G21: Deadlock Detection [GATE 2015, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g21-deadlock-detection-gate-2015-2m-deadlock-sticky.svg" alt="Sticky Note: G21: Deadlock Detection [GATE 2015, 2M, Deadlock]" width="30%">
+</a>
+
 
 Which of the following is sufficient to guarantee no deadlock?
 **(A)** Mutual exclusion is violated  
@@ -1001,6 +1925,17 @@ Which of the following is sufficient to guarantee no deadlock?
 ---
 
 ### G22: Optimal Page Replacement [GATE 2015, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-handwritten.svg" alt="Handwritten: G22: Optimal Page Replacement [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-diagram.svg" alt="Diagram: G22: Optimal Page Replacement [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g22-optimal-page-replacement-gate-2015-2m-memory-management-sticky.svg" alt="Sticky Note: G22: Optimal Page Replacement [GATE 2015, 2M, Memory Management]" width="30%">
+</a>
+
 
 Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 4 frames. How many page faults using Optimal replacement?
 
@@ -1059,6 +1994,17 @@ Total = 6 faults. ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“
 ---
 
 ### G23: Degree of Multiprogramming [GATE 2015, 1M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-handwritten.svg" alt="Handwritten: G23: Degree of Multiprogramming [GATE 2015, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-diagram.svg" alt="Diagram: G23: Degree of Multiprogramming [GATE 2015, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g23-degree-of-multiprogramming-gate-2015-1m-process-management-sticky.svg" alt="Sticky Note: G23: Degree of Multiprogramming [GATE 2015, 1M, Process Management]" width="30%">
+</a>
+
 
 Degree of multiprogramming is controlled by which scheduler?
 **(A)** Short-term  
@@ -1072,6 +2018,17 @@ Degree of multiprogramming is controlled by which scheduler?
 ---
 
 ### G24: Multilevel Queue Scheduling [GATE 2016, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-handwritten.svg" alt="Handwritten: G24: Multilevel Queue Scheduling [GATE 2016, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-diagram.svg" alt="Diagram: G24: Multilevel Queue Scheduling [GATE 2016, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g24-multilevel-queue-scheduling-gate-2016-2m-scheduling-sticky.svg" alt="Sticky Note: G24: Multilevel Queue Scheduling [GATE 2016, 2M, Scheduling]" width="30%">
+</a>
+
 
 In a multilevel queue scheduling system, which of the following is true?
 **(A)** Processes can move between queues  
@@ -1085,6 +2042,17 @@ In a multilevel queue scheduling system, which of the following is true?
 ---
 
 ### G25: Race Condition [GATE 2016, 1M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-handwritten.svg" alt="Handwritten: G25: Race Condition [GATE 2016, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-diagram.svg" alt="Diagram: G25: Race Condition [GATE 2016, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g25-race-condition-gate-2016-1m-synchronization-sticky.svg" alt="Sticky Note: G25: Race Condition [GATE 2016, 1M, Synchronization]" width="30%">
+</a>
+
 
 A race condition occurs when:
 **(A)** Two processes access shared variable concurrently with at least one writing  
@@ -1098,6 +2066,17 @@ A race condition occurs when:
 ---
 
 ### G26: Page Table Size [GATE 2016, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-handwritten.svg" alt="Handwritten: G26: Page Table Size [GATE 2016, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-diagram.svg" alt="Diagram: G26: Page Table Size [GATE 2016, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g26-page-table-size-gate-2016-2m-memory-management-sticky.svg" alt="Sticky Note: G26: Page Table Size [GATE 2016, 2M, Memory Management]" width="30%">
+</a>
+
 
 Logical address = 32 bits, page size = 4 KB, page table entry = 4 bytes. What is the page table size for a single-level page table?
 
@@ -1107,6 +2086,17 @@ Logical address = 32 bits, page size = 4 KB, page table entry = 4 bytes. What is
 ---
 
 ### G27: Fragmentation [GATE 2016, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-handwritten.svg" alt="Handwritten: G27: Fragmentation [GATE 2016, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-diagram.svg" alt="Diagram: G27: Fragmentation [GATE 2016, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g27-fragmentation-gate-2016-1m-memory-management-sticky.svg" alt="Sticky Note: G27: Fragmentation [GATE 2016, 1M, Memory Management]" width="30%">
+</a>
+
 
 Which of the following suffers from external fragmentation?
 **(A)** Paging  
@@ -1120,6 +2110,17 @@ Which of the following suffers from external fragmentation?
 ---
 
 ### G28: Semaphore as Condition Variable [GATE 2016, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-handwritten.svg" alt="Handwritten: G28: Semaphore as Condition Variable [GATE 2016, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-diagram.svg" alt="Diagram: G28: Semaphore as Condition Variable [GATE 2016, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g28-semaphore-as-condition-variable-gate-2016-2m-synchronization-sticky.svg" alt="Sticky Note: G28: Semaphore as Condition Variable [GATE 2016, 2M, Synchronization]" width="30%">
+</a>
+
 
 Three processes share a semaphore S initialized to 2. Each process executes P(S), critical section, V(S) 3 times. Is deadlock possible?
 
@@ -1129,6 +2130,17 @@ Three processes share a semaphore S initialized to 2. Each process executes P(S)
 ---
 
 ### G29: C-SCAN Disk Scheduling [GATE 2016, 2M, Disk]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-handwritten.svg" alt="Handwritten: G29: C-SCAN Disk Scheduling [GATE 2016, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-diagram.svg" alt="Diagram: G29: C-SCAN Disk Scheduling [GATE 2016, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g29-c-scan-disk-scheduling-gate-2016-2m-disk-sticky.svg" alt="Sticky Note: G29: C-SCAN Disk Scheduling [GATE 2016, 2M, Disk]" width="30%">
+</a>
+
 
 Disk with 200 cylinders (0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“199). Head at 50, moving towards 199. Queue: 82, 170, 43, 140, 24, 16, 190. Total head movement using C-SCAN?
 
@@ -1139,6 +2151,17 @@ Total = (199-50) + (199-0) + (43-0) = 149 + 199 + 43 = 391
 ---
 
 ### G30: LRU Clock Approximation [GATE 2017, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-handwritten.svg" alt="Handwritten: G30: LRU Clock Approximation [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-diagram.svg" alt="Diagram: G30: LRU Clock Approximation [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g30-lru-clock-approximation-gate-2017-2m-memory-management-sticky.svg" alt="Sticky Note: G30: LRU Clock Approximation [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+
 
 Which page replacement algorithm may exhibit Belady's anomaly?
 **(A)** LRU  
@@ -1152,6 +2175,17 @@ Which page replacement algorithm may exhibit Belady's anomaly?
 ---
 
 ### G31: Semaphore Counting [GATE 2017, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-handwritten.svg" alt="Handwritten: G31: Semaphore Counting [GATE 2017, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-diagram.svg" alt="Diagram: G31: Semaphore Counting [GATE 2017, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g31-semaphore-counting-gate-2017-2m-synchronization-sticky.svg" alt="Sticky Note: G31: Semaphore Counting [GATE 2017, 2M, Synchronization]" width="30%">
+</a>
+
 
 Consider the following:
 
@@ -1186,6 +2220,17 @@ Max = 2. ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“
 ---
 
 ### G32: Multithreading Model [GATE 2017, 1M, Threads]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-handwritten.svg" alt="Handwritten: G32: Multithreading Model [GATE 2017, 1M, Threads]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-diagram.svg" alt="Diagram: G32: Multithreading Model [GATE 2017, 1M, Threads]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g32-multithreading-model-gate-2017-1m-threads-sticky.svg" alt="Sticky Note: G32: Multithreading Model [GATE 2017, 1M, Threads]" width="30%">
+</a>
+
 
 Which model maps each user thread to a separate kernel thread?
 **(A)** Many-to-One  
@@ -1199,6 +2244,17 @@ Which model maps each user thread to a separate kernel thread?
 ---
 
 ### G33: Belady's Anomaly [GATE 2017, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-handwritten.svg" alt="Handwritten: G33: Belady's Anomaly [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-diagram.svg" alt="Diagram: G33: Belady's Anomaly [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g33-belady-s-anomaly-gate-2017-2m-memory-management-sticky.svg" alt="Sticky Note: G33: Belady's Anomaly [GATE 2017, 2M, Memory Management]" width="30%">
+</a>
+
 
 Which of the following page replacement algorithms guarantees that increasing the number of frames never increases page faults?
 **(A)** FIFO  
@@ -1212,6 +2268,17 @@ Which of the following page replacement algorithms guarantees that increasing th
 ---
 
 ### G34: Linker and Loader [GATE 2017, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-handwritten.svg" alt="Handwritten: G34: Linker and Loader [GATE 2017, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-diagram.svg" alt="Diagram: G34: Linker and Loader [GATE 2017, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g34-linker-and-loader-gate-2017-1m-memory-management-sticky.svg" alt="Sticky Note: G34: Linker and Loader [GATE 2017, 1M, Memory Management]" width="30%">
+</a>
+
 
 Which of the following is NOT a function of the loader?
 **(A)** Allocating memory  
@@ -1225,6 +2292,17 @@ Which of the following is NOT a function of the loader?
 ---
 
 ### G35: File Allocation Ã¢â€ â€™ Indexed [GATE 2017, 2M, File Systems]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-handwritten.svg" alt="Handwritten: G35: File Allocation Ã¢â€ â€™ Indexed [GATE 2017, 2M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-diagram.svg" alt="Diagram: G35: File Allocation Ã¢â€ â€™ Indexed [GATE 2017, 2M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g35-file-allocation-indexed-gate-2017-2m-file-systems-sticky.svg" alt="Sticky Note: G35: File Allocation Ã¢â€ â€™ Indexed [GATE 2017, 2M, File Systems]" width="30%">
+</a>
+
 
 A file system uses indexed allocation with an index block of 4 KB. Each block pointer is 4 bytes. Maximum file size?
 
@@ -1235,6 +2313,17 @@ Maximum file size = 1024 ÃƒÆ’Ã¢â‚¬â€� 4 KB = 4 MB.
 ---
 
 ### G36: Producer-Consumer [GATE 2018, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-handwritten.svg" alt="Handwritten: G36: Producer-Consumer [GATE 2018, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-diagram.svg" alt="Diagram: G36: Producer-Consumer [GATE 2018, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g36-producer-consumer-gate-2018-2m-synchronization-sticky.svg" alt="Sticky Note: G36: Producer-Consumer [GATE 2018, 2M, Synchronization]" width="30%">
+</a>
+
 
 In the bounded buffer problem, what is the minimum number of semaphores needed for synchronization between n producers and m consumers?
 
@@ -1244,6 +2333,17 @@ In the bounded buffer problem, what is the minimum number of semaphores needed f
 ---
 
 ### G37: Deadlock Avoidance [GATE 2018, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-handwritten.svg" alt="Handwritten: G37: Deadlock Avoidance [GATE 2018, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-diagram.svg" alt="Diagram: G37: Deadlock Avoidance [GATE 2018, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g37-deadlock-avoidance-gate-2018-2m-deadlock-sticky.svg" alt="Sticky Note: G37: Deadlock Avoidance [GATE 2018, 2M, Deadlock]" width="30%">
+</a>
+
 
 In Banker's algorithm, what data structure represents the maximum resource demand of each process?
 
@@ -1253,6 +2353,17 @@ In Banker's algorithm, what data structure represents the maximum resource deman
 ---
 
 ### G38: Interrupt Handling [GATE 2018, 1M, I/O]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-handwritten.svg" alt="Handwritten: G38: Interrupt Handling [GATE 2018, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-diagram.svg" alt="Diagram: G38: Interrupt Handling [GATE 2018, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g38-interrupt-handling-gate-2018-1m-i-o-sticky.svg" alt="Sticky Note: G38: Interrupt Handling [GATE 2018, 1M, I/O]" width="30%">
+</a>
+
 
 When an interrupt occurs, the processor saves the program counter and jumps to:
 **(A)** Interrupt service routine  
@@ -1266,6 +2377,17 @@ When an interrupt occurs, the processor saves the program counter and jumps to:
 ---
 
 ### G39: Working Set [GATE 2018, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-handwritten.svg" alt="Handwritten: G39: Working Set [GATE 2018, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-diagram.svg" alt="Diagram: G39: Working Set [GATE 2018, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g39-working-set-gate-2018-2m-memory-management-sticky.svg" alt="Sticky Note: G39: Working Set [GATE 2018, 2M, Memory Management]" width="30%">
+</a>
+
 
 The working set window ÃƒÅ½Ã¢â‚¬Â� = 5. Reference string: 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4. What is the working set size at time t = 12?
 
@@ -1275,6 +2397,17 @@ The working set window ÃƒÅ½Ã¢â‚¬Â� = 5. Reference string: 1, 2, 3, 
 ---
 
 ### G40: Round Robin Scheduling [GATE 2019, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-handwritten.svg" alt="Handwritten: G40: Round Robin Scheduling [GATE 2019, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-diagram.svg" alt="Diagram: G40: Round Robin Scheduling [GATE 2019, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g40-round-robin-scheduling-gate-2019-2m-scheduling-sticky.svg" alt="Sticky Note: G40: Round Robin Scheduling [GATE 2019, 2M, Scheduling]" width="30%">
+</a>
+
 
 Processes with burst times: P1=10, P2=5, P3=2, P4=1. Time quantum = 2. All arrive at time 0. What is the average turnaround time?
 
@@ -1381,6 +2514,17 @@ Avg TAT = (18+14+6+7)/4 = 45/4 = 11.25
 ---
 
 ### G41: Virtual Memory Size [GATE 2019, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-handwritten.svg" alt="Handwritten: G41: Virtual Memory Size [GATE 2019, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-diagram.svg" alt="Diagram: G41: Virtual Memory Size [GATE 2019, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g41-virtual-memory-size-gate-2019-1m-memory-management-sticky.svg" alt="Sticky Note: G41: Virtual Memory Size [GATE 2019, 1M, Memory Management]" width="30%">
+</a>
+
 
 A 32-bit system with 4 KB pages. What is the maximum virtual memory size?
 
@@ -1390,6 +2534,17 @@ A 32-bit system with 4 KB pages. What is the maximum virtual memory size?
 ---
 
 ### G42: I/O Buffering [GATE 2019, 1M, I/O]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-handwritten.svg" alt="Handwritten: G42: I/O Buffering [GATE 2019, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-diagram.svg" alt="Diagram: G42: I/O Buffering [GATE 2019, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g42-i-o-buffering-gate-2019-1m-i-o-sticky.svg" alt="Sticky Note: G42: I/O Buffering [GATE 2019, 1M, I/O]" width="30%">
+</a>
+
 
 Double buffering is used to:
 **(A)** Increase I/O throughput  
@@ -1403,6 +2558,17 @@ Double buffering is used to:
 ---
 
 ### G43: RAG Cycle [GATE 2020, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-handwritten.svg" alt="Handwritten: G43: RAG Cycle [GATE 2020, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-diagram.svg" alt="Diagram: G43: RAG Cycle [GATE 2020, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g43-rag-cycle-gate-2020-2m-deadlock-sticky.svg" alt="Sticky Note: G43: RAG Cycle [GATE 2020, 2M, Deadlock]" width="30%">
+</a>
+
 
 Consider the following resource allocation graph with single-instance resources R1, R2, R3 and processes P1, P2, P3:
 - P1 Ã¢â€ â€™ R1 (request), R1 Ã¢â€ â€™ P2 (assignment)
@@ -1417,6 +2583,17 @@ Is there a deadlock?
 ---
 
 ### G44: Thread Blocking [GATE 2020, 1M, Threads]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-handwritten.svg" alt="Handwritten: G44: Thread Blocking [GATE 2020, 1M, Threads]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-diagram.svg" alt="Diagram: G44: Thread Blocking [GATE 2020, 1M, Threads]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g44-thread-blocking-gate-2020-1m-threads-sticky.svg" alt="Sticky Note: G44: Thread Blocking [GATE 2020, 1M, Threads]" width="30%">
+</a>
+
 
 In a many-to-one threading model, if one thread makes a blocking system call:
 **(A)** Only that thread blocks  
@@ -1430,6 +2607,17 @@ In a many-to-one threading model, if one thread makes a blocking system call:
 ---
 
 ### G45: Page Fault Service Time [GATE 2020, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-handwritten.svg" alt="Handwritten: G45: Page Fault Service Time [GATE 2020, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-diagram.svg" alt="Diagram: G45: Page Fault Service Time [GATE 2020, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g45-page-fault-service-time-gate-2020-2m-memory-management-sticky.svg" alt="Sticky Note: G45: Page Fault Service Time [GATE 2020, 2M, Memory Management]" width="30%">
+</a>
+
 
 Assume page fault service time = 8 ms (including all overhead). Memory access = 200 ns. If page fault rate is 1 per 10,000 accesses, what is EMAT?
 
@@ -1442,6 +2630,17 @@ EMAT = (1 - p) ÃƒÆ’Ã¢â‚¬â€� memory_access + p ÃƒÆ’Ã¢â‚
 ---
 
 ### G46: Counting Semaphore [GATE 2020, 1M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-handwritten.svg" alt="Handwritten: G46: Counting Semaphore [GATE 2020, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-diagram.svg" alt="Diagram: G46: Counting Semaphore [GATE 2020, 1M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g46-counting-semaphore-gate-2020-1m-synchronization-sticky.svg" alt="Sticky Note: G46: Counting Semaphore [GATE 2020, 1M, Synchronization]" width="30%">
+</a>
+
 
 A counting semaphore S is initialized to 7. 13 P(S) operations and 11 V(S) operations are executed. What is the final value of S?
 
@@ -1451,6 +2650,17 @@ A counting semaphore S is initialized to 7. 13 P(S) operations and 11 V(S) opera
 ---
 
 ### G47: Memory Stall Time [GATE 2021, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-handwritten.svg" alt="Handwritten: G47: Memory Stall Time [GATE 2021, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-diagram.svg" alt="Diagram: G47: Memory Stall Time [GATE 2021, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g47-memory-stall-time-gate-2021-2m-memory-management-sticky.svg" alt="Sticky Note: G47: Memory Stall Time [GATE 2021, 2M, Memory Management]" width="30%">
+</a>
+
 
 A processor has a cache miss rate of 2%. Main memory access time = 100 ns. Cache access time = 2 ns. What is the average memory access time?
 
@@ -1462,6 +2672,17 @@ A processor has a cache miss rate of 2%. Main memory access time = 100 ns. Cache
 ---
 
 ### G48: Disk Access Time [GATE 2021, 2M, Disk]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-handwritten.svg" alt="Handwritten: G48: Disk Access Time [GATE 2021, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-diagram.svg" alt="Diagram: G48: Disk Access Time [GATE 2021, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g48-disk-access-time-gate-2021-2m-disk-sticky.svg" alt="Sticky Note: G48: Disk Access Time [GATE 2021, 2M, Disk]" width="30%">
+</a>
+
 
 Disk rotates at 6000 RPM, average seek time = 5 ms, data transfer = 50 MB/s. Block size = 4 KB. Average time to read a random block?
 
@@ -1477,6 +2698,17 @@ Depending on assumptions, GATE answer expected ~10 ms or ~12 ms if transfer roun
 ---
 
 ### G49: Preemptive Priority Scheduling [GATE 2021, 1M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-handwritten.svg" alt="Handwritten: G49: Preemptive Priority Scheduling [GATE 2021, 1M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-diagram.svg" alt="Diagram: G49: Preemptive Priority Scheduling [GATE 2021, 1M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g49-preemptive-priority-scheduling-gate-2021-1m-scheduling-sticky.svg" alt="Sticky Note: G49: Preemptive Priority Scheduling [GATE 2021, 1M, Scheduling]" width="30%">
+</a>
+
 
 In preemptive priority scheduling, a lower number indicates higher priority.
 
@@ -1514,6 +2746,17 @@ Avg WT = (13 + 0 + 3 + 18)/4 = 34/4 = 8.5
 ---
 
 ### G50: File Pointer [GATE 2021, 1M, File Systems]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-handwritten.svg" alt="Handwritten: G50: File Pointer [GATE 2021, 1M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-diagram.svg" alt="Diagram: G50: File Pointer [GATE 2021, 1M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g50-file-pointer-gate-2021-1m-file-systems-sticky.svg" alt="Sticky Note: G50: File Pointer [GATE 2021, 1M, File Systems]" width="30%">
+</a>
+
 
 A file has 512 bytes per disk block. What is the maximum file size if the inode has 10 direct blocks and one single indirect block, where each block pointer is 4 bytes?
 
@@ -1523,6 +2766,17 @@ A file has 512 bytes per disk block. What is the maximum file size if the inode 
 ---
 
 ### G51: Buddy System [GATE 2021, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-handwritten.svg" alt="Handwritten: G51: Buddy System [GATE 2021, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-diagram.svg" alt="Diagram: G51: Buddy System [GATE 2021, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g51-buddy-system-gate-2021-1m-memory-management-sticky.svg" alt="Sticky Note: G51: Buddy System [GATE 2021, 1M, Memory Management]" width="30%">
+</a>
+
 
 The buddy system is used for:
 **(A)** Free space management in file systems  
@@ -1536,6 +2790,17 @@ The buddy system is used for:
 ---
 
 ### G52: Monitor Condition Variable [GATE 2022, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-handwritten.svg" alt="Handwritten: G52: Monitor Condition Variable [GATE 2022, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-diagram.svg" alt="Diagram: G52: Monitor Condition Variable [GATE 2022, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g52-monitor-condition-variable-gate-2022-2m-synchronization-sticky.svg" alt="Sticky Note: G52: Monitor Condition Variable [GATE 2022, 2M, Synchronization]" width="30%">
+</a>
+
 
 In Hoare-style monitors, when a process signals a condition variable:
 **(A)** The signaler continues, the waiting process enters when possible  
@@ -1549,6 +2814,17 @@ In Hoare-style monitors, when a process signals a condition variable:
 ---
 
 ### G53: SCAN vs C-SCAN [GATE 2022, 2M, Disk]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-handwritten.svg" alt="Handwritten: G53: SCAN vs C-SCAN [GATE 2022, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-diagram.svg" alt="Diagram: G53: SCAN vs C-SCAN [GATE 2022, 2M, Disk]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g53-scan-vs-c-scan-gate-2022-2m-disk-sticky.svg" alt="Sticky Note: G53: SCAN vs C-SCAN [GATE 2022, 2M, Disk]" width="30%">
+</a>
+
 
 The key advantage of C-SCAN over SCAN is:
 **(A)** Lower average seek time  
@@ -1562,6 +2838,17 @@ The key advantage of C-SCAN over SCAN is:
 ---
 
 ### G54: Spooling [GATE 2022, 1M, I/O]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-handwritten.svg" alt="Handwritten: G54: Spooling [GATE 2022, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-diagram.svg" alt="Diagram: G54: Spooling [GATE 2022, 1M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g54-spooling-gate-2022-1m-i-o-sticky.svg" alt="Sticky Note: G54: Spooling [GATE 2022, 1M, I/O]" width="30%">
+</a>
+
 
 Spooling is most commonly used for:
 **(A)** Disk I/O  
@@ -1575,6 +2862,17 @@ Spooling is most commonly used for:
 ---
 
 ### G55: Starvation in Priority Scheduling [GATE 2022, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-handwritten.svg" alt="Handwritten: G55: Starvation in Priority Scheduling [GATE 2022, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-diagram.svg" alt="Diagram: G55: Starvation in Priority Scheduling [GATE 2022, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g55-starvation-in-priority-scheduling-gate-2022-2m-scheduling-sticky.svg" alt="Sticky Note: G55: Starvation in Priority Scheduling [GATE 2022, 2M, Scheduling]" width="30%">
+</a>
+
 
 Which technique prevents starvation in priority scheduling?
 **(A)** Round Robin  
@@ -1588,6 +2886,17 @@ Which technique prevents starvation in priority scheduling?
 ---
 
 ### G56: Optimal Page Replacement [GATE 2023, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-handwritten.svg" alt="Handwritten: G56: Optimal Page Replacement [GATE 2023, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-diagram.svg" alt="Diagram: G56: Optimal Page Replacement [GATE 2023, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g56-optimal-page-replacement-gate-2023-2m-memory-management-sticky.svg" alt="Sticky Note: G56: Optimal Page Replacement [GATE 2023, 2M, Memory Management]" width="30%">
+</a>
+
 
 Reference string: 0, 2, 1, 6, 4, 0, 1, 0, 2, 1, 2, 6 with 3 frames. Using Optimal replacement, how many page faults?
 
@@ -1612,6 +2921,17 @@ Total = 7 faults.
 ---
 
 ### G57: Safe State Check [GATE 2023, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-handwritten.svg" alt="Handwritten: G57: Safe State Check [GATE 2023, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-diagram.svg" alt="Diagram: G57: Safe State Check [GATE 2023, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g57-safe-state-check-gate-2023-2m-deadlock-sticky.svg" alt="Sticky Note: G57: Safe State Check [GATE 2023, 2M, Deadlock]" width="30%">
+</a>
+
 
 A system has 5 processes and 3 resource types (A: 10, B: 5, C: 7). At time T0:
 
@@ -1641,6 +2961,17 @@ Safe: P1 Ã¢â€ â€™ P3 Ã¢â€ â€™ P4 Ã¢â€ â€™ P0 Ã
 ---
 
 ### G58: fork() Process Tree [GATE 2023, 1M, Process Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-handwritten.svg" alt="Handwritten: G58: fork() Process Tree [GATE 2023, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-diagram.svg" alt="Diagram: G58: fork() Process Tree [GATE 2023, 1M, Process Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g58-fork-process-tree-gate-2023-1m-process-management-sticky.svg" alt="Sticky Note: G58: fork() Process Tree [GATE 2023, 1M, Process Management]" width="30%">
+</a>
+
 
 ```c
 int main() {
@@ -1706,6 +3037,17 @@ Total processes at printf: P, C1, C2, C3, C4, C5 = 6 processes.
 ---
 
 ### G59: DMA Cycle Stealing [GATE 2023, 2M, I/O]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-handwritten.svg" alt="Handwritten: G59: DMA Cycle Stealing [GATE 2023, 2M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-diagram.svg" alt="Diagram: G59: DMA Cycle Stealing [GATE 2023, 2M, I/O]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g59-dma-cycle-stealing-gate-2023-2m-i-o-sticky.svg" alt="Sticky Note: G59: DMA Cycle Stealing [GATE 2023, 2M, I/O]" width="30%">
+</a>
+
 
 In cycle stealing DMA mode:
 **(A)** DMA controller blocks CPU until transfer completes  
@@ -1719,6 +3061,17 @@ In cycle stealing DMA mode:
 ---
 
 ### G60: UNIX inode [GATE 2024, 2M, File Systems]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-handwritten.svg" alt="Handwritten: G60: UNIX inode [GATE 2024, 2M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-diagram.svg" alt="Diagram: G60: UNIX inode [GATE 2024, 2M, File Systems]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g60-unix-inode-gate-2024-2m-file-systems-sticky.svg" alt="Sticky Note: G60: UNIX inode [GATE 2024, 2M, File Systems]" width="30%">
+</a>
+
 
 In a UNIX-like file system, an inode contains:
 **(A)** File name  
@@ -1732,6 +3085,17 @@ In a UNIX-like file system, an inode contains:
 ---
 
 ### G61: Multilevel Feedback Queue [GATE 2024, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-handwritten.svg" alt="Handwritten: G61: Multilevel Feedback Queue [GATE 2024, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-diagram.svg" alt="Diagram: G61: Multilevel Feedback Queue [GATE 2024, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g61-multilevel-feedback-queue-gate-2024-2m-scheduling-sticky.svg" alt="Sticky Note: G61: Multilevel Feedback Queue [GATE 2024, 2M, Scheduling]" width="30%">
+</a>
+
 
 MLFQ scheduling favors:
 **(A)** CPU-bound processes  
@@ -1745,6 +3109,17 @@ MLFQ scheduling favors:
 ---
 
 ### G62: Page Fault Rate [GATE 2024, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-handwritten.svg" alt="Handwritten: G62: Page Fault Rate [GATE 2024, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-diagram.svg" alt="Diagram: G62: Page Fault Rate [GATE 2024, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g62-page-fault-rate-gate-2024-1m-memory-management-sticky.svg" alt="Sticky Note: G62: Page Fault Rate [GATE 2024, 1M, Memory Management]" width="30%">
+</a>
+
 
 If page fault rate is p, memory access = t ns, and page fault service time = S ns, then EMAT is:
 **(A)** (1-p)t + pS  
@@ -1758,6 +3133,17 @@ If page fault rate is p, memory access = t ns, and page fault service time = S n
 ---
 
 ### G63: System Call Type [GATE 2024, 1M, Linux/Unix]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-handwritten.svg" alt="Handwritten: G63: System Call Type [GATE 2024, 1M, Linux/Unix]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-diagram.svg" alt="Diagram: G63: System Call Type [GATE 2024, 1M, Linux/Unix]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g63-system-call-type-gate-2024-1m-linux-unix-sticky.svg" alt="Sticky Note: G63: System Call Type [GATE 2024, 1M, Linux/Unix]" width="30%">
+</a>
+
 
 Which system call creates a new process in UNIX?
 **(A)** exec()  
@@ -1771,6 +3157,17 @@ Which system call creates a new process in UNIX?
 ---
 
 ### G64: Producer-Consumer Deadlock [GATE 2025, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-handwritten.svg" alt="Handwritten: G64: Producer-Consumer Deadlock [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-diagram.svg" alt="Diagram: G64: Producer-Consumer Deadlock [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g64-producer-consumer-deadlock-gate-2025-2m-synchronization-sticky.svg" alt="Sticky Note: G64: Producer-Consumer Deadlock [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+
 
 In the bounded buffer problem, if the producer calls wait(empty) and wait(mutex) in reverse order (mutex first, then empty), what problem occurs?
 
@@ -1785,6 +3182,17 @@ Correct order: wait(empty) first, then wait(mutex).
 ---
 
 ### G65: Non-Preemptive SJF [GATE 2025, 2M, Scheduling]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-handwritten.svg" alt="Handwritten: G65: Non-Preemptive SJF [GATE 2025, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-diagram.svg" alt="Diagram: G65: Non-Preemptive SJF [GATE 2025, 2M, Scheduling]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g65-non-preemptive-sjf-gate-2025-2m-scheduling-sticky.svg" alt="Sticky Note: G65: Non-Preemptive SJF [GATE 2025, 2M, Scheduling]" width="30%">
+</a>
+
 
 | Process | Arrival | Burst |
 |---------|---------|-------|
@@ -1838,6 +3246,17 @@ Hmm, I had 7 earlier. Let me recalculate. 22/4 = 5.5.
 ---
 
 ### G66: TLB and Page Table [GATE 2025, 2M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-handwritten.svg" alt="Handwritten: G66: TLB and Page Table [GATE 2025, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-diagram.svg" alt="Diagram: G66: TLB and Page Table [GATE 2025, 2M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g66-tlb-and-page-table-gate-2025-2m-memory-management-sticky.svg" alt="Sticky Note: G66: TLB and Page Table [GATE 2025, 2M, Memory Management]" width="30%">
+</a>
+
 
 TLB hit ratio = 80%. TLB access = 20 ns. Memory access = 100 ns. What is EMAT?
 
@@ -1849,6 +3268,17 @@ EMAT = 0.80 ÃƒÆ’Ã¢â‚¬â€� (20 + 100) + 0.20 ÃƒÆ’Ã¢â‚¬�
 ---
 
 ### G67: External Fragmentation [GATE 2025, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-handwritten.svg" alt="Handwritten: G67: External Fragmentation [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-diagram.svg" alt="Diagram: G67: External Fragmentation [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g67-external-fragmentation-gate-2025-1m-memory-management-sticky.svg" alt="Sticky Note: G67: External Fragmentation [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+
 
 Which memory management scheme suffers ONLY from internal fragmentation?
 **(A)** Segmentation  
@@ -1862,6 +3292,17 @@ Which memory management scheme suffers ONLY from internal fragmentation?
 ---
 
 ### G68: Virtual Memory vs Cache [GATE 2025, 1M, Memory Management]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-handwritten.svg" alt="Handwritten: G68: Virtual Memory vs Cache [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-diagram.svg" alt="Diagram: G68: Virtual Memory vs Cache [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g68-virtual-memory-vs-cache-gate-2025-1m-memory-management-sticky.svg" alt="Sticky Note: G68: Virtual Memory vs Cache [GATE 2025, 1M, Memory Management]" width="30%">
+</a>
+
 
 In the memory hierarchy, virtual memory is primarily used for:
 **(A)** Speed improvement  
@@ -1875,6 +3316,17 @@ In the memory hierarchy, virtual memory is primarily used for:
 ---
 
 ### G69: Deadlock Ã¢â€ â€™ Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-handwritten.svg" alt="Handwritten: G69: Deadlock Ã¢â€ â€™ Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-diagram.svg" alt="Diagram: G69: Deadlock Ã¢â€ â€™ Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g69-deadlock-cycle-with-multiple-instances-gate-2025-2m-deadlock-sticky.svg" alt="Sticky Note: G69: Deadlock Ã¢â€ â€™ Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]" width="30%">
+</a>
+
 
 A resource allocation graph has a cycle. If resource types have multiple instances:
 **(A)** Deadlock definitely exists  
@@ -1888,6 +3340,17 @@ A resource allocation graph has a cycle. If resource types have multiple instanc
 ---
 
 ### G70: Readers-Writers [GATE 2025, 2M, Synchronization]
+
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-handwritten.svg" alt="Handwritten: G70: Readers-Writers [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-diagram.svg" alt="Diagram: G70: Readers-Writers [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+<a href="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/gate-cs-preparation/07-operating-systems/g70-readers-writers-gate-2025-2m-synchronization-sticky.svg" alt="Sticky Note: G70: Readers-Writers [GATE 2025, 2M, Synchronization]" width="30%">
+</a>
+
 
 In the first readers-writers problem, which of the following is true?
 **(A)** Writers starve  

@@ -20,9 +20,31 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance in IBPS SO IT Officer Prelims
 
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+</a>
+
+
 Blood relations, direction sense, and order-ranking questions typically contribute 4–6 questions in the IBPS SO Reasoning Ability section. They are considered scoring topics because they follow consistent patterns and do not require lengthy calculations. With systematic practice, these questions can be solved in 30–60 seconds each.
 
 ### 2. Blood Relations
+
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-handwritten.svg" alt="Handwritten: 2. Blood Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-diagram.svg" alt="Diagram: 2. Blood Relations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/2-blood-relations-sticky.svg" alt="Sticky Note: 2. Blood Relations" width="30%">
+</a>
+
 
 #### 2.1 Core Family Relationships
 
@@ -208,6 +230,17 @@ Solution: Q is mother. P is son. S is sister of P → S is daughter of Q. R coul
 
 ### 3. Direction Sense
 
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-handwritten.svg" alt="Handwritten: 3. Direction Sense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-diagram.svg" alt="Diagram: 3. Direction Sense" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/3-direction-sense-sticky.svg" alt="Sticky Note: 3. Direction Sense" width="30%">
+</a>
+
+
 #### 3.1 Basic Directions
 
 The four cardinal directions: North (N), South (S), East (E), West (W)
@@ -349,6 +382,17 @@ flowchart TD
 ```
 
 ### 4. Order and Ranking
+
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-handwritten.svg" alt="Handwritten: 4. Order and Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-diagram.svg" alt="Diagram: 4. Order and Ranking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/reasoning-ability/05-blood-relations-direction-sense/4-order-and-ranking-sticky.svg" alt="Sticky Note: 4. Order and Ranking" width="30%">
+</a>
+
 
 #### 4.1 Basic Concepts
 

@@ -68,6 +68,17 @@ flowchart LR
 
 ### Real-World Analogy: Car Engine Tuning
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" alt="Handwritten: Real-World Analogy: Car Engine Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" alt="Diagram: Real-World Analogy: Car Engine Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" alt="Sticky Note: Real-World Analogy: Car Engine Tuning" width="30%">
+</a>
+
+
 Database performance tuning is like tuning a race car engine. The engine (database) has many components that must work together:
 
 - **Carburetor = Query Optimizer**: Mixes fuel (data) and air (query plan) for combustion
@@ -81,6 +92,17 @@ A bad query plan is like firing pistons out of order â†’ the engine misfire
 
 ### Steps for Systematic Performance Tuning
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" alt="Handwritten: Steps for Systematic Performance Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" alt="Diagram: Steps for Systematic Performance Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" alt="Sticky Note: Steps for Systematic Performance Tuning" width="30%">
+</a>
+
+
 ```
 Step 1: MEASURE â†’ Establish baseline metrics (response time, throughput, resource usage)
 Step 2: IDENTIFY â†’ Find slowest queries via logs (slow_query_log, pg_stat_statements)
@@ -92,6 +114,17 @@ Step 7: ITERATE â†’ Repeat until SLA is met or diminishing returns
 ```
 
 ### Pseudocode: Performance Tuning Loop
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" alt="Handwritten: Pseudocode: Performance Tuning Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" alt="Diagram: Pseudocode: Performance Tuning Loop" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" alt="Sticky Note: Pseudocode: Performance Tuning Loop" width="30%">
+</a>
+
 
 ```
 PROCEDURE tune_database(slow_query_log):
@@ -130,9 +163,31 @@ END PROCEDURE
 
 ### Real-World Analogy: Diagnostic Scanner
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" alt="Handwritten: Real-World Analogy: Diagnostic Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" alt="Diagram: Real-World Analogy: Diagnostic Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" alt="Sticky Note: Real-World Analogy: Diagnostic Scanner" width="30%">
+</a>
+
+
 EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the scanner, runs the engine, and reads the diagnostic trouble codes: "Cylinder 3 misfire detected." Each line in EXPLAIN output is a sensor reading showing where time is spent, how many rows flow through each node, and whether the execution plan matches reality.
 
 ### EXPLAIN Output Anatomy
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" alt="Handwritten: EXPLAIN Output Anatomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" alt="Diagram: EXPLAIN Output Anatomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" alt="Sticky Note: EXPLAIN Output Anatomy" width="30%">
+</a>
+
 
 ```
                          QUERY PLAN
@@ -154,6 +209,17 @@ EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the sca
 | **Rows Removed by Filter** | Rows that didn't match | High number = missing index or non-selective filter |
 
 ### Dry Run Trace: EXPLAIN Output Analysis
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" alt="Handwritten: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" alt="Diagram: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" alt="Sticky Note: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+</a>
+
 
 **Scenario:** Query on orders table (100K rows) filtering by customer_id
 
@@ -204,6 +270,17 @@ Execution Time: 0.134 ms
 
 ### EXPLAIN ANALYZE Key Metrics Table
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" alt="Handwritten: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" alt="Diagram: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" alt="Sticky Note: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+</a>
+
+
 | Metric | Healthy | Warning | Critical |
 |--------|---------|---------|----------|
 | Estimated vs Actual rows | < 2x difference | 2-10x difference | > 10x difference |
@@ -213,6 +290,17 @@ Execution Time: 0.134 ms
 | Execution Time per row | < 0.01 ms | 0.01-1 ms | > 1 ms |
 
 ### C++ Implementation: Query Plan Analyzer
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" alt="Handwritten: C++ Implementation: Query Plan Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" alt="Diagram: C++ Implementation: Query Plan Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" alt="Sticky Note: C++ Implementation: Query Plan Analyzer" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -304,6 +392,17 @@ int main() {
 - **WHY:** Plan tree depth is bounded by query complexity. A 50-JOIN query produces ~100 nodes maximum. Linear scan is optimal since each node needs exactly one pass for analysis.
 
 ### Python Implementation: Slow Query Debugger
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" alt="Handwritten: Python Implementation: Slow Query Debugger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" alt="Diagram: Python Implementation: Slow Query Debugger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" alt="Sticky Note: Python Implementation: Slow Query Debugger" width="30%">
+</a>
+
 
 ```python
 import re
@@ -415,9 +514,31 @@ print(logger.generate_report())
 
 ### Real-World Analogy: Library Catalog System
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Catalog System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" alt="Diagram: Real-World Analogy: Library Catalog System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Catalog System" width="30%">
+</a>
+
+
 Indexes are like a library's catalog system. Without a catalog (full scan), you walk every aisle looking at every book. A **B-tree index** is the standard Dewey Decimal catalog â†’ fast for exact lookups and sorted ranges. A **covering index** is like a catalog card that includes the book's summary â†’ you don't need to pull the book off the shelf. An **index hint** is a librarian's recommendation: "Use the author catalog, not the title catalog, for this search."
 
 ### Covering Index
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" alt="Handwritten: Covering Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" alt="Diagram: Covering Index" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" alt="Sticky Note: Covering Index" width="30%">
+</a>
+
 
 A covering index includes all columns needed by a query, so the database never touches the table (heap). This is the fastest possible access path.
 
@@ -445,6 +566,17 @@ EXPLAIN ANALYZE SELECT email, name FROM users WHERE email = 'a@b.com';
 | Improvement | â†’ | 5.6x faster, 62% less I/O |
 
 ### Index Hints
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" alt="Handwritten: Index Hints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" alt="Diagram: Index Hints" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" alt="Sticky Note: Index Hints" width="30%">
+</a>
+
 
 PostgreSQL does not support index hints (the planner ignores them). MySQL and Oracle do. Behind the hint is a directive: "Trust me, use this index even if your cost model disagrees."
 
@@ -477,6 +609,17 @@ WHERE customer_id = 42;
 **Rule of thumb:** Prefer fixing statistics over using hints. Hints mask the root problem (stale stats) and become tech debt.
 
 ### C++ Implementation: Index Selectivity Calculator
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Index Selectivity Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" alt="Diagram: C++ Implementation: Index Selectivity Calculator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Index Selectivity Calculator" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -602,6 +745,17 @@ int main() {
 
 ### Python Implementation: Over-Indexing Detector
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" alt="Handwritten: Python Implementation: Over-Indexing Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" alt="Diagram: Python Implementation: Over-Indexing Detector" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" alt="Sticky Note: Python Implementation: Over-Indexing Detector" width="30%">
+</a>
+
+
 ```python
 import sys
 from collections import defaultdict
@@ -717,6 +871,17 @@ for issue in issues:
 
 ### Edge Cases in Index Optimization
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" alt="Handwritten: Edge Cases in Index Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" alt="Diagram: Edge Cases in Index Optimization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" alt="Sticky Note: Edge Cases in Index Optimization" width="30%">
+</a>
+
+
 | Edge Case | Description | Impact | Solution |
 |-----------|-------------|--------|----------|
 | **Over-indexing** | 10+ indexes on one table | Write amplification: each INSERT updates ALL indexes. Bulk load drops to 1/10th throughput | Keep Ã¢â€°Â¤ 5 indexes per table; drop unused ones |
@@ -731,9 +896,31 @@ for issue in issues:
 
 ### Real-World Analogy: GPS Route Planning
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" alt="Handwritten: Real-World Analogy: GPS Route Planning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" alt="Diagram: Real-World Analogy: GPS Route Planning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" alt="Sticky Note: Real-World Analogy: GPS Route Planning" width="30%">
+</a>
+
+
 Query optimization is like GPS route planning. A naive query is a GPS that recalculates from scratch at every intersection. An optimized query pre-computes the best route, avoids traffic (unnecessary rows), takes express lanes (indexes), and combines trips (batch operations). The query planner is the GPS algorithm â†’ it evaluates multiple routes and picks the cheapest based on its map (statistics).
 
 ### Numbered Steps: Query Rewrite Methodology
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" alt="Handwritten: Numbered Steps: Query Rewrite Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" alt="Diagram: Numbered Steps: Query Rewrite Methodology" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" alt="Sticky Note: Numbered Steps: Query Rewrite Methodology" width="30%">
+</a>
+
 
 ```
 1. IDENTIFY the slow query (from logs, pg_stat_statements, or user report)
@@ -753,6 +940,17 @@ Query optimization is like GPS route planning. A naive query is a GPS that recal
 ```
 
 ### Query Rewrite Techniques with Before/After
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" alt="Handwritten: Query Rewrite Techniques with Before/After" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" alt="Diagram: Query Rewrite Techniques with Before/After" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" alt="Sticky Note: Query Rewrite Techniques with Before/After" width="30%">
+</a>
+
 
 **Technique 1: Transform Correlated Subquery to JOIN**
 
@@ -840,6 +1038,17 @@ Step 4 â†’ Verify with ANALYZE:
 
 ### A&D Table: Query Rewrite Approaches
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" alt="Handwritten: A&D Table: Query Rewrite Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" alt="Diagram: A&D Table: Query Rewrite Approaches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" alt="Sticky Note: A&D Table: Query Rewrite Approaches" width="30%">
+</a>
+
+
 | Approach | Advantages | Disadvantages |
 |----------|-----------|---------------|
 | **Subquery â†’ JOIN** | Single scan, no correlation overhead | May change semantics with NULLs, duplicates need DISTINCT |
@@ -851,6 +1060,17 @@ Step 4 â†’ Verify with ANALYZE:
 | **EXISTS â†’ JOIN** | Early exit on first match | Must deduplicate if 1:M relationship |
 
 ### Pseudocode: Query Rewrite Engine
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" alt="Handwritten: Pseudocode: Query Rewrite Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" alt="Diagram: Pseudocode: Query Rewrite Engine" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" alt="Sticky Note: Pseudocode: Query Rewrite Engine" width="30%">
+</a>
+
 
 ```
 FUNCTION optimize_query(query):
@@ -893,9 +1113,31 @@ END FUNCTION
 
 ### Real-World Analogy: Warehouse Organization
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" alt="Handwritten: Real-World Analogy: Warehouse Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" alt="Diagram: Real-World Analogy: Warehouse Organization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" alt="Sticky Note: Real-World Analogy: Warehouse Organization" width="30%">
+</a>
+
+
 Schema optimization is like organizing a warehouse. **Normalization** is like storing each type of item in its own aisle (3NF: every item has one home). **Denormalization** is like placing frequently-picked-together items in the same bin (redundancy for speed). A **star schema** is like having a central receiving dock (fact table) surrounded by dedicated storage zones (dimension tables). The right schema depends on whether workers are stocking shelves (OLTP writes) or picking orders (OLAP reads).
 
 ### Normalization vs Denormalization Decision Table
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" alt="Handwritten: Normalization vs Denormalization Decision Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" alt="Diagram: Normalization vs Denormalization Decision Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" alt="Sticky Note: Normalization vs Denormalization Decision Table" width="30%">
+</a>
+
 
 | Factor | Normalize (3NF/BCNF) | Denormalize |
 |--------|---------------------|-------------|
@@ -908,6 +1150,17 @@ Schema optimization is like organizing a warehouse. **Normalization** is like st
 | **Example** | Order entry system | Data warehouse fact tables |
 
 ### Anti-Pattern: The Over-Normalized Schema
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" alt="Handwritten: Anti-Pattern: The Over-Normalized Schema" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" alt="Diagram: Anti-Pattern: The Over-Normalized Schema" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" alt="Sticky Note: Anti-Pattern: The Over-Normalized Schema" width="30%">
+</a>
+
 
 ```sql
 -- BEFORE: Over-normalized (6 tables for a product page)
@@ -954,6 +1207,17 @@ FROM product_display WHERE id = 42;
 
 ### Schema Optimization Patterns
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" alt="Handwritten: Schema Optimization Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" alt="Diagram: Schema Optimization Patterns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" alt="Sticky Note: Schema Optimization Patterns" width="30%">
+</a>
+
+
 ```sql
 -- Pattern 1: Store computed columns (avoid runtime calculation)
 ALTER TABLE orders ADD COLUMN total_with_tax NUMERIC
@@ -976,9 +1240,31 @@ CLUSTER orders USING idx_orders_created;
 
 ### Real-World Analogy: Engine Control Unit
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" alt="Handwritten: Real-World Analogy: Engine Control Unit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" alt="Diagram: Real-World Analogy: Engine Control Unit" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" alt="Sticky Note: Real-World Analogy: Engine Control Unit" width="30%">
+</a>
+
+
 Database configuration is like tuning a car's ECU (Engine Control Unit). The factory defaults are safe but leave performance on the table. `shared_buffers` is the engine's displacement (how much fuel-air mix fits in the cylinders). `work_mem` is the turbo boost (per-operation burst power). `effective_cache_size` is the intake manifold's capacity estimate. Wrong settings cause detonation (swap), starvation (I/O wait), or wasted potential (idle resources).
 
 ### Key Configuration Parameters
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" alt="Handwritten: Key Configuration Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" alt="Diagram: Key Configuration Parameters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" alt="Sticky Note: Key Configuration Parameters" width="30%">
+</a>
+
 
 ```sql
 -- PostgreSQL configuration tuning (postgresql.conf)
@@ -1013,6 +1299,17 @@ min_wal_size = '1GB'
 
 ### Buffer Pool Hit Ratio Analysis
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Buffer Pool Hit Ratio Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" alt="Diagram: Buffer Pool Hit Ratio Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Buffer Pool Hit Ratio Analysis" width="30%">
+</a>
+
+
 ```sql
 -- PostgreSQL: check buffer cache hit ratio
 SELECT
@@ -1046,6 +1343,17 @@ LIMIT 10;
 
 ### Configuration Tuning Steps
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" alt="Handwritten: Configuration Tuning Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" alt="Diagram: Configuration Tuning Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" alt="Sticky Note: Configuration Tuning Steps" width="30%">
+</a>
+
+
 ```
 Step 1: MEASURE baseline â†’ pg_stat_database buffer hit ratio, iostat, free -m
 Step 2: SET shared_buffers = 25% of RAM (but not exceed 8GB on Linux without huge pages)
@@ -1060,6 +1368,17 @@ Step 9: ITERATE â†’ check pg_stat_statements for top wait events
 ```
 
 ### Python Implementation: Configuration Tuner
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" alt="Handwritten: Python Implementation: Configuration Tuner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" alt="Diagram: Python Implementation: Configuration Tuner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" alt="Sticky Note: Python Implementation: Configuration Tuner" width="30%">
+</a>
+
 
 ```python
 class DatabaseConfigTuner:
@@ -1181,9 +1500,31 @@ print(tuner_small.generate_report())
 
 ### Real-World Analogy: Valet Parking
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" alt="Handwritten: Real-World Analogy: Valet Parking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" alt="Diagram: Real-World Analogy: Valet Parking" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" alt="Sticky Note: Real-World Analogy: Valet Parking" width="30%">
+</a>
+
+
 Connection pooling is like a valet parking service. Without a pool, every application thread parks its own car (opens a database connection): find a spot (TCP handshake), walk to the entrance (authentication), park (session setup), then reverse the whole process after shopping (query). With a pool, valets (pooler) keep 10-50 cars ready at the entrance. When you arrive (query request), you get a car instantly. When done, the valet parks it for the next person.
 
 ### Connection Pool vs Direct Connection
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" alt="Handwritten: Connection Pool vs Direct Connection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" alt="Diagram: Connection Pool vs Direct Connection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" alt="Sticky Note: Connection Pool vs Direct Connection" width="30%">
+</a>
+
 
 | Metric | Direct Connection | Connection Pool |
 |--------|------------------|-----------------|
@@ -1196,6 +1537,17 @@ Connection pooling is like a valet parking service. Without a pool, every applic
 | Failure Handling | Application must reconnect | Pool transparently reconnects |
 
 ### C++ Implementation: Thread-Safe Connection Pool
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" alt="Handwritten: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" alt="Diagram: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" alt="Sticky Note: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1382,6 +1734,17 @@ int main() {
 
 ### Python Implementation: Async Connection Pool
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" alt="Handwritten: Python Implementation: Async Connection Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" alt="Diagram: Python Implementation: Async Connection Pool" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" alt="Sticky Note: Python Implementation: Async Connection Pool" width="30%">
+</a>
+
+
 ```python
 import asyncio
 import time
@@ -1512,6 +1875,17 @@ asyncio.run(simulate_workload())
 
 ### Edge Cases in Connection Pooling
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" alt="Handwritten: Edge Cases in Connection Pooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" alt="Diagram: Edge Cases in Connection Pooling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" alt="Sticky Note: Edge Cases in Connection Pooling" width="30%">
+</a>
+
+
 | Edge Case | Problem | Solution |
 |-----------|---------|----------|
 | **Connection Leak** | Application acquires but never releases | Pool tracks connections; timeout eviction; `__del__` safety net |
@@ -1526,9 +1900,31 @@ asyncio.run(simulate_workload())
 
 ### Real-World Analogy: Filing Cabinet System
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Filing Cabinet System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" alt="Diagram: Real-World Analogy: Filing Cabinet System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Filing Cabinet System" width="30%">
+</a>
+
+
 Partitioning is like organizing documents into separate filing cabinets by year. Instead of one giant cabinet with 100,000 folders (one table), you have one cabinet per year (partition). When you need Q1 2026 documents, you open only that drawer (partition pruning). Range partitioning is "by year/month/day". List partitioning is "by department â†’ Sales/Engineering/HR". Hash partitioning is "by employee ID â†’ file cabinet 0-3" when there's no natural grouping.
 
 ### Partitioning Types Comparison
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" alt="Handwritten: Partitioning Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" alt="Diagram: Partitioning Types Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" alt="Sticky Note: Partitioning Types Comparison" width="30%">
+</a>
+
 
 | Type | Partition Key | Data Distribution | Pruning | Best For | Worst For |
 |------|--------------|-------------------|---------|----------|-----------|
@@ -1538,6 +1934,17 @@ Partitioning is like organizing documents into separate filing cabinets by year.
 | **Composite** | Two-level (list + range) | Hierarchical | Excellent: both keys | Multi-tenant + time | Complex management |
 
 ### Partition Pruning Dry Run Trace
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" alt="Handwritten: Partition Pruning Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" alt="Diagram: Partition Pruning Dry Run Trace" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" alt="Sticky Note: Partition Pruning Dry Run Trace" width="30%">
+</a>
+
 
 ```sql
 -- Schema: measurements PARTITION BY RANGE (ts)
@@ -1569,6 +1976,17 @@ WHERE ts >= '2026-01-01' AND ts < '2026-04-01';
 | **Improvement** | â†’ | **3.9x faster, 20x less I/O** |
 
 ### C++ Implementation: Partition Pruning Simulator
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Partition Pruning Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" alt="Diagram: C++ Implementation: Partition Pruning Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Partition Pruning Simulator" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -1679,6 +2097,17 @@ int main() {
 - **WHY:** Partition pruning is a linear scan over partitions because each partition has a non-overlapping range. Binary search could improve to O(log P) but the overhead of maintaining sorted partitions and the small P count makes O(P) simpler and fast enough.
 
 ### Python Implementation: Partition Manager
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" alt="Handwritten: Python Implementation: Partition Manager" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" alt="Diagram: Python Implementation: Partition Manager" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" alt="Sticky Note: Python Implementation: Partition Manager" width="30%">
+</a>
+
 
 ```python
 from datetime import datetime, timedelta
@@ -1820,9 +2249,31 @@ if found:
 
 ### Real-World Analogy: Weekly Meal Prep
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" alt="Handwritten: Real-World Analogy: Weekly Meal Prep" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" alt="Diagram: Real-World Analogy: Weekly Meal Prep" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" alt="Sticky Note: Real-World Analogy: Weekly Meal Prep" width="30%">
+</a>
+
+
 A materialized view is like meal prepping for the week. On Sunday, you cook 20 meals (run the heavy query), portion them into containers (store in a physical table), and refrigerate. During the week, you grab a container and reheat in 2 minutes (query the materialized view) instead of spending 45 minutes cooking each meal from scratch. The trade-off: the meal is from Sunday's groceries (stale data), but you saved 43 minutes per meal (performance gain).
 
 ### Materialized View vs View vs Temp Table
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" alt="Handwritten: Materialized View vs View vs Temp Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" alt="Diagram: Materialized View vs View vs Temp Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" alt="Sticky Note: Materialized View vs View vs Temp Table" width="30%">
+</a>
+
 
 | Aspect | View | Materialized View | Temp Table |
 |--------|------|-------------------|------------|
@@ -1836,6 +2287,17 @@ A materialized view is like meal prepping for the week. On Sunday, you cook 20 m
 | **Use Case** | Access control, wrapping complex joins | Reporting, dashboards, aggregations | ETL staging, complex multi-step analysis |
 
 ### C++ Implementation: Materialized View Refresh Scheduler
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" alt="Handwritten: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" alt="Diagram: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" alt="Sticky Note: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+</a>
+
 
 ```cpp
 #include <iostream>
@@ -2022,9 +2484,31 @@ int main() {
 
 ### Real-World Analogy: Coffee Thermoses
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" alt="Handwritten: Real-World Analogy: Coffee Thermoses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" alt="Diagram: Real-World Analogy: Coffee Thermoses" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" alt="Sticky Note: Real-World Analogy: Coffee Thermoses" width="30%">
+</a>
+
+
 Query caching is like having coffee thermoses vs brewing fresh coffee each time. Without cache, every coffee request goes through the full process: grind beans (parse SQL), boil water (plan query), brew (execute), pour (fetch results). With a cache, if someone just made the same coffee (same query), you pour from the thermos (cache). The challenge: how long do you keep the thermos before the coffee goes stale (cache invalidation)?
 
 ### Query Cache vs Application Cache
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" alt="Handwritten: Query Cache vs Application Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" alt="Diagram: Query Cache vs Application Cache" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" alt="Sticky Note: Query Cache vs Application Cache" width="30%">
+</a>
+
 
 | Aspect | Database Query Cache | Application Cache |
 |--------|---------------------|-------------------|
@@ -2038,6 +2522,17 @@ Query caching is like having coffee thermoses vs brewing fresh coffee each time.
 | **Staleness Risk** | Low (cache updated on same transaction) | Configurable (TTL trade-off) |
 
 ### PostgreSQL Buffer Cache Inspection
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" alt="Handwritten: PostgreSQL Buffer Cache Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" alt="Diagram: PostgreSQL Buffer Cache Inspection" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" alt="Sticky Note: PostgreSQL Buffer Cache Inspection" width="30%">
+</a>
+
 
 ```sql
 -- Which tables/pages are in the buffer cache?
@@ -2061,6 +2556,17 @@ WHERE relname = 'orders';
 ```
 
 ### Python Implementation: Query Cache Simulator
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Query Cache Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" alt="Diagram: Python Implementation: Query Cache Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Query Cache Simulator" width="30%">
+</a>
+
 
 ```python
 import time
@@ -2203,6 +2709,17 @@ print(f"Hit rate: {cache.stats['hit_rate']:.1f}%")
 
 ### Edge Cases in Caching
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" alt="Handwritten: Edge Cases in Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" alt="Diagram: Edge Cases in Caching" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" alt="Sticky Note: Edge Cases in Caching" width="30%">
+</a>
+
+
 | Edge Case | Problem | Solution |
 |-----------|---------|----------|
 | **Cache Stampede** | 1000 requests miss simultaneously, all hit DB | Probabilistic early expiration (random TTL jitter) |
@@ -2239,6 +2756,17 @@ Else â†’ Sequential Scan
 
 ### 1. How to Read an EXPLAIN Plan
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" alt="Handwritten: 1. How to Read an EXPLAIN Plan" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" alt="Diagram: 1. How to Read an EXPLAIN Plan" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" alt="Sticky Note: 1. How to Read an EXPLAIN Plan" width="30%">
+</a>
+
+
 **Question:** "Explain how you would read and diagnose a PostgreSQL EXPLAIN plan."
 
 **Answer:**
@@ -2261,6 +2789,17 @@ Step 5: Check for problem patterns:
 ```
 
 ### 2. Slow Query Debugging Process
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" alt="Handwritten: 2. Slow Query Debugging Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" alt="Diagram: 2. Slow Query Debugging Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" alt="Sticky Note: 2. Slow Query Debugging Process" width="30%">
+</a>
+
 
 **Question:** "Walk me through how you debug a slow query in production."
 
@@ -2297,6 +2836,17 @@ Step 5: Check for problem patterns:
 
 ### 3. Index Maintenance Strategy
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" alt="Handwritten: 3. Index Maintenance Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" alt="Diagram: 3. Index Maintenance Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" alt="Sticky Note: 3. Index Maintenance Strategy" width="30%">
+</a>
+
+
 **Question:** "What is your index maintenance strategy for a production database?"
 
 **Answer:**
@@ -2330,6 +2880,17 @@ RULES:
 ```
 
 ### 4. N+1 Query Problem
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" alt="Handwritten: 4. N+1 Query Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" alt="Diagram: 4. N+1 Query Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" alt="Sticky Note: 4. N+1 Query Problem" width="30%">
+</a>
+
 
 **Question:** "What is the N+1 query problem and how do you fix it?"
 
@@ -2371,6 +2932,17 @@ LIMIT 10;
 
 ### MySQL Slow Query Log Analysis
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" alt="Handwritten: MySQL Slow Query Log Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" alt="Diagram: MySQL Slow Query Log Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" alt="Sticky Note: MySQL Slow Query Log Analysis" width="30%">
+</a>
+
+
 ```sql
 -- Enable detailed slow query logging
 SET GLOBAL slow_query_log = ON;
@@ -2400,6 +2972,17 @@ pt-query-digest --since "2026-06-01 00:00:00" \
 
 ### PostgreSQL pg_stat_statements
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" alt="Handwritten: PostgreSQL pg_stat_statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" alt="Diagram: PostgreSQL pg_stat_statements" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" alt="Sticky Note: PostgreSQL pg_stat_statements" width="30%">
+</a>
+
+
 ```sql
 -- Enable (postgresql.conf):
 -- shared_preload_libraries = 'pg_stat_statements'
@@ -2426,6 +3009,17 @@ LIMIT 10;
 
 ### AWS Performance Insights (RDS)
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" alt="Handwritten: AWS Performance Insights (RDS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" alt="Diagram: AWS Performance Insights (RDS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" alt="Sticky Note: AWS Performance Insights (RDS)" width="30%">
+</a>
+
+
 ```sql
 -- Top SQL by load (waits)
 -- Query Performance Insights dashboard shows:
@@ -2450,6 +3044,17 @@ WHERE datname = current_database();
 ```
 
 ### Real-World Monitoring Dashboard Query
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" alt="Handwritten: Real-World Monitoring Dashboard Query" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" alt="Diagram: Real-World Monitoring Dashboard Query" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" alt="Sticky Note: Real-World Monitoring Dashboard Query" width="30%">
+</a>
+
 
 ```sql
 -- Comprehensive health check (run every 60s)
@@ -2480,11 +3085,33 @@ SELECT
 
 ### 19.11 Specialized Index Types
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" alt="Handwritten: 19.11 Specialized Index Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" alt="Diagram: 19.11 Specialized Index Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" alt="Sticky Note: 19.11 Specialized Index Types" width="30%">
+</a>
+
+
 ![Performance Tuning Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch19-performance-tuning.png)
 
 Chapter 12 covered B+ trees and hash indexes. Production databases demand more.
 
 ### 19.11.1 BRIN (Block Range INdex)
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" alt="Handwritten: 19.11.1 BRIN (Block Range INdex)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" alt="Diagram: 19.11.1 BRIN (Block Range INdex)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" alt="Sticky Note: 19.11.1 BRIN (Block Range INdex)" width="30%">
+</a>
+
 
 BRIN indexes are ideal for sorted, append-heavy data like time-series logs, audit trails, or IoT sensor readings. They store min/max values per block range (typically 128 pages = 1 MB).
 
@@ -2517,6 +3144,17 @@ BRIN indexes are 100-1000x smaller than B-tree equivalents. For a 100 GB table, 
 
 ### 19.11.2 GiST (Generalized Search Tree)
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" alt="Handwritten: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" alt="Diagram: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" alt="Sticky Note: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+</a>
+
+
 GiST enables indexing of geometric, full-text, and range types that B-trees cannot handle naturally.
 
 ```sql
@@ -2548,6 +3186,17 @@ LIMIT 20;
 
 ### 19.11.3 GIN (Generalized Inverted Index)
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" alt="Handwritten: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" alt="Diagram: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" alt="Sticky Note: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+</a>
+
+
 GIN indexes are designed for composite and multi-valued types: arrays, JSONB, and full-text search vectors.
 
 ```sql
@@ -2574,6 +3223,17 @@ CREATE INDEX idx_article_fts
 
 ### 19.11.4 SP-GiST (Space-Partitioned GiST)
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" alt="Handwritten: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" alt="Diagram: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" alt="Sticky Note: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+</a>
+
+
 SP-GiST indexes are designed for quad-trees, k-d trees, and radix trees -- ideal for point clouds, IP range lookups, and prefix searches.
 
 ```sql
@@ -2594,6 +3254,17 @@ Indexes degrade over time. B-tree pages fragment, dead tuples accumulate, and st
 
 ### 19.12.1 Detecting Index Bloat
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" alt="Handwritten: 19.12.1 Detecting Index Bloat" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" alt="Diagram: 19.12.1 Detecting Index Bloat" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" alt="Sticky Note: 19.12.1 Detecting Index Bloat" width="30%">
+</a>
+
+
 ```sql
 -- PostgreSQL: find bloated indexes
 SELECT
@@ -2612,6 +3283,17 @@ This query identifies indexes with low leaf density (high bloat). Indexes with >
 > **One-Sentence Takeaway:** Index bloat occurs from dead tuples and page fragmentation â†’ monitor with pg_stat_user_tables and rebuild periodically.
 
 ### 19.12.2 Finding Unused Indexes
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" alt="Handwritten: 19.12.2 Finding Unused Indexes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" alt="Diagram: 19.12.2 Finding Unused Indexes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" alt="Sticky Note: 19.12.2 Finding Unused Indexes" width="30%">
+</a>
+
 
 ```sql
 SELECT
@@ -2632,6 +3314,17 @@ Unused indexes waste write overhead and cache space. Each index on a table adds 
 > **One-Sentence Takeaway:** Unused indexes waste write performance and storage â†’ use pg_stat_user_indexes to identify and drop them safely.
 
 ### 19.12.3 Rebuilding Indexes
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" alt="Handwritten: 19.12.3 Rebuilding Indexes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" alt="Diagram: 19.12.3 Rebuilding Indexes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" alt="Sticky Note: 19.12.3 Rebuilding Indexes" width="30%">
+</a>
+
 
 PostgreSQL offers three strategies:
 
@@ -2654,6 +3347,17 @@ Use CONCURRENTLY in production â†’ it allows reads and writes during the re
 
 ### 19.12.4 Zero-Downtime Index Creation
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" alt="Handwritten: 19.12.4 Zero-Downtime Index Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" alt="Diagram: 19.12.4 Zero-Downtime Index Creation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" alt="Sticky Note: 19.12.4 Zero-Downtime Index Creation" width="30%">
+</a>
+
+
 ```sql
 CREATE INDEX CONCURRENTLY idx_users_email_new
   ON users (email);
@@ -2672,6 +3376,17 @@ COMMIT;
 The query planner relies on statistics to estimate row counts. Wrong estimates produce bad query plans.
 
 ### 19.13.1 ANALYZE Deep Dive
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" alt="Handwritten: 19.13.1 ANALYZE Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" alt="Diagram: 19.13.1 ANALYZE Deep Dive" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" alt="Sticky Note: 19.13.1 ANALYZE Deep Dive" width="30%">
+</a>
+
 
 ```sql
 -- Manual analyze
@@ -2692,6 +3407,17 @@ PostgreSQL auto-analyzes when a table's pg_class.reltuples differs from actual c
 > **One-Sentence Takeaway:** EXPLAIN ANALYZE runs the query and shows actual vs. estimated row counts â†’ the most critical tool for understanding optimizer decisions.
 
 ### 19.13.2 Extended Statistics for Correlated Columns
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" alt="Handwritten: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" alt="Diagram: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" alt="Sticky Note: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+</a>
+
 
 The planner assumes independence between columns. When columns are correlated, estimates are wildly wrong:
 
@@ -2721,6 +3447,17 @@ CREATE STATISTICS orders_region_mcv (mcv)
 
 ### 19.13.3 Manual Statistics Tuning
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" alt="Handwritten: 19.13.3 Manual Statistics Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" alt="Diagram: 19.13.3 Manual Statistics Tuning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" alt="Sticky Note: 19.13.3 Manual Statistics Tuning" width="30%">
+</a>
+
+
 ```sql
 -- Increase sample size for accuracy (default = 100)
 ALTER TABLE orders ALTER COLUMN amount SET STATISTICS 1000;
@@ -2739,6 +3476,17 @@ Higher statistics targets improve plan quality but increase ANALYZE time and mem
 Partitioning splits a large table into smaller physical segments while maintaining a single logical interface.
 
 ### 19.14.1 Partition Types
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" alt="Handwritten: 19.14.1 Partition Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" alt="Diagram: 19.14.1 Partition Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" alt="Sticky Note: 19.14.1 Partition Types" width="30%">
+</a>
+
 
 ```sql
 -- Range partitioning (most common -- time-series)
@@ -2782,6 +3530,17 @@ CREATE TABLE sessions_1 PARTITION OF sessions
 
 ### 19.14.2 Partition Pruning
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" alt="Handwritten: 19.14.2 Partition Pruning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" alt="Diagram: 19.14.2 Partition Pruning" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" alt="Sticky Note: 19.14.2 Partition Pruning" width="30%">
+</a>
+
+
 The query planner skips irrelevant partitions automatically:
 
 ```sql
@@ -2800,6 +3559,17 @@ Partition pruning works only when the partition key is used in the WHERE clause 
 > **One-Sentence Takeaway:** Partition pruning eliminates irrelevant partitions from query plans, dramatically reducing data scanned for range-filtered queries.
 
 ### 19.14.3 Managing Partitions
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" alt="Handwritten: 19.14.3 Managing Partitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" alt="Diagram: 19.14.3 Managing Partitions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" alt="Sticky Note: 19.14.3 Managing Partitions" width="30%">
+</a>
+
 
 ```sql
 -- Detach old data (instant -- no data movement)
@@ -2838,6 +3608,17 @@ Materialized views cache query results as physical tables. They are refreshed on
 
 ### 19.15.1 Basic Usage
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" alt="Handwritten: 19.15.1 Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" alt="Diagram: 19.15.1 Basic Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" alt="Sticky Note: 19.15.1 Basic Usage" width="30%">
+</a>
+
+
 ```sql
 CREATE MATERIALIZED VIEW mv_monthly_sales AS
 SELECT
@@ -2862,6 +3643,17 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY mv_monthly_sales;
 > **One-Sentence Takeaway:** Materialized views store pre-computed query results as physical tables, refreshed on demand or via scheduled jobs.
 
 ### 19.15.2 Real-World Pattern: Reporting Aggregates
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" alt="Handwritten: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" alt="Diagram: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" alt="Sticky Note: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+</a>
+
 
 ```sql
 -- E-commerce dashboard view refreshed every 15 minutes
@@ -2960,6 +3752,17 @@ Parallel query does NOT help with:
 
 ### 19.18.1 auto_explain (PostgreSQL)
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" alt="Handwritten: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" alt="Diagram: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" alt="Sticky Note: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+</a>
+
+
 ```sql
 LOAD 'auto_explain';
 SET auto_explain.log_min_duration = 1000;
@@ -2972,6 +3775,17 @@ SET auto_explain.log_nested_statements = on;
 
 ### 19.18.2 PostgreSQL Log Analysis with pgBadger
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" alt="Handwritten: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" alt="Diagram: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" alt="Sticky Note: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+</a>
+
+
 ```bash
 pgbadger /var/log/postgresql/postgresql.log -o report.html
 pgbadger --follow /var/log/postgresql/postgresql.log
@@ -2980,6 +3794,17 @@ pgbadger --follow /var/log/postgresql/postgresql.log
 > **One-Sentence Takeaway:** pgBadger parses PostgreSQL logs to generate HTML performance reports showing slow queries, errors, and checkpoint activity.
 
 ### 19.18.3 MySQL Slow Query Log
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" alt="Handwritten: 19.18.3 MySQL Slow Query Log" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" alt="Diagram: 19.18.3 MySQL Slow Query Log" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" alt="Sticky Note: 19.18.3 MySQL Slow Query Log" width="30%">
+</a>
+
 
 ```sql
 SET GLOBAL slow_query_log = ON;
@@ -2996,6 +3821,17 @@ pt-query-digest /var/log/mysql/mysql-slow.log > slow_report.txt
 > **One-Sentence Takeaway:** The MySQL slow query log captures queries exceeding long_query_time â†’ enable it with log_queries_not_using_indexes for full coverage.
 
 ### 19.18.4 Index Usage Metrics
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" alt="Handwritten: 19.18.4 Index Usage Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" alt="Diagram: 19.18.4 Index Usage Metrics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" alt="Sticky Note: 19.18.4 Index Usage Metrics" width="30%">
+</a>
+
 
 ```sql
 SELECT
@@ -3019,6 +3855,17 @@ Tables with high sequential scans and low index usage are performance tuning tar
 
 ### Case Study A: E-Commerce Catalog
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" alt="Handwritten: Case Study A: E-Commerce Catalog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" alt="Diagram: Case Study A: E-Commerce Catalog" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" alt="Sticky Note: Case Study A: E-Commerce Catalog" width="30%">
+</a>
+
+
 **Problem:** Product listing queries (search, filter, sort) took 3-8 seconds on a 10M-row products table.
 
 **Symptom:** Sequential scans on every page load.
@@ -3036,6 +3883,17 @@ CREATE INDEX idx_products_catalog
 **Result:** Queries dropped from 3 seconds to 15 milliseconds. Index was 120 MB vs 2 GB table.
 
 ### Case Study B: SaaS Multi-Tenant Analytics
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" alt="Handwritten: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" alt="Diagram: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" alt="Sticky Note: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+</a>
+
 
 **Problem:** Tenant-level reporting queries timed out at 30 seconds.
 
@@ -3062,6 +3920,17 @@ CREATE TABLE analytics_events_42_2026_q1 PARTITION OF analytics_events_tenant_42
 
 ### Case Study C: High-Write Logging System
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" alt="Handwritten: Case Study C: High-Write Logging System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" alt="Diagram: Case Study C: High-Write Logging System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" alt="Sticky Note: Case Study C: High-Write Logging System" width="30%">
+</a>
+
+
 **Problem:** Insert throughput capped at 5K rows/second on a log table.
 
 **Diagnosis:** Multiple indexes on log_timestamp, source, level. Each INSERT updated all indexes (write amplification). B-tree maintenance overhead slowed writes.
@@ -3086,6 +3955,17 @@ COMMIT;
 **Result:** Writes scaled to 50K rows/second. BRIN index was 1/200th the size of the B-tree.
 
 ### 19.12 TypeSQL Index & Query Performance Advisor
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" alt="Handwritten: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" alt="Diagram: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" alt="Sticky Note: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+</a>
+
 
 The TypeScript code analyzes queries, suggests indexes, estimates performance gains, and identifies common anti-patterns.
 
@@ -3261,6 +4141,17 @@ flowchart TD
 
 ### Additional Chapter Quiz Questions
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+</a>
+
+
 11. The most common cause of slow queries is:
     a) Insufficient RAM
     b) Missing or incorrect indexes
@@ -3376,17 +4267,50 @@ flowchart TD
 
 ### Basic
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+</a>
+
+
 1. Given a table events (id, event_type, created_at, payload), create the most space-efficient index for querying WHERE created_at BETWEEN '2026-01-01' AND '2026-03-31'.
 2. Write a query to find indexes that have zero scans and are larger than 50 MB.
 3. Explain why WHERE lower(email) = 'user@example.com' cannot use a standard B-tree index on email, and provide a fix.
 
 ### Intermediate
 
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+</a>
+
+
 4. A table orders (region, warehouse, total) has correlated columns: each warehouse serves a single region. Write extended statistics to help the planner estimate row counts accurately.
 5. Design a partitioning strategy for a 2TB analytics_events table where each of 100 tenants inserts 1M events/day and queries always filter on tenant_id and a date range.
 6. Given SELECT * FROM logs WHERE source NOT IN (SELECT source_id from blacklist), rewrite it to use an anti-join pattern.
 
 ### Advanced
+
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+</a>
+<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+</a>
+
 
 7. A 500 GB time-series table has a B-tree on timestamp. Writes have degraded to 2K rows/second. Diagnose the problem and propose a solution with specific index changes.
 8. Deploy a monitoring query that alerts when any index on a critical table exceeds 30% estimated bloat, without using external tools.

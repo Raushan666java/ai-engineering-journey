@@ -36,6 +36,17 @@ This pattern — **precompute aggregations in a balanced binary tree** — is th
 
 ### Chapter Roadmap
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     A[Array + Range Query Need] --> B{Query Type?}
@@ -60,6 +71,17 @@ flowchart TD
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **segment tree** is a binary tree where each node represents a contiguous segment (interval) of the array. The root covers the full array `[0, n-1]`. Each leaf represents a single element `[i, i]`. Internal nodes store aggregate information (sum, min, max, GCD, etc.) computed from their two children.
 
 **Key properties:**
@@ -70,6 +92,17 @@ A **segment tree** is a binary tree where each node represents a contiguous segm
   - Right child covers `[mid + 1, r]`
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Allocate a tree array of size `4 * n`.
 2. Define a recursive function `build(node, l, r)`:
@@ -82,6 +115,17 @@ A **segment tree** is a binary tree where each node represents a contiguous segm
 3. Start the recursion with `build(1, 0, n-1)`.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 BUILD(arr, n):
@@ -99,6 +143,17 @@ BUILD-REC(node, l, r):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Input: `arr = [1, 3, 5, 7, 9, 11]`, `n = 6`
 
@@ -144,6 +199,17 @@ Value:     36   9  27   4   5  16  11   1   3   -   -   7   9   -   -   -
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Case | Complexity | When |
 |------|-----------|------|
 | **Build** | O(n) | Each of ~2n nodes visited once |
@@ -158,6 +224,17 @@ Each node does O(1) work (two recursive calls + one addition). With ~2n nodes to
 **Why 4n space?** The exact size needed is `2 * 2^⌈log₂n⌉ - 1`, which ranges from ~2n to ~4n. Allocating `4n` avoids computing this exact value and is always sufficient.
 
 ### Implementations
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+</a>
+
 
 ```cpp
 // C++
@@ -249,6 +326,17 @@ public class SegmentTree {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | O(log n) queries and updates | 4n space — high memory for large n |
@@ -258,6 +346,17 @@ public class SegmentTree {
 | No extra data structures needed | Recursive implementation risks stack overflow for n > 10^6 |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Empty array:** Segment tree with n = 0 — skip build entirely, all queries return identity (0 for sum, INF for min, -INF for max).
 - **Single element:** n = 1 — tree has only root at index 1 covering [0,0]. Works correctly for all operations.
@@ -273,6 +372,17 @@ public class SegmentTree {
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A range query computes the aggregate (sum, minimum, maximum, etc.) of elements in `[ql, qr]`. Starting at the root, three cases arise:
 
 - **Full overlap:** Node's segment is completely inside `[ql, qr]` → return its stored value.
@@ -280,6 +390,17 @@ A range query computes the aggregate (sum, minimum, maximum, etc.) of elements i
 - **Partial overlap:** Recurse to both children and combine results.
 
 ### Algorithm Steps (Range Sum Query)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Sum Query)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" alt="Diagram: Algorithm Steps (Range Sum Query)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Sum Query)" width="30%">
+</a>
+
 
 1. Call `query(node=1, l=0, r=n-1, ql, qr)`.
 2. If `ql > r` or `qr < l` (no overlap): return 0 (identity for sum).
@@ -291,6 +412,17 @@ A range query computes the aggregate (sum, minimum, maximum, etc.) of elements i
    - Return `left_result + right_result`.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 QUERY(node, l, r, ql, qr):
@@ -306,6 +438,17 @@ QUERY(node, l, r, ql, qr):
 ```
 
 ### Step-by-Step Dry Run (Range Sum)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Range Sum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Range Sum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Range Sum)" width="30%">
+</a>
+
 
 Array: `arr = [1, 3, 5, 7, 9, 11]`
 
@@ -339,6 +482,17 @@ Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. ✅
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Case | Complexity | When |
 |------|-----------|------|
 | **Best** | O(1) | Query covers the entire array (full overlap at root) |
@@ -350,6 +504,17 @@ Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. ✅
 For n = 1,000,000: at most 4 × 20 = 80 node visits vs 1,000,000 for a linear scan.
 
 ### Implementations
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+</a>
+
 
 ```cpp
 // C++ — Range Sum Query
@@ -425,6 +590,17 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | O(log n) for any range — no preprocessing per query | Identity value depends on operation (0 for sum, INF for min) |
@@ -433,6 +609,17 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 | Multiple aggregate types can share one tree | Must decide identity at compile time in static languages |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Query outside bounds:** `query(0, 5)` when n=6 — no overlap returns 0 (for sum). Should be validated at the public API level.
 - **Query single element:** `query(3, 3)` — finds the leaf node [3,3] in O(log n) and returns its stored value.
@@ -449,9 +636,31 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A point update changes the value of a single element `arr[idx]` to a new value. The update propagates from the leaf up to the root, recomputing the aggregate at each ancestor node.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 1. Start at root `(node=1, l=0, r=n-1)`.
 2. If `l == r` (reached leaf at idx):
@@ -462,6 +671,17 @@ A point update changes the value of a single element `arr[idx]` to a new value. 
 5. After child returns, recompute: `tree[node] = tree[2*node] + tree[2*node + 1]`.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 UPDATE(node, l, r, idx, newVal):
@@ -477,6 +697,17 @@ UPDATE(node, l, r, idx, newVal):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Array: `arr = [1, 3, 5, 7, 9, 11]`
 
@@ -506,6 +737,17 @@ Verification: New sum of all elements = 1+3+10+7+9+11 = 41 ✅. Old sum was 36, 
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Case | Complexity | When |
 |------|-----------|------|
 | **All cases** | O(log n) | Always travels root-to-leaf and back |
@@ -515,6 +757,17 @@ Verification: New sum of all elements = 1+3+10+7+9+11 = 41 ✅. Old sum was 36, 
 Compare to naively rebuilding the entire tree: O(n). A point update is exponentially faster for large arrays.
 
 ### Implementations
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+</a>
+
 
 ```cpp
 // C++
@@ -575,6 +828,17 @@ public void pointUpdate(int idx, int value) {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | O(log n) — much faster than rebuilding O(n) | Must recalculate all ancestors |
@@ -582,6 +846,17 @@ public void pointUpdate(int idx, int value) {
 | Supports delta-update pattern (`arr[i] += delta`) with minor modification | Updating non-existent index crashes without bounds check |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **Update last element:** `pointUpdate(n-1, value)` — reaches rightmost leaf, path includes only right children.
 - **Update first element:** `pointUpdate(0, value)` — path includes only left children.
@@ -597,6 +872,17 @@ public void pointUpdate(int idx, int value) {
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 **Lazy propagation** is an optimization that defers range updates to a segment tree. Instead of updating every leaf in the range (O(n)), we:
 
 1. Mark covering nodes with a "pending update" value in a separate `lazy` array.
@@ -606,6 +892,17 @@ public void pointUpdate(int idx, int value) {
 This keeps both range updates and range queries at O(log n).
 
 ### Algorithm Steps (Range Add + Range Sum)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Add + Range Sum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" alt="Diagram: Algorithm Steps (Range Add + Range Sum)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Add + Range Sum)" width="30%">
+</a>
+
 
 1. **Apply(node, l, r, val):**
    - Add `(r - l + 1) * val` to `tree[node]` (the sum increases by val per element).
@@ -632,6 +929,17 @@ This keeps both range updates and range queries at O(log n).
    - Return sum of children's results.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 APPLY(node, l, r, val):
@@ -666,6 +974,17 @@ RANGE-SUM(node, l, r, ql, qr):
 ```
 
 ### Step-by-Step Dry Run (Lazy Propagation)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+</a>
+
 
 Array: `arr = [1, 2, 3, 4, 5]`, `n = 5`
 
@@ -734,6 +1053,17 @@ Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 ✅. The lazy value was
 
 ### Complexity Analysis
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+</a>
+
+
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
 | Range update | O(log n) | Visit O(log n) nodes, mark lazy for fully covered ones |
@@ -743,6 +1073,17 @@ Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 ✅. The lazy value was
 **Why O(log n) for range updates?** Without lazy propagation, updating range [l, r] requires updating each of (r-l+1) leaves — O(n). With lazy propagation, we cover the range with O(log n) maximal nodes (nodes whose segments are fully inside the range and whose parent is not). These nodes are marked lazy and their subtrees are skipped. The same O(log n) bound applies to both updates and queries.
 
 ### Implementations
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+</a>
+
 
 ```cpp
 // C++ — Lazy Segment Tree (Range Add, Range Sum)
@@ -956,6 +1297,17 @@ public class LazySegmentTree {
 
 ### Advantages & Disadvantages
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+</a>
+
+
 | Advantages | Disadvantages |
 |-----------|--------------|
 | O(log n) range updates — exponentially faster than naive O(n) | Extra memory for lazy array (another 4n) |
@@ -964,6 +1316,17 @@ public class LazySegmentTree {
 | Can combine different update types (add + assign) with extensions | Recursive push risks stack overflow with deep lazy cascades |
 
 ### Edge Cases
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+</a>
+
 
 - **No lazy pending:** `lazy[node] == 0` — push is a no-op, same as regular segment tree.
 - **Full range update on root:** `addRange(0, n-1, val)` — apply at root, O(1). All lazy remains at root.
@@ -981,11 +1344,33 @@ public class LazySegmentTree {
 
 ### Definition
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+</a>
+
+
 A **Fenwick tree** (Binary Indexed Tree, BIT) is a data structure that supports prefix sum queries and point updates in O(log n). It uses the binary representation of indices: the value at index `i` stores the sum of a range of length `LSB(i)` (Least Significant Set Bit).
 
 **Key formula:** `LSB(i) = i & (-i)` — isolates the lowest set bit.
 
 ### Algorithm Steps
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+</a>
+
 
 **Add delta at index idx (0-indexed):**
 1. Convert to 1-indexed: `i = idx + 1`.
@@ -1000,6 +1385,17 @@ A **Fenwick tree** (Binary Indexed Tree, BIT) is a data structure that supports 
 **Range sum [l, r]:** `prefixSum(r) - prefixSum(l-1)`.
 
 ### Pseudocode
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+</a>
+
 
 ```
 ADD(idx, delta):
@@ -1021,6 +1417,17 @@ RANGE-SUM(l, r):
 ```
 
 ### Step-by-Step Dry Run
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+</a>
+
 
 Array: `arr = [1, 3, 5, 7, 9, 11]`, `n = 6`
 
@@ -1049,6 +1456,17 @@ Final BIT: `[1, 4, 5, 16, 9, 20]`
 Manual: 1+3+5+7+9 = 25 ✅.
 
 ### Implementations
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+</a>
+
 
 ```cpp
 // C++
@@ -1172,6 +1590,17 @@ public class FenwickTree {
 
 ### BIT Limitations
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" alt="Handwritten: BIT Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" alt="Diagram: BIT Limitations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" alt="Sticky Note: BIT Limitations" width="30%">
+</a>
+
+
 - **Only prefix sums:** BIT cannot directly answer range minimum or maximum queries. For those, use a segment tree or sparse table.
 - **No range updates (natively):** While point updates are O(log n), range updates require converting to a difference array or using two BITs.
 - No built-in lazy propagation.
@@ -1196,6 +1625,17 @@ public class FenwickTree {
 
 ### Decision Flowchart
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
+</a>
+
+
 ```
 Need range queries?
 ├── No updates at all ───────────→ Sparse Table (O(1) query)
@@ -1210,6 +1650,17 @@ Need range queries?
 ## Interview Corner
 
 ### Common Problems and Solutions
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" alt="Handwritten: Common Problems and Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" alt="Diagram: Common Problems and Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" alt="Sticky Note: Common Problems and Solutions" width="30%">
+</a>
+
 
 **1. Range Sum Query with Point Updates (LeetCode 307 — Range Sum Query - Mutable)**
 
@@ -1245,6 +1696,17 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 ### Common Pitfalls
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+</a>
+
+
 | Pitfall | Solution |
 |---------|----------|
 | Using 2n instead of 4n for tree size | Always use 4n — 2n is insufficient for non-power-of-2 sizes |
@@ -1256,6 +1718,17 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 | Segment tree for non-associative operations | Only works for operations where (a op b) op c = a op (b op c) |
 
 ### Time Comparison (n = 100,000, q = 100,000 queries)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" alt="Handwritten: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" alt="Diagram: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" alt="Sticky Note: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+</a>
+
 
 | Approach | Build | Each Query/Update | Total Time |
 |----------|-------|------------------|------------|
@@ -1325,6 +1798,17 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 ## Common Mistakes & GFG Deepening
 
 ### Common Mistakes (GFG-Style)
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
+</a>
+
 
 | Mistake | Why It's Wrong | Correct Approach |
 |---------|----------------|------------------|
@@ -1461,6 +1945,17 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Additional MCQs (GFG Pattern)
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+</a>
+
+
 8. **The size of the tree array for a segment tree of n = 10 elements (worst-case) is:**
    - a) 20
    - b) 40 ✓ (4 × 10)
@@ -1501,6 +1996,17 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Additional Exercises (GFG Pattern)
 
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+</a>
+
+
 12. **Count of smaller numbers after self (LC 315)**: Given an array, for each element count how many elements to its right are smaller. Use a segment tree or BIT.
 
 13. **Range sum query with mutable array (LC 307)**: Implement NumArray with point updates and range sum queries using segment tree.
@@ -1520,6 +2026,17 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 20. **Maximum subarray sum in range (LC 53 variant)**: Build a segment tree that returns maximum subarray sum for any range. Each node stores: total sum, max prefix, max suffix, max subarray.
 
 ### Segment Tree Variants Comparison
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" alt="Handwritten: Segment Tree Variants Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" alt="Diagram: Segment Tree Variants Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" alt="Sticky Note: Segment Tree Variants Comparison" width="30%">
+</a>
+
 
 | Variant | Build | Query | Point Update | Range Update | Memory |
 |---------|-------|-------|-------------|-------------|--------|
@@ -1670,6 +2187,17 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 - **Sparse table** — Best for static data with O(1) queries, but no update support and O(n log n) build/memory.
 
 ### Key Takeaway
+
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
+</a>
+
 
 If you need range queries on a **dynamic array** (values change), use a **segment tree**. If you only need **prefix sums** with point updates, use a **Fenwick tree** for simplicity and memory efficiency. If your data is **static** and queries are many, use a **sparse table** for O(1) queries. For range updates, use a segment tree with **lazy propagation** — it's the only structure that handles both range updates and range queries in O(log n).
 

@@ -74,6 +74,17 @@ flowchart LR
 
 ### Requirements Phase
 
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" alt="Handwritten: Requirements Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" alt="Diagram: Requirements Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" alt="Sticky Note: Requirements Phase" width="30%">
+</a>
+
+
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
 > **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
@@ -125,6 +136,17 @@ Every system design begins with precise functional and non-functional requiremen
 
 ### Estimation Phase
 
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" alt="Handwritten: Estimation Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" alt="Diagram: Estimation Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" alt="Sticky Note: Estimation Phase" width="30%">
+</a>
+
+
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
@@ -158,6 +180,17 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 - CDN: cache popular pastes (Pareto: 10% of pastes serve 90% of reads)
 
 ### High-Level Design Phase
+
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" alt="Handwritten: High-Level Design Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" alt="Diagram: High-Level Design Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" alt="Sticky Note: High-Level Design Phase" width="30%">
+</a>
+
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -212,6 +245,17 @@ The following table captures the rationale for each technology choice in the Pas
 | Syntax highlight | Pygments, highlight.js, Prism | Pygments | 500+ language support, server-side execution with no client dependency, active community |
 
 ### Deep Dive Phase
+
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" alt="Handwritten: Deep Dive Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" alt="Diagram: Deep Dive Phase" width="30%">
+</a>
+<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" alt="Sticky Note: Deep Dive Phase" width="30%">
+</a>
+
 
 Now we examine the hard problems — the details that separate a toy from a production system.
 

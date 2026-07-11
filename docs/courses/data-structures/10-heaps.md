@@ -57,6 +57,17 @@ flowchart LR
 
 ### Complete Binary Tree Property
 
+<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" alt="Handwritten: Complete Binary Tree Property" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" alt="Diagram: Complete Binary Tree Property" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" alt="Sticky Note: Complete Binary Tree Property" width="30%">
+</a>
+
+
 **Real-World Analogy (Seating at a Wedding):** Imagine filling rows of tables from left to right, front to back. Every row must be completely filled before starting the next. No gaps allowed. This is a complete binary tree: all levels are filled except possibly the last, which fills from left to right.
 
 **Definition:** A complete binary tree is a binary tree where every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.
@@ -87,6 +98,17 @@ Tree:                    [A]  [B]  [C]  [D]  [E]  [F]  [G]
 - **Height:** &lfloor;log<sub>2&lt;/sub&gt; n&rfloor;
 
 ### Max-Heap / Min-Heap
+
+<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" alt="Handwritten: Max-Heap / Min-Heap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" alt="Diagram: Max-Heap / Min-Heap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" alt="Sticky Note: Max-Heap / Min-Heap" width="30%">
+</a>
+
 
 **Real-World Analogy (Company Hierarchy):** In a well-run company, the CEO (root) is the highest paid. Every manager is paid more than their direct reports. This is a max-heap property: parent >= children. A non-profit might invert this → the lowest-paid intern decides policy → that is a min-heap: parent &lt;= children.
 
@@ -119,6 +141,17 @@ Array: [10, 20, 15, 30, 40, 25]
 ```
 
 ### Heapify (Sift Down) → Restoring Order at One Node
+
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" alt="Handwritten: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" alt="Diagram: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" alt="Sticky Note: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+</a>
+
 
 **Real-World Analogy (Boss Reassignment):** Your company reorganizes and promotes a junior employee to CEO. They're terrible at the job (violate the heap property). The board looks at the CEO and their two direct VPs. If either VP is more competent, they swap. Then the demoted CEO is evaluated against their new subordinates. This continues until everyone is at the right level → that is heapify/sift-down.
 
@@ -250,6 +283,17 @@ public static void maxHeapify(int[] arr, int n, int i) {
 
 ### Build Heap → Transform Array into Heap in O(n)
 
+<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" alt="Handwritten: Build Heap → Transform Array into Heap in O(n)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" alt="Diagram: Build Heap → Transform Array into Heap in O(n)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" alt="Sticky Note: Build Heap → Transform Array into Heap in O(n)" width="30%">
+</a>
+
+
 **Real-World Analogy (Organizing a Department by Seniority):** Instead of hiring one person at a time and re-ranking everyone (O(n log n)), HR sorts all employees once bottom-up. They start with the lowest managers and ensure each team is properly ordered before moving up. By the time they reach the CEO, the whole department is correct → and it took linear time because lower-level teams were already fixed when higher-level re-ranking happened.
 
 **Definition:** Build Heap transforms an arbitrary array into a valid heap by applying heapify to all non-leaf nodes in reverse level order (bottom-up).
@@ -372,6 +416,17 @@ public static void buildMaxHeap(int[] arr) {
 
 ### Insert (Bubble Up / Sift Up)
 
+<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" alt="Handwritten: Insert (Bubble Up / Sift Up)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" alt="Diagram: Insert (Bubble Up / Sift Up)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" alt="Sticky Note: Insert (Bubble Up / Sift Up)" width="30%">
+</a>
+
+
 **Real-World Analogy (New Hire Joining Company):** A new employee joins at the bottom. If they're more competent than their manager, they get promoted (swap upward). This continues until they report to someone more competent. The new employee "bubbles up" to the right level.
 
 **Definition:** Insert adds a new element to the end of the heap array, then repeatedly swaps it with its parent until the heap property is restored.
@@ -478,6 +533,17 @@ public void insert(int value) {
 
 ### Extract Max (Extract Min) → Remove and Return Root
 
+<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" alt="Handwritten: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" alt="Diagram: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" alt="Sticky Note: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+</a>
+
+
 **Real-World Analogy (Promoting the Best Performer):** When the CEO resigns, the company needs a replacement. They take the most junior person (last hire) and temporarily put them in the CEO role. If their subordinates are stronger, they swap the weakest up. The strongest rises to CEO → and the former CEO is gone.
 
 **Definition:** Extract Max removes and returns the root (maximum element), replaces it with the last element, and sifts down to restore the heap property.
@@ -576,6 +642,17 @@ public int extractMax() {
 - **After many extracts:** Heap shrinks. Array may release memory or may not (vector capacity).
 
 ### Decrease Key → Change Priority of Arbitrary Element
+
+<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" alt="Handwritten: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" alt="Diagram: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" alt="Sticky Note: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+</a>
+
 
 **Real-World Analogy (Patient Condition Changes):** In the ER triage, a patient initially classified as "stable" suddenly crashes. Their priority must increase (in a min-heap where lower number = higher priority). The system must find the patient and bubble them up to receive immediate care.
 
@@ -685,6 +762,17 @@ public void decreaseKey(int i, int newVal) {
 - **Position map synchronization:** Every swap in sift-up AND sift-down must update positions.
 
 ### Heap Sort → Sorting with a Binary Heap
+
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" alt="Handwritten: Heap Sort → Sorting with a Binary Heap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" alt="Diagram: Heap Sort → Sorting with a Binary Heap" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" alt="Sticky Note: Heap Sort → Sorting with a Binary Heap" width="30%">
+</a>
+
 
 **Real-World Analogy (Flipping Tournament Rankings):** In a knockout tournament, the winner (root) is removed. The last-placed player fills in, and a mini-tournament (heapify) determines the new winner. Recording winners in reverse order gives the sorted ranking.
 
@@ -799,6 +887,17 @@ public static void heapSort(int[] arr) {
 - **Very large arrays (n > 2^31):** Integer overflow in index computation. Use size_t in C++.
 
 ### Heap as a Priority Queue
+
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" alt="Handwritten: Heap as a Priority Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" alt="Diagram: Heap as a Priority Queue" width="30%">
+</a>
+<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" alt="Sticky Note: Heap as a Priority Queue" width="30%">
+</a>
+
 
 **Real-World Analogy (Airport Boarding):** First class boards before economy. Passengers with disabilities board first. Military personnel board next. This is a priority queue → each passenger has a priority, and the highest-priority group is served regardless of when they arrived at the gate.
 

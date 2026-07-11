@@ -42,6 +42,17 @@
 ```
 
 ### Scheduler Types
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-handwritten.svg" alt="Handwritten: Scheduler Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-diagram.svg" alt="Diagram: Scheduler Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/scheduler-types-sticky.svg" alt="Sticky Note: Scheduler Types" width="30%">
+</a>
+
 | Scheduler | Frequency | Function |
 |-----------|-----------|----------|
 | **Long-term** (Job) | Low | Load processes from disk into memory — controls degree of multiprogramming |
@@ -53,32 +64,98 @@
 ## 2. CPU Scheduling Algorithms
 
 ### FCFS (First Come First Serve)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-handwritten.svg" alt="Handwritten: FCFS (First Come First Serve)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-diagram.svg" alt="Diagram: FCFS (First Come First Serve)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fcfs-first-come-first-serve-sticky.svg" alt="Sticky Note: FCFS (First Come First Serve)" width="30%">
+</a>
+
 - Non-preemptive; simple FIFO queue
 - **Convoy effect:** Short process waits behind long one
 - Avg waiting time can be high
 
 ### SJF (Shortest Job First)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-handwritten.svg" alt="Handwritten: SJF (Shortest Job First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-diagram.svg" alt="Diagram: SJF (Shortest Job First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/sjf-shortest-job-first-sticky.svg" alt="Sticky Note: SJF (Shortest Job First)" width="30%">
+</a>
+
 - Non-preemptive — choose process with smallest CPU burst next
 - **Optimal** for minimizing average waiting time
 - **Problem:** Starvation of long processes; need burst time prediction
 
 ### SRTF (Shortest Remaining Time First)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-handwritten.svg" alt="Handwritten: SRTF (Shortest Remaining Time First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-diagram.svg" alt="Diagram: SRTF (Shortest Remaining Time First)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/srtf-shortest-remaining-time-first-sticky.svg" alt="Sticky Note: SRTF (Shortest Remaining Time First)" width="30%">
+</a>
+
 - Preemptive version of SJF
 - When new process arrives with shorter remaining time, preempt current
 
 ### Round Robin (RR)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-handwritten.svg" alt="Handwritten: Round Robin (RR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-diagram.svg" alt="Diagram: Round Robin (RR)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/round-robin-rr-sticky.svg" alt="Sticky Note: Round Robin (RR)" width="30%">
+</a>
+
 - Each process gets time quantum q; circular ready queue
 - q too large → degenerates to FCFS
 - q too small → too many context switches (CPU overhead)
 - **Typical q:** 10–100 ms
 
 ### Priority Scheduling
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-handwritten.svg" alt="Handwritten: Priority Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-diagram.svg" alt="Diagram: Priority Scheduling" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/priority-scheduling-sticky.svg" alt="Sticky Note: Priority Scheduling" width="30%">
+</a>
+
 - Preemptive or non-preemptive
 - Lower number = higher priority (Unix conventions)
 - **Starvation:** Low-priority processes may never execute
 - **Aging:** Gradually increase priority of waiting processes
 
 ### Solved Numerical — Gantt Chart
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-handwritten.svg" alt="Handwritten: Solved Numerical — Gantt Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-diagram.svg" alt="Diagram: Solved Numerical — Gantt Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-gantt-chart-sticky.svg" alt="Sticky Note: Solved Numerical — Gantt Chart" width="30%">
+</a>
+
 
 **Processes:** P1(0,5), P2(1,3), P3(2,8), P4(3,2) — (arrival, burst)
 
@@ -106,6 +183,17 @@ P1(0-4) | P2(4-7) | P3(7-11) | P1(11-12) | P3(12-16) | P4(16-18)
 ```
 
 ### Context Switch Overhead
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-handwritten.svg" alt="Handwritten: Context Switch Overhead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-diagram.svg" alt="Diagram: Context Switch Overhead" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/context-switch-overhead-sticky.svg" alt="Sticky Note: Context Switch Overhead" width="30%">
+</a>
+
 - Time to save/restore registers, PCB, TLB flush
 - **Direct cost:** CPU cycles wasted
 - **Indirect cost:** Cache pollution
@@ -115,6 +203,17 @@ P1(0-4) | P2(4-7) | P3(7-11) | P1(11-12) | P3(12-16) | P4(16-18)
 ## 3. Synchronization
 
 ### Semaphore Operations
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-handwritten.svg" alt="Handwritten: Semaphore Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-diagram.svg" alt="Diagram: Semaphore Operations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/semaphore-operations-sticky.svg" alt="Sticky Note: Semaphore Operations" width="30%">
+</a>
+
 - **S** is a non-negative integer variable
 - **wait(S) / P(S):** while (S ≤ 0) busy-wait; S--
 - **signal(S) / V(S):** S++
@@ -122,6 +221,17 @@ P1(0-4) | P2(4-7) | P3(7-11) | P1(11-12) | P3(12-16) | P4(16-18)
 - **Counting semaphore:** Any non-negative integer
 
 ### Producer-Consumer Problem
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-handwritten.svg" alt="Handwritten: Producer-Consumer Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-diagram.svg" alt="Diagram: Producer-Consumer Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/producer-consumer-problem-sticky.svg" alt="Sticky Note: Producer-Consumer Problem" width="30%">
+</a>
+
 ```c
 semaphore empty = n;  // buffer slots
 semaphore full = 0;   // filled slots
@@ -151,6 +261,17 @@ while (true) {
 ```
 
 ### Readers-Writers Problem
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-handwritten.svg" alt="Handwritten: Readers-Writers Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-diagram.svg" alt="Diagram: Readers-Writers Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/readers-writers-problem-sticky.svg" alt="Sticky Note: Readers-Writers Problem" width="30%">
+</a>
+
 | Problem Type | Priority | Policy |
 |-------------|----------|--------|
 | First R-W | Readers | Multiple readers allowed; writers starve |
@@ -158,6 +279,17 @@ while (true) {
 | Third R-W | Queue | Fair: FCFS order of requests |
 
 ### Dining Philosopher Problem
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-handwritten.svg" alt="Handwritten: Dining Philosopher Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-diagram.svg" alt="Diagram: Dining Philosopher Problem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-problem-sticky.svg" alt="Sticky Note: Dining Philosopher Problem" width="30%">
+</a>
+
 - 5 philosophers, 5 chopsticks, must acquire both to eat
 - **Deadlock scenario:** Each picks left chopstick simultaneously
 - **Solutions:**
@@ -171,12 +303,34 @@ while (true) {
 ## 4. Deadlock
 
 ### Four Necessary Conditions
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-handwritten.svg" alt="Handwritten: Four Necessary Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-diagram.svg" alt="Diagram: Four Necessary Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/four-necessary-conditions-sticky.svg" alt="Sticky Note: Four Necessary Conditions" width="30%">
+</a>
+
 1. **Mutual Exclusion:** At least one resource is non-sharable
 2. **Hold and Wait:** Process holds a resource while waiting for another
 3. **No Preemption:** Resource cannot be forcibly taken
 4. **Circular Wait:** Cycle exists in wait-for graph
 
 ### Deadlock Handling Strategies
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-handwritten.svg" alt="Handwritten: Deadlock Handling Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-diagram.svg" alt="Diagram: Deadlock Handling Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/deadlock-handling-strategies-sticky.svg" alt="Sticky Note: Deadlock Handling Strategies" width="30%">
+</a>
+
 | Strategy | Approach | Example |
 |----------|----------|---------|
 | Prevention | Break one of the 4 conditions | Order resources (eliminate circular wait) |
@@ -185,6 +339,17 @@ while (true) {
 | Recovery | Kill process or preempt resource | Victim selection, rollback |
 
 ### Banker's Algorithm
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-handwritten.svg" alt="Handwritten: Banker's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-diagram.svg" alt="Diagram: Banker's Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-sticky.svg" alt="Sticky Note: Banker's Algorithm" width="30%">
+</a>
+
 
 **Data structures:** Available (resources free), Max (process max need), Allocation (currently held), Need = Max − Allocation
 
@@ -215,6 +380,17 @@ Available = [3, 3, 2]
 ## 5. Memory Management — Paging
 
 ### Logical to Physical Address Translation
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-handwritten.svg" alt="Handwritten: Logical to Physical Address Translation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-diagram.svg" alt="Diagram: Logical to Physical Address Translation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/logical-to-physical-address-translation-sticky.svg" alt="Sticky Note: Logical to Physical Address Translation" width="30%">
+</a>
+
 ```
 Logical Address (CPU) → Segmentation → Paging → Physical Address (RAM)
 ```
@@ -248,19 +424,63 @@ Address 0x2A3F:
 ## 6. Page Replacement Algorithms
 
 ### FIFO (First In First Out)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-handwritten.svg" alt="Handwritten: FIFO (First In First Out)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-diagram.svg" alt="Diagram: FIFO (First In First Out)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/fifo-first-in-first-out-sticky.svg" alt="Sticky Note: FIFO (First In First Out)" width="30%">
+</a>
+
 - Oldest loaded page is replaced
 - **Belady's Anomaly:** More frames can increase page faults
 
 ### LRU (Least Recently Used)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-handwritten.svg" alt="Handwritten: LRU (Least Recently Used)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-diagram.svg" alt="Diagram: LRU (Least Recently Used)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/lru-least-recently-used-sticky.svg" alt="Sticky Note: LRU (Least Recently Used)" width="30%">
+</a>
+
 - Replace page that has been unused for longest time
 - Requires hardware support (time stamps or counter)
 - **Stack property:** No Belady's anomaly
 
 ### Optimal (MIN)
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-handwritten.svg" alt="Handwritten: Optimal (MIN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-diagram.svg" alt="Diagram: Optimal (MIN)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/optimal-min-sticky.svg" alt="Sticky Note: Optimal (MIN)" width="30%">
+</a>
+
 - Replace page that will be used farthest in future
 - **Not implementable** in practice — used as benchmark
 
 ### Solved Numerical: Page Faults
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-handwritten.svg" alt="Handwritten: Solved Numerical: Page Faults" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-diagram.svg" alt="Diagram: Solved Numerical: Page Faults" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-page-faults-sticky.svg" alt="Sticky Note: Solved Numerical: Page Faults" width="30%">
+</a>
+
 
 **Reference string:** 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
 **Frames = 3**
@@ -277,6 +497,17 @@ Address 0x2A3F:
 
 ### Comparison Table
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+</a>
+
+
 | Algorithm | Description | Seek Pattern | Fairness |
 |-----------|-------------|-------------|----------|
 | FCFS | Serve in request order | No biasing | Fair |
@@ -287,6 +518,17 @@ Address 0x2A3F:
 | C-LOOK | C-SCAN but stop at last request | Efficient circular | Uniform wait |
 
 ### Solved Numerical
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-handwritten.svg" alt="Handwritten: Solved Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-diagram.svg" alt="Diagram: Solved Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/solved-numerical-sticky.svg" alt="Sticky Note: Solved Numerical" width="30%">
+</a>
+
 Requests: 98, 183, 37, 122, 14, 124, 65, 67. Head starts at 53.
 
 **FCFS:** |98−53| + |183−98| + |37−183| + |122−37| + |14−122| + |124−14| + |65−124| + |67−65|
@@ -335,6 +577,17 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 
 ### User-Level vs Kernel-Level Threads
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-handwritten.svg" alt="Handwritten: User-Level vs Kernel-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-diagram.svg" alt="Diagram: User-Level vs Kernel-Level Threads" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/user-level-vs-kernel-level-threads-sticky.svg" alt="Sticky Note: User-Level vs Kernel-Level Threads" width="30%">
+</a>
+
+
 | Aspect | User-Level Threads | Kernel-Level Threads |
 |--------|--------------------|---------------------|
 | Managed by | Thread library (user space) | Kernel |
@@ -345,6 +598,17 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 | Mapping | Many-to-one | One-to-one / Many-to-many |
 
 ### Threading Models
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-handwritten.svg" alt="Handwritten: Threading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-diagram.svg" alt="Diagram: Threading Models" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/threading-models-sticky.svg" alt="Sticky Note: Threading Models" width="30%">
+</a>
+
 ```
 Many-to-One:   Many user threads → 1 kernel thread (obsolete)
 One-to-One:    1 user thread → 1 kernel thread (Linux, Windows)
@@ -352,6 +616,17 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 ```
 
 ### Thread vs Process
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-handwritten.svg" alt="Handwritten: Thread vs Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-diagram.svg" alt="Diagram: Thread vs Process" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thread-vs-process-sticky.svg" alt="Sticky Note: Thread vs Process" width="30%">
+</a>
+
 | Feature | Process | Thread |
 |---------|---------|--------|
 | Address space | Separate (isolated) | Shared with process |
@@ -364,6 +639,17 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 
 ### Segmentation vs Paging
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-handwritten.svg" alt="Handwritten: Segmentation vs Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-diagram.svg" alt="Diagram: Segmentation vs Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/segmentation-vs-paging-sticky.svg" alt="Sticky Note: Segmentation vs Paging" width="30%">
+</a>
+
+
 | Aspect | Segmentation | Paging |
 |--------|-------------|--------|
 | View | Logical (code, data, stack) | Physical (fixed-size frames) |
@@ -374,12 +660,34 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 | Table | Segment table (base + limit) | Page table |
 
 ### Combined: Segmented Paging
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-handwritten.svg" alt="Handwritten: Combined: Segmented Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-diagram.svg" alt="Diagram: Combined: Segmented Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/combined-segmented-paging-sticky.svg" alt="Sticky Note: Combined: Segmented Paging" width="30%">
+</a>
+
 - Logical address: (segment#, page#, offset)
 - Physical address: page table lookup within segment
 
 ## 10. File Systems
 
 ### File Allocation Methods
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-handwritten.svg" alt="Handwritten: File Allocation Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-diagram.svg" alt="Diagram: File Allocation Methods" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/file-allocation-methods-sticky.svg" alt="Sticky Note: File Allocation Methods" width="30%">
+</a>
+
 
 | Method | Description | Pros | Cons |
 |--------|-------------|------|------|
@@ -388,12 +696,34 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 | **Indexed** | Index block points to data blocks | Fast random access | Index block overhead, limit file size |
 
 ### Free Space Management
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-handwritten.svg" alt="Handwritten: Free Space Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-diagram.svg" alt="Diagram: Free Space Management" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/free-space-management-sticky.svg" alt="Sticky Note: Free Space Management" width="30%">
+</a>
+
 - **Bit vector:** 1 bit per block (free/allocated) — fast, needs memory
 - **Linked list:** Free blocks linked — no extra memory, slow
 - **Grouping:** Store pointers in free blocks
 - **Counting:** Track contiguous free blocks
 
 ### Disk Structure
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-handwritten.svg" alt="Handwritten: Disk Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-diagram.svg" alt="Diagram: Disk Structure" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-structure-sticky.svg" alt="Sticky Note: Disk Structure" width="30%">
+</a>
+
 - **Track:** Concentric circle on platter
 - **Sector:** Minimum storage unit (typically 512 bytes or 4 KB)
 - **Cylinder:** Set of tracks at same radius across all platters
@@ -402,15 +732,48 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 ## 11. Virtual Memory
 
 ### Demand Paging
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-handwritten.svg" alt="Handwritten: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-diagram.svg" alt="Diagram: Demand Paging" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/demand-paging-sticky.svg" alt="Sticky Note: Demand Paging" width="30%">
+</a>
+
 - Pages loaded only when referenced (lazy loading)
 - **Page fault:** Reference to non-resident page → OS loads from disk
 
 ### Thrashing
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-handwritten.svg" alt="Handwritten: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-diagram.svg" alt="Diagram: Thrashing" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/thrashing-sticky.svg" alt="Sticky Note: Thrashing" width="30%">
+</a>
+
 - **Symptom:** Excessive page faults, low CPU utilization
 - **Cause:** Too many processes in memory (sum of working sets > physical memory)
 - **Solution:** Reduce multiprogramming degree, working set model
 
 ### Page Size Trade-off
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-handwritten.svg" alt="Handwritten: Page Size Trade-off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-diagram.svg" alt="Diagram: Page Size Trade-off" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-size-trade-off-sticky.svg" alt="Sticky Note: Page Size Trade-off" width="30%">
+</a>
+
 | Small page | Large page |
 |------------|------------|
 | Less internal fragmentation | More internal fragmentation |
@@ -425,6 +788,17 @@ Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 ## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
 ### CPU Scheduling Simulator — TypeScript with Gantt Chart Output
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-handwritten.svg" alt="Handwritten: CPU Scheduling Simulator — TypeScript with Gantt Chart Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-diagram.svg" alt="Diagram: CPU Scheduling Simulator — TypeScript with Gantt Chart Output" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/cpu-scheduling-simulator-typescript-with-gantt-chart-output-sticky.svg" alt="Sticky Note: CPU Scheduling Simulator — TypeScript with Gantt Chart Output" width="30%">
+</a>
+
 
 ```typescript
 interface Process {
@@ -505,6 +879,17 @@ function roundRobin(processes: Process[], quantum: number): { gantt: GanttSegmen
 
 ### Banker's Algorithm — TypeScript Implementation
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-handwritten.svg" alt="Handwritten: Banker's Algorithm — TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-diagram.svg" alt="Diagram: Banker's Algorithm — TypeScript Implementation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/banker-s-algorithm-typescript-implementation-sticky.svg" alt="Sticky Note: Banker's Algorithm — TypeScript Implementation" width="30%">
+</a>
+
+
 ```typescript
 interface BankerState {
   available: number[];
@@ -540,6 +925,17 @@ function isSafeState(state: BankerState): { safe: boolean; sequence: number[] } 
 ```
 
 ### Page Replacement Simulator — TypeScript
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-handwritten.svg" alt="Handwritten: Page Replacement Simulator — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-diagram.svg" alt="Diagram: Page Replacement Simulator — TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/page-replacement-simulator-typescript-sticky.svg" alt="Sticky Note: Page Replacement Simulator — TypeScript" width="30%">
+</a>
+
 
 ```typescript
 function pageFaults(reference: number[], frames: number, algorithm: 'FIFO' | 'LRU' | 'OPTIMAL'): number {
@@ -585,6 +981,17 @@ function pageFaults(reference: number[], frames: number, algorithm: 'FIFO' | 'LR
 
 ### Synchronization Problems — Producer-Consumer with TypeScript
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-handwritten.svg" alt="Handwritten: Synchronization Problems — Producer-Consumer with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-diagram.svg" alt="Diagram: Synchronization Problems — Producer-Consumer with TypeScript" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/synchronization-problems-producer-consumer-with-typescript-sticky.svg" alt="Sticky Note: Synchronization Problems — Producer-Consumer with TypeScript" width="30%">
+</a>
+
+
 ```typescript
 class BoundedBuffer<T> {
   private buffer: T[];
@@ -620,6 +1027,17 @@ class BoundedBuffer<T> {
 ```
 
 ### Dining Philosopher — Deadlock-Free Solution
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-handwritten.svg" alt="Handwritten: Dining Philosopher — Deadlock-Free Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-diagram.svg" alt="Diagram: Dining Philosopher — Deadlock-Free Solution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/dining-philosopher-deadlock-free-solution-sticky.svg" alt="Sticky Note: Dining Philosopher — Deadlock-Free Solution" width="30%">
+</a>
+
 
 ```typescript
 class DiningPhilosophers {
@@ -664,6 +1082,17 @@ class DiningPhilosophers {
 
 ### Memory Management — Multi-Level Paging Numerical
 
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-handwritten.svg" alt="Handwritten: Memory Management — Multi-Level Paging Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-diagram.svg" alt="Diagram: Memory Management — Multi-Level Paging Numerical" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/memory-management-multi-level-paging-numerical-sticky.svg" alt="Sticky Note: Memory Management — Multi-Level Paging Numerical" width="30%">
+</a>
+
+
 > **PYQ 2024:** A 32-bit system uses 4 KB pages and 4-byte page table entries. How many levels of page table are needed?
 
 **Solution:**
@@ -678,6 +1107,17 @@ class DiningPhilosophers {
 **Alternatively:** 20 VPN bits / 10 bits per level = 2 levels.
 
 ### Disk Scheduling — TypeScript Simulator
+
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-handwritten.svg" alt="Handwritten: Disk Scheduling — TypeScript Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-diagram.svg" alt="Diagram: Disk Scheduling — TypeScript Simulator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/professional-knowledge/03-operating-systems/disk-scheduling-typescript-simulator-sticky.svg" alt="Sticky Note: Disk Scheduling — TypeScript Simulator" width="30%">
+</a>
+
 
 ```typescript
 function diskScheduling(

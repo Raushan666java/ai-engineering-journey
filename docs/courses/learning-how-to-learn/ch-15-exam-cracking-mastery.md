@@ -27,6 +27,17 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Exam Architecture | Every exam has a hidden pattern of weightage, difficulty, and time pressure | Analyze last 5 years of PYQs to build an exam DNA profile |
@@ -106,6 +117,17 @@ When you encounter a new exam, follow this rapid analysis protocol:
 
 ### Day 1: Gather Intelligence
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-handwritten.svg" alt="Handwritten: Day 1: Gather Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-diagram.svg" alt="Diagram: Day 1: Gather Intelligence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-1-gather-intelligence-sticky.svg" alt="Sticky Note: Day 1: Gather Intelligence" width="30%">
+</a>
+
+
 | Source | What to Extract |
 |--------|-----------------|
 | Official syllabus | Topic list, weightage percentages, skill levels |
@@ -115,6 +137,17 @@ When you encounter a new exam, follow this rapid analysis protocol:
 | Official notifications | Exam pattern changes, new sections, marking scheme updates |
 
 ### Day 2: Build Exam DNA Profile
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-handwritten.svg" alt="Handwritten: Day 2: Build Exam DNA Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-diagram.svg" alt="Diagram: Day 2: Build Exam DNA Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/day-2-build-exam-dna-profile-sticky.svg" alt="Sticky Note: Day 2: Build Exam DNA Profile" width="30%">
+</a>
+
 
 Create a single-page cheat sheet containing:
 
@@ -226,6 +259,17 @@ Every exam preparation should follow three distinct phases, regardless of total 
 
 ### Phase 1: Foundation (60% of total time)
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-handwritten.svg" alt="Handwritten: Phase 1: Foundation (60% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-diagram.svg" alt="Diagram: Phase 1: Foundation (60% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-1-foundation-60-of-total-time-sticky.svg" alt="Sticky Note: Phase 1: Foundation (60% of total time)" width="30%">
+</a>
+
+
 **Goal:** Build conceptual understanding across all topics
 
 | Activity | Time Share | Details |
@@ -239,6 +283,17 @@ Every exam preparation should follow three distinct phases, regardless of total 
 
 ### Phase 2: Mastery (30% of total time)
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-handwritten.svg" alt="Handwritten: Phase 2: Mastery (30% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-diagram.svg" alt="Diagram: Phase 2: Mastery (30% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-2-mastery-30-of-total-time-sticky.svg" alt="Sticky Note: Phase 2: Mastery (30% of total time)" width="30%">
+</a>
+
+
 **Goal:** Deepen understanding, improve speed, start mock tests
 
 | Activity | Time Share | Details |
@@ -251,6 +306,17 @@ Every exam preparation should follow three distinct phases, regardless of total 
 **Key principle:** Start mocks even if you feel unprepared. The first mock will reveal gaps you didn't know existed.
 
 ### Phase 3: Peak (10% of total time)
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-handwritten.svg" alt="Handwritten: Phase 3: Peak (10% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-diagram.svg" alt="Diagram: Phase 3: Peak (10% of total time)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/phase-3-peak-10-of-total-time-sticky.svg" alt="Sticky Note: Phase 3: Peak (10% of total time)" width="30%">
+</a>
+
 
 **Goal:** Peak performance on exam day
 
@@ -292,6 +358,17 @@ flowchart LR
 
 ### Time Scaling (when total prep time is short)
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-handwritten.svg" alt="Handwritten: Time Scaling (when total prep time is short)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-diagram.svg" alt="Diagram: Time Scaling (when total prep time is short)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/time-scaling-when-total-prep-time-is-short-sticky.svg" alt="Sticky Note: Time Scaling (when total prep time is short)" width="30%">
+</a>
+
+
 | Total Time | Phase 1 | Phase 2 | Phase 3 | Strategy |
 |------------|---------|---------|---------|----------|
 | 12 months | 7 months | 3.5 months | 1.5 months | Deep coverage, 2-3 revisions |
@@ -308,6 +385,17 @@ The key to effective preparation is **spiral scheduling** — covering all subje
 
 ### The Spiral Schedule Template
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-handwritten.svg" alt="Handwritten: The Spiral Schedule Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-diagram.svg" alt="Diagram: The Spiral Schedule Template" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-spiral-schedule-template-sticky.svg" alt="Sticky Note: The Spiral Schedule Template" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     subgraph "Each Day (6-8 hours)"
@@ -323,6 +411,17 @@ flowchart TD
 ```
 
 ### Sample 6-Day Weekly Schedule (9 subjects rotation)
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-handwritten.svg" alt="Handwritten: Sample 6-Day Weekly Schedule (9 subjects rotation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-diagram.svg" alt="Diagram: Sample 6-Day Weekly Schedule (9 subjects rotation)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sample-6-day-weekly-schedule-9-subjects-rotation-sticky.svg" alt="Sticky Note: Sample 6-Day Weekly Schedule (9 subjects rotation)" width="30%">
+</a>
+
 
 ```
 DAY 1:
@@ -416,6 +515,17 @@ Not all topics are worth equal time. Use the **ROI (Return on Investment)** form
 
 ### The ROI Formula
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-handwritten.svg" alt="Handwritten: The ROI Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-diagram.svg" alt="Diagram: The ROI Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-roi-formula-sticky.svg" alt="Sticky Note: The ROI Formula" width="30%">
+</a>
+
+
 ```
 ROI = Weightage × Learnability × Retention
 ```
@@ -428,6 +538,17 @@ ROI = Weightage × Learnability × Retention
 
 ### Topic ROI Matrix
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-handwritten.svg" alt="Handwritten: Topic ROI Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-diagram.svg" alt="Diagram: Topic ROI Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/topic-roi-matrix-sticky.svg" alt="Sticky Note: Topic ROI Matrix" width="30%">
+</a>
+
+
 | Topic | Weightage | Learnability | Retention | ROI | Strategy |
 |-------|-----------|--------------|-----------|-----|----------|
 | DBMS + SQL | 9 | 4 | 4 | **144** | Study first, high return |
@@ -437,6 +558,17 @@ ROI = Weightage × Learnability × Retention
 | General Awareness | 5 | 5 | 1 | **25** | Daily 30 min, don't cram |
 
 ### Priority Buckets
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-handwritten.svg" alt="Handwritten: Priority Buckets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-diagram.svg" alt="Diagram: Priority Buckets" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/priority-buckets-sticky.svg" alt="Sticky Note: Priority Buckets" width="30%">
+</a>
+
 
 | Bucket | ROI Score | Action |
 |--------|-----------|--------|
@@ -498,6 +630,17 @@ Speed and accuracy follow a predictable curve — speed increases as accuracy so
 
 ### The Speed-Accuracy Curve
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-handwritten.svg" alt="Handwritten: The Speed-Accuracy Curve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-diagram.svg" alt="Diagram: The Speed-Accuracy Curve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-speed-accuracy-curve-sticky.svg" alt="Sticky Note: The Speed-Accuracy Curve" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     subgraph "Phase 1: Accuracy First"
@@ -526,6 +669,17 @@ flowchart LR
 
 ### Speed Building Techniques
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-handwritten.svg" alt="Handwritten: Speed Building Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-diagram.svg" alt="Diagram: Speed Building Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/speed-building-techniques-sticky.svg" alt="Sticky Note: Speed Building Techniques" width="30%">
+</a>
+
+
 | Technique | How It Works | Time Saved |
 |-----------|-------------|------------|
 | **Elimination First** | Eliminate obviously wrong options before solving | 30-50% reduction |
@@ -536,6 +690,17 @@ flowchart LR
 | **Option Substitution** | Plug options back into the question | Works for 40% of quant Qs |
 
 ### Section-wise Time Targets (IBPS SO Example)
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-handwritten.svg" alt="Handwritten: Section-wise Time Targets (IBPS SO Example)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-diagram.svg" alt="Diagram: Section-wise Time Targets (IBPS SO Example)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-time-targets-ibps-so-example-sticky.svg" alt="Sticky Note: Section-wise Time Targets (IBPS SO Example)" width="30%">
+</a>
+
 
 | Section | Total Qs | Time Given | Target Time | Sec per Q |
 |---------|----------|------------|-------------|-----------|
@@ -585,6 +750,17 @@ Mock tests are useless without proper analysis. Follow the **C/M/E/R Taxonomy** 
 
 ### The C/M/E/R Mistake Taxonomy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-handwritten.svg" alt="Handwritten: The C/M/E/R Mistake Taxonomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-diagram.svg" alt="Diagram: The C/M/E/R Mistake Taxonomy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-c-m-e-r-mistake-taxonomy-sticky.svg" alt="Sticky Note: The C/M/E/R Mistake Taxonomy" width="30%">
+</a>
+
+
 | Category | Meaning | % of Mistakes | Fix Strategy |
 |----------|---------|---------------|--------------|
 | **C** | Conceptual — you didn't know the concept | 40% | Review the topic, create Anki cards |
@@ -593,6 +769,17 @@ Mock tests are useless without proper analysis. Follow the **C/M/E/R Taxonomy** 
 | **R** | Random — pure guess or lucky/unlucky | 15% | Accept as noise, focus on C/M/E |
 
 ### Mock Test Analysis Protocol
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-handwritten.svg" alt="Handwritten: Mock Test Analysis Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-diagram.svg" alt="Diagram: Mock Test Analysis Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mock-test-analysis-protocol-sticky.svg" alt="Sticky Note: Mock Test Analysis Protocol" width="30%">
+</a>
+
 
 ```
 STEP 1: Take mock test under exam conditions (no pauses, no phone)
@@ -693,6 +880,17 @@ The final month before any exam follows a specific pattern regardless of exam ty
 
 ### Last 30 Days Blueprint
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-handwritten.svg" alt="Handwritten: Last 30 Days Blueprint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-diagram.svg" alt="Diagram: Last 30 Days Blueprint" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/last-30-days-blueprint-sticky.svg" alt="Sticky Note: Last 30 Days Blueprint" width="30%">
+</a>
+
+
 ```
 WEEK 1 (Days 30-23): Consolidation
   - Complete all remaining syllabus
@@ -723,6 +921,17 @@ WEEK 4 (Days 7-1): Peak Preparation
 
 ### Week-wise Focus Areas
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-handwritten.svg" alt="Handwritten: Week-wise Focus Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-diagram.svg" alt="Diagram: Week-wise Focus Areas" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/week-wise-focus-areas-sticky.svg" alt="Sticky Note: Week-wise Focus Areas" width="30%">
+</a>
+
+
 | Week | Focus | Mock Frequency | Study Hours |
 |------|-------|---------------|-------------|
 | Week 1 | Complete syllabus + first mocks | 2 mocks | 8-10 hrs/day |
@@ -737,6 +946,17 @@ WEEK 4 (Days 7-1): Peak Preparation
 The final week is about **preservation and execution**, not learning.
 
 ### 7-Day Countdown
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-handwritten.svg" alt="Handwritten: 7-Day Countdown" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-diagram.svg" alt="Diagram: 7-Day Countdown" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/7-day-countdown-sticky.svg" alt="Sticky Note: 7-Day Countdown" width="30%">
+</a>
+
 
 ```
 DAY -7: 
@@ -792,6 +1012,17 @@ Your performance on exam day depends 60% on preparation and 40% on execution.
 
 ### Before the Exam (Morning of)
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-handwritten.svg" alt="Handwritten: Before the Exam (Morning of)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-diagram.svg" alt="Diagram: Before the Exam (Morning of)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/before-the-exam-morning-of-sticky.svg" alt="Sticky Note: Before the Exam (Morning of)" width="30%">
+</a>
+
+
 | Time | Activity | Why |
 |------|----------|-----|
 | T-3 hours | Wake up, hydrate | Brain takes 2 hours to fully wake |
@@ -804,6 +1035,17 @@ Your performance on exam day depends 60% on preparation and 40% on execution.
 | T-5 min | Deep breathing (4-7-8 technique) | Calms nerves |
 
 ### In the Exam Hall (Question Paper Strategy)
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-handwritten.svg" alt="Handwritten: In the Exam Hall (Question Paper Strategy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-diagram.svg" alt="Diagram: In the Exam Hall (Question Paper Strategy)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/in-the-exam-hall-question-paper-strategy-sticky.svg" alt="Sticky Note: In the Exam Hall (Question Paper Strategy)" width="30%">
+</a>
+
 
 **First 5 Minutes: Scan and Strategize**
 
@@ -841,6 +1083,17 @@ flowchart TD
 
 ### Section-wise Attempt Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-handwritten.svg" alt="Handwritten: Section-wise Attempt Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-diagram.svg" alt="Diagram: Section-wise Attempt Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/section-wise-attempt-strategy-sticky.svg" alt="Sticky Note: Section-wise Attempt Strategy" width="30%">
+</a>
+
+
 **For Negative Marking Exams:**
 - Attempt only questions you're 75%+ confident about
 - Don't guess unless you can eliminate 2+ options
@@ -863,6 +1116,17 @@ flowchart TD
 Each exam type requires a tailored approach. Here are strategy templates for the most common exam categories.
 
 ### GATE CS Strategy
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-handwritten.svg" alt="Handwritten: GATE CS Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-diagram.svg" alt="Diagram: GATE CS Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gate-cs-strategy-sticky.svg" alt="Sticky Note: GATE CS Strategy" width="30%">
+</a>
+
 
 ```
 GATE CS QUICK STRATEGY
@@ -890,6 +1154,17 @@ Preparation Materials:
 ```
 
 ### IBPS SO IT Officer Strategy
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-handwritten.svg" alt="Handwritten: IBPS SO IT Officer Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-diagram.svg" alt="Diagram: IBPS SO IT Officer Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/ibps-so-it-officer-strategy-sticky.svg" alt="Sticky Note: IBPS SO IT Officer Strategy" width="30%">
+</a>
+
 
 ```
 IBPS SO IT OFFICER QUICK STRATEGY
@@ -941,6 +1216,17 @@ Target Score (General): 75+/175
 
 ### NIC Scientist B Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-handwritten.svg" alt="Handwritten: NIC Scientist B Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-diagram.svg" alt="Diagram: NIC Scientist B Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/nic-scientist-b-strategy-sticky.svg" alt="Sticky Note: NIC Scientist B Strategy" width="30%">
+</a>
+
+
 ```
 NIC SCIENTIST B QUICK STRATEGY
 ===============================
@@ -980,6 +1266,17 @@ Attempt Strategy:
 
 ### SBI PO Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-handwritten.svg" alt="Handwritten: SBI PO Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-diagram.svg" alt="Diagram: SBI PO Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/sbi-po-strategy-sticky.svg" alt="Sticky Note: SBI PO Strategy" width="30%">
+</a>
+
+
 ```
 SBI PO PRELIMS QUICK STRATEGY
 ==============================
@@ -1015,6 +1312,17 @@ Mains Target: 200+/300 (Reasoning 45, English 40, Quant 45, GA 30, Descriptive 4
 ```
 
 ### General Competitive Exam (Combined) Strategy
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-handwritten.svg" alt="Handwritten: General Competitive Exam (Combined) Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-diagram.svg" alt="Diagram: General Competitive Exam (Combined) Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/general-competitive-exam-combined-strategy-sticky.svg" alt="Sticky Note: General Competitive Exam (Combined) Strategy" width="30%">
+</a>
+
 
 ```
 UNIVERSAL EXAM CRACKING CHECKLIST
@@ -1070,6 +1378,17 @@ Many candidates prepare for multiple exams at once (e.g., GATE + IBPS SO + campu
 
 ### Overlap Analysis
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-handwritten.svg" alt="Handwritten: Overlap Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-diagram.svg" alt="Diagram: Overlap Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/overlap-analysis-sticky.svg" alt="Sticky Note: Overlap Analysis" width="30%">
+</a>
+
+
 | Subject | GATE CS | IBPS SO | NIC Scientist | SBI PO | Campus |
 |---------|---------|---------|---------------|--------|--------|
 | DS & Algorithms | ✅ High | ✅ Med | ✅ High | ❌ | ✅ High |
@@ -1082,6 +1401,17 @@ Many candidates prepare for multiple exams at once (e.g., GATE + IBPS SO + campu
 | Current Affairs | ❌ | ✅ High | ❌ | ✅ High | ❌ |
 
 ### Strategy for Multiple Exams
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-handwritten.svg" alt="Handwritten: Strategy for Multiple Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-diagram.svg" alt="Diagram: Strategy for Multiple Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/strategy-for-multiple-exams-sticky.svg" alt="Sticky Note: Strategy for Multiple Exams" width="30%">
+</a>
+
 
 | Scenario | Primary Focus | Secondary | Strategy |
 |----------|---------------|-----------|----------|
@@ -1117,6 +1447,17 @@ Exam anxiety is natural — the goal isn't to eliminate it, but to channel it pr
 
 ### The Yerkes-Dodson Curve
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-handwritten.svg" alt="Handwritten: The Yerkes-Dodson Curve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-diagram.svg" alt="Diagram: The Yerkes-Dodson Curve" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-yerkes-dodson-curve-sticky.svg" alt="Sticky Note: The Yerkes-Dodson Curve" width="30%">
+</a>
+
+
 ```mermaid
 flowchart LR
     subgraph "Performance vs Anxiety"
@@ -1129,6 +1470,17 @@ flowchart LR
 
 ### Stress Management Techniques
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-handwritten.svg" alt="Handwritten: Stress Management Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-diagram.svg" alt="Diagram: Stress Management Techniques" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/stress-management-techniques-sticky.svg" alt="Sticky Note: Stress Management Techniques" width="30%">
+</a>
+
+
 | Technique | When to Use | How It Works |
 |-----------|-------------|--------------|
 | 4-7-8 Breathing | During exam, before tough section | Inhale 4 sec, hold 7 sec, exhale 8 sec |
@@ -1139,6 +1491,17 @@ flowchart LR
 | Cognitive Reframing | When anxious | "I'm excited" instead of "I'm nervous" |
 
 ### Common Anxiety Triggers and Solutions
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-handwritten.svg" alt="Handwritten: Common Anxiety Triggers and Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-diagram.svg" alt="Diagram: Common Anxiety Triggers and Solutions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/common-anxiety-triggers-and-solutions-sticky.svg" alt="Sticky Note: Common Anxiety Triggers and Solutions" width="30%">
+</a>
+
 
 | Trigger | Solution |
 |---------|----------|
@@ -1156,6 +1519,17 @@ flowchart LR
 Revision notes are your most valuable asset in the last month before any exam.
 
 ### The One-Page Rule
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-handwritten.svg" alt="Handwritten: The One-Page Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-diagram.svg" alt="Diagram: The One-Page Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-one-page-rule-sticky.svg" alt="Sticky Note: The One-Page Rule" width="30%">
+</a>
+
 
 Every subject should be compressed into ONE page (front and back). This forces you to identify what's truly important.
 
@@ -1194,6 +1568,17 @@ Every subject should be compressed into ONE page (front and back). This forces y
 ```
 
 ### Digital Revision System
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-handwritten.svg" alt="Handwritten: Digital Revision System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-diagram.svg" alt="Diagram: Digital Revision System" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/digital-revision-system-sticky.svg" alt="Sticky Note: Digital Revision System" width="30%">
+</a>
+
 
 ```typescript
 interface RevisionNote {
@@ -1250,6 +1635,17 @@ Every candidate faces a disastrous mock test. The difference between success and
 
 ### The 24-Hour Recovery Protocol
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-handwritten.svg" alt="Handwritten: The 24-Hour Recovery Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-diagram.svg" alt="Diagram: The 24-Hour Recovery Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-24-hour-recovery-protocol-sticky.svg" alt="Sticky Note: The 24-Hour Recovery Protocol" width="30%">
+</a>
+
+
 ```
 IMMEDIATELY AFTER (First 30 min):
   - Put the test away completely
@@ -1283,6 +1679,17 @@ The Pareto Principle applies powerfully to exam prep — 80% of your score comes
 
 ### The 80/20 Analysis
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-handwritten.svg" alt="Handwritten: The 80/20 Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-diagram.svg" alt="Diagram: The 80/20 Analysis" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-80-20-analysis-sticky.svg" alt="Sticky Note: The 80/20 Analysis" width="30%">
+</a>
+
+
 | Exam Type | Top 20% Topics (80% of Score) |
 |-----------|-------------------------------|
 | GATE CS | DS&Algo + OS + DBMS + CN + General Aptitude |
@@ -1293,6 +1700,17 @@ The Pareto Principle applies powerfully to exam prep — 80% of your score comes
 | University Exam | PYQs patterns + high-weightage chapters |
 
 ### Applying the 80/20 Rule
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-handwritten.svg" alt="Handwritten: Applying the 80/20 Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-diagram.svg" alt="Diagram: Applying the 80/20 Rule" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/applying-the-80-20-rule-sticky.svg" alt="Sticky Note: Applying the 80/20 Rule" width="30%">
+</a>
+
 
 ```
 WRONG WAY: Study all topics equally → 20% effort per topic = 20% score
@@ -1312,6 +1730,17 @@ Even better: Identify the top 5% that delivers 60% of marks and master those
 Anki is the most powerful revision tool for theory-heavy exams.
 
 ### Anki Setup for Exams
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-handwritten.svg" alt="Handwritten: Anki Setup for Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-diagram.svg" alt="Diagram: Anki Setup for Exams" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/anki-setup-for-exams-sticky.svg" alt="Sticky Note: Anki Setup for Exams" width="30%">
+</a>
+
 
 **Deck Structure:**
 
@@ -1375,6 +1804,17 @@ Negative marking changes your strategy significantly.
 
 ### The Negative Marking Formula
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-handwritten.svg" alt="Handwritten: The Negative Marking Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-diagram.svg" alt="Diagram: The Negative Marking Formula" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-negative-marking-formula-sticky.svg" alt="Sticky Note: The Negative Marking Formula" width="30%">
+</a>
+
+
 ```
 Expected Value = (Probability of Correct × Marks) - (Probability of Wrong × Penalty)
 
@@ -1386,6 +1826,17 @@ For a 1-mark question with -1/4 penalty:
 
 ### Decision Matrix
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-handwritten.svg" alt="Handwritten: Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-diagram.svg" alt="Diagram: Decision Matrix" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/decision-matrix-sticky.svg" alt="Sticky Note: Decision Matrix" width="30%">
+</a>
+
+
 | Confidence Level | Options Eliminated | Action |
 |------------------|-------------------|--------|
 | 100% sure | N/A | Definite attempt |
@@ -1395,6 +1846,17 @@ For a 1-mark question with -1/4 penalty:
 | No idea | 0 eliminated | Always skip |
 
 ### Marking Scheme Strategy by Exam
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-handwritten.svg" alt="Handwritten: Marking Scheme Strategy by Exam" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-diagram.svg" alt="Diagram: Marking Scheme Strategy by Exam" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/marking-scheme-strategy-by-exam-sticky.svg" alt="Sticky Note: Marking Scheme Strategy by Exam" width="30%">
+</a>
+
 
 | Exam | Marking | Strategy |
 |------|---------|----------|
@@ -1411,6 +1873,17 @@ For a 1-mark question with -1/4 penalty:
 Use the **Weak Area Improvement Protocol (WAIP)**:
 
 ### 6-Step WAIP
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-handwritten.svg" alt="Handwritten: 6-Step WAIP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-diagram.svg" alt="Diagram: 6-Step WAIP" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/6-step-waip-sticky.svg" alt="Sticky Note: 6-Step WAIP" width="30%">
+</a>
+
 
 ```
 STEP 1: Identify
@@ -1439,6 +1912,17 @@ STEP 6: Maintain
 ```
 
 ### Tracking Improvement
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-handwritten.svg" alt="Handwritten: Tracking Improvement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-diagram.svg" alt="Diagram: Tracking Improvement" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/tracking-improvement-sticky.svg" alt="Sticky Note: Tracking Improvement" width="30%">
+</a>
+
 
 ```typescript
 interface WeakArea {
@@ -1486,6 +1970,17 @@ Some exams (UPSC Mains, IBPS PO Mains, university exams) have descriptive sectio
 
 ### Descriptive Exam Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-handwritten.svg" alt="Handwritten: Descriptive Exam Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-diagram.svg" alt="Diagram: Descriptive Exam Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/descriptive-exam-strategy-sticky.svg" alt="Sticky Note: Descriptive Exam Strategy" width="30%">
+</a>
+
+
 **Answer Writing Framework:**
 
 ```
@@ -1529,6 +2024,17 @@ Most modern exams are computer-based. Here's how to optimize for CBT.
 
 ### CBT-Specific Strategies
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-handwritten.svg" alt="Handwritten: CBT-Specific Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-diagram.svg" alt="Diagram: CBT-Specific Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-specific-strategies-sticky.svg" alt="Sticky Note: CBT-Specific Strategies" width="30%">
+</a>
+
+
 | Challenge | Solution |
 |-----------|----------|
 | No scratch paper (some exams) | Use virtual notepad, practice mental calculations |
@@ -1540,6 +2046,17 @@ Most modern exams are computer-based. Here's how to optimize for CBT.
 | System crash during exam | Inform invigilator immediately, time will be compensated |
 
 ### CBT Practice Protocol
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-handwritten.svg" alt="Handwritten: CBT Practice Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-diagram.svg" alt="Diagram: CBT Practice Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/cbt-practice-protocol-sticky.svg" alt="Sticky Note: CBT Practice Protocol" width="30%">
+</a>
+
 
 ```
 WEEKLY CBT PRACTICE:
@@ -1556,6 +2073,17 @@ WEEKLY CBT PRACTICE:
 ## Q247: How do I prepare for group discussions and interviews?
 
 ### GD Preparation Strategy
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-handwritten.svg" alt="Handwritten: GD Preparation Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-diagram.svg" alt="Diagram: GD Preparation Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/gd-preparation-strategy-sticky.svg" alt="Sticky Note: GD Preparation Strategy" width="30%">
+</a>
+
 
 | GD Topic Type | Preparation Approach | Key Techniques |
 |---------------|---------------------|----------------|
@@ -1585,6 +2113,17 @@ CLOSING (Last 30 sec):
 
 ### Interview Preparation Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-handwritten.svg" alt="Handwritten: Interview Preparation Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-diagram.svg" alt="Diagram: Interview Preparation Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/interview-preparation-strategy-sticky.svg" alt="Sticky Note: Interview Preparation Strategy" width="30%">
+</a>
+
+
 | Interview Type | Preparation Focus | Key Questions |
 |----------------|------------------|---------------|
 | Technical | Core CS concepts, projects, coding | "Explain OS paging", "Write a function to..." |
@@ -1599,6 +2138,17 @@ CLOSING (Last 30 sec):
 Track your preparation to stay motivated and identify blind spots.
 
 ### Preparation Dashboard
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-handwritten.svg" alt="Handwritten: Preparation Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-diagram.svg" alt="Diagram: Preparation Dashboard" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/preparation-dashboard-sticky.svg" alt="Sticky Note: Preparation Dashboard" width="30%">
+</a>
+
 
 ```typescript
 interface PrepMetrics {
@@ -1655,6 +2205,17 @@ Exam patterns change. New topics appear. Here's how to handle it.
 
 ### The Surprise Topic Protocol
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-handwritten.svg" alt="Handwritten: The Surprise Topic Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-diagram.svg" alt="Diagram: The Surprise Topic Protocol" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-surprise-topic-protocol-sticky.svg" alt="Sticky Note: The Surprise Topic Protocol" width="30%">
+</a>
+
+
 ```
 BEFORE THE EXAM (Preparation):
   - Cover at least 80% of syllabus → you can afford 20% surprise
@@ -1680,6 +2241,17 @@ AFTER THE EXAM:
 Consistency is key — follow the same routine regardless of exam.
 
 ### T-24 Hours Checklist
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-handwritten.svg" alt="Handwritten: T-24 Hours Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-diagram.svg" alt="Diagram: T-24 Hours Checklist" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/t-24-hours-checklist-sticky.svg" alt="Sticky Note: T-24 Hours Checklist" width="30%">
+</a>
+
 
 ```
 T-24 hours (Yesterday morning):
@@ -1729,6 +2301,17 @@ Many candidates take 2-3 attempts to crack competitive exams. Here's how to appr
 
 ### The Multi-Attempt Strategy
 
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-handwritten.svg" alt="Handwritten: The Multi-Attempt Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-diagram.svg" alt="Diagram: The Multi-Attempt Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/the-multi-attempt-strategy-sticky.svg" alt="Sticky Note: The Multi-Attempt Strategy" width="30%">
+</a>
+
+
 ```
 ATTEMPT 1: Learning Attempt
   Goal: Experience the real exam, identify gaps
@@ -1762,6 +2345,17 @@ ATTEMPT 3: Final Attempt (if needed)
 This repository contains everything you need for GATE CS, IBPS SO, NIC Scientist, and general interview prep.
 
 ### Mapping Repository Content to Exam Preparation
+
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-handwritten.svg" alt="Handwritten: Mapping Repository Content to Exam Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-diagram.svg" alt="Diagram: Mapping Repository Content to Exam Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-15-exam-cracking-mastery/mapping-repository-content-to-exam-preparation-sticky.svg" alt="Sticky Note: Mapping Repository Content to Exam Preparation" width="30%">
+</a>
+
 
 | Need | Where to Find | How to Use |
 |------|---------------|------------|

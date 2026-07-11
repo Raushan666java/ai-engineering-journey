@@ -57,6 +57,17 @@ flowchart LR
 
 ### 12.1 Definition
 
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" alt="Handwritten: 12.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" alt="Diagram: 12.1 Definition" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" alt="Sticky Note: 12.1 Definition" width="30%">
+</a>
+
+
 A **Boolean algebra** is a set $B$ with two binary operations $+$ (OR), $\cdot$ (AND), and a unary operation $'$ (complement/NOT), satisfying:
 
 1. **Closure:** $a + b \in B$, $a \cdot b \in B$, $a' \in B$.
@@ -71,6 +82,17 @@ The standard Boolean algebra is $B = \{0, 1\}$ with these operations.
 > **One-Sentence Takeaway:** Boolean algebra is an algebraic structure on $\{0,1\}$ with AND, OR, and NOT ? every identity follows from the six axiom groups.
 
 ### 12.2 Basic Identities
+
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" alt="Handwritten: 12.2 Basic Identities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" alt="Diagram: 12.2 Basic Identities" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" alt="Sticky Note: 12.2 Basic Identities" width="30%">
+</a>
+
 
 **Theorem 12.1 (Idempotent laws).**
 - $x + x = x$
@@ -94,6 +116,17 @@ The standard Boolean algebra is $B = \{0, 1\}$ with these operations.
 
 ### 12.3 Duality
 
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" alt="Handwritten: 12.3 Duality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" alt="Diagram: 12.3 Duality" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" alt="Sticky Note: 12.3 Duality" width="30%">
+</a>
+
+
 The **dual** of a Boolean expression replaces $+$ with $\cdot$, $\cdot$ with $+$, $0$ with $1$, and $1$ with $0$. The dual of every Boolean identity is also an identity.
 
 **Example:** Dual of $x + (y \cdot z)$ is $x \cdot (y + z)$.
@@ -102,6 +135,17 @@ Dual of $x + 0 = x$ is $x \cdot 1 = x$.
 > **One-Sentence Takeaway:** Duality halves the work ? every proven identity gives its dual for free.
 
 ### 12.4 Boolean Functions
+
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" alt="Handwritten: 12.4 Boolean Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" alt="Diagram: 12.4 Boolean Functions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" alt="Sticky Note: 12.4 Boolean Functions" width="30%">
+</a>
+
 
 An $n$-variable Boolean function is a function $f: \{0,1\}^n \rightarrow \{0,1\}$. It can be represented by:
 
@@ -143,6 +187,17 @@ function evaluateBooleanExpr(
 > **One-Sentence Takeaway:** Any Boolean function can be expressed as either a sum of minterms (SOP) or a product of maxterms (POS); these are canonical forms.
 
 ### 12.5 Logic Gates
+
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" alt="Handwritten: 12.5 Logic Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" alt="Diagram: 12.5 Logic Gates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" alt="Sticky Note: 12.5 Logic Gates" width="30%">
+</a>
+
 
 **AND gate (2-input):** Output is 1 iff both inputs are 1. Symbol: $\cdot$.
 
@@ -187,6 +242,17 @@ function fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
 
 ### 12.6 Minimization with Karnaugh Maps
 
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" alt="Handwritten: 12.6 Minimization with Karnaugh Maps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" alt="Diagram: 12.6 Minimization with Karnaugh Maps" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" alt="Sticky Note: 12.6 Minimization with Karnaugh Maps" width="30%">
+</a>
+
+
 **Karnaugh map (K-map):** A graphical method for minimizing Boolean expressions with up to 4-6 variables.
 
 **Rules for K-map minimization:**
@@ -208,6 +274,17 @@ Groups: column $y=1$ ? $y$.
 > **One-Sentence Takeaway:** K-maps minimize Boolean expressions by grouping adjacent 1s into the largest power-of-2 rectangles, eliminating variables that change within the group.
 
 ### 12.7 Quine-McCluskey Algorithm
+
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 12.7 Quine-McCluskey Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 12.7 Quine-McCluskey Algorithm" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 12.7 Quine-McCluskey Algorithm" width="30%">
+</a>
+
 
 An algorithmic (tabular) method for minimizing Boolean functions with any number of variables.
 
@@ -246,6 +323,17 @@ function quineMcCluskey(minterms: number[], variables: number): number[][] {
 > **One-Sentence Takeaway:** Quine-McCluskey algorithmically finds all prime implicants and selects the minimum cover ? it is the computational version of K-map minimization.
 
 ### 12.8 Don't Care Conditions
+
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" alt="Handwritten: 12.8 Don't Care Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" alt="Diagram: 12.8 Don't Care Conditions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" alt="Sticky Note: 12.8 Don't Care Conditions" width="30%">
+</a>
+
 
 **Don't care conditions** are input combinations that cannot occur or whose output value is irrelevant. They can be treated as either 0 or 1 to simplify the expression.
 

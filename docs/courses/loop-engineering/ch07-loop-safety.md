@@ -43,6 +43,17 @@ flowchart LR
 
 ### 1.1 Runaway Loops
 
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" alt="Handwritten: 1.1 Runaway Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" alt="Diagram: 1.1 Runaway Loops" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" alt="Sticky Note: 1.1 Runaway Loops" width="30%">
+</a>
+
+
 A **runaway loop** occurs when a feedback cycle amplates without bound. In agent systems this manifests as three distinct failure modes:
 
 **Infinite retries.** An LLM call returns a malformed response. The agent retries. The LLM returns the same malformed response. This repeats until the token budget is exhausted or the call stack overflows. The root cause is often a prompt that does not constrain the output format sufficiently, combined with a retry strategy that assumes eventual success.
@@ -54,6 +65,17 @@ A **runaway loop** occurs when a feedback cycle amplates without bound. In agent
 The **formal condition** for a runaway loop is a positive feedback gain ≥ 1. If each iteration costs `c` and the expected iterations to success is `E[n]`, the total expected cost is `c · E[n]`. When retries are unbounded and success probability per attempt `p < 1`, `E[n] = 1/p` — but this assumes independence. In practice, repeated failures often decrease `p` (the agent gets confused, context grows stale), making `E[n]` diverge.
 
 ### 1.2 Reward Hacking and Goal Misgeneralization
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" alt="Handwritten: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" alt="Diagram: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" alt="Sticky Note: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+</a>
+
 
 **Reward hacking** is when an agent maximizes a proxy reward at the expense of the true objective. The canonical example: an agent trained to maximize game score finds a bug that awards infinite points without actually playing.
 
@@ -73,6 +95,17 @@ In LLM agent loops, reward hacking takes subtle forms:
 - **Oversight loops.** A human-in-the-loop reviews a random sample of agent outputs.
 
 ### 1.3 Loop Arrest and Local Optima
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" alt="Handwritten: 1.3 Loop Arrest and Local Optima" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" alt="Diagram: 1.3 Loop Arrest and Local Optima" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" alt="Sticky Note: 1.3 Loop Arrest and Local Optima" width="30%">
+</a>
+
 
 **Loop arrest** is when an optimization loop converges to a fixed point that is not globally optimal. The loop continues executing but produces no improvement.
 
@@ -98,6 +131,17 @@ Practical techniques:
 
 ### 1.4 Cascading Loops in Multi-Agent Systems
 
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" alt="Handwritten: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" alt="Diagram: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" alt="Sticky Note: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+</a>
+
+
 When multiple agents interact, one agent's loop failure can propagate:
 
 **Direct cascade.** Agent A enters a runaway loop. Agent B depends on A's output. B retries, but A produces the same faulty output each time. B accumulates context and eventually fails too.
@@ -113,6 +157,17 @@ When multiple agents interact, one agent's loop failure can propagate:
 - **Saga pattern with compensating actions.** If a chain of agents fails midway, compensating actions roll back partial work.
 
 ### 1.5 Circuit Breaker Pattern
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 1.5 Circuit Breaker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" alt="Diagram: 1.5 Circuit Breaker Pattern" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 1.5 Circuit Breaker Pattern" width="30%">
+</a>
+
 
 The **circuit breaker** is a state machine that prevents cascading failures. It was popularized by Michael Nygard's *Release It!* and is essential for agent loop safety:
 
@@ -178,6 +233,17 @@ async function runAgentWithCircuitBreaker(input: Input): Promise<Output> {
 ## 2. Examples
 
 ### 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" alt="Handwritten: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" alt="Diagram: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" alt="Sticky Note: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -336,6 +402,17 @@ console.log(JSON.stringify(governor.report, null, 2));
 ```
 
 ### 2.2 RetryKillSwitch — Detect Repeated Identical Actions
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" alt="Handwritten: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" alt="Diagram: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" alt="Sticky Note: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -497,6 +574,17 @@ console.log(`\nHealthy agent result: killed=${killSwitch.isKilled}`);
 ```
 
 ### 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" alt="Handwritten: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" alt="Diagram: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" alt="Sticky Note: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+</a>
+
 
 ```typescript
 /**
@@ -1494,6 +1582,17 @@ main();
 
 ### Mermaid: Safety Monitor Pipeline
 
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" alt="Handwritten: Mermaid: Safety Monitor Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" alt="Diagram: Mermaid: Safety Monitor Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" alt="Sticky Note: Mermaid: Safety Monitor Pipeline" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     subgraph Guards["Safety Monitor Pipeline"]
@@ -2134,6 +2233,17 @@ main();
 
 ### 4.1 Review
 
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" alt="Handwritten: 4.1 Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" alt="Diagram: 4.1 Review" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" alt="Sticky Note: 4.1 Review" width="30%">
+</a>
+
+
 1. What distinguishes a runaway loop from a normal iteration loop? Give the formal condition.
 2. Explain the difference between reward hacking and goal misgeneralization using examples.
 3. Describe the three states of the circuit breaker pattern and when each transition occurs.
@@ -2142,6 +2252,17 @@ main();
 
 ### 4.2 Application
 
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" alt="Handwritten: 4.2 Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" alt="Diagram: 4.2 Application" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" alt="Sticky Note: 4.2 Application" width="30%">
+</a>
+
+
 6. You deploy a code-generation agent with a $10 budget cap. The agent calls GPT-4 ($0.03/1K input, $0.06/1K output) with 4K input tokens and 1K output tokens per iteration. How many iterations until the budget kills the loop if each iteration costs the same? What if the context grows by 2K input tokens per iteration?
 
 7. Design a **canary agent** pattern: a low-cost, minimal agent that runs side-by-side with the production agent. The canary has tighter budgets and faster failure detection. If the canary dies, the production agent is stopped. Write the TypeScript interface for a CanarySupervisor that watches the canary's health and trips the circuit breaker for the production agent.
@@ -2149,6 +2270,17 @@ main();
 8. A multi-agent system has Agent A (code generator), Agent B (reviewer), and Agent C (executor). Agent B depends on Agent A's output; Agent C depends on Agent B's approval. If Agent A enters a runaway loop that repeats the same faulty output, describe the cascade. Add circuit breakers to each agent with different thresholds. Write the cascade model in TypeScript.
 
 ### 4.3 Challenge
+
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" alt="Handwritten: 4.3 Challenge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" alt="Diagram: 4.3 Challenge" width="30%">
+</a>
+<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" alt="Sticky Note: 4.3 Challenge" width="30%">
+</a>
+
 
 9. **Build a CascadeMonitor.** Design and implement a TypeScript class `CascadeMonitor` that:
    - Watches N agents running in parallel

@@ -397,6 +397,17 @@ The stakeholder receives a concise diagnosis: "ROAS dropped from 3.2x to 1.8x be
 
 ### Marketing Interview Question Generator
 
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-handwritten.svg" alt="Handwritten: Marketing Interview Question Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-diagram.svg" alt="Diagram: Marketing Interview Question Generator" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/marketing-interview-question-generator-sticky.svg" alt="Sticky Note: Marketing Interview Question Generator" width="30%">
+</a>
+
+
 ```typescript
 interface MarketingQuestion {
   id: string;
@@ -502,6 +513,17 @@ class MarketingInterviewQuestionGenerator {
 
 ### Campaign ROI Analyzer
 
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-handwritten.svg" alt="Handwritten: Campaign ROI Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-diagram.svg" alt="Diagram: Campaign ROI Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-roi-analyzer-sticky.svg" alt="Sticky Note: Campaign ROI Analyzer" width="30%">
+</a>
+
+
 ```typescript
 interface CampaignMetrics {
   id: string;
@@ -570,6 +592,17 @@ class CampaignROIAnalyzer {
 
 ### A/B Test Statistical Analyzer
 
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-handwritten.svg" alt="Handwritten: A/B Test Statistical Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-diagram.svg" alt="Diagram: A/B Test Statistical Analyzer" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/a-b-test-statistical-analyzer-sticky.svg" alt="Sticky Note: A/B Test Statistical Analyzer" width="30%">
+</a>
+
+
 ```typescript
 interface VariantData {
   id: string;
@@ -632,6 +665,17 @@ class ABTestAnalyzer {
 
 ### Campaign Optimization Cycle
 
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-handwritten.svg" alt="Handwritten: Campaign Optimization Cycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-diagram.svg" alt="Diagram: Campaign Optimization Cycle" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/campaign-optimization-cycle-sticky.svg" alt="Sticky Note: Campaign Optimization Cycle" width="30%">
+</a>
+
+
 ```mermaid
 flowchart TD
     A[Active Campaigns] --> B[Collect Analytics]
@@ -653,6 +697,17 @@ flowchart TD
 ```
 
 ### Lead Scoring & Nurturing Pipeline
+
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-handwritten.svg" alt="Handwritten: Lead Scoring & Nurturing Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-diagram.svg" alt="Diagram: Lead Scoring & Nurturing Pipeline" width="30%">
+</a>
+<a href="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/laravel/44-interview-marketing/lead-scoring-nurturing-pipeline-sticky.svg" alt="Sticky Note: Lead Scoring & Nurturing Pipeline" width="30%">
+</a>
+
 
 ```mermaid
 flowchart LR

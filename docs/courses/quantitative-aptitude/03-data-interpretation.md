@@ -14,6 +14,17 @@ By the end of this chapter, you will be able to:
 
 ### Introduction to Data Interpretation
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-handwritten.svg" alt="Handwritten: Introduction to Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-diagram.svg" alt="Diagram: Introduction to Data Interpretation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/introduction-to-data-interpretation-sticky.svg" alt="Sticky Note: Introduction to Data Interpretation" width="30%">
+</a>
+
+
 Data Interpretation (DI) is a major component of IBPS SO Quantitative Aptitude. In IBPS SO Prelims, 5–10 questions come from DI. The data is presented in various forms:
 
 1. **Table DI** — Data arranged in rows and columns
@@ -24,6 +35,17 @@ Data Interpretation (DI) is a major component of IBPS SO Quantitative Aptitude. 
 6. **Mixed Graphs** — Combination of two or more chart types
 
 ### 1. Table DI
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-handwritten.svg" alt="Handwritten: 1. Table DI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-diagram.svg" alt="Diagram: 1. Table DI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/1-table-di-sticky.svg" alt="Sticky Note: 1. Table DI" width="30%">
+</a>
+
 
 A table presents data in a structured format with rows and columns. Questions typically involve:
 - Finding specific values from the table
@@ -36,6 +58,17 @@ A table presents data in a structured format with rows and columns. Questions ty
 - Approximation where exact calculation is not needed
 
 ### 2. Bar Chart
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-handwritten.svg" alt="Handwritten: 2. Bar Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-diagram.svg" alt="Diagram: 2. Bar Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/2-bar-chart-sticky.svg" alt="Sticky Note: 2. Bar Chart" width="30%">
+</a>
+
 
 Bars can be vertical or horizontal, single or grouped (stacked or clustered).
 
@@ -52,6 +85,17 @@ Bars can be vertical or horizontal, single or grouped (stacked or clustered).
 
 ### 3. Line Chart
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-handwritten.svg" alt="Handwritten: 3. Line Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-diagram.svg" alt="Diagram: 3. Line Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/3-line-chart-sticky.svg" alt="Sticky Note: 3. Line Chart" width="30%">
+</a>
+
+
 Line charts typically show trends over time.
 
 **Key Calculations:**
@@ -61,6 +105,17 @@ Line charts typically show trends over time.
 - **Trend Analysis:** Identifying the steepest rise or fall
 
 ### 4. Pie Chart
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-handwritten.svg" alt="Handwritten: 4. Pie Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-diagram.svg" alt="Diagram: 4. Pie Chart" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/4-pie-chart-sticky.svg" alt="Sticky Note: 4. Pie Chart" width="30%">
+</a>
+
 
 A pie chart (360°) shows the composition of a whole.
 
@@ -83,6 +138,17 @@ Percentages can be directly converted to angles:
 
 ### 5. Caselet DI
 
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-handwritten.svg" alt="Handwritten: 5. Caselet DI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-diagram.svg" alt="Diagram: 5. Caselet DI" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/5-caselet-di-sticky.svg" alt="Sticky Note: 5. Caselet DI" width="30%">
+</a>
+
+
 Data is given in paragraph form without structured tables. You need to:
 - Extract data points carefully
 - Organise the data mentally or on rough paper
@@ -95,6 +161,17 @@ Data is given in paragraph form without structured tables. You need to:
 - Solve step by step
 
 ### 6. Mixed Graphs
+
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-handwritten.svg" alt="Handwritten: 6. Mixed Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-diagram.svg" alt="Diagram: 6. Mixed Graphs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/quantitative-aptitude/03-data-interpretation/6-mixed-graphs-sticky.svg" alt="Sticky Note: 6. Mixed Graphs" width="30%">
+</a>
+
 
 Two or more types of charts used together (e.g., bar chart + line chart, or pie chart + table).
 

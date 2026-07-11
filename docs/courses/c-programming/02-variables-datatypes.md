@@ -14,6 +14,17 @@
 
 ### Chapter at a Glance
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+</a>
+
+
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Variable Declarations | Must declare type before use; identifiers are case-sensitive | Use descriptive names like `student_count` over cryptic `n` |
@@ -54,6 +65,17 @@ A **variable** is a named storage location in memory that holds a value of a spe
 
 ### Real-World Analogy — Parking Lot
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-handwritten.svg" alt="Handwritten: Real-World Analogy — Parking Lot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-diagram.svg" alt="Diagram: Real-World Analogy — Parking Lot" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-sticky.svg" alt="Sticky Note: Real-World Analogy — Parking Lot" width="30%">
+</a>
+
+
 | Concept | Parking Lot Analogy |
 |---------|---------------------|
 | Variable name | Parking spot number (A7, B12) |
@@ -65,6 +87,17 @@ A **variable** is a named storage location in memory that holds a value of a spe
 | Uninitialized variable | Empty spot with unknown debris — using it is dangerous |
 
 ### 2.1.1 Declaration vs Definition vs Initialization
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-handwritten.svg" alt="Handwritten: 2.1.1 Declaration vs Definition vs Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-diagram.svg" alt="Diagram: 2.1.1 Declaration vs Definition vs Initialization" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-1-declaration-vs-definition-vs-initialization-sticky.svg" alt="Sticky Note: 2.1.1 Declaration vs Definition vs Initialization" width="30%">
+</a>
+
 
 These three terms are often conflated but are technically distinct in C:
 
@@ -113,6 +146,17 @@ int main(void)
 
 ### 2.1.2 Initialization Strategies
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-handwritten.svg" alt="Handwritten: 2.1.2 Initialization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-diagram.svg" alt="Diagram: 2.1.2 Initialization Strategies" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-2-initialization-strategies-sticky.svg" alt="Sticky Note: 2.1.2 Initialization Strategies" width="30%">
+</a>
+
+
 | Strategy | Syntax | Behavior |
 |----------|--------|----------|
 | Copy initialization | `int x = 5;` | Classic C style |
@@ -136,6 +180,17 @@ Step  | Variable | Operation        | Stack Address | Value    | Notes
 **Complexity:** Variable declaration, definition, and initialization all operate in O(1) time — they are compile-time or single-instruction operations at runtime.
 
 ### 2.1.3 Edge Cases in Variable Usage
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-handwritten.svg" alt="Handwritten: 2.1.3 Edge Cases in Variable Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-diagram.svg" alt="Diagram: 2.1.3 Edge Cases in Variable Usage" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-1-3-edge-cases-in-variable-usage-sticky.svg" alt="Sticky Note: 2.1.3 Edge Cases in Variable Usage" width="30%">
+</a>
+
 
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
@@ -181,9 +236,31 @@ Outer x again: 10
 
 ### Real-World Analogy — License Plates
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-handwritten.svg" alt="Handwritten: Real-World Analogy — License Plates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-diagram.svg" alt="Diagram: Real-World Analogy — License Plates" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-license-plates-sticky.svg" alt="Sticky Note: Real-World Analogy — License Plates" width="30%">
+</a>
+
+
 Just as license plates must follow DMV rules (letters, numbers, no special characters, unique within the system), C identifiers must follow grammatical rules enforced by the compiler.
 
 ### 2.2.1 The Rules
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-handwritten.svg" alt="Handwritten: 2.2.1 The Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-diagram.svg" alt="Diagram: 2.2.1 The Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-1-the-rules-sticky.svg" alt="Sticky Note: 2.2.1 The Rules" width="30%">
+</a>
+
 
 **Rule 1:** May contain letters (a–z, A–Z), digits (0–9), and underscores (`_`).
 **Rule 2:** Must begin with a letter or underscore (not a digit).
@@ -193,6 +270,17 @@ Just as license plates must follow DMV rules (letters, numbers, no special chara
 **Rule 6:** Implementation reserves identifiers beginning with underscore + capital letter or double underscore.
 
 ### 2.2.2 Valid vs Invalid Identifiers
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-handwritten.svg" alt="Handwritten: 2.2.2 Valid vs Invalid Identifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-diagram.svg" alt="Diagram: 2.2.2 Valid vs Invalid Identifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-2-valid-vs-invalid-identifiers-sticky.svg" alt="Sticky Note: 2.2.2 Valid vs Invalid Identifiers" width="30%">
+</a>
+
 
 | Identifier | Valid? | Reason |
 |------------|--------|--------|
@@ -209,6 +297,17 @@ Just as license plates must follow DMV rules (letters, numbers, no special chara
 
 ### 2.2.3 C Keywords (Cannot Be Used as Identifiers)
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-handwritten.svg" alt="Handwritten: 2.2.3 C Keywords (Cannot Be Used as Identifiers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-diagram.svg" alt="Diagram: 2.2.3 C Keywords (Cannot Be Used as Identifiers)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-3-c-keywords-cannot-be-used-as-identifiers-sticky.svg" alt="Sticky Note: 2.2.3 C Keywords (Cannot Be Used as Identifiers)" width="30%">
+</a>
+
+
 ```
 auto        double      int         struct      break       else
 long        switch      case        enum        register    typedef
@@ -221,6 +320,17 @@ _Noreturn   _Thread_local
 ```
 
 ### 2.2.4 Naming Conventions
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-handwritten.svg" alt="Handwritten: 2.2.4 Naming Conventions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-diagram.svg" alt="Diagram: 2.2.4 Naming Conventions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-2-4-naming-conventions-sticky.svg" alt="Sticky Note: 2.2.4 Naming Conventions" width="30%">
+</a>
+
 
 | Convention | Example | Where Used |
 |------------|---------|-----------|
@@ -256,6 +366,17 @@ int main(void)
 
 ### Real-World Analogy — Parking Lot Spot Sizes
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-handwritten.svg" alt="Handwritten: Real-World Analogy — Parking Lot Spot Sizes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-diagram.svg" alt="Diagram: Real-World Analogy — Parking Lot Spot Sizes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-spot-sizes-sticky.svg" alt="Sticky Note: Real-World Analogy — Parking Lot Spot Sizes" width="30%">
+</a>
+
+
 | Type | Analogy |
 |------|---------|
 | `char` | Motorcycle spot — 1 byte, small footprint |
@@ -272,6 +393,17 @@ C provides a small set of fundamental (built-in) types:
 
 ### 2.3.1 Complete Data Type Reference
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-handwritten.svg" alt="Handwritten: 2.3.1 Complete Data Type Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-diagram.svg" alt="Diagram: 2.3.1 Complete Data Type Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-1-complete-data-type-reference-sticky.svg" alt="Sticky Note: 2.3.1 Complete Data Type Reference" width="30%">
+</a>
+
+
 | Type | Keyword | Size (typical) | Format Specifier | Range (typical) | Precision |
 |------|---------|----------------|------------------|-----------------|-----------|
 | Character | `char` | 1 byte | `%c` | −128 to 127 or 0 to 255 | N/A |
@@ -285,6 +417,17 @@ C provides a small set of fundamental (built-in) types:
 | Void | `void` | 0 bytes (incomplete) | N/A | N/A | N/A |
 
 ### 2.3.2 The `void` Type
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-handwritten.svg" alt="Handwritten: 2.3.2 The `void` Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-diagram.svg" alt="Diagram: 2.3.2 The `void` Type" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-2-the-void-type-sticky.svg" alt="Sticky Note: 2.3.2 The `void` Type" width="30%">
+</a>
+
 
 `void` is a special type with several distinct uses:
 
@@ -328,6 +471,17 @@ Value via void*: 42
 
 ### 2.3.3 The `char` Type in Depth
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-handwritten.svg" alt="Handwritten: 2.3.3 The `char` Type in Depth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-diagram.svg" alt="Diagram: 2.3.3 The `char` Type in Depth" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-3-the-char-type-in-depth-sticky.svg" alt="Sticky Note: 2.3.3 The `char` Type in Depth" width="30%">
+</a>
+
+
 Characters in C are **integers** under the hood. Each character maps to an ASCII value:
 
 ```c
@@ -366,6 +520,17 @@ Digit '7' as integer: 7
 
 ### 2.3.4 Signed vs Unsigned char
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-handwritten.svg" alt="Handwritten: 2.3.4 Signed vs Unsigned char" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-diagram.svg" alt="Diagram: 2.3.4 Signed vs Unsigned char" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-4-signed-vs-unsigned-char-sticky.svg" alt="Sticky Note: 2.3.4 Signed vs Unsigned char" width="30%">
+</a>
+
+
 `char` can be signed or unsigned depending on the platform. For explicit intent:
 
 ```c
@@ -396,6 +561,17 @@ Overflow: -56
 
 ### 2.3.5 Edge Cases for Data Types
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-handwritten.svg" alt="Handwritten: 2.3.5 Edge Cases for Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-diagram.svg" alt="Diagram: 2.3.5 Edge Cases for Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-5-edge-cases-for-data-types-sticky.svg" alt="Sticky Note: 2.3.5 Edge Cases for Data Types" width="30%">
+</a>
+
+
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
 | char signedness | `char c = 200;` | Implementation-defined if char is signed (wraps) |
@@ -410,6 +586,17 @@ Overflow: -56
 
 ### 2.3.6 Advantages and Disadvantages of Data Types
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-handwritten.svg" alt="Handwritten: 2.3.6 Advantages and Disadvantages of Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-diagram.svg" alt="Diagram: 2.3.6 Advantages and Disadvantages of Data Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-6-advantages-and-disadvantages-of-data-types-sticky.svg" alt="Sticky Note: 2.3.6 Advantages and Disadvantages of Data Types" width="30%">
+</a>
+
+
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | Strong typing | Catches type mismatches at compile time | Verbose declarations |
@@ -420,6 +607,17 @@ Overflow: -56
 
 ### 2.3.7 Complexity
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-handwritten.svg" alt="Handwritten: 2.3.7 Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-diagram.svg" alt="Diagram: 2.3.7 Complexity" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-3-7-complexity-sticky.svg" alt="Sticky Note: 2.3.7 Complexity" width="30%">
+</a>
+
+
 All fundamental type operations (load, store, arithmetic) are **O(1)** — single CPU instructions. Type checking happens at compile time with zero runtime cost.
 
 ---
@@ -427,6 +625,17 @@ All fundamental type operations (load, store, arithmetic) are **O(1)** — singl
 ## 2.4 Type Modifiers
 
 ### Real-World Analogy — Parking Lot Modifier Signs
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-handwritten.svg" alt="Handwritten: Real-World Analogy — Parking Lot Modifier Signs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-diagram.svg" alt="Diagram: Real-World Analogy — Parking Lot Modifier Signs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-parking-lot-modifier-signs-sticky.svg" alt="Sticky Note: Real-World Analogy — Parking Lot Modifier Signs" width="30%">
+</a>
+
 
 | Modifier | Analogy |
 |----------|---------|
@@ -437,6 +646,17 @@ All fundamental type operations (load, store, arithmetic) are **O(1)** — singl
 | `short long` | Invalid — cannot be both (you cannot be compact and extended) |
 
 ### 2.4.1 Modifier Combinations
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-handwritten.svg" alt="Handwritten: 2.4.1 Modifier Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-diagram.svg" alt="Diagram: 2.4.1 Modifier Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-1-modifier-combinations-sticky.svg" alt="Sticky Note: 2.4.1 Modifier Combinations" width="30%">
+</a>
+
 
 Type modifiers `short`, `long`, `signed`, `unsigned` can be combined with integer types in specific ways:
 
@@ -457,6 +677,17 @@ Type modifiers `short`, `long`, `signed`, `unsigned` can be combined with intege
 | `unsigned long long` | `unsigned long long int` | 8 bytes | 0 to 2⁶⁴−1 |
 
 ### 2.4.2 Valid and Invalid Combinations
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-handwritten.svg" alt="Handwritten: 2.4.2 Valid and Invalid Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-diagram.svg" alt="Diagram: 2.4.2 Valid and Invalid Combinations" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-2-valid-and-invalid-combinations-sticky.svg" alt="Sticky Note: 2.4.2 Valid and Invalid Combinations" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -497,6 +728,17 @@ unsigned LL:  100000000000
 
 ### 2.4.3 Type Modifier Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-handwritten.svg" alt="Handwritten: 2.4.3 Type Modifier Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-diagram.svg" alt="Diagram: 2.4.3 Type Modifier Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-3-type-modifier-comparison-table-sticky.svg" alt="Sticky Note: 2.4.3 Type Modifier Comparison Table" width="30%">
+</a>
+
+
 | Modifier | Applies To | Effect on Size | Effect on Range |
 |----------|-----------|----------------|-----------------|
 | `short` | int | Minimizes (≥2 bytes) | Smaller range |
@@ -506,6 +748,17 @@ unsigned LL:  100000000000
 | `unsigned` | char, int types | No change | Doubles positive max, no negative |
 
 ### 2.4.4 long double
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-handwritten.svg" alt="Handwritten: 2.4.4 long double" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-diagram.svg" alt="Diagram: 2.4.4 long double" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-4-long-double-sticky.svg" alt="Sticky Note: 2.4.4 long double" width="30%">
+</a>
+
 
 `long double` is available on some platforms with extended precision:
 
@@ -529,6 +782,17 @@ sizeof(long double): 10 bytes (or 16 with padding)
 ```
 
 ### 2.4.5 Edge Cases for Type Modifiers
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-handwritten.svg" alt="Handwritten: 2.4.5 Edge Cases for Type Modifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-diagram.svg" alt="Diagram: 2.4.5 Edge Cases for Type Modifiers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-4-5-edge-cases-for-type-modifiers-sticky.svg" alt="Sticky Note: 2.4.5 Edge Cases for Type Modifiers" width="30%">
+</a>
+
 
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
@@ -653,6 +917,17 @@ x = 5 (still 5!)
 
 ### Real-World Analogy — Storage Lockers
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-handwritten.svg" alt="Handwritten: Real-World Analogy — Storage Lockers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-diagram.svg" alt="Diagram: Real-World Analogy — Storage Lockers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-storage-lockers-sticky.svg" alt="Sticky Note: Real-World Analogy — Storage Lockers" width="30%">
+</a>
+
+
 | Storage Class | Analogy |
 |---------------|---------|
 | `auto` | Temporary rental locker — created on entry, destroyed on exit |
@@ -664,6 +939,17 @@ x = 5 (still 5!)
 
 ### 2.6.1 Storage Class Comparison
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-handwritten.svg" alt="Handwritten: 2.6.1 Storage Class Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-diagram.svg" alt="Diagram: 2.6.1 Storage Class Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-1-storage-class-comparison-sticky.svg" alt="Sticky Note: 2.6.1 Storage Class Comparison" width="30%">
+</a>
+
+
 | Class | Keyword | Lifetime | Scope | Default Initialization | Storage Location |
 |-------|---------|----------|-------|----------------------|------------------|
 | Automatic | `auto` | Block duration | Block | Garbage (uninitialized) | Stack |
@@ -674,6 +960,17 @@ x = 5 (still 5!)
 | Typedef | `typedef` | N/A (compile-time alias) | Scope of definition | N/A | N/A |
 
 ### 2.6.2 `auto` — The Default
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-handwritten.svg" alt="Handwritten: 2.6.2 `auto` — The Default" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-diagram.svg" alt="Diagram: 2.6.2 `auto` — The Default" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-2-auto-the-default-sticky.svg" alt="Sticky Note: 2.6.2 `auto` — The Default" width="30%">
+</a>
+
 
 Every local variable is `auto` by default. Explicit use of `auto` is rare in modern C.
 
@@ -696,6 +993,17 @@ x = 42, y = 100
 ```
 
 ### 2.6.3 `register` — Hint to the Compiler
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-handwritten.svg" alt="Handwritten: 2.6.3 `register` — Hint to the Compiler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-diagram.svg" alt="Diagram: 2.6.3 `register` — Hint to the Compiler" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-3-register-hint-to-the-compiler-sticky.svg" alt="Sticky Note: 2.6.3 `register` — Hint to the Compiler" width="30%">
+</a>
+
 
 Suggests the variable be stored in a CPU register for fast access. Modern compilers largely ignore this hint.
 
@@ -720,6 +1028,17 @@ int main(void)
 - Primarily useful in embedded systems with limited registers.
 
 ### 2.6.4 `static` — Persistent Lifetime, Controlled Scope
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-handwritten.svg" alt="Handwritten: 2.6.4 `static` — Persistent Lifetime, Controlled Scope" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-diagram.svg" alt="Diagram: 2.6.4 `static` — Persistent Lifetime, Controlled Scope" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-4-static-persistent-lifetime-controlled-scope-sticky.svg" alt="Sticky Note: 2.6.4 `static` — Persistent Lifetime, Controlled Scope" width="30%">
+</a>
+
 
 **Local static:** Variable persists across function calls but is visible only inside the function.
 
@@ -773,6 +1092,17 @@ static void helper_function(void)  // visible only in this file
 
 ### 2.6.5 `extern` — Cross-File Visibility
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-handwritten.svg" alt="Handwritten: 2.6.5 `extern` — Cross-File Visibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-diagram.svg" alt="Diagram: 2.6.5 `extern` — Cross-File Visibility" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-5-extern-cross-file-visibility-sticky.svg" alt="Sticky Note: 2.6.5 `extern` — Cross-File Visibility" width="30%">
+</a>
+
+
 Declares a variable or function defined in another file.
 
 ```c
@@ -823,6 +1153,17 @@ Step | File      | Operation              | shared_counter Value
 
 ### 2.6.6 `typedef` — Type Aliases
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-handwritten.svg" alt="Handwritten: 2.6.6 `typedef` — Type Aliases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-diagram.svg" alt="Diagram: 2.6.6 `typedef` — Type Aliases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-6-typedef-type-aliases-sticky.svg" alt="Sticky Note: 2.6.6 `typedef` — Type Aliases" width="30%">
+</a>
+
+
 Creates an alias for an existing type. Improves readability and portability.
 
 ```c
@@ -856,6 +1197,17 @@ pointer value: 42
 
 ### 2.6.7 Advantages and Disadvantages of Storage Classes
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-handwritten.svg" alt="Handwritten: 2.6.7 Advantages and Disadvantages of Storage Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-diagram.svg" alt="Diagram: 2.6.7 Advantages and Disadvantages of Storage Classes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-7-advantages-and-disadvantages-of-storage-classes-sticky.svg" alt="Sticky Note: 2.6.7 Advantages and Disadvantages of Storage Classes" width="30%">
+</a>
+
+
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | auto | Simple default, automatic cleanup | No persistence, uninitialized by default |
@@ -866,6 +1218,17 @@ pointer value: 42
 | typedef | Improves readability, platform abstraction | Can obscure the underlying type |
 
 ### 2.6.8 Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-handwritten.svg" alt="Handwritten: 2.6.8 Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-diagram.svg" alt="Diagram: 2.6.8 Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-6-8-edge-cases-sticky.svg" alt="Sticky Note: 2.6.8 Edge Cases" width="30%">
+</a>
+
 
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
@@ -901,6 +1264,17 @@ int main(void)
 
 ### Real-World Analogy — Unchangeable Signs
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-handwritten.svg" alt="Handwritten: Real-World Analogy — Unchangeable Signs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-diagram.svg" alt="Diagram: Real-World Analogy — Unchangeable Signs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-unchangeable-signs-sticky.svg" alt="Sticky Note: Real-World Analogy — Unchangeable Signs" width="30%">
+</a>
+
+
 | Constant Type | Analogy |
 |---------------|---------|
 | `const` variable | Painted sign on a building — cannot be changed, but is physically present |
@@ -909,6 +1283,17 @@ int main(void)
 | Integer literal | Speed limit sign — value written directly in the code |
 
 ### 2.7.1 The `const` Qualifier
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-handwritten.svg" alt="Handwritten: 2.7.1 The `const` Qualifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-diagram.svg" alt="Diagram: 2.7.1 The `const` Qualifier" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-1-the-const-qualifier-sticky.svg" alt="Sticky Note: 2.7.1 The `const` Qualifier" width="30%">
+</a>
+
 
 A `const`-qualified variable cannot be modified after initialization. The compiler enforces this.
 
@@ -940,6 +1325,17 @@ int main(void)
 - Can be used with pointers: `const int *p` (pointer to const int) vs `int * const p` (const pointer to int).
 
 ### 2.7.2 `#define` Constants (Symbolic/Macro Constants)
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-handwritten.svg" alt="Handwritten: 2.7.2 `#define` Constants (Symbolic/Macro Constants)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-diagram.svg" alt="Diagram: 2.7.2 `#define` Constants (Symbolic/Macro Constants)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-2-define-constants-symbolic-macro-constants-sticky.svg" alt="Sticky Note: 2.7.2 `#define` Constants (Symbolic/Macro Constants)" width="30%">
+</a>
+
 
 `#define` is a preprocessor directive — it performs textual substitution before compilation.
 
@@ -983,6 +1379,17 @@ Area r=3 = 28.27431
 ```
 
 ### 2.7.3 `enum` Constants
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-handwritten.svg" alt="Handwritten: 2.7.3 `enum` Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-diagram.svg" alt="Diagram: 2.7.3 `enum` Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-3-enum-constants-sticky.svg" alt="Sticky Note: 2.7.3 `enum` Constants" width="30%">
+</a>
+
 
 `enum` defines a set of named integer constants, typically used for related values.
 
@@ -1030,6 +1437,17 @@ Next day number: 3
 
 ### 2.7.4 const vs #define vs enum — Comparison
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-handwritten.svg" alt="Handwritten: 2.7.4 const vs #define vs enum — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-diagram.svg" alt="Diagram: 2.7.4 const vs #define vs enum — Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-4-const-vs-define-vs-enum-comparison-sticky.svg" alt="Sticky Note: 2.7.4 const vs #define vs enum — Comparison" width="30%">
+</a>
+
+
 | Feature | `const` | `#define` | `enum` |
 |---------|---------|-----------|--------|
 | Type checking | Yes (compiler) | No (preprocessor) | Yes (int type) |
@@ -1067,6 +1485,17 @@ int main(void)
 
 ### 2.7.5 Integer Literal Suffixes
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-handwritten.svg" alt="Handwritten: 2.7.5 Integer Literal Suffixes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-diagram.svg" alt="Diagram: 2.7.5 Integer Literal Suffixes" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-5-integer-literal-suffixes-sticky.svg" alt="Sticky Note: 2.7.5 Integer Literal Suffixes" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -1092,6 +1521,17 @@ int main(void)
 
 ### 2.7.6 Edge Cases for Constants
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-handwritten.svg" alt="Handwritten: 2.7.6 Edge Cases for Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-diagram.svg" alt="Diagram: 2.7.6 Edge Cases for Constants" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-7-6-edge-cases-for-constants-sticky.svg" alt="Sticky Note: 2.7.6 Edge Cases for Constants" width="30%">
+</a>
+
+
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
 | const pointer to const | `const int * const p = &x;` | Neither pointer nor value can change |
@@ -1109,9 +1549,31 @@ int main(void)
 
 ### Real-World Analogy — Label Maker
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-handwritten.svg" alt="Handwritten: Real-World Analogy — Label Maker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-diagram.svg" alt="Diagram: Real-World Analogy — Label Maker" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-label-maker-sticky.svg" alt="Sticky Note: Real-World Analogy — Label Maker" width="30%">
+</a>
+
+
 printf is like a label maker that takes objects and prints them onto labels according to your format template. The format string specifies the layout, and each argument fills a slot.
 
 ### 2.8.1 Format Specifier Reference
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-handwritten.svg" alt="Handwritten: 2.8.1 Format Specifier Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-diagram.svg" alt="Diagram: 2.8.1 Format Specifier Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-1-format-specifier-reference-sticky.svg" alt="Sticky Note: 2.8.1 Format Specifier Reference" width="30%">
+</a>
+
 
 | Specifier | Output Type | Example | Output |
 |-----------|-------------|---------|--------|
@@ -1132,6 +1594,17 @@ printf is like a label maker that takes objects and prints them onto labels acco
 | `%Lf` | long double | `printf("%Lf", 3.14L)` | `3.140000` |
 
 ### 2.8.2 Width, Precision, and Flags
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-handwritten.svg" alt="Handwritten: 2.8.2 Width, Precision, and Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-diagram.svg" alt="Diagram: 2.8.2 Width, Precision, and Flags" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-2-width-precision-and-flags-sticky.svg" alt="Sticky Note: 2.8.2 Width, Precision, and Flags" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1174,6 +1647,17 @@ String width: '        hi'
 
 ### 2.8.3 Common printf Pitfalls
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-handwritten.svg" alt="Handwritten: 2.8.3 Common printf Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-diagram.svg" alt="Diagram: 2.8.3 Common printf Pitfalls" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-8-3-common-printf-pitfalls-sticky.svg" alt="Sticky Note: 2.8.3 Common printf Pitfalls" width="30%">
+</a>
+
+
 | Pitfall | Example | Consequence |
 |---------|---------|-------------|
 | Wrong specifier | `printf("%f", 42)` | Undefined behavior |
@@ -1191,9 +1675,31 @@ String width: '        hi'
 
 ### Real-World Analogy — Barcode Scanner
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-handwritten.svg" alt="Handwritten: Real-World Analogy — Barcode Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-diagram.svg" alt="Diagram: Real-World Analogy — Barcode Scanner" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-barcode-scanner-sticky.svg" alt="Sticky Note: Real-World Analogy — Barcode Scanner" width="30%">
+</a>
+
+
 scanf is like a barcode scanner that reads formatted input and decodes it into typed variables. It needs to know the target location (address) to write the result.
 
 ### 2.9.1 scanf Basics
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-handwritten.svg" alt="Handwritten: 2.9.1 scanf Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-diagram.svg" alt="Diagram: 2.9.1 scanf Basics" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-1-scanf-basics-sticky.svg" alt="Sticky Note: 2.9.1 scanf Basics" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1222,6 +1728,17 @@ int main(void)
 - Input whitespace (spaces, tabs, newlines) is automatically skipped for most specifiers.
 
 ### 2.9.2 The Newline Gotcha with `%c`
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-handwritten.svg" alt="Handwritten: 2.9.2 The Newline Gotcha with `%c`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-diagram.svg" alt="Diagram: 2.9.2 The Newline Gotcha with `%c`" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-2-the-newline-gotcha-with-c-sticky.svg" alt="Sticky Note: 2.9.2 The Newline Gotcha with `%c`" width="30%">
+</a>
+
 
 The `%c` specifier reads any character, including whitespace. This causes a common issue:
 
@@ -1252,6 +1769,17 @@ int main(void)
 ```
 
 ### 2.9.3 Input Validation
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-handwritten.svg" alt="Handwritten: 2.9.3 Input Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-diagram.svg" alt="Diagram: 2.9.3 Input Validation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-9-3-input-validation-sticky.svg" alt="Sticky Note: 2.9.3 Input Validation" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1284,6 +1812,17 @@ int main(void)
 
 ### Real-World Analogy — Currency Exchange
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-handwritten.svg" alt="Handwritten: Real-World Analogy — Currency Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-diagram.svg" alt="Diagram: Real-World Analogy — Currency Exchange" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-currency-exchange-sticky.svg" alt="Sticky Note: Real-World Analogy — Currency Exchange" width="30%">
+</a>
+
+
 | Conversion Type | Analogy |
 |-----------------|---------|
 | Implicit promotion | Exchanging USD to EUR — the bank automatically converts the smaller denomination |
@@ -1292,6 +1831,17 @@ int main(void)
 | Truncation | Cutting a 2x4 board to 1.8m — you lose the fractional part |
 
 ### 2.10.1 Implicit Conversion (Type Promotion)
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-handwritten.svg" alt="Handwritten: 2.10.1 Implicit Conversion (Type Promotion)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-diagram.svg" alt="Diagram: 2.10.1 Implicit Conversion (Type Promotion)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-1-implicit-conversion-type-promotion-sticky.svg" alt="Sticky Note: 2.10.1 Implicit Conversion (Type Promotion)" width="30%">
+</a>
+
 
 When operands of different types appear in an expression, C promotes the smaller type to the larger type using the **usual arithmetic conversions**.
 
@@ -1326,6 +1876,17 @@ int main(void)
 
 ### 2.10.2 Integer Promotion Rules
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-handwritten.svg" alt="Handwritten: 2.10.2 Integer Promotion Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-diagram.svg" alt="Diagram: 2.10.2 Integer Promotion Rules" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-2-integer-promotion-rules-sticky.svg" alt="Sticky Note: 2.10.2 Integer Promotion Rules" width="30%">
+</a>
+
+
 In any expression, types smaller than `int` (`char`, `short`, `_Bool`) are promoted to `int`.
 
 ```c
@@ -1351,6 +1912,17 @@ result_char = -56
 ```
 
 ### 2.10.3 Usual Arithmetic Conversions (Step-by-Step)
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-handwritten.svg" alt="Handwritten: 2.10.3 Usual Arithmetic Conversions (Step-by-Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-diagram.svg" alt="Diagram: 2.10.3 Usual Arithmetic Conversions (Step-by-Step)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-3-usual-arithmetic-conversions-step-by-step-sticky.svg" alt="Sticky Note: 2.10.3 Usual Arithmetic Conversions (Step-by-Step)" width="30%">
+</a>
+
 
 When binary operators have different types, this decision tree is followed:
 
@@ -1396,6 +1968,17 @@ Expression: long l + unsigned int ui
 
 ### 2.10.4 Explicit Conversion (Casting)
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-handwritten.svg" alt="Handwritten: 2.10.4 Explicit Conversion (Casting)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-diagram.svg" alt="Diagram: 2.10.4 Explicit Conversion (Casting)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-4-explicit-conversion-casting-sticky.svg" alt="Sticky Note: 2.10.4 Explicit Conversion (Casting)" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -1429,6 +2012,17 @@ Cast after division: 2.000000
 
 ### 2.10.5 Implicit vs Explicit Conversion Comparison
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-handwritten.svg" alt="Handwritten: 2.10.5 Implicit vs Explicit Conversion Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-diagram.svg" alt="Diagram: 2.10.5 Implicit vs Explicit Conversion Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-5-implicit-vs-explicit-conversion-comparison-sticky.svg" alt="Sticky Note: 2.10.5 Implicit vs Explicit Conversion Comparison" width="30%">
+</a>
+
+
 | Aspect | Implicit Conversion | Explicit Cast |
 |--------|-------------------|---------------|
 | Syntax | Automatic by compiler | `(type)expression` |
@@ -1439,6 +2033,17 @@ Cast after division: 2.000000
 | Risk | Unexpected truncation | Still possible to misuse |
 
 ### 2.10.6 Surprising Conversion Edge Cases
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-handwritten.svg" alt="Handwritten: 2.10.6 Surprising Conversion Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-diagram.svg" alt="Diagram: 2.10.6 Surprising Conversion Edge Cases" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-6-surprising-conversion-edge-cases-sticky.svg" alt="Sticky Note: 2.10.6 Surprising Conversion Edge Cases" width="30%">
+</a>
+
 
 | Edge Case | Code | Result |
 |-----------|------|--------|
@@ -1481,6 +2086,17 @@ After cast: -1 < 1 is TRUE
 
 ### 2.10.7 Precision Loss Examples
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-handwritten.svg" alt="Handwritten: 2.10.7 Precision Loss Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-diagram.svg" alt="Diagram: 2.10.7 Precision Loss Examples" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-10-7-precision-loss-examples-sticky.svg" alt="Sticky Note: 2.10.7 Precision Loss Examples" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -1517,6 +2133,17 @@ float:  123456792
 
 ### Real-World Analogy — Building Access
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-handwritten.svg" alt="Handwritten: Real-World Analogy — Building Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-diagram.svg" alt="Diagram: Real-World Analogy — Building Access" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/real-world-analogy-building-access-sticky.svg" alt="Sticky Note: Real-World Analogy — Building Access" width="30%">
+</a>
+
+
 | Scope Type | Analogy |
 |------------|---------|
 | Block scope | Hotel room — accessible only inside that room, destroyed on checkout |
@@ -1525,6 +2152,17 @@ float:  123456792
 | Prototype scope | Directory listing — valid only during the function declaration |
 
 ### 2.11.1 Scope Types
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-handwritten.svg" alt="Handwritten: 2.11.1 Scope Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-diagram.svg" alt="Diagram: 2.11.1 Scope Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-1-scope-types-sticky.svg" alt="Sticky Note: 2.11.1 Scope Types" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1559,6 +2197,17 @@ int main(void)
 
 ### 2.11.2 Scope Comparison Table
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-handwritten.svg" alt="Handwritten: 2.11.2 Scope Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-diagram.svg" alt="Diagram: 2.11.2 Scope Comparison Table" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-2-scope-comparison-table-sticky.svg" alt="Sticky Note: 2.11.2 Scope Comparison Table" width="30%">
+</a>
+
+
 | Scope Type | Keyword / Context | Visibility | Lifetime | Example |
 |------------|-------------------|------------|----------|---------|
 | Block scope | `{ }` | Inside the enclosing braces | Until `}` | `int x = 5;` inside a function |
@@ -1567,6 +2216,17 @@ int main(void)
 | Prototype scope | Parameter list | Inside the prototype only | Prototype evaluation | `void f(int x);` — x matters only here |
 
 ### 2.11.3 Lifetime Types
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-handwritten.svg" alt="Handwritten: 2.11.3 Lifetime Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-diagram.svg" alt="Diagram: 2.11.3 Lifetime Types" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/2-11-3-lifetime-types-sticky.svg" alt="Sticky Note: 2.11.3 Lifetime Types" width="30%">
+</a>
+
 
 | Lifetime | Duration | Variables |
 |----------|----------|-----------|
@@ -1616,6 +2276,17 @@ static: 3, auto: 1
 
 ### A. Data Types — Complete Reference
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-handwritten.svg" alt="Handwritten: A. Data Types — Complete Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-diagram.svg" alt="Diagram: A. Data Types — Complete Reference" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/a-data-types-complete-reference-sticky.svg" alt="Sticky Note: A. Data Types — Complete Reference" width="30%">
+</a>
+
+
 | Type | Size (bytes) | Min | Max | Format Specifier | Use Case |
 |------|-------------|-----|-----|-----------------|----------|
 | `char` | 1 | -128 or 0 | 127 or 255 | `%c` / `%hhd` | Characters, small counters |
@@ -1634,6 +2305,17 @@ static: 3, auto: 1
 | `long double` | 10/16 | varies | varies | `%Lf` | Maximum precision |
 
 ### B. Type Modifiers Comparison
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-handwritten.svg" alt="Handwritten: B. Type Modifiers Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-diagram.svg" alt="Diagram: B. Type Modifiers Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/b-type-modifiers-comparison-sticky.svg" alt="Sticky Note: B. Type Modifiers Comparison" width="30%">
+</a>
+
 
 | Modifier | Base Types | Effect | Rank (small to large) |
 |----------|-----------|--------|-----------------------|
@@ -1657,6 +2339,17 @@ static: 3, auto: 1
 
 ### C. Storage Classes Comparison
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-handwritten.svg" alt="Handwritten: C. Storage Classes Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-diagram.svg" alt="Diagram: C. Storage Classes Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/c-storage-classes-comparison-sticky.svg" alt="Sticky Note: C. Storage Classes Comparison" width="30%">
+</a>
+
+
 | Class | Keyword | Lifetime | Scope | Linkage | Default Init | Address Available? |
 |-------|---------|----------|-------|---------|-------------|-------------------|
 | Automatic | `auto` | Block | Block | None | Garbage | Yes |
@@ -1668,6 +2361,17 @@ static: 3, auto: 1
 
 ### D. Implicit vs Explicit Conversion
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-handwritten.svg" alt="Handwritten: D. Implicit vs Explicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-diagram.svg" alt="Diagram: D. Implicit vs Explicit Conversion" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/d-implicit-vs-explicit-conversion-sticky.svg" alt="Sticky Note: D. Implicit vs Explicit Conversion" width="30%">
+</a>
+
+
 | Criterion | Implicit Conversion | Explicit Cast |
 |-----------|-------------------|---------------|
 | Trigger | Compiler automatically | Programmer writes `(type)` |
@@ -1678,6 +2382,17 @@ static: 3, auto: 1
 | Recommendation | Accept for safe promotions | Use for all narrowing conversions |
 
 ### E. const vs #define vs enum
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-handwritten.svg" alt="Handwritten: E. const vs #define vs enum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-diagram.svg" alt="Diagram: E. const vs #define vs enum" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/e-const-vs-define-vs-enum-sticky.svg" alt="Sticky Note: E. const vs #define vs enum" width="30%">
+</a>
+
 
 | Feature | `const` | `#define` | `enum` |
 |---------|---------|-----------|--------|
@@ -1692,6 +2407,17 @@ static: 3, auto: 1
 
 ### F. Scope Comparison
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-handwritten.svg" alt="Handwritten: F. Scope Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-diagram.svg" alt="Diagram: F. Scope Comparison" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/f-scope-comparison-sticky.svg" alt="Sticky Note: F. Scope Comparison" width="30%">
+</a>
+
+
 | Scope Type | Where Declared | Visible In | Duration |
 |------------|---------------|------------|----------|
 | Block | Inside `{ }` | Within those braces | Block duration |
@@ -1705,6 +2431,17 @@ static: 3, auto: 1
 
 ### Q1: What does sizeof return? Is it a function or an operator?
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-handwritten.svg" alt="Handwritten: What does sizeof return? Is it a function or an operator?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-diagram.svg" alt="Diagram: What does sizeof return? Is it a function or an operator?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-does-sizeof-return-is-it-a-function-or-an-operator-sticky.svg" alt="Sticky Note: What does sizeof return? Is it a function or an operator?" width="30%">
+</a>
+
+
 **Answer:** sizeof is an **operator**, not a function. It is evaluated at compile time (except VLA) and returns `size_t` (unsigned integer type). Parentheses are required for types (`sizeof(int)`) but optional for expressions (`sizeof x`).
 
 ```c
@@ -1715,6 +2452,17 @@ printf("%zu\n", sizeof(int));  // OK
 ```
 
 ### Q2: Explain the difference between static and global variables.
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-handwritten.svg" alt="Handwritten: Explain the difference between static and global variables." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-diagram.svg" alt="Diagram: Explain the difference between static and global variables." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-the-difference-between-static-and-global-variables-sticky.svg" alt="Sticky Note: Explain the difference between static and global variables." width="30%">
+</a>
+
 
 **Answer:**
 
@@ -1732,6 +2480,17 @@ static int hidden = 2;   // visible ONLY in file1.c
 ```
 
 ### Q3: What is the difference between auto and register storage classes?
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-handwritten.svg" alt="Handwritten: What is the difference between auto and register storage classes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-diagram.svg" alt="Diagram: What is the difference between auto and register storage classes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-difference-between-auto-and-register-storage-classes-sticky.svg" alt="Sticky Note: What is the difference between auto and register storage classes?" width="30%">
+</a>
+
 
 **Answer:** Both have block scope and automatic lifetime. Key differences:
 - `register` suggests storage in a CPU register for faster access.
@@ -1751,6 +2510,17 @@ void example(void)
 
 ### Q4: When should I use const vs #define?
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-handwritten.svg" alt="Handwritten: When should I use const vs #define?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-diagram.svg" alt="Diagram: When should I use const vs #define?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/when-should-i-use-const-vs-define-sticky.svg" alt="Sticky Note: When should I use const vs #define?" width="30%">
+</a>
+
+
 **Answer:**
 
 | Use Case | Choose |
@@ -1764,6 +2534,17 @@ void example(void)
 | Debugger visibility needed | `const` or `enum` |
 
 ### Q5: Explain extern usage in multi-file projects.
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-handwritten.svg" alt="Handwritten: Explain extern usage in multi-file projects." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-diagram.svg" alt="Diagram: Explain extern usage in multi-file projects." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-extern-usage-in-multi-file-projects-sticky.svg" alt="Sticky Note: Explain extern usage in multi-file projects." width="30%">
+</a>
+
 
 **Answer:** `extern` declares a variable or function defined in another file. It does NOT allocate storage.
 
@@ -1790,9 +2571,31 @@ int main(void) {
 
 ### Q6: What is the output of sizeof(void)?
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-handwritten.svg" alt="Handwritten: What is the output of sizeof(void)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-diagram.svg" alt="Diagram: What is the output of sizeof(void)?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-is-the-output-of-sizeof-void-sticky.svg" alt="Sticky Note: What is the output of sizeof(void)?" width="30%">
+</a>
+
+
 **Answer:** `sizeof(void)` is a **compiler error** in standard C. `void` is an incomplete type that cannot be completed — it has no size. However, GCC as an extension defines `sizeof(void) == 1`.
 
 ### Q7: Explain integer promotion with an example.
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-handwritten.svg" alt="Handwritten: Explain integer promotion with an example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-diagram.svg" alt="Diagram: Explain integer promotion with an example." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/explain-integer-promotion-with-an-example-sticky.svg" alt="Sticky Note: Explain integer promotion with an example." width="30%">
+</a>
+
 
 **Answer:** When a `char` or `short` is used in an expression, it is promoted to `int`:
 
@@ -1809,6 +2612,17 @@ if (uc == 200)    // true — uc is promoted to int(200)
 
 ### Q8: Difference between int and long on 32-bit vs 64-bit.
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-handwritten.svg" alt="Handwritten: Difference between int and long on 32-bit vs 64-bit." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-diagram.svg" alt="Diagram: Difference between int and long on 32-bit vs 64-bit." width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/difference-between-int-and-long-on-32-bit-vs-64-bit-sticky.svg" alt="Sticky Note: Difference between int and long on 32-bit vs 64-bit." width="30%">
+</a>
+
+
 **Answer:**
 
 | System | int | long | pointer |
@@ -1820,6 +2634,17 @@ if (uc == 200)    // true — uc is promoted to int(200)
 Use `long long` for guaranteed 8 bytes across all platforms.
 
 ### Q9: What happens when unsigned int wraps past zero?
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-handwritten.svg" alt="Handwritten: What happens when unsigned int wraps past zero?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-diagram.svg" alt="Diagram: What happens when unsigned int wraps past zero?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/what-happens-when-unsigned-int-wraps-past-zero-sticky.svg" alt="Sticky Note: What happens when unsigned int wraps past zero?" width="30%">
+</a>
+
 
 **Answer:** Unsigned arithmetic wraps around modulo 2^n. This is **well-defined**:
 
@@ -1837,6 +2662,17 @@ Signed integer overflow is **undefined behavior**.
 
 ### Q10: Can const variables be used as array sizes?
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-handwritten.svg" alt="Handwritten: Can const variables be used as array sizes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-diagram.svg" alt="Diagram: Can const variables be used as array sizes?" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/can-const-variables-be-used-as-array-sizes-sticky.svg" alt="Sticky Note: Can const variables be used as array sizes?" width="30%">
+</a>
+
+
 **Answer:** In C89, no — array sizes must be compile-time constant expressions. In C99+, yes (VLA or const-qualified types):
 
 ```c
@@ -1852,6 +2688,17 @@ int arr2[SIZE];          // works in all C standards
 ## Applications in Real Systems
 
 ### Linux Kernel Coding Style
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-handwritten.svg" alt="Handwritten: Linux Kernel Coding Style" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-diagram.svg" alt="Diagram: Linux Kernel Coding Style" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/linux-kernel-coding-style-sticky.svg" alt="Sticky Note: Linux Kernel Coding Style" width="30%">
+</a>
+
 
 The Linux kernel has strict type guidelines:
 
@@ -1880,6 +2727,17 @@ u32 reg_value = readl(REG_ADDR);  // hardware register is exactly 32 bits
 
 ### Embedded Systems Type Choices
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-handwritten.svg" alt="Handwritten: Embedded Systems Type Choices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-diagram.svg" alt="Diagram: Embedded Systems Type Choices" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/embedded-systems-type-choices-sticky.svg" alt="Sticky Note: Embedded Systems Type Choices" width="30%">
+</a>
+
+
 ```c
 #include <stdint.h>
 #include <stdio.h>
@@ -1907,6 +2765,17 @@ int main(void)
 
 ### Financial Applications
 
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-handwritten.svg" alt="Handwritten: Financial Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-diagram.svg" alt="Diagram: Financial Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/financial-applications-sticky.svg" alt="Sticky Note: Financial Applications" width="30%">
+</a>
+
+
 ```c
 #include <stdio.h>
 
@@ -1930,6 +2799,17 @@ int main(void)
 ```
 
 ### Network Protocols
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-handwritten.svg" alt="Handwritten: Network Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-diagram.svg" alt="Diagram: Network Protocols" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/network-protocols-sticky.svg" alt="Sticky Note: Network Protocols" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>
@@ -1958,6 +2838,17 @@ int main(void)
 ```
 
 ### Graphics Programming
+
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-handwritten.svg" alt="Handwritten: Graphics Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-diagram.svg" alt="Diagram: Graphics Programming" width="30%">
+</a>
+<a href="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/c-programming/02-variables-datatypes/graphics-programming-sticky.svg" alt="Sticky Note: Graphics Programming" width="30%">
+</a>
+
 
 ```c
 #include <stdio.h>

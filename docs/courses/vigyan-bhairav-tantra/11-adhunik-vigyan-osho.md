@@ -72,6 +72,17 @@ flowchart TB
 
 ### "पदार्थ मिथ्या है — चेतना ही सत्य है"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+</a>
+
+
 > **ओशो वाणी:**
 > *"न्यूटन का भौतिकी कहता था — पदार्थ ही सब कुछ है। चेतना तो पदार्थ का एक उप-उत्पाद है। लेकिन क्वांटम भौतिकी ने यह सिद्ध कर दिया कि पदार्थ कोई चीज़ नहीं है — वह तो केवल एक संभावना है, एक तरंग है, एक नृत्य है। और उस नृत्य को देखने वाला चेतना — वही सत्य है। तंत्र ने पाँच हज़ार साल पहले यही कहा था।"*
 
@@ -87,10 +98,32 @@ flowchart TB
 
 ### ओशो और हाइज़ेनबर्ग
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और हाइज़ेनबर्ग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और हाइज़ेनबर्ग" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और हाइज़ेनबर्ग" width="30%">
+</a>
+
+
 > **ओशो वाणी:**
 > *"हाइज़ेनबर्ग ने कहा — तुम किसी कण की स्थिति और गति दोनों को एक साथ नहीं माप सकते। जितना सटीकता से स्थिति मापोगे, उतना ही गति अनिश्चित हो जाएगी। यह कोई भौतिकी का नियम नहीं है — यह चेतना का नियम है। चेतना को भी पकड़ा नहीं जा सकता। जितना तुम चेतना को पकड़ने की कोशिश करोगे, वह उतनी ही फिसलती जाएगी। चेतना को पकड़ा नहीं जाता — चेतना को होने दिया जाता है।"*
 
 ### ओशो और श्रोडिंजर
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और श्रोडिंजर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और श्रोडिंजर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और श्रोडिंजर" width="30%">
+</a>
+
 
 एरविन श्रोडिंजर — नोबेल पुरस्कार विजेता भौतिक विज्ञानी — ने अपनी पुस्तक "व्हाट इज़ लाइफ़" में लिखा — "चेतना एक है। अनेकता केवल दिखाई देती है।" ओशो को यह बात बहुत प्रिय थी।
 
@@ -125,6 +158,17 @@ sequenceDiagram
 
 ### फ्रायड — "आधा सच, पूरा झूठ"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+</a>
+
+
 > **ओशो वाणी:**
 > *"फ्रायड एक महान खोजकर्ता था — लेकिन उसने मनुष्य का केवल आधा नक्शा बनाया। उसने अचेतन को खोजा — लेकिन वह अचेतन से डर गया। उसने कामना को देखा — लेकिन वह कामना से घबरा गया। फ्रायड ने मनुष्य को बीमार देखा — और वह सही भी था। लेकिन वह यह नहीं देख सका कि मनुष्य परम चेतना भी हो सकता है। उसने केवल नीचे देखा — ऊपर नहीं। तंत्र नीचे भी देखता है और ऊपर भी। तंत्र पूर्ण है।"*
 
@@ -137,6 +181,17 @@ sequenceDiagram
 | मनोविश्लेषण | बात करके ठीक करो | ध्यान करके ठीक करो |
 
 ### जंग — "गहरा, लेकिन अधूरा"
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+</a>
+
 
 कार्ल जंग को ओशो अधिक सम्मान देते हैं। जंग ने अचेतन के सामूहिक आयाम को खोजा — जिसे उन्होंने 'सामूहिक अचेतन' (कलेक्टिव अनकॉन्शस) कहा।
 
@@ -153,12 +208,34 @@ sequenceDiagram
 
 ### राइख — "सबसे करीब, फिर भी दूर"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+</a>
+
+
 विल्हेल्म राइख — फ्रायड के शिष्य जिसने यौन ऊर्जा को 'ऑर्गोन' ऊर्जा कहा। ओशो राइख को बहुत महत्व देते हैं।
 
 > **ओशो वाणी:**
 > *"राइख सबसे करीब आया था। उसने ऊर्जा को देखा — जीवन ऊर्जा को। उसने कहा — यह ऊर्जा दबती है, तो बीमारी पैदा होती है। यह बहती है, तो स्वास्थ्य पैदा होता है। यह बिल्कुल तंत्र की बात है! लेकिन राइख को एक बात समझ नहीं आई — यह ऊर्जा केवल शारीरिक नहीं है, यह चैतन्य है। और जब यह ऊर्जा चैतन्य में रूपांतरित होती है — तब समाधि है।"*
 
 ### ओशो का पूर्ण मनोविज्ञान
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो का पूर्ण मनोविज्ञान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो का पूर्ण मनोविज्ञान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो का पूर्ण मनोविज्ञान" width="30%">
+</a>
+
 
 ओशो ने एक पूर्ण मनोविज्ञान दिया — जो फ्रायड से शुरू होता है, जंग से गहराता है, राइख से ऊर्जा को पहचानता है — और तंत्र में पूर्ण होता है।
 
@@ -190,12 +267,34 @@ flowchart TB
 
 ### ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+</a>
+
+
 > **ओशो वाणी:**
 > *"बहुत से लोग कहते हैं — 'ध्यान का कोई वैज्ञानिक प्रमाण नहीं है।' मैं कहता हूँ — प्रतीक्षा करो। विज्ञान अभी बच्चा है। एक दिन वह fMRI और EEG से वही मापेगा जो ऋषि अपने भीतर देखते थे। और वह दिन मैं नहीं देखूँगा — लेकिन तुम देखोगे। ध्यान वैज्ञानिक रूप से सिद्ध होगा।"*
 
 और यह सच हुआ। आज fMRI और EEG अध्ययनों ने ध्यान के प्रभावों को वैज्ञानिक रूप से सिद्ध कर दिया है।
 
 ### ओशो के कथन और आधुनिक विज्ञान
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+</a>
+
 
 | ओशो का कथन (१९७२-७३) | आधुनिक वैज्ञानिक प्रमाण |
 |------------------------|------------------------|
@@ -206,6 +305,17 @@ flowchart TB
 | "चेतना मस्तिष्क की उपज नहीं है" | चेतना का कठिन प्रश्न — चाल्मर्स, टोनोनी |
 
 ### मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+</a>
+
 
 > **ओशो वाणी:**
 > *"मस्तिष्क तरंगें — बीटा, अल्फा, थीटा, गामा — ये सब चेतना के स्तर हैं। बीटा में तुम बाहर हो। अल्फा में तुम शांत हो। थीटा में तुम सृजनशील हो। और गामा में — तुम घर आ गए हो। तंत्र में हम इसे तुरीय कहते हैं। नाम अलग हैं — बात एक है।"*
@@ -227,12 +337,34 @@ flowchart LR
 
 ### DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" alt="Handwritten: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" alt="Diagram: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" alt="Sticky Note: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+</a>
+
+
 DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्तिष्क का वह हिस्सा जो तब सक्रिय होता है जब हम कुछ नहीं कर रहे होते। यह आत्म-संदर्भित विचारों, अहंकार, और मन भटकने के लिए जिम्मेदार है।
 
 > **ओशो वाणी:**
 > *"मस्तिष्क का एक हिस्सा है जो कभी शांत नहीं होता — वह लगातार बकवास करता रहता है, 'मैं यह हूँ, मैं वह हूँ, मुझे यह चाहिए, मुझे वह चाहिए।' यही अहंकार है। यही दुख का कारण है। ध्यान इसी को शांत करता है। और जब यह शांत होता है — तब पहली बार तुम जानते हो कि तुम कौन हो।"*
 
 ### ओशो और न्यूरोप्लास्टिसिटी
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+</a>
+
 
 न्यूरोप्लास्टिसिटी — मस्तिष्क की खुद को बदलने की क्षमता — आधुनिक विज्ञान की सबसे बड़ी खोजों में से एक है। ओशो ने इसकी भविष्यवाणी की थी।
 
@@ -245,6 +377,17 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 
 ### भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+</a>
+
+
 १९७२ में जब ओशो यह कह रहे थे, तब ध्यान पर लगभग कोई वैज्ञानिक शोध नहीं था। आज:
 
 - २००५: हार्वर्ड — ध्यान से ग्रे मैटर बढ़ता है (लाज़र)
@@ -253,6 +396,17 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 - २०२०: १०००+ वैज्ञानिक अध्ययन — ध्यान के लाभ सिद्ध
 
 ### भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+</a>
+
 
 > **ओशो वाणी:**
 > *"पूर्व के पास आत्मा है, पश्चिम के पास विज्ञान है। दोनों का मिलन होना चाहिए। और वह मिलन होगा — मैं इसकी भविष्यवाणी करता हूँ। तब एक नया मनुष्य जन्म लेगा — जो न पूर्व का होगा, न पश्चिम का — वह वैश्विक होगा।"*
@@ -264,6 +418,17 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 - मन और मस्तिष्क का विज्ञान — पूर्व का ज्ञान + पश्चिम की तकनीक
 
 ### भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+</a>
+
 
 > **ओशो वाणी:**
 > *"भौतिकी ने पदार्थ को खोज लिया, जीव विज्ञान ने जीवन को, मनोविज्ञान ने मन को। अब बारी है चेतना की। इक्कीसवीं सदी चेतना के विज्ञान की सदी होगी। और तब तंत्र — जो पाँच हज़ार सालों से चेतना का विज्ञान है — उसका महत्व समझा जाएगा।"*
@@ -307,6 +472,17 @@ flowchart TB
 ```
 
 ### मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+</a>
+
 
 > **ओशो वाणी:**
 > *"पश्चिम ने दवाइयाँ खोज लीं — गोलियाँ, इंजेक्शन, सर्जरी। ये सब काम करती हैं — लेकिन ये केवल लक्षणों को दबाती हैं। कारण को नहीं हटातीं। तनाव की गोली तनाव को नहीं हटाती — वह केवल तुम्हें सुला देती है। क्रोध की गोली क्रोध को नहीं हटाती — वह केवल तुम्हें सुन्न कर देती है। ध्यान कारण को हटाता है। ध्यान जड़ से काटता है। यही अंतर है — दवा लक्षणों को दबाती है, ध्यान चेतना को बदलता है।"*
@@ -908,25 +1084,91 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+</a>
+
+
 इस अध्याय में दिए गए वैज्ञानिक अध्ययनों (लाज़र २००५, लुट्ज़ २००४, ब्रेवर २०११) में से किसी एक को चुनें। उसे पढ़ें और ओशो के कथनों से मिलाएँ। एक रिपोर्ट लिखें — कैसे यह अध्ययन ओशो की बात को सिद्ध करता है।
 
 ### अभ्यास २: फ्रायड, जंग, राइख — तुलना
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+</a>
+
 
 फ्रायड, जंग, और राइख के सिद्धांतों को पढ़ें। एक तालिका बनाएँ जिसमें दिखे — किस सिद्धांत का तंत्र से क्या संबंध है। ओशो की टिप्पणी को हर बिंदु पर शामिल करें।
 
 ### अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+</a>
+
+
 इस अध्याय में दिए गए क्वांटम सिद्धांतों (प्रेक्षक प्रभाव, सुपरपोज़िशन, उलझाव) को पढ़ें। उन्हें अपने शब्दों में समझाएँ — और फिर तंत्र के सिद्धांतों से जोड़ें। ओशो की दृष्टि में यह संबंध क्या कहता है?
 
 ### अभ्यास ४: ध्यान का प्रयोग — स्वयं पर
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+</a>
+
 
 एक सप्ताह तक प्रतिदिन १५ मिनट श्वास-ध्यान करें। अपने अनुभव को रिकॉर्ड करें — मानसिक स्थिति, भावनात्मक बदलाव, नींद की गुणवत्ता। देखें कि ओशो और वैज्ञानिक अध्ययनों के निष्कर्ष आपके अनुभव से कितने मेल खाते हैं।
 
 ### अभ्यास ५: ओशो की भविष्यवाणियों पर शोध
 
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+</a>
+
+
 ओशो की उन भविष्यवाणियों में से कोई एक चुनें जो अभी तक पूरी तरह सिद्ध नहीं हुई है। उस पर शोध करें — वर्तमान वैज्ञानिक स्थिति क्या है? क्या संकेत हैं कि यह सिद्ध हो सकती है? एक रिपोर्ट तैयार करें।
 
 ### अभ्यास ६: समूह चर्चा
+
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
+</a>
+<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
+</a>
+
 
 निम्नलिखित प्रश्नों पर समूह में चर्चा करें:
 

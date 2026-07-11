@@ -31,6 +31,17 @@ flowchart LR
 
 ### When Placement Season Happens
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-handwritten.svg" alt="Handwritten: When Placement Season Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-diagram.svg" alt="Diagram: When Placement Season Happens" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/when-placement-season-happens-sticky.svg" alt="Sticky Note: When Placement Season Happens" width="30%">
+</a>
+
+
 Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top private universities), the schedule is:
 
 ![Placement Preparation Timeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
@@ -48,6 +59,17 @@ The **primary placement window** runs from **July to December of your 3rd year (
 - **Placement season (final year)**: Full-time job hiring. The focus of this guide.
 
 ### On-Campus vs Off-Campus
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-handwritten.svg" alt="Handwritten: On-Campus vs Off-Campus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-diagram.svg" alt="Diagram: On-Campus vs Off-Campus" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/on-campus-vs-off-campus-sticky.svg" alt="Sticky Note: On-Campus vs Off-Campus" width="30%">
+</a>
+
 
 **On-campus placements:**
 - Companies visit your college directly
@@ -69,6 +91,17 @@ The **primary placement window** runs from **July to December of your 3rd year (
 
 ### Pool Campus vs Individual College Drives
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-handwritten.svg" alt="Handwritten: Pool Campus vs Individual College Drives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-diagram.svg" alt="Diagram: Pool Campus vs Individual College Drives" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/pool-campus-vs-individual-college-drives-sticky.svg" alt="Sticky Note: Pool Campus vs Individual College Drives" width="30%">
+</a>
+
+
 **Pool campus drives:**
 - Multiple colleges participate in a common placement drive
 - Organized by a host college (e.g., VIT pool campus, NIT pool campus)
@@ -85,6 +118,17 @@ The **primary placement window** runs from **July to December of your 3rd year (
 **Which is better?** Individual drives are easier to crack because competition is smaller. Pool campus drives give access to companies that would not otherwise visit your college. Attend both.
 
 ### Dream vs Super Dream vs Mass Recruiters
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-handwritten.svg" alt="Handwritten: Dream vs Super Dream vs Mass Recruiters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-diagram.svg" alt="Diagram: Dream vs Super Dream vs Mass Recruiters" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/dream-vs-super-dream-vs-mass-recruiters-sticky.svg" alt="Sticky Note: Dream vs Super Dream vs Mass Recruiters" width="30%">
+</a>
+
 
 Colleges typically classify recruiters into three tiers:
 
@@ -110,6 +154,17 @@ Colleges typically classify recruiters into three tiers:
 - **Strategy**: Prepare 6+ months in advance. These require dedicated, focused preparation.
 
 ### CTC Ranges Explained
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-handwritten.svg" alt="Handwritten: CTC Ranges Explained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-diagram.svg" alt="Diagram: CTC Ranges Explained" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/ctc-ranges-explained-sticky.svg" alt="Sticky Note: CTC Ranges Explained" width="30%">
+</a>
+
 
 CTC (Cost to Company) is **NOT your take-home salary**. It is the total cost the company incurs for you, including:
 
@@ -146,6 +201,17 @@ CTC (Cost to Company) is **NOT your take-home salary**. It is the total cost the
 ## Pre-Placement Preparation Timeline
 
 ### 6 Months Before: Foundation + Resume Building
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-handwritten.svg" alt="Handwritten: 6 Months Before: Foundation + Resume Building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-diagram.svg" alt="Diagram: 6 Months Before: Foundation + Resume Building" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/6-months-before-foundation-resume-building-sticky.svg" alt="Sticky Note: 6 Months Before: Foundation + Resume Building" width="30%">
+</a>
+
 
 This is the most critical period. Students who start 6 months before the season consistently outperform those who start 1 month before.
 
@@ -235,6 +301,17 @@ Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, OOP
 
 ### 3 Months Before: Intensified Preparation
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-handwritten.svg" alt="Handwritten: 3 Months Before: Intensified Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-diagram.svg" alt="Diagram: 3 Months Before: Intensified Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/3-months-before-intensified-preparation-sticky.svg" alt="Sticky Note: 3 Months Before: Intensified Preparation" width="30%">
+</a>
+
+
 **Week 1â€“4: Full-length Mock Assessments**
 
 Take timed assessments exactly mimicking placement tests:
@@ -281,6 +358,17 @@ Build a spreadsheet like this:
 
 ### 1 Month Before: Targeted Preparation
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-handwritten.svg" alt="Handwritten: 1 Month Before: Targeted Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-diagram.svg" alt="Diagram: 1 Month Before: Targeted Preparation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-month-before-targeted-preparation-sticky.svg" alt="Sticky Note: 1 Month Before: Targeted Preparation" width="30%">
+</a>
+
+
 **Company-Wise Revision:**
 - For each company in your shortlist, revise their frequently asked topics
 - Amazon: OOD + Leadership Principles (prepare 6-8 stories)
@@ -305,6 +393,17 @@ Make one-page cheat sheets for:
 
 ### 1 Week Before: Revision Strategy
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-handwritten.svg" alt="Handwritten: 1 Week Before: Revision Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-diagram.svg" alt="Diagram: 1 Week Before: Revision Strategy" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/1-week-before-revision-strategy-sticky.svg" alt="Sticky Note: 1 Week Before: Revision Strategy" width="30%">
+</a>
+
+
 **Last 7 days schedule:**
 
 | Day | Focus Area | Action Items |
@@ -328,6 +427,17 @@ Make one-page cheat sheets for:
 - Sleep by 10 PM
 
 ### What to Have Ready
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-handwritten.svg" alt="Handwritten: What to Have Ready" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-diagram.svg" alt="Diagram: What to Have Ready" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/what-to-have-ready-sticky.svg" alt="Sticky Note: What to Have Ready" width="30%">
+</a>
+
 
 **Documents folder (digital copies + 3 printed sets):**
 
@@ -362,6 +472,17 @@ Keep a daily log of problems solved, concepts learned, and mocks attempted. On d
 ## Company Targeting Strategy
 
 ### How to Shortlist Companies Aligned With Your Profile
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-handwritten.svg" alt="Handwritten: How to Shortlist Companies Aligned With Your Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-diagram.svg" alt="Diagram: How to Shortlist Companies Aligned With Your Profile" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-shortlist-companies-aligned-with-your-profile-sticky.svg" alt="Sticky Note: How to Shortlist Companies Aligned With Your Profile" width="30%">
+</a>
+
 
 **Step 1: Self-assessment**
 
@@ -426,6 +547,17 @@ OFF-CAMPUS:
 
 ### Balancing Dream Companies vs Safety Options
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-handwritten.svg" alt="Handwritten: Balancing Dream Companies vs Safety Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-diagram.svg" alt="Diagram: Balancing Dream Companies vs Safety Options" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/balancing-dream-companies-vs-safety-options-sticky.svg" alt="Sticky Note: Balancing Dream Companies vs Safety Options" width="30%">
+</a>
+
+
 **The portfolio approach:** Treat your placement attempts like an investment portfolio.
 
 - **70% effort** → Dream and Super Dream companies (high risk, high reward)
@@ -446,6 +578,17 @@ Here is why: If you get a mass recruiter offer in August, accept it. Do NOT thin
 4. If no dream company offer comes, they still have a job
 
 ### Understanding Job Profiles
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-handwritten.svg" alt="Handwritten: Understanding Job Profiles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-diagram.svg" alt="Diagram: Understanding Job Profiles" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/understanding-job-profiles-sticky.svg" alt="Sticky Note: Understanding Job Profiles" width="30%">
+</a>
+
 
 **SDE (Software Development Engineer):**
 - What you do: Write production code, design features, debug, code review, deploy
@@ -485,6 +628,17 @@ Here is why: If you get a mass recruiter offer in August, accept it. Do NOT thin
 - Best for: People who enjoy business + technology intersection, client interaction
 
 ### Role-Based Preparation Differences
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-handwritten.svg" alt="Handwritten: Role-Based Preparation Differences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-diagram.svg" alt="Diagram: Role-Based Preparation Differences" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/role-based-preparation-differences-sticky.svg" alt="Sticky Note: Role-Based Preparation Differences" width="30%">
+</a>
+
 
 **If targeting SDE (most common):**
 
@@ -546,6 +700,17 @@ And **distributed systems basics**:
 
 ### Resume Shortlisting: What Gets Through
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-handwritten.svg" alt="Handwritten: Resume Shortlisting: What Gets Through" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-diagram.svg" alt="Diagram: Resume Shortlisting: What Gets Through" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/resume-shortlisting-what-gets-through-sticky.svg" alt="Sticky Note: Resume Shortlisting: What Gets Through" width="30%">
+</a>
+
+
 **The brutal truth:** Recruiters spend **6â€“10 seconds** scanning your resume before deciding to shortlist. Here is what they look for, in order:
 
 1. **CGPA** → Many companies have hard cutoffs: 7.0 / 7.5 / 8.0 / 8.5
@@ -576,6 +741,17 @@ And **distributed systems basics**:
 - Use **standard fonts** (Calibri, Arial, Times New Roman, 10â€“12pt) → fancy fonts break ATS parsing
 
 ### Online Assessment: Aptitude + Coding
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-handwritten.svg" alt="Handwritten: Online Assessment: Aptitude + Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-diagram.svg" alt="Diagram: Online Assessment: Aptitude + Coding" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/online-assessment-aptitude-coding-sticky.svg" alt="Sticky Note: Online Assessment: Aptitude + Coding" width="30%">
+</a>
+
 
 **Format → expected structure:**
 
@@ -628,6 +804,17 @@ Most coding assessments have 2â€“3 questions with increasing difficulty:
 7. **Language choice** → Use the language you are fastest in. In assessments, speed matters.
 
 ### Technical Round 1: DSA + Problem-Solving
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-handwritten.svg" alt="Handwritten: Technical Round 1: DSA + Problem-Solving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-diagram.svg" alt="Diagram: Technical Round 1: DSA + Problem-Solving" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-1-dsa-problem-solving-sticky.svg" alt="Sticky Note: Technical Round 1: DSA + Problem-Solving" width="30%">
+</a>
+
 
 **Format:** 45â€“60 minutes. 1â€“2 coding problems on a shared editor or whiteboard.
 
@@ -759,6 +946,17 @@ for (i = 0 to n-1)
 
 ### Technical Round 2: System Design / LLD
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-handwritten.svg" alt="Handwritten: Technical Round 2: System Design / LLD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-diagram.svg" alt="Diagram: Technical Round 2: System Design / LLD" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/technical-round-2-system-design-lld-sticky.svg" alt="Sticky Note: Technical Round 2: System Design / LLD" width="30%">
+</a>
+
+
 **Format:** 45â€“60 minutes. Usually a design question for dream/super dream companies.
 
 **Low-Level Design (LLD) → Object-Oriented Design:**
@@ -848,6 +1046,17 @@ GET /{shortCode}/stats → Click analytics
 
 ### HR Round: Common Questions with Answers
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-handwritten.svg" alt="Handwritten: HR Round: Common Questions with Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-diagram.svg" alt="Diagram: HR Round: Common Questions with Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/hr-round-common-questions-with-answers-sticky.svg" alt="Sticky Note: HR Round: Common Questions with Answers" width="30%">
+</a>
+
+
 **Format:** 15â€“20 minutes. Mostly behavioral and cultural fit assessment.
 
 **Purpose:** The HR round is NOT to reject (if you reach here, the tech team has approved you). HR checks:
@@ -922,6 +1131,17 @@ Bad questions:
 
 ### How to Handle Rejection Constructively
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-handwritten.svg" alt="Handwritten: How to Handle Rejection Constructively" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-diagram.svg" alt="Diagram: How to Handle Rejection Constructively" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/how-to-handle-rejection-constructively-sticky.svg" alt="Sticky Note: How to Handle Rejection Constructively" width="30%">
+</a>
+
+
 **The reality of rejection:** Every successful person has been rejected multiple times. Here are some statistics from placements:
 
 - Average student: faces 5â€“15 rejections before first offer
@@ -974,6 +1194,17 @@ VERDICT: Was this a skill gap or a bad day?
 
 ### Negotiating Offers
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-handwritten.svg" alt="Handwritten: Negotiating Offers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-diagram.svg" alt="Diagram: Negotiating Offers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/negotiating-offers-sticky.svg" alt="Sticky Note: Negotiating Offers" width="30%">
+</a>
+
+
 **When negotiation is possible:**
 
 - You have another offer from a comparable company
@@ -1016,6 +1247,17 @@ to [target number]? I am very keen to join your team."
 - If the company is your top choice and the offer is fair → accept with gratitude
 
 ### Accepting vs Declining Offers
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-handwritten.svg" alt="Handwritten: Accepting vs Declining Offers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-diagram.svg" alt="Diagram: Accepting vs Declining Offers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/accepting-vs-declining-offers-sticky.svg" alt="Sticky Note: Accepting vs Declining Offers" width="30%">
+</a>
+
 
 **When to accept:**
 
@@ -1078,6 +1320,17 @@ Best regards,
 
 ### Explaining Gaps and Backlogs
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-handwritten.svg" alt="Handwritten: Explaining Gaps and Backlogs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-diagram.svg" alt="Diagram: Explaining Gaps and Backlogs" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/explaining-gaps-and-backlogs-sticky.svg" alt="Sticky Note: Explaining Gaps and Backlogs" width="30%">
+</a>
+
+
 **Backlogs (active):**
 - Some companies have **no backlog** policies → you cannot sit for the drive if you have any active backlog
 - Some allow 1â€“2 backlogs → check eligibility criteria carefully
@@ -1104,6 +1357,17 @@ Best regards,
 - Pivot quickly: "I took a year to prepare for [exams]. Although I did not clear them, I gained deep programming skills during this period, which is reflected in my projects."
 
 ### Mental Health During Placement Season
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-handwritten.svg" alt="Handwritten: Mental Health During Placement Season" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-diagram.svg" alt="Diagram: Mental Health During Placement Season" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/mental-health-during-placement-season-sticky.svg" alt="Sticky Note: Mental Health During Placement Season" width="30%">
+</a>
+
 
 **This is the most important section in this entire guide.**
 
@@ -1172,6 +1436,17 @@ Placement season is a mental health minefield. Students experience:
 
 ### Month-by-Month Planner (Starting 6 Months Before Season)
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-handwritten.svg" alt="Handwritten: Month-by-Month Planner (Starting 6 Months Before Season)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-diagram.svg" alt="Diagram: Month-by-Month Planner (Starting 6 Months Before Season)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/month-by-month-planner-starting-6-months-before-season-sticky.svg" alt="Sticky Note: Month-by-Month Planner (Starting 6 Months Before Season)" width="30%">
+</a>
+
+
 ```
 MONTH 1 (February) → Foundation Phase
 ├── Week 1: Arrays + Strings → solve 30 problems
@@ -1218,6 +1493,17 @@ MONTH 6 (July) → PLACEMENT SEASON BEGINS
 
 ### Sample Week During Peak Season
 
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-handwritten.svg" alt="Handwritten: Sample Week During Peak Season" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-diagram.svg" alt="Diagram: Sample Week During Peak Season" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/sample-week-during-peak-season-sticky.svg" alt="Sticky Note: Sample Week During Peak Season" width="30%">
+</a>
+
+
 ```
 Monday
 ├── 7:00 AM → Wake up, exercise, breakfast
@@ -1233,6 +1519,17 @@ Monday
 ```
 
 ### Documents Checklist (Printable)
+
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-handwritten.svg" alt="Handwritten: Documents Checklist (Printable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-diagram.svg" alt="Diagram: Documents Checklist (Printable)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/placement-preparation/05-placement-strategy/documents-checklist-printable-sticky.svg" alt="Sticky Note: Documents Checklist (Printable)" width="30%">
+</a>
+
 
 ```
 ALL DOCUMENTS → PRINT 3 SETS

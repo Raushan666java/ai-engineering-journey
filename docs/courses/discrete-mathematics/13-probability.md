@@ -55,6 +55,17 @@ flowchart LR
 
 ### 13.1 Sample Space and Events
 
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" alt="Handwritten: 13.1 Sample Space and Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" alt="Diagram: 13.1 Sample Space and Events" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" alt="Sticky Note: 13.1 Sample Space and Events" width="30%">
+</a>
+
+
 The **sample space** $S$ is the set of all possible outcomes of an experiment. An **event** is a subset $E \subseteq S$.
 
 If all outcomes are equally likely, the probability of event $E$ is:
@@ -69,6 +80,17 @@ $$P(E) = \frac{|E|}{|S|}$$
 > **One-Sentence Takeaway:** The sample space contains all possible outcomes; events are subsets, and for equally likely outcomes, probability is the size ratio.
 
 ### 13.2 Axioms of Probability
+
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" alt="Handwritten: 13.2 Axioms of Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" alt="Diagram: 13.2 Axioms of Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" alt="Sticky Note: 13.2 Axioms of Probability" width="30%">
+</a>
+
 
 **Kolmogorov's axioms:**
 1. $0 \leq P(E) \leq 1$ for any event $E$.
@@ -86,6 +108,17 @@ $$P(E) = \frac{|E|}{|S|}$$
 
 ### 13.3 Conditional Probability
 
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" alt="Handwritten: 13.3 Conditional Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" alt="Diagram: 13.3 Conditional Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" alt="Sticky Note: 13.3 Conditional Probability" width="30%">
+</a>
+
+
 The **conditional probability** of $A$ given $B$ is:
 $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 provided $P(B) > 0$.
@@ -98,6 +131,17 @@ $$P(A_1 \cap A_2 \cap \dots \cap A_n) = P(A_1) \cdot P(A_2 \mid A_1) \cdot P(A_3
 > **One-Sentence Takeaway:** Conditional probability updates the probability of $A$ given knowledge that $B$ occurred ? it renormalizes $P(A \cap B)$ over $P(B)$.
 
 ### 13.4 Independence
+
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" alt="Handwritten: 13.4 Independence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" alt="Diagram: 13.4 Independence" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" alt="Sticky Note: 13.4 Independence" width="30%">
+</a>
+
 
 Events $A$ and $B$ are **independent** if any of the following equivalent conditions hold:
 1. $P(A \cap B) = P(A) \cdot P(B)$.
@@ -112,6 +156,17 @@ $$P(A_{i_1} \cap \dots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
 > **One-Sentence Takeaway:** Independence means the occurrence of one event does not affect the probability of another ? the joint probability is the product of marginals.
 
 ### 13.5 Bayes' Theorem
+
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" alt="Handwritten: 13.5 Bayes' Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" alt="Diagram: 13.5 Bayes' Theorem" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" alt="Sticky Note: 13.5 Bayes' Theorem" width="30%">
+</a>
+
 
 **Bayes' theorem:**
 $$P(H \mid E) = \frac{P(E \mid H) \cdot P(H)}{P(E)}$$
@@ -129,6 +184,17 @@ $$P(H_j \mid E) = \frac{P(E \mid H_j) \cdot P(H_j)}{\sum_{i=1}^n P(E \mid H_i) \
 
 ### 13.6 Random Variables
 
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" alt="Handwritten: 13.6 Random Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" alt="Diagram: 13.6 Random Variables" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" alt="Sticky Note: 13.6 Random Variables" width="30%">
+</a>
+
+
 A **random variable** $X$ is a function $X: S \rightarrow \mathbb{R}$ that assigns a real number to each outcome.
 
 **Discrete random variable:** Takes countably many values (e.g., $\{0,1,2,\dots\}$).
@@ -144,6 +210,17 @@ A **random variable** $X$ is a function $X: S \rightarrow \mathbb{R}$ that assig
 > **One-Sentence Takeaway:** A random variable maps outcomes to numbers; its probability mass function describes how total probability is distributed across possible values.
 
 ### 13.7 Expected Value and Variance
+
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" alt="Handwritten: 13.7 Expected Value and Variance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" alt="Diagram: 13.7 Expected Value and Variance" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" alt="Sticky Note: 13.7 Expected Value and Variance" width="30%">
+</a>
+
 
 **Expected value (mean):** $\mu = E[X] = \sum_x x \cdot p(x)$.
 
@@ -195,6 +272,17 @@ console.log(variance(die));      // ~2.917
 
 ### 13.8 Bernoulli and Binomial Distributions
 
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" alt="Handwritten: 13.8 Bernoulli and Binomial Distributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" alt="Diagram: 13.8 Bernoulli and Binomial Distributions" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" alt="Sticky Note: 13.8 Bernoulli and Binomial Distributions" width="30%">
+</a>
+
+
 **Bernoulli trial:** A single experiment with two outcomes: success (1) with probability $p$, failure (0) with probability $1-p$.
 - $P(X = 1) = p$, $P(X = 0) = 1-p$.
 - $E[X] = p$, $\text{Var}(X) = p(1-p)$.
@@ -227,6 +315,17 @@ console.log(binomialProb(10, 3, 0.5)); // P(3 heads in 10 fair coin flips)
 
 ### 13.9 Geometric Distribution
 
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" alt="Handwritten: 13.9 Geometric Distribution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" alt="Diagram: 13.9 Geometric Distribution" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" alt="Sticky Note: 13.9 Geometric Distribution" width="30%">
+</a>
+
+
 The number of trials until the first success in independent Bernoulli trials.
 
 **PMF:** $P(X = k) = (1-p)^{k-1} p$, for $k = 1, 2, 3, \dots$.
@@ -239,6 +338,17 @@ The number of trials until the first success in independent Bernoulli trials.
 > **One-Sentence Takeaway:** The geometric distribution models "waiting time" until the first success; it is memoryless ? past failures do not affect future probability.
 
 ### 13.10 Inclusion-Exclusion for Probability
+
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" alt="Handwritten: 13.10 Inclusion-Exclusion for Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" alt="Diagram: 13.10 Inclusion-Exclusion for Probability" width="30%">
+</a>
+<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" alt="Sticky Note: 13.10 Inclusion-Exclusion for Probability" width="30%">
+</a>
+
 
 **Principle of inclusion-exclusion for probability:**
 $$P\left(\bigcup_{i=1}^n A_i\right) = \sum_i P(A_i) - \sum_{i&lt;j} P(A_i \cap A_j) + \sum_{i<j<k} P(A_i \cap A_j \cap A_k) - \cdots + (-1)^{n+1} P(A_1 \cap \dots \cap A_n)$$

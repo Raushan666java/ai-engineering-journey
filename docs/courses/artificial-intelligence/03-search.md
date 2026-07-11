@@ -73,6 +73,17 @@ flowchart LR
 ![Search Algorithms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch03-search.png)
 
 ### Problem Formulation
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" alt="Handwritten: Problem Formulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" alt="Diagram: Problem Formulation" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" alt="Sticky Note: Problem Formulation" width="30%">
+</a>
+
 > **One-Sentence Takeaway:** Every search problem needs five components: initial state, actions, transition model, goal test, and path cost — getting these right is the foundation of any solution.
 
 Before a search algorithm can be applied, a problem must be formally defined:
@@ -100,6 +111,17 @@ A **solution** is a sequence of actions leading from the initial state to a goal
 ---
 
 ### Breadth-First Search (BFS)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" alt="Handwritten: Breadth-First Search (BFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" alt="Diagram: Breadth-First Search (BFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" alt="Sticky Note: Breadth-First Search (BFS)" width="30%">
+</a>
+
 
 **Real-World Analogy:** Imagine you are searching for your lost keys in a house with multiple rooms. Instead of running to the far end of the house and searching one deep corner at a time, you check every room on the current floor first, then move to the next floor down. You never go deeper until you have checked everything at the current level. This guarantees you find the keys in the fewest steps from where you started.
 
@@ -292,6 +314,17 @@ public class BFS {
 
 ### Depth-First Search (DFS)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" alt="Handwritten: Depth-First Search (DFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" alt="Diagram: Depth-First Search (DFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" alt="Sticky Note: Depth-First Search (DFS)" width="30%">
+</a>
+
+
 **Real-World Analogy:** You are exploring a cave system. Instead of checking every tunnel near the entrance first, you pick one tunnel and follow it as far as it goes. If you hit a dead end, you backtrack to the last junction and try the next tunnel. You go deep first, wide later. This uses very little memory — just enough to remember your way back.
 
 **Algorithm Steps (Graph Search with visited set):**
@@ -477,6 +510,17 @@ public class DFS {
 ---
 
 ### Uniform-Cost Search (UCS)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: Uniform-Cost Search (UCS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" alt="Diagram: Uniform-Cost Search (UCS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: Uniform-Cost Search (UCS)" width="30%">
+</a>
+
 
 **Real-World Analogy:** You are planning a road trip from New York to Los Angeles. The shortest path (fewest miles) is not always the cheapest route — sometimes a slightly longer road has cheaper gas or no tolls. Uniform-Cost Search considers that each road segment has a different cost, and it always expands the cheapest path discovered so far. It is like always choosing the smallest total bill at every fork.
 
@@ -698,6 +742,17 @@ public class UCS {
 
 ### Depth-Limited Search (DLS)
 
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" alt="Handwritten: Depth-Limited Search (DLS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" alt="Diagram: Depth-Limited Search (DLS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" alt="Sticky Note: Depth-Limited Search (DLS)" width="30%">
+</a>
+
+
 **Real-World Analogy:** Imagine you are searching an office building for a meeting room on floor 3. Instead of walking up to floor 20 (which wastes time), you set a hard limit: do not go deeper than floor 5. If the room is not found within those floors, you stop and report no solution within the limit. This prevents infinite stair-climbing.
 
 **Algorithm Steps (Iterative Version):**
@@ -849,6 +904,17 @@ public class DLS {
 ---
 
 ### Iterative Deepening Depth-First Search (IDDFS)
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" alt="Handwritten: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" alt="Diagram: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" alt="Sticky Note: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+</a>
+
 
 **Real-World Analogy:** You are looking for a book in a library tower. You do not know which floor the book is on. You start on floor 0 and search every room on that floor. Not there? Now you search floors 0 and 1. Still nothing? Try floors 0, 1, and 2. Each failed search costs a little more, but you never search deeper than necessary — and you always find the book on the shallowest floor that contains it.
 
@@ -1008,6 +1074,17 @@ public class IDDFS {
 ---
 
 ### Bidirectional Search
+
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" alt="Handwritten: Bidirectional Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" alt="Diagram: Bidirectional Search" width="30%">
+</a>
+<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" alt="Sticky Note: Bidirectional Search" width="30%">
+</a>
+
 
 **Real-World Analogy:** You and a friend are digging a tunnel through a mountain from opposite sides. Instead of one team digging the entire length, both teams dig simultaneously toward each other. They meet in the middle, cutting the digging distance in half. This is exactly what bidirectional search does: it runs two simultaneous searches — one forward from the start, one backward from the goal — and stops when they meet.
 

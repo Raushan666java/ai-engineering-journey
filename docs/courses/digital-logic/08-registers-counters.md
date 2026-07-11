@@ -21,6 +21,17 @@ A **register** is an array of bistable elements sharing a common clock. While Ch
 
 ### 8.1.1 Register with Synchronous Clear and Load
 
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-handwritten.svg" alt="Handwritten: 8.1.1 Register with Synchronous Clear and Load" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-diagram.svg" alt="Diagram: 8.1.1 Register with Synchronous Clear and Load" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-1-register-with-synchronous-clear-and-load-sticky.svg" alt="Sticky Note: 8.1.1 Register with Synchronous Clear and Load" width="30%">
+</a>
+
+
 ```typescript
 class AdvancedRegister {
     private flops: DFlipFlop[];
@@ -57,6 +68,17 @@ class AdvancedRegister {
 ```
 
 ### 8.1.2 Bidirectional Shift Register
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-handwritten.svg" alt="Handwritten: 8.1.2 Bidirectional Shift Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-diagram.svg" alt="Diagram: 8.1.2 Bidirectional Shift Register" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-2-bidirectional-shift-register-sticky.svg" alt="Sticky Note: 8.1.2 Bidirectional Shift Register" width="30%">
+</a>
+
 
 ```typescript
 class BidirectionalShiftRegister {
@@ -99,6 +121,17 @@ class BidirectionalShiftRegister {
 ```
 
 ### 8.1.3 Barrel Shifter
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-handwritten.svg" alt="Handwritten: 8.1.3 Barrel Shifter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-diagram.svg" alt="Diagram: 8.1.3 Barrel Shifter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-1-3-barrel-shifter-sticky.svg" alt="Sticky Note: 8.1.3 Barrel Shifter" width="30%">
+</a>
+
 
 A barrel shifter can shift or rotate an N-bit word by any number of positions in one clock cycle.
 
@@ -144,6 +177,17 @@ graph TD
 
 ### 8.2.1 Modulo-N Counter
 
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-handwritten.svg" alt="Handwritten: 8.2.1 Modulo-N Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-diagram.svg" alt="Diagram: 8.2.1 Modulo-N Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-1-modulo-n-counter-sticky.svg" alt="Sticky Note: 8.2.1 Modulo-N Counter" width="30%">
+</a>
+
+
 A modulo-N counter counts from 0 to N-1 and then wraps. When N ? 2?, the counter must detect the terminal count and reset.
 
 ```typescript
@@ -172,6 +216,17 @@ for (let i = 0; i < 15; i++) {
 ```
 
 ### 8.2.2 BCD Counter (Decade Counter)
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-handwritten.svg" alt="Handwritten: 8.2.2 BCD Counter (Decade Counter)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-diagram.svg" alt="Diagram: 8.2.2 BCD Counter (Decade Counter)" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-2-bcd-counter-decade-counter-sticky.svg" alt="Sticky Note: 8.2.2 BCD Counter (Decade Counter)" width="30%">
+</a>
+
 
 A BCD counter counts 0?9 and wraps. It requires 4 flip-flops but only 10 of 16 states are used.
 
@@ -216,6 +271,17 @@ for (let i = 0; i < 16; i++) {
 
 ### 8.2.3 Gray Code Counter
 
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-handwritten.svg" alt="Handwritten: 8.2.3 Gray Code Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-diagram.svg" alt="Diagram: 8.2.3 Gray Code Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-3-gray-code-counter-sticky.svg" alt="Sticky Note: 8.2.3 Gray Code Counter" width="30%">
+</a>
+
+
 Gray code counters change only one bit per transition, minimising switching noise and power consumption.
 
 ```mermaid
@@ -251,6 +317,17 @@ for (let i = 0; i < 8; i++) {
 ```
 
 ### 8.2.4 Programmable Counter
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-handwritten.svg" alt="Handwritten: 8.2.4 Programmable Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-diagram.svg" alt="Diagram: 8.2.4 Programmable Counter" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-2-4-programmable-counter-sticky.svg" alt="Sticky Note: 8.2.4 Programmable Counter" width="30%">
+</a>
+
 
 A programmable counter loads a starting value and counts down (or up) to zero, asserting a terminal count flag.
 
@@ -354,6 +431,17 @@ console.log(`8-bit LFSR cycle length: ${lfsr8.sequenceLength()}`); // 255 (maxim
 
 ### 8.3.1 Maximal-Length Polynomials
 
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-handwritten.svg" alt="Handwritten: 8.3.1 Maximal-Length Polynomials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-diagram.svg" alt="Diagram: 8.3.1 Maximal-Length Polynomials" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-1-maximal-length-polynomials-sticky.svg" alt="Sticky Note: 8.3.1 Maximal-Length Polynomials" width="30%">
+</a>
+
+
 | Width | Polynomial | Taps (0-indexed) | Cycle Length |
 |-------|-----------|------------------|-------------|
 | 3     | x? + x? + 1 | [2, 1] | 7 |
@@ -365,6 +453,17 @@ console.log(`8-bit LFSR cycle length: ${lfsr8.sequenceLength()}`); // 255 (maxim
 | 16    | x?6 + x?4 + x?? + x?? + 1 | [15, 13, 12, 10] | 65535 |
 
 ### 8.3.2 LFSR Applications
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-handwritten.svg" alt="Handwritten: 8.3.2 LFSR Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-diagram.svg" alt="Diagram: 8.3.2 LFSR Applications" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-3-2-lfsr-applications-sticky.svg" alt="Sticky Note: 8.3.2 LFSR Applications" width="30%">
+</a>
+
 
 ```typescript
 class LFSR_PRNG {
@@ -456,6 +555,17 @@ for (let i = 0; i < 8; i++) {
 
 ### 8.4.1 Decoding Johnson Counter States
 
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-handwritten.svg" alt="Handwritten: 8.4.1 Decoding Johnson Counter States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-diagram.svg" alt="Diagram: 8.4.1 Decoding Johnson Counter States" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-4-1-decoding-johnson-counter-states-sticky.svg" alt="Sticky Note: 8.4.1 Decoding Johnson Counter States" width="30%">
+</a>
+
+
 Each Johnson counter state requires a 2-input AND gate to decode (vs. N-input for a ring counter), saving significant logic.
 
 | State | 4-bit Johnson | Decode Equation |
@@ -506,6 +616,17 @@ for (let cycle = 0; cycle < 100_000_000; cycle++) {
 ```
 
 ### 8.5.1 50% Duty Cycle Dividers
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-handwritten.svg" alt="Handwritten: 8.5.1 50% Duty Cycle Dividers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-diagram.svg" alt="Diagram: 8.5.1 50% Duty Cycle Dividers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/8-5-1-50-duty-cycle-dividers-sticky.svg" alt="Sticky Note: 8.5.1 50% Duty Cycle Dividers" width="30%">
+</a>
+
 
 For even divisors, the output toggles at half the divisor count, producing a perfect 50% duty cycle.
 
@@ -865,6 +986,17 @@ c) Higher maximum clock frequency
 d) Lower cost
 
 ### Answers
+
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+</a>
+<a href="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../assets/images/diagrams/digital-logic/08-registers-counters/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+</a>
+
 
 Q1: b | Q2: b | Q3: b | Q4: a | Q5: c
 
